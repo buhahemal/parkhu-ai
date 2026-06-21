@@ -1,7 +1,7 @@
 metric,ticker,value,prev,pct_change,source
 USDINR,INR=X,94.31,94.86,-0.58,Yahoo Finance
 GOLD,GC=F,4172.9,4224.1,-1.21,Yahoo Finance
-SILVER,SI=F,64.91,66.25,-2.03,Yahoo Finance
+SILVER,SI=F,66.25,70.7,-6.28,Yahoo Finance
 CRUDE_WTI,CL=F,76.54,76.6,-0.08,Yahoo Finance
 CRUDE_BRENT,BZ=F,80.59,79.85,0.93,Yahoo Finance
 US_SP500,^GSPC,7500.58,7420.1,1.08,Yahoo Finance
