@@ -1,9 +1,9 @@
 name: Parkhu Daily Data Collection
 
-# 01:45 PM IST == 08:15 UTC (testing schedule)
+# 02:30 PM IST == 09:00 UTC (testing schedule)
 on:
   schedule:
-    - cron: "15 8 * * 0,1-5"   # Sun + Mon–Fri, 1:45 PM IST
+    - cron: "0 9 * * 0,1-5"   # Sun + Mon–Fri, 2:30 PM IST
   workflow_dispatch: {}       # allow manual runs from the Actions tab
 
 env:
