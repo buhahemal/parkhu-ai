@@ -39,6 +39,8 @@ from collector.derivatives import derivatives
 from collector.corpactions import corpactions
 from collector.news import news
 from collector.macro import macro
+from collector.delivery import delivery
+from collector.derived import relative_strength, event_risk, fno_momentum, swing_candidates
 
 log = get_logger("run")
 
@@ -56,9 +58,18 @@ AGENTS = [
     ("smartmoney", smartmoney.collect),
     ("options", options.collect),
     ("derivatives", derivatives.collect),
+    ("delivery", delivery.collect),
     ("corpactions", corpactions.collect),
     ("news", news.collect),
     ("macro", macro.collect),
+]
+
+# Derived CSVs — computed from collected files; order matters.
+DERIVED = [
+    ("relative_strength", relative_strength.collect),
+    ("event_risk", event_risk.collect),
+    ("fno_momentum", fno_momentum.collect),
+    ("swing_candidates", swing_candidates.collect),
 ]
 
 
@@ -73,14 +84,20 @@ def build_watchlist(date: str) -> int:
         if df.empty:
             save_csv(pd.DataFrame(columns=cols), "watchlist", date)
             return 0
-        df["above_sma200"] = df["close"] > df["sma200"]
+        adx_col = "adx" if "adx" in df.columns else "ADX"
+        rsi_col = "rsi" if "rsi" in df.columns else "RSI"
+        sma200_col = "sma200" if "sma200" in df.columns else "SMA200"
+        df["above_sma200"] = df["close"] > df[sma200_col]
         rating = df["tech_rating"].fillna("").str.lower()
         df["score"] = 0
         df.loc[df["above_sma200"], "score"] += 2
         df.loc[rating.isin(["strong buy", "buy"]), "score"] += 2
-        df.loc[(df["rsi"] >= 50) & (df["rsi"] <= 70), "score"] += 1
-        df.loc[df["adx"] >= 25, "score"] += 1
-        wl = df.sort_values("score", ascending=False)[cols].head(25)
+        df.loc[(df[rsi_col] >= 50) & (df[rsi_col] <= 70), "score"] += 1
+        df.loc[df[adx_col] >= 25, "score"] += 1
+        wl = df.sort_values("score", ascending=False)[
+            ["symbol", "close", rsi_col, adx_col, "tech_rating", "perf_1m", "above_sma200", "score"]
+        ].head(25)
+        wl = wl.rename(columns={rsi_col: "rsi", adx_col: "adx"})
         save_csv(wl, "watchlist", date)
         return len(wl)
     except Exception as exc:  # noqa: BLE001
@@ -108,7 +125,20 @@ def main() -> None:
         log.info("agent %-12s -> %s (%s rows, %ss)",
                  label, res["status"], res.get("rows", 0), res["seconds"])
 
+    for label, fn in DERIVED:
+        t0 = time.time()
+        try:
+            res = fn(date)
+        except Exception as exc:  # noqa: BLE001
+            log.error("derived %s crashed: %s", label, exc)
+            res = {"agent": label, "status": "error", "rows": 0, "error": str(exc)}
+        res["seconds"] = round(time.time() - t0, 1)
+        results.append(res)
+        log.info("derived %-12s -> %s (%s rows, %ss)",
+                 label, res["status"], res.get("rows", 0), res["seconds"])
+
     wl_count = build_watchlist(date)
+    swing_count = next((r.get("rows", 0) for r in results if r.get("agent") == "swing_candidates"), 0)
 
     # Manifest first so report.json can link to every produced file.
     write_manifest(date)
@@ -124,6 +154,7 @@ def main() -> None:
         "generated_at_ist": datetime.now(settings.IST).isoformat(),
         "duration_seconds": round(time.time() - started, 1),
         "watchlist_size": wl_count,
+        "swing_candidates_size": swing_count,
         "agents": results,
         "ok": sum(1 for r in results if r["status"] == "ok"),
         "partial": sum(1 for r in results if r["status"] == "partial"),

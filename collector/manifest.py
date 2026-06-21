@@ -103,6 +103,40 @@ CATALOG = [
         "use_case": "Top-down macro and global-cue context.",
         "key_columns": ["metric", "value", "pct_change"],
     }),
+    ("delivery.csv", {
+        "agent": "delivery", "source": "NSE bhavcopy (sec_bhavdata_full)",
+        "description": "Security-wise delivery %, volume and turnover for the universe "
+                       "from the latest available bhavcopy.",
+        "use_case": "Separate genuine accumulation (high delivery) from intraday churn; "
+                    "swing-trade quality filter.",
+        "key_columns": ["symbol", "deliv_pct", "ttl_traded_qty", "close"],
+    }),
+    ("relative_strength.csv", {
+        "agent": "relative_strength (derived)", "source": "tradingview.csv + sectors.csv",
+        "description": "Stock performance vs NIFTY 50 and mapped NIFTY sector index (1w/1m).",
+        "use_case": "Leadership filter for swing trades — prefer RS leaders.",
+        "key_columns": ["symbol", "rs_vs_nifty_1m", "rs_vs_sector_1m", "perf_1m"],
+    }),
+    ("event_risk.csv", {
+        "agent": "event_risk (derived)", "source": "earnings + corporate_actions + news",
+        "description": "Earnings, corp-action and news flags inside a 21-day event window.",
+        "use_case": "Avoid holding into results/ex-dates for 2–3 week swings.",
+        "key_columns": ["symbol", "earnings_within_21d", "corp_action_within_21d", "event_risk_score"],
+    }),
+    ("fno_momentum.csv", {
+        "agent": "fno_momentum (derived)", "source": "tradingview + oi_spurts + most_active_underlying",
+        "description": "Names with F&O OI buildup and derivatives activity scores.",
+        "use_case": "Confirm swing/intraday interest via derivatives positioning.",
+        "key_columns": ["symbol", "pct_change_oi", "fno_score", "in_oi_spurt"],
+    }),
+    ("swing_candidates.csv", {
+        "agent": "swing_candidates (derived)", "source": "multi-file composite score",
+        "description": "Top ~20 names scored for 2–3 week swing holds targeting ~5% — "
+                       "trend, RS, delivery, F&O, upside room, event-risk penalties. "
+                       "NOT a recommendation.",
+        "use_case": "Focused swing shortlist for the research engine.",
+        "key_columns": ["symbol", "score", "rs_vs_nifty_1m", "deliv_pct", "target_5pct"],
+    }),
     ("watchlist.csv", {
         "agent": "run.py (derived)", "source": "computed from tradingview.csv",
         "description": "Simple trend/momentum ranking (above SMA200, TV tech rating, RSI, ADX) "

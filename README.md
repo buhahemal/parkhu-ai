@@ -25,10 +25,20 @@ GitHub Actions (08:00 IST)
 | Smart Money | `collector/smartmoney/` | FII/DII flows, block deals | NSE |
 | Options | `collector/options/` | OI, PCR, max pain, ATM IV (NIFTY/BANKNIFTY) | NSE |
 | Derivatives | `collector/derivatives/` | OI spurts, most-active contracts & underlyings | NSE |
+| Delivery | `collector/delivery/` | delivery %, volume, turnover per symbol | NSE bhavcopy |
 | Corp Actions | `collector/corpactions/` | dividends, splits, bonus, buyback, ex-dates | NSE filings |
 | News | `collector/news/` | corporate announcements, board meetings | NSE |
 | Indices / Sectors | `collector/market/` | broad-market & sectoral index levels (incl. India VIX) | Yahoo Finance |
 | Macro | `collector/macro/` | USDINR, gold, silver, crude, US markets, 10Y yield, DXY | Yahoo Finance |
+
+**Derived signals** (computed after collection, in `collector/derived/`):
+
+| File | Purpose |
+|------|---------|
+| `relative_strength.csv` | Stock vs NIFTY / sector performance |
+| `event_risk.csv` | Earnings, corp actions, news within 21 days |
+| `fno_momentum.csv` | OI buildup + F&O activity scores |
+| `swing_candidates.csv` | Top 20 for 2–3 week / ~5% swing template |
 
 > **Design note:** the broad price / valuation / technical / **earnings** layer
 > for the whole universe now comes from the **TradingView** snapshot in a single
@@ -48,14 +58,18 @@ output/2026-06-21/
     fii.csv           block_deals.csv   options.csv
     oi_spurts.csv     most_active_contracts.csv  most_active_underlying.csv
     corporate_actions.csv
-    news.csv          macro.csv
-    watchlist.csv     report.json      ← run summary + per-agent status
+    news.csv          macro.csv         delivery.csv
+    relative_strength.csv  event_risk.csv  fno_momentum.csv
+    swing_candidates.csv   watchlist.csv   report.json
     manifest.json     ← data dictionary: what each file is + its use case
 ```
 
 `watchlist.csv` is a simple trend/momentum ranking from `tradingview.csv`
 (above SMA200, TV tech rating, RSI, ADX) — a starting cut for the research
 engine, **not** a recommendation.
+
+`swing_candidates.csv` is a separate 2–3 week swing shortlist (~5% target)
+using relative strength, delivery %, F&O confirmation and event-risk filters.
 
 ## Run locally
 
@@ -108,8 +122,7 @@ to plain `requests` (NSE will then usually 403).
 
 ## Roadmap (free enhancements)
 
-- NSE bhavcopy for delivery % and full-market breadth (delivery agent built then removed; revivable in `collector/delivery/`)
-- Shareholding filings → promoter holding, pledge (ownership agent built then removed; revivable in `collector/ownership/`)
+- Shareholding filings → promoter holding, pledge (ownership agent in `collector/ownership/`)
 - Insider deals (SAST/PIT), bulk-deal history
 - RBI / MOSPI scrapers for repo rate, CPI, GDP (currently placeholders in `macro.csv`)
 - Concall / guidance extraction via the News agent + LLM
