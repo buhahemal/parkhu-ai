@@ -46,3 +46,31 @@ jobs:
             git commit -m "data: daily collection $(date -u +'%Y-%m-%d')"
             git push
           fi
+
+      - name: Publish output links
+        if: always()
+        run: |
+          DATE="${PARKHU_RUN_DATE:-$(TZ=Asia/Kolkata date +%Y-%m-%d)}"
+          REPO="${{ github.repository }}"
+          BRANCH="${{ github.ref_name }}"
+          BASE_RAW="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
+          BASE_BLOB="https://github.com/${REPO}/blob/${BRANCH}"
+          OUT_DIR="output/${DATE}"
+
+          {
+            echo "## Parkhu Data — ${DATE}"
+            echo ""
+            echo "Public links to today's collected files (branch \`${BRANCH}\`):"
+            echo ""
+            echo "**Folder:** [${OUT_DIR}/](${BASE_BLOB}/${OUT_DIR}/)"
+            echo ""
+            echo "| File | Raw (direct) | Browse |"
+            echo "|------|--------------|--------|"
+            if [ -d "$OUT_DIR" ]; then
+              find "$OUT_DIR" -maxdepth 1 -type f -printf '%f\n' | sort | while read -r name; do
+                echo "| \`${name}\` | [raw](${BASE_RAW}/${OUT_DIR}/${name}) | [view](${BASE_BLOB}/${OUT_DIR}/${name}) |"
+              done
+            else
+              echo "| _(no files — run may have failed)_ | | |"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

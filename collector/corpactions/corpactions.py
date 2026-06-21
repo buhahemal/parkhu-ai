@@ -1,42 +1,46 @@
 """Corporate Actions Agent — dividends, splits, bonuses, buybacks, ex-dates.
 
-Source: NSE corporate-filings JSON (per symbol, free). Corporate actions are
-needed both as event setups (ex-date runs, buyback support) and so the
-research engine can reason about price adjustments around splits/bonuses
-instead of mistaking them for real moves.
-
-Per-symbol calls are paced to stay polite with NSE. Degrades to an empty CSV
-on failure.
+Source: NSE corporate-filings JSON (bulk equities feed, free). Keeps the
+500 most recent events by ex-date so the run stays fast and the output is
+a manageable event calendar for the research engine.
 """
 from __future__ import annotations
 
-import time
+from datetime import datetime, timedelta
 
 import pandas as pd
 
 from collector.utils import get_logger, nse_session, fetch_json, save_csv, empty_csv
 from config import settings
-from config.universe import scanning_universe
 
 log = get_logger("corpactions")
 
 COLUMNS = ["symbol", "ex_date", "record_date", "purpose", "face_value", "series"]
 
-URL = ("https://www.nseindia.com/api/corporates-corporateActions"
-       "?index=equities&symbol={sym}")
+URL = "https://www.nseindia.com/api/corporates-corporateActions?index=equities"
 REFERER = "https://www.nseindia.com/companies-listing/corporate-filings-actions"
-PACING_SECONDS = 0.3
-MAX_PER_SYMBOL = 8  # keep the most recent/upcoming actions per name
+MAX_EVENTS = 500
+LOOKBACK_DAYS = 365
+LOOKAHEAD_DAYS = 90
 
 
-def _actions(session, symbol: str) -> list[dict]:
-    data = fetch_json(session, URL.format(sym=symbol), referer=REFERER)
+def _date_window(date: str | None) -> tuple[str, str]:
+    anchor = datetime.strptime(date or settings.run_date(), "%Y-%m-%d")
+    start = anchor - timedelta(days=LOOKBACK_DAYS)
+    end = anchor + timedelta(days=LOOKAHEAD_DAYS)
+    return start.strftime("%d-%m-%Y"), end.strftime("%d-%m-%Y")
+
+
+def _fetch(session, date: str | None) -> list[dict]:
+    from_date, to_date = _date_window(date)
+    url = f"{URL}&from_date={from_date}&to_date={to_date}"
+    data = fetch_json(session, url, referer=REFERER)
     if not isinstance(data, list):
         return []
     rows = []
-    for it in data[:MAX_PER_SYMBOL]:
+    for it in data:
         rows.append({
-            "symbol": symbol,
+            "symbol": it.get("symbol", ""),
             "ex_date": it.get("exDate", ""),
             "record_date": it.get("recDate", ""),
             "purpose": it.get("subject", ""),
@@ -46,31 +50,32 @@ def _actions(session, symbol: str) -> list[dict]:
     return rows
 
 
+def _latest_events(rows: list[dict], limit: int = MAX_EVENTS) -> pd.DataFrame:
+    out = pd.DataFrame(rows, columns=COLUMNS)
+    if out.empty:
+        return out
+    out["_ex_sort"] = pd.to_datetime(out["ex_date"], format="%d-%b-%Y", errors="coerce")
+    out = out.sort_values("_ex_sort", ascending=False, na_position="last")
+    return out.drop(columns="_ex_sort").head(limit).reset_index(drop=True)
+
+
 def collect(date: str | None = None) -> dict:
     session = nse_session()
-    rows = []
-    hits = 0
-    universe = scanning_universe()
-    if settings.MAX_SYMBOLS:
-        universe = universe[: settings.MAX_SYMBOLS]
-    for sym in universe:
-        try:
-            got = _actions(session, sym)
-            if got:
-                rows.extend(got)
-                hits += 1
-        except Exception as exc:  # noqa: BLE001 - never crash the pipeline
-            log.warning("corp actions failed for %s: %s", sym, exc)
-        time.sleep(PACING_SECONDS)
+    try:
+        rows = _fetch(session, date)
+    except Exception as exc:  # noqa: BLE001 - never crash the pipeline
+        log.error("corp actions fetch failed: %s", exc)
+        empty_csv("corporate_actions", COLUMNS, date)
+        return {"agent": "corpactions", "status": "error", "rows": 0, "error": str(exc)}
 
-    out = pd.DataFrame(rows, columns=COLUMNS)
+    out = _latest_events(rows)
     if out.empty:
         empty_csv("corporate_actions", COLUMNS, date)
         return {"agent": "corpactions", "status": "partial", "rows": 0}
+
     save_csv(out, "corporate_actions", date)
-    # Not every name has a pending action, so judge health by coverage breadth.
-    status = "ok" if hits >= 0.5 * len(universe) else "partial"
-    return {"agent": "corpactions", "status": status, "rows": len(out)}
+    log.info("corp actions: kept %d of %d fetched events", len(out), len(rows))
+    return {"agent": "corpactions", "status": "ok", "rows": len(out)}
 
 
 if __name__ == "__main__":

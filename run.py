@@ -21,6 +21,14 @@ import pandas as pd
 from collector.utils import get_logger, save_csv
 from collector.manifest import write_manifest
 from config import settings
+from config.publish import (
+    download_url,
+    file_links,
+    folder_preview_url,
+    preview_url,
+    repo_branch,
+    repo_slug,
+)
 from collector.tradingview import tradingview
 from collector.market import indices, sectors
 from collector.smartmoney import smartmoney
@@ -100,6 +108,15 @@ def main() -> None:
 
     wl_count = build_watchlist(date)
 
+    # Manifest first so report.json can link to every produced file.
+    write_manifest(date)
+
+    slug = repo_slug()
+    files = file_links(date, out_dir)
+    files["report.json"] = {
+        "download_url": download_url(date, "report.json"),
+        "preview_url": preview_url(date, "report.json"),
+    }
     report = {
         "date": date,
         "generated_at_ist": datetime.now(settings.IST).isoformat(),
@@ -109,12 +126,19 @@ def main() -> None:
         "ok": sum(1 for r in results if r["status"] == "ok"),
         "partial": sum(1 for r in results if r["status"] == "partial"),
         "errors": sum(1 for r in results if r["status"] == "error"),
+        "access_note": (
+            "Fetch download_url (raw GitHub) for file contents — LLM-readable plain text. "
+            "preview_url opens the file in GitHub's UI. Links work after this run is pushed."
+        ),
+        "repository": {
+            "github": slug,
+            "branch": repo_branch(),
+            "output_folder_preview_url": folder_preview_url(date),
+        },
+        "files": files,
     }
     with open(out_dir / "report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, default=str)
-
-    # Self-describing data dictionary for the research engine.
-    write_manifest(date)
 
     log.info("=== done in %ss | ok=%d partial=%d errors=%d | output: %s ===",
              report["duration_seconds"], report["ok"], report["partial"],
