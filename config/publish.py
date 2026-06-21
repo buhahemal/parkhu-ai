@@ -92,6 +92,38 @@ def folder_preview_url(date: str) -> str | None:
     return f"https://github.com/{slug}/tree/{repo_branch()}/{output_rel_path(date)}"
 
 
+def zip_download_url(zip_name: str) -> str | None:
+    """Raw GitHub URL for an archive under output/."""
+    slug = repo_slug()
+    if not slug:
+        return None
+    return f"https://raw.githubusercontent.com/{slug}/{repo_branch()}/output/{zip_name}"
+
+
+def zip_preview_url(zip_name: str) -> str | None:
+    slug = repo_slug()
+    if not slug:
+        return None
+    return f"https://github.com/{slug}/blob/{repo_branch()}/output/{zip_name}"
+
+
+def package_links(date: str) -> dict[str, dict[str, str | None]]:
+    dated_name = f"{date}.zip"
+    latest_name = "latest.zip"
+    return {
+        "dated": {
+            "filename": dated_name,
+            "download_url": zip_download_url(dated_name),
+            "preview_url": zip_preview_url(dated_name),
+        },
+        "latest": {
+            "filename": latest_name,
+            "download_url": zip_download_url(latest_name),
+            "preview_url": zip_preview_url(latest_name),
+        },
+    }
+
+
 def file_links(date: str, out_dir: Path | None = None) -> dict[str, dict[str, str | None]]:
     """Public links for every file in output/<date>/."""
     out_dir = out_dir or settings.daily_output_dir(date)

@@ -73,4 +73,11 @@ jobs:
             else
               echo "| _(no files — run may have failed)_ | | |"
             fi
+            echo ""
+            echo "### Zip packages"
+            echo ""
+            echo "| Archive | Raw (direct) | Browse |"
+            echo "|---------|--------------|--------|"
+            echo "| \`${DATE}.zip\` | [raw](${BASE_RAW}/output/${DATE}.zip) | [view](${BASE_BLOB}/output/${DATE}.zip) |"
+            echo "| \`latest.zip\` | [raw](${BASE_RAW}/output/latest.zip) | [view](${BASE_BLOB}/output/latest.zip) |"
           } >> "$GITHUB_STEP_SUMMARY"

@@ -20,11 +20,13 @@ import pandas as pd
 
 from collector.utils import get_logger, save_csv
 from collector.manifest import write_manifest
+from collector.package import write_output_zips
 from config import settings
 from config.publish import (
     download_url,
     file_links,
     folder_preview_url,
+    package_links,
     preview_url,
     repo_branch,
     repo_slug,
@@ -135,10 +137,13 @@ def main() -> None:
             "branch": repo_branch(),
             "output_folder_preview_url": folder_preview_url(date),
         },
+        "packages": package_links(date),
         "files": files,
     }
     with open(out_dir / "report.json", "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, default=str)
+
+    write_output_zips(date)
 
     log.info("=== done in %ss | ok=%d partial=%d errors=%d | output: %s ===",
              report["duration_seconds"], report["ok"], report["partial"],
