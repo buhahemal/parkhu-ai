@@ -9,7 +9,7 @@ one folder per day that the **Parkhu Research Engine (ChatGPT)** then reads.
 > database and the learning engine are separate layers per the Parkhu Constitution.
 
 ```
-GitHub Actions (08:00 IST)
+GitHub Actions (06:00 PM IST)
         │
         ▼
   Parkhu Data Collector  ──►  Normalized DB (CSV/JSON)  ──►  Research Engine
@@ -98,7 +98,7 @@ Environment overrides:
 
 ## Scheduling
 
-`.github/workflows/collect.yml` runs Mon–Fri at **02:30 UTC = 08:00 IST**,
+`.github/workflows/collect.yml` runs Mon–Fri at **12:30 UTC = 18:00 IST (6:00 PM)**,
 installs deps, runs `run.py`, and commits the day's `output/` back to the repo.
 You can also trigger it manually from the **Actions** tab (`workflow_dispatch`).
 
