@@ -82,13 +82,36 @@ SECTOR_INDICES = {
 
 # --- Macro / global tickers (Yahoo Finance) --------------------------------
 MACRO_TICKERS = {
+    # currencies & commodities
     "USDINR": "INR=X",
     "GOLD": "GC=F",
     "SILVER": "SI=F",
     "CRUDE_WTI": "CL=F",
     "CRUDE_BRENT": "BZ=F",
+    "COPPER": "HG=F",          # "Dr. Copper" — global growth proxy
+    "NAT_GAS": "NG=F",
+    "DOLLAR_INDEX": "DX-Y.NYB",
+    "BITCOIN": "BTC-USD",      # global risk-appetite proxy
+    # US markets & rates
     "US_SP500": "^GSPC",
     "US_NASDAQ": "^IXIC",
+    "US_DOW": "^DJI",
+    "US_VIX": "^VIX",          # global fear gauge
+    "US_5Y_YIELD": "^FVX",
     "US_10Y_YIELD": "^TNX",
-    "DOLLAR_INDEX": "DX-Y.NYB",
+    "US_30Y_YIELD": "^TYX",
+    # Asia (pre-open cues for India)
+    "NIKKEI": "^N225",
+    "HANG_SENG": "^HSI",
+    "SHANGHAI": "000001.SS",
+    "KOSPI": "^KS11",
+    "TAIWAN": "^TWII",
+    "ASX200": "^AXJO",
+    # Europe
+    "FTSE": "^FTSE",
+    "DAX": "^GDAXI",
+    "EURO_STOXX50": "^STOXX50E",
+    # emerging-market / India flows (ADR/ETF proxies)
+    "EM_ETF": "EEM",           # iShares MSCI Emerging Markets
+    "INDIA_ETF": "INDA",       # iShares MSCI India (FII sentiment proxy)
 }

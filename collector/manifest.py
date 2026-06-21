@@ -98,9 +98,12 @@ CATALOG = [
     }),
     ("macro.csv", {
         "agent": "macro", "source": "Yahoo Finance + manual policy placeholders",
-        "description": "USDINR, gold, silver, crude (WTI/Brent), US indices, US 10Y, DXY; "
+        "description": "Macro & global factors: USDINR, gold/silver, crude (WTI/Brent), "
+                       "copper, nat gas, DXY, Bitcoin; US markets (S&P/Nasdaq/Dow), US VIX, "
+                       "US 5/10/30Y yields; Asia (Nikkei, Hang Seng, Shanghai, Kospi, Taiwan, "
+                       "ASX); Europe (FTSE, DAX, Euro Stoxx 50); EM & India ETFs (EEM, INDA); "
                        "repo/CPI/GDP placeholders pending RBI/MOSPI feeds.",
-        "use_case": "Top-down macro and global-cue context.",
+        "use_case": "Top-down macro and global-cue context (pre-open Asia/Europe, US risk gauge).",
         "key_columns": ["metric", "value", "pct_change"],
     }),
     ("delivery.csv", {
@@ -157,10 +160,12 @@ CATALOG = [
     ("market_summary.csv", {
         "agent": "market_summary (derived)", "source": "indices + macro + fii + tradingview",
         "description": "One-row market regime: Nifty/BankNifty trend, India VIX & level, "
-                       "best/worst sector, FII/DII net, crude, USDINR, overall risk.",
-        "use_case": "Top-down context in one row — no need to infer market state from many files.",
-        "key_columns": ["market_regime", "nifty_trend", "india_vix", "vix_level",
-                        "best_sector", "fii_net", "overall_risk"],
+                       "best/worst sector, FII/DII net, crude, USDINR — plus a GLOBAL block "
+                       "(US S&P/Dow %, US VIX, DXY, US 10Y, Asia & Europe cues, risk-on/off).",
+        "use_case": "Top-down domestic + global context in one row — no need to infer "
+                    "market state from many files.",
+        "key_columns": ["market_regime", "nifty_trend", "india_vix", "fii_net",
+                        "us_vix", "asia_cue", "europe_cue", "global_risk", "overall_risk"],
     }),
     ("watchlist.csv", {
         "agent": "run.py (derived)", "source": "computed from tradingview.csv",

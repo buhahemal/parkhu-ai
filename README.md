@@ -29,7 +29,7 @@ GitHub Actions (02:30 PM IST — testing)
 | Corp Actions | `collector/corpactions/` | dividends, splits, bonus, buyback, ex-dates | NSE filings |
 | News | `collector/news/` | corporate announcements, board meetings | NSE |
 | Indices / Sectors | `collector/market/` | broad-market & sectoral index levels (incl. India VIX) | Yahoo Finance |
-| Macro | `collector/macro/` | USDINR, gold, silver, crude, US markets, 10Y yield, DXY | Yahoo Finance |
+| Macro / Global | `collector/macro/` | USDINR, gold/silver, crude, copper, DXY, Bitcoin; US (S&P/Nasdaq/Dow/VIX/yields); Asia (Nikkei/HangSeng/Shanghai/Kospi/Taiwan/ASX); Europe (FTSE/DAX/Stoxx); EM & India ETFs | Yahoo Finance |
 
 **Derived signals** (computed after collection, in `collector/derived/`):
 

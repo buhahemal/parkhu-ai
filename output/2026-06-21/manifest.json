@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T14:19:57.534009+05:30",
+  "generated_at_ist": "2026-06-21T14:35:19.085076+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -177,15 +177,15 @@
     "macro.csv": {
       "agent": "macro",
       "source": "Yahoo Finance + manual policy placeholders",
-      "description": "USDINR, gold, silver, crude (WTI/Brent), US indices, US 10Y, DXY; repo/CPI/GDP placeholders pending RBI/MOSPI feeds.",
-      "use_case": "Top-down macro and global-cue context.",
+      "description": "Macro & global factors: USDINR, gold/silver, crude (WTI/Brent), copper, nat gas, DXY, Bitcoin; US markets (S&P/Nasdaq/Dow), US VIX, US 5/10/30Y yields; Asia (Nikkei, Hang Seng, Shanghai, Kospi, Taiwan, ASX); Europe (FTSE, DAX, Euro Stoxx 50); EM & India ETFs (EEM, INDA); repo/CPI/GDP placeholders pending RBI/MOSPI feeds.",
+      "use_case": "Top-down macro and global-cue context (pre-open Asia/Europe, US risk gauge).",
       "key_columns": [
         "metric",
         "value",
         "pct_change"
       ],
       "present": true,
-      "rows": 12
+      "rows": 30
     },
     "delivery.csv": {
       "agent": "delivery",
@@ -286,15 +286,17 @@
     "market_summary.csv": {
       "agent": "market_summary (derived)",
       "source": "indices + macro + fii + tradingview",
-      "description": "One-row market regime: Nifty/BankNifty trend, India VIX & level, best/worst sector, FII/DII net, crude, USDINR, overall risk.",
-      "use_case": "Top-down context in one row \u2014 no need to infer market state from many files.",
+      "description": "One-row market regime: Nifty/BankNifty trend, India VIX & level, best/worst sector, FII/DII net, crude, USDINR \u2014 plus a GLOBAL block (US S&P/Dow %, US VIX, DXY, US 10Y, Asia & Europe cues, risk-on/off).",
+      "use_case": "Top-down domestic + global context in one row \u2014 no need to infer market state from many files.",
       "key_columns": [
         "market_regime",
         "nifty_trend",
         "india_vix",
-        "vix_level",
-        "best_sector",
         "fii_net",
+        "us_vix",
+        "asia_cue",
+        "europe_cue",
+        "global_risk",
         "overall_risk"
       ],
       "present": true,

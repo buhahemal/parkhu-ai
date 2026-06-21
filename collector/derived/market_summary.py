@@ -21,6 +21,9 @@ COLUMNS = [
     "banknifty_trend", "banknifty_pct_change", "india_vix", "vix_level",
     "best_sector", "best_sector_perf_1m", "worst_sector", "worst_sector_perf_1m",
     "fii_net", "dii_net", "crude", "crude_pct_change", "usdinr", "usdinr_pct_change",
+    # global block
+    "us_sp500_pct", "us_dow_pct", "us_vix", "us_vix_pct", "dxy", "dxy_pct",
+    "us_10y", "asia_cue", "europe_cue", "global_risk",
     "overall_risk", "generated_at_ist",
 ]
 
@@ -117,6 +120,32 @@ def collect(date: str | None = None) -> dict:
     crude, crude_pct = _macro(macro, "CRUDE_WTI")
     usdinr, usdinr_pct = _macro(macro, "USDINR")
 
+    # --- Global block ------------------------------------------------------
+    sp500, sp500_pct = _macro(macro, "US_SP500")
+    _, dow_pct = _macro(macro, "US_DOW")
+    us_vix, us_vix_pct = _macro(macro, "US_VIX")
+    dxy, dxy_pct = _macro(macro, "DOLLAR_INDEX")
+    us_10y, _ = _macro(macro, "US_10Y_YIELD")
+
+    def _region_cue(metrics: list[str]) -> str:
+        vals = [p for p in (_macro(macro, m)[1] for m in metrics) if p is not None]
+        if not vals:
+            return "Unknown"
+        avg = sum(vals) / len(vals)
+        return "Bullish" if avg > 0.2 else "Bearish" if avg < -0.2 else "Mixed"
+
+    asia_cue = _region_cue(["NIKKEI", "HANG_SENG", "KOSPI", "SHANGHAI"])
+    europe_cue = _region_cue(["FTSE", "DAX", "EURO_STOXX50"])
+
+    # Global risk-on/off from US fear gauge + US tape.
+    us_trend = _trend(sp500_pct)
+    if us_vix is not None and us_vix < 16 and us_trend == "Bullish":
+        global_risk = "Risk-On"
+    elif (us_vix is not None and us_vix > 22) or us_trend == "Bearish":
+        global_risk = "Risk-Off"
+    else:
+        global_risk = "Neutral"
+
     # Regime: combine index trend with volatility regime.
     if nifty_trend == "Bullish" and vix_level in ("Low", "Medium"):
         regime = "Bullish"
@@ -140,6 +169,10 @@ def collect(date: str | None = None) -> dict:
         "fii_net": fii_net, "dii_net": dii_net,
         "crude": crude, "crude_pct_change": crude_pct,
         "usdinr": usdinr, "usdinr_pct_change": usdinr_pct,
+        "us_sp500_pct": sp500_pct, "us_dow_pct": dow_pct,
+        "us_vix": us_vix, "us_vix_pct": us_vix_pct,
+        "dxy": dxy, "dxy_pct": dxy_pct, "us_10y": us_10y,
+        "asia_cue": asia_cue, "europe_cue": europe_cue, "global_risk": global_risk,
         "overall_risk": overall_risk,
         "generated_at_ist": datetime.now(settings.IST).isoformat(),
     }
