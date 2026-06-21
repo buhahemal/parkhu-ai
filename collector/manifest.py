@@ -21,10 +21,11 @@ CATALOG = [
     ("tradingview.csv", {
         "agent": "tradingview", "source": "TradingView screener API",
         "description": "Single-call snapshot of the screener universe (~366 NSE names, "
-                       "market cap >= Rs 20,000 cr): price, valuation, quality, technicals "
-                       "and TradingView's Buy/Sell ratings (tech/MA/oscillator).",
+                       "market cap >= Rs 20,000 cr): identity, price, volume, performance, "
+                       "volatility, technicals, valuation, profitability, dividends, "
+                       "analyst targets and TradingView ratings.",
         "use_case": "Broad-universe scan in one request; CI-friendly (not NSE IP-blocked). "
-                    "Ratings and multi-factor fields for fast first-pass ranking.",
+                    "108+ TradingView screener fields for deep first-pass ranking.",
         "key_columns": ["symbol", "market_cap", "pe", "roe", "tech_rating", "rsi", "perf_1y"],
     }),
     ("indices.csv", {

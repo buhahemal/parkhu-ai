@@ -69,23 +69,130 @@ SCREENER_FILTER2 = {
     ],
 }
 
-# (tradingview field, output column) — order defines the CSV layout. Positional
-# response mapping depends on this exact order, so keep field names valid.
-COLUMN_SPEC = [
-    ("description", "company"), ("sector", "sector"), ("industry", "industry"),
-    ("close", "close"), ("change", "change_pct"), ("volume", "volume"),
-    ("relative_volume_10d_calc", "rel_volume"), ("market_cap_basic", "market_cap"),
-    ("price_earnings_ttm", "pe"), ("price_book_fq", "pb"),
-    ("return_on_equity", "roe"), ("debt_to_equity", "debt_to_equity"),
-    ("earnings_per_share_diluted_ttm", "eps_ttm"), ("dividends_yield_current", "div_yield"),
-    ("TechRating_1D.tr", "tech_rating"), ("MARating_1D.tr", "ma_rating"),
-    ("OsRating_1D.tr", "osc_rating"), ("RSI", "rsi"), ("Mom", "momentum"),
-    ("AO", "awesome_osc"), ("CCI20", "cci20"), ("Stoch.K", "stoch_k"),
-    ("Stoch.D", "stoch_d"), ("MACD.macd", "macd"), ("ADX", "adx"), ("ATR", "atr"),
-    ("SMA50", "sma50"), ("SMA200", "sma200"), ("Perf.W", "perf_1w"),
-    ("Perf.1M", "perf_1m"), ("Perf.Y", "perf_1y"),
-    ("candlestick_patterns_1D", "candle_patterns"),
+# Valid TradingView screener fields (probe-tested against the India scan API).
+VALID_TV_COLUMNS = [
+    # identity
+    "description", "sector", "industry", "country", "currency",
+    "fundamental_currency_code", "type", "typespecs", "number_of_employees",
+    "total_shares_outstanding_fundamental", "float_shares_percent_current",
+    # price / range
+    "close", "open", "high", "low", "change", "change_abs", "gap", "VWAP",
+    "Value.Traded", "price_52_week_high", "price_52_week_low", "High.All",
+    "High.1M", "Low.1M", "High.3M", "Low.3M", "High.6M", "Low.6M",
+    # volume
+    "volume", "average_volume_10d_calc", "average_volume_30d_calc",
+    "average_volume_90d_calc", "relative_volume_10d_calc",
+    # performance
+    "Perf.W", "Perf.1M", "Perf.3M", "Perf.6M", "Perf.YTD", "Perf.Y",
+    "Perf.5Y", "Perf.All",
+    # volatility / risk
+    "Volatility.D", "Volatility.W", "Volatility.M", "ATR", "beta_1_year",
+    "beta_3_year", "SMA20", "SMA50", "SMA100", "SMA200", "EMA50", "EMA200",
+    # oscillators
+    "RSI", "RSI7", "Mom", "AO", "CCI20", "Stoch.K", "Stoch.D", "Stoch.RSI.K",
+    "Stoch.RSI.D", "MACD.macd", "MACD.signal", "ADX", "ADX+DI", "ADX-DI",
+    "W.R", "ROC", "UO", "BBPower", "BB.upper", "BB.lower",
+    # ratings
+    "Recommend.All", "Recommend.MA", "Recommend.Other", "TechRating_1D.tr",
+    "MARating_1D.tr", "OsRating_1D.tr", "candlestick_patterns_1D",
+    # valuation
+    "market_cap_basic", "price_earnings_ttm", "price_earnings_growth_ttm",
+    "price_book_fq", "price_sales_current", "price_free_cash_flow_ttm",
+    "enterprise_value_ebitda_ttm", "enterprise_value_fq",
+    "price_to_cash_f_operating_activities_ttm",
+    # profitability / margins
+    "return_on_equity", "return_on_assets", "return_on_invested_capital",
+    "gross_margin", "operating_margin", "net_margin", "pre_tax_margin",
+    # leverage / liquidity
+    "debt_to_equity", "total_debt_to_total_equity_fq", "current_ratio",
+    "quick_ratio",
+    # dividends
+    "dividends_yield_current", "dividends_yield", "dividend_payout_ratio_ttm",
+    # analyst
+    "recommendation_mark", "price_target_1y", "price_target_average",
+    "number_of_analyst_opinions_fq",
 ]
+
+# Stable CSV names for fields already consumed downstream (watchlist, etc.).
+_COLUMN_ALIASES = {
+    "description": "company",
+    "change": "change_pct",
+    "relative_volume_10d_calc": "rel_volume",
+    "market_cap_basic": "market_cap",
+    "price_earnings_ttm": "pe",
+    "price_book_fq": "pb",
+    "return_on_equity": "roe",
+    "dividends_yield_current": "div_yield",
+    "TechRating_1D.tr": "tech_rating",
+    "MARating_1D.tr": "ma_rating",
+    "OsRating_1D.tr": "osc_rating",
+    "AO": "awesome_osc",
+    "Mom": "momentum",
+    "candlestick_patterns_1D": "candle_patterns",
+    "Perf.W": "perf_1w",
+    "Perf.1M": "perf_1m",
+    "Perf.3M": "perf_3m",
+    "Perf.6M": "perf_6m",
+    "Perf.YTD": "perf_ytd",
+    "Perf.Y": "perf_1y",
+    "Perf.5Y": "perf_5y",
+    "Perf.All": "perf_all",
+    "MACD.macd": "macd",
+    "MACD.signal": "macd_signal",
+    "Value.Traded": "value_traded",
+    "VWAP": "vwap",
+    "W.R": "williams_r",
+    "ADX+DI": "adx_plus_di",
+    "ADX-DI": "adx_minus_di",
+    "BB.upper": "bb_upper",
+    "BB.lower": "bb_lower",
+    "Volatility.D": "volatility_d",
+    "Volatility.W": "volatility_w",
+    "Volatility.M": "volatility_m",
+    "High.All": "high_all",
+    "High.1M": "high_1m",
+    "Low.1M": "low_1m",
+    "High.3M": "high_3m",
+    "Low.3M": "low_3m",
+    "High.6M": "high_6m",
+    "Low.6M": "low_6m",
+    "Stoch.K": "stoch_k",
+    "Stoch.D": "stoch_d",
+    "Stoch.RSI.K": "stoch_rsi_k",
+    "Stoch.RSI.D": "stoch_rsi_d",
+    "Recommend.All": "recommend_all",
+    "Recommend.MA": "recommend_ma",
+    "Recommend.Other": "recommend_other",
+}
+
+# Kept for backward compatibility with earlier tradingview.csv consumers.
+_LEGACY_TV_COLUMNS = [
+    ("earnings_per_share_diluted_ttm", "eps_ttm"),
+]
+
+
+def _csv_column(tv_field: str) -> str:
+    if tv_field in _COLUMN_ALIASES:
+        return _COLUMN_ALIASES[tv_field]
+    return tv_field
+
+
+def _build_column_spec() -> list[tuple[str, str]]:
+    seen: set[str] = set()
+    spec: list[tuple[str, str]] = []
+    for tv in VALID_TV_COLUMNS:
+        if tv in seen:
+            continue
+        seen.add(tv)
+        spec.append((tv, _csv_column(tv)))
+    for tv, name in _LEGACY_TV_COLUMNS:
+        if tv not in seen:
+            seen.add(tv)
+            spec.append((tv, name))
+    return spec
+
+
+COLUMN_SPEC = _build_column_spec()
 
 # Earnings/fundamentals columns from the SAME scan — these replace the old
 # per-symbol Yahoo earnings agent (which took ~3 min for 366 names). Epoch-
@@ -110,7 +217,21 @@ EARNINGS_SPEC = [
 ]
 
 # All fields fetched in one scan; both CSVs are sliced from this single call.
-_FULL_FIELDS = [tv for tv, _ in COLUMN_SPEC] + [tv for tv, _, _ in EARNINGS_SPEC]
+def _full_scan_fields() -> list[str]:
+    seen: set[str] = set()
+    fields: list[str] = []
+    for tv, _, _ in EARNINGS_SPEC:
+        if tv not in seen:
+            seen.add(tv)
+            fields.append(tv)
+    for tv, _ in COLUMN_SPEC:
+        if tv not in seen:
+            seen.add(tv)
+            fields.append(tv)
+    return fields
+
+
+_FULL_FIELDS = _full_scan_fields()
 
 
 def scan(columns: list[str], filters=None, filter2=None,
