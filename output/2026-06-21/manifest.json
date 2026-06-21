@@ -1,14 +1,14 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T13:11:53.445743+05:30",
+  "generated_at_ist": "2026-06-21T13:40:30.858140+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
       "agent": "tradingview",
       "source": "TradingView screener API",
-      "description": "Single-call snapshot of the screener universe (~366 NSE names, market cap >= Rs 20,000 cr): price, valuation, quality, technicals and TradingView's Buy/Sell ratings (tech/MA/oscillator).",
-      "use_case": "Broad-universe scan in one request; CI-friendly (not NSE IP-blocked). Ratings and multi-factor fields for fast first-pass ranking.",
+      "description": "Single-call snapshot of the screener universe (~366 NSE names, market cap >= Rs 20,000 cr): identity, price, volume, performance, volatility, technicals, valuation, profitability, dividends, analyst targets and TradingView ratings.",
+      "use_case": "Broad-universe scan in one request; CI-friendly (not NSE IP-blocked). 108+ TradingView screener fields for deep first-pass ranking.",
       "key_columns": [
         "symbol",
         "market_cap",
@@ -186,6 +186,77 @@
       ],
       "present": true,
       "rows": 12
+    },
+    "delivery.csv": {
+      "agent": "delivery",
+      "source": "NSE bhavcopy (sec_bhavdata_full)",
+      "description": "Security-wise delivery %, volume and turnover for the universe from the latest available bhavcopy.",
+      "use_case": "Separate genuine accumulation (high delivery) from intraday churn; swing-trade quality filter.",
+      "key_columns": [
+        "symbol",
+        "deliv_pct",
+        "ttl_traded_qty",
+        "close"
+      ],
+      "present": true,
+      "rows": 356
+    },
+    "relative_strength.csv": {
+      "agent": "relative_strength (derived)",
+      "source": "tradingview.csv + sectors.csv",
+      "description": "Stock performance vs NIFTY 50 and mapped NIFTY sector index (1w/1m).",
+      "use_case": "Leadership filter for swing trades \u2014 prefer RS leaders.",
+      "key_columns": [
+        "symbol",
+        "rs_vs_nifty_1m",
+        "rs_vs_sector_1m",
+        "perf_1m"
+      ],
+      "present": true,
+      "rows": 366
+    },
+    "event_risk.csv": {
+      "agent": "event_risk (derived)",
+      "source": "earnings + corporate_actions + news",
+      "description": "Earnings, corp-action and news flags inside a 21-day event window.",
+      "use_case": "Avoid holding into results/ex-dates for 2\u20133 week swings.",
+      "key_columns": [
+        "symbol",
+        "earnings_within_21d",
+        "corp_action_within_21d",
+        "event_risk_score"
+      ],
+      "present": true,
+      "rows": 366
+    },
+    "fno_momentum.csv": {
+      "agent": "fno_momentum (derived)",
+      "source": "tradingview + oi_spurts + most_active_underlying",
+      "description": "Names with F&O OI buildup and derivatives activity scores.",
+      "use_case": "Confirm swing/intraday interest via derivatives positioning.",
+      "key_columns": [
+        "symbol",
+        "pct_change_oi",
+        "fno_score",
+        "in_oi_spurt"
+      ],
+      "present": true,
+      "rows": 203
+    },
+    "swing_candidates.csv": {
+      "agent": "swing_candidates (derived)",
+      "source": "multi-file composite score",
+      "description": "Top ~20 names scored for 2\u20133 week swing holds targeting ~5% \u2014 trend, RS, delivery, F&O, upside room, event-risk penalties. NOT a recommendation.",
+      "use_case": "Focused swing shortlist for the research engine.",
+      "key_columns": [
+        "symbol",
+        "score",
+        "rs_vs_nifty_1m",
+        "deliv_pct",
+        "target_5pct"
+      ],
+      "present": true,
+      "rows": 20
     },
     "watchlist.csv": {
       "agent": "run.py (derived)",

@@ -53,7 +53,7 @@ TRENT,False,52.0,2026-08-12,False,,0,0
 ICICIAMC,False,73.0,2026-09-02,False,,0,0
 POWERINDIA,False,38.0,2026-07-29,False,Dividend - Rs 8 Per Share,0,0
 BSE,False,52.0,2026-08-12,True,Dividend - Rs 10 Per Share,0,2
-TVSMOTOR,False,32.0,2026-07-23,False,,1,1
+TVSMOTOR,False,32.0,2026-07-23,False,,0,0
 SOLARINDS,False,38.0,2026-07-29,False,,0,0
 CUMMINSIND,False,52.0,2026-08-12,False,,0,0
 IDEA,False,57.0,2026-08-17,False,,0,0
@@ -134,7 +134,7 @@ NTPCGREEN,False,43.0,2026-08-03,False,,0,0
 SRF,False,38.0,2026-07-29,False,,0,0
 ATGL,False,43.0,2026-08-03,False,,0,0
 MEESHO,False,73.0,2026-09-02,False,,0,0
-YESBANK,False,29.0,2026-07-20,False,,0,0
+YESBANK,False,29.0,2026-07-20,False,,1,1
 FEDERALBNK,False,25.0,2026-07-16,False,,0,0
 NMDC,False,47.0,2026-08-07,False,,0,0
 AUBANK,False,29.0,2026-07-20,False,,0,0
