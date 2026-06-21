@@ -1,14 +1,14 @@
 {
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T12:19:24.145408+05:30",
-  "duration_seconds": 27.8,
+  "generated_at_ist": "2026-06-21T13:03:21.438824+05:30",
+  "duration_seconds": 267.1,
   "watchlist_size": 25,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
       "rows": 366,
-      "seconds": 0.9
+      "seconds": 0.2
     },
     {
       "agent": "earnings",
@@ -20,37 +20,37 @@
       "agent": "indices",
       "status": "ok",
       "rows": 5,
-      "seconds": 1.7
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 8,
-      "seconds": 1.4
+      "seconds": 0.6
     },
     {
       "agent": "smartmoney",
       "status": "partial",
       "rows": 2,
-      "seconds": 3.4
+      "seconds": 4.6
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.0
+      "seconds": 4.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 5.1
+      "seconds": 5.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
-      "rows": 24,
-      "seconds": 5.2
+      "rows": 2374,
+      "seconds": 245.7
     },
     {
       "agent": "news",
@@ -62,7 +62,7 @@
       "agent": "macro",
       "status": "ok",
       "rows": 12,
-      "seconds": 1.6
+      "seconds": 0.7
     }
   ],
   "ok": 9,
