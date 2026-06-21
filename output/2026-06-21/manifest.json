@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T14:35:19.085076+05:30",
+  "generated_at_ist": "2026-06-21T14:37:05.058264+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
