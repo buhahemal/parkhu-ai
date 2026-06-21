@@ -1,0 +1,45 @@
+name: Parkhu Daily Data Collection
+
+# 08:00 AM IST == 02:30 UTC
+on:
+  schedule:
+    - cron: "30 2 * * 1-5"   # Mon–Fri, pre-market IST
+  workflow_dispatch: {}       # allow manual runs from the Actions tab
+
+permissions:
+  contents: write             # needed to commit the day's output back
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Parkhu Data Collector
+        run: python run.py
+
+      - name: Commit collected data
+        run: |
+          git config user.name  "parkhu-bot"
+          git config user.email "parkhu-bot@users.noreply.github.com"
+          git add output/ logs/ || true
+          if git diff --staged --quiet; then
+            echo "No new data to commit."
+          else
+            git commit -m "data: daily collection $(date -u +'%Y-%m-%d')"
+            git push
+          fi

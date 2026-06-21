@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs
+logs/*.log
+
+# OS
+.DS_Store
+
+# Keep output structure but ignore nothing by default so daily data is committed.
+# If you do NOT want to commit collected data, uncomment the next line:
+# output/

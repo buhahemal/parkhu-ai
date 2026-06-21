@@ -1,0 +1,220 @@
+{
+  "dataset": "Parkhu Data Collector \u2014 daily output",
+  "date": "2026-06-21",
+  "generated_at_ist": "2026-06-21T12:19:24.146818+05:30",
+  "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
+  "files": {
+    "tradingview.csv": {
+      "agent": "tradingview",
+      "source": "TradingView screener API",
+      "description": "Single-call snapshot of the screener universe (~366 NSE names, market cap >= Rs 20,000 cr): price, valuation, quality, technicals and TradingView's Buy/Sell ratings (tech/MA/oscillator).",
+      "use_case": "Broad-universe scan in one request; CI-friendly (not NSE IP-blocked). Ratings and multi-factor fields for fast first-pass ranking.",
+      "key_columns": [
+        "symbol",
+        "market_cap",
+        "pe",
+        "roe",
+        "tech_rating",
+        "rsi",
+        "perf_1y"
+      ],
+      "present": true,
+      "rows": 366
+    },
+    "indices.csv": {
+      "agent": "indices",
+      "source": "Yahoo Finance",
+      "description": "Broad-market index levels (NIFTY 50, BANK, NEXT 50, India VIX, SENSEX).",
+      "use_case": "Market regime context; India VIX gauges volatility regime.",
+      "key_columns": [
+        "index",
+        "close",
+        "pct_change"
+      ],
+      "present": true,
+      "rows": 5
+    },
+    "sectors.csv": {
+      "agent": "sectors",
+      "source": "Yahoo Finance",
+      "description": "Sectoral index levels (IT, PHARMA, AUTO, FMCG, METAL, etc.).",
+      "use_case": "Sector rotation and relative-strength ranking.",
+      "key_columns": [
+        "sector",
+        "close",
+        "pct_change"
+      ],
+      "present": true,
+      "rows": 8
+    },
+    "earnings.csv": {
+      "agent": "earnings",
+      "source": "TradingView screener (same scan as tradingview.csv)",
+      "description": "TTM revenue / gross / operating / net income / EBITDA / EPS, with YoY and QoQ growth, latest fiscal period, and last/next earnings dates.",
+      "use_case": "Earnings momentum (growth) and event awareness around results.",
+      "key_columns": [
+        "symbol",
+        "revenue_yoy_pct",
+        "eps_yoy_pct",
+        "eps_qoq_pct",
+        "next_earnings_date"
+      ],
+      "present": true,
+      "rows": 366
+    },
+    "fii.csv": {
+      "agent": "smartmoney",
+      "source": "NSE",
+      "description": "Daily FII/FPI and DII cash-market buy/sell/net values.",
+      "use_case": "Institutional flow direction \u2014 risk-on/off bias.",
+      "key_columns": [
+        "date",
+        "category",
+        "net_value"
+      ],
+      "present": true,
+      "rows": 2
+    },
+    "block_deals.csv": {
+      "agent": "smartmoney",
+      "source": "NSE",
+      "description": "Block deals: client, side, quantity and price.",
+      "use_case": "Spot large institutional/known-investor positioning.",
+      "key_columns": [
+        "symbol",
+        "client",
+        "deal_type",
+        "qty",
+        "price"
+      ],
+      "present": true,
+      "rows": 0
+    },
+    "options.csv": {
+      "agent": "options",
+      "source": "NSE (option-chain v3)",
+      "description": "Index option-chain analytics for NIFTY/BANKNIFTY: total CE/PE OI, PCR, max pain and ATM IV for the nearest expiry.",
+      "use_case": "Index sentiment, support/resistance via max pain, volatility via IV.",
+      "key_columns": [
+        "index",
+        "expiry",
+        "pcr",
+        "max_pain",
+        "atm_iv"
+      ],
+      "present": true,
+      "rows": 2
+    },
+    "oi_spurts.csv": {
+      "agent": "derivatives",
+      "source": "NSE",
+      "description": "Underlyings with notable open-interest build-up vs the recent average.",
+      "use_case": "Detect fresh positioning/interest before it shows in price.",
+      "key_columns": [
+        "symbol",
+        "change_in_oi",
+        "pct_change_oi",
+        "underlying_value"
+      ],
+      "present": true,
+      "rows": 216
+    },
+    "most_active_contracts.csv": {
+      "agent": "derivatives",
+      "source": "NSE",
+      "description": "Most-traded F&O contracts by volume (incl. strike, expiry, OI).",
+      "use_case": "Where derivatives liquidity and attention are concentrated.",
+      "key_columns": [
+        "identifier",
+        "underlying",
+        "contracts_traded",
+        "open_interest"
+      ],
+      "present": true,
+      "rows": 20
+    },
+    "most_active_underlying.csv": {
+      "agent": "derivatives",
+      "source": "NSE",
+      "description": "Fut+opt volume and turnover per underlying.",
+      "use_case": "Rank names by derivatives activity / participation.",
+      "key_columns": [
+        "symbol",
+        "tot_volume",
+        "tot_turnover",
+        "latest_oi"
+      ],
+      "present": true,
+      "rows": 216
+    },
+    "corporate_actions.csv": {
+      "agent": "corpactions",
+      "source": "NSE corporate filings",
+      "description": "Dividends, splits, bonuses, buybacks and rights with ex/record dates.",
+      "use_case": "Event setups and correct interpretation of price moves around adjustments.",
+      "key_columns": [
+        "symbol",
+        "ex_date",
+        "purpose",
+        "face_value"
+      ],
+      "present": true,
+      "rows": 24
+    },
+    "news.csv": {
+      "agent": "news",
+      "source": "NSE",
+      "description": "Corporate announcements and board-meeting notices.",
+      "use_case": "Event/catalyst awareness per symbol.",
+      "key_columns": [
+        "symbol",
+        "subject",
+        "date"
+      ],
+      "present": true,
+      "rows": 20
+    },
+    "macro.csv": {
+      "agent": "macro",
+      "source": "Yahoo Finance + manual policy placeholders",
+      "description": "USDINR, gold, silver, crude (WTI/Brent), US indices, US 10Y, DXY; repo/CPI/GDP placeholders pending RBI/MOSPI feeds.",
+      "use_case": "Top-down macro and global-cue context.",
+      "key_columns": [
+        "metric",
+        "value",
+        "pct_change"
+      ],
+      "present": true,
+      "rows": 12
+    },
+    "watchlist.csv": {
+      "agent": "run.py (derived)",
+      "source": "computed from tradingview.csv",
+      "description": "Simple trend/momentum ranking (above SMA200, TV tech rating, RSI, ADX) \u2014 a starting cut, NOT a recommendation.",
+      "use_case": "First-pass shortlist for the research engine to investigate.",
+      "key_columns": [
+        "symbol",
+        "score",
+        "rsi",
+        "adx",
+        "tech_rating"
+      ],
+      "present": true,
+      "rows": 25
+    },
+    "report.json": {
+      "agent": "run.py",
+      "source": "pipeline",
+      "description": "Run summary: per-agent status (ok/partial/error), rows and timing.",
+      "use_case": "Data-quality gate \u2014 know which feeds are trustworthy this run.",
+      "key_columns": [
+        "date",
+        "agents",
+        "ok",
+        "partial",
+        "errors"
+      ],
+      "present": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+symbol,ex_date,record_date,purpose,face_value,series
+RELIANCE,05-Jun-2026,05-Jun-2026,Dividend - Rs 6 Per Share,10,EQ
+RELIANCE,14-Aug-2025,14-Aug-2025,Dividend - Rs 5.5 Per Share,10,EQ
+RELIANCE,28-Oct-2024,28-Oct-2024,Bonus 1:1,10,EQ
+RELIANCE,19-Aug-2024,19-Aug-2024,Dividend - Rs 10 Per Share,10,EQ
+RELIANCE,21-Aug-2023,21-Aug-2023,Dividend - Rs 9 Per Share,10,EQ
+RELIANCE,20-Jul-2023,20-Jul-2023,Demerger,10,EQ
+RELIANCE,18-Aug-2022,19-Aug-2022,Dividend - Rs 8 Per Share,10,EQ
+RELIANCE,11-Jun-2021,14-Jun-2021, Dividend - Rs 7 Per Share,10,EQ
+HDFCBANK,19-Jun-2026,19-Jun-2026,Dividend - Rs 13 Per Share,1,EQ
+HDFCBANK,26-Aug-2025,27-Aug-2025,Bonus 1:1,1,EQ
+HDFCBANK,25-Jul-2025,25-Jul-2025,Special Dividend - Rs 5 Per Share,1,EQ
+HDFCBANK,27-Jun-2025,27-Jun-2025,Dividend - Rs 22 Per Share,1,EQ
+HDFCBANK,10-May-2024,10-May-2024,Dividend - Rs 19.50 Per Share,1,EQ
+HDFCBANK,16-May-2023,16-May-2023,Dividend - Rs 19 Per Share,1,EQ
+HDFCBANK,12-May-2022,13-May-2022,Dividend - Rs 15.50 Per Share,1,EQ
+HDFCBANK,29-Jun-2021,30-Jun-2021, Dividend - Rs 6.50 Per Share,1,EQ
+BHARTIARTL,18-Jul-2025,18-Jul-2025,Dividend - Rs 16 Per Share,5,EQ
+BHARTIARTL,07-Aug-2024,07-Aug-2024,Dividend - Rs 8 Per Share,5,EQ
+BHARTIARTL,11-Aug-2023,11-Aug-2023,Dividend - Rs 4 Per Share,5,EQ
+BHARTIARTL,01-Aug-2022,02-Aug-2022,Dividend - Rs 3 Per Share,5,EQ
+BHARTIARTL,27-Sep-2021,28-Sep-2021, Rights 1:14 @ Premium Rs 530/-,5,EQ
+BHARTIARTL,06-Aug-2020,07-Aug-2020, Dividend - Rs 2 Per Share,5,EQ
+BHARTIARTL,23-Apr-2019,24-Apr-2019, Rights 19:67 @ Premium Rs 215 Per Share,5,EQ
+BHARTIARTL,05-Nov-2018,06-Nov-2018, Interim Dividend Rs - 2.50 Per Share,5,EQ
