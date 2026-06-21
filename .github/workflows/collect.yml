@@ -6,6 +6,9 @@ on:
     - cron: "30 2 * * 1-5"   # Mon–Fri, pre-market IST
   workflow_dispatch: {}       # allow manual runs from the Actions tab
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write             # needed to commit the day's output back
 
@@ -21,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.13"
           cache: "pip"
 
       - name: Install dependencies
