@@ -1,0 +1,2 @@
+market_regime,nifty_trend,nifty_pct_change,banknifty_trend,banknifty_pct_change,india_vix,vix_level,best_sector,best_sector_perf_1m,worst_sector,worst_sector_perf_1m,fii_net,dii_net,crude,crude_pct_change,usdinr,usdinr_pct_change,overall_risk,generated_at_ist
+Bearish,Bearish,-0.64,Bearish,-0.48,12.97,Low,Distribution Services,27.64,Non-Energy Minerals,-1.01,4859.07,-1159.64,76.54,-0.08,94.31,-0.58,Medium,2026-06-21T14:10:39.335359+05:30

@@ -137,6 +137,27 @@ CATALOG = [
         "use_case": "Focused swing shortlist for the research engine.",
         "key_columns": ["symbol", "score", "rs_vs_nifty_1m", "deliv_pct", "target_5pct"],
     }),
+    ("stock_analysis.csv", {
+        "agent": "stock_analysis (derived)", "source": "consolidates all per-stock CSVs",
+        "description": "PRIMARY FILE — one row per stock merging trend, momentum, volume, "
+                       "fundamentals, earnings, relative strength, F&O and event flags, with "
+                       "deterministic sub-scores, classic pivots/support/resistance, and "
+                       "ATR-based trade levels (entry/stop/targets). Blank columns "
+                       "(supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) "
+                       "have no source yet. NOT a recommendation — composite scoring is the AI's job.",
+        "use_case": "The main file the research engine reads; everything deterministic precomputed.",
+        "key_columns": ["symbol", "trend_score", "momentum_score", "technical_score",
+                        "fundamental_score", "earnings_score", "rs_rank",
+                        "entry_low", "stop_loss", "target1", "risk_score"],
+    }),
+    ("market_summary.csv", {
+        "agent": "market_summary (derived)", "source": "indices + macro + fii + tradingview",
+        "description": "One-row market regime: Nifty/BankNifty trend, India VIX & level, "
+                       "best/worst sector, FII/DII net, crude, USDINR, overall risk.",
+        "use_case": "Top-down context in one row — no need to infer market state from many files.",
+        "key_columns": ["market_regime", "nifty_trend", "india_vix", "vix_level",
+                        "best_sector", "fii_net", "overall_risk"],
+    }),
     ("watchlist.csv", {
         "agent": "run.py (derived)", "source": "computed from tradingview.csv",
         "description": "Simple trend/momentum ranking (above SMA200, TV tech rating, RSI, ADX) "

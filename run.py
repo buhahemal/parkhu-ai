@@ -40,7 +40,14 @@ from collector.corpactions import corpactions
 from collector.news import news
 from collector.macro import macro
 from collector.delivery import delivery
-from collector.derived import relative_strength, event_risk, fno_momentum, swing_candidates
+from collector.derived import (
+    relative_strength,
+    event_risk,
+    fno_momentum,
+    swing_candidates,
+    market_summary,
+    stock_analysis,
+)
 
 log = get_logger("run")
 
@@ -70,6 +77,9 @@ DERIVED = [
     ("event_risk", event_risk.collect),
     ("fno_momentum", fno_momentum.collect),
     ("swing_candidates", swing_candidates.collect),
+    ("market_summary", market_summary.collect),
+    # stock_analysis consolidates everything above — keep it last.
+    ("stock_analysis", stock_analysis.collect),
 ]
 
 

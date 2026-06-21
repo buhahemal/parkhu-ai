@@ -39,6 +39,14 @@ GitHub Actions (02:30 PM IST — testing)
 | `event_risk.csv` | Earnings, corp actions, news within 21 days |
 | `fno_momentum.csv` | OI buildup + F&O activity scores |
 | `swing_candidates.csv` | Top 20 for 2–3 week / ~5% swing template |
+| **`stock_analysis.csv`** | **Primary file** — one row/stock: all indicators, sub-scores, pivots/support/resistance, ATR trade levels |
+| **`market_summary.csv`** | One-row regime: index trend, VIX, sector leaders, FII/DII, macro, overall risk |
+
+The **Indicator Engine** (`stock_analysis.csv` + `market_summary.csv`) precomputes
+every *deterministic* metric so the research engine only does what needs
+judgement — cross-validating signals, conviction, sizing, thesis. Columns with
+no source yet (`supertrend`, `ichimoku`, `obv`, `cmf`, ownership, news sentiment,
+earnings surprises) are present but blank for schema stability.
 
 > **Design note:** the broad price / valuation / technical / **earnings** layer
 > for the whole universe now comes from the **TradingView** snapshot in a single
@@ -60,7 +68,10 @@ output/2026-06-21/
     corporate_actions.csv
     news.csv          macro.csv         delivery.csv
     relative_strength.csv  event_risk.csv  fno_momentum.csv
-    swing_candidates.csv   watchlist.csv   report.json
+    swing_candidates.csv   watchlist.csv
+    stock_analysis.csv   ← PRIMARY: one row/stock, all indicators + scores + trade levels
+    market_summary.csv   ← one-row market regime
+    report.json
     manifest.json     ← data dictionary: what each file is + its use case
 ```
 
