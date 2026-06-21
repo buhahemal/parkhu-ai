@@ -48,6 +48,13 @@ judgement — cross-validating signals, conviction, sizing, thesis. Columns with
 no source yet (`supertrend`, `ichimoku`, `obv`, `cmf`, ownership, news sentiment,
 earnings surprises) are present but blank for schema stability.
 
+`stock_analysis.csv` also carries a **cross-sectional factor model** (Barra/AQR-style):
+`value_z`, `momentum_z`, `quality_z`, `lowvol_z`, `growth_z`, `size_z` are winsorized
+z-scores ranking each stock against the universe (mean 0, higher = better), blended
+into `composite_factor_z` with a `composite_factor_rank` percentile. These complement
+the absolute 0–100 sub-scores: the z-scores say *how a stock ranks vs peers*, the
+sub-scores say *whether it clears fixed thresholds*.
+
 > **Design note:** the broad price / valuation / technical / **earnings** layer
 > for the whole universe now comes from the **TradingView** snapshot in a single
 > call (`earnings.csv` is sliced from the same scan — no extra request). The old

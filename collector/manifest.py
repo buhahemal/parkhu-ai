@@ -141,13 +141,17 @@ CATALOG = [
         "agent": "stock_analysis (derived)", "source": "consolidates all per-stock CSVs",
         "description": "PRIMARY FILE — one row per stock merging trend, momentum, volume, "
                        "fundamentals, earnings, relative strength, F&O and event flags, with "
-                       "deterministic sub-scores, classic pivots/support/resistance, and "
-                       "ATR-based trade levels (entry/stop/targets). Blank columns "
-                       "(supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) "
-                       "have no source yet. NOT a recommendation — composite scoring is the AI's job.",
-        "use_case": "The main file the research engine reads; everything deterministic precomputed.",
-        "key_columns": ["symbol", "trend_score", "momentum_score", "technical_score",
-                        "fundamental_score", "earnings_score", "rs_rank",
+                       "deterministic sub-scores, classic pivots/support/resistance, "
+                       "ATR-based trade levels, and a cross-sectional FACTOR MODEL "
+                       "(winsorized z-scores for value/momentum/quality/low-vol/growth/size "
+                       "+ composite_factor_z and its universe percentile rank, Barra/AQR-style). "
+                       "Blank columns (supertrend, ichimoku, obv, cmf, ownership, news "
+                       "sentiment, surprises) have no source yet. NOT a recommendation.",
+        "use_case": "The main file the research engine reads; everything deterministic precomputed. "
+                    "Factor z-scores rank each name vs the universe (mean 0, higher = better).",
+        "key_columns": ["symbol", "technical_score", "fundamental_score", "earnings_score",
+                        "rs_rank", "value_z", "momentum_z", "quality_z", "lowvol_z",
+                        "composite_factor_z", "composite_factor_rank",
                         "entry_low", "stop_loss", "target1", "risk_score"],
     }),
     ("market_summary.csv", {

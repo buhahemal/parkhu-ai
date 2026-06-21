@@ -14,6 +14,7 @@ are present but left blank so the schema is stable.
 """
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
 
 from collector.utils import get_logger, save_csv, empty_csv
@@ -59,6 +60,9 @@ COLUMNS = [
     "technical_score", "fundamental_score_final", "earnings_score_final",
     "news_score_final", "institution_score", "sector_score", "macro_score",
     "risk_score",
+    # cross-sectional factor z-scores (relative to the universe; higher = better)
+    "value_z", "momentum_z", "quality_z", "lowvol_z", "growth_z", "size_z",
+    "composite_factor_z", "composite_factor_rank",
     # event flags
     "earnings_within_21d", "days_to_earnings", "event_risk_score",
     "tech_rating", "analyst_rec", "price_target_avg",
@@ -71,6 +75,33 @@ def _num(v):
         return f if pd.notna(f) else None
     except (TypeError, ValueError):
         return None
+
+
+# --- Cross-sectional factor scoring (Barra/AQR-style) -----------------------
+def _z(series: pd.Series) -> pd.Series:
+    """Winsorized cross-sectional z-score. Higher = better (caller sign-aligns).
+
+    Clips to the 1st/99th percentile to tame outliers, then standardizes across
+    the universe. Returns NaN for the whole series if too few valid points.
+    """
+    s = pd.to_numeric(series, errors="coerce")
+    if s.notna().sum() < 5:
+        return pd.Series(np.nan, index=series.index, dtype=float)
+    s = s.clip(s.quantile(0.01), s.quantile(0.99))
+    mu, sd = s.mean(), s.std(ddof=0)
+    if not sd or pd.isna(sd):
+        return pd.Series(np.nan, index=series.index, dtype=float)
+    return (s - mu) / sd
+
+
+def _blend(*series: pd.Series) -> pd.Series:
+    """Equal-weight mean of component z-scores, ignoring missing components."""
+    return pd.concat(series, axis=1).mean(axis=1, skipna=True)
+
+
+def _zget(series: pd.Series, i):
+    v = series.get(i)
+    return round(float(v), 2) if (v is not None and pd.notna(v)) else None
 
 
 def _idx(df: pd.DataFrame):
@@ -188,6 +219,37 @@ def collect(date: str | None = None) -> dict:
         macro_score = {"Bullish": 70, "Neutral": 50, "Cautious": 40,
                        "Bearish": 30}.get(regime, 50)
 
+    # --- Cross-sectional factor model (Barra/AQR-style z-scores) ------------
+    # Growth metrics live in earnings.csv; merge them so they can be z-scored.
+    earn_df = load_csv("earnings", date)
+    growth_cols = [c for c in ("revenue_yoy_pct", "eps_yoy_pct", "eps_qoq_pct")
+                   if not earn_df.empty and c in earn_df.columns]
+    if growth_cols:
+        tv = tv.merge(earn_df[["symbol"] + growth_cols], on="symbol", how="left")
+    for c in ("revenue_yoy_pct", "eps_yoy_pct", "eps_qoq_pct"):
+        if c not in tv.columns:
+            tv[c] = np.nan
+
+    def col(name):
+        return pd.to_numeric(tv.get(name), errors="coerce")
+
+    pe, pb, ev_eb = col("pe"), col("pb"), col("enterprise_value_ebitda_ttm")
+    close_s, atr_s, mcap = col("close"), col("ATR"), col("market_cap")
+    # Value: cheaper is better → invert the price ratios into yields.
+    value_z = _blend(_z(1.0 / pe.where(pe > 0)), _z(1.0 / pb.where(pb > 0)),
+                     _z(1.0 / ev_eb.where(ev_eb > 0)), _z(col("div_yield")))
+    momentum_z = _blend(_z(col("perf_3m")), _z(col("perf_6m")), _z(col("perf_1y")))
+    quality_z = _blend(_z(col("roe")), _z(col("return_on_invested_capital")),
+                       _z(col("operating_margin")), _z(col("net_margin")),
+                       _z(-col("debt_to_equity")))
+    lowvol_z = _blend(_z(-col("volatility_d")), _z(-col("beta_1_year")),
+                      _z(-(atr_s / close_s.where(close_s > 0))))
+    growth_z = _blend(_z(col("revenue_yoy_pct")), _z(col("eps_yoy_pct")),
+                      _z(col("eps_qoq_pct")))
+    size_z = _z(-np.log(mcap.where(mcap > 0)))  # small-cap premium
+    composite_z = _blend(value_z, momentum_z, quality_z, lowvol_z, growth_z)
+    composite_rank = (composite_z.rank(pct=True) * 100).round()
+
     rows = []
     for i, r in tv.iterrows():
         sym = r["symbol"]
@@ -303,6 +365,11 @@ def collect(date: str | None = None) -> dict:
             "earnings_score_final": earn_score, "news_score_final": None,
             "institution_score": None, "sector_score": sector_score.get(i),
             "macro_score": macro_score, "risk_score": risk,
+            "value_z": _zget(value_z, i), "momentum_z": _zget(momentum_z, i),
+            "quality_z": _zget(quality_z, i), "lowvol_z": _zget(lowvol_z, i),
+            "growth_z": _zget(growth_z, i), "size_z": _zget(size_z, i),
+            "composite_factor_z": _zget(composite_z, i),
+            "composite_factor_rank": composite_rank.get(i),
             "earnings_within_21d": _get(ev, sym, "earnings_within_21d"),
             "days_to_earnings": _get(ev, sym, "days_to_earnings"),
             "event_risk_score": _num(_get(ev, sym, "event_risk_score")),

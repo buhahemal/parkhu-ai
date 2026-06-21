@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T14:13:43.257722+05:30",
+  "generated_at_ist": "2026-06-21T14:19:57.534009+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -261,16 +261,20 @@
     "stock_analysis.csv": {
       "agent": "stock_analysis (derived)",
       "source": "consolidates all per-stock CSVs",
-      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, and ATR-based trade levels (entry/stop/targets). Blank columns (supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) have no source yet. NOT a recommendation \u2014 composite scoring is the AI's job.",
-      "use_case": "The main file the research engine reads; everything deterministic precomputed.",
+      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, ATR-based trade levels, and a cross-sectional FACTOR MODEL (winsorized z-scores for value/momentum/quality/low-vol/growth/size + composite_factor_z and its universe percentile rank, Barra/AQR-style). Blank columns (supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) have no source yet. NOT a recommendation.",
+      "use_case": "The main file the research engine reads; everything deterministic precomputed. Factor z-scores rank each name vs the universe (mean 0, higher = better).",
       "key_columns": [
         "symbol",
-        "trend_score",
-        "momentum_score",
         "technical_score",
         "fundamental_score",
         "earnings_score",
         "rs_rank",
+        "value_z",
+        "momentum_z",
+        "quality_z",
+        "lowvol_z",
+        "composite_factor_z",
+        "composite_factor_rank",
         "entry_low",
         "stop_loss",
         "target1",
