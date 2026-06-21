@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T13:49:09.010592+05:30",
+  "generated_at_ist": "2026-06-21T14:13:43.257722+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -257,6 +257,44 @@
       ],
       "present": true,
       "rows": 20
+    },
+    "stock_analysis.csv": {
+      "agent": "stock_analysis (derived)",
+      "source": "consolidates all per-stock CSVs",
+      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, and ATR-based trade levels (entry/stop/targets). Blank columns (supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) have no source yet. NOT a recommendation \u2014 composite scoring is the AI's job.",
+      "use_case": "The main file the research engine reads; everything deterministic precomputed.",
+      "key_columns": [
+        "symbol",
+        "trend_score",
+        "momentum_score",
+        "technical_score",
+        "fundamental_score",
+        "earnings_score",
+        "rs_rank",
+        "entry_low",
+        "stop_loss",
+        "target1",
+        "risk_score"
+      ],
+      "present": true,
+      "rows": 366
+    },
+    "market_summary.csv": {
+      "agent": "market_summary (derived)",
+      "source": "indices + macro + fii + tradingview",
+      "description": "One-row market regime: Nifty/BankNifty trend, India VIX & level, best/worst sector, FII/DII net, crude, USDINR, overall risk.",
+      "use_case": "Top-down context in one row \u2014 no need to infer market state from many files.",
+      "key_columns": [
+        "market_regime",
+        "nifty_trend",
+        "india_vix",
+        "vix_level",
+        "best_sector",
+        "fii_net",
+        "overall_risk"
+      ],
+      "present": true,
+      "rows": 1
     },
     "watchlist.csv": {
       "agent": "run.py (derived)",

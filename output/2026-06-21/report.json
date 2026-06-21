@@ -1,7 +1,7 @@
 {
   "date": "2026-06-21",
-  "generated_at_ist": "2026-06-21T13:49:09.011752+05:30",
-  "duration_seconds": 30.3,
+  "generated_at_ist": "2026-06-21T14:13:43.259022+05:30",
+  "duration_seconds": 34.6,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -21,61 +21,61 @@
       "agent": "indices",
       "status": "ok",
       "rows": 5,
-      "seconds": 1.8
+      "seconds": 0.6
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 8,
-      "seconds": 2.2
+      "seconds": 0.7
     },
     {
       "agent": "smartmoney",
       "status": "partial",
       "rows": 2,
-      "seconds": 3.9
+      "seconds": 5.2
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.5
+      "seconds": 5.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 5.3
+      "seconds": 5.9
     },
     {
       "agent": "delivery",
       "status": "ok",
       "rows": 356,
-      "seconds": 3.7
+      "seconds": 6.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.9
+      "seconds": 4.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.7
+      "seconds": 3.0
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 12,
-      "seconds": 2.5
+      "seconds": 0.7
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 366,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "event_risk",
@@ -94,9 +94,21 @@
       "status": "ok",
       "rows": 20,
       "seconds": 0.0
+    },
+    {
+      "agent": "market_summary",
+      "status": "ok",
+      "rows": 1,
+      "seconds": 0.0
+    },
+    {
+      "agent": "stock_analysis",
+      "status": "ok",
+      "rows": 366,
+      "seconds": 0.2
     }
   ],
-  "ok": 14,
+  "ok": 16,
   "partial": 1,
   "errors": 0,
   "access_note": "Fetch download_url (raw GitHub) for file contents \u2014 LLM-readable plain text. preview_url opens the file in GitHub's UI. Links work after this run is pushed.",
@@ -158,6 +170,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-06-21/manifest.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-06-21/manifest.json"
     },
+    "market_summary.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-06-21/market_summary.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-06-21/market_summary.csv"
+    },
     "most_active_contracts.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-06-21/most_active_contracts.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-06-21/most_active_contracts.csv"
@@ -189,6 +205,10 @@
     "sectors.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-06-21/sectors.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-06-21/sectors.csv"
+    },
+    "stock_analysis.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-06-21/stock_analysis.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-06-21/stock_analysis.csv"
     },
     "swing_candidates.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-06-21/swing_candidates.csv",
