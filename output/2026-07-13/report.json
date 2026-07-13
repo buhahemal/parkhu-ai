@@ -1,0 +1,226 @@
+{
+  "date": "2026-07-13",
+  "generated_at_ist": "2026-07-13T09:38:06.155384+05:30",
+  "duration_seconds": 45.8,
+  "watchlist_size": 25,
+  "swing_candidates_size": 20,
+  "agents": [
+    {
+      "agent": "tradingview",
+      "status": "ok",
+      "rows": 369,
+      "seconds": 0.3
+    },
+    {
+      "agent": "earnings",
+      "status": "ok",
+      "rows": 369,
+      "seconds": 0.0
+    },
+    {
+      "agent": "indices",
+      "status": "ok",
+      "rows": 5,
+      "seconds": 0.5
+    },
+    {
+      "agent": "sectors",
+      "status": "ok",
+      "rows": 8,
+      "seconds": 0.6
+    },
+    {
+      "agent": "smartmoney",
+      "status": "ok",
+      "rows": 3,
+      "seconds": 4.5
+    },
+    {
+      "agent": "options",
+      "status": "ok",
+      "rows": 2,
+      "seconds": 5.3
+    },
+    {
+      "agent": "derivatives",
+      "status": "ok",
+      "rows": 450,
+      "seconds": 7.7
+    },
+    {
+      "agent": "delivery",
+      "status": "ok",
+      "rows": 356,
+      "seconds": 16.8
+    },
+    {
+      "agent": "corpactions",
+      "status": "ok",
+      "rows": 500,
+      "seconds": 3.6
+    },
+    {
+      "agent": "news",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 3.1
+    },
+    {
+      "agent": "macro",
+      "status": "ok",
+      "rows": 30,
+      "seconds": 2.4
+    },
+    {
+      "agent": "relative_strength",
+      "status": "ok",
+      "rows": 369,
+      "seconds": 0.1
+    },
+    {
+      "agent": "event_risk",
+      "status": "ok",
+      "rows": 369,
+      "seconds": 0.3
+    },
+    {
+      "agent": "fno_momentum",
+      "status": "ok",
+      "rows": 201,
+      "seconds": 0.0
+    },
+    {
+      "agent": "swing_candidates",
+      "status": "ok",
+      "rows": 20,
+      "seconds": 0.0
+    },
+    {
+      "agent": "market_summary",
+      "status": "ok",
+      "rows": 1,
+      "seconds": 0.0
+    },
+    {
+      "agent": "stock_analysis",
+      "status": "ok",
+      "rows": 369,
+      "seconds": 0.3
+    }
+  ],
+  "ok": 17,
+  "partial": 0,
+  "errors": 0,
+  "access_note": "Fetch download_url (raw GitHub) for file contents \u2014 LLM-readable plain text. preview_url opens the file in GitHub's UI. Links work after this run is pushed.",
+  "repository": {
+    "github": "buhahemal/parkhu-ai",
+    "branch": "main",
+    "output_folder_preview_url": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-07-13"
+  },
+  "packages": {
+    "dated": {
+      "filename": "2026-07-13.zip",
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13.zip",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13.zip"
+    },
+    "latest": {
+      "filename": "latest.zip",
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest.zip",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/latest.zip"
+    }
+  },
+  "files": {
+    "block_deals.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/block_deals.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/block_deals.csv"
+    },
+    "corporate_actions.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/corporate_actions.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/corporate_actions.csv"
+    },
+    "delivery.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/delivery.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/delivery.csv"
+    },
+    "earnings.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/earnings.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/earnings.csv"
+    },
+    "event_risk.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/event_risk.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/event_risk.csv"
+    },
+    "fii.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/fii.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/fii.csv"
+    },
+    "fno_momentum.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/fno_momentum.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/fno_momentum.csv"
+    },
+    "indices.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/indices.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/indices.csv"
+    },
+    "macro.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/macro.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/macro.csv"
+    },
+    "manifest.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/manifest.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/manifest.json"
+    },
+    "market_summary.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/market_summary.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/market_summary.csv"
+    },
+    "most_active_contracts.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/most_active_contracts.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/most_active_contracts.csv"
+    },
+    "most_active_underlying.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/most_active_underlying.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/most_active_underlying.csv"
+    },
+    "news.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/news.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/news.csv"
+    },
+    "oi_spurts.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/oi_spurts.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/oi_spurts.csv"
+    },
+    "options.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/options.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/options.csv"
+    },
+    "relative_strength.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/relative_strength.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/relative_strength.csv"
+    },
+    "sectors.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/sectors.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/sectors.csv"
+    },
+    "stock_analysis.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/stock_analysis.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/stock_analysis.csv"
+    },
+    "swing_candidates.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/swing_candidates.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/swing_candidates.csv"
+    },
+    "tradingview.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/tradingview.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/tradingview.csv"
+    },
+    "watchlist.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/watchlist.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/watchlist.csv"
+    },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-13/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-13/report.json"
+    }
+  }
+}
