@@ -1,0 +1,2 @@
+market_regime,nifty_trend,nifty_pct_change,banknifty_trend,banknifty_pct_change,india_vix,vix_level,best_sector,best_sector_perf_1m,worst_sector,worst_sector_perf_1m,fii_net,dii_net,crude,crude_pct_change,usdinr,usdinr_pct_change,us_sp500_pct,us_dow_pct,us_vix,us_vix_pct,dxy,dxy_pct,us_10y,asia_cue,europe_cue,global_risk,overall_risk,generated_at_ist
+Neutral,Neutral,0.18,Neutral,-0.01,13.2,Low,Distribution Services,17.63,Utilities,-3.0,-4205.56,2986.41,78.96,-0.8,96.3,-0.2,-0.51,-0.2,16.73,6.76,100.76,0.26,4.57,Bearish,Mixed,Risk-Off,Low,2026-07-17T09:15:51.655663+05:30
