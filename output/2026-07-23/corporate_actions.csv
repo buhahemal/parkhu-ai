@@ -1,0 +1,501 @@
+symbol,ex_date,record_date,purpose,face_value,series
+TRIVENI,31-Aug-2026,31-Aug-2026,Dividend - Rs 1.25 Per Share,1,EQ
+GANESHHOU,31-Aug-2026,31-Aug-2026,Dividend - Rs 1.50 Per Share,10,EQ
+SWANCORP,28-Aug-2026,28-Aug-2026,Dividend - Re 0.15 Per Share,1,EQ
+THOMASCOOK,27-Aug-2026,27-Aug-2026,Dividend - Rs 0.50 Per Share,1,EQ
+POWERINDIA,21-Aug-2026,21-Aug-2026,Dividend - Rs 8 Per Share,2,EQ
+PGHL,21-Aug-2026,21-Aug-2026,Dividend - Rs 45 Per Share,10,EQ
+ZENTEC,21-Aug-2026,21-Aug-2026,Dividend - Re 1 Per Share,1,EQ
+GVT&D,21-Aug-2026,21-Aug-2026,Dividend - Rs 10 Per Share,2,EQ
+GILLETTE,19-Aug-2026,19-Aug-2026,Dividend - Rs 60 Per Share,10,EQ
+SKIPPER,17-Aug-2026,17-Aug-2026,Dividend - Re 0.10 Per Share,1,EQ
+HINDPETRO,14-Aug-2026,14-Aug-2026,Dividend - Rs 19.25 Per Share,10,EQ
+MANGLMCEM,14-Aug-2026,14-Aug-2026,Dividend - Rs 1.50 Per Share,10,EQ
+NCC,14-Aug-2026,14-Aug-2026,Dividend - Rs 2.20 Per Share,2,EQ
+GPIL,14-Aug-2026,14-Aug-2026,Dividend - Re 1 Per Share,1,EQ
+RAMCOCEM,13-Aug-2026,13-Aug-2026,Dividend - Rs 2.50 Per Share,1,EQ
+HGINFRA,12-Aug-2026,12-Aug-2026,Dividend - Rs 2 Per Share,10,EQ
+GLAND,11-Aug-2026,11-Aug-2026,Dividend - Rs 20 Per Sh,1,EQ
+KIRLOSIND,11-Aug-2026,11-Aug-2026,Dividend - Rs 13 Per Share,10,EQ
+RATNAMANI,11-Aug-2026,11-Aug-2026,Dividend - Rs 10 Per Share,2,EQ
+UBL,07-Aug-2026,07-Aug-2026,Dividend - Rs 10 Per Share,1,EQ
+ABLBL,07-Aug-2026,07-Aug-2026,Dividend - Re 0.50 Per Share,10,EQ
+GRASIM,07-Aug-2026,07-Aug-2026,Dividend - Rs 10 Per Share,2,EQ
+SHYAMMETL,07-Aug-2026,07-Aug-2026,Dividend - Rs 2.70 Per Share,10,EQ
+MARUTI,07-Aug-2026,07-Aug-2026,Dividend - Rs 140 Per Share,5,EQ
+TIINDIA,07-Aug-2026,07-Aug-2026,Dividend - Rs 1.50  Per Share,1,EQ
+LINDEINDIA,06-Aug-2026,06-Aug-2026,Dividend - Rs 4 Per Share/Special Dividend - 8 Per Share,10,EQ
+LUMAXTECH,06-Aug-2026,06-Aug-2026,Dividend - Rs 5.50 Per Share,2,EQ
+LUMAXIND,06-Aug-2026,06-Aug-2026,Dividend - Rs 55 Per Share,10,EQ
+BERGEPAINT,05-Aug-2026,05-Aug-2026,Dividend - Rs 4 Per Share,1,EQ
+ADFFOODS,05-Aug-2026,05-Aug-2026,Dividend - Re 0.60 Per Share,2,EQ
+BOSCHLTD,04-Aug-2026,04-Aug-2026,Dividend - Rs 270 Per Share,10,EQ
+GREENPLY,04-Aug-2026,04-Aug-2026,Dividend - Re 0.50  Per Share,1,EQ
+ANDHRAPAP,04-Aug-2026,04-Aug-2026,Dividend - Re 0.50 Per Share,2,EQ
+CUB,31-Jul-2026,31-Jul-2026,Dividend - Rs 2 Per Share,1,EQ
+TIMKEN,31-Jul-2026,31-Jul-2026,Dividend - Rs 2.50 Per Share,10,EQ
+REDTAPE,31-Jul-2026,31-Jul-2026,Dividend - Rs 2 Per Share,2,EQ
+BATAINDIA,31-Jul-2026,31-Jul-2026,Dividend - Rs 9 Per Share,5,EQ
+DCMSHRIRAM,31-Jul-2026,31-Jul-2026,Dividend - Rs 4 Per Share,2,EQ
+FINEORG,31-Jul-2026,31-Jul-2026,Dividend - Rs 11 Per Share,5,EQ
+FIVESTAR,31-Jul-2026,31-Jul-2026,Dividend - Rs 2 Per Share,1,EQ
+ASTRAZEN,31-Jul-2026,31-Jul-2026,Dividend - Rs 36 Per Share,2,EQ
+ENDURANCE,31-Jul-2026,31-Jul-2026,Dividend - Rs 11.50 Per Share,10,EQ
+MAMATA,31-Jul-2026,31-Jul-2026,Dividend - Re 0.50 Per Share,10,EQ
+EIHOTEL,31-Jul-2026,31-Jul-2026,Dividend - Rs 1.50 Per Share,2,EQ
+EICHERMOT,31-Jul-2026,31-Jul-2026,Dividend - Rs 82 Per Share,1,EQ
+VGUARD,31-Jul-2026,31-Jul-2026,Dividend - Rs 1.50 Per Share,1,EQ
+IMFA,31-Jul-2026,31-Jul-2026,Dividend - Rs 7.50 Per Share,10,EQ
+STAR,31-Jul-2026,31-Jul-2026,Dividend - Rs 5 Per Share,10,EQ
+BATLIBOI,31-Jul-2026,31-Jul-2026,Dividend - Re 0.60 Per Share,5,EQ
+CARBORUNIV,31-Jul-2026,31-Jul-2026,Dividend - Rs 2.50 Per Share,1,EQ
+ASKAUTOLTD,31-Jul-2026,31-Jul-2026,Dividend - Rs 1.85 Per Share,2,EQ
+BHARTIHEXA,31-Jul-2026,31-Jul-2026,Dividend - Rs 18 Per Share,5,EQ
+GREENPANEL,31-Jul-2026,31-Jul-2026,Dividend - Re 0.50 Per Share,1,EQ
+CELLO,31-Jul-2026,31-Jul-2026,Dividend - Rs 1.50 Per Share,5,EQ
+IGARASHI,31-Jul-2026,31-Jul-2026,Dividend - Rs 1.30 Per Share,10,EQ
+CAMPUS,31-Jul-2026,31-Jul-2026,Dividend - Rs 1.50 Per Share,5,EQ
+PRIVISCL,31-Jul-2026,31-Jul-2026,Dividend - Rs 10 Per Share,10,EQ
+BRITANNIA,31-Jul-2026,31-Jul-2026,Dividend - Rs 90.50 Per Share,1,EQ
+BOMDYEING,31-Jul-2026,31-Jul-2026,Dividend - Rs 0.40 Per Share,2,EQ
+PFC,31-Jul-2026,31-Jul-2026,Dividend - Rs 3.95 Per Share,10,EQ
+JKTYRE,30-Jul-2026,30-Jul-2026,Dividend - Rs 4 Per Share,2,EQ
+IVP,30-Jul-2026,30-Jul-2026,Dividend - Rs 1.50 Per Sh,10,EQ
+BASF,30-Jul-2026,30-Jul-2026,Dividend - Rs 25 Per Share,10,EQ
+GRANULES,30-Jul-2026,30-Jul-2026,Dividend - Rs 1.75 Per Share,1,EQ
+MARICO,30-Jul-2026,30-Jul-2026,Dividend - Rs 4 Per Share,1,EQ
+YASHO,30-Jul-2026,30-Jul-2026,Dividend - Re 0.50 Per Share,10,EQ
+ULTRACEMCO,30-Jul-2026,30-Jul-2026,Dividend - Rs 240 Per Share,10,EQ
+APLLTD,29-Jul-2026,29-Jul-2026,Dividend - Rs 12 Per Share,2,EQ
+GODREJAGRO,29-Jul-2026,29-Jul-2026,Dividend - Rs 11 Per Share,10,EQ
+GODREJPROP,28-Jul-2026,28-Jul-2026,Dividend - Rs 10 Per Share,5,EQ
+GMMPFAUDLR,28-Jul-2026,28-Jul-2026,Dividend - Re 1 Per Share,2,EQ
+GREAVESCOT,28-Jul-2026,28-Jul-2026,Dividend - Rs 2 Per Share,2,EQ
+EIHAHOTELS,28-Jul-2026,28-Jul-2026,Dividend - Rs 3.50 Per Share,10,EQ
+DOLLAR,28-Jul-2026,28-Jul-2026,Dividend - Rs 3 Per Share,2,EQ
+SOLARINDS,28-Jul-2026,28-Jul-2026,Dividend - Rs 11 Per Share,2,EQ
+MENNPIS,28-Jul-2026,28-Jul-2026,Dividend - Re 1 Per Share,1,EQ
+VINDHYATEL,27-Jul-2026,27-Jul-2026,Dividend - Rs 6 Per Share,10,EQ
+EVERESTIND,27-Jul-2026,27-Jul-2026,Dividend - Re 1 Per Share,10,EQ
+UNIVCABLES,27-Jul-2026,27-Jul-2026,Dividend - Rs 4.50 Per Share,10,EQ
+WIPRO,27-Jul-2026,27-Jul-2026,Interim Dividend - Rs 2 Per Share,2,EQ
+TATACAP,27-Jul-2026,27-Jul-2026,Dividend - Re 0.57 Per Share,10,EQ
+DLF,27-Jul-2026,27-Jul-2026,Dividend - Rs 8 Per Share,2,EQ
+603GS2029,27-Jul-2026,27-Jul-2026,Interest Payment,100,GS
+ARE&M,27-Jul-2026,27-Jul-2026,Dividend - Rs 5.20 Per Share,1,EQ
+KCP,27-Jul-2026,27-Jul-2026,Dividend - Re 0.50 Per Share,1,EQ
+CRISIL,27-Jul-2026,27-Jul-2026,Interim Dividend - Rs 10  Per Share,1,EQ
+DEEPAKNTR,27-Jul-2026,27-Jul-2026,Dividend - Rs 7.50 Per Share,2,EQ
+PERSISTENT,27-Jul-2026,27-Jul-2026,Dividend - Rs 18 Per Share,5,EQ
+BIRLACABLE,27-Jul-2026,27-Jul-2026,Dividend - Rs 1.25 Per Share,10,EQ
+668GS2033,27-Jul-2026,27-Jul-2026,Interest Payment,100,GS
+DIVISLAB,24-Jul-2026,24-Jul-2026,Dividend - Rs 30 Per Share,2,EQ
+CHEMBONDCH,24-Jul-2026,24-Jul-2026,Dividend - Rs 1.25 Per Share,5,EQ
+REFEX,24-Jul-2026,24-Jul-2026,Dividend - Re 1 Per Share,2,EQ
+JUBLINGREA,24-Jul-2026,24-Jul-2026,Dividend - Rs 2.50 Per Share,1,EQ
+JLHL,24-Jul-2026,24-Jul-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,10,EQ
+NAUKRI,24-Jul-2026,24-Jul-2026,Dividend - Rs 3.60 Per Share,2,EQ
+FORTIS,24-Jul-2026,24-Jul-2026,Dividend - Re 1 Per Share,10,EQ
+FIEMIND,24-Jul-2026,24-Jul-2026,Dividend - Rs 40 Per Share,10,EQ
+ELCIDIN,24-Jul-2026,24-Jul-2026,Dividend - Rs 25 Per Share,10,EQ
+BHAGERIA,24-Jul-2026,24-Jul-2026,Dividend - Rs 2.50 Per Share,5,EQ
+SWELECTES,24-Jul-2026,24-Jul-2026,Dividend - Rs 3.50 Per Share,10,EQ
+STEELCAS,24-Jul-2026,24-Jul-2026,Dividend - Re 0.54 Per Share,1,EQ
+SIYSIL,24-Jul-2026,25-Jul-2026,Dividend - Rs 5 Per Share,2,EQ
+SILINV,24-Jul-2026,24-Jul-2026,Dividend - Rs 2.50 Per Share,10,EQ
+SHYAMMETL,24-Jul-2026,24-Jul-2026,Interim Dividend - Rs 1.80 Per Share,10,EQ
+SASKEN,24-Jul-2026,24-Jul-2026,Dividend - Rs 13 Per Share,10,EQ
+HEROMOTOCO,24-Jul-2026,24-Jul-2026,Dividend - Rs 75 Per Share,2,EQ
+VOLTAMP,24-Jul-2026,24-Jul-2026,Dividend - Rs 100 Per Share,10,EQ
+JUBLPHARMA,24-Jul-2026,24-Jul-2026,Dividend - Rs 5 Per Share,1,EQ
+CMPDI,24-Jul-2026,24-Jul-2026,Interim Dividend - Rs 1.05 Per Share,2,EQ
+INTELLECT,24-Jul-2026,24-Jul-2026,Dividend - Rs 4 Per Share/Special Dividend - Rs 3 Per Share,5,EQ
+KARURVYSYA,24-Jul-2026,24-Jul-2026,Dividend - Rs 2.60 Per Share,2,EQ
+KIRLOSBROS,24-Jul-2026,24-Jul-2026,Dividend - Rs 7 Per Sh,2,EQ
+ZYDUSLIFE,24-Jul-2026,24-Jul-2026,Dividend - Re 1 Per Share,1,EQ
+ADVENZYMES,24-Jul-2026,24-Jul-2026,Dividend - Rs 1.35 Per Share,2,EQ
+NOCIL,24-Jul-2026,24-Jul-2026,Dividend - Rs 1.50 Per Share,10,EQ
+NITTAGELA,24-Jul-2026,24-Jul-2026,Dividend - Rs 7 Per Share,10,EQ
+ABBOTINDIA,24-Jul-2026,24-Jul-2026,Dividend - Rs 525 Per Share & Special Dividend Rs 131 Per Share,10,EQ
+NEULANDLAB,24-Jul-2026,24-Jul-2026,Dividend - Rs 34 Per Share,10,EQ
+CAPINVIT,24-Jul-2026,24-Jul-2026,Distribution - Rs 2.32 Per Unit Consist Of Rs 1.48 Per Unit As Interest/ Re 0.64 Per Unit As Dividend/ Re 0.19 Per Unit As Repayment Of Capital/ Re 0.01 Per Unit As Other Income,99,IV
+RADICO,24-Jul-2026,24-Jul-2026,Dividend - Rs 9 Per Share,2,EQ
+BIRLACORPN,24-Jul-2026,24-Jul-2026,Dividend - Rs 12.50 Per Share,10,EQ
+BHARTIARTL,24-Jul-2026,24-Jul-2026,Dividend - Rs 24 Per Share,5,EQ
+PDSL,24-Jul-2026,24-Jul-2026,Dividend - Rs 1.65 Per Share,2,EQ
+ORIENTBELL,24-Jul-2026,24-Jul-2026,Dividend - Re 1 Per Share,10,EQ
+DATAPATTNS,24-Jul-2026,24-Jul-2026,Dividend - Rs 10 Per Share,2,EQ
+CROMPTON,24-Jul-2026,24-Jul-2026,Dividend - Rs 3 Per Share,2,EQ
+CONCORDBIO,24-Jul-2026,24-Jul-2026,Dividend - Rs 7.55 Per Share,1,EQ
+RISHABH,24-Jul-2026,24-Jul-2026,Dividend - Rs 2 Per Sh,10,EQ
+MWL,23-Jul-2026,23-Jul-2026,Dividend - Re 0.03 Per Share,1,EQ
+ORIENTHOT,23-Jul-2026,23-Jul-2026,Dividend - Rs 0.65 Per Share,1,EQ
+DBCORP,23-Jul-2026,23-Jul-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+BEPL,23-Jul-2026,23-Jul-2026,Interim Dividend - Re 1 Per Share,1,EQ
+ICRA,23-Jul-2026,23-Jul-2026,Dividend - Rs 70 Per Share/Special Dividend - Rs 35 Per Share,10,EQ
+SUDEEPPHRM,23-Jul-2026,23-Jul-2026,Dividend - Rs 1.50 Per Share,1,EQ
+BANSWRAS,23-Jul-2026,23-Jul-2026,Dividend - Re 1 Per Share,5,EQ
+PAUSHAKLTD,23-Jul-2026,23-Jul-2026,Dividend - Rs 2.50 Per Share,5,EQ
+BHAGCHEM,23-Jul-2026,23-Jul-2026,Dividend - Re 0.15  Per Share,1,EQ
+PIDILITIND,23-Jul-2026,23-Jul-2026,Dividend - Rs 11.50 Per Share,1,EQ
+PRECAM,23-Jul-2026,23-Jul-2026,Dividend - Re 1 Per Share,10,EQ
+ABMKNO,23-Jul-2026,23-Jul-2026,Dividend - Rs1.25 Per Share,5,EQ
+OBEROIRLTY,23-Jul-2026,23-Jul-2026,Interim Dividend - Rs 2 Per Share,10,EQ
+AFCONS,23-Jul-2026,23-Jul-2026,Dividend - Rs 2 Per Share,10,EQ
+ESABINDIA,23-Jul-2026,23-Jul-2026,Dividend - Rs 25 Per Share,10,EQ
+HEG,22-Jul-2026,22-Jul-2026,Dividend - Rs 3.40 Per Share,2,EQ
+SARLAPOLY,22-Jul-2026,22-Jul-2026,Dividend - Rs 2 Per Share,1,EQ
+THANGAMAYL,22-Jul-2026,22-Jul-2026,Dividend - Rs 18 Per Share,10,EQ
+TRIVENI,22-Jul-2026,22-Jul-2026,Demerger,1,EQ
+MENONBE,22-Jul-2026,22-Jul-2026,Interim Dividend - Rs 2 Per Share,1,EQ
+COSMOFIRST,22-Jul-2026,22-Jul-2026,Dividend - Rs 4 Per Share,10,EQ
+ABSLAMC,22-Jul-2026,22-Jul-2026,Dividend - Rs 25.50 Per Share,5,EQ
+HAWKINCOOK,22-Jul-2026,22-Jul-2026,Dividend - Rs 140 Per Share,10,EQ
+RAMRAT,22-Jul-2026,22-Jul-2026,Dividend - Rs 2.50 Per Share,5,EQ
+LXCHEM,21-Jul-2026,21-Jul-2026,Dividend - Rs 0.30 Per Share,2,EQ
+RAINBOW,21-Jul-2026,21-Jul-2026,Dividend - Rs 3.50 Per Share,10,EQ
+CHOLAFIN,21-Jul-2026,21-Jul-2026,Dividend - Re 0.70 Per Share,2,EQ
+KSOLVES,21-Jul-2026,21-Jul-2026,Interim Dividend - Rs 4 Per Share,5,EQ
+ANGELONE,21-Jul-2026,21-Jul-2026,Interim Dividend - Re 1 Per Share,1,EQ
+POCL,21-Jul-2026,21-Jul-2026,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share,2,EQ
+JARO,21-Jul-2026,21-Jul-2026,Dividend - Rs 3 Per Share,10,EQ
+PSB,21-Jul-2026,21-Jul-2026,Dividend - Re 0.39 Per Share,10,EQ
+INDOBORAX,21-Jul-2026,21-Jul-2026,Dividend - Rs 10 Per Share/Special Dividend - Rs 30 Per Share,1,EQ
+HAPPYFORGE,20-Jul-2026,20-Jul-2026,Dividend - Rs 4 Per Share,2,EQ
+SHRIPISTON,20-Jul-2026,20-Jul-2026,Dividend - Rs 5 Per Share,10,EQ
+FAIRCHEMOR,20-Jul-2026,20-Jul-2026,Dividend - Re 1 Per Share,10,EQ
+743GS2076,20-Jul-2026,20-Jul-2026,Interest Payment,100,GS
+CPPLUS,20-Jul-2026,20-Jul-2026,Dividend - Rs 1.64 Per Share,1,EQ
+KPRMILL,20-Jul-2026,20-Jul-2026,Dividend - Rs 2.50 Per Share,1,EQ
+GRAPHITE,20-Jul-2026,20-Jul-2026,Dividend - Rs 7 Per Share,2,EQ
+NDRAUTO,20-Jul-2026,20-Jul-2026,Dividend - Rs 4 Per Share,10,EQ
+NELCAST,20-Jul-2026,20-Jul-2026,Dividend - Re 0.70 Per Share,2,EQ
+NESCO,20-Jul-2026,20-Jul-2026,Dividend - Rs 7 Per Share,2,EQ
+POKARNA,20-Jul-2026,20-Jul-2026,Dividend - Re 0.60 Per Share,2,EQ
+ELGIEQUIP,17-Jul-2026,17-Jul-2026,Dividend - Rs 2.70 Per Share,1,EQ
+SYMPHONY,17-Jul-2026,17-Jul-2026,Dividend - Rs 5 Per Share,2,EQ
+TCI,17-Jul-2026,17-Jul-2026,Dividend - Re 1 Per Share,2,EQ
+LUPIN,17-Jul-2026,17-Jul-2026,Dividend - Rs 18 Per Share,2,EQ
+MAGADSUGAR,17-Jul-2026,17-Jul-2026,Dividend - Rs 12.50 Per Share,10,EQ
+683GS2039,17-Jul-2026,18-Jul-2026,Interest Payment,100,GS
+GCSL,17-Jul-2026,17-Jul-2026,Dividend - Re 0.70 Per Share,10,EQ
+MGEL,17-Jul-2026,17-Jul-2026,Dividend - Rs 0.01 Per Share,1,EQ
+TTKHLTCARE,17-Jul-2026,17-Jul-2026,Dividend - Rs 10 Per Share,10,EQ
+SUNDRMBRAK,17-Jul-2026,17-Jul-2026,Dividend - Re 0.65 Per Share,10,EQ
+GLOBAL,17-Jul-2026,17-Jul-2026,Dividend - Rs 0.50 Per Share,2,EQ
+JKLAKSHMI,17-Jul-2026,17-Jul-2026,Dividend - Rs 6.50 Per Share,5,EQ
+JUBLFOOD,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.20 Per Share,2,EQ
+SURYODAY,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.50 Per Share,10,EQ
+SONATSOFTW,17-Jul-2026,17-Jul-2026,Dividend - Rs 4.15 Per Share,1,EQ
+SUMICHEM,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.30 Per Share,10,EQ
+KIRLFER,17-Jul-2026,17-Jul-2026,Dividend - Rs 3 Per Share,5,EQ
+SOMATEX,17-Jul-2026,17-Jul-2026,Dividend - Re 0.50  Per Share,10,EQ
+SHREECEM,17-Jul-2026,17-Jul-2026,Dividend - Rs 70 Per Share,10,EQ
+SHANTIGEAR,17-Jul-2026,17-Jul-2026,Dividend - Rs 2 Per Share,1,EQ
+ZYDUSWELL,17-Jul-2026,17-Jul-2026,Dividend - Re 1.20 Per Share,2,EQ
+ZENSARTECH,17-Jul-2026,17-Jul-2026,Dividend - Rs 12.60 Per Share,2,EQ
+WENDT,17-Jul-2026,17-Jul-2026,Dividend - Rs 10 Per Share,10,EQ
+WABAG,17-Jul-2026,17-Jul-2026,Dividend - Rs 5 Per Sh,2,EQ
+VMART,17-Jul-2026,17-Jul-2026,Dividend - Re 1 Per Share,10,EQ
+VEEDOL,17-Jul-2026,17-Jul-2026,Dividend - Rs 22 Per Share,2,EQ
+UPL,17-Jul-2026,17-Jul-2026,Dividend - Rs 6 Per Share,2,EQ
+UNIENTER,17-Jul-2026,17-Jul-2026,Dividend - Rs 3.50 Per Share,2,EQ
+RAJRATAN,17-Jul-2026,17-Jul-2026,Dividend - Rs 2 Per Share,2,EQ
+MRF,17-Jul-2026,17-Jul-2026,Dividend - Rs 229 Per Share,10,EQ
+SAFARI,17-Jul-2026,17-Jul-2026,Dividend - Rs 2 Per Share,2,EQ
+BIKAJI,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.25 Per Share,1,EQ
+BAJAJELEC,17-Jul-2026,17-Jul-2026,Dividend - Rs 3 Per Share,2,EQ
+AVADHSUGAR,17-Jul-2026,17-Jul-2026,Dividend - Rs 10 Per Share,10,EQ
+ATUL,17-Jul-2026,17-Jul-2026,Dividend - Rs 30 Per Share,10,EQ
+HONAUT,17-Jul-2026,17-Jul-2026,Dividend - Rs 110 Per Share,10,EQ
+APOLLOPIPE,17-Jul-2026,17-Jul-2026,Dividend - Re 0.70 Per Share,10,EQ
+HCLTECH,17-Jul-2026,17-Jul-2026,Interim Dividend - Rs 12 Per Share,2,EQ
+HAPPSTMNDS,17-Jul-2026,17-Jul-2026,Dividend - Rs 3.65 Per Share,2,EQ
+NH,17-Jul-2026,17-Jul-2026,Dividend - Rs 4.50 Per Share,10,EQ
+CDSL,17-Jul-2026,17-Jul-2026,Dividend - Rs 12.75 Per Share,10,EQ
+PUNJABCHEM,17-Jul-2026,17-Jul-2026,Dividend - Rs 3 Per Share,10,EQ
+PRUDENT,17-Jul-2026,17-Jul-2026,Dividend - Rs 3.50 Per Share,5,EQ
+BLUESTARCO,17-Jul-2026,17-Jul-2026,Dividend - Rs 8.50 Per Share,2,EQ
+NEWGEN,17-Jul-2026,17-Jul-2026,Dividend - Rs 6 Per Share,10,EQ
+BHEL,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.40 Per Share,2,EQ
+DBOL,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.50 Per Share,10,EQ
+PFIZER,17-Jul-2026,17-Jul-2026,Dividend - Rs 75 Per Share,10,EQ
+DABUR,17-Jul-2026,17-Jul-2026,Dividend - Rs 5.50 Per Share,1,EQ
+LMW,17-Jul-2026,17-Jul-2026,Dividend - Rs 35 Per Share,10,EQ
+20MICRONS,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.25 Per Share,5,EQ
+3MINDIA,17-Jul-2026,17-Jul-2026,Dividend - Rs 160 Per Share/Special Dividend - Rs 346 Per Share,10,EQ
+CUMMINSIND,17-Jul-2026,17-Jul-2026,Dividend - Rs 46 Per Share,2,EQ
+DHANUKA,17-Jul-2026,17-Jul-2026,Dividend - Rs 2 Per Share,2,EQ
+BALKRISIND,17-Jul-2026,17-Jul-2026,Dividend - Rs 4 Per Share,2,EQ
+INDIANHUME,17-Jul-2026,17-Jul-2026,Dividend - Rs 2 Per Share/Special Dividend - Rs 3 Per Share,2,EQ
+BHARATSE,17-Jul-2026,17-Jul-2026,Dividend - Rs 1.50 Per Share,2,EQ
+KOTAKBANK,17-Jul-2026,17-Jul-2026,Dividend - Rs 0.65 Per Share,1,EQ
+CRAFTSMAN,16-Jul-2026,16-Jul-2026,Dividend - Rs. 11.25 Per Share,5,EQ
+ADOR,16-Jul-2026,16-Jul-2026,Dividend - Rs 23 Per Share,10,EQ
+GRPLTD,16-Jul-2026,16-Jul-2026,Dividend - Rs 3.50 Per Share,10,EQ
+CRAMC,16-Jul-2026,16-Jul-2026,Dividend - Rs 2.50 Per Share,10,EQ
+ASPINWALL,16-Jul-2026,16-Jul-2026,Dividend - Rs 6.50 Per Share,10,EQ
+COROMANDEL,16-Jul-2026,16-Jul-2026,Dividend - Rs 2 Per Share,1,EQ
+WINDLAS,16-Jul-2026,16-Jul-2026,Dividend - Rs 6.30 Per Share,5,EQ
+WEIZMANIND,16-Jul-2026,16-Jul-2026,Dividend - Rs 0.50 Per Share,10,EQ
+HERITGFOOD,15-Jul-2026,15-Jul-2026,Dividend - Rs 2.50 Per Share,5,EQ
+TCS,15-Jul-2026,15-Jul-2026,Interim Dividend - Rs 12 Per Share,1,EQ
+KFINTECH,15-Jul-2026,15-Jul-2026,Dividend - Rs 12 Per Share,10,EQ
+BBL,15-Jul-2026,15-Jul-2026,Dividend - Rs 35 Per Share,5,EQ
+ORBTEXP,15-Jul-2026,15-Jul-2026,Buy Back,10,EQ
+KHAICHEM,14-Jul-2026,14-Jul-2026,Dividend - Rs 0.05 Per Share,1,EQ
+AEROFLEX,14-Jul-2026,14-Jul-2026,Dividend - Rs 0.40 Per Share,2,EQ
+ABREL,14-Jul-2026,14-Jul-2026,Dividend - Rs 2.50 Per Share,10,EQ
+BIMETAL,14-Jul-2026,14-Jul-2026,Dividend - Rs 13.50 Per Share,10,EQ
+PIXTRANS,14-Jul-2026,14-Jul-2026,Dividend - Rs 9 Per Share,10,EQ
+IMPAL,14-Jul-2026,14-Jul-2026,Dividend - Rs 23 Per Share,10,EQ
+HESTERBIO,14-Jul-2026,14-Jul-2026,Dividend - Rs 11 Per Share,10,EQ
+MSUMI,14-Jul-2026,14-Jul-2026,Dividend - Re 0.58 Per Share,1,EQ
+MOTHERSON,14-Jul-2026,14-Jul-2026,Dividend - Rs 0.25 Per Share,1,EQ
+MODISONLTD,14-Jul-2026,14-Jul-2026,Dividend - Rs 3 Per Share,1,EQ
+SPLPETRO,14-Jul-2026,14-Jul-2026,Dividend - Rs 8 Per Share,2,EQ
+UTIAMC,14-Jul-2026,14-Jul-2026,Dividend - Rs 40 Per Share,10,EQ
+ULTRAMAR,14-Jul-2026,14-Jul-2026,Dividend - Rs 6 Per Share,2,EQ
+INGERRAND,13-Jul-2026,13-Jul-2026,Dividend - Rs 20 Per Share,10,EQ
+XPROINDIA,13-Jul-2026,13-Jul-2026,Dividend - Rs 2 Per Share,10,EQ
+M&MFIN,13-Jul-2026,13-Jul-2026,Dividend - Rs 7.50 Per Share,2,EQ
+BEPL,13-Jul-2026,13-Jul-2026,Dividend - Re 1 Per Share,1,EQ
+726GS2029,13-Jul-2026,13-Jul-2026,Interest Payment,100,GS
+DYCL,10-Jul-2026,10-Jul-2026,Dividend - Rs 0.50 Per Share,10,EQ
+CONTROLPR,10-Jul-2026,10-Jul-2026,Dividend - Rs 6 Per Share,10,EQ
+ROSSARI,10-Jul-2026,10-Jul-2026,Dividend - Rs 0.50 Per Share,2,EQ
+JSWCEMENT,10-Jul-2026,10-Jul-2026,Dividend - Re 0.50 Per Share,10,EQ
+JKCEMENT,10-Jul-2026,10-Jul-2026,Dividend - Rs 20 Per Share,10,EQ
+MWL,10-Jul-2026,10-Jul-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
+GEOJITFSL,10-Jul-2026,10-Jul-2026,Dividend - Rs 1.50 Per Share,1,EQ
+MAHLOG,10-Jul-2026,10-Jul-2026,Dividend - Rs 2.50 Per Share,10,EQ
+DRREDDY,10-Jul-2026,10-Jul-2026,Dividend - Rs 8 Per Share,1,EQ
+BSE,10-Jul-2026,10-Jul-2026,Dividend - Rs 10 Per Share,2,EQ
+DLINKINDIA,10-Jul-2026,10-Jul-2026,Dividend - Rs 20 Per Share/Special Dividend - Rs 7.50,2,EQ
+SOBHA,10-Jul-2026,10-Jul-2026,Dividend - Rs 6 Per Share,10,EQ
+SMARTLINK,10-Jul-2026,10-Jul-2026,Dividend - Rs 2 Per Share,2,EQ
+ZFCVINDIA,10-Jul-2026,10-Jul-2026,Dividend - Rs 4 Per Share,5,EQ
+AXISBANK,10-Jul-2026,10-Jul-2026,Dividend - Re 1 Per Share,2,EQ
+VSTIND,10-Jul-2026,10-Jul-2026,Dividend - Rs 12 Per Share,10,EQ
+ORIENTELEC,10-Jul-2026,10-Jul-2026,Dividend - Rs 0.75 Per Share,1,EQ
+AEGISLOG,10-Jul-2026,10-Jul-2026,Dividend - Rs 6.70 Per Share,1,EQ
+BSOFT,10-Jul-2026,10-Jul-2026,Dividend - Rs 4 Per Share,2,EQ
+NILKAMAL,10-Jul-2026,10-Jul-2026,Dividend - Rs 20 Per Share,10,EQ
+WELSPUNLIV,10-Jul-2026,10-Jul-2026,Dividend - Re 0.10 Per Share,1,EQ
+ARTEMISMED,10-Jul-2026,10-Jul-2026,Dividend - Re 0.45 Per Share,1,EQ
+APOLLOTYRE,10-Jul-2026,10-Jul-2026,Dividend - Rs2.50 Per Share,1,EQ
+HINDALCO,10-Jul-2026,10-Jul-2026,Dividend - Rs 5 Per Share,1,EQ
+PTL,10-Jul-2026,10-Jul-2026,Dividend - Re 1 Per Sh,1,EQ
+NUCLEUS,10-Jul-2026,10-Jul-2026,Dividend - Rs 12.50 Per Share,10,EQ
+AEGISVOPAK,10-Jul-2026,10-Jul-2026,Dividend - Rs 0.20 Per Share,10,EQ
+NIACL,10-Jul-2026,10-Jul-2026,Dividend - Rs 1.50 Per Share,5,EQ
+GRINDWELL,10-Jul-2026,10-Jul-2026,Dividend - Rs 19 Per Share,5,EQ
+NESTLEIND,10-Jul-2026,10-Jul-2026,Special Dividend - Rs 2 Per Share,1,EQ
+NESTLEIND,10-Jul-2026,10-Jul-2026,Dividend - Rs 5 Per Share,1,EQ
+GOLDIAM,10-Jul-2026,10-Jul-2026,Bonus 1:3,2,EQ
+CAMS,10-Jul-2026,10-Jul-2026,Dividend - Rs 4 Per Share,2,EQ
+TITAN,09-Jul-2026,09-Jul-2026,Dividend - Rs 15 Per Share,1,EQ
+RPGLIFE,09-Jul-2026,09-Jul-2026,Dividend - Rs 24 Per Share,8,EQ
+HARSHA,09-Jul-2026,09-Jul-2026,Dividend - Rs 1.50 Per Share,10,EQ
+TARACHAND,09-Jul-2026,09-Jul-2026,Dividend - Re 0.20 Per Share,2,EQ
+SFL,09-Jul-2026,09-Jul-2026,Dividend - Re 1 Per Share,5,EQ
+KRISHNADEF,08-Jul-2026,08-Jul-2026,Dividend - Rs 1.25 Per Share,10,EQ
+BLISSGVS,08-Jul-2026,08-Jul-2026,Dividend - Re 1 Per Share,1,EQ
+UNITDSPR,08-Jul-2026,08-Jul-2026,Dividend - Rs 11 Per Share,2,EQ
+MPHASIS,08-Jul-2026,08-Jul-2026,Dividend - Rs 62 Per Share,10,EQ
+TSFINV,07-Jul-2026,07-Jul-2026,Dividend - Rs 4.45 Per Share,5,EQ
+JSWSTEEL,07-Jul-2026,07-Jul-2026,Dividend - Rs 7.10 Per Share,1,EQ
+CERA,07-Jul-2026,07-Jul-2026,Dividend - Rs 75 Per Share,5,EQ
+DODLA,07-Jul-2026,07-Jul-2026,Dividend - Rs 5 Per Share,10,EQ
+SUNPHARMA,07-Jul-2026,07-Jul-2026,Dividend - Rs 5 Per Share,1,EQ
+PILANIINVS,06-Jul-2026,06-Jul-2026,Dividend - Rs 9 Per Share,10,EQ
+SUNDARMFIN,06-Jul-2026,06-Jul-2026,Dividend - Rs 24 Per Share,10,EQ
+DCMSIL,06-Jul-2026,06-Jul-2026,Dividend - Re 0.40 Per Share,2,EQ
+DJML,06-Jul-2026,06-Jul-2026,Dividend - Re 0.15 Per Share,10,EQ
+MAHLIFE,03-Jul-2026,03-Jul-2026,Dividend - Rs 3.50 Per Share,10,EQ
+TEAMLEASE,03-Jul-2026,03-Jul-2026,Buy Back,10,EQ
+GLOSTERLTD,03-Jul-2026,03-Jul-2026,Dividend - Rs 20 Per Share,10,EQ
+EXIDEIND,03-Jul-2026,03-Jul-2026,Dividend - Rs 2 Per Share,1,EQ
+ESCORTS,03-Jul-2026,03-Jul-2026,Dividend - Rs 33 Per Share,10,EQ
+MBAPL,03-Jul-2026,03-Jul-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
+MAXHEALTH,03-Jul-2026,03-Jul-2026,Dividend - Rs 2 Per Share,10,EQ
+SHRIRAMFIN,03-Jul-2026,03-Jul-2026,Dividend - Rs 6 Per Share,2,EQ
+M&M,03-Jul-2026,03-Jul-2026,Dividend - Rs 33 Per Share,5,EQ
+SWARAJENG,03-Jul-2026,03-Jul-2026,Dividend - Rs 110 Per Share,10,EQ
+SKFINDUS,03-Jul-2026,03-Jul-2026,Dividend - Rs 10 Per Share,10,EQ
+SKFINDIA,03-Jul-2026,03-Jul-2026,Dividend - Rs 40 Per Share,10,EQ
+THERMAX,03-Jul-2026,03-Jul-2026,Dividend - Rs 14 Per Share/Special Dividend - Rs 6 Per Share,2,EQ
+BALAMINES,03-Jul-2026,03-Jul-2026,Dividend - Rs 11 Per Share,2,EQ
+UNIONBANK,03-Jul-2026,03-Jul-2026,Dividend - Rs 5 Per Share,10,EQ
+TECHM,03-Jul-2026,03-Jul-2026,Dividend - Rs 36 Per Share,5,EQ
+SMLMAH,03-Jul-2026,03-Jul-2026,Dividend - Rs 23.50 Per Share,10,EQ
+JSWDULUX,03-Jul-2026,03-Jul-2026,Dividend - Rs 50 Per Share,10,EQ
+BFINVEST,03-Jul-2026,03-Jul-2026,Dividend - Rs 10 Per Share,5,EQ
+WELENT,03-Jul-2026,03-Jul-2026,Dividend - Rs 3 Per Share,10,EQ
+AKUMS,03-Jul-2026,03-Jul-2026,Dividend - Re 1 Per Share/Special Dividend - Rs 2 Per Share,2,EQ
+GREENLAM,03-Jul-2026,03-Jul-2026,Dividend - Re 0.40 Per Share,1,EQ
+CANFINHOME,03-Jul-2026,03-Jul-2026,Dividend - Rs 8 Per Share,2,EQ
+BIOCON,03-Jul-2026,03-Jul-2026,Dividend - Re 0.50 Per Share,5,EQ
+RAYMONDREL,03-Jul-2026,03-Jul-2026,Dividend - Rs 2 Per Share,10,EQ
+BHARATFORG,03-Jul-2026,03-Jul-2026,Dividend - Rs 6.50 Per Share,2,EQ
+ONWARDTEC,03-Jul-2026,03-Jul-2026,Dividend - Rs 8 Per Share,10,EQ
+DCMSRIND,03-Jul-2026,03-Jul-2026,Dividend - Re 0.40 Per Share,2,EQ
+DALMIASUG,03-Jul-2026,03-Jul-2026,Dividend - Rs 1.50 Per Share,2,EQ
+KRISHANA,03-Jul-2026,03-Jul-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
+ROLEXRINGS,03-Jul-2026,03-Jul-2026,Buy Back,1,EQ
+KIRLPNU,03-Jul-2026,03-Jul-2026,Dividend - Rs 8.50 Per Share,2,EQ
+REDINGTON,03-Jul-2026,03-Jul-2026,Dividend - Rs 6 Per Share,2,EQ
+GANGAFORGE,02-Jul-2026,02-Jul-2026,Rights 3:2 @ Premium Re. 0.63/-,1,EQ
+CHEMBOND,02-Jul-2026,02-Jul-2026,Dividend - Rs 2 Per Share,5,EQ
+LLOYDSENT,02-Jul-2026,02-Jul-2026,Dividend - Re 0.05 Per Share,1,EQ
+GUJENERGY,02-Jul-2026,02-Jul-2026,Demerger,2,EQ
+DSFCL,01-Jul-2026,01-Jul-2026,Dividend - Re 0.40 Per Sh,2,EQ
+BAJFINANCE,30-Jun-2026,30-Jun-2026,Dividend - Rs 6 Per Share,1,EQ
+BAJAJHLDNG,30-Jun-2026,30-Jun-2026,Dividend - Rs 80 Per Share & Special Dividend Rs 50 Per Share,10,EQ
+PATINTLOG,30-Jun-2026,30-Jun-2026,Buy Back,10,EQ
+WELCORP,30-Jun-2026,30-Jun-2026,Dividend - Rs 5 Per Share,5,EQ
+MAHSCOOTER,30-Jun-2026,30-Jun-2026,Dividend - Rs 60 Per Share,10,EQ
+BAJAJFINSV,30-Jun-2026,30-Jun-2026,Dividend - Rs 1.50 Per Share,1,EQ
+RAYMONDLSL,29-Jun-2026,29-Jun-2026,Dividend - Re 1 Per Share,2,EQ
+KANSAINER,29-Jun-2026,29-Jun-2026,Dividend - Rs 2.50 Per Share,1,EQ
+83GS2042,29-Jun-2026,29-Jun-2026,Interest Payment,100,GS
+KPIL,29-Jun-2026,29-Jun-2026,Dividend - Rs 11 Per Share,2,EQ
+KAJARIACER,29-Jun-2026,29-Jun-2026,Buy Back,1,EQ
+JYOTHYLAB,29-Jun-2026,29-Jun-2026,Dividend - Rs 3.50 Per Share,1,EQ
+LALPATHLAB,25-Jun-2026,26-Jun-2026,Dividend - Rs 4 Per Share,10,EQ
+MAWANASUG,25-Jun-2026,27-Jun-2026,Dividend - Rs 4 Per Share,10,EQ
+679GS2029,25-Jun-2026,25-Jun-2026,Interest Payment,100,GS
+LICI,25-Jun-2026,25-Jun-2026,Dividend - Rs 10 Per Share,10,EQ
+NAM-INDIA,25-Jun-2026,26-Jun-2026,Dividend - Rs 12.50 Per Share,10,EQ
+SONACOMS,25-Jun-2026,26-Jun-2026,Dividend - Rs 1.80 Per Share,10,EQ
+SYNGENE,25-Jun-2026,26-Jun-2026,Dividend - Rs 1.25 Per Share,10,EQ
+CARERATING,25-Jun-2026,26-Jun-2026,Dividend - Rs 14 Per Share,10,EQ
+GICHSGFIN,25-Jun-2026,26-Jun-2026,Dividend - Rs 4.50 Per Share,10,EQ
+ANTHEM,25-Jun-2026,26-Jun-2026,Dividend - Rs 2 Per Share,2,EQ
+UFLEX,25-Jun-2026,26-Jun-2026,Dividend - Rs 3 Per Share,10,EQ
+VISAKAIND,25-Jun-2026,26-Jun-2026,Dividend - Rs 1.20 Per Share,2,EQ
+SJS,25-Jun-2026,26-Jun-2026,Dividend - Rs 3.50 Per Share,10,EQ
+ABDL,25-Jun-2026,26-Jun-2026,Dividend - Rs 5.40 Per Share,2,EQ
+ALKYLAMINE,25-Jun-2026,26-Jun-2026,Dividend - Rs 10 Per Share,2,EQ
+INDUSINDBK,25-Jun-2026,26-Jun-2026,Dividend - Rs 1.50 Per Share,10,EQ
+SUPREMEIND,25-Jun-2026,26-Jun-2026,Dividend - Rs 25 Per Share,2,EQ
+VAIBHAVGBL,25-Jun-2026,26-Jun-2026,Dividend - Rs 1.50 Per Share,2,EQ
+ZFCVINDIA,24-Jun-2026,24-Jun-2026,Bonus 5:1,5,EQ
+BAJAJ-AUTO,24-Jun-2026,24-Jun-2026,Buy Back,10,EQ
+BUILDPRO,24-Jun-2026,24-Jun-2026,Dividend - Rs 5 Per Share,10,EQ
+WHEELS,24-Jun-2026,24-Jun-2026,Dividend - Rs 9.14 Per Share,10,EQ
+KOTYARK,24-Jun-2026,24-Jun-2026,Bonus 10:1,10,EQ
+DALBHARAT,23-Jun-2026,23-Jun-2026,Dividend - Rs 5 Per Share,2,EQ
+TATAPOWER,23-Jun-2026,23-Jun-2026,Dividend - Rs 2.50 Per Share,1,EQ
+INDHOTEL,23-Jun-2026,23-Jun-2026,Dividend - Rs 3.25 Per Share,1,EQ
+THYROCARE,23-Jun-2026,23-Jun-2026,Dividend - Rs 7 Per Share,10,EQ
+ASIANPAINT,23-Jun-2026,23-Jun-2026,Dividend - Rs 23 Per Share,1,EQ
+HINDUNILVR,23-Jun-2026,23-Jun-2026,Dividend - Rs 22 Per Share,1,EQ
+ARSSBL,23-Jun-2026,23-Jun-2026,Dividend - Rs 5 Per Share,5,EQ
+GNA,23-Jun-2026,23-Jun-2026,Dividend - Rs 3 Per Share,10,EQ
+SANGAMIND,22-Jun-2026,22-Jun-2026,Dividend - Rs 2 Per Share,10,EQ
+923GS2043,22-Jun-2026,22-Jun-2026,Interest Payment,100,GS
+SANOFICONR,19-Jun-2026,19-Jun-2026,Dividend - Rs 75 Per Share,10,EQ
+POLYCAB,19-Jun-2026,19-Jun-2026,Dividend - Rs 47 Per Share,10,EQ
+CORONA,19-Jun-2026,19-Jun-2026,Dividend - Rs 10 Per Share,10,EQ
+TATACOMM,19-Jun-2026,19-Jun-2026,Dividend - Rs 17.50 Per Share,10,EQ
+GHCLTEXTIL,19-Jun-2026,20-Jun-2026,Dividend - Re 0.60 Per Share,2,EQ
+TMPV,19-Jun-2026,19-Jun-2026,Dividend - Rs 3 Per Share,2,EQ
+TORNTPOWER,19-Jun-2026,19-Jun-2026,Dividend - Rs 5 Per Share,10,EQ
+DBEIL,19-Jun-2026,19-Jun-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
+813GS2045,19-Jun-2026,19-Jun-2026,Interest Payment,100,GS
+HDFCLIFE,19-Jun-2026,19-Jun-2026,Dividend - Rs 2.10 Per Share,10,EQ
+AWL,19-Jun-2026,19-Jun-2026,Dividend - Re 1 Per Share,1,EQ
+INDIAMART,19-Jun-2026,19-Jun-2026,Dividend - Rs 30 Per Share/ Special Dividend - Rs 30 Per Share,10,EQ
+INDIASHLTR,19-Jun-2026,19-Jun-2026,Dividend - Rs 10 Per Share,5,EQ
+RPEL,19-Jun-2026,19-Jun-2026,Dividend - Re 1 Per Share,10,EQ
+HDFCBANK,19-Jun-2026,19-Jun-2026,Dividend - Rs 13 Per Share,1,EQ
+JSWINFRA,18-Jun-2026,18-Jun-2026,Dividend - Re 0.90 Per Share,2,EQ
+TATATECH,18-Jun-2026,18-Jun-2026,Dividend - Rs 8.35 Per Share & Special Dividend - Rs 3.35 Per Share,2,EQ
+EMUDHRA,18-Jun-2026,18-Jun-2026,Dividend - Rs1.25 Per Share,5,EQ
+773GS2034,18-Jun-2026,18-Jun-2026,Interest Payment,100,GS
+GHCL,18-Jun-2026,18-Jun-2026,Dividend - Rs 12 Per Share,10,EQ
+VIMTALABS,18-Jun-2026,18-Jun-2026,Dividend - Rs 2 Per Share,2,EQ
+HDBFS,18-Jun-2026,18-Jun-2026,Dividend - Rs 2 Per Share,10,EQ
+CAPITALSFB,18-Jun-2026,18-Jun-2026,Dividend - Rs 5 Per Share,10,EQ
+MBAPL,17-Jun-2026,17-Jun-2026,Dividend - Re 0.50 Per Share,2,EQ
+KRISHANA,17-Jun-2026,17-Jun-2026,Dividend - Re 0.50 Per Share,2,EQ
+BRIGADE,17-Jun-2026,17-Jun-2026,Bonus 1:3,10,EQ
+CYIENT,17-Jun-2026,17-Jun-2026,Buy Back,5,EQ
+STEELCITY,16-Jun-2026,16-Jun-2026,Dividend - Re 1 Per Share,10,EQ
+RRKABEL,16-Jun-2026,16-Jun-2026,Dividend - Rs 5.50 Per Share,5,EQ
+SMCGLOBAL,15-Jun-2026,15-Jun-2026,Dividend - Re 0.60 Per Share,2,EQ
+ACC,12-Jun-2026,12-Jun-2026,Dividend - Rs 7.50 Per Share,10,EQ
+ELECON,12-Jun-2026,12-Jun-2026,Dividend - Rs 1.5 Per Share,1,EQ
+TRENT,12-Jun-2026,12-Jun-2026,Dividend - Rs 4 Per Share,1,EQ
+TMCV,12-Jun-2026,12-Jun-2026,Dividend - Rs 4 Per Share,2,EQ
+TMB,12-Jun-2026,12-Jun-2026,Dividend - Rs 12.50 Per Share,10,EQ
+NAVINFLUOR,12-Jun-2026,12-Jun-2026,Dividend - Rs 8.60 Per Share,2,EQ
+MMFL,12-Jun-2026,12-Jun-2026,Interim Dividend - Rs 4 Per Share,10,EQ
+LLOYDSME,12-Jun-2026,12-Jun-2026,Dividend - Rs 1 Per Share,1,EQ
+EIMCOELECO,12-Jun-2026,12-Jun-2026,Dividend - Rs 4 Per Share,10,EQ
+DCBBANK,12-Jun-2026,12-Jun-2026,Dividend - Rs 1.45 Per Share,10,EQ
+CUB,12-Jun-2026,12-Jun-2026,Bonus 1:3,1,EQ
+RIIL,12-Jun-2026,12-Jun-2026,Dividend - Rs 3.50 Per Share,10,EQ
+TATASTEEL,12-Jun-2026,12-Jun-2026,Dividend - Rs 4 Per Share,1,EQ
+SUMEETINDS,12-Jun-2026,12-Jun-2026,Rights 8:25 @ Premium Rs 9.86/-,2,EQ
+VOLTAS,12-Jun-2026,12-Jun-2026,Dividend - Rs 4 Per Share,1,EQ
+AMBUJACEM,12-Jun-2026,12-Jun-2026,Dividend - Rs 2 Per Share,2,EQ
+ADANIENT,12-Jun-2026,12-Jun-2026,Dividend - Rs 1.30 Per Share,1,EQ
+APCOTEXIND,12-Jun-2026,12-Jun-2026,Dividend - Rs 5.50 Per Share,2,EQ
+ICICIAMC,12-Jun-2026,12-Jun-2026,Dividend - Rs 12.40 Per Share,1,EQ
+ATGL,12-Jun-2026,12-Jun-2026,Dividend - Rs 0.25 Per Share,1,EQ
+AVANTEL,12-Jun-2026,12-Jun-2026,Dividend - Rs 0.20 Per Share,2,EQ
+ORIENTCEM,12-Jun-2026,12-Jun-2026,Dividend - Rs 0.50 Per Share,1,EQ
+PIRAMALFIN,12-Jun-2026,12-Jun-2026,Dividend - Rs 11 Per Share,2,EQ
+PNB,12-Jun-2026,13-Jun-2026,Dividend - Rs 3 Per Share,2,EQ
+PETRONET,12-Jun-2026,12-Jun-2026,Dividend - Rs 3 Per Share,10,EQ
+CANBK,12-Jun-2026,12-Jun-2026,Dividend - Rs 4.20 Per Share,2,EQ
+JMFINANCIL,12-Jun-2026,12-Jun-2026,Dividend - Rs 1.75 Per Share,1,EQ
+CEMPRO,12-Jun-2026,12-Jun-2026,Dividend - Rs 3 Per Share,1,EQ
+ADANIPORTS,12-Jun-2026,12-Jun-2026,Dividend - Rs 7.50 Per Share,2,EQ
+INDIANB,10-Jun-2026,10-Jun-2026,Dividend - Rs 18.25 Per Share,10,EQ
+SESHAPAPER,10-Jun-2026,10-Jun-2026,Dividend - Rs 2 Per Share,2,EQ
+TATACHEM,10-Jun-2026,10-Jun-2026,Dividend - Rs 11 Per Share,10,EQ
+INFY,10-Jun-2026,10-Jun-2026,Dividend - Rs 25 Per Share,5,EQ
+TATAELXSI,10-Jun-2026,10-Jun-2026,Dividend - Rs 75 Per Share,10,EQ
+TATAINVEST,10-Jun-2026,10-Jun-2026,Dividend - Rs 3.40 Per Share,1,EQ
+NELCO,09-Jun-2026,09-Jun-2026,Dividend - Rs 1 Per Share,10,EQ
+INOXINDIA,09-Jun-2026,09-Jun-2026,Dividend - Rs 2 Per Share,2,EQ
+RELTD,08-Jun-2026,08-Jun-2026,Rights 1:9 @ Premium 91,10,EQ
+JAGRAN,05-Jun-2026,05-Jun-2026,Interim Dividend - Rs 7 Per Share & Special Dividend Rs 3 Per Share,2,EQ
+E2E,05-Jun-2026,05-Jun-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
+WIPRO,05-Jun-2026,05-Jun-2026,Buy Back,2,EQ
+VERTOZ,05-Jun-2026,05-Jun-2026,Interim Dividend - Rs 0.10 Per Share,10,EQ
+MAHABANK,05-Jun-2026,05-Jun-2026,Dividend - Rs 1.20 Per Sh,10,EQ
+JSWENERGY,05-Jun-2026,05-Jun-2026,Dividend - Rs 2 Per Share,10,EQ
+RELIANCE,05-Jun-2026,05-Jun-2026,Dividend - Rs 6 Per Share,10,EQ
+PONNIERODE,05-Jun-2026,05-Jun-2026,Dividend - Rs 5 Per Share,10,EQ
+SPCENET,05-Jun-2026,05-Jun-2026,Interim Dividend - Rs. 0.01 Per Sh,1,EQ
+BEML,05-Jun-2026,05-Jun-2026,Interim Dividend - Rs 2.30 Per Share,5,EQ
+ICICIPRULI,05-Jun-2026,05-Jun-2026,Dividend - Rs 1.65 Per Share,10,EQ
+CIPLA,05-Jun-2026,05-Jun-2026,Dividend - Rs 13 Per Share,2,EQ
+ACI,05-Jun-2026,05-Jun-2026,Dividend - Rs 2.50 Per Share,2,EQ
+HDFCAMC,05-Jun-2026,05-Jun-2026,Dividend - Rs 54 Per Share,5,EQ
+BANKBARODA,05-Jun-2026,05-Jun-2026,Dividend - Rs 8.50 Per Share,2,EQ
+TIIL,04-Jun-2026,04-Jun-2026,Interim Dividend - Rs 20 Per Share,10,EQ
+TRENT,04-Jun-2026,04-Jun-2026,Bonus 1:2,1,EQ
+RALLIS,04-Jun-2026,04-Jun-2026,Dividend - Rs 3 Per Share,1,EQ
+NAVNETEDUL,03-Jun-2026,03-Jun-2026,Interim Dividend - Rs 1.50 Per Share,2,EQ
+ASHOKLEY,03-Jun-2026,03-Jun-2026,Interim Dividend - Rs 2.50 Per Share,1,EQ
+REMSONSIND,03-Jun-2026,03-Jun-2026,Interim Dividend - Re 0.20 Per Share,2,EQ
+FOSECOIND,03-Jun-2026,03-Jun-2026,Dividend - Rs 25 Per Share,10,EQ
+ANANDRATHI,03-Jun-2026,03-Jun-2026,Bonus 1:1,5,EQ
+SETCO,02-Jun-2026,02-Jun-2026,Interim Dividend - Rs 13 Per Share,2,EQ
+OSEINTRUST,02-Jun-2026,02-Jun-2026,Distribution - Rs 3.9155 Per Unit Consists Of Rs 1.2084 Per Unit As Interest/ Re 0.9735 Per Unit As Dividend/ Rs 1.7336 Per Unit As Return Of Capital,100,IV
+NXT-INFRA,02-Jun-2026,02-Jun-2026,Distribution - Rs 4.3475 Per Unit Consist Of Rs 2.8887 Per Unit As Interest/ Rs 1.4588 Per Unit As Return Of Capital,100,IV
+NDRINVIT,02-Jun-2026,02-Jun-2026,Distribution - Rs 1.92 Per Unit Consist Of Re 0.949 Per Unit As Interest / Re 0.971 Per Unit As Return Of Capital,100,IV
+COLPAL,01-Jun-2026,01-Jun-2026,Interim Dividend - Rs 24 Per Share,1,EQ
+EPIGRAL,01-Jun-2026,01-Jun-2026,Dividend - Rs 5 Per Share,10,EQ
+ADVANIHOTR,29-May-2026,29-May-2026,Interim Dividend - Rs 0.80 Per Share,2,EQ
+LEMERITE,29-May-2026,29-May-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
+DHANUKA,29-May-2026,29-May-2026,Buy Back,2,EQ
+ERIS,29-May-2026,29-May-2026,Interim Dividend - Rs 7.21 Per Share,1,EQ
+GLAXO,29-May-2026,29-May-2026,Dividend - Rs 57 Per Share,10,EQ
+TORNTPHARM,29-May-2026,29-May-2026,Dividend - Rs 9 Per Share,5,EQ
+UNOMINDA,29-May-2026,29-May-2026,Dividend - Rs 1.75 Per Share,2,EQ
