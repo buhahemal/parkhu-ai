@@ -1,0 +1,1 @@
+trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,hit_t1,hit_t2,reconfirmed_count,notes,date_closed,exit_price,exit_reason,pct_return,r_multiple,days_held

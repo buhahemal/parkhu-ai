@@ -1,0 +1,355 @@
+{
+  "data_date": "2026-07-24",
+  "capital": 100000.0,
+  "kb_version": "KB v1.0 (2026-06-21)",
+  "limits": {
+    "risk_per_trade_pct": 2.0,
+    "max_per_stock_pct": 10.0,
+    "max_per_sector_pct": 25.0,
+    "max_positions": 10,
+    "min_rr_t1": 2.0,
+    "buy_score": 80.0,
+    "watch_score": 70.0
+  },
+  "regime": {
+    "market_regime": "Bearish",
+    "nifty_trend": "Bearish",
+    "nifty_pct_change": -0.49,
+    "banknifty_trend": "Bearish",
+    "banknifty_pct_change": -0.45,
+    "india_vix": 14.06,
+    "vix_level": "Medium",
+    "best_sector": "Distribution Services",
+    "best_sector_perf_1m": 7.53,
+    "worst_sector": "Utilities",
+    "worst_sector_perf_1m": -5.26,
+    "fii_net": -2999.23,
+    "dii_net": 2947.14,
+    "crude": 92.05,
+    "crude_pct_change": 6.01,
+    "usdinr": 96.51,
+    "usdinr_pct_change": -0.04,
+    "us_sp500_pct": -1.21,
+    "us_dow_pct": -0.97,
+    "us_vix": 18.7,
+    "us_vix_pct": 12.38,
+    "dxy": 101.41,
+    "dxy_pct": 0.27,
+    "us_10y": 4.7,
+    "asia_cue": "Bearish",
+    "europe_cue": "Bearish",
+    "global_risk": "Risk-Off",
+    "overall_risk": "Medium",
+    "generated_at_ist": "2026-07-24T09:22:11.835501+05:30"
+  },
+  "funnel": [
+    {
+      "gate": "universe",
+      "surviving": 368
+    },
+    {
+      "gate": "trend = Bullish",
+      "surviving": 171
+    },
+    {
+      "gate": "price > SMA200",
+      "surviving": 149
+    },
+    {
+      "gate": "price > EMA50",
+      "surviving": 145
+    },
+    {
+      "gate": "ADX14 > 25",
+      "surviving": 82
+    },
+    {
+      "gate": "RSI14 in 40-80",
+      "surviving": 82
+    },
+    {
+      "gate": "RS > 0 vs NIFTY and sector",
+      "surviving": 71
+    },
+    {
+      "gate": "delivery% >= 40",
+      "surviving": 43
+    },
+    {
+      "gate": "no earnings within 21d",
+      "surviving": 11
+    },
+    {
+      "gate": "event_risk_score <= 1",
+      "surviving": 9
+    },
+    {
+      "gate": "TV rating not Sell",
+      "surviving": 9
+    }
+  ],
+  "ideas": [
+    {
+      "symbol": "ICICIBANK",
+      "company": "ICICI Bank Limited",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "risk_sector": "Banks",
+      "cmp": 1428.9,
+      "parkhu_score": 83.2,
+      "band": "Buy",
+      "levels": {
+        "entry": 1428.9,
+        "stop": 1379.3,
+        "stop_pct": 3.47,
+        "stop_atr_mult": 2.0,
+        "stop_mode": "atr_fallback",
+        "stop_above_structure": true,
+        "structure_invalidation": 1366.61,
+        "t1": 1528.11,
+        "t2": 1577.71,
+        "t3": 1627.32,
+        "t1_pct": 6.94,
+        "t2_pct": 10.41,
+        "t3_pct": 13.89,
+        "rr_t1": 2.0,
+        "expected_profit_pct_t1": 6.94,
+        "hold_days_t1": 16,
+        "hold_days_t2": 36,
+        "t1_beyond_mandate": false,
+        "t1_above_52w_high": true,
+        "room_to_52w_high_pct": 4.59
+      },
+      "sizing": {
+        "qty": 6,
+        "capital_deployed": 8573.0,
+        "capital_pct": 8.57,
+        "risk_rupees": 298.0,
+        "risk_pct_of_capital": 0.3,
+        "profit_at_t1": 595.0,
+        "profit_at_t2": 893.0,
+        "binding_constraint": "exposure cap (10%/name)"
+      },
+      "evidence": {
+        "trend_label": "Bullish",
+        "adx14": 32.986527772169744,
+        "rsi14": 60.19853620326269,
+        "macd_hist": -1.5549,
+        "delivery_pct": 68.43,
+        "rs_vs_nifty_1m": 7.71,
+        "rs_vs_sector_1m": 9.3,
+        "return_1m": 6.586603013576025,
+        "return_3m": 6.929581680760319,
+        "dist_52w_high_pct": -4.39,
+        "atr14": 24.80190952768152,
+        "pe": 18.47078593588418,
+        "roe": 15.796816290169,
+        "debt_equity": 0.594743890036865,
+        "revenue_growth": 5.080821540326999,
+        "profit_growth": 7.369882026370579,
+        "composite_factor_rank": 68.0,
+        "risk_score": 40,
+        "in_oi_spurt": true,
+        "oi_change_pct": 0.11,
+        "tech_rating": "Buy",
+        "analyst_rec": 1.04,
+        "price_target_avg": 1737.12,
+        "days_to_earnings": 87.0,
+        "trend_score": 100.0,
+        "momentum_score": 60,
+        "fundamental_score": 80,
+        "earnings_score": 100,
+        "sector_score": 46.0,
+        "atr_pct_of_price": 1.74
+      }
+    }
+  ],
+  "watchlist": [
+    {
+      "symbol": "IPCALAB",
+      "risk_sector": "Health Technology",
+      "cmp": 1784.8,
+      "score": 78.4,
+      "entry_if_triggered": 1784.8,
+      "stop": 1665.37,
+      "t1": 2023.66,
+      "expected_profit_pct_t1": 13.38
+    },
+    {
+      "symbol": "SONACOMS",
+      "risk_sector": "Producer Manufacturing",
+      "cmp": 732.05,
+      "score": 73.0,
+      "entry_if_triggered": 732.05,
+      "stop": 692.21,
+      "t1": 811.73,
+      "expected_profit_pct_t1": 10.88
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "risk_sector": "Banks",
+      "cmp": 352.7,
+      "score": 72.1,
+      "entry_if_triggered": 352.7,
+      "stop": 338.27,
+      "t1": 381.56,
+      "expected_profit_pct_t1": 8.18
+    },
+    {
+      "symbol": "NYKAA",
+      "risk_sector": "Retail Trade",
+      "cmp": 322.35,
+      "score": 70.9,
+      "entry_if_triggered": 322.35,
+      "stop": 307.32,
+      "t1": 352.4,
+      "expected_profit_pct_t1": 9.32
+    }
+  ],
+  "queued_on_portfolio_limits": [],
+  "unaffordable_at_this_capital": [],
+  "ignored_below_watch": [
+    {
+      "symbol": "ANANDRATHI",
+      "score": 67.9
+    },
+    {
+      "symbol": "ADANIENSOL",
+      "score": 58.6
+    },
+    {
+      "symbol": "POONAWALLA",
+      "score": 53.9
+    },
+    {
+      "symbol": "JSWINFRA",
+      "score": 42.0
+    }
+  ],
+  "scoring": {
+    "live_weights": {
+      "technical": 20,
+      "fundamental": 15,
+      "earnings": 15,
+      "sector": 5,
+      "relative_strength": 5
+    },
+    "unavailable_components": {
+      "news": 15,
+      "institutional": 10,
+      "options": 5,
+      "macro": 5
+    },
+    "weight_unavailable_pct": 35.0
+  },
+  "portfolio": {
+    "positions": 1,
+    "capital_deployed": 8573.0,
+    "capital_deployed_pct": 8.57,
+    "cash_left": 91427.0,
+    "total_risk_rupees": 298.0,
+    "total_risk_pct": 0.3,
+    "sector_exposure": {
+      "Banks": 8.57
+    }
+  },
+  "caveats": [
+    "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
+    "promoter pledge and ownership data are empty, so KB-04's governance veto was not applied to any name here",
+    "trade levels are rebuilt by this module; stock_analysis.csv's own risk_reward is a constant 0.67 and would veto the whole universe",
+    "T1 sits at exactly 2R to meet KB-08's 1:2 floor - with no OHLC history there are no real resistance levels to target, so R:R does no independent filtering",
+    "hold periods are an ATR sqrt(time) estimate, not a forecast",
+    "no trade outcome history exists yet, so there is no measured win rate behind these numbers"
+  ],
+  "review": {
+    "reviewed": [
+      {
+        "symbol": "J&KBANK",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 184.33,
+        "stop": 169.92,
+        "t1": 213.16,
+        "price": 179.01,
+        "pct": -2.89,
+        "r_multiple": -0.37,
+        "days_held": 3,
+        "horizon_t1": 16,
+        "mfe_pct": 0.6,
+        "mae_pct": -2.89,
+        "action": "NO DATA",
+        "detail": "dropped out of today's universe \u2014 last seen \u20b9179.01 on 2026-07-23; check the chart manually",
+        "score_at_open": 90.4,
+        "score_now": null
+      },
+      {
+        "symbol": "ZYDUSLIFE",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1146.2,
+        "stop": 1074.19,
+        "t1": 1290.23,
+        "price": 1116.4,
+        "pct": -2.6,
+        "r_multiple": -0.41,
+        "days_held": 3,
+        "horizon_t1": 35,
+        "mfe_pct": 0.0,
+        "mae_pct": -3.17,
+        "action": "EARNINGS AHEAD",
+        "detail": "results inside 21 days \u2014 KB-05 says reduce or stand aside rather than hold through the print",
+        "score_at_open": 82.5,
+        "score_now": null
+      },
+      {
+        "symbol": "ICICIBANK",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1470.8,
+        "stop": 1418.81,
+        "t1": 1574.78,
+        "price": 1428.9,
+        "pct": -2.85,
+        "r_multiple": -0.81,
+        "days_held": 3,
+        "horizon_t1": 16,
+        "mfe_pct": 0.0,
+        "mae_pct": -2.85,
+        "action": "HOLD",
+        "detail": "-2.85% (-0.81R), 3d held, ~13d left to the T1 horizon",
+        "score_at_open": 85.6,
+        "score_now": null
+      },
+      {
+        "symbol": "IPCALAB",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1828.2,
+        "stop": 1715.39,
+        "t1": 2053.81,
+        "price": 1784.8,
+        "pct": -2.37,
+        "r_multiple": -0.38,
+        "days_held": 3,
+        "horizon_t1": 16,
+        "mfe_pct": 0.0,
+        "mae_pct": -2.45,
+        "action": "HOLD",
+        "detail": "-2.37% (-0.38R), 3d held, ~13d left to the T1 horizon",
+        "score_at_open": 81.1,
+        "score_now": null
+      }
+    ],
+    "closed_today": [],
+    "stats": {
+      "closed": 0,
+      "note": "no closed suggestions yet \u2014 nothing measured"
+    }
+  },
+  "ledger": {
+    "opened": [],
+    "reconfirmed": [
+      "ICICIBANK"
+    ]
+  }
+}

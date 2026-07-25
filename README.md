@@ -5,16 +5,27 @@ system. It runs every morning before the Indian market opens, gathers raw
 market intelligence from free sources, normalizes it into CSV/JSON, and commits
 one folder per day that the **Parkhu Research Engine (ChatGPT)** then reads.
 
-> This repo is *only* the collection layer. Scoring, recommendations, the trade
-> database and the learning engine are separate layers per the Parkhu Constitution.
+It then applies the Parkhu risk and portfolio limits to that data and commits a
+**decision-ready swing brief** — entry, stop, targets, hold period, expected
+profit % and rupee position size for each idea.
+
+> The trade database and the learning engine are still separate layers per the
+> Parkhu Constitution. See [`docs/data-gaps.md`](docs/data-gaps.md) for what the
+> knowledge base asks for that this repo does not yet produce.
 
 ```
-GitHub Actions (02:30 PM IST — testing)
+GitHub Actions (daily, pre-open)
         │
         ▼
-  Parkhu Data Collector  ──►  Normalized DB (CSV/JSON)  ──►  Research Engine
-   (agents below)               output/<date>/                  (ChatGPT)
+  Parkhu Data Collector  ──►  Normalized DB (CSV/JSON)  ──►  Swing Brief
+   (agents below)               output/<date>/               swing_brief.md
+                                                             latest_brief.md
 ```
+
+**Read this each morning:**
+[`output/latest_brief.md`](output/latest_brief.md) — see
+[`docs/swing-brief.md`](docs/swing-brief.md) for how it is built and what the
+numbers do and do not mean.
 
 ## Agents
 
@@ -41,6 +52,19 @@ GitHub Actions (02:30 PM IST — testing)
 | `swing_candidates.csv` | Top 20 for 2–3 week / ~5% swing template |
 | **`stock_analysis.csv`** | **Primary file** — one row/stock: all indicators, sub-scores, pivots/support/resistance, ATR trade levels |
 | **`market_summary.csv`** | One-row regime: index trend, VIX, sector leaders, FII/DII, macro, overall risk |
+
+**Brief layer** (`collector/brief/`), runs last:
+
+| File | Purpose |
+|------|---------|
+| **`swing_brief.md`** | **The brief** — open-position review first, then gated, sized new ideas with entry / stop / T1–T3, R:R, hold period, expected profit % and rupee position size, plus portfolio math, watchlist and gate funnel |
+| `swing_brief.json` | Same content structured, including the survivor count after every gate — the audit trail for why a name was or was not recommended |
+| `trades/open.csv` | Live suggestions, re-checked every run until the hold period ends (MFE/MAE, days held, action) |
+| `trades/closed.csv` | Finished suggestions with return, R multiple and days held — the measured hit rate |
+
+Every idea is tracked to its conclusion. Each run reviews open suggestions against
+KB-17 SOP-3 (invalidation → stop → target → time stop → earnings → hold) *before*
+proposing anything new. See [`docs/swing-brief.md`](docs/swing-brief.md#the-suggestion-ledger).
 
 The **Indicator Engine** (`stock_analysis.csv` + `market_summary.csv`) precomputes
 every *deterministic* metric so the research engine only does what needs
@@ -78,8 +102,12 @@ output/2026-06-21/
     swing_candidates.csv   watchlist.csv
     stock_analysis.csv   ← PRIMARY: one row/stock, all indicators + scores + trade levels
     market_summary.csv   ← one-row market regime
+    swing_brief.md       ← THE BRIEF: sized, gated ideas with levels
+    swing_brief.json     ← same, structured + audit trail
     report.json
     manifest.json     ← data dictionary: what each file is + its use case
+
+output/latest_brief.md   ← stable path to the newest brief
 ```
 
 `watchlist.csv` is a simple trend/momentum ranking from `tradingview.csv`
@@ -88,6 +116,13 @@ engine, **not** a recommendation.
 
 `swing_candidates.csv` is a separate 2–3 week swing shortlist (~5% target)
 using relative strength, delivery %, F&O confirmation and event-risk filters.
+
+`swing_brief.md` **is** a recommendation, and the only file here that is. It
+applies the KB-08/KB-09 hard caps (2% risk per trade, 10% per stock, 25% per
+sector, 10 positions) and the KB-14 score bands (Buy ≥80, Watch 70–79) to
+`stock_analysis.csv`, then sizes each idea against `PARKHU_CAPITAL`. If nothing
+clears the gates it says so and prints the funnel — zero ideas is a valid
+outcome under KB-00, not a failed run.
 
 ## Run locally
 
@@ -116,9 +151,23 @@ Environment overrides:
 
 ## Scheduling
 
-`.github/workflows/collect.yml` runs **Sun + Mon–Fri** at **09:00 UTC = 14:30 IST (2:30 PM)** *(testing schedule)*,
-installs deps, runs `run.py`, and commits the day's `output/` back to the repo.
-You can also trigger it manually from the **Actions** tab (`workflow_dispatch`).
+`.github/workflows/collect.yml` installs deps, runs `run.py`, and commits the
+day's `output/` — including the brief — back to the repo. You can also trigger it
+manually from the **Actions** tab (`workflow_dispatch`).
+
+Cron is **UTC**, so subtract 5h30m from the IST time you want:
+
+| Wanted (IST) | Cron |
+|---|---|
+| 05:00 | `30 23 * * *` |
+| 06:00 | `30 0 * * *` |
+| 08:00 | `30 2 * * *` |
+
+> **GitHub does not dispatch scheduled runs on time.** Recent runs configured for
+> 06:00 IST actually produced data at 09:16 and 09:22 IST — over three hours late.
+> Free-tier `schedule` events are best-effort and queue behind paid load. Set the
+> cron earlier than you need, and read `generated_at_ist` in `report.json` rather
+> than assuming the brief is as fresh as the cron implies.
 
 ## Resilience contract
 
@@ -137,10 +186,35 @@ to plain `requests` (NSE will then usually 403).
 - `config/universe.py` — trading universe (default: Nifty 50) and ticker maps.
   Extend with Next 50 / Midcap / Smallcap by appending to `scanning_universe()`.
 - `config/settings.py` — paths, IST date logic, history lookback, network tuning.
+- `config/risk.py` — capital and every risk/portfolio/scoring threshold the brief
+  enforces, each citing its KB source. All env-overridable:
+
+  ```bash
+  PARKHU_CAPITAL=200000 python run.py     # total capital, not per trade
+  PARKHU_TOP_N_IDEAS=3 python run.py
+  ```
+
+## Documentation
+
+- [`docs/swing-brief.md`](docs/swing-brief.md) — how the brief is built, which KB
+  rules it enforces, and where it deliberately overrides `stock_analysis.csv`.
+- [`docs/data-gaps.md`](docs/data-gaps.md) — what the knowledge base needs that
+  this repo does not yet collect, prioritised, with proposed CSV schemas.
 
 ## Roadmap (free enhancements)
 
-- Shareholding filings → promoter holding, pledge (ownership agent in `collector/ownership/`)
-- Insider deals (SAST/PIT), bulk-deal history
-- RBI / MOSPI scrapers for repo rate, CPI, GDP (currently placeholders in `macro.csv`)
-- Concall / guidance extraction via the News agent + LLM
+Ordered by leverage — see [`docs/data-gaps.md`](docs/data-gaps.md) for the detail.
+
+1. **Daily OHLC history** → real support/resistance, breakouts, bases, patterns.
+   Unblocks genuine trade levels; today's `risk_reward` is a constant 0.67.
+2. **Trade outcome log** (`trades/open.csv`, `trades/closed.csv`) → the first
+   measured win rate, which is what turns "expected profit %" from a target into
+   an expectation. KB-12 / KB-13.
+3. **Shareholding filings** → promoter holding and pledge (`collector/ownership/`).
+   KB-04's governance veto currently has no input at all.
+4. **News sentiment / catalyst classification** → 15 of KB-14's score points,
+   from text already collected in `news.csv`.
+5. Per-stock options (PCR, max pain, IV), per-stock FII/DII/MF holdings.
+6. Insider deals (SAST/PIT), bulk-deal history.
+7. RBI / MOSPI scrapers for repo rate, CPI, GDP (placeholders in `macro.csv`).
+8. Concall / guidance extraction via the News agent + LLM.

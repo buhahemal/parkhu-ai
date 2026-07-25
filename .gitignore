@@ -12,6 +12,9 @@ logs/*.log
 # OS
 .DS_Store
 
+# Local tool config (machine-specific, not shared)
+.claude/settings.local.json
+
 # Keep output structure but ignore nothing by default so daily data is committed.
 # If you do NOT want to commit collected data, uncomment the next line:
 # output/

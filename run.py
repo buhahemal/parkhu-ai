@@ -48,6 +48,7 @@ from collector.derived import (
     market_summary,
     stock_analysis,
 )
+from collector.brief import swing_brief
 
 log = get_logger("run")
 
@@ -78,8 +79,13 @@ DERIVED = [
     ("fno_momentum", fno_momentum.collect),
     ("swing_candidates", swing_candidates.collect),
     ("market_summary", market_summary.collect),
-    # stock_analysis consolidates everything above — keep it last.
+    # stock_analysis consolidates everything above — keep it last of the CSVs.
     ("stock_analysis", stock_analysis.collect),
+    # swing_brief is the decision layer on top of stock_analysis + market_summary:
+    # gates, trade levels, position sizing under the KB-08/KB-09 caps. Must run
+    # after stock_analysis and before the manifest/zip steps so the brief is
+    # catalogued and packaged with the rest of the day's output.
+    ("swing_brief", swing_brief.collect),
 ]
 
 

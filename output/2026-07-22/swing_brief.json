@@ -1,0 +1,445 @@
+{
+  "data_date": "2026-07-22",
+  "capital": 100000.0,
+  "kb_version": "KB v1.0 (2026-06-21)",
+  "limits": {
+    "risk_per_trade_pct": 2.0,
+    "max_per_stock_pct": 10.0,
+    "max_per_sector_pct": 25.0,
+    "max_positions": 10,
+    "min_rr_t1": 2.0,
+    "buy_score": 80.0,
+    "watch_score": 70.0
+  },
+  "regime": {
+    "market_regime": "Bearish",
+    "nifty_trend": "Bearish",
+    "nifty_pct_change": -0.38,
+    "banknifty_trend": "Bearish",
+    "banknifty_pct_change": -0.66,
+    "india_vix": 12.88,
+    "vix_level": "Low",
+    "best_sector": "Distribution Services",
+    "best_sector_perf_1m": 11.27,
+    "worst_sector": "Electronic Technology",
+    "worst_sector_perf_1m": -4.23,
+    "fii_net": 1650.16,
+    "dii_net": -656.88,
+    "crude": 85.18,
+    "crude_pct_change": 2.34,
+    "usdinr": 96.28,
+    "usdinr_pct_change": -0.21,
+    "us_sp500_pct": 0.89,
+    "us_dow_pct": 0.74,
+    "us_vix": 17.05,
+    "us_vix_pct": -8.58,
+    "dxy": 101.14,
+    "dxy_pct": 0.15,
+    "us_10y": 4.63,
+    "asia_cue": "Bullish",
+    "europe_cue": "Bullish",
+    "global_risk": "Neutral",
+    "overall_risk": "Medium",
+    "generated_at_ist": "2026-07-22T09:25:32.056019+05:30"
+  },
+  "funnel": [
+    {
+      "gate": "universe",
+      "surviving": 371
+    },
+    {
+      "gate": "trend = Bullish",
+      "surviving": 228
+    },
+    {
+      "gate": "price > SMA200",
+      "surviving": 186
+    },
+    {
+      "gate": "price > EMA50",
+      "surviving": 184
+    },
+    {
+      "gate": "ADX14 > 25",
+      "surviving": 98
+    },
+    {
+      "gate": "RSI14 in 40-80",
+      "surviving": 94
+    },
+    {
+      "gate": "RS > 0 vs NIFTY and sector",
+      "surviving": 75
+    },
+    {
+      "gate": "delivery% >= 40",
+      "surviving": 57
+    },
+    {
+      "gate": "no earnings within 21d",
+      "surviving": 14
+    },
+    {
+      "gate": "event_risk_score <= 1",
+      "surviving": 12
+    },
+    {
+      "gate": "TV rating not Sell",
+      "surviving": 12
+    }
+  ],
+  "ideas": [
+    {
+      "symbol": "J&KBANK",
+      "company": "Jammu & Kashmir Bank Ltd.",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "risk_sector": "Banks",
+      "cmp": 185.43,
+      "parkhu_score": 90.0,
+      "band": "Buy",
+      "levels": {
+        "entry": 185.43,
+        "stop": 170.6,
+        "stop_pct": 8.0,
+        "stop_atr_mult": 2.0,
+        "stop_mode": "atr_fallback",
+        "stop_above_structure": true,
+        "structure_invalidation": 159.7,
+        "t1": 215.1,
+        "t2": 229.93,
+        "t3": 244.77,
+        "t1_pct": 16.0,
+        "t2_pct": 24.0,
+        "t3_pct": 32.0,
+        "rr_t1": 2.0,
+        "expected_profit_pct_t1": 16.0,
+        "hold_days_t1": 16,
+        "hold_days_t2": 36,
+        "t1_beyond_mandate": false,
+        "t1_above_52w_high": true,
+        "room_to_52w_high_pct": 8.8
+      },
+      "sizing": {
+        "qty": 53,
+        "capital_deployed": 9828.0,
+        "capital_pct": 9.83,
+        "risk_rupees": 786.0,
+        "risk_pct_of_capital": 0.79,
+        "profit_at_t1": 1573.0,
+        "profit_at_t2": 2358.0,
+        "binding_constraint": "exposure cap (10%/name)"
+      },
+      "evidence": {
+        "trend_label": "Bullish",
+        "adx14": 46.47239387496494,
+        "rsi14": 64.78362797323692,
+        "macd_hist": 0.6407,
+        "delivery_pct": 46.33,
+        "rs_vs_nifty_1m": 12.46,
+        "rs_vs_sector_1m": 13.26,
+        "return_1m": 12.415883601091252,
+        "return_3m": 40.2753612224828,
+        "dist_52w_high_pct": -8.09,
+        "atr14": 7.420848444033503,
+        "pe": 8.654802077936626,
+        "roe": 15.3672855994267,
+        "debt_equity": 0.2079421665016139,
+        "revenue_growth": 3.0504046604256745,
+        "profit_growth": 13.330335889976192,
+        "composite_factor_rank": 95.0,
+        "risk_score": 50,
+        "in_oi_spurt": null,
+        "oi_change_pct": null,
+        "tech_rating": "Strong buy",
+        "analyst_rec": 1.0,
+        "price_target_avg": 198.0,
+        "days_to_earnings": null,
+        "trend_score": 100,
+        "momentum_score": 80,
+        "fundamental_score": 100,
+        "earnings_score": 100,
+        "sector_score": 48.0,
+        "atr_pct_of_price": 4.0
+      }
+    },
+    {
+      "symbol": "IPCALAB",
+      "company": "IPCA Laboratories Limited",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "risk_sector": "Health Technology",
+      "cmp": 1783.5,
+      "parkhu_score": 85.0,
+      "band": "Buy",
+      "levels": {
+        "entry": 1783.5,
+        "stop": 1657.5,
+        "stop_pct": 7.07,
+        "stop_atr_mult": 2.2,
+        "stop_mode": "structure",
+        "stop_above_structure": false,
+        "structure_invalidation": 1686.19,
+        "t1": 2035.51,
+        "t2": 2161.51,
+        "t3": 2287.52,
+        "t1_pct": 14.13,
+        "t2_pct": 21.2,
+        "t3_pct": 28.26,
+        "rr_t1": 2.0,
+        "expected_profit_pct_t1": 14.13,
+        "hold_days_t1": 20,
+        "hold_days_t2": 44,
+        "t1_beyond_mandate": false,
+        "t1_above_52w_high": true,
+        "room_to_52w_high_pct": 9.05
+      },
+      "sizing": {
+        "qty": 5,
+        "capital_deployed": 8918.0,
+        "capital_pct": 8.92,
+        "risk_rupees": 630.0,
+        "risk_pct_of_capital": 0.63,
+        "profit_at_t1": 1260.0,
+        "profit_at_t2": 1890.0,
+        "binding_constraint": "exposure cap (10%/name)"
+      },
+      "evidence": {
+        "trend_label": "Bullish",
+        "adx14": 40.43768151013079,
+        "rsi14": 55.61592248223855,
+        "macd_hist": -4.112,
+        "delivery_pct": 76.01,
+        "rs_vs_nifty_1m": 11.3,
+        "rs_vs_sector_1m": 7.16,
+        "return_1m": 11.260137242669996,
+        "return_3m": 19.3295865114412,
+        "dist_52w_high_pct": -8.3,
+        "atr14": 57.38347548546182,
+        "pe": 39.652366469238565,
+        "roe": 15.2025078169443,
+        "debt_equity": 0.100295021832112,
+        "revenue_growth": 7.90573169463029,
+        "profit_growth": 54.69040183791667,
+        "composite_factor_rank": 62.0,
+        "risk_score": 40,
+        "in_oi_spurt": null,
+        "oi_change_pct": null,
+        "tech_rating": "Buy",
+        "analyst_rec": 1.115385,
+        "price_target_avg": 1746.714286,
+        "days_to_earnings": 26.0,
+        "trend_score": 100,
+        "momentum_score": 60,
+        "fundamental_score": 100,
+        "earnings_score": 67,
+        "sector_score": 93.0,
+        "atr_pct_of_price": 3.22
+      }
+    }
+  ],
+  "watchlist": [
+    {
+      "symbol": "GODREJIND",
+      "risk_sector": "Process Industries",
+      "cmp": 1361.0,
+      "score": 76.8,
+      "entry_if_triggered": 1361.0,
+      "stop": 1260.52,
+      "t1": 1561.96,
+      "expected_profit_pct_t1": 14.77
+    },
+    {
+      "symbol": "JSWINFRA",
+      "risk_sector": "Industrial Services",
+      "cmp": 341.05,
+      "score": 75.2,
+      "entry_if_triggered": 341.05,
+      "stop": 317.97,
+      "t1": 387.2,
+      "expected_profit_pct_t1": 13.53
+    },
+    {
+      "symbol": "ANANDRATHI",
+      "risk_sector": "NBFC & Capital Markets",
+      "cmp": 2113.4,
+      "score": 72.8,
+      "entry_if_triggered": 2113.4,
+      "stop": 2008.18,
+      "t1": 2323.83,
+      "expected_profit_pct_t1": 9.96
+    },
+    {
+      "symbol": "NYKAA",
+      "risk_sector": "Retail Trade",
+      "cmp": 333.8,
+      "score": 71.6,
+      "entry_if_triggered": 333.8,
+      "stop": 318.4,
+      "t1": 364.6,
+      "expected_profit_pct_t1": 9.23
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "risk_sector": "Banks",
+      "cmp": 355.25,
+      "score": 70.9,
+      "entry_if_triggered": 355.25,
+      "stop": 340.01,
+      "t1": 385.74,
+      "expected_profit_pct_t1": 8.58
+    }
+  ],
+  "queued_on_portfolio_limits": [],
+  "unaffordable_at_this_capital": [],
+  "ignored_below_watch": [
+    {
+      "symbol": "TVSHLTD",
+      "score": 69.4
+    },
+    {
+      "symbol": "PRESTIGE",
+      "score": 66.7
+    },
+    {
+      "symbol": "PFOCUS",
+      "score": 66.2
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "score": 59.7
+    },
+    {
+      "symbol": "POONAWALLA",
+      "score": 55.5
+    }
+  ],
+  "scoring": {
+    "live_weights": {
+      "technical": 20,
+      "fundamental": 15,
+      "earnings": 15,
+      "sector": 5,
+      "relative_strength": 5
+    },
+    "unavailable_components": {
+      "news": 15,
+      "institutional": 10,
+      "options": 5,
+      "macro": 5
+    },
+    "weight_unavailable_pct": 35.0
+  },
+  "portfolio": {
+    "positions": 2,
+    "capital_deployed": 18746.0,
+    "capital_deployed_pct": 18.75,
+    "cash_left": 81254.0,
+    "total_risk_rupees": 1416.0,
+    "total_risk_pct": 1.42,
+    "sector_exposure": {
+      "Banks": 9.83,
+      "Health Technology": 8.92
+    }
+  },
+  "caveats": [
+    "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
+    "promoter pledge and ownership data are empty, so KB-04's governance veto was not applied to any name here",
+    "trade levels are rebuilt by this module; stock_analysis.csv's own risk_reward is a constant 0.67 and would veto the whole universe",
+    "T1 sits at exactly 2R to meet KB-08's 1:2 floor - with no OHLC history there are no real resistance levels to target, so R:R does no independent filtering",
+    "hold periods are an ATR sqrt(time) estimate, not a forecast",
+    "no trade outcome history exists yet, so there is no measured win rate behind these numbers"
+  ],
+  "review": {
+    "reviewed": [
+      {
+        "symbol": "ZYDUSLIFE",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1146.2,
+        "stop": 1074.19,
+        "t1": 1290.23,
+        "price": 1120.6,
+        "pct": -2.23,
+        "r_multiple": -0.36,
+        "days_held": 1,
+        "horizon_t1": 35,
+        "mfe_pct": 0.0,
+        "mae_pct": -2.23,
+        "action": "EARNINGS AHEAD",
+        "detail": "results inside 21 days \u2014 KB-05 says reduce or stand aside rather than hold through the print",
+        "score_at_open": 82.5,
+        "score_now": null
+      },
+      {
+        "symbol": "ICICIBANK",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1470.8,
+        "stop": 1418.81,
+        "t1": 1574.78,
+        "price": 1453.0,
+        "pct": -1.21,
+        "r_multiple": -0.34,
+        "days_held": 1,
+        "horizon_t1": 16,
+        "mfe_pct": 0.0,
+        "mae_pct": -1.21,
+        "action": "HOLD",
+        "detail": "-1.21% (-0.34R), 1d held, ~15d left to the T1 horizon",
+        "score_at_open": 85.6,
+        "score_now": null
+      },
+      {
+        "symbol": "IPCALAB",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1828.2,
+        "stop": 1715.39,
+        "t1": 2053.81,
+        "price": 1783.5,
+        "pct": -2.45,
+        "r_multiple": -0.4,
+        "days_held": 1,
+        "horizon_t1": 16,
+        "mfe_pct": 0.0,
+        "mae_pct": -2.45,
+        "action": "HOLD",
+        "detail": "-2.45% (-0.40R), 1d held, ~15d left to the T1 horizon",
+        "score_at_open": 81.1,
+        "score_now": null
+      },
+      {
+        "symbol": "J&KBANK",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 184.33,
+        "stop": 169.92,
+        "t1": 213.16,
+        "price": 185.43,
+        "pct": 0.6,
+        "r_multiple": 0.08,
+        "days_held": 1,
+        "horizon_t1": 16,
+        "mfe_pct": 0.6,
+        "mae_pct": 0.0,
+        "action": "HOLD",
+        "detail": "+0.60% (+0.08R), 1d held, ~15d left to the T1 horizon",
+        "score_at_open": 90.4,
+        "score_now": null
+      }
+    ],
+    "closed_today": [],
+    "stats": {
+      "closed": 0,
+      "note": "no closed suggestions yet \u2014 nothing measured"
+    }
+  },
+  "ledger": {
+    "opened": [],
+    "reconfirmed": [
+      "J&KBANK",
+      "IPCALAB"
+    ]
+  }
+}

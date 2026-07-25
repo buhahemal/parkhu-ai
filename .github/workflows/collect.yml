@@ -38,7 +38,9 @@ jobs:
         run: |
           git config user.name  "parkhu-bot"
           git config user.email "parkhu-bot@users.noreply.github.com"
-          git add output/ logs/ || true
+          # trades/ carries the suggestion ledger across runs — without it the
+          # open positions and the measured hit rate reset every day.
+          git add output/ logs/ trades/ || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else

@@ -174,6 +174,28 @@ CATALOG = [
         "use_case": "First-pass shortlist for the research engine to investigate.",
         "key_columns": ["symbol", "score", "rsi", "adx", "tech_rating"],
     }),
+    ("swing_brief.md", {
+        "agent": "swing_brief (brief layer)", "source": "stock_analysis + market_summary",
+        "description": "The day's decision-ready swing brief: 3-5 high-conviction ideas "
+                       "with entry, stop, T1/T2/T3, reward:risk, expected hold period, "
+                       "expected profit % and rupee position size, plus portfolio math, "
+                       "watchlist and the gate funnel. Enforces the KB-08/KB-09 caps "
+                       "(2% risk per trade, 10% per stock, 25% per sector, 10 positions) "
+                       "and the KB-14 score bands.",
+        "use_case": "Read this first each morning. Zero ideas is a valid outcome under "
+                    "KB-00, not a missing file.",
+        "key_columns": [],
+    }),
+    ("swing_brief.json", {
+        "agent": "swing_brief (brief layer)", "source": "stock_analysis + market_summary",
+        "description": "The same brief as structured data: regime, gate funnel with "
+                       "survivor counts per gate, per-idea levels/sizing/evidence, "
+                       "watchlist, names queued on portfolio limits, and the score "
+                       "weights that had no live data this run.",
+        "use_case": "Machine-readable hand-off; also the audit trail for why a name was "
+                    "or was not recommended.",
+        "key_columns": ["regime", "funnel", "ideas", "watchlist", "portfolio", "scoring"],
+    }),
     ("report.json", {
         "agent": "run.py", "source": "pipeline",
         "description": "Run summary: per-agent status (ok/partial/error), rows and timing.",
