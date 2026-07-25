@@ -1,7 +1,7 @@
 {
   "date": "2026-07-25",
-  "generated_at_ist": "2026-07-25T09:16:04.435647+05:30",
-  "duration_seconds": 36.4,
+  "generated_at_ist": "2026-07-25T12:25:43.122654+05:30",
+  "duration_seconds": 27.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -9,7 +9,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 363,
-      "seconds": 0.4
+      "seconds": 0.2
     },
     {
       "agent": "earnings",
@@ -21,61 +21,61 @@
       "agent": "indices",
       "status": "ok",
       "rows": 5,
-      "seconds": 0.9
+      "seconds": 0.7
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 8,
-      "seconds": 2.1
+      "seconds": 0.8
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.2
+      "seconds": 3.6
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.7
+      "seconds": 4.4
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 6.6
+      "seconds": 5.5
     },
     {
       "agent": "delivery",
       "status": "ok",
       "rows": 352,
-      "seconds": 3.8
+      "seconds": 3.1
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.4
+      "seconds": 3.1
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.6
+      "seconds": 2.4
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 6.8
+      "seconds": 2.8
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 363,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "event_risk",
@@ -198,6 +198,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/report.json"
+    },
     "sectors.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/sectors.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/sectors.csv"
@@ -217,10 +221,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/report.json"
     }
   }
 }
