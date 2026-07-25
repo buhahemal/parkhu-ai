@@ -48,7 +48,7 @@ INDIGO,False,97.0,2026-10-30,False,,0,0
 DIVISLAB,True,7.0,2026-08-01,False,,0,3
 TORNTPHARM,True,5.0,2026-07-30,False,,0,3
 TVSMOTOR,False,102.0,2026-11-04,False,,0,0
-SBILIFE,True,2.0,2026-07-27,False,,0,3
+SBILIFE,False,95.0,2026-10-28,False,,0,0
 WIPRO,False,82.0,2026-10-15,True,Interim Dividend - Rs 2 Per Share,0,2
 VAML,False,,,False,,0,0
 SOLARINDS,True,20.0,2026-08-14,True,Dividend - Rs 11 Per Share,0,5
@@ -80,7 +80,7 @@ UNIONBANK,False,102.0,2026-11-04,False,,0,0
 APOLLOHOSP,True,18.0,2026-08-12,False,,0,3
 GROWW,False,130.0,2026-12-02,False,,0,0
 PNB,False,89.0,2026-10-22,False,,0,0
-BANKBARODA,True,2.0,2026-07-27,False,,0,3
+BANKBARODA,False,100.0,2026-11-02,False,,0,0
 BOSCHLTD,True,16.0,2026-08-10,True,Dividend - Rs 270 Per Share,0,5
 MUTHOOTFIN,True,13.0,2026-08-07,False,,0,3
 TATAPOWER,True,2.0,2026-07-27,False,,0,3
@@ -147,7 +147,7 @@ HAVELLS,False,88.0,2026-10-21,False,,0,0
 NAUKRI,True,13.0,2026-08-07,False,,0,3
 DABUR,True,4.0,2026-07-29,False,,0,3
 OIL,True,12.0,2026-08-06,False,,0,3
-AUBANK,True,0.0,2026-07-25,False,,0,3
+AUBANK,True,0.0,2026-07-25,False,,2,5
 ATGL,False,101.0,2026-11-03,False,,0,0
 PHOENIXLTD,True,3.0,2026-07-28,False,,0,3
 ICICIPRULI,False,87.0,2026-10-20,False,,0,0
@@ -183,7 +183,7 @@ JSL,True,2.0,2026-07-27,False,,0,3
 KALYANKJIL,True,18.0,2026-08-12,False,,0,3
 MAHABANK,False,112.0,2026-11-14,False,,0,0
 COROMANDEL,False,89.0,2026-10-22,False,,0,0
-SBICARD,True,2.0,2026-07-27,False,,1,4
+SBICARD,True,2.0,2026-07-27,False,,0,3
 BERGEPAINT,True,12.0,2026-08-06,True,Dividend - Rs 4 Per Share,0,5
 HDBFS,False,130.0,2026-12-02,False,,0,0
 LINDEINDIA,True,17.0,2026-08-11,True,Dividend - Rs 4 Per Share/Special Dividend - 8 Per Share,0,5
@@ -209,7 +209,7 @@ AEGISLOG,True,11.0,2026-08-05,False,,0,3
 HINDCOPPER,False,,,False,,0,0
 ATHERENERG,False,39.0,2026-09-02,False,,0,0
 KEI,True,9.0,2026-08-03,False,,0,3
-RVNL,True,12.0,2026-08-06,False,,0,3
+RVNL,True,12.0,2026-08-06,False,,1,4
 PREMIERENE,True,2.0,2026-07-27,False,,0,3
 AIIL,False,,,False,,0,0
 BDL,True,13.0,2026-08-07,False,,0,3
@@ -276,7 +276,7 @@ CRISIL,False,83.0,2026-10-16,True,Interim Dividend - Rs 10  Per Share,0,2
 SCHNEIDER,True,12.0,2026-08-06,False,,0,3
 ESCORTS,True,9.0,2026-08-03,False,,0,3
 TATAINVEST,False,,,False,,0,0
-GODFRYPHLP,True,2.0,2026-07-27,False,,1,4
+GODFRYPHLP,True,2.0,2026-07-27,False,,0,3
 KIRLOSENG,True,18.0,2026-08-12,True,Dividend - Rs 4.50 Per Share,0,5
 HFCL,False,82.0,2026-10-15,False,,0,0
 MRPL,False,102.0,2026-11-04,False,,0,0
@@ -293,7 +293,7 @@ CHOLAHLDNG,True,20.0,2026-08-14,False,,0,3
 ACUTAAS,False,86.0,2026-10-19,False,,0,0
 LALPATHLAB,False,103.0,2026-11-05,False,,0,0
 TATATECH,False,112.0,2026-11-14,False,,0,0
-STLTECH,True,2.0,2026-07-27,False,,0,3
+STLTECH,True,2.0,2026-07-27,False,,1,4
 CENTRALBK,False,82.0,2026-10-15,False,,0,0
 CUPID,False,,,False,,0,0
 ANGELONE,False,88.0,2026-10-21,False,,0,0
