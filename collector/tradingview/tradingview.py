@@ -8,8 +8,8 @@ impersonation — and, unlike NSE, it is not datacenter-IP blocked, so this
 works from GitHub Actions where the NSE agents degrade.
 
 The default filter mirrors the Parkhu universe definition: NSE-listed common
-stocks / DRs / funds with market cap >= Rs 20,000 cr, excluding ETFs, mutual
-funds and pre-IPO. That currently resolves to ~366 names.
+stocks / DRs / funds, excluding ETFs, mutual funds and pre-IPO (no market-cap
+floor).
 
 This module doubles as the universe provider: screener_symbols() returns the
 ticker list that config.universe can use to drive the whole pipeline.
@@ -43,10 +43,8 @@ HEADERS = {
 }
 
 # --- Universe definition (the filter you supplied) --------------------------
-MIN_MARKET_CAP = 200_000_000_000  # Rs 20,000 cr
-
+# No market-cap floor — NSE equities only; type/pre-IPO rules live in SCREENER_FILTER2.
 SCREENER_FILTER = [
-    {"left": "market_cap_basic", "operation": "egreater", "right": MIN_MARKET_CAP},
     {"left": "exchange", "operation": "in_range", "right": ["NSE"]},
 ]
 

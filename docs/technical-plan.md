@@ -106,7 +106,7 @@ brutal in late January, April, July and October.
 | Breakout from a base | Requires OHLC history the dataset does not have. |
 | MACD confirmation | Available and populated, but it disagrees with the trend gates often enough that adding it as a *gate* would have cut the 2026-07-25 list from 3 to 1. Currently surfaced as a **flag** instead — see §7. |
 | Promoter pledge (KB-04 hard veto) | Column is 100% null. The veto cannot run at all. |
-| Liquidity floor | KB-00 Art. II defers the number to KB-08/KB-09; **neither manual defines one**. The screener's ₹20,000 cr market-cap floor is the only implicit filter. |
+| Liquidity floor | KB-00 Art. II defers the number to KB-08/KB-09; **neither manual defines one**. The TradingView screener has **no market-cap floor** (NSE equities only); liquidity is left to delivery / relative-volume gates. |
 
 #### The relative-volume gate is now available — sizing it
 

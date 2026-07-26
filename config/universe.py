@@ -87,7 +87,7 @@ def scanning_universe() -> list[str]:
 
     Source is chosen by PARKHU_UNIVERSE:
       - "tradingview" / "screener" (default) — dynamic list from the TradingView
-        screener (NSE, market cap >= Rs 20,000 cr, ~366 names). Falls back to
+        screener (NSE equities, no mcap floor). Falls back to
         Nifty 50 if the API is unreachable so the pipeline never starves.
       - "nifty50" — the static Nifty 50 list above (handy for quick local runs).
     """

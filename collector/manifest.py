@@ -26,7 +26,7 @@ CATALOG = [
             "agent": "tradingview",
             "source": "TradingView screener API",
             "description": "Single-call snapshot of the screener universe (~366 NSE names, "
-            "market cap >= Rs 20,000 cr): identity, price, volume, performance, "
+            "NSE equities, no mcap floor): identity, price, volume, performance, "
             "volatility, technicals, valuation, profitability, dividends, "
             "analyst targets and TradingView ratings.",
             "use_case": "Broad-universe scan in one request; CI-friendly (not NSE IP-blocked). "

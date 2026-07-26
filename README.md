@@ -151,7 +151,7 @@ Environment overrides:
 |-----|--------|
 | `PARKHU_MAX_SYMBOLS` | cap the universe (e.g. `5` for testing) |
 | `PARKHU_RUN_DATE` | force the output date (e.g. `2026-06-20` for backfill) |
-| `PARKHU_UNIVERSE` | `nifty50` (default) or `tradingview` — drive the whole pipeline off the TradingView screener (~366 NSE names, mcap ≥ ₹20,000 cr) instead of the static Nifty 50 |
+| `PARKHU_UNIVERSE` | `nifty50` (default) or `tradingview` — drive the whole pipeline off the TradingView screener (NSE equities, no mcap floor) instead of the static Nifty 50 |
 | `GROQ_API_KEY` | optional — Groq desk note in `research_pack.json` (Pages + Claude feed). Never commit the key; use `.env` locally and GitHub Actions secret `GROQ_API_KEY` |
 | `PARKHU_GROQ_MODELS` | optional comma-separated primary→fallback models (default: 70B → Llama-4 Scout → 8B instant) |
 | `PARKHU_GROQ_MODEL` | optional primary model only (remaining defaults appended as fallbacks) |
