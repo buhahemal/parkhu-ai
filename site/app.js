@@ -95,20 +95,88 @@ function renderHeader(pack, source) {
 
   const a = pack.analytics || {};
   const book = a.book || {};
+  // [label, value, class, tooltip: shows + decide]
   const kpis = [
-    ["VIX", fmt(r.india_vix, 1), ""],
-    ["Open", fmt(book.open ?? (pack.ledger?.open || []).length, 0), ""],
-    ["Action", fmt(book.needs_action ?? (pack.ledger?.needs_action || []).length, 0), book.needs_action ? "warn" : ""],
-    ["Ideas", fmt(a.ideas_count ?? (pack.ideas || []).length, 0), ""],
-    ["Coverage", a.score_coverage_pct != null ? `${fmt(a.score_coverage_pct, 0)}%` : "—", ""],
-    ["Avg MFE", fmt(book.avg_mfe_pct, 1), book.avg_mfe_pct > 0 ? "bull" : ""],
-    ["Avg MAE", fmt(book.avg_mae_pct, 1), book.avg_mae_pct < 0 ? "bear" : ""],
-    ["Risk", fmt(r.overall_risk, 0), ""],
+    [
+      "VIX",
+      fmt(r.india_vix, 1),
+      "",
+      "India VIX — fear/volatility. Rising VIX → cut aggression on new swings; falling/stable → environment more tradable.",
+    ],
+    [
+      "Open",
+      fmt(book.open ?? (pack.ledger?.open || []).length, 0),
+      "",
+      "Open suggestions still being tracked. High count → focus on management before adding new ideas.",
+    ],
+    [
+      "Action",
+      fmt(book.needs_action ?? (pack.ledger?.needs_action || []).length, 0),
+      book.needs_action ? "warn" : "",
+      "Positions flagged (earnings, missing data, etc.). Decide these first — exit/reduce/stand aside before new risk.",
+    ],
+    [
+      "Ideas",
+      fmt(a.ideas_count ?? (pack.ideas || []).length, 0),
+      "",
+      "New names that cleared all gates today. Zero is OK. Use as Claude shortlist — not automatic buys.",
+    ],
+    [
+      "Coverage",
+      a.score_coverage_pct != null ? `${fmt(a.score_coverage_pct, 0)}%` : "—",
+      "",
+      "Share of KB score weights that are live. Low coverage → treat scores as provisional; demand stronger setup quality.",
+    ],
+    [
+      "Avg MFE",
+      fmt(book.avg_mfe_pct, 1),
+      book.avg_mfe_pct > 0 ? "bull" : "",
+      "Average best favorable move on open book. Healthy MFE with weak P&L → review trailing / profit-taking rules.",
+    ],
+    [
+      "Avg MAE",
+      fmt(book.avg_mae_pct, 1),
+      book.avg_mae_pct < 0 ? "bear" : "",
+      "Average worst drawdown on open book. Deep MAE → check stops and whether entries were too early.",
+    ],
+    [
+      "Risk",
+      fmt(r.overall_risk, 0),
+      "",
+      "Overall market risk label from regime. Elevated risk → fewer new ideas, tighter process discipline.",
+    ],
   ];
-  document.getElementById("kpi").replaceChildren(
-    ...kpis.map(([label, val, cls]) =>
-      el("div", { class: "cell" }, el("span", {}, label), el("b", { class: cls }, val)),
-    ),
+  const tipBox = document.getElementById("kpi-tip");
+  const root = document.getElementById("kpi");
+  root.replaceChildren(
+    ...kpis.map(([label, val, cls, tip]) => {
+      const cell = el(
+        "div",
+        {
+          class: "cell",
+          title: tip,
+          role: "button",
+          tabindex: "0",
+          "aria-label": `${label}. ${tip}`,
+        },
+        el("span", {}, label),
+        el("b", { class: cls }, val),
+      );
+      const showTip = () => {
+        root.querySelectorAll(".cell").forEach((c) => c.classList.remove("active"));
+        cell.classList.add("active");
+        tipBox.hidden = false;
+        tipBox.replaceChildren(el("strong", {}, `${label}: `), tip);
+      };
+      cell.addEventListener("click", showTip);
+      cell.addEventListener("keydown", (ev) => {
+        if (ev.key === "Enter" || ev.key === " ") {
+          ev.preventDefault();
+          showTip();
+        }
+      });
+      return cell;
+    }),
   );
 }
 

@@ -141,6 +141,91 @@ body {
   color: var(--warn);
 }
 
+.kpi .cell {
+  position: relative;
+}
+
+.kpi .cell {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.kpi .cell:focus-visible,
+.kpi .cell.active {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.kpi-tip {
+  margin: 0.55rem 0 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: #eef4f0;
+  border: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.guide {
+  margin: 0.65rem 0 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #faf8f2;
+}
+
+.guide summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent);
+  user-select: none;
+}
+
+.guide summary::-webkit-details-marker {
+  display: none;
+}
+
+.guide summary::after {
+  content: " ▾";
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.guide[open] summary::after {
+  content: " ▴";
+}
+
+.guide-body {
+  padding: 0 0.85rem 0.85rem;
+  font-size: 0.92rem;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+}
+
+.guide-body p {
+  margin: 0.65rem 0 0;
+}
+
+.guide-body p:first-child {
+  margin-top: 0.7rem;
+}
+
+.guide-body ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.guide-body li {
+  margin: 0.3rem 0;
+}
+
+.panel > .guide {
+  margin-top: 0.35rem;
+}
+
 .nav {
   position: sticky;
   top: 0;
