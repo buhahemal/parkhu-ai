@@ -11,7 +11,6 @@ from collector.enrichment.groq_desk import (
     model_chain,
 )
 
-
 SAMPLE_PACK = {
     "collection_date": "2026-07-26",
     "regime": {"market_regime": "Bearish", "india_vix": 14},
@@ -47,9 +46,7 @@ def _ok_body(entry_from_llm: float = 999.0) -> str:
         "open_book_notes": ["No open flags"],
         "claude_feed": "Stance defensive. Idea AAA.",
     }
-    return json.dumps(
-        {"choices": [{"message": {"content": json.dumps(content)}}]}
-    )
+    return json.dumps({"choices": [{"message": {"content": json.dumps(content)}}]})
 
 
 def test_model_chain_defaults(monkeypatch):

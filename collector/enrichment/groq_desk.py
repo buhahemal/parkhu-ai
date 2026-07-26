@@ -16,6 +16,7 @@ from datetime import datetime
 from typing import Any
 
 from config.settings import IST
+
 from collector.utils import get_logger
 
 log = get_logger("groq_desk")
@@ -26,9 +27,7 @@ DEFAULT_MODELS = (
     "meta-llama/llama-4-scout-17b-16e-instruct",
     "llama-3.1-8b-instant",
 )
-ALLOWED_ACTIONS = frozenset(
-    {"consider_entry", "watch", "stand_aside", "manage_open"}
-)
+ALLOWED_ACTIONS = frozenset({"consider_entry", "watch", "stand_aside", "manage_open"})
 ALLOWED_STANCES = frozenset({"defensive", "neutral", "selective_aggressive"})
 ALLOWED_CONVICTION = frozenset({"high", "medium", "low"})
 HTTP_TIMEOUT_S = 45
@@ -230,9 +229,7 @@ def _levels_by_symbol(pack: dict[str, Any]) -> dict[str, dict[str, Any]]:
     return out
 
 
-def _stamp_suggestions(
-    raw_suggestions: Any, pack: dict[str, Any]
-) -> list[dict[str, Any]]:
+def _stamp_suggestions(raw_suggestions: Any, pack: dict[str, Any]) -> list[dict[str, Any]]:
     levels_map = _levels_by_symbol(pack)
     allowed = set(levels_map)
     stamped: list[dict[str, Any]] = []

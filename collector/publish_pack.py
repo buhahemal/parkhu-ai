@@ -407,9 +407,7 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
 
     # Attach brief analytics caveats via a shallow brief view for build_analytics
     brief_for_analytics = dict(brief)
-    if caveats and not isinstance(brief_for_analytics.get("caveats"), list):
-        brief_for_analytics["caveats"] = caveats
-    elif caveats:
+    if caveats and not isinstance(brief_for_analytics.get("caveats"), list) or caveats:
         brief_for_analytics["caveats"] = caveats
 
     deep: dict[str, dict[str, str | None]] = {}
@@ -689,11 +687,7 @@ def write_index_json(
                 files[path.name] = pub.latest_download_url(path.name)
 
     dates = list_output_dates()
-    pack_dates = [
-        d
-        for d in dates
-        if (settings.OUTPUT_DIR / d / "research_pack.json").is_file()
-    ]
+    pack_dates = [d for d in dates if (settings.OUTPUT_DIR / d / "research_pack.json").is_file()]
 
     index: dict[str, Any] = {
         "latest": date,
