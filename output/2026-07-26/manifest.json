@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-07-26",
-  "generated_at_ist": "2026-07-26T11:29:03.356216+05:30",
+  "generated_at_ist": "2026-07-26T11:41:46.411979+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -189,6 +189,20 @@
       ],
       "present": true,
       "rows": 20
+    },
+    "research_pack.json": {
+      "agent": "publish_pack",
+      "source": "swing_brief + trades + swing_candidates + market_summary",
+      "description": "Claude-sized daily handoff: regime, ideas, funnel, open ledger, needs-action, top candidates, deep-dive URLs. Also written as research_pack.md; mirrored under output/latest/.",
+      "use_case": "Morning LLM review without unzipping latest.zip.",
+      "key_columns": [
+        "collection_date",
+        "regime",
+        "ideas",
+        "ledger",
+        "urls"
+      ],
+      "present": true
     },
     "macro.csv": {
       "agent": "macro",

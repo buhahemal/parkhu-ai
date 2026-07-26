@@ -3,7 +3,7 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T11:17:02+05:30",
+  "generated_at_ist": "2026-07-26T11:41:46.412633+05:30",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -44,7 +44,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T11:17:02.703903+05:30"
+    "generated_at_ist": "2026-07-26T11:41:45.936798+05:30"
   },
   "funnel": [
     {
@@ -439,7 +439,7 @@
         "mae_pct": -2.85,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 7,
+        "reconfirmed_count": 9,
         "notes": NaN
       },
       {
@@ -523,7 +523,7 @@
         "mae_pct": 0.0,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 4,
+        "reconfirmed_count": 6,
         "notes": NaN
       },
       {
@@ -551,7 +551,7 @@
         "mae_pct": 0.0,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 4,
+        "reconfirmed_count": 6,
         "notes": NaN
       }
     ],

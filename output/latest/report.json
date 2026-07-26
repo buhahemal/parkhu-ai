@@ -3,8 +3,8 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T11:17:03.198178+05:30",
-  "duration_seconds": 25.7,
+  "generated_at_ist": "2026-07-26T11:41:46.412633+05:30",
+  "duration_seconds": 30.2,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -12,7 +12,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "earnings",
@@ -25,7 +25,7 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.5
+      "seconds": 0.7
     },
     {
       "agent": "sectors",
@@ -37,43 +37,43 @@
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.0
+      "seconds": 4.1
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.5
+      "seconds": 4.8
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 5.0
+      "seconds": 5.4
     },
     {
       "agent": "delivery",
       "status": "ok",
       "rows": 353,
-      "seconds": 3.1
+      "seconds": 3.7
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.7
+      "seconds": 2.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 4.1
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.3
+      "seconds": 2.5
     },
     {
       "agent": "relative_strength",
@@ -107,7 +107,7 @@
     },
     {
       "agent": "news_classify",
-      "status": "partial",
+      "status": "ok",
       "rows": 20,
       "seconds": 0.0
     },
@@ -136,10 +136,16 @@
       "seconds": 0.1
     }
   ],
-  "ok": 18,
-  "partial": 1,
+  "ok": 19,
+  "partial": 0,
   "errors": 0,
-  "access_note": "Fetch download_url (raw GitHub) for file contents \u2014 LLM-readable plain text. preview_url opens the file in GitHub's UI. Links work after this run is pushed.",
+  "access_note": "Prefer output/latest/research_pack.md (or pack_url in output/index.json) for LLM review \u2014 no zip required. download_url is raw GitHub text; preview_url is the GitHub UI. Links work after this run is pushed.",
+  "handoff": {
+    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md",
+    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.json",
+    "index": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json",
+    "latest_folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/latest"
+  },
   "repository": {
     "github": "buhahemal/parkhu-ai",
     "branch": "main",
@@ -233,6 +239,14 @@
     "report.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/report.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/report.json"
+    },
+    "research_pack.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/research_pack.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/research_pack.json"
+    },
+    "research_pack.md": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/research_pack.md",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/research_pack.md"
     },
     "sectors.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/sectors.csv",
