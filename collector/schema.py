@@ -1,7 +1,8 @@
 """Schema helpers — catch COLUMNS / DataFrame drift early."""
+
 from __future__ import annotations
 
-from typing import Iterable, Sequence
+from collections.abc import Iterable, Sequence
 
 
 def assert_unique_columns(columns: Sequence[str], *, name: str = "COLUMNS") -> None:

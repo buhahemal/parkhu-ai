@@ -5,6 +5,7 @@ The golden rule of this collector: *an agent never crashes the pipeline*.
 On failure it logs, writes an (empty) CSV with the expected columns, and
 returns a status so run.py can record what happened.
 """
+
 from __future__ import annotations
 
 import logging
@@ -13,7 +14,6 @@ from pathlib import Path
 
 import pandas as pd
 import requests
-
 from config import settings
 
 # --- Logging ---------------------------------------------------------------
@@ -50,6 +50,7 @@ log = get_logger("utils")
 # (NSE endpoints will then often 403, and the agents degrade gracefully).
 try:
     from curl_cffi import requests as cffi_requests  # type: ignore
+
     _HAS_CFFI = True
 except ImportError:  # pragma: no cover - optional dependency
     cffi_requests = None
@@ -98,8 +99,10 @@ def nse_session():
     else:
         s = requests.Session()
         s.headers.update(_BROWSER_HEADERS)
-        log.warning("curl_cffi not installed — NSE endpoints will likely 403. "
-                    "Install it (`pip install curl_cffi`) for browser impersonation.")
+        log.warning(
+            "curl_cffi not installed — NSE endpoints will likely 403. "
+            "Install it (`pip install curl_cffi`) for browser impersonation."
+        )
 
     for url in settings.NSE_WARMUP_URLS:
         try:
@@ -122,8 +125,13 @@ def fetch_json(session, url: str, referer: str | None = None):
             r.raise_for_status()
             return r.json()
         except _NET_ERRORS as exc:
-            log.warning("fetch_json attempt %d/%d failed for %s: %s",
-                        attempt, settings.REQUEST_RETRIES, url, exc)
+            log.warning(
+                "fetch_json attempt %d/%d failed for %s: %s",
+                attempt,
+                settings.REQUEST_RETRIES,
+                url,
+                exc,
+            )
             time.sleep(2 * attempt)
     return None
 
@@ -140,8 +148,13 @@ def fetch_text(session, url: str, referer: str | None = None):
             r.raise_for_status()
             return r.text
         except _NET_ERRORS as exc:
-            log.warning("fetch_text attempt %d/%d failed for %s: %s",
-                        attempt, settings.REQUEST_RETRIES, url, exc)
+            log.warning(
+                "fetch_text attempt %d/%d failed for %s: %s",
+                attempt,
+                settings.REQUEST_RETRIES,
+                url,
+                exc,
+            )
             time.sleep(2 * attempt)
     return None
 
@@ -152,9 +165,9 @@ def save_csv(df: pd.DataFrame, name: str, date: str | None = None) -> Path:
     cols = list(df.columns)
     if len(cols) != len(set(cols)):
         from collections import Counter
+
         dupes = [c for c, n in Counter(cols).items() if n > 1]
-        log.warning("%s.csv has duplicate columns (will confuse readers): %s",
-                    name, dupes)
+        log.warning("%s.csv has duplicate columns (will confuse readers): %s", name, dupes)
     out = settings.daily_output_dir(date) / f"{name}.csv"
     df.to_csv(out, index=False)
     log.info("wrote %s (%d rows)", out.name, len(df))
@@ -164,5 +177,6 @@ def save_csv(df: pd.DataFrame, name: str, date: str | None = None) -> Path:
 def empty_csv(name: str, columns: list[str], date: str | None = None) -> Path:
     """Write an empty CSV with the expected schema (used on failure)."""
     from collector.schema import assert_unique_columns
+
     assert_unique_columns(columns, name=f"{name}.COLUMNS")
     return save_csv(pd.DataFrame(columns=columns), name, date)

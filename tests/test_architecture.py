@@ -1,8 +1,8 @@
 """Architecture / schema contracts (Track 2)."""
+
 from __future__ import annotations
 
 import pytest
-
 from collector.derived.stock_analysis import COLUMNS as SA_COLUMNS
 from collector.schema import assert_unique_columns, missing_from_schema
 from pipeline.registry import COLLECTORS, DERIVED

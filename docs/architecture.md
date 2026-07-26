@@ -79,3 +79,20 @@ Return shape (required keys):
 Yahoo per-symbol agents superseded by TradingView live under
 `collector/_retired/`. Do not re-wire them into `pipeline.registry` without a
 documented need.
+
+## Quality scanners
+
+```bash
+pip install -r requirements-dev.txt
+python -m scripts.quality          # ruff + vulture + jscpd
+python -m scripts.quality --fast   # ruff + vulture only
+```
+
+| Tool | Catches |
+|------|---------|
+| **ruff** | lint, unused imports, bug patterns, format drift |
+| **vulture** | dead / unused Python symbols |
+| **jscpd** | copy-pasted blocks (duplication %) |
+
+CI: `.github/workflows/quality.yml` on push/PR. Daily collect workflow still runs
+`pytest` before `run.py`.

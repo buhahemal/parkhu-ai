@@ -188,8 +188,10 @@ standards and layer rules: [`docs/architecture.md`](docs/architecture.md).
 Retired Yahoo agents: [`collector/_retired/`](collector/_retired/).
 
 ```bash
-pytest -q                  # unit tests (also run in CI before collect)
-python run.py              # thin CLI → pipeline.runner
+pytest -q                       # unit tests (also run in CI before collect)
+python run.py                   # thin CLI → pipeline.runner
+pip install -r requirements-dev.txt
+python -m scripts.quality       # ruff + vulture + jscpd (duplication)
 ```
 
 ## Configuration

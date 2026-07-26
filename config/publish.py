@@ -3,6 +3,7 @@
 Resolves the GitHub repo/branch from CI env vars, explicit overrides, or
 local git metadata so report.json can hand LLMs fetchable raw links.
 """
+
 from __future__ import annotations
 
 import os
@@ -12,9 +13,7 @@ from pathlib import Path
 
 from config import settings
 
-_GITHUB_REMOTE = re.compile(
-    r"(?:github\.com[/:]|git@github\.com:)(?P<repo>[^/]+/[^/.]+)"
-)
+_GITHUB_REMOTE = re.compile(r"(?:github\.com[/:]|git@github\.com:)(?P<repo>[^/]+/[^/.]+)")
 
 
 def _git(*args: str) -> str | None:
@@ -69,8 +68,7 @@ def download_url(date: str, filename: str) -> str | None:
     if not slug:
         return None
     return (
-        f"https://raw.githubusercontent.com/{slug}/{repo_branch()}/"
-        f"{file_rel_path(date, filename)}"
+        f"https://raw.githubusercontent.com/{slug}/{repo_branch()}/{file_rel_path(date, filename)}"
     )
 
 
@@ -79,10 +77,7 @@ def preview_url(date: str, filename: str) -> str | None:
     slug = repo_slug()
     if not slug:
         return None
-    return (
-        f"https://github.com/{slug}/blob/{repo_branch()}/"
-        f"{file_rel_path(date, filename)}"
-    )
+    return f"https://github.com/{slug}/blob/{repo_branch()}/{file_rel_path(date, filename)}"
 
 
 def folder_preview_url(date: str) -> str | None:

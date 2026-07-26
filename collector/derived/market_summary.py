@@ -4,27 +4,49 @@ Consolidates index trend, India VIX, sector leadership, FII/DII flows and key
 macro into a single row so the research engine doesn't have to infer the market
 state from several files. Derived purely from already-collected CSVs.
 """
+
 from __future__ import annotations
 
 from datetime import datetime
 
 import pandas as pd
-
-from collector.utils import get_logger, save_csv, empty_csv
 from collector.derived._utils import load_csv
+from collector.utils import get_logger, save_csv
 from config import settings
 
 log = get_logger("market_summary")
 
 COLUMNS = [
-    "market_regime", "nifty_trend", "nifty_pct_change",
-    "banknifty_trend", "banknifty_pct_change", "india_vix", "vix_level",
-    "best_sector", "best_sector_perf_1m", "worst_sector", "worst_sector_perf_1m",
-    "fii_net", "dii_net", "crude", "crude_pct_change", "usdinr", "usdinr_pct_change",
+    "market_regime",
+    "nifty_trend",
+    "nifty_pct_change",
+    "banknifty_trend",
+    "banknifty_pct_change",
+    "india_vix",
+    "vix_level",
+    "best_sector",
+    "best_sector_perf_1m",
+    "worst_sector",
+    "worst_sector_perf_1m",
+    "fii_net",
+    "dii_net",
+    "crude",
+    "crude_pct_change",
+    "usdinr",
+    "usdinr_pct_change",
     # global block
-    "us_sp500_pct", "us_dow_pct", "us_vix", "us_vix_pct", "dxy", "dxy_pct",
-    "us_10y", "asia_cue", "europe_cue", "global_risk",
-    "overall_risk", "generated_at_ist",
+    "us_sp500_pct",
+    "us_dow_pct",
+    "us_vix",
+    "us_vix_pct",
+    "dxy",
+    "dxy_pct",
+    "us_10y",
+    "asia_cue",
+    "europe_cue",
+    "global_risk",
+    "overall_risk",
+    "generated_at_ist",
 ]
 
 
@@ -76,9 +98,11 @@ def _vix_level(vix) -> str:
 def _fii_dii(fii: pd.DataFrame) -> tuple:
     if fii.empty or "category" not in fii.columns:
         return None, None
+
     def net(cat_contains: str):
         m = fii[fii["category"].astype(str).str.contains(cat_contains, case=False, na=False)]
         return _num(m.iloc[0].get("net_value")) if not m.empty else None
+
     return net("FII"), net("DII")
 
 
@@ -94,9 +118,12 @@ def _macro(macro: pd.DataFrame, metric: str) -> tuple:
 def _sector_leaders(tv: pd.DataFrame) -> tuple:
     if tv.empty or "sector" not in tv.columns or "perf_1m" not in tv.columns:
         return "", None, "", None
-    g = (tv.assign(perf_1m=pd.to_numeric(tv["perf_1m"], errors="coerce"))
-           .dropna(subset=["perf_1m"])
-           .groupby("sector")["perf_1m"].mean())
+    g = (
+        tv.assign(perf_1m=pd.to_numeric(tv["perf_1m"], errors="coerce"))
+        .dropna(subset=["perf_1m"])
+        .groupby("sector")["perf_1m"]
+        .mean()
+    )
     if g.empty:
         return "", None, "", None
     return (g.idxmax(), round(float(g.max()), 2), g.idxmin(), round(float(g.min()), 2))
@@ -154,25 +181,40 @@ def collect(date: str | None = None) -> dict:
     else:
         regime = "Neutral"
 
-    overall_risk = {"Low": "Low", "Medium": "Medium", "High": "High",
-                    "Unknown": "Unknown"}[vix_level]
+    overall_risk = {"Low": "Low", "Medium": "Medium", "High": "High", "Unknown": "Unknown"}[
+        vix_level
+    ]
     if nifty_trend == "Bearish" and overall_risk == "Low":
         overall_risk = "Medium"
 
     row = {
         "market_regime": regime,
-        "nifty_trend": nifty_trend, "nifty_pct_change": nifty_pct,
-        "banknifty_trend": bn_trend, "banknifty_pct_change": bn_pct,
-        "india_vix": vix, "vix_level": vix_level,
-        "best_sector": best, "best_sector_perf_1m": best_p,
-        "worst_sector": worst, "worst_sector_perf_1m": worst_p,
-        "fii_net": fii_net, "dii_net": dii_net,
-        "crude": crude, "crude_pct_change": crude_pct,
-        "usdinr": usdinr, "usdinr_pct_change": usdinr_pct,
-        "us_sp500_pct": sp500_pct, "us_dow_pct": dow_pct,
-        "us_vix": us_vix, "us_vix_pct": us_vix_pct,
-        "dxy": dxy, "dxy_pct": dxy_pct, "us_10y": us_10y,
-        "asia_cue": asia_cue, "europe_cue": europe_cue, "global_risk": global_risk,
+        "nifty_trend": nifty_trend,
+        "nifty_pct_change": nifty_pct,
+        "banknifty_trend": bn_trend,
+        "banknifty_pct_change": bn_pct,
+        "india_vix": vix,
+        "vix_level": vix_level,
+        "best_sector": best,
+        "best_sector_perf_1m": best_p,
+        "worst_sector": worst,
+        "worst_sector_perf_1m": worst_p,
+        "fii_net": fii_net,
+        "dii_net": dii_net,
+        "crude": crude,
+        "crude_pct_change": crude_pct,
+        "usdinr": usdinr,
+        "usdinr_pct_change": usdinr_pct,
+        "us_sp500_pct": sp500_pct,
+        "us_dow_pct": dow_pct,
+        "us_vix": us_vix,
+        "us_vix_pct": us_vix_pct,
+        "dxy": dxy,
+        "dxy_pct": dxy_pct,
+        "us_10y": us_10y,
+        "asia_cue": asia_cue,
+        "europe_cue": europe_cue,
+        "global_risk": global_risk,
         "overall_risk": overall_risk,
         "generated_at_ist": datetime.now(settings.IST).isoformat(),
     }

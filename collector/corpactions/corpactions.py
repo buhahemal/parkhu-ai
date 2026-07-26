@@ -4,14 +4,15 @@ Source: NSE corporate-filings JSON (bulk equities feed, free). Keeps the
 500 most recent events by ex-date so the run stays fast and the output is
 a manageable event calendar for the research engine.
 """
+
 from __future__ import annotations
 
 from datetime import datetime, timedelta
 
 import pandas as pd
-
-from collector.utils import get_logger, nse_session, fetch_json, save_csv, empty_csv
 from config import settings
+
+from collector.utils import empty_csv, fetch_json, get_logger, nse_session, save_csv
 
 log = get_logger("corpactions")
 
@@ -39,14 +40,16 @@ def _fetch(session, date: str | None) -> list[dict]:
         return []
     rows = []
     for it in data:
-        rows.append({
-            "symbol": it.get("symbol", ""),
-            "ex_date": it.get("exDate", ""),
-            "record_date": it.get("recDate", ""),
-            "purpose": it.get("subject", ""),
-            "face_value": it.get("faceVal", ""),
-            "series": it.get("series", ""),
-        })
+        rows.append(
+            {
+                "symbol": it.get("symbol", ""),
+                "ex_date": it.get("exDate", ""),
+                "record_date": it.get("recDate", ""),
+                "purpose": it.get("subject", ""),
+                "face_value": it.get("faceVal", ""),
+                "series": it.get("series", ""),
+            }
+        )
     return rows
 
 

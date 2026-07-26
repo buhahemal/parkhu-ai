@@ -17,12 +17,12 @@ is proxy-blocked from some sandboxes, so a local failure proves nothing.
 
 Writes ``docs/tv-field-probe.md``.
 """
+
 from __future__ import annotations
 
-import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import requests
@@ -48,48 +48,89 @@ TIMEOUT = 25
 # to exist — that is what the probe is for.
 CANDIDATES: dict[str, list[str]] = {
     "EMA gaps (stock_analysis hard-codes ema20/ema100 to None)": [
-        "EMA5", "EMA10", "EMA20", "EMA30", "EMA100",
+        "EMA5",
+        "EMA10",
+        "EMA20",
+        "EMA30",
+        "EMA100",
     ],
     "Weekly timeframe (a 16-36 day hold should not be judged on daily alone)": [
-        "RSI|1W", "ADX|1W", "MACD.macd|1W", "MACD.signal|1W",
-        "SMA20|1W", "SMA50|1W", "EMA20|1W", "Stoch.RSI.K|1W",
-        "ATR|1W", "Volatility.W|1W", "close|1W", "change|1W",
+        "RSI|1W",
+        "ADX|1W",
+        "MACD.macd|1W",
+        "MACD.signal|1W",
+        "SMA20|1W",
+        "SMA50|1W",
+        "EMA20|1W",
+        "Stoch.RSI.K|1W",
+        "ATR|1W",
+        "Volatility.W|1W",
+        "close|1W",
+        "change|1W",
     ],
     "Monthly timeframe": [
-        "RSI|1M", "ADX|1M", "close|1M", "change|1M",
+        "RSI|1M",
+        "ADX|1M",
+        "close|1M",
+        "change|1M",
     ],
     "Trend/volume indicators currently blank in stock_analysis": [
-        "SuperTrend", "Ichimoku.BLine", "Ichimoku.CLine",
-        "Ichimoku.Lead1", "Ichimoku.Lead2", "ChaikinMoneyFlow", "CMF",
-        "OBV", "MoneyFlow", "MF", "ADR", "P.SAR",
+        "SuperTrend",
+        "Ichimoku.BLine",
+        "Ichimoku.CLine",
+        "Ichimoku.Lead1",
+        "Ichimoku.Lead2",
+        "ChaikinMoneyFlow",
+        "CMF",
+        "OBV",
+        "MoneyFlow",
+        "MF",
+        "ADR",
+        "P.SAR",
     ],
     "Ownership / governance (KB-04 veto has never run)": [
-        "shareholders_promoter_percent", "promoter_holding",
-        "insider_ownership", "institutional_ownership",
-        "shareholders_institutional_percent", "float_shares_outstanding",
+        "shareholders_promoter_percent",
+        "promoter_holding",
+        "insider_ownership",
+        "institutional_ownership",
+        "shareholders_institutional_percent",
+        "float_shares_outstanding",
     ],
     "Liquidity (substitute for bid-ask / impact cost)": [
-        "average_volume_60d_calc", "Value.Traded|1W", "bid", "ask",
-        "bid_ask_spread", "total_value_traded",
+        "average_volume_60d_calc",
+        "Value.Traded|1W",
+        "bid",
+        "ask",
+        "bid_ask_spread",
+        "total_value_traded",
     ],
     "Earnings surprise (KB-05 post-earnings drift)": [
-        "earnings_per_share_forecast_next_fq", "eps_surprise_fq",
-        "eps_surprise_percent_fq", "revenue_forecast_next_fq",
-        "revenue_surprise_fq", "revenue_surprise_percent_fq",
+        "earnings_per_share_forecast_next_fq",
+        "eps_surprise_fq",
+        "eps_surprise_percent_fq",
+        "revenue_forecast_next_fq",
+        "revenue_surprise_fq",
+        "revenue_surprise_percent_fq",
     ],
     "Options (per-stock PCR / max pain)": [
-        "put_call_ratio", "open_interest", "implied_volatility",
+        "put_call_ratio",
+        "open_interest",
+        "implied_volatility",
     ],
     "Surveillance / risk flags": [
-        "is_surveillance", "asm_flag", "gsm_flag", "is_shariah_compliant",
+        "is_surveillance",
+        "asm_flag",
+        "gsm_flag",
+        "is_shariah_compliant",
     ],
 }
 
 SAMPLE_SYMBOLS = ["RELIANCE", "LODHA", "ICICIBANK", "IPCALAB", "IIFL"]
 
 
-def _post(columns: list[str], rng: tuple[int, int] = (0, 5),
-          filters=None, filter2=None) -> tuple[bool, object]:
+def _post(
+    columns: list[str], rng: tuple[int, int] = (0, 5), filters=None, filter2=None
+) -> tuple[bool, object]:
     """One scan call. Returns (accepted, payload_or_error_text)."""
     payload = {
         "columns": columns,
@@ -140,8 +181,9 @@ def _accepted(fields: list[str]) -> tuple[list[str], dict[str, str]]:
 
 def _fill_rate(field: str) -> tuple[float, object]:
     """Share of the real universe where `field` is non-null, plus one sample."""
-    ok, payload = _post(["name", field], rng=(0, 400),
-                        filters=SCREENER_FILTER, filter2=SCREENER_FILTER2)
+    ok, payload = _post(
+        ["name", field], rng=(0, 400), filters=SCREENER_FILTER, filter2=SCREENER_FILTER2
+    )
     time.sleep(PACING_SECONDS)
     if not ok or not isinstance(payload, dict):
         return -1.0, None
@@ -155,16 +197,17 @@ def _fill_rate(field: str) -> tuple[float, object]:
 
 
 def main() -> int:
-    started = datetime.now(timezone.utc)
-    print(f"probing {sum(len(v) for v in CANDIDATES.values())} candidate fields "
-          f"in batches of {BATCH_SIZE}\n")
+    started = datetime.now(UTC)
+    print(
+        f"probing {sum(len(v) for v in CANDIDATES.values())} candidate fields "
+        f"in batches of {BATCH_SIZE}\n"
+    )
 
     # Sanity: prove the endpoint works at all before trusting any rejection.
     ok, payload = _post(["name", "close"])
     if not ok:
         print(f"ABORT: baseline scan failed — {payload}", file=sys.stderr)
-        print("The probe cannot distinguish 'unknown field' from 'no network'.",
-              file=sys.stderr)
+        print("The probe cannot distinguish 'unknown field' from 'no network'.", file=sys.stderr)
         return 2
     print("baseline scan OK\n")
 
@@ -173,7 +216,7 @@ def main() -> int:
         print(f"-- {group}")
         acc, bad = [], {}
         for i in range(0, len(fields), BATCH_SIZE):
-            chunk = fields[i:i + BATCH_SIZE]
+            chunk = fields[i : i + BATCH_SIZE]
             a, b = _accepted(chunk)
             acc.extend(a)
             bad.update(b)
@@ -195,8 +238,9 @@ def _write_md(results: dict, started: datetime) -> None:
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     total_ok = sum(len(g["accepted"]) for g in results.values())
     total_no = sum(len(g["rejected"]) for g in results.values())
-    useful = sum(1 for g in results.values()
-                 for d in g["accepted"].values() if (d["fill_pct"] or 0) >= 50)
+    useful = sum(
+        1 for g in results.values() for d in g["accepted"].values() if (d["fill_pct"] or 0) >= 50
+    )
 
     L = [
         "# TradingView screener — field probe",
@@ -218,8 +262,7 @@ def _write_md(results: dict, started: datetime) -> None:
         L += [f"## {group}", ""]
         if res["accepted"]:
             L += ["| Field | Fill % | Sample | Verdict |", "|---|---|---|---|"]
-            for f, d in sorted(res["accepted"].items(),
-                               key=lambda kv: -(kv[1]["fill_pct"] or 0)):
+            for f, d in sorted(res["accepted"].items(), key=lambda kv: -(kv[1]["fill_pct"] or 0)):
                 rate = d["fill_pct"]
                 if rate < 0:
                     verdict, shown = "fill check failed", "?"

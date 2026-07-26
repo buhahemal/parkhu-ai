@@ -1,4 +1,5 @@
 """Pipeline runner — collect → derive → watchlist → report → zip."""
+
 from __future__ import annotations
 
 import json
@@ -19,6 +20,7 @@ from config.publish import (
     repo_branch,
     repo_slug,
 )
+
 from pipeline.registry import COLLECTORS, DERIVED, AgentSpec
 from pipeline.watchlist import build_watchlist
 
@@ -36,8 +38,14 @@ def _run_step(spec: AgentSpec, date: str) -> dict[str, Any]:
         res["agent"] = spec.label
     res["seconds"] = round(time.time() - t0, 1)
     tag = "agent" if spec.kind == "collector" else "derived"
-    log.info("%s %-12s -> %s (%s rows, %ss)",
-             tag, spec.label, res["status"], res.get("rows", 0), res["seconds"])
+    log.info(
+        "%s %-12s -> %s (%s rows, %ss)",
+        tag,
+        spec.label,
+        res["status"],
+        res.get("rows", 0),
+        res["seconds"],
+    )
     return res
 
 
@@ -103,9 +111,14 @@ def run_pipeline(date: str | None = None) -> dict[str, Any]:
 
     write_output_zips(date)
 
-    log.info("=== done in %ss | ok=%d partial=%d errors=%d | output: %s ===",
-             report["duration_seconds"], report["ok"], report["partial"],
-             report["errors"], out_dir)
+    log.info(
+        "=== done in %ss | ok=%d partial=%d errors=%d | output: %s ===",
+        report["duration_seconds"],
+        report["ok"],
+        report["partial"],
+        report["errors"],
+        out_dir,
+    )
     return report
 
 

@@ -343,14 +343,13 @@ not truly breach. The brief went from 2 ideas to 3 once fixed.
 `INDUSTRY_TO_RISK_SECTOR` splits `Finance` into Banks, NBFC & Capital Markets, Insurance
 and Real Estate. Everything else keeps its TradingView sector.
 
-> **Overlap warning.** `parkhu-phase-0-2/` proposes resolving sector on `industry` before
-> `sector` inside `collector/derived/_utils.py`, for RS benchmarking. That is the same
-> idea applied to a different question — RS wants *"which NIFTY index benchmarks this
-> name"*, concentration wants *"which bet is this"*. They are not always the same mapping
-> (a REIT benchmarks against NIFTY_REALTY but is a distinct concentration bucket from a
-> developer). **Do not collapse them into one table without deciding which question wins.**
-> If they are unified, `risk_sector` should remain a separate column derived from the
-> shared industry resolution.
+> **Overlap warning.** `collector/derived/_utils.py` resolves NIFTY RS benchmarks on
+> `industry` before `sector`. The brief's `INDUSTRY_TO_RISK_SECTOR` answers a different
+> question — RS wants *"which NIFTY index benchmarks this name"*, concentration wants
+> *"which bet is this"*. They are not always the same mapping (a REIT benchmarks against
+> NIFTY_REALTY but is a distinct concentration bucket from a developer). **Do not collapse
+> them into one table without deciding which question wins.** If they are unified,
+> `risk_sector` should remain a separate column derived from the shared industry resolution.
 
 ---
 

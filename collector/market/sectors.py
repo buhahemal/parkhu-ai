@@ -1,17 +1,17 @@
 """Market Agent — sector index levels and relative strength snapshot."""
+
 from __future__ import annotations
 
 import pandas as pd
 import yfinance as yf
-
-from collector.utils import get_logger, save_csv, empty_csv
-from collector.yf_history import clean_daily_history, pct_change_lookback
 from config.universe import SECTOR_INDICES
+
+from collector.utils import empty_csv, get_logger, save_csv
+from collector.yf_history import clean_daily_history, pct_change_lookback
 
 log = get_logger("sectors")
 
-COLUMNS = ["sector", "ticker", "close", "pct_change_1d",
-           "pct_change_1w", "pct_change_1m"]
+COLUMNS = ["sector", "ticker", "close", "pct_change_1d", "pct_change_1w", "pct_change_1m"]
 
 
 def collect(date: str | None = None) -> dict:
@@ -22,13 +22,16 @@ def collect(date: str | None = None) -> dict:
             if df.empty:
                 log.warning("sector %s: no usable bars", name)
                 continue
-            rows.append({
-                "sector": name, "ticker": ticker,
-                "close": round(float(df["Close"].iloc[-1]), 2),
-                "pct_change_1d": pct_change_lookback(df, 1) or 0.0,
-                "pct_change_1w": pct_change_lookback(df, 5) or 0.0,
-                "pct_change_1m": pct_change_lookback(df, 21) or 0.0,
-            })
+            rows.append(
+                {
+                    "sector": name,
+                    "ticker": ticker,
+                    "close": round(float(df["Close"].iloc[-1]), 2),
+                    "pct_change_1d": pct_change_lookback(df, 1) or 0.0,
+                    "pct_change_1w": pct_change_lookback(df, 5) or 0.0,
+                    "pct_change_1m": pct_change_lookback(df, 21) or 0.0,
+                }
+            )
         except Exception as exc:  # noqa: BLE001
             log.warning("sector %s failed: %s", name, exc)
 

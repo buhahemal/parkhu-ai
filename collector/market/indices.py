@@ -10,19 +10,28 @@ The fix is to drop null closes, de-duplicate by calendar date, and record the
 actual bar dates alongside the levels so a consumer can verify that
 ``prev_close`` really is the prior session rather than assuming it.
 """
+
 from __future__ import annotations
 
 import pandas as pd
 import yfinance as yf
-
-from collector.utils import get_logger, save_csv, empty_csv
-from collector.yf_history import clean_daily_history
 from config.universe import INDICES
+
+from collector.utils import empty_csv, get_logger, save_csv
+from collector.yf_history import clean_daily_history
 
 log = get_logger("indices")
 
-COLUMNS = ["index", "ticker", "close", "prev_close", "pct_change",
-           "session_date", "prev_session_date", "is_stale"]
+COLUMNS = [
+    "index",
+    "ticker",
+    "close",
+    "prev_close",
+    "pct_change",
+    "session_date",
+    "prev_session_date",
+    "is_stale",
+]
 
 
 def collect(date: str | None = None) -> dict:
@@ -46,16 +55,20 @@ def collect(date: str | None = None) -> dict:
             is_stale = bool(prev_sess and close == prev and name != "INDIA_VIX")
             if is_stale:
                 stale += 1
-                log.warning("index %s: identical close on %s and %s",
-                            name, prev_sess, sess)
+                log.warning("index %s: identical close on %s and %s", name, prev_sess, sess)
 
-            rows.append({
-                "index": name, "ticker": ticker,
-                "close": round(close, 2), "prev_close": round(prev, 2),
-                "pct_change": round(((close - prev) / prev * 100) if prev else 0.0, 2),
-                "session_date": sess, "prev_session_date": prev_sess,
-                "is_stale": is_stale,
-            })
+            rows.append(
+                {
+                    "index": name,
+                    "ticker": ticker,
+                    "close": round(close, 2),
+                    "prev_close": round(prev, 2),
+                    "pct_change": round(((close - prev) / prev * 100) if prev else 0.0, 2),
+                    "session_date": sess,
+                    "prev_session_date": prev_sess,
+                    "is_stale": is_stale,
+                }
+            )
         except Exception as exc:  # noqa: BLE001
             log.warning("index %s failed: %s", name, exc)
 

@@ -5,11 +5,12 @@ non-browser clients, so calls are wrapped in a warmed-up session with
 retries and degrade gracefully to empty CSVs on failure. Insider deals
 (SAST/PIT filings) are stubbed for the BSE-filings enhancement.
 """
+
 from __future__ import annotations
 
 import pandas as pd
 
-from collector.utils import get_logger, nse_session, fetch_json, save_csv, empty_csv
+from collector.utils import empty_csv, fetch_json, get_logger, nse_session, save_csv
 
 log = get_logger("smartmoney")
 
@@ -25,29 +26,35 @@ def _fii_dii(session) -> pd.DataFrame:
     rows = []
     if isinstance(data, list):
         for item in data:
-            rows.append({
-                "date": item.get("date", ""),
-                "category": item.get("category", ""),
-                "buy_value": item.get("buyValue", ""),
-                "sell_value": item.get("sellValue", ""),
-                "net_value": item.get("netValue", ""),
-            })
+            rows.append(
+                {
+                    "date": item.get("date", ""),
+                    "category": item.get("category", ""),
+                    "buy_value": item.get("buyValue", ""),
+                    "sell_value": item.get("sellValue", ""),
+                    "net_value": item.get("netValue", ""),
+                }
+            )
     return pd.DataFrame(rows, columns=FII_DII_COLUMNS)
 
 
 def _block_deals(session) -> pd.DataFrame:
-    data = fetch_json(session, BLOCK_URL, referer="https://www.nseindia.com/market-data/block-deal-watch")
+    data = fetch_json(
+        session, BLOCK_URL, referer="https://www.nseindia.com/market-data/block-deal-watch"
+    )
     rows = []
     if isinstance(data, dict):
         for item in data.get("data", []):
-            rows.append({
-                "date": item.get("date", ""),
-                "symbol": item.get("symbol", ""),
-                "client": item.get("clientName", ""),
-                "deal_type": item.get("buySell", ""),
-                "qty": item.get("qty", ""),
-                "price": item.get("watp", ""),
-            })
+            rows.append(
+                {
+                    "date": item.get("date", ""),
+                    "symbol": item.get("symbol", ""),
+                    "client": item.get("clientName", ""),
+                    "deal_type": item.get("buySell", ""),
+                    "qty": item.get("qty", ""),
+                    "price": item.get("watp", ""),
+                }
+            )
     return pd.DataFrame(rows, columns=DEALS_COLUMNS)
 
 

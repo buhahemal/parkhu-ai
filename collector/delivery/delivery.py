@@ -9,21 +9,31 @@ very different if one delivered 70% and the other 20%.
 The run date may be a weekend/holiday, so we walk back a few days until a
 bhavcopy exists. Degrades to an empty CSV if NSE is unreachable.
 """
+
 from __future__ import annotations
 
 from datetime import datetime, timedelta
 from io import StringIO
 
 import pandas as pd
-
-from collector.utils import get_logger, nse_session, fetch_text, save_csv, empty_csv
 from config import settings
 from config.universe import scanning_universe
 
+from collector.utils import empty_csv, fetch_text, get_logger, nse_session, save_csv
+
 log = get_logger("delivery")
 
-COLUMNS = ["symbol", "date", "prev_close", "close", "ttl_traded_qty",
-           "deliv_qty", "deliv_pct", "turnover_lacs", "no_of_trades"]
+COLUMNS = [
+    "symbol",
+    "date",
+    "prev_close",
+    "close",
+    "ttl_traded_qty",
+    "deliv_qty",
+    "deliv_pct",
+    "turnover_lacs",
+    "no_of_trades",
+]
 
 BHAV_URL = "https://archives.nseindia.com/products/content/sec_bhavdata_full_{ddmmyyyy}.csv"
 LOOKBACK_DAYS = 6  # walk back past weekends / holidays
@@ -59,17 +69,20 @@ def collect(date: str | None = None) -> dict:
     universe = set(scanning_universe())
     eq = df[(df["SERIES"] == "EQ") & (df["SYMBOL"].isin(universe))].copy()
 
-    out = pd.DataFrame({
-        "symbol": eq["SYMBOL"],
-        "date": trade_date,
-        "prev_close": eq["PREV_CLOSE"],
-        "close": eq["CLOSE_PRICE"],
-        "ttl_traded_qty": eq["TTL_TRD_QNTY"],
-        "deliv_qty": pd.to_numeric(eq["DELIV_QTY"], errors="coerce"),
-        "deliv_pct": pd.to_numeric(eq["DELIV_PER"], errors="coerce"),
-        "turnover_lacs": eq["TURNOVER_LACS"],
-        "no_of_trades": eq["NO_OF_TRADES"],
-    }, columns=COLUMNS).sort_values("deliv_pct", ascending=False)
+    out = pd.DataFrame(
+        {
+            "symbol": eq["SYMBOL"],
+            "date": trade_date,
+            "prev_close": eq["PREV_CLOSE"],
+            "close": eq["CLOSE_PRICE"],
+            "ttl_traded_qty": eq["TTL_TRD_QNTY"],
+            "deliv_qty": pd.to_numeric(eq["DELIV_QTY"], errors="coerce"),
+            "deliv_pct": pd.to_numeric(eq["DELIV_PER"], errors="coerce"),
+            "turnover_lacs": eq["TURNOVER_LACS"],
+            "no_of_trades": eq["NO_OF_TRADES"],
+        },
+        columns=COLUMNS,
+    ).sort_values("deliv_pct", ascending=False)
 
     if out.empty:
         empty_csv("delivery", COLUMNS, date)

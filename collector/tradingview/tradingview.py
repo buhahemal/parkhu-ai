@@ -14,25 +14,28 @@ funds and pre-IPO. That currently resolves to ~366 names.
 This module doubles as the universe provider: screener_symbols() returns the
 ticker list that config.universe can use to drive the whole pipeline.
 """
+
 from __future__ import annotations
 
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from functools import lru_cache
 
 import pandas as pd
 import requests
-
-from collector.utils import get_logger, save_csv, empty_csv
 from config import settings
+
+from collector.utils import empty_csv, get_logger, save_csv
 
 log = get_logger("tradingview")
 
 SCAN_URL = "https://scanner.tradingview.com/india/scan"
 PAGE_SIZE = 400
 HEADERS = {
-    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    ),
     "Content-Type": "application/json",
     "Accept": "application/json",
     "Origin": "https://www.tradingview.com",
@@ -52,19 +55,90 @@ SCREENER_FILTER = [
 SCREENER_FILTER2 = {
     "operator": "and",
     "operands": [
-        {"operation": {"operator": "or", "operands": [
-            {"operation": {"operator": "and", "operands": [
-                {"expression": {"left": "type", "operation": "equal", "right": "stock"}},
-                {"expression": {"left": "typespecs", "operation": "has", "right": ["common"]}}]}},
-            {"operation": {"operator": "and", "operands": [
-                {"expression": {"left": "type", "operation": "equal", "right": "stock"}},
-                {"expression": {"left": "typespecs", "operation": "has", "right": ["preferred"]}}]}},
-            {"operation": {"operator": "and", "operands": [
-                {"expression": {"left": "type", "operation": "equal", "right": "dr"}}]}},
-            {"operation": {"operator": "and", "operands": [
-                {"expression": {"left": "type", "operation": "equal", "right": "fund"}},
-                {"expression": {"left": "typespecs", "operation": "has_none_of", "right": ["etf", "mutual"]}}]}},
-        ]}},
+        {
+            "operation": {
+                "operator": "or",
+                "operands": [
+                    {
+                        "operation": {
+                            "operator": "and",
+                            "operands": [
+                                {
+                                    "expression": {
+                                        "left": "type",
+                                        "operation": "equal",
+                                        "right": "stock",
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "left": "typespecs",
+                                        "operation": "has",
+                                        "right": ["common"],
+                                    }
+                                },
+                            ],
+                        }
+                    },
+                    {
+                        "operation": {
+                            "operator": "and",
+                            "operands": [
+                                {
+                                    "expression": {
+                                        "left": "type",
+                                        "operation": "equal",
+                                        "right": "stock",
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "left": "typespecs",
+                                        "operation": "has",
+                                        "right": ["preferred"],
+                                    }
+                                },
+                            ],
+                        }
+                    },
+                    {
+                        "operation": {
+                            "operator": "and",
+                            "operands": [
+                                {
+                                    "expression": {
+                                        "left": "type",
+                                        "operation": "equal",
+                                        "right": "dr",
+                                    }
+                                }
+                            ],
+                        }
+                    },
+                    {
+                        "operation": {
+                            "operator": "and",
+                            "operands": [
+                                {
+                                    "expression": {
+                                        "left": "type",
+                                        "operation": "equal",
+                                        "right": "fund",
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "left": "typespecs",
+                                        "operation": "has_none_of",
+                                        "right": ["etf", "mutual"],
+                                    }
+                                },
+                            ],
+                        }
+                    },
+                ],
+            }
+        },
         {"expression": {"left": "typespecs", "operation": "has_none_of", "right": ["pre-ipo"]}},
     ],
 }
@@ -72,44 +146,124 @@ SCREENER_FILTER2 = {
 # Valid TradingView screener fields (probe-tested against the India scan API).
 VALID_TV_COLUMNS = [
     # identity
-    "description", "sector", "industry", "country", "currency",
-    "fundamental_currency_code", "type", "typespecs", "number_of_employees",
-    "total_shares_outstanding_fundamental", "float_shares_percent_current",
+    "description",
+    "sector",
+    "industry",
+    "country",
+    "currency",
+    "fundamental_currency_code",
+    "type",
+    "typespecs",
+    "number_of_employees",
+    "total_shares_outstanding_fundamental",
+    "float_shares_percent_current",
     # price / range
-    "close", "open", "high", "low", "change", "change_abs", "gap", "VWAP",
-    "Value.Traded", "price_52_week_high", "price_52_week_low", "High.All",
-    "High.1M", "Low.1M", "High.3M", "Low.3M", "High.6M", "Low.6M",
+    "close",
+    "open",
+    "high",
+    "low",
+    "change",
+    "change_abs",
+    "gap",
+    "VWAP",
+    "Value.Traded",
+    "price_52_week_high",
+    "price_52_week_low",
+    "High.All",
+    "High.1M",
+    "Low.1M",
+    "High.3M",
+    "Low.3M",
+    "High.6M",
+    "Low.6M",
     # volume
-    "volume", "average_volume_10d_calc", "average_volume_30d_calc",
-    "average_volume_90d_calc", "relative_volume_10d_calc",
+    "volume",
+    "average_volume_10d_calc",
+    "average_volume_30d_calc",
+    "average_volume_90d_calc",
+    "relative_volume_10d_calc",
     # performance
-    "Perf.W", "Perf.1M", "Perf.3M", "Perf.6M", "Perf.YTD", "Perf.Y",
-    "Perf.5Y", "Perf.All",
+    "Perf.W",
+    "Perf.1M",
+    "Perf.3M",
+    "Perf.6M",
+    "Perf.YTD",
+    "Perf.Y",
+    "Perf.5Y",
+    "Perf.All",
     # volatility / risk
-    "Volatility.D", "Volatility.W", "Volatility.M", "ATR", "beta_1_year",
-    "beta_3_year", "SMA20", "SMA50", "SMA100", "SMA200", "EMA50", "EMA200",
+    "Volatility.D",
+    "Volatility.W",
+    "Volatility.M",
+    "ATR",
+    "beta_1_year",
+    "beta_3_year",
+    "SMA20",
+    "SMA50",
+    "SMA100",
+    "SMA200",
+    "EMA50",
+    "EMA200",
     # oscillators
-    "RSI", "RSI7", "Mom", "AO", "CCI20", "Stoch.K", "Stoch.D", "Stoch.RSI.K",
-    "Stoch.RSI.D", "MACD.macd", "MACD.signal", "ADX", "ADX+DI", "ADX-DI",
-    "W.R", "ROC", "UO", "BBPower", "BB.upper", "BB.lower",
+    "RSI",
+    "RSI7",
+    "Mom",
+    "AO",
+    "CCI20",
+    "Stoch.K",
+    "Stoch.D",
+    "Stoch.RSI.K",
+    "Stoch.RSI.D",
+    "MACD.macd",
+    "MACD.signal",
+    "ADX",
+    "ADX+DI",
+    "ADX-DI",
+    "W.R",
+    "ROC",
+    "UO",
+    "BBPower",
+    "BB.upper",
+    "BB.lower",
     # ratings
-    "Recommend.All", "Recommend.MA", "Recommend.Other", "TechRating_1D.tr",
-    "MARating_1D.tr", "OsRating_1D.tr", "candlestick_patterns_1D",
+    "Recommend.All",
+    "Recommend.MA",
+    "Recommend.Other",
+    "TechRating_1D.tr",
+    "MARating_1D.tr",
+    "OsRating_1D.tr",
+    "candlestick_patterns_1D",
     # valuation
-    "market_cap_basic", "price_earnings_ttm", "price_earnings_growth_ttm",
-    "price_book_fq", "price_sales_current", "price_free_cash_flow_ttm",
-    "enterprise_value_ebitda_ttm", "enterprise_value_fq",
+    "market_cap_basic",
+    "price_earnings_ttm",
+    "price_earnings_growth_ttm",
+    "price_book_fq",
+    "price_sales_current",
+    "price_free_cash_flow_ttm",
+    "enterprise_value_ebitda_ttm",
+    "enterprise_value_fq",
     "price_to_cash_f_operating_activities_ttm",
     # profitability / margins
-    "return_on_equity", "return_on_assets", "return_on_invested_capital",
-    "gross_margin", "operating_margin", "net_margin", "pre_tax_margin",
+    "return_on_equity",
+    "return_on_assets",
+    "return_on_invested_capital",
+    "gross_margin",
+    "operating_margin",
+    "net_margin",
+    "pre_tax_margin",
     # leverage / liquidity
-    "debt_to_equity", "total_debt_to_total_equity_fq", "current_ratio",
+    "debt_to_equity",
+    "total_debt_to_total_equity_fq",
+    "current_ratio",
     "quick_ratio",
     # dividends
-    "dividends_yield_current", "dividends_yield", "dividend_payout_ratio_ttm",
+    "dividends_yield_current",
+    "dividends_yield",
+    "dividend_payout_ratio_ttm",
     # analyst
-    "recommendation_mark", "price_target_1y", "price_target_average",
+    "recommendation_mark",
+    "price_target_1y",
+    "price_target_average",
     "number_of_analyst_opinions_fq",
 ]
 
@@ -222,6 +376,7 @@ EARNINGS_SPEC = [
     ("earnings_release_next_date", "next_earnings_date", True),
 ]
 
+
 # All fields fetched in one scan; both CSVs are sliced from this single call.
 def _full_scan_fields() -> list[str]:
     seen: set[str] = set()
@@ -240,9 +395,14 @@ def _full_scan_fields() -> list[str]:
 _FULL_FIELDS = _full_scan_fields()
 
 
-def scan(columns: list[str], filters=None, filter2=None,
-         sort_by: str = "market_cap_basic", sort_order: str = "desc",
-         page_size: int = PAGE_SIZE) -> list[dict]:
+def scan(
+    columns: list[str],
+    filters=None,
+    filter2=None,
+    sort_by: str = "market_cap_basic",
+    sort_order: str = "desc",
+    page_size: int = PAGE_SIZE,
+) -> list[dict]:
     """Run the screener and return [{symbol, exchange, d:[...]}] across all pages.
 
     Paginates via the `range` window until totalCount rows are collected.
@@ -266,14 +426,20 @@ def scan(columns: list[str], filters=None, filter2=None,
         data = None
         for attempt in range(1, settings.REQUEST_RETRIES + 1):
             try:
-                r = requests.post(SCAN_URL, headers=HEADERS, json=payload,
-                                  timeout=settings.REQUEST_TIMEOUT)
+                r = requests.post(
+                    SCAN_URL, headers=HEADERS, json=payload, timeout=settings.REQUEST_TIMEOUT
+                )
                 r.raise_for_status()
                 data = r.json()
                 break
             except (requests.RequestException, ValueError) as exc:
-                log.warning("tradingview scan attempt %d/%d (offset %d) failed: %s",
-                            attempt, settings.REQUEST_RETRIES, offset, exc)
+                log.warning(
+                    "tradingview scan attempt %d/%d (offset %d) failed: %s",
+                    attempt,
+                    settings.REQUEST_RETRIES,
+                    offset,
+                    exc,
+                )
                 time.sleep(2 * attempt)
         if not isinstance(data, dict):
             break
@@ -306,7 +472,7 @@ def _clean(value):
 def _epoch_to_date(value):
     """Convert TradingView epoch-second timestamps to YYYY-MM-DD (UTC)."""
     try:
-        return datetime.fromtimestamp(float(value), tz=timezone.utc).strftime("%Y-%m-%d")
+        return datetime.fromtimestamp(float(value), tz=UTC).strftime("%Y-%m-%d")
     except (TypeError, ValueError, OSError):
         return ""
 
@@ -317,7 +483,7 @@ def _scan_rows() -> tuple:
     tradingview and earnings agents share one API call. Returns
     ((symbol, {field: value}), ...)."""
     rows = scan(_FULL_FIELDS, SCREENER_FILTER, SCREENER_FILTER2)
-    return tuple((r["symbol"], dict(zip(_FULL_FIELDS, r["d"]))) for r in rows)
+    return tuple((r["symbol"], dict(zip(_FULL_FIELDS, r["d"], strict=False))) for r in rows)
 
 
 def collect(date: str | None = None) -> dict:

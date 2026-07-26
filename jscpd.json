@@ -1,0 +1,24 @@
+{
+  "threshold": 5,
+  "reporters": ["console", "html"],
+  "ignore": [
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/output/**",
+    "**/logs/**",
+    "**/trades/**",
+    "**/collector/_retired/**",
+    "**/__pycache__/**",
+    "**/.pytest_cache/**",
+    "**/docs/**",
+    "**/*.csv",
+    "**/*.json",
+    "**/*.md",
+    "**/*.zip"
+  ],
+  "absolute": true,
+  "gitignore": true,
+  "minLines": 8,
+  "minTokens": 50,
+  "format": ["python"]
+}

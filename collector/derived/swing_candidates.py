@@ -1,21 +1,34 @@
 """Swing candidate shortlist — 2–3 week hold, ~5% target template."""
+
 from __future__ import annotations
 
 import pandas as pd
-
-from collector.utils import get_logger, save_csv, empty_csv
 from collector.derived._utils import (
     SWING_TARGET_PCT,
     SWING_TOP_N,
     load_csv,
 )
+from collector.utils import empty_csv, get_logger, save_csv
 
 log = get_logger("swing_candidates")
 
 COLUMNS = [
-    "symbol", "close", "score", "perf_1m", "rs_vs_nifty_1m", "rs_vs_sector_1m",
-    "deliv_pct", "pct_change_oi", "upside_to_target_pct", "atr", "stop_1_5atr",
-    "target_5pct", "earnings_within_21d", "event_risk_score", "tech_rating", "sector",
+    "symbol",
+    "close",
+    "score",
+    "perf_1m",
+    "rs_vs_nifty_1m",
+    "rs_vs_sector_1m",
+    "deliv_pct",
+    "pct_change_oi",
+    "upside_to_target_pct",
+    "atr",
+    "stop_1_5atr",
+    "target_5pct",
+    "earnings_within_21d",
+    "event_risk_score",
+    "tech_rating",
+    "sector",
 ]
 
 
@@ -65,7 +78,9 @@ def collect(date: str | None = None) -> dict:
 
     if not ev_idx.empty:
         df = df.merge(
-            ev_idx[["earnings_within_21d", "event_risk_score"]], on="symbol", how="left",
+            ev_idx[["earnings_within_21d", "event_risk_score"]],
+            on="symbol",
+            how="left",
         )
     else:
         df["earnings_within_21d"] = False
@@ -126,6 +141,8 @@ def collect(date: str | None = None) -> dict:
 
     out = df.sort_values("score", ascending=False)[COLUMNS].head(SWING_TOP_N)
     save_csv(out, "swing_candidates", date)
-    log.info("swing candidates: top %d (max score %s)", len(out), out["score"].max() if len(out) else 0)
+    log.info(
+        "swing candidates: top %d (max score %s)", len(out), out["score"].max() if len(out) else 0
+    )
     status = "ok" if len(out) else "partial"
     return {"agent": "swing_candidates", "status": status, "rows": len(out)}

@@ -4,6 +4,7 @@ yfinance often appends an in-progress session row with a NaN close, and can
 repeat a stale trailing bar across calendar dates. Consumers that take
 ``Close.iloc[-1]`` blindly get empty values or weekend-skewed levels.
 """
+
 from __future__ import annotations
 
 import pandas as pd

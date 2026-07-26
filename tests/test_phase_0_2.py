@@ -1,8 +1,8 @@
 """Minimal regression tests for Phase 0–2 data-quality hardenings."""
+
 from __future__ import annotations
 
 import pandas as pd
-
 from collector.derived._utils import nifty_sector_for
 from collector.derived.stock_analysis import COLUMNS
 from collector.yf_history import clean_daily_history, pct_change_lookback

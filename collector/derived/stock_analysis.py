@@ -19,73 +19,180 @@ swing-structure highs/lows, 52-week levels, turnover, weekly/monthly
 volatility, beta and float were all already being collected daily and thrown
 away here. They are now surfaced.
 """
+
 from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-
-from collector.utils import get_logger, save_csv, empty_csv
-from collector.schema import assert_unique_columns
 from collector.derived._utils import load_csv, nifty_sector_for
+from collector.schema import assert_unique_columns
+from collector.utils import empty_csv, get_logger, save_csv
 
 log = get_logger("stock_analysis")
 
 COLUMNS = [
     # identity
-    "symbol", "company", "sector", "industry", "nse_sector", "sector_match_basis",
-    "market_cap", "cmp", "previous_close",
+    "symbol",
+    "company",
+    "sector",
+    "industry",
+    "nse_sector",
+    "sector_match_basis",
+    "market_cap",
+    "cmp",
+    "previous_close",
     # trend
-    "ema20", "ema50", "ema100", "ema200", "sma20", "sma50", "sma100", "sma200",
-    "supertrend", "ichimoku_signal", "trend_label", "trend_score",
+    "ema20",
+    "ema50",
+    "ema100",
+    "ema200",
+    "sma20",
+    "sma50",
+    "sma100",
+    "sma200",
+    "supertrend",
+    "ichimoku_signal",
+    "trend_label",
+    "trend_score",
     # momentum
-    "rsi14", "macd", "macd_signal", "macd_hist", "adx14", "roc20", "stoch_rsi",
-    "stoch_rsi_d", "williams_r", "cci20", "momentum_score",
+    "rsi14",
+    "macd",
+    "macd_signal",
+    "macd_hist",
+    "adx14",
+    "roc20",
+    "stoch_rsi",
+    "stoch_rsi_d",
+    "williams_r",
+    "cci20",
+    "momentum_score",
     # volume
-    "volume", "avg_volume_10d", "avg_volume_30d", "relative_volume",
-    "delivery_pct", "value_traded", "turnover_cr", "float_pct",
-    "obv", "cmf", "volume_score",
+    "volume",
+    "avg_volume_10d",
+    "avg_volume_30d",
+    "relative_volume",
+    "delivery_pct",
+    "value_traded",
+    "turnover_cr",
+    "float_pct",
+    "obv",
+    "cmf",
+    "volume_score",
     # price structure
     # NOTE support1/2, resistance1/2 and pivot are single-session floor-trader
     # pivots derived from one day's H/L/C. They sit within ~2% of spot and are
     # noise on a 3-90 day hold. The swing_* levels below are the ones a swing
     # thesis should be checked against.
-    "support1", "support2", "resistance1", "resistance2", "pivot", "vwap", "atr14",
-    "bb_upper", "bb_lower",
+    "support1",
+    "support2",
+    "resistance1",
+    "resistance2",
+    "pivot",
+    "vwap",
+    "atr14",
+    "bb_upper",
+    "bb_lower",
     # swing structure (already collected by TradingView, previously unused)
-    "high_1m", "low_1m", "high_3m", "low_3m", "high_6m", "low_6m",
-    "high_52w", "low_52w", "high_all",
-    "nearest_overhead", "nearest_overhead_ref", "overhead_supply_pct",
-    "headroom_to_52w_high_pct", "dist_52w_low_pct",
+    "high_1m",
+    "low_1m",
+    "high_3m",
+    "low_3m",
+    "high_6m",
+    "low_6m",
+    "high_52w",
+    "low_52w",
+    "high_all",
+    "nearest_overhead",
+    "nearest_overhead_ref",
+    "overhead_supply_pct",
+    "headroom_to_52w_high_pct",
+    "dist_52w_low_pct",
     # trade levels
-    "entry_low", "entry_high", "stop_loss", "target1", "target2", "target3", "risk_reward",
+    "entry_low",
+    "entry_high",
+    "stop_loss",
+    "target1",
+    "target2",
+    "target3",
+    "risk_reward",
     # relative strength
-    "rs_rank", "return_1m", "return_3m", "dist_52w_high_pct",
-    "volatility_w", "volatility_m", "beta_1y",
-    "rs_vs_nifty_1m", "rs_vs_sector_1m",
+    "rs_rank",
+    "return_1m",
+    "return_3m",
+    "dist_52w_high_pct",
+    "volatility_w",
+    "volatility_m",
+    "beta_1y",
+    "rs_vs_nifty_1m",
+    "rs_vs_sector_1m",
     # fundamentals
-    "pe", "pb", "peg", "ev_ebitda", "roe", "roce", "debt_equity",
-    "revenue_growth", "profit_growth", "operating_margin", "fcf", "fundamental_score",
+    "pe",
+    "pb",
+    "peg",
+    "ev_ebitda",
+    "roe",
+    "roce",
+    "debt_equity",
+    "revenue_growth",
+    "profit_growth",
+    "operating_margin",
+    "fcf",
+    "fundamental_score",
     # earnings
-    "revenue_surprise", "profit_surprise", "eps_growth", "margin_expansion",
-    "guidance", "order_book_growth", "earnings_score",
+    "revenue_surprise",
+    "profit_surprise",
+    "eps_growth",
+    "margin_expansion",
+    "guidance",
+    "order_book_growth",
+    "earnings_score",
     # ownership (no source yet — blank)
-    "promoter_holding", "promoter_pledge", "fii_holding", "dii_holding",
-    "mf_holding", "insider_buying", "institution_score",
+    "promoter_holding",
+    "promoter_pledge",
+    "fii_holding",
+    "dii_holding",
+    "mf_holding",
+    "insider_buying",
+    "institution_score",
     # news
-    "news_count_7d", "news_sentiment", "catalyst_strength", "major_catalyst",
-    "risk_event", "news_score",
+    "news_count_7d",
+    "news_sentiment",
+    "catalyst_strength",
+    "major_catalyst",
+    "risk_event",
+    "news_score",
     # smart money
-    "in_oi_spurt", "oi_change_pct", "fno_score", "pcr", "max_pain",
-    "liquidity_sweep", "smart_money_score",
+    "in_oi_spurt",
+    "oi_change_pct",
+    "fno_score",
+    "pcr",
+    "max_pain",
+    "liquidity_sweep",
+    "smart_money_score",
     # final engine sub-scores (AI computes the composite)
-    "technical_score", "fundamental_score_final", "earnings_score_final",
-    "news_score_final", "sector_score", "macro_score", "risk_score",
+    "technical_score",
+    "fundamental_score_final",
+    "earnings_score_final",
+    "news_score_final",
+    "sector_score",
+    "macro_score",
+    "risk_score",
     # cross-sectional factor z-scores (relative to the universe; higher = better)
-    "value_z", "momentum_z", "quality_z", "lowvol_z", "growth_z", "size_z",
-    "composite_factor_z", "composite_factor_rank",
+    "value_z",
+    "momentum_z",
+    "quality_z",
+    "lowvol_z",
+    "growth_z",
+    "size_z",
+    "composite_factor_z",
+    "composite_factor_rank",
     # event flags
-    "earnings_within_21d", "days_to_earnings", "event_risk_score",
-    "tech_rating", "analyst_rec", "price_target_avg",
+    "earnings_within_21d",
+    "days_to_earnings",
+    "event_risk_score",
+    "tech_rating",
+    "analyst_rec",
+    "price_target_avg",
 ]
 assert_unique_columns(COLUMNS, name="stock_analysis.COLUMNS")
 
@@ -217,7 +324,15 @@ def _earnings_score(rev_yoy, eps_yoy, eps_qoq) -> int:
 def _risk_score(volatility_d, beta, event_risk) -> int:
     score = 50
     if volatility_d is not None:
-        score += 20 if volatility_d > 4 else 10 if volatility_d > 2.5 else -10 if volatility_d < 1.5 else 0
+        score += (
+            20
+            if volatility_d > 4
+            else 10
+            if volatility_d > 2.5
+            else -10
+            if volatility_d < 1.5
+            else 0
+        )
     if beta is not None:
         score += 15 if beta > 1.3 else -10 if beta < 0.8 else 0
     if event_risk is not None and event_risk >= 4:
@@ -247,8 +362,11 @@ def collect(date: str | None = None) -> dict:
     tv["_perf_1m_num"] = pd.to_numeric(tv.get("perf_1m"), errors="coerce")
     tv["_peer_group"] = [
         nifty_sector_for(sec, ind)[0] or (str(sec) if sec else "Unknown")
-        for sec, ind in zip(tv.get("sector", pd.Series(dtype=object)),
-                            tv.get("industry", pd.Series(dtype=object)))
+        for sec, ind in zip(
+            tv.get("sector", pd.Series(dtype=object)),
+            tv.get("industry", pd.Series(dtype=object)),
+            strict=False,
+        )
     ]
     sector_mean = tv.groupby("_peer_group")["_perf_1m_num"].transform("mean")
     sector_score = (sector_mean.rank(pct=True) * 100).round()
@@ -258,14 +376,16 @@ def collect(date: str | None = None) -> dict:
     macro_score = 50
     if not ms.empty and "market_regime" in ms.columns:
         regime = str(ms.iloc[0].get("market_regime", "Neutral"))
-        macro_score = {"Bullish": 70, "Neutral": 50, "Cautious": 40,
-                       "Bearish": 30}.get(regime, 50)
+        macro_score = {"Bullish": 70, "Neutral": 50, "Cautious": 40, "Bearish": 30}.get(regime, 50)
 
     # --- Cross-sectional factor model (Barra/AQR-style z-scores) ------------
     # Growth metrics live in earnings.csv; merge them so they can be z-scored.
     earn_df = load_csv("earnings", date)
-    growth_cols = [c for c in ("revenue_yoy_pct", "eps_yoy_pct", "eps_qoq_pct")
-                   if not earn_df.empty and c in earn_df.columns]
+    growth_cols = [
+        c
+        for c in ("revenue_yoy_pct", "eps_yoy_pct", "eps_qoq_pct")
+        if not earn_df.empty and c in earn_df.columns
+    ]
     if growth_cols:
         tv = tv.merge(earn_df[["symbol"] + growth_cols], on="symbol", how="left")
     for c in ("revenue_yoy_pct", "eps_yoy_pct", "eps_qoq_pct"):
@@ -278,16 +398,24 @@ def collect(date: str | None = None) -> dict:
     pe, pb, ev_eb = col("pe"), col("pb"), col("enterprise_value_ebitda_ttm")
     close_s, atr_s, mcap = col("close"), col("ATR"), col("market_cap")
     # Value: cheaper is better → invert the price ratios into yields.
-    value_z = _blend(_z(1.0 / pe.where(pe > 0)), _z(1.0 / pb.where(pb > 0)),
-                     _z(1.0 / ev_eb.where(ev_eb > 0)), _z(col("div_yield")))
+    value_z = _blend(
+        _z(1.0 / pe.where(pe > 0)),
+        _z(1.0 / pb.where(pb > 0)),
+        _z(1.0 / ev_eb.where(ev_eb > 0)),
+        _z(col("div_yield")),
+    )
     momentum_z = _blend(_z(col("perf_3m")), _z(col("perf_6m")), _z(col("perf_1y")))
-    quality_z = _blend(_z(col("roe")), _z(col("return_on_invested_capital")),
-                       _z(col("operating_margin")), _z(col("net_margin")),
-                       _z(-col("debt_to_equity")))
-    lowvol_z = _blend(_z(-col("volatility_d")), _z(-col("beta_1_year")),
-                      _z(-(atr_s / close_s.where(close_s > 0))))
-    growth_z = _blend(_z(col("revenue_yoy_pct")), _z(col("eps_yoy_pct")),
-                      _z(col("eps_qoq_pct")))
+    quality_z = _blend(
+        _z(col("roe")),
+        _z(col("return_on_invested_capital")),
+        _z(col("operating_margin")),
+        _z(col("net_margin")),
+        _z(-col("debt_to_equity")),
+    )
+    lowvol_z = _blend(
+        _z(-col("volatility_d")), _z(-col("beta_1_year")), _z(-(atr_s / close_s.where(close_s > 0)))
+    )
+    growth_z = _blend(_z(col("revenue_yoy_pct")), _z(col("eps_yoy_pct")), _z(col("eps_qoq_pct")))
     size_z = _z(-np.log(mcap.where(mcap > 0)))  # small-cap premium
     composite_z = _blend(value_z, momentum_z, quality_z, lowvol_z, growth_z)
     composite_rank = (composite_z.rank(pct=True) * 100).round()
@@ -313,7 +441,9 @@ def collect(date: str | None = None) -> dict:
         rsi = _num(r.get("RSI"))
         macd = _num(r.get("macd"))
         macd_sig = _num(r.get("macd_signal"))
-        macd_hist = round(macd - macd_sig, 4) if (macd is not None and macd_sig is not None) else None
+        macd_hist = (
+            round(macd - macd_sig, 4) if (macd is not None and macd_sig is not None) else None
+        )
         adx = _num(r.get("ADX"))
         roc = _num(r.get("ROC"))
         stoch_rsi = _num(r.get("stoch_rsi_k"))
@@ -352,10 +482,16 @@ def collect(date: str | None = None) -> dict:
         hi3m, lo3m = _num(r.get("high_3m")), _num(r.get("low_3m"))
         hi6m, lo6m = _num(r.get("high_6m")), _num(r.get("low_6m"))
         hi_all = _num(r.get("high_all"))
-        ovh, ovh_ref, ovh_pct = _overhead(close, [
-            ("1m high", hi1m), ("3m high", hi3m), ("6m high", hi6m),
-            ("52w high", hi52), ("all-time high", hi_all),
-        ])
+        ovh, ovh_ref, ovh_pct = _overhead(
+            close,
+            [
+                ("1m high", hi1m),
+                ("3m high", hi3m),
+                ("6m high", hi6m),
+                ("52w high", hi52),
+                ("all-time high", hi_all),
+            ],
+        )
 
         value_traded = _num(r.get("value_traded"))
         turnover_cr = round(value_traded / 1e7, 2) if value_traded else None
@@ -373,89 +509,165 @@ def collect(date: str | None = None) -> dict:
         fund_score = _fundamental_score(roe, de, net_margin, pe, peg)
         earn_score = _earnings_score(rev_yoy, eps_yoy, eps_qoq)
 
-        risk = _risk_score(_num(r.get("volatility_d")), _num(r.get("beta_1_year")),
-                           _num(_get(ev, sym, "event_risk_score")))
+        risk = _risk_score(
+            _num(r.get("volatility_d")),
+            _num(r.get("beta_1_year")),
+            _num(_get(ev, sym, "event_risk_score")),
+        )
         tech_score = round((trend_score or 0) * 0.4 + mom_score * 0.4 + vol_score * 0.2)
 
-        rows.append({
-            "symbol": sym, "company": r.get("company"), "sector": r.get("sector"),
-            "industry": r.get("industry"),
-            "nse_sector": nse_sec, "sector_match_basis": sec_basis,
-            "market_cap": _num(r.get("market_cap")),
-            "cmp": close,
-            "previous_close": round(close - change_abs, 2) if (close is not None and change_abs is not None) else None,
-            # TradingView's India scan exposes SMA20/SMA100 but no EMA20/EMA100.
-            # scripts/probe_tv_fields.py tests whether EMA20/EMA100 are accepted;
-            # until that comes back these stay honestly null rather than being
-            # silently filled with the SMA, which is a different indicator.
-            "ema20": None, "ema50": ema50, "ema100": None, "ema200": ema200,
-            "sma20": sma20, "sma50": sma50, "sma100": sma100, "sma200": sma200,
-            "supertrend": None, "ichimoku_signal": None,
-            "trend_label": trend_label, "trend_score": trend_score,
-            "rsi14": rsi, "macd": macd, "macd_signal": macd_sig, "macd_hist": macd_hist,
-            "adx14": adx, "roc20": roc, "stoch_rsi": stoch_rsi,
-            "stoch_rsi_d": _num(r.get("stoch_rsi_d")),
-            "williams_r": _num(r.get("williams_r")), "cci20": _num(r.get("CCI20")),
-            "bb_upper": _num(r.get("bb_upper")), "bb_lower": _num(r.get("bb_lower")),
-            "momentum_score": mom_score,
-            "volume": vol, "avg_volume_10d": avg10, "avg_volume_30d": avg30,
-            "relative_volume": rel_vol, "delivery_pct": deliv_pct,
-            "value_traded": value_traded, "turnover_cr": turnover_cr,
-            "float_pct": _num(r.get("float_shares_percent_current")),
-            "obv": None, "cmf": None, "volume_score": vol_score,
-            "support1": s1, "support2": s2, "resistance1": r1, "resistance2": r2,
-            "pivot": pivot, "vwap": _num(r.get("vwap")), "atr14": atr,
-            "high_1m": hi1m, "low_1m": lo1m, "high_3m": hi3m, "low_3m": lo3m,
-            "high_6m": hi6m, "low_6m": lo6m,
-            "high_52w": hi52, "low_52w": lo52, "high_all": hi_all,
-            "nearest_overhead": ovh, "nearest_overhead_ref": ovh_ref,
-            "overhead_supply_pct": ovh_pct,
-            "headroom_to_52w_high_pct": head52, "dist_52w_low_pct": dist52_lo,
-            "entry_low": entry_low, "entry_high": entry_high, "stop_loss": stop,
-            "target1": t1, "target2": t2, "target3": t3, "risk_reward": rr,
-            "rs_rank": rs_rank.get(i), "return_1m": _num(r.get("perf_1m")),
-            "return_3m": _num(r.get("perf_3m")), "dist_52w_high_pct": dist52,
-            "volatility_w": _num(r.get("volatility_w")),
-            "volatility_m": _num(r.get("volatility_m")),
-            "beta_1y": _num(r.get("beta_1_year")),
-            "rs_vs_nifty_1m": _num(_get(rs, sym, "rs_vs_nifty_1m")),
-            "rs_vs_sector_1m": _num(_get(rs, sym, "rs_vs_sector_1m")),
-            "pe": pe, "pb": _num(r.get("pb")), "peg": peg,
-            "ev_ebitda": _num(r.get("enterprise_value_ebitda_ttm")),
-            "roe": roe, "roce": roce, "debt_equity": de,
-            "revenue_growth": rev_yoy, "profit_growth": eps_yoy,
-            "operating_margin": op_margin, "fcf": _num(r.get("price_free_cash_flow_ttm")),
-            "fundamental_score": fund_score,
-            "revenue_surprise": None, "profit_surprise": None, "eps_growth": eps_yoy,
-            "margin_expansion": None, "guidance": None, "order_book_growth": None,
-            "earnings_score": earn_score,
-            "promoter_holding": None, "promoter_pledge": None, "fii_holding": None,
-            "dii_holding": None, "mf_holding": None, "insider_buying": None,
-            "institution_score": None,
-            "news_count_7d": _get(ev, sym, "news_count_7d"),
-            "news_sentiment": None, "catalyst_strength": None, "major_catalyst": None,
-            "risk_event": None, "news_score": None,
-            "in_oi_spurt": _get(fno, sym, "in_oi_spurt"),
-            "oi_change_pct": _num(_get(fno, sym, "pct_change_oi")),
-            "fno_score": _num(_get(fno, sym, "fno_score")),
-            "pcr": None, "max_pain": None, "liquidity_sweep": None,
-            "smart_money_score": _num(_get(fno, sym, "fno_score")),
-            "technical_score": tech_score, "fundamental_score_final": fund_score,
-            "earnings_score_final": earn_score, "news_score_final": None,
-            "sector_score": sector_score.get(i),
-            "macro_score": macro_score, "risk_score": risk,
-            "value_z": _zget(value_z, i), "momentum_z": _zget(momentum_z, i),
-            "quality_z": _zget(quality_z, i), "lowvol_z": _zget(lowvol_z, i),
-            "growth_z": _zget(growth_z, i), "size_z": _zget(size_z, i),
-            "composite_factor_z": _zget(composite_z, i),
-            "composite_factor_rank": composite_rank.get(i),
-            "earnings_within_21d": _get(ev, sym, "earnings_within_21d"),
-            "days_to_earnings": _get(ev, sym, "days_to_earnings"),
-            "event_risk_score": _num(_get(ev, sym, "event_risk_score")),
-            "tech_rating": r.get("tech_rating"),
-            "analyst_rec": _num(r.get("recommendation_mark")),
-            "price_target_avg": _num(r.get("price_target_average")),
-        })
+        rows.append(
+            {
+                "symbol": sym,
+                "company": r.get("company"),
+                "sector": r.get("sector"),
+                "industry": r.get("industry"),
+                "nse_sector": nse_sec,
+                "sector_match_basis": sec_basis,
+                "market_cap": _num(r.get("market_cap")),
+                "cmp": close,
+                "previous_close": round(close - change_abs, 2)
+                if (close is not None and change_abs is not None)
+                else None,
+                # TradingView's India scan exposes SMA20/SMA100 but no EMA20/EMA100.
+                # scripts/probe_tv_fields.py tests whether EMA20/EMA100 are accepted;
+                # until that comes back these stay honestly null rather than being
+                # silently filled with the SMA, which is a different indicator.
+                "ema20": None,
+                "ema50": ema50,
+                "ema100": None,
+                "ema200": ema200,
+                "sma20": sma20,
+                "sma50": sma50,
+                "sma100": sma100,
+                "sma200": sma200,
+                "supertrend": None,
+                "ichimoku_signal": None,
+                "trend_label": trend_label,
+                "trend_score": trend_score,
+                "rsi14": rsi,
+                "macd": macd,
+                "macd_signal": macd_sig,
+                "macd_hist": macd_hist,
+                "adx14": adx,
+                "roc20": roc,
+                "stoch_rsi": stoch_rsi,
+                "stoch_rsi_d": _num(r.get("stoch_rsi_d")),
+                "williams_r": _num(r.get("williams_r")),
+                "cci20": _num(r.get("CCI20")),
+                "bb_upper": _num(r.get("bb_upper")),
+                "bb_lower": _num(r.get("bb_lower")),
+                "momentum_score": mom_score,
+                "volume": vol,
+                "avg_volume_10d": avg10,
+                "avg_volume_30d": avg30,
+                "relative_volume": rel_vol,
+                "delivery_pct": deliv_pct,
+                "value_traded": value_traded,
+                "turnover_cr": turnover_cr,
+                "float_pct": _num(r.get("float_shares_percent_current")),
+                "obv": None,
+                "cmf": None,
+                "volume_score": vol_score,
+                "support1": s1,
+                "support2": s2,
+                "resistance1": r1,
+                "resistance2": r2,
+                "pivot": pivot,
+                "vwap": _num(r.get("vwap")),
+                "atr14": atr,
+                "high_1m": hi1m,
+                "low_1m": lo1m,
+                "high_3m": hi3m,
+                "low_3m": lo3m,
+                "high_6m": hi6m,
+                "low_6m": lo6m,
+                "high_52w": hi52,
+                "low_52w": lo52,
+                "high_all": hi_all,
+                "nearest_overhead": ovh,
+                "nearest_overhead_ref": ovh_ref,
+                "overhead_supply_pct": ovh_pct,
+                "headroom_to_52w_high_pct": head52,
+                "dist_52w_low_pct": dist52_lo,
+                "entry_low": entry_low,
+                "entry_high": entry_high,
+                "stop_loss": stop,
+                "target1": t1,
+                "target2": t2,
+                "target3": t3,
+                "risk_reward": rr,
+                "rs_rank": rs_rank.get(i),
+                "return_1m": _num(r.get("perf_1m")),
+                "return_3m": _num(r.get("perf_3m")),
+                "dist_52w_high_pct": dist52,
+                "volatility_w": _num(r.get("volatility_w")),
+                "volatility_m": _num(r.get("volatility_m")),
+                "beta_1y": _num(r.get("beta_1_year")),
+                "rs_vs_nifty_1m": _num(_get(rs, sym, "rs_vs_nifty_1m")),
+                "rs_vs_sector_1m": _num(_get(rs, sym, "rs_vs_sector_1m")),
+                "pe": pe,
+                "pb": _num(r.get("pb")),
+                "peg": peg,
+                "ev_ebitda": _num(r.get("enterprise_value_ebitda_ttm")),
+                "roe": roe,
+                "roce": roce,
+                "debt_equity": de,
+                "revenue_growth": rev_yoy,
+                "profit_growth": eps_yoy,
+                "operating_margin": op_margin,
+                "fcf": _num(r.get("price_free_cash_flow_ttm")),
+                "fundamental_score": fund_score,
+                "revenue_surprise": None,
+                "profit_surprise": None,
+                "eps_growth": eps_yoy,
+                "margin_expansion": None,
+                "guidance": None,
+                "order_book_growth": None,
+                "earnings_score": earn_score,
+                "promoter_holding": None,
+                "promoter_pledge": None,
+                "fii_holding": None,
+                "dii_holding": None,
+                "mf_holding": None,
+                "insider_buying": None,
+                "institution_score": None,
+                "news_count_7d": _get(ev, sym, "news_count_7d"),
+                "news_sentiment": None,
+                "catalyst_strength": None,
+                "major_catalyst": None,
+                "risk_event": None,
+                "news_score": None,
+                "in_oi_spurt": _get(fno, sym, "in_oi_spurt"),
+                "oi_change_pct": _num(_get(fno, sym, "pct_change_oi")),
+                "fno_score": _num(_get(fno, sym, "fno_score")),
+                "pcr": None,
+                "max_pain": None,
+                "liquidity_sweep": None,
+                "smart_money_score": _num(_get(fno, sym, "fno_score")),
+                "technical_score": tech_score,
+                "fundamental_score_final": fund_score,
+                "earnings_score_final": earn_score,
+                "news_score_final": None,
+                "sector_score": sector_score.get(i),
+                "macro_score": macro_score,
+                "risk_score": risk,
+                "value_z": _zget(value_z, i),
+                "momentum_z": _zget(momentum_z, i),
+                "quality_z": _zget(quality_z, i),
+                "lowvol_z": _zget(lowvol_z, i),
+                "growth_z": _zget(growth_z, i),
+                "size_z": _zget(size_z, i),
+                "composite_factor_z": _zget(composite_z, i),
+                "composite_factor_rank": composite_rank.get(i),
+                "earnings_within_21d": _get(ev, sym, "earnings_within_21d"),
+                "days_to_earnings": _get(ev, sym, "days_to_earnings"),
+                "event_risk_score": _num(_get(ev, sym, "event_risk_score")),
+                "tech_rating": r.get("tech_rating"),
+                "analyst_rec": _num(r.get("recommendation_mark")),
+                "price_target_avg": _num(r.get("price_target_average")),
+            }
+        )
 
     out = pd.DataFrame(rows, columns=COLUMNS)
     save_csv(out, "stock_analysis", date)

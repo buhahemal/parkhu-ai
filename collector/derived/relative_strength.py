@@ -1,22 +1,32 @@
 """Relative strength vs NIFTY and mapped sector index."""
+
 from __future__ import annotations
 
 import pandas as pd
-
-from collector.utils import get_logger, save_csv, empty_csv
 from collector.derived._utils import (
-    nifty_sector_for,
     load_csv,
     nifty_perf,
+    nifty_sector_for,
     sector_perf_map,
 )
+from collector.utils import empty_csv, get_logger, save_csv
 
 log = get_logger("relative_strength")
 
 COLUMNS = [
-    "symbol", "sector", "industry", "nifty_sector_index", "sector_match_basis",
-    "perf_1w", "perf_1m", "nifty_1w", "nifty_1m", "sector_1m",
-    "rs_vs_nifty_1w", "rs_vs_nifty_1m", "rs_vs_sector_1m",
+    "symbol",
+    "sector",
+    "industry",
+    "nifty_sector_index",
+    "sector_match_basis",
+    "perf_1w",
+    "perf_1m",
+    "nifty_1w",
+    "nifty_1m",
+    "sector_1m",
+    "rs_vs_nifty_1w",
+    "rs_vs_nifty_1m",
+    "rs_vs_sector_1m",
 ]
 
 
@@ -48,21 +58,23 @@ def collect(date: str | None = None) -> dict:
         if pd.notna(perf_1m) and sector_1m is not None:
             rs_s1m = round(float(perf_1m) - float(sector_1m), 2)
 
-        rows.append({
-            "symbol": sym,
-            "sector": sector,
-            "industry": industry,
-            "nifty_sector_index": idx or "",
-            "sector_match_basis": basis,
-            "perf_1w": perf_1w,
-            "perf_1m": perf_1m,
-            "nifty_1w": nifty_1w,
-            "nifty_1m": nifty_1m,
-            "sector_1m": sector_1m,
-            "rs_vs_nifty_1w": rs_n1w,
-            "rs_vs_nifty_1m": rs_n1m,
-            "rs_vs_sector_1m": rs_s1m,
-        })
+        rows.append(
+            {
+                "symbol": sym,
+                "sector": sector,
+                "industry": industry,
+                "nifty_sector_index": idx or "",
+                "sector_match_basis": basis,
+                "perf_1w": perf_1w,
+                "perf_1m": perf_1m,
+                "nifty_1w": nifty_1w,
+                "nifty_1m": nifty_1m,
+                "sector_1m": sector_1m,
+                "rs_vs_nifty_1w": rs_n1w,
+                "rs_vs_nifty_1m": rs_n1m,
+                "rs_vs_sector_1m": rs_s1m,
+            }
+        )
 
     out = pd.DataFrame(rows, columns=COLUMNS)
     save_csv(out, "relative_strength", date)

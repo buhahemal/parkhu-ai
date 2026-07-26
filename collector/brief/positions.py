@@ -31,6 +31,7 @@ the daily `cmp` rather than true intraday extremes, and a stop can only be
 detected if the close breached it. Both improve once the OHLC gap in
 docs/data-gaps.md is closed.
 """
+
 from __future__ import annotations
 
 import csv
@@ -38,10 +39,10 @@ import datetime as dt
 from pathlib import Path
 
 import pandas as pd
+from config import risk, settings
 
 from collector.derived._utils import load_csv
 from collector.utils import get_logger
-from config import risk, settings
 
 log = get_logger("positions")
 
@@ -50,16 +51,41 @@ OPEN_CSV = TRADES_DIR / "open.csv"
 CLOSED_CSV = TRADES_DIR / "closed.csv"
 
 OPEN_COLS = [
-    "trade_id", "symbol", "company", "risk_sector", "date_opened", "taken",
-    "entry", "stop", "t1", "t2", "t3", "structure_invalidation",
-    "horizon_days_t1", "horizon_days_t2", "score_at_open", "qty",
-    "risk_rupees", "status", "last_price", "last_checked",
-    "mfe_pct", "mae_pct", "hit_t1", "hit_t2", "reconfirmed_count", "notes",
+    "trade_id",
+    "symbol",
+    "company",
+    "risk_sector",
+    "date_opened",
+    "taken",
+    "entry",
+    "stop",
+    "t1",
+    "t2",
+    "t3",
+    "structure_invalidation",
+    "horizon_days_t1",
+    "horizon_days_t2",
+    "score_at_open",
+    "qty",
+    "risk_rupees",
+    "status",
+    "last_price",
+    "last_checked",
+    "mfe_pct",
+    "mae_pct",
+    "hit_t1",
+    "hit_t2",
+    "reconfirmed_count",
+    "notes",
 ]
 
 CLOSED_COLS = OPEN_COLS + [
-    "date_closed", "exit_price", "exit_reason", "pct_return",
-    "r_multiple", "days_held",
+    "date_closed",
+    "exit_price",
+    "exit_reason",
+    "pct_return",
+    "r_multiple",
+    "days_held",
 ]
 
 # A review outcome that ends the position.
@@ -85,9 +111,22 @@ def _read(path: Path, cols: list[str]) -> pd.DataFrame:
             df[c] = pd.NA
     # Float-typed up front: an all-zero column reads back as int64 and then
     # rejects a fractional MFE/MAE update.
-    for c in ("entry", "stop", "t1", "t2", "t3", "structure_invalidation",
-              "last_price", "mfe_pct", "mae_pct", "risk_rupees", "score_at_open",
-              "pct_return", "r_multiple", "exit_price"):
+    for c in (
+        "entry",
+        "stop",
+        "t1",
+        "t2",
+        "t3",
+        "structure_invalidation",
+        "last_price",
+        "mfe_pct",
+        "mae_pct",
+        "risk_rupees",
+        "score_at_open",
+        "pct_return",
+        "r_multiple",
+        "exit_price",
+    ):
         if c in df.columns:
             df[c] = pd.to_numeric(df[c], errors="coerce").astype("float64")
     return df[cols]
@@ -107,8 +146,7 @@ def trading_days_between(start: str, end: str) -> int:
         return 0
     if b <= a:
         return 0
-    return sum(1 for i in range((b - a).days)
-               if (a + dt.timedelta(days=i + 1)).weekday() < 5)
+    return sum(1 for i in range((b - a).days) if (a + dt.timedelta(days=i + 1)).weekday() < 5)
 
 
 # ------------------------------------------------------------------ record ----
@@ -125,40 +163,52 @@ def record(ideas: list[dict], date: str) -> dict:
         sym = str(i["symbol"])
         if sym in live:
             reconfirmed.append(sym)
-            m = (open_df["symbol"].astype(str) == sym) & \
-                (open_df["status"].isin(["open", "partial"]))
+            m = (open_df["symbol"].astype(str) == sym) & (
+                open_df["status"].isin(["open", "partial"])
+            )
             open_df.loc[m, "reconfirmed_count"] = (
                 pd.to_numeric(open_df.loc[m, "reconfirmed_count"], errors="coerce")
-                .fillna(0).astype(int) + 1
+                .fillna(0)
+                .astype(int)
+                + 1
             )
             continue
         lv, sz = i["levels"], i["sizing"]
-        rows.append({
-            "trade_id": f"{date}-{sym}",
-            "symbol": sym,
-            "company": i.get("company"),
-            "risk_sector": i.get("risk_sector"),
-            "date_opened": date,
-            "taken": "",                       # yours to fill in
-            "entry": lv["entry"], "stop": lv["stop"],
-            "t1": lv["t1"], "t2": lv["t2"], "t3": lv["t3"],
-            "structure_invalidation": lv["structure_invalidation"],
-            "horizon_days_t1": lv["hold_days_t1"],
-            "horizon_days_t2": lv["hold_days_t2"],
-            "score_at_open": i["parkhu_score"],
-            "qty": sz["qty"], "risk_rupees": sz["risk_rupees"],
-            "status": "open",
-            "last_price": lv["entry"], "last_checked": date,
-            "mfe_pct": 0.0, "mae_pct": 0.0,
-            "hit_t1": False, "hit_t2": False,
-            "reconfirmed_count": 0, "notes": "",
-        })
+        rows.append(
+            {
+                "trade_id": f"{date}-{sym}",
+                "symbol": sym,
+                "company": i.get("company"),
+                "risk_sector": i.get("risk_sector"),
+                "date_opened": date,
+                "taken": "",  # yours to fill in
+                "entry": lv["entry"],
+                "stop": lv["stop"],
+                "t1": lv["t1"],
+                "t2": lv["t2"],
+                "t3": lv["t3"],
+                "structure_invalidation": lv["structure_invalidation"],
+                "horizon_days_t1": lv["hold_days_t1"],
+                "horizon_days_t2": lv["hold_days_t2"],
+                "score_at_open": i["parkhu_score"],
+                "qty": sz["qty"],
+                "risk_rupees": sz["risk_rupees"],
+                "status": "open",
+                "last_price": lv["entry"],
+                "last_checked": date,
+                "mfe_pct": 0.0,
+                "mae_pct": 0.0,
+                "hit_t1": False,
+                "hit_t2": False,
+                "reconfirmed_count": 0,
+                "notes": "",
+            }
+        )
         added.append(sym)
 
     if rows:
         new = pd.DataFrame(rows).reindex(columns=OPEN_COLS)
-        open_df = (new if open_df.empty
-                   else pd.concat([open_df, new], ignore_index=True))
+        open_df = new if open_df.empty else pd.concat([open_df, new], ignore_index=True)
     _write(OPEN_CSV, open_df, OPEN_COLS)
     return {"opened": added, "reconfirmed": reconfirmed}
 
@@ -192,25 +242,35 @@ def review(date: str) -> dict:
             # forward rather than guessing, and keep the row shape identical so
             # the renderer never has to special-case it.
             last = float(pd.to_numeric(r["last_price"], errors="coerce") or entry)
-            reviewed.append({
-                "symbol": sym, "date_opened": str(r["date_opened"]),
-                "status": str(r["status"]),
-                "entry": entry, "stop": stop, "t1": float(r["t1"]),
-                "price": round(last, 2),
-                "pct": round((last - entry) / entry * 100, 2),
-                "r_multiple": round((last - entry) / (entry - stop), 2) if entry > stop else 0.0,
-                "days_held": trading_days_between(r["date_opened"], date),
-                "horizon_t1": int(float(r["horizon_days_t1"])),
-                "mfe_pct": round(float(pd.to_numeric(r["mfe_pct"], errors="coerce") or 0.0), 2),
-                "mae_pct": round(float(pd.to_numeric(r["mae_pct"], errors="coerce") or 0.0), 2),
-                "action": "NO DATA",
-                "detail": (f"dropped out of today's universe — last seen ₹{last:,.2f} on "
-                           f"{r['last_checked']}; check the chart manually"),
-                "score_at_open": r["score_at_open"], "score_now": None,
-            })
+            reviewed.append(
+                {
+                    "symbol": sym,
+                    "date_opened": str(r["date_opened"]),
+                    "status": str(r["status"]),
+                    "entry": entry,
+                    "stop": stop,
+                    "t1": float(r["t1"]),
+                    "price": round(last, 2),
+                    "pct": round((last - entry) / entry * 100, 2),
+                    "r_multiple": round((last - entry) / (entry - stop), 2)
+                    if entry > stop
+                    else 0.0,
+                    "days_held": trading_days_between(r["date_opened"], date),
+                    "horizon_t1": int(float(r["horizon_days_t1"])),
+                    "mfe_pct": round(float(pd.to_numeric(r["mfe_pct"], errors="coerce") or 0.0), 2),
+                    "mae_pct": round(float(pd.to_numeric(r["mae_pct"], errors="coerce") or 0.0), 2),
+                    "action": "NO DATA",
+                    "detail": (
+                        f"dropped out of today's universe — last seen ₹{last:,.2f} on "
+                        f"{r['last_checked']}; check the chart manually"
+                    ),
+                    "score_at_open": r["score_at_open"],
+                    "score_now": None,
+                }
+            )
             keep_idx.append(idx)
             continue
-        if isinstance(row, pd.DataFrame):        # duplicate symbol guard
+        if isinstance(row, pd.DataFrame):  # duplicate symbol guard
             row = row.iloc[0]
 
         price = float(row["cmp"])
@@ -239,75 +299,97 @@ def review(date: str) -> dict:
         earnings_now = str(row.get("earnings_within_21d")).lower() == "true"
 
         action, detail, reason = "HOLD", "", None
-        if price <= stop:                                       # 2
+        if price <= stop:  # 2
             action = "EXIT — STOP HIT"
             detail = f"₹{price:,.2f} at or below stop ₹{stop:,.2f}"
             reason = "stop"
-        elif len(broken) >= 2:                                  # 1
+        elif len(broken) >= 2:  # 1
             action = "EXIT — THESIS INVALIDATED"
             detail = "; ".join(broken)
             reason = "invalidated"
-        elif price >= float(r["t3"]):                           # 3 (fully run)
+        elif price >= float(r["t3"]):  # 3 (fully run)
             action = "EXIT — T3 REACHED"
             detail = f"₹{price:,.2f} at or above T3 ₹{float(r['t3']):,.2f}"
             reason = "t3"
-        elif price >= float(r["t2"]):                           # 3
+        elif price >= float(r["t2"]):  # 3
             action = "BANK MORE — T2 REACHED"
-            detail = (f"₹{price:,.2f} above T2 ₹{float(r['t2']):,.2f} — trail the "
-                      f"remainder toward T3 ₹{float(r['t3']):,.2f}")
+            detail = (
+                f"₹{price:,.2f} above T2 ₹{float(r['t2']):,.2f} — trail the "
+                f"remainder toward T3 ₹{float(r['t3']):,.2f}"
+            )
             open_df.at[idx, "status"] = "partial"
             open_df.at[idx, "hit_t1"] = True
             open_df.at[idx, "hit_t2"] = True
-        elif price >= float(r["t1"]):                           # 3
+        elif price >= float(r["t1"]):  # 3
             action = "BANK PARTIAL — T1 REACHED"
-            detail = (f"₹{price:,.2f} above T1 ₹{float(r['t1']):,.2f} — bank part, "
-                      f"trail the rest, move stop to breakeven ₹{entry:,.2f}")
+            detail = (
+                f"₹{price:,.2f} above T1 ₹{float(r['t1']):,.2f} — bank part, "
+                f"trail the rest, move stop to breakeven ₹{entry:,.2f}"
+            )
             open_df.at[idx, "status"] = "partial"
             open_df.at[idx, "hit_t1"] = True
-        elif held > int(float(r["horizon_days_t2"])):           # 4
+        elif held > int(float(r["horizon_days_t2"])):  # 4
             action = "EXIT — TIME STOP"
-            detail = (f"{held} trading days held, past the "
-                      f"{int(float(r['horizon_days_t2']))}-day horizon and still at "
-                      f"{pct:+.2f}% — capital has an opportunity cost")
+            detail = (
+                f"{held} trading days held, past the "
+                f"{int(float(r['horizon_days_t2']))}-day horizon and still at "
+                f"{pct:+.2f}% — capital has an opportunity cost"
+            )
             reason = "time_stop"
-        elif broken:                                            # weakening
+        elif broken:  # weakening
             action = "TIGHTEN / REVIEW"
             detail = "; ".join(broken) + " — one condition gone, thesis thinning"
-        elif earnings_now:                                      # 6
+        elif earnings_now:  # 6
             action = "EARNINGS AHEAD"
-            detail = ("results inside 21 days — KB-05 says reduce or stand aside "
-                      "rather than hold through the print")
+            detail = (
+                "results inside 21 days — KB-05 says reduce or stand aside "
+                "rather than hold through the print"
+            )
         else:
             days_left = max(int(float(r["horizon_days_t1"])) - held, 0)
-            detail = (f"{pct:+.2f}% ({r_mult:+.2f}R), {held}d held, ~{days_left}d "
-                      f"left to the T1 horizon")
+            detail = (
+                f"{pct:+.2f}% ({r_mult:+.2f}R), {held}d held, ~{days_left}d left to the T1 horizon"
+            )
 
-        reviewed.append({
-            "symbol": sym, "date_opened": str(r["date_opened"]),
-            "status": str(open_df.at[idx, "status"]),
-            "entry": entry, "stop": stop, "t1": float(r["t1"]),
-            "price": round(price, 2), "pct": round(pct, 2),
-            "r_multiple": round(r_mult, 2),
-            "days_held": held, "horizon_t1": int(float(r["horizon_days_t1"])),
-            "mfe_pct": round(mfe, 2), "mae_pct": round(mae, 2),
-            "action": action, "detail": detail,
-            "score_at_open": r["score_at_open"],
-            "score_now": (round(float(row["parkhu_score"]), 1)
-                          if "parkhu_score" in row.index and pd.notna(row.get("parkhu_score"))
-                          else None),
-        })
+        reviewed.append(
+            {
+                "symbol": sym,
+                "date_opened": str(r["date_opened"]),
+                "status": str(open_df.at[idx, "status"]),
+                "entry": entry,
+                "stop": stop,
+                "t1": float(r["t1"]),
+                "price": round(price, 2),
+                "pct": round(pct, 2),
+                "r_multiple": round(r_mult, 2),
+                "days_held": held,
+                "horizon_t1": int(float(r["horizon_days_t1"])),
+                "mfe_pct": round(mfe, 2),
+                "mae_pct": round(mae, 2),
+                "action": action,
+                "detail": detail,
+                "score_at_open": r["score_at_open"],
+                "score_now": (
+                    round(float(row["parkhu_score"]), 1)
+                    if "parkhu_score" in row.index and pd.notna(row.get("parkhu_score"))
+                    else None
+                ),
+            }
+        )
 
         if reason:
             closed = open_df.loc[idx].to_dict()
-            closed.update({
-                "status": "closed",
-                "date_closed": date,
-                "exit_price": round(price, 2),
-                "exit_reason": reason,
-                "pct_return": round(pct, 2),
-                "r_multiple": round(r_mult, 2),
-                "days_held": held,
-            })
+            closed.update(
+                {
+                    "status": "closed",
+                    "date_closed": date,
+                    "exit_price": round(price, 2),
+                    "exit_reason": reason,
+                    "pct_return": round(pct, 2),
+                    "r_multiple": round(r_mult, 2),
+                    "days_held": held,
+                }
+            )
             closed_rows.append(closed)
         else:
             keep_idx.append(idx)
@@ -315,9 +397,11 @@ def review(date: str) -> dict:
     if closed_rows:
         prior = _read(CLOSED_CSV, CLOSED_COLS)
         new = pd.DataFrame(closed_rows).reindex(columns=CLOSED_COLS)
-        _write(CLOSED_CSV,
-               new if prior.empty else pd.concat([prior, new], ignore_index=True),
-               CLOSED_COLS)
+        _write(
+            CLOSED_CSV,
+            new if prior.empty else pd.concat([prior, new], ignore_index=True),
+            CLOSED_COLS,
+        )
     _write(OPEN_CSV, open_df.loc[keep_idx], OPEN_COLS)
 
     reviewed.sort(key=lambda x: (x["action"] == "HOLD", x["symbol"]))
@@ -349,10 +433,11 @@ def realised_stats() -> dict:
         "avg_r_multiple": round(float(rmult.mean()), 2) if len(rmult) else None,
         "avg_days_held": round(float(held.mean()), 1) if len(held) else None,
         "by_exit_reason": df["exit_reason"].value_counts().to_dict(),
-        "hit_t1_pct": round(
-            df["hit_t1"].astype(str).str.lower().eq("true").mean() * 100, 1),
+        "hit_t1_pct": round(df["hit_t1"].astype(str).str.lower().eq("true").mean() * 100, 1),
     }
     if n < 20:
-        out["note"] = (f"only {n} closed suggestion(s) — too few to infer a win rate; "
-                       f"treat as a log, not a statistic")
+        out["note"] = (
+            f"only {n} closed suggestion(s) — too few to infer a win rate; "
+            f"treat as a log, not a statistic"
+        )
     return out

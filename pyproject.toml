@@ -1,0 +1,46 @@
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+src = ["collector", "config", "pipeline", "scripts", "tests"]
+extend-exclude = [
+  "collector/_retired",
+  "output",
+  "logs",
+  "trades",
+  "database",
+  ".venv",
+]
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # bugbear
+  "UP",  # pyupgrade
+  "SIM", # simplify
+]
+ignore = [
+  "E501",  # line length — enforced softly; many CSV/schema lines are long by design
+  "B904",  # raise-from inside broad agent excepts (intentional contract)
+  "UP031", # %-format strings in brief messaging are intentional / readable
+  "SIM105", # try/except/pass used for resilience fallbacks
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+"scripts/*" = ["T201"]
+
+[tool.vulture]
+min_confidence = 80
+paths = ["collector", "config", "pipeline", "scripts", "run.py"]
+exclude = ["collector/_retired/", ".venv/"]
+ignore_names = [
+  # Agent / CLI entrypoints discovered dynamically
+  "collect",
+  "main",
+  "build_watchlist",
+  "run_pipeline",
+  # Common pandas / protocol hooks
+  "COLUMNS",
+]

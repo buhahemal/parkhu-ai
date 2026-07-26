@@ -1,11 +1,11 @@
 """Shared helpers for derived signal CSVs."""
+
 from __future__ import annotations
 
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import pandas as pd
 import yfinance as yf
-
 from config import settings
 
 # --- Sector mapping ---------------------------------------------------------
@@ -167,4 +167,4 @@ def sector_perf_map(date: str | None = None) -> dict[str, float]:
     sectors = load_csv("sectors", date)
     if sectors.empty or "pct_change_1m" not in sectors.columns:
         return {}
-    return dict(zip(sectors["sector"], sectors["pct_change_1m"]))
+    return dict(zip(sectors["sector"], sectors["pct_change_1m"], strict=False))

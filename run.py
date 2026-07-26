@@ -8,6 +8,7 @@ Usage:
 Orchestration lives in ``pipeline.runner``; agent order in ``pipeline.registry``.
 See ``docs/architecture.md`` for layers and coding standards.
 """
+
 from __future__ import annotations
 
 from pipeline.runner import main

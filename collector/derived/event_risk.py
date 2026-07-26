@@ -1,9 +1,8 @@
 """Event-risk flags for a 2–3 week hold window."""
+
 from __future__ import annotations
 
 import pandas as pd
-
-from collector.utils import get_logger, save_csv, empty_csv
 from collector.derived._utils import (
     EVENT_WINDOW_DAYS,
     NEWS_WINDOW_DAYS,
@@ -11,12 +10,18 @@ from collector.derived._utils import (
     parse_dates,
     run_anchor,
 )
+from collector.utils import empty_csv, get_logger, save_csv
 
 log = get_logger("event_risk")
 
 COLUMNS = [
-    "symbol", "earnings_within_21d", "days_to_earnings", "next_earnings_date",
-    "corp_action_within_21d", "corp_action_purpose", "news_count_7d",
+    "symbol",
+    "earnings_within_21d",
+    "days_to_earnings",
+    "next_earnings_date",
+    "corp_action_within_21d",
+    "corp_action_purpose",
+    "news_count_7d",
     "event_risk_score",
 ]
 
@@ -63,7 +68,11 @@ def _news_counts(news: pd.DataFrame, anchor, window: int) -> dict:
     news = news.copy()
     news["_dt"] = parse_dates(news["date"])
     cutoff = anchor - pd.Timedelta(days=window)
-    recent = news[news["_dt"].notna() & (news["_dt"] >= cutoff) & (news["_dt"] <= anchor + pd.Timedelta(days=1))]
+    recent = news[
+        news["_dt"].notna()
+        & (news["_dt"] >= cutoff)
+        & (news["_dt"] <= anchor + pd.Timedelta(days=1))
+    ]
     for sym, grp in recent.groupby("symbol"):
         counts[sym] = len(grp)
     return counts
@@ -86,16 +95,18 @@ def collect(date: str | None = None) -> dict:
         c_within, c_purpose = corp.get(sym, (False, ""))
         n_count = news.get(sym, 0)
         score = (3 if e_within else 0) + (2 if c_within else 0) + min(n_count, 3)
-        rows.append({
-            "symbol": sym,
-            "earnings_within_21d": e_within,
-            "days_to_earnings": e_days,
-            "next_earnings_date": e_date,
-            "corp_action_within_21d": c_within,
-            "corp_action_purpose": c_purpose[:120] if c_purpose else "",
-            "news_count_7d": n_count,
-            "event_risk_score": score,
-        })
+        rows.append(
+            {
+                "symbol": sym,
+                "earnings_within_21d": e_within,
+                "days_to_earnings": e_days,
+                "next_earnings_date": e_date,
+                "corp_action_within_21d": c_within,
+                "corp_action_purpose": c_purpose[:120] if c_purpose else "",
+                "news_count_7d": n_count,
+                "event_risk_score": score,
+            }
+        )
 
     out = pd.DataFrame(rows, columns=COLUMNS)
     save_csv(out, "event_risk", date)

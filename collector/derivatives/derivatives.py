@@ -13,11 +13,12 @@ Three datasets, each its own CSV:
 Like every agent, this never crashes the pipeline: on failure it logs,
 writes an empty CSV with the right schema, and reports a degraded status.
 """
+
 from __future__ import annotations
 
 import pandas as pd
 
-from collector.utils import get_logger, nse_session, fetch_json, save_csv, empty_csv
+from collector.utils import empty_csv, fetch_json, get_logger, nse_session, save_csv
 
 log = get_logger("derivatives")
 
@@ -27,16 +28,43 @@ OI_SPURTS_URL = "https://www.nseindia.com/api/live-analysis-oi-spurts-underlying
 ACTIVE_CONTRACTS_URL = "https://www.nseindia.com/api/snapshot-derivatives-equity?index=contracts"
 ACTIVE_UNDERLYING_URL = "https://www.nseindia.com/api/snapshot-derivatives-equity?index=underlying"
 
-OI_SPURTS_COLUMNS = ["symbol", "latest_oi", "prev_oi", "change_in_oi",
-                     "pct_change_oi", "volume", "fut_value", "opt_value",
-                     "prem_value", "underlying_value"]
-ACTIVE_CONTRACTS_COLUMNS = ["identifier", "instrument", "underlying", "expiry",
-                            "option_type", "strike", "last_price",
-                            "contracts_traded", "turnover", "open_interest",
-                            "underlying_value", "pct_change"]
-ACTIVE_UNDERLYING_COLUMNS = ["symbol", "fut_volume", "opt_volume", "tot_volume",
-                             "fut_turnover", "opt_turnover", "tot_turnover",
-                             "latest_oi", "underlying_value"]
+OI_SPURTS_COLUMNS = [
+    "symbol",
+    "latest_oi",
+    "prev_oi",
+    "change_in_oi",
+    "pct_change_oi",
+    "volume",
+    "fut_value",
+    "opt_value",
+    "prem_value",
+    "underlying_value",
+]
+ACTIVE_CONTRACTS_COLUMNS = [
+    "identifier",
+    "instrument",
+    "underlying",
+    "expiry",
+    "option_type",
+    "strike",
+    "last_price",
+    "contracts_traded",
+    "turnover",
+    "open_interest",
+    "underlying_value",
+    "pct_change",
+]
+ACTIVE_UNDERLYING_COLUMNS = [
+    "symbol",
+    "fut_volume",
+    "opt_volume",
+    "tot_volume",
+    "fut_turnover",
+    "opt_turnover",
+    "tot_turnover",
+    "latest_oi",
+    "underlying_value",
+]
 
 
 def _oi_spurts(session) -> pd.DataFrame:
@@ -44,18 +72,20 @@ def _oi_spurts(session) -> pd.DataFrame:
     rows = []
     if isinstance(data, dict):
         for it in data.get("data", []):
-            rows.append({
-                "symbol": it.get("symbol", ""),
-                "latest_oi": it.get("latestOI", ""),
-                "prev_oi": it.get("prevOI", ""),
-                "change_in_oi": it.get("changeInOI", ""),
-                "pct_change_oi": it.get("avgInOI", ""),
-                "volume": it.get("volume", ""),
-                "fut_value": it.get("futValue", ""),
-                "opt_value": it.get("optValue", ""),
-                "prem_value": it.get("premValue", ""),
-                "underlying_value": it.get("underlyingValue", ""),
-            })
+            rows.append(
+                {
+                    "symbol": it.get("symbol", ""),
+                    "latest_oi": it.get("latestOI", ""),
+                    "prev_oi": it.get("prevOI", ""),
+                    "change_in_oi": it.get("changeInOI", ""),
+                    "pct_change_oi": it.get("avgInOI", ""),
+                    "volume": it.get("volume", ""),
+                    "fut_value": it.get("futValue", ""),
+                    "opt_value": it.get("optValue", ""),
+                    "prem_value": it.get("premValue", ""),
+                    "underlying_value": it.get("underlyingValue", ""),
+                }
+            )
     return pd.DataFrame(rows, columns=OI_SPURTS_COLUMNS)
 
 
@@ -65,20 +95,22 @@ def _most_active_contracts(session) -> pd.DataFrame:
     if isinstance(data, dict):
         # Ranked by volume; the payload also carries a "value" ranking we skip.
         for it in data.get("volume", {}).get("data", []):
-            rows.append({
-                "identifier": it.get("identifier", ""),
-                "instrument": it.get("instrument", ""),
-                "underlying": it.get("underlying", ""),
-                "expiry": it.get("expiryDate", ""),
-                "option_type": it.get("optionType", ""),
-                "strike": it.get("strikePrice", ""),
-                "last_price": it.get("lastPrice", ""),
-                "contracts_traded": it.get("numberOfContractsTraded", ""),
-                "turnover": it.get("totalTurnover", ""),
-                "open_interest": it.get("openInterest", ""),
-                "underlying_value": it.get("underlyingValue", ""),
-                "pct_change": it.get("pChange", ""),
-            })
+            rows.append(
+                {
+                    "identifier": it.get("identifier", ""),
+                    "instrument": it.get("instrument", ""),
+                    "underlying": it.get("underlying", ""),
+                    "expiry": it.get("expiryDate", ""),
+                    "option_type": it.get("optionType", ""),
+                    "strike": it.get("strikePrice", ""),
+                    "last_price": it.get("lastPrice", ""),
+                    "contracts_traded": it.get("numberOfContractsTraded", ""),
+                    "turnover": it.get("totalTurnover", ""),
+                    "open_interest": it.get("openInterest", ""),
+                    "underlying_value": it.get("underlyingValue", ""),
+                    "pct_change": it.get("pChange", ""),
+                }
+            )
     return pd.DataFrame(rows, columns=ACTIVE_CONTRACTS_COLUMNS)
 
 
@@ -87,17 +119,19 @@ def _most_active_underlying(session) -> pd.DataFrame:
     rows = []
     if isinstance(data, dict):
         for it in data.get("data", []):
-            rows.append({
-                "symbol": it.get("symbol", ""),
-                "fut_volume": it.get("futVolume", ""),
-                "opt_volume": it.get("optVolume", ""),
-                "tot_volume": it.get("totVolume", ""),
-                "fut_turnover": it.get("futTurnover", ""),
-                "opt_turnover": it.get("optTurnover", ""),
-                "tot_turnover": it.get("totTurnover", ""),
-                "latest_oi": it.get("latestOI", ""),
-                "underlying_value": it.get("underlying", ""),
-            })
+            rows.append(
+                {
+                    "symbol": it.get("symbol", ""),
+                    "fut_volume": it.get("futVolume", ""),
+                    "opt_volume": it.get("optVolume", ""),
+                    "tot_volume": it.get("totVolume", ""),
+                    "fut_turnover": it.get("futTurnover", ""),
+                    "opt_turnover": it.get("optTurnover", ""),
+                    "tot_turnover": it.get("totTurnover", ""),
+                    "latest_oi": it.get("latestOI", ""),
+                    "underlying_value": it.get("underlying", ""),
+                }
+            )
     return pd.DataFrame(rows, columns=ACTIVE_UNDERLYING_COLUMNS)
 
 

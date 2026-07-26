@@ -12,6 +12,7 @@ in docs/swing-brief.md.
 Every value is env-overridable so backfills and experiments do not require a
 code change.
 """
+
 from __future__ import annotations
 
 import os
@@ -36,11 +37,11 @@ def _i(env: str, default: int) -> int:
 CAPITAL = _f("PARKHU_CAPITAL", 100_000)
 
 # --- Hard limits (KB-08 Risk Manual, KB-09 Portfolio Manual) ---------------
-RISK_PER_TRADE_PCT = _f("PARKHU_RISK_PER_TRADE_PCT", 2.0)   # KB-08 Ch.2
-MAX_POS_PCT = _f("PARKHU_MAX_POS_PCT", 10.0)                # KB-09 Fig 1-1
-MAX_SECTOR_PCT = _f("PARKHU_MAX_SECTOR_PCT", 25.0)          # KB-09 Fig 1-1
-MAX_POSITIONS = _i("PARKHU_MAX_POSITIONS", 10)              # KB-09 Fig 1-1
-MIN_RR_T1 = _f("PARKHU_MIN_RR_T1", 2.0)                     # KB-08 Ch.4 (>= 1:2)
+RISK_PER_TRADE_PCT = _f("PARKHU_RISK_PER_TRADE_PCT", 2.0)  # KB-08 Ch.2
+MAX_POS_PCT = _f("PARKHU_MAX_POS_PCT", 10.0)  # KB-09 Fig 1-1
+MAX_SECTOR_PCT = _f("PARKHU_MAX_SECTOR_PCT", 25.0)  # KB-09 Fig 1-1
+MAX_POSITIONS = _i("PARKHU_MAX_POSITIONS", 10)  # KB-09 Fig 1-1
+MIN_RR_T1 = _f("PARKHU_MIN_RR_T1", 2.0)  # KB-08 Ch.4 (>= 1:2)
 
 # --- Score bands (KB-14 Fig 3-1) -------------------------------------------
 BUY_SCORE = _f("PARKHU_BUY_SCORE", 80.0)
@@ -54,20 +55,20 @@ HORIZON_MAX_DAYS = _i("PARKHU_HORIZON_MAX_DAYS", 90)
 # KB-03 Ch.5 states a stop inside 1 ATR is hit by ordinary noise, and KB-08
 # Ch.3 rejects fixed-percentage stops. The KB never names an upper ATR
 # multiple, so the ceiling below is a CONFIG DECISION.
-MIN_STOP_ATR = _f("PARKHU_MIN_STOP_ATR", 1.0)               # KB-03 Ch.5
-MAX_STOP_ATR = _f("PARKHU_MAX_STOP_ATR", 3.0)               # CONFIG DECISION
-MAX_STOP_PCT = _f("PARKHU_MAX_STOP_PCT", 8.0)               # CONFIG DECISION
-ATR_FALLBACK_MULT = _f("PARKHU_ATR_FALLBACK_MULT", 2.0)     # CONFIG DECISION
+MIN_STOP_ATR = _f("PARKHU_MIN_STOP_ATR", 1.0)  # KB-03 Ch.5
+MAX_STOP_ATR = _f("PARKHU_MAX_STOP_ATR", 3.0)  # CONFIG DECISION
+MAX_STOP_PCT = _f("PARKHU_MAX_STOP_PCT", 8.0)  # CONFIG DECISION
+ATR_FALLBACK_MULT = _f("PARKHU_ATR_FALLBACK_MULT", 2.0)  # CONFIG DECISION
 
 # --- Screen gates ---------------------------------------------------------
 # Thresholds quoted in KB-03 (ADX > 25 confirms a tradeable trend; RSI holds
 # 40-80 in uptrends) and KB-05 (stand aside into results by default).
-MIN_ADX = _f("PARKHU_MIN_ADX", 25.0)                        # KB-03 Fig 3-1
-RSI_MIN = _f("PARKHU_RSI_MIN", 40.0)                        # KB-03 Ch.3
-RSI_MAX = _f("PARKHU_RSI_MAX", 80.0)                        # KB-03 Ch.3
-MIN_DELIVERY_PCT = _f("PARKHU_MIN_DELIVERY_PCT", 40.0)      # CONFIG DECISION
-EARNINGS_BLACKOUT_DAYS = _i("PARKHU_EARNINGS_BLACKOUT_DAYS", 21)   # KB-05 Fig 4-1
-MAX_EVENT_RISK_SCORE = _f("PARKHU_MAX_EVENT_RISK_SCORE", 1.0)      # CONFIG DECISION
+MIN_ADX = _f("PARKHU_MIN_ADX", 25.0)  # KB-03 Fig 3-1
+RSI_MIN = _f("PARKHU_RSI_MIN", 40.0)  # KB-03 Ch.3
+RSI_MAX = _f("PARKHU_RSI_MAX", 80.0)  # KB-03 Ch.3
+MIN_DELIVERY_PCT = _f("PARKHU_MIN_DELIVERY_PCT", 40.0)  # CONFIG DECISION
+EARNINGS_BLACKOUT_DAYS = _i("PARKHU_EARNINGS_BLACKOUT_DAYS", 21)  # KB-05 Fig 4-1
+MAX_EVENT_RISK_SCORE = _f("PARKHU_MAX_EVENT_RISK_SCORE", 1.0)  # CONFIG DECISION
 
 # --- Output --------------------------------------------------------------
 TOP_N_IDEAS = _i("PARKHU_TOP_N_IDEAS", 5)

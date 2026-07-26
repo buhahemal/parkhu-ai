@@ -5,6 +5,13 @@ __pycache__/
 .venv/
 venv/
 env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Quality scanner reports
+reports/
+jscpd-report/
 
 # Logs
 logs/*.log
@@ -14,6 +21,9 @@ logs/*.log
 
 # Local tool config (machine-specific, not shared)
 .claude/settings.local.json
+
+# Applied / obsolete patch packs (live code is on main)
+parkhu-phase-0-2/
 
 # Keep output structure but ignore nothing by default so daily data is committed.
 # If you do NOT want to commit collected data, uncomment the next line:

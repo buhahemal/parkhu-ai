@@ -10,24 +10,24 @@ chain endpoint for the nearest expiry. The payload still exposes the same
 records.data / CE / PE / underlyingValue shape, so the analytics below are
 unchanged — only the fetch differs.
 """
+
 from __future__ import annotations
 
 from urllib.parse import quote
 
 import pandas as pd
 
-from collector.utils import get_logger, nse_session, fetch_json, save_csv, empty_csv
+from collector.utils import empty_csv, fetch_json, get_logger, nse_session, save_csv
 
 log = get_logger("options")
 
-COLUMNS = ["index", "expiry", "spot", "total_ce_oi", "total_pe_oi", "pcr",
-           "max_pain", "atm_iv"]
+COLUMNS = ["index", "expiry", "spot", "total_ce_oi", "total_pe_oi", "pcr", "max_pain", "atm_iv"]
 
 REFERER = "https://www.nseindia.com/option-chain"
-CONTRACT_INFO_URL = ("https://www.nseindia.com/api/option-chain-contract-info"
-                     "?type=Indices&symbol={sym}")
-CHAIN_V3_URL = ("https://www.nseindia.com/api/option-chain-v3"
-                "?type=Indices&symbol={sym}&expiry={exp}")
+CONTRACT_INFO_URL = (
+    "https://www.nseindia.com/api/option-chain-contract-info?type=Indices&symbol={sym}"
+)
+CHAIN_V3_URL = "https://www.nseindia.com/api/option-chain-v3?type=Indices&symbol={sym}&expiry={exp}"
 INDEX_SYMBOLS = ["NIFTY", "BANKNIFTY"]
 
 
@@ -69,10 +69,12 @@ def _analyze(symbol: str, session) -> dict | None:
     best_diff = None
 
     strikes = sorted({r.get("strikePrice") for r in rows if r.get("strikePrice")})
-    ce_oi = {r["strikePrice"]: r["CE"]["openInterest"]
-             for r in rows if "CE" in r and "strikePrice" in r}
-    pe_oi = {r["strikePrice"]: r["PE"]["openInterest"]
-             for r in rows if "PE" in r and "strikePrice" in r}
+    ce_oi = {
+        r["strikePrice"]: r["CE"]["openInterest"] for r in rows if "CE" in r and "strikePrice" in r
+    }
+    pe_oi = {
+        r["strikePrice"]: r["PE"]["openInterest"] for r in rows if "PE" in r and "strikePrice" in r
+    }
 
     for r in rows:
         if "CE" in r:
@@ -82,8 +84,11 @@ def _analyze(symbol: str, session) -> dict | None:
         sp = r.get("strikePrice")
         if sp and spot and (best_diff is None or abs(sp - spot) < best_diff):
             best_diff = abs(sp - spot)
-            atm_iv = (r.get("CE", {}).get("impliedVolatility")
-                      or r.get("PE", {}).get("impliedVolatility") or "")
+            atm_iv = (
+                r.get("CE", {}).get("impliedVolatility")
+                or r.get("PE", {}).get("impliedVolatility")
+                or ""
+            )
 
     for expiry_strike in strikes:
         loss = 0
@@ -97,9 +102,14 @@ def _analyze(symbol: str, session) -> dict | None:
 
     pcr = round(total_pe / total_ce, 2) if total_ce else ""
     return {
-        "index": symbol, "expiry": expiry, "spot": spot,
-        "total_ce_oi": total_ce, "total_pe_oi": total_pe,
-        "pcr": pcr, "max_pain": max_pain, "atm_iv": atm_iv,
+        "index": symbol,
+        "expiry": expiry,
+        "spot": spot,
+        "total_ce_oi": total_ce,
+        "total_pe_oi": total_pe,
+        "pcr": pcr,
+        "max_pain": max_pain,
+        "atm_iv": atm_iv,
     }
 
 

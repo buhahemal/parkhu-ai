@@ -1,29 +1,29 @@
 """Agent registry — collect / derive steps in execution order."""
+
 from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any
 
-from collector.tradingview import tradingview
-from collector.market import indices, sectors
-from collector.smartmoney import smartmoney
-from collector.options import options
-from collector.derivatives import derivatives
+from collector.brief import swing_brief
 from collector.corpactions import corpactions
-from collector.news import news
-from collector.macro import macro
 from collector.delivery import delivery
+from collector.derivatives import derivatives
 from collector.derived import (
-    relative_strength,
     event_risk,
     fno_momentum,
-    swing_candidates,
     market_summary,
+    relative_strength,
     stock_analysis,
+    swing_candidates,
 )
-from collector.brief import swing_brief
-
+from collector.macro import macro
+from collector.market import indices, sectors
+from collector.news import news
+from collector.options import options
+from collector.smartmoney import smartmoney
+from collector.tradingview import tradingview
 
 CollectFn = Callable[[str | None], dict[str, Any]]
 

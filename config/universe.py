@@ -4,6 +4,7 @@ Symbols use Yahoo Finance suffixes (.NS for NSE, .BO for BSE).
 NIFTY_50 is the default scanning universe for the free MVP; expand to
 Next 50 / Midcap / Smallcap by appending more lists here.
 """
+
 from __future__ import annotations
 
 import os
@@ -11,16 +12,56 @@ from functools import lru_cache
 
 # --- Nifty 50 constituents (NSE) -------------------------------------------
 NIFTY_50 = [
-    "ADANIENT", "ADANIPORTS", "APOLLOHOSP", "ASIANPAINT", "AXISBANK",
-    "BAJAJ-AUTO", "BAJFINANCE", "BAJAJFINSV", "BEL", "BHARTIARTL",
-    "CIPLA", "COALINDIA", "DRREDDY", "EICHERMOT", "ETERNAL",
-    "GRASIM", "HCLTECH", "HDFCBANK", "HDFCLIFE", "HEROMOTOCO",
-    "HINDALCO", "HINDUNILVR", "ICICIBANK", "INDUSINDBK", "INFY",
-    "ITC", "JIOFIN", "JSWSTEEL", "KOTAKBANK", "LT",
-    "M&M", "MARUTI", "NESTLEIND", "NTPC", "ONGC",
-    "POWERGRID", "RELIANCE", "SBILIFE", "SBIN", "SHRIRAMFIN",
-    "SUNPHARMA", "TATACONSUM", "TATAMOTORS", "TATASTEEL", "TCS",
-    "TECHM", "TITAN", "TRENT", "ULTRACEMCO", "WIPRO",
+    "ADANIENT",
+    "ADANIPORTS",
+    "APOLLOHOSP",
+    "ASIANPAINT",
+    "AXISBANK",
+    "BAJAJ-AUTO",
+    "BAJFINANCE",
+    "BAJAJFINSV",
+    "BEL",
+    "BHARTIARTL",
+    "CIPLA",
+    "COALINDIA",
+    "DRREDDY",
+    "EICHERMOT",
+    "ETERNAL",
+    "GRASIM",
+    "HCLTECH",
+    "HDFCBANK",
+    "HDFCLIFE",
+    "HEROMOTOCO",
+    "HINDALCO",
+    "HINDUNILVR",
+    "ICICIBANK",
+    "INDUSINDBK",
+    "INFY",
+    "ITC",
+    "JIOFIN",
+    "JSWSTEEL",
+    "KOTAKBANK",
+    "LT",
+    "M&M",
+    "MARUTI",
+    "NESTLEIND",
+    "NTPC",
+    "ONGC",
+    "POWERGRID",
+    "RELIANCE",
+    "SBILIFE",
+    "SBIN",
+    "SHRIRAMFIN",
+    "SUNPHARMA",
+    "TATACONSUM",
+    "TATAMOTORS",
+    "TATASTEEL",
+    "TCS",
+    "TECHM",
+    "TITAN",
+    "TRENT",
+    "ULTRACEMCO",
+    "WIPRO",
 ]
 
 
@@ -37,6 +78,7 @@ def _tradingview_universe() -> tuple[str, ...]:
     agent. Lazy import avoids a config->collector import cycle.
     """
     from collector.tradingview import tradingview
+
     return tuple(tradingview.screener_symbols())
 
 
@@ -94,15 +136,15 @@ MACRO_TICKERS = {
     "SILVER": "SI=F",
     "CRUDE_WTI": "CL=F",
     "CRUDE_BRENT": "BZ=F",
-    "COPPER": "HG=F",          # "Dr. Copper" — global growth proxy
+    "COPPER": "HG=F",  # "Dr. Copper" — global growth proxy
     "NAT_GAS": "NG=F",
     "DOLLAR_INDEX": "DX-Y.NYB",
-    "BITCOIN": "BTC-USD",      # global risk-appetite proxy
+    "BITCOIN": "BTC-USD",  # global risk-appetite proxy
     # US markets & rates
     "US_SP500": "^GSPC",
     "US_NASDAQ": "^IXIC",
     "US_DOW": "^DJI",
-    "US_VIX": "^VIX",          # global fear gauge
+    "US_VIX": "^VIX",  # global fear gauge
     "US_5Y_YIELD": "^FVX",
     "US_10Y_YIELD": "^TNX",
     "US_30Y_YIELD": "^TYX",
@@ -118,6 +160,6 @@ MACRO_TICKERS = {
     "DAX": "^GDAXI",
     "EURO_STOXX50": "^STOXX50E",
     # emerging-market / India flows (ADR/ETF proxies)
-    "EM_ETF": "EEM",           # iShares MSCI Emerging Markets
-    "INDIA_ETF": "INDA",       # iShares MSCI India (FII sentiment proxy)
+    "EM_ETF": "EEM",  # iShares MSCI Emerging Markets
+    "INDIA_ETF": "INDA",  # iShares MSCI India (FII sentiment proxy)
 }
