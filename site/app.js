@@ -1,6 +1,7 @@
+// Prefer embedded data/ (Pages artifact). Never use ../output — on
+// https://user.github.io/repo/ that resolves outside the project (404).
 const DATA_CANDIDATES = [
   "./data/research_pack.json",
-  "../output/latest/research_pack.json",
   "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.json",
 ];
 
@@ -10,7 +11,8 @@ async function loadPack() {
     try {
       const res = await fetch(url, { cache: "no-store" });
       if (!res.ok) throw new Error(`${url} → ${res.status}`);
-      return { pack: await res.json(), source: url };
+      const text = await res.text();
+      return { pack: JSON.parse(text), source: url };
     } catch (err) {
       lastErr = err;
     }

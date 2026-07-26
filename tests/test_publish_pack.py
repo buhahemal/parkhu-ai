@@ -6,12 +6,18 @@ import json
 
 import pandas as pd
 from collector.publish_pack import (
+    _json_safe,
     build_research_pack,
     mirror_latest,
     render_research_pack_md,
     write_index_json,
     write_research_pack,
 )
+
+
+def test_json_safe_strips_nan():
+    assert _json_safe({"taken": float("nan"), "ok": 1.5}) == {"taken": None, "ok": 1.5}
+    assert "NaN" not in json.dumps(_json_safe([float("nan")]), allow_nan=False)
 
 
 def test_build_and_write_pack(tmp_path, monkeypatch):
@@ -71,6 +77,8 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
                 "mfe_pct": 0,
                 "mae_pct": 0,
                 "date_opened": date,
+                "taken": float("nan"),
+                "notes": float("nan"),
             }
         ]
     ).to_csv(tmp_path / "trades" / "open.csv", index=False)
@@ -88,6 +96,10 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
     paths = write_research_pack(date, generated_at_ist="2026-07-25T06:00:00+05:30")
     assert paths["json"].is_file()
     assert paths["md"].is_file()
+    raw = paths["json"].read_text(encoding="utf-8")
+    assert "NaN" not in raw
+    loaded = json.loads(raw)
+    assert loaded["ledger"]["open"][0].get("taken") is None
 
     mirror_latest(date)
     latest = settings.OUTPUT_DIR / "latest"

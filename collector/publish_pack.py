@@ -7,6 +7,7 @@ so reviewers do not need latest.zip.
 from __future__ import annotations
 
 import json
+import math
 import shutil
 from pathlib import Path
 from typing import Any
@@ -30,6 +31,29 @@ DEEP_DIVE_FILES = (
 )
 
 
+def _json_safe(obj: Any) -> Any:
+    """Replace NaN/Inf (invalid JSON) with None; recurse into containers."""
+    if obj is None or isinstance(obj, (str, bool, int)):
+        return obj
+    if isinstance(obj, float):
+        return None if math.isnan(obj) or math.isinf(obj) else obj
+    if isinstance(obj, dict):
+        return {str(k): _json_safe(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_json_safe(v) for v in obj]
+    try:
+        if pd.isna(obj):
+            return None
+    except (TypeError, ValueError):
+        pass
+    if hasattr(obj, "item"):
+        try:
+            return _json_safe(obj.item())
+        except (ValueError, AttributeError):
+            return None
+    return obj
+
+
 def _load_json(path: Path) -> dict[str, Any] | list | None:
     if not path.is_file():
         return None
@@ -51,7 +75,8 @@ def _csv_records(path: Path, *, limit: int | None = None) -> list[dict[str, Any]
         return []
     if limit is not None:
         df = df.head(limit)
-    return df.where(pd.notna(df), None).to_dict(orient="records")
+    # to_json emits null for NaN; to_dict + json.dump would write bare NaN tokens.
+    return json.loads(df.to_json(orient="records", date_format="iso"))
 
 
 def _regime_from_sources(brief: dict[str, Any] | None, date: str) -> dict[str, Any]:
@@ -74,7 +99,10 @@ def _closed_today(date: str) -> list[dict[str, Any]]:
     for col in ("date_closed", "closed_date", "date"):
         if col in df.columns:
             mask = df[col].astype(str).str.startswith(date)
-            return df.loc[mask].where(pd.notna(df), None).to_dict(orient="records")
+            sliced = df.loc[mask]
+            if sliced.empty:
+                return []
+            return json.loads(sliced.to_json(orient="records", date_format="iso"))
     return []
 
 
@@ -252,12 +280,12 @@ def write_research_pack(
     """Write research_pack.json/.md into output/<date>/."""
     date = date or settings.run_date()
     out = settings.daily_output_dir(date)
-    pack = build_research_pack(date)
+    pack = _json_safe(build_research_pack(date))
     pack["generated_at_ist"] = generated_at_ist
     json_path = out / "research_pack.json"
     md_path = out / "research_pack.md"
     with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(pack, f, indent=2, default=str)
+        json.dump(pack, f, indent=2, default=str, allow_nan=False)
     md_path.write_text(render_research_pack_md(pack), encoding="utf-8")
     log.info("wrote research_pack.json/.md for %s", date)
     return {"json": json_path, "md": md_path}

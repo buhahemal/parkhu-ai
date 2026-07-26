@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-07-26T11:41:46.412633+05:30
+- **generated_at_ist:** n/a
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
