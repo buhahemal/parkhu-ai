@@ -32,7 +32,6 @@ import json
 import math
 from typing import Any
 
-import numpy as np
 import pandas as pd
 from config import risk, settings
 
@@ -252,11 +251,12 @@ def build_survivor_outcomes(
 
     idea_syms = {r["symbol"] for r in ideas}
     watch_syms = {r["symbol"] for r in watchlist}
-    horizon = {r["symbol"]: r.get("reason") or "T1 beyond horizon mandate" for r in skipped_beyond_horizon}
+    horizon = {
+        r["symbol"]: r.get("reason") or "T1 beyond horizon mandate" for r in skipped_beyond_horizon
+    }
     unaff = {r["symbol"] for r in unaffordable_at_this_capital}
     queued = {
-        r["symbol"]: r.get("reason") or "portfolio limits"
-        for r in queued_on_portfolio_limits
+        r["symbol"]: r.get("reason") or "portfolio limits" for r in queued_on_portfolio_limits
     }
     ignored = {r["symbol"] for r in ignored_below_watch}
     leveled = {r["symbol"] for r in rows}
@@ -270,13 +270,7 @@ def build_survivor_outcomes(
     for _, r in ranked.head(n).iterrows():
         sym = str(r["symbol"])
         sc = float(r["parkhu_score"]) if pd.notna(r.get("parkhu_score")) else 0.0
-        band = (
-            "Buy"
-            if sc >= risk.BUY_SCORE
-            else "Watch"
-            if sc >= risk.WATCH_SCORE
-            else "Ignore"
-        )
+        band = "Buy" if sc >= risk.BUY_SCORE else "Watch" if sc >= risk.WATCH_SCORE else "Ignore"
         if sym in idea_syms:
             status, reason = "idea", "selected as idea"
         elif sym in watch_syms:
@@ -422,8 +416,9 @@ def build_payload(date: str, capital: float) -> dict:
     if "relative_volume" in f.columns:
         gate(
             f"relative_volume >= {risk.MIN_RELATIVE_VOLUME:g}",
-            lambda x: pd.to_numeric(x["relative_volume"], errors="coerce")
-            >= risk.MIN_RELATIVE_VOLUME,
+            lambda x: (
+                pd.to_numeric(x["relative_volume"], errors="coerce") >= risk.MIN_RELATIVE_VOLUME
+            ),
         )
     gate(
         f"no earnings within {risk.EARNINGS_BLACKOUT_DAYS}d",

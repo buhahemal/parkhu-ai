@@ -106,9 +106,7 @@ def _bars_to_rows(symbol: str, hist: pd.DataFrame) -> list[dict]:
     return rows
 
 
-def _merge_cache(
-    symbol: str, fresh: pd.DataFrame, *, lookback: int | None = None
-) -> pd.DataFrame:
+def _merge_cache(symbol: str, fresh: pd.DataFrame, *, lookback: int | None = None) -> pd.DataFrame:
     """Merge Yahoo bars into cache and trim to lookback."""
     keep = int(lookback if lookback is not None else settings.OHLC_LOOKBACK_SESSIONS)
     cached = _load_cache(symbol)

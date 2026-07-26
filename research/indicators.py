@@ -46,11 +46,19 @@ def adx(high: pd.Series, low: pd.Series, close: pd.Series, length: int = 14) -> 
     minus_dm = np.where((down > up) & (down > 0), down, 0.0)
     tr = true_range(high, low, close)
     atr_s = tr.ewm(alpha=1 / length, adjust=False, min_periods=length).mean()
-    plus_di = 100 * pd.Series(plus_dm, index=high.index).ewm(
-        alpha=1 / length, adjust=False, min_periods=length
-    ).mean() / atr_s.replace(0, np.nan)
-    minus_di = 100 * pd.Series(minus_dm, index=high.index).ewm(
-        alpha=1 / length, adjust=False, min_periods=length
-    ).mean() / atr_s.replace(0, np.nan)
+    plus_di = (
+        100
+        * pd.Series(plus_dm, index=high.index)
+        .ewm(alpha=1 / length, adjust=False, min_periods=length)
+        .mean()
+        / atr_s.replace(0, np.nan)
+    )
+    minus_di = (
+        100
+        * pd.Series(minus_dm, index=high.index)
+        .ewm(alpha=1 / length, adjust=False, min_periods=length)
+        .mean()
+        / atr_s.replace(0, np.nan)
+    )
     dx = (100 * (plus_di - minus_di).abs() / (plus_di + minus_di).replace(0, np.nan)).fillna(0)
     return dx.ewm(alpha=1 / length, adjust=False, min_periods=length).mean()

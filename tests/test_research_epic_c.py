@@ -38,17 +38,13 @@ def test_kill_insufficient_sample():
 
 
 def test_kill_pause_on_win_rate():
-    out = evaluate_kill_criterion(
-        {"closed": 25, "win_rate_pct": 20.0, "avg_return_pct": 1.0}
-    )
+    out = evaluate_kill_criterion({"closed": 25, "win_rate_pct": 20.0, "avg_return_pct": 1.0})
     assert out["pause"] is True
     assert out["status"] == "pause_for_review"
 
 
 def test_kill_ok():
-    out = evaluate_kill_criterion(
-        {"closed": 25, "win_rate_pct": 45.0, "avg_return_pct": 0.5}
-    )
+    out = evaluate_kill_criterion({"closed": 25, "win_rate_pct": 45.0, "avg_return_pct": 0.5})
     assert out["pause"] is False
     assert out["status"] == "ok"
 

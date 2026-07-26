@@ -1,7 +1,7 @@
 [tool.ruff]
 target-version = "py313"
 line-length = 100
-src = ["collector", "config", "pipeline", "scripts", "tests"]
+src = ["collector", "config", "pipeline", "research", "scripts", "tests"]
 extend-exclude = [
   "collector/_retired",
   "output",
@@ -33,7 +33,7 @@ ignore = [
 
 [tool.vulture]
 min_confidence = 80
-paths = ["collector", "config", "pipeline", "scripts", "run.py"]
+paths = ["collector", "config", "pipeline", "research", "scripts", "run.py"]
 exclude = ["collector/_retired/", ".venv/"]
 ignore_names = [
   # Agent / CLI entrypoints discovered dynamically

@@ -278,7 +278,9 @@ def _excursion_from_ohlc(
     # Gap through: today's open ≤ stop while previous session close was above stop.
     last = since.iloc[-1]
     if len(since) >= 2 and pd.notna(last.get("open")):
-        prev_close = float(since.iloc[-2]["close"]) if pd.notna(since.iloc[-2].get("close")) else None
+        prev_close = (
+            float(since.iloc[-2]["close"]) if pd.notna(since.iloc[-2].get("close")) else None
+        )
         day_open = float(last["open"])
         if prev_close is not None and prev_close > stop and day_open <= stop:
             gap_flag = True

@@ -28,7 +28,13 @@ def _year_folds(sessions: list[str]) -> list[dict[str, str]]:
         by_year.setdefault(s[:4], []).append(s)
     years = sorted(by_year)
     if len(years) == 1:
-        return [{"label": f"oos_{years[0]}", "start": by_year[years[0]][0], "end": by_year[years[0]][-1]}]
+        return [
+            {
+                "label": f"oos_{years[0]}",
+                "start": by_year[years[0]][0],
+                "end": by_year[years[0]][-1],
+            }
+        ]
     folds = []
     for y in years[1:]:
         folds.append({"label": f"oos_{y}", "start": by_year[y][0], "end": by_year[y][-1]})
@@ -72,17 +78,18 @@ def _run_strategy_on_days(
     for i, day in enumerate(sessions):
         if step_days > 1 and i % step_days != 0:
             continue
-        if disable_regimes and regime_by_date is not None:
-            if regime_by_date.get(day, "unknown") in disable_regimes:
-                continue
+        if (
+            disable_regimes
+            and regime_by_date is not None
+            and regime_by_date.get(day, "unknown") in disable_regimes
+        ):
+            continue
 
         busy = {s for s, until in open_until.items() if until > day}
         rows = build_day_rows(day, bars_by_sym, nifty, skip_symbols=busy)
 
         if strategy == "proxy_funnel":
-            skip = (
-                set(risk.RESEARCH_DEMOTED_GATES) if risk.RESEARCH_APPLY_DEMOTIONS else set()
-            )
+            skip = set(risk.RESEARCH_DEMOTED_GATES) if risk.RESEARCH_APPLY_DEMOTIONS else set()
             survivors, _ = apply_proxy_gates(rows, skip=skip)
             candidates = apply_levels_filter(survivors)
         elif strategy == "baseline_adx_rsi":
@@ -156,7 +163,11 @@ def run_backtest(
 
     for fold in folds:
         fold_sessions = [s for s in sessions if fold["start"] <= s <= fold["end"]]
-        fold_row: dict[str, Any] = {"fold": fold["label"], "start": fold["start"], "end": fold["end"]}
+        fold_row: dict[str, Any] = {
+            "fold": fold["label"],
+            "start": fold["start"],
+            "end": fold["end"],
+        }
         for strat in strategies:
             trades = _run_strategy_on_days(
                 sessions=fold_sessions,

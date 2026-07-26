@@ -112,7 +112,15 @@ def run_basket_analysis(
 
     concentrated_n = sum(1 for b in baskets if b.get("flag") == "concentrated")
     mean_corr = (
-        float(np.nanmean([b["mean_pairwise_corr"] for b in baskets if b.get("mean_pairwise_corr") is not None]))
+        float(
+            np.nanmean(
+                [
+                    b["mean_pairwise_corr"]
+                    for b in baskets
+                    if b.get("mean_pairwise_corr") is not None
+                ]
+            )
+        )
         if baskets
         else None
     )

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import pandas as pd
-
 from collector.brief.swing_brief import (
     FUNNEL_SYMBOL_CAP,
     build_survivor_outcomes,
@@ -75,7 +74,10 @@ def test_survivor_outcomes_reasons_and_cap():
         ideas=[{"symbol": "IDEA"}],
         watchlist=[{"symbol": "WATCH"}],
         skipped_beyond_horizon=[
-            {"symbol": "HORIZ", "reason": f"T1 needs more than {risk.HORIZON_MAX_DAYS} trading days"}
+            {
+                "symbol": "HORIZ",
+                "reason": f"T1 needs more than {risk.HORIZON_MAX_DAYS} trading days",
+            }
         ],
         unaffordable_at_this_capital=[{"symbol": "UNAFF", "cmp": 50000, "score": 82}],
         queued_on_portfolio_limits=[

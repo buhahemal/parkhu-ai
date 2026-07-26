@@ -7,3 +7,5 @@ curl_cffi>=0.7
 lxml>=4.9
 pytz>=2024.1
 pytest>=8.0
+arch>=7.0
+scipy>=1.11

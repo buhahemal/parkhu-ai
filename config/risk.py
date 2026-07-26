@@ -84,7 +84,9 @@ _demoted_raw = (os.getenv("PARKHU_RESEARCH_DEMOTED_GATES", "") or "").strip()
 RESEARCH_DEMOTED_GATES: frozenset[str] = frozenset(
     g.strip() for g in _demoted_raw.split(",") if g.strip()
 )
-RESEARCH_APPLY_DEMOTIONS = (os.getenv("PARKHU_RESEARCH_APPLY_DEMOTIONS", "0") or "0").strip().lower() in {
+RESEARCH_APPLY_DEMOTIONS = (
+    os.getenv("PARKHU_RESEARCH_APPLY_DEMOTIONS", "0") or "0"
+).strip().lower() in {
     "1",
     "true",
     "yes",
@@ -107,6 +109,14 @@ MIN_SCORE_COMPONENTS = _i("PARKHU_MIN_SCORE_COMPONENTS", 0)
 KILL_MIN_CLOSED = _i("PARKHU_KILL_MIN_CLOSED", 20)
 KILL_MIN_WIN_RATE_PCT = _f("PARKHU_KILL_MIN_WIN_RATE_PCT", 40.0)
 KILL_MIN_AVG_RETURN_PCT = _f("PARKHU_KILL_MIN_AVG_RETURN_PCT", 0.0)
+
+# Epic D Step 8 research flags (not wired into live swing_brief yet).
+RESEARCH_APPLY_GARCH_STOPS = (
+    os.getenv("PARKHU_RESEARCH_APPLY_GARCH_STOPS", "0") or "0"
+).strip().lower() in {"1", "true", "yes", "on"}
+RESEARCH_APPLY_RISK_SIZING = (
+    os.getenv("PARKHU_RESEARCH_APPLY_RISK_SIZING", "0") or "0"
+).strip().lower() in {"1", "true", "yes", "on"}
 
 # --- KB-14 Fig 2-1 score weights (out of 100) ----------------------------
 # Components the collector cannot yet populate are dropped at runtime and the

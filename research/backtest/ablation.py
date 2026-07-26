@@ -147,9 +147,7 @@ def run_ablation(
                 )
             )
 
-    full_stats = summarize_returns(
-        [float(t["return_pct"]) for t in trades_by_variant["full"]]
-    )
+    full_stats = summarize_returns([float(t["return_pct"]) for t in trades_by_variant["full"]])
     leave_one_out: list[dict[str, Any]] = []
     for gid, name in ABLATABLE_GATES:
         label = f"drop_{gid}"
@@ -271,8 +269,6 @@ def render_ablation_md(report: dict[str, Any]) -> str:
         "|---|---|---:|",
     ]
     for row in (report.get("exclusion_jaccard") or [])[:12]:
-        lines.append(
-            f"| {row.get('gate_a')} | {row.get('gate_b')} | {row.get('mean_jaccard')} |"
-        )
+        lines.append(f"| {row.get('gate_a')} | {row.get('gate_b')} | {row.get('mean_jaccard')} |")
     lines += ["", report.get("note") or "", ""]
     return "\n".join(lines)

@@ -24,7 +24,11 @@ GATE_IDS = tuple(g[0] for g in ABLATABLE_GATES)
 
 
 def _num(x: pd.DataFrame, col: str) -> pd.Series:
-    return pd.to_numeric(x[col], errors="coerce") if col in x.columns else pd.Series(np.nan, index=x.index)
+    return (
+        pd.to_numeric(x[col], errors="coerce")
+        if col in x.columns
+        else pd.Series(np.nan, index=x.index)
+    )
 
 
 def _masks() -> dict[str, Callable[[pd.DataFrame], pd.Series]]:
@@ -34,11 +38,14 @@ def _masks() -> dict[str, Callable[[pd.DataFrame], pd.Series]]:
         "sma200": lambda x: _num(x, "sma200").notna() & (_num(x, "cmp") > _num(x, "sma200")),
         "ema50": lambda x: _num(x, "ema50").notna() & (_num(x, "cmp") > _num(x, "ema50")),
         "adx": lambda x: _num(x, "adx14").notna() & (_num(x, "adx14") > risk.MIN_ADX),
-        "rsi": lambda x: _num(x, "rsi14").notna()
-        & _num(x, "rsi14").between(risk.RSI_MIN, risk.RSI_MAX),
+        "rsi": lambda x: (
+            _num(x, "rsi14").notna() & _num(x, "rsi14").between(risk.RSI_MIN, risk.RSI_MAX)
+        ),
         "rs": lambda x: _num(x, "rs_vs_nifty_1m").notna() & (_num(x, "rs_vs_nifty_1m") > 0),
-        "rel_vol": lambda x: _num(x, "relative_volume").notna()
-        & (_num(x, "relative_volume") >= risk.MIN_RELATIVE_VOLUME),
+        "rel_vol": lambda x: (
+            _num(x, "relative_volume").notna()
+            & (_num(x, "relative_volume") >= risk.MIN_RELATIVE_VOLUME)
+        ),
     }
 
 

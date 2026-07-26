@@ -32,8 +32,7 @@ def evaluate_kill_criterion(stats: dict[str, Any] | None) -> dict[str, Any]:
         "avg_return_pct": avg,
         "status": "insufficient_sample",
         "pause": False,
-        "detail": f"Need {min_n} closed suggestions before the kill bar applies "
-        f"(have {closed}).",
+        "detail": f"Need {min_n} closed suggestions before the kill bar applies (have {closed}).",
     }
     if closed < min_n:
         return out

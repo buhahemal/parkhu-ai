@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-
 from research.backtest.engine import run_backtest
 from research.backtest.funnel import apply_proxy_gates
 from research.backtest.simulate import simulate_trade, summarize_returns
@@ -37,7 +36,9 @@ def _synth_bars(n: int = 320, seed: int = 0, drift: float = 0.002) -> pd.DataFra
 def test_proxy_trend_and_features():
     assert proxy_trend_label(cmp=120, sma200=100, ema50=110, adx14=30) == "Bullish"
     bars = _synth_bars()
-    feat = features_asof(bars, symbol="TEST", asof=bars["date"].iloc[-1], nifty_close=100, nifty_close_21d_ago=95)
+    feat = features_asof(
+        bars, symbol="TEST", asof=bars["date"].iloc[-1], nifty_close=100, nifty_close_21d_ago=95
+    )
     assert feat is not None
     assert feat["cmp"] > 0
     assert feat["sma200"] is not None

@@ -157,15 +157,38 @@ Flags baskets with corr ≥ `--corr-warn` (default 0.55) as concentrated factor 
 Pre-committed pause bar for the live ledger — see [`kill-criterion.md`](kill-criterion.md).
 Desk shows a Kill pill from `analytics.kill_status`.
 
-## Steps 8–12 (still gated)
+## Epic D — Steps 8–12
 
-| Step | Deliverable |
-|------|-------------|
-| 8 | Beta adjust + GARCH stops (free `arch`) |
-| 9–11 | Regime factors / Value-Quality-LowVol / EV — only after evidence |
-| 12 | Inverse-vol → shrinkage MVO (not early MVO on 5–10 names) |
+Research-only. Live ATR stops / sizing / score weights stay unchanged until you
+deliberately adopt a flag after reviewing the reports.
 
-Stubs in [`research/deferred.py`](../research/deferred.py) raise from Step 8 onward.
+### Step 8 — beta + GARCH stops + idio sizing
+
+```bash
+python -m research.backtest step8 \
+  --start 2022-01-01 --end 2025-12-31 \
+  --symbols-file /tmp/parkhu_research_pilot_syms.txt \
+  --step-days 5 --top-n 5 \
+  --out output/research/step8_pilot
+```
+
+Compares ATR baseline fills vs GARCH(1,1)-scaled stop/target geometry
+(`arch`, with realized-vol fallback). Also records beta / idio-vol / research sizing.
+
+Env (documented; not wired into `swing_brief` yet):
+`PARKHU_RESEARCH_APPLY_GARCH_STOPS`, `PARKHU_RESEARCH_APPLY_RISK_SIZING`.
+
+### Steps 9–12
+
+```bash
+python -m research.backtest step9  ...   # regime-weighted ADX/RS ranking
+python -m research.backtest step10 ...   # Low-Vol (inv realized vol) deciles; V/Q deferred
+python -m research.backtest step11 ...   # EV / bootstrap return distribution
+python -m research.backtest step12 ...   # inverse-vol weights + diag-shrink min-var
+```
+
+Value/Quality stay deferred for live score use until a free PIT fundamental feed
+is acceptable. Shrinkage MVO is research-only (review §3.3).
 
 **Out of scope:** paid L2 order-book / tick microstructure (wrong timeframe for EOD swings).
 

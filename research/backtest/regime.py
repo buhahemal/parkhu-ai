@@ -32,9 +32,13 @@ def build_regime_series(nifty: pd.DataFrame) -> pd.DataFrame:
     g["adx14"] = adx(high, low, close, 14)
     g["rvol"] = realized_vol_pct(close, 20)
     # Expanding percentile of rvol (causal).
-    g["rvol_pctile"] = g["rvol"].expanding(min_periods=60).apply(
-        lambda s: float((s.iloc[:-1] < s.iloc[-1]).mean() * 100) if len(s) > 1 else 50.0,
-        raw=False,
+    g["rvol_pctile"] = (
+        g["rvol"]
+        .expanding(min_periods=60)
+        .apply(
+            lambda s: float((s.iloc[:-1] < s.iloc[-1]).mean() * 100) if len(s) > 1 else 50.0,
+            raw=False,
+        )
     )
     rows = []
     for _, r in g.iterrows():

@@ -69,7 +69,9 @@ def bars_asof(df: pd.DataFrame, asof: str) -> pd.DataFrame:
     return df[df["date"].astype(str).str[:10] <= asof].copy()
 
 
-def proxy_trend_label(*, cmp: float, sma200: float | None, ema50: float | None, adx14: float | None) -> str:
+def proxy_trend_label(
+    *, cmp: float, sma200: float | None, ema50: float | None, adx14: float | None
+) -> str:
     """Proxy for live TradingView trend_label — not identical."""
     if sma200 is None or ema50 is None or adx14 is None:
         return "Neutral"

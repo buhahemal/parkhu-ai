@@ -410,7 +410,9 @@ def _funnel_conversions(funnel: list) -> list[dict[str, Any]]:
         keep = None if prev in (None, 0) else round(100.0 * surviving / prev, 1)
         drop = None if prev is None else max(prev - surviving, 0)
         try:
-            dropped_count = int(step["dropped_count"]) if step.get("dropped_count") is not None else drop
+            dropped_count = (
+                int(step["dropped_count"]) if step.get("dropped_count") is not None else drop
+            )
         except (TypeError, ValueError):
             dropped_count = drop
         row: dict[str, Any] = {
@@ -470,8 +472,9 @@ def build_analytics(
     brief: dict[str, Any], ideas: list, open_trades: list, needs_action: list
 ) -> dict:
     """Desk metrics for Pages — no capital / deployment figures."""
-    from collector.brief.positions import realised_stats
     from research.kill_criterion import evaluate_kill_criterion
+
+    from collector.brief.positions import realised_stats
 
     funnel = brief.get("funnel") if isinstance(brief.get("funnel"), list) else []
     scoring = brief.get("scoring") if isinstance(brief.get("scoring"), dict) else {}

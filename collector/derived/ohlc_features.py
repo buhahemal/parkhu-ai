@@ -3,10 +3,9 @@
 from __future__ import annotations
 
 import pandas as pd
-from config import settings
-
 from collector.derived._utils import load_csv, out_dir
 from collector.utils import empty_csv, get_logger, save_csv
+from config import settings
 
 log = get_logger("ohlc_features")
 

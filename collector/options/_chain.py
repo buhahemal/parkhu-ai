@@ -13,9 +13,7 @@ REFERER = "https://www.nseindia.com/option-chain"
 CONTRACT_INFO_URL = (
     "https://www.nseindia.com/api/option-chain-contract-info?type={typ}&symbol={sym}"
 )
-CHAIN_V3_URL = (
-    "https://www.nseindia.com/api/option-chain-v3?type={typ}&symbol={sym}&expiry={exp}"
-)
+CHAIN_V3_URL = "https://www.nseindia.com/api/option-chain-v3?type={typ}&symbol={sym}&expiry={exp}"
 
 
 def nearest_expiry(symbol: str, session, *, chain_type: str) -> str | None:
@@ -31,9 +29,7 @@ def nearest_expiry(symbol: str, session, *, chain_type: str) -> str | None:
     return expiries[0] if expiries else None
 
 
-def fetch_chain(
-    symbol: str, session, *, chain_type: str
-) -> tuple[list, Any, str] | None:
+def fetch_chain(symbol: str, session, *, chain_type: str) -> tuple[list, Any, str] | None:
     """Return (rows, spot, expiry) for the nearest expiry via the v3 endpoint."""
     expiry = nearest_expiry(symbol, session, chain_type=chain_type)
     if not expiry:

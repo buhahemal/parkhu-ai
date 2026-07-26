@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import pandas as pd
-
 from collector.brief.swing_brief import derive_levels
 from config import risk
 

@@ -1,4 +1,4 @@
-"""CLI: ``python -m research.backtest {run,ablation,expectancy,regime,score-deciles,basket}``."""
+"""CLI: ``python -m research.backtest {run,ablation,...,step8..step12}``."""
 
 from __future__ import annotations
 
@@ -16,6 +16,11 @@ from research.backtest.engine import run_backtest
 from research.backtest.expectancy import run_expectancy
 from research.backtest.regime import run_regime_analysis
 from research.backtest.score_deciles import run_score_deciles
+from research.ev_distribution import run_ev_distribution
+from research.factors.regime_weights import run_regime_factor_weights
+from research.factors.value_quality_lowvol import run_value_quality_lowvol
+from research.portfolio.inv_vol_mvo import run_inv_vol_mvo
+from research.risk.step8 import run_step8
 
 
 def _symbols(date: str | None, symbols_file: Path | None, limit: int | None) -> list[str]:
@@ -74,6 +79,22 @@ def main(argv: list[str] | None = None) -> int:
     bask_p = sub.add_parser("basket", help="Top-N basket correlation / beta (Step 6)")
     _add_common(bask_p)
     bask_p.add_argument("--corr-warn", type=float, default=0.55)
+
+    s8 = sub.add_parser("step8", help="Beta / GARCH stops vs ATR (Step 8)")
+    _add_common(s8)
+
+    s9 = sub.add_parser("step9", help="Regime-weighted proxy factors (Step 9)")
+    _add_common(s9)
+
+    s10 = sub.add_parser("step10", help="Low-Vol free-proxy deciles (Step 10)")
+    _add_common(s10)
+    s10.add_argument("--horizon-days", type=int, default=22)
+
+    s11 = sub.add_parser("step11", help="EV / return distribution (Step 11)")
+    _add_common(s11)
+
+    s12 = sub.add_parser("step12", help="Inverse-vol + shrink min-var (Step 12)")
+    _add_common(s12)
 
     args = p.parse_args(argv)
     lim = args.limit if args.limit is not None else settings.MAX_SYMBOLS
@@ -191,6 +212,82 @@ def main(argv: list[str] | None = None) -> int:
         print(
             f"baskets={report.get('baskets_n')} concentrated={report.get('concentrated_baskets_n')} "
             f"mean_corr={report.get('mean_basket_corr')}"
+        )
+        return 0
+
+    if args.cmd == "step8":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"step8_{args.end[:10]}")
+        report = run_step8(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            out_dir=out,
+        )
+        print(f"wrote {out}/step8.md Δexp={report.get('delta_expectancy_pct')}")
+        return 0
+
+    if args.cmd == "step9":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"step9_{args.end[:10]}")
+        report = run_regime_factor_weights(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            out_dir=out,
+        )
+        print(f"wrote {out}/step9.md Δexp={report.get('delta_expectancy_pct')}")
+        return 0
+
+    if args.cmd == "step10":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"step10_{args.end[:10]}")
+        report = run_value_quality_lowvol(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            step_days=args.step_days,
+            horizon_days=args.horizon_days,
+            out_dir=out,
+        )
+        print(f"wrote {out}/step10.md top_beats_mid={report.get('top_beats_mid')}")
+        return 0
+
+    if args.cmd == "step11":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"step11_{args.end[:10]}")
+        report = run_ev_distribution(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            out_dir=out,
+        )
+        print(
+            f"wrote {out}/step11.md hit={report.get('hit_rate_t1_before_stop')} "
+            f"rr={report.get('implied_min_rr')}"
+        )
+        return 0
+
+    if args.cmd == "step12":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"step12_{args.end[:10]}")
+        report = run_inv_vol_mvo(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            out_dir=out,
+        )
+        print(
+            f"wrote {out}/step12.md baskets={report.get('baskets_n')} "
+            f"mvo_ok={report.get('mvo_ok')}/{report.get('mvo_attempts')}"
         )
         return 0
 

@@ -50,6 +50,7 @@ def main() -> int:
             "collector",
             "config",
             "pipeline",
+            "research",
             "scripts",
             "tests",
             "run.py",
@@ -68,13 +69,16 @@ def main() -> int:
             "collector",
             "config",
             "pipeline",
+            "research",
             "scripts",
             "tests",
             "run.py",
         ]
     )
     if code != 0:
-        print("hint: run `ruff format collector config pipeline scripts tests run.py` to fix")
+        print(
+            "hint: run `ruff format collector config pipeline research scripts tests run.py` to fix"
+        )
     failed |= code
 
     # Dead / unused code
@@ -86,6 +90,7 @@ def main() -> int:
             "collector",
             "config",
             "pipeline",
+            "research",
             "scripts",
             "run.py",
             "--min-confidence",
