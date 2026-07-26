@@ -91,6 +91,23 @@ RESEARCH_APPLY_DEMOTIONS = (os.getenv("PARKHU_RESEARCH_APPLY_DEMOTIONS", "0") or
     "on",
 }
 
+# Research regime filter (Epic C Step 4) — research.backtest only when apply=1.
+_disable_reg_raw = (os.getenv("PARKHU_RESEARCH_DISABLE_REGIMES", "") or "").strip()
+RESEARCH_DISABLE_REGIMES: frozenset[str] = frozenset(
+    g.strip() for g in _disable_reg_raw.split(",") if g.strip()
+)
+RESEARCH_APPLY_REGIME_FILTER = (
+    os.getenv("PARKHU_RESEARCH_APPLY_REGIME_FILTER", "0") or "0"
+).strip().lower() in {"1", "true", "yes", "on"}
+
+# Live score coverage floor (Epic C Step 5). 0 = disabled.
+MIN_SCORE_COMPONENTS = _i("PARKHU_MIN_SCORE_COMPONENTS", 0)
+
+# Pre-committed kill / pause bar (Epic C Step 7) — docs/kill-criterion.md.
+KILL_MIN_CLOSED = _i("PARKHU_KILL_MIN_CLOSED", 20)
+KILL_MIN_WIN_RATE_PCT = _f("PARKHU_KILL_MIN_WIN_RATE_PCT", 40.0)
+KILL_MIN_AVG_RETURN_PCT = _f("PARKHU_KILL_MIN_AVG_RETURN_PCT", 0.0)
+
 # --- KB-14 Fig 2-1 score weights (out of 100) ----------------------------
 # Components the collector cannot yet populate are dropped at runtime and the
 # remaining weights renormalised, with the lost weight reported in the brief.

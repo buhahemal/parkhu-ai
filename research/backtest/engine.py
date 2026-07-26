@@ -61,13 +61,20 @@ def _run_strategy_on_days(
     top_n: int,
     step_days: int,
     rng: random.Random,
+    regime_by_date: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     trades: list[dict[str, Any]] = []
     open_until: dict[str, str] = {}
+    disable_regimes = (
+        set(risk.RESEARCH_DISABLE_REGIMES) if risk.RESEARCH_APPLY_REGIME_FILTER else set()
+    )
 
     for i, day in enumerate(sessions):
         if step_days > 1 and i % step_days != 0:
             continue
+        if disable_regimes and regime_by_date is not None:
+            if regime_by_date.get(day, "unknown") in disable_regimes:
+                continue
 
         busy = {s for s, until in open_until.items() if until > day}
         rows = build_day_rows(day, bars_by_sym, nifty, skip_symbols=busy)
@@ -134,6 +141,14 @@ def run_backtest(
     sessions = session_calendar(nifty, start, end)
     folds = _year_folds(sessions)
     rng = random.Random(seed)
+    regime_by_date: dict[str, str] | None = None
+    if risk.RESEARCH_APPLY_REGIME_FILTER and risk.RESEARCH_DISABLE_REGIMES:
+        from research.backtest.regime import build_regime_series
+
+        regime_by_date = {
+            str(r["date"])[:10]: str(r["regime"])
+            for r in build_regime_series(nifty).to_dict(orient="records")
+        }
 
     strategies: list[Strategy] = ["proxy_funnel", "baseline_adx_rsi", "random"]
     fold_results: list[dict[str, Any]] = []
@@ -151,6 +166,7 @@ def run_backtest(
                 top_n=top_n,
                 step_days=step_days,
                 rng=rng,
+                regime_by_date=regime_by_date,
             )
             for t in trades:
                 t["fold"] = fold["label"]

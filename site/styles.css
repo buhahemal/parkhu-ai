@@ -529,6 +529,18 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   background: var(--bad);
   box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
 }
+.status-ribbon .pill.pause {
+  border-color: rgba(239, 68, 68, 0.45);
+  color: var(--bad);
+}
+.status-ribbon .pill.pause .dot {
+  background: var(--bad);
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+.status-ribbon .pill.kill-ok .dot {
+  background: var(--good);
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+}
 
 /* —— Desk grid —— */
 .desk {

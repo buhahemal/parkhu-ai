@@ -540,7 +540,8 @@ function renderHeader(pack) {
   );
 
   const marketOpen = pack.is_trading_day === false ? "Closed" : pack.is_trading_day ? "Open session" : "—";
-  document.getElementById("status-ribbon").replaceChildren(
+  const kill = pack.analytics?.kill_status || {};
+  const killKids = [
     el(
       "span",
       { class: `pill ${cls}` },
@@ -552,7 +553,44 @@ function renderHeader(pack) {
     el("span", { class: "pill" }, "Market ", el("b", {}, marketOpen)),
     el("span", { class: "pill" }, "Best sector ", el("b", {}, fmt(r.best_sector, 0))),
     el("span", { class: "pill" }, "Worst sector ", el("b", {}, fmt(r.worst_sector, 0))),
-  );
+  ];
+  if (kill.pause) {
+    killKids.push(
+      el(
+        "span",
+        {
+          class: "pill pause",
+          title: kill.detail || "Kill bar breached — pause new risk",
+        },
+        el("span", { class: "dot" }),
+        "Kill ",
+        el("b", {}, "PAUSE"),
+      ),
+    );
+  } else if (kill.status === "ok") {
+    killKids.push(
+      el(
+        "span",
+        { class: "pill kill-ok", title: kill.detail || "Live sample clears kill bar" },
+        el("span", { class: "dot" }),
+        "Kill ",
+        el("b", {}, "OK"),
+      ),
+    );
+  } else if (kill.status === "insufficient_sample") {
+    killKids.push(
+      el(
+        "span",
+        {
+          class: "pill",
+          title: kill.detail || "Need more closed suggestions for kill bar",
+        },
+        "Kill ",
+        el("b", {}, `${kill.closed ?? 0}/${kill.min_closed ?? "—"}`),
+      ),
+    );
+  }
+  document.getElementById("status-ribbon").replaceChildren(...killKids);
 }
 
 /** Plain-language help for each hard filter (matched by gate-name pattern). */

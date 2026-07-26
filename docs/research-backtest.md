@@ -106,19 +106,66 @@ Segments hit-rate-to-T1-before-stop by ADX / proxy_score buckets and prints the
 break-even R:R floor `R = (1-p)/p`. Live `PARKHU_MIN_RR_T1` stays unchanged until
 you deliberately adopt a new floor.
 
-## Steps 4–12 (still gated)
+## Step 4 — Regime labels (Epic C)
+
+```bash
+python -m research.backtest regime \
+  --start 2022-01-01 --end 2025-12-31 \
+  --symbols-file /tmp/parkhu_research_pilot_syms.txt \
+  --step-days 5 --top-n 5 \
+  --out output/research/regime_pilot
+```
+
+Labels each session from Nifty ADX14 (`trending` / `range`) × realized-vol percentile
+(`high_vol` / `low_vol`). Reports per-regime hit rate / expectancy and
+`recommended_disable_regimes` (research only).
+
+```bash
+export PARKHU_RESEARCH_DISABLE_REGIMES=range_high_vol   # example
+export PARKHU_RESEARCH_APPLY_REGIME_FILTER=1            # skip those days in research.backtest run
+```
+
+## Step 5 — Score deciles (Epic C)
+
+```bash
+python -m research.backtest score-deciles \
+  --start 2022-01-01 --end 2025-12-31 \
+  --symbols-file /tmp/parkhu_research_pilot_syms.txt \
+  --step-days 5 --horizon-days 22 \
+  --out output/research/score_deciles_pilot
+```
+
+Buckets OHLC **proxy_score** into deciles vs 22d forward return. Suggests a live coverage
+floor via `PARKHU_MIN_SCORE_COMPONENTS` (default `0` = off). When set &gt;0, `swing_brief`
+requires that many live score components before Buy-band eligibility (Watch still allowed).
+
+## Step 6 — Basket concentration (Epic C)
+
+```bash
+python -m research.backtest basket \
+  --start 2022-01-01 --end 2025-12-31 \
+  --symbols-file /tmp/parkhu_research_pilot_syms.txt \
+  --step-days 5 --top-n 5 \
+  --out output/research/basket_pilot
+```
+
+Mean pairwise correlation / avg beta vs Nifty / 20d momentum of each day’s top-N ideas.
+Flags baskets with corr ≥ `--corr-warn` (default 0.55) as concentrated factor bets.
+
+## Step 7 — Kill criterion (Epic C)
+
+Pre-committed pause bar for the live ledger — see [`kill-criterion.md`](kill-criterion.md).
+Desk shows a Kill pill from `analytics.kill_status`.
+
+## Steps 8–12 (still gated)
 
 | Step | Deliverable |
 |------|-------------|
-| 4 | Regime-conditioned thresholds |
-| 5 | Score deciles + coverage floor |
-| 6 | Basket correlation / factor check |
-| 7 | Pre-committed kill criterion |
 | 8 | Beta adjust + GARCH stops (free `arch`) |
 | 9–11 | Regime factors / Value-Quality-LowVol / EV — only after evidence |
 | 12 | Inverse-vol → shrinkage MVO (not early MVO on 5–10 names) |
 
-Stubs in [`research/deferred.py`](../research/deferred.py) raise until those steps are built.
+Stubs in [`research/deferred.py`](../research/deferred.py) raise from Step 8 onward.
 
 **Out of scope:** paid L2 order-book / tick microstructure (wrong timeframe for EOD swings).
 

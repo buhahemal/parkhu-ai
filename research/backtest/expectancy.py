@@ -66,9 +66,22 @@ def collect_funnel_trades(
     trades: list[dict[str, Any]] = []
     open_until: dict[str, str] = {}
     skip = set(skip_gates or ())
+    disable_regimes = (
+        set(risk.RESEARCH_DISABLE_REGIMES) if risk.RESEARCH_APPLY_REGIME_FILTER else set()
+    )
+    regime_by_date: dict[str, str] = {}
+    if disable_regimes:
+        from research.backtest.regime import build_regime_series
+
+        regime_by_date = {
+            str(r["date"])[:10]: str(r["regime"])
+            for r in build_regime_series(nifty).to_dict(orient="records")
+        }
 
     for i, day in enumerate(sessions):
         if step_days > 1 and i % step_days != 0:
+            continue
+        if disable_regimes and regime_by_date.get(day, "unknown") in disable_regimes:
             continue
         rows = build_day_rows(day, bars_by_sym, nifty)
         survivors, _ = apply_proxy_gates(rows, skip=skip)

@@ -1,4 +1,4 @@
-"""CLI: ``python -m research.backtest {run,ablation,expectancy}``."""
+"""CLI: ``python -m research.backtest {run,ablation,expectancy,regime,score-deciles,basket}``."""
 
 from __future__ import annotations
 
@@ -11,8 +11,11 @@ from config import risk, settings
 from config.universe import scanning_universe
 
 from research.backtest.ablation import run_ablation
+from research.backtest.basket import run_basket_analysis
 from research.backtest.engine import run_backtest
 from research.backtest.expectancy import run_expectancy
+from research.backtest.regime import run_regime_analysis
+from research.backtest.score_deciles import run_score_deciles
 
 
 def _symbols(date: str | None, symbols_file: Path | None, limit: int | None) -> list[str]:
@@ -60,6 +63,17 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Skip PARKHU_RESEARCH_DEMOTED_GATES when replaying the funnel",
     )
+
+    reg_p = sub.add_parser("regime", help="Per-regime funnel metrics (Step 4)")
+    _add_common(reg_p)
+
+    sc_p = sub.add_parser("score-deciles", help="Proxy-score decile → forward return (Step 5)")
+    _add_common(sc_p)
+    sc_p.add_argument("--horizon-days", type=int, default=22)
+
+    bask_p = sub.add_parser("basket", help="Top-N basket correlation / beta (Step 6)")
+    _add_common(bask_p)
+    bask_p.add_argument("--corr-warn", type=float, default=0.55)
 
     args = p.parse_args(argv)
     lim = args.limit if args.limit is not None else settings.MAX_SYMBOLS
@@ -122,6 +136,61 @@ def main(argv: list[str] | None = None) -> int:
         print(
             f"overall hit_rate={report.get('overall_hit_rate_t1_before_stop')} "
             f"implied_min_rr={report.get('overall_implied_min_rr')}"
+        )
+        return 0
+
+    if args.cmd == "regime":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"regime_{args.end[:10]}")
+        report = run_regime_analysis(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            out_dir=out,
+        )
+        print(f"wrote {out}/regime.md")
+        print(f"recommended_disable_regimes={report.get('recommended_disable_regimes')}")
+        for row in report.get("per_regime") or []:
+            st = row.get("stats") or {}
+            print(
+                f"  {row.get('regime')}: n={row.get('trades_n')} "
+                f"exp%={st.get('expectancy_pct')} → {row.get('action')}"
+            )
+        return 0
+
+    if args.cmd == "score-deciles":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"score_deciles_{args.end[:10]}")
+        report = run_score_deciles(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            step_days=args.step_days,
+            horizon_days=args.horizon_days,
+            out_dir=out,
+        )
+        print(f"wrote {out}/score_deciles.md (rows={report.get('rows')})")
+        print(f"top_beats_mid={report.get('top_beats_mid')}")
+        return 0
+
+    if args.cmd == "basket":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"basket_{args.end[:10]}")
+        report = run_basket_analysis(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            corr_warn=args.corr_warn,
+            out_dir=out,
+        )
+        print(f"wrote {out}/basket.md")
+        print(
+            f"baskets={report.get('baskets_n')} concentrated={report.get('concentrated_baskets_n')} "
+            f"mean_corr={report.get('mean_basket_corr')}"
         )
         return 0
 

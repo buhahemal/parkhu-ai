@@ -1,7 +1,7 @@
 """Research Steps 2–12 roadmap.
 
-Steps 2–3 (Epic B) are implemented under ``research.backtest``.
-Steps 4–12 remain deferred until earlier evidence exists.
+Steps 2–7 (Epics B–C) are implemented under ``research.backtest`` / ``research.kill_criterion``.
+Steps 8–12 remain deferred until earlier evidence exists.
 """
 
 from __future__ import annotations
@@ -27,20 +27,32 @@ def step3_hit_rate_expectancy(**kwargs: Any):
     return run_expectancy(**kwargs)
 
 
-def step4_regime_thresholds(*_a, **_k):
-    raise ResearchStepDeferred("Step 4 deferred until Steps 1–3 complete")
+def step4_regime_thresholds(**kwargs: Any):
+    """Index regime labels + per-regime metrics (Epic C)."""
+    from research.backtest.regime import run_regime_analysis
+
+    return run_regime_analysis(**kwargs)
 
 
-def step5_score_deciles(*_a, **_k):
-    raise ResearchStepDeferred("Step 5 deferred until Steps 1–3 complete")
+def step5_score_deciles(**kwargs: Any):
+    """Proxy-score decile → forward return (Epic C)."""
+    from research.backtest.score_deciles import run_score_deciles
+
+    return run_score_deciles(**kwargs)
 
 
-def step6_basket_correlation(*_a, **_k):
-    raise ResearchStepDeferred("Step 6 deferred until Steps 1–3 complete")
+def step6_basket_correlation(**kwargs: Any):
+    """Top-N basket correlation / beta (Epic C)."""
+    from research.backtest.basket import run_basket_analysis
+
+    return run_basket_analysis(**kwargs)
 
 
-def step7_kill_criterion(*_a, **_k):
-    raise ResearchStepDeferred("Step 7 deferred until Steps 1–3 complete")
+def step7_kill_criterion(stats: dict[str, Any] | None = None, **_k: Any):
+    """Pre-committed live kill / pause bar (Epic C)."""
+    from research.kill_criterion import evaluate_kill_criterion
+
+    return evaluate_kill_criterion(stats)
 
 
 def step8_beta_garch_sizing(*_a, **_k):
@@ -77,4 +89,4 @@ ROADMAP = (
     (12, "inv_vol_mvo", step12_inv_vol_mvo),
 )
 
-DEFERRED_FROM_STEP = 4
+DEFERRED_FROM_STEP = 8

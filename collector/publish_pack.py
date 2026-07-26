@@ -470,6 +470,9 @@ def build_analytics(
     brief: dict[str, Any], ideas: list, open_trades: list, needs_action: list
 ) -> dict:
     """Desk metrics for Pages — no capital / deployment figures."""
+    from collector.brief.positions import realised_stats
+    from research.kill_criterion import evaluate_kill_criterion
+
     funnel = brief.get("funnel") if isinstance(brief.get("funnel"), list) else []
     scoring = brief.get("scoring") if isinstance(brief.get("scoring"), dict) else {}
     lost = scoring.get("weight_unavailable_pct")
@@ -483,6 +486,7 @@ def build_analytics(
         "book": _book_stats(open_trades, needs_action),
         "ideas_count": len(ideas),
         "score_coverage_pct": coverage,
+        "kill_status": evaluate_kill_criterion(realised_stats()),
         "caveats": brief.get("caveats") if isinstance(brief.get("caveats"), list) else [],
     }
 

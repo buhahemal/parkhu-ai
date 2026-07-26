@@ -130,7 +130,18 @@
       }
     ],
     "ideas_count": 1,
-    "sector_counts": [{"sector": "Banks", "names": 1}]
+    "sector_counts": [{"sector": "Banks", "names": 1}],
+    "kill_status": {
+      "closed": 3,
+      "min_closed": 20,
+      "min_win_rate_pct": 40.0,
+      "min_avg_return_pct": 0.0,
+      "win_rate_pct": null,
+      "avg_return_pct": null,
+      "status": "insufficient_sample",
+      "pause": false,
+      "detail": "Need 20 closed suggestions before the kill bar applies (have 3)."
+    }
   },
   "ideas": [
     {

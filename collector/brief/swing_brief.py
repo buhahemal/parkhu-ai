@@ -342,6 +342,7 @@ def build_payload(date: str, capital: float) -> dict:
         "skipped_beyond_horizon": [],
         "unaffordable_at_this_capital": [],
         "ignored_below_watch": [],
+        "deferred_low_coverage": [],
         "survivor_outcomes": [],
         "survivor_outcomes_total": 0,
         "survivor_outcomes_truncated": False,
@@ -364,10 +365,16 @@ def build_payload(date: str, capital: float) -> dict:
     # Wide stock_analysis frames fragment after many column ops; one assign
     # after copy avoids pandas PerformanceWarning on insert.
     d = d.copy().assign(parkhu_score=score, risk_sector=d.apply(risk_sector, axis=1))
+    min_comp = int(risk.MIN_SCORE_COMPONENTS)
+    n_live = len(live_w)
+    coverage_ok = min_comp <= 0 or n_live >= min_comp
     payload["scoring"] = {
         "live_weights": live_w,
         "unavailable_components": missing_w,
         "weight_unavailable_pct": lost,
+        "min_score_components": min_comp,
+        "live_component_count": n_live,
+        "coverage_ok_for_buy": coverage_ok,
     }
 
     steps: list[dict] = []
@@ -462,9 +469,9 @@ def build_payload(date: str, capital: float) -> dict:
                 "parkhu_score": sc,
                 "band": (
                     "Buy"
-                    if sc >= risk.BUY_SCORE
+                    if sc >= risk.BUY_SCORE and coverage_ok
                     else "Watch"
-                    if sc >= risk.WATCH_SCORE
+                    if sc >= risk.WATCH_SCORE or (sc >= risk.BUY_SCORE and not coverage_ok)
                     else "Ignore"
                 ),
                 "levels": lv,
@@ -516,8 +523,16 @@ def build_payload(date: str, capital: float) -> dict:
         for r in rows
         if r["parkhu_score"] < risk.WATCH_SCORE
     ]
-    watch = [r for r in rows if risk.WATCH_SCORE <= r["parkhu_score"] < risk.BUY_SCORE]
-    buys = [r for r in rows if r["parkhu_score"] >= risk.BUY_SCORE]
+    deferred_low_coverage = [
+        {"symbol": r["symbol"], "score": r["parkhu_score"], "reason": "score_coverage_floor"}
+        for r in rows
+        if r["parkhu_score"] >= risk.BUY_SCORE and r["band"] != "Buy"
+    ]
+    if deferred_low_coverage:
+        payload["deferred_low_coverage"] = deferred_low_coverage
+
+    watch = [r for r in rows if r["band"] == "Watch"]
+    buys = [r for r in rows if r["band"] == "Buy"]
 
     payload["unaffordable_at_this_capital"] = [
         {
