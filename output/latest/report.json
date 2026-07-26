@@ -3,8 +3,8 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T15:53:20.201455+05:30",
-  "duration_seconds": 92.4,
+  "generated_at_ist": "2026-07-26T15:58:36.543156+05:30",
+  "duration_seconds": 86.2,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -12,7 +12,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 364,
-      "seconds": 1.1
+      "seconds": 0.3
     },
     {
       "agent": "ohlc_history",
@@ -21,7 +21,7 @@
       "symbols": 354,
       "failed": 10,
       "lookback": 250,
-      "seconds": 41.6
+      "seconds": 38.3
     },
     {
       "agent": "earnings",
@@ -34,31 +34,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.9
+      "seconds": 1.9
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.6
+      "seconds": 1.3
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 3.6
+      "seconds": 3.9
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.9
+      "seconds": 4.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 5.7
+      "seconds": 5.1
     },
     {
       "agent": "stock_options",
@@ -71,37 +71,37 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 353,
-      "seconds": 4.7
+      "seconds": 3.3
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.5
+      "seconds": 2.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.0
+      "seconds": 3.8
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 5.0
+      "seconds": 3.9
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.3
+      "seconds": 0.1
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.1
+      "seconds": 0.3
     },
     {
       "agent": "fno_momentum",
@@ -133,13 +133,13 @@
       "rows": 354,
       "with_structure": 353,
       "lookback": 250,
-      "seconds": 0.4
+      "seconds": 1.1
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.2
+      "seconds": 0.4
     },
     {
       "agent": "swing_brief",
