@@ -1,7 +1,7 @@
 trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,hit_t1,hit_t2,reconfirmed_count,notes
 2026-07-21-J&KBANK,J&KBANK,Jammu & Kashmir Bank Ltd.,Banks,2026-07-21,,184.33,169.92,213.16,227.57,241.98,158.55,16,36,90.4,54,778.0,open,179.01,2026-07-23,0.6,-2.89,False,False,2,
-2026-07-21-ICICIBANK,ICICIBANK,ICICI Bank Limited,Banks,2026-07-21,,1470.8,1418.81,1574.78,1626.77,1678.76,1358.25,16,36,85.6,6,312.0,open,1432.9,2026-07-26,0.0,-2.85,False,False,5,
+2026-07-21-ICICIBANK,ICICIBANK,ICICI Bank Limited,Banks,2026-07-21,,1470.8,1418.81,1574.78,1626.77,1678.76,1358.25,16,36,85.6,6,312.0,open,1432.9,2026-07-26,0.0,-2.85,False,False,6,
 2026-07-21-ZYDUSLIFE,ZYDUSLIFE,Zydus Lifesciences Limited,Health Technology,2026-07-21,,1146.2,1074.19,1290.23,1362.24,1434.25,1086.45,35,78,82.5,8,576.0,open,1108.7,2026-07-26,0.0,-3.27,False,False,0,
 2026-07-21-IPCALAB,IPCALAB,IPCA Laboratories Limited,Health Technology,2026-07-21,,1828.2,1715.39,2053.81,2166.62,2279.43,1683.36,16,36,81.1,5,564.0,open,1762.7,2026-07-26,0.0,-3.58,False,False,2,
-2026-07-25-LODHA,LODHA,Lodha Developers Ltd.,Real Estate,2026-07-25,,1144.1,1061.79,1308.72,1391.03,1473.34,1028.82,16,36,85.9,8,658.0,open,1144.1,2026-07-26,0.0,0.0,False,False,2,
-2026-07-25-IIFL,IIFL,IIFL Finance Limited,NBFC & Capital Markets,2026-07-25,,556.55,515.37,638.9,680.08,721.25,521.55,16,36,81.7,17,700.0,open,556.55,2026-07-26,0.0,0.0,False,False,2,
+2026-07-25-LODHA,LODHA,Lodha Developers Ltd.,Real Estate,2026-07-25,,1144.1,1061.79,1308.72,1391.03,1473.34,1028.82,16,36,85.9,8,658.0,open,1144.1,2026-07-26,0.0,0.0,False,False,3,
+2026-07-25-IIFL,IIFL,IIFL Finance Limited,NBFC & Capital Markets,2026-07-25,,556.55,515.37,638.9,680.08,721.25,521.55,16,36,81.7,17,700.0,open,556.55,2026-07-26,0.0,0.0,False,False,3,

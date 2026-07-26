@@ -196,8 +196,13 @@ to plain `requests` (NSE will then usually 403).
 
 ## Documentation
 
-- [`docs/swing-brief.md`](docs/swing-brief.md) — how the brief is built, which KB
-  rules it enforces, and where it deliberately overrides `stock_analysis.csv`.
+- [`docs/technical-plan.md`](docs/technical-plan.md) — **the design rationale**: what
+  every gate, threshold and formula is, why that value was chosen, the measurement
+  behind it, and what would have to change to improve it. Read this before changing
+  a rule. Includes the invariants worth keeping as tests and the extension points.
+- [`docs/swing-brief.md`](docs/swing-brief.md) — the operator's guide: how the brief
+  is built, the suggestion ledger, and where it deliberately overrides
+  `stock_analysis.csv`.
 - [`docs/data-gaps.md`](docs/data-gaps.md) — what the knowledge base needs that
   this repo does not yet collect, prioritised, with proposed CSV schemas.
 
