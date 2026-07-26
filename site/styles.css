@@ -1187,18 +1187,26 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   line-height: 1.5;
 }
 
+.enrich-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  margin: 0.5rem 0 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .enrich-table {
   width: 100%;
+  min-width: 52rem;
   border-collapse: collapse;
   font-family: var(--font-table);
   font-size: var(--fs-table);
-  margin: 0.5rem 0 1rem;
 }
 
 .enrich-table th,
 .enrich-table td {
   text-align: left;
-  padding: 0.55rem 0.45rem;
+  padding: 0.55rem 0.55rem;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
 }
@@ -1209,17 +1217,24 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   font-size: var(--fs-small);
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
 .enrich-table .mono {
   font-family: var(--mono);
   font-variant-numeric: tabular-nums;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .enrich-table .action {
   font-weight: 600;
   text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.enrich-table td:first-child {
+  white-space: nowrap;
 }
 
 .enrich-notes {
@@ -1307,7 +1322,16 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   margin: 0.25rem 0;
 }
 
-@media (max-width: 720px) {
+/* Stack suggestion rows as cards below desk 2-col breakpoint — avoids mid-digit wrap. */
+@media (max-width: 979px) {
+  .enrich-table-wrap {
+    overflow-x: visible;
+  }
+
+  .enrich-table {
+    min-width: 0;
+  }
+
   .enrich-table thead {
     display: none;
   }
@@ -1324,9 +1348,10 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   .enrich-table td {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     gap: 0.75rem;
     border: 0;
-    padding: 0.25rem 0;
+    padding: 0.3rem 0;
   }
 
   .enrich-table td::before {
@@ -1335,6 +1360,24 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
     font-weight: 600;
     font-size: 0.7rem;
     text-transform: uppercase;
+    flex: 0 0 auto;
+  }
+
+  .enrich-table .mono,
+  .enrich-table .action,
+  .enrich-table td:first-child {
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .enrich-table td.rationale {
+    display: block;
+    white-space: normal;
+  }
+
+  .enrich-table td.rationale::before {
+    display: block;
+    margin-bottom: 0.15rem;
   }
 }
 
@@ -1478,17 +1521,6 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 
   .status-ribbon .pill {
     max-width: 100%;
-  }
-
-  .enrich-table {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .enrich-table tbody {
-    display: block;
-    width: 100%;
   }
 
   .card .row {

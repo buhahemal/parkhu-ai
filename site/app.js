@@ -1203,34 +1203,46 @@ function renderEnrichment(pack) {
     suggestions.length === 0
       ? el("p", { class: "enrich-skip" }, "No symbol suggestions in this note.")
       : el(
-          "table",
-          { class: "enrich-table" },
+          "div",
+          { class: "enrich-table-wrap" },
           el(
-            "thead",
-            {},
+            "table",
+            { class: "enrich-table" },
             el(
-              "tr",
+              "thead",
               {},
-              ...["Symbol", "Action", "Conv.", "Entry", "Stop", "T1", "Hold", "Rationale"].map((h) =>
-                el("th", {}, h),
-              ),
-            ),
-          ),
-          el(
-            "tbody",
-            {},
-            ...suggestions.map((s) =>
               el(
                 "tr",
                 {},
-                el("td", { "data-label": "Symbol" }, symbolLink(s.symbol)),
-                el("td", { class: "action", "data-label": "Action" }, String(s.action || "—").replace(/_/g, " ")),
-                el("td", { "data-label": "Conv." }, s.conviction || "—"),
-                el("td", { class: "mono", "data-label": "Entry" }, fmt(s.entry)),
-                el("td", { class: "mono", "data-label": "Stop" }, fmt(s.stop)),
-                el("td", { class: "mono", "data-label": "T1" }, fmt(s.t1)),
-                el("td", { class: "mono", "data-label": "Hold" }, s.hold_days != null ? `${fmt(s.hold_days, 0)}d` : "—"),
-                el("td", { "data-label": "Rationale" }, s.rationale || "—"),
+                ...["Symbol", "Action", "Conv.", "Entry", "Stop", "T1", "Hold", "Rationale"].map((h) =>
+                  el("th", {}, h),
+                ),
+              ),
+            ),
+            el(
+              "tbody",
+              {},
+              ...suggestions.map((s) =>
+                el(
+                  "tr",
+                  {},
+                  el("td", { "data-label": "Symbol" }, symbolLink(s.symbol)),
+                  el(
+                    "td",
+                    { class: "action", "data-label": "Action" },
+                    String(s.action || "—").replace(/_/g, " "),
+                  ),
+                  el("td", { "data-label": "Conv." }, s.conviction || "—"),
+                  el("td", { class: "mono", "data-label": "Entry" }, fmt(s.entry)),
+                  el("td", { class: "mono", "data-label": "Stop" }, fmt(s.stop)),
+                  el("td", { class: "mono", "data-label": "T1" }, fmt(s.t1)),
+                  el(
+                    "td",
+                    { class: "mono", "data-label": "Hold" },
+                    s.hold_days != null ? `${fmt(s.hold_days, 0)}d` : "—",
+                  ),
+                  el("td", { class: "rationale", "data-label": "Rationale" }, s.rationale || "—"),
+                ),
               ),
             ),
           ),

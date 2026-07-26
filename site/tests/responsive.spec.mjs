@@ -87,11 +87,22 @@ test("logo kit has no horizontal overflow on mobile", async ({ page }) => {
   await noHorizontalOverflow(page);
 });
 
-test("mobile enrich table stacks as cards", async ({ page }) => {
+test("enrich table stacks as cards under 980px", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("./", { waitUntil: "networkidle" });
   await waitForDesk(page);
   const theadDisplay = await page.locator(".enrich-table thead").evaluate((el) => getComputedStyle(el).display);
   expect(theadDisplay).toBe("none");
+  const monoWrap = await page.locator(".enrich-table .mono").first().evaluate((el) => getComputedStyle(el).whiteSpace);
+  expect(monoWrap).toBe("nowrap");
+  await noHorizontalOverflow(page);
+});
+
+test("enrich table numbers stay nowrap on wide desk", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.goto("./", { waitUntil: "networkidle" });
+  await waitForDesk(page);
+  const monoWrap = await page.locator(".enrich-table .mono").first().evaluate((el) => getComputedStyle(el).whiteSpace);
+  expect(monoWrap).toBe("nowrap");
   await noHorizontalOverflow(page);
 });
