@@ -6,6 +6,7 @@ Thresholds: [`config/risk.py`](../config/risk.py) (all `PARKHU_*` env-overridabl
 
 Operator guide (how to run / read the brief): [`swing-brief.md`](swing-brief.md).
 Design rationale for why each gate exists: [`technical-plan.md`](technical-plan.md).
+Walk-forward research / OHLC-proxy backtest (Step 1): [`research-backtest.md`](research-backtest.md).
 
 ```mermaid
 flowchart TD

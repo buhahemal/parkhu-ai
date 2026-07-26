@@ -106,9 +106,11 @@ def _bars_to_rows(symbol: str, hist: pd.DataFrame) -> list[dict]:
     return rows
 
 
-def _merge_cache(symbol: str, fresh: pd.DataFrame) -> pd.DataFrame:
+def _merge_cache(
+    symbol: str, fresh: pd.DataFrame, *, lookback: int | None = None
+) -> pd.DataFrame:
     """Merge Yahoo bars into cache and trim to lookback."""
-    lookback = settings.OHLC_LOOKBACK_SESSIONS
+    keep = int(lookback if lookback is not None else settings.OHLC_LOOKBACK_SESSIONS)
     cached = _load_cache(symbol)
     fresh_rows = _bars_to_rows(symbol, fresh)
     if not fresh_rows and cached.empty:
@@ -117,8 +119,8 @@ def _merge_cache(symbol: str, fresh: pd.DataFrame) -> pd.DataFrame:
     merged = new if cached.empty else pd.concat([cached, new], ignore_index=True)
     merged["date"] = merged["date"].astype(str).str[:10]
     merged = merged.drop_duplicates(subset=["date"], keep="last").sort_values("date")
-    if len(merged) > lookback:
-        merged = merged.iloc[-lookback:].copy()
+    if keep > 0 and len(merged) > keep:
+        merged = merged.iloc[-keep:].copy()
     _write_cache(symbol, merged)
     return merged
 
@@ -212,11 +214,13 @@ def _process_chunk(
     period: str,
     *,
     trim_to: int,
+    lookback: int | None = None,
 ) -> tuple[list[pd.DataFrame], list[str], bool]:
     """Download one chunk and merge into raw store.
 
     Returns ``(parts, failed_symbols, rate_or_timeout_seen)``.
     """
+    cache_lookback = int(lookback if lookback is not None else settings.OHLC_LOOKBACK_SESSIONS)
     tickers = [yf_symbol(s) for s in chunk]
     nse_by_yf = dict(zip(tickers, chunk, strict=True))
     data, err_text = _download_chunk(tickers, period=period)
@@ -239,7 +243,7 @@ def _process_chunk(
                 else:
                     failed.append(nse)
                 continue
-            merged = _merge_cache(nse, hist)
+            merged = _merge_cache(nse, hist, lookback=cache_lookback)
             if merged.empty:
                 failed.append(nse)
                 continue
@@ -261,6 +265,7 @@ def _drain_batches(
     *,
     trim_to: int,
     chunk_size: int,
+    lookback: int | None = None,
 ) -> tuple[list[pd.DataFrame], list[str], int]:
     """Process symbols in chunks with rate-limit wait/retry. Returns parts, still_failed, retries_used."""
     pending = list(symbols)
@@ -277,7 +282,9 @@ def _drain_batches(
             chunk = pending[i : i + chunk_size]
             if i and settings.OHLC_CHUNK_SLEEP_S > 0:
                 time.sleep(settings.OHLC_CHUNK_SLEEP_S)
-            parts, failed, rate_hit = _process_chunk(chunk, period, trim_to=trim_to)
+            parts, failed, rate_hit = _process_chunk(
+                chunk, period, trim_to=trim_to, lookback=lookback
+            )
             all_parts.extend(parts)
             failed_round.extend(failed)
             rate_seen = rate_seen or rate_hit
@@ -306,24 +313,69 @@ def _drain_batches(
     return all_parts, [], retries_used
 
 
+def backfill_yahoo_ticker(
+    *,
+    store_as: str,
+    yf_ticker: str,
+    period: str | None = None,
+    lookback: int | None = None,
+) -> dict:
+    """Download a raw Yahoo ticker (e.g. ``^NSEI``) into ``database/ohlc/<store_as>.csv``."""
+    period = period or settings.OHLC_RESEARCH_PERIOD
+    keep = int(lookback if lookback is not None else settings.OHLC_RESEARCH_LOOKBACK_SESSIONS)
+    data, err = _download_chunk([yf_ticker], period=period)
+    if data is None or getattr(data, "empty", True):
+        return {
+            "agent": "ohlc_index",
+            "status": "error",
+            "symbol": store_as,
+            "error": err or "empty",
+        }
+    if isinstance(getattr(data, "columns", None), pd.MultiIndex):
+        frame = _extract_ticker_frame(data, yf_ticker)
+        if frame is None or getattr(frame, "empty", True):
+            frame = data
+    else:
+        frame = data
+    hist = clean_daily_history(frame)
+    hist = trim_sessions(hist, keep)
+    if hist.empty:
+        return {"agent": "ohlc_index", "status": "error", "symbol": store_as, "error": "no_bars"}
+    merged = _merge_cache(store_as, hist, lookback=keep)
+    return {
+        "agent": "ohlc_index",
+        "status": "ok",
+        "symbol": store_as,
+        "yf_ticker": yf_ticker,
+        "rows": int(len(merged)),
+    }
+
+
 def backfill_symbols(
     symbols: list[str],
     *,
     date: str | None = None,
     period: str | None = None,
+    lookback: int | None = None,
 ) -> dict:
-    """Cold-backfill a symbol list into ``database/ohlc/`` (and refresh daily pack rows)."""
+    """Cold-backfill a symbol list into ``database/ohlc/`` (and refresh daily pack rows).
+
+    ``lookback`` defaults to daily ``OHLC_LOOKBACK_SESSIONS``. Research backfills
+    pass ``OHLC_RESEARCH_LOOKBACK_SESSIONS`` so caches can keep ~5y of bars.
+    """
     symbols = [str(s).strip() for s in symbols if str(s).strip()]
     if not symbols:
         return {"agent": "ohlc_history", "status": "error", "rows": 0, "symbols": 0}
 
     period = period or _cold_period()
+    keep = int(lookback if lookback is not None else settings.OHLC_LOOKBACK_SESSIONS)
     chunk_size = max(int(settings.OHLC_CHUNK_SIZE), 1)
     parts, failed, retries = _drain_batches(
         symbols,
         period,
-        trim_to=settings.OHLC_LOOKBACK_SESSIONS,
+        trim_to=keep,
         chunk_size=chunk_size,
+        lookback=keep,
     )
     ok = len(symbols) - len(failed)
     if parts:

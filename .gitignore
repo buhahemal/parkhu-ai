@@ -27,6 +27,9 @@ site/test-results/
 site/playwright-report/
 site/blob-report/
 
+# Research backtest run artifacts (regenerate locally; do not commit large runs)
+output/research/
+
 # Logs
 logs/*.log
 

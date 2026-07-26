@@ -76,6 +76,21 @@ MAX_EVENT_RISK_SCORE = _f("PARKHU_MAX_EVENT_RISK_SCORE", 1.0)  # CONFIG DECISION
 # --- Output --------------------------------------------------------------
 TOP_N_IDEAS = _i("PARKHU_TOP_N_IDEAS", 5)
 
+# --- Research demotions (Epic B) ----------------------------------------
+# Comma-separated OHLC-proxy gate ids from leave-one-out ablation
+# (trend,sma200,ema50,adx,rsi,rs,rel_vol). Applied only when
+# PARKHU_RESEARCH_APPLY_DEMOTIONS=1 — never changes the live swing brief.
+_demoted_raw = (os.getenv("PARKHU_RESEARCH_DEMOTED_GATES", "") or "").strip()
+RESEARCH_DEMOTED_GATES: frozenset[str] = frozenset(
+    g.strip() for g in _demoted_raw.split(",") if g.strip()
+)
+RESEARCH_APPLY_DEMOTIONS = (os.getenv("PARKHU_RESEARCH_APPLY_DEMOTIONS", "0") or "0").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+
 # --- KB-14 Fig 2-1 score weights (out of 100) ----------------------------
 # Components the collector cannot yet populate are dropped at runtime and the
 # remaining weights renormalised, with the lost weight reported in the brief.

@@ -231,6 +231,8 @@ python -m scripts.quality       # ruff + vulture + jscpd (duplication)
   `stock_analysis.csv`.
 - [`docs/universe-to-idea.md`](docs/universe-to-idea.md) — universe → idea path:
   hard gates, levels/R:R/horizon, score bands, and portfolio caps.
+- [`docs/research-backtest.md`](docs/research-backtest.md) — free OHLC-proxy
+  walk-forward backtest (Step 1 of the research review); Steps 2–12 gated.
 - [`docs/data-gaps.md`](docs/data-gaps.md) — what the knowledge base needs that
   this repo does not yet collect, prioritised, with proposed CSV schemas.
 

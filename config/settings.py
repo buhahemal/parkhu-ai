@@ -81,6 +81,7 @@ MAX_SYMBOLS = int(os.getenv("PARKHU_MAX_SYMBOLS", "0")) or None
 
 # Daily OHLC history (Yahoo Finance via .NS). ~250 sessions ≈ 1y of NSE bars.
 # Warm symbols: short incremental pull; cold/new: full backfill into database/ohlc/.
+# Daily collect stays on this shorter window; research backfill uses RESEARCH_* below.
 OHLC_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_LOOKBACK", "250") or "250")
 OHLC_INCREMENTAL_DAYS = int(os.getenv("PARKHU_OHLC_INCREMENTAL_DAYS", "5") or "5")
 _ohlc_warm_env = os.getenv("PARKHU_OHLC_WARM_MIN_BARS")
@@ -90,6 +91,11 @@ OHLC_WARM_MIN_BARS = (
     else max(OHLC_LOOKBACK_SESSIONS - 10, 1)
 )
 OHLC_COLD_PERIOD = os.getenv("PARKHU_OHLC_COLD_PERIOD", "400d") or "400d"
+# Research / walk-forward: ~1260 sessions ≈ 5y NSE bars (does not change daily collect).
+OHLC_RESEARCH_LOOKBACK_SESSIONS = int(
+    os.getenv("PARKHU_OHLC_RESEARCH_LOOKBACK", "1260") or "1260"
+)
+OHLC_RESEARCH_PERIOD = os.getenv("PARKHU_OHLC_RESEARCH_PERIOD", "5y") or "5y"
 OHLC_CHUNK_SIZE = int(os.getenv("PARKHU_OHLC_CHUNK_SIZE", "80") or "80")
 OHLC_CHUNK_SLEEP_S = float(os.getenv("PARKHU_OHLC_CHUNK_SLEEP_S", "1.0") or "1.0")
 # Yahoo rate-limit / timeout: wait then retry failed symbols (cron-safe).
