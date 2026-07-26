@@ -12,6 +12,14 @@ Regime **Bearish**. Sector leader Retail Trade (2.6% 1m), laggard Utilities (-5.
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
+## Open suggestions (1)
+
+| Symbol | Opened | Entry | Now | P/L | R | Held | Action |
+|---|---|---|---|---|---|---|---|
+| SREEL | 2026-07-26 | ₹228 | ₹228 | 0% | 0R | 0/16d | HOLD |
+
+- **SREEL** — HOLD: +0.00% (+0.00R), 0d held, ~16d left to the T1 horizon.
+
 ## Ideas (1)
 
 ### SREEL — Sreeleathers Ltd.

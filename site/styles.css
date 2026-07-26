@@ -857,6 +857,155 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   font-weight: 700;
 }
 
+.funnel-expand {
+  margin: 0.1rem 0 0.15rem;
+  border-radius: 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  background: color-mix(in srgb, var(--surface-2) 55%, transparent);
+  padding: 0.15rem 0.55rem 0.25rem;
+}
+
+.funnel-expand summary {
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0.25rem 0;
+  list-style: none;
+}
+
+.funnel-expand summary::-webkit-details-marker {
+  display: none;
+}
+
+.funnel-expand summary::before {
+  content: "▸ ";
+  color: var(--accent);
+}
+
+.funnel-expand[open] summary::before {
+  content: "▾ ";
+}
+
+.funnel-expand-body {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.15rem 0 0.4rem;
+}
+
+.funnel-expand-body h4 {
+  margin: 0.35rem 0 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.funnel-chip-note {
+  margin: 0 0 0.2rem;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.funnel-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.funnel-sym-chip {
+  padding: 0.15rem 0.4rem;
+}
+
+.funnel-sym-chip .sym-link {
+  font-size: 0.72rem;
+}
+
+.survivors-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+}
+
+.survivors-filter {
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.survivors-filter:hover,
+.survivors-filter.active {
+  border-color: var(--accent);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent) 18%, var(--surface));
+}
+
+.survivors-body {
+  overflow-x: auto;
+}
+
+.survivors-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.survivors-table th,
+.survivors-table td {
+  text-align: left;
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.survivors-table th {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.survivors-reason {
+  color: var(--muted);
+  max-width: 22rem;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.status-pill.status-idea {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--line));
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.status-pill.status-watchlist {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--warn) 45%, var(--line));
+  background: color-mix(in srgb, var(--warn) 20%, transparent);
+}
+
+.status-pill.status-rejected {
+  color: var(--muted);
+}
+
 .drops {
   display: flex;
   flex-wrap: wrap;

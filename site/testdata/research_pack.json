@@ -52,15 +52,82 @@
     }
   ],
   "funnel": [
-    {"gate": "universe", "surviving": 100},
-    {"gate": "trend", "surviving": 40}
+    {
+      "gate": "universe",
+      "surviving": 100,
+      "dropped_count": 0,
+      "survivor_symbols": ["AAA", "BBB", "CCC"],
+      "dropped_symbols": [],
+      "survivor_symbols_truncated": true,
+      "dropped_symbols_truncated": false
+    },
+    {
+      "gate": "trend",
+      "surviving": 40,
+      "dropped_count": 60,
+      "survivor_symbols": ["AAA", "BBB"],
+      "dropped_symbols": ["CCC", "DDD"],
+      "survivor_symbols_truncated": true,
+      "dropped_symbols_truncated": true
+    }
   ],
+  "survivor_outcomes": [
+    {
+      "symbol": "AAA",
+      "score": 85,
+      "band": "Buy",
+      "cmp": 100,
+      "risk_sector": "Banks",
+      "status": "idea",
+      "reason": "selected as idea"
+    },
+    {
+      "symbol": "BBB",
+      "score": 72,
+      "band": "Watch",
+      "cmp": 50,
+      "risk_sector": "IT",
+      "status": "watchlist",
+      "reason": "score in Watch band (70–80)"
+    },
+    {
+      "symbol": "ZZZ",
+      "score": 81,
+      "band": "Buy",
+      "cmp": 40,
+      "risk_sector": "IT",
+      "status": "rejected",
+      "reason": "R:R or levels failed MIN_RR_T1"
+    }
+  ],
+  "survivor_outcomes_total": 40,
+  "survivor_outcomes_truncated": true,
   "analytics": {
     "score_coverage_pct": 65,
     "caveats": ["Scores provisional in fixture"],
     "funnel_conversions": [
-      {"gate": "universe", "surviving": 100, "keep_pct": 100, "dropped": 0},
-      {"gate": "trend", "surviving": 40, "keep_pct": 40, "dropped": 60}
+      {
+        "gate": "universe",
+        "surviving": 100,
+        "keep_pct": 100,
+        "dropped": 0,
+        "dropped_count": 0,
+        "survivor_symbols": ["AAA", "BBB", "CCC"],
+        "dropped_symbols": [],
+        "survivor_symbols_truncated": true,
+        "dropped_symbols_truncated": false
+      },
+      {
+        "gate": "trend",
+        "surviving": 40,
+        "keep_pct": 40,
+        "dropped": 60,
+        "dropped_count": 60,
+        "survivor_symbols": ["AAA", "BBB"],
+        "dropped_symbols": ["CCC", "DDD"],
+        "survivor_symbols_truncated": true,
+        "dropped_symbols_truncated": true
+      }
     ],
     "ideas_count": 1,
     "sector_counts": [{"sector": "Banks", "names": 1}]

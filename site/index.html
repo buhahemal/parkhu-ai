@@ -62,6 +62,7 @@
           <a href="#overview" class="active">Overview</a>
           <a href="#ai-desk">AI desk</a>
           <a href="#funnel">Filters</a>
+          <a href="#survivors">Survivors</a>
           <a href="#regime">Regime</a>
           <a href="#ideas">Ideas</a>
           <a href="#ledger">Ledger</a>
@@ -141,6 +142,24 @@
             </div>
             <div id="funnel-viz" class="funnel-viz" aria-label="Filter steps"></div>
             <div id="funnel-drops" class="drops"></div>
+          </section>
+
+          <section id="survivors" class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Survivors</h2>
+                <p class="panel-sub" id="survivors-sub">Final gate passers — why selected or not</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> top 50 names left after all hard filters, with status (idea / watchlist / rejected) and why they were not picked when rejected.</p>
+                  <p><strong>Decide:</strong> rejected for R:R or score is process working; portfolio/sector caps mean the book is full — not a loose-gate signal.</p>
+                </div>
+              </details>
+            </div>
+            <div id="survivors-filters" class="survivors-filters" role="toolbar" aria-label="Filter survivors"></div>
+            <div id="survivors-body" class="survivors-body"></div>
           </section>
 
           <section id="regime" class="panel">

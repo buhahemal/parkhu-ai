@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-07-26T17:08:17.215247+05:30
+- **generated_at_ist:** n/a
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -26,6 +26,20 @@
 - no earnings within 21d: 11
 - event_risk_score <= 1: 11
 - TV rating not Sell: 11
+
+## Survivors (top 11 of 11)
+
+- **SREEL** [idea] score 88.1 — selected as idea
+- **CREDITACC** [watchlist] score 78.0 — score in Watch band (70–80)
+- **DIFFNKG** [watchlist] score 74.1 — score in Watch band (70–80)
+- **MANBA** [watchlist] score 72.6 — score in Watch band (70–80)
+- **SETL** [rejected] score 58.8 — score below Watch band
+- **NIBL** [rejected] score 56.0 — score below Watch band
+- **IDFCFIRSTB** [rejected] score 53.5 — T1 needs more than 22 trading days (~1 month)
+- **BANARBEADS** [rejected] score 51.6 — T1 needs more than 22 trading days (~1 month)
+- **EBGNG** [rejected] score 50.3 — score below Watch band
+- **ETERNAL** [rejected] score 48.3 — score below Watch band
+- **3IINFOLTD** [rejected] score 47.0 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -92,34 +106,34 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The Indian market remains bearish, with Nifty trending downwards and a medium overall risk level. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers. The India VIX is at a medium level of 14.03.
+The Indian market remains in a bearish regime with a medium overall risk level. The Nifty trend is bearish, with a 0.43% decline, and the India VIX is at 14.03, indicating medium volatility. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers.
 
-- **SREEL** [consider_entry/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — Parkhu score of 88.1 with a buy band
+- **SREEL** [consider_entry/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — Parkhu score of 88.1 with a buy band, and a defined risk-reward ratio
 
 ### AI stock reviews
 
-- **SREEL** [medium] SREEL's strong technical rating, bullish trend label, and high ADX14 value indicate a potential short-term swing opportunity. The stock's recent outperformance against Nifty and its sector, along with its strong delivery percentage, further supports this thesis. Given the bearish market regime, this setup could provide a relatively safer swing opportunity within the next month.
-  - catalysts: Strong technicals, Bullish trend, High delivery percentage
-  - risks: Bearish market regime, High India VIX, Retail trade sector risks
-  - watch: A break above the recent highs or a bounce from the stop level could trigger the swing, while a close below the stop level would invalidate this setup.
+- **SREEL** [high] SREEL's strong technical rating, coupled with its recent outperformance against the Nifty and its sector, makes it an attractive swing trade candidate in a bearish market regime. The stock's high delivery percentage and strong return over the past month also support a bullish thesis. With a parkhu score of 88.1, this setup fits a ≤1-month swing trade. The stock is also not far from its 52-week high, providing a clear target for the trade.
+  - catalysts: Strong technicals, Outperformance vs Nifty and sector, High delivery percentage
+  - risks: Bearish market regime, Sector risk in Retail Trade, Overall medium risk
+  - watch: Triggers for this trade include a strong breakout above the current price, while invalidation cues would be a drop below the stop level of 209.73. A failure to hold above the entry price could also be a sign of weakening momentum.
 
 ### Claude feed
 
-Bearish regime, defensive stance, top idea SREEL, caveats include incomplete score computation and no trade outcome history
+Bearish regime, defensive stance, top idea is SREEL, caveats include incomplete score computation and provisional scores
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Vedanta Oil and Gas Limited Intimation under Regulation 30 of SEBI Listing (VOGL) — The company has informed the Exchange regarding a significant update under SEBI Listing Regulations, which may impact the stock price and investor sentiment.
-2. **[high]** Sigachi Industries Postponement of Earnings Call (SIGACHI) — The postponement of the earnings call may indicate potential changes in the company's financial performance or strategy, affecting investor confidence and stock price.
-3. **[medium]** India VIX at 14.03, indicating Medium overall risk — The India VIX is a key indicator of market volatility, and its current level suggests a moderate level of risk, which may impact investor sentiment and market performance.
-4. **[medium]** FII Net Outflow of -3892.77 — The foreign institutional investor (FII) net outflow may indicate a decrease in foreign investment in the Indian market, potentially affecting the rupee value and stock prices.
-5. **[medium]** Bearish Market Regime — The current bearish market regime may lead to a decrease in stock prices and investor sentiment, making it essential for investors to be cautious and adjust their strategies accordingly.
-6. **[low]** Waaree Renewable Technologies Bagging/Receiving of orders/contracts (WAAREERTL) — The company has informed the Exchange about receiving new orders or contracts, which may have a positive impact on its financial performance and stock price.
-7. **[low]** IDFC First Bank Analysts/Institutional Investor Meet/Con. Call Updates (IDFCFIRSTB) — The company has informed the Exchange about an update on its analyst/institutional investor meet/conference call, which may provide insights into its financial performance and strategy.
-8. **[low]** Hindware Home Innovation Copy of Newspaper Publication (HINDWAREAP) — The company has informed the Exchange about a newspaper publication related to its annual general meeting, which may provide updates on its financial performance and future plans.
-9. **[low]** Eicher Motors Copy of Newspaper Publication (EICHERMOT) — The company has informed the Exchange about a newspaper advertisement for its annual general meeting, which may provide updates on its financial performance and future plans.
-10. **[low]** Neogen Chemicals Press Release (NEOGEN) — The company has informed the Exchange about a press release, which may provide updates on its financial performance, products, or strategy.
+1. **[high]** Vedanta Oil and Gas Limited Intimation under Regulation 30 of SEBI Listing (VOGL) — The company has informed the Exchange regarding a significant intimation under SEBI Listing Regulations, which could have a major impact on the stock price and investor sentiment.
+2. **[high]** Sigachi Industries Limited Postponement of earnings call (SIGACHI) — The postponement of the earnings call could indicate potential issues with the company's financial performance, which may impact investor confidence and the stock price.
+3. **[medium]** India VIX at 14.03, indicating medium overall risk — The India VIX is a measure of market volatility, and its current level indicates a medium level of risk in the market, which could impact investor sentiment and market movements.
+4. **[medium]** FII net outflow of -3892.77, indicating negative foreign investor sentiment — The negative FII net outflow could indicate a decrease in foreign investor confidence in the Indian market, which may impact the rupee and stock prices.
+5. **[medium]** Bearish market regime, indicating downward market trend — The current bearish market regime could indicate a downward trend in the market, which may impact investor sentiment and stock prices.
+6. **[low]** Hindware Home Innovation Limited Risk event (HINDWAREAP) — The company has informed the Exchange about a risk event, which could have a minor impact on the stock price and investor sentiment.
+7. **[low]** Waaree Renewable Technologies Limited Bagging/Receiving of orders/contracts (WAAREERTL) — The company has informed the Exchange about bagging or receiving orders/contracts, which could have a minor positive impact on the stock price and investor sentiment.
+8. **[low]** IDFC First Bank Limited Analysts/Institutional Investor Meet/Con. Call Updates (IDFCFIRSTB) — The company has informed the Exchange about updates on analysts/institutional investor meet/conference call, which could have a minor impact on the stock price and investor sentiment.
+9. **[low]** Neogen Chemicals Limited Press Release (NEOGEN) — The company has informed the Exchange about a press release, which could have a minor impact on the stock price and investor sentiment.
+10. **[low]** Transworld Shipping Lines Limited Memorandum of Understanding/Agreements (TRANSWORLD) — The company has informed the Exchange about a memorandum of understanding/agreements, which could have a minor impact on the stock price and investor sentiment.
 
 ## Deep-dive URLs (after push)
 
@@ -128,6 +142,7 @@ Bearish regime, defensive stance, top idea SREEL, caveats include incomplete sco
 - `report.json`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/report.json
 - `swing_brief.json`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.json
 - `swing_brief.md`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.md
+- `funnel_detail.json`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/funnel_detail.json
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json

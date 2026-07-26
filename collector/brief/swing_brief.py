@@ -42,6 +42,9 @@ from collector.utils import get_logger
 
 log = get_logger("swing_brief")
 
+# Desk / pack show at most this many symbols per gate list (and survivor outcomes).
+FUNNEL_SYMBOL_CAP = 50
+
 REQUIRED = (
     "symbol",
     "cmp",
@@ -216,6 +219,103 @@ def size_position(lv: dict, capital: float) -> dict:
     }
 
 
+def top_symbols(frame: pd.DataFrame, n: int = FUNNEL_SYMBOL_CAP) -> tuple[list[str], bool]:
+    """Return up to ``n`` symbols ranked by parkhu_score (desc), plus truncated flag."""
+    if frame is None or frame.empty or "symbol" not in frame.columns:
+        return [], False
+    ranked = frame
+    if "parkhu_score" in frame.columns:
+        ranked = frame.sort_values(
+            ["parkhu_score", "symbol"], ascending=[False, True], na_position="last"
+        )
+    else:
+        ranked = frame.sort_values("symbol")
+    syms = [str(s) for s in ranked["symbol"].tolist()]
+    return syms[:n], len(syms) > n
+
+
+def build_survivor_outcomes(
+    final_gate: pd.DataFrame,
+    rows: list[dict],
+    *,
+    ideas: list[dict],
+    watchlist: list[dict],
+    skipped_beyond_horizon: list[dict],
+    unaffordable_at_this_capital: list[dict],
+    queued_on_portfolio_limits: list[dict],
+    ignored_below_watch: list[dict],
+    n: int = FUNNEL_SYMBOL_CAP,
+) -> tuple[list[dict], int, bool]:
+    """Why each final-gate name was idea / watchlist / rejected (top ``n`` by score)."""
+    if final_gate is None or final_gate.empty:
+        return [], 0, False
+
+    idea_syms = {r["symbol"] for r in ideas}
+    watch_syms = {r["symbol"] for r in watchlist}
+    horizon = {r["symbol"]: r.get("reason") or "T1 beyond horizon mandate" for r in skipped_beyond_horizon}
+    unaff = {r["symbol"] for r in unaffordable_at_this_capital}
+    queued = {
+        r["symbol"]: r.get("reason") or "portfolio limits"
+        for r in queued_on_portfolio_limits
+    }
+    ignored = {r["symbol"] for r in ignored_below_watch}
+    leveled = {r["symbol"] for r in rows}
+
+    ranked = final_gate.sort_values(
+        ["parkhu_score", "symbol"], ascending=[False, True], na_position="last"
+    )
+    total = int(len(ranked))
+    truncated = total > n
+    outcomes: list[dict] = []
+    for _, r in ranked.head(n).iterrows():
+        sym = str(r["symbol"])
+        sc = float(r["parkhu_score"]) if pd.notna(r.get("parkhu_score")) else 0.0
+        band = (
+            "Buy"
+            if sc >= risk.BUY_SCORE
+            else "Watch"
+            if sc >= risk.WATCH_SCORE
+            else "Ignore"
+        )
+        if sym in idea_syms:
+            status, reason = "idea", "selected as idea"
+        elif sym in watch_syms:
+            status, reason = (
+                "watchlist",
+                f"score in Watch band ({risk.WATCH_SCORE:g}–{risk.BUY_SCORE:g})",
+            )
+        elif sym in queued:
+            status, reason = "rejected", str(queued[sym])
+        elif sym in unaff:
+            status, reason = "rejected", "unaffordable at this capital"
+        elif sym in horizon:
+            status, reason = "rejected", str(horizon[sym])
+        elif sym in ignored:
+            status, reason = "rejected", "score below Watch band"
+        elif sym not in leveled:
+            status, reason = "rejected", "R:R or levels failed MIN_RR_T1"
+        else:
+            status, reason = "rejected", "not selected"
+
+        cmp_v = r.get("cmp")
+        try:
+            cmp_out = round(float(cmp_v), 2) if pd.notna(cmp_v) else None
+        except (TypeError, ValueError):
+            cmp_out = None
+        outcomes.append(
+            {
+                "symbol": sym,
+                "score": round(sc, 1),
+                "band": band,
+                "cmp": cmp_out,
+                "risk_sector": r.get("risk_sector"),
+                "status": status,
+                "reason": reason,
+            }
+        )
+    return outcomes, total, truncated
+
+
 # ------------------------------------------------------------------ payload ----
 def build_payload(date: str, capital: float) -> dict:
     d = load_csv("stock_analysis", date)
@@ -242,6 +342,9 @@ def build_payload(date: str, capital: float) -> dict:
         "skipped_beyond_horizon": [],
         "unaffordable_at_this_capital": [],
         "ignored_below_watch": [],
+        "survivor_outcomes": [],
+        "survivor_outcomes_total": 0,
+        "survivor_outcomes_truncated": False,
     }
 
     if d.empty:
@@ -272,8 +375,24 @@ def build_payload(date: str, capital: float) -> dict:
 
     def gate(name: str, mask) -> None:
         nonlocal f
-        f = f[mask(f)].copy()
-        steps.append({"gate": name, "surviving": int(len(f))})
+        before = f
+        after = before[mask(before)].copy()
+        after_syms = set(after["symbol"].astype(str))
+        dropped = before[~before["symbol"].astype(str).isin(after_syms)]
+        surv_syms, surv_trunc = top_symbols(after)
+        drop_syms, drop_trunc = top_symbols(dropped)
+        f = after
+        steps.append(
+            {
+                "gate": name,
+                "surviving": int(len(f)),
+                "dropped_count": int(len(dropped)),
+                "survivor_symbols": surv_syms,
+                "dropped_symbols": drop_syms,
+                "survivor_symbols_truncated": surv_trunc,
+                "dropped_symbols_truncated": drop_trunc,
+            }
+        )
 
     truthy = lambda s: s.astype(str).str.lower().eq("true")  # noqa: E731
     gate("universe", lambda x: x["cmp"].notna())
@@ -312,6 +431,7 @@ def build_payload(date: str, capital: float) -> dict:
         lambda x: ~x["tech_rating"].astype(str).str.contains("sell", case=False, na=False),
     )
     payload["funnel"] = steps
+    final_gate = f.copy()
 
     rows: list[dict] = []
     skipped_horizon: list[dict] = []
@@ -456,6 +576,19 @@ def build_payload(date: str, capital: float) -> dict:
         "total_risk_pct": round(sum(r["sizing"]["risk_pct_of_capital"] for r in picked), 2),
         "sector_exposure": {k: round(v / capital * 100, 2) for k, v in sector_cost.items()},
     }
+    outcomes, outcomes_total, outcomes_trunc = build_survivor_outcomes(
+        final_gate,
+        rows,
+        ideas=payload["ideas"],
+        watchlist=payload["watchlist"],
+        skipped_beyond_horizon=payload["skipped_beyond_horizon"],
+        unaffordable_at_this_capital=payload["unaffordable_at_this_capital"],
+        queued_on_portfolio_limits=payload["queued_on_portfolio_limits"],
+        ignored_below_watch=payload["ignored_below_watch"],
+    )
+    payload["survivor_outcomes"] = outcomes
+    payload["survivor_outcomes_total"] = outcomes_total
+    payload["survivor_outcomes_truncated"] = outcomes_trunc
     payload["caveats"] = [
         f"{lost:g} of KB-14's 100 score points cannot be computed "
         f"({', '.join(missing_w) or 'none'}); scores are provisional",
@@ -770,6 +903,17 @@ def collect(date: str | None = None) -> dict:
         (settings.OUTPUT_DIR / "latest_brief.md").write_text(md, encoding="utf-8")
         with open(directory / "swing_brief.json", "w", encoding="utf-8") as fh:
             json.dump(payload, fh, indent=2, default=str)
+
+        funnel_detail = {
+            "data_date": date,
+            "symbol_cap": FUNNEL_SYMBOL_CAP,
+            "funnel": payload.get("funnel") or [],
+            "survivor_outcomes": payload.get("survivor_outcomes") or [],
+            "survivor_outcomes_total": payload.get("survivor_outcomes_total") or 0,
+            "survivor_outcomes_truncated": bool(payload.get("survivor_outcomes_truncated")),
+        }
+        with open(directory / "funnel_detail.json", "w", encoding="utf-8") as fh:
+            json.dump(funnel_detail, fh, indent=2, default=str)
 
         if payload.get("fatal"):
             log.error("brief incomplete: %s", payload["fatal"])

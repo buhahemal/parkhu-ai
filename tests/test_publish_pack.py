@@ -100,7 +100,26 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
         "kb_version": "test",
         "limits": {},
         "regime": {"market_regime": "Neutral", "india_vix": 12},
-        "funnel": [{"gate": "universe", "surviving": 10}],
+        "funnel": [
+            {
+                "gate": "universe",
+                "surviving": 10,
+                "dropped_count": 0,
+                "survivor_symbols": ["AAA"],
+                "dropped_symbols": [],
+            }
+        ],
+        "survivor_outcomes": [
+            {
+                "symbol": "AAA",
+                "score": 85,
+                "band": "Buy",
+                "status": "idea",
+                "reason": "selected as idea",
+            }
+        ],
+        "survivor_outcomes_total": 1,
+        "survivor_outcomes_truncated": False,
         "ideas": [
             {
                 "symbol": "AAA",
@@ -152,6 +171,9 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
     assert pack["collection_date"] == date
     assert pack["regime"]["market_regime"] == "Neutral"
     assert len(pack["ideas"]) == 1
+    assert pack["survivor_outcomes"][0]["symbol"] == "AAA"
+    assert "funnel_detail.json" in pack["urls"]["deep_dive"]
+    assert pack["analytics"]["funnel_conversions"][0]["survivor_symbols"] == ["AAA"]
     assert pack["ledger"]["needs_action"][0]["symbol"] == "BBB"
     assert len(pack["swing_candidates_top"]) == 1
     assert pack["analytics"]["ideas_count"] == 1

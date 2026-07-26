@@ -28,6 +28,7 @@ DEEP_DIVE_FILES = (
     "report.json",
     "swing_brief.json",
     "swing_brief.md",
+    "funnel_detail.json",
     "market_summary.csv",
 )
 
@@ -408,15 +409,23 @@ def _funnel_conversions(funnel: list) -> list[dict[str, Any]]:
             surviving = 0
         keep = None if prev in (None, 0) else round(100.0 * surviving / prev, 1)
         drop = None if prev is None else max(prev - surviving, 0)
-        out.append(
-            {
-                "gate": step.get("gate"),
-                "surviving": surviving,
-                "from_prev": prev,
-                "keep_pct": keep,
-                "dropped": drop,
-            }
-        )
+        try:
+            dropped_count = int(step["dropped_count"]) if step.get("dropped_count") is not None else drop
+        except (TypeError, ValueError):
+            dropped_count = drop
+        row: dict[str, Any] = {
+            "gate": step.get("gate"),
+            "surviving": surviving,
+            "from_prev": prev,
+            "keep_pct": keep,
+            "dropped": drop if drop is not None else dropped_count,
+            "dropped_count": dropped_count,
+            "survivor_symbols": step.get("survivor_symbols") or [],
+            "dropped_symbols": step.get("dropped_symbols") or [],
+            "survivor_symbols_truncated": bool(step.get("survivor_symbols_truncated")),
+            "dropped_symbols_truncated": bool(step.get("dropped_symbols_truncated")),
+        }
+        out.append(row)
         prev = surviving
     return out
 
@@ -540,6 +549,9 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
         "ideas": ideas,
         "watchlist": brief.get("watchlist") or [],
         "queued_on_portfolio_limits": brief.get("queued_on_portfolio_limits") or [],
+        "survivor_outcomes": brief.get("survivor_outcomes") or [],
+        "survivor_outcomes_total": brief.get("survivor_outcomes_total") or 0,
+        "survivor_outcomes_truncated": bool(brief.get("survivor_outcomes_truncated")),
         "analytics": build_analytics(brief_for_analytics, ideas, open_trades, needs_action),
         "ledger": {
             "open": open_trades,
@@ -631,6 +643,21 @@ def render_research_pack_md(pack: dict[str, Any]) -> str:
     ]
     for step in pack.get("funnel") or []:
         lines.append(f"- {step.get('gate')}: {step.get('surviving')}")
+    outcomes = pack.get("survivor_outcomes") or []
+    if outcomes:
+        total = pack.get("survivor_outcomes_total") or len(outcomes)
+        lines.extend(
+            [
+                "",
+                f"## Survivors (top {len(outcomes)} of {total})",
+                "",
+            ]
+        )
+        for row in outcomes:
+            lines.append(
+                f"- **{row.get('symbol')}** [{row.get('status')}] "
+                f"score {row.get('score')} — {row.get('reason')}"
+            )
     lines.extend(["", "## Ideas", ""])
     ideas = pack.get("ideas") or []
     if not ideas:

@@ -1,2 +1,2 @@
 trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,gap_flag,hit_t1,hit_t2,reconfirmed_count,notes
-2026-07-26-SREEL,SREEL,Sreeleathers Ltd.,Retail Trade,2026-07-26,,227.97,209.73,264.45,282.68,300.92,209.39,16,22,88.1,43,784.0,open,227.97,2026-07-26,0.0,0.0,False,False,False,0,
+2026-07-26-SREEL,SREEL,Sreeleathers Ltd.,Retail Trade,2026-07-26,,227.97,209.73,264.45,282.68,300.92,209.39,16,22,88.1,43,784.0,open,227.97,2026-07-26,0.0,0.0,False,False,False,1,

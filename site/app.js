@@ -127,12 +127,21 @@ function funnelConversions(funnel) {
     const surviving = Number(step.surviving) || 0;
     const keep = prev == null || prev === 0 ? null : round((100 * surviving) / prev, 1);
     const dropped = prev == null ? null : Math.max(prev - surviving, 0);
+    const droppedCount =
+      step.dropped_count != null && Number.isFinite(Number(step.dropped_count))
+        ? Number(step.dropped_count)
+        : dropped;
     out.push({
       gate: step.gate,
       surviving,
       from_prev: prev,
       keep_pct: keep,
-      dropped,
+      dropped: dropped ?? droppedCount,
+      dropped_count: droppedCount,
+      survivor_symbols: Array.isArray(step.survivor_symbols) ? step.survivor_symbols : [],
+      dropped_symbols: Array.isArray(step.dropped_symbols) ? step.dropped_symbols : [],
+      survivor_symbols_truncated: !!step.survivor_symbols_truncated,
+      dropped_symbols_truncated: !!step.dropped_symbols_truncated,
     });
     prev = surviving;
   }
@@ -198,6 +207,9 @@ function briefToPack(brief, date) {
     regime: brief.regime || {},
     funnel: brief.funnel || [],
     ideas,
+    survivor_outcomes: Array.isArray(brief.survivor_outcomes) ? brief.survivor_outcomes : [],
+    survivor_outcomes_total: brief.survivor_outcomes_total || 0,
+    survivor_outcomes_truncated: !!brief.survivor_outcomes_truncated,
     analytics: {
       funnel_conversions: funnelConversions(brief.funnel || []),
       sector_counts: sectorCounts(ideas, openRows),
@@ -216,6 +228,11 @@ function briefToPack(brief, date) {
       brief_md: `${RAW_ROOT}/${date}/swing_brief.md`,
       pack_json: `${RAW_ROOT}/${date}/research_pack.json`,
       folder: `https://github.com/buhahemal/parkhu-ai/tree/main/output/${date}`,
+      deep_dive: {
+        "funnel_detail.json": {
+          download_url: `${RAW_ROOT}/${date}/funnel_detail.json`,
+        },
+      },
     },
     _source_kind: "brief",
   };
@@ -687,19 +704,86 @@ function buildFunnelTip(gate) {
   return tip;
 }
 
-function renderFunnel(pack) {
+function mergeFunnelSteps(pack) {
+  const raw = Array.isArray(pack.funnel) ? pack.funnel : [];
+  const byGate = new Map(raw.map((s) => [s.gate, s]));
   const steps = pack.analytics?.funnel_conversions || [];
-  const funnel = steps.length
-    ? steps
-    : (pack.funnel || []).map((s, i, arr) => ({
-        gate: s.gate,
-        surviving: s.surviving,
-        keep_pct:
-          i === 0 || !arr[i - 1]?.surviving
-            ? null
-            : round((100 * s.surviving) / arr[i - 1].surviving, 1),
-        dropped: i === 0 ? null : Math.max((arr[i - 1]?.surviving || 0) - (s.surviving || 0), 0),
-      }));
+  const base = steps.length ? steps : funnelConversions(raw);
+  return base.map((s) => {
+    const src = byGate.get(s.gate) || {};
+    return {
+      ...s,
+      survivor_symbols: s.survivor_symbols?.length
+        ? s.survivor_symbols
+        : src.survivor_symbols || [],
+      dropped_symbols: s.dropped_symbols?.length ? s.dropped_symbols : src.dropped_symbols || [],
+      survivor_symbols_truncated:
+        s.survivor_symbols_truncated ?? !!src.survivor_symbols_truncated,
+      dropped_symbols_truncated: s.dropped_symbols_truncated ?? !!src.dropped_symbols_truncated,
+      dropped_count:
+        s.dropped_count ??
+        src.dropped_count ??
+        (s.dropped != null ? s.dropped : null),
+    };
+  });
+}
+
+function symbolChipList(symbols, { total, shownLabel }) {
+  const list = Array.isArray(symbols) ? symbols : [];
+  const wrap = el("div", { class: "funnel-chip-list" });
+  if (!list.length) {
+    wrap.append(el("span", { class: "muted" }, "None listed"));
+    return wrap;
+  }
+  if (total != null && total > list.length) {
+    wrap.append(
+      el("p", { class: "funnel-chip-note" }, `showing ${list.length} of ${total}`),
+    );
+  } else if (shownLabel) {
+    wrap.append(el("p", { class: "funnel-chip-note" }, shownLabel));
+  }
+  wrap.append(
+    ...list.map((sym) =>
+      el("span", { class: "chip funnel-sym-chip" }, symbolLink(sym)),
+    ),
+  );
+  return wrap;
+}
+
+function buildFunnelExpand(step) {
+  const surviving = Number(step.surviving) || 0;
+  const droppedN =
+    step.dropped_count != null ? Number(step.dropped_count) : Number(step.dropped) || 0;
+  const still = step.survivor_symbols || [];
+  const removed = step.dropped_symbols || [];
+  const details = el("details", { class: "funnel-expand" });
+  const summaryLabel =
+    still.length || removed.length
+      ? `Symbols · still in ${Math.min(still.length, surviving)} of ${surviving}` +
+        (droppedN ? ` · removed ${Math.min(removed.length, droppedN)} of ${droppedN}` : "")
+      : surviving
+        ? `Symbols (counts only — re-run collect for lists)`
+        : "Symbols";
+  details.append(el("summary", {}, summaryLabel));
+  const body = el("div", { class: "funnel-expand-body" });
+  body.append(
+    el("h4", {}, "Still in"),
+    symbolChipList(still, {
+      total: surviving,
+      shownLabel: still.length ? null : "No symbol sample for this step",
+    }),
+    el("h4", {}, "Removed"),
+    symbolChipList(removed, {
+      total: droppedN,
+      shownLabel: removed.length ? null : "No removals or no sample",
+    }),
+  );
+  details.append(body);
+  return details;
+}
+
+function renderFunnel(pack) {
+  const funnel = mergeFunnelSteps(pack);
 
   const viz = document.getElementById("funnel-viz");
   const drops = document.getElementById("funnel-drops");
@@ -745,6 +829,7 @@ function renderFunnel(pack) {
             el("span", { class: "funnel-meta" }, metaParts.join(" · ")),
           ),
         ),
+        buildFunnelExpand(s),
       );
     }),
   );
@@ -771,6 +856,102 @@ function renderFunnel(pack) {
       ),
     ),
   );
+}
+
+function renderSurvivors(pack) {
+  const body = document.getElementById("survivors-body");
+  const filters = document.getElementById("survivors-filters");
+  const sub = document.getElementById("survivors-sub");
+  if (!body || !filters) return;
+
+  const rows = Array.isArray(pack.survivor_outcomes) ? pack.survivor_outcomes : [];
+  const total = Number(pack.survivor_outcomes_total) || rows.length;
+  if (sub) {
+    sub.textContent =
+      total > rows.length
+        ? `Top ${rows.length} of ${total} by score — why selected or not`
+        : "Final gate passers — why selected or not";
+  }
+
+  if (!rows.length) {
+    filters.replaceChildren();
+    body.replaceChildren(el("p", { class: "empty" }, "No gate survivors for this day."));
+    return;
+  }
+
+  const modes = [
+    ["all", "All"],
+    ["idea", "Ideas"],
+    ["watchlist", "Watch"],
+    ["rejected", "Rejected"],
+  ];
+  let mode = filters.dataset.mode || "all";
+  if (!modes.some(([k]) => k === mode)) mode = "all";
+
+  const paint = () => {
+    filters.dataset.mode = mode;
+    filters.replaceChildren(
+      ...modes.map(([key, label]) => {
+        const count =
+          key === "all" ? rows.length : rows.filter((r) => r.status === key).length;
+        const btn = el(
+          "button",
+          {
+            type: "button",
+            class: `survivors-filter${mode === key ? " active" : ""}`,
+            "data-mode": key,
+          },
+          `${label} (${count})`,
+        );
+        btn.addEventListener("click", () => {
+          mode = key;
+          paint();
+        });
+        return btn;
+      }),
+    );
+
+    const shown = mode === "all" ? rows : rows.filter((r) => r.status === mode);
+    if (!shown.length) {
+      body.replaceChildren(el("p", { class: "empty" }, "No names in this filter."));
+      return;
+    }
+
+    const table = el("table", { class: "survivors-table" });
+    table.append(
+      el(
+        "thead",
+        {},
+        el(
+          "tr",
+          {},
+          el("th", {}, "Symbol"),
+          el("th", {}, "Score"),
+          el("th", {}, "Band"),
+          el("th", {}, "Status"),
+          el("th", {}, "Why"),
+        ),
+      ),
+    );
+    const tbody = el("tbody");
+    for (const r of shown) {
+      tbody.append(
+        el(
+          "tr",
+          {},
+          el("td", {}, symbolLink(r.symbol)),
+          el("td", {}, fmt(r.score, 1)),
+          el("td", {}, fmt(r.band, 0)),
+          el("td", {}, el("span", { class: `status-pill status-${r.status || "rejected"}` }, r.status || "—")),
+          el("td", { class: "survivors-reason" }, fmt(r.reason, 0)),
+        ),
+      );
+    }
+    table.append(tbody);
+    body.replaceChildren(table);
+  };
+
+  paint();
 }
 
 function renderRegime(pack) {
@@ -1605,6 +1786,7 @@ async function renderDesk(date) {
   renderHeader(pack);
   renderEnrichment(pack);
   renderFunnel(pack);
+  renderSurvivors(pack);
   renderRegime(pack);
   renderIdeas(pack);
   renderLedger(pack);

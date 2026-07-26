@@ -175,3 +175,14 @@ gate("turnover >= 50 cr", lambda x: x["turnover_20d_avg_cr"] >= 50)
 ```
 
 Keep gate order cheapest-first so the funnel stays readable as a narrowing story.
+
+## Funnel detail and Survivors
+
+Each funnel step also records **top 50** `survivor_symbols` and `dropped_symbols`
+(ranked by `parkhu_score`), with full `surviving` / `dropped_count` totals. Lists longer
+than 50 are truncated; the rest are ignored for desk display.
+
+Final-gate names get `survivor_outcomes` (again top 50 by score): `idea`, `watchlist`, or
+`rejected` plus a short reason (R:R fail, below Watch band, unaffordable, sector/portfolio
+cap, T1 beyond mandate, etc.). The same payload is written to `funnel_detail.json` and
+embedded in `research_pack.json` for the Pages desk Filters expand and Survivors page.

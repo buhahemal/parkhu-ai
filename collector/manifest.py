@@ -397,7 +397,32 @@ CATALOG = [
             "weights that had no live data this run.",
             "use_case": "Machine-readable hand-off; also the audit trail for why a name was "
             "or was not recommended.",
-            "key_columns": ["regime", "funnel", "ideas", "watchlist", "portfolio", "scoring"],
+            "key_columns": [
+                "regime",
+                "funnel",
+                "ideas",
+                "watchlist",
+                "portfolio",
+                "scoring",
+                "survivor_outcomes",
+            ],
+        },
+    ),
+    (
+        "funnel_detail.json",
+        {
+            "agent": "swing_brief (brief layer)",
+            "source": "stock_analysis + market_summary",
+            "description": "Per-gate top-50 still-in / removed symbols (by parkhu_score) "
+            "plus top-50 final-gate survivor_outcomes with why-not-selected reasons.",
+            "use_case": "Desk Filters expand + Survivors page; same capped lists also "
+            "embedded in research_pack / swing_brief.json.",
+            "key_columns": [
+                "funnel",
+                "survivor_outcomes",
+                "survivor_outcomes_total",
+                "symbol_cap",
+            ],
         },
     ),
     (
