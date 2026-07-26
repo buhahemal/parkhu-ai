@@ -156,11 +156,10 @@ CATALOG = [
         "news_enriched.csv",
         {
             "agent": "news_classify (derived)",
-            "source": "news.csv + keywords + optional free-tier GitHub Models",
-            "description": "Per-announcement sentiment/catalyst classification. "
-            "Keywords first; at most one Models batch/day for leftovers. "
-            "Never enable paid GitHub Models billing.",
-            "use_case": "Feed stock_analysis news_* columns without LLM in swing_brief.",
+            "source": "news.csv + keyword rules",
+            "description": "Per-announcement sentiment/catalyst classification "
+            "via deterministic keyword rules. Unmatched rows stay neutral.",
+            "use_case": "Feed stock_analysis news_* columns without an LLM.",
             "key_columns": [
                 "symbol",
                 "news_sentiment",

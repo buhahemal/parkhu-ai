@@ -116,14 +116,14 @@ promoter_pledge_pct_prev_q,fii_pct,dii_pct,mf_pct,public_pct,auditor_change_flag
 ### 6. News sentiment and catalyst classification — 15 points
 
 **Partially addressed.** `collector/derived/news_classify.py` writes `news_enriched.csv`
-(keyword rules first; **at most one** free-tier GitHub Models batch for leftovers),
-and `stock_analysis` joins per-symbol aggregates into `news_sentiment`,
-`catalyst_strength`, `major_catalyst`, `risk_event`, `news_score` / `news_score_final`.
-`news_count_7d` still comes from `event_risk` (same-day news window).
+via keyword rules, and `stock_analysis` joins per-symbol aggregates into
+`news_sentiment`, `catalyst_strength`, `major_catalyst`, `risk_event`,
+`news_score` / `news_score_final`. `news_count_7d` still comes from `event_risk`
+(same-day news window).
 
-Still open: multi-day rolling news history if NSE only returns a thin daily slice;
-verify Models is enabled on the repo with **paid Models billing left off** (free
-rate limits only — never opt into paid / BYOK). See README “GitHub Models”.
+Still open: richer classification for unmatched text; multi-day rolling news
+history if NSE only returns a thin daily slice. (GitHub Models was retired —
+not used here.)
 
 ### 7. Institutional activity — 10 points
 
@@ -236,7 +236,7 @@ add several minutes, and my brief fires at 06:09 IST.
 1. **OHLC history (#1)** — unblocks #2, #3, #10 and most of the technical score.
 2. **Trade log (#10)** — starts accumulating the only data that can validate any of this.
 3. **Promoter pledge (#5)** — closes an open governance veto.
-4. **News classification (#6)** — keyword + free Models path landed; harden coverage / 7d history.
+4. **News classification (#6)** — keyword path landed; harden coverage / 7d history.
 
 1 and 2 together change the brief from "here are plausible setups" to "here are setups,
 and here is how this process has actually performed."

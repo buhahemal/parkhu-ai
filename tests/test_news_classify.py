@@ -1,4 +1,4 @@
-"""Unit tests for keyword news classification (no Models network)."""
+"""Unit tests for keyword news classification."""
 
 from __future__ import annotations
 
@@ -34,10 +34,7 @@ def test_news_classify_in_registry_before_stock_analysis():
     assert labels.index("news_classify") < labels.index("stock_analysis")
 
 
-def test_collect_keyword_only_partial(tmp_path, monkeypatch):
-    monkeypatch.setenv("PARKHU_GH_MODELS", "0")
-    # Point output at tmp via run date + settings override of OUTPUT_DIR is hard;
-    # write into real daily dir is avoided by monkeypatching load/save.
+def test_collect_keyword_only(tmp_path, monkeypatch):
     from collector.derived import news_classify as nc
 
     news = pd.DataFrame(
@@ -73,7 +70,7 @@ def test_collect_keyword_only_partial(tmp_path, monkeypatch):
     result = collect("2026-07-25")
     assert result["agent"] == "news_classify"
     assert result["rows"] == 2
-    assert result["status"] == "partial"  # leftovers without Models
+    assert result["status"] == "ok"
     out = saved["news_enriched"]
     assert list(out.columns) == COLUMNS
     aaa = out[out["symbol"] == "AAA"].iloc[0]

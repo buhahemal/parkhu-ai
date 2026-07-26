@@ -1,18 +1,16 @@
-"""News classify — keyword rules + optional one GitHub Models batch/day.
+"""News classify — keyword rules over NSE announcements.
 
-Writes ``news_enriched.csv``. Free-tier only; never enable paid Models billing.
-On Models disabled / 429 / parse failure: keyword-only rows, status=partial.
+Writes ``news_enriched.csv`` for ``stock_analysis`` news_* columns.
+Unmatched rows keep neutral scores with ``classify_source=none``.
 """
 
 from __future__ import annotations
 
-import json
 import re
 from typing import Any
 
 import pandas as pd
 from collector.derived._utils import load_csv
-from collector.infra import github_models
 from collector.utils import empty_csv, get_logger, save_csv
 
 log = get_logger("news_classify")
@@ -106,15 +104,6 @@ _RULES: list[tuple[list[str], float, int, bool, bool]] = [
     ),
 ]
 
-_SYSTEM = (
-    "You classify NSE corporate announcements for Indian equity swing traders. "
-    'Return ONLY valid JSON with key "items": an array matching input ids. '
-    "Each item: id (int), news_sentiment (float -1..1), catalyst_strength (int 0..3), "
-    "major_catalyst (bool), risk_event (bool), news_score (int 0..15). "
-    "Higher catalyst_strength = more price-moving. risk_event=true if near-term "
-    "binary event (results, SEBI, default). Be conservative."
-)
-
 
 def _text(row: pd.Series) -> str:
     parts = [
@@ -157,67 +146,6 @@ def _neutral() -> dict[str, Any]:
     }
 
 
-def _models_batch(pending: list[tuple[int, str]]) -> dict[int, dict[str, Any]]:
-    """At most one Models call for all leftover rows. Empty dict on failure."""
-    if not pending or not github_models.models_enabled():
-        return {}
-
-    payload = [{"id": i, "text": t[:400]} for i, t in pending[:80]]
-    user = "Classify each announcement. Input JSON:\n" + json.dumps(
-        {"announcements": payload}, ensure_ascii=False
-    )
-    resp = github_models.chat_completion(
-        [
-            {"role": "system", "content": _SYSTEM},
-            {"role": "user", "content": user},
-        ],
-        max_tokens=2500,
-        temperature=0.1,
-        json_object=True,
-    )
-    data = github_models.completion_json(resp)
-    if not isinstance(data, dict):
-        return {}
-    items = data.get("items")
-    if not isinstance(items, list):
-        return {}
-
-    out: dict[int, dict[str, Any]] = {}
-    for item in items:
-        if not isinstance(item, dict):
-            continue
-        try:
-            idx = int(item["id"])
-        except (KeyError, TypeError, ValueError):
-            continue
-        try:
-            sent = float(item.get("news_sentiment", 0))
-        except (TypeError, ValueError):
-            sent = 0.0
-        sent = max(-1.0, min(1.0, sent))
-        try:
-            cat = int(item.get("catalyst_strength", 0))
-        except (TypeError, ValueError):
-            cat = 0
-        cat = max(0, min(3, cat))
-        major = bool(item.get("major_catalyst", False))
-        risk = bool(item.get("risk_event", False))
-        try:
-            score = int(item.get("news_score", 0))
-        except (TypeError, ValueError):
-            score = int(round(abs(sent) * 5 + cat * 3))
-        score = max(0, min(15, score))
-        out[idx] = {
-            "news_sentiment": sent,
-            "catalyst_strength": cat,
-            "major_catalyst": major,
-            "risk_event": risk,
-            "news_score": score,
-            "classify_source": "github_models",
-        }
-    return out
-
-
 def collect(date: str | None = None) -> dict:
     news = load_csv("news", date)
     if news.empty:
@@ -225,9 +153,6 @@ def collect(date: str | None = None) -> dict:
         return {"agent": "news_classify", "status": "partial", "rows": 0}
 
     rows: list[dict[str, Any]] = []
-    pending: list[tuple[int, str]] = []
-    pending_meta: list[dict[str, Any]] = []
-
     for _, r in news.iterrows():
         base = {
             "date": r.get("date", ""),
@@ -236,41 +161,16 @@ def collect(date: str | None = None) -> dict:
             "details": r.get("details", ""),
             "category": r.get("category", ""),
         }
-        kw = keyword_classify(_text(r))
-        if kw:
-            rows.append({**base, **kw})
-        else:
-            pending.append((len(pending_meta), _text(r)))
-            pending_meta.append(base)
-
-    models_used = False
-    if pending_meta:
-        classified = _models_batch(pending)
-        if classified:
-            models_used = True
-        for idx, base in enumerate(pending_meta):
-            cls = classified.get(idx) or {
-                **_neutral(),
-                "classify_source": "none",
-            }
-            rows.append({**base, **cls})
+        rows.append({**base, **(keyword_classify(_text(r)) or _neutral())})
 
     out = pd.DataFrame(rows, columns=COLUMNS)
-    # Stable order: original news order roughly by date/symbol
     if not out.empty and "date" in out.columns:
         out = out.sort_values(["date", "symbol"], kind="mergesort").reset_index(drop=True)
     save_csv(out, "news_enriched", date)
 
-    status = "ok" if not (pending_meta and not models_used) else "partial"
-
-    log.info(
-        "news_enriched %d rows (keyword=%d models_batch=%s status=%s)",
-        len(out),
-        int((out["classify_source"] == "keyword").sum()) if len(out) else 0,
-        models_used,
-        status,
-    )
-    return {"agent": "news_classify", "status": status, "rows": len(out)}
+    n_kw = int((out["classify_source"] == "keyword").sum()) if len(out) else 0
+    log.info("news_enriched %d rows (keyword=%d)", len(out), n_kw)
+    return {"agent": "news_classify", "status": "ok", "rows": len(out)}
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ produce a final recommendation — composite "Parkhu Score", thesis, sizing and
 conviction are left to the AI layer. Columns we have no source for yet
 (Supertrend, Ichimoku, OBV, CMF, ownership, earnings surprise)
 are present but left blank so the schema is stable. News fields come from
-``news_enriched.csv`` (keyword + optional free-tier GitHub Models).
+``news_enriched.csv`` (keyword rules).
 
 Phase 1 note: several columns were blank not because the data was missing but
 because this module never read it. tradingview.csv carries 110 columns and

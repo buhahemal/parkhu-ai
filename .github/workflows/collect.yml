@@ -10,7 +10,6 @@ env:
 
 permissions:
   contents: write             # needed to commit the day's output back
-  models: read                # free-tier GitHub Models for news_classify (no paid billing)
 
 jobs:
   collect:
@@ -35,12 +34,7 @@ jobs:
       - name: Unit tests
         run: pytest -q
 
-      # Free-tier Models only. Never enable paid GitHub Models billing.
-      # Local default is off unless PARKHU_GH_MODELS=1 + token.
       - name: Run Parkhu Data Collector
-        env:
-          PARKHU_GH_MODELS: "1"
-          PARKHU_GH_MODEL: openai/gpt-4o-mini
         run: python run.py
 
       # Data-bot commit: path-scoped only (output / logs / trades). Never stage

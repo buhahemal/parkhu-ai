@@ -283,8 +283,9 @@ def build_payload(date: str, capital: float) -> dict:
         payload["regime"] = row.where(pd.notna(row), None).to_dict()
 
     score, live_w, missing_w, lost = build_scores(d)
-    d = d.assign(parkhu_score=score)
-    d["risk_sector"] = d.apply(risk_sector, axis=1)
+    # Wide stock_analysis frames fragment after many column ops; one assign
+    # after copy avoids pandas PerformanceWarning on insert.
+    d = d.copy().assign(parkhu_score=score, risk_sector=d.apply(risk_sector, axis=1))
     payload["scoring"] = {
         "live_weights": live_w,
         "unavailable_components": missing_w,

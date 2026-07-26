@@ -39,7 +39,7 @@ numbers do and do not mean.
 | Delivery | `collector/delivery/` | delivery %, volume, turnover per symbol | NSE bhavcopy |
 | Corp Actions | `collector/corpactions/` | dividends, splits, bonus, buyback, ex-dates | NSE filings |
 | News | `collector/news/` | corporate announcements, board meetings | NSE |
-| News classify | `collector/derived/news_classify.py` | keyword + optional free-tier GitHub Models → `news_enriched.csv` | NSE text + Models |
+| News classify | `collector/derived/news_classify.py` | keyword catalyst/sentiment → `news_enriched.csv` | NSE announcement text |
 | Indices / Sectors | `collector/market/` | broad-market & sectoral index levels (incl. India VIX) | Yahoo Finance |
 | Macro / Global | `collector/macro/` | USDINR, gold/silver, crude, copper, DXY, Bitcoin; US (S&P/Nasdaq/Dow/VIX/yields); Asia (Nikkei/HangSeng/Shanghai/Kospi/Taiwan/ASX); Europe (FTSE/DAX/Stoxx); EM & India ETFs | Yahoo Finance |
 
@@ -49,7 +49,7 @@ numbers do and do not mean.
 |------|---------|
 | `relative_strength.csv` | Stock vs NIFTY / sector performance |
 | `event_risk.csv` | Earnings, corp actions, news within 21 days |
-| `news_enriched.csv` | Per-announcement sentiment / catalyst flags (keywords; ≤1 free Models batch/day) |
+| `news_enriched.csv` | Per-announcement sentiment / catalyst flags (keyword rules) |
 | `fno_momentum.csv` | OI buildup + F&O activity scores |
 | `swing_candidates.csv` | Top 20 for 2–3 week / ~5% swing template |
 | **`stock_analysis.csv`** | **Primary file** — one row/stock: all indicators, sub-scores, pivots/support/resistance, ATR trade levels |
@@ -147,27 +147,6 @@ Environment overrides:
 | `PARKHU_MAX_SYMBOLS` | cap the universe (e.g. `5` for testing) |
 | `PARKHU_RUN_DATE` | force the output date (e.g. `2026-06-20` for backfill) |
 | `PARKHU_UNIVERSE` | `nifty50` (default) or `tradingview` — drive the whole pipeline off the TradingView screener (~366 NSE names, mcap ≥ ₹20,000 cr) instead of the static Nifty 50 |
-| `PARKHU_GH_MODELS` | `1` enables free-tier GitHub Models for leftover news rows (CI sets this; **local default off**) |
-| `PARKHU_GH_MODEL` | Model id (default `openai/gpt-4o-mini`; fallback e.g. `microsoft/Phi-4-mini-instruct`) |
-| `PARKHU_GITHUB_TOKEN` | Optional local token with `models: read` (Actions uses `GITHUB_TOKEN`) |
-
-### GitHub Models (free tier only)
-
-News leftovers after the keyword pass use **at most one** batched inference call
-per collect run via [GitHub Models](https://github.com/marketplace?type=models).
-
-**Hard rules — $0 on GitHub for this feature:**
-
-1. Enable Models on the repo if you want CI enrichment, but **do not enable paid
-   Models usage / billing** on the account or org. Paid is opt-in and off by default;
-   if free quota is exhausted without paid enabled, requests are blocked (not billed).
-2. Do **not** use BYOK (own OpenAI/Azure keys) for this pipeline.
-3. Quality workflow (`scripts/quality.py` / `quality.yml`) never calls Models.
-4. Prefer Low rate-limit models (`openai/gpt-4o-mini`). Do not use o1/o3/gpt-5 /
-   DeepSeek-R1 / Grok on the daily cron.
-
-Playground prompt: [`.github/prompts/news-classify.prompt.yml`](.github/prompts/news-classify.prompt.yml).
-On 429 / Models disabled: pipeline still completes with keyword-only / `status=partial`.
 
 > The **TradingView agent always** writes the full ~366-name `tradingview.csv` in one
 > call regardless of `PARKHU_UNIVERSE`. The env var only controls whether the
