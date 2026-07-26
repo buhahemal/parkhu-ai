@@ -381,12 +381,43 @@ function wireNav() {
   setActive();
 }
 
+function fmtFlowCr(v) {
+  if (v == null || v === "" || !Number.isFinite(Number(v))) return "—";
+  const n = Number(v);
+  const abs = Math.abs(n);
+  if (abs >= 1000) return `${n < 0 ? "−" : ""}${(abs / 1000).toFixed(1)}k`;
+  return fmt(n, 0);
+}
+
+function avgOpenPnlPct(pack) {
+  const rows = pack.ledger?.open || [];
+  const vals = [];
+  for (const r of rows) {
+    if (r.entry && r.last_price != null && Number(r.entry) > 0) {
+      vals.push(((Number(r.last_price) - Number(r.entry)) / Number(r.entry)) * 100);
+    }
+  }
+  if (!vals.length) return null;
+  return vals.reduce((a, b) => a + b, 0) / vals.length;
+}
+
+function funnelSurvivors(pack) {
+  const steps = pack.analytics?.funnel_conversions || pack.funnel || [];
+  if (!steps.length) return null;
+  const last = steps[steps.length - 1];
+  return last?.surviving ?? null;
+}
+
+function avgIdeaScore(pack) {
+  const ideas = pack.ideas || [];
+  const vals = ideas.map((i) => Number(i.parkhu_score)).filter((n) => Number.isFinite(n));
+  if (!vals.length) return null;
+  return vals.reduce((a, b) => a + b, 0) / vals.length;
+}
+
 function renderHeader(pack) {
   const r = pack.regime || {};
-  const badge = document.getElementById("regime-badge");
   const cls = trendClass(r.market_regime);
-  badge.className = `badge ${cls}`;
-  badge.textContent = r.market_regime || "—";
 
   const asOf = pack.generated_at_ist || r.generated_at_ist || "—";
   const asOfShort = String(asOf).replace(/\+\d{2}:\d{2}$/, "").replace("T", " ").slice(0, 16);
@@ -397,54 +428,63 @@ function renderHeader(pack) {
 
   const a = pack.analytics || {};
   const book = a.book || {};
+  const nifty = r.nifty_pct_change;
+  const fii = r.fii_net;
+  const survivors = funnelSurvivors(pack);
+  const bookPnl = avgOpenPnlPct(pack);
+  const ideaScore = avgIdeaScore(pack);
+  const needs = book.needs_action ?? (pack.ledger?.needs_action || []).length;
+  const ideasN = a.ideas_count ?? (pack.ideas || []).length;
+
+  // Day pulse from pack (regime / funnel / ledger) — not Groq. Stance stays in AI strip.
   const kpis = [
+    [
+      "Nifty",
+      nifty == null ? "—" : `${nifty > 0 ? "+" : ""}${fmt(nifty, 2)}%`,
+      nifty > 0 ? "bull" : nifty < 0 ? "bear" : "",
+      "Nifty session change. Negative tape → fewer aggressive new risk adds; positive → more room to act on high-score ideas.",
+    ],
+    [
+      "FII flow",
+      fii == null ? "—" : `${fmtFlowCr(fii)} cr`,
+      fii > 0 ? "bull" : fii < 0 ? "bear" : "",
+      "Foreign institutional net buy/sell (₹ crore). Heavy FII selling often pairs with defensive stance; buying supports risk-on.",
+    ],
     [
       "India VIX",
       fmt(r.india_vix, 1),
-      "",
-      "India VIX — fear/volatility. Rising VIX → cut aggression on new swings; falling/stable → environment more tradable.",
+      Number(r.india_vix) >= 18 ? "warn" : "",
+      "India VIX — expected volatility. Rising/high VIX → cut aggression on new swings; calm VIX → environment more tradable.",
     ],
     [
-      "Open book",
-      fmt(book.open ?? (pack.ledger?.open || []).length, 0),
+      "Survivors",
+      survivors == null ? "—" : fmt(survivors, 0),
       "",
-      "Open suggestions still being tracked. High count → focus on management before adding new ideas.",
-    ],
-    [
-      "Needs action",
-      fmt(book.needs_action ?? (pack.ledger?.needs_action || []).length, 0),
-      book.needs_action ? "warn" : "",
-      "Positions flagged (earnings, missing data, etc.). Decide these first — exit/reduce/stand aside before new risk.",
+      "Names left after all hard gates. Thin survivors → weak breadth / tight day; many survivors → process found more candidates.",
     ],
     [
       "New ideas",
-      fmt(a.ideas_count ?? (pack.ideas || []).length, 0),
-      "",
-      "New names that cleared all gates today. Zero is OK. Use as Claude shortlist — not automatic buys.",
+      fmt(ideasN, 0),
+      ideasN > 0 ? "bull" : "",
+      "Buy-band ideas that cleared gates today. Zero is valid. Use as Claude shortlist — not automatic buys.",
     ],
     [
-      "Coverage",
-      a.score_coverage_pct != null ? `${fmt(a.score_coverage_pct, 0)}%` : "—",
-      a.score_coverage_pct != null && a.score_coverage_pct >= 70 ? "bull" : "",
-      "Share of KB score weights that are live. Low coverage → treat scores as provisional; demand stronger setup quality.",
+      "Needs action",
+      fmt(needs, 0),
+      needs ? "warn" : "",
+      "Open-book flags (earnings, missing data, etc.). Clear these before adding new risk.",
     ],
     [
-      "Avg MFE",
-      fmt(book.avg_mfe_pct, 1),
-      book.avg_mfe_pct > 0 ? "bull" : "",
-      "Average best favorable move on open book. Healthy MFE with weak P&L → review trailing / profit-taking rules.",
+      "Book P&L",
+      bookPnl == null ? "—" : `${bookPnl > 0 ? "+" : ""}${fmt(bookPnl, 1)}%`,
+      bookPnl > 0 ? "bull" : bookPnl < 0 ? "bear" : "",
+      "Average unrealized P&L% across open suggestions (entry → last). Pair with MFE/MAE in the ledger for management.",
     ],
     [
-      "Avg MAE",
-      fmt(book.avg_mae_pct, 1),
-      book.avg_mae_pct < 0 ? "bear" : "",
-      "Average worst drawdown on open book. Deep MAE → check stops and whether entries were too early.",
-    ],
-    [
-      "Risk",
-      fmt(r.overall_risk, 0),
-      "",
-      "Overall market risk label from regime. Elevated risk → fewer new ideas, tighter process discipline.",
+      "Idea score",
+      ideaScore == null ? "—" : fmt(ideaScore, 0),
+      ideaScore != null && ideaScore >= 80 ? "bull" : ideaScore != null && ideaScore < 75 ? "warn" : "",
+      "Average Parkhu score of today’s new ideas. Higher = stronger process fit on the shortlist.",
     ],
   ];
   const tipBox = document.getElementById("kpi-tip");
