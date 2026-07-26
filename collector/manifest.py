@@ -171,6 +171,24 @@ CATALOG = [
         },
     ),
     (
+        "research_pack.json",
+        {
+            "agent": "publish_pack",
+            "source": "swing_brief + trades + swing_candidates + market_summary",
+            "description": "Claude-sized daily handoff: regime, ideas, funnel, "
+            "open ledger, needs-action, top candidates, deep-dive URLs. "
+            "Also written as research_pack.md; mirrored under output/latest/.",
+            "use_case": "Morning LLM review without unzipping latest.zip.",
+            "key_columns": [
+                "collection_date",
+                "regime",
+                "ideas",
+                "ledger",
+                "urls",
+            ],
+        },
+    ),
+    (
         "macro.csv",
         {
             "agent": "macro",

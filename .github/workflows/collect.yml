@@ -9,7 +9,9 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
-  contents: write             # needed to commit the day's output back
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   collect:
@@ -54,6 +56,24 @@ jobs:
             git push
           fi
 
+      - name: Stage Pages artifact (workspace)
+        if: success()
+        run: |
+          mkdir -p _site/data
+          cp -R site/. _site/
+          touch _site/.nojekyll
+          if [ -f output/latest/research_pack.json ]; then
+            cp output/latest/research_pack.json _site/data/research_pack.json
+          else
+            echo '{"error":"research_pack.json missing"}' > _site/data/research_pack.json
+          fi
+
+      - name: Upload Pages artifact
+        if: success()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
       - name: Publish output links
         if: always()
         run: |
@@ -63,13 +83,16 @@ jobs:
           BASE_RAW="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
           BASE_BLOB="https://github.com/${REPO}/blob/${BRANCH}"
           OUT_DIR="output/${DATE}"
+          PAGES="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
 
           {
             echo "## Parkhu Data — ${DATE}"
             echo ""
-            echo "Public links to today's collected files (branch \`${BRANCH}\`):"
+            echo "**Claude handoff (no zip):** [research_pack.md](${BASE_RAW}/output/latest/research_pack.md) · [index.json](${BASE_RAW}/output/index.json)"
             echo ""
-            echo "**Folder:** [${OUT_DIR}/](${BASE_BLOB}/${OUT_DIR}/)"
+            echo "**Dashboard:** [${PAGES}](${PAGES})"
+            echo ""
+            echo "**Latest folder:** [output/latest/](${BASE_BLOB}/output/latest/)"
             echo ""
             echo "| File | Raw (direct) | Browse |"
             echo "|------|--------------|--------|"
@@ -81,10 +104,25 @@ jobs:
               echo "| _(no files — run may have failed)_ | | |"
             fi
             echo ""
-            echo "### Zip packages"
+            echo "### Zip packages (archive only)"
             echo ""
             echo "| Archive | Raw (direct) | Browse |"
             echo "|---------|--------------|--------|"
             echo "| \`${DATE}.zip\` | [raw](${BASE_RAW}/output/${DATE}.zip) | [view](${BASE_BLOB}/output/${DATE}.zip) |"
             echo "| \`latest.zip\` | [raw](${BASE_RAW}/output/latest.zip) | [view](${BASE_BLOB}/output/latest.zip) |"
           } >> "$GITHUB_STEP_SUMMARY"
+
+  pages:
+    needs: collect
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

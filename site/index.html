@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parkhu — daily brief</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">Parkhu</div>
+      <p class="tag">Daily swing brief — same pack Claude reads</p>
+      <div id="meta" class="meta">Loading…</div>
+    </header>
+
+    <main>
+      <section id="regime" class="panel" aria-labelledby="regime-h">
+        <h2 id="regime-h">Regime</h2>
+        <div id="regime-body" class="grid"></div>
+      </section>
+
+      <section id="ideas" class="panel" aria-labelledby="ideas-h">
+        <h2 id="ideas-h">Ideas</h2>
+        <div id="ideas-body"></div>
+      </section>
+
+      <section id="ledger" class="panel" aria-labelledby="ledger-h">
+        <h2 id="ledger-h">Open ledger</h2>
+        <div id="ledger-body"></div>
+      </section>
+
+      <section id="action" class="panel" aria-labelledby="action-h">
+        <h2 id="action-h">Needs action</h2>
+        <div id="action-body"></div>
+      </section>
+
+      <section id="funnel" class="panel" aria-labelledby="funnel-h">
+        <h2 id="funnel-h">Funnel</h2>
+        <div id="funnel-body" class="funnel"></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p id="links"></p>
+      <p class="muted">
+        Data from <code>output/latest/research_pack.json</code>. Zip not required.
+      </p>
+    </footer>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

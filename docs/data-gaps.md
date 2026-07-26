@@ -185,13 +185,11 @@ rows on stop / target / time-stop. Then the brief can quote a real hit rate.
 
 ### 11. No stable pointer to the newest run
 
-Consumers must list `output/` and sort, or guess the date. `latest.zip` exists but
-cannot be read by an LLM tool chain without unzipping — and note that
-`raw.githubusercontent.com` is blocked from my sandbox, so I reach the repo by
-`git clone` over `github.com` instead.
-
-Cheapest fix: commit `output/index.json` with `{"latest": "2026-07-25", "dates": [...]}`,
-and/or mirror the newest run to an uncompressed `output/latest/` folder.
+**Addressed.** Each collect writes `output/latest/` (uncompressed mirror),
+`output/index.json`, and `research_pack.md` / `.json`. See
+[`docs/claude-handoff.md`](claude-handoff.md). `latest.zip` remains archive-only.
+Note: some LLM sandboxes still block `raw.githubusercontent.com` — then clone or
+paste the pack.
 
 ### 12. Sector labels come from TradingView's taxonomy, and it breaks the 25% cap
 

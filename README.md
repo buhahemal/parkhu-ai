@@ -23,9 +23,10 @@ GitHub Actions (daily, pre-open)
 ```
 
 **Read this each morning:**
-[`output/latest_brief.md`](output/latest_brief.md) — see
-[`docs/swing-brief.md`](docs/swing-brief.md) for how it is built and what the
-numbers do and do not mean.
+
+- **Claude / LLM:** [`output/latest/research_pack.md`](output/latest/research_pack.md) — see [`docs/claude-handoff.md`](docs/claude-handoff.md) (no zip upload).
+- **Human brief:** [`output/latest_brief.md`](output/latest_brief.md) — see [`docs/swing-brief.md`](docs/swing-brief.md).
+- **Dashboard:** GitHub Pages (`site/`) after Actions deploy — same JSON as the pack.
 
 ## Agents
 
@@ -107,9 +108,12 @@ output/2026-06-21/
     market_summary.csv   ← one-row market regime
     swing_brief.md       ← THE BRIEF: sized, gated ideas with levels
     swing_brief.json     ← same, structured + audit trail
+    research_pack.md/.json ← Claude-sized handoff (regime + ideas + ledger)
     report.json
     manifest.json     ← data dictionary: what each file is + its use case
 
+output/latest/           ← full uncompressed mirror of newest dated folder
+output/index.json        ← { latest, pack_url, files… }
 output/latest_brief.md   ← stable path to the newest brief
 ```
 

@@ -134,3 +134,26 @@ def file_links(date: str, out_dir: Path | None = None) -> dict[str, dict[str, st
             "preview_url": preview_url(date, name),
         }
     return links
+
+
+def latest_download_url(filename: str) -> str | None:
+    """Raw URL under output/latest/<filename> (stable uncompressed path)."""
+    slug = repo_slug()
+    if not slug:
+        return None
+    return f"https://raw.githubusercontent.com/{slug}/{repo_branch()}/output/latest/{filename}"
+
+
+def latest_folder_preview_url() -> str | None:
+    slug = repo_slug()
+    if not slug:
+        return None
+    return f"https://github.com/{slug}/tree/{repo_branch()}/output/latest"
+
+
+def output_root_download_url(filename: str) -> str | None:
+    """Raw URL for a file directly under output/ (e.g. index.json)."""
+    slug = repo_slug()
+    if not slug:
+        return None
+    return f"https://raw.githubusercontent.com/{slug}/{repo_branch()}/output/{filename}"

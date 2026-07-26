@@ -14,6 +14,8 @@ run.py                  # thin CLI entrypoint
 
 brief/     → derived/ → collectors (I/O) → infra (utils, yf_history, publish)
 config/    # settings, universe, risk, publish (shared config)
+publish_pack  # research_pack + output/latest/ + index.json (LLM handoff)
+site/         # static GitHub Pages dashboard (same pack JSON)
 ```
 
 **Rules**
