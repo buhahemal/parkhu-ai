@@ -60,7 +60,7 @@
         <nav class="nav" aria-label="Jump">
           <a href="#overview" class="active">Overview</a>
           <a href="#ai-desk">AI desk</a>
-          <a href="#funnel">Funnel</a>
+          <a href="#funnel">Filters</a>
           <a href="#regime">Regime</a>
           <a href="#ideas">Ideas</a>
           <a href="#ledger">Ledger</a>
@@ -127,18 +127,18 @@
           <section id="funnel" class="panel hero">
             <div class="panel-head">
               <div>
-                <h2>Gate funnel</h2>
-                <p class="panel-sub">Universe survival through hard filters</p>
+                <h2>How stocks get filtered</h2>
+                <p class="panel-sub">Each step removes names that fail a hard rule</p>
               </div>
               <details class="guide">
                 <summary>Guide</summary>
                 <div class="guide-body">
-                  <p><strong>Shows:</strong> how many symbols survive each hard filter and keep-% vs the prior step.</p>
-                  <p><strong>Decide:</strong> early collapse → weak breadth, fewer new ideas. Late drops (earnings) → process working; don’t loosen gates.</p>
+                  <p><strong>Shows:</strong> top → bottom how many symbols survive each hard filter, with keep-% vs the prior step. Tap <strong>?</strong> on a step for what it means and why it applies.</p>
+                  <p><strong>Decide:</strong> early collapse → weak breadth, fewer new ideas. Late drops (earnings) → process working; don’t loosen filters.</p>
                 </div>
               </details>
             </div>
-            <div class="chart-wrap tall"><canvas id="funnel-chart"></canvas></div>
+            <div id="funnel-viz" class="funnel-viz" aria-label="Filter steps"></div>
             <div id="funnel-drops" class="drops"></div>
           </section>
 

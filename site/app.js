@@ -538,6 +538,155 @@ function renderHeader(pack) {
   );
 }
 
+/** Plain-language help for each hard filter (matched by gate-name pattern). */
+const FILTER_HELP = [
+  {
+    test: (g) => /^universe$/i.test(g),
+    what: "Every stock in today’s scanned list that has a usable last price.",
+    why: "Starting point — you cannot filter what you cannot price.",
+  },
+  {
+    test: (g) => /trend\s*=\s*bullish/i.test(g),
+    what: "The stock’s chart trend label is bullish (price structure pointing up, not sideways/down).",
+    why: "Swing ideas are meant to ride strength; buying into a confirmed downtrend fights the tape.",
+  },
+  {
+    test: (g) => /sma\s*200/i.test(g),
+    what: "SMA = Simple Moving Average. SMA200 = average closing price over the last 200 trading days (about 10 months).",
+    why: "Price above the long-term average is a classic “still in a long-term uptrend” check. Many traders trust SMA200 as a rough bull/bear line for the stock’s bigger picture.",
+  },
+  {
+    test: (g) => /ema\s*50/i.test(g),
+    what: "EMA = Exponential Moving Average (recent prices count more). EMA50 ≈ average of the last 50 sessions with more weight on the latest days.",
+    why: "Confirms the medium-term trend is still supportive. It reacts faster than SMA200 — a stock can be above the long average but already rolling over; EMA50 catches that earlier.",
+  },
+  {
+    test: (g) => /adx/i.test(g),
+    what: "ADX = Average Directional Index, usually over 14 days. It measures how strong a trend is (0–100), not whether it is up or down.",
+    why: "A stock can look “up” but be limp. ADX above ~25 means the trend has real force — better for swings than a weak drift. Below that, breakouts often fail.",
+  },
+  {
+    test: (g) => /rsi/i.test(g),
+    what: "RSI = Relative Strength Index (14-day). Oscillator from 0–100 for recent up vs down momentum — not “strength vs Nifty”.",
+    why: "In an uptrend we want participation without extremes: too low can mean still weak; too high can mean stretched. The band keeps names that are constructive, not already exhausted.",
+  },
+  {
+    test: (g) => /\brs\b/i.test(g) && /nifty/i.test(g),
+    what: "RS = Relative Strength vs the index/sector (1-month): has this stock beaten Nifty and its sector?",
+    why: "Prefer leaders. Even in a good market, laggards often keep lagging; outperformance improves odds for a swing.",
+  },
+  {
+    test: (g) => /delivery/i.test(g),
+    what: "Share of traded volume that was delivery (bought to hold) vs intraday squaring-off (NSE delivery %).",
+    why: "Higher delivery often means real accumulation, not just day-trader noise. Low delivery can mean the move is fragile.",
+  },
+  {
+    test: (g) => /earnings/i.test(g),
+    what: "Next results are not inside the near-term earnings blackout window.",
+    why: "Earnings can gap the stock through stops overnight. Stand aside in the blackout so a binary event does not own the trade.",
+  },
+  {
+    test: (g) => /event_risk/i.test(g),
+    what: "A simple event-risk flag/score from the analysis feed (corporate/event overhang).",
+    why: "Skip names with elevated near-term event risk even if the chart looks fine.",
+  },
+  {
+    test: (g) => /tv rating|tech_rating|not sell/i.test(g),
+    what: "TradingView technical rating is not in the Sell zone.",
+    why: "Avoid fighting a broad technical “Sell” consensus when we only want constructive setups.",
+  },
+];
+
+function filterHelpFor(gate) {
+  const g = String(gate || "");
+  return FILTER_HELP.find((h) => h.test(g)) || null;
+}
+
+function closeFunnelTips(except) {
+  document.querySelectorAll(".funnel-tip.is-open").forEach((tip) => {
+    if (tip === except) return;
+    tip.classList.remove("is-open", "is-pinned", "flip");
+    const btn = tip.querySelector(".funnel-tip-btn");
+    if (btn) btn.setAttribute("aria-expanded", "false");
+  });
+}
+
+function positionFunnelTip(tip) {
+  tip.classList.remove("flip");
+  const pop = tip.querySelector(".funnel-tip-pop");
+  if (!pop) return;
+  const rect = pop.getBoundingClientRect();
+  if (rect.bottom > window.innerHeight - 12) tip.classList.add("flip");
+}
+
+function wireFunnelTipGlobal() {
+  if (wireFunnelTipGlobal.done) return;
+  wireFunnelTipGlobal.done = true;
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeFunnelTips();
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".funnel-tip")) closeFunnelTips();
+  });
+}
+
+function buildFunnelTip(gate) {
+  const help = filterHelpFor(gate);
+  if (!help) return null;
+
+  const tipId = `funnel-tip-${String(gate).replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`;
+  const btn = el(
+    "button",
+    {
+      type: "button",
+      class: "funnel-tip-btn",
+      "aria-label": "What this filter means",
+      "aria-expanded": "false",
+      "aria-controls": tipId,
+    },
+    "?",
+  );
+  const pop = el(
+    "div",
+    { id: tipId, class: "funnel-tip-pop", role: "tooltip" },
+    el("p", {}, el("strong", {}, "What"), " ", help.what),
+    el("p", {}, el("strong", {}, "Why"), " ", help.why),
+    el("p", {}, el("strong", {}, "Rule"), " ", String(gate)),
+  );
+  const tip = el("div", { class: "funnel-tip" }, btn, pop);
+
+  const openTip = ({ pin = false } = {}) => {
+    closeFunnelTips(tip);
+    tip.classList.add("is-open");
+    if (pin) tip.classList.add("is-pinned");
+    btn.setAttribute("aria-expanded", "true");
+    requestAnimationFrame(() => positionFunnelTip(tip));
+  };
+  const closeTip = () => {
+    tip.classList.remove("is-open", "is-pinned", "flip");
+    btn.setAttribute("aria-expanded", "false");
+  };
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (tip.classList.contains("is-pinned")) closeTip();
+    else openTip({ pin: true });
+  });
+  tip.addEventListener("mouseenter", () => openTip({ pin: tip.classList.contains("is-pinned") }));
+  tip.addEventListener("mouseleave", () => {
+    if (!tip.classList.contains("is-pinned")) closeTip();
+  });
+  btn.addEventListener("focus", () => openTip({ pin: tip.classList.contains("is-pinned") }));
+  btn.addEventListener("blur", () => {
+    // Delay so focus can move into the tip without flicker.
+    setTimeout(() => {
+      if (!tip.contains(document.activeElement) && !tip.classList.contains("is-pinned")) closeTip();
+    }, 0);
+  });
+
+  return tip;
+}
+
 function renderFunnel(pack) {
   const steps = pack.analytics?.funnel_conversions || [];
   const funnel = steps.length
@@ -552,71 +701,66 @@ function renderFunnel(pack) {
         dropped: i === 0 ? null : Math.max((arr[i - 1]?.surviving || 0) - (s.surviving || 0), 0),
       }));
 
+  const viz = document.getElementById("funnel-viz");
   const drops = document.getElementById("funnel-drops");
+  if (!viz || !drops) return;
+
+  wireFunnelTipGlobal();
+
   if (!funnel.length) {
-    drops.replaceChildren(el("p", { class: "empty" }, "No funnel data."));
+    viz.replaceChildren(el("p", { class: "empty" }, "No filter data for this day."));
+    drops.replaceChildren();
     return;
   }
 
-  const labels = funnel.map((s) => String(s.gate || "").replace(/^(.{28}).+/, "$1…"));
-  makeChart(document.getElementById("funnel-chart"), {
-    type: "bar",
-    data: {
-      labels,
-      datasets: [
-        {
-          label: "Surviving",
-          data: funnel.map((s) => s.surviving),
-          backgroundColor: CHART_COLORS.barSoft,
-          borderColor: CHART_COLORS.accent,
-          borderWidth: 1,
-          borderRadius: 6,
-        },
-      ],
-    },
-    options: {
-      indexAxis: "y",
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: CHART_COLORS.tooltipBg,
-          titleColor: CHART_COLORS.ink,
-          bodyColor: CHART_COLORS.muted,
-          borderColor: CHART_COLORS.line,
-          borderWidth: 1,
-          callbacks: {
-            afterBody(items) {
-              const i = items[0]?.dataIndex;
-              const s = funnel[i];
-              if (!s) return "";
-              const keep = s.keep_pct != null ? `Keep ${s.keep_pct}%` : "Universe";
-              const drop = s.dropped != null ? ` · dropped ${s.dropped}` : "";
-              return keep + drop;
+  const maxN = Math.max(...funnel.map((s) => Number(s.surviving) || 0), 1);
+
+  viz.replaceChildren(
+    ...funnel.map((s) => {
+      const n = Number(s.surviving) || 0;
+      const pctW = Math.max(8, Math.round((100 * n) / maxN));
+      const tight = s.keep_pct != null && s.keep_pct < 50;
+      const metaParts = [String(n)];
+      if (s.keep_pct != null) metaParts.push(`keep ${s.keep_pct}%`);
+      if (s.dropped != null) metaParts.push(`−${s.dropped}`);
+
+      const labelKids = [el("span", { class: "funnel-name" }, s.gate || "—")];
+      const tip = buildFunnelTip(s.gate);
+      if (tip) labelKids.push(tip);
+      const labelRow = el("div", { class: "funnel-label" }, ...labelKids);
+
+      return el(
+        "div",
+        { class: `funnel-stage${tight ? " tight" : ""}` },
+        labelRow,
+        el(
+          "div",
+          { class: "funnel-track" },
+          el(
+            "div",
+            {
+              class: "funnel-bar",
+              style: `width:${pctW}%`,
             },
-          },
-        },
-      },
-      scales: {
-        x: {
-          grid: { color: CHART_COLORS.line },
-          ticks: { color: CHART_COLORS.muted },
-        },
-        y: {
-          grid: { display: false },
-          ticks: { color: CHART_COLORS.ink, font: { size: 10 } },
-        },
-      },
-    },
-  });
+            el("span", { class: "funnel-meta" }, metaParts.join(" · ")),
+          ),
+        ),
+      );
+    }),
+  );
 
   const hot = funnel
     .filter((s) => s.keep_pct != null && s.keep_pct < 50)
     .sort((a, b) => a.keep_pct - b.keep_pct)
     .slice(0, 4);
+  if (!hot.length) {
+    drops.replaceChildren(
+      el("span", { class: "chip" }, "No single filter cut more than half the remaining names."),
+    );
+    return;
+  }
   drops.replaceChildren(
-    el("span", { class: "chip" }, "Tightest gates:"),
+    el("span", { class: "chip" }, "Tightest filters:"),
     ...hot.map((s) =>
       el(
         "span",
