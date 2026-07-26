@@ -87,4 +87,4 @@
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
 - pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.json
 
-Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip.
+Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.

@@ -3,53 +3,98 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Parkhu — daily brief</title>
+    <title>Parkhu desk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   </head>
   <body>
     <header class="top">
-      <div class="brand">Parkhu</div>
-      <p class="tag">Daily swing brief — same pack Claude reads</p>
+      <div class="brand-row">
+        <div class="brand">Parkhu</div>
+        <div id="regime-badge" class="badge">—</div>
+      </div>
+      <p class="tag">Process &amp; market desk — capital tracked in Claude, not here</p>
       <div id="meta" class="meta">Loading…</div>
+      <div id="kpi" class="kpi" aria-label="Key metrics"></div>
     </header>
 
+    <nav class="nav" aria-label="Sections">
+      <a href="#funnel">Funnel</a>
+      <a href="#regime">Regime</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#ledger">Ledger</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#quality">Quality</a>
+    </nav>
+
     <main>
+      <section id="funnel" class="panel" aria-labelledby="funnel-h">
+        <h2 id="funnel-h">Gate funnel</h2>
+        <p class="hint">Survivors per gate and keep-% vs prior step</p>
+        <div class="chart-wrap tall">
+          <canvas id="funnel-chart"></canvas>
+        </div>
+        <div id="funnel-drops" class="drops"></div>
+      </section>
+
       <section id="regime" class="panel" aria-labelledby="regime-h">
-        <h2 id="regime-h">Regime</h2>
-        <div id="regime-body" class="grid"></div>
+        <h2 id="regime-h">Regime board</h2>
+        <div id="regime-stats" class="grid"></div>
+        <div class="charts-2">
+          <div class="chart-wrap">
+            <canvas id="flow-chart"></canvas>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="cues-chart"></canvas>
+          </div>
+        </div>
       </section>
 
       <section id="ideas" class="panel" aria-labelledby="ideas-h">
         <h2 id="ideas-h">Ideas</h2>
-        <div id="ideas-body"></div>
+        <div class="charts-2">
+          <div class="chart-wrap">
+            <canvas id="scores-chart"></canvas>
+          </div>
+          <div id="ideas-body"></div>
+        </div>
       </section>
 
       <section id="ledger" class="panel" aria-labelledby="ledger-h">
         <h2 id="ledger-h">Open ledger</h2>
-        <div id="ledger-body"></div>
+        <div id="action-body" class="action-strip"></div>
+        <div class="charts-2">
+          <div class="chart-wrap">
+            <canvas id="mfe-chart"></canvas>
+          </div>
+          <div id="ledger-body"></div>
+        </div>
       </section>
 
-      <section id="action" class="panel" aria-labelledby="action-h">
-        <h2 id="action-h">Needs action</h2>
-        <div id="action-body"></div>
+      <section id="sectors" class="panel" aria-labelledby="sectors-h">
+        <h2 id="sectors-h">Sector concentration</h2>
+        <p class="hint">Name counts (ideas + open) — not capital weights</p>
+        <div class="chart-wrap">
+          <canvas id="sector-chart"></canvas>
+        </div>
       </section>
 
-      <section id="funnel" class="panel" aria-labelledby="funnel-h">
-        <h2 id="funnel-h">Funnel</h2>
-        <div id="funnel-body" class="funnel"></div>
+      <section id="quality" class="panel" aria-labelledby="quality-h">
+        <h2 id="quality-h">Data quality</h2>
+        <div id="quality-body"></div>
       </section>
     </main>
 
     <footer class="foot">
       <p id="links"></p>
       <p class="muted">
-        Data from <code>output/latest/research_pack.json</code>. Zip not required.
+        Same <code>research_pack.json</code> Claude reads. No zip. No capital on this desk.
       </p>
     </footer>
     <script src="./app.js" type="module"></script>

@@ -16,11 +16,14 @@ Do **not** upload `latest.zip`. Use the stable uncompressed pack.
 
 ## What the pack contains
 
-- Market regime and funnel
-- New ideas with entry / stop / targets / sizing
+- Market regime and funnel (+ `analytics.funnel_conversions` for the Pages desk)
+- New ideas with entry / stop / targets (capital / deployment sizing is for Claude)
 - Open suggestion ledger + **needs action** from the brief review
 - Top swing candidates (not the full 364-row universe)
-- Deep-dive raw URLs for `stock_analysis.csv`, `manifest.json`, `report.json`, brief
+- Deep-dive raw URLs for `stock_analysis.csv`, `manifest.json`, `report.json`
+
+The **GitHub Pages desk** is process + market visibility (funnel charts, regime, ledger).
+It intentionally does **not** show capital deployed — keep that conversation in Claude., brief
 
 ## Drill-down
 

@@ -106,6 +106,88 @@ def _closed_today(date: str) -> list[dict[str, Any]]:
     return []
 
 
+def _funnel_conversions(funnel: list) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    prev: int | None = None
+    for step in funnel:
+        if not isinstance(step, dict):
+            continue
+        try:
+            surviving = int(step.get("surviving") or 0)
+        except (TypeError, ValueError):
+            surviving = 0
+        keep = None if prev in (None, 0) else round(100.0 * surviving / prev, 1)
+        drop = None if prev is None else max(prev - surviving, 0)
+        out.append(
+            {
+                "gate": step.get("gate"),
+                "surviving": surviving,
+                "from_prev": prev,
+                "keep_pct": keep,
+                "dropped": drop,
+            }
+        )
+        prev = surviving
+    return out
+
+
+def _sector_counts(ideas: list, open_trades: list) -> list[dict[str, Any]]:
+    counts: dict[str, int] = {}
+    for row in list(ideas) + list(open_trades):
+        if not isinstance(row, dict):
+            continue
+        sec = str(row.get("risk_sector") or row.get("sector") or "Unknown").strip() or "Unknown"
+        counts[sec] = counts.get(sec, 0) + 1
+    return [
+        {"sector": k, "names": v} for k, v in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    ]
+
+
+def _book_stats(open_trades: list, needs_action: list) -> dict[str, Any]:
+    mfe: list[float] = []
+    mae: list[float] = []
+    for r in open_trades:
+        if not isinstance(r, dict):
+            continue
+        try:
+            if r.get("mfe_pct") is not None:
+                mfe.append(float(r["mfe_pct"]))
+        except (TypeError, ValueError):
+            pass
+        try:
+            if r.get("mae_pct") is not None:
+                mae.append(float(r["mae_pct"]))
+        except (TypeError, ValueError):
+            pass
+    return {
+        "open": len(open_trades),
+        "needs_action": len(needs_action),
+        "avg_mfe_pct": round(sum(mfe) / len(mfe), 2) if mfe else None,
+        "avg_mae_pct": round(sum(mae) / len(mae), 2) if mae else None,
+    }
+
+
+def build_analytics(
+    brief: dict[str, Any], ideas: list, open_trades: list, needs_action: list
+) -> dict:
+    """Desk metrics for Pages — no capital / deployment figures."""
+    funnel = brief.get("funnel") if isinstance(brief.get("funnel"), list) else []
+    scoring = brief.get("scoring") if isinstance(brief.get("scoring"), dict) else {}
+    lost = scoring.get("weight_unavailable_pct")
+    try:
+        coverage = round(100.0 - float(lost), 1) if lost is not None else None
+    except (TypeError, ValueError):
+        coverage = None
+    return {
+        "funnel_conversions": _funnel_conversions(funnel),
+        "sector_counts": _sector_counts(ideas, open_trades),
+        "book": _book_stats(open_trades, needs_action),
+        "ideas_count": len(ideas),
+        "score_coverage_pct": coverage,
+        "caveats": brief.get("caveats") if isinstance(brief.get("caveats"), list) else [],
+    }
+
+
 def build_research_pack(date: str | None = None) -> dict[str, Any]:
     """Assemble the Claude-sized pack dict (not yet written)."""
     date = date or settings.run_date()
@@ -122,6 +204,9 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
         if isinstance(r, dict)
         and str(r.get("action") or "").upper() not in ("", "HOLD", "HOLD / TRAIL")
     ]
+    ideas = brief.get("ideas") or []
+    if not isinstance(ideas, list):
+        ideas = []
     candidates = _csv_records(out / "swing_candidates.csv", limit=CANDIDATES_TOP_N)
 
     deep: dict[str, dict[str, str | None]] = {}
@@ -133,24 +218,21 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
         }
 
     pack: dict[str, Any] = {
-        "schema": "parkhu.research_pack.v1",
+        "schema": "parkhu.research_pack.v2",
         "collection_date": date,
         "session_date": settings.session_date(date),
         "is_trading_day": settings.is_trading_day(date),
         "generated_at_ist": None,  # filled by caller from report if available
+        # capital kept for Claude handoff; Pages desk does not display it
         "capital": brief.get("capital"),
         "kb_version": brief.get("kb_version"),
         "limits": brief.get("limits") or {},
         "regime": _regime_from_sources(brief, date),
         "funnel": brief.get("funnel") or [],
-        "ideas": brief.get("ideas") or [],
+        "ideas": ideas,
         "watchlist": brief.get("watchlist") or [],
         "queued_on_portfolio_limits": brief.get("queued_on_portfolio_limits") or [],
-        "portfolio": {
-            **(brief.get("portfolio") if isinstance(brief.get("portfolio"), dict) else {}),
-            "open_count": len(open_trades),
-            "ideas_count": len(brief.get("ideas") or []),
-        },
+        "analytics": build_analytics(brief, ideas, open_trades, needs_action),
         "ledger": {
             "open": open_trades,
             "review": reviewed,
@@ -171,7 +253,8 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
         "howto": (
             "Start with this pack. Use urls.deep_dive for symbol-level CSVs. "
             "Prefer output/latest/ stable paths after the run is pushed. "
-            "Do not require latest.zip."
+            "Do not require latest.zip. Capital / deployment sizing is for Claude; "
+            "the Pages desk is process and market visibility only."
         ),
     }
     return pack

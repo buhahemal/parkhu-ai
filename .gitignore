@@ -13,6 +13,9 @@ env/
 reports/
 jscpd-report/
 
+# Local Pages preview copy (CI injects data/ at deploy time)
+site/data/
+
 # Logs
 logs/*.log
 

@@ -7,6 +7,7 @@ import json
 import pandas as pd
 from collector.publish_pack import (
     _json_safe,
+    build_analytics,
     build_research_pack,
     mirror_latest,
     render_research_pack_md,
@@ -54,7 +55,8 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
             }
         ],
         "watchlist": [],
-        "portfolio": {"capital_deployed_pct": 5.0},
+        "scoring": {"weight_unavailable_pct": 35.0},
+        "caveats": ["test caveat"],
         "review": {
             "reviewed": [
                 {"symbol": "BBB", "action": "EARNINGS AHEAD", "detail": "soon"},
@@ -89,6 +91,16 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
     assert len(pack["ideas"]) == 1
     assert pack["ledger"]["needs_action"][0]["symbol"] == "BBB"
     assert len(pack["swing_candidates_top"]) == 1
+    assert pack["analytics"]["ideas_count"] == 1
+    assert pack["analytics"]["score_coverage_pct"] == 65.0
+    assert pack["analytics"]["book"]["needs_action"] == 1
+    assert "capital_deployed" not in pack["analytics"]
+    assert (
+        build_analytics(brief, ideas=brief["ideas"], open_trades=[], needs_action=[])[
+            "funnel_conversions"
+        ][0]["surviving"]
+        == 10
+    )
 
     md = render_research_pack_md(pack)
     assert "AAA" in md and "Needs action" in md

@@ -1,5 +1,5 @@
 {
-  "schema": "parkhu.research_pack.v1",
+  "schema": "parkhu.research_pack.v2",
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
@@ -369,20 +369,120 @@
     }
   ],
   "queued_on_portfolio_limits": [],
-  "portfolio": {
-    "positions": 3,
-    "capital_deployed": 27211.0,
-    "capital_deployed_pct": 27.21,
-    "cash_left": 72789.0,
-    "total_risk_rupees": 1667.0,
-    "total_risk_pct": 1.67,
-    "sector_exposure": {
-      "Real Estate": 9.15,
-      "Banks": 8.6,
-      "NBFC & Capital Markets": 9.46
+  "analytics": {
+    "funnel_conversions": [
+      {
+        "gate": "universe",
+        "surviving": 364,
+        "from_prev": null,
+        "keep_pct": null,
+        "dropped": null
+      },
+      {
+        "gate": "trend = Bullish",
+        "surviving": 176,
+        "from_prev": 364,
+        "keep_pct": 48.4,
+        "dropped": 188
+      },
+      {
+        "gate": "price > SMA200",
+        "surviving": 148,
+        "from_prev": 176,
+        "keep_pct": 84.1,
+        "dropped": 28
+      },
+      {
+        "gate": "price > EMA50",
+        "surviving": 143,
+        "from_prev": 148,
+        "keep_pct": 96.6,
+        "dropped": 5
+      },
+      {
+        "gate": "ADX14 > 25",
+        "surviving": 80,
+        "from_prev": 143,
+        "keep_pct": 55.9,
+        "dropped": 63
+      },
+      {
+        "gate": "RSI14 in 40-80",
+        "surviving": 79,
+        "from_prev": 80,
+        "keep_pct": 98.8,
+        "dropped": 1
+      },
+      {
+        "gate": "RS > 0 vs NIFTY and sector",
+        "surviving": 54,
+        "from_prev": 79,
+        "keep_pct": 68.4,
+        "dropped": 25
+      },
+      {
+        "gate": "delivery% >= 40",
+        "surviving": 40,
+        "from_prev": 54,
+        "keep_pct": 74.1,
+        "dropped": 14
+      },
+      {
+        "gate": "no earnings within 21d",
+        "surviving": 17,
+        "from_prev": 40,
+        "keep_pct": 42.5,
+        "dropped": 23
+      },
+      {
+        "gate": "event_risk_score <= 1",
+        "surviving": 15,
+        "from_prev": 17,
+        "keep_pct": 88.2,
+        "dropped": 2
+      },
+      {
+        "gate": "TV rating not Sell",
+        "surviving": 15,
+        "from_prev": 15,
+        "keep_pct": 100.0,
+        "dropped": 0
+      }
+    ],
+    "sector_counts": [
+      {
+        "sector": "Banks",
+        "names": 3
+      },
+      {
+        "sector": "Health Technology",
+        "names": 2
+      },
+      {
+        "sector": "NBFC & Capital Markets",
+        "names": 2
+      },
+      {
+        "sector": "Real Estate",
+        "names": 2
+      }
+    ],
+    "book": {
+      "open": 6,
+      "needs_action": 2,
+      "avg_mfe_pct": 0.1,
+      "avg_mae_pct": -2.1
     },
-    "open_count": 6,
-    "ideas_count": 3
+    "ideas_count": 3,
+    "score_coverage_pct": 65.0,
+    "caveats": [
+      "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
+      "promoter pledge and ownership data are empty, so KB-04's governance veto was not applied to any name here",
+      "trade levels are rebuilt by this module; stock_analysis.csv's own risk_reward is a constant 0.67 and would veto the whole universe",
+      "T1 sits at exactly 2R to meet KB-08's 1:2 floor - with no OHLC history there are no real resistance levels to target, so R:R does no independent filtering",
+      "hold periods are an ATR sqrt(time) estimate, not a forecast",
+      "no trade outcome history exists yet, so there is no measured win rate behind these numbers"
+    ]
   },
   "ledger": {
     "open": [
@@ -1025,5 +1125,5 @@
       }
     }
   },
-  "howto": "Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip."
+  "howto": "Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only."
 }
