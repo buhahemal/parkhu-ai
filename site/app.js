@@ -329,8 +329,9 @@ function chartDefaults() {
   if (!window.Chart) return;
   Chart.defaults.color = CHART_COLORS.muted;
   Chart.defaults.borderColor = CHART_COLORS.line;
-  Chart.defaults.font.family = "'DM Sans', 'Segoe UI', sans-serif";
+  Chart.defaults.font.family = "'Geist', 'IBM Plex Sans', system-ui, sans-serif";
   Chart.defaults.font.size = 12;
+  Chart.defaults.font.weight = "500";
 }
 
 function makeChart(canvas, config) {

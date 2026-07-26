@@ -24,8 +24,17 @@
   --radius: 16px;
   --pad: 1rem;
   --max: 1280px;
-  --font: "DM Sans", "Segoe UI", sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, monospace;
+  /* Institutional stack: Geist UI + Geist Mono numbers + IBM Plex fallback */
+  --font: "Geist", "IBM Plex Sans", system-ui, sans-serif;
+  --font-table: "IBM Plex Sans", "Geist", system-ui, sans-serif;
+  --mono: "Geist Mono", "IBM Plex Sans", ui-monospace, monospace;
+  --fs-title: 2.125rem; /* 34 — dashboard */
+  --fs-section: 1.5rem; /* 24 — section */
+  --fs-card: 1.125rem; /* 18 — card title */
+  --fs-body: 0.9375rem; /* 15 */
+  --fs-table: 0.875rem; /* 14 */
+  --fs-small: 0.8125rem; /* 13 */
+  --fs-metric: 1.75rem; /* 28 — KPI */
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   --chart-bg: rgba(248, 250, 252, 0.9);
   --kpi-tip-bg: rgba(37, 99, 235, 0.08);
@@ -79,11 +88,16 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--font);
-  font-size: 15px;
-  line-height: 1.45;
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
   color: var(--ink);
   background: var(--bg-glow);
   transition: background 0.2s ease, color 0.2s ease;
+  font-feature-settings: "ss01" on, "cv11" on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .shell {
@@ -435,11 +449,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   display: block;
   margin-top: 0.35rem;
   font-family: var(--mono);
-  font-size: 1.55rem;
-  font-weight: 600;
+  font-size: var(--fs-metric);
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .kpi .cell b.bull {
@@ -543,16 +557,18 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 
 .panel h2 {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: var(--fs-section);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 .panel-sub,
 .hint-mini {
   margin: 0.2rem 0 0;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: var(--fs-small);
+  font-weight: 500;
 }
 
 .tip-card p {
@@ -649,7 +665,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 .stat dd {
   margin: 0.2rem 0 0;
   font-family: var(--mono);
-  font-size: 0.92rem;
+  font-size: var(--fs-table);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
@@ -733,7 +749,8 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 }
 
 .card .title strong {
-  font-size: 1.02rem;
+  font-size: var(--fs-card);
+  font-weight: 600;
   letter-spacing: -0.02em;
 }
 
@@ -747,12 +764,14 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.3rem 0.75rem;
-  font-size: 0.85rem;
+  font-family: var(--font-table);
+  font-size: var(--fs-table);
   font-variant-numeric: tabular-nums;
 }
 
 .card .row span {
   color: var(--muted);
+  font-weight: 500;
 }
 
 .card .row b {
@@ -852,9 +871,10 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 
 .gauge-label b {
   font-family: var(--mono);
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: var(--fs-metric);
+  font-weight: 700;
   color: var(--ink);
+  font-variant-numeric: tabular-nums;
 }
 
 .gauge-label span {
