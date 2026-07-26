@@ -12,105 +12,32 @@ Regime **Bearish**. Sector leader Distribution Services (7.74% 1m), laggard Util
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (6)
+## No trade today
 
-**2 need action today.**
+3 name(s) survived the screen but none reached the score-80 Buy band. Under KB-00 this is a correct outcome rather than a gap — the bar is not lowered to produce ideas.
 
-| Symbol | Opened | Entry | Now | P/L | R | Held | Action |
-|---|---|---|---|---|---|---|---|
-| J&KBANK | 2026-07-21 | ₹184 | ₹179 | -2.89% | -0.37R | 3/16d | NO DATA |
-| ZYDUSLIFE | 2026-07-21 | ₹1,146 | ₹1,109 | -3.27% | -0.52R | 3/35d | EARNINGS AHEAD |
-| ICICIBANK | 2026-07-21 | ₹1,471 | ₹1,433 | -2.58% | -0.73R | 3/16d | HOLD |
-| IIFL | 2026-07-25 | ₹557 | ₹557 | 0% | 0R | 0/16d | HOLD |
-| IPCALAB | 2026-07-21 | ₹1,828 | ₹1,763 | -3.58% | -0.58R | 3/16d | HOLD |
-| LODHA | 2026-07-25 | ₹1,144 | ₹1,144 | 0% | 0R | 0/16d | HOLD |
+### Gate funnel
 
-- **J&KBANK** — NO DATA: dropped out of today's universe — last seen ₹179.01 on 2026-07-23; check the chart manually. Best 0.6% / worst -2.89% while held.
-- **ZYDUSLIFE** — EARNINGS AHEAD: results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print. Best 0% / worst -3.27% while held.
-- **ICICIBANK** — HOLD: -2.58% (-0.73R), 3d held, ~13d left to the T1 horizon. Best 0% / worst -2.85% while held.
-- **IIFL** — HOLD: +0.00% (+0.00R), 0d held, ~16d left to the T1 horizon.
-- **IPCALAB** — HOLD: -3.58% (-0.58R), 3d held, ~13d left to the T1 horizon. Best 0% / worst -3.58% while held.
-- **LODHA** — HOLD: +0.00% (+0.00R), 0d held, ~16d left to the T1 horizon.
-
-## Ideas (3)
-
-### LODHA — Lodha Developers Ltd.
-
-Real Estate (Real Estate Development) · CMP ₹1,144 · score **90.3** (Buy)
-
-| | Level | Move |
-|---|---|---|
-| Entry | ₹1,144 | — |
-| Stop loss | ₹1,062 | −7.19% |
-| Target 1 | ₹1,309 | +14.39% |
-| Target 2 | ₹1,391 | +21.58% |
-| Target 3 | ₹1,473 | +28.78% |
-
-**Expected profit 14.39% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~22 to T2
-
-**Position:** 8 shares · deploy ₹9,153 (9.15% of capital) · risk ₹658 (0.66%) if stopped · profit ₹1,317 at T1, ₹1,975 at T2 · size set by exposure cap (10%/name)
-
-**Evidence:** ADX 44.1 · RSI 60.4 · delivery 43.1% · RS vs Nifty 26.7%, vs sector 12.8% · 1m 25.6%, 3m 33.5% · -13.8% from 52w high · ATR 3.6% of price · factor rank 37 · TV Buy · next earnings in 101d
-
-**Invalidation:** a close below ₹1,062; the real structural invalidation is lower, at ₹1,029 — the stop can trigger while the thesis is still intact.
-
-### ICICIBANK — ICICI Bank Limited
-
-Banks (Regional Banks) · CMP ₹1,433 · score **82.8** (Buy)
-
-| | Level | Move |
-|---|---|---|
-| Entry | ₹1,433 | — |
-| Stop loss | ₹1,381 | −3.6% |
-| Target 1 | ₹1,536 | +7.2% |
-| Target 2 | ₹1,588 | +10.8% |
-| Target 3 | ₹1,639 | +14.4% |
-
-**Expected profit 7.2% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~22 to T2
-
-**Position:** 6 shares · deploy ₹8,597 (8.6% of capital) · risk ₹309 (0.31%) if stopped · profit ₹619 at T1, ₹928 at T2 · size set by exposure cap (10%/name)
-
-**Evidence:** ADX 32.6 · RSI 61.7 · delivery 75.8% · RS vs Nifty 7.9%, vs sector 9.4% · 1m 6.9%, 3m 7.2% · -4.1% from 52w high · ATR 1.8% of price · factor rank 66 · TV Buy · next earnings in 85d
-
-**Invalidation:** a close below ₹1,381; the real structural invalidation is lower, at ₹1,367 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 4.3% above entry.
-
-### IIFL — IIFL Finance Limited
-
-NBFC & Capital Markets (Finance/Rental/Leasing) · CMP ₹557 · score **82.4** (Buy)
-
-| | Level | Move |
-|---|---|---|
-| Entry | ₹557 | — |
-| Stop loss | ₹515 | −7.4% |
-| Target 1 | ₹639 | +14.8% |
-| Target 2 | ₹680 | +22.19% |
-| Target 3 | ₹721 | +29.59% |
-
-**Expected profit 14.8% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~22 to T2
-
-**Position:** 17 shares · deploy ₹9,461 (9.46% of capital) · risk ₹700 (0.7%) if stopped · profit ₹1,400 at T1, ₹2,100 at T2 · size set by exposure cap (10%/name)
-
-**Evidence:** ADX 30.4 · RSI 57.2 · delivery 40.4% · RS vs Nifty 5.7%, vs sector 2.7% · 1m 4.6%, 3m 31.6% · -17.6% from 52w high · ATR 3.7% of price · factor rank 87 · TV Buy · next earnings in 94d
-
-**Invalidation:** a close below ₹515; the real structural invalidation is lower, at ₹522 — the stop can trigger while the thesis is still intact.
-
-## Portfolio
-
-3 position(s) · deploy ₹27,211 (27.21%) · cash ₹72,789 · total risk ₹1,667 (1.67% of capital)
-
-Sector exposure: Real Estate 9.15%, Banks 8.6%, NBFC & Capital Markets 9.46% (cap 25%)
-
-Skipped — T1 beyond 22 trading-day (~1 month) mandate: IDFCFIRSTB (~30d), ANANDRATHI (~25d)
+| Gate | Surviving |
+|---|---|
+| universe | 364 |
+| trend = Bullish | 176 |
+| price > SMA200 | 148 |
+| price > EMA50 | 143 |
+| ADX14 > 25 | 80 |
+| RSI14 in 40-80 | 79 |
+| RS > 0 vs NIFTY and sector | 54 |
+| delivery% >= 40 | 40 |
+| relative_volume >= 1 | 9 |
+| no earnings within 21d | 3 |
+| event_risk_score <= 1 | 3 |
+| TV rating not Sell | 3 |
 
 ## Watchlist (score 70–79, no position)
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| TVSHLTD | Producer Manufacturing | ₹14,633 | 79.5 | ₹14,633 | ₹14,017 | ₹15,866 | 8.42% |
-| IPCALAB | Health Technology | ₹1,763 | 76 | ₹1,763 | ₹1,664 | ₹1,960 | 11.21% |
 | CREDITACC | NBFC & Capital Markets | ₹1,518 | 75.6 | ₹1,518 | ₹1,406 | ₹1,741 | 14.74% |
-| M&MFIN | NBFC & Capital Markets | ₹356 | 73.5 | ₹356 | ₹328 | ₹414 | 16% |
-| FEDERALBNK | Banks | ₹354 | 71.1 | ₹354 | ₹340 | ₹384 | 8.35% |
 
 These need a score of 80 or above to become positions (KB-14 Fig 3-1).
 

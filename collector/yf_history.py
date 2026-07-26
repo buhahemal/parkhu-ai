@@ -26,6 +26,15 @@ def clean_daily_history(df: pd.DataFrame | None) -> pd.DataFrame:
     return out
 
 
+def trim_sessions(df: pd.DataFrame, n: int) -> pd.DataFrame:
+    """Keep the last ``n`` completed sessions (oldest → newest)."""
+    if df is None or df.empty or n <= 0:
+        return pd.DataFrame() if df is None else df.iloc[0:0].copy()
+    if len(df) <= n:
+        return df.copy()
+    return df.iloc[-n:].copy()
+
+
 def pct_change_lookback(df: pd.DataFrame, lookback: int) -> float | None:
     """Percent change from ``lookback`` completed bars ago to the latest close."""
     if df is None or df.empty or "Close" not in df.columns:

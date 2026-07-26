@@ -79,6 +79,23 @@ TECHNICAL_HISTORY_PERIOD = "1y"
 # How many symbols to process. None = full configured universe.
 MAX_SYMBOLS = int(os.getenv("PARKHU_MAX_SYMBOLS", "0")) or None
 
+# Daily OHLC history (Yahoo Finance via .NS). ~250 sessions ≈ 1y of NSE bars.
+OHLC_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_LOOKBACK", "250") or "250")
+OHLC_CHUNK_SIZE = int(os.getenv("PARKHU_OHLC_CHUNK_SIZE", "80") or "80")
+OHLC_CHUNK_SLEEP_S = float(os.getenv("PARKHU_OHLC_CHUNK_SLEEP_S", "1.0") or "1.0")
+OHLC_CACHE_DIR = DATABASE_DIR / "ohlc"
+OHLC_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+# Stock equity option chains (NSE). Off by default — full F&O universe is slow.
+STOCK_OPTIONS_ENABLED = (os.getenv("PARKHU_STOCK_OPTIONS", "0") or "0").strip() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+STOCK_OPTIONS_MAX = int(os.getenv("PARKHU_STOCK_OPTIONS_MAX", "50") or "50")
+STOCK_OPTIONS_DELAY_S = float(os.getenv("PARKHU_STOCK_OPTIONS_DELAY_S", "1.0") or "1.0")
+
 # Network politeness / resilience.
 REQUEST_TIMEOUT = 15
 REQUEST_RETRIES = 3

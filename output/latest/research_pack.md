@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** n/a
+- **generated_at_ist:** 2026-07-26T15:53:20.201455+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -22,58 +22,59 @@
 - RSI14 in 40-80: 79
 - RS > 0 vs NIFTY and sector: 54
 - delivery% >= 40: 40
-- no earnings within 21d: 17
-- event_risk_score <= 1: 15
-- TV rating not Sell: 15
+- relative_volume >= 1: 9
+- no earnings within 21d: 3
+- event_risk_score <= 1: 3
+- TV rating not Sell: 3
 
 ## Ideas
 
-### LODHA — Buy (score 90.3)
-- Lodha Developers Ltd. | risk_sector: Real Estate
-- entry 1144.1 | stop 1061.79 | t1 1308.72 | t2 1391.03 | t3 1473.34 | R:R 2.0
-- qty 8 | deployed 9153.0 (9.15%) | risk ₹658.0
+### CREDITACC — Watch (score 14.0)
+- CREDITACC | risk_sector: Finance
+- entry 1517.6 | stop 1443.03 | t1 1593.48 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### ICICIBANK — Buy (score 82.8)
-- ICICI Bank Limited | risk_sector: Banks
-- entry 1432.9 | stop 1381.32 | t1 1536.05 | t2 1587.63 | t3 1639.2 | R:R 2.0
-- qty 6 | deployed 8597.0 (8.6%) | risk ₹309.0
+### ADANIENSOL — Watch (score 13.0)
+- ADANIENSOL | risk_sector: Utilities
+- entry 1702.2 | stop 1616.57 | t1 1787.31 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### IIFL — Buy (score 82.4)
-- IIFL Finance Limited | risk_sector: NBFC & Capital Markets
-- entry 556.55 | stop 515.37 | t1 638.9 | t2 680.08 | t3 721.25 | R:R 2.0
-- qty 17 | deployed 9461.0 (9.46%) | risk ₹700.0
+### NESTLEIND — Watch (score 13.0)
+- NESTLEIND | risk_sector: Consumer Non-Durables
+- entry 1443.5 | stop 1393.82 | t1 1515.68 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SHYAMMETL — Watch (score 13.0)
+- SHYAMMETL | risk_sector: Producer Manufacturing
+- entry 1027.45 | stop 977.6 | t1 1078.82 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### ATHERENERG — Watch (score 13.0)
+- ATHERENERG | risk_sector: Consumer Durables
+- entry 1208.7 | stop 1125.22 | t1 1269.14 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **ICICIBANK** status=open entry=1470.8 last=1432.9 mfe=0.0 mae=-2.85 opened=2026-07-21
-- **IPCALAB** status=open entry=1828.2 last=1762.7 mfe=0.0 mae=-3.58 opened=2026-07-21
-- **J&KBANK** status=open entry=184.33 last=179.01 mfe=0.6 mae=-2.89 opened=2026-07-21
-- **ZYDUSLIFE** status=open entry=1146.2 last=1108.7 mfe=0.0 mae=-3.27 opened=2026-07-21
-- **IIFL** status=open entry=556.55 last=556.55 mfe=0.0 mae=0.0 opened=2026-07-25
-- **LODHA** status=open entry=1144.1 last=1144.1 mfe=0.0 mae=0.0 opened=2026-07-25
-
-## Needs action
-
-- **J&KBANK**: NO DATA — dropped out of today's universe — last seen ₹179.01 on 2026-07-23; check the chart manually
-- **ZYDUSLIFE**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
+_No open suggestions._
 
 ## Swing candidates (top)
 
 - CREDITACC: score=14 rs_nifty=10.95 deliv=55.56
 - ADANIENSOL: score=13 rs_nifty=14.62 deliv=33.21
+- NESTLEIND: score=13 rs_nifty=4.61 deliv=56.32
 - SHYAMMETL: score=13 rs_nifty=7.11 deliv=48.32
 - ATHERENERG: score=13 rs_nifty=20.85 deliv=47.89
-- NESTLEIND: score=13 rs_nifty=4.61 deliv=56.32
+- LAURUSLABS: score=12 rs_nifty=8.96 deliv=31.4
 - ANANDRATHI: score=12 rs_nifty=7.64 deliv=53.24
-- MOTHERSON: score=12 rs_nifty=2.84 deliv=40.07
 - NYKAA: score=12 rs_nifty=6.9 deliv=47.2
+- MOTHERSON: score=12 rs_nifty=2.84 deliv=40.07
+- GODREJIND: score=12 rs_nifty=17.92 deliv=40.89
 - IPCALAB: score=12 rs_nifty=10.21 deliv=42.98
 - INDHOTEL: score=12 rs_nifty=1.54 deliv=48.53
-- LAURUSLABS: score=12 rs_nifty=8.96 deliv=31.4
-- GODREJIND: score=12 rs_nifty=17.92 deliv=40.89
 - KARURVYSYA: score=12 rs_nifty=16.92 deliv=54.27
-- PFOCUS: score=12 rs_nifty=38.95 deliv=36.72
 - IDFCFIRSTB: score=12 rs_nifty=4.08 deliv=48.26
+- PFOCUS: score=12 rs_nifty=38.95 deliv=36.72
 
 ## World markets (India cues)
 
@@ -111,47 +112,54 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market remains in a bearish regime with a medium overall risk level. The Nifty trend is bearish with a -0.43% change, and India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.
+The market remains in a bearish regime with a medium overall risk level. Nifty trend is bearish with a 0.43% decline, and India VIX is at 14.03, indicating medium volatility. FII net is negative at -3892.77, while DII net is positive at 5453.55.
 
-- **LODHA** [consider_entry/high] entry=1144.1 stop=1061.79 t1=1308.72 hold=16d — High Parkhu score of 90.3 and buy band
-- **ICICIBANK** [manage_open/medium] entry=1432.9 stop=1381.32 t1=1536.05 hold=16d — Open position with stop at 1418.81 and last price at 1432.9
-- **IIFL** [consider_entry/high] entry=556.55 stop=515.37 t1=638.9 hold=16d — High Parkhu score of 82.4 and buy band
-- **IPCALAB** [stand_aside/low] entry=1828.2 stop=1715.39 t1=2053.81 hold=16d — Open position with mae_pct of -3.58 and no clear trend
-- **J&KBANK** [watch/low] entry=184.33 stop=169.92 t1=213.16 hold=16d — Dropped out of today's universe and requires manual chart check
-- **ZYDUSLIFE** [stand_aside/low] entry=1146.2 stop=1074.19 t1=1290.23 hold=35d — Earnings ahead and reduce or stand aside recommended
+- **CREDITACC** [watch/medium] entry=1517.6 stop=1443.03 t1=1593.48 hold=Noned — Parkhu score of 14.0 with a watch band
+- **ADANIENSOL** [watch/medium] entry=1702.2 stop=1616.57 t1=1787.31 hold=Noned — Parkhu score of 13.0 with a watch band
+- **NESTLEIND** [watch/medium] entry=1443.5 stop=1393.82 t1=1515.68 hold=Noned — Parkhu score of 13.0 with a watch band
+- **SHYAMMETL** [watch/medium] entry=1027.45 stop=977.6 t1=1078.82 hold=Noned — Parkhu score of 13.0 with a watch band
+- **ATHERENERG** [watch/medium] entry=1208.7 stop=1125.22 t1=1269.14 hold=Noned — Parkhu score of 13.0 with a watch band
 
 ### AI stock reviews
 
-- **LODHA** [high] The setup in LODHA fits a ≤1-month swing due to its strong recent price action, with a 1-month return of 25.62% outperforming the Nifty. The bullish trend label, combined with an ADX of 44.13 and an RSI of 60.44, suggests momentum is on the side of the bulls. The stock's distance from its 52-week high, at -13.82%, also leaves room for potential upside.
-  - catalysts: Earnings Expectations, Sector Rebound, Real Estate Demand
-  - risks: Interest Rate Changes, Sector Downturn, Economic Slowdown
-  - watch: Triggers for this setup include a breakout above recent highs, while invalidation cues would be a close below the stop level of 1061.79, indicating a failure of the bullish momentum.
-- **ICICIBANK** [high] ICICIBANK fits a ≤1-month swing due to its recent bullish trend, with an ADX of 32.55 and RSI of 61.67, indicating a strong uptrend. The stock has outperformed Nifty and its sector in the last month, with returns of 6.88% and 7.94% respectively. With a Parkhu score of 82.8 and a 'Buy' technical rating, ICICIBANK is poised for a potential short-term rally.
-  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend
-  - risks: Market downturn, Sector rotation, Earnings disappointment
-  - watch: Triggers for this setup include a breakout above the recent high, while invalidation cues include a close below the stop level of 1381.32, indicating a potential trend reversal.
-- **IIFL** [medium] IIFL Finance Limited is a suitable candidate for a ≤1-month swing trade due to its recent bullish trend, with a trend label and a relatively high return over the past month. The company's risk sector, NBFC & Capital Markets, has shown resilience, and its technical rating is a 'Buy'. With a parkhu score of 82.4, the stock has demonstrated strong potential for a short-term upside. The current market regime is bearish, but IIFL's performance has been relatively better than the Nifty and its sector.
-  - catalysts: Bullish trend, High parkhu score, Better sector performance
-  - risks: Bearish market regime, NBFC & Capital Markets sector risks, Earnings uncertainty
-  - watch: Triggers for this trade include a strong breakout above the current level, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish trend. The trade's validity will also depend on the overall market regime and the performance of the NBFC & Capital Markets sector.
+- **CREDITACC** [medium] The CREDITACC setup fits a ≤1-month swing due to its current price action and the overall market regime. Given the bearish market regime and medium overall risk, a potential swing could be driven by short-term catalysts. The company's position in the finance sector, which is considered high-risk, adds to the potential for a swing. The current price level provides a reasonable entry point for a short-term trade.
+  - catalysts: Earnings report, Regulatory changes, Market sentiment shift
+  - risks: Market downturn, Sector-specific risks, Company-specific news
+  - watch: Triggers for this trade include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a failure of the swing setup. Monitoring the overall market regime and sector performance will also be crucial.
+- **ADANIENSOL** [medium] The ADANIENSOL setup fits a ≤1-month swing due to its current price action and the overall market regime. Given the bearish market regime and medium overall risk, a potential swing could be driven by sector-specific catalysts. The Utilities sector, in which ADANIENSOL operates, may experience volatility due to regulatory changes or demand fluctuations. This volatility could lead to a swing opportunity within a short timeframe.
+  - catalysts: Sector rotation, Regulatory changes, Earnings report
+  - risks: Market downturn, Sector-specific headwinds, Company-specific issues
+  - watch: Triggers for this setup include a breakout above the current level, while invalidation cues would be a breach of the stop level, indicating a failure of the anticipated swing.
+- **NESTLEIND** [medium] The setup in NESTLEIND fits a ≤1-month swing as the stock has been consolidating and is poised for a breakout, with a relatively high Parkhu score of 13.0. The current market regime is bearish, but the India VIX is at a moderate level of 14.03, suggesting a potential for a swing trade. The company operates in the Consumer Non-Durables sector, which may be less affected by the overall bearish market sentiment. This could provide a relatively safer haven for a short-term trade.
+  - catalysts: Breakout from consolidation, Sector resilience, Moderate India VIX
+  - risks: Bearish market regime, Overall medium risk, Stop loss at 1393.82
+  - watch: Traders should watch for a strong breakout above the current level, with a potential trigger being a close above 1460, and invalidation cues including a close below the stop loss level of 1393.82.
+- **SHYAMMETL** [medium] The SHYAMMETL setup fits a ≤1-month swing due to its current price action and the overall market regime. Given the bearish market regime and medium overall risk, a swing trade could capitalize on potential short-term volatility. The company's position in the Producer Manufacturing sector adds to the potential for significant price movements. This setup could offer a lucrative opportunity for a short-term trade.
+  - catalysts: Earnings report, Sector rotation, Market sentiment shift
+  - risks: Market downturn, Sector-specific headwinds, Company-specific news
+  - watch: Traders should watch for a breakout above the current level to confirm the trade, while a failure to hold the stop level could be a cue for invalidation. Monitoring the India VIX and overall market sentiment will also be crucial.
+- **ATHERENERG** [medium] ATHERENERG is a potential swing trade candidate given its current price and the overall market regime. The bearish market regime and medium overall risk suggest a cautious approach, but the company's fundamentals and technicals may offer a short-term opportunity. The stock's price is near the entry level, and a swing trade could be initiated with a tight stop-loss. This setup fits a ≤1-month swing due to the defined risk-reward ratio and the potential for a quick profit.
+  - catalysts: Earnings, Sector Rebound, Short Squeeze
+  - risks: Market Downturn, Sector Weakness, Earnings Miss
+  - watch: Traders should watch for a breakout above the t1 level or a bounce off the stop level to confirm the trade's validity, while a close below the stop level would invalidate the setup.
 
 ### Claude feed
 
-Bearish regime, defensive stance, top ideas: LODHA, ICICIBANK, IIFL; caveats: provisional scores, no promoter pledge and ownership data, trade levels rebuilt
+Bearish regime, defensive stance. Top ideas: CREDITACC, ADANIENSOL, NESTLEIND, SHYAMMETL, ATHERENERG. Caveats: provisional scores, no promoter pledge and ownership data, no trade outcome history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Bearish Market Regime — The current bearish market regime may impact investor sentiment and overall market performance.
-2. **[high]** FIIs Turn Net Sellers — Foreign Institutional Investors (FIIs) turning net sellers may lead to a decrease in market liquidity and increase volatility.
-3. **[medium]** India VIX Rises — An increase in the India VIX indicates higher market volatility, which may impact investor decisions.
-4. **[medium]** UFO Moviez India Limited Updates (UFO) — The updates from UFO Moviez India Limited may impact the company's stock price and investor sentiment.
-5. **[medium]** Sigachi Industries Limited Postpones Earnings Call (SIGACHI) — The postponement of the earnings call by Sigachi Industries Limited may impact investor expectations and the company's stock price.
-6. **[medium]** Vedanta Oil and Gas Limited Updates (VOGL) — The updates from Vedanta Oil and Gas Limited may impact the company's stock price and investor sentiment.
-7. **[low]** Hirect Awarded Order for Mainline Electric Multiple Unit Trainsets (HIRECT) — The order awarded to Hirect may have a positive impact on the company's stock price and revenue.
-8. **[low]** Waaree Renewable Technologies Limited Bags Order (WAAREERTL) — The order bagged by Waaree Renewable Technologies Limited may have a positive impact on the company's stock price and revenue.
-9. **[low]** GE Vernova T&D India Limited Announces Cessation of Director (GVT&D) — The cessation of the director may have a minimal impact on the company's stock price and operations.
-10. **[low]** Whirlpool of India Limited Announces Change in Management (WHIRLPOOL) — The change in management may have a minimal impact on the company's stock price and operations.
+1. **[high]** Bearish market regime with high India VIX — The current bearish market regime and high India VIX indicate increased market volatility, which may impact investor sentiment and overall market performance.
+2. **[medium]** FIIs turn net sellers with outflow of -3892.77 — The net outflow of foreign institutional investors may lead to a decrease in market liquidity and put downward pressure on stock prices.
+3. **[low]** UFO Moviez updates on annual report (UFO) — The update on the annual report may have a minor impact on the company's stock price, but it is not expected to have a significant effect on the overall market.
+4. **[medium]** Sigachi Industries postpones earnings call (SIGACHI) — The postponement of the earnings call may lead to uncertainty among investors and potentially impact the company's stock price.
+5. **[medium]** Vedanta Oil and Gas updates under SEBI Listing Regulations (VOGL) — The update under SEBI Listing Regulations may have a moderate impact on the company's stock price, as it may be perceived as a positive or negative development by investors.
+6. **[low]** Hirect awards mainline electric multiple unit trainsets order (HIRECT) — The awarding of the order may have a minor positive impact on the company's stock price, but it is not expected to have a significant effect on the overall market.
+7. **[low]** Waaree Renewable Technologies bags orders/contracts (WAAREERTL) — The bagging of orders/contracts may have a minor positive impact on the company's stock price, but it is not expected to have a significant effect on the overall market.
+8. **[low]** IDFC First Bank updates on analyst/institutional investor meet (IDFCFIRSTB) — The update on the analyst/institutional investor meet may have a minor impact on the company's stock price, but it is not expected to have a significant effect on the overall market.
+9. **[low]** Transworld Shipping Lines enters into memorandum of understanding (TRANSWORLD) — The entry into the memorandum of understanding may have a minor positive impact on the company's stock price, but it is not expected to have a significant effect on the overall market.
+10. **[medium]** Overall risk sentiment remains medium — The overall risk sentiment remaining medium indicates that investors should exercise caution and be prepared for potential market fluctuations.
 
 ## Deep-dive URLs (after push)
 

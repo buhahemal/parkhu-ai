@@ -462,27 +462,22 @@ Defects 1, 5, 9 and 10 are the open priorities — see §10.
 
 Ordered by leverage. Each item states how you know it is done.
 
-### P0 — daily OHLC history
-
-Unblocks defects 1, 2, 3 and most of the technical score.
+### P0 — daily OHLC history — **Partial (Phase A landed)**
 
 ```
 output/<date>/history/ohlc.csv
 symbol,date,open,high,low,close,volume        # ~250 sessions x 368 names
 ```
 
-**Done when:** `swing_high_20d`, `swing_low_20d`, `base_high`, `base_low`,
-`breakout_20d_high`, `volume_20d_avg` and `volume_ratio_vs_20d` are populated in
-`stock_analysis.csv`; the brief's stop resolves to a swing low rather than a moving
-average on a majority of ideas; and `rr_t1` shows **variance across names** — the single
-clearest signal the override in §4 is no longer needed.
+**Landed:** collector + `database/ohlc` cache; swing/volume features in `stock_analysis`;
+structure-based stops/targets; `rr_t1` / `risk_reward` vary with structure.
+**Still open:** pattern library (cup/handle etc.) and technical-score pattern weight.
 
-### P0 — relative-volume gate (defect 3, now unblocked)
+### P0 — relative-volume gate (defect 3) — **Landed (threshold pending sweep)**
 
-Cheapest real improvement available today. **Done when:** `MIN_RELATIVE_VOLUME` exists in
-`config/risk.py`, the gate appears in the funnel, and a sweep across 1.0/1.2/1.5 is
-recorded here with the survivor counts, so the chosen value is evidenced rather than
-guessed.
+`MIN_RELATIVE_VOLUME` (default **1.0**) is in `config/risk.py` and the brief funnel.
+**Still open:** record a sweep across 1.0 / 1.2 / 1.5 survivor counts here before locking
+the production value.
 
 ### P0 — session correctness (defects 9, 10)
 
@@ -491,11 +486,11 @@ guessed.
 a non-session; and a validator asserts each day's `prev_close` equals the prior session's
 `close`, failing the run loudly instead of silently producing a wrong regime.
 
-### P1 — trade outcome depth
+### P1 — trade outcome depth — **Partial (Phase A)**
 
-The ledger exists; it needs OHLC to be accurate. **Done when:** MFE/MAE derive from
-intraday high/low, gap-throughs are detected and flagged, and `realised_stats()` has ≥20
-closed rows so the small-sample note disappears on its own.
+**Landed:** when `history/ohlc.csv` is present, `positions.review` uses session high/low
+for MFE/MAE, triggers stops on low breach, and sets `gap_flag` on open-through-stop gaps.
+**Still open:** ≥20 closed rows for meaningful `realised_stats()`; holiday-aware day counts.
 
 ### P1 — promoter pledge (defect 5)
 
@@ -510,10 +505,13 @@ The text is already collected in `news.csv`; only the classification step is mis
 **Done when:** `news_sentiment`, `catalyst_strength` and `major_catalyst` are populated,
 `news_count_7d` reflects a rolling window, and `weight_unavailable_pct` drops from 35 to 20.
 
-### P2 — institutional (10) and options (5)
+### P2 — institutional (10) and options (5) — **Options data prep only (Phase A)**
 
-**Done when:** `weight_unavailable_pct` reaches 5 or lower and the caveat about provisional
-scores can finally be removed.
+**Landed:** env-gated `stock_options.csv` (`PARKHU_STOCK_OPTIONS=1`) fills
+`pcr` / `max_pain` / `atm_iv` on `stock_analysis` for top F&O names. Scoring weight is
+**not** wired yet (avoids Buy-band churn).
+**Done when:** `weight_unavailable_pct` ≤ 5 and the provisional-score caveat is removed
+(requires institutional feed + options score in `build_scores`).
 
 ### P3 — the constant scores (defects 6, 7)
 

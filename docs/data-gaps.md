@@ -1,11 +1,14 @@
 # Parkhu Data Collector — data gaps blocking the KB
 
-> **Status — Phases 0–2 applied (see `scripts/probe_tv_fields.py` and the notes below).**
+> **Status — Phases 0–2 + Phase A accuracy foundations (see notes below).**
 >
 > | Gap | Status |
 > |---|---|
-> | #3 pivots unusable | **Mitigated.** Intraday pivots kept for back-compat; `high_1m/3m/6m`, `high_52w`, `high_all`, `nearest_overhead`, `overhead_supply_pct` added from data TradingView was already returning. Real swing levels still need #1. |
-> | #4 `relative_volume` broken | **Appears resolved.** Universe median is now 0.74 (p25 0.51, p75 1.07), not the 0.04 recorded here. Re-verify before relying on it. |
+> | #1 daily OHLC | **Partial.** `history/ohlc.csv` + `ohlc_features` + structure levels + OHLC MFE/MAE. Patterns still open. |
+> | #2 trade levels 0.67 | **Mitigated.** Structure-based `risk_reward` / brief levels replace the fixed ATR ladder. |
+> | #3 pivots unusable | **Mitigated.** Intraday pivots kept for back-compat; swing structure from OHLC + TV highs. |
+> | #4 `relative_volume` broken | **Appears resolved** + funnel gate `MIN_RELATIVE_VOLUME=1.0` (sweep still open). |
+> | #8 stock options | **Partial.** Env-gated `stock_options.csv` joins PCR/max pain/ATM IV; score weight deferred. |
 > | #9 blank `ema20` | **Diagnosed, not fixed.** TradingView's India scan exposes SMA20/SMA100 but no EMA20/EMA100 in the tested field list. `sma20`/`sma100` are now emitted; `ema20`/`ema100` stay null pending `scripts/probe_tv_fields.py`. |
 > | #12 sector labels | **Fixed for relative strength.** Mapping now resolves on `industry` before `sector`, adds NIFTY_REALTY/NIFTY_BANK/NIFTY_INFRA, and returns None rather than guessing. LODHA's `rs_vs_sector_1m` corrects from 23.73 to 12.84. The 25% *cap* was already correct — `swing_brief.INDUSTRY_TO_RISK_SECTOR` handles it, so this entry overstated the problem. |
 > | #10 US/Asia macro nulls | **Fixed.** yfinance appends a NaN-close row for the in-progress session; `dropna` before `iloc[-1]`. |
@@ -22,55 +25,40 @@
 Findings from running the Parkhu KB gates against `output/2026-07-21` … `output/2026-07-25`
 (368-name universe). Ordered by how much each gap costs you, not by effort.
 
-Two headline numbers:
+Headline numbers (pre–Phase A; re-check after the next full collect):
 
-- **30 of KB-14's 100 score points cannot be computed at all** (news 15, institutional 10, options 5).
-- **`risk_reward` is 0.67 on all 368 rows**, so a literal reading of KB-08's 1:2 minimum
-  vetoes the entire universe, every day.
+- **30 of KB-14's 100 score points cannot be computed at all** (news 15, institutional 10, options 5) —
+  options *columns* can now populate via `PARKHU_STOCK_OPTIONS=1`, but the 5-pt weight is still off.
+- **`risk_reward` was 0.67 on all rows** under the old ATR ladder — Phase A replaces that with
+  structure-based levels; verify variance on the next run.
 
 ---
 
 ## P0 — the KB cannot run correctly without these
 
-### 1. Daily OHLC history (the single biggest gap)
+### 1. Daily OHLC history (the single biggest gap) — **Partial (Phase A)**
 
-Everything downstream is blocked by this. There is one price snapshot per day and no
-series, so none of the following can be computed: swing highs/lows, real
-support/resistance, base/consolidation detection, breakout confirmation, cup-and-handle
-or double-bottom patterns, weekly pivots, volume-trend, MFE/MAE tracking.
+**Landed:** `collector/history/ohlc.py` writes `output/<date>/history/ohlc.csv` (~250
+sessions × universe) with a `database/ohlc/` cache; `ohlc_features` derives
+`swing_high_20d`, `swing_low_20d`, `swing_low_50d`, `base_*`, `breakout_20d_high`,
+`volume_20d_avg`, `volume_ratio_vs_20d`, `consolidation_atr_pct` into `stock_analysis.csv`.
+Ledger MFE/MAE can use session high/low when OHLC is present.
 
-KB-03 Ch.6 asks for patterns and levels; KB-14 gives technicals 20 points. Without OHLC,
-the technical score is trend + momentum only.
+**Still open:** cup-and-handle / double-bottom pattern flags, weekly pivots, and fuller
+pattern weight in the technical score.
 
 ```
 output/<date>/history/ohlc.csv
 symbol,date,open,high,low,close,volume
 ```
 
-250 sessions × 368 names ≈ 92k rows (~5 MB, gzip well). Yahoo Finance batch download is
-already a dependency for `indices`/`macro`, so this is mostly plumbing. Then derive into
-`stock_analysis.csv`:
+### 2. Trade levels are non-discriminating — **Mitigated (Phase A)**
 
-`swing_high_20d`, `swing_low_20d`, `swing_low_50d`, `weekly_pivot`,
-`base_length_days`, `base_high`, `base_low`, `pct_from_base_high`,
-`breakout_20d_high` (bool), `breakout_volume_ratio`, `consolidation_atr_pct`,
-`high_52w`, `low_52w`, `volume_20d_avg`, `volume_ratio_vs_20d`
-
-### 2. Trade levels are non-discriminating
-
-`entry_low/high`, `stop_loss`, `target1/2/3` and `risk_reward` are a fixed ladder —
-entry ±0.5 ATR, stop −1.5 ATR, targets +1/+2/+3 ATR. So:
-
-- `risk_reward` = 1.0/1.5 = **0.67 on every single row**
-- KB-08 Ch.4 rejects anything below 1:1 → 100% of the universe is auto-rejected
-
-Fix: derive the stop from the nearest invalidating structure (swing low, base low, or
-nearest MA below price) with an ATR buffer, and set targets at genuine resistance
-(swing high, 52w high, prior base high, measured move). Then `risk_reward` varies
-per name and actually filters. Requires #1.
-
-Until then my screen recomputes levels off moving-average structure and sets T1 at 2R,
-which satisfies the KB floor but does no independent filtering — a workaround, not a fix.
+The fixed 0.67 ATR ladder in `stock_analysis` is replaced by structure-based levels
+(`collector/derived/structure_levels.py`): stop from base/swing low (else MA / ATR
+fallback); targets prefer swing high / overhead when they clear `MIN_RR_T1`, else
+R-multiples. `risk_reward` / brief `rr_t1` now vary with structure. Relative-volume
+gate (`MIN_RELATIVE_VOLUME`, default 1.0) is in the funnel.
 
 ### 3. `support1/support2/resistance1/resistance2/pivot` are unusable
 
@@ -134,13 +122,14 @@ but nothing per stock. `block_deals.csv` had 1 row on 2026-07-24 and is not join
 Add: per-stock FII/DII/MF holding and quarter-on-quarter delta (from #5), bulk-deal
 history, and a `block_deal_7d` / `bulk_deal_7d` flag joined onto each symbol.
 
-### 8. Stock-level options — 5 points
+### 8. Stock-level options — 5 points — **Partial (Phase A)**
 
-`options.csv` covers NIFTY and BANKNIFTY only. `pcr` and `max_pain` in
-`stock_analysis.csv` are null for all 368 names, so KB Stage 10 is index-only.
+**Landed:** `stock_options.csv` (env-gated, `PARKHU_STOCK_OPTIONS=1`) fetches NSE Equity
+chains for top-N F&O underlyings and joins `pcr` / `max_pain` / `atm_iv` into
+`stock_analysis`. Index `options.csv` (NIFTY/BANKNIFTY) unchanged.
 
-Add per-symbol option-chain analytics for the ~200 F&O names: `pcr`, `max_pain`,
-`atm_iv`, `iv_percentile_1y`, `oi_change_pct`, `unusual_oi_flag`.
+**Still open:** `iv_percentile_1y`, full ~215-name coverage in CI, and wiring the
+KB-14 options 5 pts into `build_scores`.
 
 ### 9. Constant-value scores with no discriminating power
 

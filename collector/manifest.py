@@ -35,6 +35,44 @@ CATALOG = [
         },
     ),
     (
+        "history/ohlc.csv",
+        {
+            "agent": "ohlc_history",
+            "source": "Yahoo Finance (.NS) + database/ohlc cache",
+            "description": "Daily equity OHLCV history (~250 sessions × universe) in long format.",
+            "use_case": "Swing highs/lows, volume trend, structure stops, OHLC-based MFE/MAE.",
+            "key_columns": ["symbol", "date", "open", "high", "low", "close", "volume"],
+        },
+    ),
+    (
+        "ohlc_features.csv",
+        {
+            "agent": "ohlc_features (derived)",
+            "source": "history/ohlc.csv",
+            "description": "Per-symbol swing/volume structure derived from daily OHLC "
+            "(20d highs/lows, base, breakout, volume ratio).",
+            "use_case": "Feed stock_analysis and structure-based trade levels.",
+            "key_columns": [
+                "symbol",
+                "swing_high_20d",
+                "swing_low_20d",
+                "breakout_20d_high",
+                "volume_ratio_vs_20d",
+            ],
+        },
+    ),
+    (
+        "stock_options.csv",
+        {
+            "agent": "stock_options",
+            "source": "NSE option-chain v3 (Equity), env-gated",
+            "description": "Per-stock nearest-expiry PCR, max pain and ATM IV for F&O names "
+            "(disabled unless PARKHU_STOCK_OPTIONS=1).",
+            "use_case": "Populate stock_analysis options columns; scoring weight deferred.",
+            "key_columns": ["symbol", "expiry", "pcr", "max_pain", "atm_iv"],
+        },
+    ),
+    (
         "indices.csv",
         {
             "agent": "indices",

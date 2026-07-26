@@ -9,16 +9,18 @@
     "max_positions": 10,
     "min_rr_t1": 2.0,
     "buy_score": 80.0,
-    "watch_score": 70.0
+    "watch_score": 70.0,
+    "horizon_min_days": 3,
+    "horizon_max_days": 22
   },
   "regime": {
     "market_regime": "Bearish",
     "nifty_trend": "Bearish",
-    "nifty_pct_change": -0.53,
-    "banknifty_trend": "Bearish",
-    "banknifty_pct_change": -0.94,
-    "india_vix": 13.48,
-    "vix_level": "Low",
+    "nifty_pct_change": -0.43,
+    "banknifty_trend": "Neutral",
+    "banknifty_pct_change": 0.18,
+    "india_vix": 14.03,
+    "vix_level": "Medium",
     "best_sector": "Distribution Services",
     "best_sector_perf_1m": 7.74,
     "worst_sector": "Utilities",
@@ -29,23 +31,23 @@
     "crude_pct_change": -3.12,
     "usdinr": 96.56,
     "usdinr_pct_change": -0.33,
-    "us_sp500_pct": null,
-    "us_dow_pct": null,
-    "us_vix": 18.7,
-    "us_vix_pct": 12.38,
-    "dxy": 101.43,
-    "dxy_pct": 0.29,
-    "us_10y": 4.7,
-    "asia_cue": "Mixed",
-    "europe_cue": "Bearish",
+    "us_sp500_pct": 0.05,
+    "us_dow_pct": 0.46,
+    "us_vix": 18.58,
+    "us_vix_pct": -0.64,
+    "dxy": 101.47,
+    "dxy_pct": 0.04,
+    "us_10y": 4.68,
+    "asia_cue": "Bearish",
+    "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-25T13:10:52.915235+05:30"
+    "generated_at_ist": "2026-07-26T15:48:12.256402+05:30"
   },
   "funnel": [
     {
       "gate": "universe",
-      "surviving": 363
+      "surviving": 364
     },
     {
       "gate": "trend = Bullish",
@@ -69,327 +71,55 @@
     },
     {
       "gate": "RS > 0 vs NIFTY and sector",
-      "surviving": 64
+      "surviving": 54
     },
     {
       "gate": "delivery% >= 40",
-      "surviving": 43
+      "surviving": 40
+    },
+    {
+      "gate": "relative_volume >= 1",
+      "surviving": 9
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 16
+      "surviving": 3
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 14
+      "surviving": 3
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 14
+      "surviving": 3
     }
   ],
-  "ideas": [
-    {
-      "symbol": "LODHA",
-      "company": "Lodha Developers Ltd.",
-      "sector": "Finance",
-      "industry": "Real Estate Development",
-      "risk_sector": "Real Estate",
-      "cmp": 1144.1,
-      "parkhu_score": 85.9,
-      "band": "Buy",
-      "levels": {
-        "entry": 1144.1,
-        "stop": 1061.79,
-        "stop_pct": 7.19,
-        "stop_atr_mult": 2.0,
-        "stop_mode": "atr_fallback",
-        "stop_above_structure": true,
-        "structure_invalidation": 1028.82,
-        "t1": 1308.72,
-        "t2": 1391.03,
-        "t3": 1473.34,
-        "t1_pct": 14.39,
-        "t2_pct": 21.58,
-        "t3_pct": 28.78,
-        "rr_t1": 2.0,
-        "expected_profit_pct_t1": 14.39,
-        "hold_days_t1": 16,
-        "hold_days_t2": 36,
-        "t1_beyond_mandate": false,
-        "t1_above_52w_high": false,
-        "room_to_52w_high_pct": 16.04
-      },
-      "sizing": {
-        "qty": 8,
-        "capital_deployed": 9153.0,
-        "capital_pct": 9.15,
-        "risk_rupees": 658.0,
-        "risk_pct_of_capital": 0.66,
-        "profit_at_t1": 1317.0,
-        "profit_at_t2": 1975.0,
-        "binding_constraint": "exposure cap (10%/name)"
-      },
-      "evidence": {
-        "trend_label": "Bullish",
-        "adx14": 44.12765286181194,
-        "rsi14": 60.43986851244426,
-        "macd_hist": -7.124,
-        "delivery_pct": 43.06,
-        "rs_vs_nifty_1m": 25.43,
-        "rs_vs_sector_1m": 23.73,
-        "return_1m": 25.62174032390886,
-        "return_3m": 33.4850075837125,
-        "dist_52w_high_pct": -13.82,
-        "atr14": 41.15493411466165,
-        "pe": 33.41413551401869,
-        "roe": 15.774894165286202,
-        "debt_equity": 0.424972730630159,
-        "revenue_growth": 21.021807757901232,
-        "profit_growth": 23.7888647866956,
-        "composite_factor_rank": 26.0,
-        "risk_score": 75,
-        "in_oi_spurt": true,
-        "oi_change_pct": -6.57,
-        "tech_rating": "Buy",
-        "analyst_rec": 1.138889,
-        "price_target_avg": 1232.666667,
-        "days_to_earnings": 102.0,
-        "trend_score": 100.0,
-        "momentum_score": 40,
-        "fundamental_score": 100,
-        "earnings_score": 100,
-        "sector_score": 46.0,
-        "atr_pct_of_price": 3.6
-      }
-    },
-    {
-      "symbol": "ICICIBANK",
-      "company": "ICICI Bank Limited",
-      "sector": "Finance",
-      "industry": "Regional Banks",
-      "risk_sector": "Banks",
-      "cmp": 1432.9,
-      "parkhu_score": 83.7,
-      "band": "Buy",
-      "levels": {
-        "entry": 1432.9,
-        "stop": 1381.32,
-        "stop_pct": 3.6,
-        "stop_atr_mult": 2.0,
-        "stop_mode": "atr_fallback",
-        "stop_above_structure": true,
-        "structure_invalidation": 1366.77,
-        "t1": 1536.05,
-        "t2": 1587.63,
-        "t3": 1639.2,
-        "t1_pct": 7.2,
-        "t2_pct": 10.8,
-        "t3_pct": 14.4,
-        "rr_t1": 2.0,
-        "expected_profit_pct_t1": 7.2,
-        "hold_days_t1": 16,
-        "hold_days_t2": 36,
-        "t1_beyond_mandate": false,
-        "t1_above_52w_high": true,
-        "room_to_52w_high_pct": 4.3
-      },
-      "sizing": {
-        "qty": 6,
-        "capital_deployed": 8597.0,
-        "capital_pct": 8.6,
-        "risk_rupees": 309.0,
-        "risk_pct_of_capital": 0.31,
-        "profit_at_t1": 619.0,
-        "profit_at_t2": 928.0,
-        "binding_constraint": "exposure cap (10%/name)"
-      },
-      "evidence": {
-        "trend_label": "Bullish",
-        "adx14": 32.55046805994821,
-        "rsi14": 61.67193907847662,
-        "macd_hist": -1.2996,
-        "delivery_pct": 75.85,
-        "rs_vs_nifty_1m": 6.69,
-        "rs_vs_sector_1m": 4.99,
-        "return_1m": 6.884976876025674,
-        "return_3m": 7.228915662650613,
-        "dist_52w_high_pct": -4.12,
-        "atr14": 25.7876238133958,
-        "pe": 18.522492244053776,
-        "roe": 15.796816290169,
-        "debt_equity": 0.594743890036865,
-        "revenue_growth": 5.080821540326999,
-        "profit_growth": 7.369882026370579,
-        "composite_factor_rank": 66.0,
-        "risk_score": 50,
-        "in_oi_spurt": true,
-        "oi_change_pct": -0.69,
-        "tech_rating": "Buy",
-        "analyst_rec": 1.04,
-        "price_target_avg": 1737.12,
-        "days_to_earnings": 86.0,
-        "trend_score": 100.0,
-        "momentum_score": 60,
-        "fundamental_score": 80,
-        "earnings_score": 100,
-        "sector_score": 46.0,
-        "atr_pct_of_price": 1.8
-      }
-    },
-    {
-      "symbol": "IIFL",
-      "company": "IIFL Finance Limited",
-      "sector": "Finance",
-      "industry": "Finance/Rental/Leasing",
-      "risk_sector": "NBFC & Capital Markets",
-      "cmp": 556.55,
-      "parkhu_score": 81.7,
-      "band": "Buy",
-      "levels": {
-        "entry": 556.55,
-        "stop": 515.37,
-        "stop_pct": 7.4,
-        "stop_atr_mult": 2.0,
-        "stop_mode": "atr_fallback",
-        "stop_above_structure": true,
-        "structure_invalidation": 521.55,
-        "t1": 638.9,
-        "t2": 680.08,
-        "t3": 721.25,
-        "t1_pct": 14.8,
-        "t2_pct": 22.19,
-        "t3_pct": 29.59,
-        "rr_t1": 2.0,
-        "expected_profit_pct_t1": 14.8,
-        "hold_days_t1": 16,
-        "hold_days_t2": 36,
-        "t1_beyond_mandate": false,
-        "t1_above_52w_high": false,
-        "room_to_52w_high_pct": 21.29
-      },
-      "sizing": {
-        "qty": 17,
-        "capital_deployed": 9461.0,
-        "capital_pct": 9.46,
-        "risk_rupees": 700.0,
-        "risk_pct_of_capital": 0.7,
-        "profit_at_t1": 1400.0,
-        "profit_at_t2": 2100.0,
-        "binding_constraint": "exposure cap (10%/name)"
-      },
-      "evidence": {
-        "trend_label": "Bullish",
-        "adx14": 30.383839920966736,
-        "rsi14": 57.15848307367907,
-        "macd_hist": 0.8001,
-        "delivery_pct": 40.41,
-        "rs_vs_nifty_1m": 4.43,
-        "rs_vs_sector_1m": 2.73,
-        "return_1m": 4.624494783344282,
-        "return_3m": 31.572104018912523,
-        "dist_52w_high_pct": -17.55,
-        "atr14": 20.587644979275648,
-        "pe": 11.323499491353,
-        "roe": 15.4133861153874,
-        "debt_equity": 5.06011078438077,
-        "revenue_growth": 37.24503059680803,
-        "profit_growth": 552.4105341403845,
-        "composite_factor_rank": 88.0,
-        "risk_score": 75,
-        "in_oi_spurt": null,
-        "oi_change_pct": null,
-        "tech_rating": "Buy",
-        "analyst_rec": 1.2,
-        "price_target_avg": 702.4,
-        "days_to_earnings": 95.0,
-        "trend_score": 100.0,
-        "momentum_score": 80,
-        "fundamental_score": 80,
-        "earnings_score": 100,
-        "sector_score": 46.0,
-        "atr_pct_of_price": 3.7
-      }
-    }
-  ],
+  "ideas": [],
   "watchlist": [
     {
-      "symbol": "IPCALAB",
-      "risk_sector": "Health Technology",
-      "cmp": 1762.7,
-      "score": 77.3,
-      "entry_if_triggered": 1762.7,
-      "stop": 1663.86,
-      "t1": 1960.38,
-      "expected_profit_pct_t1": 11.21
-    },
-    {
-      "symbol": "TVSHLTD",
-      "risk_sector": "Producer Manufacturing",
-      "cmp": 14633.0,
-      "score": 74.0,
-      "entry_if_triggered": 14633.0,
-      "stop": 14016.65,
-      "t1": 15865.7,
-      "expected_profit_pct_t1": 8.42
-    },
-    {
-      "symbol": "M&MFIN",
+      "symbol": "CREDITACC",
       "risk_sector": "NBFC & Capital Markets",
-      "cmp": 356.5,
-      "score": 72.9,
-      "entry_if_triggered": 356.5,
-      "stop": 327.98,
-      "t1": 413.54,
-      "expected_profit_pct_t1": 16.0
-    },
-    {
-      "symbol": "GODREJIND",
-      "risk_sector": "Process Industries",
-      "cmp": 1332.2,
-      "score": 72.4,
-      "entry_if_triggered": 1332.2,
-      "stop": 1233.32,
-      "t1": 1529.96,
-      "expected_profit_pct_t1": 14.84
-    },
-    {
-      "symbol": "FEDERALBNK",
-      "risk_sector": "Banks",
-      "cmp": 354.3,
-      "score": 72.0,
-      "entry_if_triggered": 354.3,
-      "stop": 339.5,
-      "t1": 383.9,
-      "expected_profit_pct_t1": 8.35
+      "cmp": 1517.6,
+      "score": 75.6,
+      "entry_if_triggered": 1517.6,
+      "stop": 1405.76,
+      "t1": 1741.27,
+      "expected_profit_pct_t1": 14.74
     }
   ],
   "queued_on_portfolio_limits": [],
+  "skipped_beyond_horizon": [
+    {
+      "symbol": "IDFCFIRSTB",
+      "hold_days_t1_raw": 30,
+      "reason": "T1 needs more than 22 trading days (~1 month)"
+    }
+  ],
   "unaffordable_at_this_capital": [],
   "ignored_below_watch": [
     {
-      "symbol": "NYKAA",
-      "score": 69.6
-    },
-    {
-      "symbol": "ANANDRATHI",
-      "score": 67.6
-    },
-    {
-      "symbol": "POONAWALLA",
-      "score": 53.2
-    },
-    {
       "symbol": "ETERNAL",
-      "score": 51.1
-    },
-    {
-      "symbol": "ATHERENERG",
-      "score": 47.7
-    },
-    {
-      "symbol": "JSWINFRA",
-      "score": 41.2
+      "score": 48.2
     }
   ],
   "scoring": {
@@ -409,17 +139,13 @@
     "weight_unavailable_pct": 35.0
   },
   "portfolio": {
-    "positions": 3,
-    "capital_deployed": 27211.0,
-    "capital_deployed_pct": 27.21,
-    "cash_left": 72789.0,
-    "total_risk_rupees": 1667.0,
-    "total_risk_pct": 1.67,
-    "sector_exposure": {
-      "Real Estate": 9.15,
-      "Banks": 8.6,
-      "NBFC & Capital Markets": 9.46
-    }
+    "positions": 0,
+    "capital_deployed": 0,
+    "capital_deployed_pct": 0.0,
+    "cash_left": 100000.0,
+    "total_risk_rupees": 0,
+    "total_risk_pct": 0,
+    "sector_exposure": {}
   },
   "caveats": [
     "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
@@ -431,6 +157,26 @@
   ],
   "review": {
     "reviewed": [
+      {
+        "symbol": "ICICIBANK",
+        "date_opened": "2026-07-21",
+        "status": "open",
+        "entry": 1470.8,
+        "stop": 1418.81,
+        "t1": 1574.78,
+        "price": 1432.9,
+        "pct": -2.58,
+        "r_multiple": -0.73,
+        "days_held": 3,
+        "horizon_t1": 16,
+        "mfe_pct": 0.21,
+        "mae_pct": -3.77,
+        "gap_flag": false,
+        "action": "EXIT \u2014 STOP HIT",
+        "detail": "session low at/below stop \u20b91,418.81 (last \u20b91,432.90)",
+        "score_at_open": 85.6,
+        "score_now": null
+      },
       {
         "symbol": "J&KBANK",
         "date_opened": "2026-07-21",
@@ -445,6 +191,7 @@
         "horizon_t1": 16,
         "mfe_pct": 0.6,
         "mae_pct": -2.89,
+        "gap_flag": false,
         "action": "NO DATA",
         "detail": "dropped out of today's universe \u2014 last seen \u20b9179.01 on 2026-07-23; check the chart manually",
         "score_at_open": 90.4,
@@ -464,28 +211,30 @@
         "horizon_t1": 35,
         "mfe_pct": 0.0,
         "mae_pct": -3.27,
+        "gap_flag": false,
         "action": "EARNINGS AHEAD",
         "detail": "results inside 21 days \u2014 KB-05 says reduce or stand aside rather than hold through the print",
         "score_at_open": 82.5,
         "score_now": null
       },
       {
-        "symbol": "ICICIBANK",
-        "date_opened": "2026-07-21",
+        "symbol": "IIFL",
+        "date_opened": "2026-07-25",
         "status": "open",
-        "entry": 1470.8,
-        "stop": 1418.81,
-        "t1": 1574.78,
-        "price": 1432.9,
-        "pct": -2.58,
-        "r_multiple": -0.73,
-        "days_held": 3,
+        "entry": 556.55,
+        "stop": 515.37,
+        "t1": 638.9,
+        "price": 556.55,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
         "horizon_t1": 16,
         "mfe_pct": 0.0,
-        "mae_pct": -2.85,
+        "mae_pct": 0.0,
+        "gap_flag": false,
         "action": "HOLD",
-        "detail": "-2.58% (-0.73R), 3d held, ~13d left to the T1 horizon",
-        "score_at_open": 85.6,
+        "detail": "+0.00% (+0.00R), 0d held, ~16d left to the T1 horizon",
+        "score_at_open": 81.7,
         "score_now": null
       },
       {
@@ -502,25 +251,52 @@
         "horizon_t1": 16,
         "mfe_pct": 0.0,
         "mae_pct": -3.58,
+        "gap_flag": false,
         "action": "HOLD",
         "detail": "-3.58% (-0.58R), 3d held, ~13d left to the T1 horizon",
         "score_at_open": 81.1,
         "score_now": null
+      },
+      {
+        "symbol": "LODHA",
+        "date_opened": "2026-07-25",
+        "status": "open",
+        "entry": 1144.1,
+        "stop": 1061.79,
+        "t1": 1308.72,
+        "price": 1144.1,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 16,
+        "mfe_pct": 0.0,
+        "mae_pct": 0.0,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~16d left to the T1 horizon",
+        "score_at_open": 85.9,
+        "score_now": null
       }
     ],
-    "closed_today": [],
+    "closed_today": [
+      "ICICIBANK"
+    ],
     "stats": {
-      "closed": 0,
-      "note": "no closed suggestions yet \u2014 nothing measured"
+      "closed": 1,
+      "win_rate_pct": 0.0,
+      "avg_return_pct": -2.58,
+      "median_return_pct": -2.58,
+      "avg_r_multiple": -0.73,
+      "avg_days_held": 3.0,
+      "by_exit_reason": {
+        "stop": 1
+      },
+      "hit_t1_pct": 0.0,
+      "note": "only 1 closed suggestion(s) \u2014 too few to infer a win rate; treat as a log, not a statistic"
     }
   },
   "ledger": {
-    "opened": [
-      "LODHA",
-      "IIFL"
-    ],
-    "reconfirmed": [
-      "ICICIBANK"
-    ]
+    "opened": [],
+    "reconfirmed": []
   }
 }

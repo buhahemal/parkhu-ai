@@ -26,10 +26,9 @@ the "expected profit %" projection with a measured hit rate. Until there are
 enough closed rows to be meaningful, the brief says so rather than quoting a
 number that looks like evidence.
 
-Known limitation: with no OHLC history in the dataset, MFE/MAE are sampled from
-the daily `cmp` rather than true intraday extremes, and a stop can only be
-detected if the close breached it. Both improve once the OHLC gap in
-docs/data-gaps.md is closed.
+When ``history/ohlc.csv`` is present, MFE/MAE use session high/low since entry
+and stops trigger on a low breach (with ``gap_flag`` when the open gaps through).
+Without OHLC the review falls back to daily ``cmp``.
 """
 
 from __future__ import annotations
@@ -41,7 +40,7 @@ from pathlib import Path
 import pandas as pd
 from config import risk, settings
 
-from collector.derived._utils import load_csv
+from collector.derived._utils import load_csv, out_dir
 from collector.utils import get_logger
 
 log = get_logger("positions")
@@ -73,6 +72,7 @@ OPEN_COLS = [
     "last_checked",
     "mfe_pct",
     "mae_pct",
+    "gap_flag",
     "hit_t1",
     "hit_t2",
     "reconfirmed_count",
@@ -134,6 +134,20 @@ def _read(path: Path, cols: list[str]) -> pd.DataFrame:
 
 def _write(path: Path, df: pd.DataFrame, cols: list[str]) -> None:
     df.reindex(columns=cols).to_csv(path, index=False)
+
+
+def _as_bool(v) -> bool:
+    """Coerce CSV / pandas nulls to bool without raising on pd.NA."""
+    if v is None or v is pd.NA:
+        return False
+    try:
+        if pd.isna(v):
+            return False
+    except (TypeError, ValueError):
+        pass
+    if isinstance(v, str):
+        return v.strip().lower() in {"1", "true", "yes", "y"}
+    return bool(v)
 
 
 def trading_days_between(start: str, end: str) -> int:
@@ -198,6 +212,7 @@ def record(ideas: list[dict], date: str) -> dict:
                 "last_checked": date,
                 "mfe_pct": 0.0,
                 "mae_pct": 0.0,
+                "gap_flag": False,
                 "hit_t1": False,
                 "hit_t2": False,
                 "reconfirmed_count": 0,
@@ -213,6 +228,64 @@ def record(ideas: list[dict], date: str) -> dict:
     return {"opened": added, "reconfirmed": reconfirmed}
 
 
+def _load_ohlc_map(date: str) -> dict[str, pd.DataFrame]:
+    """Symbol → OHLC bars (oldest→newest) from today's history file."""
+    path = out_dir(date) / "history" / "ohlc.csv"
+    if not path.is_file():
+        return {}
+    try:
+        df = pd.read_csv(path)
+    except Exception:  # noqa: BLE001
+        return {}
+    if df.empty or "symbol" not in df.columns:
+        return {}
+    out: dict[str, pd.DataFrame] = {}
+    for sym, g in df.groupby("symbol", sort=False):
+        g = g.copy()
+        g["date"] = g["date"].astype(str).str[:10]
+        for c in ("open", "high", "low", "close"):
+            if c in g.columns:
+                g[c] = pd.to_numeric(g[c], errors="coerce")
+        out[str(sym)] = g.sort_values("date")
+    return out
+
+
+def _excursion_from_ohlc(
+    bars: pd.DataFrame | None,
+    *,
+    date_opened: str,
+    entry: float,
+    stop: float,
+    close_price: float,
+) -> tuple[float, float, bool, bool]:
+    """Return (mfe_pct, mae_pct, stop_hit_on_low, gap_flag) since entry date."""
+    pct_close = (close_price - entry) / entry * 100 if entry else 0.0
+    if bars is None or bars.empty or entry <= 0:
+        return pct_close, pct_close, close_price <= stop, False
+
+    opened = str(date_opened)[:10]
+    since = bars[bars["date"].astype(str) >= opened].copy()
+    if since.empty:
+        return pct_close, pct_close, close_price <= stop, False
+
+    hi = float(since["high"].max()) if since["high"].notna().any() else close_price
+    lo = float(since["low"].min()) if since["low"].notna().any() else close_price
+    mfe = max(pct_close, (hi - entry) / entry * 100)
+    mae = min(pct_close, (lo - entry) / entry * 100)
+    stop_hit = bool(lo <= stop) or close_price <= stop
+
+    gap_flag = False
+    # Gap through: today's open ≤ stop while previous session close was above stop.
+    last = since.iloc[-1]
+    if len(since) >= 2 and pd.notna(last.get("open")):
+        prev_close = float(since.iloc[-2]["close"]) if pd.notna(since.iloc[-2].get("close")) else None
+        day_open = float(last["open"])
+        if prev_close is not None and prev_close > stop and day_open <= stop:
+            gap_flag = True
+            stop_hit = True
+    return mfe, mae, stop_hit, gap_flag
+
+
 # ------------------------------------------------------------------ review ----
 def review(date: str) -> dict:
     """Re-check every open suggestion against today's data. Returns the review
@@ -225,6 +298,7 @@ def review(date: str) -> dict:
     d = load_csv("stock_analysis", date)
     have_data = not d.empty and "symbol" in d.columns
     snap = d.set_index("symbol") if have_data else pd.DataFrame()
+    ohlc_map = _load_ohlc_map(date)
 
     reviewed, closed_rows, keep_idx = [], [], []
 
@@ -259,6 +333,7 @@ def review(date: str) -> dict:
                     "horizon_t1": int(float(r["horizon_days_t1"])),
                     "mfe_pct": round(float(pd.to_numeric(r["mfe_pct"], errors="coerce") or 0.0), 2),
                     "mae_pct": round(float(pd.to_numeric(r["mae_pct"], errors="coerce") or 0.0), 2),
+                    "gap_flag": _as_bool(r.get("gap_flag")),
                     "action": "NO DATA",
                     "detail": (
                         f"dropped out of today's universe — last seen ₹{last:,.2f} on "
@@ -278,10 +353,20 @@ def review(date: str) -> dict:
         r_mult = (price - entry) / (entry - stop) if entry > stop else 0.0
         held = trading_days_between(r["date_opened"], date)
 
-        mfe = max(float(pd.to_numeric(r["mfe_pct"], errors="coerce") or 0.0), pct)
-        mae = min(float(pd.to_numeric(r["mae_pct"], errors="coerce") or 0.0), pct)
+        prior_mfe = float(pd.to_numeric(r["mfe_pct"], errors="coerce") or 0.0)
+        prior_mae = float(pd.to_numeric(r["mae_pct"], errors="coerce") or 0.0)
+        mfe_day, mae_day, stop_on_low, gap_flag = _excursion_from_ohlc(
+            ohlc_map.get(sym),
+            date_opened=str(r["date_opened"]),
+            entry=entry,
+            stop=stop,
+            close_price=price,
+        )
+        mfe = max(prior_mfe, mfe_day)
+        mae = min(prior_mae, mae_day)
         open_df.at[idx, "mfe_pct"] = round(mfe, 2)
         open_df.at[idx, "mae_pct"] = round(mae, 2)
+        open_df.at[idx, "gap_flag"] = gap_flag
         open_df.at[idx, "last_price"] = round(price, 2)
         open_df.at[idx, "last_checked"] = date
 
@@ -299,9 +384,15 @@ def review(date: str) -> dict:
         earnings_now = str(row.get("earnings_within_21d")).lower() == "true"
 
         action, detail, reason = "HOLD", "", None
-        if price <= stop:  # 2
+        if stop_on_low:  # 2 — low breach or gap through (not close-only)
             action = "EXIT — STOP HIT"
-            detail = f"₹{price:,.2f} at or below stop ₹{stop:,.2f}"
+            if gap_flag:
+                detail = (
+                    f"gapped through stop ₹{stop:,.2f} (open ≤ stop; prior close above) "
+                    f"— last ₹{price:,.2f}"
+                )
+            else:
+                detail = f"session low at/below stop ₹{stop:,.2f} (last ₹{price:,.2f})"
             reason = "stop"
         elif len(broken) >= 2:  # 1
             action = "EXIT — THESIS INVALIDATED"
@@ -366,6 +457,7 @@ def review(date: str) -> dict:
                 "horizon_t1": int(float(r["horizon_days_t1"])),
                 "mfe_pct": round(mfe, 2),
                 "mae_pct": round(mae, 2),
+                "gap_flag": gap_flag,
                 "action": action,
                 "detail": detail,
                 "score_at_open": r["score_at_open"],
@@ -388,6 +480,7 @@ def review(date: str) -> dict:
                     "pct_return": round(pct, 2),
                     "r_multiple": round(r_mult, 2),
                     "days_held": held,
+                    "gap_flag": gap_flag,
                 }
             )
             closed_rows.append(closed)

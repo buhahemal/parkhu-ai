@@ -155,71 +155,41 @@ def build_scores(d: pd.DataFrame) -> tuple[pd.Series, dict, dict, float]:
 
 # ------------------------------------------------------------------ levels ----
 def derive_levels(row: pd.Series) -> dict | None:
-    """Structure-anchored stop, R-multiple targets, ATR feasibility for horizon."""
-    try:
-        entry = float(row["cmp"])
-        atr = float(row["atr14"])
-    except (TypeError, ValueError):
+    """Structure-anchored stop/targets (swing/base preferred over MA-only)."""
+    from collector.derived.structure_levels import structure_trade_levels
+
+    lv = structure_trade_levels(row)
+    if lv is None:
         return None
-    if not (entry > 0 and atr > 0):
-        return None
-
-    mas = [row.get(c) for c in ("ema50", "sma50", "ema100", "sma200", "ema200")]
-    below = [float(m) for m in mas if pd.notna(m) and 0 < float(m) < entry]
-    structure = max(below) if below else entry - 1.5 * atr
-
-    ceiling = min(risk.MAX_STOP_ATR * atr, entry * risk.MAX_STOP_PCT / 100)
-    dist = entry - (structure - 0.5 * atr)
-    stop_mode = "structure"
-    if dist > ceiling:
-        # KB-08 Fig 3-1 allows an ATR stop "when structure is unclear". Structure
-        # sitting further away than we can risk is that case; flag it so the
-        # brief can say invalidation is below the stop.
-        dist, stop_mode = risk.ATR_FALLBACK_MULT * atr, "atr_fallback"
-    dist = min(max(dist, risk.MIN_STOP_ATR * atr), ceiling)
-    if dist <= 0:
-        return None
-
-    stop = entry - dist
-    t1 = entry + risk.MIN_RR_T1 * dist
-    t2 = entry + (risk.MIN_RR_T1 + 1.0) * dist
-    t3 = entry + (risk.MIN_RR_T1 + 2.0) * dist
-
-    # Expected drift over N trading days ~ ATR * sqrt(N).
-    days_t1 = math.ceil((risk.MIN_RR_T1 * dist / atr) ** 2)
-    days_t2 = math.ceil(((risk.MIN_RR_T1 + 1.0) * dist / atr) ** 2)
-
-    # Overhead supply is flagged, never used to cap T1: capping would drag
-    # rr_t1 under the KB minimum and silently reject every breakout candidate.
-    d52 = row.get("dist_52w_high_pct")
-    high52 = entry / (1 + float(d52) / 100) if pd.notna(d52) and float(d52) < 0 else np.nan
-    clamp = lambda n: int(min(max(n, risk.HORIZON_MIN_DAYS), risk.HORIZON_MAX_DAYS))  # noqa: E731
-
+    # Brief payload uses the shared keys; drop CSV-only aliases.
     return {
-        "entry": round(entry, 2),
-        "stop": round(stop, 2),
-        "stop_pct": round(dist / entry * 100, 2),
-        "stop_atr_mult": round(dist / atr, 2),
-        "stop_mode": stop_mode,
-        "stop_above_structure": stop_mode == "atr_fallback",
-        "structure_invalidation": round(structure, 2),
-        "t1": round(t1, 2),
-        "t2": round(t2, 2),
-        "t3": round(t3, 2),
-        "t1_pct": round((t1 - entry) / entry * 100, 2),
-        "t2_pct": round((t2 - entry) / entry * 100, 2),
-        "t3_pct": round((t3 - entry) / entry * 100, 2),
-        "rr_t1": round((t1 - entry) / dist, 2),
-        "expected_profit_pct_t1": round((t1 - entry) / entry * 100, 2),
-        "hold_days_t1": clamp(days_t1),
-        "hold_days_t2": clamp(days_t2),
-        "hold_days_t1_raw": int(days_t1),
-        "hold_days_t2_raw": int(days_t2),
-        "t1_beyond_mandate": days_t1 > risk.HORIZON_MAX_DAYS,
-        "t1_above_52w_high": bool(pd.notna(high52) and t1 > high52),
-        "room_to_52w_high_pct": (
-            round((high52 - entry) / entry * 100, 2) if pd.notna(high52) else None
-        ),
+        k: lv[k]
+        for k in (
+            "entry",
+            "stop",
+            "stop_pct",
+            "stop_atr_mult",
+            "stop_mode",
+            "stop_above_structure",
+            "structure_invalidation",
+            "t1",
+            "t2",
+            "t3",
+            "t1_pct",
+            "t2_pct",
+            "t3_pct",
+            "rr_t1",
+            "expected_profit_pct_t1",
+            "hold_days_t1",
+            "hold_days_t2",
+            "hold_days_t1_raw",
+            "hold_days_t2_raw",
+            "t1_beyond_mandate",
+            "t1_above_52w_high",
+            "room_to_52w_high_pct",
+            "target_mode",
+        )
+        if k in lv
     }
 
 
@@ -323,6 +293,12 @@ def build_payload(date: str, capital: float) -> dict:
         f"delivery% >= {risk.MIN_DELIVERY_PCT:g}",
         lambda x: x["delivery_pct"] >= risk.MIN_DELIVERY_PCT,
     )
+    if "relative_volume" in f.columns:
+        gate(
+            f"relative_volume >= {risk.MIN_RELATIVE_VOLUME:g}",
+            lambda x: pd.to_numeric(x["relative_volume"], errors="coerce")
+            >= risk.MIN_RELATIVE_VOLUME,
+        )
     gate(
         f"no earnings within {risk.EARNINGS_BLACKOUT_DAYS}d",
         lambda x: ~truthy(x["earnings_within_21d"]),

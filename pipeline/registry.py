@@ -15,14 +15,16 @@ from collector.derived import (
     fno_momentum,
     market_summary,
     news_classify,
+    ohlc_features,
     relative_strength,
     stock_analysis,
     swing_candidates,
 )
+from collector.history import ohlc as ohlc_history
 from collector.macro import macro
 from collector.market import indices, sectors
 from collector.news import news
-from collector.options import options
+from collector.options import options, stock_options
 from collector.smartmoney import smartmoney
 from collector.tradingview import tradingview
 
@@ -40,19 +42,22 @@ class AgentSpec:
 # Remaining collectors cover NSE-only signals plus index/sector/macro/news.
 COLLECTORS: tuple[AgentSpec, ...] = (
     AgentSpec("tradingview", tradingview.collect, "collector"),
+    AgentSpec("ohlc_history", ohlc_history.collect, "collector"),
     AgentSpec("earnings", tradingview.collect_earnings, "collector"),
     AgentSpec("indices", indices.collect, "collector"),
     AgentSpec("sectors", sectors.collect, "collector"),
     AgentSpec("smartmoney", smartmoney.collect, "collector"),
     AgentSpec("options", options.collect, "collector"),
     AgentSpec("derivatives", derivatives.collect, "collector"),
+    AgentSpec("stock_options", stock_options.collect, "collector"),
     AgentSpec("delivery", delivery.collect, "collector"),
     AgentSpec("corpactions", corpactions.collect, "collector"),
     AgentSpec("news", news.collect, "collector"),
     AgentSpec("macro", macro.collect, "collector"),
 )
 
-# Order matters: news_classify before stock_analysis; swing_brief is last.
+# Order matters: news_classify before ohlc_features before stock_analysis;
+# swing_brief is last.
 DERIVED: tuple[AgentSpec, ...] = (
     AgentSpec("relative_strength", relative_strength.collect, "derived"),
     AgentSpec("event_risk", event_risk.collect, "derived"),
@@ -60,6 +65,7 @@ DERIVED: tuple[AgentSpec, ...] = (
     AgentSpec("swing_candidates", swing_candidates.collect, "derived"),
     AgentSpec("market_summary", market_summary.collect, "derived"),
     AgentSpec("news_classify", news_classify.collect, "derived"),
+    AgentSpec("ohlc_features", ohlc_features.collect, "derived"),
     AgentSpec("stock_analysis", stock_analysis.collect, "derived"),
     AgentSpec("swing_brief", swing_brief.collect, "derived"),
 )

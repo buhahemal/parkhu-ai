@@ -26,6 +26,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 from collector.derived._utils import load_csv, nifty_sector_for
+from collector.derived.structure_levels import structure_trade_levels
 from collector.schema import assert_unique_columns
 from collector.utils import empty_csv, get_logger, save_csv
 
@@ -108,6 +109,18 @@ COLUMNS = [
     "overhead_supply_pct",
     "headroom_to_52w_high_pct",
     "dist_52w_low_pct",
+    # OHLC-derived structure (from history/ohlc.csv via ohlc_features)
+    "swing_high_20d",
+    "swing_low_20d",
+    "swing_low_50d",
+    "base_high",
+    "base_low",
+    "base_length_days",
+    "breakout_20d_high",
+    "volume_20d_avg",
+    "volume_ratio_vs_20d",
+    "consolidation_atr_pct",
+    "pct_from_base_high",
     # trade levels
     "entry_low",
     "entry_high",
@@ -168,6 +181,7 @@ COLUMNS = [
     "fno_score",
     "pcr",
     "max_pain",
+    "atm_iv",
     "liquidity_sweep",
     "smart_money_score",
     # final engine sub-scores (AI computes the composite)
@@ -390,6 +404,8 @@ def collect(date: str | None = None) -> dict:
     ev = _idx(load_csv("event_risk", date))
     fno = _idx(load_csv("fno_momentum", date))
     deliv = _idx(load_csv("delivery", date))
+    ohlc_f = _idx(load_csv("ohlc_features", date))
+    stock_opt = _idx(load_csv("stock_options", date))
     news_agg = _aggregate_news(load_csv("news_enriched", date))
 
     # Universe-wide ranks.
@@ -501,14 +517,17 @@ def collect(date: str | None = None) -> dict:
         r2 = round(pivot + (high - low), 2) if pivot is not None else None
         s2 = round(pivot - (high - low), 2) if pivot is not None else None
 
-        # ATR-based trade template (deterministic; not a recommendation).
-        entry_low = entry_high = stop = t1 = t2 = t3 = rr = None
-        if close is not None and atr:
-            entry_low = round(close - 0.5 * atr, 2)
-            entry_high = round(close + 0.5 * atr, 2)
-            stop = round(close - 1.5 * atr, 2)
-            t1, t2, t3 = round(close + atr, 2), round(close + 2 * atr, 2), round(close + 3 * atr, 2)
-            rr = round((t1 - close) / (close - stop), 2) if close > stop else None
+        swing_high_20d = _num(_get(ohlc_f, sym, "swing_high_20d"))
+        swing_low_20d = _num(_get(ohlc_f, sym, "swing_low_20d"))
+        swing_low_50d = _num(_get(ohlc_f, sym, "swing_low_50d"))
+        base_high = _num(_get(ohlc_f, sym, "base_high"))
+        base_low = _num(_get(ohlc_f, sym, "base_low"))
+        base_length_days = _get(ohlc_f, sym, "base_length_days")
+        breakout_20d = _get(ohlc_f, sym, "breakout_20d_high")
+        volume_20d_avg = _num(_get(ohlc_f, sym, "volume_20d_avg"))
+        volume_ratio_20d = _num(_get(ohlc_f, sym, "volume_ratio_vs_20d"))
+        consolidation_atr_pct = _num(_get(ohlc_f, sym, "consolidation_atr_pct"))
+        pct_from_base_high = _num(_get(ohlc_f, sym, "pct_from_base_high"))
 
         hi52 = _num(r.get("price_52_week_high"))
         lo52 = _num(r.get("price_52_week_low"))
@@ -530,6 +549,33 @@ def collect(date: str | None = None) -> dict:
                 ("all-time high", hi_all),
             ],
         )
+
+        # Structure-based trade levels (replaces fixed 0.67 ATR ladder).
+        entry_low = entry_high = stop = t1 = t2 = t3 = rr = None
+        lv = structure_trade_levels(
+            {
+                "cmp": close,
+                "atr14": atr,
+                "ema50": ema50,
+                "sma50": sma50,
+                "ema100": None,
+                "sma200": sma200,
+                "ema200": ema200,
+                "base_low": base_low,
+                "swing_low_20d": swing_low_20d,
+                "swing_low_50d": swing_low_50d,
+                "swing_high_20d": swing_high_20d,
+                "nearest_overhead": ovh,
+                "high_52w": hi52,
+                "dist_52w_high_pct": dist52,
+            }
+        )
+        if lv:
+            entry_low = lv["entry_low"]
+            entry_high = lv["entry_high"]
+            stop = lv["stop_loss"]
+            t1, t2, t3 = lv["target1"], lv["target2"], lv["target3"]
+            rr = lv["risk_reward"]
 
         value_traded = _num(r.get("value_traded"))
         turnover_cr = round(value_traded / 1e7, 2) if value_traded else None
@@ -628,6 +674,17 @@ def collect(date: str | None = None) -> dict:
                 "overhead_supply_pct": ovh_pct,
                 "headroom_to_52w_high_pct": head52,
                 "dist_52w_low_pct": dist52_lo,
+                "swing_high_20d": swing_high_20d,
+                "swing_low_20d": swing_low_20d,
+                "swing_low_50d": swing_low_50d,
+                "base_high": base_high,
+                "base_low": base_low,
+                "base_length_days": base_length_days,
+                "breakout_20d_high": breakout_20d,
+                "volume_20d_avg": volume_20d_avg,
+                "volume_ratio_vs_20d": volume_ratio_20d,
+                "consolidation_atr_pct": consolidation_atr_pct,
+                "pct_from_base_high": pct_from_base_high,
                 "entry_low": entry_low,
                 "entry_high": entry_high,
                 "stop_loss": stop,
@@ -679,8 +736,9 @@ def collect(date: str | None = None) -> dict:
                 "in_oi_spurt": _get(fno, sym, "in_oi_spurt"),
                 "oi_change_pct": _num(_get(fno, sym, "pct_change_oi")),
                 "fno_score": _num(_get(fno, sym, "fno_score")),
-                "pcr": None,
-                "max_pain": None,
+                "pcr": _num(_get(stock_opt, sym, "pcr")),
+                "max_pain": _num(_get(stock_opt, sym, "max_pain")),
+                "atm_iv": _num(_get(stock_opt, sym, "atm_iv")),
                 "liquidity_sweep": None,
                 "smart_money_score": _num(_get(fno, sym, "fno_score")),
                 "technical_score": tech_score,

@@ -13,7 +13,13 @@ def test_horizon_max_is_one_month_trading_days():
     assert risk.HORIZON_MAX_DAYS == 22
 
 
-def _row(*, cmp: float, atr14: float, ema50: float | None = None) -> pd.Series:
+def _row(
+    *,
+    cmp: float,
+    atr14: float,
+    ema50: float | None = None,
+    swing_low_20d: float | None = None,
+) -> pd.Series:
     return pd.Series(
         {
             "cmp": cmp,
@@ -24,6 +30,12 @@ def _row(*, cmp: float, atr14: float, ema50: float | None = None) -> pd.Series:
             "sma200": None,
             "ema200": None,
             "dist_52w_high_pct": -5.0,
+            "swing_low_20d": swing_low_20d,
+            "swing_low_50d": None,
+            "base_low": None,
+            "swing_high_20d": None,
+            "nearest_overhead": None,
+            "high_52w": None,
         }
     )
 
@@ -46,3 +58,15 @@ def test_tight_setup_within_mandate():
     assert lv["t1_beyond_mandate"] is False
     assert risk.HORIZON_MIN_DAYS <= lv["hold_days_t1"] <= risk.HORIZON_MAX_DAYS
     assert lv["rr_t1"] >= risk.MIN_RR_T1 - 0.01
+
+
+def test_derive_levels_uses_swing_low_when_present():
+    lv = derive_levels(_row(cmp=100.0, atr14=2.0, ema50=90.0, swing_low_20d=96.0))
+    assert lv is not None
+    assert lv["stop_mode"] == "swing_20d"
+    assert lv["structure_invalidation"] == 96.0
+    assert lv["rr_t1"] >= risk.MIN_RR_T1 - 0.01
+
+
+def test_min_relative_volume_constant_exists():
+    assert risk.MIN_RELATIVE_VOLUME == 1.0

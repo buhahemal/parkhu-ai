@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-07-25",
-  "generated_at_ist": "2026-07-25T13:10:53.272507+05:30",
+  "generated_at_ist": "2026-07-26T15:48:12.503013+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -19,7 +19,54 @@
         "perf_1y"
       ],
       "present": true,
-      "rows": 363
+      "rows": 364
+    },
+    "history/ohlc.csv": {
+      "agent": "ohlc_history",
+      "source": "Yahoo Finance (.NS) + database/ohlc cache",
+      "description": "Daily equity OHLCV history (~250 sessions \u00d7 universe) in long format.",
+      "use_case": "Swing highs/lows, volume trend, structure stops, OHLC-based MFE/MAE.",
+      "key_columns": [
+        "symbol",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "present": true,
+      "rows": 5000
+    },
+    "ohlc_features.csv": {
+      "agent": "ohlc_features (derived)",
+      "source": "history/ohlc.csv",
+      "description": "Per-symbol swing/volume structure derived from daily OHLC (20d highs/lows, base, breakout, volume ratio).",
+      "use_case": "Feed stock_analysis and structure-based trade levels.",
+      "key_columns": [
+        "symbol",
+        "swing_high_20d",
+        "swing_low_20d",
+        "breakout_20d_high",
+        "volume_ratio_vs_20d"
+      ],
+      "present": true,
+      "rows": 20
+    },
+    "stock_options.csv": {
+      "agent": "stock_options",
+      "source": "NSE option-chain v3 (Equity), env-gated",
+      "description": "Per-stock nearest-expiry PCR, max pain and ATM IV for F&O names (disabled unless PARKHU_STOCK_OPTIONS=1).",
+      "use_case": "Populate stock_analysis options columns; scoring weight deferred.",
+      "key_columns": [
+        "symbol",
+        "expiry",
+        "pcr",
+        "max_pain",
+        "atm_iv"
+      ],
+      "present": true,
+      "rows": 0
     },
     "indices.csv": {
       "agent": "indices",
@@ -45,7 +92,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 8
+      "rows": 10
     },
     "earnings.csv": {
       "agent": "earnings",
@@ -60,7 +107,7 @@
         "next_earnings_date"
       ],
       "present": true,
-      "rows": 363
+      "rows": 364
     },
     "fii.csv": {
       "agent": "smartmoney",
@@ -174,6 +221,37 @@
       "present": true,
       "rows": 20
     },
+    "news_enriched.csv": {
+      "agent": "news_classify (derived)",
+      "source": "news.csv + keyword rules",
+      "description": "Per-announcement sentiment/catalyst classification via deterministic keyword rules. Unmatched rows stay neutral.",
+      "use_case": "Feed stock_analysis news_* columns without an LLM.",
+      "key_columns": [
+        "symbol",
+        "news_sentiment",
+        "catalyst_strength",
+        "major_catalyst",
+        "news_score",
+        "classify_source"
+      ],
+      "present": true,
+      "rows": 20
+    },
+    "research_pack.json": {
+      "agent": "publish_pack",
+      "source": "swing_brief + trades + swing_candidates + market_summary",
+      "description": "Claude-sized daily handoff: regime, ideas, funnel, open ledger, needs-action, top candidates, deep-dive URLs. Optional additive enrichment (Groq desk note) when GROQ_API_KEY is set. Also written as research_pack.md; mirrored under output/latest/.",
+      "use_case": "Morning LLM review without unzipping latest.zip.",
+      "key_columns": [
+        "collection_date",
+        "regime",
+        "ideas",
+        "ledger",
+        "enrichment",
+        "urls"
+      ],
+      "present": true
+    },
     "macro.csv": {
       "agent": "macro",
       "source": "Yahoo Finance + manual policy placeholders",
@@ -199,7 +277,7 @@
         "close"
       ],
       "present": true,
-      "rows": 352
+      "rows": 353
     },
     "relative_strength.csv": {
       "agent": "relative_strength (derived)",
@@ -213,13 +291,13 @@
         "perf_1m"
       ],
       "present": true,
-      "rows": 363
+      "rows": 364
     },
     "event_risk.csv": {
       "agent": "event_risk (derived)",
       "source": "earnings + corporate_actions + news",
       "description": "Earnings, corp-action and news flags inside a 21-day event window.",
-      "use_case": "Avoid holding into results/ex-dates for 2\u20133 week swings.",
+      "use_case": "Avoid holding into results/ex-dates for ~1 month swings.",
       "key_columns": [
         "symbol",
         "earnings_within_21d",
@@ -227,7 +305,7 @@
         "event_risk_score"
       ],
       "present": true,
-      "rows": 363
+      "rows": 364
     },
     "fno_momentum.csv": {
       "agent": "fno_momentum (derived)",
@@ -246,7 +324,7 @@
     "swing_candidates.csv": {
       "agent": "swing_candidates (derived)",
       "source": "multi-file composite score",
-      "description": "Top ~20 names scored for 2\u20133 week swing holds targeting ~5% \u2014 trend, RS, delivery, F&O, upside room, event-risk penalties. NOT a recommendation.",
+      "description": "Top ~20 names scored for up to ~1 month swing holds targeting ~5% \u2014 trend, RS, delivery, F&O, upside room, event-risk penalties. NOT a recommendation.",
       "use_case": "Focused swing shortlist for the research engine.",
       "key_columns": [
         "symbol",
@@ -261,7 +339,7 @@
     "stock_analysis.csv": {
       "agent": "stock_analysis (derived)",
       "source": "consolidates all per-stock CSVs",
-      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, ATR-based trade levels, and a cross-sectional FACTOR MODEL (winsorized z-scores for value/momentum/quality/low-vol/growth/size + composite_factor_z and its universe percentile rank, Barra/AQR-style). Blank columns (supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) have no source yet. NOT a recommendation.",
+      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, ATR-based trade levels, and a cross-sectional FACTOR MODEL (winsorized z-scores for value/momentum/quality/low-vol/growth/size + composite_factor_z and its universe percentile rank, Barra/AQR-style). Blank columns (supertrend, ichimoku, obv, cmf, ownership, surprises) have no source yet. News fields join from news_enriched. NOT a recommendation.",
       "use_case": "The main file the research engine reads; everything deterministic precomputed. Factor z-scores rank each name vs the universe (mean 0, higher = better).",
       "key_columns": [
         "symbol",
@@ -281,7 +359,7 @@
         "risk_score"
       ],
       "present": true,
-      "rows": 363
+      "rows": 364
     },
     "market_summary.csv": {
       "agent": "market_summary (derived)",
@@ -316,6 +394,29 @@
       ],
       "present": true,
       "rows": 25
+    },
+    "swing_brief.md": {
+      "agent": "swing_brief (brief layer)",
+      "source": "stock_analysis + market_summary",
+      "description": "The day's decision-ready swing brief: 3-5 high-conviction ideas with entry, stop, T1/T2/T3, reward:risk, expected hold period, expected profit % and rupee position size, plus portfolio math, watchlist and the gate funnel. Enforces the KB-08/KB-09 caps (2% risk per trade, 10% per stock, 25% per sector, 10 positions) and the KB-14 score bands.",
+      "use_case": "Read this first each morning. Zero ideas is a valid outcome under KB-00, not a missing file.",
+      "key_columns": [],
+      "present": true
+    },
+    "swing_brief.json": {
+      "agent": "swing_brief (brief layer)",
+      "source": "stock_analysis + market_summary",
+      "description": "The same brief as structured data: regime, gate funnel with survivor counts per gate, per-idea levels/sizing/evidence, watchlist, names queued on portfolio limits, and the score weights that had no live data this run.",
+      "use_case": "Machine-readable hand-off; also the audit trail for why a name was or was not recommended.",
+      "key_columns": [
+        "regime",
+        "funnel",
+        "ideas",
+        "watchlist",
+        "portfolio",
+        "scoring"
+      ],
+      "present": true
     },
     "report.json": {
       "agent": "run.py",
