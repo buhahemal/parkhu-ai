@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-07-26T14:27:42.623384+05:30
+- **generated_at_ist:** n/a
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -75,49 +75,83 @@
 - PFOCUS: score=12 rs_nifty=38.95 deliv=36.72
 - IDFCFIRSTB: score=12 rs_nifty=4.08 deliv=48.26
 
+## World markets (India cues)
+
+### Asia
+- Nikkei: -2.73% (bear)
+- Hang Seng: -0.98% (bear)
+- Shanghai: -1.61% (bear)
+- Kospi: -5.72% (bear)
+- Taiwan: -2.67% (bear)
+- ASX 200: -0.75% (bear)
+
+### Europe
+- FTSE 100: +0.91% (bull)
+- DAX: +1.36% (bull)
+- Euro Stoxx 50: +1.14% (bull)
+
+### US
+- S&P 500: +0.05% (neutral)
+- Nasdaq: -0.64% (bear)
+- Dow: +0.46% (bull)
+- US VIX: -0.64% (bull)
+
+### Macro
+- USDINR: -0.33% (neutral)
+- Crude WTI: -3.12% (bear)
+- Brent: -3.88% (bear)
+- DXY: +0.04% (neutral)
+- US 10Y: -0.51% (bull)
+- India ETF: +0.82% (bull)
+- EM ETF: -1.97% (bear)
+
+
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market regime remains bearish with a medium overall risk. The Nifty trend is also bearish, with a 0.43% decline. The India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.
+The market remains in a bearish regime with a medium overall risk level. The Nifty trend is bearish with a -0.43% change, and India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.
 
-- **LODHA** [consider_entry/high] entry=1144.1 stop=1061.79 t1=1308.72 hold=16d — High Parkhu score of 90.3 and a buy band
-- **ICICIBANK** [manage_open/medium] entry=1432.9 stop=1381.32 t1=1536.05 hold=16d — Already in open book, monitor and adjust stop loss as needed
-- **IIFL** [consider_entry/medium] entry=556.55 stop=515.37 t1=638.9 hold=16d — Buy band and a Parkhu score of 82.4
+- **LODHA** [consider_entry/high] entry=1144.1 stop=1061.79 t1=1308.72 hold=16d — High Parkhu score of 90.3 and buy band
+- **ICICIBANK** [manage_open/medium] entry=1432.9 stop=1381.32 t1=1536.05 hold=16d — Open position with stop at 1418.81 and last price at 1432.9
+- **IIFL** [consider_entry/high] entry=556.55 stop=515.37 t1=638.9 hold=16d — High Parkhu score of 82.4 and buy band
+- **IPCALAB** [stand_aside/low] entry=1828.2 stop=1715.39 t1=2053.81 hold=16d — Open position with mae_pct of -3.58 and no clear trend
+- **J&KBANK** [watch/low] entry=184.33 stop=169.92 t1=213.16 hold=16d — Dropped out of today's universe and requires manual chart check
+- **ZYDUSLIFE** [stand_aside/low] entry=1146.2 stop=1074.19 t1=1290.23 hold=35d — Earnings ahead and reduce or stand aside recommended
 
 ### AI stock reviews
 
-- **LODHA** [high] LODHA fits a ≤1-month swing due to its recent bullish trend, with a trend label of 'Bullish' and an ADX of 44.13, indicating strong momentum. The stock has also outperformed Nifty and its sector in the last month, with returns of 25.62% and 12.84% respectively. With a Parkhu score of 90.3 and a technical rating of 'Buy', this setup appears promising for a short-term swing.
-  - catalysts: Earnings momentum, Sector outperformance, Bullish trend
-  - risks: Market regime risk, Sector volatility, Economic downturn
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a breach of the stop level at 1061.79, which would indicate a reversal of the trend.
-- **ICICIBANK** [high] ICICIBANK's bullish trend label, high delivery percentage, and recent outperformance against Nifty and its sector make it a promising swing trade candidate in a bearish market regime. The stock's RSI and ADX levels indicate a potential for further upside. With a Parkhu score of 82.8, this setup fits a ≤1-month swing. The proximity to its 52-week high also suggests potential for a breakout.
-  - catalysts: Earnings anticipation, Sector outperformance, Breakout potential
-  - risks: Market regime risk, Sectoral downturn, Earnings disappointment
-  - watch: Triggers for this trade include a strong breakout above the current levels, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish thesis. Close monitoring of the stock's price action and overall market sentiment is essential.
-- **IIFL** [high] IIFL Finance Limited fits a ≤1-month swing due to its recent bullish trend and relatively high return over the past month. The stock's RSI and ADX levels indicate a potential for further upward movement. With a Parkhu score of 82.4, the setup appears promising for a short-term swing trade.
-  - catalysts: Bullish trend, High Parkhu score, Recent outperformance
-  - risks: NBFC & Capital Markets sector risk, Medium overall risk, India VIX volatility
-  - watch: Triggers for this trade include a strong breakout above the current level, while invalidation cues would be a drop below the stop level. Monitoring the stock's price action and overall market sentiment will be crucial.
+- **LODHA** [high] The setup in LODHA fits a ≤1-month swing due to its strong recent price action, with a 1-month return of 25.62% outperforming the Nifty. The bullish trend label, combined with an ADX of 44.13 and an RSI of 60.44, suggests momentum is on the side of the bulls. The stock's distance from its 52-week high, at -13.82%, also leaves room for potential upside.
+  - catalysts: Earnings Expectations, Sector Rebound, Real Estate Demand
+  - risks: Interest Rate Changes, Sector Downturn, Economic Slowdown
+  - watch: Triggers for this setup include a breakout above recent highs, while invalidation cues would be a close below the stop level of 1061.79, indicating a failure of the bullish momentum.
+- **ICICIBANK** [high] ICICIBANK fits a ≤1-month swing due to its recent bullish trend, with an ADX of 32.55 and RSI of 61.67, indicating a strong uptrend. The stock has outperformed Nifty and its sector in the last month, with returns of 6.88% and 7.94% respectively. With a Parkhu score of 82.8 and a 'Buy' technical rating, ICICIBANK is poised for a potential short-term rally.
+  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend
+  - risks: Market downturn, Sector rotation, Earnings disappointment
+  - watch: Triggers for this setup include a breakout above the recent high, while invalidation cues include a close below the stop level of 1381.32, indicating a potential trend reversal.
+- **IIFL** [medium] IIFL Finance Limited is a suitable candidate for a ≤1-month swing trade due to its recent bullish trend, with a trend label and a relatively high return over the past month. The company's risk sector, NBFC & Capital Markets, has shown resilience, and its technical rating is a 'Buy'. With a parkhu score of 82.4, the stock has demonstrated strong potential for a short-term upside. The current market regime is bearish, but IIFL's performance has been relatively better than the Nifty and its sector.
+  - catalysts: Bullish trend, High parkhu score, Better sector performance
+  - risks: Bearish market regime, NBFC & Capital Markets sector risks, Earnings uncertainty
+  - watch: Triggers for this trade include a strong breakout above the current level, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish trend. The trade's validity will also depend on the overall market regime and the performance of the NBFC & Capital Markets sector.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: LODHA, ICICIBANK, IIFL, Caveats: Earnings ahead for some stocks, promoter pledge and ownership data are empty
+Bearish regime, defensive stance, top ideas: LODHA, ICICIBANK, IIFL; caveats: provisional scores, no promoter pledge and ownership data, trade levels rebuilt
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Bearish Market Regime — The current bearish market regime, indicated by a high India VIX of 14.03 and FII net outflow of -3892.77, may lead to increased market volatility and negatively impact investor sentiment.
-2. **[medium]** UFO Moviez India Limited Updates (UFO) — UFO Moviez India Limited's updates regarding its 22nd Annual General Meeting and electronic dispatch of the annual report may have a significant impact on the company's stock price and investor confidence.
-3. **[medium]** Sigachi Industries Limited Postpones Earnings Call (SIGACHI) — The postponement of Sigachi Industries Limited's earnings call may lead to uncertainty and negatively impact the company's stock price, as investors may perceive it as a lack of transparency.
-4. **[medium]** Vedanta Oil and Gas Limited Updates (VOGL) — Vedanta Oil and Gas Limited's updates under Regulation 30 of SEBI Listing Obligations and Disclosure Requirements may have a significant impact on the company's stock price and investor confidence.
-5. **[low]** UFO Moviez India Limited Updates on Annual Report (UFO) — UFO Moviez India Limited's updates on its annual report may have a minor impact on the company's stock price, as it is a routine disclosure requirement.
-6. **[low]** Hindware Home Innovation Limited AGM Notice (HINDWAREAP) — Hindware Home Innovation Limited's notice regarding its 9th Annual General Meeting may have a minor impact on the company's stock price, as it is a routine corporate event.
-7. **[low]** Waaree Renewable Technologies Limited Bags Order (WAAREERTL) — Waaree Renewable Technologies Limited's order receipt may have a minor positive impact on the company's stock price, as it indicates business growth.
-8. **[low]** Hirect Awarded Order for Mainline Electric Multiple Unit Trainsets (HIRECT) — Hirect's order receipt for Mainline Electric Multiple Unit trainsets may have a minor positive impact on the company's stock price, as it indicates business growth.
-9. **[low]** IDFC First Bank Limited Analyst Meet Updates (IDFCFIRSTB) — IDFC First Bank Limited's analyst meet updates may have a minor impact on the company's stock price, as it is a routine corporate event.
-10. **[low]** GE Vernova T&D India Limited Non-Executive Director Cessation (GVT&D) — GE Vernova T&D India Limited's non-executive director cessation may have a minor impact on the company's stock price, as it is a routine corporate event.
+1. **[high]** Bearish Market Regime — The current bearish market regime may impact investor sentiment and overall market performance.
+2. **[high]** FIIs Turn Net Sellers — Foreign Institutional Investors (FIIs) turning net sellers may lead to a decrease in market liquidity and increase volatility.
+3. **[medium]** India VIX Rises — An increase in the India VIX indicates higher market volatility, which may impact investor decisions.
+4. **[medium]** UFO Moviez India Limited Updates (UFO) — The updates from UFO Moviez India Limited may impact the company's stock price and investor sentiment.
+5. **[medium]** Sigachi Industries Limited Postpones Earnings Call (SIGACHI) — The postponement of the earnings call by Sigachi Industries Limited may impact investor expectations and the company's stock price.
+6. **[medium]** Vedanta Oil and Gas Limited Updates (VOGL) — The updates from Vedanta Oil and Gas Limited may impact the company's stock price and investor sentiment.
+7. **[low]** Hirect Awarded Order for Mainline Electric Multiple Unit Trainsets (HIRECT) — The order awarded to Hirect may have a positive impact on the company's stock price and revenue.
+8. **[low]** Waaree Renewable Technologies Limited Bags Order (WAAREERTL) — The order bagged by Waaree Renewable Technologies Limited may have a positive impact on the company's stock price and revenue.
+9. **[low]** GE Vernova T&D India Limited Announces Cessation of Director (GVT&D) — The cessation of the director may have a minimal impact on the company's stock price and operations.
+10. **[low]** Whirlpool of India Limited Announces Change in Management (WHIRLPOOL) — The change in management may have a minimal impact on the company's stock price and operations.
 
 ## Deep-dive URLs (after push)
 

@@ -1087,6 +1087,65 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   font-family: var(--mono);
 }
 
+.pulse-regions {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.pulse-region h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pulse-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.pulse-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.pulse-row:last-child {
+  border-bottom: 0;
+}
+
+.pulse-name {
+  color: var(--ink);
+  font-weight: 500;
+  min-width: 0;
+}
+
+.pulse-pct {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.pulse-pct.bull {
+  color: var(--good);
+}
+
+.pulse-pct.bear {
+  color: var(--bad);
+}
+
 /* —— Groq enrichment —— */
 .enrich-hero {
   display: flex;

@@ -87,6 +87,112 @@ def _regime_from_sources(brief: dict[str, Any] | None, date: str) -> dict[str, A
     return rows[0] if rows else {}
 
 
+# Global markets that typically cue Indian equities (from macro.csv).
+_WORLD_MARKET_GROUPS: tuple[tuple[str, tuple[tuple[str, str], ...]], ...] = (
+    (
+        "Asia",
+        (
+            ("Nikkei", "NIKKEI"),
+            ("Hang Seng", "HANG_SENG"),
+            ("Shanghai", "SHANGHAI"),
+            ("Kospi", "KOSPI"),
+            ("Taiwan", "TAIWAN"),
+            ("ASX 200", "ASX200"),
+        ),
+    ),
+    (
+        "Europe",
+        (
+            ("FTSE 100", "FTSE"),
+            ("DAX", "DAX"),
+            ("Euro Stoxx 50", "EURO_STOXX50"),
+        ),
+    ),
+    (
+        "US",
+        (
+            ("S&P 500", "US_SP500"),
+            ("Nasdaq", "US_NASDAQ"),
+            ("Dow", "US_DOW"),
+            ("US VIX", "US_VIX"),
+        ),
+    ),
+    (
+        "Macro",
+        (
+            ("USDINR", "USDINR"),
+            ("Crude WTI", "CRUDE_WTI"),
+            ("Brent", "CRUDE_BRENT"),
+            ("DXY", "DOLLAR_INDEX"),
+            ("US 10Y", "US_10Y_YIELD"),
+            ("India ETF", "INDIA_ETF"),
+            ("EM ETF", "EM_ETF"),
+        ),
+    ),
+)
+
+
+def _tone_from_pct(metric: str, pct: float | None) -> str:
+    """Map % move to bull/neutral/bear for India risk context."""
+    if pct is None:
+        return "neutral"
+    # Rising fear / stronger USD / weaker INR / higher yields → headwind for India risk.
+    if metric in {"US_VIX", "USDINR", "DOLLAR_INDEX", "US_10Y_YIELD"}:
+        if pct > 0.35:
+            return "bear"
+        if pct < -0.35:
+            return "bull"
+        return "neutral"
+    if pct > 0.15:
+        return "bull"
+    if pct < -0.15:
+        return "bear"
+    return "neutral"
+
+
+def world_markets_from_macro(date: str) -> list[dict[str, Any]]:
+    """Build worldwide cue list (Asia / Europe / US / macro) from macro.csv."""
+    rows = _csv_records(settings.daily_output_dir(date) / "macro.csv")
+    by_metric: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        key = str(row.get("metric") or "").strip()
+        if key:
+            by_metric[key] = row
+
+    out: list[dict[str, Any]] = []
+    for region, items in _WORLD_MARKET_GROUPS:
+        markets: list[dict[str, Any]] = []
+        for label, metric in items:
+            row = by_metric.get(metric)
+            if not row:
+                continue
+            pct = row.get("pct_change")
+            try:
+                pct_f = float(pct) if pct is not None and pct != "" else None
+            except (TypeError, ValueError):
+                pct_f = None
+            val = row.get("value")
+            try:
+                val_f = float(val) if val is not None and val != "" else None
+            except (TypeError, ValueError):
+                val_f = None
+            markets.append(
+                {
+                    "label": label,
+                    "metric": metric,
+                    "value": val_f,
+                    "pct_change": pct_f,
+                    "tone": _tone_from_pct(metric, pct_f),
+                    "session_date": row.get("session_date") or None,
+                }
+            )
+        if markets:
+            out.append({"region": region, "markets": markets})
+    return out
+
+
 def _ymd(value: Any) -> str:
     """Normalize a CSV date-ish value to YYYY-MM-DD (or empty)."""
     if value is None:
@@ -429,6 +535,7 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
         "kb_version": brief.get("kb_version"),
         "limits": brief.get("limits") or {},
         "regime": _regime_from_sources(brief, date),
+        "world_markets": world_markets_from_macro(date),
         "funnel": brief.get("funnel") or [],
         "ideas": ideas,
         "watchlist": brief.get("watchlist") or [],
@@ -574,6 +681,21 @@ def render_research_pack_md(pack: dict[str, Any]) -> str:
             f"- {c.get('symbol')}: score={c.get('score')} "
             f"rs_nifty={c.get('rs_vs_nifty_1m')} deliv={c.get('deliv_pct')}"
         )
+
+    world = pack.get("world_markets") or []
+    if world:
+        lines.extend(["", "## World markets (India cues)", ""])
+        for group in world:
+            if not isinstance(group, dict):
+                continue
+            lines.append(f"### {group.get('region')}")
+            for m in group.get("markets") or []:
+                if not isinstance(m, dict):
+                    continue
+                pct = m.get("pct_change")
+                pct_s = f"{pct:+.2f}%" if isinstance(pct, (int, float)) else "n/a"
+                lines.append(f"- {m.get('label')}: {pct_s} ({m.get('tone')})")
+            lines.append("")
 
     enrich = pack.get("enrichment") if isinstance(pack.get("enrichment"), dict) else None
     if enrich and enrich.get("status") == "ok":

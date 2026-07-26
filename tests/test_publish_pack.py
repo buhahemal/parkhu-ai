@@ -8,11 +8,13 @@ import pandas as pd
 from collector.publish_pack import (
     _json_safe,
     _open_trades_as_of,
+    _tone_from_pct,
     backfill_research_packs,
     build_analytics,
     build_research_pack,
     mirror_latest,
     render_research_pack_md,
+    world_markets_from_macro,
     write_index_json,
     write_research_pack,
 )
@@ -21,6 +23,65 @@ from collector.publish_pack import (
 def test_json_safe_strips_nan():
     assert _json_safe({"taken": float("nan"), "ok": 1.5}) == {"taken": None, "ok": 1.5}
     assert "NaN" not in json.dumps(_json_safe([float("nan")]), allow_nan=False)
+
+
+def test_world_markets_from_macro(tmp_path, monkeypatch):
+    from config import settings
+
+    monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
+    date = "2026-07-25"
+    out = settings.OUTPUT_DIR / date
+    out.mkdir(parents=True)
+    pd.DataFrame(
+        [
+            {
+                "metric": "NIKKEI",
+                "value": 40000,
+                "pct_change": -1.2,
+                "session_date": date,
+            },
+            {
+                "metric": "US_SP500",
+                "value": 5000,
+                "pct_change": 0.5,
+                "session_date": date,
+            },
+            {
+                "metric": "US_VIX",
+                "value": 18,
+                "pct_change": 1.0,
+                "session_date": date,
+            },
+            {
+                "metric": "USDINR",
+                "value": 83,
+                "pct_change": -0.5,
+                "session_date": date,
+            },
+            {
+                "metric": "GOLD",
+                "value": 2000,
+                "pct_change": 1.0,
+                "session_date": date,
+            },
+        ]
+    ).to_csv(out / "macro.csv", index=False)
+
+    groups = world_markets_from_macro(date)
+    regions = {g["region"]: g["markets"] for g in groups}
+    assert "Asia" in regions and "US" in regions and "Macro" in regions
+    nikkei = next(m for m in regions["Asia"] if m["metric"] == "NIKKEI")
+    assert nikkei["tone"] == "bear" and nikkei["pct_change"] == -1.2
+    vix = next(m for m in regions["US"] if m["metric"] == "US_VIX")
+    assert vix["tone"] == "bear"  # rising VIX = headwind
+    usdinr = next(m for m in regions["Macro"] if m["metric"] == "USDINR")
+    assert usdinr["tone"] == "bull"  # INR stronger (USDINR down)
+    # Gold is collected but not a primary India equity cue in Market pulse.
+    assert all(m["metric"] != "GOLD" for g in groups for m in g["markets"])
+    assert _tone_from_pct("US_10Y_YIELD", -0.5) == "bull"
+    assert "World markets" in render_research_pack_md(
+        {"world_markets": groups, "swing_candidates_top": []}
+    )
 
 
 def test_build_and_write_pack(tmp_path, monkeypatch):

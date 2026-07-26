@@ -18,6 +18,39 @@
     "best_sector": "Banks",
     "worst_sector": "IT"
   },
+  "world_markets": [
+    {
+      "region": "Asia",
+      "markets": [
+        {"label": "Nikkei", "metric": "NIKKEI", "pct_change": -2.7, "tone": "bear"},
+        {"label": "Hang Seng", "metric": "HANG_SENG", "pct_change": -1.0, "tone": "bear"},
+        {"label": "Kospi", "metric": "KOSPI", "pct_change": -5.7, "tone": "bear"}
+      ]
+    },
+    {
+      "region": "Europe",
+      "markets": [
+        {"label": "FTSE 100", "metric": "FTSE", "pct_change": 0.9, "tone": "bull"},
+        {"label": "DAX", "metric": "DAX", "pct_change": 1.4, "tone": "bull"}
+      ]
+    },
+    {
+      "region": "US",
+      "markets": [
+        {"label": "S&P 500", "metric": "US_SP500", "pct_change": 0.05, "tone": "neutral"},
+        {"label": "Nasdaq", "metric": "US_NASDAQ", "pct_change": -0.64, "tone": "bear"},
+        {"label": "US VIX", "metric": "US_VIX", "pct_change": -0.64, "tone": "bull"}
+      ]
+    },
+    {
+      "region": "Macro",
+      "markets": [
+        {"label": "USDINR", "metric": "USDINR", "pct_change": -0.33, "tone": "bull"},
+        {"label": "Crude WTI", "metric": "CRUDE_WTI", "pct_change": -3.12, "tone": "bear"},
+        {"label": "DXY", "metric": "DOLLAR_INDEX", "pct_change": 0.04, "tone": "neutral"}
+      ]
+    }
+  ],
   "funnel": [
     {"gate": "universe", "surviving": 100},
     {"gate": "trend", "surviving": 40}

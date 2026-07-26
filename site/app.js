@@ -682,15 +682,24 @@ function renderRegime(pack) {
     },
   });
 
-  const cueMap = { Bullish: 1, Neutral: 0, Bearish: -1 };
-  const cues = [
-    ["Asia", r.asia_cue],
-    ["Europe", r.europe_cue],
-    [
-      "US (S&P)",
-      (r.us_sp500_pct ?? 0) > 0.15 ? "Bullish" : (r.us_sp500_pct ?? 0) < -0.15 ? "Bearish" : "Neutral",
-    ],
-  ];
+  const world = pack.world_markets || [];
+  const cueMap = { Bullish: 1, Mixed: 0, Neutral: 0, Bearish: -1 };
+  const cues = world.length
+    ? world.map((g) => {
+        const tones = (g.markets || []).map((m) => m.tone);
+        const bull = tones.filter((t) => t === "bull").length;
+        const bear = tones.filter((t) => t === "bear").length;
+        const label = bull > bear ? "Bullish" : bear > bull ? "Bearish" : "Neutral";
+        return [g.region, label];
+      })
+    : [
+        ["Asia", r.asia_cue],
+        ["Europe", r.europe_cue],
+        [
+          "US",
+          (r.us_sp500_pct ?? 0) > 0.15 ? "Bullish" : (r.us_sp500_pct ?? 0) < -0.15 ? "Bearish" : "Neutral",
+        ],
+      ];
   makeChart(document.getElementById("cues-chart"), {
     type: "bar",
     data: {
@@ -738,36 +747,95 @@ function renderRegime(pack) {
     },
   });
 
-  renderSentiment(cues);
+  renderMarketPulse(pack, cues);
 }
 
-function renderSentiment(cues) {
-  const counts = { bull: 0, neutral: 0, bear: 0 };
-  for (const [, label] of cues) {
-    const t = trendClass(label);
-    if (t === "bull") counts.bull += 1;
-    else if (t === "bear") counts.bear += 1;
-    else counts.neutral += 1;
-  }
-  const total = Math.max(counts.bull + counts.neutral + counts.bear, 1);
-  const pct = (n) => Math.round((100 * n) / total);
+function fmtPctSigned(v, digits = 2) {
+  if (v == null || v === "" || !Number.isFinite(Number(v))) return "—";
+  const n = Number(v);
+  const sign = n > 0 ? "+" : "";
+  return `${sign}${fmt(n, digits)}%`;
+}
+
+function renderMarketPulse(pack, cues) {
   const root = document.getElementById("sentiment");
-  root.replaceChildren(
+  if (!root) return;
+
+  const world = Array.isArray(pack.world_markets) ? pack.world_markets : [];
+  const toneCounts = { bull: 0, neutral: 0, bear: 0 };
+  for (const group of world) {
+    for (const m of group.markets || []) {
+      const t = m.tone === "bull" || m.tone === "bear" ? m.tone : "neutral";
+      toneCounts[t] += 1;
+    }
+  }
+  // Fallback when pack has no world_markets yet (older dates).
+  if (!world.length) {
+    for (const [, label] of cues || []) {
+      const t = trendClass(label);
+      if (t === "bull") toneCounts.bull += 1;
+      else if (t === "bear") toneCounts.bear += 1;
+      else toneCounts.neutral += 1;
+    }
+  }
+
+  const total = Math.max(toneCounts.bull + toneCounts.neutral + toneCounts.bear, 1);
+  const pct = (n) => Math.round((100 * n) / total);
+
+  const nodes = [
     el(
       "div",
-      { class: "bar", title: "Cue mix across Asia / Europe / US" },
-      el("div", { class: "seg bull", style: `flex:${counts.bull || 0.001}` }),
-      el("div", { class: "seg neutral", style: `flex:${counts.neutral || 0.001}` }),
-      el("div", { class: "seg bear", style: `flex:${counts.bear || 0.001}` }),
+      { class: "bar", title: "Cue mix across world markets that affect India" },
+      el("div", { class: "seg bull", style: `flex:${toneCounts.bull || 0.001}` }),
+      el("div", { class: "seg neutral", style: `flex:${toneCounts.neutral || 0.001}` }),
+      el("div", { class: "seg bear", style: `flex:${toneCounts.bear || 0.001}` }),
     ),
     el(
       "div",
       { class: "legend" },
-      el("span", {}, "Bullish ", el("b", {}, `${pct(counts.bull)}%`)),
-      el("span", {}, "Neutral ", el("b", {}, `${pct(counts.neutral)}%`)),
-      el("span", {}, "Bearish ", el("b", {}, `${pct(counts.bear)}%`)),
+      el("span", {}, "Bullish ", el("b", {}, `${pct(toneCounts.bull)}%`)),
+      el("span", {}, "Neutral ", el("b", {}, `${pct(toneCounts.neutral)}%`)),
+      el("span", {}, "Bearish ", el("b", {}, `${pct(toneCounts.bear)}%`)),
     ),
-  );
+  ];
+
+  if (world.length) {
+    nodes.push(
+      el(
+        "div",
+        { class: "pulse-regions" },
+        ...world.map((group) =>
+          el(
+            "div",
+            { class: "pulse-region" },
+            el("h3", {}, group.region || "—"),
+            el(
+              "ul",
+              { class: "pulse-list" },
+              ...(group.markets || []).map((m) =>
+                el(
+                  "li",
+                  { class: `pulse-row ${m.tone || "neutral"}` },
+                  el("span", { class: "pulse-name" }, m.label || m.metric || "—"),
+                  el("span", { class: `pulse-pct ${m.tone || ""}` }, fmtPctSigned(m.pct_change)),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  } else {
+    nodes.push(
+      el(
+        "p",
+        { class: "empty" },
+        "Detailed world markets appear after the next pack rebuild (from macro.csv).",
+      ),
+    );
+  }
+
+  root.replaceChildren(...nodes);
 }
 
 function field(label, value) {
