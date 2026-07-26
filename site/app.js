@@ -1,8 +1,5 @@
-// Prefer embedded data/ (Pages artifact). Never use ../output on github.io/repo.
-const DATA_CANDIDATES = [
-  "./data/research_pack.json",
-  "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.json",
-];
+// Prefer embedded data/ (Pages artifact). Dated packs come from raw GitHub.
+const RAW_ROOT = "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output";
 
 const CHART_COLORS = {
   ink: "#f2f4f8",
@@ -17,19 +14,206 @@ const CHART_COLORS = {
 };
 
 const charts = [];
+let catalog = { latest: null, dates: [] };
 
-async function loadPack() {
+async function fetchJson(urls) {
   let lastErr;
-  for (const url of DATA_CANDIDATES) {
+  for (const url of urls) {
     try {
       const res = await fetch(url, { cache: "no-store" });
       if (!res.ok) throw new Error(`${url} → ${res.status}`);
-      return { pack: JSON.parse(await res.text()), source: url };
+      return { data: JSON.parse(await res.text()), source: url };
     } catch (err) {
       lastErr = err;
     }
   }
-  throw lastErr || new Error("No research_pack.json found");
+  throw lastErr || new Error("fetch failed");
+}
+
+async function loadIndex() {
+  try {
+    const { data } = await fetchJson(["./data/index.json", `${RAW_ROOT}/index.json`]);
+    const dates = Array.isArray(data.dates) ? [...data.dates].sort().reverse() : [];
+    return { latest: data.latest || dates[0] || null, dates };
+  } catch {
+    return { latest: null, dates: [] };
+  }
+}
+
+function funnelConversions(funnel) {
+  const out = [];
+  let prev = null;
+  for (const step of funnel || []) {
+    if (!step || typeof step !== "object") continue;
+    const surviving = Number(step.surviving) || 0;
+    const keep = prev == null || prev === 0 ? null : round((100 * surviving) / prev, 1);
+    const dropped = prev == null ? null : Math.max(prev - surviving, 0);
+    out.push({
+      gate: step.gate,
+      surviving,
+      from_prev: prev,
+      keep_pct: keep,
+      dropped,
+    });
+    prev = surviving;
+  }
+  return out;
+}
+
+function sectorCounts(ideas, openRows) {
+  const counts = {};
+  for (const row of [...(ideas || []), ...(openRows || [])]) {
+    if (!row || typeof row !== "object") continue;
+    const sec = String(row.risk_sector || row.sector || "Unknown").trim() || "Unknown";
+    counts[sec] = (counts[sec] || 0) + 1;
+  }
+  return Object.entries(counts)
+    .map(([sector, names]) => ({ sector, names }))
+    .sort((a, b) => b.names - a.names || a.sector.localeCompare(b.sector));
+}
+
+function bookStats(openRows, needsAction) {
+  const mfe = [];
+  const mae = [];
+  for (const r of openRows || []) {
+    if (r?.mfe_pct != null && Number.isFinite(Number(r.mfe_pct))) mfe.push(Number(r.mfe_pct));
+    if (r?.mae_pct != null && Number.isFinite(Number(r.mae_pct))) mae.push(Number(r.mae_pct));
+  }
+  return {
+    open: (openRows || []).length,
+    needs_action: (needsAction || []).length,
+    avg_mfe_pct: mfe.length ? round(mfe.reduce((a, b) => a + b, 0) / mfe.length, 2) : null,
+    avg_mae_pct: mae.length ? round(mae.reduce((a, b) => a + b, 0) / mae.length, 2) : null,
+  };
+}
+
+/** Older days may only have swing_brief — adapt into desk pack shape. */
+function briefToPack(brief, date) {
+  const ideas = Array.isArray(brief.ideas) ? brief.ideas : [];
+  const review = brief.review && typeof brief.review === "object" ? brief.review : {};
+  const reviewed = Array.isArray(review.reviewed) ? review.reviewed : [];
+  const openRows = reviewed
+    .filter((r) => r && String(r.status || "open").toLowerCase() !== "closed")
+    .map((r) => ({
+      ...r,
+      last_price: r.last_price ?? r.price ?? null,
+    }));
+  const needsAction = reviewed.filter((r) => {
+    const a = String(r?.action || "").toUpperCase();
+    return a && a !== "HOLD" && a !== "HOLD / TRAIL";
+  });
+  const scoring = brief.scoring && typeof brief.scoring === "object" ? brief.scoring : {};
+  let coverage = null;
+  if (scoring.weight_unavailable_pct != null) {
+    const lost = Number(scoring.weight_unavailable_pct);
+    if (Number.isFinite(lost)) coverage = round(100 - lost, 1);
+  }
+  return {
+    schema: "parkhu.research_pack.v2",
+    collection_date: brief.data_date || date,
+    session_date: null,
+    is_trading_day: null,
+    generated_at_ist: brief.regime?.generated_at_ist || null,
+    kb_version: brief.kb_version,
+    limits: brief.limits || {},
+    regime: brief.regime || {},
+    funnel: brief.funnel || [],
+    ideas,
+    analytics: {
+      funnel_conversions: funnelConversions(brief.funnel || []),
+      sector_counts: sectorCounts(ideas, openRows),
+      book: bookStats(openRows, needsAction),
+      ideas_count: ideas.length,
+      score_coverage_pct: coverage,
+      caveats: Array.isArray(brief.caveats) ? brief.caveats : [],
+    },
+    ledger: {
+      open: openRows,
+      review: reviewed,
+      needs_action: needsAction,
+      closed_today: review.closed_today || [],
+    },
+    urls: {
+      brief_md: `${RAW_ROOT}/${date}/swing_brief.md`,
+      pack_json: `${RAW_ROOT}/${date}/research_pack.json`,
+      folder: `https://github.com/buhahemal/parkhu-ai/tree/main/output/${date}`,
+    },
+    _source_kind: "brief",
+  };
+}
+
+async function loadPackForDate(date) {
+  const latest = catalog.latest;
+  const isLatest = !date || date === "latest" || (latest && date === latest);
+
+  if (isLatest) {
+    try {
+      const { data, source } = await fetchJson([
+        "./data/research_pack.json",
+        `${RAW_ROOT}/latest/research_pack.json`,
+        latest ? `${RAW_ROOT}/${latest}/research_pack.json` : null,
+      ].filter(Boolean));
+      if (!data.error) return { pack: data, source, kind: "pack", date: data.collection_date || latest };
+    } catch {
+      /* fall through to dated / brief */
+    }
+  }
+
+  const target = date || latest;
+  if (!target) throw new Error("No collection dates available");
+
+  try {
+    const { data, source } = await fetchJson([`${RAW_ROOT}/${target}/research_pack.json`]);
+    return { pack: data, source, kind: "pack", date: target };
+  } catch {
+    /* try swing brief */
+  }
+
+  const { data, source } = await fetchJson([`${RAW_ROOT}/${target}/swing_brief.json`]);
+  return { pack: briefToPack(data, target), source, kind: "brief", date: target };
+}
+
+function destroyCharts() {
+  while (charts.length) {
+    const c = charts.pop();
+    try {
+      c.destroy();
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
+function selectedDateFromUrl() {
+  const q = new URLSearchParams(location.search).get("date");
+  if (q && /^\d{4}-\d{2}-\d{2}$/.test(q)) return q;
+  return "";
+}
+
+function setDateInUrl(date) {
+  const url = new URL(location.href);
+  if (!date || date === catalog.latest) url.searchParams.delete("date");
+  else url.searchParams.set("date", date);
+  history.replaceState(null, "", url);
+}
+
+function fillDateSelect(preferred) {
+  const sel = document.getElementById("date-select");
+  const latest = catalog.latest;
+  const dates = catalog.dates.length
+    ? catalog.dates
+    : latest
+      ? [latest]
+      : [];
+  sel.replaceChildren(
+    el("option", { value: latest || "" }, latest ? `Latest (${latest})` : "Latest"),
+    ...dates
+      .filter((d) => d !== latest)
+      .map((d) => el("option", { value: d }, d)),
+  );
+  const value = preferred && dates.includes(preferred) ? preferred : latest || "";
+  sel.value = value === latest ? latest || "" : value;
+  return sel.value || latest || "";
 }
 
 function el(tag, attrs = {}, ...children) {
@@ -49,6 +233,10 @@ function fmt(v, digits = 2) {
   if (v == null || v === "") return "—";
   if (typeof v === "number") return Number.isInteger(v) ? String(v) : v.toFixed(digits);
   return String(v);
+}
+
+function round(n, d) {
+  return Math.round(n * 10 ** d) / 10 ** d;
 }
 
 function trendClass(label) {
@@ -290,10 +478,6 @@ function renderFunnel(pack) {
       ),
     ),
   );
-}
-
-function round(n, d) {
-  return Math.round(n * 10 ** d) / 10 ** d;
 }
 
 function renderRegime(pack) {
@@ -628,8 +812,14 @@ function renderLedger(pack) {
 function renderSectors(pack) {
   const sectors = pack.analytics?.sector_counts || [];
   const canvas = document.getElementById("sector-chart");
+  const wrap = canvas?.parentElement;
+  if (!canvas || !wrap) return;
+  const emptyId = "sector-empty";
+  wrap.querySelector(`#${emptyId}`)?.remove();
+  canvas.hidden = false;
   if (!sectors.length) {
-    canvas.parentElement.replaceChildren(el("p", { class: "empty" }, "No sector counts."));
+    canvas.hidden = true;
+    wrap.append(el("p", { class: "empty", id: emptyId }, "No sector counts."));
     return;
   }
   makeChart(canvas, {
@@ -721,11 +911,24 @@ function waitForChart() {
   });
 }
 
-try {
-  await waitForChart();
-  chartDefaults();
-  wireNav();
-  const { pack } = await loadPack();
+function setDateNote(kind, date) {
+  const note = document.getElementById("date-note");
+  if (kind === "brief") {
+    note.hidden = false;
+    note.textContent = `${date}: no research pack yet — showing swing brief (desk metrics may be partial).`;
+  } else {
+    note.hidden = true;
+    note.textContent = "";
+  }
+}
+
+async function renderDesk(date) {
+  destroyCharts();
+  document.getElementById("meta").textContent = "Loading…";
+  const { pack, kind } = await loadPackForDate(date);
+  const shown = pack.collection_date || date || catalog.latest || "";
+  setDateInUrl(shown === catalog.latest ? "" : shown);
+  setDateNote(kind, shown);
   renderHeader(pack);
   renderFunnel(pack);
   renderRegime(pack);
@@ -734,6 +937,29 @@ try {
   renderSectors(pack);
   renderQuality(pack);
   renderLinks(pack);
+}
+
+function wireDateSelect() {
+  const sel = document.getElementById("date-select");
+  sel.addEventListener("change", async () => {
+    const date = sel.value || catalog.latest || "";
+    try {
+      await renderDesk(date);
+    } catch (err) {
+      document.getElementById("meta").textContent = `Failed to load ${date}: ${err.message}`;
+      setDateNote(null, date);
+    }
+  });
+}
+
+try {
+  await waitForChart();
+  chartDefaults();
+  wireNav();
+  catalog = await loadIndex();
+  const initial = fillDateSelect(selectedDateFromUrl());
+  wireDateSelect();
+  await renderDesk(initial);
 } catch (err) {
   document.getElementById("meta").textContent = `Failed to load pack: ${err.message}`;
 }

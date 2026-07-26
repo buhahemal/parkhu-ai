@@ -9,6 +9,7 @@ on:
     paths:
       - "site/**"
       - "output/latest/research_pack.json"
+      - "output/index.json"
       - ".github/workflows/pages.yml"
   workflow_dispatch: {}
 
@@ -44,6 +45,11 @@ jobs:
             cp output/latest/research_pack.json _site/data/research_pack.json
           else
             echo '{"error":"research_pack.json missing — run collect first"}' > _site/data/research_pack.json
+          fi
+          if [ -f output/index.json ]; then
+            cp output/index.json _site/data/index.json
+          else
+            echo '{"latest":null,"dates":[]}' > _site/data/index.json
           fi
 
       - name: Setup Pages
