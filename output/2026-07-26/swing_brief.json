@@ -14,11 +14,11 @@
   "regime": {
     "market_regime": "Bearish",
     "nifty_trend": "Bearish",
-    "nifty_pct_change": -0.43,
-    "banknifty_trend": "Neutral",
-    "banknifty_pct_change": 0.18,
-    "india_vix": 14.03,
-    "vix_level": "Medium",
+    "nifty_pct_change": -0.53,
+    "banknifty_trend": "Bearish",
+    "banknifty_pct_change": -0.94,
+    "india_vix": 13.48,
+    "vix_level": "Low",
     "best_sector": "Distribution Services",
     "best_sector_perf_1m": 7.74,
     "worst_sector": "Utilities",
@@ -29,18 +29,18 @@
     "crude_pct_change": -3.12,
     "usdinr": 96.56,
     "usdinr_pct_change": -0.33,
-    "us_sp500_pct": 0.05,
-    "us_dow_pct": 0.46,
-    "us_vix": 18.58,
-    "us_vix_pct": -0.64,
-    "dxy": 101.47,
-    "dxy_pct": 0.04,
-    "us_10y": 4.68,
-    "asia_cue": "Bearish",
-    "europe_cue": "Bullish",
-    "global_risk": "Neutral",
+    "us_sp500_pct": -1.21,
+    "us_dow_pct": -0.97,
+    "us_vix": 18.7,
+    "us_vix_pct": 12.38,
+    "dxy": 101.43,
+    "dxy_pct": 0.29,
+    "us_10y": 4.7,
+    "asia_cue": "Bullish",
+    "europe_cue": "Bearish",
+    "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T11:17:02.703903+05:30"
+    "generated_at_ist": "2026-07-26T11:29:02.997774+05:30"
   },
   "funnel": [
     {
@@ -136,7 +136,7 @@
         "rsi14": 60.43986851244426,
         "macd_hist": -7.124,
         "delivery_pct": 43.06,
-        "rs_vs_nifty_1m": 26.68,
+        "rs_vs_nifty_1m": 25.43,
         "rs_vs_sector_1m": 12.84,
         "return_1m": 25.62174032390886,
         "return_3m": 33.4850075837125,
@@ -170,7 +170,7 @@
       "industry": "Regional Banks",
       "risk_sector": "Banks",
       "cmp": 1432.9,
-      "parkhu_score": 82.8,
+      "parkhu_score": 82.7,
       "band": "Buy",
       "levels": {
         "entry": 1432.9,
@@ -210,8 +210,8 @@
         "rsi14": 61.67193907847662,
         "macd_hist": -1.2996,
         "delivery_pct": 75.85,
-        "rs_vs_nifty_1m": 7.94,
-        "rs_vs_sector_1m": 9.39,
+        "rs_vs_nifty_1m": 6.69,
+        "rs_vs_sector_1m": 7.91,
         "return_1m": 6.884976876025674,
         "return_3m": 7.228915662650613,
         "dist_52w_high_pct": -4.12,
@@ -284,7 +284,7 @@
         "rsi14": 57.15848307367907,
         "macd_hist": 0.8001,
         "delivery_pct": 40.41,
-        "rs_vs_nifty_1m": 5.68,
+        "rs_vs_nifty_1m": 4.43,
         "rs_vs_sector_1m": 2.73,
         "return_1m": 4.624494783344282,
         "return_3m": 31.572104018912523,
@@ -337,7 +337,7 @@
       "symbol": "CREDITACC",
       "risk_sector": "NBFC & Capital Markets",
       "cmp": 1517.6,
-      "score": 75.6,
+      "score": 75.7,
       "entry_if_triggered": 1517.6,
       "stop": 1405.76,
       "t1": 1741.27,
@@ -357,7 +357,7 @@
       "symbol": "FEDERALBNK",
       "risk_sector": "Banks",
       "cmp": 354.3,
-      "score": 71.1,
+      "score": 71.0,
       "entry_if_triggered": 354.3,
       "stop": 339.5,
       "t1": 383.9,
@@ -369,7 +369,7 @@
   "ignored_below_watch": [
     {
       "symbol": "NYKAA",
-      "score": 69.0
+      "score": 69.1
     },
     {
       "symbol": "ANANDRATHI",
@@ -377,15 +377,15 @@
     },
     {
       "symbol": "POONAWALLA",
-      "score": 53.7
+      "score": 53.8
     },
     {
       "symbol": "ETERNAL",
-      "score": 48.2
+      "score": 48.1
     },
     {
       "symbol": "IDFCFIRSTB",
-      "score": 47.7
+      "score": 47.5
     },
     {
       "symbol": "ATHERENERG",
@@ -393,7 +393,7 @@
     },
     {
       "symbol": "JSWINFRA",
-      "score": 40.9
+      "score": 41.0
     }
   ],
   "scoring": {

@@ -3,8 +3,8 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T11:17:03.198178+05:30",
-  "duration_seconds": 25.7,
+  "generated_at_ist": "2026-07-26T11:29:03.357492+05:30",
+  "duration_seconds": 34.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -12,7 +12,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.3
+      "seconds": 0.5
     },
     {
       "agent": "earnings",
@@ -25,55 +25,55 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.5
+      "seconds": 1.8
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.8
+      "seconds": 1.7
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.0
+      "seconds": 4.6
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.5
+      "seconds": 4.5
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 5.0
+      "seconds": 5.8
     },
     {
       "agent": "delivery",
       "status": "ok",
       "rows": 353,
-      "seconds": 3.1
+      "seconds": 3.3
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.7
+      "seconds": 3.4
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 3.2
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.3
+      "seconds": 5.3
     },
     {
       "agent": "relative_strength",
@@ -85,7 +85,7 @@
       "agent": "event_risk",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "fno_momentum",
@@ -107,7 +107,7 @@
     },
     {
       "agent": "news_classify",
-      "status": "partial",
+      "status": "ok",
       "rows": 20,
       "seconds": 0.0
     },
@@ -115,7 +115,7 @@
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.4
+      "seconds": 0.3
     },
     {
       "agent": "swing_brief",
@@ -136,8 +136,8 @@
       "seconds": 0.1
     }
   ],
-  "ok": 18,
-  "partial": 1,
+  "ok": 19,
+  "partial": 0,
   "errors": 0,
   "access_note": "Fetch download_url (raw GitHub) for file contents \u2014 LLM-readable plain text. preview_url opens the file in GitHub's UI. Links work after this run is pushed.",
   "repository": {
