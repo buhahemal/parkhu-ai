@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parkhu logo kit</title>
+    <link rel="icon" href="./assets/logo/parkhu-mark.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0b1220;
+        --muted: #64748b;
+        --line: #e2e8f0;
+        --bg: #f4f7fb;
+        --card: #fff;
+        --dark: #07090f;
+        --dark-card: #121624;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "DM Sans", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.45;
+      }
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-size: 1.75rem;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        color: var(--muted);
+        margin: 0 0 1.75rem;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: #2563eb;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1.25rem;
+      }
+      .card.dark {
+        background: var(--dark-card);
+        border-color: rgba(255, 255, 255, 0.08);
+        color: #f4f7fb;
+      }
+      .card h2 {
+        margin: 0 0 0.35rem;
+        font-size: 1rem;
+      }
+      .card p {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .card.dark p {
+        color: #8b93a7;
+      }
+      .preview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 120px;
+        border-radius: 12px;
+        background: #f8fafc;
+        border: 1px dashed var(--line);
+        padding: 1rem;
+      }
+      .card.dark .preview {
+        background: #07090f;
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+      .preview img {
+        max-width: 100%;
+        height: auto;
+      }
+      .preview.mark img {
+        width: 72px;
+        height: 72px;
+      }
+      .preview.app img {
+        width: 96px;
+        height: 96px;
+      }
+      code {
+        font-size: 0.75rem;
+        color: #2563eb;
+        word-break: break-all;
+      }
+      .card.dark code {
+        color: #93c5fd;
+      }
+      .sizes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: end;
+        justify-content: center;
+      }
+      .sizes figure {
+        margin: 0;
+        text-align: center;
+      }
+      .sizes figcaption {
+        font-size: 0.7rem;
+        color: var(--muted);
+        margin-top: 0.35rem;
+      }
+      .full {
+        grid-column: 1 / -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="./">← Desk</a>
+      <h1>Parkhu logo kit</h1>
+      <p class="lede">
+        SignalFeed-style mark (gradient P + ascending signal) with light, dark, mono, app, and
+        responsive lockups. All SVG — scale cleanly for web and mobile.
+      </p>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Light theme lockup</h2>
+          <p>Color mark + dark wordmark — docs, light UI, print on white.</p>
+          <div class="preview">
+            <img src="./assets/logo/parkhu-logo-light.svg" alt="Parkhu light logo" width="280" />
+          </div>
+          <p><code>assets/logo/parkhu-logo-light.svg</code></p>
+        </section>
+
+        <section class="card dark">
+          <h2>Dark theme lockup</h2>
+          <p>Color mark + light wordmark — Pages desk, dark product UI.</p>
+          <div class="preview">
+            <img src="./assets/logo/parkhu-logo-dark.svg" alt="Parkhu dark logo" width="280" />
+          </div>
+          <p><code>assets/logo/parkhu-logo-dark.svg</code></p>
+        </section>
+
+        <section class="card">
+          <h2>Mono black</h2>
+          <p>Single-ink for print, stamps, invoices.</p>
+          <div class="preview">
+            <img src="./assets/logo/parkhu-logo-mono-black.svg" alt="Parkhu black" width="280" />
+          </div>
+          <p><code>assets/logo/parkhu-logo-mono-black.svg</code></p>
+        </section>
+
+        <section class="card dark">
+          <h2>Mono white</h2>
+          <p>Reversed for dark photography / video end cards.</p>
+          <div class="preview">
+            <img src="./assets/logo/parkhu-logo-mono-white.svg" alt="Parkhu white" width="280" />
+          </div>
+          <p><code>assets/logo/parkhu-logo-mono-white.svg</code></p>
+        </section>
+
+        <section class="card">
+          <h2>Mark only</h2>
+          <p>Favicon, avatar, mobile tab bar.</p>
+          <div class="preview mark sizes">
+            <figure>
+              <img src="./assets/logo/parkhu-mark.svg" width="64" height="64" alt="" />
+              <figcaption>Color</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/logo/parkhu-mark-mono-black.svg" width="48" height="48" alt="" />
+              <figcaption>Black</figcaption>
+            </figure>
+            <figure style="background: #0b1220; padding: 0.5rem; border-radius: 8px">
+              <img src="./assets/logo/parkhu-mark-mono-white.svg" width="48" height="48" alt="" />
+              <figcaption style="color: #94a3b8">White</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Mobile app icons</h2>
+          <p>512×512 rounded square — iOS / Android store &amp; home screen.</p>
+          <div class="preview app sizes">
+            <figure>
+              <img src="./assets/logo/parkhu-app-icon.svg" width="88" height="88" alt="App dark" />
+              <figcaption>Dark</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./assets/logo/parkhu-app-icon-light.svg"
+                width="88"
+                height="88"
+                alt="App light"
+              />
+              <figcaption>Light</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="card dark full">
+          <h2>Responsive lockups</h2>
+          <p>
+            Desktop uses full dark logo; tablet compact; phone uses mark-only (wired on the desk
+            header).
+          </p>
+          <div class="preview sizes">
+            <figure>
+              <img src="./assets/logo/parkhu-logo-dark.svg" width="220" alt="Desktop" />
+              <figcaption>Desktop ≥900px</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/logo/parkhu-logo-compact.svg" width="160" alt="Tablet" />
+              <figcaption>Tablet / mid</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/logo/parkhu-mark.svg" width="40" height="40" alt="Mobile" />
+              <figcaption>Mobile mark</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/logo/parkhu-logo-stacked.svg" width="90" alt="Stacked" />
+              <figcaption>Stacked (splash)</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
