@@ -1,20 +1,93 @@
 // Prefer embedded data/ (Pages artifact). Dated packs come from raw GitHub.
 const RAW_ROOT = "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output";
+const THEME_KEY = "parkhu-theme";
 
-const CHART_COLORS = {
-  ink: "#f2f4f8",
-  muted: "#8b93a7",
-  line: "rgba(255,255,255,0.08)",
-  accent: "#3b82f6",
-  good: "#22c55e",
-  warn: "#f59e0b",
-  bad: "#ef4444",
-  bar: "#3b82f6",
-  barSoft: "rgba(59,130,246,0.55)",
+const CHART_THEMES = {
+  light: {
+    ink: "#0b1220",
+    muted: "#64748b",
+    line: "#e2e8f0",
+    accent: "#2563eb",
+    good: "#16a34a",
+    warn: "#d97706",
+    bad: "#dc2626",
+    bar: "#2563eb",
+    barSoft: "rgba(37,99,235,0.55)",
+    tooltipBg: "#ffffff",
+  },
+  dark: {
+    ink: "#f2f4f8",
+    muted: "#8b93a7",
+    line: "rgba(255,255,255,0.08)",
+    accent: "#3b82f6",
+    good: "#22c55e",
+    warn: "#f59e0b",
+    bad: "#ef4444",
+    bar: "#3b82f6",
+    barSoft: "rgba(59,130,246,0.55)",
+    tooltipBg: "#121624",
+  },
 };
 
+let CHART_COLORS = { ...CHART_THEMES.light };
 const charts = [];
 let catalog = { latest: null, dates: [] };
+let currentDeskDate = "";
+
+function currentTheme() {
+  const t = document.documentElement.getAttribute("data-theme");
+  return t === "dark" ? "dark" : "light";
+}
+
+function syncChartColors() {
+  CHART_COLORS = { ...CHART_THEMES[currentTheme()] };
+  chartDefaults();
+}
+
+function syncBrandLogos() {
+  const theme = currentTheme();
+  document.querySelectorAll("[data-logo-light][data-logo-dark]").forEach((img) => {
+    const next = theme === "dark" ? img.dataset.logoDark : img.dataset.logoLight;
+    if (next && img.getAttribute("src") !== next) img.setAttribute("src", next);
+  });
+}
+
+function syncThemeToggle() {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  const dark = currentTheme() === "dark";
+  btn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+  btn.title = dark ? "Light theme" : "Dark theme";
+}
+
+function applyTheme(theme, { persist = true, rerender = false } = {}) {
+  const next = theme === "dark" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", next);
+  if (persist) {
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch {
+      /* ignore */
+    }
+  }
+  syncBrandLogos();
+  syncThemeToggle();
+  syncChartColors();
+  if (rerender && currentDeskDate) {
+    renderDesk(currentDeskDate).catch(() => {});
+  }
+}
+
+function wireThemeToggle() {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  syncBrandLogos();
+  syncThemeToggle();
+  syncChartColors();
+  btn.addEventListener("click", () => {
+    applyTheme(currentTheme() === "dark" ? "light" : "dark", { rerender: true });
+  });
+}
 
 async function fetchJson(urls) {
   let lastErr;
@@ -438,7 +511,7 @@ function renderFunnel(pack) {
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: "#121624",
+          backgroundColor: CHART_COLORS.tooltipBg,
           titleColor: CHART_COLORS.ink,
           bodyColor: CHART_COLORS.muted,
           borderColor: CHART_COLORS.line,
@@ -943,9 +1016,11 @@ function setDateNote(kind, date) {
 
 async function renderDesk(date) {
   destroyCharts();
+  syncChartColors();
   document.getElementById("meta").textContent = "Loading…";
   const { pack, kind } = await loadPackForDate(date);
   const shown = pack.collection_date || date || catalog.latest || "";
+  currentDeskDate = shown || date || catalog.latest || "";
   setDateInUrl(shown === catalog.latest ? "" : shown);
   setDateNote(kind, shown);
   renderHeader(pack);
@@ -973,6 +1048,7 @@ function wireDateSelect() {
 
 try {
   await waitForChart();
+  wireThemeToggle();
   chartDefaults();
   wireNav();
   catalog = await loadIndex();
