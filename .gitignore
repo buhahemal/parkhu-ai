@@ -21,6 +21,12 @@ jscpd-report/
 # Local Pages preview copy (CI injects data/ at deploy time)
 site/data/
 
+# Site UI test tooling
+site/node_modules/
+site/test-results/
+site/playwright-report/
+site/blob-report/
+
 # Logs
 logs/*.log
 

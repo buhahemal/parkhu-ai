@@ -82,7 +82,7 @@ COLUMNS = [
     # price structure
     # NOTE support1/2, resistance1/2 and pivot are single-session floor-trader
     # pivots derived from one day's H/L/C. They sit within ~2% of spot and are
-    # noise on a 3-90 day hold. The swing_* levels below are the ones a swing
+    # noise on a ~1 month (≤22 trading day) hold. The swing_* levels below are for a swing
     # thesis should be checked against.
     "support1",
     "support2",

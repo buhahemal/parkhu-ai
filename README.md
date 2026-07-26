@@ -52,7 +52,7 @@ GitHub Actions (daily, pre-open)
 | `event_risk.csv` | Earnings, corp actions, news within 21 days |
 | `news_enriched.csv` | Per-announcement sentiment / catalyst flags (keyword rules) |
 | `fno_momentum.csv` | OI buildup + F&O activity scores |
-| `swing_candidates.csv` | Top 20 for 2–3 week / ~5% swing template |
+| `swing_candidates.csv` | Top 20 for up to ~1 month / ~5% swing template |
 | **`stock_analysis.csv`** | **Primary file** — one row/stock: all indicators, sub-scores, pivots/support/resistance, ATR trade levels |
 | **`market_summary.csv`** | One-row regime: index trend, VIX, sector leaders, FII/DII, macro, overall risk |
 
@@ -121,8 +121,9 @@ output/latest_brief.md   ← stable path to the newest brief
 (above SMA200, TV tech rating, RSI, ADX) — a starting cut for the research
 engine, **not** a recommendation.
 
-`swing_candidates.csv` is a separate 2–3 week swing shortlist (~5% target)
+`swing_candidates.csv` is a separate up-to-~1-month swing shortlist (~5% target)
 using relative strength, delivery %, F&O confirmation and event-risk filters.
+Ideas whose T1 needs more than 22 trading days are hard-rejected.
 
 `swing_brief.md` **is** a recommendation, and the only file here that is. It
 applies the KB-08/KB-09 hard caps (2% risk per trade, 10% per stock, 25% per

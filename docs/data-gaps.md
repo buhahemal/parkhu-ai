@@ -75,8 +75,8 @@ which satisfies the KB floor but does no independent filtering — a workaround,
 ### 3. `support1/support2/resistance1/resistance2/pivot` are unusable
 
 These are single-day classic pivots. ICICIBANK on 2026-07-24: close 1428.90, support1
-1424.46, resistance1 1432.66 — a **±0.3% band**. For a 3-to-90-day hold under KB-00
-Art. II these are noise.
+1424.46, resistance1 1432.66 — a **±0.3% band**. For a 3-to-22 trading-day (~1 month)
+hold these are noise.
 
 Fix: emit both — keep the intraday pivots but rename them (`pivot_r1_intraday` etc.) and
 add weekly/monthly pivots plus swing-structure levels. Requires #1.

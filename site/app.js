@@ -780,13 +780,17 @@ function renderIdeas(pack) {
     },
   });
 
+  const reviews = (pack.enrichment && pack.enrichment.stock_reviews) || [];
+  const reviewBySym = Object.fromEntries(
+    reviews.filter((r) => r && r.symbol).map((r) => [String(r.symbol), r]),
+  );
+
   body.replaceChildren(
     ...ideas.map((idea) => {
       const lv = idea.levels || {};
       const band = String(idea.band || "").toLowerCase();
-      return el(
-        "article",
-        { class: "card" },
+      const rev = reviewBySym[String(idea.symbol || "")];
+      const kids = [
         el(
           "div",
           { class: "title" },
@@ -804,8 +808,79 @@ function renderIdeas(pack) {
           field("Hold", `${fmt(lv.hold_days_t1, 0)}d`),
           field("T2", fmt(lv.t2)),
         ),
-      );
+      ];
+      if (rev && rev.status === "ok") {
+        kids.push(
+          el(
+            "details",
+            { class: "ai-review" },
+            el(
+              "summary",
+              {},
+              `AI review · ${rev.conviction || "medium"} conviction`,
+            ),
+            el("p", { class: "ai-review-thesis" }, rev.thesis || ""),
+            rev.catalysts?.length
+              ? el(
+                  "p",
+                  { class: "ai-review-meta" },
+                  el("strong", {}, "Catalysts: "),
+                  rev.catalysts.join(" · "),
+                )
+              : null,
+            rev.risks?.length
+              ? el(
+                  "p",
+                  { class: "ai-review-meta" },
+                  el("strong", {}, "Risks: "),
+                  rev.risks.join(" · "),
+                )
+              : null,
+            rev.what_to_watch
+              ? el(
+                  "p",
+                  { class: "ai-review-meta" },
+                  el("strong", {}, "Watch: "),
+                  rev.what_to_watch,
+                )
+              : null,
+          ),
+        );
+      }
+      return el("article", { class: "card" }, ...kids);
     }),
+  );
+}
+
+function renderMarketNews(pack) {
+  const root = document.getElementById("side-news");
+  if (!root) return;
+  const items = Array.isArray(pack.market_news_top10) ? pack.market_news_top10 : [];
+  if (!items.length) {
+    root.replaceChildren(
+      el("p", { class: "empty" }, "No AI market news for this date (skipped or empty feed)."),
+    );
+    return;
+  }
+  root.replaceChildren(
+    el(
+      "ol",
+      { class: "news-list" },
+      ...items.map((n) =>
+        el(
+          "li",
+          { class: `news-item impact-${String(n.impact || "medium").toLowerCase()}` },
+          el(
+            "div",
+            { class: "news-head" },
+            el("span", { class: `impact-pill ${String(n.impact || "medium").toLowerCase()}` }, n.impact || "medium"),
+            n.symbol ? symbolLink(n.symbol) : null,
+          ),
+          el("p", { class: "news-headline" }, n.headline || "—"),
+          n.why_it_matters ? el("p", { class: "news-why" }, n.why_it_matters) : null,
+        ),
+      ),
+    ),
   );
 }
 
@@ -1204,6 +1279,29 @@ function renderEnrichment(pack) {
     );
   }
   bodyNodes.push(el("h3", { style: "margin:0 0 0.35rem;font-size:1rem" }, "Suggestions"), table);
+
+  const reviews = Array.isArray(enrich.stock_reviews) ? enrich.stock_reviews.filter((r) => r?.status === "ok") : [];
+  if (reviews.length) {
+    bodyNodes.push(
+      el("h3", { style: "margin:1rem 0 0.35rem;font-size:1rem" }, "Stock reviews"),
+      el(
+        "div",
+        { class: "stock-reviews" },
+        ...reviews.map((rev) =>
+          el(
+            "details",
+            { class: "ai-review" },
+            el("summary", {}, `${rev.symbol || "?"} · ${rev.conviction || "medium"}`),
+            el("p", { class: "ai-review-thesis" }, rev.thesis || ""),
+            rev.what_to_watch
+              ? el("p", { class: "ai-review-meta" }, el("strong", {}, "Watch: "), rev.what_to_watch)
+              : null,
+          ),
+        ),
+      ),
+    );
+  }
+
   if (notes.length) {
     bodyNodes.push(el("ul", { class: "enrich-notes" }, ...notes.map((n) => el("li", {}, n))));
   }
@@ -1248,6 +1346,7 @@ async function renderDesk(date) {
   renderLedger(pack);
   renderSectors(pack);
   renderQuality(pack);
+  renderMarketNews(pack);
   renderLinks(pack);
 }
 

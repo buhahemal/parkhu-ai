@@ -47,9 +47,11 @@ MIN_RR_T1 = _f("PARKHU_MIN_RR_T1", 2.0)  # KB-08 Ch.4 (>= 1:2)
 BUY_SCORE = _f("PARKHU_BUY_SCORE", 80.0)
 WATCH_SCORE = _f("PARKHU_WATCH_SCORE", 70.0)
 
-# --- Horizon (KB-00 Art. II: swing = 3 trading days to 12 weeks) -----------
+# --- Horizon (swing mandate: ~1 month; trading-day units) -----------------
+# Parkhu swing holds are 3 trading days up to ~1 calendar month of sessions.
+# 22 weekdays ≈ 1 month; ideas whose T1 needs longer are hard-rejected.
 HORIZON_MIN_DAYS = _i("PARKHU_HORIZON_MIN_DAYS", 3)
-HORIZON_MAX_DAYS = _i("PARKHU_HORIZON_MAX_DAYS", 90)
+HORIZON_MAX_DAYS = _i("PARKHU_HORIZON_MAX_DAYS", 22)
 
 # --- Stop placement -------------------------------------------------------
 # KB-03 Ch.5 states a stop inside 1 ATR is hit by ordinary noise, and KB-08

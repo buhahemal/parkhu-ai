@@ -282,8 +282,9 @@ days_to_target ≈ (target_distance / ATR)²
 
 From the random-walk approximation that expected drift over N days scales with ATR·√N.
 Inverted, it answers the question KB-02 actually asks: *is this target reachable inside
-the mandate?* Clamped to 3–90 days (KB-00 Art. II). It is a feasibility estimate, **not a
-forecast**, and must never be presented as one.
+the mandate?* Clamped to 3–22 trading days (~1 month). Ideas with unclamped T1 hold above
+22 days are hard-rejected. It is a feasibility estimate, **not a forecast**, and must
+never be presented as one.
 
 ---
 
@@ -547,7 +548,7 @@ PY
 per idea:   capital_pct        <= 10.01
             risk_pct_of_capital <= 2.01
             rr_t1              >= 1.99
-            3 <= hold_days_t1  <= 90
+            3 <= hold_days_t1  <= 22   # ~1 month trading-day mandate
             stop_atr_mult      >= 1.0
             parkhu_score       >= 80
             expected_profit_pct_t1 == (t1-entry)/entry*100     (±0.02)

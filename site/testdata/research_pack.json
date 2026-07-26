@@ -1,0 +1,113 @@
+{
+  "collection_date": "2026-07-26",
+  "session_date": "2026-07-26",
+  "is_trading_day": true,
+  "generated_at_ist": "2026-07-26T13:00:00+05:30",
+  "regime": {
+    "market_regime": "Bearish",
+    "nifty_trend": "Bearish",
+    "nifty_pct_change": -0.4,
+    "india_vix": 14.0,
+    "vix_level": 14.0,
+    "fii_net": -500,
+    "dii_net": 800,
+    "overall_risk": "Medium",
+    "asia_cue": "mixed",
+    "europe_cue": "risk-off",
+    "us_cue": "mixed",
+    "best_sector": "Banks",
+    "worst_sector": "IT"
+  },
+  "funnel": [
+    {"gate": "universe", "surviving": 100},
+    {"gate": "trend", "surviving": 40}
+  ],
+  "analytics": {
+    "score_coverage_pct": 65,
+    "caveats": ["Scores provisional in fixture"],
+    "funnel_conversions": [
+      {"gate": "universe", "surviving": 100, "keep_pct": 100, "dropped": 0},
+      {"gate": "trend", "surviving": 40, "keep_pct": 40, "dropped": 60}
+    ],
+    "ideas_count": 1,
+    "sector_counts": [{"sector": "Banks", "names": 1}]
+  },
+  "ideas": [
+    {
+      "symbol": "AAA",
+      "band": "Buy",
+      "parkhu_score": 85,
+      "risk_sector": "Banks",
+      "levels": {
+        "entry": 100,
+        "stop": 90,
+        "t1": 120,
+        "t2": 130,
+        "rr_t1": 2,
+        "hold_days_t1": 12
+      }
+    }
+  ],
+  "ledger": {
+    "as_of": "2026-07-26",
+    "open": [
+      {
+        "symbol": "AAA",
+        "entry": 100,
+        "stop": 90,
+        "last_price": 105,
+        "mfe_pct": 8,
+        "mae_pct": -2,
+        "date_opened": "2026-07-20"
+      }
+    ],
+    "needs_action": []
+  },
+  "enrichment": {
+    "status": "ok",
+    "provider": "groq",
+    "model": "fixture",
+    "fallback_used": false,
+    "market_brief": "Fixture brief for responsive tests.",
+    "stance": "defensive",
+    "focus": ["VIX"],
+    "suggestions": [
+      {
+        "symbol": "AAA",
+        "action": "consider_entry",
+        "conviction": "high",
+        "entry": 100,
+        "stop": 90,
+        "t1": 120,
+        "hold_days": 12,
+        "rationale": "Fixture"
+      }
+    ],
+    "stock_reviews": [
+      {
+        "symbol": "AAA",
+        "status": "ok",
+        "conviction": "medium",
+        "thesis": "Fixture thesis for mobile card expand.",
+        "catalysts": ["RS"],
+        "risks": ["Earnings"],
+        "what_to_watch": "Hold entry"
+      }
+    ],
+    "open_book_notes": [],
+    "claude_feed": "Fixture feed"
+  },
+  "market_news_top10": [
+    {
+      "rank": 1,
+      "headline": "Fixture market headline with enough text to wrap on narrow phones",
+      "symbol": "AAA",
+      "impact": "high",
+      "why_it_matters": "Tests side news panel wrapping"
+    }
+  ],
+  "urls": {
+    "pack_json": "#",
+    "index": "#"
+  }
+}

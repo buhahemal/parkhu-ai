@@ -3,6 +3,9 @@
 Uses OpenAI-compatible chat completions at https://api.groq.com/openai/v1.
 Deterministic ideas / ledger / analytics are never mutated; levels are stamped
 from the pack after the model returns.
+
+Also runs paced per-idea AI reviews (finalized Buy ideas) and a top-10
+market-impact news ranking. Calls are spaced for ≤30 RPM.
 """
 
 from __future__ import annotations
@@ -30,12 +33,36 @@ DEFAULT_MODELS = (
 ALLOWED_ACTIONS = frozenset({"consider_entry", "watch", "stand_aside", "manage_open"})
 ALLOWED_STANCES = frozenset({"defensive", "neutral", "selective_aggressive"})
 ALLOWED_CONVICTION = frozenset({"high", "medium", "low"})
+ALLOWED_IMPACT = frozenset({"high", "medium", "low"})
 HTTP_TIMEOUT_S = 45
 RETRY_429_SLEEP_S = 2.0
+# 30 RPM → min 2s; use 2.1s for headroom across desk + reviews + news.
+MIN_CALL_INTERVAL_S = float(os.getenv("PARKHU_GROQ_MIN_INTERVAL_S") or "2.1")
+MAX_NEWS_INPUT = 50
+MAX_NEWS_OUT = 10
+
+_last_call_mono = 0.0
 
 
 def _now_ist() -> str:
     return datetime.now(IST).isoformat()
+
+
+def _call_interval() -> float:
+    try:
+        return float(os.getenv("PARKHU_GROQ_MIN_INTERVAL_S") or MIN_CALL_INTERVAL_S)
+    except ValueError:
+        return MIN_CALL_INTERVAL_S
+
+
+def _pace() -> None:
+    """Sleep so consecutive Groq HTTP calls stay under ~30 RPM."""
+    global _last_call_mono
+    now = time.monotonic()
+    wait = _call_interval() - (now - _last_call_mono)
+    if wait > 0:
+        time.sleep(wait)
+    _last_call_mono = time.monotonic()
 
 
 def model_chain() -> list[str]:
@@ -158,6 +185,7 @@ def _user_prompt(ctx: dict[str, Any]) -> str:
 
 
 def _http_chat(api_key: str, model: str, messages: list[dict[str, str]]) -> tuple[int, str]:
+    _pace()
     body = json.dumps(
         {
             "model": model,
@@ -199,6 +227,43 @@ def _parse_completion(raw: str) -> dict[str, Any]:
     if not isinstance(parsed, dict):
         raise ValueError("content is not a JSON object")
     return parsed
+
+
+def _complete_json(
+    api_key: str,
+    messages: list[dict[str, str]],
+    *,
+    models: list[str] | None = None,
+) -> tuple[dict[str, Any] | None, str | None, list[dict[str, Any]]]:
+    """Run model chain; return (parsed, model_used, attempts)."""
+    chain = models or model_chain()
+    attempts: list[dict[str, Any]] = []
+    for model in chain:
+        retried_429 = False
+        while True:
+            status, raw = _http_chat(api_key, model, messages)
+            if status == 429 and not retried_429:
+                retried_429 = True
+                time.sleep(RETRY_429_SLEEP_S)
+                continue
+            if status == 200:
+                try:
+                    parsed = _parse_completion(raw)
+                    attempts.append({"model": model, "ok": True, "error": None})
+                    return parsed, model, attempts
+                except Exception as err:  # noqa: BLE001
+                    attempts.append({"model": model, "ok": False, "error": f"bad_json:{err}"})
+                    break
+            err_snip = (raw or "")[:180].replace("\n", " ")
+            attempts.append(
+                {
+                    "model": model,
+                    "ok": False,
+                    "error": f"http_{status}:{err_snip}" if status else f"network:{err_snip}",
+                }
+            )
+            break
+    return None, None, attempts
 
 
 def _levels_by_symbol(pack: dict[str, Any]) -> dict[str, dict[str, Any]]:
@@ -295,6 +360,7 @@ def _normalize_payload(
         "suggestions": _stamp_suggestions(parsed.get("suggestions"), pack),
         "open_book_notes": notes,
         "claude_feed": str(parsed.get("claude_feed") or "")[:2500],
+        "stock_reviews": [],
     }
 
 
@@ -319,6 +385,7 @@ def _skipped(
         "suggestions": [],
         "open_book_notes": [],
         "claude_feed": "",
+        "stock_reviews": [],
     }
 
 
@@ -334,62 +401,318 @@ def call_groq_desk(pack: dict[str, Any], *, api_key: str | None = None) -> dict[
         {"role": "system", "content": _system_prompt()},
         {"role": "user", "content": _user_prompt(ctx)},
     ]
-    attempts: list[dict[str, Any]] = []
+    parsed, model, attempts = _complete_json(key, messages, models=models)
+    if parsed is None or not model:
+        last = attempts[-1]["error"] if attempts else "unknown"
+        log.warning("groq desk skipped after %d attempts: %s", len(attempts), last)
+        return _skipped(f"all_models_failed:{last}", models=models, attempts=attempts)
+    return _normalize_payload(parsed, pack=pack, model=model, models=models, attempts=attempts)
 
-    for model in models:
-        retried_429 = False
-        while True:
-            status, raw = _http_chat(key, model, messages)
-            if status == 429 and not retried_429:
-                retried_429 = True
-                time.sleep(RETRY_429_SLEEP_S)
+
+def _idea_review_context(idea: dict[str, Any], pack: dict[str, Any]) -> dict[str, Any]:
+    lv = idea.get("levels") if isinstance(idea.get("levels"), dict) else {}
+    ev = idea.get("evidence") if isinstance(idea.get("evidence"), dict) else {}
+    regime = pack.get("regime") if isinstance(pack.get("regime"), dict) else {}
+    # Keep evidence compact — top signal fields only.
+    evidence_keys = (
+        "trend_label",
+        "adx14",
+        "rsi14",
+        "delivery_pct",
+        "rs_vs_nifty_1m",
+        "rs_vs_sector_1m",
+        "return_1m",
+        "return_3m",
+        "dist_52w_high_pct",
+        "atr_pct_of_price",
+        "tech_rating",
+        "days_to_earnings",
+    )
+    return {
+        "collection_date": pack.get("collection_date"),
+        "regime": {
+            "market_regime": regime.get("market_regime"),
+            "india_vix": regime.get("india_vix") or regime.get("vix_level"),
+            "overall_risk": regime.get("overall_risk"),
+        },
+        "idea": {
+            "symbol": idea.get("symbol"),
+            "company": idea.get("company"),
+            "band": idea.get("band"),
+            "parkhu_score": idea.get("parkhu_score"),
+            "risk_sector": idea.get("risk_sector"),
+            "cmp": idea.get("cmp"),
+            "levels": {
+                "entry": lv.get("entry"),
+                "stop": lv.get("stop"),
+                "t1": lv.get("t1"),
+                "t2": lv.get("t2"),
+                "rr_t1": lv.get("rr_t1"),
+                "hold_days_t1": lv.get("hold_days_t1"),
+            },
+            "evidence": {k: ev.get(k) for k in evidence_keys if ev.get(k) is not None},
+        },
+    }
+
+
+def _normalize_stock_review(
+    parsed: dict[str, Any],
+    *,
+    idea: dict[str, Any],
+    model: str,
+) -> dict[str, Any]:
+    lv = idea.get("levels") if isinstance(idea.get("levels"), dict) else {}
+    conviction = str(parsed.get("conviction") or "medium").strip().lower()
+    if conviction not in ALLOWED_CONVICTION:
+        conviction = "medium"
+    catalysts = parsed.get("catalysts") if isinstance(parsed.get("catalysts"), list) else []
+    risks = parsed.get("risks") if isinstance(parsed.get("risks"), list) else []
+    return {
+        "symbol": idea.get("symbol"),
+        "status": "ok",
+        "model": model,
+        "conviction": conviction,
+        "thesis": str(parsed.get("thesis") or "")[:800],
+        "catalysts": [str(x)[:160] for x in catalysts if x is not None][:5],
+        "risks": [str(x)[:160] for x in risks if x is not None][:5],
+        "what_to_watch": str(parsed.get("what_to_watch") or "")[:400],
+        "entry": lv.get("entry"),
+        "stop": lv.get("stop"),
+        "t1": lv.get("t1"),
+        "hold_days": lv.get("hold_days_t1"),
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": _now_ist(),
+    }
+
+
+def review_finalized_ideas(
+    pack: dict[str, Any],
+    *,
+    api_key: str | None = None,
+) -> list[dict[str, Any]]:
+    """One paced Groq review per finalized idea (Buy shortlist)."""
+    key = (api_key if api_key is not None else os.getenv("GROQ_API_KEY") or "").strip()
+    if not key:
+        return []
+    ideas = [i for i in (pack.get("ideas") or []) if isinstance(i, dict) and i.get("symbol")]
+    if not ideas:
+        return []
+
+    out: list[dict[str, Any]] = []
+    system = (
+        "You are a Parkhu swing analyst. Review one finalized Indian equity idea. "
+        "Do NOT invent entry/stop/t1 prices — use only provided levels. "
+        "Respond with a single JSON object only."
+    )
+    for idea in ideas:
+        ctx = _idea_review_context(idea, pack)
+        user = (
+            "Produce JSON with keys:\n"
+            "- thesis: 2-4 sentences on why this setup fits a ≤1-month swing\n"
+            "- catalysts: array of short strings\n"
+            "- risks: array of short strings\n"
+            "- what_to_watch: 1-2 sentences (triggers / invalidation cues)\n"
+            "- conviction: high|medium|low\n\n"
+            f"IDEA:\n{json.dumps(ctx, ensure_ascii=False, default=str)}"
+        )
+        messages = [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ]
+        try:
+            parsed, model, attempts = _complete_json(key, messages)
+            if parsed is None or not model:
+                err = attempts[-1]["error"] if attempts else "unknown"
+                log.warning("stock review skipped %s: %s", idea.get("symbol"), err)
+                out.append(
+                    {
+                        "symbol": idea.get("symbol"),
+                        "status": "skipped",
+                        "reason": f"all_models_failed:{err}",
+                        "levels_source": "parkhu_deterministic",
+                    }
+                )
                 continue
-            if status == 200:
-                try:
-                    parsed = _parse_completion(raw)
-                    attempts.append({"model": model, "ok": True, "error": None})
-                    return _normalize_payload(
-                        parsed,
-                        pack=pack,
-                        model=model,
-                        models=models,
-                        attempts=attempts,
-                    )
-                except Exception as err:  # noqa: BLE001
-                    attempts.append({"model": model, "ok": False, "error": f"bad_json:{err}"})
-                    break
-            err_snip = (raw or "")[:180].replace("\n", " ")
-            attempts.append(
+            out.append(_normalize_stock_review(parsed, idea=idea, model=model))
+        except Exception as err:  # noqa: BLE001
+            log.exception("stock review failed %s", idea.get("symbol"))
+            out.append(
                 {
-                    "model": model,
-                    "ok": False,
-                    "error": f"http_{status}:{err_snip}" if status else f"network:{err_snip}",
+                    "symbol": idea.get("symbol"),
+                    "status": "skipped",
+                    "reason": f"exception:{err}",
+                    "levels_source": "parkhu_deterministic",
                 }
             )
-            break
+    return out
 
-    last = attempts[-1]["error"] if attempts else "unknown"
-    log.warning("groq desk skipped after %d attempts: %s", len(attempts), last)
-    return _skipped(f"all_models_failed:{last}", models=models, attempts=attempts)
+
+def _load_news_rows(date: str | None) -> list[dict[str, Any]]:
+    if not date:
+        return []
+    try:
+        from collector.derived._utils import load_csv
+
+        df = load_csv("news_enriched", date)
+        if df is None or getattr(df, "empty", True):
+            df = load_csv("news", date)
+        if df is None or getattr(df, "empty", True):
+            return []
+        rows: list[dict[str, Any]] = []
+        for _, r in df.head(MAX_NEWS_INPUT).iterrows():
+            subject = str(r.get("subject") or "").strip()
+            details = str(r.get("details") or "").strip()
+            if not subject and not details:
+                continue
+            rows.append(
+                {
+                    "date": r.get("date"),
+                    "symbol": r.get("symbol"),
+                    "headline": subject or details[:120],
+                    "details": details[:220],
+                    "category": r.get("category"),
+                    "news_score": r.get("news_score"),
+                    "major_catalyst": r.get("major_catalyst"),
+                    "risk_event": r.get("risk_event"),
+                }
+            )
+        return rows
+    except Exception as err:  # noqa: BLE001
+        log.warning("news load failed: %s", err)
+        return []
+
+
+def _normalize_market_news(parsed: dict[str, Any]) -> list[dict[str, Any]]:
+    raw = parsed.get("items") or parsed.get("news") or parsed.get("top10")
+    if not isinstance(raw, list):
+        return []
+    out: list[dict[str, Any]] = []
+    for i, item in enumerate(raw[:MAX_NEWS_OUT], start=1):
+        if not isinstance(item, dict):
+            continue
+        headline = str(item.get("headline") or item.get("subject") or "").strip()
+        if not headline:
+            continue
+        impact = str(item.get("impact") or "medium").strip().lower()
+        if impact not in ALLOWED_IMPACT:
+            impact = "medium"
+        sym = item.get("symbol")
+        out.append(
+            {
+                "rank": int(item.get("rank") or i),
+                "headline": headline[:220],
+                "symbol": str(sym).strip() if sym else None,
+                "impact": impact,
+                "why_it_matters": str(item.get("why_it_matters") or "")[:320],
+                "source_date": item.get("source_date") or item.get("date"),
+            }
+        )
+    out.sort(key=lambda x: x["rank"])
+    for i, row in enumerate(out, start=1):
+        row["rank"] = i
+    return out[:MAX_NEWS_OUT]
+
+
+def generate_market_news_top10(
+    pack: dict[str, Any],
+    *,
+    api_key: str | None = None,
+    news_rows: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    """Rank day's announcements into top-10 market-impact headlines via Groq."""
+    key = (api_key if api_key is not None else os.getenv("GROQ_API_KEY") or "").strip()
+    if not key:
+        return []
+    rows = news_rows if news_rows is not None else _load_news_rows(pack.get("collection_date"))
+    if not rows:
+        return []
+
+    regime = pack.get("regime") if isinstance(pack.get("regime"), dict) else {}
+    payload = {
+        "collection_date": pack.get("collection_date"),
+        "regime": {
+            "market_regime": regime.get("market_regime"),
+            "india_vix": regime.get("india_vix") or regime.get("vix_level"),
+            "fii_net": regime.get("fii_net"),
+            "overall_risk": regime.get("overall_risk"),
+        },
+        "announcements": rows,
+    }
+    system = (
+        "You are a market news desk for Indian equities. Pick the headlines with the "
+        "highest market-wide impact (indices, sectors, risk sentiment) — not just "
+        "company trivia. Respond with a single JSON object only."
+    )
+    user = (
+        "From the announcements, return JSON:\n"
+        '{ "items": [ { "rank": 1-10, "headline", "symbol" or null, '
+        '"impact": high|medium|low, "why_it_matters", "source_date" } ] }\n'
+        f"Return at most {MAX_NEWS_OUT} items, highest impact first.\n\n"
+        f"INPUT:\n{json.dumps(payload, ensure_ascii=False, default=str)}"
+    )
+    messages = [
+        {"role": "system", "content": system},
+        {"role": "user", "content": user},
+    ]
+    try:
+        parsed, model, attempts = _complete_json(key, messages)
+        if parsed is None:
+            err = attempts[-1]["error"] if attempts else "unknown"
+            log.warning("market news skipped: %s", err)
+            return []
+        items = _normalize_market_news(parsed)
+        for row in items:
+            row["model"] = model
+            row["generated_at_ist"] = _now_ist()
+        return items
+    except Exception as err:  # noqa: BLE001
+        log.exception("market news failed: %s", err)
+        return []
 
 
 def enrich_research_pack(pack: dict[str, Any], *, api_key: str | None = None) -> dict[str, Any]:
-    """Attach additive ``enrichment`` key; never mutate ideas/ledger/analytics."""
+    """Attach additive enrichment + market_news_top10; never mutate ideas/levels."""
     if not isinstance(pack, dict):
         return pack
+    key = (api_key if api_key is not None else os.getenv("GROQ_API_KEY") or "").strip()
     try:
-        enrichment = call_groq_desk(pack, api_key=api_key)
+        enrichment = call_groq_desk(pack, api_key=key)
     except Exception as err:  # noqa: BLE001
         log.exception("groq desk unexpected failure")
         enrichment = _skipped(f"exception:{err}")
+
+    reviews: list[dict[str, Any]] = []
+    news: list[dict[str, Any]] = []
+    if key:
+        try:
+            reviews = review_finalized_ideas(pack, api_key=key)
+        except Exception as err:  # noqa: BLE001
+            log.exception("stock reviews unexpected failure: %s", err)
+            reviews = []
+        try:
+            news = generate_market_news_top10(pack, api_key=key)
+        except Exception as err:  # noqa: BLE001
+            log.exception("market news unexpected failure: %s", err)
+            news = []
+
+    enrichment["stock_reviews"] = reviews
     pack["enrichment"] = enrichment
+    pack["market_news_top10"] = news
+
     if enrichment.get("status") == "ok":
         log.info(
-            "groq desk ok model=%s fallback=%s suggestions=%d",
+            "groq desk ok model=%s fallback=%s suggestions=%d reviews=%d news=%d",
             enrichment.get("model"),
             enrichment.get("fallback_used"),
             len(enrichment.get("suggestions") or []),
+            len(reviews),
+            len(news),
         )
     else:
-        log.info("groq desk skipped: %s", enrichment.get("reason"))
+        log.info(
+            "groq desk skipped: %s (reviews=%d news=%d)",
+            enrichment.get("reason"),
+            len(reviews),
+            len(news),
+        )
     return pack

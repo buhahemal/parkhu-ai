@@ -232,7 +232,7 @@ CATALOG = [
             "agent": "event_risk (derived)",
             "source": "earnings + corporate_actions + news",
             "description": "Earnings, corp-action and news flags inside a 21-day event window.",
-            "use_case": "Avoid holding into results/ex-dates for 2–3 week swings.",
+            "use_case": "Avoid holding into results/ex-dates for ~1 month swings.",
             "key_columns": [
                 "symbol",
                 "earnings_within_21d",
@@ -256,7 +256,7 @@ CATALOG = [
         {
             "agent": "swing_candidates (derived)",
             "source": "multi-file composite score",
-            "description": "Top ~20 names scored for 2–3 week swing holds targeting ~5% — "
+            "description": "Top ~20 names scored for up to ~1 month swing holds targeting ~5% — "
             "trend, RS, delivery, F&O, upside room, event-risk penalties. "
             "NOT a recommendation.",
             "use_case": "Focused swing shortlist for the research engine.",

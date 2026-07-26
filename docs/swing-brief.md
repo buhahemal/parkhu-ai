@@ -91,7 +91,7 @@ Every threshold lives in `config/risk.py`, cites its KB source, and is env-overr
 | Max positions | 10 | KB-09 Fig 1-1 |
 | Min reward:risk to T1 | 1:2 | KB-08 Ch.4 |
 | Buy / Watch / Ignore | ≥80 / 70–79 / <70 | KB-14 Fig 3-1 |
-| Holding period | 3–90 days | KB-00 Art. II |
+| Holding period | 3–22 trading days (~1 month max) | Parkhu swing mandate |
 | Stop distance | > 1 ATR | KB-03 Ch.5 |
 | ADX for a tradeable trend | > 25 | KB-03 Fig 3-1 |
 | RSI band in an uptrend | 40–80 | KB-03 Ch.3 |
@@ -131,7 +131,7 @@ below price with a 0.5 ATR buffer, then sets T1/T2/T3 at 2R/3R/4R.
 
 **Stops do not use `support1`/`resistance1`.** Those are single-day classic pivots roughly
 0.3% wide — on 2026-07-24, ICICIBANK closed at ₹1,428.90 with support1 at ₹1,424.46 and
-resistance1 at ₹1,432.66. Over a 3-to-90-day hold that is noise.
+resistance1 at ₹1,432.66. Over a 3-to-22 trading-day (~1 month) hold that is noise.
 
 When structure sits further below price than the risk ceiling allows, the brief falls back
 to a 2 ATR volatility stop (KB-08 Fig 3-1 permits an ATR stop "when structure is unclear")
@@ -147,7 +147,8 @@ and says so in the idea's invalidation line, because the true invalidation level
   independent filtering. Once `docs/data-gaps.md` item 1 lands, targets move to genuine
   structure and R:R becomes a real filter again.
 - **Hold period** is an ATR √time estimate: days ≈ (target distance ÷ ATR)². It answers
-  "is this target reachable inside the mandate", not "when will it hit".
+  "is this target reachable inside the mandate", not "when will it hit". Names whose T1
+  needs more than **22 trading days (~1 month)** are hard-rejected (`skipped_beyond_horizon`).
 - **Scores are provisional.** News (15), institutional (10) and options (5) have no data,
   so 30 of KB-14's 100 points cannot be computed. The remaining weights are renormalised
   and the shortfall is printed in the caveats.

@@ -39,9 +39,17 @@
         -webkit-font-smoothing: antialiased;
       }
       .wrap {
+        width: 100%;
         max-width: 860px;
         margin: 0 auto;
         padding: 2rem 1.25rem 3.5rem;
+        box-sizing: border-box;
+        overflow-x: clip;
+      }
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: clip;
       }
       .back {
         display: inline-block;
@@ -363,6 +371,18 @@
           <p class="ex">
             <strong>Example:</strong> Driving to a city 300 km away with a first rest stop at 100 km.
             T1 is that first planned stop — not the only possible destination.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Hold days <span class="aka">(mandate ≤ 1 month)</span></h3>
+          <p class="mean">
+            Estimated trading days to reach T1 (ATR √time). Parkhu swing holds are 3–22
+            trading days (~1 month max). Names needing longer to T1 are dropped.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Like booking a trip that must finish within a month.
+            If the plan needs six weeks to the first destination, it doesn’t make the list.
           </p>
         </article>
 

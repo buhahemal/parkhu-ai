@@ -1,4 +1,4 @@
-"""Event-risk flags for a 2–3 week hold window."""
+"""Event-risk flags for a ~1 month swing hold window."""
 
 from __future__ import annotations
 

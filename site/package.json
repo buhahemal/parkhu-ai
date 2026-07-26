@@ -1,0 +1,11 @@
+{
+  "name": "parkhu-site",
+  "private": true,
+  "scripts": {
+    "test:ui": "playwright test",
+    "test:ui:install": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1"
+  }
+}

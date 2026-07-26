@@ -1,4 +1,4 @@
-"""Swing candidate shortlist — 2–3 week hold, ~5% target template."""
+"""Swing candidate shortlist — up to ~1 month hold, ~5% target template."""
 
 from __future__ import annotations
 

@@ -84,9 +84,15 @@ html[data-theme="dark"] {
   color-scheme: dark;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: clip;
   font-family: var(--font);
   font-size: var(--fs-body);
   font-weight: 400;
@@ -101,9 +107,12 @@ body {
 }
 
 .shell {
+  width: 100%;
   max-width: var(--max);
   margin: 0 auto;
   padding: 1rem var(--pad) 2.5rem;
+  box-sizing: border-box;
+  overflow-x: clip;
 }
 
 /* —— Top bar —— */
@@ -525,6 +534,8 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 .desk {
   display: grid;
   gap: 0.9rem;
+  min-width: 0;
+  width: 100%;
 }
 
 .main-col,
@@ -532,6 +543,8 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   display: grid;
   gap: 0.9rem;
   align-content: start;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .panel {
@@ -541,6 +554,9 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   padding: 1.1rem 1.15rem 1.2rem;
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .panel.hero {
@@ -685,12 +701,20 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 .chart-wrap {
   position: relative;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: 220px;
   margin: 0.4rem 0 0.5rem;
   padding: 0.5rem;
   border-radius: 12px;
   background: var(--chart-bg);
   border: 1px solid var(--line);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.chart-wrap canvas {
+  max-width: 100% !important;
 }
 
 .chart-wrap.tall {
@@ -784,6 +808,95 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 .sym-link:hover .sym-ext,
 .sym-link:focus-visible .sym-ext {
   opacity: 1;
+}
+
+.ai-review {
+  margin-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.45rem;
+  font-size: var(--fs-small);
+}
+
+.ai-review summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+}
+
+.ai-review summary::-webkit-details-marker {
+  display: none;
+}
+
+.ai-review-thesis {
+  margin: 0.45rem 0 0.35rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.ai-review-meta {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.news-item {
+  padding-left: 0.15rem;
+}
+
+.news-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.impact-pill {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  background: var(--warn-dim);
+  color: var(--warn);
+}
+
+.impact-pill.high {
+  background: var(--bad-dim);
+  color: var(--bad);
+}
+
+.impact-pill.low {
+  background: var(--good-dim);
+  color: var(--good);
+}
+
+.news-headline {
+  margin: 0;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.news-why {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.stock-reviews {
+  display: grid;
+  gap: 0.5rem;
 }
 
 .card .sub {
@@ -1290,18 +1403,104 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 }
 
 @media (max-width: 720px) {
+  .shell {
+    padding: 0.75rem 0.75rem 2rem;
+  }
+
+  .topbar {
+    gap: 0.65rem;
+  }
+
   .top-meta {
     width: 100%;
     align-items: flex-start;
     margin-left: 0;
   }
 
+  .meta-tools {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   .meta {
     justify-content: flex-start;
+  }
+
+  .date-filter {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .date-filter select {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .date-note {
+    max-width: none;
+    text-align: left;
   }
 
   .nav {
     width: 100%;
     order: 3;
+  }
+
+  .panel {
+    padding: 0.9rem 0.85rem 1rem;
+  }
+
+  .panel-head {
+    flex-wrap: wrap;
+  }
+
+  .panel h2 {
+    font-size: 1.25rem;
+  }
+
+  .kpi .cell {
+    padding: 0.85rem 0.8rem 0.95rem;
+  }
+
+  .kpi .cell b {
+    font-size: 1.35rem;
+  }
+
+  .chart-wrap.tall {
+    min-height: 220px;
+    height: min(42vh, 300px);
+  }
+
+  .status-ribbon {
+    gap: 0.4rem;
+  }
+
+  .status-ribbon .pill {
+    max-width: 100%;
+  }
+
+  .enrich-table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .enrich-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .card .row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem 0.5rem;
+  }
+
+  .enrich-hero {
+    gap: 0.55rem;
+  }
+
+  .enrich-hero .brief-line {
+    flex: 1 1 100%;
   }
 }

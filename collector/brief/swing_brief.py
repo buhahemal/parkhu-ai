@@ -17,8 +17,8 @@ existing values cannot be used as-is:
     368 names every day. Levels are therefore rebuilt here.
 
 2.  `support1`/`resistance1` are single-day classic pivots, roughly 0.3% wide.
-    Over the KB-00 Art. II horizon of 3 to 90 days they are noise, so stops are
-    anchored on moving-average structure instead.
+    Over the swing mandate (3 to ~22 trading days / 1 month) they are noise, so
+    stops are anchored on moving-average structure instead.
 
 Both are workarounds for gaps documented in docs/data-gaps.md, not permanent
 design. Once daily OHLC history lands, real swing structure replaces both.
@@ -213,6 +213,8 @@ def derive_levels(row: pd.Series) -> dict | None:
         "expected_profit_pct_t1": round((t1 - entry) / entry * 100, 2),
         "hold_days_t1": clamp(days_t1),
         "hold_days_t2": clamp(days_t2),
+        "hold_days_t1_raw": int(days_t1),
+        "hold_days_t2_raw": int(days_t2),
         "t1_beyond_mandate": days_t1 > risk.HORIZON_MAX_DAYS,
         "t1_above_52w_high": bool(pd.notna(high52) and t1 > high52),
         "room_to_52w_high_pct": (
@@ -259,12 +261,15 @@ def build_payload(date: str, capital: float) -> dict:
             "min_rr_t1": risk.MIN_RR_T1,
             "buy_score": risk.BUY_SCORE,
             "watch_score": risk.WATCH_SCORE,
+            "horizon_min_days": risk.HORIZON_MIN_DAYS,
+            "horizon_max_days": risk.HORIZON_MAX_DAYS,
         },
         "regime": {},
         "funnel": [],
         "ideas": [],
         "watchlist": [],
         "queued_on_portfolio_limits": [],
+        "skipped_beyond_horizon": [],
         "unaffordable_at_this_capital": [],
         "ignored_below_watch": [],
     }
@@ -333,10 +338,21 @@ def build_payload(date: str, capital: float) -> dict:
     payload["funnel"] = steps
 
     rows: list[dict] = []
+    skipped_horizon: list[dict] = []
     for _, r in f.iterrows():
         lv = derive_levels(r)
         if lv is None or lv["rr_t1"] < risk.MIN_RR_T1 - 0.01:
             continue  # KB-08 Fig 6-1 reject
+        # Hard mandate: T1 must be reachable within HORIZON_MAX_DAYS (~1 month).
+        if lv.get("t1_beyond_mandate"):
+            skipped_horizon.append(
+                {
+                    "symbol": r["symbol"],
+                    "hold_days_t1_raw": lv.get("hold_days_t1_raw"),
+                    "reason": f"T1 needs more than {risk.HORIZON_MAX_DAYS} trading days (~1 month)",
+                }
+            )
+            continue
         sz = size_position(lv, capital)
         sc = float(r["parkhu_score"])
         rows.append(
@@ -396,6 +412,7 @@ def build_payload(date: str, capital: float) -> dict:
         )
 
     rows.sort(key=lambda x: (-x["parkhu_score"], -x["levels"]["rr_t1"]))
+    payload["skipped_beyond_horizon"] = skipped_horizon
 
     # KB-14 Fig 3-1 bands.
     payload["ignored_below_watch"] = [
@@ -696,6 +713,21 @@ def render_md(o: dict) -> str:
                 "Queued on portfolio limits: "
                 + ", ".join(
                     f"{q['symbol']} ({q['reason']})" for q in o["queued_on_portfolio_limits"]
+                ),
+                "",
+            ]
+        if o.get("skipped_beyond_horizon"):
+            L += [
+                f"Skipped — T1 beyond {o['limits'].get('horizon_max_days', risk.HORIZON_MAX_DAYS)} "
+                f"trading-day (~1 month) mandate: "
+                + ", ".join(
+                    f"{q['symbol']} (~{q.get('hold_days_t1_raw')}d)"
+                    for q in o["skipped_beyond_horizon"][:12]
+                )
+                + (
+                    f" (+{len(o['skipped_beyond_horizon']) - 12} more)"
+                    if len(o["skipped_beyond_horizon"]) > 12
+                    else ""
                 ),
                 "",
             ]

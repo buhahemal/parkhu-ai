@@ -598,6 +598,26 @@ def render_research_pack_md(pack: dict[str, Any]) -> str:
                 f"entry={s.get('entry')} stop={s.get('stop')} t1={s.get('t1')} "
                 f"hold={s.get('hold_days')}d — {s.get('rationale')}"
             )
+        reviews = enrich.get("stock_reviews") or []
+        if reviews:
+            lines.extend(["", "### AI stock reviews", ""])
+            for rev in reviews:
+                if not isinstance(rev, dict):
+                    continue
+                if rev.get("status") != "ok":
+                    lines.append(
+                        f"- **{rev.get('symbol')}** — skipped ({rev.get('reason') or 'n/a'})"
+                    )
+                    continue
+                lines.append(
+                    f"- **{rev.get('symbol')}** [{rev.get('conviction')}] {rev.get('thesis')}"
+                )
+                if rev.get("catalysts"):
+                    lines.append(f"  - catalysts: {', '.join(rev['catalysts'])}")
+                if rev.get("risks"):
+                    lines.append(f"  - risks: {', '.join(rev['risks'])}")
+                if rev.get("what_to_watch"):
+                    lines.append(f"  - watch: {rev.get('what_to_watch')}")
         feed = enrich.get("claude_feed")
         if feed:
             lines.extend(["", "### Claude feed", "", str(feed), ""])
@@ -611,6 +631,18 @@ def render_research_pack_md(pack: dict[str, Any]) -> str:
                 "",
             ]
         )
+
+    news = pack.get("market_news_top10") or []
+    if news:
+        lines.extend(["", "## Market news (AI top impact)", ""])
+        for n in news:
+            if not isinstance(n, dict):
+                continue
+            sym = f" ({n.get('symbol')})" if n.get("symbol") else ""
+            lines.append(
+                f"{n.get('rank')}. **[{n.get('impact')}]** {n.get('headline')}{sym} — "
+                f"{n.get('why_it_matters')}"
+            )
 
     urls = pack.get("urls") or {}
     deep = urls.get("deep_dive") or {}

@@ -21,15 +21,18 @@ Do **not** upload `latest.zip`. Use the stable uncompressed pack.
 - Open suggestion ledger + **needs action** from the brief review
 - Top swing candidates (not the full 364-row universe)
 - Deep-dive raw URLs for `stock_analysis.csv`, `manifest.json`, `report.json`
-- Optional **`enrichment`** (Groq desk note) when `GROQ_API_KEY` is set — narrative only; levels stay from Parkhu gates
+- Optional **`enrichment`** (Groq) when `GROQ_API_KEY` is set — desk note + per-idea stock reviews; levels stay from Parkhu gates
+- Optional **`market_news_top10`** — Groq-ranked NSE headlines by market impact (Pages side panel)
 
-The **GitHub Pages desk** is process + market visibility (funnel charts, regime, ledger, Groq note).
+The **GitHub Pages desk** is process + market visibility (funnel, regime, ledger, Groq note, market news).
 It intentionally does **not** show capital deployed — keep that conversation in Claude.
 
 ### Groq enrichment (optional)
 
 - Additive JSON under `research_pack.enrichment` — does **not** change scores, gates, or idea levels.
-- Prefer `enrichment.claude_feed` as a short paste after the deterministic pack.
+- `enrichment.stock_reviews[]` — one paced AI review per finalized Buy idea.
+- `market_news_top10[]` — top impact headlines (skip-safe if no news / no key).
+- Calls spaced ~2.1s (≤30 RPM). Prefer `enrichment.claude_feed` as a short paste after the pack.
 - Primary model `llama-3.3-70b-versatile` with fallbacks on rate-limit / failure.
 - Repo secret: **Settings → Secrets → Actions → `GROQ_API_KEY`**. Rotate any key that was pasted in chat.
 - Local: copy [`.env.example`](../.env.example) → `.env` (gitignored).

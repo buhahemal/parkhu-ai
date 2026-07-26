@@ -1,0 +1,41 @@
+name: Pages UI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages-ui.yml"
+  pull_request:
+    paths:
+      - "site/**"
+      - ".github/workflows/pages-ui.yml"
+  workflow_dispatch: {}
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  responsive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install
+        run: npm install
+
+      - name: Install Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Responsive checks
+        run: npm run test:ui

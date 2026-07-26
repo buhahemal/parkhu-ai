@@ -8,7 +8,9 @@ import collector.enrichment.groq_desk as groq
 from collector.enrichment.groq_desk import (
     call_groq_desk,
     enrich_research_pack,
+    generate_market_news_top10,
     model_chain,
+    review_finalized_ideas,
 )
 
 SAMPLE_PACK = {
@@ -21,6 +23,7 @@ SAMPLE_PACK = {
             "parkhu_score": 85,
             "risk_sector": "Banks",
             "levels": {"entry": 100, "stop": 90, "t1": 120, "hold_days_t1": 16, "rr_t1": 2},
+            "evidence": {"adx14": 30, "rsi14": 55},
         }
     ],
     "analytics": {"caveats": ["test"], "score_coverage_pct": 65, "funnel_conversions": []},
@@ -49,6 +52,41 @@ def _ok_body(entry_from_llm: float = 999.0) -> str:
     return json.dumps({"choices": [{"message": {"content": json.dumps(content)}}]})
 
 
+def _review_body() -> str:
+    content = {
+        "thesis": "Relative strength and delivery support a 1-month swing.",
+        "catalysts": ["RS leadership"],
+        "risks": ["Sector rotation"],
+        "what_to_watch": "Hold above entry; respect stop.",
+        "conviction": "high",
+    }
+    return json.dumps({"choices": [{"message": {"content": json.dumps(content)}}]})
+
+
+def _news_body() -> str:
+    content = {
+        "items": [
+            {
+                "rank": 1,
+                "headline": "RBI policy cue",
+                "symbol": None,
+                "impact": "high",
+                "why_it_matters": "Sets risk appetite",
+                "source_date": "2026-07-26",
+            },
+            {
+                "rank": 2,
+                "headline": "AAA earnings",
+                "symbol": "AAA",
+                "impact": "medium",
+                "why_it_matters": "Name-specific",
+                "source_date": "2026-07-26",
+            },
+        ]
+    }
+    return json.dumps({"choices": [{"message": {"content": json.dumps(content)}}]})
+
+
 def test_model_chain_defaults(monkeypatch):
     monkeypatch.delenv("PARKHU_GROQ_MODELS", raising=False)
     monkeypatch.delenv("PARKHU_GROQ_MODEL", raising=False)
@@ -71,11 +109,14 @@ def test_skipped_without_key(monkeypatch):
     assert out["reason"] == "no_api_key"
     pack = enrich_research_pack(dict(SAMPLE_PACK), api_key="")
     assert pack["enrichment"]["status"] == "skipped"
+    assert pack["enrichment"]["stock_reviews"] == []
+    assert pack["market_news_top10"] == []
     assert pack["ideas"][0]["levels"]["entry"] == 100
 
 
 def test_primary_ok_stamps_levels_not_llm_prices(monkeypatch):
     monkeypatch.setenv("PARKHU_GROQ_MODELS", "llama-3.3-70b-versatile")
+    monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
 
     def fake_http(api_key, model, messages):
         assert model == "llama-3.3-70b-versatile"
@@ -98,6 +139,7 @@ def test_primary_429_then_fallback_ok(monkeypatch):
         "PARKHU_GROQ_MODELS",
         "llama-3.3-70b-versatile,llama-3.1-8b-instant",
     )
+    monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
     calls = []
 
     def fake_http(api_key, model, messages):
@@ -121,6 +163,7 @@ def test_primary_429_then_fallback_ok(monkeypatch):
 
 def test_all_models_fail(monkeypatch):
     monkeypatch.setenv("PARKHU_GROQ_MODELS", "m1,m2")
+    monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
     monkeypatch.setattr(groq, "RETRY_429_SLEEP_S", 0)
 
     def fake_http(api_key, model, messages):
@@ -131,3 +174,75 @@ def test_all_models_fail(monkeypatch):
     assert out["status"] == "skipped"
     assert str(out["reason"]).startswith("all_models_failed")
     assert len(out["attempts"]) == 2
+
+
+def test_stock_review_stamps_levels(monkeypatch):
+    monkeypatch.setenv("PARKHU_GROQ_MODELS", "llama-3.1-8b-instant")
+    monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
+
+    def fake_http(api_key, model, messages):
+        return 200, _review_body()
+
+    monkeypatch.setattr(groq, "_http_chat", fake_http)
+    reviews = review_finalized_ideas(SAMPLE_PACK, api_key="gsk_test")
+    assert len(reviews) == 1
+    assert reviews[0]["status"] == "ok"
+    assert reviews[0]["symbol"] == "AAA"
+    assert reviews[0]["entry"] == 100
+    assert reviews[0]["stop"] == 90
+    assert "Relative strength" in reviews[0]["thesis"]
+
+
+def test_market_news_top10(monkeypatch):
+    monkeypatch.setenv("PARKHU_GROQ_MODELS", "llama-3.1-8b-instant")
+    monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
+
+    def fake_http(api_key, model, messages):
+        return 200, _news_body()
+
+    monkeypatch.setattr(groq, "_http_chat", fake_http)
+    items = generate_market_news_top10(
+        SAMPLE_PACK,
+        api_key="gsk_test",
+        news_rows=[
+            {"date": "2026-07-26", "symbol": "AAA", "headline": "AAA earnings", "details": "Beat"},
+            {"date": "2026-07-26", "symbol": None, "headline": "RBI policy cue", "details": ""},
+        ],
+    )
+    assert len(items) == 2
+    assert items[0]["rank"] == 1
+    assert items[0]["impact"] == "high"
+    assert items[1]["symbol"] == "AAA"
+
+
+def test_enrich_runs_reviews_and_news(monkeypatch):
+    monkeypatch.setenv("PARKHU_GROQ_MODELS", "m1")
+    monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
+    calls = {"n": 0}
+
+    def fake_http(api_key, model, messages):
+        calls["n"] += 1
+        text = " ".join(m.get("content", "") for m in messages)
+        if (
+            "Stock reviews" in text
+            or "IDEA:" in text
+            or "finalized" in text.lower()
+            or "one finalized" in text
+        ):
+            return 200, _review_body()
+        if "announcements" in text or "highest market-wide impact" in text:
+            return 200, _news_body()
+        return 200, _ok_body()
+
+    monkeypatch.setattr(groq, "_http_chat", fake_http)
+    monkeypatch.setattr(
+        groq,
+        "_load_news_rows",
+        lambda date: [{"date": date, "symbol": "AAA", "headline": "X", "details": "Y"}],
+    )
+    pack = enrich_research_pack(dict(SAMPLE_PACK), api_key="gsk_test")
+    assert pack["enrichment"]["status"] == "ok"
+    assert len(pack["enrichment"]["stock_reviews"]) == 1
+    assert pack["enrichment"]["stock_reviews"][0]["entry"] == 100
+    assert len(pack["market_news_top10"]) == 2
+    assert calls["n"] >= 3  # desk + review + news
