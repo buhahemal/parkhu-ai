@@ -1,9 +1,9 @@
 {
   "schema": "parkhu.research_pack.v2",
-  "collection_date": "2026-07-26",
+  "collection_date": "2026-07-25",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T11:41:46.412633+05:30",
+  "generated_at_ist": "2026-07-25T13:10:53.273807+05:30",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -18,11 +18,11 @@
   "regime": {
     "market_regime": "Bearish",
     "nifty_trend": "Bearish",
-    "nifty_pct_change": -0.43,
-    "banknifty_trend": "Neutral",
-    "banknifty_pct_change": 0.18,
-    "india_vix": 14.03,
-    "vix_level": "Medium",
+    "nifty_pct_change": -0.53,
+    "banknifty_trend": "Bearish",
+    "banknifty_pct_change": -0.94,
+    "india_vix": 13.48,
+    "vix_level": "Low",
     "best_sector": "Distribution Services",
     "best_sector_perf_1m": 7.74,
     "worst_sector": "Utilities",
@@ -33,23 +33,23 @@
     "crude_pct_change": -3.12,
     "usdinr": 96.56,
     "usdinr_pct_change": -0.33,
-    "us_sp500_pct": 0.05,
-    "us_dow_pct": 0.46,
-    "us_vix": 18.58,
-    "us_vix_pct": -0.64,
-    "dxy": 101.47,
-    "dxy_pct": 0.04,
-    "us_10y": 4.68,
-    "asia_cue": "Bearish",
-    "europe_cue": "Bullish",
+    "us_sp500_pct": null,
+    "us_dow_pct": null,
+    "us_vix": 18.7,
+    "us_vix_pct": 12.38,
+    "dxy": 101.43,
+    "dxy_pct": 0.29,
+    "us_10y": 4.7,
+    "asia_cue": "Mixed",
+    "europe_cue": "Bearish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T11:41:45.936798+05:30"
+    "generated_at_ist": "2026-07-25T13:10:52.915235+05:30"
   },
   "funnel": [
     {
       "gate": "universe",
-      "surviving": 364
+      "surviving": 363
     },
     {
       "gate": "trend = Bullish",
@@ -73,23 +73,23 @@
     },
     {
       "gate": "RS > 0 vs NIFTY and sector",
-      "surviving": 54
+      "surviving": 64
     },
     {
       "gate": "delivery% >= 40",
-      "surviving": 40
+      "surviving": 43
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 17
+      "surviving": 16
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 15
+      "surviving": 14
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 15
+      "surviving": 14
     }
   ],
   "ideas": [
@@ -100,7 +100,7 @@
       "industry": "Real Estate Development",
       "risk_sector": "Real Estate",
       "cmp": 1144.1,
-      "parkhu_score": 90.3,
+      "parkhu_score": 85.9,
       "band": "Buy",
       "levels": {
         "entry": 1144.1,
@@ -140,30 +140,30 @@
         "rsi14": 60.43986851244426,
         "macd_hist": -7.124,
         "delivery_pct": 43.06,
-        "rs_vs_nifty_1m": 26.68,
-        "rs_vs_sector_1m": 12.84,
+        "rs_vs_nifty_1m": 25.43,
+        "rs_vs_sector_1m": 23.73,
         "return_1m": 25.62174032390886,
         "return_3m": 33.4850075837125,
         "dist_52w_high_pct": -13.82,
         "atr14": 41.15493411466165,
-        "pe": 27.76941747572815,
-        "roe": 18.1106233538191,
-        "debt_equity": 0.416936790923825,
-        "revenue_growth": 26.042136058288907,
-        "profit_growth": 39.001349527665326,
-        "composite_factor_rank": 37.0,
+        "pe": 33.41413551401869,
+        "roe": 15.774894165286202,
+        "debt_equity": 0.424972730630159,
+        "revenue_growth": 21.021807757901232,
+        "profit_growth": 23.7888647866956,
+        "composite_factor_rank": 26.0,
         "risk_score": 75,
         "in_oi_spurt": true,
         "oi_change_pct": -6.57,
         "tech_rating": "Buy",
         "analyst_rec": 1.138889,
         "price_target_avg": 1232.666667,
-        "days_to_earnings": 101.0,
+        "days_to_earnings": 102.0,
         "trend_score": 100.0,
         "momentum_score": 40,
         "fundamental_score": 100,
         "earnings_score": 100,
-        "sector_score": 98.0,
+        "sector_score": 46.0,
         "atr_pct_of_price": 3.6
       }
     },
@@ -174,7 +174,7 @@
       "industry": "Regional Banks",
       "risk_sector": "Banks",
       "cmp": 1432.9,
-      "parkhu_score": 82.8,
+      "parkhu_score": 83.7,
       "band": "Buy",
       "levels": {
         "entry": 1432.9,
@@ -214,8 +214,8 @@
         "rsi14": 61.67193907847662,
         "macd_hist": -1.2996,
         "delivery_pct": 75.85,
-        "rs_vs_nifty_1m": 7.94,
-        "rs_vs_sector_1m": 9.39,
+        "rs_vs_nifty_1m": 6.69,
+        "rs_vs_sector_1m": 4.99,
         "return_1m": 6.884976876025674,
         "return_3m": 7.228915662650613,
         "dist_52w_high_pct": -4.12,
@@ -232,12 +232,12 @@
         "tech_rating": "Buy",
         "analyst_rec": 1.04,
         "price_target_avg": 1737.12,
-        "days_to_earnings": 85.0,
+        "days_to_earnings": 86.0,
         "trend_score": 100.0,
         "momentum_score": 60,
         "fundamental_score": 80,
         "earnings_score": 100,
-        "sector_score": 31.0,
+        "sector_score": 46.0,
         "atr_pct_of_price": 1.8
       }
     },
@@ -248,7 +248,7 @@
       "industry": "Finance/Rental/Leasing",
       "risk_sector": "NBFC & Capital Markets",
       "cmp": 556.55,
-      "parkhu_score": 82.4,
+      "parkhu_score": 81.7,
       "band": "Buy",
       "levels": {
         "entry": 556.55,
@@ -288,7 +288,7 @@
         "rsi14": 57.15848307367907,
         "macd_hist": 0.8001,
         "delivery_pct": 40.41,
-        "rs_vs_nifty_1m": 5.68,
+        "rs_vs_nifty_1m": 4.43,
         "rs_vs_sector_1m": 2.73,
         "return_1m": 4.624494783344282,
         "return_3m": 31.572104018912523,
@@ -299,69 +299,69 @@
         "debt_equity": 5.06011078438077,
         "revenue_growth": 37.24503059680803,
         "profit_growth": 552.4105341403845,
-        "composite_factor_rank": 87.0,
+        "composite_factor_rank": 88.0,
         "risk_score": 75,
         "in_oi_spurt": null,
         "oi_change_pct": null,
         "tech_rating": "Buy",
         "analyst_rec": 1.2,
         "price_target_avg": 702.4,
-        "days_to_earnings": 94.0,
+        "days_to_earnings": 95.0,
         "trend_score": 100.0,
         "momentum_score": 80,
         "fundamental_score": 80,
         "earnings_score": 100,
-        "sector_score": 52.0,
+        "sector_score": 46.0,
         "atr_pct_of_price": 3.7
       }
     }
   ],
   "watchlist": [
     {
-      "symbol": "TVSHLTD",
-      "risk_sector": "Producer Manufacturing",
-      "cmp": 14633.0,
-      "score": 79.5,
-      "entry_if_triggered": 14633.0,
-      "stop": 14016.65,
-      "t1": 15865.7,
-      "expected_profit_pct_t1": 8.42
-    },
-    {
       "symbol": "IPCALAB",
       "risk_sector": "Health Technology",
       "cmp": 1762.7,
-      "score": 76.0,
+      "score": 77.3,
       "entry_if_triggered": 1762.7,
       "stop": 1663.86,
       "t1": 1960.38,
       "expected_profit_pct_t1": 11.21
     },
     {
-      "symbol": "CREDITACC",
-      "risk_sector": "NBFC & Capital Markets",
-      "cmp": 1517.6,
-      "score": 75.6,
-      "entry_if_triggered": 1517.6,
-      "stop": 1405.76,
-      "t1": 1741.27,
-      "expected_profit_pct_t1": 14.74
+      "symbol": "TVSHLTD",
+      "risk_sector": "Producer Manufacturing",
+      "cmp": 14633.0,
+      "score": 74.0,
+      "entry_if_triggered": 14633.0,
+      "stop": 14016.65,
+      "t1": 15865.7,
+      "expected_profit_pct_t1": 8.42
     },
     {
       "symbol": "M&MFIN",
       "risk_sector": "NBFC & Capital Markets",
       "cmp": 356.5,
-      "score": 73.5,
+      "score": 72.9,
       "entry_if_triggered": 356.5,
       "stop": 327.98,
       "t1": 413.54,
       "expected_profit_pct_t1": 16.0
     },
     {
+      "symbol": "GODREJIND",
+      "risk_sector": "Process Industries",
+      "cmp": 1332.2,
+      "score": 72.4,
+      "entry_if_triggered": 1332.2,
+      "stop": 1233.32,
+      "t1": 1529.96,
+      "expected_profit_pct_t1": 14.84
+    },
+    {
       "symbol": "FEDERALBNK",
       "risk_sector": "Banks",
       "cmp": 354.3,
-      "score": 71.1,
+      "score": 72.0,
       "entry_if_triggered": 354.3,
       "stop": 339.5,
       "t1": 383.9,
@@ -373,7 +373,7 @@
     "funnel_conversions": [
       {
         "gate": "universe",
-        "surviving": 364,
+        "surviving": 363,
         "from_prev": null,
         "keep_pct": null,
         "dropped": null
@@ -381,9 +381,9 @@
       {
         "gate": "trend = Bullish",
         "surviving": 176,
-        "from_prev": 364,
-        "keep_pct": 48.4,
-        "dropped": 188
+        "from_prev": 363,
+        "keep_pct": 48.5,
+        "dropped": 187
       },
       {
         "gate": "price > SMA200",
@@ -415,36 +415,36 @@
       },
       {
         "gate": "RS > 0 vs NIFTY and sector",
-        "surviving": 54,
+        "surviving": 64,
         "from_prev": 79,
-        "keep_pct": 68.4,
-        "dropped": 25
+        "keep_pct": 81.0,
+        "dropped": 15
       },
       {
         "gate": "delivery% >= 40",
-        "surviving": 40,
-        "from_prev": 54,
-        "keep_pct": 74.1,
-        "dropped": 14
+        "surviving": 43,
+        "from_prev": 64,
+        "keep_pct": 67.2,
+        "dropped": 21
       },
       {
         "gate": "no earnings within 21d",
-        "surviving": 17,
-        "from_prev": 40,
-        "keep_pct": 42.5,
-        "dropped": 23
+        "surviving": 16,
+        "from_prev": 43,
+        "keep_pct": 37.2,
+        "dropped": 27
       },
       {
         "gate": "event_risk_score <= 1",
-        "surviving": 15,
-        "from_prev": 17,
-        "keep_pct": 88.2,
+        "surviving": 14,
+        "from_prev": 16,
+        "keep_pct": 87.5,
         "dropped": 2
       },
       {
         "gate": "TV rating not Sell",
-        "surviving": 15,
-        "from_prev": 15,
+        "surviving": 14,
+        "from_prev": 14,
         "keep_pct": 100.0,
         "dropped": 0
       }
@@ -714,25 +714,6 @@
         "score_now": null
       },
       {
-        "symbol": "IIFL",
-        "date_opened": "2026-07-25",
-        "status": "open",
-        "entry": 556.55,
-        "stop": 515.37,
-        "t1": 638.9,
-        "price": 556.55,
-        "pct": 0.0,
-        "r_multiple": 0.0,
-        "days_held": 0,
-        "horizon_t1": 16,
-        "mfe_pct": 0.0,
-        "mae_pct": 0.0,
-        "action": "HOLD",
-        "detail": "+0.00% (+0.00R), 0d held, ~16d left to the T1 horizon",
-        "score_at_open": 81.7,
-        "score_now": null
-      },
-      {
         "symbol": "IPCALAB",
         "date_opened": "2026-07-21",
         "status": "open",
@@ -749,25 +730,6 @@
         "action": "HOLD",
         "detail": "-3.58% (-0.58R), 3d held, ~13d left to the T1 horizon",
         "score_at_open": 81.1,
-        "score_now": null
-      },
-      {
-        "symbol": "LODHA",
-        "date_opened": "2026-07-25",
-        "status": "open",
-        "entry": 1144.1,
-        "stop": 1061.79,
-        "t1": 1308.72,
-        "price": 1144.1,
-        "pct": 0.0,
-        "r_multiple": 0.0,
-        "days_held": 0,
-        "horizon_t1": 16,
-        "mfe_pct": 0.0,
-        "mae_pct": 0.0,
-        "action": "HOLD",
-        "detail": "+0.00% (+0.00R), 0d held, ~16d left to the T1 horizon",
-        "score_at_open": 85.9,
         "score_now": null
       }
     ],
@@ -812,33 +774,15 @@
       }
     ],
     "closed_today": [],
-    "as_of": "2026-07-26"
+    "as_of": "2026-07-25"
   },
   "swing_candidates_top": [
-    {
-      "symbol": "CREDITACC",
-      "close": 1517.6,
-      "score": 14,
-      "perf_1m": 9.8913830558,
-      "rs_vs_nifty_1m": 10.95,
-      "rs_vs_sector_1m": 8.0,
-      "deliv_pct": 55.56,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 13.78,
-      "atr": 49.7158775261,
-      "stop_1_5atr": 1443.03,
-      "target_5pct": 1593.48,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
     {
       "symbol": "NESTLEIND",
       "close": 1443.5,
       "score": 13,
       "perf_1m": 3.5509325681,
-      "rs_vs_nifty_1m": 4.61,
+      "rs_vs_nifty_1m": 3.36,
       "rs_vs_sector_1m": 5.18,
       "deliv_pct": 56.32,
       "pct_change_oi": -3.85,
@@ -852,29 +796,11 @@
       "sector": "Consumer Non-Durables"
     },
     {
-      "symbol": "SHYAMMETL",
-      "close": 1027.45,
-      "score": 13,
-      "perf_1m": 6.05388109,
-      "rs_vs_nifty_1m": 7.11,
-      "rs_vs_sector_1m": 7.03,
-      "deliv_pct": 48.32,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 12.7,
-      "atr": 33.2331423908,
-      "stop_1_5atr": 977.6,
-      "target_5pct": 1078.82,
-      "earnings_within_21d": false,
-      "event_risk_score": 2,
-      "tech_rating": "Buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
       "symbol": "ADANIENSOL",
       "close": 1702.2,
       "score": 13,
       "perf_1m": 13.5557038025,
-      "rs_vs_nifty_1m": 14.62,
+      "rs_vs_nifty_1m": 13.37,
       "rs_vs_sector_1m": 15.95,
       "deliv_pct": 33.21,
       "pct_change_oi": 0.57,
@@ -888,11 +814,47 @@
       "sector": "Utilities"
     },
     {
+      "symbol": "SHYAMMETL",
+      "close": 1027.45,
+      "score": 13,
+      "perf_1m": 6.05388109,
+      "rs_vs_nifty_1m": 5.86,
+      "rs_vs_sector_1m": 4.65,
+      "deliv_pct": 48.32,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 12.7,
+      "atr": 33.2331423908,
+      "stop_1_5atr": 977.6,
+      "target_5pct": 1078.82,
+      "earnings_within_21d": false,
+      "event_risk_score": 2,
+      "tech_rating": "Buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "GODREJIND",
+      "close": 1332.2,
+      "score": 13,
+      "perf_1m": 16.8596491228,
+      "rs_vs_nifty_1m": 16.67,
+      "rs_vs_sector_1m": 21.27,
+      "deliv_pct": 40.89,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.32,
+      "atr": 49.440517832,
+      "stop_1_5atr": 1258.04,
+      "target_5pct": 1398.81,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Process Industries"
+    },
+    {
       "symbol": "ATHERENERG",
       "close": 1208.7,
       "score": 13,
       "perf_1m": 19.7918731417,
-      "rs_vs_nifty_1m": 20.85,
+      "rs_vs_nifty_1m": 19.6,
       "rs_vs_sector_1m": 18.39,
       "deliv_pct": 47.89,
       "pct_change_oi": null,
@@ -910,8 +872,8 @@
       "close": 338.9,
       "score": 12,
       "perf_1m": 15.8632478632,
-      "rs_vs_nifty_1m": 16.92,
-      "rs_vs_sector_1m": 18.37,
+      "rs_vs_nifty_1m": 15.67,
+      "rs_vs_sector_1m": 13.97,
       "deliv_pct": 54.27,
       "pct_change_oi": null,
       "upside_to_target_pct": 6.42,
@@ -924,47 +886,11 @@
       "sector": "Finance"
     },
     {
-      "symbol": "ANANDRATHI",
-      "close": 2042.1,
-      "score": 12,
-      "perf_1m": 6.5814196242,
-      "rs_vs_nifty_1m": 7.64,
-      "rs_vs_sector_1m": 4.69,
-      "deliv_pct": 53.24,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.57,
-      "atr": 55.5070862664,
-      "stop_1_5atr": 1958.84,
-      "target_5pct": 2144.2,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Neutral",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "INDHOTEL",
-      "close": 727.45,
-      "score": 12,
-      "perf_1m": 0.476519337,
-      "rs_vs_nifty_1m": 1.54,
-      "rs_vs_sector_1m": 2.11,
-      "deliv_pct": 48.53,
-      "pct_change_oi": -6.37,
-      "upside_to_target_pct": 14.19,
-      "atr": 16.3428480038,
-      "stop_1_5atr": 702.94,
-      "target_5pct": 763.82,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Services"
-    },
-    {
       "symbol": "MOTHERSON",
       "close": 145.55,
       "score": 12,
       "perf_1m": 1.7832167832,
-      "rs_vs_nifty_1m": 2.84,
+      "rs_vs_nifty_1m": 1.59,
       "rs_vs_sector_1m": 0.38,
       "deliv_pct": 40.07,
       "pct_change_oi": -2.41,
@@ -978,29 +904,11 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "LAURUSLABS",
-      "close": 1601.2,
-      "score": 12,
-      "perf_1m": 7.897574124,
-      "rs_vs_nifty_1m": 8.96,
-      "rs_vs_sector_1m": 5.78,
-      "deliv_pct": 31.4,
-      "pct_change_oi": 9.69,
-      "upside_to_target_pct": 0.55,
-      "atr": 40.0226934595,
-      "stop_1_5atr": 1541.17,
-      "target_5pct": 1681.26,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Health Technology"
-    },
-    {
       "symbol": "PFOCUS",
       "close": 289.29,
       "score": 12,
       "perf_1m": 37.888465205,
-      "rs_vs_nifty_1m": 38.95,
+      "rs_vs_nifty_1m": 37.7,
       "rs_vs_sector_1m": 39.52,
       "deliv_pct": 36.72,
       "pct_change_oi": null,
@@ -1014,11 +922,29 @@
       "sector": "Consumer Services"
     },
     {
+      "symbol": "ANANDRATHI",
+      "close": 2042.1,
+      "score": 12,
+      "perf_1m": 6.5814196242,
+      "rs_vs_nifty_1m": 6.39,
+      "rs_vs_sector_1m": 4.69,
+      "deliv_pct": 53.24,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.57,
+      "atr": 55.5070862664,
+      "stop_1_5atr": 1958.84,
+      "target_5pct": 2144.2,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Neutral",
+      "sector": "Finance"
+    },
+    {
       "symbol": "NYKAA",
       "close": 322.8,
       "score": 12,
       "perf_1m": 5.8360655738,
-      "rs_vs_nifty_1m": 6.9,
+      "rs_vs_nifty_1m": 5.65,
       "rs_vs_sector_1m": 7.47,
       "deliv_pct": 47.2,
       "pct_change_oi": -3.56,
@@ -1032,12 +958,66 @@
       "sector": "Retail Trade"
     },
     {
+      "symbol": "LAURUSLABS",
+      "close": 1601.2,
+      "score": 12,
+      "perf_1m": 7.897574124,
+      "rs_vs_nifty_1m": 7.71,
+      "rs_vs_sector_1m": 5.24,
+      "deliv_pct": 31.4,
+      "pct_change_oi": 9.69,
+      "upside_to_target_pct": 0.55,
+      "atr": 40.0226934595,
+      "stop_1_5atr": 1541.17,
+      "target_5pct": 1681.26,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "INDHOTEL",
+      "close": 727.45,
+      "score": 12,
+      "perf_1m": 0.476519337,
+      "rs_vs_nifty_1m": 0.29,
+      "rs_vs_sector_1m": 2.11,
+      "deliv_pct": 48.53,
+      "pct_change_oi": -6.37,
+      "upside_to_target_pct": 14.19,
+      "atr": 16.3428480038,
+      "stop_1_5atr": 702.94,
+      "target_5pct": 763.82,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Services"
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "close": 292.64,
+      "score": 12,
+      "perf_1m": 25.177517324,
+      "rs_vs_nifty_1m": 24.99,
+      "rs_vs_sector_1m": 23.78,
+      "deliv_pct": 28.93,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.44,
+      "atr": 15.5151157689,
+      "stop_1_5atr": 269.37,
+      "target_5pct": 307.27,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Transportation"
+    },
+    {
       "symbol": "IPCALAB",
       "close": 1762.7,
       "score": 12,
       "perf_1m": 9.1455108359,
-      "rs_vs_nifty_1m": 10.21,
-      "rs_vs_sector_1m": 7.03,
+      "rs_vs_nifty_1m": 8.96,
+      "rs_vs_sector_1m": 6.49,
       "deliv_pct": 42.98,
       "pct_change_oi": null,
       "upside_to_target_pct": 10.34,
@@ -1050,79 +1030,61 @@
       "sector": "Health Technology"
     },
     {
-      "symbol": "IDFCFIRSTB",
-      "close": 80.79,
-      "score": 12,
-      "perf_1m": 3.0221882173,
-      "rs_vs_nifty_1m": 4.08,
-      "rs_vs_sector_1m": 5.53,
-      "deliv_pct": 48.26,
-      "pct_change_oi": 1.37,
-      "upside_to_target_pct": 7.69,
-      "atr": 1.7538803205,
-      "stop_1_5atr": 78.16,
-      "target_5pct": 84.83,
+      "symbol": "M&MFIN",
+      "close": 356.5,
+      "score": 11,
+      "perf_1m": 21.7970618381,
+      "rs_vs_nifty_1m": 21.61,
+      "rs_vs_sector_1m": 19.91,
+      "deliv_pct": 44.13,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 15.62,
+      "atr": 14.549512741,
+      "stop_1_5atr": 334.68,
+      "target_5pct": 374.32,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Finance"
-    },
-    {
-      "symbol": "GODREJIND",
-      "close": 1332.2,
-      "score": 12,
-      "perf_1m": 16.8596491228,
-      "rs_vs_nifty_1m": 17.92,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 40.89,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.32,
-      "atr": 49.440517832,
-      "stop_1_5atr": 1258.04,
-      "target_5pct": 1398.81,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Process Industries"
     }
   ],
   "urls": {
-    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/research_pack.md",
-    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/research_pack.json",
+    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/research_pack.md",
+    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/research_pack.json",
     "index": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json",
-    "brief_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/swing_brief.md",
-    "folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-07-26",
+    "brief_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/swing_brief.md",
+    "folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-07-25",
     "latest_folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/latest",
     "deep_dive": {
       "stock_analysis.csv": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/stock_analysis.csv",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/stock_analysis.csv",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/stock_analysis.csv",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/stock_analysis.csv"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/stock_analysis.csv"
       },
       "manifest.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/manifest.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/manifest.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/manifest.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/manifest.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/manifest.json"
       },
       "report.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/report.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/report.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/report.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/report.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/report.json"
       },
       "swing_brief.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/swing_brief.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/swing_brief.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/swing_brief.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/swing_brief.json"
       },
       "swing_brief.md": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/swing_brief.md",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/swing_brief.md",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.md",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/swing_brief.md"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/swing_brief.md"
       },
       "market_summary.csv": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/market_summary.csv",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-25/market_summary.csv",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/market_summary.csv"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-25/market_summary.csv"
       }
     }
   },

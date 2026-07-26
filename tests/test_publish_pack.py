@@ -7,6 +7,8 @@ import json
 import pandas as pd
 from collector.publish_pack import (
     _json_safe,
+    _open_trades_as_of,
+    backfill_research_packs,
     build_analytics,
     build_research_pack,
     mirror_latest,
@@ -122,3 +124,98 @@ def test_build_and_write_pack(tmp_path, monkeypatch):
     idx = json.loads(idx_path.read_text(encoding="utf-8"))
     assert idx["latest"] == date
     assert "research_pack.md" in idx["files"]
+    assert date in idx["pack_dates"]
+
+
+def test_open_trades_as_of_and_csv_pack(tmp_path, monkeypatch):
+    from config import settings
+
+    monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
+    monkeypatch.setattr(settings, "ROOT", tmp_path)
+    settings.OUTPUT_DIR.mkdir(parents=True)
+    (tmp_path / "trades").mkdir()
+
+    pd.DataFrame(
+        [
+            {
+                "trade_id": "a",
+                "symbol": "OLD",
+                "status": "open",
+                "entry": 10,
+                "last_price": 11,
+                "mfe_pct": 1,
+                "mae_pct": -1,
+                "date_opened": "2026-07-01",
+            },
+            {
+                "trade_id": "b",
+                "symbol": "NEW",
+                "status": "open",
+                "entry": 20,
+                "last_price": 21,
+                "mfe_pct": 2,
+                "mae_pct": -2,
+                "date_opened": "2026-07-20",
+            },
+        ]
+    ).to_csv(tmp_path / "trades" / "open.csv", index=False)
+    pd.DataFrame(
+        columns=[
+            "trade_id",
+            "symbol",
+            "date_opened",
+            "date_closed",
+            "status",
+            "entry",
+            "last_price",
+            "mfe_pct",
+            "mae_pct",
+        ]
+    ).to_csv(tmp_path / "trades" / "closed.csv", index=False)
+
+    as_of = _open_trades_as_of("2026-07-10")
+    assert [r["symbol"] for r in as_of] == ["OLD"]
+
+    early = "2026-07-10"
+    out = settings.OUTPUT_DIR / early
+    out.mkdir()
+    pd.DataFrame(
+        [
+            {
+                "market_regime": "Bearish",
+                "india_vix": 14,
+                "nifty_trend": "Bearish",
+                "nifty_pct_change": -0.5,
+            }
+        ]
+    ).to_csv(out / "market_summary.csv", index=False)
+    pd.DataFrame(
+        [
+            {
+                "symbol": "XYZ",
+                "close": 100,
+                "score": 82,
+                "sector": "Banks",
+                "stop_1_5atr": 90,
+                "target_5pct": 105,
+                "rs_vs_nifty_1m": 1,
+                "deliv_pct": 50,
+            }
+        ]
+    ).to_csv(out / "swing_candidates.csv", index=False)
+
+    pack = build_research_pack(early)
+    assert pack["regime"]["market_regime"] == "Bearish"
+    assert pack["ideas"][0]["symbol"] == "XYZ"
+    assert pack["ledger"]["as_of"] == early
+    assert [r["symbol"] for r in pack["ledger"]["open"]] == ["OLD"]
+    assert any("No swing_brief" in c for c in pack["analytics"]["caveats"])
+
+    later = "2026-07-25"
+    (settings.OUTPUT_DIR / later).mkdir()
+    pd.DataFrame([{"market_regime": "Neutral", "india_vix": 12}]).to_csv(
+        settings.OUTPUT_DIR / later / "market_summary.csv", index=False
+    )
+    written = backfill_research_packs(only_missing=True)
+    assert early in written and later in written
+    assert (settings.OUTPUT_DIR / early / "research_pack.json").is_file()

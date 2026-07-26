@@ -49,7 +49,11 @@ Do not ask me for a zip.
 ```bash
 # after a collect run (or generate pack against an existing date)
 python -c "from collector.publish_pack import write_research_pack, mirror_latest, write_index_json; d='2026-07-26'; write_research_pack(d); mirror_latest(d); write_index_json(d)"
-mkdir -p site/data && cp output/latest/research_pack.json site/data/
+
+# backfill research_pack.json for older output/<date>/ folders from CSV + trades ledger
+python -m collector.publish_pack --backfill --force --mirror-latest
+
+mkdir -p site/data && cp output/latest/research_pack.json site/data/ && cp output/index.json site/data/
 python -m http.server 8080 --directory site
 # open http://localhost:8080
 ```

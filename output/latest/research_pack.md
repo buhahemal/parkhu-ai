@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** n/a
+- **generated_at_ist:** 2026-07-26T11:41:46.412633+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -45,12 +45,12 @@
 
 ## Open ledger
 
-- **J&KBANK** status=open entry=184.33 last=179.01 mfe=0.6 mae=-2.89 opened=2026-07-21
 - **ICICIBANK** status=open entry=1470.8 last=1432.9 mfe=0.0 mae=-2.85 opened=2026-07-21
-- **ZYDUSLIFE** status=open entry=1146.2 last=1108.7 mfe=0.0 mae=-3.27 opened=2026-07-21
 - **IPCALAB** status=open entry=1828.2 last=1762.7 mfe=0.0 mae=-3.58 opened=2026-07-21
-- **LODHA** status=open entry=1144.1 last=1144.1 mfe=0.0 mae=0.0 opened=2026-07-25
+- **J&KBANK** status=open entry=184.33 last=179.01 mfe=0.6 mae=-2.89 opened=2026-07-21
+- **ZYDUSLIFE** status=open entry=1146.2 last=1108.7 mfe=0.0 mae=-3.27 opened=2026-07-21
 - **IIFL** status=open entry=556.55 last=556.55 mfe=0.0 mae=0.0 opened=2026-07-25
+- **LODHA** status=open entry=1144.1 last=1144.1 mfe=0.0 mae=0.0 opened=2026-07-25
 
 ## Needs action
 
@@ -85,6 +85,6 @@
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.

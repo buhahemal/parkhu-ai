@@ -33,10 +33,16 @@ async function fetchJson(urls) {
 async function loadIndex() {
   try {
     const { data } = await fetchJson(["./data/index.json", `${RAW_ROOT}/index.json`]);
-    const dates = Array.isArray(data.dates) ? [...data.dates].sort().reverse() : [];
-    return { latest: data.latest || dates[0] || null, dates };
+    const packDates = Array.isArray(data.pack_dates) ? data.pack_dates : [];
+    const allDates = Array.isArray(data.dates) ? data.dates : [];
+    // Prefer dates that have research_pack.json; fall back to all collection dates.
+    const dates = [...new Set([...(packDates.length ? packDates : allDates), ...allDates])]
+      .filter(Boolean)
+      .sort()
+      .reverse();
+    return { latest: data.latest || dates[0] || null, dates, packDates };
   } catch {
-    return { latest: null, dates: [] };
+    return { latest: null, dates: [], packDates: [] };
   }
 }
 
@@ -732,10 +738,23 @@ function renderLedger(pack) {
   renderActionItems(actions);
 
   const body = document.getElementById("ledger-body");
+  const asOf = pack.ledger?.as_of || pack.collection_date || "";
   if (!rows.length) {
-    body.replaceChildren(el("p", { class: "empty" }, "No open suggestions."));
+    body.replaceChildren(
+      el(
+        "p",
+        { class: "empty" },
+        asOf
+          ? `No open suggestions as of ${asOf}. Ledger fills from trades/open.csv once ideas are tracked.`
+          : "No open suggestions on the ledger for this date.",
+      ),
+    );
+    const mfe = document.getElementById("mfe-chart");
+    if (mfe) mfe.hidden = true;
     return;
   }
+  const mfeCanvas = document.getElementById("mfe-chart");
+  if (mfeCanvas) mfeCanvas.hidden = false;
 
   makeChart(document.getElementById("mfe-chart"), {
     type: "bar",
