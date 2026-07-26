@@ -5,14 +5,14 @@ const DATA_CANDIDATES = [
 ];
 
 const CHART_COLORS = {
-  ink: "#e7eee6",
-  muted: "#7f9080",
-  line: "#2a352e",
-  accent: "#c4a35a",
-  good: "#6fbf8a",
-  warn: "#d4a15c",
-  bad: "#d97b6c",
-  bar: "#4a6b55",
+  ink: "#1c1c1a",
+  muted: "#5c5c56",
+  line: "#d8d4c8",
+  accent: "#8a6b2a",
+  good: "#1f7a45",
+  warn: "#9a6b12",
+  bad: "#b33b2e",
+  bar: "#3d6b4f",
 };
 
 const charts = [];
@@ -61,8 +61,8 @@ function chartDefaults() {
   if (!window.Chart) return;
   Chart.defaults.color = CHART_COLORS.muted;
   Chart.defaults.borderColor = CHART_COLORS.line;
-  Chart.defaults.font.family = "'IBM Plex Mono', monospace";
-  Chart.defaults.font.size = 11;
+  Chart.defaults.font.family = "'Source Sans 3', 'Segoe UI', sans-serif";
+  Chart.defaults.font.size = 13;
 }
 
 function makeChart(canvas, config) {
@@ -79,31 +79,31 @@ function renderHeader(pack, source) {
   badge.className = `badge ${cls}`;
   badge.textContent = r.market_regime || "—";
 
+  const asOf = pack.generated_at_ist || r.generated_at_ist || "—";
+  const asOfShort = String(asOf).replace(/\+\d{2}:\d{2}$/, "").replace("T", " ").slice(0, 16);
   document.getElementById("meta").replaceChildren(
-    el("span", {}, el("strong", {}, "collection "), pack.collection_date || "—"),
-    el("span", {}, el("strong", {}, "session "), pack.session_date || "—"),
+    el("span", {}, el("strong", {}, "Date "), pack.collection_date || "—"),
+    el("span", {}, el("strong", {}, "Session "), pack.session_date || "—"),
     el(
       "span",
       {},
-      el("strong", {}, "trading day "),
-      pack.is_trading_day === false ? "no" : pack.is_trading_day ? "yes" : "—",
+      el("strong", {}, "Market "),
+      pack.is_trading_day === false ? "closed" : pack.is_trading_day ? "open" : "—",
     ),
-    el("span", {}, el("strong", {}, "as-of "), pack.generated_at_ist || r.generated_at_ist || "—"),
-    el("span", {}, el("strong", {}, "kb "), pack.kb_version || "—"),
-    el("span", {}, el("strong", {}, "source "), source.includes("data/") ? "artifact" : "raw"),
+    el("span", {}, el("strong", {}, "Updated "), asOfShort),
   );
 
   const a = pack.analytics || {};
   const book = a.book || {};
   const kpis = [
-    ["regime", r.market_regime || "—", trendClass(r.market_regime)],
-    ["india vix", fmt(r.india_vix, 2), ""],
-    ["open book", fmt(book.open ?? (pack.ledger?.open || []).length, 0), ""],
-    ["needs action", fmt(book.needs_action ?? (pack.ledger?.needs_action || []).length, 0), book.needs_action ? "warn" : ""],
-    ["new ideas", fmt(a.ideas_count ?? (pack.ideas || []).length, 0), ""],
-    ["score coverage", a.score_coverage_pct != null ? `${fmt(a.score_coverage_pct, 1)}%` : "—", ""],
-    ["avg mfe %", fmt(book.avg_mfe_pct), book.avg_mfe_pct > 0 ? "bull" : ""],
-    ["avg mae %", fmt(book.avg_mae_pct), book.avg_mae_pct < 0 ? "bear" : ""],
+    ["VIX", fmt(r.india_vix, 1), ""],
+    ["Open", fmt(book.open ?? (pack.ledger?.open || []).length, 0), ""],
+    ["Action", fmt(book.needs_action ?? (pack.ledger?.needs_action || []).length, 0), book.needs_action ? "warn" : ""],
+    ["Ideas", fmt(a.ideas_count ?? (pack.ideas || []).length, 0), ""],
+    ["Coverage", a.score_coverage_pct != null ? `${fmt(a.score_coverage_pct, 0)}%` : "—", ""],
+    ["Avg MFE", fmt(book.avg_mfe_pct, 1), book.avg_mfe_pct > 0 ? "bull" : ""],
+    ["Avg MAE", fmt(book.avg_mae_pct, 1), book.avg_mae_pct < 0 ? "bear" : ""],
+    ["Risk", fmt(r.overall_risk, 0), ""],
   ];
   document.getElementById("kpi").replaceChildren(
     ...kpis.map(([label, val, cls]) =>
@@ -197,19 +197,18 @@ function round(n, d) {
 function renderRegime(pack) {
   const r = pack.regime || {};
   const items = [
-    ["nifty", `${fmt(r.nifty_trend)} (${fmt(r.nifty_pct_change)}%)`, trendClass(r.nifty_trend)],
-    ["banknifty", `${fmt(r.banknifty_trend)} (${fmt(r.banknifty_pct_change)}%)`, trendClass(r.banknifty_trend)],
-    ["vix level", fmt(r.vix_level, 0), ""],
-    ["overall risk", fmt(r.overall_risk, 0), ""],
-    ["global risk", fmt(r.global_risk, 0), ""],
-    ["best sector", `${fmt(r.best_sector, 0)} (${fmt(r.best_sector_perf_1m)}%)`, "bull"],
-    ["worst sector", `${fmt(r.worst_sector, 0)} (${fmt(r.worst_sector_perf_1m)}%)`, "bear"],
-    ["crude", `${fmt(r.crude)} (${fmt(r.crude_pct_change)}%)`, ""],
-    ["usdinr", `${fmt(r.usdinr)} (${fmt(r.usdinr_pct_change)}%)`, ""],
+    ["Nifty", `${fmt(r.nifty_trend)} ${fmt(r.nifty_pct_change)}%`, trendClass(r.nifty_trend)],
+    ["BankNifty", `${fmt(r.banknifty_trend)} ${fmt(r.banknifty_pct_change)}%`, trendClass(r.banknifty_trend)],
+    ["VIX", fmt(r.vix_level, 0), ""],
+    ["Risk", fmt(r.overall_risk, 0), ""],
+    ["Best", `${fmt(r.best_sector, 0)}`, "bull"],
+    ["Worst", `${fmt(r.worst_sector, 0)}`, "bear"],
+    ["Crude", `${fmt(r.crude, 1)} (${fmt(r.crude_pct_change, 1)}%)`, ""],
+    ["USDINR", `${fmt(r.usdinr, 2)}`, ""],
   ];
   document.getElementById("regime-stats").replaceChildren(
     ...items.map(([k, v, cls]) =>
-      el("div", { class: "stat" }, el("dt", {}, k), el("dd", { class: cls }, v)),
+      el("div", { class: "stat" }, el("dt", {}, k), el("dd", { class: cls || "" }, v)),
     ),
   );
 
@@ -233,7 +232,12 @@ function renderRegime(pack) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        title: { display: true, text: "Institutional flow (₹ cr)", color: CHART_COLORS.muted },
+        title: {
+          display: true,
+          text: "FII / DII flow (₹ cr)",
+          color: CHART_COLORS.muted,
+          font: { size: 14, weight: "600" },
+        },
       },
       scales: {
         x: { grid: { display: false } },
@@ -268,7 +272,12 @@ function renderRegime(pack) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        title: { display: true, text: "Global cues (−1 / 0 / +1)", color: CHART_COLORS.muted },
+        title: {
+          display: true,
+          text: "Global cues",
+          color: CHART_COLORS.muted,
+          font: { size: 14, weight: "600" },
+        },
         tooltip: {
           callbacks: {
             label(ctx) {
@@ -290,16 +299,15 @@ function renderRegime(pack) {
   });
 }
 
+function field(label, value) {
+  return el("div", {}, el("span", {}, label), " ", el("b", {}, value));
+}
+
 function renderIdeas(pack) {
   const body = document.getElementById("ideas-body");
   const ideas = pack.ideas || [];
   if (!ideas.length) {
     body.replaceChildren(el("p", { class: "empty" }, "No new ideas cleared the gates."));
-    makeChart(document.getElementById("scores-chart"), {
-      type: "bar",
-      data: { labels: [], datasets: [] },
-      options: { plugins: { title: { display: true, text: "Idea scores", color: CHART_COLORS.muted } } },
-    });
     return;
   }
 
@@ -309,10 +317,11 @@ function renderIdeas(pack) {
       labels: ideas.map((i) => i.symbol),
       datasets: [
         {
-          label: "Parkhu score",
+          label: "Score",
           data: ideas.map((i) => i.parkhu_score),
           backgroundColor: CHART_COLORS.accent,
           borderWidth: 0,
+          borderRadius: 4,
         },
       ],
     },
@@ -322,53 +331,42 @@ function renderIdeas(pack) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        title: { display: true, text: "Scores (no capital sizing)", color: CHART_COLORS.muted },
+        title: { display: true, text: "Idea scores", color: CHART_COLORS.muted, font: { size: 14, weight: "600" } },
       },
       scales: {
         x: { min: 0, max: 100, grid: { color: CHART_COLORS.line } },
-        y: { grid: { display: false } },
+        y: { grid: { display: false }, ticks: { color: CHART_COLORS.ink, font: { size: 13, weight: "600" } } },
       },
     },
   });
 
-  const table = el("table");
-  table.append(
-    el(
-      "thead",
-      {},
-      el(
-        "tr",
-        {},
-        ...["Symbol", "Band", "Score", "Entry", "Stop", "T1", "R:R", "Hold d"].map((h) => el("th", {}, h)),
-      ),
-    ),
-  );
-  const tbody = el("tbody");
-  for (const idea of ideas) {
-    const lv = idea.levels || {};
-    const band = String(idea.band || "").toLowerCase();
-    tbody.append(
-      el(
-        "tr",
-        {},
+  body.replaceChildren(
+    ...ideas.map((idea) => {
+      const lv = idea.levels || {};
+      const band = String(idea.band || "").toLowerCase();
+      return el(
+        "article",
+        { class: "card" },
         el(
-          "td",
-          { "data-label": "Symbol" },
-          idea.symbol || "—",
-          el("div", { class: "muted" }, idea.risk_sector || ""),
+          "div",
+          { class: "title" },
+          el("strong", {}, idea.symbol || "—"),
+          el("span", { class: `band ${band}` }, idea.band || "—"),
         ),
-        el("td", { "data-label": "Band" }, el("span", { class: `band ${band}` }, idea.band || "—")),
-        el("td", { class: "num", "data-label": "Score" }, fmt(idea.parkhu_score, 1)),
-        el("td", { class: "num", "data-label": "Entry" }, fmt(lv.entry)),
-        el("td", { class: "num", "data-label": "Stop" }, fmt(lv.stop)),
-        el("td", { class: "num", "data-label": "T1" }, fmt(lv.t1)),
-        el("td", { class: "num", "data-label": "R:R" }, fmt(lv.rr_t1)),
-        el("td", { class: "num", "data-label": "Hold d" }, fmt(lv.hold_days_t1, 0)),
-      ),
-    );
-  }
-  table.append(tbody);
-  body.replaceChildren(table);
+        el("div", { class: "sub" }, `${idea.risk_sector || "—"} · score ${fmt(idea.parkhu_score, 1)}`),
+        el(
+          "div",
+          { class: "row" },
+          field("Entry", fmt(lv.entry)),
+          field("Stop", fmt(lv.stop)),
+          field("T1", fmt(lv.t1)),
+          field("R:R", fmt(lv.rr_t1)),
+          field("Hold", `${fmt(lv.hold_days_t1, 0)}d`),
+          field("T2", fmt(lv.t2)),
+        ),
+      );
+    }),
+  );
 }
 
 function renderLedger(pack) {
@@ -406,12 +404,14 @@ function renderLedger(pack) {
           data: rows.map((r) => r.mfe_pct ?? 0),
           backgroundColor: CHART_COLORS.good,
           borderWidth: 0,
+          borderRadius: 3,
         },
         {
           label: "MAE %",
           data: rows.map((r) => r.mae_pct ?? 0),
           backgroundColor: CHART_COLORS.bad,
           borderWidth: 0,
+          borderRadius: 3,
         },
       ],
     },
@@ -419,49 +419,43 @@ function renderLedger(pack) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        title: { display: true, text: "Excursion (MFE / MAE %)", color: CHART_COLORS.muted },
+        title: { display: true, text: "MFE / MAE %", color: CHART_COLORS.muted, font: { size: 14, weight: "600" } },
+        legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 12 } } },
       },
       scales: {
-        x: { grid: { display: false }, ticks: { maxRotation: 45, minRotation: 0 } },
+        x: {
+          grid: { display: false },
+          ticks: { color: CHART_COLORS.ink, font: { size: 11, weight: "600" }, maxRotation: 40 },
+        },
         y: { grid: { color: CHART_COLORS.line } },
       },
     },
   });
 
-  const table = el("table");
-  table.append(
-    el(
-      "thead",
-      {},
-      el(
-        "tr",
-        {},
-        ...["Symbol", "Opened", "Entry", "Last", "P&L %", "MFE", "MAE"].map((h) => el("th", {}, h)),
-      ),
-    ),
+  body.replaceChildren(
+    ...rows.map((r) => {
+      let pnl = null;
+      if (r.entry && r.last_price != null) {
+        pnl = ((r.last_price - r.entry) / r.entry) * 100;
+      }
+      return el(
+        "article",
+        { class: "card" },
+        el("div", { class: "title" }, el("strong", {}, r.symbol || "—")),
+        el("div", { class: "sub" }, `Opened ${r.date_opened || "—"}`),
+        el(
+          "div",
+          { class: "row" },
+          field("Entry", fmt(r.entry)),
+          field("Last", fmt(r.last_price)),
+          field("P&L", `${fmt(pnl)}%`),
+          field("MFE", fmt(r.mfe_pct)),
+          field("MAE", fmt(r.mae_pct)),
+          field("Stop", fmt(r.stop)),
+        ),
+      );
+    }),
   );
-  const tbody = el("tbody");
-  for (const r of rows) {
-    let pnl = null;
-    if (r.entry && r.last_price != null) {
-      pnl = ((r.last_price - r.entry) / r.entry) * 100;
-    }
-    tbody.append(
-      el(
-        "tr",
-        {},
-        el("td", { "data-label": "Symbol" }, r.symbol || "—"),
-        el("td", { class: "num", "data-label": "Opened" }, r.date_opened || "—"),
-        el("td", { class: "num", "data-label": "Entry" }, fmt(r.entry)),
-        el("td", { class: "num", "data-label": "Last" }, fmt(r.last_price)),
-        el("td", { class: "num", "data-label": "P&L %" }, fmt(pnl)),
-        el("td", { class: "num", "data-label": "MFE" }, fmt(r.mfe_pct)),
-        el("td", { class: "num", "data-label": "MAE" }, fmt(r.mae_pct)),
-      ),
-    );
-  }
-  table.append(tbody);
-  body.replaceChildren(table);
 }
 
 function renderSectors(pack) {
@@ -506,7 +500,10 @@ function renderQuality(pack) {
       ? el("div", { class: "cov" }, `Score coverage: ${fmt(a.score_coverage_pct, 1)}% of KB-14 weights live`)
       : null;
   if (!caveats.length) {
-    root.replaceChildren(cov || el("p", { class: "empty" }, "No caveats listed."), el("p", { class: "muted" }, "Capital & deployment live in Claude — omitted from this desk."));
+    root.replaceChildren(
+      cov || el("p", { class: "empty" }, "No caveats listed."),
+      el("p", { class: "note" }, "Capital stays in Claude — not on this desk."),
+    );
     return;
   }
   root.replaceChildren(
@@ -516,7 +513,7 @@ function renderQuality(pack) {
       { class: "quality" },
       ...caveats.map((c) => el("li", {}, c)),
     ),
-    el("p", { class: "muted" }, "Capital & fund deployment are tracked in Claude, not on this desk."),
+    el("p", { class: "note" }, "Capital stays in Claude — not on this desk."),
   );
 }
 
@@ -524,11 +521,10 @@ function renderLinks(pack) {
   const urls = pack.urls || {};
   const deep = urls.deep_dive || {};
   const items = [
-    ["Pack (md)", urls.pack_md],
-    ["Pack (json)", urls.pack_json],
+    ["Pack", urls.pack_md],
+    ["JSON", urls.pack_json],
     ["Brief", urls.brief_md],
-    ["stock_analysis", deep["stock_analysis.csv"]?.latest_url],
-    ["Latest folder", urls.latest_folder],
+    ["CSV", deep["stock_analysis.csv"]?.latest_url],
   ].filter(([, href]) => href);
   document.getElementById("links").replaceChildren(
     ...items.flatMap(([label, href], i) => {

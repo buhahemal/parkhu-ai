@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Parkhu desk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -16,15 +16,15 @@
   <body>
     <header class="top">
       <div class="brand-row">
-        <div class="brand">Parkhu</div>
+        <h1 class="brand">Parkhu</h1>
         <div id="regime-badge" class="badge">—</div>
       </div>
-      <p class="tag">Process &amp; market desk — capital tracked in Claude, not here</p>
+      <p class="tag">Market &amp; process desk</p>
       <div id="meta" class="meta">Loading…</div>
       <div id="kpi" class="kpi" aria-label="Key metrics"></div>
     </header>
 
-    <nav class="nav" aria-label="Sections">
+    <nav class="nav" aria-label="Jump">
       <a href="#funnel">Funnel</a>
       <a href="#regime">Regime</a>
       <a href="#ideas">Ideas</a>
@@ -34,68 +34,48 @@
     </nav>
 
     <main>
-      <section id="funnel" class="panel" aria-labelledby="funnel-h">
-        <h2 id="funnel-h">Gate funnel</h2>
-        <p class="hint">Survivors per gate and keep-% vs prior step</p>
-        <div class="chart-wrap tall">
-          <canvas id="funnel-chart"></canvas>
-        </div>
+      <section id="funnel" class="panel">
+        <h2>Gate funnel</h2>
+        <p class="hint">How many names survive each filter</p>
+        <div class="chart-wrap tall"><canvas id="funnel-chart"></canvas></div>
         <div id="funnel-drops" class="drops"></div>
       </section>
 
-      <section id="regime" class="panel" aria-labelledby="regime-h">
-        <h2 id="regime-h">Regime board</h2>
-        <div id="regime-stats" class="grid"></div>
-        <div class="charts-2">
-          <div class="chart-wrap">
-            <canvas id="flow-chart"></canvas>
-          </div>
-          <div class="chart-wrap">
-            <canvas id="cues-chart"></canvas>
-          </div>
-        </div>
+      <section id="regime" class="panel">
+        <h2>Regime</h2>
+        <div id="regime-stats" class="stat-list"></div>
+        <div class="chart-wrap"><canvas id="flow-chart"></canvas></div>
+        <div class="chart-wrap"><canvas id="cues-chart"></canvas></div>
       </section>
 
-      <section id="ideas" class="panel" aria-labelledby="ideas-h">
-        <h2 id="ideas-h">Ideas</h2>
-        <div class="charts-2">
-          <div class="chart-wrap">
-            <canvas id="scores-chart"></canvas>
-          </div>
-          <div id="ideas-body"></div>
-        </div>
+      <section id="ideas" class="panel">
+        <h2>Ideas</h2>
+        <div class="chart-wrap"><canvas id="scores-chart"></canvas></div>
+        <div id="ideas-body" class="cards"></div>
       </section>
 
-      <section id="ledger" class="panel" aria-labelledby="ledger-h">
-        <h2 id="ledger-h">Open ledger</h2>
+      <section id="ledger" class="panel">
+        <h2>Open ledger</h2>
         <div id="action-body" class="action-strip"></div>
-        <div class="charts-2">
-          <div class="chart-wrap">
-            <canvas id="mfe-chart"></canvas>
-          </div>
-          <div id="ledger-body"></div>
-        </div>
+        <div class="chart-wrap"><canvas id="mfe-chart"></canvas></div>
+        <div id="ledger-body" class="cards"></div>
       </section>
 
-      <section id="sectors" class="panel" aria-labelledby="sectors-h">
-        <h2 id="sectors-h">Sector concentration</h2>
-        <p class="hint">Name counts (ideas + open) — not capital weights</p>
-        <div class="chart-wrap">
-          <canvas id="sector-chart"></canvas>
-        </div>
+      <section id="sectors" class="panel">
+        <h2>Sectors</h2>
+        <p class="hint">Name counts only — not capital</p>
+        <div class="chart-wrap"><canvas id="sector-chart"></canvas></div>
       </section>
 
-      <section id="quality" class="panel" aria-labelledby="quality-h">
-        <h2 id="quality-h">Data quality</h2>
+      <section id="quality" class="panel">
+        <h2>Data quality</h2>
         <div id="quality-body"></div>
       </section>
     </main>
 
     <footer class="foot">
       <p id="links"></p>
-      <p class="muted">
-        Same <code>research_pack.json</code> Claude reads. No zip. No capital on this desk.
-      </p>
+      <p class="note">Same research pack Claude reads. Capital stays in Claude.</p>
     </footer>
     <script src="./app.js" type="module"></script>
   </body>
