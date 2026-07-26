@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parkhu data dictionary</title>
+    <link rel="icon" href="./assets/logo/parkhu-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0b1220;
+        --muted: #64748b;
+        --line: #e2e8f0;
+        --bg: #f7f8fc;
+        --card: #fff;
+        --accent: #2563eb;
+        --example-bg: #f1f5f9;
+        --font: "Geist", "IBM Plex Sans", system-ui, sans-serif;
+        --mono: "Geist Mono", ui-monospace, monospace;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: var(--font);
+        background:
+          radial-gradient(900px 480px at 8% -8%, rgba(37, 99, 235, 0.1) 0%, transparent 55%),
+          radial-gradient(800px 420px at 92% 0%, rgba(34, 211, 238, 0.12) 0%, transparent 50%),
+          var(--bg);
+        color: var(--ink);
+        line-height: 1.55;
+        letter-spacing: -0.011em;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3.5rem;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .back:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-size: 1.75rem;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        color: var(--muted);
+        margin: 0 0 1.25rem;
+        max-width: 42rem;
+      }
+      .toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0 0 2rem;
+      }
+      .toc a {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--ink);
+        text-decoration: none;
+        padding: 0.35rem 0.7rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--card);
+      }
+      .toc a:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .section {
+        margin-bottom: 2.25rem;
+      }
+      .section h2 {
+        margin: 0 0 0.85rem;
+        font-size: 1.05rem;
+        letter-spacing: -0.015em;
+        padding-bottom: 0.45rem;
+        border-bottom: 1px solid var(--line);
+      }
+      .term {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem 1.15rem;
+        margin-bottom: 0.65rem;
+      }
+      .term h3 {
+        margin: 0 0 0.35rem;
+        font-size: 1rem;
+        letter-spacing: -0.01em;
+      }
+      .term h3 code {
+        font-family: var(--mono);
+        font-size: 0.9em;
+        font-weight: 600;
+        color: var(--accent);
+      }
+      .term .aka {
+        font-weight: 500;
+        color: var(--muted);
+        font-size: 0.85em;
+      }
+      .term .mean {
+        margin: 0 0 0.65rem;
+        font-size: 0.92rem;
+      }
+      .term .ex {
+        margin: 0;
+        font-size: 0.85rem;
+        background: var(--example-bg);
+        border-radius: 10px;
+        padding: 0.65rem 0.8rem;
+        color: #334155;
+      }
+      .term .ex strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .foot {
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line);
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .foot a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .foot a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="./">← Desk</a>
+      <h1>Data dictionary</h1>
+      <p class="lede">
+        Plain-English meanings for terms on the Parkhu desk, plus one simple example each. This is a
+        reading aid — not trading advice. Capital and sizing stay with Claude.
+      </p>
+
+      <nav class="toc" aria-label="Topics">
+        <a href="#market">Market &amp; regime</a>
+        <a href="#process">Process</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#ledger">Ledger</a>
+        <a href="#ai">AI desk</a>
+        <a href="#abbrev">Abbreviations</a>
+      </nav>
+
+      <section class="section" id="market">
+        <h2>Market &amp; regime</h2>
+
+        <article class="term">
+          <h3>Regime <span class="aka">(market regime)</span></h3>
+          <p class="mean">
+            A short label for the overall market weather — how friendly or hostile conditions look for
+            new risk (bullish / mixed / bearish style labels).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Like checking if it’s sunny before a picnic. “Bearish + high
+            VIX” ≈ heavy rain — you still might go out, but you pack less food (fewer new trades).
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>India VIX</h3>
+          <p class="mean">
+            A fear / expected-volatility gauge for the Indian market. Higher usually means bigger
+            expected swings; lower means calmer expected moves.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> VIX is like wind speed at the airport. Calm day → smoother
+            flights (tighter ranges). Gusty day → more turbulence; many traders size down or wait.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>FII / DII</h3>
+          <p class="mean">
+            <strong>FII</strong> = Foreign Institutional Investors; <strong>DII</strong> = Domestic
+            Institutional Investors. Net buy/sell shows whether large money is flowing into or out of
+            Indian equities that day (often in ₹ crore).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> FII selling while DII buying is like tourists leaving a mall
+            while local shoppers keep shopping — busy inside, but one big wallet group is exiting.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>USDINR</h3>
+          <p class="mean">How many rupees one US dollar buys. A rising USDINR means a weaker rupee.</p>
+          <p class="ex">
+            <strong>Example:</strong> If USDINR moves from 83 to 84, the same $100 trip abroad costs
+            more in rupees — risk assets often feel that pressure too.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Crude</h3>
+          <p class="mean">
+            Oil price cue. India imports a lot of oil, so sharp crude moves can ripple into inflation
+            expectations and market mood.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Crude jumping is like fuel prices at your local pump rising
+            overnight — everyone notices, and some stocks (energy vs consumers) react differently.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Market pulse <span class="aka">(cues)</span></h3>
+          <p class="mean">
+            A quick mix of how Asia / Europe / US sessions look — supportive, mixed, or risk-off —
+            used with VIX and FII, not alone.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Like glancing at three weather apps (Tokyo, London, New York)
+            before your commute. All green ≠ guaranteed good trade day; all red is a reason to
+            slow down.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="process">
+        <h2>Process</h2>
+
+        <article class="term">
+          <h3>Gate funnel</h3>
+          <p class="mean">
+            The step-by-step filters stocks must pass (liquidity, trend, earnings window, etc.). Each
+            step shows how many names survive.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Airport security lanes. 500 people enter; after ID, bags, and
+            boarding pass checks, 40 remain. Early collapse = weak day for new ideas.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Breadth</h3>
+          <p class="mean">
+            How widely participation is across the universe — many names advancing/surviving vs a
+            thin market led by a few.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> A cricket team win where 8 batters score vs one batter carrying
+            everyone. Broad win ≈ healthier risk; one-hero win ≈ fragile.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Score coverage</h3>
+          <p class="mean">
+            Share of the score’s knowledge-base weights that are live today. Low coverage means parts
+            of the score are missing or stale.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> A restaurant rating with only 2 of 10 review categories filled
+            in. You can still read the score — but treat it as provisional.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Caveats</h3>
+          <p class="mean">
+            Explicit warnings about data gaps or process issues for the session (missing fields,
+            stale feeds, etc.).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> A map app saying “traffic data delayed 20 minutes.” Routes still
+            show — you just don’t trust them blindly.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Research pack</h3>
+          <p class="mean">
+            The day’s structured handoff file (JSON/MD) the desk and Claude both read — regime,
+            funnel, ideas, ledger snapshot, quality notes.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Like a morning briefing folder on a trader’s desk: one place
+            for “what happened + what cleared filters,” not a trade ticket.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="ideas">
+        <h2>Ideas</h2>
+
+        <article class="term">
+          <h3>Parkhu score</h3>
+          <p class="mean">
+            A composite quality score for a cleared idea (higher generally means stronger process
+            fit). It is not a buy order and includes no position size.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Like a hotel star rating for setup quality. A 4.5-star hotel
+            can still be wrong for your trip — and stars never tell you how many rooms to book.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Band</h3>
+          <p class="mean">
+            A bucket for the idea’s strength or readiness (e.g. stronger vs weaker / watch-style
+            labels depending on the pack).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Exam grades A / B / C. “A” gets first look; “C” might stay on
+            the watchlist only.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Entry</h3>
+          <p class="mean">
+            The planned buy zone / trigger price from the process — where you’d consider starting a
+            long idea if all else fits.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> “I’ll only buy this phone if it dips to ₹50,000.” Entry ≈ that
+            planned price, not a forced purchase.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Stop</h3>
+          <p class="mean">
+            The invalidation price — if price hits here, the idea is considered wrong and risk should
+            be cut.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> A seatbelt for the trade. You hope not to use it; if price
+            breaks your line, you exit rather than hope.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>T1 <span class="aka">(target 1)</span></h3>
+          <p class="mean">First planned profit-taking / objective level on the idea.</p>
+          <p class="ex">
+            <strong>Example:</strong> Driving to a city 300 km away with a first rest stop at 100 km.
+            T1 is that first planned stop — not the only possible destination.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>R:R <span class="aka">(reward-to-risk)</span></h3>
+          <p class="mean">
+            How much upside to T1 versus downside to stop. Often shown as a ratio (e.g. 2 means ~2×
+            reward vs risk to T1).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Risk ₹1 to try to make ₹2. R:R = 2. Casino odds flipped in your
+            favor — still no guarantee you win the hand.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Watch</h3>
+          <p class="mean">
+            Monitor only — interesting enough to track, not a green light to add risk today.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Bookmarking a sale page. You’re interested; you haven’t
+            checked out.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Risk sector</h3>
+          <p class="mean">
+            The sector bucket used for crowding checks (how many open/idea names sit in the same
+            theme). Not a capital % allocation.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Already holding three bank stocks and the new idea is also a
+            bank — that’s stacking the same shelf in your fridge.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="ledger">
+        <h2>Ledger</h2>
+
+        <article class="term">
+          <h3>Open ledger</h3>
+          <p class="mean">
+            Live tracked suggestions as of the selected date — entry vs last price, P&amp;L%, MFE,
+            MAE. Empty before the first tracked idea is normal.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Your open food-delivery orders screen. Nothing open ≠ broken
+            app; it just means no active orders that day.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>P&amp;L%</h3>
+          <p class="mean">
+            Profit or loss percent from entry to the latest price (as stored for that ledger row).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Bought at 100, last at 105 → about +5% P&amp;L. Simple mark —
+            not your broker’s full tax/fee statement.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>MFE <span class="aka">(max favorable excursion)</span></h3>
+          <p class="mean">
+            Best unrealized gain % the idea saw while open — how far it ran in your favor at its
+            peak.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Your trade was +12% at the high, now +3%. MFE = 12%. Like a
+            hike that reached a great viewpoint, then walked back down a bit.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>MAE <span class="aka">(max adverse excursion)</span></h3>
+          <p class="mean">
+            Worst unrealized drawdown % while open — how deep it went against you at its low.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Trade dipped −8% then recovered to flat. MAE = −8%. That was
+            the deepest “ouch” so far — useful for checking if stops/entries were realistic.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Needs action</h3>
+          <p class="mean">
+            Flags that something on the open book wants a decision first (earnings window, missing
+            data, process alerts) before adding new risk.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> A phone notification “package stuck at customs.” Clear that
+            before ordering five more packages.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="ai">
+        <h2>AI desk</h2>
+
+        <article class="term">
+          <h3>Stance</h3>
+          <p class="mean">
+            Groq’s high-level posture for the session (e.g. defensive / neutral / selective
+            aggressive). Commentary only — levels still come from Parkhu gates.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> A coach saying “play defense today” vs “look for good shots.”
+            Advice for tone — not a substitute for the scoreboard (regime + ideas).
+          </p>
+        </article>
+
+        <article class="term">
+          <h3><code>consider_entry</code></h3>
+          <p class="mean">AI action hint: setup looks worth considering for entry — still your/Claude’s call on capital.</p>
+          <p class="ex">
+            <strong>Example:</strong> A friend texts “this café looks good if you’re hungry.” Not an
+            order to walk in and eat.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3><code>watch</code> <span class="aka">(AI action)</span></h3>
+          <p class="mean">AI action hint: keep on radar; don’t treat as an immediate entry push.</p>
+          <p class="ex">
+            <strong>Example:</strong> Adding a show to your Watch Later list.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3><code>stand_aside</code></h3>
+          <p class="mean">AI action hint: stay out for now — conditions or setup don’t justify new risk.</p>
+          <p class="ex">
+            <strong>Example:</strong> Skipping a rainy trek. You can revisit when the trail dries.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3><code>manage_open</code></h3>
+          <p class="mean">
+            AI action hint: focus on an already-open idea (trail, trim, respect stop) rather than
+            hunting new names.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Fixing the leak in your current house before shopping for a
+            second one.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Claude vs Groq</h3>
+          <p class="mean">
+            <strong>Claude</strong> owns capital, sizing, and final trade decisions from the research
+            pack. <strong>Groq</strong> adds an optional narrative overlay (stance, brief,
+            suggestions) with entry/stop/T1 stamped from Parkhu — skip-safe if offline.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Claude = portfolio manager. Groq = junior desk note taped on
+            the pack. If the note is missing, the pack still stands.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="abbrev">
+        <h2>Common abbreviations</h2>
+
+        <article class="term">
+          <h3>Nifty / Bank Nifty</h3>
+          <p class="mean">
+            Headline Indian equity indices — broad market (Nifty) and banking-heavy (Bank Nifty).
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> Like the Sensex’s cousins on the dashboard — quick “is the
+            market up or down?” gauges.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>KB <span class="aka">(knowledge base)</span></h3>
+          <p class="mean">The scored factors / weights behind Parkhu scores — coverage % refers to these.</p>
+          <p class="ex">
+            <strong>Example:</strong> The recipe card behind the dish. Missing ingredients → coverage
+            drops.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>IST</h3>
+          <p class="mean">India Standard Time — timestamps on the desk are usually in IST.</p>
+          <p class="ex">
+            <strong>Example:</strong> “Generated 15:40 IST” means afternoon India time, not your
+            laptop’s local zone if you’re abroad.
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>₹ cr <span class="aka">(crore)</span></h3>
+          <p class="mean">Indian unit for large sums: 1 crore = 10 million. Flow charts often use ₹ crore.</p>
+          <p class="ex">
+            <strong>Example:</strong> FII net −1,200 ₹ cr ≈ foreigners were net sellers by that
+            amount that day (order of magnitude cue, not your P&amp;L).
+          </p>
+        </article>
+
+        <article class="term">
+          <h3>Qty / capital</h3>
+          <p class="mean">
+            Position size and rupee risk. Intentionally <strong>not</strong> shown on the public desk —
+            those decisions stay with Claude / your process.
+          </p>
+          <p class="ex">
+            <strong>Example:</strong> The menu lists dishes and prices of ingredients (levels), but
+            not how many plates you should order for your table.
+          </p>
+        </article>
+      </section>
+
+      <footer class="foot">
+        <p>
+          <a href="./">Desk</a>
+          ·
+          <a href="./logo.html">Logo kit</a>
+          · Same research pack Claude reads. Not investment advice.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -45,12 +45,18 @@
         color: var(--muted);
         margin: 0 0 1.75rem;
       }
-      .back {
-        display: inline-block;
-        margin-bottom: 1rem;
+      .nav-links {
+        margin: 0 0 1rem;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+      .nav-links a {
         color: #2563eb;
         font-weight: 600;
         text-decoration: none;
+      }
+      .nav-links a:hover {
+        text-decoration: underline;
       }
       .grid {
         display: grid;
@@ -141,7 +147,11 @@
   </head>
   <body>
     <div class="wrap">
-      <a class="back" href="./">← Desk</a>
+      <p class="nav-links">
+        <a href="./">← Desk</a>
+        ·
+        <a href="./dictionary.html">Data dictionary</a>
+      </p>
       <h1>Parkhu logo kit</h1>
       <p class="lede">
         SignalFeed-style mark (gradient P + ascending signal) with light, dark, mono, app, and
