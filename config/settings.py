@@ -106,6 +106,10 @@ OHLC_YF_THREADS = (os.getenv("PARKHU_OHLC_YF_THREADS", "1") or "1").strip().lowe
 }
 OHLC_CACHE_DIR = DATABASE_DIR / "ohlc"
 OHLC_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+# Symbols Yahoo cannot fill for research 5y (or has only short history) — skip forever.
+OHLC_IGNORE_PATH = Path(
+    os.getenv("PARKHU_OHLC_IGNORE_PATH", "") or str(DATABASE_DIR / "ohlc_ignore.csv")
+)
 
 # Stock equity option chains (NSE). Off by default — full F&O universe is slow.
 STOCK_OPTIONS_ENABLED = (os.getenv("PARKHU_STOCK_OPTIONS", "0") or "0").strip() in {

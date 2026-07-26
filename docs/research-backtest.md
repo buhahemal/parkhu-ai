@@ -40,9 +40,13 @@ Survivorship bias is only partly mitigated (Yahoo + current universe). Residual 
 ## Commands
 
 ```bash
-# 1) Pull 5y bars for ALL stocks (adaptive rate-limit probe; resume-safe)
+# 1a) Bulk pull 5y bars (adaptive rate-limit probe; resume-safe)
 PARKHU_OHLC_RETRY_MAX=50 PARKHU_OHLC_CHUNK_SIZE=40 \
-  python -m scripts.backfill_ohlc_research --all --resume
+  python -m scripts.backfill_ohlc_research --all --resume --skip-min-bars 1100
+
+# 1b) Remaining symbols one-by-one; keep short history; Yahoo empty →
+#     database/ohlc_ignore.csv (reason=exception_no_yahoo_data)
+python -m scripts.backfill_ohlc_pending --min-bars 1100
 
 # Small pilot first
 PARKHU_MAX_SYMBOLS=50 python -m scripts.backfill_ohlc_research

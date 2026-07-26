@@ -304,8 +304,14 @@ def _process_chunk(
             failed.append(nse)
             if _is_rate_or_timeout(str(exc)):
                 rate_hit = True
-    # Empty download with all failures → treat as rate/timeout for retry.
-    if failed and (data is None or getattr(data, "empty", True)) and len(failed) == len(chunk):
+    # Bulk empty download is often a silent Yahoo throttle; single-symbol empty
+    # usually means "no data" unless stderr already flagged rate/timeout.
+    if (
+        failed
+        and (data is None or getattr(data, "empty", True))
+        and len(failed) == len(chunk)
+        and len(chunk) > 1
+    ):
         rate_hit = True
     return parts, failed, rate_hit
 
@@ -406,6 +412,242 @@ def _bar_count(symbol: str) -> int:
     return int(len(cached))
 
 
+IGNORE_COLS = ["symbol", "yf_ticker", "reason", "bars", "updated_at"]
+
+
+def load_ohlc_ignore() -> dict[str, dict]:
+    """Return ``{symbol: row}`` from ``database/ohlc_ignore.csv`` (may be empty)."""
+    path = Path(settings.OHLC_IGNORE_PATH)
+    if not path.is_file():
+        return {}
+    try:
+        df = pd.read_csv(path)
+    except Exception:  # noqa: BLE001
+        return {}
+    if df.empty or "symbol" not in df.columns:
+        return {}
+    out: dict[str, dict] = {}
+    for _, r in df.iterrows():
+        sym = str(r["symbol"]).strip()
+        if sym:
+            out[sym] = r.to_dict()
+    return out
+
+
+def append_ohlc_ignore(
+    symbol: str,
+    *,
+    reason: str,
+    bars: int = 0,
+) -> None:
+    """Upsert one symbol into the persistent OHLC ignore list."""
+    path = Path(settings.OHLC_IGNORE_PATH)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    existing = load_ohlc_ignore()
+    from datetime import datetime
+
+    existing[symbol] = {
+        "symbol": symbol,
+        "yf_ticker": yf_symbol(symbol),
+        "reason": reason,
+        "bars": int(bars),
+        "updated_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    rows = [existing[k] for k in sorted(existing)]
+    pd.DataFrame(rows, columns=IGNORE_COLS).to_csv(path, index=False)
+    log.info("ohlc ignore +%s reason=%s bars=%d (total=%d)", symbol, reason, bars, len(rows))
+
+
+def pending_research_symbols(
+    symbols: list[str],
+    *,
+    min_bars: int = 1100,
+    ignore: dict[str, dict] | None = None,
+) -> list[str]:
+    """Symbols still short of ``min_bars`` and not on the ignore list."""
+    ignored = ignore if ignore is not None else load_ohlc_ignore()
+    out: list[str] = []
+    for s in symbols:
+        s = str(s).strip()
+        if not s or s in ignored:
+            continue
+        if _bar_count(s) < int(min_bars):
+            out.append(s)
+    return out
+
+
+def backfill_one_symbol(
+    symbol: str,
+    *,
+    period: str | None = None,
+    lookback: int | None = None,
+    max_rate_retries: int = 8,
+) -> dict:
+    """Download one symbol's OHLC. Distinguishes rate-limit vs permanent miss.
+
+    Returns status in ``{ok, rate_limited, no_data, error}``.
+    """
+    period = period or settings.OHLC_RESEARCH_PERIOD
+    keep = int(lookback if lookback is not None else settings.OHLC_RESEARCH_LOOKBACK_SESSIONS)
+    ticker = yf_symbol(symbol)
+    before = _bar_count(symbol)
+
+    for attempt in range(max(int(max_rate_retries), 1)):
+        data, err_text = _download_chunk([ticker], period=period)
+        rate_hit = _is_rate_or_timeout(err_text)
+        try:
+            if isinstance(getattr(data, "columns", None), pd.MultiIndex):
+                frame = _extract_ticker_frame(data, ticker)
+            else:
+                frame = data if data is not None else None
+            hist = clean_daily_history(frame)
+            hist = trim_sessions(hist, keep)
+            if not hist.empty:
+                merged = _merge_cache(symbol, hist, lookback=keep)
+                return {
+                    "symbol": symbol,
+                    "status": "ok",
+                    "bars": int(len(merged)),
+                    "bars_before": before,
+                    "attempt": attempt + 1,
+                }
+            # Empty history.
+            if rate_hit:
+                log.warning(
+                    "ohlc one-by-one %s rate-limited (attempt %d/%d)",
+                    symbol,
+                    attempt + 1,
+                    max_rate_retries,
+                )
+                _wait_until_yahoo_ready(rate_seen=True)
+                continue
+            # Yahoo answered but no bars — permanent for our purposes.
+            cached = _bar_count(symbol)
+            return {
+                "symbol": symbol,
+                "status": "no_data",
+                "bars": cached,
+                "bars_before": before,
+                "attempt": attempt + 1,
+                "error": (err_text or "empty").strip()[:200],
+            }
+        except Exception as exc:  # noqa: BLE001
+            if _is_rate_or_timeout(str(exc)):
+                _wait_until_yahoo_ready(rate_seen=True)
+                continue
+            return {
+                "symbol": symbol,
+                "status": "error",
+                "bars": _bar_count(symbol),
+                "bars_before": before,
+                "attempt": attempt + 1,
+                "error": str(exc)[:200],
+            }
+
+    return {
+        "symbol": symbol,
+        "status": "rate_limited",
+        "bars": _bar_count(symbol),
+        "bars_before": before,
+        "attempt": max_rate_retries,
+    }
+
+
+def backfill_pending_serial(
+    symbols: list[str],
+    *,
+    period: str | None = None,
+    lookback: int | None = None,
+    min_bars: int = 1100,
+    sleep_s: float | None = None,
+    max_rate_retries: int = 8,
+) -> dict:
+    """Fill pending symbols one-by-one; only true Yahoo misses go to ignore.
+
+    - ``ok`` (any bar count) → keep whatever Yahoo returned (short history is fine)
+    - ``no_data`` → ignore as ``exception_no_yahoo_data``
+    - hard ``error`` with still 0 bars → same ignore exception
+    - still ``rate_limited`` after retries → left pending (retry next run)
+    """
+    period = period or settings.OHLC_RESEARCH_PERIOD
+    keep = int(lookback if lookback is not None else settings.OHLC_RESEARCH_LOOKBACK_SESSIONS)
+    gap = float(sleep_s if sleep_s is not None else settings.OHLC_CHUNK_SLEEP_S)
+    ignore = load_ohlc_ignore()
+    pending = pending_research_symbols(symbols, min_bars=min_bars, ignore=ignore)
+
+    stats = {
+        "agent": "ohlc_pending_serial",
+        "pending_start": len(pending),
+        "ok": 0,
+        "ok_short": 0,
+        "ignored": 0,
+        "still_pending": 0,
+        "rate_limited": 0,
+        "results": [],
+    }
+    log.info(
+        "ohlc serial pending=%d min_bars=%d period=%s ignore_seed=%d",
+        len(pending),
+        min_bars,
+        period,
+        len(ignore),
+    )
+
+    for i, sym in enumerate(pending, 1):
+        if gap > 0 and i > 1:
+            time.sleep(gap)
+        result = backfill_one_symbol(
+            sym,
+            period=period,
+            lookback=keep,
+            max_rate_retries=max_rate_retries,
+        )
+        bars = int(result.get("bars") or 0)
+        status = result.get("status")
+        log.info(
+            "ohlc serial [%d/%d] %s → %s bars=%d",
+            i,
+            len(pending),
+            sym,
+            status,
+            bars,
+        )
+
+        if status == "ok":
+            stats["ok"] += 1
+            if bars < min_bars:
+                stats["ok_short"] += 1
+        elif status == "no_data" or (status == "error" and bars <= 0):
+            append_ohlc_ignore(
+                sym,
+                reason="exception_no_yahoo_data",
+                bars=bars,
+            )
+            stats["ignored"] += 1
+        elif status == "error" and bars > 0:
+            # Keep partial cache; do not ignore.
+            stats["ok"] += 1
+            stats["ok_short"] += 1
+        elif status == "rate_limited":
+            stats["rate_limited"] += 1
+            stats["still_pending"] += 1
+        else:
+            stats["still_pending"] += 1
+
+        stats["results"].append(result)
+
+    # Recompute remaining (short-history names with bars are no longer "pending"
+    # for ignore purposes — they are kept as-is).
+    ignore = load_ohlc_ignore()
+    left = pending_research_symbols(symbols, min_bars=min_bars, ignore=ignore)
+    # Names that already have any bars are considered filled for this pass.
+    left = [s for s in left if _bar_count(s) == 0]
+    stats["pending_left"] = len(left)
+    stats["ignore_total"] = len(ignore)
+    stats["status"] = "ok" if not left else "partial"
+    return stats
+
+
 def backfill_symbols(
     symbols: list[str],
     *,
@@ -427,6 +669,18 @@ def backfill_symbols(
         return {"agent": "ohlc_history", "status": "error", "rows": 0, "symbols": 0}
 
     skipped: list[str] = []
+    ignored_map = load_ohlc_ignore()
+    if ignored_map:
+        kept = []
+        for s in symbols:
+            if s in ignored_map:
+                skipped.append(s)
+            else:
+                kept.append(s)
+        if len(kept) != len(symbols):
+            log.info("ohlc skip ignore-list=%d", len(symbols) - len(kept))
+        symbols = kept
+
     if skip_min_bars is not None and int(skip_min_bars) > 0:
         floor = int(skip_min_bars)
         todo: list[str] = []
