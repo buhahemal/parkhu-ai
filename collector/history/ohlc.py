@@ -2,7 +2,10 @@
 
 Writes:
   - ``output/<date>/history/ohlc.csv`` — long format for the day's pack
-  - ``database/ohlc/<SYMBOL>.csv`` — per-symbol rolling cache
+  - ``database/ohlc/<SYMBOL>.csv`` — per-symbol raw store (GitHub-backed)
+
+Warm symbols (enough cached bars) fetch a short incremental window.
+Cold / new / short symbols get a full backfill, which creates the CSV.
 
 Never aborts the pipeline: missing symbols are skipped and status is
 ``partial`` when coverage is incomplete.
@@ -56,6 +59,21 @@ def _load_cache(symbol: str) -> pd.DataFrame:
         if c not in df.columns:
             return pd.DataFrame(columns=COLUMNS)
     return df[COLUMNS]
+
+
+def _is_warm(symbol: str) -> bool:
+    """True when raw CSV exists with enough bars for incremental fetch."""
+    cached = _load_cache(symbol)
+    return len(cached) >= int(settings.OHLC_WARM_MIN_BARS)
+
+
+def _incremental_period() -> str:
+    days = max(int(settings.OHLC_INCREMENTAL_DAYS), 1)
+    return f"{days}d"
+
+
+def _cold_period() -> str:
+    return str(settings.OHLC_COLD_PERIOD or "400d")
 
 
 def _write_cache(symbol: str, df: pd.DataFrame) -> None:
@@ -123,22 +141,21 @@ def _extract_ticker_frame(data: pd.DataFrame, ticker: str) -> pd.DataFrame | Non
     return frame
 
 
-def _download_chunk(tickers: list[str]) -> pd.DataFrame:
-    """Bulk download; empty DataFrame on failure."""
+def _download_chunk(tickers: list[str], period: str = "400d") -> pd.DataFrame:
+    """Bulk download for ``period``; empty DataFrame on failure."""
     if not tickers:
         return pd.DataFrame()
-    # 400 calendar days ≈ covers 250 NSE sessions with holidays/weekends.
     try:
         return yf.download(
             tickers,
-            period="400d",
+            period=period,
             group_by="ticker",
             auto_adjust=False,
             progress=False,
             threads=True,
         )
     except Exception as exc:  # noqa: BLE001
-        log.warning("yf.download failed for chunk (%d): %s", len(tickers), exc)
+        log.warning("yf.download failed for chunk (%d, %s): %s", len(tickers), period, exc)
         return pd.DataFrame()
 
 
@@ -151,6 +168,48 @@ def _write_daily(df: pd.DataFrame, date: str | None) -> Path:
     return path
 
 
+def _process_chunk(
+    chunk: list[str],
+    period: str,
+    *,
+    trim_to: int,
+) -> tuple[list[pd.DataFrame], int, int]:
+    """Download one chunk and merge into raw store. Returns parts, ok, failed."""
+    tickers = [yf_symbol(s) for s in chunk]
+    nse_by_yf = dict(zip(tickers, chunk, strict=True))
+    data = _download_chunk(tickers, period=period)
+    parts: list[pd.DataFrame] = []
+    ok = 0
+    failed = 0
+
+    for tk, nse in nse_by_yf.items():
+        try:
+            if len(tickers) == 1 and not isinstance(getattr(data, "columns", None), pd.MultiIndex):
+                frame = data if data is not None else None
+            else:
+                frame = _extract_ticker_frame(data, tk)
+            hist = clean_daily_history(frame)
+            hist = trim_sessions(hist, trim_to)
+            if hist.empty:
+                cached = _load_cache(nse)
+                if not cached.empty:
+                    parts.append(cached)
+                    ok += 1
+                else:
+                    failed += 1
+                continue
+            merged = _merge_cache(nse, hist)
+            if merged.empty:
+                failed += 1
+                continue
+            parts.append(merged)
+            ok += 1
+        except Exception as exc:  # noqa: BLE001
+            log.warning("ohlc skip %s: %s", nse, exc)
+            failed += 1
+    return parts, ok, failed
+
+
 def collect(date: str | None = None) -> dict:
     symbols = _universe(date)
     if settings.MAX_SYMBOLS:
@@ -160,46 +219,41 @@ def collect(date: str | None = None) -> dict:
         _write_daily(pd.DataFrame(columns=COLUMNS), date)
         return {"agent": "ohlc_history", "status": "error", "rows": 0, "symbols": 0}
 
+    warm = [s for s in symbols if _is_warm(s)]
+    cold = [s for s in symbols if s not in set(warm)]
+    new_symbols = [s for s in cold if not _cache_path(s).is_file()]
+
+    log.info(
+        "ohlc classify warm=%d cold=%d new_symbols=%d incremental=%s cold_period=%s",
+        len(warm),
+        len(cold),
+        len(new_symbols),
+        _incremental_period(),
+        _cold_period(),
+    )
+
     chunk_size = max(int(settings.OHLC_CHUNK_SIZE), 1)
     all_parts: list[pd.DataFrame] = []
     ok_symbols = 0
     failed = 0
+    batches: list[tuple[list[str], str, int]] = []
 
-    for i in range(0, len(symbols), chunk_size):
-        chunk = symbols[i : i + chunk_size]
-        tickers = [yf_symbol(s) for s in chunk]
-        nse_by_yf = dict(zip(tickers, chunk, strict=True))
-        data = _download_chunk(tickers)
-        if i and settings.OHLC_CHUNK_SLEEP_S > 0:
+    # Warm: short pull; trim merge input to incremental window (cache already holds history).
+    warm_trim = max(int(settings.OHLC_INCREMENTAL_DAYS) * 2, int(settings.OHLC_INCREMENTAL_DAYS))
+    for i in range(0, len(warm), chunk_size):
+        batches.append((warm[i : i + chunk_size], _incremental_period(), warm_trim))
+    for i in range(0, len(cold), chunk_size):
+        batches.append(
+            (cold[i : i + chunk_size], _cold_period(), settings.OHLC_LOOKBACK_SESSIONS)
+        )
+
+    for bi, (chunk, period, trim_to) in enumerate(batches):
+        if bi and settings.OHLC_CHUNK_SLEEP_S > 0:
             time.sleep(settings.OHLC_CHUNK_SLEEP_S)
-
-        for tk, nse in nse_by_yf.items():
-            try:
-                # Single-ticker download returns a flat frame.
-                if len(tickers) == 1 and not isinstance(getattr(data, "columns", None), pd.MultiIndex):
-                    frame = data if data is not None else None
-                else:
-                    frame = _extract_ticker_frame(data, tk)
-                hist = clean_daily_history(frame)
-                hist = trim_sessions(hist, settings.OHLC_LOOKBACK_SESSIONS)
-                if hist.empty:
-                    # Fall back to cache if Yahoo missed this symbol today.
-                    cached = _load_cache(nse)
-                    if not cached.empty:
-                        all_parts.append(cached)
-                        ok_symbols += 1
-                    else:
-                        failed += 1
-                    continue
-                merged = _merge_cache(nse, hist)
-                if merged.empty:
-                    failed += 1
-                    continue
-                all_parts.append(merged)
-                ok_symbols += 1
-            except Exception as exc:  # noqa: BLE001
-                log.warning("ohlc skip %s: %s", nse, exc)
-                failed += 1
+        parts, ok, fail = _process_chunk(chunk, period, trim_to=trim_to)
+        all_parts.extend(parts)
+        ok_symbols += ok
+        failed += fail
 
     if not all_parts:
         _write_daily(pd.DataFrame(columns=COLUMNS), date)
@@ -209,6 +263,9 @@ def collect(date: str | None = None) -> dict:
             "rows": 0,
             "symbols": 0,
             "failed": failed,
+            "warm": len(warm),
+            "cold": len(cold),
+            "new_symbols": len(new_symbols),
         }
 
     out = pd.concat(all_parts, ignore_index=True)
@@ -224,6 +281,9 @@ def collect(date: str | None = None) -> dict:
         "symbols": ok_symbols,
         "failed": failed,
         "lookback": settings.OHLC_LOOKBACK_SESSIONS,
+        "warm": len(warm),
+        "cold": len(cold),
+        "new_symbols": len(new_symbols),
     }
 
 

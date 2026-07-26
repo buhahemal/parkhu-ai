@@ -75,9 +75,9 @@ rather than premature.
 The ledger assumes runs happen in chronological order. Re-running an old date after
 newer ones have been processed will interleave the review incorrectly.
 
-**`trades/` must be committed.** The `git add output/ logs/ trades/` step in
-`collect.yml` carries the ledger between CI runs; drop it and the open positions and
-hit rate reset every morning.
+**`trades/` must be committed.** The `git add output/ logs/ trades/ database/ohlc/`
+step in `collect.yml` carries the ledger and the raw OHLC store between CI runs; drop
+`trades/` and open positions / hit rate reset every morning.
 
 ## Rules enforced
 

@@ -80,7 +80,16 @@ TECHNICAL_HISTORY_PERIOD = "1y"
 MAX_SYMBOLS = int(os.getenv("PARKHU_MAX_SYMBOLS", "0")) or None
 
 # Daily OHLC history (Yahoo Finance via .NS). ~250 sessions ≈ 1y of NSE bars.
+# Warm symbols: short incremental pull; cold/new: full backfill into database/ohlc/.
 OHLC_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_LOOKBACK", "250") or "250")
+OHLC_INCREMENTAL_DAYS = int(os.getenv("PARKHU_OHLC_INCREMENTAL_DAYS", "5") or "5")
+_ohlc_warm_env = os.getenv("PARKHU_OHLC_WARM_MIN_BARS")
+OHLC_WARM_MIN_BARS = (
+    int(_ohlc_warm_env)
+    if _ohlc_warm_env not in (None, "")
+    else max(OHLC_LOOKBACK_SESSIONS - 10, 1)
+)
+OHLC_COLD_PERIOD = os.getenv("PARKHU_OHLC_COLD_PERIOD", "400d") or "400d"
 OHLC_CHUNK_SIZE = int(os.getenv("PARKHU_OHLC_CHUNK_SIZE", "80") or "80")
 OHLC_CHUNK_SLEEP_S = float(os.getenv("PARKHU_OHLC_CHUNK_SLEEP_S", "1.0") or "1.0")
 OHLC_CACHE_DIR = DATABASE_DIR / "ohlc"

@@ -469,8 +469,9 @@ output/<date>/history/ohlc.csv
 symbol,date,open,high,low,close,volume        # ~250 sessions x 368 names
 ```
 
-**Landed:** collector + `database/ohlc` cache; swing/volume features in `stock_analysis`;
-structure-based stops/targets; `rr_t1` / `risk_reward` vary with structure.
+**Landed:** collector + GitHub-backed `database/ohlc/<SYMBOL>.csv` raw store (warm ~5d
+incremental fetch; new/short symbols full ~400d backfill); swing/volume features in
+`stock_analysis`; structure-based stops/targets; `rr_t1` / `risk_reward` vary with structure.
 **Still open:** pattern library (cup/handle etc.) and technical-score pattern weight.
 
 ### P0 — relative-volume gate (defect 3) — **Landed (threshold pending sweep)**
@@ -567,8 +568,9 @@ Also invariant, and easy to break by accident:
 - **`swing_brief` runs last in `run.py`'s `DERIVED`** — it depends on `stock_analysis` and
   `market_summary`, and must precede `write_manifest` and `write_output_zips` so the brief
   is catalogued and packaged.
-- **`collect.yml` stages `trades/`.** Without it the ledger resets every CI run and no
-  position is ever followed up. This was missed once already.
+- **`collect.yml` stages `trades/` and `database/ohlc/`.** Without `trades/` the ledger
+  resets every CI run and no position is ever followed up. Without `database/ohlc/` every
+  run cold-starts a full Yahoo lookback. Staging `trades/` was missed once already.
 - **Review runs before record.** Otherwise today's ideas are reviewed as zero-day-old
   positions and a re-suggested name duplicates instead of re-confirming.
 - **Zero ideas is `status: ok`.** KB-00 requires stating that no recommendation should be

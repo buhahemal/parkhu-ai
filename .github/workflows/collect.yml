@@ -39,9 +39,9 @@ jobs:
       - name: Run Parkhu Data Collector
         run: python run.py
 
-      # Data-bot commit: path-scoped only (output / logs / trades). Never stage
-      # code, secrets, or .env. Prefer branch protection on main for human PRs;
-      # this job is the intentional exception for generated artifacts.
+      # Data-bot commit: path-scoped only (output / logs / trades / database/ohlc).
+      # Never stage code, secrets, or .env. Prefer branch protection on main for
+      # human PRs; this job is the intentional exception for generated artifacts.
       # Pushing output/latest/research_pack.json triggers Deploy Parkhu Pages.
       - name: Commit collected data
         run: |
@@ -49,7 +49,8 @@ jobs:
           git config user.email "parkhu-bot@users.noreply.github.com"
           # trades/ carries the suggestion ledger across runs — without it the
           # open positions and the measured hit rate reset every day.
-          git add -- output/ logs/ trades/ || true
+          # database/ohlc/ is the GitHub-backed raw OHLC store (incremental daily).
+          git add -- output/ logs/ trades/ database/ohlc/ || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else

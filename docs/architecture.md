@@ -71,7 +71,7 @@ Return shape (required keys):
 
 ## Security (CI)
 
-- Workflow may commit `output/`, `logs/`, `trades/` as the data bot.
+- Workflow may commit `output/`, `logs/`, `trades/`, `database/ohlc/` as the data bot.
 - Prefer path-scoped `git add` (already the case); never commit secrets or `.env`.
 - Code changes should land via PR; data commits are automatic and separate.
 - Branch protection on `main` for code is recommended; data bot pushes remain
