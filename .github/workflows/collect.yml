@@ -9,9 +9,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: write             # needed to commit the day's output back
 
 jobs:
   collect:
@@ -42,6 +40,7 @@ jobs:
       # Data-bot commit: path-scoped only (output / logs / trades). Never stage
       # code, secrets, or .env. Prefer branch protection on main for human PRs;
       # this job is the intentional exception for generated artifacts.
+      # Pushing output/latest/research_pack.json triggers Deploy Parkhu Pages.
       - name: Commit collected data
         run: |
           git config user.name  "parkhu-bot"
@@ -55,24 +54,6 @@ jobs:
             git commit -m "data: daily collection $(date -u +'%Y-%m-%d')"
             git push
           fi
-
-      - name: Stage Pages artifact (workspace)
-        if: success()
-        run: |
-          mkdir -p _site/data
-          cp -R site/. _site/
-          touch _site/.nojekyll
-          if [ -f output/latest/research_pack.json ]; then
-            cp output/latest/research_pack.json _site/data/research_pack.json
-          else
-            echo '{"error":"research_pack.json missing"}' > _site/data/research_pack.json
-          fi
-
-      - name: Upload Pages artifact
-        if: success()
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
 
       - name: Publish output links
         if: always()
@@ -90,7 +71,7 @@ jobs:
             echo ""
             echo "**Claude handoff (no zip):** [research_pack.md](${BASE_RAW}/output/latest/research_pack.md) · [index.json](${BASE_RAW}/output/index.json)"
             echo ""
-            echo "**Dashboard:** [${PAGES}](${PAGES})"
+            echo "**Dashboard:** [${PAGES}](${PAGES}) — UI deploy: workflow \`Deploy Parkhu Pages\`"
             echo ""
             echo "**Latest folder:** [output/latest/](${BASE_BLOB}/output/latest/)"
             echo ""
@@ -111,18 +92,3 @@ jobs:
             echo "| \`${DATE}.zip\` | [raw](${BASE_RAW}/output/${DATE}.zip) | [view](${BASE_BLOB}/output/${DATE}.zip) |"
             echo "| \`latest.zip\` | [raw](${BASE_RAW}/output/latest.zip) | [view](${BASE_BLOB}/output/latest.zip) |"
           } >> "$GITHUB_STEP_SUMMARY"
-
-  pages:
-    needs: collect
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

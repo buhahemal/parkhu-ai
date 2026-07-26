@@ -53,5 +53,15 @@ python -m http.server 8080 --directory site
 
 ## One-time: enable GitHub Pages
 
-Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.  
-The collect workflow deploys `site/` with that day’s `research_pack.json` embedded under `data/`.
+Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+Dashboard deploy is a **separate** workflow: [`.github/workflows/pages.yml`](../.github/workflows/pages.yml)
+(**Deploy Parkhu Pages**).
+
+| Trigger | What happens |
+|---------|----------------|
+| Push to `site/**` | UI-only redeploy (no collector) |
+| Push to `output/latest/research_pack.json` | Data refresh after collect commits |
+| Actions → **Deploy Parkhu Pages** → Run workflow | Manual deploy |
+
+Local UI preview: copy pack into `site/data/` and serve `site/` (see above).

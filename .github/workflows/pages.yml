@@ -1,0 +1,59 @@
+name: Deploy Parkhu Pages
+
+# UI-only or data-refresh deploys — does not run the collector.
+# Edit site/ and push, or use workflow_dispatch, to refresh the dashboard.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "output/latest/research_pack.json"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch: {}
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build site
+        run: |
+          mkdir -p _site/data
+          cp -R site/. _site/
+          touch _site/.nojekyll
+          if [ -f output/latest/research_pack.json ]; then
+            cp output/latest/research_pack.json _site/data/research_pack.json
+          else
+            echo '{"error":"research_pack.json missing — run collect first"}' > _site/data/research_pack.json
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

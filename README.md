@@ -26,7 +26,7 @@ GitHub Actions (daily, pre-open)
 
 - **Claude / LLM:** [`output/latest/research_pack.md`](output/latest/research_pack.md) — see [`docs/claude-handoff.md`](docs/claude-handoff.md) (no zip upload).
 - **Human brief:** [`output/latest_brief.md`](output/latest_brief.md) — see [`docs/swing-brief.md`](docs/swing-brief.md).
-- **Dashboard:** GitHub Pages (`site/`) after Actions deploy — same JSON as the pack.
+- **Dashboard:** GitHub Pages (`site/`) via workflow **Deploy Parkhu Pages** — edit UI and redeploy without running collect.
 
 ## Agents
 
