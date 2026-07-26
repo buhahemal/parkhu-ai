@@ -4,6 +4,9 @@
 brief. It runs as the last step of `run.py`, so one `python run.py` produces both the
 raw data and the brief.
 
+**Universe → idea algorithm** (hard gates, R:R, score bands, portfolio caps):
+[`universe-to-idea.md`](universe-to-idea.md).
+
 ## Output
 
 ```
@@ -82,6 +85,7 @@ step in `collect.yml` carries the ledger and the raw OHLC store between CI runs;
 ## Rules enforced
 
 Every threshold lives in `config/risk.py`, cites its KB source, and is env-overridable.
+Step-by-step selection path: [`universe-to-idea.md`](universe-to-idea.md).
 
 | Rule | Value | Source |
 |---|---|---|

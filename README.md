@@ -229,6 +229,8 @@ python -m scripts.quality       # ruff + vulture + jscpd (duplication)
 - [`docs/swing-brief.md`](docs/swing-brief.md) — the operator's guide: how the brief
   is built, the suggestion ledger, and where it deliberately overrides
   `stock_analysis.csv`.
+- [`docs/universe-to-idea.md`](docs/universe-to-idea.md) — universe → idea path:
+  hard gates, levels/R:R/horizon, score bands, and portfolio caps.
 - [`docs/data-gaps.md`](docs/data-gaps.md) — what the knowledge base needs that
   this repo does not yet collect, prioritised, with proposed CSV schemas.
 
