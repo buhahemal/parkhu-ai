@@ -7,137 +7,193 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   </head>
   <body>
-    <header class="top">
-      <div class="brand-row">
-        <h1 class="brand">Parkhu</h1>
-        <div id="regime-badge" class="badge">—</div>
-      </div>
-      <p class="tag">Market &amp; process desk</p>
-      <div id="meta" class="meta">Loading…</div>
-      <div id="kpi" class="kpi" aria-label="Key metrics"></div>
-      <p id="kpi-tip" class="kpi-tip" hidden></p>
-      <details class="guide">
-        <summary>How to use this desk</summary>
-        <div class="guide-body">
-          <p><strong>Shows:</strong> today’s process health, market regime, and open ideas — not capital or position size (that stays in Claude).</p>
-          <p><strong>Decide:</strong> whether the environment supports new swings, which gates are killing the universe, which open names need action, and whether data quality is good enough to trust scores.</p>
-          <p>Tap <em>What this means</em> under each section for metric-level guidance.</p>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <h1 class="brand">Parkhu</h1>
+            <p class="tag">Market &amp; process desk</p>
+          </div>
         </div>
-      </details>
-    </header>
+        <nav class="nav" aria-label="Jump">
+          <a href="#overview" class="active">Overview</a>
+          <a href="#funnel">Funnel</a>
+          <a href="#regime">Regime</a>
+          <a href="#ideas">Ideas</a>
+          <a href="#ledger">Ledger</a>
+          <a href="#sectors">Sectors</a>
+          <a href="#quality">Quality</a>
+        </nav>
+        <div class="top-meta">
+          <div id="regime-badge" class="badge">—</div>
+          <div id="meta" class="meta">Loading…</div>
+        </div>
+      </header>
 
-    <nav class="nav" aria-label="Jump">
-      <a href="#funnel">Funnel</a>
-      <a href="#regime">Regime</a>
-      <a href="#ideas">Ideas</a>
-      <a href="#ledger">Ledger</a>
-      <a href="#sectors">Sectors</a>
-      <a href="#quality">Quality</a>
-    </nav>
-
-    <main>
-      <section id="funnel" class="panel">
-        <h2>Gate funnel</h2>
-        <details class="guide">
-          <summary>What this means</summary>
-          <div class="guide-body">
-            <p><strong>Shows:</strong> how many symbols survive each hard filter (trend, RS, delivery, earnings window, etc.) and the keep-% vs the prior step.</p>
-            <p><strong>Decide:</strong> if the funnel collapses early (e.g. trend/RS), the market breadth is weak — prefer fewer new ideas or stay flat. If a late gate drops most names (earnings / event risk), the process is working; don’t loosen gates to force trades.</p>
-            <p><strong>Tip:</strong> “Tightest gates” chips highlight the biggest bottlenecks today.</p>
-          </div>
-        </details>
-        <div class="chart-wrap tall"><canvas id="funnel-chart"></canvas></div>
-        <div id="funnel-drops" class="drops"></div>
+      <section id="overview" class="kpi-row" aria-label="Key metrics">
+        <div id="kpi" class="kpi"></div>
+        <p id="kpi-tip" class="kpi-tip" hidden></p>
       </section>
 
-      <section id="regime" class="panel">
-        <h2>Regime</h2>
-        <details class="guide">
-          <summary>What this means</summary>
-          <div class="guide-body">
-            <p><strong>Shows:</strong> Nifty/BankNifty direction, India VIX, FII vs DII flows, global cues (Asia/Europe/US), crude and USDINR.</p>
-            <p><strong>Decide:</strong></p>
-            <ul>
-              <li><strong>Bearish + high VIX / FII selling</strong> → smaller book risk, fewer fresh buys, respect stops.</li>
-              <li><strong>Bullish + DII/FII supportive</strong> → OK to act on high-score ideas that cleared the funnel.</li>
-              <li><strong>Mixed cues</strong> → wait for confirmation; don’t chase weak RS names.</li>
-            </ul>
-          </div>
-        </details>
-        <div id="regime-stats" class="stat-list"></div>
-        <div class="chart-wrap"><canvas id="flow-chart"></canvas></div>
-        <div class="chart-wrap"><canvas id="cues-chart"></canvas></div>
-      </section>
+      <div id="status-ribbon" class="status-ribbon" aria-label="Session status"></div>
 
-      <section id="ideas" class="panel">
-        <h2>Ideas</h2>
-        <details class="guide">
-          <summary>What this means</summary>
-          <div class="guide-body">
-            <p><strong>Shows:</strong> names that cleared all gates today — score, band (Buy/Watch), entry / stop / T1, R:R, hold-day estimate. No qty or capital here.</p>
-            <p><strong>Decide:</strong> shortlist for Claude sizing. Prefer higher score + clean R:R ≥ 2 + sector not already crowded in the open ledger. Watch-band = monitor, don’t force entry.</p>
-            <p><strong>Tip:</strong> Zero ideas is a valid outcome — do not invent trades outside the funnel.</p>
-          </div>
-        </details>
-        <div class="chart-wrap"><canvas id="scores-chart"></canvas></div>
-        <div id="ideas-body" class="cards"></div>
-      </section>
+      <div class="desk">
+        <main class="main-col">
+          <section id="funnel" class="panel hero">
+            <div class="panel-head">
+              <div>
+                <h2>Gate funnel</h2>
+                <p class="panel-sub">Universe survival through hard filters</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> how many symbols survive each hard filter and keep-% vs the prior step.</p>
+                  <p><strong>Decide:</strong> early collapse → weak breadth, fewer new ideas. Late drops (earnings) → process working; don’t loosen gates.</p>
+                </div>
+              </details>
+            </div>
+            <div class="chart-wrap tall"><canvas id="funnel-chart"></canvas></div>
+            <div id="funnel-drops" class="drops"></div>
+          </section>
 
-      <section id="ledger" class="panel">
-        <h2>Open ledger</h2>
-        <details class="guide">
-          <summary>What this means</summary>
-          <div class="guide-body">
-            <p><strong>Shows:</strong> live suggestions with entry vs last, P&amp;L%, MFE (best excursion) and MAE (worst drawdown). Yellow “action” rows need attention first.</p>
-            <p><strong>Decide:</strong></p>
-            <ul>
-              <li><strong>Needs action</strong> (earnings, no data, stop threat) → reduce, exit, or stand aside before adding risk.</li>
-              <li><strong>MAE deep / price near stop</strong> → plan invalidation; don’t average down blindly.</li>
-              <li><strong>MFE strong but P&amp;L faded</strong> → consider trailing / partial at T1 logic in Claude.</li>
-            </ul>
-          </div>
-        </details>
-        <div id="action-body" class="action-strip"></div>
-        <div class="chart-wrap"><canvas id="mfe-chart"></canvas></div>
-        <div id="ledger-body" class="cards"></div>
-      </section>
+          <section id="regime" class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Regime</h2>
+                <p class="panel-sub">Indices, VIX, flows, global cues</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> Nifty/BankNifty, India VIX, FII/DII, Asia/Europe/US, crude, USDINR.</p>
+                  <p><strong>Decide:</strong> bearish + high VIX / FII selling → cut new risk. Bullish + supportive flows → act on high-score ideas. Mixed → wait.</p>
+                </div>
+              </details>
+            </div>
+            <div id="regime-stats" class="stat-list"></div>
+            <div class="chart-grid">
+              <div class="chart-wrap"><canvas id="flow-chart"></canvas></div>
+              <div class="chart-wrap"><canvas id="cues-chart"></canvas></div>
+            </div>
+          </section>
 
-      <section id="sectors" class="panel">
-        <h2>Sectors</h2>
-        <details class="guide">
-          <summary>What this means</summary>
-          <div class="guide-body">
-            <p><strong>Shows:</strong> how many idea + open names sit in each risk sector (counts only — not capital %).</p>
-            <p><strong>Decide:</strong> avoid stacking more ideas into a sector that already dominates the open book. Concentration risk is a process call even before Claude sizes rupees.</p>
-          </div>
-        </details>
-        <div class="chart-wrap"><canvas id="sector-chart"></canvas></div>
-      </section>
+          <section id="ideas" class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Ideas</h2>
+                <p class="panel-sub">Cleared gates — Claude shortlist (no sizing)</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> score, band, entry / stop / T1, R:R. No qty or capital.</p>
+                  <p><strong>Decide:</strong> prefer higher score + R:R ≥ 2 + uncrowded sector. Watch = monitor only. Zero ideas is valid.</p>
+                </div>
+              </details>
+            </div>
+            <div class="chart-wrap"><canvas id="scores-chart"></canvas></div>
+            <div id="ideas-body" class="cards"></div>
+          </section>
 
-      <section id="quality" class="panel">
-        <h2>Data quality</h2>
-        <details class="guide">
-          <summary>What this means</summary>
-          <div class="guide-body">
-            <p><strong>Shows:</strong> score coverage (% of KB weights that are live) and caveats (missing news, ownership, OHLC history, etc.).</p>
-            <p><strong>Decide:</strong> if coverage is low or caveats are severe, treat scores as provisional — prefer stronger regimes and clearer technicals, and ask Claude to discount conviction.</p>
-          </div>
-        </details>
-        <div id="quality-body"></div>
-      </section>
-    </main>
+          <section id="ledger" class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Open ledger</h2>
+                <p class="panel-sub">Live suggestions — MFE / MAE / P&amp;L%</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> entry vs last, P&amp;L%, MFE, MAE. Yellow action rows first.</p>
+                  <p><strong>Decide:</strong> needs action → exit/reduce before new risk. Deep MAE → respect stops. Strong MFE, faded P&amp;L → trail / partial.</p>
+                </div>
+              </details>
+            </div>
+            <div id="action-body" class="action-strip"></div>
+            <div class="chart-wrap"><canvas id="mfe-chart"></canvas></div>
+            <div id="ledger-body" class="cards"></div>
+          </section>
 
-    <footer class="foot">
-      <p id="links"></p>
-      <p class="note">Same research pack Claude reads. Capital stays in Claude.</p>
-    </footer>
+          <section id="sectors" class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Sectors</h2>
+                <p class="panel-sub">Name counts only — not capital %</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> idea + open names per risk sector.</p>
+                  <p><strong>Decide:</strong> avoid stacking into a sector that already dominates the open book.</p>
+                </div>
+              </details>
+            </div>
+            <div class="chart-wrap"><canvas id="sector-chart"></canvas></div>
+          </section>
+        </main>
+
+        <aside class="side-col" aria-label="Process widgets">
+          <section class="panel widget tip-card">
+            <h2>How to use</h2>
+            <p>Today’s process health and ideas — not capital (that stays in Claude).</p>
+            <p>Tap a metric card for what it means and what to decide. Open <em>Guide</em> on each panel for more.</p>
+          </section>
+
+          <section id="quality" class="panel widget">
+            <div class="panel-head">
+              <div>
+                <h2>Data quality</h2>
+                <p class="panel-sub">Score coverage &amp; caveats</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> % of KB weights live + caveats.</p>
+                  <p><strong>Decide:</strong> low coverage → treat scores as provisional; demand clearer setups.</p>
+                </div>
+              </details>
+            </div>
+            <div id="quality-gauge" class="gauge" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle class="gauge-track" cx="60" cy="60" r="52" />
+                <circle id="gauge-arc" class="gauge-arc" cx="60" cy="60" r="52" />
+              </svg>
+              <div class="gauge-label">
+                <b id="gauge-pct">—</b>
+                <span>coverage</span>
+              </div>
+            </div>
+            <div id="quality-body"></div>
+          </section>
+
+          <section class="panel widget">
+            <h2>Market pulse</h2>
+            <p class="panel-sub">Cue mix (Asia / Europe / US)</p>
+            <div id="sentiment" class="sentiment"></div>
+            <p class="hint-mini">Use with VIX &amp; FII flow — not alone.</p>
+          </section>
+
+          <section class="panel widget">
+            <h2>Needs action</h2>
+            <div id="side-action" class="action-strip compact"></div>
+          </section>
+        </aside>
+      </div>
+
+      <footer class="foot">
+        <p id="links"></p>
+        <p class="note">Same research pack Claude reads. Capital stays in Claude.</p>
+      </footer>
+    </div>
     <script src="./app.js" type="module"></script>
   </body>
 </html>
