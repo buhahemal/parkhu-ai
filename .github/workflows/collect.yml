@@ -31,16 +31,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Unit tests
+        run: pytest -q
+
       - name: Run Parkhu Data Collector
         run: python run.py
 
+      # Data-bot commit: path-scoped only (output / logs / trades). Never stage
+      # code, secrets, or .env. Prefer branch protection on main for human PRs;
+      # this job is the intentional exception for generated artifacts.
       - name: Commit collected data
         run: |
           git config user.name  "parkhu-bot"
           git config user.email "parkhu-bot@users.noreply.github.com"
           # trades/ carries the suggestion ledger across runs — without it the
           # open positions and the measured hit rate reset every day.
-          git add output/ logs/ trades/ || true
+          git add -- output/ logs/ trades/ || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
           else

@@ -149,6 +149,12 @@ def fetch_text(session, url: str, referer: str | None = None):
 # --- Output -----------------------------------------------------------------
 def save_csv(df: pd.DataFrame, name: str, date: str | None = None) -> Path:
     """Write a dataframe to output/<date>/<name>.csv and return the path."""
+    cols = list(df.columns)
+    if len(cols) != len(set(cols)):
+        from collections import Counter
+        dupes = [c for c, n in Counter(cols).items() if n > 1]
+        log.warning("%s.csv has duplicate columns (will confuse readers): %s",
+                    name, dupes)
     out = settings.daily_output_dir(date) / f"{name}.csv"
     df.to_csv(out, index=False)
     log.info("wrote %s (%d rows)", out.name, len(df))
@@ -157,4 +163,6 @@ def save_csv(df: pd.DataFrame, name: str, date: str | None = None) -> Path:
 
 def empty_csv(name: str, columns: list[str], date: str | None = None) -> Path:
     """Write an empty CSV with the expected schema (used on failure)."""
+    from collector.schema import assert_unique_columns
+    assert_unique_columns(columns, name=f"{name}.COLUMNS")
     return save_csv(pd.DataFrame(columns=columns), name, date)

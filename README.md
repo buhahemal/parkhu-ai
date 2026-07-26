@@ -181,6 +181,17 @@ uses **curl_cffi** (browser TLS impersonation) plus a multi-page cookie warm-up
 to get past NSE's Akamai bot manager; if `curl_cffi` is missing it falls back
 to plain `requests` (NSE will then usually 403).
 
+## Architecture
+
+Orchestration lives in [`pipeline/`](pipeline/) (`registry` + `runner`). Coding
+standards and layer rules: [`docs/architecture.md`](docs/architecture.md).
+Retired Yahoo agents: [`collector/_retired/`](collector/_retired/).
+
+```bash
+pytest -q                  # unit tests (also run in CI before collect)
+python run.py              # thin CLI → pipeline.runner
+```
+
 ## Configuration
 
 - `config/universe.py` — trading universe (default: Nifty 50) and ticker maps.

@@ -25,6 +25,7 @@ import numpy as np
 import pandas as pd
 
 from collector.utils import get_logger, save_csv, empty_csv
+from collector.schema import assert_unique_columns
 from collector.derived._utils import load_csv, nifty_sector_for
 
 log = get_logger("stock_analysis")
@@ -86,6 +87,7 @@ COLUMNS = [
     "earnings_within_21d", "days_to_earnings", "event_risk_score",
     "tech_rating", "analyst_rec", "price_target_avg",
 ]
+assert_unique_columns(COLUMNS, name="stock_analysis.COLUMNS")
 
 
 def _num(v):
