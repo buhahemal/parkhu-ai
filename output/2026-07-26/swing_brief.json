@@ -14,114 +14,92 @@
     "horizon_max_days": 22
   },
   "regime": {
-    "market_regime": "Bearish",
-    "nifty_trend": "Bearish",
-    "nifty_pct_change": -0.43,
-    "banknifty_trend": "Neutral",
-    "banknifty_pct_change": 0.18,
-    "india_vix": 14.03,
-    "vix_level": "Medium",
-    "best_sector": "Distribution Services",
-    "best_sector_perf_1m": 7.74,
+    "market_regime": "Neutral",
+    "nifty_trend": "Unknown",
+    "nifty_pct_change": null,
+    "banknifty_trend": "Unknown",
+    "banknifty_pct_change": null,
+    "india_vix": null,
+    "vix_level": "Unknown",
+    "best_sector": "Retail Trade",
+    "best_sector_perf_1m": 2.6,
     "worst_sector": "Utilities",
-    "worst_sector_perf_1m": -5.11,
+    "worst_sector_perf_1m": -5.23,
     "fii_net": -3892.77,
     "dii_net": 5453.55,
-    "crude": 89.31,
-    "crude_pct_change": -3.12,
-    "usdinr": 96.56,
-    "usdinr_pct_change": -0.33,
-    "us_sp500_pct": 0.05,
-    "us_dow_pct": 0.46,
-    "us_vix": 18.58,
-    "us_vix_pct": -0.64,
-    "dxy": 101.47,
-    "dxy_pct": 0.04,
-    "us_10y": 4.68,
-    "asia_cue": "Bearish",
-    "europe_cue": "Bullish",
+    "crude": null,
+    "crude_pct_change": null,
+    "usdinr": null,
+    "usdinr_pct_change": null,
+    "us_sp500_pct": null,
+    "us_dow_pct": null,
+    "us_vix": null,
+    "us_vix_pct": null,
+    "dxy": null,
+    "dxy_pct": null,
+    "us_10y": null,
+    "asia_cue": "Unknown",
+    "europe_cue": "Unknown",
     "global_risk": "Neutral",
-    "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T16:04:59.566445+05:30"
+    "overall_risk": "Unknown",
+    "generated_at_ist": "2026-07-26T16:13:56.298298+05:30"
   },
   "funnel": [
     {
       "gate": "universe",
-      "surviving": 364
+      "surviving": 2969
     },
     {
       "gate": "trend = Bullish",
-      "surviving": 176
+      "surviving": 1203
     },
     {
       "gate": "price > SMA200",
-      "surviving": 148
+      "surviving": 909
     },
     {
       "gate": "price > EMA50",
-      "surviving": 143
+      "surviving": 890
     },
     {
       "gate": "ADX14 > 25",
-      "surviving": 80
+      "surviving": 526
     },
     {
       "gate": "RSI14 in 40-80",
-      "surviving": 79
+      "surviving": 507
     },
     {
       "gate": "RS > 0 vs NIFTY and sector",
-      "surviving": 54
+      "surviving": 0
     },
     {
       "gate": "delivery% >= 40",
-      "surviving": 40
+      "surviving": 0
     },
     {
       "gate": "relative_volume >= 1",
-      "surviving": 9
+      "surviving": 0
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 3
+      "surviving": 0
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 3
+      "surviving": 0
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 3
+      "surviving": 0
     }
   ],
   "ideas": [],
-  "watchlist": [
-    {
-      "symbol": "CREDITACC",
-      "risk_sector": "NBFC & Capital Markets",
-      "cmp": 1517.6,
-      "score": 75.6,
-      "entry_if_triggered": 1517.6,
-      "stop": 1405.76,
-      "t1": 1741.27,
-      "expected_profit_pct_t1": 14.74
-    }
-  ],
+  "watchlist": [],
   "queued_on_portfolio_limits": [],
-  "skipped_beyond_horizon": [
-    {
-      "symbol": "IDFCFIRSTB",
-      "hold_days_t1_raw": 23,
-      "reason": "T1 needs more than 22 trading days (~1 month)"
-    }
-  ],
+  "skipped_beyond_horizon": [],
   "unaffordable_at_this_capital": [],
-  "ignored_below_watch": [
-    {
-      "symbol": "ETERNAL",
-      "score": 48.2
-    }
-  ],
+  "ignored_below_watch": [],
   "scoring": {
     "live_weights": {
       "technical": 20,

@@ -3,65 +3,64 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T16:05:01.444005+05:30",
-  "duration_seconds": 81.9,
+  "generated_at_ist": "2026-07-26T16:14:07.373650+05:30",
+  "duration_seconds": 241.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 364,
-      "seconds": 0.3
+      "rows": 2969,
+      "seconds": 2.3
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 87100,
-      "symbols": 354,
-      "failed": 10,
+      "rows": 516312,
+      "symbols": 2194,
+      "failed": 775,
       "lookback": 250,
       "warm": 339,
-      "cold": 25,
-      "new_symbols": 10,
-      "seconds": 26.4
+      "cold": 2630,
+      "new_symbols": 2615,
+      "seconds": 186.9
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 364,
-      "seconds": 0.0
+      "rows": 2969,
+      "seconds": 0.1
     },
     {
       "agent": "indices",
-      "status": "ok",
-      "rows": 5,
-      "stale": 0,
-      "seconds": 1.5
+      "status": "error",
+      "rows": 0,
+      "seconds": 0.1
     },
     {
       "agent": "sectors",
-      "status": "ok",
-      "rows": 10,
-      "seconds": 0.7
+      "status": "error",
+      "rows": 0,
+      "seconds": 0.1
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 5.7
+      "seconds": 3.7
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.8
+      "seconds": 3.4
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 6.8
+      "seconds": 6.3
     },
     {
       "agent": "stock_options",
@@ -73,56 +72,56 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 353,
-      "seconds": 9.1
+      "rows": 2051,
+      "seconds": 5.2
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 5.1
+      "seconds": 2.8
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 3.6
     },
     {
       "agent": "macro",
       "status": "ok",
-      "rows": 30,
-      "seconds": 2.4
+      "rows": 3,
+      "seconds": 0.2
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 364,
-      "seconds": 0.1
+      "rows": 2969,
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 364,
-      "seconds": 0.4
+      "rows": 2969,
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
-      "rows": 201,
-      "seconds": 0.0
+      "rows": 208,
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
       "status": "ok",
       "rows": 20,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "news_classify",
@@ -133,32 +132,32 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 354,
-      "with_structure": 353,
+      "rows": 2194,
+      "with_structure": 2190,
       "lookback": 250,
-      "seconds": 1.2
+      "seconds": 7.4
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 364,
-      "seconds": 0.6
+      "rows": 2969,
+      "seconds": 3.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
       "rows": 0,
       "ideas": [],
-      "watchlist": 1,
+      "watchlist": 0,
       "open_positions": 0,
       "needing_action": [],
       "closed_today": [],
-      "seconds": 0.0
+      "seconds": 0.1
     }
   ],
-  "ok": 20,
+  "ok": 18,
   "partial": 1,
-  "errors": 0,
+  "errors": 2,
   "access_note": "Prefer output/latest/research_pack.md (or pack_url in output/index.json) for LLM review \u2014 no zip required. download_url is raw GitHub text; preview_url is the GitHub UI. Links work after this run is pushed.",
   "handoff": {
     "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md",
