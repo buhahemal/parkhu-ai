@@ -11,19 +11,21 @@ import pandas as pd
 import yfinance as yf
 
 from collector.utils import get_logger, save_csv, empty_csv
+from collector.yf_history import clean_daily_history
 from config.universe import MACRO_TICKERS
 
 log = get_logger("macro")
 
-COLUMNS = ["metric", "ticker", "value", "prev", "pct_change", "source"]
+COLUMNS = ["metric", "ticker", "value", "prev", "pct_change", "source",
+           "session_date"]
 
 POLICY_PLACEHOLDERS = [
     {"metric": "REPO_RATE", "ticker": "", "value": "", "prev": "",
-     "pct_change": "", "source": "RBI (manual)"},
+     "pct_change": "", "source": "RBI (manual)", "session_date": ""},
     {"metric": "CPI_INFLATION", "ticker": "", "value": "", "prev": "",
-     "pct_change": "", "source": "MOSPI (manual)"},
+     "pct_change": "", "source": "MOSPI (manual)", "session_date": ""},
     {"metric": "GDP_GROWTH", "ticker": "", "value": "", "prev": "",
-     "pct_change": "", "source": "MOSPI (manual)"},
+     "pct_change": "", "source": "MOSPI (manual)", "session_date": ""},
 ]
 
 
@@ -31,9 +33,11 @@ def collect(date: str | None = None) -> dict:
     rows = []
     for name, ticker in MACRO_TICKERS.items():
         try:
-            df = yf.Ticker(ticker).history(period="5d")
+            df = clean_daily_history(yf.Ticker(ticker).history(period="10d"))
             if df.empty:
+                log.warning("macro %s: no usable bars", name)
                 continue
+
             close = float(df["Close"].iloc[-1])
             prev = float(df["Close"].iloc[-2]) if len(df) > 1 else close
             pct = ((close - prev) / prev * 100) if prev else 0.0
@@ -41,6 +45,7 @@ def collect(date: str | None = None) -> dict:
                 "metric": name, "ticker": ticker,
                 "value": round(close, 2), "prev": round(prev, 2),
                 "pct_change": round(pct, 2), "source": "Yahoo Finance",
+                "session_date": str(df["_d"].iloc[-1]),
             })
         except Exception as exc:  # noqa: BLE001
             log.warning("macro %s failed: %s", name, exc)

@@ -11,6 +11,13 @@ produce a final recommendation — composite "Parkhu Score", thesis, sizing and
 conviction are left to the AI layer. Columns we have no source for yet
 (Supertrend, Ichimoku, OBV, CMF, ownership, news sentiment, earnings surprise)
 are present but left blank so the schema is stable.
+
+Phase 1 note: several columns were blank not because the data was missing but
+because this module never read it. tradingview.csv carries 110 columns and
+only 4 are materially empty, while this file was emitting 29 empty ones. The
+swing-structure highs/lows, 52-week levels, turnover, weekly/monthly
+volatility, beta and float were all already being collected daily and thrown
+away here. They are now surfaced.
 """
 from __future__ import annotations
 
@@ -18,28 +25,41 @@ import numpy as np
 import pandas as pd
 
 from collector.utils import get_logger, save_csv, empty_csv
-from collector.derived._utils import load_csv
+from collector.derived._utils import load_csv, nifty_sector_for
 
 log = get_logger("stock_analysis")
 
 COLUMNS = [
     # identity
-    "symbol", "company", "sector", "industry", "market_cap", "cmp", "previous_close",
+    "symbol", "company", "sector", "industry", "nse_sector", "sector_match_basis",
+    "market_cap", "cmp", "previous_close",
     # trend
-    "ema20", "ema50", "ema100", "ema200", "sma50", "sma200",
+    "ema20", "ema50", "ema100", "ema200", "sma20", "sma50", "sma100", "sma200",
     "supertrend", "ichimoku_signal", "trend_label", "trend_score",
     # momentum
     "rsi14", "macd", "macd_signal", "macd_hist", "adx14", "roc20", "stoch_rsi",
-    "momentum_score",
+    "stoch_rsi_d", "williams_r", "cci20", "momentum_score",
     # volume
     "volume", "avg_volume_10d", "avg_volume_30d", "relative_volume",
-    "delivery_pct", "obv", "cmf", "volume_score",
+    "delivery_pct", "value_traded", "turnover_cr", "float_pct",
+    "obv", "cmf", "volume_score",
     # price structure
+    # NOTE support1/2, resistance1/2 and pivot are single-session floor-trader
+    # pivots derived from one day's H/L/C. They sit within ~2% of spot and are
+    # noise on a 3-90 day hold. The swing_* levels below are the ones a swing
+    # thesis should be checked against.
     "support1", "support2", "resistance1", "resistance2", "pivot", "vwap", "atr14",
+    "bb_upper", "bb_lower",
+    # swing structure (already collected by TradingView, previously unused)
+    "high_1m", "low_1m", "high_3m", "low_3m", "high_6m", "low_6m",
+    "high_52w", "low_52w", "high_all",
+    "nearest_overhead", "nearest_overhead_ref", "overhead_supply_pct",
+    "headroom_to_52w_high_pct", "dist_52w_low_pct",
     # trade levels
     "entry_low", "entry_high", "stop_loss", "target1", "target2", "target3", "risk_reward",
     # relative strength
     "rs_rank", "return_1m", "return_3m", "dist_52w_high_pct",
+    "volatility_w", "volatility_m", "beta_1y",
     "rs_vs_nifty_1m", "rs_vs_sector_1m",
     # fundamentals
     "pe", "pb", "peg", "ev_ebitda", "roe", "roce", "debt_equity",
@@ -58,8 +78,7 @@ COLUMNS = [
     "liquidity_sweep", "smart_money_score",
     # final engine sub-scores (AI computes the composite)
     "technical_score", "fundamental_score_final", "earnings_score_final",
-    "news_score_final", "institution_score", "sector_score", "macro_score",
-    "risk_score",
+    "news_score_final", "sector_score", "macro_score", "risk_score",
     # cross-sectional factor z-scores (relative to the universe; higher = better)
     "value_z", "momentum_z", "quality_z", "lowvol_z", "growth_z", "size_z",
     "composite_factor_z", "composite_factor_rank",
@@ -102,6 +121,22 @@ def _blend(*series: pd.Series) -> pd.Series:
 def _zget(series: pd.Series, i):
     v = series.get(i)
     return round(float(v), 2) if (v is not None and pd.notna(v)) else None
+
+
+def _overhead(close, levels: list[tuple[str, float | None]]):
+    """Nearest known price level above `close`, and how far away it is.
+
+    A swing target that sits above every high of the last six months is not
+    impossible, but it is a materially different proposition to one with clear
+    air beneath it, and nothing in the pipeline said so before.
+    """
+    if close is None or close <= 0:
+        return None, None, None
+    above = [(ref, lv) for ref, lv in levels if lv is not None and lv > close]
+    if not above:
+        return None, "clear of all known highs", None
+    ref, lv = min(above, key=lambda kv: kv[1])
+    return round(lv, 2), ref, round((lv / close - 1) * 100, 2)
 
 
 def _idx(df: pd.DataFrame):
@@ -208,7 +243,12 @@ def collect(date: str | None = None) -> dict:
     tv["_rs_basis"] = tv["_rs_basis"].fillna(pd.to_numeric(tv.get("perf_1m"), errors="coerce"))
     rs_rank = (tv["_rs_basis"].rank(pct=True) * 100).round()
     tv["_perf_1m_num"] = pd.to_numeric(tv.get("perf_1m"), errors="coerce")
-    sector_mean = tv.groupby("sector")["_perf_1m_num"].transform("mean")
+    tv["_peer_group"] = [
+        nifty_sector_for(sec, ind)[0] or (str(sec) if sec else "Unknown")
+        for sec, ind in zip(tv.get("sector", pd.Series(dtype=object)),
+                            tv.get("industry", pd.Series(dtype=object)))
+    ]
+    sector_mean = tv.groupby("_peer_group")["_perf_1m_num"].transform("mean")
     sector_score = (sector_mean.rank(pct=True) * 100).round()
 
     # Single market-level macro score from market_summary (run before this).
@@ -265,6 +305,7 @@ def collect(date: str | None = None) -> dict:
         ema200 = _num(r.get("ema200"))
         sma20 = _num(r.get("sma20"))
         sma100 = _num(r.get("sma100"))
+        nse_sec, sec_basis = nifty_sector_for(r.get("sector"), r.get("industry"))
         trend_score, trend_label = _trend(close, [sma20, sma50, sma100, sma200, ema50, ema200])
 
         rsi = _num(r.get("RSI"))
@@ -300,7 +341,22 @@ def collect(date: str | None = None) -> dict:
             rr = round((t1 - close) / (close - stop), 2) if close > stop else None
 
         hi52 = _num(r.get("price_52_week_high"))
+        lo52 = _num(r.get("price_52_week_low"))
         dist52 = round((close / hi52 - 1) * 100, 2) if (close and hi52) else None
+        dist52_lo = round((close / lo52 - 1) * 100, 2) if (close and lo52) else None
+        head52 = round((hi52 / close - 1) * 100, 2) if (close and hi52) else None
+
+        hi1m, lo1m = _num(r.get("high_1m")), _num(r.get("low_1m"))
+        hi3m, lo3m = _num(r.get("high_3m")), _num(r.get("low_3m"))
+        hi6m, lo6m = _num(r.get("high_6m")), _num(r.get("low_6m"))
+        hi_all = _num(r.get("high_all"))
+        ovh, ovh_ref, ovh_pct = _overhead(close, [
+            ("1m high", hi1m), ("3m high", hi3m), ("6m high", hi6m),
+            ("52w high", hi52), ("all-time high", hi_all),
+        ])
+
+        value_traded = _num(r.get("value_traded"))
+        turnover_cr = round(value_traded / 1e7, 2) if value_traded else None
 
         pe = _num(r.get("pe"))
         peg = _num(r.get("price_earnings_growth_ttm"))
@@ -321,24 +377,45 @@ def collect(date: str | None = None) -> dict:
 
         rows.append({
             "symbol": sym, "company": r.get("company"), "sector": r.get("sector"),
-            "industry": r.get("industry"), "market_cap": _num(r.get("market_cap")),
+            "industry": r.get("industry"),
+            "nse_sector": nse_sec, "sector_match_basis": sec_basis,
+            "market_cap": _num(r.get("market_cap")),
             "cmp": close,
             "previous_close": round(close - change_abs, 2) if (close is not None and change_abs is not None) else None,
+            # TradingView's India scan exposes SMA20/SMA100 but no EMA20/EMA100.
+            # scripts/probe_tv_fields.py tests whether EMA20/EMA100 are accepted;
+            # until that comes back these stay honestly null rather than being
+            # silently filled with the SMA, which is a different indicator.
             "ema20": None, "ema50": ema50, "ema100": None, "ema200": ema200,
-            "sma50": sma50, "sma200": sma200,
+            "sma20": sma20, "sma50": sma50, "sma100": sma100, "sma200": sma200,
             "supertrend": None, "ichimoku_signal": None,
             "trend_label": trend_label, "trend_score": trend_score,
             "rsi14": rsi, "macd": macd, "macd_signal": macd_sig, "macd_hist": macd_hist,
-            "adx14": adx, "roc20": roc, "stoch_rsi": stoch_rsi, "momentum_score": mom_score,
+            "adx14": adx, "roc20": roc, "stoch_rsi": stoch_rsi,
+            "stoch_rsi_d": _num(r.get("stoch_rsi_d")),
+            "williams_r": _num(r.get("williams_r")), "cci20": _num(r.get("CCI20")),
+            "bb_upper": _num(r.get("bb_upper")), "bb_lower": _num(r.get("bb_lower")),
+            "momentum_score": mom_score,
             "volume": vol, "avg_volume_10d": avg10, "avg_volume_30d": avg30,
             "relative_volume": rel_vol, "delivery_pct": deliv_pct,
+            "value_traded": value_traded, "turnover_cr": turnover_cr,
+            "float_pct": _num(r.get("float_shares_percent_current")),
             "obv": None, "cmf": None, "volume_score": vol_score,
             "support1": s1, "support2": s2, "resistance1": r1, "resistance2": r2,
             "pivot": pivot, "vwap": _num(r.get("vwap")), "atr14": atr,
+            "high_1m": hi1m, "low_1m": lo1m, "high_3m": hi3m, "low_3m": lo3m,
+            "high_6m": hi6m, "low_6m": lo6m,
+            "high_52w": hi52, "low_52w": lo52, "high_all": hi_all,
+            "nearest_overhead": ovh, "nearest_overhead_ref": ovh_ref,
+            "overhead_supply_pct": ovh_pct,
+            "headroom_to_52w_high_pct": head52, "dist_52w_low_pct": dist52_lo,
             "entry_low": entry_low, "entry_high": entry_high, "stop_loss": stop,
             "target1": t1, "target2": t2, "target3": t3, "risk_reward": rr,
             "rs_rank": rs_rank.get(i), "return_1m": _num(r.get("perf_1m")),
             "return_3m": _num(r.get("perf_3m")), "dist_52w_high_pct": dist52,
+            "volatility_w": _num(r.get("volatility_w")),
+            "volatility_m": _num(r.get("volatility_m")),
+            "beta_1y": _num(r.get("beta_1_year")),
             "rs_vs_nifty_1m": _num(_get(rs, sym, "rs_vs_nifty_1m")),
             "rs_vs_sector_1m": _num(_get(rs, sym, "rs_vs_sector_1m")),
             "pe": pe, "pb": _num(r.get("pb")), "peg": peg,
@@ -363,7 +440,7 @@ def collect(date: str | None = None) -> dict:
             "smart_money_score": _num(_get(fno, sym, "fno_score")),
             "technical_score": tech_score, "fundamental_score_final": fund_score,
             "earnings_score_final": earn_score, "news_score_final": None,
-            "institution_score": None, "sector_score": sector_score.get(i),
+            "sector_score": sector_score.get(i),
             "macro_score": macro_score, "risk_score": risk,
             "value_z": _zget(value_z, i), "momentum_z": _zget(momentum_z, i),
             "quality_z": _zget(quality_z, i), "lowvol_z": _zget(lowvol_z, i),

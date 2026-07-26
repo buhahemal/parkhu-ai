@@ -5,7 +5,7 @@ import pandas as pd
 
 from collector.utils import get_logger, save_csv, empty_csv
 from collector.derived._utils import (
-    TV_TO_NIFTY_SECTOR,
+    nifty_sector_for,
     load_csv,
     nifty_perf,
     sector_perf_map,
@@ -14,7 +14,7 @@ from collector.derived._utils import (
 log = get_logger("relative_strength")
 
 COLUMNS = [
-    "symbol", "sector", "nifty_sector_index",
+    "symbol", "sector", "industry", "nifty_sector_index", "sector_match_basis",
     "perf_1w", "perf_1m", "nifty_1w", "nifty_1m", "sector_1m",
     "rs_vs_nifty_1w", "rs_vs_nifty_1m", "rs_vs_sector_1m",
 ]
@@ -34,9 +34,10 @@ def collect(date: str | None = None) -> dict:
     for _, r in tv.iterrows():
         sym = r.get("symbol")
         sector = r.get("sector", "")
+        industry = r.get("industry", "")
         perf_1w = r.get("perf_1w")
         perf_1m = r.get("perf_1m")
-        idx = TV_TO_NIFTY_SECTOR.get(sector)
+        idx, basis = nifty_sector_for(sector, industry)
         sector_1m = sector_map.get(idx) if idx else None
 
         rs_n1w = rs_n1m = rs_s1m = None
@@ -50,7 +51,9 @@ def collect(date: str | None = None) -> dict:
         rows.append({
             "symbol": sym,
             "sector": sector,
+            "industry": industry,
             "nifty_sector_index": idx or "",
+            "sector_match_basis": basis,
             "perf_1w": perf_1w,
             "perf_1m": perf_1m,
             "nifty_1w": nifty_1w,

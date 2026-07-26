@@ -7,7 +7,7 @@ behaviour stays consistent across the whole pipeline.
 from __future__ import annotations
 
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import pytz
@@ -35,6 +35,32 @@ def run_date() -> str:
     if override:
         return override
     return datetime.now(IST).strftime("%Y-%m-%d")
+
+
+# NSE and BSE are closed on Saturday and Sunday. The cron fires every day, so
+# without this a weekend run writes a folder full of Friday's closes stamped
+# with a weekend date, and every consumer downstream reads it as a new session.
+def is_trading_day(date: str | None = None) -> bool:
+    """False on Saturday and Sunday. Does not know exchange holidays."""
+    d = datetime.strptime(date or run_date(), "%Y-%m-%d")
+    return d.weekday() < 5
+
+
+def last_trading_day(date: str | None = None) -> str:
+    """`date` itself on a weekday, else the preceding Friday."""
+    d = datetime.strptime(date or run_date(), "%Y-%m-%d")
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d.strftime("%Y-%m-%d")
+
+
+def session_date(date: str | None = None) -> str:
+    """The trading session the data actually describes.
+
+    Differs from run_date() on weekends, which is the whole point: a Sunday
+    collection is still reporting Friday's close.
+    """
+    return last_trading_day(date)
 
 
 def daily_output_dir(date: str | None = None) -> Path:

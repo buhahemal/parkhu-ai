@@ -1,5 +1,24 @@
 # Parkhu Data Collector — data gaps blocking the KB
 
+> **Status — Phases 0–2 applied (see `scripts/probe_tv_fields.py` and the notes below).**
+>
+> | Gap | Status |
+> |---|---|
+> | #3 pivots unusable | **Mitigated.** Intraday pivots kept for back-compat; `high_1m/3m/6m`, `high_52w`, `high_all`, `nearest_overhead`, `overhead_supply_pct` added from data TradingView was already returning. Real swing levels still need #1. |
+> | #4 `relative_volume` broken | **Appears resolved.** Universe median is now 0.74 (p25 0.51, p75 1.07), not the 0.04 recorded here. Re-verify before relying on it. |
+> | #9 blank `ema20` | **Diagnosed, not fixed.** TradingView's India scan exposes SMA20/SMA100 but no EMA20/EMA100 in the tested field list. `sma20`/`sma100` are now emitted; `ema20`/`ema100` stay null pending `scripts/probe_tv_fields.py`. |
+> | #12 sector labels | **Fixed for relative strength.** Mapping now resolves on `industry` before `sector`, adds NIFTY_REALTY/NIFTY_BANK/NIFTY_INFRA, and returns None rather than guessing. LODHA's `rs_vs_sector_1m` corrects from 23.73 to 12.84. The 25% *cap* was already correct — `swing_brief.INDUSTRY_TO_RISK_SECTOR` handles it, so this entry overstated the problem. |
+> | #10 US/Asia macro nulls | **Fixed.** yfinance appends a NaN-close row for the in-progress session; `dropna` before `iloc[-1]`. |
+> | indices chaining | **Fixed.** De-duplicates by calendar date, records `session_date`/`prev_session_date`, flags `is_stale`. |
+> | weekend folders | **Flagged, not stopped.** `report.json` now carries `collection_date`, `session_date` and `is_trading_day`. The cron still writes a weekend folder; suppressing it is a workflow change. |
+>
+> Also fixed: `institution_score` appeared twice in `stock_analysis.COLUMNS` and
+> silently collapsed to one column. `sector_score` now ranks within the resolved
+> NIFTY sector instead of TradingView's 94-name "Finance" bucket.
+>
+> Net effect on `stock_analysis.csv`: **113 columns / 84 populated → 137 / 109.**
+> The 28 that remain empty are the ones genuinely blocked on #1, #5, #6, #7, #8.
+
 Findings from running the Parkhu KB gates against `output/2026-07-21` … `output/2026-07-25`
 (368-name universe). Ordered by how much each gap costs you, not by effort.
 

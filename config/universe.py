@@ -78,6 +78,12 @@ SECTOR_INDICES = {
     "NIFTY_REALTY": "^CNXREALTY",
     "NIFTY_ENERGY": "^CNXENERGY",
     "NIFTY_FIN_SERVICE": "NIFTY_FIN_SERVICE.NS",
+    # Added for the industry-level sector mapping in collector/derived/_utils.py.
+    # Banks and infra were previously folded into FIN_SERVICE and ENERGY.
+    # Verify both tickers resolve on the first CI run — sectors.collect()
+    # skips a bad ticker with a warning rather than failing the agent.
+    "NIFTY_BANK": "^NSEBANK",
+    "NIFTY_INFRA": "^CNXINFRA",
 }
 
 # --- Macro / global tickers (Yahoo Finance) --------------------------------

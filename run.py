@@ -165,8 +165,19 @@ def main() -> None:
         "download_url": download_url(date, "report.json"),
         "preview_url": preview_url(date, "report.json"),
     }
+    session = settings.session_date(date)
+    trading = settings.is_trading_day(date)
+    if not trading:
+        log.warning("%s is a weekend — no session. Data describes %s.", date, session)
+
     report = {
         "date": date,
+        # collection_date is when the cron fired; session_date is the trading
+        # day the numbers describe. They diverge every weekend, and conflating
+        # them is how a Friday close gets read as a fresh Sunday print.
+        "collection_date": date,
+        "session_date": session,
+        "is_trading_day": trading,
         "generated_at_ist": datetime.now(settings.IST).isoformat(),
         "duration_seconds": round(time.time() - started, 1),
         "watchlist_size": wl_count,
