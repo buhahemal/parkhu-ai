@@ -12,6 +12,7 @@ env:
 
 permissions:
   contents: write             # needed to commit the day's output back
+  actions: write              # dispatch Deploy Parkhu Pages after bot push
 
 jobs:
   collect:
@@ -43,8 +44,10 @@ jobs:
       # Data-bot commit: path-scoped only (output / logs / trades / database/ohlc).
       # Never stage code, secrets, or .env. Prefer branch protection on main for
       # human PRs; this job is the intentional exception for generated artifacts.
-      # Pushing output/latest/research_pack.json triggers Deploy Parkhu Pages.
+      # GITHUB_TOKEN pushes do NOT trigger path-filtered Pages workflows, so we
+      # explicitly workflow_dispatch Deploy Parkhu Pages after a successful push.
       - name: Commit collected data
+        id: commit_data
         run: |
           git config user.name  "parkhu-bot"
           git config user.email "parkhu-bot@users.noreply.github.com"
@@ -54,10 +57,20 @@ jobs:
           git add -- output/ logs/ trades/ database/ohlc/ || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "data: daily collection $(date -u +'%Y-%m-%d')"
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Deploy Parkhu Pages
+        if: steps.commit_data.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run "Deploy Parkhu Pages" --ref "${{ github.ref_name }}"
+          echo "Dispatched Deploy Parkhu Pages on ${{ github.ref_name }}"
 
       - name: Publish output links
         if: always()
