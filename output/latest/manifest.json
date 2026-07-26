@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-07-26",
-  "generated_at_ist": "2026-07-26T17:08:17.214440+05:30",
+  "generated_at_ist": "2026-07-26T20:42:56.725152+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -36,7 +36,7 @@
         "volume"
       ],
       "present": true,
-      "rows": 638482
+      "rows": 639686
     },
     "ohlc_features.csv": {
       "agent": "ohlc_features (derived)",
@@ -79,7 +79,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 5
+      "rows": 0
     },
     "sectors.csv": {
       "agent": "sectors",
@@ -92,7 +92,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 10
+      "rows": 0
     },
     "earnings.csv": {
       "agent": "earnings",
@@ -263,7 +263,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 30
+      "rows": 3
     },
     "delivery.csv": {
       "agent": "delivery",
@@ -414,7 +414,21 @@
         "ideas",
         "watchlist",
         "portfolio",
-        "scoring"
+        "scoring",
+        "survivor_outcomes"
+      ],
+      "present": true
+    },
+    "funnel_detail.json": {
+      "agent": "swing_brief (brief layer)",
+      "source": "stock_analysis + market_summary",
+      "description": "Per-gate top-50 still-in / removed symbols (by parkhu_score) plus top-50 final-gate survivor_outcomes with why-not-selected reasons.",
+      "use_case": "Desk Filters expand + Survivors page; same capped lists also embedded in research_pack / swing_brief.json.",
+      "key_columns": [
+        "funnel",
+        "survivor_outcomes",
+        "survivor_outcomes_total",
+        "symbol_cap"
       ],
       "present": true
     },

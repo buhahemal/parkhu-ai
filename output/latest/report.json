@@ -3,8 +3,8 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T17:08:17.215247+05:30",
-  "duration_seconds": 702.0,
+  "generated_at_ist": "2026-07-26T20:42:56.725846+05:30",
+  "duration_seconds": 414.2,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -12,20 +12,20 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 2969,
-      "seconds": 2.2
+      "seconds": 3.4
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 638482,
+      "rows": 639686,
       "symbols": 2696,
       "failed": 273,
       "lookback": 250,
-      "warm": 2441,
-      "cold": 528,
+      "warm": 2447,
+      "cold": 522,
       "new_symbols": 273,
       "retries": 2,
-      "seconds": 645.7
+      "seconds": 347.1
     },
     {
       "agent": "earnings",
@@ -35,34 +35,33 @@
     },
     {
       "agent": "indices",
-      "status": "ok",
-      "rows": 5,
-      "stale": 0,
-      "seconds": 0.4
+      "status": "error",
+      "rows": 0,
+      "seconds": 2.1
     },
     {
       "agent": "sectors",
-      "status": "ok",
-      "rows": 10,
-      "seconds": 0.8
+      "status": "error",
+      "rows": 0,
+      "seconds": 0.1
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.5
+      "seconds": 4.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.6
+      "seconds": 4.3
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 6.2
+      "seconds": 5.7
     },
     {
       "agent": "stock_options",
@@ -75,31 +74,31 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2051,
-      "seconds": 4.3
+      "seconds": 7.2
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 5.7
+      "seconds": 3.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.7
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
-      "rows": 30,
-      "seconds": 2.3
+      "rows": 3,
+      "seconds": 0.7
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 2969,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
@@ -137,31 +136,29 @@
       "rows": 2696,
       "with_structure": 2692,
       "lookback": 250,
-      "seconds": 8.8
+      "seconds": 8.9
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 2969,
-      "seconds": 3.3
+      "seconds": 3.4
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 1,
-      "ideas": [
-        "SREEL"
-      ],
-      "watchlist": 3,
-      "open_positions": 0,
+      "rows": 0,
+      "ideas": [],
+      "watchlist": 0,
+      "open_positions": 1,
       "needing_action": [],
       "closed_today": [],
-      "seconds": 0.1
+      "seconds": 3.6
     }
   ],
-  "ok": 20,
+  "ok": 18,
   "partial": 1,
-  "errors": 0,
+  "errors": 2,
   "access_note": "Prefer output/latest/research_pack.md (or pack_url in output/index.json) for LLM review \u2014 no zip required. download_url is raw GitHub text; preview_url is the GitHub UI. Links work after this run is pushed.",
   "handoff": {
     "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md",
@@ -214,6 +211,10 @@
     "fno_momentum.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/fno_momentum.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/fno_momentum.csv"
+    },
+    "funnel_detail.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/funnel_detail.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/funnel_detail.json"
     },
     "indices.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/indices.csv",

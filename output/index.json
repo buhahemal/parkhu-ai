@@ -2,7 +2,7 @@
   "latest": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T17:08:17.215247+05:30",
+  "generated_at_ist": "2026-07-26T20:42:56.725846+05:30",
   "dates": [
     "2026-06-26",
     "2026-06-27",
@@ -79,6 +79,7 @@
     "event_risk.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/event_risk.csv",
     "fii.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/fii.csv",
     "fno_momentum.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/fno_momentum.csv",
+    "funnel_detail.json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/funnel_detail.json",
     "indices.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/indices.csv",
     "macro.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/macro.csv",
     "manifest.json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/manifest.json",
