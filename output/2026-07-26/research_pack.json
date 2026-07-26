@@ -3,7 +3,7 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T11:41:46.412633+05:30",
+  "generated_at_ist": "2026-07-26T13:56:29.510968+05:30",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -44,7 +44,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T11:41:45.936798+05:30"
+    "generated_at_ist": "2026-07-26T13:56:29.174266+05:30"
   },
   "funnel": [
     {
@@ -511,7 +511,7 @@
         "mae_pct": -2.85,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 9,
+        "reconfirmed_count": 10,
         "notes": null
       },
       {
@@ -623,7 +623,7 @@
         "mae_pct": 0.0,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 6,
+        "reconfirmed_count": 7,
         "notes": null
       },
       {
@@ -651,7 +651,7 @@
         "mae_pct": 0.0,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 6,
+        "reconfirmed_count": 7,
         "notes": null
       }
     ],
@@ -834,22 +834,22 @@
       "sector": "Finance"
     },
     {
-      "symbol": "NESTLEIND",
-      "close": 1443.5,
+      "symbol": "ADANIENSOL",
+      "close": 1702.2,
       "score": 13,
-      "perf_1m": 3.5509325681,
-      "rs_vs_nifty_1m": 4.61,
-      "rs_vs_sector_1m": 5.18,
-      "deliv_pct": 56.32,
-      "pct_change_oi": -3.85,
-      "upside_to_target_pct": 10.07,
-      "atr": 33.1179387382,
-      "stop_1_5atr": 1393.82,
-      "target_5pct": 1515.68,
+      "perf_1m": 13.5557038025,
+      "rs_vs_nifty_1m": 14.62,
+      "rs_vs_sector_1m": 15.95,
+      "deliv_pct": 33.21,
+      "pct_change_oi": 0.57,
+      "upside_to_target_pct": 5.1,
+      "atr": 57.0874280381,
+      "stop_1_5atr": 1616.57,
+      "target_5pct": 1787.31,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Consumer Non-Durables"
+      "sector": "Utilities"
     },
     {
       "symbol": "SHYAMMETL",
@@ -870,24 +870,6 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "ADANIENSOL",
-      "close": 1702.2,
-      "score": 13,
-      "perf_1m": 13.5557038025,
-      "rs_vs_nifty_1m": 14.62,
-      "rs_vs_sector_1m": 15.95,
-      "deliv_pct": 33.21,
-      "pct_change_oi": 0.57,
-      "upside_to_target_pct": 5.1,
-      "atr": 57.0874280381,
-      "stop_1_5atr": 1616.57,
-      "target_5pct": 1787.31,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Utilities"
-    },
-    {
       "symbol": "ATHERENERG",
       "close": 1208.7,
       "score": 13,
@@ -906,22 +888,22 @@
       "sector": "Consumer Durables"
     },
     {
-      "symbol": "KARURVYSYA",
-      "close": 338.9,
-      "score": 12,
-      "perf_1m": 15.8632478632,
-      "rs_vs_nifty_1m": 16.92,
-      "rs_vs_sector_1m": 18.37,
-      "deliv_pct": 54.27,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.42,
-      "atr": 11.7215285897,
-      "stop_1_5atr": 321.32,
-      "target_5pct": 355.84,
+      "symbol": "NESTLEIND",
+      "close": 1443.5,
+      "score": 13,
+      "perf_1m": 3.5509325681,
+      "rs_vs_nifty_1m": 4.61,
+      "rs_vs_sector_1m": 5.18,
+      "deliv_pct": 56.32,
+      "pct_change_oi": -3.85,
+      "upside_to_target_pct": 10.07,
+      "atr": 33.1179387382,
+      "stop_1_5atr": 1393.82,
+      "target_5pct": 1515.68,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Finance"
+      "sector": "Consumer Non-Durables"
     },
     {
       "symbol": "ANANDRATHI",
@@ -942,24 +924,6 @@
       "sector": "Finance"
     },
     {
-      "symbol": "INDHOTEL",
-      "close": 727.45,
-      "score": 12,
-      "perf_1m": 0.476519337,
-      "rs_vs_nifty_1m": 1.54,
-      "rs_vs_sector_1m": 2.11,
-      "deliv_pct": 48.53,
-      "pct_change_oi": -6.37,
-      "upside_to_target_pct": 14.19,
-      "atr": 16.3428480038,
-      "stop_1_5atr": 702.94,
-      "target_5pct": 763.82,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Services"
-    },
-    {
       "symbol": "MOTHERSON",
       "close": 145.55,
       "score": 12,
@@ -976,42 +940,6 @@
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "LAURUSLABS",
-      "close": 1601.2,
-      "score": 12,
-      "perf_1m": 7.897574124,
-      "rs_vs_nifty_1m": 8.96,
-      "rs_vs_sector_1m": 5.78,
-      "deliv_pct": 31.4,
-      "pct_change_oi": 9.69,
-      "upside_to_target_pct": 0.55,
-      "atr": 40.0226934595,
-      "stop_1_5atr": 1541.17,
-      "target_5pct": 1681.26,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Health Technology"
-    },
-    {
-      "symbol": "PFOCUS",
-      "close": 289.29,
-      "score": 12,
-      "perf_1m": 37.888465205,
-      "rs_vs_nifty_1m": 38.95,
-      "rs_vs_sector_1m": 39.52,
-      "deliv_pct": 36.72,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 26.86,
-      "atr": 12.8609692621,
-      "stop_1_5atr": 270.0,
-      "target_5pct": 303.75,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Consumer Services"
     },
     {
       "symbol": "NYKAA",
@@ -1050,22 +978,40 @@
       "sector": "Health Technology"
     },
     {
-      "symbol": "IDFCFIRSTB",
-      "close": 80.79,
+      "symbol": "INDHOTEL",
+      "close": 727.45,
       "score": 12,
-      "perf_1m": 3.0221882173,
-      "rs_vs_nifty_1m": 4.08,
-      "rs_vs_sector_1m": 5.53,
-      "deliv_pct": 48.26,
-      "pct_change_oi": 1.37,
-      "upside_to_target_pct": 7.69,
-      "atr": 1.7538803205,
-      "stop_1_5atr": 78.16,
-      "target_5pct": 84.83,
+      "perf_1m": 0.476519337,
+      "rs_vs_nifty_1m": 1.54,
+      "rs_vs_sector_1m": 2.11,
+      "deliv_pct": 48.53,
+      "pct_change_oi": -6.37,
+      "upside_to_target_pct": 14.19,
+      "atr": 16.3428480038,
+      "stop_1_5atr": 702.94,
+      "target_5pct": 763.82,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Finance"
+      "sector": "Consumer Services"
+    },
+    {
+      "symbol": "LAURUSLABS",
+      "close": 1601.2,
+      "score": 12,
+      "perf_1m": 7.897574124,
+      "rs_vs_nifty_1m": 8.96,
+      "rs_vs_sector_1m": 5.78,
+      "deliv_pct": 31.4,
+      "pct_change_oi": 9.69,
+      "upside_to_target_pct": 0.55,
+      "atr": 40.0226934595,
+      "stop_1_5atr": 1541.17,
+      "target_5pct": 1681.26,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Health Technology"
     },
     {
       "symbol": "GODREJIND",
@@ -1084,6 +1030,60 @@
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Process Industries"
+    },
+    {
+      "symbol": "KARURVYSYA",
+      "close": 338.9,
+      "score": 12,
+      "perf_1m": 15.8632478632,
+      "rs_vs_nifty_1m": 16.92,
+      "rs_vs_sector_1m": 18.37,
+      "deliv_pct": 54.27,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.42,
+      "atr": 11.7215285897,
+      "stop_1_5atr": 321.32,
+      "target_5pct": 355.84,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "PFOCUS",
+      "close": 289.29,
+      "score": 12,
+      "perf_1m": 37.888465205,
+      "rs_vs_nifty_1m": 38.95,
+      "rs_vs_sector_1m": 39.52,
+      "deliv_pct": 36.72,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 26.86,
+      "atr": 12.8609692621,
+      "stop_1_5atr": 270.0,
+      "target_5pct": 303.75,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Consumer Services"
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "close": 80.79,
+      "score": 12,
+      "perf_1m": 3.0221882173,
+      "rs_vs_nifty_1m": 4.08,
+      "rs_vs_sector_1m": 5.53,
+      "deliv_pct": 48.26,
+      "pct_change_oi": 1.37,
+      "upside_to_target_pct": 7.69,
+      "atr": 1.7538803205,
+      "stop_1_5atr": 78.16,
+      "target_5pct": 84.83,
+      "earnings_within_21d": false,
+      "event_risk_score": 1,
+      "tech_rating": "Buy",
+      "sector": "Finance"
     }
   ],
   "urls": {
@@ -1126,5 +1126,106 @@
       }
     }
   },
-  "howto": "Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only."
+  "howto": "Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.",
+  "enrichment": {
+    "status": "ok",
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "model_requested": [
+      "llama-3.3-70b-versatile",
+      "meta-llama/llama-4-scout-17b-16e-instruct",
+      "llama-3.1-8b-instant"
+    ],
+    "attempts": [
+      {
+        "model": "llama-3.3-70b-versatile",
+        "ok": true,
+        "error": null
+      }
+    ],
+    "fallback_used": false,
+    "generated_at_ist": "2026-07-26T13:56:31.931565+05:30",
+    "market_brief": "The market remains in a bearish regime with a medium overall risk. The Nifty trend is bearish with a 0.43% decline, and the India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.",
+    "stance": "defensive",
+    "focus": [
+      "Bearish market regime",
+      "Medium overall risk",
+      "Earnings ahead"
+    ],
+    "suggestions": [
+      {
+        "symbol": "LODHA",
+        "action": "consider_entry",
+        "conviction": "high",
+        "entry": 1144.1,
+        "stop": 1061.79,
+        "t1": 1308.72,
+        "hold_days": 16,
+        "rationale": "High Parkhu score of 90.3 and buy band",
+        "levels_source": "parkhu_deterministic"
+      },
+      {
+        "symbol": "ICICIBANK",
+        "action": "manage_open",
+        "conviction": "medium",
+        "entry": 1432.9,
+        "stop": 1381.32,
+        "t1": 1536.05,
+        "hold_days": 16,
+        "rationale": "Already in open book with a buy band and high Parkhu score of 82.8",
+        "levels_source": "parkhu_deterministic"
+      },
+      {
+        "symbol": "IIFL",
+        "action": "consider_entry",
+        "conviction": "medium",
+        "entry": 556.55,
+        "stop": 515.37,
+        "t1": 638.9,
+        "hold_days": 16,
+        "rationale": "Buy band and high Parkhu score of 82.4",
+        "levels_source": "parkhu_deterministic"
+      },
+      {
+        "symbol": "IPCALAB",
+        "action": "stand_aside",
+        "conviction": "low",
+        "entry": 1828.2,
+        "stop": 1715.39,
+        "t1": 2053.81,
+        "hold_days": 16,
+        "rationale": "Already in open book but no clear trend",
+        "levels_source": "parkhu_deterministic"
+      },
+      {
+        "symbol": "J&KBANK",
+        "action": "watch",
+        "conviction": "low",
+        "entry": 184.33,
+        "stop": 169.92,
+        "t1": 213.16,
+        "hold_days": 16,
+        "rationale": "Dropped out of today's universe and requires manual chart check",
+        "levels_source": "parkhu_deterministic"
+      },
+      {
+        "symbol": "ZYDUSLIFE",
+        "action": "stand_aside",
+        "conviction": "low",
+        "entry": 1146.2,
+        "stop": 1074.19,
+        "t1": 1290.23,
+        "hold_days": 35,
+        "rationale": "Earnings ahead and reduce or stand aside recommended",
+        "levels_source": "parkhu_deterministic"
+      }
+    ],
+    "open_book_notes": [
+      "ICICIBANK: manage open position",
+      "IPCALAB: monitor trend",
+      "J&KBANK: manual chart check required",
+      "ZYDUSLIFE: reduce or stand aside due to earnings ahead"
+    ],
+    "claude_feed": "Bearish regime, defensive stance, top ideas: LODHA, ICICIBANK, IIFL; caveats: provisional scores, no promoter pledge and ownership data, trade levels rebuilt"
+  }
 }

@@ -41,7 +41,7 @@ TATASTEEL,True,4.0,2026-07-30,False,,0,3
 HINDZINC,False,82.0,2026-10-16,False,,0,0
 HINDALCO,True,12.0,2026-08-07,False,,0,3
 GRASIM,True,12.0,2026-08-07,True,Dividend - Rs 10 Per Share,0,5
-EICHERMOT,True,3.0,2026-07-29,True,Dividend - Rs 82 Per Share,0,5
+EICHERMOT,True,3.0,2026-07-29,True,Dividend - Rs 82 Per Share,1,6
 ADANIENSOL,False,108.0,2026-11-11,False,,0,0
 IOC,True,1.0,2026-07-27,False,,0,3
 INDIGO,False,96.0,2026-10-30,False,,0,0
@@ -160,7 +160,7 @@ POLICYBZR,True,16.0,2026-08-11,False,,0,3
 NAM_INDIA,False,101.0,2026-11-04,False,,0,0
 BIOCON,True,11.0,2026-08-06,False,,0,3
 BAJAJHFL,True,3.0,2026-07-29,False,,0,3
-IDFCFIRSTB,False,92.0,2026-10-26,False,,0,0
+IDFCFIRSTB,False,92.0,2026-10-26,False,,1,1
 MCX,True,1.0,2026-07-27,False,,0,3
 SWIGGY,True,4.0,2026-07-30,False,,0,3
 PRESTIGE,True,3.0,2026-07-29,False,,0,3
@@ -212,7 +212,7 @@ HINDCOPPER,False,,,False,,0,0
 KEI,True,8.0,2026-08-03,False,,0,3
 PREMIERENE,True,1.0,2026-07-27,False,,0,3
 BDL,True,12.0,2026-08-07,False,,0,3
-AIIL,False,,,False,,1,1
+AIIL,False,,,False,,0,0
 PAGEIND,True,18.0,2026-08-13,False,,0,3
 GODREJIND,False,,,False,,0,0
 360ONE,False,95.0,2026-10-29,False,,0,0

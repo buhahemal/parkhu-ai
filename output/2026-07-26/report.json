@@ -3,8 +3,8 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T11:41:46.412633+05:30",
-  "duration_seconds": 30.2,
+  "generated_at_ist": "2026-07-26T13:56:29.510968+05:30",
+  "duration_seconds": 39.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -12,7 +12,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.2
+      "seconds": 0.4
     },
     {
       "agent": "earnings",
@@ -25,55 +25,55 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.7
+      "seconds": 1.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.8
+      "seconds": 1.7
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.1
+      "seconds": 5.2
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.8
+      "seconds": 4.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 5.4
+      "seconds": 6.1
     },
     {
       "agent": "delivery",
       "status": "ok",
       "rows": 353,
-      "seconds": 3.7
+      "seconds": 3.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.9
+      "seconds": 5.1
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 4.1
+      "seconds": 3.0
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.5
+      "seconds": 5.3
     },
     {
       "agent": "relative_strength",
@@ -85,7 +85,7 @@
       "agent": "event_risk",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "fno_momentum",
@@ -115,7 +115,7 @@
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.4
+      "seconds": 0.3
     },
     {
       "agent": "swing_brief",

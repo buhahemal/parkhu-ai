@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-07-26T11:41:46.412633+05:30
+- **generated_at_ist:** 2026-07-26T13:56:29.510968+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -60,20 +60,39 @@
 ## Swing candidates (top)
 
 - CREDITACC: score=14 rs_nifty=10.95 deliv=55.56
-- NESTLEIND: score=13 rs_nifty=4.61 deliv=56.32
-- SHYAMMETL: score=13 rs_nifty=7.11 deliv=48.32
 - ADANIENSOL: score=13 rs_nifty=14.62 deliv=33.21
+- SHYAMMETL: score=13 rs_nifty=7.11 deliv=48.32
 - ATHERENERG: score=13 rs_nifty=20.85 deliv=47.89
-- KARURVYSYA: score=12 rs_nifty=16.92 deliv=54.27
+- NESTLEIND: score=13 rs_nifty=4.61 deliv=56.32
 - ANANDRATHI: score=12 rs_nifty=7.64 deliv=53.24
-- INDHOTEL: score=12 rs_nifty=1.54 deliv=48.53
 - MOTHERSON: score=12 rs_nifty=2.84 deliv=40.07
-- LAURUSLABS: score=12 rs_nifty=8.96 deliv=31.4
-- PFOCUS: score=12 rs_nifty=38.95 deliv=36.72
 - NYKAA: score=12 rs_nifty=6.9 deliv=47.2
 - IPCALAB: score=12 rs_nifty=10.21 deliv=42.98
-- IDFCFIRSTB: score=12 rs_nifty=4.08 deliv=48.26
+- INDHOTEL: score=12 rs_nifty=1.54 deliv=48.53
+- LAURUSLABS: score=12 rs_nifty=8.96 deliv=31.4
 - GODREJIND: score=12 rs_nifty=17.92 deliv=40.89
+- KARURVYSYA: score=12 rs_nifty=16.92 deliv=54.27
+- PFOCUS: score=12 rs_nifty=38.95 deliv=36.72
+- IDFCFIRSTB: score=12 rs_nifty=4.08 deliv=48.26
+
+## Groq desk note
+
+- **model:** llama-3.3-70b-versatile
+- **stance:** defensive
+
+The market remains in a bearish regime with a medium overall risk. The Nifty trend is bearish with a 0.43% decline, and the India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.
+
+- **LODHA** [consider_entry/high] entry=1144.1 stop=1061.79 t1=1308.72 hold=16d — High Parkhu score of 90.3 and buy band
+- **ICICIBANK** [manage_open/medium] entry=1432.9 stop=1381.32 t1=1536.05 hold=16d — Already in open book with a buy band and high Parkhu score of 82.8
+- **IIFL** [consider_entry/medium] entry=556.55 stop=515.37 t1=638.9 hold=16d — Buy band and high Parkhu score of 82.4
+- **IPCALAB** [stand_aside/low] entry=1828.2 stop=1715.39 t1=2053.81 hold=16d — Already in open book but no clear trend
+- **J&KBANK** [watch/low] entry=184.33 stop=169.92 t1=213.16 hold=16d — Dropped out of today's universe and requires manual chart check
+- **ZYDUSLIFE** [stand_aside/low] entry=1146.2 stop=1074.19 t1=1290.23 hold=35d — Earnings ahead and reduce or stand aside recommended
+
+### Claude feed
+
+Bearish regime, defensive stance, top ideas: LODHA, ICICIBANK, IIFL; caveats: provisional scores, no promoter pledge and ownership data, trade levels rebuilt
+
 
 ## Deep-dive URLs (after push)
 
