@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-label="Parkhu">
+  <title>Parkhu</title>
+  <!-- Standalone full logo: mosaic P + geometric wordmark (no external fonts) -->
+  <g id="mark" transform="translate(4,4)">
+    <rect x="6" y="4" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="6" y="16" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="6" y="28" width="9" height="9" rx="1.5" fill="#f59e0b"/>
+    <rect x="6" y="40" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="6" y="52" width="9" height="9" rx="1.5" fill="#60a5fa"/>
+    <rect x="6" y="64" width="9" height="9" rx="1.5" fill="#34d399"/>
+    <rect x="6" y="76" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="18" y="4" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="18" y="16" width="9" height="9" rx="1.5" fill="#a78bfa"/>
+    <rect x="18" y="28" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="18" y="40" width="9" height="9" rx="1.5" fill="#38bdf8"/>
+    <rect x="18" y="52" width="9" height="9" rx="1.5" fill="#f59e0b"/>
+    <rect x="18" y="64" width="9" height="9" rx="1.5" fill="#ef4444"/>
+    <rect x="18" y="76" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="30" y="4" width="9" height="9" rx="1.5" fill="#34d399"/>
+    <rect x="42" y="4" width="9" height="9" rx="1.5" fill="#60a5fa"/>
+    <rect x="54" y="4" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="30" y="16" width="9" height="9" rx="1.5" fill="#f59e0b"/>
+    <circle cx="46.5" cy="20.5" r="4.2" fill="#3b82f6"/>
+    <rect x="54" y="16" width="9" height="9" rx="1.5" fill="#ef4444"/>
+    <rect x="30" y="28" width="9" height="9" rx="1.5" fill="#38bdf8"/>
+    <g transform="translate(43,28)">
+      <rect x="3.5" y="0" width="2" height="9" fill="#94a3b8"/>
+      <rect x="1.5" y="2" width="6" height="5" rx="0.8" fill="#22c55e"/>
+    </g>
+    <rect x="54" y="28" width="9" height="9" rx="1.5" fill="#a78bfa"/>
+    <rect x="30" y="40" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="42" y="40" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="54" y="40" width="9" height="9" rx="1.5" fill="#34d399"/>
+    <circle cx="35.5" cy="56.5" r="3.2" fill="#60a5fa"/>
+    <circle cx="35.5" cy="68.5" r="3.2" fill="#f59e0b"/>
+    <circle cx="35.5" cy="80.5" r="3.2" fill="#22c55e"/>
+    <path d="M8 72 L14 60 L20 66 L26 48 L32 54" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <!-- Geometric PARKHU wordmark -->
+  <g fill="#e8eef8" transform="translate(92,18)">
+    <!-- P -->
+    <path d="M0 0h18c10 0 16 5 16 14s-6 14-16 14H8v20H0V0zm8 8v12h9c4.2 0 7-2 7-6s-2.8-6-7-6H8z"/>
+    <!-- A -->
+    <path d="M46 48L58 0h9l12 48h-8.5l-2.2-10H56.7L54.5 48H46zm13.2-17h7.6L62.9 14h-.2l-3.5 17z"/>
+    <!-- R -->
+    <path d="M90 0h17c10 0 16 5 16 13.5 0 6.5-3.5 11-9.5 12.5L128 48h-9l-13-20h-8v20h-8V0zm8 8v13h8.5c4 0 6.5-2 6.5-6.5S110.5 8 106.5 8H98z"/>
+    <!-- K -->
+    <path d="M140 0h8v20l16-20h10l-18 22 19 26h-10l-17-24v24h-8V0z"/>
+    <!-- H -->
+    <path d="M186 0h8v20h18V0h8v48h-8V28h-18v20h-8V0z"/>
+    <!-- U -->
+    <path d="M232 0h8v30c0 7.5 4 11.5 11 11.5s11-4 11-11.5V0h8v30c0 13-8.5 20-19 20s-19-7-19-20V0z"/>
+  </g>
+  <g fill="#8b93a7" transform="translate(94,78)">
+    <rect x="0" y="0" width="6" height="2" rx="1"/>
+    <rect x="9" y="0" width="6" height="2" rx="1"/>
+    <rect x="18" y="0" width="6" height="2" rx="1"/>
+    <rect x="30" y="0" width="40" height="2" rx="1" opacity="0.45"/>
+    <text x="78" y="4" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="2.5" fill="#8b93a7">MARKET DESK</text>
+  </g>
+</svg>

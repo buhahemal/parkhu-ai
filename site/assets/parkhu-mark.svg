@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 96" role="img" aria-label="Parkhu">
+  <title>Parkhu</title>
+  <g transform="translate(8,4)">
+    <rect x="6" y="4" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="6" y="16" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="6" y="28" width="9" height="9" rx="1.5" fill="#f59e0b"/>
+    <rect x="6" y="40" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="6" y="52" width="9" height="9" rx="1.5" fill="#60a5fa"/>
+    <rect x="6" y="64" width="9" height="9" rx="1.5" fill="#34d399"/>
+    <rect x="6" y="76" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+
+    <rect x="18" y="4" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="18" y="16" width="9" height="9" rx="1.5" fill="#a78bfa"/>
+    <rect x="18" y="28" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="18" y="40" width="9" height="9" rx="1.5" fill="#38bdf8"/>
+    <rect x="18" y="52" width="9" height="9" rx="1.5" fill="#f59e0b"/>
+    <rect x="18" y="64" width="9" height="9" rx="1.5" fill="#ef4444"/>
+    <rect x="18" y="76" width="9" height="9" rx="1.5" fill="#22c55e"/>
+
+    <rect x="30" y="4" width="9" height="9" rx="1.5" fill="#34d399"/>
+    <rect x="42" y="4" width="9" height="9" rx="1.5" fill="#60a5fa"/>
+    <rect x="54" y="4" width="9" height="9" rx="1.5" fill="#22c55e"/>
+
+    <rect x="30" y="16" width="9" height="9" rx="1.5" fill="#f59e0b"/>
+    <circle cx="46.5" cy="20.5" r="4.2" fill="#3b82f6"/>
+    <rect x="54" y="16" width="9" height="9" rx="1.5" fill="#ef4444"/>
+
+    <rect x="30" y="28" width="9" height="9" rx="1.5" fill="#38bdf8"/>
+    <g transform="translate(43,28)">
+      <rect x="3.5" y="0" width="2" height="9" fill="#94a3b8"/>
+      <rect x="1.5" y="2" width="6" height="5" rx="0.8" fill="#22c55e"/>
+    </g>
+    <rect x="54" y="28" width="9" height="9" rx="1.5" fill="#a78bfa"/>
+
+    <rect x="30" y="40" width="9" height="9" rx="1.5" fill="#22c55e"/>
+    <rect x="42" y="40" width="9" height="9" rx="1.5" fill="#3b82f6"/>
+    <rect x="54" y="40" width="9" height="9" rx="1.5" fill="#34d399"/>
+
+    <circle cx="35.5" cy="56.5" r="3.2" fill="#60a5fa"/>
+    <circle cx="35.5" cy="68.5" r="3.2" fill="#f59e0b"/>
+    <circle cx="35.5" cy="80.5" r="3.2" fill="#22c55e"/>
+
+    <path d="M8 72 L14 60 L20 66 L26 48 L32 54" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+  </g>
+</svg>
