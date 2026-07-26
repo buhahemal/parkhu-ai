@@ -11,7 +11,7 @@ import pandas as pd
 from config import risk
 
 from research.backtest.funnel import apply_levels_filter, apply_proxy_gates
-from research.backtest.panel import build_day_rows, load_bars, session_calendar
+from research.backtest.panel import build_day_rows, build_panel, load_bars, session_calendar
 from research.backtest.simulate import simulate_trade, summarize_returns
 
 
@@ -78,12 +78,22 @@ def collect_funnel_trades(
             for r in build_regime_series(nifty).to_dict(orient="records")
         }
 
-    for i, day in enumerate(sessions):
-        if step_days > 1 and i % step_days != 0:
+    sampled = [s for i, s in enumerate(sessions) if step_days <= 1 or i % step_days == 0]
+    entry_days = set(sampled)
+    panel = build_panel(
+        list(bars_by_sym.keys()),
+        sampled,
+        bars_by_sym=bars_by_sym,
+        nifty=nifty,
+        cache_dir=cache_dir,
+    )
+
+    for day in sessions:
+        if day not in entry_days:
             continue
         if disable_regimes and regime_by_date.get(day, "unknown") in disable_regimes:
             continue
-        rows = build_day_rows(day, bars_by_sym, nifty)
+        rows = build_day_rows(day, bars_by_sym, nifty, panel=panel)
         survivors, _ = apply_proxy_gates(rows, skip=skip)
         candidates = apply_levels_filter(survivors)
         ranked = sorted(candidates, key=lambda r: float(r.get("proxy_score") or 0), reverse=True)

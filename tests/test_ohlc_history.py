@@ -158,20 +158,22 @@ def test_cold_short_cache_uses_full_period(tmp_path, monkeypatch):
     cache = tmp_path / "cache"
     cache.mkdir()
     _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
+    monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "max")
+    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 0)
 
     _seed_cache(cache, "SHORTCO", 3)
     periods: list[str] = []
 
     def fake_download(tickers, period="400d"):
         periods.append(period)
-        assert period == "400d"
+        assert period == "max"
         return _yf_frame("SHORTCO.NS", 15, start=date(2025, 1, 2)), ""
 
     monkeypatch.setattr("collector.history.ohlc._universe", lambda date=None: ["SHORTCO"])
     monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
 
     result = collect("2026-07-26")
-    assert periods == ["400d"]
+    assert periods == ["max"]
     assert result["cold"] == 1
     assert result["warm"] == 0
     cached = pd.read_csv(cache / "SHORTCO.csv")
@@ -184,6 +186,8 @@ def test_new_stock_full_backfill_creates_csv(tmp_path, monkeypatch):
     cache = tmp_path / "cache"
     cache.mkdir()
     _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
+    monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "max")
+    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 0)
 
     assert not (cache / "NEWCO.csv").exists()
     periods: list[str] = []
@@ -191,20 +195,47 @@ def test_new_stock_full_backfill_creates_csv(tmp_path, monkeypatch):
     def fake_download(tickers, period="400d"):
         periods.append(period)
         assert tickers == ["NEWCO.NS"]
-        assert period == "400d"
+        assert period == "max"
         return _yf_frame("NEWCO.NS", 15, start=date(2025, 3, 3)), ""
 
     monkeypatch.setattr("collector.history.ohlc._universe", lambda date=None: ["NEWCO"])
     monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
 
     result = collect("2026-07-26")
-    assert periods == ["400d"]
+    assert periods == ["max"]
     assert result["new_symbols"] == 1
     assert result["cold"] == 1
     assert (cache / "NEWCO.csv").is_file()
     out = pd.read_csv(settings.OUTPUT_DIR / "2026-07-26" / "history" / "ohlc.csv")
     assert "NEWCO" in set(out["symbol"])
     assert len(out) >= 10
+
+
+def test_incremental_merge_never_trims_deep_cache(tmp_path, monkeypatch):
+    """Keep-all: a deep cache must not shrink after a short incremental update."""
+    from config import settings
+
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
+    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 0)
+    monkeypatch.setattr(settings, "OHLC_WARM_MIN_BARS", 100)
+
+    _seed_cache(cache, "DEEPCO", 200, start=date(2024, 1, 2))
+    before = len(pd.read_csv(cache / "DEEPCO.csv"))
+    assert before == 200
+
+    def fake_download(tickers, period="400d"):
+        assert period == "5d"
+        return _yf_frame("DEEPCO.NS", 3, start=date(2025, 6, 2)), ""
+
+    monkeypatch.setattr("collector.history.ohlc._universe", lambda date=None: ["DEEPCO"])
+    monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
+
+    result = collect("2026-07-26")
+    assert result["warm"] == 1
+    cached = pd.read_csv(cache / "DEEPCO.csv")
+    assert len(cached) >= before
 
 
 def test_rate_limit_retries_after_wait(tmp_path, monkeypatch):

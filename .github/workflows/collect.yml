@@ -2,8 +2,16 @@ name: Parkhu Daily Data Collection
 
 on:
   schedule:
-    - cron: "30 0 * * *"   # Every day at 6:00 AM IST (00:30 UTC)
-  workflow_dispatch: {}    # Allow manual runs from the Actions tab
+    # Post-close authoritative scanner (18:00 IST = 12:30 UTC)
+    - cron: "30 12 * * 1-5"
+    # Premarket context refresh (06:00 IST = 00:30 UTC)
+    - cron: "30 0 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "post_close (authoritative) or premarket_context"
+        required: false
+        default: "post_close"
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -35,10 +43,31 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Resolve run mode
+        id: mode
+        run: |
+          # Manual dispatch wins; else infer from cron hour (UTC).
+          INPUT="${{ github.event.inputs.run_mode }}"
+          if [ -n "$INPUT" ]; then
+            MODE="$INPUT"
+          else
+            HOUR=$(date -u +%H)
+            # 00:xx UTC ≈ 06:00 IST premarket; 12:xx UTC ≈ 18:00 IST post-close
+            if [ "$HOUR" = "00" ] || [ "$HOUR" = "01" ]; then
+              MODE="premarket_context"
+            else
+              MODE="post_close"
+            fi
+          fi
+          echo "run_mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Resolved PARKHU_RUN_MODE=$MODE"
+
       - name: Unit tests
         run: pytest -q
 
       - name: Run Parkhu Data Collector
+        env:
+          PARKHU_RUN_MODE: ${{ steps.mode.outputs.run_mode }}
         run: python run.py
 
       # Data-bot commit: path-scoped only (output / logs / trades / database/ohlc).
@@ -59,7 +88,7 @@ jobs:
             echo "No new data to commit."
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "data: daily collection $(date -u +'%Y-%m-%d')"
+            git commit -m "data: daily collection $(date -u +'%Y-%m-%d') (${{ steps.mode.outputs.run_mode }})"
             git push
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
@@ -69,8 +98,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh workflow run "Deploy Parkhu Pages" --ref "${{ github.ref_name }}"
-          echo "Dispatched Deploy Parkhu Pages on ${{ github.ref_name }}"
+          # Only deploy when latest was promoted (validated pack present).
+          if [ -f output/latest/research_pack.json ]; then
+            gh workflow run "Deploy Parkhu Pages" --ref "${{ github.ref_name }}"
+            echo "Dispatched Deploy Parkhu Pages on ${{ github.ref_name }}"
+          else
+            echo "No validated research_pack in output/latest — skip Pages deploy"
+          fi
 
       - name: Publish output links
         if: always()
@@ -84,7 +118,7 @@ jobs:
           PAGES="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
 
           {
-            echo "## Parkhu Data — ${DATE}"
+            echo "## Parkhu Data — ${DATE} (${{ steps.mode.outputs.run_mode }})"
             echo ""
             echo "**Claude handoff (no zip):** [research_pack.md](${BASE_RAW}/output/latest/research_pack.md) · [index.json](${BASE_RAW}/output/index.json)"
             echo ""

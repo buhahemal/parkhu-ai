@@ -540,12 +540,19 @@ def build_research_pack(date: str | None = None) -> dict[str, Any]:
             "preview_url": pub.preview_url(date, name),
         }
 
+    run_mode = brief.get("run_mode") or settings.pipeline_run_mode()
+    source_brief_date = brief.get("source_brief_date") or (
+        brief.get("data_date") if brief else None
+    )
     pack: dict[str, Any] = {
         "schema": "parkhu.research_pack.v2",
         "collection_date": date,
         "session_date": settings.session_date(date),
         "is_trading_day": settings.is_trading_day(date),
+        "run_mode": run_mode,
+        "source_brief_date": source_brief_date,
         "generated_at_ist": None,  # filled by caller from report if available
+        "data_quality": None,  # filled by write_research_pack when provided
         # capital kept for Claude handoff; Pages desk does not display it
         "capital": brief.get("capital"),
         "kb_version": brief.get("kb_version"),
@@ -824,19 +831,30 @@ def write_research_pack(
     date: str | None = None,
     *,
     generated_at_ist: str | None = None,
+    run_mode: str | None = None,
+    source_brief_date: str | None = None,
+    data_quality: dict[str, Any] | None = None,
 ) -> dict[str, Path]:
-    """Write research_pack.json/.md into output/<date>/."""
+    """Write research_pack.json/.md into output/<date>/ (atomic JSON replace)."""
     date = date or settings.run_date()
     out = settings.daily_output_dir(date)
     pack = _json_safe(build_research_pack(date))
     pack["generated_at_ist"] = generated_at_ist
+    if run_mode:
+        pack["run_mode"] = run_mode
+    if source_brief_date:
+        pack["source_brief_date"] = source_brief_date
+    if data_quality is not None:
+        pack["data_quality"] = data_quality
     # Additive Groq narrative — skip-safe; never mutates ideas/ledger levels.
     pack = enrich_research_pack(pack)
     pack = _json_safe(pack)
     json_path = out / "research_pack.json"
     md_path = out / "research_pack.md"
-    with open(json_path, "w", encoding="utf-8") as f:
+    tmp_json = out / "research_pack.json.tmp"
+    with open(tmp_json, "w", encoding="utf-8") as f:
         json.dump(pack, f, indent=2, default=str, allow_nan=False)
+    tmp_json.replace(json_path)
     md_path.write_text(render_research_pack_md(pack), encoding="utf-8")
     log.info("wrote research_pack.json/.md for %s", date)
     return {"json": json_path, "md": md_path}

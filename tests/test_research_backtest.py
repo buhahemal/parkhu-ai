@@ -34,7 +34,10 @@ def _synth_bars(n: int = 320, seed: int = 0, drift: float = 0.002) -> pd.DataFra
 
 
 def test_proxy_trend_and_features():
-    assert proxy_trend_label(cmp=120, sma200=100, ema50=110, adx14=30) == "Bullish"
+    # Trend is SMA50>SMA200 — independent of ADX / price-vs-MA.
+    assert proxy_trend_label(sma50=110, sma200=100) == "Bullish"
+    assert proxy_trend_label(sma50=90, sma200=100) == "Bearish"
+    assert proxy_trend_label(cmp=120, sma200=100, ema50=110, adx14=30) == "Neutral"
     bars = _synth_bars()
     feat = features_asof(
         bars, symbol="TEST", asof=bars["date"].iloc[-1], nifty_close=100, nifty_close_21d_ago=95
@@ -42,6 +45,7 @@ def test_proxy_trend_and_features():
     assert feat is not None
     assert feat["cmp"] > 0
     assert feat["sma200"] is not None
+    assert feat["sma50"] is not None
     assert feat["adx14"] is not None
     assert "levels" in feat
 

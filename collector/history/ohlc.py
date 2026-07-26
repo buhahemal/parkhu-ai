@@ -108,7 +108,11 @@ def _bars_to_rows(symbol: str, hist: pd.DataFrame) -> list[dict]:
 
 
 def _merge_cache(symbol: str, fresh: pd.DataFrame, *, lookback: int | None = None) -> pd.DataFrame:
-    """Merge Yahoo bars into cache and trim to lookback."""
+    """Merge Yahoo bars into cache.
+
+    ``lookback <= 0`` (default) keeps all sessions. Positive lookback trims to
+    the last N bars (legacy / tests only).
+    """
     keep = int(lookback if lookback is not None else settings.OHLC_LOOKBACK_SESSIONS)
     cached = _load_cache(symbol)
     fresh_rows = _bars_to_rows(symbol, fresh)
@@ -286,7 +290,9 @@ def _process_chunk(
             else:
                 frame = _extract_ticker_frame(data, tk)
             hist = clean_daily_history(frame)
-            hist = trim_sessions(hist, trim_to)
+            # trim_to <= 0 means keep the full Yahoo response (no clip).
+            if trim_to > 0:
+                hist = trim_sessions(hist, trim_to)
             if hist.empty:
                 cached = _load_cache(nse)
                 if not cached.empty:
@@ -394,7 +400,8 @@ def backfill_yahoo_ticker(
     else:
         frame = data
     hist = clean_daily_history(frame)
-    hist = trim_sessions(hist, keep)
+    if keep > 0:
+        hist = trim_sessions(hist, keep)
     if hist.empty:
         return {"agent": "ohlc_index", "status": "error", "symbol": store_as, "error": "no_bars"}
     merged = _merge_cache(store_as, hist, lookback=keep)
@@ -501,7 +508,8 @@ def backfill_one_symbol(
             else:
                 frame = data if data is not None else None
             hist = clean_daily_history(frame)
-            hist = trim_sessions(hist, keep)
+            if keep > 0:
+                hist = trim_sessions(hist, keep)
             if not hist.empty:
                 merged = _merge_cache(symbol, hist, lookback=keep)
                 return {
@@ -658,11 +666,11 @@ def backfill_symbols(
 ) -> dict:
     """Cold-backfill a symbol list into ``database/ohlc/`` (and refresh daily pack rows).
 
-    ``lookback`` defaults to daily ``OHLC_LOOKBACK_SESSIONS``. Research backfills
-    pass ``OHLC_RESEARCH_LOOKBACK_SESSIONS`` so caches can keep ~5y of bars.
+    ``lookback`` defaults to daily ``OHLC_LOOKBACK_SESSIONS`` (0 = keep all).
+    Research backfills pass ``OHLC_RESEARCH_LOOKBACK_SESSIONS`` (also 0 by default).
 
     ``skip_min_bars``: if set, symbols that already have at least that many cached
-    bars are skipped (resume-friendly for multi-hour 5y runs).
+    bars are skipped (resume-friendly for multi-hour full-history runs).
     """
     symbols = [str(s).strip() for s in symbols if str(s).strip()]
     if not symbols:
@@ -762,6 +770,14 @@ def collect(date: str | None = None) -> dict:
     if settings.MAX_SYMBOLS:
         symbols = symbols[: settings.MAX_SYMBOLS]
 
+    ignored_map = load_ohlc_ignore()
+    if ignored_map:
+        before = len(symbols)
+        symbols = [s for s in symbols if s not in ignored_map]
+        skipped = before - len(symbols)
+        if skipped:
+            log.info("ohlc daily skip ignore-list=%d", skipped)
+
     if not symbols:
         _write_daily(pd.DataFrame(columns=COLUMNS), date)
         _write_failed([], date)
@@ -788,6 +804,8 @@ def collect(date: str | None = None) -> dict:
     failed_symbols: list[str] = []
     retries_used = 0
 
+    # Keep-all cache: never trim persistent store. Warm download is still short.
+    cache_keep = int(settings.OHLC_LOOKBACK_SESSIONS)  # 0 = keep all
     warm_trim = max(int(settings.OHLC_INCREMENTAL_DAYS) * 2, int(settings.OHLC_INCREMENTAL_DAYS))
     if warm:
         parts, warm_failed, retries = _drain_batches(
@@ -795,6 +813,7 @@ def collect(date: str | None = None) -> dict:
             _incremental_period(),
             trim_to=warm_trim,
             chunk_size=chunk_size,
+            lookback=cache_keep,
         )
         all_parts.extend(parts)
         retries_used += retries
@@ -813,8 +832,9 @@ def collect(date: str | None = None) -> dict:
         parts, cold_failed, retries = _drain_batches(
             cold_unique,
             _cold_period(),
-            trim_to=settings.OHLC_LOOKBACK_SESSIONS,
+            trim_to=0,  # keep all Yahoo sessions from period=max
             chunk_size=chunk_size,
+            lookback=cache_keep,
         )
         all_parts.extend(parts)
         failed_symbols.extend(cold_failed)

@@ -55,15 +55,6 @@ def last_trading_day(date: str | None = None) -> str:
     return d.strftime("%Y-%m-%d")
 
 
-def session_date(date: str | None = None) -> str:
-    """The trading session the data actually describes.
-
-    Differs from run_date() on weekends, which is the whole point: a Sunday
-    collection is still reporting Friday's close.
-    """
-    return last_trading_day(date)
-
-
 def daily_output_dir(date: str | None = None) -> Path:
     """Return (and create) output/<date>/ for the current run."""
     date = date or run_date()
@@ -79,24 +70,28 @@ TECHNICAL_HISTORY_PERIOD = "1y"
 # How many symbols to process. None = full configured universe.
 MAX_SYMBOLS = int(os.getenv("PARKHU_MAX_SYMBOLS", "0")) or None
 
-# Daily OHLC history (Yahoo Finance via .NS). ~250 sessions ≈ 1y of NSE bars.
-# Warm symbols: short incremental pull; cold/new: full backfill into database/ohlc/.
-# Daily collect stays on this shorter window; research backfill uses RESEARCH_* below.
-OHLC_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_LOOKBACK", "250") or "250")
+# Daily OHLC history (Yahoo Finance via .NS).
+# Persistent cache keeps ALL Yahoo sessions (lookback 0 = never trim).
+# Warm symbols: short incremental pull; cold/new: period=max into database/ohlc/.
+OHLC_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_LOOKBACK", "0") or "0")
 OHLC_INCREMENTAL_DAYS = int(os.getenv("PARKHU_OHLC_INCREMENTAL_DAYS", "5") or "5")
 _ohlc_warm_env = os.getenv("PARKHU_OHLC_WARM_MIN_BARS")
-OHLC_WARM_MIN_BARS = (
-    int(_ohlc_warm_env) if _ohlc_warm_env not in (None, "") else max(OHLC_LOOKBACK_SESSIONS - 10, 1)
-)
-OHLC_COLD_PERIOD = os.getenv("PARKHU_OHLC_COLD_PERIOD", "400d") or "400d"
-# Research / walk-forward: ~1260 sessions ≈ 5y NSE bars (does not change daily collect).
-OHLC_RESEARCH_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_RESEARCH_LOOKBACK", "1260") or "1260")
-OHLC_RESEARCH_PERIOD = os.getenv("PARKHU_OHLC_RESEARCH_PERIOD", "5y") or "5y"
+OHLC_WARM_MIN_BARS = int(_ohlc_warm_env) if _ohlc_warm_env not in (None, "") else 240
+OHLC_COLD_PERIOD = os.getenv("PARKHU_OHLC_COLD_PERIOD", "max") or "max"
+# Research scripts share keep-all semantics (0 = never trim). Period max = all Yahoo history.
+OHLC_RESEARCH_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_RESEARCH_LOOKBACK", "0") or "0")
+OHLC_RESEARCH_PERIOD = os.getenv("PARKHU_OHLC_RESEARCH_PERIOD", "max") or "max"
+# Pipeline run mode: post_close (authoritative) or premarket_context (reuse brief).
+PIPELINE_RUN_MODE = (os.getenv("PARKHU_RUN_MODE", "post_close") or "post_close").strip().lower()
 OHLC_CHUNK_SIZE = int(os.getenv("PARKHU_OHLC_CHUNK_SIZE", "80") or "80")
 OHLC_CHUNK_SLEEP_S = float(os.getenv("PARKHU_OHLC_CHUNK_SLEEP_S", "1.0") or "1.0")
 # Yahoo rate-limit / timeout: adaptive probe wait (try again as soon as ready).
-OHLC_RETRY_WAIT_S = float(os.getenv("PARKHU_OHLC_RETRY_WAIT_S", "210") or "210")  # max sleep / fallback
-OHLC_RETRY_PROBE_S = float(os.getenv("PARKHU_OHLC_RETRY_PROBE_S", "15") or "15")  # first probe sleep
+OHLC_RETRY_WAIT_S = float(
+    os.getenv("PARKHU_OHLC_RETRY_WAIT_S", "210") or "210"
+)  # max sleep / fallback
+OHLC_RETRY_PROBE_S = float(
+    os.getenv("PARKHU_OHLC_RETRY_PROBE_S", "15") or "15"
+)  # first probe sleep
 OHLC_RETRY_MAX = int(os.getenv("PARKHU_OHLC_RETRY_MAX", "2") or "2")  # retries after first try
 OHLC_YF_THREADS = (os.getenv("PARKHU_OHLC_YF_THREADS", "1") or "1").strip().lower() in {
     "1",
@@ -110,6 +105,45 @@ OHLC_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 OHLC_IGNORE_PATH = Path(
     os.getenv("PARKHU_OHLC_IGNORE_PATH", "") or str(DATABASE_DIR / "ohlc_ignore.csv")
 )
+
+
+def nifty_completed_session() -> str | None:
+    """Latest completed NIFTY bar date from ``database/ohlc/NIFTY.csv``, if present."""
+    path = OHLC_CACHE_DIR / "NIFTY.csv"
+    if not path.is_file():
+        return None
+    try:
+        import pandas as pd
+
+        df = pd.read_csv(path, usecols=["date"])
+        if df.empty:
+            return None
+        return str(df["date"].astype(str).str[:10].max())
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def session_date(date: str | None = None) -> str:
+    """The trading session the data actually describes.
+
+    Prefers the latest completed NIFTY OHLC session when available so morning
+    runs are not stamped with today's calendar date before the open. Falls
+    back to weekday / prior-Friday logic when the cache is missing.
+    """
+    nifty = nifty_completed_session()
+    if nifty:
+        run = (date or run_date())[:10]
+        return min(nifty, last_trading_day(run))
+    return last_trading_day(date)
+
+
+def pipeline_run_mode() -> str:
+    """``post_close`` (authoritative) or ``premarket_context`` (reuse brief)."""
+    mode = (PIPELINE_RUN_MODE or "post_close").strip().lower()
+    if mode in {"premarket_context", "premarket", "context"}:
+        return "premarket_context"
+    return "post_close"
+
 
 # Stock equity option chains (NSE). Off by default — full F&O universe is slow.
 STOCK_OPTIONS_ENABLED = (os.getenv("PARKHU_STOCK_OPTIONS", "0") or "0").strip() in {

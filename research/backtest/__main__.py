@@ -15,6 +15,7 @@ from research.backtest.basket import run_basket_analysis
 from research.backtest.engine import run_backtest
 from research.backtest.expectancy import run_expectancy
 from research.backtest.regime import run_regime_analysis
+from research.backtest.rr_sweep import run_rr_sweep
 from research.backtest.score_deciles import run_score_deciles
 from research.ev_distribution import run_ev_distribution
 from research.factors.regime_weights import run_regime_factor_weights
@@ -67,6 +68,14 @@ def main(argv: list[str] | None = None) -> int:
         "--use-demotions",
         action="store_true",
         help="Skip PARKHU_RESEARCH_DEMOTED_GATES when replaying the funnel",
+    )
+
+    rr_p = sub.add_parser("rr-sweep", help="Realized expectancy across MIN_RR_T1 floors")
+    _add_common(rr_p)
+    rr_p.add_argument(
+        "--rr-grid",
+        default="2.0,2.25,2.5,3.0,3.3",
+        help="Comma-separated MIN_RR_T1 candidates",
     )
 
     reg_p = sub.add_parser("regime", help="Per-regime funnel metrics (Step 4)")
@@ -158,6 +167,28 @@ def main(argv: list[str] | None = None) -> int:
             f"overall hit_rate={report.get('overall_hit_rate_t1_before_stop')} "
             f"implied_min_rr={report.get('overall_implied_min_rr')}"
         )
+        return 0
+
+    if args.cmd == "rr-sweep":
+        out = args.out or (settings.OUTPUT_DIR / "research" / f"rr_sweep_{args.end[:10]}")
+        grid = tuple(float(x.strip()) for x in str(args.rr_grid).split(",") if x.strip())
+        report = run_rr_sweep(
+            symbols=syms,
+            start=args.start,
+            end=args.end,
+            cache_dir=args.cache_dir,
+            top_n=args.top_n,
+            step_days=args.step_days,
+            rr_grid=grid,
+            out_dir=out,
+        )
+        print(f"wrote {out}/rr_sweep.md")
+        for c in report.get("curves") or []:
+            st = c.get("stats") or {}
+            print(
+                f"  rr={c.get('min_rr')}: n={c.get('trades_n')} "
+                f"exp%={st.get('expectancy_pct')} hit={c.get('hit_rate_t1_before_stop')}"
+            )
         return 0
 
     if args.cmd == "regime":

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import pandas as pd
 from collector.derived._utils import load_csv, out_dir
 from collector.utils import empty_csv, get_logger, save_csv
@@ -36,6 +38,32 @@ def load_ohlc(date: str | None = None) -> pd.DataFrame:
         return pd.read_csv(path)
     except Exception:  # noqa: BLE001
         return pd.DataFrame()
+
+
+def load_ohlc_from_cache(symbols: list[str] | None = None) -> pd.DataFrame:
+    """Load full per-symbol history from ``database/ohlc/`` (all Yahoo sessions)."""
+    root = Path(settings.OHLC_CACHE_DIR)
+    if not root.is_dir():
+        return pd.DataFrame()
+    paths = sorted(root.glob("*.csv"))
+    if symbols is not None:
+        want = {str(s).strip().replace("/", "_") for s in symbols if str(s).strip()}
+        paths = [p for p in paths if p.stem in want]
+    frames: list[pd.DataFrame] = []
+    for path in paths:
+        try:
+            df = pd.read_csv(path)
+        except Exception:  # noqa: BLE001
+            continue
+        if df.empty or "symbol" not in df.columns:
+            continue
+        frames.append(df)
+    if not frames:
+        return pd.DataFrame()
+    out = pd.concat(frames, ignore_index=True)
+    if "date" in out.columns:
+        out = out.sort_values(["symbol", "date"]).reset_index(drop=True)
+    return out
 
 
 def features_from_bars(df: pd.DataFrame) -> dict:
@@ -117,7 +145,17 @@ def features_from_bars(df: pd.DataFrame) -> dict:
 
 
 def collect(date: str | None = None) -> dict:
-    ohlc = load_ohlc(date)
+    # Prefer full persistent cache so structure features see all Yahoo sessions,
+    # not only the bars refreshed in today's dated history pack.
+    day_pack = load_ohlc(date)
+    symbols = (
+        sorted(day_pack["symbol"].astype(str).unique().tolist())
+        if not day_pack.empty and "symbol" in day_pack.columns
+        else None
+    )
+    ohlc = load_ohlc_from_cache(symbols)
+    if ohlc.empty:
+        ohlc = day_pack
     if ohlc.empty or "symbol" not in ohlc.columns:
         empty_csv("ohlc_features", COLUMNS, date)
         return {"agent": "ohlc_features", "status": "partial", "rows": 0}
@@ -139,6 +177,7 @@ def collect(date: str | None = None) -> dict:
         "rows": len(out),
         "with_structure": populated,
         "lookback": settings.OHLC_LOOKBACK_SESSIONS,
+        "source": "database/ohlc" if symbols is not None else "history/ohlc",
     }
 
 

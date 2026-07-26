@@ -12,7 +12,7 @@ import pandas as pd
 from config import risk
 
 from research.backtest.funnel import apply_levels_filter, apply_proxy_gates, baseline_adx_rsi
-from research.backtest.panel import build_day_rows, load_bars, session_calendar
+from research.backtest.panel import build_day_rows, build_panel, load_bars, session_calendar
 from research.backtest.simulate import simulate_trade, summarize_returns
 from research.features_from_ohlc import EXCLUDED_LIVE_GATES, PROXY_GATES
 
@@ -68,6 +68,8 @@ def _run_strategy_on_days(
     step_days: int,
     rng: random.Random,
     regime_by_date: dict[str, str] | None = None,
+    panel: dict[str, list[dict[str, Any]]] | None = None,
+    entry_days: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     trades: list[dict[str, Any]] = []
     open_until: dict[str, str] = {}
@@ -76,7 +78,11 @@ def _run_strategy_on_days(
     )
 
     for i, day in enumerate(sessions):
-        if step_days > 1 and i % step_days != 0:
+        # Prefer global entry_days (aligned with panel keys) over fold-local index.
+        if entry_days is not None:
+            if day not in entry_days:
+                continue
+        elif step_days > 1 and i % step_days != 0:
             continue
         if (
             disable_regimes
@@ -86,7 +92,7 @@ def _run_strategy_on_days(
             continue
 
         busy = {s for s, until in open_until.items() if until > day}
-        rows = build_day_rows(day, bars_by_sym, nifty, skip_symbols=busy)
+        rows = build_day_rows(day, bars_by_sym, nifty, skip_symbols=busy, panel=panel)
 
         if strategy == "proxy_funnel":
             skip = set(risk.RESEARCH_DEMOTED_GATES) if risk.RESEARCH_APPLY_DEMOTIONS else set()
@@ -157,6 +163,18 @@ def run_backtest(
             for r in build_regime_series(nifty).to_dict(orient="records")
         }
 
+    # One panel for all entry days — reused across strategies (busy filtered after lookup).
+    # Entry days are indexed on the full calendar so fold slicing cannot desync the panel.
+    sampled = [s for i, s in enumerate(sessions) if step_days <= 1 or i % step_days == 0]
+    entry_days = set(sampled)
+    panel = build_panel(
+        list(bars_by_sym.keys()),
+        sampled,
+        bars_by_sym=bars_by_sym,
+        nifty=nifty,
+        cache_dir=cache_dir,
+    )
+
     strategies: list[Strategy] = ["proxy_funnel", "baseline_adx_rsi", "random"]
     fold_results: list[dict[str, Any]] = []
     all_trades: list[dict[str, Any]] = []
@@ -178,6 +196,8 @@ def run_backtest(
                 step_days=step_days,
                 rng=rng,
                 regime_by_date=regime_by_date,
+                panel=panel,
+                entry_days=entry_days,
             )
             for t in trades:
                 t["fold"] = fold["label"]

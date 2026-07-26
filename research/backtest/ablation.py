@@ -17,7 +17,7 @@ from research.backtest.funnel import (
     apply_proxy_gates,
     gate_pass_matrix,
 )
-from research.backtest.panel import build_day_rows, load_bars, session_calendar
+from research.backtest.panel import build_day_rows, build_panel, load_bars, session_calendar
 from research.backtest.simulate import simulate_trade, summarize_returns
 
 
@@ -96,6 +96,16 @@ def run_ablation(
     if not sessions:
         raise ValueError("No sessions in range")
 
+    sampled = [s for i, s in enumerate(sessions) if step_days <= 1 or i % step_days == 0]
+    entry_days = set(sampled)
+    panel = build_panel(
+        list(bars_by_sym.keys()),
+        sampled,
+        bars_by_sym=bars_by_sym,
+        nifty=nifty,
+        cache_dir=cache_dir,
+    )
+
     variants: list[tuple[str, set[str]]] = [("full", set())]
     for gid, _name in ABLATABLE_GATES:
         variants.append((f"drop_{gid}", {gid}))
@@ -107,10 +117,10 @@ def run_ablation(
     excl_by_gate: dict[str, list[set[str]]] = {gid: [] for gid in GATE_IDS}
     pairwise_days: list[dict[str, Any]] = []
 
-    for i, day in enumerate(sessions):
-        if step_days > 1 and i % step_days != 0:
+    for day in sessions:
+        if day not in entry_days:
             continue
-        rows = build_day_rows(day, bars_by_sym, nifty)
+        rows = build_day_rows(day, bars_by_sym, nifty, panel=panel)
         if not rows:
             continue
 
