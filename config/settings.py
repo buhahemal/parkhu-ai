@@ -94,8 +94,9 @@ OHLC_RESEARCH_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_RESEARCH_LOOKBACK",
 OHLC_RESEARCH_PERIOD = os.getenv("PARKHU_OHLC_RESEARCH_PERIOD", "5y") or "5y"
 OHLC_CHUNK_SIZE = int(os.getenv("PARKHU_OHLC_CHUNK_SIZE", "80") or "80")
 OHLC_CHUNK_SLEEP_S = float(os.getenv("PARKHU_OHLC_CHUNK_SLEEP_S", "1.0") or "1.0")
-# Yahoo rate-limit / timeout: wait then retry failed symbols (cron-safe).
-OHLC_RETRY_WAIT_S = float(os.getenv("PARKHU_OHLC_RETRY_WAIT_S", "210") or "210")  # ~3.5 min
+# Yahoo rate-limit / timeout: adaptive probe wait (try again as soon as ready).
+OHLC_RETRY_WAIT_S = float(os.getenv("PARKHU_OHLC_RETRY_WAIT_S", "210") or "210")  # max sleep / fallback
+OHLC_RETRY_PROBE_S = float(os.getenv("PARKHU_OHLC_RETRY_PROBE_S", "15") or "15")  # first probe sleep
 OHLC_RETRY_MAX = int(os.getenv("PARKHU_OHLC_RETRY_MAX", "2") or "2")  # retries after first try
 OHLC_YF_THREADS = (os.getenv("PARKHU_OHLC_YF_THREADS", "1") or "1").strip().lower() in {
     "1",

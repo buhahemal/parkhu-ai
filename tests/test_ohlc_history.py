@@ -75,6 +75,7 @@ def _patch_ohlc_defaults(monkeypatch, settings, cache, output) -> None:
     monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "400d")
     monkeypatch.setattr(settings, "OHLC_CHUNK_SIZE", 80)
     monkeypatch.setattr(settings, "OHLC_CHUNK_SLEEP_S", 0)
+    monkeypatch.setattr(settings, "OHLC_RETRY_PROBE_S", 0)
     monkeypatch.setattr(settings, "OHLC_RETRY_WAIT_S", 0)
     monkeypatch.setattr(settings, "OHLC_RETRY_MAX", 0)
     monkeypatch.setattr(settings, "MAX_SYMBOLS", None)
@@ -99,6 +100,7 @@ def test_collect_writes_schema_without_network(tmp_path, monkeypatch):
     monkeypatch.setattr(settings, "OHLC_CACHE_DIR", tmp_path / "cache")
     settings.OHLC_CACHE_DIR.mkdir(parents=True)
     monkeypatch.setattr(settings, "MAX_SYMBOLS", 2)
+    monkeypatch.setattr(settings, "OHLC_RETRY_PROBE_S", 0)
     monkeypatch.setattr(settings, "OHLC_RETRY_WAIT_S", 0)
     monkeypatch.setattr(settings, "OHLC_RETRY_MAX", 0)
     monkeypatch.setattr(
@@ -212,6 +214,7 @@ def test_rate_limit_retries_after_wait(tmp_path, monkeypatch):
     cache.mkdir()
     _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
     monkeypatch.setattr(settings, "OHLC_RETRY_MAX", 1)
+    monkeypatch.setattr(settings, "OHLC_RETRY_PROBE_S", 0)
     monkeypatch.setattr(settings, "OHLC_RETRY_WAIT_S", 0)
 
     calls = {"n": 0}

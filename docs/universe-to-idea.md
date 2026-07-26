@@ -1,128 +1,197 @@
-# Universe → idea
+# Universe → idea: how Parkhu picks stocks
 
-How Parkhu turns the day’s `stock_analysis.csv` into **ideas**, **watchlist**, and
-**rejects**. Implementation: [`collector/brief/swing_brief.py`](../collector/brief/swing_brief.py).
-Thresholds: [`config/risk.py`](../config/risk.py) (all `PARKHU_*` env-overridable).
+This is the **live** selection algorithm: how today’s scanned universe becomes a
+short list of swing **ideas** (or zero ideas — that is valid).
 
-Operator guide (how to run / read the brief): [`swing-brief.md`](swing-brief.md).
-Design rationale for why each gate exists: [`technical-plan.md`](technical-plan.md).
-Walk-forward research / OHLC-proxy backtest (Step 1): [`research-backtest.md`](research-backtest.md).
+| | |
+|---|---|
+| Code | [`collector/brief/swing_brief.py`](../collector/brief/swing_brief.py) |
+| Thresholds | [`config/risk.py`](../config/risk.py) (all `PARKHU_*` overridable) |
+| Levels | [`collector/derived/structure_levels.py`](../collector/derived/structure_levels.py) |
+| Operator guide | [`swing-brief.md`](swing-brief.md) |
+| Why each gate exists | [`technical-plan.md`](technical-plan.md) |
+| Research / backtest (not live) | [`research-backtest.md`](research-backtest.md) |
+| Live pause bar | [`kill-criterion.md`](kill-criterion.md) |
+
+**Input:** `output/<date>/stock_analysis.csv` (one row per scanned symbol).  
+**Output:** `swing_brief.json` / `.md` → packed into `research_pack.json` for the desk.
 
 ```mermaid
 flowchart TD
-  univ[stock_analysis universe] --> gates[Hard screen gates]
-  gates --> finalGate[Final-gate survivors]
-  finalGate --> levels[Rebuild levels stop T1 T2 T3]
-  levels -->|fail RR or no levels| rejectRR[Rejected RR or levels]
-  levels -->|T1 beyond 22d| rejectHorizon[Rejected horizon]
-  levels --> sized[Size position]
-  sized --> score[Score bands]
-  score -->|score under 70| ignore[Ignored]
-  score -->|70 to 79| watch[Watchlist]
-  score -->|80 plus| buys[Buy candidates]
-  buys -->|qty 0| unaffordable[Unaffordable]
-  buys --> portfolio[Sector and position caps]
-  portfolio -->|cap hit| queued[Queued]
-  portfolio --> ideas[Ideas top N]
+  univ["Universe: stock_analysis rows with CMP"] --> score["Compute parkhu_score"]
+  score --> gates["Hard AND-gates in order"]
+  gates --> survivors["Final-gate survivors"]
+  survivors --> levels["Structure levels: entry / stop / T1–T3"]
+  levels -->|no levels or R:R under 2| rejectRR["Rejected: levels / R:R"]
+  levels -->|T1 needs over 22 sessions| rejectHz["Rejected: horizon"]
+  levels --> sized["Size qty from risk + exposure caps"]
+  sized --> bands["Score bands + coverage floor"]
+  bands -->|score under 70| ignore["Ignored"]
+  bands -->|70–79 or Buy blocked by coverage| watch["Watchlist"]
+  bands -->|score 80+ and coverage OK| buys["Buy candidates"]
+  buys -->|qty 0| unaff["Unaffordable"]
+  buys --> port["Sector 25% + top-N caps"]
+  port -->|sector full| queued["Queued"]
+  port --> ideas["Ideas"]
 ```
 
 ---
 
-## Phase 1 — Hard gates
+## One-sentence rule
 
-Applied in order. Fail any → out. These are the desk **Filters** funnel steps.
+A stock becomes an **idea** only if it passes every hard gate, has valid structure
+levels with R:R ≥ 2 and T1 inside ~1 month, scores in the Buy band with enough
+score components live, is affordable at the capital book, and fits under sector /
+position caps — ranked by score, then R:R. If nothing clears that bar, the brief
+ships **zero ideas**.
 
-| # | Gate | Field(s) | Default |
+---
+
+## Step 0 — Universe and score
+
+1. Load `stock_analysis` for the run date.
+2. Assign **`risk_sector`** (TradingView sector; Finance split by industry for
+   concentration).
+3. Build **`parkhu_score`** (0–100) from KB-14-style components that actually have
+   data that day:
+
+| Component | Weight | Source (typical) |
+|---|---:|---|
+| technical | 20 | trend / momentum / delivery / ADX blend |
+| fundamental | 15 | `fundamental_score` |
+| earnings | 15 | `earnings_score` |
+| news | 15 | when present |
+| institutional | 10 | when present |
+| options | 5 | when present |
+| sector | 5 | `sector_score` |
+| relative_strength | 5 | when present |
+| macro | 5 | when present |
+
+Missing components are **dropped** and the rest **renormalized**. The brief
+reports `scoring.live_weights`, `unavailable_components`, and
+`weight_unavailable_pct`.
+
+Optional coverage floor (`PARKHU_MIN_SCORE_COMPONENTS`, default **0** = off): if
+set (e.g. `7`), Buy-band eligibility requires at least that many live components.
+Otherwise a high score built from a thin subset can be demoted to Watch
+(`deferred_low_coverage`).
+
+---
+
+## Step 1 — Hard gates (must pass all)
+
+Applied **in order**. Fail any → out of the funnel. Each step records surviving /
+dropped counts and top-50 symbol samples (by `parkhu_score`).
+
+| # | Gate | Pass rule | Default |
 |---|---|---|---|
-| 1 | Universe | `cmp` | not null |
-| 2 | Trend | `trend_label` | `== "Bullish"` |
-| 3 | Long-term trend | `cmp` vs `sma200` | price **>** SMA200 |
-| 4 | Medium trend | `cmp` vs `ema50` | price **>** EMA50 |
-| 5 | Trend strength | `adx14` | **>** `MIN_ADX` **25** |
-| 6 | Momentum band | `rsi14` | **40–80** (`RSI_MIN` / `RSI_MAX`) |
-| 7 | Relative strength | `rs_vs_nifty_1m`, `rs_vs_sector_1m` | both **> 0** |
-| 8 | Delivery | `delivery_pct` | **≥** `MIN_DELIVERY_PCT` **40** |
-| 9 | Volume (if column exists) | `relative_volume` | **≥** `MIN_RELATIVE_VOLUME` **1.0** |
-| 10 | Earnings blackout | `earnings_within_21d` | must **not** be true (`EARNINGS_BLACKOUT_DAYS` **21**) |
-| 11 | Event risk | `event_risk_score` | **≤** `MAX_EVENT_RISK_SCORE` **1.0** |
-| 12 | TV technical rating | `tech_rating` | must **not** contain `"sell"` |
+| 1 | Universe | `cmp` present | — |
+| 2 | Trend | `trend_label == Bullish` | — |
+| 3 | Long trend | `cmp > sma200` | — |
+| 4 | Medium trend | `cmp > ema50` | — |
+| 5 | Trend strength | `adx14 > MIN_ADX` | **25** |
+| 6 | Momentum band | `RSI_MIN ≤ rsi14 ≤ RSI_MAX` | **40–80** |
+| 7 | Relative strength | `rs_vs_nifty_1m > 0` **and** `rs_vs_sector_1m > 0` | — |
+| 8 | Delivery | `delivery_pct ≥ MIN_DELIVERY_PCT` | **40%** |
+| 9 | Relative volume | `relative_volume ≥ MIN_RELATIVE_VOLUME` | **1.0** (skipped if column missing) |
+| 10 | Earnings blackout | not `earnings_within_21d` | **21** days |
+| 11 | Event risk | `event_risk_score ≤ MAX_EVENT_RISK_SCORE` | **1.0** |
+| 12 | TV rating | `tech_rating` does **not** contain `"sell"` | — |
 
-Gate 9 is skipped when `relative_volume` is missing from the frame.
-
----
-
-## Phase 2 — Levels, R:R, and hold
-
-For each final-gate survivor:
-
-1. Rebuild structure levels (`entry`, `stop`, `t1`–`t3`) via `derive_levels` /
-   `structure_trade_levels` (not the CSV’s fixed ladder).
-2. Reject if levels are missing or **`rr_t1` < `MIN_RR_T1` (2.0)** →
-   *R:R or levels failed MIN_RR_T1*.
-3. Reject if **`t1_beyond_mandate`** (estimated hold to T1 **>** `HORIZON_MAX_DAYS` **22**) →
-   *T1 needs more than 22 trading days (~1 month)*.
-4. Size shares: `qty = min(risk sizing, exposure sizing)`  
-   - risk: `RISK_PER_TRADE_PCT` **2%** of `CAPITAL`  
-   - exposure: `MAX_POS_PCT` **10%** of `CAPITAL`  
-   - default capital: **₹1,00,000**
-
-Stop distance rules used when building levels: stop **>** `MIN_STOP_ATR` (1 ATR),
-with config ceilings `MAX_STOP_ATR` / `MAX_STOP_PCT`. Hold estimate is clamped into
-`HORIZON_MIN_DAYS`–`HORIZON_MAX_DAYS` (**3–22** trading days) for display; the hard
-reject is only when raw T1 days exceed the max.
+Names still in after gate 12 are **final-gate survivors**.
 
 ---
 
-## Phase 3 — Score bands
+## Step 2 — Levels, R:R, horizon, sizing
 
-`parkhu_score` is computed earlier from KB-14-style components. Live weights in
-`SCORE_WEIGHTS` (technical, fundamental, earnings, news, institutional, options,
-sector, relative_strength, macro). Components with no data are dropped and the rest
-**renormalized**; lost weight is reported in the brief under `scoring`.
+For each survivor:
 
-| Band | Score | Outcome |
+1. **Rebuild levels** with `structure_trade_levels` (not a fixed ATR ladder from the CSV):
+   - Prefer stop from structure: `base_low` → `swing_low_20d` → `swing_low_50d` → MA below → ATR fallback.
+   - Stop distance clamped between `MIN_STOP_ATR` (1×ATR) and
+     `min(MAX_STOP_ATR, MAX_STOP_PCT)`.
+   - Targets: nearest resistance that clears R:R floor, else R-multiple ladder.
+2. **Reject** if levels missing or `rr_t1 < MIN_RR_T1` (**2.0**).
+3. **Reject** if `t1_beyond_mandate` — estimated sessions to T1 **>**
+   `HORIZON_MAX_DAYS` (**22**, ~1 month).
+4. **Size** shares (smaller of the two binds):
+   - Risk: `(CAPITAL × RISK_PER_TRADE_PCT%) / (entry − stop)` → default **2%**
+   - Exposure: `(CAPITAL × MAX_POS_PCT%) / entry` → default **10%**
+   - Default capital: **₹1,00,000**
+
+Hold display is clamped to 3–22 sessions; the hard reject is only the raw T1
+horizon check above.
+
+---
+
+## Step 3 — Score bands
+
+Among names that cleared levels:
+
+| Band | Condition | Outcome |
 |---|---|---|
-| Buy | **≥ 80** (`BUY_SCORE`) | idea candidate |
-| Watch | **70–79** (`WATCH_SCORE`) | watchlist only (no position) |
-| Ignore | **< 70** | `ignored_below_watch` |
+| **Buy** | score ≥ **80** *and* coverage OK | idea candidate |
+| **Watch** | score ≥ **70**, or Buy blocked by coverage floor | watchlist (no position) |
+| **Ignore** | score **&lt; 70** | `ignored_below_watch` |
+
+Sort Buy / Watch pools by **score descending**, then **R:R descending**.
 
 ---
 
-## Phase 4 — Portfolio → ideas
+## Step 4 — Portfolio → ideas
 
-Only Buy-band names, sorted by score then R:R:
+Walk Buy-band names in that sort order:
 
-| Check | Parameter | If fail |
+| Check | Rule | On fail |
 |---|---|---|
-| Affordability | one share vs 10% name cap | `unaffordable_at_this_capital` |
-| Sector concentration | `MAX_SECTOR_PCT` **25%** on `risk_sector` | `queued_on_portfolio_limits` |
-| Idea / book size | `min(TOP_N_IDEAS=5, MAX_POSITIONS=10)` | stop picking |
+| Affordability | `qty ≥ 1` under the 10% name cap | `unaffordable_at_this_capital` |
+| Sector cap | running deploy in `risk_sector` ≤ **25%** of capital | `queued_on_portfolio_limits` |
+| Book size | stop after `min(TOP_N_IDEAS, MAX_POSITIONS)` → default **5** | remaining Buys not picked |
 
-Names that clear all of the above become **ideas**.
-
-Zero ideas is a valid outcome (KB-00): the bar is not lowered to force a recommendation.
+Names that clear all checks become **`ideas`**. Everything else that survived the
+hard gates is explained in **`survivor_outcomes`** (`idea` / `watchlist` /
+`rejected` + reason).
 
 ---
 
-## Desk mapping
+## What you see on the desk
 
-| Desk section | What it shows |
+| Desk | Maps to |
 |---|---|
-| **Filters** | Phase 1 gates: surviving counts, keep %, top-50 still-in / removed symbols |
-| **Survivors** | Final-gate names (top 50 by score) with status `idea` / `watchlist` / `rejected` and reason |
-| **Ideas** | Phase 4 picks (levels, no capital sizing on the Pages desk) |
+| **Filters** | Step 1 funnel: keep %, top-50 still-in / removed per gate |
+| **Survivors** | Final-gate top 50 by score + status / reason |
+| **Ideas** | Step 4 picks (levels; Pages desk does not show capital sizing) |
+| **Kill pill** | Live ledger pause bar — see [`kill-criterion.md`](kill-criterion.md) |
 
-Per-gate symbol samples and survivor outcomes are written to
-`output/<date>/funnel_detail.json` and embedded in `swing_brief.json` /
-`research_pack.json`. Lists longer than **50** are truncated (ranked by
-`parkhu_score`); full counts stay in `surviving` / `dropped_count` /
-`survivor_outcomes_total`.
+Artifacts:
+
+- `output/<date>/funnel_detail.json` — per-gate symbol samples  
+- `swing_brief.json` / `research_pack.json` — ideas, watchlist, outcomes  
+
+Symbol lists longer than **50** are truncated (ranked by score); full counts stay
+in `surviving` / `dropped_count` / `survivor_outcomes_total`.
 
 ---
 
-## Env overrides
+## Worked path (example)
 
-Common knobs (full set in `config/risk.py`):
+```
+RELIANCE in stock_analysis
+  → parkhu_score computed (e.g. 84.2)
+  → passes gates 1–12 (Bullish, above MAs, ADX/RSI/RS/delivery/…)
+  → structure stop under entry, rr_t1 = 2.4, hold_days_t1_raw = 12  ✓
+  → sized to 2% risk / 10% exposure
+  → Buy band (≥80), coverage OK
+  → sector bank under 25%, still room in top-5
+  → IDEA
+```
+
+A name can look “strong” and still die late: weak R:R, T1 too far, thin score
+coverage, unaffordable share price, or sector already full.
+
+---
+
+## Env knobs (common)
 
 ```bash
 PARKHU_CAPITAL=200000
@@ -134,13 +203,28 @@ PARKHU_MIN_DELIVERY_PCT=40
 PARKHU_MIN_RELATIVE_VOLUME=1.0
 PARKHU_BUY_SCORE=80
 PARKHU_WATCH_SCORE=70
+PARKHU_MIN_SCORE_COMPONENTS=0    # set e.g. 7 to enforce coverage before Buy
 PARKHU_MIN_RR_T1=2
 PARKHU_HORIZON_MAX_DAYS=22
 PARKHU_MAX_SECTOR_PCT=25
 ```
 
-Regenerate the brief without a full collect:
+Rebuild the brief without a full collect:
 
 ```bash
 python -c "from collector.brief import swing_brief; print(swing_brief.collect('2026-07-26'))"
 ```
+
+---
+
+## Live vs research
+
+| | Live (this doc) | Research ([`research-backtest.md`](research-backtest.md)) |
+|---|---|---|
+| Universe | Daily `stock_analysis` | OHLC history + proxy features |
+| Gates | All 12 above | OHLC-proxy subset (no delivery / TV rating / earnings PIT) |
+| Score | Full `parkhu_score` | `proxy_score` (ADX + RS) |
+| Stops / sizing | ATR structure + 2%/10% | Optional GARCH / idio sizing — **not** wired into the brief unless you adopt flags |
+
+Research may recommend demoting gates or raising R:R floors; the live funnel stays
+honest until you deliberately change `config/risk.py` / env.

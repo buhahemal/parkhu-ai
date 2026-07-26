@@ -8,8 +8,9 @@ Writes:
 Warm symbols (enough cached bars) fetch a short incremental window.
 Cold / new / short symbols get a full backfill, which creates the CSV.
 
-On Yahoo rate-limit / timeout, waits ``OHLC_RETRY_WAIT_S`` (~3.5 min) and
-retries failed symbols up to ``OHLC_RETRY_MAX`` times.
+On Yahoo rate-limit / timeout, probes with short sleeps (``OHLC_RETRY_PROBE_S``)
+and resumes as soon as a probe download succeeds — instead of always waiting
+the full ``OHLC_RETRY_WAIT_S``. Retries failed symbols up to ``OHLC_RETRY_MAX``.
 
 Never aborts the pipeline: missing symbols are skipped and status is
 ``partial`` when coverage is incomplete.
@@ -159,6 +160,7 @@ def _is_rate_or_timeout(msg: str) -> bool:
             "timeout",
             "timed out",
             "temporarily unavailable",
+            "429",
         )
     )
 
@@ -186,6 +188,57 @@ def _download_chunk(tickers: list[str], period: str = "400d") -> tuple[pd.DataFr
         err = f"{exc}\n{err_buf.getvalue()}"
         log.warning("yf.download failed for chunk (%d, %s): %s", len(tickers), period, exc)
         return pd.DataFrame(), err
+
+
+def _probe_yahoo_ready(probe_ticker: str = "^NSEI") -> bool:
+    """True when a tiny Yahoo download succeeds (rate limit likely cleared)."""
+    data, err = _download_chunk([probe_ticker], period="5d")
+    if _is_rate_or_timeout(err):
+        return False
+    return not (data is None or getattr(data, "empty", True))
+
+
+def _wait_until_yahoo_ready(*, rate_seen: bool) -> float:
+    """Sleep/probe until Yahoo accepts again. Returns total seconds slept.
+
+    When rate-limited: start at ``OHLC_RETRY_PROBE_S``, probe after each sleep,
+    escalate toward ``OHLC_RETRY_WAIT_S``. Resume as soon as a probe succeeds.
+    Non-rate failures: single short wait (capped at 60s).
+    Set both probe/wait to 0 to disable sleeping (tests).
+    """
+    probe = max(float(settings.OHLC_RETRY_PROBE_S), 0.0)
+    ceiling = max(float(settings.OHLC_RETRY_WAIT_S), 0.0)
+    if probe <= 0 and ceiling <= 0:
+        return 0.0
+
+    if not rate_seen:
+        wait = min(max(probe, 5.0), 60.0) if probe > 0 else min(max(ceiling, 5.0), 60.0)
+        log.info("ohlc brief wait %.0fs before retry (non-rate failure)", wait)
+        time.sleep(wait)
+        return wait
+
+    wait = probe if probe > 0 else min(ceiling, 15.0) or 15.0
+    ceiling = max(ceiling, wait)
+    max_total = max(ceiling * 3, wait)
+    slept = 0.0
+    while slept < max_total:
+        log.warning(
+            "ohlc rate-limit: sleeping %.0fs then probing Yahoo (slept=%.0fs / %.0fs)",
+            wait,
+            slept,
+            max_total,
+        )
+        time.sleep(wait)
+        slept += wait
+        if _probe_yahoo_ready():
+            log.info("ohlc Yahoo ready after %.0fs — resuming downloads", slept)
+            return slept
+        wait = min(wait * 1.5, ceiling)
+    log.warning(
+        "ohlc still rate-limited after %.0fs — continuing retry round anyway",
+        slept,
+    )
+    return slept
 
 
 def _write_daily(df: pd.DataFrame, date: str | None) -> Path:
@@ -297,15 +350,14 @@ def _drain_batches(
         attempt += 1
         retries_used += 1
         log.warning(
-            "ohlc retry %d/%d after %.0fs for %d failed symbols (rate_or_timeout=%s)",
+            "ohlc retry %d/%d for %d failed symbols (rate_or_timeout=%s, fallback_wait=%.0fs)",
             attempt,
             max_retries,
-            wait_s,
             len(failed_round),
             rate_seen,
+            wait_s,
         )
-        if wait_s > 0:
-            time.sleep(wait_s)
+        _wait_until_yahoo_ready(rate_seen=rate_seen)
         pending = failed_round
 
     return all_parts, [], retries_used
@@ -349,21 +401,58 @@ def backfill_yahoo_ticker(
     }
 
 
+def _bar_count(symbol: str) -> int:
+    cached = _load_cache(symbol)
+    return int(len(cached))
+
+
 def backfill_symbols(
     symbols: list[str],
     *,
     date: str | None = None,
     period: str | None = None,
     lookback: int | None = None,
+    skip_min_bars: int | None = None,
 ) -> dict:
     """Cold-backfill a symbol list into ``database/ohlc/`` (and refresh daily pack rows).
 
     ``lookback`` defaults to daily ``OHLC_LOOKBACK_SESSIONS``. Research backfills
     pass ``OHLC_RESEARCH_LOOKBACK_SESSIONS`` so caches can keep ~5y of bars.
+
+    ``skip_min_bars``: if set, symbols that already have at least that many cached
+    bars are skipped (resume-friendly for multi-hour 5y runs).
     """
     symbols = [str(s).strip() for s in symbols if str(s).strip()]
     if not symbols:
         return {"agent": "ohlc_history", "status": "error", "rows": 0, "symbols": 0}
+
+    skipped: list[str] = []
+    if skip_min_bars is not None and int(skip_min_bars) > 0:
+        floor = int(skip_min_bars)
+        todo: list[str] = []
+        for s in symbols:
+            if _bar_count(s) >= floor:
+                skipped.append(s)
+            else:
+                todo.append(s)
+        log.info(
+            "ohlc resume skip_min_bars=%d skip=%d download=%d",
+            floor,
+            len(skipped),
+            len(todo),
+        )
+        symbols = todo
+        if not symbols:
+            return {
+                "agent": "ohlc_history",
+                "status": "ok",
+                "rows": 0,
+                "symbols": 0,
+                "failed": 0,
+                "skipped": len(skipped),
+                "retries": 0,
+                "failed_symbols": [],
+            }
 
     period = period or _cold_period()
     keep = int(lookback if lookback is not None else settings.OHLC_LOOKBACK_SESSIONS)
@@ -408,6 +497,7 @@ def backfill_symbols(
         "rows": rows,
         "symbols": ok,
         "failed": len(failed),
+        "skipped": len(skipped),
         "retries": retries,
         "failed_symbols": failed,
     }

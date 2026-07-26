@@ -40,7 +40,11 @@ Survivorship bias is only partly mitigated (Yahoo + current universe). Residual 
 ## Commands
 
 ```bash
-# 1) Pull multi-year bars (rate-limited; start small)
+# 1) Pull 5y bars for ALL stocks (adaptive rate-limit probe; resume-safe)
+PARKHU_OHLC_RETRY_MAX=50 PARKHU_OHLC_CHUNK_SIZE=40 \
+  python -m scripts.backfill_ohlc_research --all --resume
+
+# Small pilot first
 PARKHU_MAX_SYMBOLS=50 python -m scripts.backfill_ohlc_research
 
 # Or explicit list + index (^NSEI → database/ohlc/NIFTY.csv)

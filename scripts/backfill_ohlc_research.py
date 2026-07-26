@@ -4,13 +4,14 @@ Uses ``PARKHU_OHLC_RESEARCH_LOOKBACK`` (default 1260 ≈ 5y) and
 ``PARKHU_OHLC_RESEARCH_PERIOD`` (default ``5y``). Does **not** change the
 daily collect lookback (still ~250 sessions).
 
-Rate-limit strategy: same chunked download + wait/retry as
-``collector.history.ohlc`` (``PARKHU_OHLC_CHUNK_*``, ``PARKHU_OHLC_RETRY_*``).
+Rate-limit strategy: adaptive probe wait — sleep ``PARKHU_OHLC_RETRY_PROBE_S``
+(default 15s), probe Yahoo, resume as soon as ready; escalate toward
+``PARKHU_OHLC_RETRY_WAIT_S`` while still limited.
 
 Examples::
 
-    # Full scanning universe (slow; Yahoo rate limits apply)
-    python -m scripts.backfill_ohlc_research
+    # Full scanning universe (~all stocks, 5y) — resume-friendly
+    PARKHU_OHLC_RETRY_MAX=50 python -m scripts.backfill_ohlc_research --resume
 
     # Small pilot list
     PARKHU_MAX_SYMBOLS=50 python -m scripts.backfill_ohlc_research
@@ -25,6 +26,7 @@ under ``database/ohlc/``.
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -67,41 +69,87 @@ def main(argv: list[str] | None = None) -> int:
         help=f"Cache trim sessions (default {settings.OHLC_RESEARCH_LOOKBACK_SESSIONS})",
     )
     p.add_argument(
+        "--resume",
+        action="store_true",
+        help="Skip symbols that already have --skip-min-bars (default: lookback) cached",
+    )
+    p.add_argument(
+        "--skip-min-bars",
+        type=int,
+        default=None,
+        help="With --resume: min cached bars to skip (default = lookback)",
+    )
+    p.add_argument(
         "--skip-index",
         action="store_true",
         help="Do not backfill NIFTY (^NSEI) index bars",
+    )
+    p.add_argument(
+        "--all",
+        action="store_true",
+        help="Ignore PARKHU_MAX_SYMBOLS and pull the full universe",
     )
     args = p.parse_args(argv)
 
     period = args.period or settings.OHLC_RESEARCH_PERIOD
     lookback = int(args.lookback or settings.OHLC_RESEARCH_LOOKBACK_SESSIONS)
+    skip_min = None
+    if args.resume:
+        skip_min = int(args.skip_min_bars if args.skip_min_bars is not None else lookback)
 
     if not args.skip_index:
-        idx = backfill_yahoo_ticker(
-            store_as="NIFTY",
-            yf_ticker="^NSEI",
-            period=period,
-            lookback=lookback,
-        )
-        log.info("index: %s", idx)
-        print("index", idx)
+        # Skip index if already deep enough under --resume.
+        if skip_min is not None:
+            from collector.history import ohlc as ohlc_mod
+
+            if ohlc_mod._bar_count("NIFTY") >= skip_min:
+                log.info("index NIFTY already has >=%d bars — skip", skip_min)
+                print("index", {"status": "skipped", "symbol": "NIFTY"})
+            else:
+                idx = backfill_yahoo_ticker(
+                    store_as="NIFTY",
+                    yf_ticker="^NSEI",
+                    period=period,
+                    lookback=lookback,
+                )
+                log.info("index: %s", idx)
+                print("index", idx)
+        else:
+            idx = backfill_yahoo_ticker(
+                store_as="NIFTY",
+                yf_ticker="^NSEI",
+                period=period,
+                lookback=lookback,
+            )
+            log.info("index: %s", idx)
+            print("index", idx)
 
     if args.symbols_file:
         text = args.symbols_file.read_text(encoding="utf-8")
         symbols = [ln.strip() for ln in text.splitlines() if ln.strip() and not ln.startswith("#")]
     else:
         symbols = _universe(args.date)
-        if settings.MAX_SYMBOLS:
+        if settings.MAX_SYMBOLS and not args.all:
             symbols = symbols[: settings.MAX_SYMBOLS]
 
     log.info(
-        "research OHLC backfill n=%d period=%s lookback=%d chunk=%d",
+        "research OHLC backfill n=%d period=%s lookback=%d chunk=%d resume_skip_min=%s "
+        "retry_max=%s probe_s=%s",
         len(symbols),
         period,
         lookback,
         settings.OHLC_CHUNK_SIZE,
+        skip_min,
+        os.getenv("PARKHU_OHLC_RETRY_MAX", settings.OHLC_RETRY_MAX),
+        settings.OHLC_RETRY_PROBE_S,
     )
-    result = backfill_symbols(symbols, date=args.date, period=period, lookback=lookback)
+    result = backfill_symbols(
+        symbols,
+        date=args.date,
+        period=period,
+        lookback=lookback,
+        skip_min_bars=skip_min,
+    )
     log.info("done: %s", result)
     print(result)
     return 0 if result.get("status") in {"ok", "partial"} else 1
