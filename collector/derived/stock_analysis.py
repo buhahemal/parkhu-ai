@@ -9,8 +9,9 @@ support & resistance, and ATR-based trade levels.
 This is meant to be the primary file the research engine reads. It does NOT
 produce a final recommendation — composite "Parkhu Score", thesis, sizing and
 conviction are left to the AI layer. Columns we have no source for yet
-(Supertrend, Ichimoku, OBV, CMF, ownership, news sentiment, earnings surprise)
-are present but left blank so the schema is stable.
+(Supertrend, Ichimoku, OBV, CMF, ownership, earnings surprise)
+are present but left blank so the schema is stable. News fields come from
+``news_enriched.csv`` (keyword + optional free-tier GitHub Models).
 
 Phase 1 note: several columns were blank not because the data was missing but
 because this module never read it. tradingview.csv carries 110 columns and
@@ -258,6 +259,42 @@ def _get(idx: pd.DataFrame, sym, col):
     return idx.loc[sym, col]
 
 
+def _aggregate_news(df: pd.DataFrame) -> dict[str, dict]:
+    """Per-symbol rollup from news_enriched.csv (mean sentiment, max catalyst)."""
+    if df is None or df.empty or "symbol" not in df.columns:
+        return {}
+    out: dict[str, dict] = {}
+    for sym, g in df.groupby("symbol", sort=False):
+        sent = pd.to_numeric(g.get("news_sentiment"), errors="coerce")
+        cat = pd.to_numeric(g.get("catalyst_strength"), errors="coerce")
+        score = pd.to_numeric(g.get("news_score"), errors="coerce")
+        major = g.get("major_catalyst")
+        risk = g.get("risk_event")
+        major_any = (
+            bool(major.astype(str).str.lower().isin(("true", "1", "yes")).any())
+            if major is not None
+            else False
+        )
+        risk_any = (
+            bool(risk.astype(str).str.lower().isin(("true", "1", "yes")).any())
+            if risk is not None
+            else False
+        )
+        # Also accept native bools from CSV (True/False)
+        if major is not None and major.dtype == bool:
+            major_any = bool(major.any())
+        if risk is not None and risk.dtype == bool:
+            risk_any = bool(risk.any())
+        out[str(sym)] = {
+            "news_sentiment": round(float(sent.mean()), 3) if sent.notna().any() else None,
+            "catalyst_strength": int(cat.max()) if cat.notna().any() else None,
+            "major_catalyst": major_any,
+            "risk_event": risk_any,
+            "news_score": int(round(float(score.max()))) if score.notna().any() else None,
+        }
+    return out
+
+
 def _trend(close, mas: list) -> tuple:
     vals = [m for m in mas if m is not None]
     if close is None or not vals:
@@ -353,6 +390,7 @@ def collect(date: str | None = None) -> dict:
     ev = _idx(load_csv("event_risk", date))
     fno = _idx(load_csv("fno_momentum", date))
     deliv = _idx(load_csv("delivery", date))
+    news_agg = _aggregate_news(load_csv("news_enriched", date))
 
     # Universe-wide ranks.
     tv = tv.copy()
@@ -633,11 +671,11 @@ def collect(date: str | None = None) -> dict:
                 "insider_buying": None,
                 "institution_score": None,
                 "news_count_7d": _get(ev, sym, "news_count_7d"),
-                "news_sentiment": None,
-                "catalyst_strength": None,
-                "major_catalyst": None,
-                "risk_event": None,
-                "news_score": None,
+                "news_sentiment": news_agg.get(sym, {}).get("news_sentiment"),
+                "catalyst_strength": news_agg.get(sym, {}).get("catalyst_strength"),
+                "major_catalyst": news_agg.get(sym, {}).get("major_catalyst"),
+                "risk_event": news_agg.get(sym, {}).get("risk_event"),
+                "news_score": news_agg.get(sym, {}).get("news_score"),
                 "in_oi_spurt": _get(fno, sym, "in_oi_spurt"),
                 "oi_change_pct": _num(_get(fno, sym, "pct_change_oi")),
                 "fno_score": _num(_get(fno, sym, "fno_score")),
@@ -648,7 +686,7 @@ def collect(date: str | None = None) -> dict:
                 "technical_score": tech_score,
                 "fundamental_score_final": fund_score,
                 "earnings_score_final": earn_score,
-                "news_score_final": None,
+                "news_score_final": news_agg.get(sym, {}).get("news_score"),
                 "sector_score": sector_score.get(i),
                 "macro_score": macro_score,
                 "risk_score": risk,

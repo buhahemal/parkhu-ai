@@ -14,6 +14,7 @@ from collector.derived import (
     event_risk,
     fno_momentum,
     market_summary,
+    news_classify,
     relative_strength,
     stock_analysis,
     swing_candidates,
@@ -51,13 +52,14 @@ COLLECTORS: tuple[AgentSpec, ...] = (
     AgentSpec("macro", macro.collect, "collector"),
 )
 
-# Order matters: stock_analysis consolidates prior CSVs; swing_brief is last.
+# Order matters: news_classify before stock_analysis; swing_brief is last.
 DERIVED: tuple[AgentSpec, ...] = (
     AgentSpec("relative_strength", relative_strength.collect, "derived"),
     AgentSpec("event_risk", event_risk.collect, "derived"),
     AgentSpec("fno_momentum", fno_momentum.collect, "derived"),
     AgentSpec("swing_candidates", swing_candidates.collect, "derived"),
     AgentSpec("market_summary", market_summary.collect, "derived"),
+    AgentSpec("news_classify", news_classify.collect, "derived"),
     AgentSpec("stock_analysis", stock_analysis.collect, "derived"),
     AgentSpec("swing_brief", swing_brief.collect, "derived"),
 )

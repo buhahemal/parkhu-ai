@@ -12,16 +12,19 @@ run.py                  # thin CLI entrypoint
        ├─ registry.py   # AgentSpec lists (collectors + derived)
        └─ runner.py     # collect → derive → watchlist → report → zip
 
-brief/     → derived/ → collectors (I/O) → infra (utils, yf_history, publish)
+brief/     → derived/ → collectors (I/O) → infra (utils, yf_history, github_models, publish)
 config/    # settings, universe, risk, publish (shared config)
 ```
 
 **Rules**
 
 1. `brief` may import `derived` and `config`. It must not call NSE/Yahoo/TV directly.
-2. `derived` may read CSVs via helpers and `config`. It must not own HTTP sessions.
+2. `derived` may read CSVs via helpers and `config`. It must not own HTTP sessions
+   except optional free-tier GitHub Models via `collector.infra.github_models`
+   (`news_classify` only; ≤1 batched call/day; never paid billing / BYOK).
 3. Collectors own I/O. They never import `brief` or `pipeline`.
 4. No circular imports between `collector.*` packages.
+5. `scripts/quality.py` / `quality.yml` stay ruff/vulture/jscpd — no Models.
 
 ## Agent contract
 

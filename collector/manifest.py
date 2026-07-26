@@ -153,6 +153,25 @@ CATALOG = [
         },
     ),
     (
+        "news_enriched.csv",
+        {
+            "agent": "news_classify (derived)",
+            "source": "news.csv + keywords + optional free-tier GitHub Models",
+            "description": "Per-announcement sentiment/catalyst classification. "
+            "Keywords first; at most one Models batch/day for leftovers. "
+            "Never enable paid GitHub Models billing.",
+            "use_case": "Feed stock_analysis news_* columns without LLM in swing_brief.",
+            "key_columns": [
+                "symbol",
+                "news_sentiment",
+                "catalyst_strength",
+                "major_catalyst",
+                "news_score",
+                "classify_source",
+            ],
+        },
+    ),
+    (
         "macro.csv",
         {
             "agent": "macro",
@@ -236,8 +255,9 @@ CATALOG = [
             "ATR-based trade levels, and a cross-sectional FACTOR MODEL "
             "(winsorized z-scores for value/momentum/quality/low-vol/growth/size "
             "+ composite_factor_z and its universe percentile rank, Barra/AQR-style). "
-            "Blank columns (supertrend, ichimoku, obv, cmf, ownership, news "
-            "sentiment, surprises) have no source yet. NOT a recommendation.",
+            "Blank columns (supertrend, ichimoku, obv, cmf, ownership, "
+            "surprises) have no source yet. News fields join from news_enriched. "
+            "NOT a recommendation.",
             "use_case": "The main file the research engine reads; everything deterministic precomputed. "
             "Factor z-scores rank each name vs the universe (mean 0, higher = better).",
             "key_columns": [

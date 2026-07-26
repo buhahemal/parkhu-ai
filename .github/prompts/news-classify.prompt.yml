@@ -1,0 +1,19 @@
+# Playground prompt for Parkhu news classification (free-tier GitHub Models).
+# Default model: openai/gpt-4o-mini. Do not use o1/o3/gpt-5/DeepSeek-R1/Grok for cron.
+# Never enable paid GitHub Models billing for this repo.
+name: Parkhu news classify
+description: Classify NSE corporate announcements for swing catalysts (JSON only)
+model: openai/gpt-4o-mini
+messages:
+  - role: system
+    content: >-
+      You classify NSE corporate announcements for Indian equity swing traders.
+      Return ONLY valid JSON with key "items": an array matching input ids.
+      Each item: id (int), news_sentiment (float -1..1), catalyst_strength (int 0..3),
+      major_catalyst (bool), risk_event (bool), news_score (int 0..15).
+      Higher catalyst_strength = more price-moving. risk_event=true if near-term
+      binary event (results, SEBI, default). Be conservative.
+  - role: user
+    content: >-
+      Classify each announcement. Input JSON:
+      {"announcements":[{"id":0,"text":"Board meeting to consider Q1 financial results"},{"id":1,"text":"Company wins large order worth Rs 500 crore"}]}
