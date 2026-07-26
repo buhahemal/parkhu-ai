@@ -14,7 +14,7 @@
   "regime": {
     "market_regime": "Bearish",
     "nifty_trend": "Bearish",
-    "nifty_pct_change": -0.43,
+    "nifty_pct_change": -0.53,
     "banknifty_trend": "Bearish",
     "banknifty_pct_change": -0.94,
     "india_vix": 13.48,
@@ -30,17 +30,17 @@
     "usdinr": 96.56,
     "usdinr_pct_change": -0.33,
     "us_sp500_pct": null,
-    "us_dow_pct": 0.46,
-    "us_vix": 18.58,
-    "us_vix_pct": -0.64,
-    "dxy": 101.47,
-    "dxy_pct": 0.04,
+    "us_dow_pct": null,
+    "us_vix": 18.7,
+    "us_vix_pct": 12.38,
+    "dxy": 101.43,
+    "dxy_pct": 0.29,
     "us_10y": 4.7,
     "asia_cue": "Mixed",
     "europe_cue": "Bearish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T06:01:38.393662+05:30"
+    "generated_at_ist": "2026-07-26T09:34:50.499790+05:30"
   },
   "funnel": [
     {
@@ -170,7 +170,7 @@
       "industry": "Regional Banks",
       "risk_sector": "Banks",
       "cmp": 1432.9,
-      "parkhu_score": 83.5,
+      "parkhu_score": 83.6,
       "band": "Buy",
       "levels": {
         "entry": 1432.9,
@@ -379,7 +379,7 @@
   "ignored_below_watch": [
     {
       "symbol": "NYKAA",
-      "score": 69.5
+      "score": 69.6
     },
     {
       "symbol": "ANANDRATHI",
@@ -391,11 +391,11 @@
     },
     {
       "symbol": "ETERNAL",
-      "score": 51.2
+      "score": 51.1
     },
     {
       "symbol": "IDFCFIRSTB",
-      "score": 48.0
+      "score": 48.1
     },
     {
       "symbol": "ATHERENERG",
