@@ -21,9 +21,18 @@ Do **not** upload `latest.zip`. Use the stable uncompressed pack.
 - Open suggestion ledger + **needs action** from the brief review
 - Top swing candidates (not the full 364-row universe)
 - Deep-dive raw URLs for `stock_analysis.csv`, `manifest.json`, `report.json`
+- Optional **`enrichment`** (Groq desk note) when `GROQ_API_KEY` is set — narrative only; levels stay from Parkhu gates
 
-The **GitHub Pages desk** is process + market visibility (funnel charts, regime, ledger).
-It intentionally does **not** show capital deployed — keep that conversation in Claude., brief
+The **GitHub Pages desk** is process + market visibility (funnel charts, regime, ledger, Groq note).
+It intentionally does **not** show capital deployed — keep that conversation in Claude.
+
+### Groq enrichment (optional)
+
+- Additive JSON under `research_pack.enrichment` — does **not** change scores, gates, or idea levels.
+- Prefer `enrichment.claude_feed` as a short paste after the deterministic pack.
+- Primary model `llama-3.3-70b-versatile` with fallbacks on rate-limit / failure.
+- Repo secret: **Settings → Secrets → Actions → `GROQ_API_KEY`**. Rotate any key that was pasted in chat.
+- Local: copy [`.env.example`](../.env.example) → `.env` (gitignored).
 
 ## Drill-down
 
@@ -40,6 +49,8 @@ Or browse: https://github.com/buhahemal/parkhu-ai/tree/main/output/latest
 Fetch the Parkhu research pack at
 https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md
 and summarize regime, ideas, and open positions that need action.
+If enrichment.claude_feed is present, treat it as a Groq narrative overlay —
+levels and scores in the pack remain authoritative.
 Use index.json / stock_analysis.csv URLs only if drilling into a symbol.
 Do not ask me for a zip.
 ```

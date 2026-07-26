@@ -59,6 +59,7 @@
         </a>
         <nav class="nav" aria-label="Jump">
           <a href="#overview" class="active">Overview</a>
+          <a href="#ai-desk">AI desk</a>
           <a href="#funnel">Funnel</a>
           <a href="#regime">Regime</a>
           <a href="#ideas">Ideas</a>
@@ -101,10 +102,29 @@
         <p id="kpi-tip" class="kpi-tip" hidden></p>
       </section>
 
+      <div id="enrich-hero" class="enrich-hero" hidden aria-live="polite"></div>
+
       <div id="status-ribbon" class="status-ribbon" aria-label="Session status"></div>
 
       <div class="desk">
         <main class="main-col">
+          <section id="ai-desk" class="panel enrich-panel">
+            <div class="panel-head">
+              <div>
+                <h2>AI desk note</h2>
+                <p class="panel-sub">Groq narrative overlay — levels from Parkhu gates</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> optional Groq stance, brief, and per-symbol actions. Entry / stop / T1 / hold are stamped from the deterministic pack.</p>
+                  <p><strong>Decide:</strong> use as process commentary. Claude still owns capital and final sizing. If skipped, trust regime + ideas alone.</p>
+                </div>
+              </details>
+            </div>
+            <div id="enrich-body"></div>
+          </section>
+
           <section id="funnel" class="panel hero">
             <div class="panel-head">
               <div>
@@ -243,6 +263,11 @@
           <section class="panel widget">
             <h2>Needs action</h2>
             <div id="side-action" class="action-strip compact"></div>
+          </section>
+
+          <section class="panel widget" id="side-enrich-wrap">
+            <h2>AI stance</h2>
+            <div id="side-enrich"></div>
           </section>
         </aside>
       </div>

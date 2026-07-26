@@ -16,6 +16,7 @@ import pandas as pd
 from config import publish as pub
 from config import settings
 
+from collector.enrichment import enrich_research_pack
 from collector.utils import get_logger
 
 log = get_logger("publish_pack")
@@ -576,6 +577,43 @@ def render_research_pack_md(pack: dict[str, Any]) -> str:
             f"rs_nifty={c.get('rs_vs_nifty_1m')} deliv={c.get('deliv_pct')}"
         )
 
+    enrich = pack.get("enrichment") if isinstance(pack.get("enrichment"), dict) else None
+    if enrich and enrich.get("status") == "ok":
+        fb = " (fallback)" if enrich.get("fallback_used") else ""
+        lines.extend(
+            [
+                "",
+                "## Groq desk note",
+                "",
+                f"- **model:** {enrich.get('model')}{fb}",
+                f"- **stance:** {enrich.get('stance')}",
+                "",
+                str(enrich.get("market_brief") or ""),
+                "",
+            ]
+        )
+        for s in enrich.get("suggestions") or []:
+            if not isinstance(s, dict):
+                continue
+            lines.append(
+                f"- **{s.get('symbol')}** [{s.get('action')}/{s.get('conviction')}] "
+                f"entry={s.get('entry')} stop={s.get('stop')} t1={s.get('t1')} "
+                f"hold={s.get('hold_days')}d — {s.get('rationale')}"
+            )
+        feed = enrich.get("claude_feed")
+        if feed:
+            lines.extend(["", "### Claude feed", "", str(feed), ""])
+    elif enrich and enrich.get("status") == "skipped":
+        lines.extend(
+            [
+                "",
+                "## Groq desk note",
+                "",
+                f"_Skipped:_ {enrich.get('reason') or 'n/a'}",
+                "",
+            ]
+        )
+
     urls = pack.get("urls") or {}
     deep = urls.get("deep_dive") or {}
     lines.extend(["", "## Deep-dive URLs (after push)", ""])
@@ -606,6 +644,9 @@ def write_research_pack(
     out = settings.daily_output_dir(date)
     pack = _json_safe(build_research_pack(date))
     pack["generated_at_ist"] = generated_at_ist
+    # Additive Groq narrative — skip-safe; never mutates ideas/ledger levels.
+    pack = enrich_research_pack(pack)
+    pack = _json_safe(pack)
     json_path = out / "research_pack.json"
     md_path = out / "research_pack.md"
     with open(json_path, "w", encoding="utf-8") as f:

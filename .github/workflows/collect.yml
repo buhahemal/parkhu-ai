@@ -7,6 +7,8 @@ on:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  # Optional Groq desk note in research_pack (Pages + Claude feed). Rotate if exposed.
+  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
 permissions:
   contents: write             # needed to commit the day's output back

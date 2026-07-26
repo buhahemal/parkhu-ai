@@ -177,6 +177,7 @@ CATALOG = [
             "source": "swing_brief + trades + swing_candidates + market_summary",
             "description": "Claude-sized daily handoff: regime, ideas, funnel, "
             "open ledger, needs-action, top candidates, deep-dive URLs. "
+            "Optional additive enrichment (Groq desk note) when GROQ_API_KEY is set. "
             "Also written as research_pack.md; mirrored under output/latest/.",
             "use_case": "Morning LLM review without unzipping latest.zip.",
             "key_columns": [
@@ -184,6 +185,7 @@ CATALOG = [
                 "regime",
                 "ideas",
                 "ledger",
+                "enrichment",
                 "urls",
             ],
         },

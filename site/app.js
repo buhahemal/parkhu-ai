@@ -1015,6 +1015,188 @@ function setDateNote(kind, date) {
   }
 }
 
+function shortModelName(model) {
+  if (!model) return "—";
+  const s = String(model);
+  if (s.includes("70b")) return "llama-3.3-70b";
+  if (s.includes("scout")) return "llama-4-scout";
+  if (s.includes("8b")) return "llama-3.1-8b";
+  return s.split("/").pop() || s;
+}
+
+function stanceClass(stance) {
+  const s = String(stance || "").toLowerCase().replace(/-/g, "_");
+  if (s === "defensive") return "defensive";
+  if (s === "selective_aggressive") return "selective_aggressive";
+  return "neutral";
+}
+
+function renderEnrichment(pack) {
+  const enrich = pack.enrichment && typeof pack.enrichment === "object" ? pack.enrichment : null;
+  const hero = document.getElementById("enrich-hero");
+  const body = document.getElementById("enrich-body");
+  const side = document.getElementById("side-enrich");
+
+  if (!enrich) {
+    hero.hidden = true;
+    hero.replaceChildren();
+    body.replaceChildren(
+      el("p", { class: "enrich-skip" }, "No Groq note on this pack (enrichment not generated)."),
+    );
+    side.replaceChildren(el("p", { class: "enrich-skip" }, "—"));
+    return;
+  }
+
+  if (enrich.status !== "ok") {
+    const reason = enrich.reason || "skipped";
+    const lastErr = Array.isArray(enrich.attempts)
+      ? [...enrich.attempts].reverse().find((a) => a && !a.ok)?.error
+      : null;
+    hero.hidden = false;
+    hero.replaceChildren(
+      el("span", { class: "stance-chip neutral" }, "Skipped"),
+      el(
+        "p",
+        { class: "brief-line" },
+        `No Groq note — ${reason}${lastErr ? ` · ${String(lastErr).slice(0, 80)}` : ""}`,
+      ),
+      el("a", { class: "jump", href: "#ai-desk" }, "Details"),
+    );
+    const skipNodes = [
+      el(
+        "p",
+        { class: "enrich-skip" },
+        `Groq desk skipped: ${reason}. Deterministic regime / ideas still apply.`,
+      ),
+    ];
+    if (lastErr) {
+      skipNodes.push(
+        el("p", { class: "enrich-skip" }, `Last error: ${String(lastErr).slice(0, 160)}`),
+      );
+    }
+    body.replaceChildren(...skipNodes);
+    side.replaceChildren(el("p", { class: "enrich-skip" }, "Skipped"));
+    return;
+  }
+
+  const stance = enrich.stance || "neutral";
+  const modelLabel = `Groq · ${shortModelName(enrich.model)}${enrich.fallback_used ? " (fallback)" : ""}`;
+  const brief = enrich.market_brief || "—";
+
+  hero.hidden = false;
+  hero.replaceChildren(
+    el("span", { class: `stance-chip ${stanceClass(stance)}` }, String(stance).replace(/_/g, " ")),
+    el("p", { class: "brief-line" }, brief.length > 180 ? `${brief.slice(0, 177)}…` : brief),
+    el("span", { class: `model-badge${enrich.fallback_used ? " fallback" : ""}` }, modelLabel),
+    el("a", { class: "jump", href: "#ai-desk" }, "Full note →"),
+  );
+
+  const focus = Array.isArray(enrich.focus) ? enrich.focus : [];
+  const suggestions = Array.isArray(enrich.suggestions) ? enrich.suggestions : [];
+  const notes = Array.isArray(enrich.open_book_notes) ? enrich.open_book_notes : [];
+
+  const table =
+    suggestions.length === 0
+      ? el("p", { class: "enrich-skip" }, "No symbol suggestions in this note.")
+      : el(
+          "table",
+          { class: "enrich-table" },
+          el(
+            "thead",
+            {},
+            el(
+              "tr",
+              {},
+              ...["Symbol", "Action", "Conv.", "Entry", "Stop", "T1", "Hold", "Rationale"].map((h) =>
+                el("th", {}, h),
+              ),
+            ),
+          ),
+          el(
+            "tbody",
+            {},
+            ...suggestions.map((s) =>
+              el(
+                "tr",
+                {},
+                el("td", { "data-label": "Symbol" }, el("strong", {}, s.symbol || "—")),
+                el("td", { class: "action", "data-label": "Action" }, String(s.action || "—").replace(/_/g, " ")),
+                el("td", { "data-label": "Conv." }, s.conviction || "—"),
+                el("td", { class: "mono", "data-label": "Entry" }, fmt(s.entry)),
+                el("td", { class: "mono", "data-label": "Stop" }, fmt(s.stop)),
+                el("td", { class: "mono", "data-label": "T1" }, fmt(s.t1)),
+                el("td", { class: "mono", "data-label": "Hold" }, s.hold_days != null ? `${fmt(s.hold_days, 0)}d` : "—"),
+                el("td", { "data-label": "Rationale" }, s.rationale || "—"),
+              ),
+            ),
+          ),
+        );
+
+  const feed = enrich.claude_feed || "";
+  const feedBlock = feed
+    ? el(
+        "details",
+        { class: "claude-feed" },
+        el("summary", {}, "Claude feed (copy for morning review)"),
+        el("pre", {}, feed),
+        el(
+          "div",
+          { class: "copy-row" },
+          (() => {
+            const btn = el("button", { type: "button" }, "Copy");
+            btn.addEventListener("click", async () => {
+              try {
+                await navigator.clipboard.writeText(feed);
+                btn.textContent = "Copied";
+                setTimeout(() => {
+                  btn.textContent = "Copy";
+                }, 1500);
+              } catch {
+                btn.textContent = "Copy failed";
+              }
+            });
+            return btn;
+          })(),
+        ),
+      )
+    : null;
+
+  const bodyNodes = [
+    el(
+      "div",
+      { class: "enrich-meta" },
+      el("span", { class: `model-badge${enrich.fallback_used ? " fallback" : ""}` }, modelLabel),
+    ),
+    el("p", { class: "market-brief" }, brief),
+  ];
+  if (focus.length) {
+    bodyNodes.push(
+      el("div", { class: "enrich-meta" }, ...focus.map((f) => el("span", { class: "focus-chip" }, f))),
+    );
+  }
+  bodyNodes.push(el("h3", { style: "margin:0 0 0.35rem;font-size:1rem" }, "Suggestions"), table);
+  if (notes.length) {
+    bodyNodes.push(el("ul", { class: "enrich-notes" }, ...notes.map((n) => el("li", {}, n))));
+  }
+  if (feedBlock) bodyNodes.push(feedBlock);
+  body.replaceChildren(...bodyNodes);
+
+  side.replaceChildren(
+    el("div", { class: "side-enrich" },
+      el("div", { class: `stance ${stanceClass(stance)}` }, String(stance).replace(/_/g, " ")),
+      suggestions.length
+        ? el(
+            "ul",
+            {},
+            ...suggestions.slice(0, 3).map((s) =>
+              el("li", {}, `${s.symbol}: ${String(s.action || "").replace(/_/g, " ")}`),
+            ),
+          )
+        : el("p", { class: "enrich-skip" }, "No suggestions"),
+    ),
+  );
+}
+
 async function renderDesk(date) {
   destroyCharts();
   syncChartColors();
@@ -1025,6 +1207,7 @@ async function renderDesk(date) {
   setDateInUrl(shown === catalog.latest ? "" : shown);
   setDateNote(kind, shown);
   renderHeader(pack);
+  renderEnrichment(pack);
   renderFunnel(pack);
   renderRegime(pack);
   renderIdeas(pack);

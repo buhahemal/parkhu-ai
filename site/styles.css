@@ -942,6 +942,257 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   font-family: var(--mono);
 }
 
+/* —— Groq enrichment —— */
+.enrich-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.enrich-hero[hidden] {
+  display: none !important;
+}
+
+.enrich-hero .stance-chip {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.enrich-hero .stance-chip.defensive {
+  background: var(--warn-dim);
+  color: var(--warn);
+  border-color: rgba(217, 119, 6, 0.35);
+}
+
+.enrich-hero .stance-chip.selective_aggressive,
+.enrich-hero .stance-chip.selective-aggressive {
+  background: var(--good-dim);
+  color: var(--good);
+  border-color: rgba(22, 163, 74, 0.35);
+}
+
+.enrich-hero .stance-chip.neutral {
+  color: var(--muted);
+}
+
+.enrich-hero .brief-line {
+  flex: 1 1 220px;
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.enrich-hero .model-badge {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.enrich-hero .model-badge.fallback {
+  color: var(--warn);
+  border-color: rgba(217, 119, 6, 0.35);
+}
+
+.enrich-hero a.jump {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.enrich-panel .enrich-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.5rem 0 0.85rem;
+}
+
+.enrich-panel .focus-chip {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.enrich-panel .market-brief {
+  margin: 0 0 1rem;
+  font-size: var(--fs-body);
+  line-height: 1.5;
+}
+
+.enrich-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-table);
+  font-size: var(--fs-table);
+  margin: 0.5rem 0 1rem;
+}
+
+.enrich-table th,
+.enrich-table td {
+  text-align: left;
+  padding: 0.55rem 0.45rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.enrich-table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.enrich-table .mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.enrich-table .action {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.enrich-notes {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: var(--fs-small);
+}
+
+.enrich-notes li {
+  margin: 0.3rem 0;
+}
+
+.claude-feed {
+  margin-top: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-2);
+  padding: 0.75rem 0.85rem;
+}
+
+.claude-feed summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--accent);
+  list-style: none;
+}
+
+.claude-feed summary::-webkit-details-marker {
+  display: none;
+}
+
+.claude-feed pre {
+  margin: 0.65rem 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.claude-feed .copy-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.claude-feed button {
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+}
+
+.enrich-skip {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--fs-small);
+  font-style: italic;
+}
+
+.side-enrich .stance {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.45rem;
+}
+
+.side-enrich ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: var(--fs-small);
+  color: var(--muted);
+}
+
+.side-enrich li {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 720px) {
+  .enrich-table thead {
+    display: none;
+  }
+
+  .enrich-table tr {
+    display: block;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.5rem 0.65rem;
+    background: var(--surface-2);
+  }
+
+  .enrich-table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    border: 0;
+    padding: 0.25rem 0;
+  }
+
+  .enrich-table td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+}
+
 .foot {
   margin-top: 1.5rem;
   font-size: 0.85rem;
