@@ -1,7 +1,10 @@
 {
   "date": "2026-07-26",
-  "generated_at_ist": "2026-07-26T09:34:50.911762+05:30",
-  "duration_seconds": 30.0,
+  "collection_date": "2026-07-26",
+  "session_date": "2026-07-24",
+  "is_trading_day": false,
+  "generated_at_ist": "2026-07-26T11:17:03.198178+05:30",
+  "duration_seconds": 25.7,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -21,55 +24,56 @@
       "agent": "indices",
       "status": "ok",
       "rows": 5,
-      "seconds": 0.8
+      "stale": 0,
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
-      "rows": 8,
+      "rows": 10,
       "seconds": 0.8
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.2
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.1
+      "seconds": 3.5
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 5.5
+      "seconds": 5.0
     },
     {
       "agent": "delivery",
       "status": "ok",
       "rows": 353,
-      "seconds": 3.0
+      "seconds": 3.1
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.5
+      "seconds": 2.7
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.9
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.0
+      "seconds": 2.3
     },
     {
       "agent": "relative_strength",
@@ -102,10 +106,16 @@
       "seconds": 0.0
     },
     {
+      "agent": "news_classify",
+      "status": "partial",
+      "rows": 20,
+      "seconds": 0.0
+    },
+    {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 364,
-      "seconds": 0.3
+      "seconds": 0.4
     },
     {
       "agent": "swing_brief",
@@ -116,7 +126,7 @@
         "ICICIBANK",
         "IIFL"
       ],
-      "watchlist": 6,
+      "watchlist": 5,
       "open_positions": 6,
       "needing_action": [
         "J&KBANK",
@@ -127,7 +137,7 @@
     }
   ],
   "ok": 18,
-  "partial": 0,
+  "partial": 1,
   "errors": 0,
   "access_note": "Fetch download_url (raw GitHub) for file contents \u2014 LLM-readable plain text. preview_url opens the file in GitHub's UI. Links work after this run is pushed.",
   "repository": {
@@ -203,6 +213,10 @@
     "news.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/news.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/news.csv"
+    },
+    "news_enriched.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/news_enriched.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/news_enriched.csv"
     },
     "oi_spurts.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/oi_spurts.csv",

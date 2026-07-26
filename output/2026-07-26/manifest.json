@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-07-26",
-  "generated_at_ist": "2026-07-26T09:34:50.910505+05:30",
+  "generated_at_ist": "2026-07-26T11:17:03.196648+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -45,7 +45,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 8
+      "rows": 10
     },
     "earnings.csv": {
       "agent": "earnings",
@@ -174,6 +174,22 @@
       "present": true,
       "rows": 20
     },
+    "news_enriched.csv": {
+      "agent": "news_classify (derived)",
+      "source": "news.csv + keywords + optional free-tier GitHub Models",
+      "description": "Per-announcement sentiment/catalyst classification. Keywords first; at most one Models batch/day for leftovers. Never enable paid GitHub Models billing.",
+      "use_case": "Feed stock_analysis news_* columns without LLM in swing_brief.",
+      "key_columns": [
+        "symbol",
+        "news_sentiment",
+        "catalyst_strength",
+        "major_catalyst",
+        "news_score",
+        "classify_source"
+      ],
+      "present": true,
+      "rows": 20
+    },
     "macro.csv": {
       "agent": "macro",
       "source": "Yahoo Finance + manual policy placeholders",
@@ -261,7 +277,7 @@
     "stock_analysis.csv": {
       "agent": "stock_analysis (derived)",
       "source": "consolidates all per-stock CSVs",
-      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, ATR-based trade levels, and a cross-sectional FACTOR MODEL (winsorized z-scores for value/momentum/quality/low-vol/growth/size + composite_factor_z and its universe percentile rank, Barra/AQR-style). Blank columns (supertrend, ichimoku, obv, cmf, ownership, news sentiment, surprises) have no source yet. NOT a recommendation.",
+      "description": "PRIMARY FILE \u2014 one row per stock merging trend, momentum, volume, fundamentals, earnings, relative strength, F&O and event flags, with deterministic sub-scores, classic pivots/support/resistance, ATR-based trade levels, and a cross-sectional FACTOR MODEL (winsorized z-scores for value/momentum/quality/low-vol/growth/size + composite_factor_z and its universe percentile rank, Barra/AQR-style). Blank columns (supertrend, ichimoku, obv, cmf, ownership, surprises) have no source yet. News fields join from news_enriched. NOT a recommendation.",
       "use_case": "The main file the research engine reads; everything deterministic precomputed. Factor z-scores rank each name vs the universe (mean 0, higher = better).",
       "key_columns": [
         "symbol",
