@@ -318,6 +318,35 @@ function round(n, d) {
   return Math.round(n * 10 ** d) / 10 ** d;
 }
 
+function nseSymbol(raw) {
+  let s = String(raw || "").trim().toUpperCase();
+  if (s.startsWith("NSE:")) s = s.slice(4);
+  if (s.endsWith(".NS")) s = s.slice(0, -3);
+  return s.trim();
+}
+
+function tradingViewUrl(symbol) {
+  const s = nseSymbol(symbol);
+  return s ? `https://in.tradingview.com/symbols/NSE-${encodeURIComponent(s)}/` : "";
+}
+
+function symbolLink(symbol, fallback = "—") {
+  const s = nseSymbol(symbol);
+  if (!s) return el("strong", {}, fallback);
+  return el(
+    "a",
+    {
+      class: "sym-link",
+      href: tradingViewUrl(s),
+      target: "_blank",
+      rel: "noopener noreferrer",
+      title: `Open ${s} on TradingView`,
+    },
+    el("strong", {}, s),
+    el("span", { class: "sym-ext", "aria-hidden": "true" }, "↗"),
+  );
+}
+
 function trendClass(label) {
   const s = String(label || "").toLowerCase();
   if (s.includes("bull")) return "bull";
@@ -761,7 +790,7 @@ function renderIdeas(pack) {
         el(
           "div",
           { class: "title" },
-          el("strong", {}, idea.symbol || "—"),
+          symbolLink(idea.symbol),
           el("span", { class: `band ${band}` }, idea.band || "—"),
         ),
         el("div", { class: "sub" }, `${idea.risk_sector || "—"} · score ${fmt(idea.parkhu_score, 1)}`),
@@ -787,7 +816,7 @@ function renderActionItems(actions) {
         el(
           "div",
           { class: "item" },
-          el("strong", {}, r.symbol || "?"),
+          symbolLink(r.symbol, "?"),
           ` — ${r.action || "ACTION"}: ${r.detail || ""}`,
         ),
       );
@@ -799,7 +828,7 @@ function renderActionItems(actions) {
           el(
             "div",
             { class: "item" },
-            el("strong", {}, r.symbol || "?"),
+            symbolLink(r.symbol, "?"),
             ` — ${r.action || "ACTION"}`,
           ),
         )),
@@ -885,7 +914,7 @@ function renderLedger(pack) {
       return el(
         "article",
         { class: "card" },
-        el("div", { class: "title" }, el("strong", {}, r.symbol || "—")),
+        el("div", { class: "title" }, symbolLink(r.symbol)),
         el("div", { class: "sub" }, `Opened ${r.date_opened || "—"}`),
         el(
           "div",
@@ -1119,7 +1148,7 @@ function renderEnrichment(pack) {
               el(
                 "tr",
                 {},
-                el("td", { "data-label": "Symbol" }, el("strong", {}, s.symbol || "—")),
+                el("td", { "data-label": "Symbol" }, symbolLink(s.symbol)),
                 el("td", { class: "action", "data-label": "Action" }, String(s.action || "—").replace(/_/g, " ")),
                 el("td", { "data-label": "Conv." }, s.conviction || "—"),
                 el("td", { class: "mono", "data-label": "Entry" }, fmt(s.entry)),
@@ -1189,7 +1218,12 @@ function renderEnrichment(pack) {
             "ul",
             {},
             ...suggestions.slice(0, 3).map((s) =>
-              el("li", {}, `${s.symbol}: ${String(s.action || "").replace(/_/g, " ")}`),
+              el(
+                "li",
+                {},
+                symbolLink(s.symbol),
+                `: ${String(s.action || "").replace(/_/g, " ")}`,
+              ),
             ),
           )
         : el("p", { class: "enrich-skip" }, "No suggestions"),
