@@ -92,6 +92,15 @@ OHLC_WARM_MIN_BARS = (
 OHLC_COLD_PERIOD = os.getenv("PARKHU_OHLC_COLD_PERIOD", "400d") or "400d"
 OHLC_CHUNK_SIZE = int(os.getenv("PARKHU_OHLC_CHUNK_SIZE", "80") or "80")
 OHLC_CHUNK_SLEEP_S = float(os.getenv("PARKHU_OHLC_CHUNK_SLEEP_S", "1.0") or "1.0")
+# Yahoo rate-limit / timeout: wait then retry failed symbols (cron-safe).
+OHLC_RETRY_WAIT_S = float(os.getenv("PARKHU_OHLC_RETRY_WAIT_S", "210") or "210")  # ~3.5 min
+OHLC_RETRY_MAX = int(os.getenv("PARKHU_OHLC_RETRY_MAX", "2") or "2")  # retries after first try
+OHLC_YF_THREADS = (os.getenv("PARKHU_OHLC_YF_THREADS", "1") or "1").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
 OHLC_CACHE_DIR = DATABASE_DIR / "ohlc"
 OHLC_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -16,7 +16,8 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # OHLC cold backfill + Yahoo rate-limit retries (3–4 min waits) need headroom.
+    timeout-minutes: 90
 
     steps:
       - name: Checkout

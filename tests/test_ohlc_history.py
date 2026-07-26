@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import date, timedelta
 
 import pandas as pd
-from collector.history.ohlc import COLUMNS, _is_warm, collect
+from collector.history.ohlc import COLUMNS, _is_warm, backfill_symbols, collect
 from collector.yf_history import clean_daily_history, trim_sessions
 from pipeline.registry import COLLECTORS
 
@@ -66,6 +66,20 @@ def _yf_frame(ticker: str, days: int, start: date) -> pd.DataFrame:
     )
 
 
+def _patch_ohlc_defaults(monkeypatch, settings, cache, output) -> None:
+    monkeypatch.setattr(settings, "OUTPUT_DIR", output)
+    monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
+    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 20)
+    monkeypatch.setattr(settings, "OHLC_WARM_MIN_BARS", 10)
+    monkeypatch.setattr(settings, "OHLC_INCREMENTAL_DAYS", 5)
+    monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "400d")
+    monkeypatch.setattr(settings, "OHLC_CHUNK_SIZE", 80)
+    monkeypatch.setattr(settings, "OHLC_CHUNK_SLEEP_S", 0)
+    monkeypatch.setattr(settings, "OHLC_RETRY_WAIT_S", 0)
+    monkeypatch.setattr(settings, "OHLC_RETRY_MAX", 0)
+    monkeypatch.setattr(settings, "MAX_SYMBOLS", None)
+
+
 def test_is_warm_requires_min_bars(tmp_path, monkeypatch):
     from config import settings
 
@@ -85,13 +99,15 @@ def test_collect_writes_schema_without_network(tmp_path, monkeypatch):
     monkeypatch.setattr(settings, "OHLC_CACHE_DIR", tmp_path / "cache")
     settings.OHLC_CACHE_DIR.mkdir(parents=True)
     monkeypatch.setattr(settings, "MAX_SYMBOLS", 2)
+    monkeypatch.setattr(settings, "OHLC_RETRY_WAIT_S", 0)
+    monkeypatch.setattr(settings, "OHLC_RETRY_MAX", 0)
     monkeypatch.setattr(
         "collector.history.ohlc._universe",
         lambda date=None: ["AAA", "BBB"],
     )
     monkeypatch.setattr(
         "collector.history.ohlc._download_chunk",
-        lambda tickers, period="400d": pd.DataFrame(),
+        lambda tickers, period="400d": (pd.DataFrame(), ""),
     )
     date_s = "2026-07-25"
     result = collect(date_s)
@@ -108,15 +124,7 @@ def test_warm_path_uses_incremental_period(tmp_path, monkeypatch):
 
     cache = tmp_path / "cache"
     cache.mkdir()
-    monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
-    monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
-    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 20)
-    monkeypatch.setattr(settings, "OHLC_WARM_MIN_BARS", 10)
-    monkeypatch.setattr(settings, "OHLC_INCREMENTAL_DAYS", 5)
-    monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "400d")
-    monkeypatch.setattr(settings, "OHLC_CHUNK_SIZE", 80)
-    monkeypatch.setattr(settings, "OHLC_CHUNK_SLEEP_S", 0)
-    monkeypatch.setattr(settings, "MAX_SYMBOLS", None)
+    _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
 
     _seed_cache(cache, "WARMCO", 12, start=date(2025, 1, 2))
     periods: list[str] = []
@@ -125,7 +133,7 @@ def test_warm_path_uses_incremental_period(tmp_path, monkeypatch):
         periods.append(period)
         assert tickers == ["WARMCO.NS"]
         assert period == "5d"
-        return _yf_frame("WARMCO.NS", 3, start=date(2025, 2, 1))
+        return _yf_frame("WARMCO.NS", 3, start=date(2025, 2, 1)), ""
 
     monkeypatch.setattr("collector.history.ohlc._universe", lambda date=None: ["WARMCO"])
     monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
@@ -147,15 +155,7 @@ def test_cold_short_cache_uses_full_period(tmp_path, monkeypatch):
 
     cache = tmp_path / "cache"
     cache.mkdir()
-    monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
-    monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
-    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 20)
-    monkeypatch.setattr(settings, "OHLC_WARM_MIN_BARS", 10)
-    monkeypatch.setattr(settings, "OHLC_INCREMENTAL_DAYS", 5)
-    monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "400d")
-    monkeypatch.setattr(settings, "OHLC_CHUNK_SIZE", 80)
-    monkeypatch.setattr(settings, "OHLC_CHUNK_SLEEP_S", 0)
-    monkeypatch.setattr(settings, "MAX_SYMBOLS", None)
+    _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
 
     _seed_cache(cache, "SHORTCO", 3)
     periods: list[str] = []
@@ -163,7 +163,7 @@ def test_cold_short_cache_uses_full_period(tmp_path, monkeypatch):
     def fake_download(tickers, period="400d"):
         periods.append(period)
         assert period == "400d"
-        return _yf_frame("SHORTCO.NS", 15, start=date(2025, 1, 2))
+        return _yf_frame("SHORTCO.NS", 15, start=date(2025, 1, 2)), ""
 
     monkeypatch.setattr("collector.history.ohlc._universe", lambda date=None: ["SHORTCO"])
     monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
@@ -181,15 +181,7 @@ def test_new_stock_full_backfill_creates_csv(tmp_path, monkeypatch):
 
     cache = tmp_path / "cache"
     cache.mkdir()
-    monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
-    monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
-    monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 20)
-    monkeypatch.setattr(settings, "OHLC_WARM_MIN_BARS", 10)
-    monkeypatch.setattr(settings, "OHLC_INCREMENTAL_DAYS", 5)
-    monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "400d")
-    monkeypatch.setattr(settings, "OHLC_CHUNK_SIZE", 80)
-    monkeypatch.setattr(settings, "OHLC_CHUNK_SLEEP_S", 0)
-    monkeypatch.setattr(settings, "MAX_SYMBOLS", None)
+    _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
 
     assert not (cache / "NEWCO.csv").exists()
     periods: list[str] = []
@@ -198,7 +190,7 @@ def test_new_stock_full_backfill_creates_csv(tmp_path, monkeypatch):
         periods.append(period)
         assert tickers == ["NEWCO.NS"]
         assert period == "400d"
-        return _yf_frame("NEWCO.NS", 15, start=date(2025, 3, 3))
+        return _yf_frame("NEWCO.NS", 15, start=date(2025, 3, 3)), ""
 
     monkeypatch.setattr("collector.history.ohlc._universe", lambda date=None: ["NEWCO"])
     monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
@@ -211,3 +203,30 @@ def test_new_stock_full_backfill_creates_csv(tmp_path, monkeypatch):
     out = pd.read_csv(settings.OUTPUT_DIR / "2026-07-26" / "history" / "ohlc.csv")
     assert "NEWCO" in set(out["symbol"])
     assert len(out) >= 10
+
+
+def test_rate_limit_retries_after_wait(tmp_path, monkeypatch):
+    from config import settings
+
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    _patch_ohlc_defaults(monkeypatch, settings, cache, tmp_path / "output")
+    monkeypatch.setattr(settings, "OHLC_RETRY_MAX", 1)
+    monkeypatch.setattr(settings, "OHLC_RETRY_WAIT_S", 0)
+
+    calls = {"n": 0}
+    sleeps: list[float] = []
+
+    def fake_download(tickers, period="400d"):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            return pd.DataFrame(), "YFRateLimitError('Too Many Requests. Rate limited.')"
+        return _yf_frame("RETRYCO.NS", 15, start=date(2025, 4, 1)), ""
+
+    monkeypatch.setattr("collector.history.ohlc.time.sleep", lambda s: sleeps.append(s))
+    monkeypatch.setattr("collector.history.ohlc._download_chunk", fake_download)
+    result = backfill_symbols(["RETRYCO"], date="2026-07-26")
+    assert calls["n"] == 2
+    assert result["failed"] == 0
+    assert result["retries"] == 1
+    assert (cache / "RETRYCO.csv").is_file()
