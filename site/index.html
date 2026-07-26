@@ -220,39 +220,6 @@
         </main>
 
         <aside class="side-col" aria-label="Process widgets">
-          <section class="panel widget tip-card">
-            <h2>How to use</h2>
-            <p>Today’s process health and ideas — not capital (that stays in Claude).</p>
-            <p>Tap a metric card for what it means and what to decide. Open <em>Guide</em> on each panel for more. Full glossary: <a href="./dictionary.html">Data dictionary</a>.</p>
-          </section>
-
-          <section id="quality" class="panel widget">
-            <div class="panel-head">
-              <div>
-                <h2>Data quality</h2>
-                <p class="panel-sub">Score coverage &amp; caveats</p>
-              </div>
-              <details class="guide">
-                <summary>Guide</summary>
-                <div class="guide-body">
-                  <p><strong>Shows:</strong> % of KB weights live + caveats.</p>
-                  <p><strong>Decide:</strong> low coverage → treat scores as provisional; demand clearer setups.</p>
-                </div>
-              </details>
-            </div>
-            <div id="quality-gauge" class="gauge" aria-hidden="true">
-              <svg viewBox="0 0 120 120">
-                <circle class="gauge-track" cx="60" cy="60" r="52" />
-                <circle id="gauge-arc" class="gauge-arc" cx="60" cy="60" r="52" />
-              </svg>
-              <div class="gauge-label">
-                <b id="gauge-pct">—</b>
-                <span>coverage</span>
-              </div>
-            </div>
-            <div id="quality-body"></div>
-          </section>
-
           <section class="panel widget">
             <h2>Market pulse</h2>
             <p class="panel-sub">Cue mix (Asia / Europe / US)</p>
@@ -285,6 +252,33 @@
           <section class="panel widget" id="side-enrich-wrap">
             <h2>AI stance</h2>
             <div id="side-enrich"></div>
+          </section>
+
+          <section id="quality" class="panel widget">
+            <div class="panel-head">
+              <div>
+                <h2>Data quality</h2>
+                <p class="panel-sub">Score coverage &amp; caveats</p>
+              </div>
+              <details class="guide">
+                <summary>Guide</summary>
+                <div class="guide-body">
+                  <p><strong>Shows:</strong> % of KB weights live + caveats.</p>
+                  <p><strong>Decide:</strong> low coverage → treat scores as provisional; demand clearer setups.</p>
+                </div>
+              </details>
+            </div>
+            <div id="quality-gauge" class="gauge" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle class="gauge-track" cx="60" cy="60" r="52" />
+                <circle id="gauge-arc" class="gauge-arc" cx="60" cy="60" r="52" />
+              </svg>
+              <div class="gauge-label">
+                <b id="gauge-pct">—</b>
+                <span>coverage</span>
+              </div>
+            </div>
+            <div id="quality-body"></div>
           </section>
         </aside>
       </div>
