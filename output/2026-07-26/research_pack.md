@@ -1,16 +1,16 @@
 # Parkhu research pack — 2026-07-26
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-07-26T16:14:07.373650+05:30
+- **generated_at_ist:** 2026-07-26T17:08:17.215247+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Neutral**
-- nifty: Unknown (None%)
-- india_vix: None (Unknown)
+- market_regime: **Bearish**
+- nifty: Bearish (-0.43%)
+- india_vix: 14.03 (Medium)
 - fii_net: -3892.77 | dii_net: 5453.55
-- overall_risk: Unknown | global_risk: Neutral
+- overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
@@ -20,115 +20,106 @@
 - price > EMA50: 890
 - ADX14 > 25: 526
 - RSI14 in 40-80: 507
-- RS > 0 vs NIFTY and sector: 0
-- delivery% >= 40: 0
-- relative_volume >= 1: 0
-- no earnings within 21d: 0
-- event_risk_score <= 1: 0
-- TV rating not Sell: 0
+- RS > 0 vs NIFTY and sector: 287
+- delivery% >= 40: 135
+- relative_volume >= 1: 28
+- no earnings within 21d: 11
+- event_risk_score <= 1: 11
+- TV rating not Sell: 11
 
 ## Ideas
 
-### EBGNG — Watch (score 11.0)
-- EBGNG | risk_sector: Technology Services
-- entry 572.35 | stop 526.04 | t1 600.97 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### CREDITACC — Watch (score 11.0)
-- CREDITACC | risk_sector: Finance
-- entry 1517.6 | stop 1443.03 | t1 1593.48 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SBC — Watch (score 11.0)
-- SBC | risk_sector: Distribution Services
-- entry 42.07 | stop 40.85 | t1 44.17 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### 3IINFOLTD — Watch (score 11.0)
-- 3IINFOLTD | risk_sector: Technology Services
-- entry 19.74 | stop 18.72 | t1 20.73 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### DIFFNKG — Watch (score 11.0)
-- DIFFNKG | risk_sector: Producer Manufacturing
-- entry 395.35 | stop 369.2 | t1 415.12 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
+### SREEL — Buy (score 88.1)
+- Sreeleathers Ltd. | risk_sector: Retail Trade
+- entry 227.97 | stop 209.73 | t1 264.45 | t2 282.68 | t3 300.92 | R:R 2.0
+- qty 43 | deployed 9803.0 (9.8%) | risk ₹784.0
 
 ## Open ledger
 
-_No open suggestions._
+- **SREEL** status=open entry=227.97 last=227.97 mfe=0.0 mae=0.0 opened=2026-07-26
 
 ## Swing candidates (top)
 
-- EBGNG: score=11 rs_nifty=None deliv=56.05
-- CREDITACC: score=11 rs_nifty=None deliv=55.56
-- SBC: score=11 rs_nifty=None deliv=44.84
-- 3IINFOLTD: score=11 rs_nifty=None deliv=59.04
-- DIFFNKG: score=11 rs_nifty=None deliv=47.34
-- XPROINDIA: score=10 rs_nifty=None deliv=49.68
-- SICALLOG: score=10 rs_nifty=None deliv=74.87
-- DMCC: score=10 rs_nifty=None deliv=41.2
-- PANSARI: score=10 rs_nifty=None deliv=48.41
-- SETL: score=10 rs_nifty=None deliv=72.33
-- NESTLEIND: score=10 rs_nifty=None deliv=56.32
-- JSFB: score=10 rs_nifty=None deliv=44.56
-- NOVARTIND: score=10 rs_nifty=None deliv=41.36
-- SANGAMIND: score=10 rs_nifty=None deliv=45.47
-- STEELCAS: score=10 rs_nifty=None deliv=53.55
+- CREDITACC: score=14 rs_nifty=10.95 deliv=55.56
+- EBGNG: score=14 rs_nifty=10.29 deliv=56.05
+- DIFFNKG: score=14 rs_nifty=2.74 deliv=47.34
+- 3IINFOLTD: score=14 rs_nifty=16.43 deliv=59.04
+- MMP: score=13 rs_nifty=1.81 deliv=59.86
+- GANDHITUBE: score=13 rs_nifty=1.87 deliv=70.11
+- NESTLEIND: score=13 rs_nifty=4.61 deliv=56.32
+- SETL: score=13 rs_nifty=31.6 deliv=72.33
+- JSFB: score=13 rs_nifty=19.07 deliv=44.56
+- MUNJALSHOW: score=13 rs_nifty=8.3 deliv=44.19
+- ICEMAKE: score=13 rs_nifty=12.91 deliv=42.02
+- PANSARI: score=13 rs_nifty=23.56 deliv=48.41
+- SPECIALITY: score=13 rs_nifty=7.14 deliv=57.76
+- SRGHFL: score=13 rs_nifty=6.26 deliv=71.51
+- MACPOWER: score=13 rs_nifty=15.01 deliv=61.96
+
+## World markets (India cues)
+
+### Asia
+- Nikkei: -2.73% (bear)
+- Hang Seng: -0.98% (bear)
+- Shanghai: -1.61% (bear)
+- Kospi: -5.72% (bear)
+- Taiwan: -2.67% (bear)
+- ASX 200: -0.75% (bear)
+
+### Europe
+- FTSE 100: +0.91% (bull)
+- DAX: +1.36% (bull)
+- Euro Stoxx 50: +1.14% (bull)
+
+### US
+- S&P 500: +0.05% (neutral)
+- Nasdaq: -0.64% (bear)
+- Dow: +0.46% (bull)
+- US VIX: -0.64% (bull)
+
+### Macro
+- USDINR: -0.33% (neutral)
+- Crude WTI: -3.12% (bear)
+- Brent: -3.88% (bear)
+- DXY: +0.04% (neutral)
+- US 10Y: -0.51% (bull)
+- India ETF: +0.82% (bull)
+- EM ETF: -1.97% (bear)
+
 
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** neutral
+- **stance:** defensive
 
-The market regime is neutral, with unknown trends and risk levels. FII net sales and DII net purchases were observed, with an overall risk level of unknown. The session date was a non-trading day.
+The Indian market remains bearish, with Nifty trending downwards and a medium overall risk level. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers. The India VIX is at a medium level of 14.03.
 
-- **EBGNG** [watch/medium] entry=572.35 stop=526.04 t1=600.97 hold=Noned — Parkhu score of 11.0 with a risk sector of Technology Services
-- **CREDITACC** [watch/medium] entry=1517.6 stop=1443.03 t1=1593.48 hold=Noned — Parkhu score of 11.0 with a risk sector of Finance
-- **SBC** [watch/medium] entry=42.07 stop=40.85 t1=44.17 hold=Noned — Parkhu score of 11.0 with a risk sector of Distribution Services
-- **3IINFOLTD** [watch/medium] entry=19.74 stop=18.72 t1=20.73 hold=Noned — Parkhu score of 11.0 with a risk sector of Technology Services
-- **DIFFNKG** [watch/medium] entry=395.35 stop=369.2 t1=415.12 hold=Noned — Parkhu score of 11.0 with a risk sector of Producer Manufacturing
+- **SREEL** [consider_entry/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — Parkhu score of 88.1 with a buy band
 
 ### AI stock reviews
 
-- **EBGNG** [medium] The EBGNG setup fits a ≤1-month swing due to its current price action and the overall neutral market regime. The stock has shown potential for a short-term move, given its Parkhu score of 11.0. This score, combined with the stock being in the watch band, suggests a possible breakout or trend continuation. The technology services sector, although risky, can provide significant returns in a short span.
-  - catalysts: Sector growth, Company performance, Market sentiment
-  - risks: Sector volatility, Market downturn, Company-specific news
-  - watch: Traders should watch for a strong move past the entry level of 572.35, with a stop loss at 526.04, and monitor for any signs of weakness or strength that could invalidate the trade, such as a failure to reach the target of 600.97.
-- **CREDITACC** [medium] The CREDITACC setup fits a ≤1-month swing due to its current price action and the Parkhu score of 11.0, which indicates a potential trading opportunity. The stock is in the watch band, suggesting it is being closely monitored for a potential move. The finance sector, although risky, can provide significant returns if timed correctly. This setup could be a good swing trade candidate given the right market conditions.
-  - catalysts: Earnings report, Sector rotation, Market momentum
-  - risks: Market volatility, Sector downturn, Company-specific news
-  - watch: Traders should watch for a strong move above the current price to confirm the thesis, while a break below the stop level would invalidate the setup. Close monitoring of the overall market regime and sector performance is also necessary.
-- **SBC** [medium] The SBC setup fits a ≤1-month swing due to its current market regime being neutral, which may lead to a breakout. The Parkhu score of 11.0 indicates a relatively strong setup. With the company operating in the Distribution Services sector, any positive news or sectoral tailwinds could propel the stock upwards. The current levels suggest a potential for a short-term swing trade.
-  - catalysts: Sectoral tailwinds, Positive news, Breakout from neutral regime
-  - risks: Market regime turns bearish, Sectoral downturn, Stop loss hit
-  - watch: Triggers for this trade include a strong close above the current level, while invalidation cues would be a close below the stop loss level, indicating a potential trend reversal.
-- **3IINFOLTD** [medium] The 3IINFOLTD setup fits a ≤1-month swing due to its current price being at the entry level, indicating a potential breakout. The stock's risk sector, Technology Services, is known for its volatility, which can lead to quick price movements. With a Parkhu score of 11.0, this stock has shown some promise, making it a potential candidate for a short-term swing trade.
-  - catalysts: Earnings report, Sector rally, Breakout above resistance
-  - risks: Market downturn, Sector decline, Company-specific news
-  - watch: Traders should watch for a breakout above the t1 level of 20.73 as a trigger to re-evaluate the trade, while a drop below the stop level of 18.72 could be a cue for invalidation.
-- **DIFFNKG** [medium] The DIFFNKG setup fits a ≤1-month swing due to its current price action and the overall neutral market regime. With a Parkhu score of 11.0, it indicates a moderate level of attractiveness for a swing trade. The company's presence in the Producer Manufacturing sector could provide a boost if the sector experiences an uptrend. Given the current market conditions, a short-term swing could be a viable strategy.
-  - catalysts: Sector uptrend, Earnings surprise, Market sentiment shift
-  - risks: Sector downturn, Economic downturn, Company-specific negative news
-  - watch: Traders should watch for a breakout above the current level to confirm the thesis, while a drop below the stop level would invalidate the setup. Close monitoring of sector performance and overall market sentiment is also crucial.
+- **SREEL** [medium] SREEL's strong technical rating, bullish trend label, and high ADX14 value indicate a potential short-term swing opportunity. The stock's recent outperformance against Nifty and its sector, along with its strong delivery percentage, further supports this thesis. Given the bearish market regime, this setup could provide a relatively safer swing opportunity within the next month.
+  - catalysts: Strong technicals, Bullish trend, High delivery percentage
+  - risks: Bearish market regime, High India VIX, Retail trade sector risks
+  - watch: A break above the recent highs or a bounce from the stop level could trigger the swing, while a close below the stop level would invalidate this setup.
 
 ### Claude feed
 
-Neutral regime, watchlist includes EBGNG, CREDITACC, SBC, 3IINFOLTD, DIFFNKG. Caveats include incomplete score computations, missing promoter pledge data, and provisional scores.
+Bearish regime, defensive stance, top idea SREEL, caveats include incomplete score computation and no trade outcome history
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Updates (VOGL) — Vedanta Oil and Gas Limited informed the Exchange regarding 'Intimation under Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015
-2. **[high]** Analysts/Institutional Investor Meet/Con. Call Updates (SIGACHI) — Sigachi Industries Limited informed the Exchange about Postponement of earnings call
-3. **[medium]** Awarding of order(s)/contract(s) (HIRECT) — The Company has secured its maiden order for Mainline Electric Multiple Unit (MEMU) trainsets from Modern Coach Factory
-4. **[medium]** Bagging/Receiving of orders/contracts (WAAREERTL) — Waaree Renewable Technologies Limited informed the Exchange about Bagging/Receiving of orders/contracts
-5. **[low]** Memorandum of Understanding/Agreements (TRANSWORLD) — TRANSWORLD SHIPPING LINES LIMITED informed the Exchange about Memorandum of Understanding/Agreements
-6. **[low]** Investor Presentation (ASALCBR) — Associated Alcohols & Breweries Ltd. informed the Exchange about Investor Presentation
-7. **[low]** Copy of Newspaper Publication (HINDWAREAP) — Hindware Home Innovation Limited informed the Exchange about Intimation regarding newspaper publication of Notice of 9th AGM of the Company and information about e-voting
-8. **[low]** Copy of Newspaper Publication (IVALUE) — Ivalue Infosolutions Limited informed the Exchange about Copy of Newspaper Publication regarding the convening of the 18th Annual General Meeting of the Company on Wednesday, August 19, 2026, through Video Conference
-9. **[low]** Copy of Newspaper Publication (INTLCONV) — International Conveyors Limited informed the Exchange about Copy of Newspaper Publication
-10. **[low]** Cessation (GVT&D) — GE Vernova T&D India Limited informed the Exchange regarding Cessation of Ms Neera Saggi as Non- Executive Independent Director of the company w.e.f. July 26, 2026
+1. **[high]** Vedanta Oil and Gas Limited Intimation under Regulation 30 of SEBI Listing (VOGL) — The company has informed the Exchange regarding a significant update under SEBI Listing Regulations, which may impact the stock price and investor sentiment.
+2. **[high]** Sigachi Industries Postponement of Earnings Call (SIGACHI) — The postponement of the earnings call may indicate potential changes in the company's financial performance or strategy, affecting investor confidence and stock price.
+3. **[medium]** India VIX at 14.03, indicating Medium overall risk — The India VIX is a key indicator of market volatility, and its current level suggests a moderate level of risk, which may impact investor sentiment and market performance.
+4. **[medium]** FII Net Outflow of -3892.77 — The foreign institutional investor (FII) net outflow may indicate a decrease in foreign investment in the Indian market, potentially affecting the rupee value and stock prices.
+5. **[medium]** Bearish Market Regime — The current bearish market regime may lead to a decrease in stock prices and investor sentiment, making it essential for investors to be cautious and adjust their strategies accordingly.
+6. **[low]** Waaree Renewable Technologies Bagging/Receiving of orders/contracts (WAAREERTL) — The company has informed the Exchange about receiving new orders or contracts, which may have a positive impact on its financial performance and stock price.
+7. **[low]** IDFC First Bank Analysts/Institutional Investor Meet/Con. Call Updates (IDFCFIRSTB) — The company has informed the Exchange about an update on its analyst/institutional investor meet/conference call, which may provide insights into its financial performance and strategy.
+8. **[low]** Hindware Home Innovation Copy of Newspaper Publication (HINDWAREAP) — The company has informed the Exchange about a newspaper publication related to its annual general meeting, which may provide updates on its financial performance and future plans.
+9. **[low]** Eicher Motors Copy of Newspaper Publication (EICHERMOT) — The company has informed the Exchange about a newspaper advertisement for its annual general meeting, which may provide updates on its financial performance and future plans.
+10. **[low]** Neogen Chemicals Press Release (NEOGEN) — The company has informed the Exchange about a press release, which may provide updates on its financial performance, products, or strategy.
 
 ## Deep-dive URLs (after push)
 

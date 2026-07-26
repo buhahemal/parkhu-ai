@@ -3,8 +3,8 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T16:14:07.373650+05:30",
-  "duration_seconds": 241.8,
+  "generated_at_ist": "2026-07-26T17:08:17.215247+05:30",
+  "duration_seconds": 702.0,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -12,19 +12,20 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 2969,
-      "seconds": 2.3
+      "seconds": 2.2
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 516312,
-      "symbols": 2194,
-      "failed": 775,
+      "rows": 638482,
+      "symbols": 2696,
+      "failed": 273,
       "lookback": 250,
-      "warm": 339,
-      "cold": 2630,
-      "new_symbols": 2615,
-      "seconds": 186.9
+      "warm": 2441,
+      "cold": 528,
+      "new_symbols": 273,
+      "retries": 2,
+      "seconds": 645.7
     },
     {
       "agent": "earnings",
@@ -34,33 +35,34 @@
     },
     {
       "agent": "indices",
-      "status": "error",
-      "rows": 0,
-      "seconds": 0.1
+      "status": "ok",
+      "rows": 5,
+      "stale": 0,
+      "seconds": 0.4
     },
     {
       "agent": "sectors",
-      "status": "error",
-      "rows": 0,
-      "seconds": 0.1
+      "status": "ok",
+      "rows": 10,
+      "seconds": 0.8
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 3.7
+      "seconds": 4.5
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.4
+      "seconds": 5.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 450,
-      "seconds": 6.3
+      "seconds": 6.2
     },
     {
       "agent": "stock_options",
@@ -73,31 +75,31 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2051,
-      "seconds": 5.2
+      "seconds": 4.3
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.8
+      "seconds": 5.7
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.6
+      "seconds": 3.7
     },
     {
       "agent": "macro",
       "status": "ok",
-      "rows": 3,
-      "seconds": 0.2
+      "rows": 30,
+      "seconds": 2.3
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 2969,
-      "seconds": 0.2
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
@@ -132,32 +134,34 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2194,
-      "with_structure": 2190,
+      "rows": 2696,
+      "with_structure": 2692,
       "lookback": 250,
-      "seconds": 7.4
+      "seconds": 8.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 2969,
-      "seconds": 3.5
+      "seconds": 3.3
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 0,
+      "rows": 1,
+      "ideas": [
+        "SREEL"
+      ],
+      "watchlist": 3,
       "open_positions": 0,
       "needing_action": [],
       "closed_today": [],
       "seconds": 0.1
     }
   ],
-  "ok": 18,
+  "ok": 20,
   "partial": 1,
-  "errors": 2,
+  "errors": 0,
   "access_note": "Prefer output/latest/research_pack.md (or pack_url in output/index.json) for LLM review \u2014 no zip required. download_url is raw GitHub text; preview_url is the GitHub UI. Links work after this run is pushed.",
   "handoff": {
     "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md",
@@ -242,6 +246,14 @@
     "news_enriched.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/news_enriched.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/news_enriched.csv"
+    },
+    "ohlc_failed_symbols.csv": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/ohlc_failed_symbols.csv",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/ohlc_failed_symbols.csv"
+    },
+    "ohlc_failed_symbols.txt": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/ohlc_failed_symbols.txt",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-26/ohlc_failed_symbols.txt"
     },
     "ohlc_features.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-26/ohlc_features.csv",

@@ -3,7 +3,7 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T16:14:07.373650+05:30",
+  "generated_at_ist": "2026-07-26T17:08:17.215247+05:30",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -18,37 +18,218 @@
     "horizon_max_days": 22
   },
   "regime": {
-    "market_regime": "Neutral",
-    "nifty_trend": "Unknown",
-    "nifty_pct_change": null,
-    "banknifty_trend": "Unknown",
-    "banknifty_pct_change": null,
-    "india_vix": null,
-    "vix_level": "Unknown",
+    "market_regime": "Bearish",
+    "nifty_trend": "Bearish",
+    "nifty_pct_change": -0.43,
+    "banknifty_trend": "Neutral",
+    "banknifty_pct_change": 0.18,
+    "india_vix": 14.03,
+    "vix_level": "Medium",
     "best_sector": "Retail Trade",
     "best_sector_perf_1m": 2.6,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -5.23,
     "fii_net": -3892.77,
     "dii_net": 5453.55,
-    "crude": null,
-    "crude_pct_change": null,
-    "usdinr": null,
-    "usdinr_pct_change": null,
-    "us_sp500_pct": null,
-    "us_dow_pct": null,
-    "us_vix": null,
-    "us_vix_pct": null,
-    "dxy": null,
-    "dxy_pct": null,
-    "us_10y": null,
-    "asia_cue": "Unknown",
-    "europe_cue": "Unknown",
+    "crude": 89.31,
+    "crude_pct_change": -3.12,
+    "usdinr": 96.56,
+    "usdinr_pct_change": -0.33,
+    "us_sp500_pct": 0.05,
+    "us_dow_pct": 0.46,
+    "us_vix": 18.58,
+    "us_vix_pct": -0.64,
+    "dxy": 101.47,
+    "dxy_pct": 0.04,
+    "us_10y": 4.68,
+    "asia_cue": "Bearish",
+    "europe_cue": "Bullish",
     "global_risk": "Neutral",
-    "overall_risk": "Unknown",
-    "generated_at_ist": "2026-07-26T16:13:56.298298+05:30"
+    "overall_risk": "Medium",
+    "generated_at_ist": "2026-07-26T17:08:04.849262+05:30"
   },
-  "world_markets": [],
+  "world_markets": [
+    {
+      "region": "Asia",
+      "markets": [
+        {
+          "label": "Nikkei",
+          "metric": "NIKKEI",
+          "value": 64611.15,
+          "pct_change": -2.73,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Hang Seng",
+          "metric": "HANG_SENG",
+          "value": 24963.23,
+          "pct_change": -0.98,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Shanghai",
+          "metric": "SHANGHAI",
+          "value": 3814.2,
+          "pct_change": -1.61,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Kospi",
+          "metric": "KOSPI",
+          "value": 6690.62,
+          "pct_change": -5.72,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Taiwan",
+          "metric": "TAIWAN",
+          "value": 43654.84,
+          "pct_change": -2.67,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "ASX 200",
+          "metric": "ASX200",
+          "value": 8772.3,
+          "pct_change": -0.75,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        }
+      ]
+    },
+    {
+      "region": "Europe",
+      "markets": [
+        {
+          "label": "FTSE 100",
+          "metric": "FTSE",
+          "value": 10736.2,
+          "pct_change": 0.91,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "DAX",
+          "metric": "DAX",
+          "value": 25099.0,
+          "pct_change": 1.36,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Euro Stoxx 50",
+          "metric": "EURO_STOXX50",
+          "value": 6280.94,
+          "pct_change": 1.14,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        }
+      ]
+    },
+    {
+      "region": "US",
+      "markets": [
+        {
+          "label": "S&P 500",
+          "metric": "US_SP500",
+          "value": 7411.98,
+          "pct_change": 0.05,
+          "tone": "neutral",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Nasdaq",
+          "metric": "US_NASDAQ",
+          "value": 24975.82,
+          "pct_change": -0.64,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Dow",
+          "metric": "US_DOW",
+          "value": 51947.25,
+          "pct_change": 0.46,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "US VIX",
+          "metric": "US_VIX",
+          "value": 18.58,
+          "pct_change": -0.64,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        }
+      ]
+    },
+    {
+      "region": "Macro",
+      "markets": [
+        {
+          "label": "USDINR",
+          "metric": "USDINR",
+          "value": 96.56,
+          "pct_change": -0.33,
+          "tone": "neutral",
+          "session_date": "2026-07-26"
+        },
+        {
+          "label": "Crude WTI",
+          "metric": "CRUDE_WTI",
+          "value": 89.31,
+          "pct_change": -3.12,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "Brent",
+          "metric": "CRUDE_BRENT",
+          "value": 96.78,
+          "pct_change": -3.88,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "DXY",
+          "metric": "DOLLAR_INDEX",
+          "value": 101.47,
+          "pct_change": 0.04,
+          "tone": "neutral",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "US 10Y",
+          "metric": "US_10Y_YIELD",
+          "value": 4.68,
+          "pct_change": -0.51,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "India ETF",
+          "metric": "INDIA_ETF",
+          "value": 48.02,
+          "pct_change": 0.82,
+          "tone": "bull",
+          "session_date": "2026-07-24"
+        },
+        {
+          "label": "EM ETF",
+          "metric": "EM_ETF",
+          "value": 63.33,
+          "pct_change": -1.97,
+          "tone": "bear",
+          "session_date": "2026-07-24"
+        }
+      ]
+    }
+  ],
   "funnel": [
     {
       "gate": "universe",
@@ -76,127 +257,140 @@
     },
     {
       "gate": "RS > 0 vs NIFTY and sector",
-      "surviving": 0
+      "surviving": 287
     },
     {
       "gate": "delivery% >= 40",
-      "surviving": 0
+      "surviving": 135
     },
     {
       "gate": "relative_volume >= 1",
-      "surviving": 0
+      "surviving": 28
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 0
+      "surviving": 11
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 0
+      "surviving": 11
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 0
+      "surviving": 11
     }
   ],
   "ideas": [
     {
-      "symbol": "EBGNG",
-      "company": "EBGNG",
-      "sector": "Technology Services",
-      "risk_sector": "Technology Services",
-      "cmp": 572.35,
-      "parkhu_score": 11.0,
-      "band": "Watch",
+      "symbol": "SREEL",
+      "company": "Sreeleathers Ltd.",
+      "sector": "Retail Trade",
+      "industry": "Apparel/Footwear Retail",
+      "risk_sector": "Retail Trade",
+      "cmp": 227.97,
+      "parkhu_score": 88.1,
+      "band": "Buy",
       "levels": {
-        "entry": 572.35,
-        "stop": 526.04,
-        "t1": 600.97,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
+        "entry": 227.97,
+        "stop": 209.73,
+        "stop_pct": 8.0,
+        "stop_atr_mult": 1.97,
+        "stop_mode": "atr_fallback",
+        "stop_above_structure": true,
+        "structure_invalidation": 209.39,
+        "t1": 264.45,
+        "t2": 282.68,
+        "t3": 300.92,
+        "t1_pct": 16.0,
+        "t2_pct": 24.0,
+        "t3_pct": 32.0,
+        "rr_t1": 2.0,
+        "expected_profit_pct_t1": 16.0,
+        "hold_days_t1": 16,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 35,
+        "t1_beyond_mandate": false,
+        "t1_above_52w_high": true,
+        "room_to_52w_high_pct": 13.17,
+        "target_mode": "r_multiple"
       },
-      "source": "swing_candidates.csv"
-    },
+      "sizing": {
+        "qty": 43,
+        "capital_deployed": 9803.0,
+        "capital_pct": 9.8,
+        "risk_rupees": 784.0,
+        "risk_pct_of_capital": 0.78,
+        "profit_at_t1": 1569.0,
+        "profit_at_t2": 2353.0,
+        "binding_constraint": "exposure cap (10%/name)"
+      },
+      "evidence": {
+        "trend_label": "Bullish",
+        "adx14": 43.8249246362404,
+        "rsi14": 65.60790268614883,
+        "macd_hist": 1.1342,
+        "delivery_pct": 60.75,
+        "rs_vs_nifty_1m": 10.32,
+        "rs_vs_sector_1m": 10.89,
+        "return_1m": 9.25952552120776,
+        "return_3m": 24.90822420689278,
+        "dist_52w_high_pct": -11.64,
+        "atr14": 9.253517704368038,
+        "pe": 18.36039431719339,
+        "roe": 5.98910635886088,
+        "debt_equity": 0.0044474188556013,
+        "revenue_growth": 12.814655401721753,
+        "profit_growth": 27.375126950420093,
+        "composite_factor_rank": 59.0,
+        "risk_score": 60,
+        "in_oi_spurt": null,
+        "oi_change_pct": null,
+        "tech_rating": "Strong buy",
+        "analyst_rec": null,
+        "price_target_avg": null,
+        "days_to_earnings": null,
+        "trend_score": 100.0,
+        "momentum_score": 100,
+        "fundamental_score": 80,
+        "earnings_score": 100,
+        "sector_score": 52.0,
+        "atr_pct_of_price": 4.06
+      }
+    }
+  ],
+  "watchlist": [
     {
       "symbol": "CREDITACC",
-      "company": "CREDITACC",
-      "sector": "Finance",
-      "risk_sector": "Finance",
+      "risk_sector": "NBFC & Capital Markets",
       "cmp": 1517.6,
-      "parkhu_score": 11.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 1517.6,
-        "stop": 1443.03,
-        "t1": 1593.48,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
-      "symbol": "SBC",
-      "company": "SBC",
-      "sector": "Distribution Services",
-      "risk_sector": "Distribution Services",
-      "cmp": 42.07,
-      "parkhu_score": 11.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 42.07,
-        "stop": 40.85,
-        "t1": 44.17,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
-      "symbol": "3IINFOLTD",
-      "company": "3IINFOLTD",
-      "sector": "Technology Services",
-      "risk_sector": "Technology Services",
-      "cmp": 19.74,
-      "parkhu_score": 11.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 19.74,
-        "stop": 18.72,
-        "t1": 20.73,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
+      "score": 78.0,
+      "entry_if_triggered": 1517.6,
+      "stop": 1405.76,
+      "t1": 1741.27,
+      "expected_profit_pct_t1": 14.74
     },
     {
       "symbol": "DIFFNKG",
-      "company": "DIFFNKG",
-      "sector": "Producer Manufacturing",
       "risk_sector": "Producer Manufacturing",
       "cmp": 395.35,
-      "parkhu_score": 11.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 395.35,
-        "stop": 369.2,
-        "t1": 415.12,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
+      "score": 74.1,
+      "entry_if_triggered": 395.35,
+      "stop": 366.68,
+      "t1": 452.69,
+      "expected_profit_pct_t1": 14.5
+    },
+    {
+      "symbol": "MANBA",
+      "risk_sector": "NBFC & Capital Markets",
+      "cmp": 138.21,
+      "score": 72.6,
+      "entry_if_triggered": 138.21,
+      "stop": 129.49,
+      "t1": 155.65,
+      "expected_profit_pct_t1": 12.62
     }
   ],
-  "watchlist": [],
   "queued_on_portfolio_limits": [],
   "analytics": {
     "funnel_conversions": [
@@ -244,72 +438,60 @@
       },
       {
         "gate": "RS > 0 vs NIFTY and sector",
-        "surviving": 0,
+        "surviving": 287,
         "from_prev": 507,
-        "keep_pct": 0.0,
-        "dropped": 507
+        "keep_pct": 56.6,
+        "dropped": 220
       },
       {
         "gate": "delivery% >= 40",
-        "surviving": 0,
-        "from_prev": 0,
-        "keep_pct": null,
-        "dropped": 0
+        "surviving": 135,
+        "from_prev": 287,
+        "keep_pct": 47.0,
+        "dropped": 152
       },
       {
         "gate": "relative_volume >= 1",
-        "surviving": 0,
-        "from_prev": 0,
-        "keep_pct": null,
-        "dropped": 0
+        "surviving": 28,
+        "from_prev": 135,
+        "keep_pct": 20.7,
+        "dropped": 107
       },
       {
         "gate": "no earnings within 21d",
-        "surviving": 0,
-        "from_prev": 0,
-        "keep_pct": null,
-        "dropped": 0
+        "surviving": 11,
+        "from_prev": 28,
+        "keep_pct": 39.3,
+        "dropped": 17
       },
       {
         "gate": "event_risk_score <= 1",
-        "surviving": 0,
-        "from_prev": 0,
-        "keep_pct": null,
+        "surviving": 11,
+        "from_prev": 11,
+        "keep_pct": 100.0,
         "dropped": 0
       },
       {
         "gate": "TV rating not Sell",
-        "surviving": 0,
-        "from_prev": 0,
-        "keep_pct": null,
+        "surviving": 11,
+        "from_prev": 11,
+        "keep_pct": 100.0,
         "dropped": 0
       }
     ],
     "sector_counts": [
       {
-        "sector": "Technology Services",
+        "sector": "Retail Trade",
         "names": 2
-      },
-      {
-        "sector": "Distribution Services",
-        "names": 1
-      },
-      {
-        "sector": "Finance",
-        "names": 1
-      },
-      {
-        "sector": "Producer Manufacturing",
-        "names": 1
       }
     ],
     "book": {
-      "open": 0,
+      "open": 1,
       "needs_action": 0,
-      "avg_mfe_pct": null,
-      "avg_mae_pct": null
+      "avg_mfe_pct": 0.0,
+      "avg_mae_pct": 0.0
     },
-    "ideas_count": 5,
+    "ideas_count": 1,
     "score_coverage_pct": 65.0,
     "caveats": [
       "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
@@ -317,12 +499,41 @@
       "trade levels are rebuilt by this module; stock_analysis.csv's own risk_reward is a constant 0.67 and would veto the whole universe",
       "T1 sits at exactly 2R to meet KB-08's 1:2 floor - with no OHLC history there are no real resistance levels to target, so R:R does no independent filtering",
       "hold periods are an ATR sqrt(time) estimate, not a forecast",
-      "no trade outcome history exists yet, so there is no measured win rate behind these numbers",
-      "No open suggestion ledger as of 2026-07-26 (trades/open.csv empty or all opens are after this date)."
+      "no trade outcome history exists yet, so there is no measured win rate behind these numbers"
     ]
   },
   "ledger": {
-    "open": [],
+    "open": [
+      {
+        "trade_id": "2026-07-26-SREEL",
+        "symbol": "SREEL",
+        "company": "Sreeleathers Ltd.",
+        "risk_sector": "Retail Trade",
+        "date_opened": "2026-07-26",
+        "taken": null,
+        "entry": 227.97,
+        "stop": 209.73,
+        "t1": 264.45,
+        "t2": 282.68,
+        "t3": 300.92,
+        "structure_invalidation": 209.39,
+        "horizon_days_t1": 16,
+        "horizon_days_t2": 22,
+        "score_at_open": 88.1,
+        "qty": 43,
+        "risk_rupees": 784.0,
+        "status": "open",
+        "last_price": 227.97,
+        "last_checked": "2026-07-26",
+        "mfe_pct": 0.0,
+        "mae_pct": 0.0,
+        "gap_flag": false,
+        "hit_t1": false,
+        "hit_t2": false,
+        "reconfirmed_count": 0,
+        "notes": null
+      }
+    ],
     "review": [],
     "needs_action": [],
     "closed_today": [],
@@ -330,30 +541,12 @@
   },
   "swing_candidates_top": [
     {
-      "symbol": "EBGNG",
-      "close": 572.35,
-      "score": 11,
-      "perf_1m": 9.2270992366,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 56.05,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 20.47,
-      "atr": 30.8749581136,
-      "stop_1_5atr": 526.04,
-      "target_5pct": 600.97,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Technology Services"
-    },
-    {
       "symbol": "CREDITACC",
       "close": 1517.6,
-      "score": 11,
+      "score": 14,
       "perf_1m": 9.8913830558,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
+      "rs_vs_nifty_1m": 10.95,
+      "rs_vs_sector_1m": 8.0,
       "deliv_pct": 55.56,
       "pct_change_oi": null,
       "upside_to_target_pct": 13.78,
@@ -366,36 +559,18 @@
       "sector": "Finance"
     },
     {
-      "symbol": "SBC",
-      "close": 42.07,
-      "score": 11,
-      "perf_1m": 0.6700167504,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 44.84,
+      "symbol": "EBGNG",
+      "close": 572.35,
+      "score": 14,
+      "perf_1m": 9.2270992366,
+      "rs_vs_nifty_1m": 10.29,
+      "rs_vs_sector_1m": 4.87,
+      "deliv_pct": 56.05,
       "pct_change_oi": null,
-      "upside_to_target_pct": 6.96,
-      "atr": 0.8105349932,
-      "stop_1_5atr": 40.85,
-      "target_5pct": 44.17,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Distribution Services"
-    },
-    {
-      "symbol": "3IINFOLTD",
-      "close": 19.74,
-      "score": 11,
-      "perf_1m": 15.3711279953,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 59.04,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 26.77,
-      "atr": 0.6819460518,
-      "stop_1_5atr": 18.72,
-      "target_5pct": 20.73,
+      "upside_to_target_pct": 20.47,
+      "atr": 30.8749581136,
+      "stop_1_5atr": 526.04,
+      "target_5pct": 600.97,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
@@ -404,10 +579,10 @@
     {
       "symbol": "DIFFNKG",
       "close": 395.35,
-      "score": 11,
+      "score": 14,
       "perf_1m": 1.6846707819,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
+      "rs_vs_nifty_1m": 2.74,
+      "rs_vs_sector_1m": 2.66,
       "deliv_pct": 47.34,
       "pct_change_oi": null,
       "upside_to_target_pct": 10.33,
@@ -420,102 +595,66 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "XPROINDIA",
-      "close": 1386.2,
-      "score": 10,
-      "perf_1m": 3.7963309622,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 49.68,
+      "symbol": "3IINFOLTD",
+      "close": 19.74,
+      "score": 14,
+      "perf_1m": 15.3711279953,
+      "rs_vs_nifty_1m": 16.43,
+      "rs_vs_sector_1m": 11.01,
+      "deliv_pct": 59.04,
       "pct_change_oi": null,
-      "upside_to_target_pct": 13.61,
-      "atr": 58.8063743993,
-      "stop_1_5atr": 1297.99,
-      "target_5pct": 1455.51,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Process Industries"
-    },
-    {
-      "symbol": "SICALLOG",
-      "close": 97.07,
-      "score": 10,
-      "perf_1m": 1.1145833333,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 74.87,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.49,
-      "atr": 5.2075523542,
-      "stop_1_5atr": 89.26,
-      "target_5pct": 101.92,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Transportation"
-    },
-    {
-      "symbol": "DMCC",
-      "close": 272.75,
-      "score": 10,
-      "perf_1m": 8.449304175,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 41.2,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 28.32,
-      "atr": 11.8037493508,
-      "stop_1_5atr": 255.04,
-      "target_5pct": 286.39,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Process Industries"
-    },
-    {
-      "symbol": "PANSARI",
-      "close": 355.2,
-      "score": 10,
-      "perf_1m": 22.5038799793,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 48.41,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 9.49,
-      "atr": 18.4558484593,
-      "stop_1_5atr": 327.52,
-      "target_5pct": 372.96,
+      "upside_to_target_pct": 26.77,
+      "atr": 0.6819460518,
+      "stop_1_5atr": 18.72,
+      "target_5pct": 20.73,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Technology Services"
     },
     {
-      "symbol": "SETL",
-      "close": 272.7,
-      "score": 10,
-      "perf_1m": 30.540928674,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 72.33,
+      "symbol": "MMP",
+      "close": 281.7,
+      "score": 13,
+      "perf_1m": 0.7510729614,
+      "rs_vs_nifty_1m": 1.81,
+      "rs_vs_sector_1m": 5.16,
+      "deliv_pct": 59.86,
       "pct_change_oi": null,
-      "upside_to_target_pct": 11.95,
-      "atr": 14.0531278503,
-      "stop_1_5atr": 251.62,
-      "target_5pct": 286.33,
+      "upside_to_target_pct": 13.59,
+      "atr": 12.2046249189,
+      "stop_1_5atr": 263.39,
+      "target_5pct": 295.79,
       "earnings_within_21d": false,
       "event_risk_score": 0,
-      "tech_rating": "Neutral",
-      "sector": "Health Technology"
+      "tech_rating": "Buy",
+      "sector": "Non-Energy Minerals"
+    },
+    {
+      "symbol": "GANDHITUBE",
+      "close": 868.0,
+      "score": 13,
+      "perf_1m": 0.8130081301,
+      "rs_vs_nifty_1m": 1.87,
+      "rs_vs_sector_1m": 5.22,
+      "deliv_pct": 70.11,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 18.87,
+      "atr": 15.4509913009,
+      "stop_1_5atr": 844.82,
+      "target_5pct": 911.4,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Non-Energy Minerals"
     },
     {
       "symbol": "NESTLEIND",
       "close": 1443.5,
-      "score": 10,
+      "score": 13,
       "perf_1m": 3.5509325681,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
+      "rs_vs_nifty_1m": 4.61,
+      "rs_vs_sector_1m": 5.18,
       "deliv_pct": 56.32,
       "pct_change_oi": -3.85,
       "upside_to_target_pct": 10.07,
@@ -528,12 +667,30 @@
       "sector": "Consumer Non-Durables"
     },
     {
+      "symbol": "SETL",
+      "close": 272.7,
+      "score": 13,
+      "perf_1m": 30.540928674,
+      "rs_vs_nifty_1m": 31.6,
+      "rs_vs_sector_1m": 28.42,
+      "deliv_pct": 72.33,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 11.95,
+      "atr": 14.0531278503,
+      "stop_1_5atr": 251.62,
+      "target_5pct": 286.33,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Neutral",
+      "sector": "Health Technology"
+    },
+    {
       "symbol": "JSFB",
       "close": 536.95,
-      "score": 10,
+      "score": 13,
       "perf_1m": 18.010989011,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
+      "rs_vs_nifty_1m": 19.07,
+      "rs_vs_sector_1m": 20.52,
       "deliv_pct": 44.56,
       "pct_change_oi": null,
       "upside_to_target_pct": 11.63,
@@ -546,58 +703,112 @@
       "sector": "Finance"
     },
     {
-      "symbol": "NOVARTIND",
-      "close": 1641.2,
-      "score": 10,
-      "perf_1m": 10.8769085259,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 41.36,
+      "symbol": "MUNJALSHOW",
+      "close": 135.82,
+      "score": 13,
+      "perf_1m": 7.2404263719,
+      "rs_vs_nifty_1m": 8.3,
+      "rs_vs_sector_1m": 5.84,
+      "deliv_pct": 44.19,
       "pct_change_oi": null,
-      "upside_to_target_pct": 8.46,
-      "atr": 88.2813499455,
-      "stop_1_5atr": 1508.78,
-      "target_5pct": 1723.26,
+      "upside_to_target_pct": 11.91,
+      "atr": 3.2009611793,
+      "stop_1_5atr": 131.02,
+      "target_5pct": 142.61,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Health Technology"
+      "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "SANGAMIND",
-      "close": 615.85,
-      "score": 10,
-      "perf_1m": 15.0583839327,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 45.47,
+      "symbol": "ICEMAKE",
+      "close": 865.7,
+      "score": 13,
+      "perf_1m": 11.85477098,
+      "rs_vs_nifty_1m": 12.91,
+      "rs_vs_sector_1m": 12.83,
+      "deliv_pct": 42.02,
       "pct_change_oi": null,
-      "upside_to_target_pct": 9.2,
-      "atr": 26.1096562735,
-      "stop_1_5atr": 576.69,
-      "target_5pct": 646.64,
+      "upside_to_target_pct": 6.27,
+      "atr": 33.8968938609,
+      "stop_1_5atr": 814.85,
+      "target_5pct": 908.99,
       "earnings_within_21d": false,
-      "event_risk_score": 0,
+      "event_risk_score": 1,
       "tech_rating": "Buy",
-      "sector": "Process Industries"
+      "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "STEELCAS",
-      "close": 306.65,
-      "score": 10,
-      "perf_1m": 3.1276273751,
-      "rs_vs_nifty_1m": null,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 53.55,
+      "symbol": "PANSARI",
+      "close": 355.2,
+      "score": 13,
+      "perf_1m": 22.5038799793,
+      "rs_vs_nifty_1m": 23.56,
+      "rs_vs_sector_1m": 18.14,
+      "deliv_pct": 48.41,
       "pct_change_oi": null,
-      "upside_to_target_pct": 12.18,
-      "atr": 12.5746929904,
-      "stop_1_5atr": 287.79,
-      "target_5pct": 321.98,
+      "upside_to_target_pct": 9.49,
+      "atr": 18.4558484593,
+      "stop_1_5atr": 327.52,
+      "target_5pct": 372.96,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Non-Energy Minerals"
+      "sector": "Technology Services"
+    },
+    {
+      "symbol": "SPECIALITY",
+      "close": 137.73,
+      "score": 13,
+      "perf_1m": 6.084880228,
+      "rs_vs_nifty_1m": 7.14,
+      "rs_vs_sector_1m": 7.71,
+      "deliv_pct": 57.76,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 11.81,
+      "atr": 7.27824476,
+      "stop_1_5atr": 126.81,
+      "target_5pct": 144.62,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Consumer Services"
+    },
+    {
+      "symbol": "SRGHFL",
+      "close": 309.5,
+      "score": 13,
+      "perf_1m": 5.2005438477,
+      "rs_vs_nifty_1m": 6.26,
+      "rs_vs_sector_1m": 3.31,
+      "deliv_pct": 71.51,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.24,
+      "atr": 14.1984057123,
+      "stop_1_5atr": 288.2,
+      "target_5pct": 324.98,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "MACPOWER",
+      "close": 1344.5,
+      "score": 13,
+      "perf_1m": 13.9503347741,
+      "rs_vs_nifty_1m": 15.01,
+      "rs_vs_sector_1m": 14.93,
+      "deliv_pct": 61.96,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 9.33,
+      "atr": 68.5591611567,
+      "stop_1_5atr": 1241.66,
+      "target_5pct": 1411.72,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Producer Manufacturing"
     }
   ],
   "urls": {
@@ -658,296 +869,158 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-07-26T16:14:08.494016+05:30",
-    "market_brief": "The market regime is neutral, with unknown trends and risk levels. FII net sales and DII net purchases were observed, with an overall risk level of unknown. The session date was a non-trading day.",
-    "stance": "neutral",
+    "generated_at_ist": "2026-07-26T17:08:18.106236+05:30",
+    "market_brief": "The Indian market remains bearish, with Nifty trending downwards and a medium overall risk level. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers. The India VIX is at a medium level of 14.03.",
+    "stance": "defensive",
     "focus": [
-      "Regime Uncertainty",
-      "FIIs selling",
-      "DIIs buying"
+      "Bearish market regime",
+      "Medium overall risk",
+      "FII selling"
     ],
     "suggestions": [
       {
-        "symbol": "EBGNG",
-        "action": "watch",
+        "symbol": "SREEL",
+        "action": "consider_entry",
         "conviction": "medium",
-        "entry": 572.35,
-        "stop": 526.04,
-        "t1": 600.97,
-        "hold_days": null,
-        "rationale": "Parkhu score of 11.0 with a risk sector of Technology Services",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "CREDITACC",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 1517.6,
-        "stop": 1443.03,
-        "t1": 1593.48,
-        "hold_days": null,
-        "rationale": "Parkhu score of 11.0 with a risk sector of Finance",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "SBC",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 42.07,
-        "stop": 40.85,
-        "t1": 44.17,
-        "hold_days": null,
-        "rationale": "Parkhu score of 11.0 with a risk sector of Distribution Services",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "3IINFOLTD",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 19.74,
-        "stop": 18.72,
-        "t1": 20.73,
-        "hold_days": null,
-        "rationale": "Parkhu score of 11.0 with a risk sector of Technology Services",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "DIFFNKG",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 395.35,
-        "stop": 369.2,
-        "t1": 415.12,
-        "hold_days": null,
-        "rationale": "Parkhu score of 11.0 with a risk sector of Producer Manufacturing",
+        "entry": 227.97,
+        "stop": 209.73,
+        "t1": 264.45,
+        "hold_days": 16,
+        "rationale": "Parkhu score of 88.1 with a buy band",
         "levels_source": "parkhu_deterministic"
       }
     ],
-    "open_book_notes": [],
-    "claude_feed": "Neutral regime, watchlist includes EBGNG, CREDITACC, SBC, 3IINFOLTD, DIFFNKG. Caveats include incomplete score computations, missing promoter pledge data, and provisional scores.",
+    "open_book_notes": [
+      "SREEL at entry price, monitor for stop or target"
+    ],
+    "claude_feed": "Bearish regime, defensive stance, top idea SREEL, caveats include incomplete score computation and no trade outcome history",
     "stock_reviews": [
       {
-        "symbol": "EBGNG",
+        "symbol": "SREEL",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "medium",
-        "thesis": "The EBGNG setup fits a \u22641-month swing due to its current price action and the overall neutral market regime. The stock has shown potential for a short-term move, given its Parkhu score of 11.0. This score, combined with the stock being in the watch band, suggests a possible breakout or trend continuation. The technology services sector, although risky, can provide significant returns in a short span.",
+        "thesis": "SREEL's strong technical rating, bullish trend label, and high ADX14 value indicate a potential short-term swing opportunity. The stock's recent outperformance against Nifty and its sector, along with its strong delivery percentage, further supports this thesis. Given the bearish market regime, this setup could provide a relatively safer swing opportunity within the next month.",
         "catalysts": [
-          "Sector growth",
-          "Company performance",
-          "Market sentiment"
+          "Strong technicals",
+          "Bullish trend",
+          "High delivery percentage"
         ],
         "risks": [
-          "Sector volatility",
-          "Market downturn",
-          "Company-specific news"
+          "Bearish market regime",
+          "High India VIX",
+          "Retail trade sector risks"
         ],
-        "what_to_watch": "Traders should watch for a strong move past the entry level of 572.35, with a stop loss at 526.04, and monitor for any signs of weakness or strength that could invalidate the trade, such as a failure to reach the target of 600.97.",
-        "entry": 572.35,
-        "stop": 526.04,
-        "t1": 600.97,
-        "hold_days": null,
+        "what_to_watch": "A break above the recent highs or a bounce from the stop level could trigger the swing, while a close below the stop level would invalidate this setup.",
+        "entry": 227.97,
+        "stop": 209.73,
+        "t1": 264.45,
+        "hold_days": 16,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-07-26T16:14:10.532428+05:30"
-      },
-      {
-        "symbol": "CREDITACC",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "medium",
-        "thesis": "The CREDITACC setup fits a \u22641-month swing due to its current price action and the Parkhu score of 11.0, which indicates a potential trading opportunity. The stock is in the watch band, suggesting it is being closely monitored for a potential move. The finance sector, although risky, can provide significant returns if timed correctly. This setup could be a good swing trade candidate given the right market conditions.",
-        "catalysts": [
-          "Earnings report",
-          "Sector rotation",
-          "Market momentum"
-        ],
-        "risks": [
-          "Market volatility",
-          "Sector downturn",
-          "Company-specific news"
-        ],
-        "what_to_watch": "Traders should watch for a strong move above the current price to confirm the thesis, while a break below the stop level would invalidate the setup. Close monitoring of the overall market regime and sector performance is also necessary.",
-        "entry": 1517.6,
-        "stop": 1443.03,
-        "t1": 1593.48,
-        "hold_days": null,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-07-26T16:14:12.622809+05:30"
-      },
-      {
-        "symbol": "SBC",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "medium",
-        "thesis": "The SBC setup fits a \u22641-month swing due to its current market regime being neutral, which may lead to a breakout. The Parkhu score of 11.0 indicates a relatively strong setup. With the company operating in the Distribution Services sector, any positive news or sectoral tailwinds could propel the stock upwards. The current levels suggest a potential for a short-term swing trade.",
-        "catalysts": [
-          "Sectoral tailwinds",
-          "Positive news",
-          "Breakout from neutral regime"
-        ],
-        "risks": [
-          "Market regime turns bearish",
-          "Sectoral downturn",
-          "Stop loss hit"
-        ],
-        "what_to_watch": "Triggers for this trade include a strong close above the current level, while invalidation cues would be a close below the stop loss level, indicating a potential trend reversal.",
-        "entry": 42.07,
-        "stop": 40.85,
-        "t1": 44.17,
-        "hold_days": null,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-07-26T16:14:14.607368+05:30"
-      },
-      {
-        "symbol": "3IINFOLTD",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "medium",
-        "thesis": "The 3IINFOLTD setup fits a \u22641-month swing due to its current price being at the entry level, indicating a potential breakout. The stock's risk sector, Technology Services, is known for its volatility, which can lead to quick price movements. With a Parkhu score of 11.0, this stock has shown some promise, making it a potential candidate for a short-term swing trade.",
-        "catalysts": [
-          "Earnings report",
-          "Sector rally",
-          "Breakout above resistance"
-        ],
-        "risks": [
-          "Market downturn",
-          "Sector decline",
-          "Company-specific news"
-        ],
-        "what_to_watch": "Traders should watch for a breakout above the t1 level of 20.73 as a trigger to re-evaluate the trade, while a drop below the stop level of 18.72 could be a cue for invalidation.",
-        "entry": 19.74,
-        "stop": 18.72,
-        "t1": 20.73,
-        "hold_days": null,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-07-26T16:14:16.725424+05:30"
-      },
-      {
-        "symbol": "DIFFNKG",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "medium",
-        "thesis": "The DIFFNKG setup fits a \u22641-month swing due to its current price action and the overall neutral market regime. With a Parkhu score of 11.0, it indicates a moderate level of attractiveness for a swing trade. The company's presence in the Producer Manufacturing sector could provide a boost if the sector experiences an uptrend. Given the current market conditions, a short-term swing could be a viable strategy.",
-        "catalysts": [
-          "Sector uptrend",
-          "Earnings surprise",
-          "Market sentiment shift"
-        ],
-        "risks": [
-          "Sector downturn",
-          "Economic downturn",
-          "Company-specific negative news"
-        ],
-        "what_to_watch": "Traders should watch for a breakout above the current level to confirm the thesis, while a drop below the stop level would invalidate the setup. Close monitoring of sector performance and overall market sentiment is also crucial.",
-        "entry": 395.35,
-        "stop": 369.2,
-        "t1": 415.12,
-        "hold_days": null,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-07-26T16:14:18.836490+05:30"
+        "generated_at_ist": "2026-07-26T17:08:20.145633+05:30"
       }
     ]
   },
   "market_news_top10": [
     {
       "rank": 1,
-      "headline": "Updates",
+      "headline": "Vedanta Oil and Gas Limited Intimation under Regulation 30 of SEBI Listing",
       "symbol": "VOGL",
       "impact": "high",
-      "why_it_matters": "Vedanta Oil and Gas Limited informed the Exchange regarding 'Intimation under Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015",
-      "source_date": "2026-07-26 13:23:44",
+      "why_it_matters": "The company has informed the Exchange regarding a significant update under SEBI Listing Regulations, which may impact the stock price and investor sentiment.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677673+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838932+05:30"
     },
     {
       "rank": 2,
-      "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Sigachi Industries Postponement of Earnings Call",
       "symbol": "SIGACHI",
       "impact": "high",
-      "why_it_matters": "Sigachi Industries Limited informed the Exchange about Postponement of earnings call",
-      "source_date": "2026-07-26 12:53:11",
+      "why_it_matters": "The postponement of the earnings call may indicate potential changes in the company's financial performance or strategy, affecting investor confidence and stock price.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677706+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838958+05:30"
     },
     {
       "rank": 3,
-      "headline": "Awarding of order(s)/contract(s)",
-      "symbol": "HIRECT",
+      "headline": "India VIX at 14.03, indicating Medium overall risk",
+      "symbol": null,
       "impact": "medium",
-      "why_it_matters": "The Company has secured its maiden order for Mainline Electric Multiple Unit (MEMU) trainsets from Modern Coach Factory",
-      "source_date": "2026-07-26 09:56:44",
+      "why_it_matters": "The India VIX is a key indicator of market volatility, and its current level suggests a moderate level of risk, which may impact investor sentiment and market performance.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677711+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838963+05:30"
     },
     {
       "rank": 4,
-      "headline": "Bagging/Receiving of orders/contracts",
-      "symbol": "WAAREERTL",
+      "headline": "FII Net Outflow of -3892.77",
+      "symbol": null,
       "impact": "medium",
-      "why_it_matters": "Waaree Renewable Technologies Limited informed the Exchange about Bagging/Receiving of orders/contracts",
-      "source_date": "2026-07-26 12:16:55",
+      "why_it_matters": "The foreign institutional investor (FII) net outflow may indicate a decrease in foreign investment in the Indian market, potentially affecting the rupee value and stock prices.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677716+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838967+05:30"
     },
     {
       "rank": 5,
-      "headline": "Memorandum of Understanding/Agreements",
-      "symbol": "TRANSWORLD",
-      "impact": "low",
-      "why_it_matters": "TRANSWORLD SHIPPING LINES LIMITED informed the Exchange about Memorandum of Understanding/Agreements",
-      "source_date": "2026-07-26 13:14:33",
+      "headline": "Bearish Market Regime",
+      "symbol": null,
+      "impact": "medium",
+      "why_it_matters": "The current bearish market regime may lead to a decrease in stock prices and investor sentiment, making it essential for investors to be cautious and adjust their strategies accordingly.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677719+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838971+05:30"
     },
     {
       "rank": 6,
-      "headline": "Investor Presentation",
-      "symbol": "ASALCBR",
+      "headline": "Waaree Renewable Technologies Bagging/Receiving of orders/contracts",
+      "symbol": "WAAREERTL",
       "impact": "low",
-      "why_it_matters": "Associated Alcohols & Breweries Ltd. informed the Exchange about Investor Presentation",
-      "source_date": "2026-07-26 13:42:29",
+      "why_it_matters": "The company has informed the Exchange about receiving new orders or contracts, which may have a positive impact on its financial performance and stock price.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677723+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838974+05:30"
     },
     {
       "rank": 7,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "HINDWAREAP",
+      "headline": "IDFC First Bank Analysts/Institutional Investor Meet/Con. Call Updates",
+      "symbol": "IDFCFIRSTB",
       "impact": "low",
-      "why_it_matters": "Hindware Home Innovation Limited informed the Exchange about Intimation regarding newspaper publication of Notice of 9th AGM of the Company and information about e-voting",
-      "source_date": "2026-07-26 11:07:58",
+      "why_it_matters": "The company has informed the Exchange about an update on its analyst/institutional investor meet/conference call, which may provide insights into its financial performance and strategy.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677726+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838978+05:30"
     },
     {
       "rank": 8,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "IVALUE",
+      "headline": "Hindware Home Innovation Copy of Newspaper Publication",
+      "symbol": "HINDWAREAP",
       "impact": "low",
-      "why_it_matters": "Ivalue Infosolutions Limited informed the Exchange about Copy of Newspaper Publication regarding the convening of the 18th Annual General Meeting of the Company on Wednesday, August 19, 2026, through Video Conference",
-      "source_date": "2026-07-26 10:58:42",
+      "why_it_matters": "The company has informed the Exchange about a newspaper publication related to its annual general meeting, which may provide updates on its financial performance and future plans.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677730+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838982+05:30"
     },
     {
       "rank": 9,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "INTLCONV",
+      "headline": "Eicher Motors Copy of Newspaper Publication",
+      "symbol": "EICHERMOT",
       "impact": "low",
-      "why_it_matters": "International Conveyors Limited informed the Exchange about Copy of Newspaper Publication",
-      "source_date": "2026-07-26 01:08:26",
+      "why_it_matters": "The company has informed the Exchange about a newspaper advertisement for its annual general meeting, which may provide updates on its financial performance and future plans.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677733+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838985+05:30"
     },
     {
       "rank": 10,
-      "headline": "Cessation",
-      "symbol": "GVT&D",
+      "headline": "Neogen Chemicals Press Release",
+      "symbol": "NEOGEN",
       "impact": "low",
-      "why_it_matters": "GE Vernova T&D India Limited informed the Exchange regarding Cessation of Ms Neera Saggi as Non- Executive Independent Director of the company w.e.f. July 26, 2026",
-      "source_date": "2026-07-26 10:12:48",
+      "why_it_matters": "The company has informed the Exchange about a press release, which may provide updates on its financial performance, products, or strategy.",
+      "source_date": "2026-07-26",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-07-26T16:14:21.677737+05:30"
+      "generated_at_ist": "2026-07-26T17:08:23.838989+05:30"
     }
   ]
 }

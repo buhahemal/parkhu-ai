@@ -14,35 +14,35 @@
     "horizon_max_days": 22
   },
   "regime": {
-    "market_regime": "Neutral",
-    "nifty_trend": "Unknown",
-    "nifty_pct_change": null,
-    "banknifty_trend": "Unknown",
-    "banknifty_pct_change": null,
-    "india_vix": null,
-    "vix_level": "Unknown",
+    "market_regime": "Bearish",
+    "nifty_trend": "Bearish",
+    "nifty_pct_change": -0.43,
+    "banknifty_trend": "Neutral",
+    "banknifty_pct_change": 0.18,
+    "india_vix": 14.03,
+    "vix_level": "Medium",
     "best_sector": "Retail Trade",
     "best_sector_perf_1m": 2.6,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -5.23,
     "fii_net": -3892.77,
     "dii_net": 5453.55,
-    "crude": null,
-    "crude_pct_change": null,
-    "usdinr": null,
-    "usdinr_pct_change": null,
-    "us_sp500_pct": null,
-    "us_dow_pct": null,
-    "us_vix": null,
-    "us_vix_pct": null,
-    "dxy": null,
-    "dxy_pct": null,
-    "us_10y": null,
-    "asia_cue": "Unknown",
-    "europe_cue": "Unknown",
+    "crude": 89.31,
+    "crude_pct_change": -3.12,
+    "usdinr": 96.56,
+    "usdinr_pct_change": -0.33,
+    "us_sp500_pct": 0.05,
+    "us_dow_pct": 0.46,
+    "us_vix": 18.58,
+    "us_vix_pct": -0.64,
+    "dxy": 101.47,
+    "dxy_pct": 0.04,
+    "us_10y": 4.68,
+    "asia_cue": "Bearish",
+    "europe_cue": "Bullish",
     "global_risk": "Neutral",
-    "overall_risk": "Unknown",
-    "generated_at_ist": "2026-07-26T16:13:56.298298+05:30"
+    "overall_risk": "Medium",
+    "generated_at_ist": "2026-07-26T17:08:04.849262+05:30"
   },
   "funnel": [
     {
@@ -71,35 +71,177 @@
     },
     {
       "gate": "RS > 0 vs NIFTY and sector",
-      "surviving": 0
+      "surviving": 287
     },
     {
       "gate": "delivery% >= 40",
-      "surviving": 0
+      "surviving": 135
     },
     {
       "gate": "relative_volume >= 1",
-      "surviving": 0
+      "surviving": 28
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 0
+      "surviving": 11
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 0
+      "surviving": 11
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 0
+      "surviving": 11
     }
   ],
-  "ideas": [],
-  "watchlist": [],
+  "ideas": [
+    {
+      "symbol": "SREEL",
+      "company": "Sreeleathers Ltd.",
+      "sector": "Retail Trade",
+      "industry": "Apparel/Footwear Retail",
+      "risk_sector": "Retail Trade",
+      "cmp": 227.97,
+      "parkhu_score": 88.1,
+      "band": "Buy",
+      "levels": {
+        "entry": 227.97,
+        "stop": 209.73,
+        "stop_pct": 8.0,
+        "stop_atr_mult": 1.97,
+        "stop_mode": "atr_fallback",
+        "stop_above_structure": true,
+        "structure_invalidation": 209.39,
+        "t1": 264.45,
+        "t2": 282.68,
+        "t3": 300.92,
+        "t1_pct": 16.0,
+        "t2_pct": 24.0,
+        "t3_pct": 32.0,
+        "rr_t1": 2.0,
+        "expected_profit_pct_t1": 16.0,
+        "hold_days_t1": 16,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 35,
+        "t1_beyond_mandate": false,
+        "t1_above_52w_high": true,
+        "room_to_52w_high_pct": 13.17,
+        "target_mode": "r_multiple"
+      },
+      "sizing": {
+        "qty": 43,
+        "capital_deployed": 9803.0,
+        "capital_pct": 9.8,
+        "risk_rupees": 784.0,
+        "risk_pct_of_capital": 0.78,
+        "profit_at_t1": 1569.0,
+        "profit_at_t2": 2353.0,
+        "binding_constraint": "exposure cap (10%/name)"
+      },
+      "evidence": {
+        "trend_label": "Bullish",
+        "adx14": 43.8249246362404,
+        "rsi14": 65.60790268614883,
+        "macd_hist": 1.1342,
+        "delivery_pct": 60.75,
+        "rs_vs_nifty_1m": 10.32,
+        "rs_vs_sector_1m": 10.89,
+        "return_1m": 9.25952552120776,
+        "return_3m": 24.90822420689278,
+        "dist_52w_high_pct": -11.64,
+        "atr14": 9.253517704368038,
+        "pe": 18.36039431719339,
+        "roe": 5.98910635886088,
+        "debt_equity": 0.0044474188556013,
+        "revenue_growth": 12.814655401721753,
+        "profit_growth": 27.375126950420093,
+        "composite_factor_rank": 59.0,
+        "risk_score": 60,
+        "in_oi_spurt": null,
+        "oi_change_pct": null,
+        "tech_rating": "Strong buy",
+        "analyst_rec": null,
+        "price_target_avg": null,
+        "days_to_earnings": null,
+        "trend_score": 100.0,
+        "momentum_score": 100,
+        "fundamental_score": 80,
+        "earnings_score": 100,
+        "sector_score": 52.0,
+        "atr_pct_of_price": 4.06
+      }
+    }
+  ],
+  "watchlist": [
+    {
+      "symbol": "CREDITACC",
+      "risk_sector": "NBFC & Capital Markets",
+      "cmp": 1517.6,
+      "score": 78.0,
+      "entry_if_triggered": 1517.6,
+      "stop": 1405.76,
+      "t1": 1741.27,
+      "expected_profit_pct_t1": 14.74
+    },
+    {
+      "symbol": "DIFFNKG",
+      "risk_sector": "Producer Manufacturing",
+      "cmp": 395.35,
+      "score": 74.1,
+      "entry_if_triggered": 395.35,
+      "stop": 366.68,
+      "t1": 452.69,
+      "expected_profit_pct_t1": 14.5
+    },
+    {
+      "symbol": "MANBA",
+      "risk_sector": "NBFC & Capital Markets",
+      "cmp": 138.21,
+      "score": 72.6,
+      "entry_if_triggered": 138.21,
+      "stop": 129.49,
+      "t1": 155.65,
+      "expected_profit_pct_t1": 12.62
+    }
+  ],
   "queued_on_portfolio_limits": [],
-  "skipped_beyond_horizon": [],
+  "skipped_beyond_horizon": [
+    {
+      "symbol": "IDFCFIRSTB",
+      "hold_days_t1_raw": 23,
+      "reason": "T1 needs more than 22 trading days (~1 month)"
+    },
+    {
+      "symbol": "3IINFOLTD",
+      "hold_days_t1_raw": 61,
+      "reason": "T1 needs more than 22 trading days (~1 month)"
+    },
+    {
+      "symbol": "BANARBEADS",
+      "hold_days_t1_raw": 35,
+      "reason": "T1 needs more than 22 trading days (~1 month)"
+    }
+  ],
   "unaffordable_at_this_capital": [],
-  "ignored_below_watch": [],
+  "ignored_below_watch": [
+    {
+      "symbol": "SETL",
+      "score": 58.8
+    },
+    {
+      "symbol": "NIBL",
+      "score": 56.0
+    },
+    {
+      "symbol": "EBGNG",
+      "score": 50.3
+    },
+    {
+      "symbol": "ETERNAL",
+      "score": 48.3
+    }
+  ],
   "scoring": {
     "live_weights": {
       "technical": 20,
@@ -117,13 +259,15 @@
     "weight_unavailable_pct": 35.0
   },
   "portfolio": {
-    "positions": 0,
-    "capital_deployed": 0,
-    "capital_deployed_pct": 0.0,
-    "cash_left": 100000.0,
-    "total_risk_rupees": 0,
-    "total_risk_pct": 0,
-    "sector_exposure": {}
+    "positions": 1,
+    "capital_deployed": 9803.0,
+    "capital_deployed_pct": 9.8,
+    "cash_left": 90197.0,
+    "total_risk_rupees": 784.0,
+    "total_risk_pct": 0.78,
+    "sector_exposure": {
+      "Retail Trade": 9.8
+    }
   },
   "caveats": [
     "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
@@ -142,7 +286,9 @@
     }
   },
   "ledger": {
-    "opened": [],
+    "opened": [
+      "SREEL"
+    ],
     "reconfirmed": []
   }
 }
