@@ -46,7 +46,7 @@ Real Estate (Real Estate Development) · CMP ₹1,144 · score **90.3** (Buy)
 | Target 2 | ₹1,391 | +21.58% |
 | Target 3 | ₹1,473 | +28.78% |
 
-**Expected profit 14.39% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~36 to T2
+**Expected profit 14.39% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~22 to T2
 
 **Position:** 8 shares · deploy ₹9,153 (9.15% of capital) · risk ₹658 (0.66%) if stopped · profit ₹1,317 at T1, ₹1,975 at T2 · size set by exposure cap (10%/name)
 
@@ -66,7 +66,7 @@ Banks (Regional Banks) · CMP ₹1,433 · score **82.8** (Buy)
 | Target 2 | ₹1,588 | +10.8% |
 | Target 3 | ₹1,639 | +14.4% |
 
-**Expected profit 7.2% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~36 to T2
+**Expected profit 7.2% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~22 to T2
 
 **Position:** 6 shares · deploy ₹8,597 (8.6% of capital) · risk ₹309 (0.31%) if stopped · profit ₹619 at T1, ₹928 at T2 · size set by exposure cap (10%/name)
 
@@ -86,7 +86,7 @@ NBFC & Capital Markets (Finance/Rental/Leasing) · CMP ₹557 · score **82.4** 
 | Target 2 | ₹680 | +22.19% |
 | Target 3 | ₹721 | +29.59% |
 
-**Expected profit 14.8% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~36 to T2
+**Expected profit 14.8% at T1** · R:R 1:2 · hold ~16 trading days to T1, ~22 to T2
 
 **Position:** 17 shares · deploy ₹9,461 (9.46% of capital) · risk ₹700 (0.7%) if stopped · profit ₹1,400 at T1, ₹2,100 at T2 · size set by exposure cap (10%/name)
 
@@ -99,6 +99,8 @@ NBFC & Capital Markets (Finance/Rental/Leasing) · CMP ₹557 · score **82.4** 
 3 position(s) · deploy ₹27,211 (27.21%) · cash ₹72,789 · total risk ₹1,667 (1.67% of capital)
 
 Sector exposure: Real Estate 9.15%, Banks 8.6%, NBFC & Capital Markets 9.46% (cap 25%)
+
+Skipped — T1 beyond 22 trading-day (~1 month) mandate: IDFCFIRSTB (~30d), ANANDRATHI (~25d)
 
 ## Watchlist (score 70–79, no position)
 

@@ -3,7 +3,7 @@
   "collection_date": "2026-07-26",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-07-26T13:56:29.510968+05:30",
+  "generated_at_ist": "2026-07-26T14:27:42.623384+05:30",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -13,7 +13,9 @@
     "max_positions": 10,
     "min_rr_t1": 2.0,
     "buy_score": 80.0,
-    "watch_score": 70.0
+    "watch_score": 70.0,
+    "horizon_min_days": 3,
+    "horizon_max_days": 22
   },
   "regime": {
     "market_regime": "Bearish",
@@ -44,7 +46,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T13:56:29.174266+05:30"
+    "generated_at_ist": "2026-07-26T14:27:42.276335+05:30"
   },
   "funnel": [
     {
@@ -119,7 +121,9 @@
         "rr_t1": 2.0,
         "expected_profit_pct_t1": 14.39,
         "hold_days_t1": 16,
-        "hold_days_t2": 36,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 36,
         "t1_beyond_mandate": false,
         "t1_above_52w_high": false,
         "room_to_52w_high_pct": 16.04
@@ -193,7 +197,9 @@
         "rr_t1": 2.0,
         "expected_profit_pct_t1": 7.2,
         "hold_days_t1": 16,
-        "hold_days_t2": 36,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 36,
         "t1_beyond_mandate": false,
         "t1_above_52w_high": true,
         "room_to_52w_high_pct": 4.3
@@ -267,7 +273,9 @@
         "rr_t1": 2.0,
         "expected_profit_pct_t1": 14.8,
         "hold_days_t1": 16,
-        "hold_days_t2": 36,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 36,
         "t1_beyond_mandate": false,
         "t1_above_52w_high": false,
         "room_to_52w_high_pct": 21.29
@@ -511,7 +519,7 @@
         "mae_pct": -2.85,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 10,
+        "reconfirmed_count": 11,
         "notes": null
       },
       {
@@ -623,7 +631,7 @@
         "mae_pct": 0.0,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 7,
+        "reconfirmed_count": 8,
         "notes": null
       },
       {
@@ -651,7 +659,7 @@
         "mae_pct": 0.0,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 7,
+        "reconfirmed_count": 8,
         "notes": null
       }
     ],
@@ -1144,8 +1152,8 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-07-26T13:56:31.931565+05:30",
-    "market_brief": "The market remains in a bearish regime with a medium overall risk. The Nifty trend is bearish with a 0.43% decline, and the India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.",
+    "generated_at_ist": "2026-07-26T14:27:43.908236+05:30",
+    "market_brief": "The market regime remains bearish with a medium overall risk. The Nifty trend is also bearish, with a 0.43% decline. The India VIX is at a medium level of 14.03. Foreign institutional investors have a net outflow of -3892.77, while domestic institutional investors have a net inflow of 5453.55.",
     "stance": "defensive",
     "focus": [
       "Bearish market regime",
@@ -1161,7 +1169,7 @@
         "stop": 1061.79,
         "t1": 1308.72,
         "hold_days": 16,
-        "rationale": "High Parkhu score of 90.3 and buy band",
+        "rationale": "High Parkhu score of 90.3 and a buy band",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -1172,7 +1180,7 @@
         "stop": 1381.32,
         "t1": 1536.05,
         "hold_days": 16,
-        "rationale": "Already in open book with a buy band and high Parkhu score of 82.8",
+        "rationale": "Already in open book, monitor and adjust stop loss as needed",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -1183,49 +1191,191 @@
         "stop": 515.37,
         "t1": 638.9,
         "hold_days": 16,
-        "rationale": "Buy band and high Parkhu score of 82.4",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "IPCALAB",
-        "action": "stand_aside",
-        "conviction": "low",
-        "entry": 1828.2,
-        "stop": 1715.39,
-        "t1": 2053.81,
-        "hold_days": 16,
-        "rationale": "Already in open book but no clear trend",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "J&KBANK",
-        "action": "watch",
-        "conviction": "low",
-        "entry": 184.33,
-        "stop": 169.92,
-        "t1": 213.16,
-        "hold_days": 16,
-        "rationale": "Dropped out of today's universe and requires manual chart check",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "ZYDUSLIFE",
-        "action": "stand_aside",
-        "conviction": "low",
-        "entry": 1146.2,
-        "stop": 1074.19,
-        "t1": 1290.23,
-        "hold_days": 35,
-        "rationale": "Earnings ahead and reduce or stand aside recommended",
+        "rationale": "Buy band and a Parkhu score of 82.4",
         "levels_source": "parkhu_deterministic"
       }
     ],
     "open_book_notes": [
-      "ICICIBANK: manage open position",
-      "IPCALAB: monitor trend",
-      "J&KBANK: manual chart check required",
-      "ZYDUSLIFE: reduce or stand aside due to earnings ahead"
+      "Monitor ICICIBANK and adjust stop loss as needed",
+      "ZYDUSLIFE has earnings ahead, consider reducing or standing aside",
+      "J&KBANK dropped out of the universe, check the chart manually"
     ],
-    "claude_feed": "Bearish regime, defensive stance, top ideas: LODHA, ICICIBANK, IIFL; caveats: provisional scores, no promoter pledge and ownership data, trade levels rebuilt"
-  }
+    "claude_feed": "Regime: Bearish, Stance: Defensive, Top Ideas: LODHA, ICICIBANK, IIFL, Caveats: Earnings ahead for some stocks, promoter pledge and ownership data are empty",
+    "stock_reviews": [
+      {
+        "symbol": "LODHA",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "high",
+        "thesis": "LODHA fits a \u22641-month swing due to its recent bullish trend, with a trend label of 'Bullish' and an ADX of 44.13, indicating strong momentum. The stock has also outperformed Nifty and its sector in the last month, with returns of 25.62% and 12.84% respectively. With a Parkhu score of 90.3 and a technical rating of 'Buy', this setup appears promising for a short-term swing.",
+        "catalysts": [
+          "Earnings momentum",
+          "Sector outperformance",
+          "Bullish trend"
+        ],
+        "risks": [
+          "Market regime risk",
+          "Sector volatility",
+          "Economic downturn"
+        ],
+        "what_to_watch": "Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a breach of the stop level at 1061.79, which would indicate a reversal of the trend.",
+        "entry": 1144.1,
+        "stop": 1061.79,
+        "t1": 1308.72,
+        "hold_days": 16,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-07-26T14:27:45.697418+05:30"
+      },
+      {
+        "symbol": "ICICIBANK",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "high",
+        "thesis": "ICICIBANK's bullish trend label, high delivery percentage, and recent outperformance against Nifty and its sector make it a promising swing trade candidate in a bearish market regime. The stock's RSI and ADX levels indicate a potential for further upside. With a Parkhu score of 82.8, this setup fits a \u22641-month swing. The proximity to its 52-week high also suggests potential for a breakout.",
+        "catalysts": [
+          "Earnings anticipation",
+          "Sector outperformance",
+          "Breakout potential"
+        ],
+        "risks": [
+          "Market regime risk",
+          "Sectoral downturn",
+          "Earnings disappointment"
+        ],
+        "what_to_watch": "Triggers for this trade include a strong breakout above the current levels, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish thesis. Close monitoring of the stock's price action and overall market sentiment is essential.",
+        "entry": 1432.9,
+        "stop": 1381.32,
+        "t1": 1536.05,
+        "hold_days": 16,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-07-26T14:27:47.941662+05:30"
+      },
+      {
+        "symbol": "IIFL",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "high",
+        "thesis": "IIFL Finance Limited fits a \u22641-month swing due to its recent bullish trend and relatively high return over the past month. The stock's RSI and ADX levels indicate a potential for further upward movement. With a Parkhu score of 82.4, the setup appears promising for a short-term swing trade.",
+        "catalysts": [
+          "Bullish trend",
+          "High Parkhu score",
+          "Recent outperformance"
+        ],
+        "risks": [
+          "NBFC & Capital Markets sector risk",
+          "Medium overall risk",
+          "India VIX volatility"
+        ],
+        "what_to_watch": "Triggers for this trade include a strong breakout above the current level, while invalidation cues would be a drop below the stop level. Monitoring the stock's price action and overall market sentiment will be crucial.",
+        "entry": 556.55,
+        "stop": 515.37,
+        "t1": 638.9,
+        "hold_days": 16,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-07-26T14:27:49.854572+05:30"
+      }
+    ]
+  },
+  "market_news_top10": [
+    {
+      "rank": 1,
+      "headline": "Bearish Market Regime",
+      "symbol": null,
+      "impact": "high",
+      "why_it_matters": "The current bearish market regime, indicated by a high India VIX of 14.03 and FII net outflow of -3892.77, may lead to increased market volatility and negatively impact investor sentiment.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226840+05:30"
+    },
+    {
+      "rank": 2,
+      "headline": "UFO Moviez India Limited Updates",
+      "symbol": "UFO",
+      "impact": "medium",
+      "why_it_matters": "UFO Moviez India Limited's updates regarding its 22nd Annual General Meeting and electronic dispatch of the annual report may have a significant impact on the company's stock price and investor confidence.",
+      "source_date": "2026-07-25",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226869+05:30"
+    },
+    {
+      "rank": 3,
+      "headline": "Sigachi Industries Limited Postpones Earnings Call",
+      "symbol": "SIGACHI",
+      "impact": "medium",
+      "why_it_matters": "The postponement of Sigachi Industries Limited's earnings call may lead to uncertainty and negatively impact the company's stock price, as investors may perceive it as a lack of transparency.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226872+05:30"
+    },
+    {
+      "rank": 4,
+      "headline": "Vedanta Oil and Gas Limited Updates",
+      "symbol": "VOGL",
+      "impact": "medium",
+      "why_it_matters": "Vedanta Oil and Gas Limited's updates under Regulation 30 of SEBI Listing Obligations and Disclosure Requirements may have a significant impact on the company's stock price and investor confidence.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226875+05:30"
+    },
+    {
+      "rank": 5,
+      "headline": "UFO Moviez India Limited Updates on Annual Report",
+      "symbol": "UFO",
+      "impact": "low",
+      "why_it_matters": "UFO Moviez India Limited's updates on its annual report may have a minor impact on the company's stock price, as it is a routine disclosure requirement.",
+      "source_date": "2026-07-25",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226877+05:30"
+    },
+    {
+      "rank": 6,
+      "headline": "Hindware Home Innovation Limited AGM Notice",
+      "symbol": "HINDWAREAP",
+      "impact": "low",
+      "why_it_matters": "Hindware Home Innovation Limited's notice regarding its 9th Annual General Meeting may have a minor impact on the company's stock price, as it is a routine corporate event.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226880+05:30"
+    },
+    {
+      "rank": 7,
+      "headline": "Waaree Renewable Technologies Limited Bags Order",
+      "symbol": "WAAREERTL",
+      "impact": "low",
+      "why_it_matters": "Waaree Renewable Technologies Limited's order receipt may have a minor positive impact on the company's stock price, as it indicates business growth.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226883+05:30"
+    },
+    {
+      "rank": 8,
+      "headline": "Hirect Awarded Order for Mainline Electric Multiple Unit Trainsets",
+      "symbol": "HIRECT",
+      "impact": "low",
+      "why_it_matters": "Hirect's order receipt for Mainline Electric Multiple Unit trainsets may have a minor positive impact on the company's stock price, as it indicates business growth.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226885+05:30"
+    },
+    {
+      "rank": 9,
+      "headline": "IDFC First Bank Limited Analyst Meet Updates",
+      "symbol": "IDFCFIRSTB",
+      "impact": "low",
+      "why_it_matters": "IDFC First Bank Limited's analyst meet updates may have a minor impact on the company's stock price, as it is a routine corporate event.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226888+05:30"
+    },
+    {
+      "rank": 10,
+      "headline": "GE Vernova T&D India Limited Non-Executive Director Cessation",
+      "symbol": "GVT&D",
+      "impact": "low",
+      "why_it_matters": "GE Vernova T&D India Limited's non-executive director cessation may have a minor impact on the company's stock price, as it is a routine corporate event.",
+      "source_date": "2026-07-26",
+      "model": "llama-3.3-70b-versatile",
+      "generated_at_ist": "2026-07-26T14:27:53.226890+05:30"
+    }
+  ]
 }

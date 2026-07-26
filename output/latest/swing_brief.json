@@ -9,7 +9,9 @@
     "max_positions": 10,
     "min_rr_t1": 2.0,
     "buy_score": 80.0,
-    "watch_score": 70.0
+    "watch_score": 70.0,
+    "horizon_min_days": 3,
+    "horizon_max_days": 22
   },
   "regime": {
     "market_regime": "Bearish",
@@ -40,7 +42,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-07-26T13:56:29.174266+05:30"
+    "generated_at_ist": "2026-07-26T14:27:42.276335+05:30"
   },
   "funnel": [
     {
@@ -115,7 +117,9 @@
         "rr_t1": 2.0,
         "expected_profit_pct_t1": 14.39,
         "hold_days_t1": 16,
-        "hold_days_t2": 36,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 36,
         "t1_beyond_mandate": false,
         "t1_above_52w_high": false,
         "room_to_52w_high_pct": 16.04
@@ -189,7 +193,9 @@
         "rr_t1": 2.0,
         "expected_profit_pct_t1": 7.2,
         "hold_days_t1": 16,
-        "hold_days_t2": 36,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 36,
         "t1_beyond_mandate": false,
         "t1_above_52w_high": true,
         "room_to_52w_high_pct": 4.3
@@ -263,7 +269,9 @@
         "rr_t1": 2.0,
         "expected_profit_pct_t1": 14.8,
         "hold_days_t1": 16,
-        "hold_days_t2": 36,
+        "hold_days_t2": 22,
+        "hold_days_t1_raw": 16,
+        "hold_days_t2_raw": 36,
         "t1_beyond_mandate": false,
         "t1_above_52w_high": false,
         "room_to_52w_high_pct": 21.29
@@ -365,15 +373,23 @@
     }
   ],
   "queued_on_portfolio_limits": [],
+  "skipped_beyond_horizon": [
+    {
+      "symbol": "IDFCFIRSTB",
+      "hold_days_t1_raw": 30,
+      "reason": "T1 needs more than 22 trading days (~1 month)"
+    },
+    {
+      "symbol": "ANANDRATHI",
+      "hold_days_t1_raw": 25,
+      "reason": "T1 needs more than 22 trading days (~1 month)"
+    }
+  ],
   "unaffordable_at_this_capital": [],
   "ignored_below_watch": [
     {
       "symbol": "NYKAA",
       "score": 69.0
-    },
-    {
-      "symbol": "ANANDRATHI",
-      "score": 68.1
     },
     {
       "symbol": "POONAWALLA",
@@ -382,10 +398,6 @@
     {
       "symbol": "ETERNAL",
       "score": 48.2
-    },
-    {
-      "symbol": "IDFCFIRSTB",
-      "score": 47.7
     },
     {
       "symbol": "ATHERENERG",
