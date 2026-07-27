@@ -1,96 +1,107 @@
 # Parkhu research pack — 2026-07-27
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-07-27T10:01:01.407882+05:30
+- **generated_at_ist:** 2026-07-27T18:07:11.864254+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.67%)
-- india_vix: 13.22 (Low)
-- fii_net: -3892.77 | dii_net: 5453.55
+- nifty: Bullish (0.96%)
+- india_vix: 12.66 (Low)
+- fii_net: -1688.23 | dii_net: 2329.14
 - overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
-- universe: 2967
-- trend = Bullish: 1340
-- price > SMA200: 998
-- price > EMA50: 982
-- ADX14 > 25: 535
-- RSI14 in 40-80: 514
-- RS > 0 vs NIFTY and sector: 284
-- delivery% >= 40: 128
-- relative_volume >= 1: 6
-- no earnings within 21d: 5
-- event_risk_score <= 1: 4
-- TV rating not Sell: 4
+- universe: 2969
+- trend = Bullish: 1297
+- price > SMA200: 982
+- price > EMA50: 961
+- ADX14 > 25: 529
+- RSI14 in 40-80: 504
+- RS > 0 vs NIFTY and sector: 266
+- delivery% >= 40: 142
+- relative_volume >= 1: 38
+- no earnings within 21d: 16
+- event_risk_score <= 1: 14
+- TV rating not Sell: 14
 
-## Survivors (top 4 of 4)
+## Survivors (top 14 of 14)
 
-- **CREDITACC** [idea] score 80.2 — selected as idea
-- **TTKHLTCARE** [watchlist] score 70.2 — score in Watch band (70–80)
-- **IDFCFIRSTB** [rejected] score 52.6 — score below Watch band
-- **GANESHHOU** [rejected] score 44.2 — score below Watch band
+- **UJJIVANSFB** [idea] score 87.7 — selected as idea
+- **DIFFNKG** [watchlist] score 79.9 — score in Watch band (70–80)
+- **BHARATSE** [watchlist] score 79.1 — score in Watch band (70–80)
+- **SATIN** [watchlist] score 77.2 — score in Watch band (70–80)
+- **BALPHARMA** [rejected] score 63.3 — score below Watch band
+- **ADANIENSOL** [rejected] score 59.2 — score below Watch band
+- **MUNJALSHOW** [rejected] score 56.7 — T1 needs more than 22 trading days (~1 month)
+- **SAMBHV** [rejected] score 55.8 — score below Watch band
+- **BANARBEADS** [rejected] score 54.2 — T1 needs more than 22 trading days (~1 month)
+- **ETERNAL** [rejected] score 52.8 — T1 needs more than 22 trading days (~1 month)
+- **TEXINFRA** [rejected] score 49.1 — T1 needs more than 22 trading days (~1 month)
+- **PANSARI** [rejected] score 48.6 — score below Watch band
+- **3IINFOLTD** [rejected] score 44.7 — T1 needs more than 22 trading days (~1 month)
+- **ABMINTLLTD** [rejected] score 41.3 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### CREDITACC — Buy (score 80.2)
-- CreditAccess Grameen Ltd. | risk_sector: NBFC & Capital Markets
-- entry 1597.3 | stop 1492.91 | t1 1806.07 | t2 1910.46 | t3 2014.85 | R:R 2.0
-- qty 6 | deployed 9584.0 (9.58%) | risk ₹626.0
+### UJJIVANSFB — Buy (score 87.7)
+- Ujjivan Small Finance Bank Ltd. | risk_sector: Banks
+- entry 71.57 | stop 65.96 | t1 82.79 | t2 88.4 | t3 94.01 | R:R 2.0
+- qty 139 | deployed 9948.0 (9.95%) | risk ₹780.0
 
 ## Open ledger
 
-- **SREEL** status=open entry=227.97 last=227.46 mfe=2.6 mae=-0.37 opened=2026-07-26
-- **CREDITACC** status=open entry=1597.3 last=1597.3 mfe=0.0 mae=0.0 opened=2026-07-27
+- **SREEL** status=open entry=227.97 last=222.71 mfe=2.6 mae=-2.62 opened=2026-07-26
+- **CREDITACC** status=open entry=1597.3 last=1591.1 mfe=1.05 mae=-2.95 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=71.57 mfe=0.0 mae=0.0 opened=2026-07-27
 
 ## Swing candidates (top)
 
-- GANESHHOU: score=14 rs_nifty=10.22 deliv=42.52
-- CREDITACC: score=14 rs_nifty=9.55 deliv=55.56
-- MACPOWER: score=13 rs_nifty=18.37 deliv=61.96
-- RPGLIFE: score=13 rs_nifty=27.76 deliv=51.35
-- DIFFNKG: score=13 rs_nifty=2.77 deliv=47.34
-- GALAPREC: score=13 rs_nifty=4.75 deliv=54.03
-- PAISALO: score=13 rs_nifty=18.65 deliv=48.42
-- DCBBANK: score=13 rs_nifty=6.52 deliv=44.62
-- JSFB: score=13 rs_nifty=17.02 deliv=44.56
-- TALBROAUTO: score=13 rs_nifty=3.47 deliv=45.6
-- NOVARTIND: score=13 rs_nifty=12.57 deliv=41.36
-- SETL: score=13 rs_nifty=19.59 deliv=72.33
-- PYRAMID: score=13 rs_nifty=2.44 deliv=53.51
-- RKFORGE: score=13 rs_nifty=7.61 deliv=43.86
-- PANSARI: score=13 rs_nifty=20.05 deliv=48.41
+- ADANIENSOL: score=15 rs_nifty=13.13 deliv=50.99
+- MUNJALSHOW: score=14 rs_nifty=7.23 deliv=49.93
+- DIFFNKG: score=14 rs_nifty=3.42 deliv=45.62
+- RML: score=14 rs_nifty=8.14 deliv=48.71
+- SAMBHV: score=14 rs_nifty=7.94 deliv=42.27
+- BALPHARMA: score=14 rs_nifty=5.01 deliv=50.75
+- PFOCUS: score=13 rs_nifty=35.09 deliv=52.73
+- VISAKAIND: score=13 rs_nifty=5.89 deliv=46.26
+- CREDITACC: score=13 rs_nifty=8.86 deliv=26.1
+- PANSARI: score=13 rs_nifty=13.63 deliv=73.23
+- TEXINFRA: score=13 rs_nifty=3.53 deliv=73.56
+- GNA: score=13 rs_nifty=22.44 deliv=42.92
+- ANANDRATHI: score=13 rs_nifty=8.01 deliv=50.41
+- SPECTRUM: score=13 rs_nifty=23.15 deliv=49.87
+- 3IINFOLTD: score=13 rs_nifty=18.42 deliv=53.12
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.10% (neutral)
-- Hang Seng: +0.81% (bull)
-- Shanghai: +0.40% (bull)
-- Kospi: -1.02% (bear)
-- Taiwan: -1.21% (bear)
-- ASX 200: +1.15% (bull)
+- Nikkei: +0.50% (bull)
+- Hang Seng: +0.98% (bull)
+- Shanghai: +1.15% (bull)
+- Kospi: +0.97% (bull)
+- Taiwan: -0.05% (neutral)
+- ASX 200: +1.39% (bull)
 
 ### Europe
-- FTSE 100: +0.91% (bull)
-- DAX: +1.36% (bull)
-- Euro Stoxx 50: +1.14% (bull)
+- FTSE 100: +0.46% (bull)
+- DAX: +1.55% (bull)
+- Euro Stoxx 50: +1.16% (bull)
 
 ### US
 - S&P 500: +0.05% (neutral)
 - Nasdaq: -0.64% (bear)
 - Dow: +0.46% (bull)
-- US VIX: -0.64% (bull)
+- US VIX: -3.77% (bull)
 
 ### Macro
-- USDINR: -0.64% (bull)
-- Crude WTI: -4.87% (bear)
-- Brent: -4.55% (bear)
-- DXY: -0.27% (neutral)
-- US 10Y: -0.51% (bull)
+- USDINR: -1.01% (bull)
+- Crude WTI: -5.88% (bear)
+- Brent: -6.79% (bear)
+- DXY: -0.09% (neutral)
+- US 10Y: -0.68% (bull)
 - India ETF: +0.82% (bull)
 - EM ETF: -1.97% (bear)
 
@@ -100,35 +111,36 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-Nifty trend remains bullish with a 0.67% increase, and the India VIX is at a low level of 13.22. The overall risk is low, and FII net is negative at -3892.77, while DII net is positive at 5453.55. The regime is bullish, with a mixed Asia cue and a bullish Europe cue.
+The Indian market is in a bullish regime with a low overall risk. Nifty trend is bullish with a 0.96% change, and India VIX is at a low level of 12.66. FII net is negative, while DII net is positive.
 
-- **CREDITACC** [consider_entry/high] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Strong Parkhu score of 80.2 and a buy band
-- **SREEL** [manage_open/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — MFE pct is 2.6, and the stock is still above the entry price
+- **UJJIVANSFB** [consider_entry/high] entry=71.57 stop=65.96 t1=82.79 hold=17d — Strong Parkhu score of 87.7 and bullish trend
+- **SREEL** [manage_open/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — MFE of 2.6% and current price near entry
+- **CREDITACC** [manage_open/medium] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — MFE of 1.05% and current price near entry
 
 ### AI stock reviews
 
-- **CREDITACC** [high] The setup in CREDITACC fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against the Nifty and its sector. The recent price action and technical indicators such as RSI and ADX suggest a potential for further upside. With a strong buy technical rating and a relatively low risk sector, the conditions seem favorable for a short-term swing trade.
-  - catalysts: Bullish trend, High delivery percentage, Outperformance
+- **UJJIVANSFB** [high] Ujjivan Small Finance Bank Ltd. (UJJIVANSFB) is poised for a ≤1-month swing due to its strong bullish trend, with an ADX of 46.93 and RSI of 74.47, indicating a potential breakout. The stock's recent outperformance against Nifty and its sector, with 1-month returns of 24.29% and 25.91% respectively, further supports this setup. The proximity to its 52-week high, with a distance of -2.35%, also suggests a potential upside.
+  - catalysts: Bullish trend, Outperformance vs Nifty and sector, Proximity to 52-week high
   - risks: Market regime change, Sector-specific risks, Earnings disappointment
-  - watch: Triggers for this trade include a strong breakout above the current levels, while invalidation cues would be a breach of the stop level or a significant change in the market regime. The trade's validity will also depend on the stock's performance relative to its sector and the Nifty.
+  - watch: Triggers for this setup include a strong bullish candlestick pattern, while invalidation cues would be a breach of the stop level at 65.96, indicating a potential trend reversal.
 
 ### Claude feed
 
-Regime: Bullish, Stance: Selective Aggressive, Top Ideas: CREDITACC, Caveats: Provisional scores, incomplete data
+Regime: Bullish, Stance: Selective Aggressive, Top Ideas: UJJIVANSFB, Caveats: Provisional scores, missing data for some metrics
 
 
 ## Market news (AI top impact)
 
-1. **[high]** SIGMA ADVANCED SYSTEMS LIMITED has informed the Exchange regarding a press release dated July 27, 2026 (SIGMAADV) — Major catalyst and risk event with high news score
-2. **[high]** Alldigi Tech Limited has informed the Exchange about Copy of Newspaper Publication on Interim Dividend (ALLDIGI) — Major catalyst with high news score
-3. **[medium]** Smc Global Securities Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (SMCGLOBAL) — Major catalyst with medium news score
-4. **[medium]** Zen Technologies Limited has informed the Exchange regarding a press release dated July 26, 2026, titled "Zen Technologies, India s leading anti-drone technology and defense training solutions provider announced its fina (ZENTEC) — Major catalyst and risk event with medium news score
-5. **[medium]** Vedant Fashions Limited has informed the exchange about the copies of newspaper publications in respect of financial results for the quarter ended June 30, 2026 (MANYAVAR) — Major catalyst and risk event with medium news score
-6. **[medium]** Ratnaveer Precision Engineering Limited has informed the Exchange ppt presentation on financial result for the quarter ended on 30th June 2026 (RATNAVEER) — Major catalyst and risk event with medium news score
-7. **[medium]** Alldigi Tech Limited has informed the Exchange about Copy of Newspaper Publication on Financial Results (ALLDIGI) — Major catalyst with medium news score
-8. **[low]** Energy in Motion partners with HPCL to set-up charging and battery swapping infrastructure at retail outlets across India for deployment of Electric Heavy Commercial Vehicles (RELTD) — No major catalyst or risk event
-9. **[low]** Welspun Corp Limited has informed the Exchange about Bagging/Receiving of orders/contracts (WELCORP) — No major catalyst or risk event
-10. **[low]** Linc Limited has informed the Exchange regarding 'Unveiling of Product Experience Centre at Park Street, Kolkata' (LINC) — No major catalyst or risk event
+1. **[high]** UFO Moviez India Limited has informed the Exchange regarding 'Intimation to the holders of physical securities to furnish PAN, KYC details and Nomination as per SEBI Master Circular dated February 6, 2026'. (UFO) — Regulatory update with potential impact on shareholder base and compliance
+2. **[high]** Century Enka Limited has informed the Exchange regarding 'Pursuant to Regulation 34(2)(f) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, kindly find enclosed herewith the Business Respon (CENTENKA) — Business responsibility report with potential insights into company's operations and sustainability
+3. **[medium]** Vedant Fashions Limited has informed the Exchange about Link of Audio Recording of the Earnings Conference Call held on July 27, 2026. (MANYAVAR) — Earnings conference call with potential insights into company's financial performance
+4. **[medium]** Housing & Urban Development Corporation Limited has informed the Exchange about General Updates- Investor Presentation on Financial Results for the quarter ended 30.06.2026 (HUDCO) — Investor presentation with potential insights into company's financial performance
+5. **[medium]** Investor Presentation made by Company on the Unaudited Financial Results of Coal India Limited (Standalone & Consolidated) for the 1st Quarter ended 30th Jun 26. (COALINDIA) — Investor presentation with potential insights into company's financial performance
+6. **[medium]** Antelopus Selan Energy Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (ANTELOPUS) — Financial results with potential insights into company's performance
+7. **[medium]** JK Paper Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (JKPAPER) — Financial results with potential insights into company's performance
+8. **[low]** Nimbus Projects Limited has informed the Exchange regarding 'Acting as Guarantor Acting as Guarantor regarding availing of secured loan/ credit facility of Rs.23.00 Crore'. (NIMBSPROJ) — Guarantor update with limited impact on company's operations
+9. **[low]** Avanti Feeds Limited has informed the Exchange about General Updates (AVANTIFEED) — General update with limited impact on company's operations
+10. **[low]** State Bank of India has informed the Exchange about Interaction with Analysts / Institutional Investors on 07.08.2026 (SBIN) — Analyst meeting with limited impact on company's operations
 
 ## Deep-dive URLs (after push)
 
