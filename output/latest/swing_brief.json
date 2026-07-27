@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -4.79,
     "fii_net": -1688.23,
     "dii_net": 2329.14,
-    "crude": 84.06,
-    "crude_pct_change": -5.88,
+    "crude": 83.08,
+    "crude_pct_change": -6.98,
     "usdinr": 95.9,
     "usdinr_pct_change": -1.01,
-    "us_sp500_pct": 0.05,
-    "us_dow_pct": 0.46,
-    "us_vix": 17.88,
-    "us_vix_pct": -3.77,
-    "dxy": 101.38,
-    "dxy_pct": -0.09,
+    "us_sp500_pct": -0.13,
+    "us_dow_pct": 0.4,
+    "us_vix": 19.12,
+    "us_vix_pct": 2.91,
+    "dxy": 101.46,
+    "dxy_pct": -0.01,
     "us_10y": 4.65,
-    "asia_cue": "Bullish",
+    "asia_cue": "Bearish",
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-07-27T18:06:47.564862+05:30"
+    "generated_at_ist": "2026-07-27T21:02:33.538123+05:30"
   },
   "funnel": [
     {
@@ -1401,6 +1401,26 @@
         "detail": "-2.31% (-0.29R), 1d held, ~15d left to the T1 horizon",
         "score_at_open": 88.1,
         "score_now": null
+      },
+      {
+        "symbol": "UJJIVANSFB",
+        "date_opened": "2026-07-27",
+        "status": "open",
+        "entry": 71.57,
+        "stop": 65.96,
+        "t1": 82.79,
+        "price": 71.57,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 17,
+        "mfe_pct": 2.4,
+        "mae_pct": -0.66,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~17d left to the T1 horizon",
+        "score_at_open": 87.7,
+        "score_now": null
       }
     ],
     "closed_today": [],
@@ -1410,10 +1430,10 @@
     }
   },
   "ledger": {
-    "opened": [
+    "opened": [],
+    "reconfirmed": [
       "UJJIVANSFB"
-    ],
-    "reconfirmed": []
+    ]
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",
