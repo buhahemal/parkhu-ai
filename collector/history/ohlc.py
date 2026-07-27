@@ -1,12 +1,15 @@
 """Daily OHLC history for the scanning universe (Yahoo Finance).
 
-Writes:
-  - ``output/<date>/history/ohlc.csv`` — long format for the day's pack
-  - ``database/ohlc/<SYMBOL>.csv`` — per-symbol raw store (GitHub-backed)
+Source of truth (full history, GitHub-backed):
+  - ``database/ohlc/<SYMBOL>.csv`` — per-symbol store; daily warm pulls merge
+    new sessions by date (append/upsert). Never trimmed when lookback is 0.
+
+Dated pack artifact (session slice only — not a multi-year dump):
+  - ``output/<date>/history/ohlc.csv`` — last ``OHLC_PACK_SESSIONS`` bars/symbol
   - ``output/<date>/ohlc_failed_symbols.csv`` — symbols that still lack bars
 
 Warm symbols (enough cached bars) fetch a short incremental window.
-Cold / new / short symbols get a full backfill, which creates the CSV.
+Cold / new / short symbols get a full backfill into that symbol's CSV.
 
 On Yahoo rate-limit / timeout, probes with short sleeps (``OHLC_RETRY_PROBE_S``)
 and resumes as soon as a probe download succeeds — instead of always waiting
@@ -245,12 +248,41 @@ def _wait_until_yahoo_ready(*, rate_seen: bool) -> float:
     return slept
 
 
+def _pack_slice(df: pd.DataFrame, *, sessions: int | None = None) -> pd.DataFrame:
+    """Keep only the last N sessions per symbol for the dated pack CSV.
+
+    Full history stays in ``database/ohlc/<SYMBOL>.csv``. ``sessions <= 0``
+    writes the full frame (tests / escape hatch only).
+    """
+    if df is None or df.empty:
+        return pd.DataFrame(columns=COLUMNS)
+    out = df.reindex(columns=COLUMNS).copy()
+    out["date"] = out["date"].astype(str).str[:10]
+    n = int(sessions if sessions is not None else settings.OHLC_PACK_SESSIONS)
+    if n <= 0:
+        return out.sort_values(["symbol", "date"]).reset_index(drop=True)
+    parts: list[pd.DataFrame] = []
+    for _, g in out.groupby("symbol", sort=False):
+        g = g.sort_values("date")
+        parts.append(g.iloc[-n:] if len(g) > n else g)
+    if not parts:
+        return pd.DataFrame(columns=COLUMNS)
+    return pd.concat(parts, ignore_index=True).sort_values(["symbol", "date"]).reset_index(
+        drop=True
+    )
+
+
 def _write_daily(df: pd.DataFrame, date: str | None) -> Path:
     out_dir = settings.daily_output_dir(date) / "history"
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / "ohlc.csv"
-    df.to_csv(path, index=False)
-    log.info("wrote history/ohlc.csv (%d rows)", len(df))
+    pack = _pack_slice(df)
+    pack.to_csv(path, index=False)
+    log.info(
+        "wrote history/ohlc.csv pack_rows=%d (pack_sessions=%d; full history in database/ohlc)",
+        len(pack),
+        int(settings.OHLC_PACK_SESSIONS),
+    )
     return path
 
 
@@ -789,12 +821,14 @@ def collect(date: str | None = None) -> dict:
 
     log.info(
         "ohlc classify warm=%d cold=%d new_symbols=%d incremental=%s cold_period=%s "
-        "retry_wait=%.0fs retry_max=%d",
+        "cache_keep=%d pack_sessions=%d retry_wait=%.0fs retry_max=%d",
         len(warm),
         len(cold),
         len(new_symbols),
         _incremental_period(),
         _cold_period(),
+        int(settings.OHLC_LOOKBACK_SESSIONS),
+        int(settings.OHLC_PACK_SESSIONS),
         float(settings.OHLC_RETRY_WAIT_S),
         int(settings.OHLC_RETRY_MAX),
     )
@@ -804,7 +838,7 @@ def collect(date: str | None = None) -> dict:
     failed_symbols: list[str] = []
     retries_used = 0
 
-    # Keep-all cache: never trim persistent store. Warm download is still short.
+    # Keep-all per-symbol cache: never trim persistent store. Warm download is short.
     cache_keep = int(settings.OHLC_LOOKBACK_SESSIONS)  # 0 = keep all
     warm_trim = max(int(settings.OHLC_INCREMENTAL_DAYS) * 2, int(settings.OHLC_INCREMENTAL_DAYS))
     if warm:
@@ -864,14 +898,17 @@ def collect(date: str | None = None) -> dict:
     _write_daily(out, date)
     _write_failed(failed_unique, date, reason="no_ohlc_after_retry" if failed_unique else "ok")
 
+    pack = _pack_slice(out)
     status = "ok" if not failed_unique else "partial"
     return {
         "agent": "ohlc_history",
         "status": status,
-        "rows": int(len(out)),
+        "rows": int(len(pack)),
+        "cache_rows": int(len(out)),
         "symbols": ok_symbols,
         "failed": len(failed_unique),
         "lookback": settings.OHLC_LOOKBACK_SESSIONS,
+        "pack_sessions": int(settings.OHLC_PACK_SESSIONS),
         "warm": len(warm),
         "cold": len(cold_unique),
         "new_symbols": len(new_symbols),

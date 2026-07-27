@@ -38,9 +38,9 @@ CATALOG = [
         "history/ohlc.csv",
         {
             "agent": "ohlc_history",
-            "source": "Yahoo Finance (.NS) + database/ohlc cache",
-            "description": "Daily equity OHLCV history (~250 sessions × universe) in long format.",
-            "use_case": "Swing highs/lows, volume trend, structure stops, OHLC-based MFE/MAE.",
+            "source": "Yahoo Finance (.NS); full history in database/ohlc/<SYMBOL>.csv",
+            "description": "Tiny dated pack: last few sessions × universe (not full history).",
+            "use_case": "Light handoff / manifest. Features and MFE/MAE use database/ohlc/.",
             "key_columns": ["symbol", "date", "open", "high", "low", "close", "volume"],
         },
     ),
@@ -48,7 +48,7 @@ CATALOG = [
         "ohlc_features.csv",
         {
             "agent": "ohlc_features (derived)",
-            "source": "history/ohlc.csv",
+            "source": "database/ohlc/<SYMBOL>.csv (full history)",
             "description": "Per-symbol swing/volume structure derived from daily OHLC "
             "(20d highs/lows, base, breakout, volume ratio).",
             "use_case": "Feed stock_analysis and structure-based trade levels.",

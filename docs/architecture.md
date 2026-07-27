@@ -73,6 +73,8 @@ Return shape (required keys):
 
 - Workflow may commit `output/`, `logs/`, `trades/`, `database/ohlc/` as the data bot.
 - Prefer path-scoped `git add` (already the case); never commit secrets or `.env`.
+- Full OHLC lives stock-wise in `database/ohlc/<SYMBOL>.csv` (daily append/upsert).
+  Dated `history/ohlc.csv` is a tiny session slice only; `output/*.zip` is not committed.
 - Code changes should land via PR; data commits are automatic and separate.
 - Branch protection on `main` for code is recommended; data bot pushes remain
   the intentional exception for generated artifacts.

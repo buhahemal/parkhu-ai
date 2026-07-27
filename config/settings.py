@@ -71,13 +71,16 @@ TECHNICAL_HISTORY_PERIOD = "1y"
 MAX_SYMBOLS = int(os.getenv("PARKHU_MAX_SYMBOLS", "0")) or None
 
 # Daily OHLC history (Yahoo Finance via .NS).
-# Persistent cache keeps ALL Yahoo sessions (lookback 0 = never trim).
-# Warm symbols: short incremental pull; cold/new: period=max into database/ohlc/.
+# Full history lives stock-wise in database/ohlc/<SYMBOL>.csv (lookback 0 = never trim).
+# Warm symbols: short incremental pull; cold/new: period=max into that per-symbol CSV.
 OHLC_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_LOOKBACK", "0") or "0")
 OHLC_INCREMENTAL_DAYS = int(os.getenv("PARKHU_OHLC_INCREMENTAL_DAYS", "5") or "5")
 _ohlc_warm_env = os.getenv("PARKHU_OHLC_WARM_MIN_BARS")
 OHLC_WARM_MIN_BARS = int(_ohlc_warm_env) if _ohlc_warm_env not in (None, "") else 240
 OHLC_COLD_PERIOD = os.getenv("PARKHU_OHLC_COLD_PERIOD", "max") or "max"
+# Dated pack output/<date>/history/ohlc.csv — session slice only (not full history).
+# Features/research/positions read database/ohlc/; pack is a small daily artifact.
+OHLC_PACK_SESSIONS = int(os.getenv("PARKHU_OHLC_PACK_SESSIONS", "5") or "5")
 # Research scripts share keep-all semantics (0 = never trim). Period max = all Yahoo history.
 OHLC_RESEARCH_LOOKBACK_SESSIONS = int(os.getenv("PARKHU_OHLC_RESEARCH_LOOKBACK", "0") or "0")
 OHLC_RESEARCH_PERIOD = os.getenv("PARKHU_OHLC_RESEARCH_PERIOD", "max") or "max"

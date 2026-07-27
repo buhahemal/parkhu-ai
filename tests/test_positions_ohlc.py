@@ -49,6 +49,9 @@ def test_review_closes_on_gap_stop(tmp_path, monkeypatch):
 
     monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
     monkeypatch.setattr(settings, "ROOT", tmp_path)
+    cache = tmp_path / "ohlc_cache"
+    cache.mkdir()
+    monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
     trades = tmp_path / "trades"
     trades.mkdir()
     monkeypatch.setattr(pos, "TRADES_DIR", trades)
@@ -125,6 +128,7 @@ def test_review_closes_on_gap_stop(tmp_path, monkeypatch):
         ]
     ).to_csv(out / "stock_analysis.csv", index=False)
 
+    # Full history in stock-wise cache (pack may be empty / tiny).
     pd.DataFrame(
         [
             {
@@ -146,10 +150,163 @@ def test_review_closes_on_gap_stop(tmp_path, monkeypatch):
                 "volume": 1,
             },
         ]
-    ).to_csv(out / "history" / "ohlc.csv", index=False)
+    ).to_csv(cache / "AAA.csv", index=False)
 
     result = review(date)
     assert "AAA" in result["closed_today"]
     row = next(r for r in result["reviewed"] if r["symbol"] == "AAA")
     assert row["action"].startswith("EXIT")
     assert row["gap_flag"] is True
+
+
+def test_review_prefers_cache_over_short_pack(tmp_path, monkeypatch):
+    """MFE must see highs from before the tiny pack window via database/ohlc."""
+    from collector.brief import positions as pos
+
+    monkeypatch.setattr(settings, "OUTPUT_DIR", tmp_path / "output")
+    monkeypatch.setattr(settings, "ROOT", tmp_path)
+    cache = tmp_path / "ohlc_cache"
+    cache.mkdir()
+    monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
+    trades = tmp_path / "trades"
+    trades.mkdir()
+    monkeypatch.setattr(pos, "TRADES_DIR", trades)
+    monkeypatch.setattr(pos, "OPEN_CSV", trades / "open.csv")
+    monkeypatch.setattr(pos, "CLOSED_CSV", trades / "closed.csv")
+    date = "2026-07-30"
+    out = settings.OUTPUT_DIR / date
+    (out / "history").mkdir(parents=True)
+
+    pd.DataFrame(
+        [
+            {
+                "trade_id": f"{date}-BBB",
+                "symbol": "BBB",
+                "company": "B",
+                "risk_sector": "IT",
+                "date_opened": "2026-07-20",
+                "taken": "",
+                "entry": 100.0,
+                "stop": 90.0,
+                "t1": 120.0,
+                "t2": 125.0,
+                "t3": 130.0,
+                "structure_invalidation": 89.0,
+                "horizon_days_t1": 20,
+                "horizon_days_t2": 30,
+                "score_at_open": 85,
+                "qty": 1,
+                "risk_rupees": 10,
+                "status": "open",
+                "last_price": 100.0,
+                "last_checked": "2026-07-20",
+                "mfe_pct": 0.0,
+                "mae_pct": 0.0,
+                "gap_flag": False,
+                "hit_t1": False,
+                "hit_t2": False,
+                "reconfirmed_count": 0,
+                "notes": "",
+            }
+        ]
+    ).to_csv(trades / "open.csv", index=False)
+    pd.DataFrame(
+        columns=[
+            "trade_id",
+            "symbol",
+            "date_opened",
+            "date_closed",
+            "status",
+            "entry",
+            "last_price",
+            "mfe_pct",
+            "mae_pct",
+            "gap_flag",
+            "exit_reason",
+            "pct_return",
+            "r_multiple",
+            "days_held",
+        ]
+    ).to_csv(trades / "closed.csv", index=False)
+    pd.DataFrame(
+        [
+            {
+                "symbol": "BBB",
+                "cmp": 102.0,
+                "trend_label": "Bullish",
+                "ema50": 98.0,
+                "adx14": 30,
+                "rsi14": 50,
+                "earnings_within_21d": False,
+                "parkhu_score": 80,
+            }
+        ]
+    ).to_csv(out / "stock_analysis.csv", index=False)
+    # Pack only has recent quiet days (would understate MFE if used alone).
+    pd.DataFrame(
+        [
+            {
+                "symbol": "BBB",
+                "date": "2026-07-29",
+                "open": 101,
+                "high": 102,
+                "low": 100,
+                "close": 101.5,
+                "volume": 1,
+            },
+            {
+                "symbol": "BBB",
+                "date": "2026-07-30",
+                "open": 101.5,
+                "high": 103,
+                "low": 101,
+                "close": 102.0,
+                "volume": 1,
+            },
+        ]
+    ).to_csv(out / "history" / "ohlc.csv", index=False)
+    # Cache includes the spike high right after entry.
+    pd.DataFrame(
+        [
+            {
+                "symbol": "BBB",
+                "date": "2026-07-20",
+                "open": 100,
+                "high": 100.5,
+                "low": 99,
+                "close": 100.2,
+                "volume": 1,
+            },
+            {
+                "symbol": "BBB",
+                "date": "2026-07-21",
+                "open": 100.2,
+                "high": 115.0,
+                "low": 100,
+                "close": 110.0,
+                "volume": 1,
+            },
+            {
+                "symbol": "BBB",
+                "date": "2026-07-29",
+                "open": 101,
+                "high": 102,
+                "low": 100,
+                "close": 101.5,
+                "volume": 1,
+            },
+            {
+                "symbol": "BBB",
+                "date": "2026-07-30",
+                "open": 101.5,
+                "high": 103,
+                "low": 101,
+                "close": 102.0,
+                "volume": 1,
+            },
+        ]
+    ).to_csv(cache / "BBB.csv", index=False)
+
+    result = review(date)
+    row = next(r for r in result["reviewed"] if r["symbol"] == "BBB")
+    assert float(row["mfe_pct"]) >= 15.0

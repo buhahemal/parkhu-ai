@@ -26,8 +26,9 @@ the "expected profit %" projection with a measured hit rate. Until there are
 enough closed rows to be meaningful, the brief says so rather than quoting a
 number that looks like evidence.
 
-When ``history/ohlc.csv`` is present, MFE/MAE use session high/low since entry
-and stops trigger on a low breach (with ``gap_flag`` when the open gaps through).
+MFE/MAE prefer per-symbol bars in ``database/ohlc/<SYMBOL>.csv`` (full history),
+falling back to the dated ``history/ohlc.csv`` pack slice if the cache is missing.
+Stops trigger on a low breach (with ``gap_flag`` when the open gaps through).
 Without OHLC the review falls back to daily ``cmp``.
 """
 
@@ -228,25 +229,59 @@ def record(ideas: list[dict], date: str) -> dict:
     return {"opened": added, "reconfirmed": reconfirmed}
 
 
-def _load_ohlc_map(date: str) -> dict[str, pd.DataFrame]:
-    """Symbol → OHLC bars (oldest→newest) from today's history file."""
-    path = out_dir(date) / "history" / "ohlc.csv"
+def _normalize_ohlc_bars(g: pd.DataFrame) -> pd.DataFrame:
+    g = g.copy()
+    g["date"] = g["date"].astype(str).str[:10]
+    for c in ("open", "high", "low", "close"):
+        if c in g.columns:
+            g[c] = pd.to_numeric(g[c], errors="coerce")
+    return g.sort_values("date")
+
+
+def _load_symbol_ohlc_cache(symbol: str) -> pd.DataFrame | None:
+    """Load full history for one symbol from ``database/ohlc/<SYMBOL>.csv``."""
+    safe = str(symbol).replace("/", "_")
+    path = settings.OHLC_CACHE_DIR / f"{safe}.csv"
     if not path.is_file():
-        return {}
+        return None
     try:
         df = pd.read_csv(path)
     except Exception:  # noqa: BLE001
-        return {}
-    if df.empty or "symbol" not in df.columns:
-        return {}
+        return None
+    if df.empty or "date" not in df.columns:
+        return None
+    return _normalize_ohlc_bars(df)
+
+
+def _load_ohlc_map(date: str, symbols: list[str] | None = None) -> dict[str, pd.DataFrame]:
+    """Symbol → OHLC bars (oldest→newest).
+
+    Prefers stock-wise ``database/ohlc/`` (full history). Falls back to the dated
+    pack ``history/ohlc.csv`` for any symbol still missing.
+    """
     out: dict[str, pd.DataFrame] = {}
+    wanted = [str(s).strip() for s in (symbols or []) if str(s).strip()]
+    for sym in wanted:
+        cached = _load_symbol_ohlc_cache(sym)
+        if cached is not None and not cached.empty:
+            out[sym] = cached
+
+    path = out_dir(date) / "history" / "ohlc.csv"
+    if not path.is_file():
+        return out
+    try:
+        df = pd.read_csv(path)
+    except Exception:  # noqa: BLE001
+        return out
+    if df.empty or "symbol" not in df.columns:
+        return out
     for sym, g in df.groupby("symbol", sort=False):
-        g = g.copy()
-        g["date"] = g["date"].astype(str).str[:10]
-        for c in ("open", "high", "low", "close"):
-            if c in g.columns:
-                g[c] = pd.to_numeric(g[c], errors="coerce")
-        out[str(sym)] = g.sort_values("date")
+        key = str(sym)
+        if wanted and key not in wanted:
+            continue
+        if key in out:
+            continue
+        out[key] = _normalize_ohlc_bars(g)
     return out
 
 
@@ -300,7 +335,10 @@ def review(date: str) -> dict:
     d = load_csv("stock_analysis", date)
     have_data = not d.empty and "symbol" in d.columns
     snap = d.set_index("symbol") if have_data else pd.DataFrame()
-    ohlc_map = _load_ohlc_map(date)
+    open_symbols = (
+        open_df["symbol"].astype(str).tolist() if "symbol" in open_df.columns else []
+    )
+    ohlc_map = _load_ohlc_map(date, symbols=open_symbols)
 
     reviewed, closed_rows, keep_idx = [], [], []
 

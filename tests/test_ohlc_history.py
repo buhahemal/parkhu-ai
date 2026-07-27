@@ -70,6 +70,7 @@ def _patch_ohlc_defaults(monkeypatch, settings, cache, output) -> None:
     monkeypatch.setattr(settings, "OUTPUT_DIR", output)
     monkeypatch.setattr(settings, "OHLC_CACHE_DIR", cache)
     monkeypatch.setattr(settings, "OHLC_LOOKBACK_SESSIONS", 20)
+    monkeypatch.setattr(settings, "OHLC_PACK_SESSIONS", 5)
     monkeypatch.setattr(settings, "OHLC_WARM_MIN_BARS", 10)
     monkeypatch.setattr(settings, "OHLC_INCREMENTAL_DAYS", 5)
     monkeypatch.setattr(settings, "OHLC_COLD_PERIOD", "400d")
@@ -147,9 +148,10 @@ def test_warm_path_uses_incremental_period(tmp_path, monkeypatch):
     assert result["new_symbols"] == 0
     out = pd.read_csv(settings.OUTPUT_DIR / "2026-07-26" / "history" / "ohlc.csv")
     assert set(out["symbol"]) == {"WARMCO"}
-    assert len(out) >= 12
+    assert len(out) <= int(settings.OHLC_PACK_SESSIONS)
     cached = pd.read_csv(cache / "WARMCO.csv")
     assert "2025-02-03" in set(cached["date"].astype(str)) or len(cached) >= 12
+    assert len(cached) >= 12
 
 
 def test_cold_short_cache_uses_full_period(tmp_path, monkeypatch):
@@ -208,7 +210,8 @@ def test_new_stock_full_backfill_creates_csv(tmp_path, monkeypatch):
     assert (cache / "NEWCO.csv").is_file()
     out = pd.read_csv(settings.OUTPUT_DIR / "2026-07-26" / "history" / "ohlc.csv")
     assert "NEWCO" in set(out["symbol"])
-    assert len(out) >= 10
+    assert len(out) <= int(settings.OHLC_PACK_SESSIONS)
+    assert len(pd.read_csv(cache / "NEWCO.csv")) >= 10
 
 
 def test_incremental_merge_never_trims_deep_cache(tmp_path, monkeypatch):
@@ -236,6 +239,10 @@ def test_incremental_merge_never_trims_deep_cache(tmp_path, monkeypatch):
     assert result["warm"] == 1
     cached = pd.read_csv(cache / "DEEPCO.csv")
     assert len(cached) >= before
+    pack = pd.read_csv(settings.OUTPUT_DIR / "2026-07-26" / "history" / "ohlc.csv")
+    assert len(pack) <= int(settings.OHLC_PACK_SESSIONS)
+    assert result["rows"] == len(pack)
+    assert result.get("cache_rows", 0) >= before
 
 
 def test_rate_limit_retries_after_wait(tmp_path, monkeypatch):

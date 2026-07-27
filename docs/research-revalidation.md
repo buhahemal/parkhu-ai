@@ -19,7 +19,7 @@ Artifacts: `output/research/smoke_reliance_*` (gitignored).
 
 ## What did ship (safe for daily / Actions)
 
-1. **OHLC keep-all** — `database/ohlc/` never trims; cold/new uses Yahoo `period=max`; ignore-list skips only true no-data exceptions.
+1. **OHLC keep-all (stock-wise)** — full history in `database/ohlc/<SYMBOL>.csv` (never trim); cold/new uses Yahoo `period=max`; dated `history/ohlc.csv` is a tiny pack slice only; ignore-list skips only true no-data exceptions.
 2. **Dual daily modes** — `PARKHU_RUN_MODE=post_close` (18:00 IST) and `premarket_context` (06:00 IST, ideas reused, ledger untouched).
 3. **Publish validation** — pack schema/session/data_quality checked before promoting `output/latest/`; failed runs keep prior latest.
 4. **Research speed path** — vectorized `build_panel`, strategy panel reuse, de-collinearized proxy trend (`SMA50>SMA200`), `rr-sweep` CLI.

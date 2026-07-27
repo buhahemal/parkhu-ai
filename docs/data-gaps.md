@@ -38,13 +38,14 @@ Headline numbers (pre–Phase A; re-check after the next full collect):
 
 ### 1. Daily OHLC history (the single biggest gap) — **Partial (Phase A)**
 
-**Landed:** `collector/history/ohlc.py` writes `output/<date>/history/ohlc.csv` (~250
-sessions × universe). Raw bars live in **`database/ohlc/<SYMBOL>.csv` on GitHub**
+**Landed:** Full OHLCV lives stock-wise in **`database/ohlc/<SYMBOL>.csv` on GitHub**
 (committed by the daily collect job). Warm symbols fetch the last ~5 calendar days
-and append; new/missing/short symbols get a full ~400d backfill that creates the CSV.
+and append/upsert by date; new/missing/short symbols get `period=max` into that CSV.
+Dated `output/<date>/history/ohlc.csv` is only a tiny session-slice pack (not full
+history). `ohlc_features` and positions MFE/MAE read the per-symbol cache.
 `ohlc_features` derives `swing_high_20d`, `swing_low_20d`, `swing_low_50d`, `base_*`,
 `breakout_20d_high`, `volume_20d_avg`, `volume_ratio_vs_20d`, `consolidation_atr_pct`
-into `stock_analysis.csv`. Ledger MFE/MAE can use session high/low when OHLC is present.
+into `stock_analysis.csv`.
 
 **Still open:** cup-and-handle / double-bottom pattern flags, weekly pivots, and fuller
 pattern weight in the technical score.

@@ -80,16 +80,32 @@ jobs:
         run: |
           git config user.name  "parkhu-bot"
           git config user.email "parkhu-bot@users.noreply.github.com"
+          # Large packs used to hit HTTP 408; keep buffers / HTTP1.1 for OHLC deltas.
+          git config http.postBuffer 524288000
+          git config http.version HTTP/1.1
           # trades/ carries the suggestion ledger across runs — without it the
           # open positions and the measured hit rate reset every day.
-          # database/ohlc/ is the GitHub-backed raw OHLC store (incremental daily).
+          # database/ohlc/ is the GitHub-backed per-symbol OHLC store (incremental).
+          # output/*.zip is gitignored — full history lives in database/ohlc/.
           git add -- output/ logs/ trades/ database/ohlc/ || true
           if git diff --staged --quiet; then
             echo "No new data to commit."
             echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "data: daily collection $(date -u +'%Y-%m-%d') (${{ steps.mode.outputs.run_mode }})"
-            git push
+            pushed=false
+            for i in 1 2 3; do
+              if git push; then
+                pushed=true
+                break
+              fi
+              echo "git push attempt $i failed; retrying..."
+              sleep $((i * 20))
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "git push failed after retries"
+              exit 1
+            fi
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -136,10 +152,9 @@ jobs:
               echo "| _(no files — run may have failed)_ | | |"
             fi
             echo ""
-            echo "### Zip packages (archive only)"
+            echo "### Zip packages"
             echo ""
-            echo "| Archive | Raw (direct) | Browse |"
-            echo "|---------|--------------|--------|"
-            echo "| \`${DATE}.zip\` | [raw](${BASE_RAW}/output/${DATE}.zip) | [view](${BASE_BLOB}/output/${DATE}.zip) |"
-            echo "| \`latest.zip\` | [raw](${BASE_RAW}/output/latest.zip) | [view](${BASE_BLOB}/output/latest.zip) |"
+            echo "Dated/latest zips are built on the runner for local download from the"
+            echo "workflow artifact path if needed; they are **not** committed to git"
+            echo "(full OHLC lives in \`database/ohlc/<SYMBOL>.csv\`)."
           } >> "$GITHUB_STEP_SUMMARY"

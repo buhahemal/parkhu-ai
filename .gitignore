@@ -30,6 +30,9 @@ site/blob-report/
 # Research backtest run artifacts (regenerate locally; do not commit large runs)
 output/research/
 
+# Daily zip archives re-bloat pushes (prefer research_pack / output/<date>/ files)
+output/*.zip
+
 # Logs
 logs/*.log
 
