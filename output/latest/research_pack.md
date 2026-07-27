@@ -1,139 +1,134 @@
 # Parkhu research pack — 2026-07-27
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-07-27T08:26:35.343946+05:30
+- **generated_at_ist:** 2026-07-27T10:01:01.407882+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.53%)
-- india_vix: 13.48 (Low)
+- market_regime: **Bullish**
+- nifty: Bullish (0.67%)
+- india_vix: 13.22 (Low)
 - fii_net: -3892.77 | dii_net: 5453.55
-- overall_risk: Medium | global_risk: Risk-Off
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
-- universe: 2969
-- trend = Bullish: 1203
-- price > SMA200: 909
-- price > EMA50: 890
-- ADX14 > 25: 526
-- RSI14 in 40-80: 507
-- RS > 0 vs NIFTY and sector: 278
-- delivery% >= 40: 133
-- relative_volume >= 1: 28
-- no earnings within 21d: 11
-- event_risk_score <= 1: 11
-- TV rating not Sell: 11
+- universe: 2967
+- trend = Bullish: 1340
+- price > SMA200: 998
+- price > EMA50: 982
+- ADX14 > 25: 535
+- RSI14 in 40-80: 514
+- RS > 0 vs NIFTY and sector: 284
+- delivery% >= 40: 128
+- relative_volume >= 1: 6
+- no earnings within 21d: 5
+- event_risk_score <= 1: 4
+- TV rating not Sell: 4
 
-## Survivors (top 11 of 11)
+## Survivors (top 4 of 4)
 
-- **SREEL** [idea] score 88.1 — selected as idea
-- **CREDITACC** [watchlist] score 78.0 — score in Watch band (70–80)
-- **DIFFNKG** [watchlist] score 74.1 — score in Watch band (70–80)
-- **MANBA** [watchlist] score 72.6 — score in Watch band (70–80)
-- **SETL** [rejected] score 58.8 — score below Watch band
-- **NIBL** [rejected] score 56.0 — score below Watch band
-- **IDFCFIRSTB** [rejected] score 53.4 — T1 needs more than 22 trading days (~1 month)
-- **BANARBEADS** [rejected] score 51.6 — T1 needs more than 22 trading days (~1 month)
-- **EBGNG** [rejected] score 50.2 — score below Watch band
-- **ETERNAL** [rejected] score 48.2 — score below Watch band
-- **3IINFOLTD** [rejected] score 47.0 — T1 needs more than 22 trading days (~1 month)
+- **CREDITACC** [idea] score 80.2 — selected as idea
+- **TTKHLTCARE** [watchlist] score 70.2 — score in Watch band (70–80)
+- **IDFCFIRSTB** [rejected] score 52.6 — score below Watch band
+- **GANESHHOU** [rejected] score 44.2 — score below Watch band
 
 ## Ideas
 
-### SREEL — Buy (score 88.1)
-- Sreeleathers Ltd. | risk_sector: Retail Trade
-- entry 227.97 | stop 209.73 | t1 264.45 | t2 282.68 | t3 300.92 | R:R 2.0
-- qty 43 | deployed 9803.0 (9.8%) | risk ₹784.0
+### CREDITACC — Buy (score 80.2)
+- CreditAccess Grameen Ltd. | risk_sector: NBFC & Capital Markets
+- entry 1597.3 | stop 1492.91 | t1 1806.07 | t2 1910.46 | t3 2014.85 | R:R 2.0
+- qty 6 | deployed 9584.0 (9.58%) | risk ₹626.0
 
 ## Open ledger
 
-- **SREEL** status=open entry=227.97 last=227.97 mfe=0.0 mae=0.0 opened=2026-07-26
+- **SREEL** status=open entry=227.97 last=227.46 mfe=2.6 mae=-0.37 opened=2026-07-26
+- **CREDITACC** status=open entry=1597.3 last=1597.3 mfe=0.0 mae=0.0 opened=2026-07-27
 
 ## Swing candidates (top)
 
-- EBGNG: score=14 rs_nifty=9.04 deliv=56.05
-- CREDITACC: score=14 rs_nifty=9.7 deliv=55.56
-- DIFFNKG: score=14 rs_nifty=1.49 deliv=47.34
-- 3IINFOLTD: score=14 rs_nifty=15.18 deliv=59.04
-- NIBL: score=13 rs_nifty=19.8 deliv=58.44
-- NESTLEIND: score=13 rs_nifty=3.36 deliv=56.32
-- STYL: score=13 rs_nifty=25.86 deliv=35.16
-- RKFORGE: score=13 rs_nifty=0.88 deliv=43.86
-- METROPOLIS: score=13 rs_nifty=4.78 deliv=76.59
-- STEELCAS: score=13 rs_nifty=2.94 deliv=53.55
-- RANEHOLDIN: score=13 rs_nifty=8.98 deliv=49.92
-- MONARCH: score=13 rs_nifty=2.8 deliv=62.03
-- INDNIPPON: score=13 rs_nifty=25.53 deliv=48.66
-- SETL: score=13 rs_nifty=30.35 deliv=72.33
-- JSFB: score=13 rs_nifty=17.82 deliv=44.56
+- GANESHHOU: score=14 rs_nifty=10.22 deliv=42.52
+- CREDITACC: score=14 rs_nifty=9.55 deliv=55.56
+- MACPOWER: score=13 rs_nifty=18.37 deliv=61.96
+- RPGLIFE: score=13 rs_nifty=27.76 deliv=51.35
+- DIFFNKG: score=13 rs_nifty=2.77 deliv=47.34
+- GALAPREC: score=13 rs_nifty=4.75 deliv=54.03
+- PAISALO: score=13 rs_nifty=18.65 deliv=48.42
+- DCBBANK: score=13 rs_nifty=6.52 deliv=44.62
+- JSFB: score=13 rs_nifty=17.02 deliv=44.56
+- TALBROAUTO: score=13 rs_nifty=3.47 deliv=45.6
+- NOVARTIND: score=13 rs_nifty=12.57 deliv=41.36
+- SETL: score=13 rs_nifty=19.59 deliv=72.33
+- PYRAMID: score=13 rs_nifty=2.44 deliv=53.51
+- RKFORGE: score=13 rs_nifty=7.61 deliv=43.86
+- PANSARI: score=13 rs_nifty=20.05 deliv=48.41
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.50% (bear)
-- Hang Seng: -0.27% (bear)
-- Shanghai: -1.28% (bear)
-- Kospi: -6.75% (bear)
-- Taiwan: -3.45% (bear)
-- ASX 200: +0.26% (bull)
+- Nikkei: -0.10% (neutral)
+- Hang Seng: +0.81% (bull)
+- Shanghai: +0.40% (bull)
+- Kospi: -1.02% (bear)
+- Taiwan: -1.21% (bear)
+- ASX 200: +1.15% (bull)
 
 ### Europe
-- FTSE 100: -0.73% (bear)
-- DAX: -1.56% (bear)
-- Euro Stoxx 50: -1.69% (bear)
+- FTSE 100: +0.91% (bull)
+- DAX: +1.36% (bull)
+- Euro Stoxx 50: +1.14% (bull)
 
 ### US
-- S&P 500: -1.21% (bear)
-- Nasdaq: -2.15% (bear)
-- Dow: -0.97% (bear)
-- US VIX: +12.38% (bear)
+- S&P 500: +0.05% (neutral)
+- Nasdaq: -0.64% (bear)
+- Dow: +0.46% (bull)
+- US VIX: -0.64% (bull)
 
 ### Macro
-- USDINR: -0.34% (neutral)
-- Crude WTI: -4.15% (bear)
-- Brent: -3.81% (bear)
-- DXY: -0.26% (neutral)
-- US 10Y: +0.99% (bear)
-- India ETF: -1.22% (bear)
-- EM ETF: -0.60% (bear)
+- USDINR: -0.64% (bull)
+- Crude WTI: -4.87% (bear)
+- Brent: -4.55% (bear)
+- DXY: -0.27% (neutral)
+- US 10Y: -0.51% (bull)
+- India ETF: +0.82% (bull)
+- EM ETF: -1.97% (bear)
 
 
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** defensive
+- **stance:** selective_aggressive
 
-The Indian market is currently in a bearish regime with a low India VIX. The Nifty trend is also bearish, with a 0.53% decline. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers.
+Nifty trend remains bullish with a 0.67% increase, and the India VIX is at a low level of 13.22. The overall risk is low, and FII net is negative at -3892.77, while DII net is positive at 5453.55. The regime is bullish, with a mixed Asia cue and a bullish Europe cue.
 
-- **SREEL** [consider_entry/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — Parkhu score of 88.1 with a buy band
+- **CREDITACC** [consider_entry/high] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Strong Parkhu score of 80.2 and a buy band
+- **SREEL** [manage_open/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — MFE pct is 2.6, and the stock is still above the entry price
 
 ### AI stock reviews
 
-- **SREEL** [high] SREEL's strong technical rating, bullish trend label, and high delivery percentage make it a promising swing trade candidate, particularly given its recent outperformance against the Nifty and its sector. The stock's RSI and ADX levels suggest a potential for further upside. With a relatively high Parkhu score of 88.1, this setup appears to fit a ≤1-month swing trade. The stock is also not far from its 52-week high, indicating potential for a breakout.
-  - catalysts: Strong technicals, Bullish trend, High delivery
-  - risks: Bearish market regime, Medium overall risk, Retail trade sector risks
-  - watch: Triggers for this trade include a strong move above the current price, while invalidation cues would be a drop below the stop level, indicating a failure of the bullish thesis. A close eye should be kept on the stock's ability to hold above its recent lows.
+- **CREDITACC** [high] The setup in CREDITACC fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against the Nifty and its sector. The recent price action and technical indicators such as RSI and ADX suggest a potential for further upside. With a strong buy technical rating and a relatively low risk sector, the conditions seem favorable for a short-term swing trade.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance
+  - risks: Market regime change, Sector-specific risks, Earnings disappointment
+  - watch: Triggers for this trade include a strong breakout above the current levels, while invalidation cues would be a breach of the stop level or a significant change in the market regime. The trade's validity will also depend on the stock's performance relative to its sector and the Nifty.
 
 ### Claude feed
 
-Bearish regime, defensive stance, top idea SREEL, caveats include provisional scores and lack of promoter pledge data
+Regime: Bullish, Stance: Selective Aggressive, Top Ideas: CREDITACC, Caveats: Provisional scores, incomplete data
 
 
 ## Market news (AI top impact)
 
-1. **[high]** SIGMA ADVANCED SYSTEMS LIMITED has informed the Exchange regarding a press release dated July 27, 2026 (SIGMAADV) — High news score and major catalyst indicate significant market impact
-2. **[high]** Alldigi Tech Limited has informed the Exchange about Copy of Newspaper Publication on Interim Dividend (ALLDIGI) — High news score and major catalyst indicate significant market impact
-3. **[high]** Alldigi Tech Limited has informed the Exchange about Copy of Newspaper Publication on Financial Results (ALLDIGI) — High news score and major catalyst indicate significant market impact
-4. **[high]** Zen Technologies Limited has informed the Exchange regarding a press release dated July 26, 2026 (ZENTEC) — High news score and major catalyst indicate significant market impact
-5. **[high]** Vedant Fashions Limited has informed the exchange about the copies of newspaper publications in respect of financial results for the quarter ended June 30, 2026 (MANYAVAR) — High news score and major catalyst indicate significant market impact
-6. **[medium]** Smc Global Securities Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (SMCGLOBAL) — Medium news score and major catalyst indicate moderate market impact
-7. **[medium]** Smc Global Securities Limited has informed the Exchange regarding Outcome of Board Meeting held on July 26, 2026 (SMCGLOBAL) — Medium news score and risk event indicate moderate market impact
-8. **[low]** Dr. Lal Path Labs Ltd. has informed the Exchange regarding Change in Director(s) of the company (LALPATHLAB) — Low news score indicates minimal market impact
-9. **[low]** Linc Limited has informed the Exchange regarding 'Unveiling of Product Experience Centre at Park Street, Kolkata' (LINC) — Low news score indicates minimal market impact
-10. **[low]** Cyient Limited has informed the Exchange about Copy of Newspaper Publication (CYIENT) — Low news score indicates minimal market impact
+1. **[high]** SIGMA ADVANCED SYSTEMS LIMITED has informed the Exchange regarding a press release dated July 27, 2026 (SIGMAADV) — Major catalyst and risk event with high news score
+2. **[high]** Alldigi Tech Limited has informed the Exchange about Copy of Newspaper Publication on Interim Dividend (ALLDIGI) — Major catalyst with high news score
+3. **[medium]** Smc Global Securities Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (SMCGLOBAL) — Major catalyst with medium news score
+4. **[medium]** Zen Technologies Limited has informed the Exchange regarding a press release dated July 26, 2026, titled "Zen Technologies, India s leading anti-drone technology and defense training solutions provider announced its fina (ZENTEC) — Major catalyst and risk event with medium news score
+5. **[medium]** Vedant Fashions Limited has informed the exchange about the copies of newspaper publications in respect of financial results for the quarter ended June 30, 2026 (MANYAVAR) — Major catalyst and risk event with medium news score
+6. **[medium]** Ratnaveer Precision Engineering Limited has informed the Exchange ppt presentation on financial result for the quarter ended on 30th June 2026 (RATNAVEER) — Major catalyst and risk event with medium news score
+7. **[medium]** Alldigi Tech Limited has informed the Exchange about Copy of Newspaper Publication on Financial Results (ALLDIGI) — Major catalyst with medium news score
+8. **[low]** Energy in Motion partners with HPCL to set-up charging and battery swapping infrastructure at retail outlets across India for deployment of Electric Heavy Commercial Vehicles (RELTD) — No major catalyst or risk event
+9. **[low]** Welspun Corp Limited has informed the Exchange about Bagging/Receiving of orders/contracts (WELCORP) — No major catalyst or risk event
+10. **[low]** Linc Limited has informed the Exchange regarding 'Unveiling of Product Experience Centre at Park Street, Kolkata' (LINC) — No major catalyst or risk event
 
 ## Deep-dive URLs (after push)
 
