@@ -1,4 +1,5 @@
 trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,gap_flag,hit_t1,hit_t2,reconfirmed_count,notes
-2026-07-26-SREEL,SREEL,Sreeleathers Ltd.,Retail Trade,2026-07-26,,227.97,209.73,264.45,282.68,300.92,209.39,16,22,88.1,43,784.0,open,222.71,2026-07-28,2.6,-2.62,False,False,False,2,
-2026-07-27-CREDITACC,CREDITACC,CreditAccess Grameen Ltd.,NBFC & Capital Markets,2026-07-27,,1597.3,1492.91,1806.07,1910.46,2014.85,1437.16,17,22,80.2,6,626.0,open,1591.1,2026-07-28,1.05,-2.95,False,False,False,0,
-2026-07-27-UJJIVANSFB,UJJIVANSFB,Ujjivan Small Finance Bank Ltd.,Banks,2026-07-27,,71.57,65.96,82.79,88.4,94.01,60.99,17,22,87.7,139,780.0,open,71.57,2026-07-28,2.4,-0.66,False,False,False,2,
+2026-07-26-SREEL,SREEL,Sreeleathers Ltd.,Retail Trade,2026-07-26,,227.97,209.73,264.45,282.68,300.92,209.39,16,22,88.1,43,784.0,open,225.0,2026-07-28,2.6,-2.62,False,False,False,2,
+2026-07-27-CREDITACC,CREDITACC,CreditAccess Grameen Ltd.,NBFC & Capital Markets,2026-07-27,,1597.3,1492.91,1806.07,1910.46,2014.85,1437.16,17,22,80.2,6,626.0,open,1597.1,2026-07-28,1.05,-2.95,False,False,False,0,
+2026-07-27-UJJIVANSFB,UJJIVANSFB,Ujjivan Small Finance Bank Ltd.,Banks,2026-07-27,,71.57,65.96,82.79,88.4,94.01,60.99,17,22,87.7,139,780.0,open,72.0,2026-07-28,2.4,-2.15,False,False,False,2,
+2026-07-28-CGCL,CGCL,Capri Global Capital Limited,NBFC & Capital Markets,2026-07-28,,247.0,229.77,281.47,298.7,315.93,225.67,16,22,84.1,40,689.0,open,247.0,2026-07-28,0.0,0.0,False,False,False,0,
