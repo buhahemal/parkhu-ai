@@ -1,136 +1,179 @@
 # Parkhu research pack — 2026-07-28
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-07-28T09:23:14.464253+05:30
+- **generated_at_ist:** 2026-07-28T18:07:15.085956+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Neutral**
-- nifty: Neutral (0.14%)
-- india_vix: 12.69 (Low)
+- nifty: Neutral (-0.04%)
+- india_vix: 12.56 (Low)
 - fii_net: -1688.23 | dii_net: 2329.14
 - overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
-- universe: 2969
-- trend = Bullish: 1309
-- price > SMA200: 985
-- price > EMA50: 968
-- ADX14 > 25: 534
-- RSI14 in 40-80: 513
-- RS > 0 vs NIFTY and sector: 264
-- delivery% >= 40: 141
-- relative_volume >= 1: 2
-- no earnings within 21d: 2
-- event_risk_score <= 1: 2
-- TV rating not Sell: 2
+- universe: 2971
+- trend = Bullish: 1210
+- price > SMA200: 910
+- price > EMA50: 893
+- ADX14 > 25: 503
+- RSI14 in 40-80: 485
+- RS > 0 vs NIFTY and sector: 251
+- delivery% >= 40: 130
+- relative_volume >= 1: 36
+- no earnings within 21d: 21
+- event_risk_score <= 1: 18
+- TV rating not Sell: 17
 
-## Survivors (top 2 of 2)
+## Survivors (top 17 of 17)
 
-- **CGCL** [idea] score 84.1 — selected as idea
-- **PANSARI** [rejected] score 49.3 — score below Watch band
+- **UJJIVANSFB** [idea] score 90.4 — selected as idea
+- **IIFL** [idea] score 89.5 — selected as idea
+- **INDNIPPON** [idea] score 85.5 — selected as idea
+- **SATIN** [watchlist] score 78.8 — score in Watch band (70–80)
+- **TVSMOTOR** [watchlist] score 74.3 — score in Watch band (70–80)
+- **PNGJL** [watchlist] score 74.2 — score in Watch band (70–80)
+- **MVGJL** [rejected] score 71.9 — T1 needs more than 22 trading days (~1 month)
+- **KMEW** [rejected] score 67.3 — score below Watch band
+- **SMCGLOBAL** [rejected] score 59.4 — score below Watch band
+- **GUFICBIO** [rejected] score 58.8 — score below Watch band
+- **E2E** [rejected] score 57.9 — score below Watch band
+- **MUNJALSHOW** [rejected] score 57.2 — score below Watch band
+- **ETERNAL** [rejected] score 54.7 — T1 needs more than 22 trading days (~1 month)
+- **ADANIENSOL** [rejected] score 54.4 — score below Watch band
+- **TEXINFRA** [rejected] score 54.1 — T1 needs more than 22 trading days (~1 month)
+- **3IINFOLTD** [rejected] score 46.6 — score below Watch band
+- **TGBHOTELS** [rejected] score 44.5 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### CGCL — Buy (score 84.1)
-- Capri Global Capital Limited | risk_sector: NBFC & Capital Markets
-- entry 247.0 | stop 229.77 | t1 281.47 | t2 298.7 | t3 315.93 | R:R 2.0
-- qty 40 | deployed 9880.0 (9.88%) | risk ₹689.0
+### UJJIVANSFB — Buy (score 90.4)
+- Ujjivan Small Finance Bank Ltd. | risk_sector: Banks
+- entry 70.12 | stop 64.51 | t1 81.34 | t2 86.95 | t3 92.56 | R:R 2.0
+- qty 142 | deployed 9957.0 (9.96%) | risk ₹797.0
+
+### IIFL — Buy (score 89.5)
+- IIFL Finance Limited | risk_sector: NBFC & Capital Markets
+- entry 582.35 | stop 541.29 | t1 675.0 | t2 716.06 | t3 757.12 | R:R 2.26
+- qty 17 | deployed 9900.0 (9.9%) | risk ₹698.0
+
+### INDNIPPON — Buy (score 85.5)
+- India Nippon Electricals Limited | risk_sector: Producer Manufacturing
+- entry 1163.1 | stop 1070.05 | t1 1349.2 | t2 1442.24 | t3 1535.29 | R:R 2.0
+- qty 8 | deployed 9305.0 (9.3%) | risk ₹744.0
 
 ## Open ledger
 
-- **SREEL** status=open entry=227.97 last=225.0 mfe=2.6 mae=-2.62 opened=2026-07-26
-- **CREDITACC** status=open entry=1597.3 last=1597.1 mfe=1.05 mae=-2.95 opened=2026-07-27
-- **UJJIVANSFB** status=open entry=71.57 last=72.0 mfe=2.4 mae=-2.15 opened=2026-07-27
-- **CGCL** status=open entry=247.0 last=247.0 mfe=0.0 mae=0.0 opened=2026-07-28
+- **SREEL** status=open entry=227.97 last=216.33 mfe=2.6 mae=-5.54 opened=2026-07-26
+- **CREDITACC** status=open entry=1597.3 last=1576.6 mfe=1.05 mae=-2.95 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=70.12 mfe=2.4 mae=-2.57 opened=2026-07-27
+- **IIFL** status=open entry=582.35 last=582.35 mfe=0.0 mae=0.0 opened=2026-07-28
+- **INDNIPPON** status=open entry=1163.1 last=1163.1 mfe=0.0 mae=0.0 opened=2026-07-28
+
+## Needs action
+
+- **CGCL**: EXIT — STOP HIT — session low at/below stop ₹229.77 (last ₹228.22)
+
+## Closed today
+
+- CGCL: {'trade_id': '2026-07-28-CGCL', 'symbol': 'CGCL', 'company': 'Capri Global Capital Limited', 'risk_sector': 'NBFC & Capital Markets', 'date_opened': '2026-07-28', 'taken': None, 'entry': 247.0, 'stop': 229.77, 't1': 281.47, 't2': 298.7, 't3': 315.93, 'structure_invalidation': 225.67, 'horizon_days_t1': 16, 'horizon_days_t2': 22, 'score_at_open': 84.1, 'qty': 40, 'risk_rupees': 689.0, 'status': 'closed', 'last_price': 228.22, 'last_checked': '2026-07-28', 'mfe_pct': 4.82, 'mae_pct': -8.64, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-07-28', 'exit_price': 228.22, 'exit_reason': 'stop', 'pct_return': -7.6, 'r_multiple': -1.09, 'days_held': 0}
 
 ## Swing candidates (top)
 
-- CGCL: score=14 rs_nifty=11.96 deliv=45.43
-- SAHYADRI: score=13 rs_nifty=4.07 deliv=78.13
-- KANPRPLA: score=13 rs_nifty=10.23 deliv=44.95
-- MMP: score=13 rs_nifty=2.47 deliv=55.12
-- SETL: score=13 rs_nifty=21.73 deliv=55.54
-- ADANIENSOL: score=13 rs_nifty=10.98 deliv=50.99
-- INDUSINDBK: score=13 rs_nifty=6.87 deliv=50.76
-- DIFFNKG: score=13 rs_nifty=2.75 deliv=45.62
-- RML: score=13 rs_nifty=7.72 deliv=48.71
-- WELCORP: score=13 rs_nifty=14.42 deliv=43.44
-- PREMIERPOL: score=13 rs_nifty=22.24 deliv=53.52
-- SATIN: score=13 rs_nifty=7.26 deliv=46.53
-- USHAMART: score=13 rs_nifty=10.7 deliv=49.22
-- AAKASH: score=13 rs_nifty=0.02 deliv=62.4
-- LLOYDSENGG: score=13 rs_nifty=3.82 deliv=47.33
+- GUFICBIO: score=14 rs_nifty=4.52 deliv=48.45
+- UJJIVANSFB: score=14 rs_nifty=21.82 deliv=50.67
+- E2E: score=14 rs_nifty=19.6 deliv=41.31
+- MUNJALSHOW: score=14 rs_nifty=7.56 deliv=47.7
+- SATIN: score=14 rs_nifty=7.45 deliv=42.46
+- INDNIPPON: score=14 rs_nifty=22.46 deliv=46.13
+- SHRIRAMFIN: score=13 rs_nifty=1.35 deliv=63.47
+- JAYAGROGN: score=13 rs_nifty=12.64 deliv=45.97
+- ONESOURCE: score=13 rs_nifty=11.27 deliv=47.21
+- J&KBANK: score=13 rs_nifty=10.87 deliv=48.83
+- ADANIENSOL: score=13 rs_nifty=9.6 deliv=47.24
+- ESAFSFB: score=13 rs_nifty=13.17 deliv=47.65
+- GNA: score=13 rs_nifty=22.26 deliv=43.89
+- CONFIPET: score=13 rs_nifty=5.29 deliv=43.08
+- TASTYBITE: score=13 rs_nifty=7.16 deliv=55.66
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -4.05% (bear)
-- Hang Seng: +0.02% (neutral)
-- Shanghai: -0.98% (bear)
-- Kospi: -10.23% (bear)
-- Taiwan: -4.39% (bear)
-- ASX 200: -0.01% (neutral)
+- Nikkei: -3.95% (bear)
+- Hang Seng: +0.41% (bull)
+- Shanghai: -1.16% (bear)
+- Kospi: -10.84% (bear)
+- Taiwan: -4.65% (bear)
+- ASX 200: +0.60% (bull)
 
 ### Europe
-- FTSE 100: +0.42% (bull)
-- DAX: +2.41% (bull)
-- Euro Stoxx 50: +0.02% (neutral)
+- FTSE 100: +0.51% (bull)
+- DAX: +0.08% (neutral)
+- Euro Stoxx 50: -0.16% (bear)
 
 ### US
 - S&P 500: +0.07% (neutral)
-- Nasdaq: -0.18% (bear)
-- Dow: +0.51% (bull)
-- US VIX: +0.48% (bear)
+- Nasdaq: -0.82% (bear)
+- Dow: +0.96% (bull)
+- US VIX: +0.64% (bear)
 
 ### Macro
-- USDINR: -0.92% (bull)
-- Crude WTI: -8.76% (bear)
-- Brent: -9.92% (bear)
-- DXY: +0.00% (neutral)
-- US 10Y: -0.81% (bull)
-- India ETF: +1.81% (bull)
+- USDINR: -0.75% (bull)
+- Crude WTI: -1.45% (bear)
+- Brent: -1.66% (bear)
+- DXY: +0.07% (neutral)
+- US 10Y: -0.17% (neutral)
+- India ETF: +2.65% (bull)
 - EM ETF: +0.46% (bull)
 
 
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** neutral
+- **stance:** selective_aggressive
 
-The Indian market is in a neutral regime with a low overall risk. The Nifty trend is neutral with a 0.14% change, and the India VIX is at a low level of 12.69. FII net is negative at -1688.23, while DII net is positive at 2329.14.
+The market remains in a neutral regime with low overall risk. Nifty trend is neutral with a slight decline of 0.04%. India VIX is at a low level of 12.56. FII net is negative at -1688.23, while DII net is positive at 2329.14.
 
-- **CGCL** [consider_entry/high] entry=247.0 stop=229.77 t1=281.47 hold=16d — New buy idea with a Parkhu score of 84.1
-- **SREEL** [manage_open/medium] entry=227.97 stop=209.73 t1=264.45 hold=16d — Open position with a last price close to the entry point
-- **CREDITACC** [stand_aside/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Open position with minimal price movement
-- **UJJIVANSFB** [watch/medium] entry=71.57 stop=65.96 t1=82.79 hold=17d — Open position with a small price movement
+- **UJJIVANSFB** [consider_entry/high] entry=70.12 stop=64.51 t1=81.34 hold=16d — High Parkhu score of 90.4 with a buy band
+- **IIFL** [consider_entry/high] entry=582.35 stop=541.29 t1=675.0 hold=21d — High Parkhu score of 89.5 with a buy band
+- **INDNIPPON** [consider_entry/medium] entry=1163.1 stop=1070.05 t1=1349.2 hold=13d — Parkhu score of 85.5 with a buy band
+- **SREEL** [manage_open/low] entry=227.97 stop=209.73 t1=264.45 hold=16d — Position is in a loss, consider adjusting stop or taking partial profits
+- **CREDITACC** [manage_open/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Position is in a loss, consider adjusting stop or taking partial profits
 
 ### AI stock reviews
 
-- **CGCL** [high] CGCL is a suitable ≤1-month swing trade due to its strong recent performance, with a 1-month return of 12.27% and a 3-month return of 32.87%, outperforming both the Nifty and its sector. The stock's trend label is bullish, and its ADX and RSI indicators suggest a strong uptrend with room for further growth. The company's distance from its 52-week high is -6.63%, indicating potential for a rebound.
-  - catalysts: Strong recent performance, Bullish trend label, Outperforming sector
-  - risks: Market regime change, Sector-specific risks, Earnings report in 98 days
-  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues include a drop below the stop level of 229.77. The trade's success will depend on the stock's ability to maintain its momentum and break out to new highs.
+- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with a high Parkhu score of 90.4 and a 'Buy' technical rating. The stock has shown strong returns over the past month, outperforming both the Nifty and its sector. With a relatively low risk sector and overall low market risk, this setup appears promising for a short-term swing.
+  - catalysts: Bullish trend, High Parkhu score, Outperforming sector
+  - risks: Market volatility, Sector-specific risks, Earnings uncertainty
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 64.51. Monitoring the stock's ability to hold above its recent gains will be crucial.
+- **IIFL** [high] IIFL Finance Limited fits a ≤1-month swing setup due to its strong bullish trend, with an ADX of 32.23 and an RSI of 64.55, indicating a potential upward movement. The stock has outperformed Nifty and its sector in the last month, with returns of 11.78% and 13.88% respectively. The recent price action and technical indicators suggest a high likelihood of reaching the target price within the given timeframe.
+  - catalysts: Strong trend, Outperforming sector, Bullish technicals
+  - risks: Market volatility, Economic downturn, Sector-specific risks
+  - watch: Triggers for this setup include a breakout above the current resistance level, while invalidation cues include a breach of the stop loss level at 541.29. The stock's price action and ability to hold above its recent lows will be crucial in determining the success of this trade.
+- **INDNIPPON** [high] The setup in INDNIPPON fits a ≤1-month swing due to its strong recent price action, with a 1-month return of 22.17% outpacing both the Nifty and its sector. The company's trend label is bullish, supported by an ADX of 48.39 and an RSI of 59.56, indicating a potential continuation of the uptrend. With a distance of -9.0% from its 52-week high, there's room for upside, especially given the overall low-risk market regime.
+  - catalysts: Strong price momentum, Bullish trend, Low risk regime
+  - risks: Sector downturn, Market reversal, Company-specific news
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1070.05, indicating a failure of the bullish trend.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Neutral, Top Ideas: CGCL, Caveats: Provisional scores, no trade outcome history
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: UJJIVANSFB, IIFL, INDNIPPON, Caveats: Low score coverage, provisional scores, and lack of trade outcome history
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Coforge Limited has informed the Exchange that Board of Directors at its meeting held on July 27, 2026, declared Interim Dividend of Rs. 4 per equity share. (COFORGE) — The declaration of an interim dividend by Coforge Limited indicates a positive outlook for the company's financial performance and can influence investor sentiment.
-2. **[high]** Outcome of Board Meeting and Interim Dividend (COFORGE) — The outcome of the board meeting and the declaration of an interim dividend can significantly impact the company's stock price and investor confidence.
-3. **[medium]** Coforge Limited has informed the Exchange regarding a press release dated July 27, 2026, titled "Intimation of Press Release, Factsheet & Web presentation on the Financial Results of the Company for the quarter ended Jun (COFORGE) — The press release provides updates on the company's financial performance and can influence investor decisions.
-4. **[medium]** Bajaj Electricals Limited has informed the Exchange about intimation of the Q1FY27 Earnings Call (BAJAJELEC) — The earnings call can provide insights into the company's financial performance and future outlook, which can impact investor sentiment.
-5. **[medium]** Urban Company Limited has informed the Exchange about Schedule of Earnings Call to be held on Friday, July 31, 2026 to discuss the financial results of the Company for the quarter ended June 30, 2026 (URBANCO) — The earnings call can provide updates on the company's financial performance and future plans, which can influence investor decisions.
-6. **[medium]** USHAMART: Usha Martin Limited has informed the Exchange that Dividend on equity shares as recommended by the Board of Directors for the financial year 2025-26, if approved at the 40th AGM, will be payable to those member (USHAMART) — The dividend payment can impact the company's stock price and investor confidence.
-7. **[low]** Coforge Limited has informed the Exchange that Record date for the purpose of Dividend is 03-Aug-2026. (COFORGE) — The record date is an important milestone for dividend payment, but its impact on the stock price may be limited.
-8. **[low]** Larsen & Toubro Limited has informed the Exchange about Bagging/Receiving of orders/contracts (LT) — The announcement of new orders or contracts can have a positive impact on the company's stock price, but the details of the orders are not provided.
-9. **[low]** OM INFRA LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts (OMINFRAL) — The announcement of new orders or contracts can have a positive impact on the company's stock price, but the details of the orders are not provided.
-10. **[low]** Shyam Metalics And Energy Limited has informed the Exchange regarding a press release dated July 28, 2026, titled "Shyam Sel and Power Limited Commissions 8.90 MWp Captive Solar Power Project at Jamuria" (SHYAMMETL) — The commissioning of a new solar power project can have a positive impact on the company's stock price, but the details of the project are not provided.
+1. **[medium]** Acquisition (AWHCL) — Antony Waste Handling Cell Limited has acquired a 26% stake in Arts EV Private Limited, indicating a strategic expansion move.
+2. **[medium]** Outcome of Board Meeting (PARADEEP) — Paradeep Phosphates Limited has submitted its financial results for the quarter ended June 30, 2026, which may influence investor decisions.
+3. **[medium]** Outcome of Board Meeting (PHOENIXLTD) — The Phoenix Mills Limited has approved its financial results for the quarter ended June 30, 2026, providing insight into the company's performance.
+4. **[medium]** Outcome of Board Meeting (ALMONDZ) — Almondz Global Securities Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact investor confidence.
+5. **[low]** Updates (MINDACORP) — Minda Corporation Limited has provided an update on the transfer of unpaid and unclaimed dividend for FY 2018-19, a routine regulatory requirement.
+6. **[low]** Record Date (PRESTIGE) — Prestige Estates Projects Limited has announced a record date for dividend purposes, affecting shareholder eligibility.
+7. **[low]** Analysts/Institutional Investor Meet/Con. Call Updates (TTKPRESTIG) — TTK Prestige Limited has shared a link to an audio recording of its earnings call, providing additional information for investors.
+8. **[low]** Outcome of Board Meeting (KILITCH) — Kilitch Drugs (India) Limited has informed about the outcome of its board meeting, which may have implications for the company's operations.
+9. **[low]** Copy of Newspaper Publication (SANDUMA) — Sandur Manganese & Iron Ores Limited has published a notice of its AGM, a standard regulatory requirement.
+10. **[low]** Outcome of Board Meeting (PHOENIXLTD) — The Phoenix Mills Limited has submitted its financial results, which may influence market sentiment.
 
 ## Deep-dive URLs (after push)
 
