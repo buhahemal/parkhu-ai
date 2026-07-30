@@ -1,116 +1,112 @@
 # Parkhu research pack — 2026-07-30
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-07-30T09:19:39.710006+05:30
+- **generated_at_ist:** 2026-07-30T18:07:42.798129+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Neutral**
-- nifty: Neutral (0.01%)
-- india_vix: 12.1 (Low)
+- market_regime: **Bullish**
+- nifty: Bullish (0.28%)
+- india_vix: 12.15 (Low)
 - fii_net: 2981.87 | dii_net: 998.02
 - overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 2971
-- trend = Bullish: 1285
-- price > SMA200: 967
-- price > EMA50: 954
-- ADX14 > 25: 511
-- RSI14 in 40-80: 491
-- RS > 0 vs NIFTY and sector: 246
-- delivery% >= 40: 139
-- relative_volume >= 1: 1
-- no earnings within 21d: 1
-- event_risk_score <= 1: 1
-- TV rating not Sell: 1
+- universe: 2974
+- trend = Bullish: 1209
+- price > SMA200: 908
+- price > EMA50: 892
+- ADX14 > 25: 493
+- RSI14 in 40-80: 474
+- RS > 0 vs NIFTY and sector: 225
+- delivery% >= 40: 126
+- relative_volume >= 1: 34
+- no earnings within 21d: 19
+- event_risk_score <= 1: 16
+- TV rating not Sell: 16
 
-## Survivors (top 1 of 1)
+## Survivors (top 16 of 16)
 
-- **NBIFIN** [rejected] score 70.1 — T1 needs more than 22 trading days (~1 month)
+- **LODHA** [idea] score 91.4 — selected as idea
+- **GATECH** [rejected] score 85.8 — T1 needs more than 22 trading days (~1 month)
+- **TVSHLTD** [rejected] score 80.2 — unaffordable at this capital
+- **TVSMOTOR** [watchlist] score 73.9 — score in Watch band (70–80)
+- **RADICO** [watchlist] score 73.6 — score in Watch band (70–80)
+- **KMEW** [rejected] score 69.3 — score below Watch band
+- **TTKHLTCARE** [rejected] score 67.2 — score below Watch band
+- **RELTD** [rejected] score 66.7 — score below Watch band
+- **ARMANFIN** [rejected] score 61.7 — score below Watch band
+- **UNITDSPR** [rejected] score 61.3 — score below Watch band
+- **SMCGLOBAL** [rejected] score 60.9 — score below Watch band
+- **NIBL** [rejected] score 57.4 — score below Watch band
+- **MUNJALSHOW** [rejected] score 57.2 — score below Watch band
+- **CEMPRO** [rejected] score 55.2 — score below Watch band
+- **CAPTRUST** [rejected] score 48.8 — T1 needs more than 22 trading days (~1 month)
+- **INDOSTAR** [rejected] score 35.9 — score below Watch band
 
 ## Ideas
 
-### STEELCAS — Watch (score 13.0)
-- STEELCAS | risk_sector: Non-Energy Minerals
-- entry 307.9 | stop 290.65 | t1 323.3 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SPECIALITY — Watch (score 13.0)
-- SPECIALITY | risk_sector: Consumer Services
-- entry 131.05 | stop 121.29 | t1 137.6 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SCPL — Watch (score 13.0)
-- SCPL | risk_sector: Consumer Non-Durables
-- entry 570.0 | stop 518.92 | t1 598.5 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### MUNJALSHOW — Watch (score 13.0)
-- MUNJALSHOW | risk_sector: Producer Manufacturing
-- entry 137.7 | stop 133.33 | t1 144.58 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### VSSL — Watch (score 13.0)
-- VSSL | risk_sector: Non-Energy Minerals
-- entry 305.85 | stop 289.25 | t1 321.14 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
+### LODHA — Buy (score 91.4)
+- Lodha Developers Ltd. | risk_sector: Real Estate
+- entry 1287.15 | stop 1188.22 | t1 1485.0 | t2 1583.93 | t3 1682.86 | R:R 2.0
+- qty 7 | deployed 9010.0 (9.01%) | risk ₹693.0
 
 ## Open ledger
 
-- **SREEL** status=open entry=227.97 last=216.24 mfe=2.6 mae=-5.54 opened=2026-07-26
-- **CREDITACC** status=open entry=1597.3 last=1604.0 mfe=1.05 mae=-2.95 opened=2026-07-27
-- **UJJIVANSFB** status=open entry=71.57 last=70.45 mfe=2.4 mae=-3.73 opened=2026-07-27
-- **IIFL** status=open entry=582.35 last=600.5 mfe=3.43 mae=-1.61 opened=2026-07-28
-- **INDNIPPON** status=open entry=1163.1 last=1172.5 mfe=2.93 mae=-3.23 opened=2026-07-28
+- **SREEL** status=open entry=227.97 last=215.03 mfe=2.6 mae=-7.07 opened=2026-07-26
+- **CREDITACC** status=open entry=1597.3 last=1614.0 mfe=1.42 mae=-2.95 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=70.33 mfe=2.4 mae=-3.73 opened=2026-07-27
+- **IIFL** status=open entry=582.35 last=607.85 mfe=6.38 mae=-1.61 opened=2026-07-28
+- **INDNIPPON** status=open entry=1163.1 last=1160.6 mfe=2.93 mae=-3.23 opened=2026-07-28
+- **LODHA** status=open entry=1287.15 last=1287.15 mfe=0.0 mae=0.0 opened=2026-07-30
 
 ## Swing candidates (top)
 
-- STEELCAS: score=13 rs_nifty=3.53 deliv=47.11
-- SPECIALITY: score=13 rs_nifty=1.93 deliv=72.16
-- SCPL: score=13 rs_nifty=17.53 deliv=61.02
-- MUNJALSHOW: score=13 rs_nifty=6.31 deliv=58.94
-- VSSL: score=13 rs_nifty=7.01 deliv=61.57
-- ADOR: score=13 rs_nifty=13.64 deliv=53.52
-- INDNIPPON: score=13 rs_nifty=21.39 deliv=49.24
-- GNA: score=13 rs_nifty=21.32 deliv=51.34
-- RANEHOLDIN: score=13 rs_nifty=4.73 deliv=62.81
-- SAMBHV: score=13 rs_nifty=4.28 deliv=59.87
-- GUFICBIO: score=13 rs_nifty=4.84 deliv=61.03
-- NOVARTIND: score=13 rs_nifty=12.19 deliv=78.76
-- ARMANFIN: score=13 rs_nifty=11.95 deliv=62.2
-- RAJRATAN: score=13 rs_nifty=13.46 deliv=40.26
-- LTF: score=13 rs_nifty=2.25 deliv=52.11
+- NIBL: score=14 rs_nifty=16.86 deliv=59.38
+- ICICIBANK: score=14 rs_nifty=0.98 deliv=45.44
+- ARMANFIN: score=14 rs_nifty=12.67 deliv=55.52
+- KMEW: score=14 rs_nifty=11.41 deliv=41.53
+- MUNJALSHOW: score=14 rs_nifty=6.01 deliv=59.37
+- SETL: score=13 rs_nifty=5.94 deliv=44.19
+- IVC: score=13 rs_nifty=1.94 deliv=70.06
+- BLUSPRING: score=13 rs_nifty=1.62 deliv=49.94
+- ADOR: score=13 rs_nifty=16.18 deliv=50.59
+- WENDT: score=13 rs_nifty=0.62 deliv=45.89
+- INDORAMA: score=13 rs_nifty=21.18 deliv=40.37
+- PREMIERPOL: score=13 rs_nifty=10.41 deliv=65.06
+- PFOCUS: score=13 rs_nifty=37.75 deliv=48.04
+- SUMICHEM: score=13 rs_nifty=18.97 deliv=61.31
+- PAISALO: score=13 rs_nifty=15.38 deliv=46.27
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.72% (bull)
-- Hang Seng: -0.07% (neutral)
-- Shanghai: -1.15% (bear)
-- Kospi: -0.45% (bear)
-- Taiwan: +0.61% (bull)
-- ASX 200: -0.80% (bear)
+- Nikkei: +0.71% (bull)
+- Hang Seng: +0.20% (bull)
+- Shanghai: -0.62% (bear)
+- Kospi: -1.23% (bear)
+- Taiwan: -0.26% (bear)
+- ASX 200: -0.78% (bear)
 
 ### Europe
-- FTSE 100: +0.34% (bull)
-- DAX: -0.01% (neutral)
-- Euro Stoxx 50: -0.65% (bear)
+- FTSE 100: +0.37% (bull)
+- DAX: +0.25% (bull)
+- Euro Stoxx 50: +0.96% (bull)
 
 ### US
 - S&P 500: -1.52% (bear)
 - Nasdaq: -1.74% (bear)
 - Dow: -2.19% (bear)
-- US VIX: +13.45% (bear)
+- US VIX: -7.84% (bull)
 
 ### Macro
-- USDINR: +0.00% (neutral)
-- Crude WTI: +5.37% (bull)
-- Brent: +6.43% (bull)
-- DXY: -0.44% (bull)
-- US 10Y: +0.39% (bear)
+- USDINR: +0.09% (neutral)
+- Crude WTI: -0.47% (bear)
+- Brent: -0.71% (bear)
+- DXY: -0.15% (neutral)
+- US 10Y: +0.97% (bear)
 - India ETF: -0.43% (bear)
 - EM ETF: -2.07% (bear)
 
@@ -118,61 +114,38 @@
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** neutral
+- **stance:** selective_aggressive
 
-The market is in a neutral regime with low overall risk. Nifty trend is neutral with a 0.01% change, and India VIX is at a low level of 12.1. FII and DII net flows are positive, but Asia cue is bearish and Europe cue is mixed.
+The Indian market remains in a bullish regime with low volatility, as indicated by the India VIX at 12.15. The Nifty trend is also bullish, with a 0.28% increase. However, the Asia cue is bearish, which may impact the market. The FII and DII net inflows are positive, supporting the bullish stance.
 
-- **STEELCAS** [consider_entry/medium] entry=307.9 stop=290.65 t1=323.3 hold=Noned — Parkhu score of 13.0 and risk sector of Non-Energy Minerals
-- **SPECIALITY** [watch/low] entry=131.05 stop=121.29 t1=137.6 hold=Noned — Parkhu score of 13.0 and risk sector of Consumer Services
-- **SCPL** [watch/low] entry=570.0 stop=518.92 t1=598.5 hold=Noned — Parkhu score of 13.0 and risk sector of Consumer Non-Durables
-- **MUNJALSHOW** [watch/low] entry=137.7 stop=133.33 t1=144.58 hold=Noned — Parkhu score of 13.0 and risk sector of Producer Manufacturing
-- **VSSL** [watch/low] entry=305.85 stop=289.25 t1=321.14 hold=Noned — Parkhu score of 13.0 and risk sector of Non-Energy Minerals
-- **SREEL** [manage_open/high] entry=227.97 stop=209.73 t1=264.45 hold=16d — Open position with mfe_pct of 2.6 and mae_pct of -5.54
-- **CREDITACC** [manage_open/medium] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Open position with mfe_pct of 1.05 and mae_pct of -2.95
-- **UJJIVANSFB** [manage_open/medium] entry=71.57 stop=65.96 t1=82.79 hold=17d — Open position with mfe_pct of 2.4 and mae_pct of -3.73
-- **IIFL** [manage_open/high] entry=582.35 stop=541.29 t1=675.0 hold=21d — Open position with mfe_pct of 3.43 and mae_pct of -1.61
-- **INDNIPPON** [manage_open/medium] entry=1163.1 stop=1070.05 t1=1349.2 hold=13d — Open position with mfe_pct of 2.93 and mae_pct of -3.23
+- **LODHA** [consider_entry/high] entry=1287.15 stop=1188.22 t1=1485.0 hold=17d — Strong Parkhu score of 91.4 and a favorable risk-reward ratio of 2.0
+- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position showing a positive mfe_pct of 6.38, consider adjusting stop loss
+- **SREEL** [watch/low] entry=227.97 stop=209.73 t1=264.45 hold=16d — Current price is below the entry price, wait for a potential rebound
 
 ### AI stock reviews
 
-- **STEELCAS** [medium] STEELCAS fits a ≤1-month swing due to its current market regime being Neutral and an overall risk of Low. The India VIX of 12.1 also supports a relatively stable market environment, which could favor a swing trade. With a Parkhu score of 13.0, STEELCAS has shown potential for movement, making it a suitable candidate for a short-term swing trade.
-  - catalysts: Earnings report, Sector rotation, Market momentum
-  - risks: Global economic downturn, Sector-specific headwinds, Company-specific news
-  - watch: Traders should watch for a break above the current level to confirm the swing trade, while a drop below the stop level would invalidate the setup. Close monitoring of market and sector trends is necessary to adjust the trade accordingly.
-- **SPECIALITY** [medium] The SPECIALITY stock is poised for a potential swing trade within a month due to its current market position and the overall low-risk regime. The Neutral market regime and low India VIX of 12.1 suggest a stable environment for a swing trade. SPECIALITY's Parkhu score of 13.0 indicates a favorable setup for a short-term trade. The stock's presence in the Consumer Services sector, which is considered a relatively stable sector, adds to the thesis.
-  - catalysts: Earnings report, Sector rotation, Market sentiment shift
-  - risks: Global economic downturn, Sector-specific challenges, Unfavorable earnings report
-  - watch: Traders should watch for a breakout above the current level to confirm the trade, while a drop below the stop level would invalidate the setup. Close monitoring of market sentiment and sector performance is also necessary.
-- **SCPL** [medium] The setup for SCPL fits a ≤1-month swing due to its current market regime being neutral and an overall low risk environment. The company's parkhu score of 13.0 indicates a relatively favorable position. With the India VIX at 12.1, volatility is relatively low, which could lead to a stable swing trade. The Consumer Non-Durables sector, being less volatile, supports this short-term trade.
-  - catalysts: Earnings report, Sector growth, Market stability
-  - risks: Global market downturn, Sector decline, Company-specific news
-  - watch: Traders should watch for the stock to break above the t1 level of 598.5 as a confirmation of the swing trade's success, while a drop below the stop level of 518.92 would invalidate this setup.
-- **MUNJALSHOW** [medium] MUNJALSHOW fits a ≤1-month swing due to its current market regime and low overall risk. The company's position in the Producer Manufacturing sector, which is a relatively stable sector, adds to its potential for a short-term swing. With a Parkhu score of 13.0, it indicates a moderate level of attractiveness for a swing trade. The Neutral market regime further supports the potential for a swing trade within a short timeframe.
-  - catalysts: Earnings report, Sector growth, Market momentum
-  - risks: Global economic downturn, Sector decline, Company-specific news
-  - watch: Traders should watch for the stock to break above the current level with increased volume as a trigger to enter the trade, and a break below the stop level as an invalidation cue.
-- **VSSL** [medium] The VSSL setup fits a ≤1-month swing due to its current market regime being neutral and overall risk being low. The Parkhu score of 13.0 indicates a relatively favorable condition for a swing trade. With the India VIX at 12.1, volatility is not excessively high, which could allow for a smoother swing. The non-energy minerals sector may experience fluctuations, but the current setup seems to have potential for a short-term move.
-  - catalysts: Sector rotation, Earnings surprise, Global commodity trends
-  - risks: Sector downturn, Company-specific news, Market regime shift
-  - watch: Traders should watch for a breakout above the current level to confirm the swing, while a drop below the stop level would invalidate the thesis. Monitoring sector performance and broader market conditions will also be crucial.
+- **LODHA** [high] The LODHA setup fits a ≤1-month swing due to its strong bullish trend, with an ADX of 46.45 and RSI of 70.84, indicating a potential continuation of the uptrend. The stock has also outperformed Nifty and its sector in the last month, with returns of 35.92% and 26.25%, respectively. The distance from the 52-week high is only -4.3%, suggesting a possible breakout. The overall market regime is bullish, with low overall risk, further supporting the swing trade.
+  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend continuation
+  - risks: Interest rate changes, Real estate sector downturn, Global market volatility
+  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1188.22, indicating a reversal of the trend.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Neutral, Top Ideas: STEELCAS, SPECIALITY, SCPL, MUNJALSHOW, VSSL, Caveats: Low VIX, Asia bearish cue, provisional scores
+Bullish regime with low volatility, focus on LODHA for entry. Manage open positions in IIFL and monitor SREEL. Caveats include incomplete data for some scores and lack of trade outcome history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** SML Mahindra Limited has informed the Exchange about SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Presentation made to the Analyst/Institutional Investor Meeting (SMLMAH) — Major catalyst and risk event with high news score
-2. **[high]** Max Healthcare Institute Limited has informed the Exchange about disclosure under regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 (MAXHEALTH) — Major catalyst and risk event with high news score
-3. **[medium]** HFCL Limited has informed the Exchange about bagging an export order of USD 46.13 million approx. for supply of Optical Fiber Cables (OFC) (HFCL) — Bagging of a significant export order
-4. **[medium]** Mtar Technologies Limited has informed the Exchange about Bagging/Receiving of orders/contracts (MTARTECH) — Bagging of orders/contracts
-5. **[medium]** RPG Life Sciences Limited has informed the Exchange regarding Outcome of Board Meeting held today July 29, 2026 (RPGLIFE) — Outcome of board meeting with risk event
-6. **[low]** Honeywell Automation India Limited has informed the Exchange regarding 'Revision in the Notice of 42 AGM' (HONAUT) — Revision in notice of AGM with risk event
-7. **[low]** Power Grid Corporation of India Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on August 20, 2026 (POWERGRID) — Notice of annual general meeting
-8. **[low]** Cholamandalam Investment and Finance Company Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on July 28, 2026 (CHOLAFIN) — Submission of scrutinizer's report of AGM
-9. **[low]** Antony Waste Handling Cell Limited has informed the Exchange regarding 'Letter to Shareholders: Web-link to Integrated Annual Report 2026 and Notice calling for the Twenty-Fifth Annual General Meeting' (AWHCL) — Notice of annual general meeting
-10. **[low]** Eicher Motors Limited has informed the Exchange about Link of Recording (EICHERMOT) — Link of recording of analyst/institutional investor meet
+1. **[high]** LT Foods Limited has informed the Exchange regarding a press release dated July 30, 2026, titled "Please find enclosed copy of Press Release on the Un-Audited financial results of the Company for the quarter ended June 3 (LTFOODS) — The company's financial results can significantly impact its stock price and investor sentiment.
+2. **[high]** Cura Technologies Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (CURAA) — The company's financial results can significantly impact its stock price and investor sentiment.
+3. **[medium]** STEEL EXCHANGE INDIA LIMITED has informed the Exchange regarding 'Intimation of Cut-off Date and Book Closure for the purpose of 27th Annual General Meeting (AGM) of the Company to be held on 22nd August, 2026'. (STEELXIND) — The AGM can lead to important announcements and decisions that can impact the company's stock price.
+4. **[medium]** Nestle India Limited has informed the Exchange with copy of detailed proceedings of the 67th Annual General Meeting ( 67th AGM ) of the Company held on Friday, 3rd July 2026 (NESTLEIND) — The AGM proceedings can provide insights into the company's future plans and strategies.
+5. **[medium]** Mangalam Worldwide Limited has informed the Exchange regarding the proceedings of the 30th Annual General Meeting (AGM) of the Company held on Thursday, July 30, 2026. (MWL) — The AGM proceedings can provide insights into the company's future plans and strategies.
+6. **[low]** GAIL (India) Limited has informed the Exchange regarding a press release dated July 30, 2026, titled "GAIL (India) Limited enters prestigious FTSE4Good Index Series" (GAIL) — The inclusion in the FTSE4Good Index Series can enhance the company's reputation and credibility.
+7. **[low]** Escorts Kubota Limited has informed the Exchange about Schedule of Investor/Analyst meet (ESCORTS) — The investor/analyst meet can provide insights into the company's future plans and strategies.
+8. **[low]** Pricol Limited has informed the Exchange regarding designating Mr.Ravi Raja Singh  as Senior Management Personnel of the company w.e.f. July 30, 2026. (PRICOLLTD) — The appointment of a new senior management personnel can bring new perspectives and ideas to the company.
+9. **[low]** Ujaas Energy Limited has informed the Exchange about Reconstitution of Committees. (UEL) — The reconstitution of committees can lead to changes in the company's governance and decision-making processes.
+10. **[low]** Xchanging Solutions Limited has informed the Exchange regarding change in Registered Office of the company. (XCHANGING) — The change in registered office can be a routine administrative update.
 
 ## Deep-dive URLs (after push)
 

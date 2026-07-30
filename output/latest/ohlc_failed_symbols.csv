@@ -1,3 +1,7 @@
 symbol,yf_ticker,reason
+AVATAR,AVATAR.NS,no_ohlc_after_retry
+INDOMIM,INDOMIM.NS,no_ohlc_after_retry
+LCL,LCL.NS,no_ohlc_after_retry
 METALIC,METALIC.NS,no_ohlc_after_retry
 NEELAM,NEELAM.NS,no_ohlc_after_retry
+XTRANET,XTRANET.NS,no_ohlc_after_retry
