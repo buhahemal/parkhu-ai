@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-07-30",
-  "generated_at_ist": "2026-07-30T09:19:39.710006+05:30",
-  "duration_seconds": 386.2,
+  "generated_at_ist": "2026-07-30T18:07:42.798129+05:30",
+  "duration_seconds": 342.4,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 2971,
-      "seconds": 2.7
+      "rows": 2974,
+      "seconds": 2.4
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 13480,
-      "cache_rows": 7795565,
-      "symbols": 2696,
-      "failed": 2,
+      "rows": 13475,
+      "cache_rows": 7790333,
+      "symbols": 2695,
+      "failed": 6,
       "lookback": 0,
       "pack_sessions": 5,
       "warm": 2449,
-      "cold": 249,
-      "new_symbols": 2,
+      "cold": 252,
+      "new_symbols": 6,
       "retries": 2,
-      "seconds": 300.4
+      "seconds": 275.8
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 2971,
+      "rows": 2974,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 1.1
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 2.2
+      "seconds": 1.0
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.1
+      "seconds": 5.3
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.2
+      "seconds": 4.3
     },
     {
       "agent": "derivatives",
       "status": "ok",
-      "rows": 444,
-      "seconds": 4.7
+      "rows": 446,
+      "seconds": 5.1
     },
     {
       "agent": "stock_options",
@@ -79,44 +79,43 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2069,
-      "seconds": 18.8
+      "seconds": 5.2
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.2
+      "seconds": 3.1
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 6.9
+      "seconds": 2.8
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 2971,
+      "rows": 2974,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 2971,
-      "seconds": 0.6
+      "rows": 2974,
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
-      "status": "error",
-      "rows": 0,
-      "error": "DataFrame index must be unique for orient='index'.",
-      "seconds": 0.0
+      "status": "ok",
+      "rows": 206,
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -128,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "news_classify",
@@ -139,39 +138,41 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2696,
-      "with_structure": 2696,
+      "rows": 2695,
+      "with_structure": 2695,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 16.3
+      "seconds": 21.6
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 2971,
-      "seconds": 2.2
+      "rows": 2974,
+      "seconds": 3.6
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 0,
+      "rows": 1,
+      "ideas": [
+        "LODHA"
+      ],
+      "watchlist": 2,
       "open_positions": 5,
       "needing_action": [],
       "closed_today": [],
-      "seconds": 0.2
+      "seconds": 0.3
     }
   ],
-  "ok": 19,
+  "ok": 20,
   "partial": 1,
-  "errors": 1,
+  "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
+    "agents_ok": 20,
     "agents_partial": 1,
-    "agents_error": 1
+    "agents_error": 0
   },
   "latest_promoted": true,
   "access_note": "Prefer output/latest/research_pack.md (or pack_url in output/index.json) for LLM review \u2014 no zip required. download_url is raw GitHub text; preview_url is the GitHub UI. Links work after this run is pushed.",

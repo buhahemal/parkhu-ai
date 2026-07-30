@@ -155,7 +155,6 @@
         "SANDHAR",
         "AJOONI",
         "GESHIP",
-        "ADFFOODS",
         "BSE",
         "FEDFINA",
         "GPTINFRA",
@@ -168,7 +167,8 @@
         "GICRE",
         "TCI",
         "FIDEL",
-        "PNBHOUSING"
+        "PNBHOUSING",
+        "SARDAEN"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -257,7 +257,6 @@
         "TATACAP",
         "MRF",
         "RSYSTEMS",
-        "HEXT",
         "KPL",
         "NEAGI",
         "PAUSHAKLTD",
@@ -279,7 +278,8 @@
         "SHILCTECH",
         "JYOTICNC",
         "NILE",
-        "MAJESAUT"
+        "MAJESAUT",
+        "SAPPL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -350,10 +350,10 @@
         "GSMFOILS",
         "5PAISA",
         "FUSION",
-        "IVALUE",
         "TRAVELFOOD",
         "HINDOILEXP",
         "KAUSHALYA",
+        "IVALUE",
         "HMT",
         "EMBASSY.RR",
         "VIPULLTD"
@@ -658,7 +658,7 @@
         "RPTECH",
         "KAPSTON",
         "STAR",
-        "QUESS"
+        "CNL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true

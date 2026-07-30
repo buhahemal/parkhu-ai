@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-30
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-07-30T18:07:42.798129+05:30
+- **generated_at_ist:** 2026-07-30T20:19:27.308805+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bullish**
 - nifty: Bullish (0.28%)
 - india_vix: 12.15 (Low)
-- fii_net: 2981.87 | dii_net: 998.02
-- overall_risk: Low | global_risk: Risk-Off
+- fii_net: 3623.51 | dii_net: -1864.03
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
@@ -60,25 +60,25 @@
 - **UJJIVANSFB** status=open entry=71.57 last=70.33 mfe=2.4 mae=-3.73 opened=2026-07-27
 - **IIFL** status=open entry=582.35 last=607.85 mfe=6.38 mae=-1.61 opened=2026-07-28
 - **INDNIPPON** status=open entry=1163.1 last=1160.6 mfe=2.93 mae=-3.23 opened=2026-07-28
-- **LODHA** status=open entry=1287.15 last=1287.15 mfe=0.0 mae=0.0 opened=2026-07-30
+- **LODHA** status=open entry=1287.15 last=1287.15 mfe=3.24 mae=-0.47 opened=2026-07-30
 
 ## Swing candidates (top)
 
-- NIBL: score=14 rs_nifty=16.86 deliv=59.38
-- ICICIBANK: score=14 rs_nifty=0.98 deliv=45.44
 - ARMANFIN: score=14 rs_nifty=12.67 deliv=55.52
 - KMEW: score=14 rs_nifty=11.41 deliv=41.53
+- NIBL: score=14 rs_nifty=16.86 deliv=59.38
+- ICICIBANK: score=14 rs_nifty=0.98 deliv=45.44
 - MUNJALSHOW: score=14 rs_nifty=6.01 deliv=59.37
-- SETL: score=13 rs_nifty=5.94 deliv=44.19
-- IVC: score=13 rs_nifty=1.94 deliv=70.06
-- BLUSPRING: score=13 rs_nifty=1.62 deliv=49.94
+- INDOSTAR: score=13 rs_nifty=1.53 deliv=51.62
+- VSSL: score=13 rs_nifty=7.14 deliv=62.91
+- OAL: score=13 rs_nifty=16.98 deliv=47.56
+- INDNIPPON: score=13 rs_nifty=18.39 deliv=49.34
+- THYROCARE: score=13 rs_nifty=11.16 deliv=43.28
 - ADOR: score=13 rs_nifty=16.18 deliv=50.59
-- WENDT: score=13 rs_nifty=0.62 deliv=45.89
-- INDORAMA: score=13 rs_nifty=21.18 deliv=40.37
-- PREMIERPOL: score=13 rs_nifty=10.41 deliv=65.06
-- PFOCUS: score=13 rs_nifty=37.75 deliv=48.04
-- SUMICHEM: score=13 rs_nifty=18.97 deliv=61.31
-- PAISALO: score=13 rs_nifty=15.38 deliv=46.27
+- 3IINFOLTD: score=13 rs_nifty=30.04 deliv=61.24
+- RELTD: score=13 rs_nifty=2.99 deliv=59.61
+- XPROINDIA: score=13 rs_nifty=1.19 deliv=63.27
+- WELCORP: score=13 rs_nifty=7.58 deliv=55.72
 
 ## World markets (India cues)
 
@@ -88,27 +88,27 @@
 - Shanghai: -0.62% (bear)
 - Kospi: -1.23% (bear)
 - Taiwan: -0.26% (bear)
-- ASX 200: -0.78% (bear)
+- ASX 200: +1.01% (bull)
 
 ### Europe
-- FTSE 100: +0.37% (bull)
-- DAX: +0.25% (bull)
-- Euro Stoxx 50: +0.96% (bull)
+- FTSE 100: +0.27% (bull)
+- DAX: +0.72% (bull)
+- Euro Stoxx 50: +1.67% (bull)
 
 ### US
-- S&P 500: -1.52% (bear)
-- Nasdaq: -1.74% (bear)
-- Dow: -2.19% (bear)
-- US VIX: -7.84% (bull)
+- S&P 500: +1.06% (bull)
+- Nasdaq: +2.44% (bull)
+- Dow: +0.41% (bull)
+- US VIX: -11.67% (bull)
 
 ### Macro
-- USDINR: +0.09% (neutral)
-- Crude WTI: -0.47% (bear)
-- Brent: -0.71% (bear)
-- DXY: -0.15% (neutral)
-- US 10Y: +0.97% (bear)
-- India ETF: -0.43% (bear)
-- EM ETF: -2.07% (bear)
+- USDINR: +0.07% (neutral)
+- Crude WTI: -0.56% (bear)
+- Brent: -1.11% (bear)
+- DXY: -0.71% (bull)
+- US 10Y: +0.89% (bear)
+- India ETF: +0.98% (bull)
+- EM ETF: +3.25% (bull)
 
 
 ## Groq desk note
@@ -116,36 +116,36 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The Indian market remains in a bullish regime with low volatility, as indicated by the India VIX at 12.15. The Nifty trend is also bullish, with a 0.28% increase. However, the Asia cue is bearish, which may impact the market. The FII and DII net inflows are positive, supporting the bullish stance.
+The Indian market remains in a bullish regime with a low overall risk. The Nifty trend is also bullish, with a 0.28% increase. However, the Asia cue is bearish, which may impact the market. The FII net is positive at 3623.51, while the DII net is negative at -1864.03.
 
-- **LODHA** [consider_entry/high] entry=1287.15 stop=1188.22 t1=1485.0 hold=17d — Strong Parkhu score of 91.4 and a favorable risk-reward ratio of 2.0
-- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position showing a positive mfe_pct of 6.38, consider adjusting stop loss
-- **SREEL** [watch/low] entry=227.97 stop=209.73 t1=264.45 hold=16d — Current price is below the entry price, wait for a potential rebound
+- **LODHA** [consider_entry/high] entry=1287.15 stop=1188.22 t1=1485.0 hold=17d — Strong Parkhu score of 91.4 and bullish market regime
+- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Open position with a positive mfe_pct, consider adjusting stop loss
+- **SREEL** [watch/low] entry=227.97 stop=209.73 t1=264.45 hold=16d — Negative mae_pct, monitor for potential stop loss trigger
 
 ### AI stock reviews
 
-- **LODHA** [high] The LODHA setup fits a ≤1-month swing due to its strong bullish trend, with an ADX of 46.45 and RSI of 70.84, indicating a potential continuation of the uptrend. The stock has also outperformed Nifty and its sector in the last month, with returns of 35.92% and 26.25%, respectively. The distance from the 52-week high is only -4.3%, suggesting a possible breakout. The overall market regime is bullish, with low overall risk, further supporting the swing trade.
-  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend continuation
-  - risks: Interest rate changes, Real estate sector downturn, Global market volatility
-  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1188.22, indicating a reversal of the trend.
+- **LODHA** [high] LODHA fits a ≤1-month swing due to its strong bullish trend, with an ADX of 46.45 and RSI of 70.84, indicating a potential continuation of the uptrend. The stock has outperformed Nifty and its sector in the last month, with returns of 35.92% and 26.25%, respectively. With a distance of only 4.3% from its 52-week high, LODHA has the potential to break out and reach new highs.
+  - catalysts: Strong bullish trend, Outperformance vs Nifty and sector, Close to 52-week high
+  - risks: Real Estate sector risks, Market volatility, Earnings report in 97 days
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a reversal of the trend.
 
 ### Claude feed
 
-Bullish regime with low volatility, focus on LODHA for entry. Manage open positions in IIFL and monitor SREEL. Caveats include incomplete data for some scores and lack of trade outcome history.
+Bullish regime, selective aggressive stance. Top ideas: LODHA, IIFL. Caveats: provisional scores, no promoter pledge data, and no trade outcome history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** LT Foods Limited has informed the Exchange regarding a press release dated July 30, 2026, titled "Please find enclosed copy of Press Release on the Un-Audited financial results of the Company for the quarter ended June 3 (LTFOODS) — The company's financial results can significantly impact its stock price and investor sentiment.
-2. **[high]** Cura Technologies Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (CURAA) — The company's financial results can significantly impact its stock price and investor sentiment.
-3. **[medium]** STEEL EXCHANGE INDIA LIMITED has informed the Exchange regarding 'Intimation of Cut-off Date and Book Closure for the purpose of 27th Annual General Meeting (AGM) of the Company to be held on 22nd August, 2026'. (STEELXIND) — The AGM can lead to important announcements and decisions that can impact the company's stock price.
-4. **[medium]** Nestle India Limited has informed the Exchange with copy of detailed proceedings of the 67th Annual General Meeting ( 67th AGM ) of the Company held on Friday, 3rd July 2026 (NESTLEIND) — The AGM proceedings can provide insights into the company's future plans and strategies.
-5. **[medium]** Mangalam Worldwide Limited has informed the Exchange regarding the proceedings of the 30th Annual General Meeting (AGM) of the Company held on Thursday, July 30, 2026. (MWL) — The AGM proceedings can provide insights into the company's future plans and strategies.
-6. **[low]** GAIL (India) Limited has informed the Exchange regarding a press release dated July 30, 2026, titled "GAIL (India) Limited enters prestigious FTSE4Good Index Series" (GAIL) — The inclusion in the FTSE4Good Index Series can enhance the company's reputation and credibility.
-7. **[low]** Escorts Kubota Limited has informed the Exchange about Schedule of Investor/Analyst meet (ESCORTS) — The investor/analyst meet can provide insights into the company's future plans and strategies.
-8. **[low]** Pricol Limited has informed the Exchange regarding designating Mr.Ravi Raja Singh  as Senior Management Personnel of the company w.e.f. July 30, 2026. (PRICOLLTD) — The appointment of a new senior management personnel can bring new perspectives and ideas to the company.
-9. **[low]** Ujaas Energy Limited has informed the Exchange about Reconstitution of Committees. (UEL) — The reconstitution of committees can lead to changes in the company's governance and decision-making processes.
-10. **[low]** Xchanging Solutions Limited has informed the Exchange regarding change in Registered Office of the company. (XCHANGING) — The change in registered office can be a routine administrative update.
+1. **[high]** Acquisition (M&M) — Mahindra & Mahindra Limited has informed the Exchange about Acquisition, which could lead to significant changes in the company's operations and potentially impact the automotive sector.
+2. **[high]** General Updates on Acquisition of 33.55% in M/s. GScale Energy Private Limited (SETL) — Standard Engineering Technology Limited has informed the Exchange about General Updates on Acquisition of 33.55% in M/s. GScale Energy Private Limited, which could lead to expansion in the company's operations and potentially impact the energy sector.
+3. **[medium]** Outcome of Board Meeting (ACI) — Archean Chemical Industries Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026, which could impact investor sentiment and the company's stock price.
+4. **[medium]** Record Date for Dividend (SILVERTUC) — Silver Touch Technologies Limited has informed the Exchange that Record date for the purpose of Dividend is 17-Aug-2026, which could lead to a short-term increase in the company's stock price.
+5. **[medium]** Record Date for Interim Dividend (UDS) — Updater Services Limited has informed the Exchange that Record date for the purpose of Interim Dividend is 05-Aug-2026, which could lead to a short-term increase in the company's stock price.
+6. **[medium]** Record Date for Dividend (KOTYARK) — Kotyark Industries Limited has informed the Exchange that Record date for the purpose of Dividend is 14-Aug-2026, which could lead to a short-term increase in the company's stock price.
+7. **[low]** Outcome of Board Meeting (KOTYARK) — Kotyark Industries Limited has informed the Exchange regarding Outcome of Board Meeting held on July 30, 2026, which may not have a significant impact on the company's operations or stock price.
+8. **[low]** Appointment of Non-Executive Independent Director (MALLCOM) — Mallcom (India) Limited has informed the Exchange regarding Appointment of Mr Himanshu Rai as Non-Executive Independent Director of the company w.e.f. September 09, 2026, which may not have a significant impact on the company's operations or stock price.
+9. **[low]** Investor Presentation (MALLCOM) — Mallcom (India) Limited has informed the Exchange about Investor Presentation, which may not have a significant impact on the company's operations or stock price.
+10. **[low]** General Updates (ICICIBANK) — ICICI Bank Limited has informed the Exchange that under Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015 and in continuation to our earlier letter, which may not have a significant impact on the company's operations or stock price.
 
 ## Deep-dive URLs (after push)
 

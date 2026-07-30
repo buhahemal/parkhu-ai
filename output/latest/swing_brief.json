@@ -25,24 +25,24 @@
     "best_sector_perf_1m": 3.55,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -4.71,
-    "fii_net": 2981.87,
-    "dii_net": 998.02,
-    "crude": 84.06,
-    "crude_pct_change": -0.47,
-    "usdinr": 95.68,
-    "usdinr_pct_change": 0.09,
-    "us_sp500_pct": -1.52,
-    "us_dow_pct": -2.19,
-    "us_vix": 19.04,
-    "us_vix_pct": -7.84,
-    "dxy": 100.65,
-    "dxy_pct": -0.15,
-    "us_10y": 4.67,
+    "fii_net": 3623.51,
+    "dii_net": -1864.03,
+    "crude": 83.99,
+    "crude_pct_change": -0.56,
+    "usdinr": 95.67,
+    "usdinr_pct_change": 0.07,
+    "us_sp500_pct": 1.06,
+    "us_dow_pct": 0.41,
+    "us_vix": 18.25,
+    "us_vix_pct": -11.67,
+    "dxy": 100.09,
+    "dxy_pct": -0.71,
+    "us_10y": 4.66,
     "asia_cue": "Bearish",
     "europe_cue": "Bullish",
-    "global_risk": "Risk-Off",
+    "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-07-30T18:07:17.196624+05:30"
+    "generated_at_ist": "2026-07-30T20:19:09.694078+05:30"
   },
   "funnel": [
     {
@@ -198,7 +198,6 @@
         "SANDHAR",
         "AJOONI",
         "GESHIP",
-        "ADFFOODS",
         "BSE",
         "FEDFINA",
         "GPTINFRA",
@@ -211,7 +210,8 @@
         "GICRE",
         "TCI",
         "FIDEL",
-        "PNBHOUSING"
+        "PNBHOUSING",
+        "SARDAEN"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -300,7 +300,6 @@
         "TATACAP",
         "MRF",
         "RSYSTEMS",
-        "HEXT",
         "KPL",
         "NEAGI",
         "PAUSHAKLTD",
@@ -322,7 +321,8 @@
         "SHILCTECH",
         "JYOTICNC",
         "NILE",
-        "MAJESAUT"
+        "MAJESAUT",
+        "SAPPL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -393,10 +393,10 @@
         "GSMFOILS",
         "5PAISA",
         "FUSION",
-        "IVALUE",
         "TRAVELFOOD",
         "HINDOILEXP",
         "KAUSHALYA",
+        "IVALUE",
         "HMT",
         "EMBASSY.RR",
         "VIPULLTD"
@@ -701,7 +701,7 @@
         "RPTECH",
         "KAPSTON",
         "STAR",
-        "QUESS"
+        "CNL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -1079,7 +1079,7 @@
         "composite_factor_rank": 57.0,
         "risk_score": 75,
         "in_oi_spurt": true,
-        "oi_change_pct": -0.94,
+        "oi_change_pct": -1.87,
         "tech_rating": "Buy",
         "analyst_rec": 1.131579,
         "price_target_avg": 1345.421053,
@@ -1428,6 +1428,26 @@
         "score_now": null
       },
       {
+        "symbol": "LODHA",
+        "date_opened": "2026-07-30",
+        "status": "open",
+        "entry": 1287.15,
+        "stop": 1188.22,
+        "t1": 1485.0,
+        "price": 1287.15,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 17,
+        "mfe_pct": 3.24,
+        "mae_pct": -0.47,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~17d left to the T1 horizon",
+        "score_at_open": 91.4,
+        "score_now": null
+      },
+      {
         "symbol": "SREEL",
         "date_opened": "2026-07-26",
         "status": "open",
@@ -1484,10 +1504,10 @@
     }
   },
   "ledger": {
-    "opened": [
+    "opened": [],
+    "reconfirmed": [
       "LODHA"
-    ],
-    "reconfirmed": []
+    ]
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",
