@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-07-31",
-  "generated_at_ist": "2026-07-31T06:07:46.423199+05:30",
-  "duration_seconds": 340.3,
+  "generated_at_ist": "2026-07-31T09:38:31.590431+05:30",
+  "duration_seconds": 342.0,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 2974,
-      "seconds": 2.7
+      "rows": 2970,
+      "seconds": 3.2
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 13475,
-      "cache_rows": 7790337,
-      "symbols": 2695,
-      "failed": 6,
+      "rows": 13459,
+      "cache_rows": 7784502,
+      "symbols": 2693,
+      "failed": 4,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2449,
+      "warm": 2445,
       "cold": 252,
       "new_symbols": 6,
       "retries": 2,
-      "seconds": 265.0
+      "seconds": 266.6
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 2974,
+      "rows": 2970,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.5
+      "seconds": 0.3
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.3
+      "seconds": 0.7
     },
     {
       "agent": "smartmoney",
-      "status": "ok",
-      "rows": 3,
-      "seconds": 4.1
+      "status": "partial",
+      "rows": 2,
+      "seconds": 3.5
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.9
+      "seconds": 4.3
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 446,
-      "seconds": 4.7
+      "seconds": 5.8
     },
     {
       "agent": "stock_options",
@@ -79,36 +79,36 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2069,
-      "seconds": 18.8
+      "seconds": 18.1
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.8
+      "seconds": 3.0
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.7
+      "seconds": 2.5
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.1
+      "seconds": 2.1
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 2974,
+      "rows": 2970,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 2974,
+      "rows": 2970,
       "seconds": 1.0
     },
     {
@@ -138,40 +138,40 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2695,
-      "with_structure": 2695,
+      "rows": 2693,
+      "with_structure": 2691,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.2
+      "seconds": 20.4
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 2974,
-      "seconds": 3.3
+      "rows": 2970,
+      "seconds": 3.4
     },
     {
       "agent": "swing_brief",
       "status": "ok",
       "rows": 1,
       "ideas": [
-        "LODHA"
+        "SATIN"
       ],
-      "watchlist": 3,
+      "watchlist": 0,
       "open_positions": 6,
       "needing_action": [],
       "closed_today": [],
       "seconds": 0.3
     }
   ],
-  "ok": 20,
-  "partial": 1,
+  "ok": 19,
+  "partial": 2,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 20,
-    "agents_partial": 1,
+    "agents_ok": 19,
+    "agents_partial": 2,
     "agents_error": 0
   },
   "latest_promoted": true,
@@ -284,6 +284,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-31/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-31/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-31/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-31/report.json"
+    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-31/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-31/research_pack.json"
@@ -323,10 +327,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-31/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-31/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-07-31/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-07-31/report.json"
     }
   }
 }
