@@ -16,7 +16,7 @@ Regime **Bullish**. Sector leader Retail Trade (2.54% 1m), laggard Utilities (-4
 
 | Symbol | Opened | Entry | Now | P/L | R | Held | Action |
 |---|---|---|---|---|---|---|---|
-| SATIN | 2026-07-31 | ₹260 | ₹240 | -7.85% | -1.02R | 0/12d | EXIT — STOP HIT |
+| GATECHDVR | 2026-07-31 | ₹1 | ₹1 | 0% | 0R | 0/17d | EXIT — STOP HIT |
 | CREDITACC | 2026-07-27 | ₹1,597 | ₹1,593 | -0.28% | -0.04R | 4/17d | HOLD |
 | IIFL | 2026-07-28 | ₹582 | ₹609 | 4.52% | 0.64R | 3/21d | HOLD |
 | INDNIPPON | 2026-07-28 | ₹1,163 | ₹1,170 | 0.63% | 0.08R | 3/13d | HOLD |
@@ -24,7 +24,7 @@ Regime **Bullish**. Sector leader Retail Trade (2.54% 1m), laggard Utilities (-4
 | SREEL | 2026-07-26 | ₹228 | ₹214 | -6.3% | -0.79R | 5/16d | HOLD |
 | UJJIVANSFB | 2026-07-27 | ₹72 | ₹72 | 0.25% | 0.03R | 4/17d | HOLD |
 
-- **SATIN** — EXIT — STOP HIT: session low at/below stop ₹240.18 (last ₹239.81). Best 3.74% / worst -8.74% while held.
+- **GATECHDVR** — EXIT — STOP HIT: session low at/below stop ₹0.50 (last ₹0.53). Best 3.77% / worst -9.43% while held.
 - **CREDITACC** — HOLD: -0.28% (-0.04R), 4d held, ~13d left to the T1 horizon. Best 2.3% / worst -2.95% while held.
 - **IIFL** — HOLD: +4.52% (+0.64R), 3d held, ~18d left to the T1 horizon. Best 6.98% / worst -1.61% while held.
 - **INDNIPPON** — HOLD: +0.63% (+0.08R), 3d held, ~10d left to the T1 horizon. Best 3.25% / worst -3.23% while held.
@@ -32,13 +32,13 @@ Regime **Bullish**. Sector leader Retail Trade (2.54% 1m), laggard Utilities (-4
 - **SREEL** — HOLD: -6.30% (-0.79R), 5d held, ~11d left to the T1 horizon. Best 2.6% / worst -7.07% while held.
 - **UJJIVANSFB** — HOLD: +0.25% (+0.03R), 4d held, ~13d left to the T1 horizon. Best 2.4% / worst -3.73% while held.
 
-Closed today: SATIN — moved to `trades/closed.csv`.
+Closed today: GATECHDVR — moved to `trades/closed.csv`.
 
 ### Measured so far
 
-2 closed suggestion(s) · win rate 0% · avg -7.72% (-1.06R) · avg hold 0d · reached T1 0% of the time
+3 closed suggestion(s) · win rate 0% · avg -5.15% (-0.7R) · avg hold 0d · reached T1 0% of the time
 
-*only 2 closed suggestion(s) — too few to infer a win rate; treat as a log, not a statistic.*
+*only 3 closed suggestion(s) — too few to infer a win rate; treat as a log, not a statistic.*
 
 ## Ideas (2)
 

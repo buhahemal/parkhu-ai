@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-07-31
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-07-31T18:07:22.934472+05:30
+- **generated_at_ist:** 2026-07-31T20:36:55.319014+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -79,59 +79,60 @@
 
 ## Needs action
 
-- **SATIN**: EXIT — STOP HIT — session low at/below stop ₹240.18 (last ₹239.81)
+- **GATECHDVR**: EXIT — STOP HIT — session low at/below stop ₹0.50 (last ₹0.53)
 
 ## Closed today
 
 - SATIN: {'trade_id': '2026-07-31-SATIN', 'symbol': 'SATIN', 'company': 'Satin Creditcare Network Ltd', 'risk_sector': 'NBFC & Capital Markets', 'date_opened': '2026-07-31', 'taken': None, 'entry': 260.25, 'stop': 240.18, 't1': 300.39, 't2': 320.46, 't3': 340.53, 'structure_invalidation': 246.05, 'horizon_days_t1': 12, 'horizon_days_t2': 22, 'score_at_open': 80.1, 'qty': 38, 'risk_rupees': 763.0, 'status': 'closed', 'last_price': 239.81, 'last_checked': '2026-07-31', 'mfe_pct': 3.74, 'mae_pct': -8.74, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-07-31', 'exit_price': 239.81, 'exit_reason': 'stop', 'pct_return': -7.85, 'r_multiple': -1.02, 'days_held': 0}
+- GATECHDVR: {'trade_id': '2026-07-31-GATECHDVR', 'symbol': 'GATECHDVR', 'company': 'GACM Technologies Limited', 'risk_sector': 'NBFC & Capital Markets', 'date_opened': '2026-07-31', 'taken': None, 'entry': 0.53, 'stop': 0.5, 't1': 0.67, 't2': 0.7, 't3': 0.74, 'structure_invalidation': 0.53, 'horizon_days_t1': 17, 'horizon_days_t2': 22, 'score_at_open': 85.5, 'qty': 18867, 'risk_rupees': 566.0, 'status': 'closed', 'last_price': 0.53, 'last_checked': '2026-07-31', 'mfe_pct': 3.77, 'mae_pct': -9.43, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-07-31', 'exit_price': 0.53, 'exit_reason': 'stop', 'pct_return': 0.0, 'r_multiple': 0.0, 'days_held': 0}
 
 ## Swing candidates (top)
 
-- PFOCUS: score=14 rs_nifty=26.24 deliv=43.8
-- LODHA: score=14 rs_nifty=28.15 deliv=57.0
-- TASTYBITE: score=14 rs_nifty=7.91 deliv=46.41
 - INDHOTEL: score=14 rs_nifty=2.59 deliv=54.14
-- IVC: score=14 rs_nifty=0.22 deliv=81.22
-- MUTHOOTMF: score=14 rs_nifty=13.64 deliv=53.65
-- STARHEALTH: score=14 rs_nifty=1.19 deliv=54.74
-- SAMBHV: score=14 rs_nifty=10.18 deliv=51.67
-- INDSWFTLAB: score=14 rs_nifty=9.1 deliv=54.09
 - KMEW: score=14 rs_nifty=6.29 deliv=46.96
-- VSSL: score=13 rs_nifty=8.17 deliv=56.42
-- INDNIPPON: score=13 rs_nifty=16.12 deliv=43.28
-- RANEHOLDIN: score=13 rs_nifty=3.25 deliv=49.8
-- ASHAPURMIN: score=13 rs_nifty=5.31 deliv=43.88
-- BAJFINANCE: score=13 rs_nifty=13.21 deliv=58.25
+- MUTHOOTMF: score=14 rs_nifty=13.64 deliv=53.65
+- IVC: score=14 rs_nifty=0.22 deliv=81.22
+- TASTYBITE: score=14 rs_nifty=7.91 deliv=46.41
+- LODHA: score=14 rs_nifty=28.15 deliv=57.0
+- PFOCUS: score=14 rs_nifty=26.24 deliv=43.8
+- STARHEALTH: score=14 rs_nifty=1.19 deliv=54.74
+- INDSWFTLAB: score=14 rs_nifty=9.1 deliv=54.09
+- SAMBHV: score=14 rs_nifty=10.18 deliv=51.67
+- KECL: score=13 rs_nifty=14.31 deliv=48.46
+- GABRIEL: score=13 rs_nifty=15.32 deliv=40.59
+- INDORAMA: score=13 rs_nifty=25.94 deliv=42.27
+- ICICIBANK: score=13 rs_nifty=3.81 deliv=66.97
+- RAINBOW: score=13 rs_nifty=7.02 deliv=41.37
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +4.03% (bull)
+- Nikkei: +0.71% (bull)
 - Hang Seng: +0.10% (neutral)
 - Shanghai: +0.72% (bull)
-- Kospi: +17.91% (bull)
+- Kospi: -1.23% (bear)
 - Taiwan: +7.98% (bull)
-- ASX 200: +0.10% (neutral)
+- ASX 200: -0.78% (bear)
 
 ### Europe
-- FTSE 100: +0.20% (bull)
+- FTSE 100: -0.16% (bear)
 - DAX: +0.25% (bull)
-- Euro Stoxx 50: +0.62% (bull)
+- Euro Stoxx 50: +0.39% (bull)
 
 ### US
-- S&P 500: +1.66% (bull)
-- Nasdaq: +2.78% (bull)
-- Dow: +1.19% (bull)
-- US VIX: +0.23% (neutral)
+- S&P 500: +0.15% (neutral)
+- Nasdaq: +0.36% (bull)
+- Dow: +0.18% (bull)
+- US VIX: +1.40% (bear)
 
 ### Macro
-- USDINR: -0.36% (bull)
-- Crude WTI: +1.94% (bull)
-- Brent: +1.49% (bull)
-- DXY: +0.35% (neutral)
-- US 10Y: +0.41% (bear)
-- India ETF: +1.08% (bull)
-- EM ETF: +4.13% (bull)
+- USDINR: -0.37% (bull)
+- Crude WTI: +2.49% (bull)
+- Brent: +1.13% (bull)
+- DXY: +0.14% (neutral)
+- US 10Y: +1.46% (bear)
+- India ETF: +0.18% (bull)
+- EM ETF: +1.04% (bull)
 
 
 ## Groq desk note
@@ -139,40 +140,39 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The market remains in a bullish regime with low volatility and positive cues from Asia and Europe. The Nifty trend is also bullish with a 0.27% gain. FII and DII net flows are positive, indicating a low overall risk environment.
+The Indian market remains in a bullish regime with low volatility, as indicated by the India VIX at 11.76. The Nifty trend is also bullish, with a 0.27% increase. Foreign and domestic institutional investors have shown net positive inflows.
 
-- **LODHA** [consider_entry/high] entry=1243.95 stop=1144.43 t1=1442.98 hold=16d — Strong Parkhu score and favorable risk sector
-- **GATECHDVR** [consider_entry/medium] entry=0.53 stop=0.5 t1=0.67 hold=17d — Buy band and relatively high risk-reward ratio
-- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position showing gains, monitor for further upside
+- **LODHA** [consider_entry/high] entry=1243.95 stop=1144.43 t1=1442.98 hold=16d — Strong Parkhu score of 91.8 and favorable risk-reward ratio
+- **GATECHDVR** [stand_aside/low] entry=0.53 stop=0.5 t1=0.67 hold=17d — Recent stop hit, awaiting further confirmation
 
 ### AI stock reviews
 
-- **LODHA** [high] The LODHA setup fits a ≤1-month swing due to its strong momentum indicators, such as a bullish trend label, high ADX, and a relatively low RSI. The recent price action also suggests a potential breakout, with the stock being close to its 52-week high. The overall bullish market regime and low India VIX further support this thesis. The real estate sector's recent outperformance adds to the stock's appeal.
-  - catalysts: Earnings anticipation, Sector outperformance, Breakout potential
-  - risks: Interest rate changes, Sector rotation, Economic downturn
-  - watch: Triggers for this setup include a strong earnings report or a breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in the India VIX. A close eye on the overall market regime and sector performance is also necessary.
-- **GATECHDVR** [high] This setup fits a ≤1-month swing as GACM Technologies Limited's stock has shown a strong bullish trend with a high RSI of 72.9 and a significant increase in delivery percentage to 69.86%, indicating a potential short-term upside. The overall market regime is bullish with low risk, further supporting this setup. The stock's recent price action and technical indicators suggest a strong buy signal.
-  - catalysts: Bullish market regime, Strong technical rating, High delivery percentage
-  - risks: NBFC & Capital Markets sector risks, Overall market volatility
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 0.5. The stock's price action and technical indicators should be closely monitored for any signs of weakness or reversal.
+- **LODHA** [high] The LODHA setup fits a ≤1-month swing due to its strong bullish trend, with an ADX of 46 and RSI of 63, indicating a potential continuation of the uptrend. The stock has outperformed Nifty and its sector in the last month, with returns of 29% and 19.1% respectively. The distance from its 52-week high is only 7.51%, leaving room for further upside. The overall market regime is bullish with low risk, supporting this swing trade.
+  - catalysts: Strong trend, Outperformance vs Nifty and sector, Low risk market regime
+  - risks: Sector-specific risks, Economic downturn, Interest rate changes
+  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1144.43, indicating a reversal of the trend.
+- **GATECHDVR** [high] GACM Technologies Limited (GATECHDVR) fits a ≤1-month swing setup due to its strong bullish trend, high delivery percentage, and outperformance against the Nifty and its sector over the past month. The stock's RSI14 is above 70, indicating a strong uptrend, and its ADX14 suggests a moderate trend strength. With a low overall risk regime and a high Parkhu score, this setup appears promising for a short-term swing.
+  - catalysts: Strong trend, High delivery percentage, Outperformance
+  - risks: Reversal of trend, Market regime change, Sector underperformance
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a reversal of the trend.
 
 ### Claude feed
 
-Bullish regime, selective aggressive stance. Top ideas: LODHA, GATECHDVR. Caveats: provisional scores, missing promoter pledge data, and no trade outcome history.
+Regime: Bullish, Stance: Selective Aggressive, Top Ideas: LODHA, GATECHDVR, Caveats: Low volatility, institutional inflows, and bullish market regime; however, some scores are provisional due to missing data.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Multiple companies announce unaudited financial results for Q1 — Earnings reports from multiple companies can impact market sentiment and influence investor decisions
-2. **[medium]** CURAA announces unaudited financial results for quarter ended 30.06.2026 (CURAA) — Company's financial performance can impact investor confidence and stock price
-3. **[medium]** RPPL to host conference call with investors and analysts (RPPL) — Company's interaction with investors and analysts can provide insights into its financial performance and future plans
-4. **[medium]** PCBL Chemical announces financial results for quarter ended 30-Jun-2026 (PCBL) — Company's financial performance can impact investor confidence and stock price
-5. **[medium]** SWIGGY announces unaudited financial results for quarter ended June 30, 2026 (SWIGGY) — Company's financial performance can impact investor confidence and stock price
-6. **[medium]** ACMESOLAR announces unaudited financial results for quarter ended June 30, 2026 (ACMESOLAR) — Company's financial performance can impact investor confidence and stock price
-7. **[low]** India VIX at 11.76, indicating low overall risk — Low India VIX can lead to increased investor appetite for riskier assets
-8. **[low]** FII net inflow at 277.48, indicating positive foreign investor sentiment — Positive foreign investor sentiment can lead to increased demand for Indian stocks
-9. **[low]** Market regime remains bullish — Bullish market regime can lead to increased investor confidence and stock prices
-10. **[low]** Multiple companies announce updates on committee reconstitutions and cessations — Corporate governance updates can impact investor confidence in individual companies
+1. **[high]** Acquisition (DATAMATICS) — Datamatics Global Services Limited has completed the acquisition of remaining 20% stakes in TNQ Tech Private Limited by its Wholly owned subsidiary Lumina Datamatics Limited.
+2. **[medium]** General Updates (HIMATSEIDE) — Himatsingka Seide Limited has informed the Exchange about email communication to shareholders on unclaimed/ un-encashed dividend
+3. **[medium]** Record Date (INFOBEAN) — InfoBeans Techno. Ltd. has informed the Exchange that Revised Record date for the purpose of Dividend  is 06-Aug-2026.
+4. **[medium]** Analysts/Institutional Investor Meet/Con. Call Updates (URBANCO) — Urban Company Limited has informed the Exchange about Link of the Audio recording for the Earnings Call conducted today July 31, 2026
+5. **[medium]** Analysts/Institutional Investor Meet/Con. Call Updates (AADHARHFC) — Aadhar Housing Finance Limited has informed the Exchange about Audio recording of Earnings conference call for the quarter ended 30th June 2026
+6. **[medium]** Monitoring Agency Report (STYLEBAAZA) — Monitoring Agency Report for the quarter ended June 30, 2026 - in relation to the Preferential Issue of Baazar Style Retail Limited
+7. **[low]** Shareholders meeting (INDUSTOWER) — Indus Towers Limited has submitted the Exchange a copy Scrutinizers Report of  Postal Ballot. Further, the Company has informed the Exchange regarding Voting Results.
+8. **[low]** Shareholders meeting (ZEEL) — Zee Entertainment Enterprises Limited has informed the Exchange regarding Proceedings of Extraordinary General Meeting held on July 31, 2026. Further, the company has submitted the Exchange a copy of Srutinizers report
+9. **[low]** Shareholders meeting (SUNPHARMA) — Outcome of 34th Annual General Meeting held on 31 July 2026
+10. **[low]** Shareholders meeting (ANUP) — The Anup Engineering Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on August 25, 2026
 
 ## Deep-dive URLs (after push)
 
