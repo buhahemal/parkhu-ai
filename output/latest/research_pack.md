@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-08-01
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-01T06:14:06.872193+05:30
+- **generated_at_ist:** 2026-08-01T18:08:56.482614+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.28%)
-- india_vix: 12.16 (Low)
+- nifty: Bullish (0.27%)
+- india_vix: 11.76 (Low)
 - fii_net: 277.48 | dii_net: 2260.37
 - overall_risk: Low | global_risk: Risk-On
 
@@ -20,8 +20,8 @@
 - price > EMA50: 953
 - ADX14 > 25: 495
 - RSI14 in 40-80: 470
-- RS > 0 vs NIFTY and sector: 218
-- delivery% >= 40: 129
+- RS > 0 vs NIFTY and sector: 227
+- delivery% >= 40: 131
 - relative_volume >= 1: 43
 - no earnings within 21d: 27
 - event_risk_score <= 1: 27
@@ -33,26 +33,26 @@
 - **GATECHDVR** [idea] score 85.5 — selected as idea
 - **ARIHANT** [watchlist] score 79.0 — score in Watch band (70–80)
 - **BAJFINANCE** [watchlist] score 78.8 — score in Watch band (70–80)
-- **AARTIDRUGS** [rejected] score 78.4 — T1 needs more than 22 trading days (~1 month)
+- **SUNPHARMA** [watchlist] score 76.2 — score in Watch band (70–80)
 - **STARHEALTH** [watchlist] score 71.9 — score in Watch band (70–80)
 - **MEDANTA** [watchlist] score 70.6 — score in Watch band (70–80)
 - **MUTHOOTCAP** [rejected] score 69.5 — T1 needs more than 22 trading days (~1 month)
-- **SUNPHARMA** [rejected] score 68.0 — score below Watch band
 - **TORNTPHARM** [rejected] score 67.3 — score below Watch band
 - **CRAFTSMAN** [rejected] score 67.1 — score below Watch band
 - **KMEW** [rejected] score 65.1 — score below Watch band
-- **MUNJALSHOW** [rejected] score 63.8 — score below Watch band
+- **MUNJALSHOW** [rejected] score 63.7 — score below Watch band
 - **SMCGLOBAL** [rejected] score 62.7 — score below Watch band
 - **PFOCUS** [rejected] score 60.8 — T1 needs more than 22 trading days (~1 month)
+- **AARTIDRUGS** [rejected] score 60.1 — T1 needs more than 22 trading days (~1 month)
 - **INDHOTEL** [rejected] score 59.0 — T1 needs more than 22 trading days (~1 month)
-- **SAMBHV** [rejected] score 58.9 — score below Watch band
+- **SAMBHV** [rejected] score 58.8 — score below Watch band
 - **RANEHOLDIN** [rejected] score 58.3 — score below Watch band
 - **POONAWALLA** [rejected] score 57.4 — T1 needs more than 22 trading days (~1 month)
-- **INDSWFTLAB** [rejected] score 56.1 — score below Watch band
+- **INDSWFTLAB** [rejected] score 56.0 — score below Watch band
 - **TASTYBITE** [rejected] score 55.3 — T1 needs more than 22 trading days (~1 month)
 - **CINELINE** [rejected] score 54.3 — score below Watch band
 - **MUTHOOTMF** [rejected] score 53.4 — score below Watch band
-- **TEXINFRA** [rejected] score 51.1 — score below Watch band
+- **TEXINFRA** [rejected] score 51.0 — score below Watch band
 - **ARKADE** [rejected] score 50.6 — T1 needs more than 22 trading days (~1 month)
 - **CAPTRUST** [rejected] score 49.0 — T1 needs more than 22 trading days (~1 month)
 - **KABRAEXTRU** [rejected] score 45.7 — score below Watch band
@@ -79,46 +79,42 @@
 - **LODHA** status=open entry=1287.15 last=1243.95 mfe=3.24 mae=-3.7 opened=2026-07-30
 - **GATECHDVR** status=open entry=0.53 last=0.53 mfe=0.0 mae=0.0 opened=2026-08-01
 
-## Needs action
-
-- **GATECHDVR**: EXIT — STOP HIT — session low at/below stop ₹0.50 (last ₹0.53)
-
 ## Closed today
 
 - GATECHDVR: {'trade_id': '2026-07-31-GATECHDVR', 'symbol': 'GATECHDVR', 'company': 'GACM Technologies Limited', 'risk_sector': 'NBFC & Capital Markets', 'date_opened': '2026-07-31', 'taken': None, 'entry': 0.53, 'stop': 0.5, 't1': 0.67, 't2': 0.7, 't3': 0.74, 'structure_invalidation': 0.53, 'horizon_days_t1': 17, 'horizon_days_t2': 22, 'score_at_open': 85.5, 'qty': 18867, 'risk_rupees': 566.0, 'status': 'closed', 'last_price': 0.53, 'last_checked': '2026-08-01', 'mfe_pct': 3.77, 'mae_pct': -9.43, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-08-01', 'exit_price': 0.53, 'exit_reason': 'stop', 'pct_return': 0.0, 'r_multiple': 0.0, 'days_held': 0}
 
 ## Swing candidates (top)
 
-- RANEHOLDIN: score=14 rs_nifty=2.81 deliv=49.8
-- KMEW: score=14 rs_nifty=5.85 deliv=46.96
-- TASTYBITE: score=14 rs_nifty=7.47 deliv=46.41
-- LODHA: score=14 rs_nifty=27.71 deliv=57.0
-- SAMBHV: score=14 rs_nifty=9.74 deliv=51.67
-- INDHOTEL: score=14 rs_nifty=2.15 deliv=54.14
-- MUTHOOTMF: score=14 rs_nifty=13.2 deliv=53.65
-- SUNPHARMA: score=14 rs_nifty=4.7 deliv=52.21
-- PFOCUS: score=14 rs_nifty=25.8 deliv=43.8
-- INDSWFTLAB: score=14 rs_nifty=8.66 deliv=54.09
-- CRAFTSMAN: score=14 rs_nifty=2.63 deliv=53.36
-- STARHEALTH: score=14 rs_nifty=0.75 deliv=54.74
-- MUNJALSHOW: score=14 rs_nifty=5.19 deliv=75.73
-- SUNFLAG: score=13 rs_nifty=6.78 deliv=65.57
-- PAISALO: score=13 rs_nifty=17.17 deliv=49.85
+- TASTYBITE: score=14 rs_nifty=7.91 deliv=46.41
+- LODHA: score=14 rs_nifty=28.15 deliv=57.0
+- INDHOTEL: score=14 rs_nifty=2.59 deliv=54.14
+- SUNPHARMA: score=14 rs_nifty=5.14 deliv=52.21
+- CRAFTSMAN: score=14 rs_nifty=3.07 deliv=53.36
+- MUNJALSHOW: score=14 rs_nifty=5.63 deliv=75.73
+- KMEW: score=14 rs_nifty=6.29 deliv=46.96
+- SAMBHV: score=14 rs_nifty=10.18 deliv=51.67
+- INDSWFTLAB: score=14 rs_nifty=9.1 deliv=54.09
+- PFOCUS: score=14 rs_nifty=26.24 deliv=43.8
+- MUTHOOTMF: score=14 rs_nifty=13.64 deliv=53.65
+- DIXON: score=14 rs_nifty=16.41 deliv=39.38
+- STARHEALTH: score=14 rs_nifty=1.19 deliv=54.74
+- RANEHOLDIN: score=14 rs_nifty=3.25 deliv=49.8
+- GANDHITUBE: score=13 rs_nifty=1.15 deliv=72.31
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.71% (bull)
-- Hang Seng: +0.20% (bull)
-- Shanghai: -0.62% (bear)
-- Kospi: -1.23% (bear)
-- Taiwan: -0.26% (bear)
-- ASX 200: -0.78% (bear)
+- Nikkei: +4.03% (bull)
+- Hang Seng: +0.10% (neutral)
+- Shanghai: +0.72% (bull)
+- Kospi: +17.91% (bull)
+- Taiwan: +7.98% (bull)
+- ASX 200: +0.10% (neutral)
 
 ### Europe
-- FTSE 100: -0.10% (neutral)
-- DAX: +0.60% (bull)
-- Euro Stoxx 50: +1.53% (bull)
+- FTSE 100: -0.27% (bear)
+- DAX: +0.07% (neutral)
+- Euro Stoxx 50: +0.21% (bull)
 
 ### US
 - S&P 500: +0.70% (bull)
@@ -127,8 +123,8 @@
 - US VIX: -6.44% (bull)
 
 ### Macro
-- USDINR: -0.36% (bull)
-- Crude WTI: +3.84% (bull)
+- USDINR: -0.31% (neutral)
+- Crude WTI: +1.29% (bull)
 - Brent: +1.22% (bull)
 - DXY: -0.21% (neutral)
 - US 10Y: +1.76% (bear)
@@ -141,32 +137,41 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The market regime remains bullish with a low India VIX, indicating a favorable environment for stocks. However, the Asia cue is bearish, which may exert some pressure. The Nifty trend is also bullish, with a recent percentage change of 0.28. Foreign institutional investors have been net buyers, with a significant inflow of 277.48, while domestic institutional investors have also been net buyers with an inflow of 2260.37.
+The Indian market remains in a bullish regime with low overall risk. Nifty trend is bullish with a 0.27% change, and India VIX is at a low level of 11.76. FIIs and DIIs have net investments of 277.48 and 2260.37 respectively.
 
-- **LODHA** [consider_entry/high] entry=1243.95 stop=1144.43 t1=1442.98 hold=16d — Strong Parkhu score of 91.8 and favorable risk sector
-- **GATECHDVR** [manage_open/low] entry=0.53 stop=0.5 t1=0.67 hold=17d — Recent stop hit, consider reassessing position
+- **LODHA** [consider_entry/high] entry=1243.95 stop=1144.43 t1=1442.98 hold=16d — Strong Parkhu score of 91.8 and bullish trend
+- **GATECHDVR** [consider_entry/medium] entry=0.53 stop=0.5 t1=0.67 hold=17d — Parkhu score of 85.5 and low risk sector
+- **IIFL** [manage_open/high] entry=582.35 stop=541.29 t1=675.0 hold=21d — Open position with 6.98% mfe_pct and low mae_pct
+- **INDNIPPON** [manage_open/medium] entry=1163.1 stop=1070.05 t1=1349.2 hold=13d — Open position with 3.25% mfe_pct and low mae_pct
 
 ### AI stock reviews
 
-- **LODHA** [high] The LODHA setup fits a ≤1-month swing due to its strong bullish trend and high Parkhu score of 91.8. The company's recent price action, with a 1-month return of 29.01% and a 3-month return of 36.30%, indicates a strong upward momentum. Additionally, the stock's distance from its 52-week high is only -7.51%, suggesting potential for further upside.
-  - catalysts: Strong trend, High Parkhu score, Recent price momentum
-  - risks: Real Estate sector risks, Market volatility
-  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues include a breach of the stop level at 1144.43. A close eye should be kept on the overall market regime and the India VIX, currently at 12.16.
-- **GATECHDVR** [high] GACM Technologies Limited (GATECHDVR) fits a ≤1-month swing due to its strong bullish trend, with an ADX of 35.33 and RSI of 72.91, indicating a potential for further upside. The stock has outperformed Nifty and its sector in the last month, with returns of 20.45% and 18.56% respectively. The recent price action and technical indicators suggest a potential breakout, making it an attractive swing trade opportunity.
-  - catalysts: Bullish trend, Strong technical ratings, Outperformance vs Nifty and sector
-  - risks: Market regime change, Sector-specific risks, Overbought RSI
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a breach of the stop level at 0.5, indicating a potential reversal in trend.
+- **LODHA** [high] Lodha Developers Ltd. (LODHA) fits a ≤1-month swing due to its strong bullish trend, with an ADX of 46.028 and RSI of 63.22, indicating a potential continuation of its recent price action. The stock has outperformed Nifty and its sector in the last month, with returns of 29.01% and 16.23%, respectively. With a distance of -7.51% from its 52-week high, there is room for upside. The overall market regime is bullish, and the India VIX is low, supporting a swing trade.
+  - catalysts: Earnings anticipation, Real estate sector growth, Bullish market regime
+  - risks: Interest rate changes, Sector-specific downturn, Economic slowdown
+  - watch: Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 1144.43, indicating a failure of the bullish trend to continue.
+- **GATECHDVR** [high] GACM Technologies Limited (GATECHDVR) fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against Nifty and its sector. The stock's RSI14 is at 72.9, indicating a potential for further upside. With a Parkhu score of 85.5 and a strong buy technical rating, this setup appears promising for a short-term swing.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
+  - risks: Market regime change, Sector-specific risks, Overall market volatility
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 0.5. A close eye should be kept on the stock's price action and overall market sentiment.
 
 ### Claude feed
 
-Regime: Bullish, Stance: Selective Aggressive, Top Ideas: LODHA, GATECHDVR, Caveats: Asia cue bearish, promoter pledge and ownership data empty
+Bullish regime with low risk, consider entry in LODHA and GATECHDVR, manage open positions in IIFL and INDNIPPON. Caveats include incomplete score computations and lack of promoter pledge data.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Release of Pledge on Equity Shares held by Promoter Group (EMBDL) — Major catalyst and risk event with high news score
-2. **[high]** General Updates (BRITANNIA) — Major catalyst and risk event with high news score
-3. **[medium]** Press Release (TCC) — Major catalyst with medium news score
+1. **[high]** ITC Limited has informed the Exchange about Acquisition of Pulp and Paper Undertaking of Aditya Birla Real Estate Limited - Update (ITC) — Major acquisition by a large-cap company, potential impact on sector and market
+2. **[high]** PTC India Limited has informed the Exchange about Demand Notice received from Income Tax department toward Penalty as per details enclosed (PTC) — Regulatory action against a company, potential impact on stock price and sector
+3. **[high]** Prataap Snacks Limited has informed the Exchange regarding 'Intimation of the receipt of request(s) for the reclassification from the  Promoter  to the  Public  Category in accordance with Regulation 31A of the SEBI (LOD (DIAMONDYD) — Potential change in promoter holding, impact on stock price and corporate governance
+4. **[medium]** Aditya Vision Limited has informed the Exchange about Copy of Newspaper Publication-Disclosure under regulation 30 and 47 of SEBI (Listing Obligations and Disclosure Requirements) regulations, 2015 ( SEBI Listing Regulat (AVL) — Disclosure by a company under SEBI regulations, potential impact on stock price
+5. **[medium]** City Union Bank Limited has informed the Exchange about Transcript of Earnings Conference Call Q1 FY 2027 (CUB) — Earnings conference call by a bank, potential impact on stock price and sector
+6. **[medium]** Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we hereby inform you that the audio recording of the Earnings Call for the quarter ended 30thJune, 2026, held tod (CLEAN) — Earnings conference call by a company, potential impact on stock price
+7. **[medium]** Newspaper Publication for Unaudited Financial Results (Consolidated & Standalone) for the quarter ended June 30, 2026 (SANGHVIMOV) — Financial results by a company, potential impact on stock price
+8. **[medium]** Aditya Vision Limited has informed the Exchange about Copy of Newspaper Publication-Newspaper advertisement pertaining to Unaudited Financial Results for the Quarter ended June 30, 2026 (AVL) — Financial results by a company, potential impact on stock price
+9. **[low]** Indian Railway Finance Corporation Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on August 25, 2026 (IRFC) — Routine AGM notice by a company, minimal impact on stock price
+10. **[low]** SHREE CEMENT LIMITED has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on July 31, 2026 (SHREECEM) — Routine AGM update by a company, minimal impact on stock price
 
 ## Deep-dive URLs (after push)
 
