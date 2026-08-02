@@ -1,0 +1,4 @@
+symbol,yf_ticker,reason
+AVATAR,AVATAR.NS,no_ohlc_after_retry
+METALIC,METALIC.NS,no_ohlc_after_retry
+NEELAM,NEELAM.NS,no_ohlc_after_retry
