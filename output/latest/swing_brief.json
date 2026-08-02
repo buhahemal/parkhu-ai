@@ -42,7 +42,7 @@
     "europe_cue": "Mixed",
     "global_risk": "Risk-On",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-02T06:06:37.819807+05:30"
+    "generated_at_ist": "2026-08-02T18:06:33.630306+05:30"
   },
   "funnel": [
     {
@@ -927,11 +927,12 @@
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 27,
-      "dropped_count": 16,
+      "surviving": 28,
+      "dropped_count": 15,
       "survivor_symbols": [
         "LODHA",
         "GATECHDVR",
+        "GAEL",
         "BAJFINANCE",
         "ARIHANT",
         "SUNPHARMA",
@@ -963,7 +964,6 @@
         "LLOYDSME",
         "SUPRAJIT",
         "ASKAUTOLTD",
-        "GAEL",
         "LUMAXTECH",
         "KIRLFER",
         "MARICO",
@@ -981,11 +981,12 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 27,
+      "surviving": 28,
       "dropped_count": 0,
       "survivor_symbols": [
         "LODHA",
         "GATECHDVR",
+        "GAEL",
         "BAJFINANCE",
         "ARIHANT",
         "SUNPHARMA",
@@ -1018,11 +1019,12 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 27,
+      "surviving": 28,
       "dropped_count": 0,
       "survivor_symbols": [
         "LODHA",
         "GATECHDVR",
+        "GAEL",
         "BAJFINANCE",
         "ARIHANT",
         "SUNPHARMA",
@@ -1212,6 +1214,16 @@
   ],
   "watchlist": [
     {
+      "symbol": "GAEL",
+      "risk_sector": "Consumer Non-Durables",
+      "cmp": 172.11,
+      "score": 79.4,
+      "entry_if_triggered": 172.11,
+      "stop": 159.09,
+      "t1": 198.15,
+      "expected_profit_pct_t1": 15.13
+    },
+    {
       "symbol": "BAJFINANCE",
       "risk_sector": "NBFC & Capital Markets",
       "cmp": 1141.2,
@@ -1375,6 +1387,15 @@
       "risk_sector": "NBFC & Capital Markets",
       "status": "idea",
       "reason": "selected as idea"
+    },
+    {
+      "symbol": "GAEL",
+      "score": 79.4,
+      "band": "Watch",
+      "cmp": 172.11,
+      "risk_sector": "Consumer Non-Durables",
+      "status": "watchlist",
+      "reason": "score in Watch band (70\u201380)"
     },
     {
       "symbol": "BAJFINANCE",
@@ -1602,7 +1623,7 @@
       "reason": "score below Watch band"
     }
   ],
-  "survivor_outcomes_total": 27,
+  "survivor_outcomes_total": 28,
   "survivor_outcomes_truncated": false,
   "scoring": {
     "live_weights": {

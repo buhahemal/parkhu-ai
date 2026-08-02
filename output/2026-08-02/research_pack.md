@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-02
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-02T06:07:02.287042+05:30
+- **generated_at_ist:** 2026-08-02T18:06:58.255795+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -23,14 +23,15 @@
 - RS > 0 vs NIFTY and sector: 227
 - delivery% >= 40: 131
 - relative_volume >= 1: 43
-- no earnings within 21d: 27
-- event_risk_score <= 1: 27
-- TV rating not Sell: 27
+- no earnings within 21d: 28
+- event_risk_score <= 1: 28
+- TV rating not Sell: 28
 
-## Survivors (top 27 of 27)
+## Survivors (top 28 of 28)
 
 - **LODHA** [idea] score 91.0 — selected as idea
 - **GATECHDVR** [idea] score 85.5 — selected as idea
+- **GAEL** [watchlist] score 79.4 — score in Watch band (70–80)
 - **BAJFINANCE** [watchlist] score 78.8 — score in Watch band (70–80)
 - **ARIHANT** [watchlist] score 78.3 — score in Watch band (70–80)
 - **SUNPHARMA** [watchlist] score 76.2 — score in Watch band (70–80)
@@ -81,21 +82,21 @@
 
 ## Swing candidates (top)
 
-- SUNPHARMA: score=14 rs_nifty=5.14 deliv=52.21
-- RANEHOLDIN: score=14 rs_nifty=3.25 deliv=49.8
 - LODHA: score=14 rs_nifty=28.15 deliv=57.0
-- KMEW: score=14 rs_nifty=6.29 deliv=46.96
-- PFOCUS: score=14 rs_nifty=26.24 deliv=43.8
-- SAMBHV: score=14 rs_nifty=10.18 deliv=51.67
-- INDSWFTLAB: score=14 rs_nifty=9.1 deliv=54.09
-- STARHEALTH: score=14 rs_nifty=1.19 deliv=54.74
-- DIXON: score=14 rs_nifty=16.41 deliv=39.38
-- MUNJALSHOW: score=14 rs_nifty=5.63 deliv=75.73
-- INDHOTEL: score=14 rs_nifty=2.59 deliv=54.14
-- CRAFTSMAN: score=14 rs_nifty=3.07 deliv=53.36
-- MUTHOOTMF: score=14 rs_nifty=13.64 deliv=53.65
 - TASTYBITE: score=14 rs_nifty=7.91 deliv=46.41
-- PYRAMID: score=13 rs_nifty=4.17 deliv=51.92
+- MUNJALSHOW: score=14 rs_nifty=5.63 deliv=75.73
+- STARHEALTH: score=14 rs_nifty=1.19 deliv=54.74
+- SUNPHARMA: score=14 rs_nifty=5.14 deliv=52.21
+- MUTHOOTMF: score=14 rs_nifty=13.64 deliv=53.65
+- SAMBHV: score=14 rs_nifty=10.18 deliv=51.67
+- DIXON: score=14 rs_nifty=16.41 deliv=39.38
+- KMEW: score=14 rs_nifty=6.29 deliv=46.96
+- CRAFTSMAN: score=14 rs_nifty=3.07 deliv=53.36
+- PFOCUS: score=14 rs_nifty=26.24 deliv=43.8
+- INDSWFTLAB: score=14 rs_nifty=9.1 deliv=54.09
+- INDHOTEL: score=14 rs_nifty=2.59 deliv=54.14
+- GAEL: score=14 rs_nifty=3.24 deliv=50.41
+- RANEHOLDIN: score=14 rs_nifty=3.25 deliv=49.8
 
 ## World markets (India cues)
 
@@ -133,41 +134,35 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The Indian market remains in a bullish regime with low overall risk. The Nifty trend is also bullish, with a 0.27% increase. The India VIX is at a low level of 11.76, indicating a stable market. Foreign institutional investors (FII) and domestic institutional investors (DII) have net inflows of 277.48 and 2260.37, respectively.
+The Indian market remains in a bullish regime with low overall risk. The Nifty trend is bullish, and the India VIX is at a low level. Foreign institutional investors have a net positive inflow, while domestic institutional investors have a significant net positive inflow.
 
-- **LODHA** [consider_entry/high] entry=1243.95 stop=1144.43 t1=1442.98 hold=16d — Strong Parkhu score of 91.0 and favorable risk sector
-- **GATECHDVR** [consider_entry/medium] entry=0.53 stop=0.5 t1=0.67 hold=17d — Parkhu score of 85.5 and relatively low risk
-- **SREEL** [manage_open/low] entry=227.97 stop=209.73 t1=264.45 hold=16d — Position is near stop loss, monitor closely
-- **CREDITACC** [stand_aside/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Recent price movement is not favorable
+- **LODHA** [consider_entry/high] entry=1243.95 stop=1144.43 t1=1442.98 hold=16d — Strong Parkhu score and favorable risk sector
+- **GATECHDVR** [consider_entry/medium] entry=0.53 stop=0.5 t1=0.67 hold=17d — Buy band and relatively low risk
+- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position showing profit, consider adjusting stop
 
 ### AI stock reviews
 
-- **LODHA** [high] The LODHA setup fits a ≤1-month swing due to its strong bullish trend, with a high Parkhu score of 91.0 and a bullish trend label. The stock has also outperformed Nifty and its sector in the last month, with returns of 29.01% and 16.23% respectively. The relatively low India VIX of 11.76 and low overall risk regime further support a swing trade in this stock.
-  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend
-  - risks: Interest rate changes, Sector downturn, Economic slowdown
-  - watch: Triggers for this trade include a breakout above the recent highs, while invalidation cues include a drop below the stop level of 1144.43. A close eye should be kept on the overall market regime and sector performance.
-- **GATECHDVR** [high] The GACM Technologies Limited stock is poised for a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against the Nifty and its sector. The stock's RSI14 is at 72.9, indicating a potential for further upside. The overall market regime is bullish, and the India VIX is low, suggesting a favorable environment for the stock to move upwards. The Parkhu score of 85.5 further reinforces the bullish case.
-  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
-  - risks: NBFC & Capital Markets sector risks, Market regime change, Stop loss at 0.5
-  - watch: Triggers for the swing include the stock breaking out above its current levels, while invalidation cues include a breach of the stop loss at 0.5. The stock's price action and overall market sentiment will be closely monitored.
+- **LODHA** [high] The setup in LODHA fits a ≤1-month swing due to its strong momentum indicators, such as a high ADX and RSI, indicating a bullish trend. The stock's recent outperformance against Nifty and its sector, combined with its proximity to its 52-week high, suggests potential for further upside. The overall bullish market regime and low India VIX further support this thesis.
+  - catalysts: Strong momentum indicators, Outperformance against Nifty and sector, Proximity to 52-week high
+  - risks: Sector-specific risks, Interest rate changes, Economic downturn
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a breach of the stop level, indicating a reversal of the trend.
+- **GATECHDVR** [high] GACM Technologies Limited (GATECHDVR) fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and recent outperformance against Nifty and its sector. The stock's RSI14 is at 72.9, indicating a potential for further upside. With a Parkhu score of 85.5, the overall technical setup appears favorable.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance
+  - risks: Market regime change, Sector-specific downturn, Overbought RSI
+  - watch: Triggers for this setup include a strong close above the current price, while invalidation cues would be a close below the stop level of 0.5. The stock's price action around its recent highs will be crucial to watch.
 
 ### Claude feed
 
-Regime: Bullish, Stance: Selective Aggressive, Top Ideas: LODHA, GATECHDVR, Caveats: Low VIX, provisional scores, and empty promoter pledge data
+Bullish regime, selective aggressive stance. Top ideas: LODHA, GATECHDVR. Caveats: provisional scores, missing data for some metrics.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Prataap Snacks Limited has informed the Exchange about General Updates- Acquisition (DIAMONDYD) — The acquisition news has the potential to significantly impact the company's stock price and the overall food processing sector.
-2. **[high]** TV Vision Limited has informed the Exchange about Corporate Insolvency Resolution Process (TVVISION) — The corporate insolvency resolution process may lead to significant changes in the company's ownership and operations, affecting its stock price and the broader media sector.
-3. **[high]** Prataap Snacks Limited has informed the Exchange regarding 'CONSIDER AND APPROVE THE REQUESTS RECEIVED FOR RECLASSIFICATION FROM THE  PROMOTER TO THE  PUBLIC  CATEGORY UNDER REGULATION 31A OF THE SEBI (LODR) REGULATION 2 (DIAMONDYD) — The reclassification of shares may impact the company's ownership structure and have implications for its stock price and the food processing sector.
-4. **[medium]** Prataap Snacks Limited has informed the Exchange regarding a press release dated August 01, 2026, titled "Press Release on Unaudited Financial Results for the quarter ended June 30, 2026" (DIAMONDYD) — The press release provides updates on the company's financial performance, which may influence investor sentiment and the stock price.
-5. **[medium]** Vedant Fashions Limited has informed the Exchange about the Transcript of the Earnings Conference Call organised and held on July 27, 2026 (MANYAVAR) — The earnings conference call transcript may provide insights into the company's financial performance and future plans, affecting investor sentiment and the stock price.
-6. **[medium]** Neueon Corporation Limited has informed the Exchange regarding 'Financial result copy for the quarter ended June 30th, 2026 as per announcement of outcome of the Board Meeting held on Friday, July 31st, 2026' (NEUEON) — The financial results may impact the company's stock price and the broader sector, as they provide insights into the company's performance.
-7. **[medium]** Prataap Snacks Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (DIAMONDYD) — The financial results may influence investor sentiment and the stock price, as they provide updates on the company's performance.
-8. **[low]** Jubilant Pharmova Limited has informed the Exchange about General Updates - Intimation to shareholders about deduction of tax at source (TDS) on Final Dividend for FY 2025-26, if approved by the members at the ensuing AG (JUBLPHARMA) — The update on tax deduction may have a minor impact on the company's stock price, as it is a routine announcement.
-9. **[low]** Lumax Auto Technologies Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on August 26, 2026 (LUMAXTECH) — The announcement of the annual general meeting is a routine event and may not have a significant impact on the company's stock price.
-10. **[low]** Ghcl Textiles Limited has informed the Exchange regarding 'Intimation of Fire incident at warehouse' (GHCLTEXTIL) — The fire incident at the warehouse may have a minor impact on the company's operations, but it is unlikely to significantly affect the stock price.
+1. **[high]** Persistent Achieves $452.4M Revenue in Q1 FY27 with 16.1% YoY Growth (PERSISTENT) — The company's revenue growth indicates a strong performance in the quarter, which could positively impact the stock price and the overall IT sector.
+2. **[high]** Vishnu Chemicals Q1FY27 Earnings Release (VISHNU) — The earnings release provides insight into the company's financial performance, which can influence investor decisions and impact the stock price.
+3. **[high]** APL Apollo Tubes Unaudited Financial Results for Q1FY27 (APLAPOLLO) — The financial results can significantly impact the stock price and investor sentiment, as they reflect the company's current financial health.
+4. **[medium]** Urban Company Earnings Call Transcript (URBANCO) — The earnings call transcript provides valuable information about the company's performance and future plans, which can influence investor decisions.
+5. **[medium]** Persistent Systems Financial Results for Q1FY27 (PERSISTENT) — The financial results can impact the stock price and investor sentiment, as they reflect the company's current financial performance.
 
 ## Deep-dive URLs (after push)
 

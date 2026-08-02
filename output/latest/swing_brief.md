@@ -90,6 +90,7 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: INDHOTEL (~23d), POONAW
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
+| GAEL | Consumer Non-Durables | ₹172 | 79.4 | ₹172 | ₹159 | ₹198 | 15.13% |
 | BAJFINANCE | NBFC & Capital Markets | ₹1,141 | 78.8 | ₹1,141 | ₹1,081 | ₹1,261 | 10.5% |
 | ARIHANT | Real Estate | ₹1,143 | 78.3 | ₹1,143 | ₹1,051 | ₹1,326 | 16% |
 | SUNPHARMA | Health Technology | ₹1,990 | 76.2 | ₹1,990 | ₹1,921 | ₹2,129 | 6.96% |
