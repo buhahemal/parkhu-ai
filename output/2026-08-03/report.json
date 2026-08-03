@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-03",
-  "generated_at_ist": "2026-08-03T06:08:33.061011+05:30",
-  "duration_seconds": 408.8,
+  "generated_at_ist": "2026-08-03T09:43:44.188432+05:30",
+  "duration_seconds": 347.7,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 2970,
+      "rows": 2967,
       "seconds": 2.7
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 13461,
-      "cache_rows": 7785288,
-      "symbols": 2694,
+      "rows": 13449,
+      "cache_rows": 7784723,
+      "symbols": 2691,
       "failed": 3,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2447,
+      "warm": 2444,
       "cold": 250,
       "new_symbols": 3,
       "retries": 2,
-      "seconds": 325.9
+      "seconds": 268.1
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 2970,
+      "rows": 2967,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.6
+      "seconds": 0.4
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.8
+      "seconds": 0.9
     },
     {
       "agent": "smartmoney",
       "status": "partial",
       "rows": 2,
-      "seconds": 4.2
+      "seconds": 3.4
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.5
+      "seconds": 3.7
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 446,
-      "seconds": 4.6
+      "seconds": 4.9
     },
     {
       "agent": "stock_options",
@@ -79,43 +79,43 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2068,
-      "seconds": 18.1
+      "seconds": 16.9
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.9
+      "seconds": 2.8
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.5
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.9
+      "seconds": 2.7
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 2970,
-      "seconds": 0.3
+      "rows": 2967,
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 2970,
-      "seconds": 1.0
+      "rows": 2967,
+      "seconds": 0.7
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 206,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -138,27 +138,24 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2694,
-      "with_structure": 2691,
+      "rows": 2691,
+      "with_structure": 2688,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.4
+      "seconds": 19.3
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 2970,
-      "seconds": 3.4
+      "rows": 2967,
+      "seconds": 2.7
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 2,
-      "ideas": [
-        "LODHA",
-        "GATECHDVR"
-      ],
-      "watchlist": 6,
+      "rows": 0,
+      "ideas": [],
+      "watchlist": 0,
       "open_positions": 7,
       "needing_action": [],
       "closed_today": [],
@@ -285,6 +282,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-03/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-03/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-03/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-03/report.json"
+    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-03/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-03/research_pack.json"
@@ -324,10 +325,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-03/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-03/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-03/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-03/report.json"
     }
   }
 }
