@@ -1,119 +1,134 @@
 # Parkhu research pack — 2026-08-03
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-03T09:43:44.188432+05:30
+- **generated_at_ist:** 2026-08-03T18:07:23.061862+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.72%)
-- india_vix: 11.72 (Low)
+- nifty: Bullish (1.6%)
+- india_vix: 11.93 (Low)
 - fii_net: 277.48 | dii_net: 2260.37
-- overall_risk: Low | global_risk: Risk-On
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
-- universe: 2967
-- trend = Bullish: 1425
-- price > SMA200: 1054
-- price > EMA50: 1039
-- ADX14 > 25: 516
-- RSI14 in 40-80: 483
-- RS > 0 vs NIFTY and sector: 219
-- delivery% >= 40: 131
-- relative_volume >= 1: 4
-- no earnings within 21d: 2
-- event_risk_score <= 1: 2
-- TV rating not Sell: 2
+- universe: 2971
+- trend = Bullish: 1444
+- price > SMA200: 1060
+- price > EMA50: 1049
+- ADX14 > 25: 525
+- RSI14 in 40-80: 490
+- RS > 0 vs NIFTY and sector: 209
+- delivery% >= 40: 122
+- relative_volume >= 1: 45
+- no earnings within 21d: 32
+- event_risk_score <= 1: 31
+- TV rating not Sell: 31
 
-## Survivors (top 2 of 2)
+## Survivors (top 31 of 31)
 
-- **BFINVEST** [rejected] score 85.5 — T1 needs more than 22 trading days (~1 month)
-- **MWL** [rejected] score 62.4 — score below Watch band
+- **MEDICO** [idea] score 85.2 — selected as idea
+- **GATECHDVR** [idea] score 84.0 — selected as idea
+- **BFINVEST** [rejected] score 82.7 — T1 needs more than 22 trading days (~1 month)
+- **DYNPRO** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
+- **NILKAMAL** [watchlist] score 79.2 — score in Watch band (70–80)
+- **BAJFINANCE** [watchlist] score 76.8 — score in Watch band (70–80)
+- **SCPL** [watchlist] score 74.7 — score in Watch band (70–80)
+- **WELCORP** [watchlist] score 74.7 — score in Watch band (70–80)
+- **SUNPHARMA** [rejected] score 74.5 — T1 needs more than 22 trading days (~1 month)
+- **STEELCAS** [watchlist] score 74.1 — score in Watch band (70–80)
+- **LALPATHLAB** [watchlist] score 71.3 — score in Watch band (70–80)
+- **BAJAJFINSV** [watchlist] score 71.0 — score in Watch band (70–80)
+- **MEDANTA** [watchlist] score 70.5 — score in Watch band (70–80)
+- **DOLPHIN** [rejected] score 70.3 — T1 needs more than 22 trading days (~1 month)
+- **TORNTPHARM** [rejected] score 67.2 — T1 needs more than 22 trading days (~1 month)
+- **MUTHOOTCAP** [rejected] score 65.7 — T1 needs more than 22 trading days (~1 month)
+- **KECL** [rejected] score 62.5 — score below Watch band
+- **ARMANFIN** [rejected] score 61.6 — score below Watch band
+- **MMP** [rejected] score 61.5 — score below Watch band
+- **PFOCUS** [rejected] score 60.7 — T1 needs more than 22 trading days (~1 month)
+- **ARIS** [rejected] score 60.4 — T1 needs more than 22 trading days (~1 month)
+- **SAMBHV** [rejected] score 57.6 — score below Watch band
+- **NDGL** [rejected] score 56.4 — score below Watch band
+- **JLHL** [rejected] score 56.1 — score below Watch band
+- **SHOPERSTOP** [rejected] score 55.4 — T1 needs more than 22 trading days (~1 month)
+- **CINELINE** [rejected] score 53.6 — score below Watch band
+- **AARTIDRUGS** [rejected] score 53.2 — T1 needs more than 22 trading days (~1 month)
+- **IVC** [rejected] score 52.6 — T1 needs more than 22 trading days (~1 month)
+- **CTE** [rejected] score 50.8 — T1 needs more than 22 trading days (~1 month)
+- **MUTHOOTMF** [rejected] score 48.9 — score below Watch band
+- **RKFORGE** [rejected] score 44.1 — score below Watch band
 
 ## Ideas
 
-### MWL — Watch (score 14.0)
-- MWL | risk_sector: Non-Energy Minerals
-- entry 38.61 | stop 36.36 | t1 40.54 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
+### MEDICO — Buy (score 85.2)
+- Medico Remedies Ltd. | risk_sector: Health Technology
+- entry 49.66 | stop 45.69 | t1 57.61 | t2 61.58 | t3 65.55 | R:R 2.0
+- qty 201 | deployed 9982.0 (9.98%) | risk ₹798.0
 
-### BFINVEST — Watch (score 14.0)
-- BFINVEST | risk_sector: Finance
-- entry 478.95 | stop 450.93 | t1 502.9 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### ADOR — Watch (score 13.0)
-- ADOR | risk_sector: Producer Manufacturing
-- entry 1480.8 | stop 1378.99 | t1 1554.84 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### INDNIPPON — Watch (score 13.0)
-- INDNIPPON | risk_sector: Producer Manufacturing
-- entry 1204.4 | stop 1129.49 | t1 1264.62 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### ACE — Watch (score 13.0)
-- ACE | risk_sector: Producer Manufacturing
-- entry 1086.9 | stop 1031.37 | t1 1141.25 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
+### GATECHDVR — Buy (score 84.0)
+- GACM Technologies Limited | risk_sector: NBFC & Capital Markets
+- entry 0.53 | stop 0.49 | t1 0.67 | t2 0.71 | t3 0.74 | R:R 3.82
+- qty 18867 | deployed 10000.0 (10.0%) | risk ₹755.0
 
 ## Open ledger
 
-- **SREEL** status=open entry=227.97 last=217.32 mfe=2.6 mae=-7.07 opened=2026-07-26
-- **CREDITACC** status=open entry=1597.3 last=1571.4 mfe=2.3 mae=-2.95 opened=2026-07-27
-- **UJJIVANSFB** status=open entry=71.57 last=72.67 mfe=2.4 mae=-3.73 opened=2026-07-27
-- **IIFL** status=open entry=582.35 last=611.1 mfe=6.98 mae=-1.61 opened=2026-07-28
-- **INDNIPPON** status=open entry=1163.1 last=1204.4 mfe=3.98 mae=-3.23 opened=2026-07-28
-- **LODHA** status=open entry=1287.15 last=1244.0 mfe=3.24 mae=-3.8 opened=2026-07-30
-- **GATECHDVR** status=open entry=0.53 last=0.55 mfe=11.32 mae=0.0 opened=2026-08-01
+- **SREEL** status=open entry=227.97 last=216.45 mfe=2.6 mae=-7.07 opened=2026-07-26
+- **CREDITACC** status=open entry=1597.3 last=1558.2 mfe=2.3 mae=-3.45 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=71.14 mfe=2.4 mae=-3.73 opened=2026-07-27
+- **IIFL** status=open entry=582.35 last=617.85 mfe=6.98 mae=-1.61 opened=2026-07-28
+- **INDNIPPON** status=open entry=1163.1 last=1173.2 mfe=4.43 mae=-3.23 opened=2026-07-28
+- **LODHA** status=open entry=1287.15 last=1239.8 mfe=3.24 mae=-4.72 opened=2026-07-30
+- **GATECHDVR** status=open entry=0.53 last=0.53 mfe=11.32 mae=0.0 opened=2026-08-01
+- **MEDICO** status=open entry=49.66 last=49.66 mfe=0.0 mae=0.0 opened=2026-08-03
 
 ## Swing candidates (top)
 
-- MWL: score=14 rs_nifty=0.46 deliv=51.03
-- BFINVEST: score=14 rs_nifty=5.26 deliv=50.67
-- ADOR: score=13 rs_nifty=11.87 deliv=45.62
-- INDNIPPON: score=13 rs_nifty=19.39 deliv=43.28
-- ACE: score=13 rs_nifty=5.39 deliv=54.78
-- NOVARTIND: score=13 rs_nifty=8.09 deliv=58.56
-- GABRIEL: score=13 rs_nifty=18.67 deliv=40.59
-- IVC: score=13 rs_nifty=2.88 deliv=81.22
-- RAJRATAN: score=13 rs_nifty=9.33 deliv=50.51
-- E2E: score=13 rs_nifty=38.71 deliv=97.87
-- SPECIALITY: score=13 rs_nifty=1.67 deliv=66.31
-- NIBL: score=13 rs_nifty=10.52 deliv=63.72
-- CREDITACC: score=13 rs_nifty=0.88 deliv=50.91
-- JAYAGROGN: score=13 rs_nifty=10.78 deliv=84.56
-- PYRAMID: score=13 rs_nifty=6.36 deliv=51.92
+- PFOCUS: score=14 rs_nifty=22.51 deliv=45.71
+- JLHL: score=14 rs_nifty=10.64 deliv=53.18
+- BFINVEST: score=14 rs_nifty=5.26 deliv=41.49
+- MMP: score=14 rs_nifty=2.99 deliv=56.24
+- WELCORP: score=14 rs_nifty=12.37 deliv=56.46
+- NILKAMAL: score=14 rs_nifty=28.63 deliv=56.27
+- TASTYBITE: score=14 rs_nifty=4.27 deliv=41.55
+- KECL: score=14 rs_nifty=7.28 deliv=53.46
+- SUNPHARMA: score=14 rs_nifty=2.37 deliv=66.2
+- TORNTPHARM: score=14 rs_nifty=5.84 deliv=59.5
+- STEELCAS: score=14 rs_nifty=4.98 deliv=48.5
+- IVC: score=14 rs_nifty=1.74 deliv=94.8
+- SAMBHV: score=14 rs_nifty=0.9 deliv=52.67
+- RAMRAT: score=13 rs_nifty=2.64 deliv=49.98
+- ALIVUS: score=13 rs_nifty=2.17 deliv=53.82
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.96% (bear)
-- Hang Seng: +0.06% (neutral)
+- Nikkei: -0.94% (bear)
+- Hang Seng: +0.48% (bull)
 - Shanghai: -0.59% (bear)
-- Kospi: -4.37% (bear)
-- Taiwan: +0.90% (bull)
-- ASX 200: -0.09% (neutral)
+- Kospi: -5.12% (bear)
+- Taiwan: +0.62% (bull)
+- ASX 200: +0.47% (bull)
 
 ### Europe
-- FTSE 100: -0.27% (bear)
-- DAX: +0.07% (neutral)
-- Euro Stoxx 50: +0.21% (bull)
+- FTSE 100: +0.00% (neutral)
+- DAX: +1.32% (bull)
+- Euro Stoxx 50: +0.83% (bull)
 
 ### US
 - S&P 500: +0.70% (bull)
 - Nasdaq: +1.00% (bull)
 - Dow: +0.53% (bull)
-- US VIX: -6.44% (bull)
+- US VIX: +0.56% (bear)
 
 ### Macro
-- USDINR: -0.54% (bull)
-- Crude WTI: -5.78% (bear)
-- Brent: +1.22% (bull)
-- DXY: -0.07% (neutral)
-- US 10Y: +1.76% (bear)
+- USDINR: -0.31% (neutral)
+- Crude WTI: -6.58% (bear)
+- Brent: -7.81% (bear)
+- DXY: -0.04% (neutral)
+- US 10Y: -1.56% (bull)
 - India ETF: +0.20% (bull)
 - EM ETF: +0.79% (bull)
 
@@ -123,52 +138,40 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The Indian market is in a bullish regime with a low overall risk. The Nifty trend is also bullish, with a 0.72% increase. However, the Asia cue is bearish and the Europe cue is mixed. The India VIX is at a low level of 11.72.
+The Indian market is in a bullish regime with a low overall risk. Nifty trend is bullish with a 1.6% change, and India VIX is at a low level of 11.93. However, the Asia cue is bearish, which may impact the market. The current regime and trend suggest a positive outlook, but it's essential to consider the bearish Asia cue and low score coverage.
 
-- **MWL** [consider_entry/medium] entry=38.61 stop=36.36 t1=40.54 hold=Noned — Parkhu score of 14.0 and watch band
-- **BFINVEST** [consider_entry/medium] entry=478.95 stop=450.93 t1=502.9 hold=Noned — Parkhu score of 14.0 and watch band
-- **INDNIPPON** [manage_open/high] entry=1204.4 stop=1129.49 t1=1264.62 hold=Noned — Already in open book with a positive mfe_pct
+- **MEDICO** [consider_entry/high] entry=49.66 stop=45.69 t1=57.61 hold=10d — High Parkhu score and bullish trend
+- **GATECHDVR** [consider_entry/high] entry=0.53 stop=0.49 t1=0.67 hold=15d — High Parkhu score and bullish trend
+- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position showing profit, consider adjusting stop loss
 
 ### AI stock reviews
 
-- **MWL** [medium] The MWL setup fits a ≤1-month swing due to the current bullish market regime and low overall risk. With a Parkhu score of 14.0, MWL has shown promising signs. The Non-Energy Minerals sector's performance can impact the stock's movement. Given the India VIX of 11.72, volatility is relatively low, which could favor a swing trade.
-  - catalysts: Bullish market regime, Low overall risk, Sector performance
-  - risks: Sector downturn, Market regime change, Volatility increase
-  - watch: Triggers for this trade include a strong breakout above the current level, while invalidation cues would be a breach of the stop level, indicating a shift in market sentiment.
-- **BFINVEST** [medium] BFINVEST fits a ≤1-month swing due to its current market regime being bullish and an overall low risk environment. The India VIX at 11.72 also supports a swing trade. With a Parkhu score of 14.0, BFINVEST is in the watch band, indicating potential for a short-term move.
-  - catalysts: Bullish market regime, Low overall risk, Low India VIX
-  - risks: Finance sector volatility, Market regime change
-  - watch: Triggers for this setup include a strong move above the current price, while invalidation cues would be a break below the stop level of 450.93.
-- **ADOR** [high] The ADOR setup fits a ≤1-month swing due to the current bullish market regime and low overall risk. With a Parkhu score of 13.0, the stock has shown potential for a short-term move. The India VIX at 11.72 also suggests a favorable environment for a swing trade. The stock's current price near the entry level presents an opportunity for a quick profit.
-  - catalysts: Bullish market regime, Low India VIX, Favorable risk sector
-  - risks: Market regime change, Sector rotation, Stop loss trigger
-  - watch: Traders should watch for a strong move above the current price to confirm the thesis, while a break below the stop level would invalidate the setup.
-- **INDNIPPON** [medium] The bullish market regime and low overall risk environment make it an ideal time for a swing trade in INDNIPPON. With a Parkhu score of 13.0, the stock has shown promising signs. The current price at 1204.4, near the entry level, presents an opportunity for a short-term gain. This setup fits a ≤1-month swing due to the favorable market conditions and the stock's potential for a quick upside.
-  - catalysts: Bullish market regime, Low India VIX, Favorable sector trends
-  - risks: Sector-specific downturn, Overall market reversal, Company-specific negative news
-  - watch: A break above the current level with increasing volume will be a trigger to enter the trade, while a drop below the stop level will serve as an invalidation cue.
-- **ACE** [high] The ACE setup fits a ≤1-month swing due to the current bullish market regime and low overall risk. With an India VIX of 11.72, volatility is relatively low, which could lead to a stable uptrend. The company's Parkhu score of 13.0 also indicates a favorable technical setup.
-  - catalysts: Bullish market regime, Low volatility
-  - risks: Sector-specific downturn, Global market volatility
-  - watch: A break above the current level could trigger a swing towards the target, while a drop below the stop level would invalidate this setup.
+- **MEDICO** [high] The MEDICO setup fits a ≤1-month swing due to its strong bullish trend, with an ADX of 39.30 and RSI of 79.37, indicating a potential for continuation. The stock has outperformed Nifty and its sector in the last month, with returns of 22.89% and 19.33%, respectively. The risk-reward ratio for the first target is 2.0, making it an attractive trade. The overall market regime is bullish, with low overall risk, further supporting the setup.
+  - catalysts: Bullish trend, Outperformance vs Nifty and sector, Low India VIX
+  - risks: High RSI, Potential trend reversal, Sector-specific risks
+  - watch: Triggers for the trade include a breakout above the current price, while invalidation cues include a drop below the stop level of 45.69. The trade should be monitored closely for any signs of trend reversal.
+- **GATECHDVR** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an RSI of 72.9 and a high delivery percentage of 83.2%, indicating a potential for short-term upside. The recent 1-month return of 12.77% and strong performance against the Nifty and sector also support this thesis. The stock is also trading at a distance of 20.9% from its 52-week high, providing a potential upside target.
+  - catalysts: Strong trend, High delivery, Outperformance vs Nifty and sector
+  - risks: Market regime change, Sector-specific risks, Overbought RSI
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 0.49. The stock's price action and ability to hold above the entry level will be crucial to watch.
 
 ### Claude feed
 
-Bullish regime, selective aggressive stance. Top ideas: MWL, BFINVEST. Caveats: provisional scores, no promoter pledge data, and no trade outcome history.
+Regime: Bullish, Stance: Selective Aggressive, Top Ideas: MEDICO, GATECHDVR, Caveats: Asia cue bearishness, low score coverage, and provisional scores due to missing data
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Acquisition (PARKHOSPS) — Park Medi World Limited has informed the Exchange about Acquisition, which could lead to significant changes in the company's operations and potentially impact the healthcare sector.
-2. **[high]** Outcome of Board Meeting (PARKHOSPS) — Park Medi World Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026, which may have a significant impact on the company's stock price and the overall healthcare sector.
-3. **[medium]** Press Release (Revised) (VISHNU) — Vishnu Chemicals Limited has informed the Exchange regarding a revised press release dated August 02, 2026, titled "Revised Q1FY27 Earnings Release", which may impact the company's stock price and the chemicals sector.
-4. **[medium]** Analysts/Institutional Investor Meet/Con. Call Updates (EPACKPEB) — Intimation under Regulation 30 of the SEBI Listing Regulations, 2015 (Investor Presentation), which may provide insights into the company's future plans and impact the packaging sector.
-5. **[medium]** General Updates (JUBLPHARMA) — Jubilant Pharmova Limited has informed the Exchange about General Updates - Newspaper advertisements titled 'Notice of 48th Annual General Meeting, E-voting, Record Date and Final Dividend Information', which may impact the company's stock price and the pharmaceutical sector.
-6. **[low]** Monthly Business Updates (ADANIPORTS) — Adani Ports and Special Economic Zone Limited has informed the Exchange regarding Monthly Business Updates for the month of July 2026, which may provide insights into the company's operations but is unlikely to have a significant impact on the stock price.
-7. **[low]** Monthly Business Updates (TVSMOTOR) — TVS Motor Company Limited has informed the Exchange regarding Monthly Business Updates for the month of July 2026, which may provide insights into the company's operations but is unlikely to have a significant impact on the stock price.
-8. **[low]** Press Release (BAJAJ-AUTO) — Bajaj Auto Limited has informed the Exchange regarding a press release dated August 03, 2026, titled "Sales for the month of July 2026", which may provide insights into the company's operations but is unlikely to have a significant impact on the stock price.
-9. **[low]** Monthly Business Updates (ASHOKLEY) — Ashok Leyland Limited has informed the Exchange regarding Monthly Business Updates for the month of July 2026, which may provide insights into the company's operations but is unlikely to have a significant impact on the stock price.
-10. **[low]** Investor Presentation (SARDAEN) — Sarda Energy & Minerals Limited has informed the Exchange about Investor Presentation, which may provide insights into the company's operations but is unlikely to have a significant impact on the stock price.
+1. **[high]** Borosil Scientific Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (BOROSCI) — The company's financial results can significantly impact the stock price and investor sentiment.
+2. **[high]** Sanathan Textiles Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (SANATHAN) — The company's financial results can significantly impact the stock price and investor sentiment.
+3. **[high]** Thomas Cook  (India)  Limited has informed the Exchange about updated Financial Results (THOMASCOOK) — The company's financial results can significantly impact the stock price and investor sentiment.
+4. **[medium]** Borosil Scientific Limited has informed the Exchange regarding Outcome of Board Meeting held on August 03, 2026. (BOROSCI) — The outcome of the board meeting can provide insights into the company's future plans and strategies.
+5. **[medium]** Sanathan Textiles Limited has informed the Exchange regarding re-appointment of  M/s Walker Chandiok & Co., LLP as the Statutory Auditor of the Company for a second consecutive term of 5 years  and  re-appointment of M/s (SANATHAN) — The re-appointment of the auditor can impact the company's governance and financial reporting.
+6. **[low]** Torrent Power Limited has informed the Exchange regarding Proceedings of Annual General Meeting held on August 03, 2026 (TORNTPOWER) — The proceedings of the AGM can provide insights into the company's future plans and strategies.
+7. **[low]** Artemis Medicare Services Limited has informed the Exchange regarding a press release dated August 03, 2026, titled "Artemis  Consolidated Revenue from Operations up 12.7% in Q1 FY27 (YoY); EBITDA up 27.9%;  Profit up 48 (ARTEMISMED) — The company's financial performance can impact the stock price and investor sentiment.
+8. **[low]** Sandhar Technologies Limited has informed the Exchange regarding Proceedings of Postal Ballot. Further, the company has submitted the Exchange a copy of Srutinizers report along with voting results. (SANDHAR) — The proceedings of the postal ballot can provide insights into the company's governance and decision-making process.
+9. **[low]** Flair Writing Industries Limited has informed the Exchange regarding Book Closure from Thursday, August 20, 2026 to Thursday, August 27, 2026 (both days inclusive) for the purpose of conducting the 10th Annual General Me (FLAIR) — The book closure can impact the trading of the company's shares.
+10. **[low]** Agi Infra Limited has informed the Exchange about Credit Rating (AGIIL) — The credit rating can impact the company's cost of borrowing and financial health.
 
 ## Deep-dive URLs (after push)
 
