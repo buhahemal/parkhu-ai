@@ -25,24 +25,24 @@
     "best_sector_perf_1m": 2.36,
     "worst_sector": "Communications",
     "worst_sector_perf_1m": -5.07,
-    "fii_net": 277.48,
-    "dii_net": 2260.37,
-    "crude": 79.1,
-    "crude_pct_change": -6.58,
-    "usdinr": 95.39,
-    "usdinr_pct_change": -0.31,
-    "us_sp500_pct": 0.7,
-    "us_dow_pct": 0.53,
-    "us_vix": 16.08,
-    "us_vix_pct": 0.56,
-    "dxy": 99.76,
-    "dxy_pct": -0.04,
-    "us_10y": 4.67,
-    "asia_cue": "Bearish",
+    "fii_net": 922.26,
+    "dii_net": 1571.18,
+    "crude": 79.8,
+    "crude_pct_change": -5.75,
+    "usdinr": 95.33,
+    "usdinr_pct_change": -0.37,
+    "us_sp500_pct": 1.19,
+    "us_dow_pct": 1.03,
+    "us_vix": 15.6,
+    "us_vix_pct": -2.44,
+    "dxy": 99.96,
+    "dxy_pct": 0.16,
+    "us_10y": 4.68,
+    "asia_cue": "Bullish",
     "europe_cue": "Bullish",
-    "global_risk": "Neutral",
+    "global_risk": "Risk-On",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-03T18:06:58.321233+05:30"
+    "generated_at_ist": "2026-08-03T21:06:45.654323+05:30"
   },
   "funnel": [
     {
@@ -1841,6 +1841,26 @@
         "score_now": null
       },
       {
+        "symbol": "MEDICO",
+        "date_opened": "2026-08-03",
+        "status": "open",
+        "entry": 49.66,
+        "stop": 45.69,
+        "t1": 57.61,
+        "price": 49.66,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 10,
+        "mfe_pct": 3.69,
+        "mae_pct": -5.36,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~10d left to the T1 horizon",
+        "score_at_open": 85.2,
+        "score_now": null
+      },
+      {
         "symbol": "SREEL",
         "date_opened": "2026-07-26",
         "status": "open",
@@ -1897,10 +1917,9 @@
     }
   },
   "ledger": {
-    "opened": [
-      "MEDICO"
-    ],
+    "opened": [],
     "reconfirmed": [
+      "MEDICO",
       "GATECHDVR"
     ]
   },

@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-03
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-03T18:07:23.061862+05:30
+- **generated_at_ist:** 2026-08-03T21:07:08.590083+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bullish**
 - nifty: Bullish (1.6%)
 - india_vix: 11.93 (Low)
-- fii_net: 277.48 | dii_net: 2260.37
-- overall_risk: Low | global_risk: Neutral
+- fii_net: 922.26 | dii_net: 1571.18
+- overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
@@ -82,55 +82,55 @@
 - **INDNIPPON** status=open entry=1163.1 last=1173.2 mfe=4.43 mae=-3.23 opened=2026-07-28
 - **LODHA** status=open entry=1287.15 last=1239.8 mfe=3.24 mae=-4.72 opened=2026-07-30
 - **GATECHDVR** status=open entry=0.53 last=0.53 mfe=11.32 mae=0.0 opened=2026-08-01
-- **MEDICO** status=open entry=49.66 last=49.66 mfe=0.0 mae=0.0 opened=2026-08-03
+- **MEDICO** status=open entry=49.66 last=49.66 mfe=3.69 mae=-5.36 opened=2026-08-03
 
 ## Swing candidates (top)
 
-- PFOCUS: score=14 rs_nifty=22.51 deliv=45.71
-- JLHL: score=14 rs_nifty=10.64 deliv=53.18
-- BFINVEST: score=14 rs_nifty=5.26 deliv=41.49
-- MMP: score=14 rs_nifty=2.99 deliv=56.24
-- WELCORP: score=14 rs_nifty=12.37 deliv=56.46
-- NILKAMAL: score=14 rs_nifty=28.63 deliv=56.27
-- TASTYBITE: score=14 rs_nifty=4.27 deliv=41.55
-- KECL: score=14 rs_nifty=7.28 deliv=53.46
 - SUNPHARMA: score=14 rs_nifty=2.37 deliv=66.2
-- TORNTPHARM: score=14 rs_nifty=5.84 deliv=59.5
-- STEELCAS: score=14 rs_nifty=4.98 deliv=48.5
+- NILKAMAL: score=14 rs_nifty=28.63 deliv=56.27
 - IVC: score=14 rs_nifty=1.74 deliv=94.8
+- TORNTPHARM: score=14 rs_nifty=5.84 deliv=59.5
+- BFINVEST: score=14 rs_nifty=5.26 deliv=41.49
+- STEELCAS: score=14 rs_nifty=4.98 deliv=48.5
+- MMP: score=14 rs_nifty=2.99 deliv=56.24
+- KECL: score=14 rs_nifty=7.28 deliv=53.46
+- JLHL: score=14 rs_nifty=10.64 deliv=53.18
 - SAMBHV: score=14 rs_nifty=0.9 deliv=52.67
-- RAMRAT: score=13 rs_nifty=2.64 deliv=49.98
-- ALIVUS: score=13 rs_nifty=2.17 deliv=53.82
+- PFOCUS: score=14 rs_nifty=22.51 deliv=45.71
+- TASTYBITE: score=14 rs_nifty=4.27 deliv=41.55
+- WELCORP: score=14 rs_nifty=12.37 deliv=56.46
+- RAJRATAN: score=13 rs_nifty=10.29 deliv=52.54
+- THYROCARE: score=13 rs_nifty=4.27 deliv=55.73
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.94% (bear)
+- Nikkei: +4.03% (bull)
 - Hang Seng: +0.48% (bull)
 - Shanghai: -0.59% (bear)
-- Kospi: -5.12% (bear)
+- Kospi: +17.91% (bull)
 - Taiwan: +0.62% (bull)
-- ASX 200: +0.47% (bull)
+- ASX 200: +0.10% (neutral)
 
 ### Europe
-- FTSE 100: +0.00% (neutral)
-- DAX: +1.32% (bull)
-- Euro Stoxx 50: +0.83% (bull)
+- FTSE 100: -0.23% (bear)
+- DAX: +1.64% (bull)
+- Euro Stoxx 50: +1.19% (bull)
 
 ### US
-- S&P 500: +0.70% (bull)
-- Nasdaq: +1.00% (bull)
-- Dow: +0.53% (bull)
-- US VIX: +0.56% (bear)
+- S&P 500: +1.19% (bull)
+- Nasdaq: +1.85% (bull)
+- Dow: +1.03% (bull)
+- US VIX: -2.44% (bull)
 
 ### Macro
-- USDINR: -0.31% (neutral)
-- Crude WTI: -6.58% (bear)
-- Brent: -7.81% (bear)
-- DXY: -0.04% (neutral)
-- US 10Y: -1.56% (bull)
-- India ETF: +0.20% (bull)
-- EM ETF: +0.79% (bull)
+- USDINR: -0.37% (bull)
+- Crude WTI: -5.75% (bear)
+- Brent: -6.67% (bear)
+- DXY: +0.16% (neutral)
+- US 10Y: -1.29% (bull)
+- India ETF: +0.63% (bull)
+- EM ETF: -0.25% (bear)
 
 
 ## Groq desk note
@@ -138,40 +138,34 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The Indian market is in a bullish regime with a low overall risk. Nifty trend is bullish with a 1.6% change, and India VIX is at a low level of 11.93. However, the Asia cue is bearish, which may impact the market. The current regime and trend suggest a positive outlook, but it's essential to consider the bearish Asia cue and low score coverage.
+The market is in a bullish regime with a low India VIX, indicating a favorable environment for stocks. The Nifty trend is also bullish, with a 1.6% increase. FII and DII net inflows are positive, supporting the overall bullish stance.
 
-- **MEDICO** [consider_entry/high] entry=49.66 stop=45.69 t1=57.61 hold=10d — High Parkhu score and bullish trend
-- **GATECHDVR** [consider_entry/high] entry=0.53 stop=0.49 t1=0.67 hold=15d — High Parkhu score and bullish trend
-- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position showing profit, consider adjusting stop loss
+- **MEDICO** [consider_entry/high] entry=49.66 stop=45.69 t1=57.61 hold=10d — High Parkhu score and favorable risk sector
+- **GATECHDVR** [consider_entry/high] entry=0.53 stop=0.49 t1=0.67 hold=15d — High Parkhu score and favorable risk sector
+- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Position is in profit, consider adjusting stop loss
 
 ### AI stock reviews
 
-- **MEDICO** [high] The MEDICO setup fits a ≤1-month swing due to its strong bullish trend, with an ADX of 39.30 and RSI of 79.37, indicating a potential for continuation. The stock has outperformed Nifty and its sector in the last month, with returns of 22.89% and 19.33%, respectively. The risk-reward ratio for the first target is 2.0, making it an attractive trade. The overall market regime is bullish, with low overall risk, further supporting the setup.
-  - catalysts: Bullish trend, Outperformance vs Nifty and sector, Low India VIX
-  - risks: High RSI, Potential trend reversal, Sector-specific risks
-  - watch: Triggers for the trade include a breakout above the current price, while invalidation cues include a drop below the stop level of 45.69. The trade should be monitored closely for any signs of trend reversal.
-- **GATECHDVR** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an RSI of 72.9 and a high delivery percentage of 83.2%, indicating a potential for short-term upside. The recent 1-month return of 12.77% and strong performance against the Nifty and sector also support this thesis. The stock is also trading at a distance of 20.9% from its 52-week high, providing a potential upside target.
-  - catalysts: Strong trend, High delivery, Outperformance vs Nifty and sector
-  - risks: Market regime change, Sector-specific risks, Overbought RSI
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 0.49. The stock's price action and ability to hold above the entry level will be crucial to watch.
+- **MEDICO** [high] The setup for MEDICO fits a ≤1-month swing due to its strong bullish trend, high RSI, and significant outperformance against Nifty and its sector over the past month. The stock's delivery percentage and return over the past month also indicate strong investor interest. With a low overall risk regime and a bullish market regime, the conditions are favorable for a short-term swing. The distance from the 52-week high also provides room for potential upside.
+  - catalysts: Bullish trend, High RSI, Outperformance
+  - risks: Sector volatility, Market reversal, Overbought conditions
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level or a significant increase in India VIX, indicating rising market volatility. The RSI and delivery percentage will also be closely monitored for signs of weakening momentum.
+- **GATECHDVR** [high] GACM Technologies Limited (GATECHDVR) fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and recent outperformance against the Nifty and its sector. The stock's RSI and ADX indicators suggest a strong upward momentum. With a low overall risk regime and a bullish market regime, this setup has a favorable environment for a short-term swing.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
+  - risks: Market regime change, Sector-specific risks, NBFC & Capital Markets volatility
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level or a significant change in the market regime. The stock's price action and technical indicators should be closely monitored.
 
 ### Claude feed
 
-Regime: Bullish, Stance: Selective Aggressive, Top Ideas: MEDICO, GATECHDVR, Caveats: Asia cue bearishness, low score coverage, and provisional scores due to missing data
+Bullish regime, selective aggressive stance. Top ideas: MEDICO, GATECHDVR. Caveats: provisional scores, missing promoter pledge and ownership data.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Borosil Scientific Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (BOROSCI) — The company's financial results can significantly impact the stock price and investor sentiment.
-2. **[high]** Sanathan Textiles Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (SANATHAN) — The company's financial results can significantly impact the stock price and investor sentiment.
-3. **[high]** Thomas Cook  (India)  Limited has informed the Exchange about updated Financial Results (THOMASCOOK) — The company's financial results can significantly impact the stock price and investor sentiment.
-4. **[medium]** Borosil Scientific Limited has informed the Exchange regarding Outcome of Board Meeting held on August 03, 2026. (BOROSCI) — The outcome of the board meeting can provide insights into the company's future plans and strategies.
-5. **[medium]** Sanathan Textiles Limited has informed the Exchange regarding re-appointment of  M/s Walker Chandiok & Co., LLP as the Statutory Auditor of the Company for a second consecutive term of 5 years  and  re-appointment of M/s (SANATHAN) — The re-appointment of the auditor can impact the company's governance and financial reporting.
-6. **[low]** Torrent Power Limited has informed the Exchange regarding Proceedings of Annual General Meeting held on August 03, 2026 (TORNTPOWER) — The proceedings of the AGM can provide insights into the company's future plans and strategies.
-7. **[low]** Artemis Medicare Services Limited has informed the Exchange regarding a press release dated August 03, 2026, titled "Artemis  Consolidated Revenue from Operations up 12.7% in Q1 FY27 (YoY); EBITDA up 27.9%;  Profit up 48 (ARTEMISMED) — The company's financial performance can impact the stock price and investor sentiment.
-8. **[low]** Sandhar Technologies Limited has informed the Exchange regarding Proceedings of Postal Ballot. Further, the company has submitted the Exchange a copy of Srutinizers report along with voting results. (SANDHAR) — The proceedings of the postal ballot can provide insights into the company's governance and decision-making process.
-9. **[low]** Flair Writing Industries Limited has informed the Exchange regarding Book Closure from Thursday, August 20, 2026 to Thursday, August 27, 2026 (both days inclusive) for the purpose of conducting the 10th Annual General Me (FLAIR) — The book closure can impact the trading of the company's shares.
-10. **[low]** Agi Infra Limited has informed the Exchange about Credit Rating (AGIIL) — The credit rating can impact the company's cost of borrowing and financial health.
+1. **[high]** Star Health and Allied Insurance Company Limited Updates (STARHEALTH) — Disclosure under Regulation 31A(8)(C) of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015
+2. **[high]** Signpost India Limited Outcome of Board Meeting (SIGNPOST) — Submission of financial results for the period ended Jun 30, 2026
+3. **[high]** Indus Towers Limited Analysts/Institutional Investor Meet/Con. Call Updates (INDUSTOWER) — Transcripts of the Earnings Call on the Company's performance for the first quarter (Q1) ended June 30, 2026
+4. **[medium]** Creative Eye Limited Outcome of Board Meeting (CREATIVEYE) — Outcome of Board Meeting held on August 03, 2026
 
 ## Deep-dive URLs (after push)
 
