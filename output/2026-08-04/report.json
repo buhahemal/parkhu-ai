@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-04",
-  "generated_at_ist": "2026-08-04T18:07:00.736371+05:30",
-  "duration_seconds": 305.4,
+  "generated_at_ist": "2026-08-04T20:38:26.929500+05:30",
+  "duration_seconds": 341.4,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 2972,
-      "seconds": 2.9
+      "seconds": 2.4
     },
     {
       "agent": "ohlc_history",
@@ -29,7 +29,7 @@
       "cold": 252,
       "new_symbols": 5,
       "retries": 2,
-      "seconds": 230.7
+      "seconds": 270.7
     },
     {
       "agent": "earnings",
@@ -48,19 +48,19 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.0
+      "seconds": 1.1
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 9,
-      "seconds": 3.8
+      "seconds": 4.1
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.7
+      "seconds": 3.4
     },
     {
       "agent": "derivatives",
@@ -79,19 +79,19 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2070,
-      "seconds": 4.3
+      "seconds": 5.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.3
+      "seconds": 3.0
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.5
+      "seconds": 3.7
     },
     {
       "agent": "macro",
@@ -103,19 +103,19 @@
       "agent": "relative_strength",
       "status": "ok",
       "rows": 2972,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 2972,
-      "seconds": 1.0
+      "seconds": 0.7
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 206,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -142,13 +142,13 @@
       "with_structure": 2692,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.3
+      "seconds": 19.2
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 2972,
-      "seconds": 3.4
+      "seconds": 2.7
     },
     {
       "agent": "swing_brief",
@@ -156,17 +156,12 @@
       "rows": 0,
       "ideas": [],
       "watchlist": 5,
-      "open_positions": 9,
+      "open_positions": 7,
       "needing_action": [
-        "IFBIND",
-        "MEDICO",
-        "SREEL"
+        "IFBIND"
       ],
-      "closed_today": [
-        "SREEL",
-        "MEDICO"
-      ],
-      "seconds": 0.4
+      "closed_today": [],
+      "seconds": 0.3
     }
   ],
   "ok": 20,

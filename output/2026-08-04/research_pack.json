@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-04",
-  "generated_at_ist": "2026-08-04T18:07:00.736371+05:30",
+  "generated_at_ist": "2026-08-04T20:38:26.929500+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -38,24 +38,24 @@
     "best_sector_perf_1m": 2.76,
     "worst_sector": "Communications",
     "worst_sector_perf_1m": -5.07,
-    "fii_net": 922.26,
-    "dii_net": 1571.18,
-    "crude": 78.0,
-    "crude_pct_change": -2.91,
-    "usdinr": 95.38,
-    "usdinr_pct_change": -0.03,
-    "us_sp500_pct": 1.48,
-    "us_dow_pct": 1.32,
-    "us_vix": 15.64,
-    "us_vix_pct": -1.39,
-    "dxy": 99.94,
-    "dxy_pct": -0.02,
-    "us_10y": 4.66,
-    "asia_cue": "Bullish",
+    "fii_net": 2446.47,
+    "dii_net": -936.14,
+    "crude": 76.91,
+    "crude_pct_change": -4.27,
+    "usdinr": 95.37,
+    "usdinr_pct_change": -0.04,
+    "us_sp500_pct": 1.19,
+    "us_dow_pct": 1.49,
+    "us_vix": 15.95,
+    "us_vix_pct": 0.57,
+    "dxy": 99.92,
+    "dxy_pct": -0.04,
+    "us_10y": 4.64,
+    "asia_cue": "Bearish",
     "europe_cue": "Bullish",
     "global_risk": "Risk-On",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-08-04T18:06:36.561506+05:30"
+    "generated_at_ist": "2026-08-04T20:38:04.658169+05:30"
   },
   "world_markets": [
     {
@@ -64,10 +64,10 @@
         {
           "label": "Nikkei",
           "metric": "NIKKEI",
-          "value": 63957.53,
-          "pct_change": 0.32,
-          "tone": "bull",
-          "session_date": "2026-08-04"
+          "value": 63754.9,
+          "pct_change": -0.94,
+          "tone": "bear",
+          "session_date": "2026-08-03"
         },
         {
           "label": "Hang Seng",
@@ -88,10 +88,10 @@
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 6358.95,
-          "pct_change": 1.62,
-          "tone": "bull",
-          "session_date": "2026-08-04"
+          "value": 6257.45,
+          "pct_change": -5.12,
+          "tone": "bear",
+          "session_date": "2026-08-03"
         },
         {
           "label": "Taiwan",
@@ -104,10 +104,10 @@
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 9145.8,
-          "pct_change": 1.4,
+          "value": 9019.3,
+          "pct_change": 0.47,
           "tone": "bull",
-          "session_date": "2026-08-04"
+          "session_date": "2026-08-03"
         }
       ]
     },
@@ -117,24 +117,24 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10898.6,
-          "pct_change": 0.38,
+          "value": 10896.87,
+          "pct_change": 0.36,
           "tone": "bull",
           "session_date": "2026-08-04"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 26219.5,
-          "pct_change": 0.84,
+          "value": 26221.87,
+          "pct_change": 0.85,
           "tone": "bull",
           "session_date": "2026-08-04"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6479.28,
-          "pct_change": 0.82,
+          "value": 6487.19,
+          "pct_change": 0.94,
           "tone": "bull",
           "session_date": "2026-08-04"
         }
@@ -146,33 +146,33 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7600.5,
-          "pct_change": 1.48,
+          "value": 7691.01,
+          "pct_change": 1.19,
           "tone": "bull",
-          "session_date": "2026-08-03"
+          "session_date": "2026-08-04"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 25913.9,
-          "pct_change": 2.13,
+          "value": 26356.65,
+          "pct_change": 1.71,
           "tone": "bull",
-          "session_date": "2026-08-03"
+          "session_date": "2026-08-04"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 53178.41,
-          "pct_change": 1.32,
+          "value": 53970.58,
+          "pct_change": 1.49,
           "tone": "bull",
-          "session_date": "2026-08-03"
+          "session_date": "2026-08-04"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 15.64,
-          "pct_change": -1.39,
-          "tone": "bull",
+          "value": 15.95,
+          "pct_change": 0.57,
+          "tone": "bear",
           "session_date": "2026-08-04"
         }
       ]
@@ -183,58 +183,58 @@
         {
           "label": "USDINR",
           "metric": "USDINR",
-          "value": 95.38,
-          "pct_change": -0.03,
+          "value": 95.37,
+          "pct_change": -0.04,
           "tone": "neutral",
           "session_date": "2026-08-04"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 78.0,
-          "pct_change": -2.91,
+          "value": 76.91,
+          "pct_change": -4.27,
           "tone": "bear",
           "session_date": "2026-08-04"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 81.95,
-          "pct_change": -2.17,
+          "value": 80.61,
+          "pct_change": -3.77,
           "tone": "bear",
           "session_date": "2026-08-04"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 99.94,
-          "pct_change": -0.02,
+          "value": 99.92,
+          "pct_change": -0.04,
           "tone": "neutral",
           "session_date": "2026-08-04"
         },
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 4.66,
-          "pct_change": -0.45,
+          "value": 4.64,
+          "pct_change": -0.96,
           "tone": "bull",
           "session_date": "2026-08-04"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 50.16,
-          "pct_change": 0.72,
+          "value": 50.35,
+          "pct_change": 0.39,
           "tone": "bull",
-          "session_date": "2026-08-03"
+          "session_date": "2026-08-04"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 64.32,
-          "pct_change": 0.36,
+          "value": 65.68,
+          "pct_change": 2.11,
           "tone": "bull",
-          "session_date": "2026-08-03"
+          "session_date": "2026-08-04"
         }
       ]
     }
@@ -848,7 +848,6 @@
         "SHILPAMED",
         "THYROCARE",
         "SCPL",
-        "NILKAMAL",
         "SPECTRUM",
         "WELCORP",
         "VADILALIND",
@@ -856,7 +855,8 @@
         "ARIHANT",
         "SREEL",
         "STEELCAS",
-        "RADICO"
+        "RADICO",
+        "BAJFINANCE"
       ],
       "dropped_symbols": [
         "TANLA",
@@ -901,14 +901,14 @@
         "KRBL",
         "RAJPALAYAM",
         "KRYSTAL",
+        "SPORTKING",
         "UFLEX",
         "FLUOROCHEM",
         "TALBROAUTO",
         "PICCADIL",
         "CRISIL",
         "DIXON",
-        "NAHARINDUS",
-        "DIVGIITTS"
+        "NAHARINDUS"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -976,7 +976,6 @@
         "UYFINCORP",
         "SONATSOFTW",
         "HESTERBIO",
-        "NILKAMAL",
         "SPECTRUM",
         "ANANTRAJ",
         "GATECHDVR",
@@ -1002,6 +1001,7 @@
         "SACHEEROME",
         "PAYTM",
         "GNA",
+        "NILKAMAL",
         "LANDMARK",
         "RHETAN",
         "BIKEWO",
@@ -1273,17 +1273,17 @@
   ],
   "ideas": [
     {
-      "symbol": "NESTLEIND",
-      "company": "NESTLEIND",
+      "symbol": "TASTYBITE",
+      "company": "TASTYBITE",
       "sector": "Consumer Non-Durables",
       "risk_sector": "Consumer Non-Durables",
-      "cmp": 1520.0,
+      "cmp": 9461.0,
       "parkhu_score": 14.0,
       "band": "Watch",
       "levels": {
-        "entry": 1520.0,
-        "stop": 1464.07,
-        "t1": 1596.0,
+        "entry": 9461.0,
+        "stop": 8961.81,
+        "t1": 9934.05,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1292,55 +1292,55 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "RELTD",
-      "company": "RELTD",
-      "sector": "Utilities",
-      "risk_sector": "Utilities",
-      "cmp": 168.56,
-      "parkhu_score": 14.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 168.56,
-        "stop": 157.46,
-        "t1": 176.99,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
-      "symbol": "EUROPRATIK",
-      "company": "EUROPRATIK",
-      "sector": "Producer Manufacturing",
-      "risk_sector": "Producer Manufacturing",
-      "cmp": 317.8,
-      "parkhu_score": 14.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 317.8,
-        "stop": 299.41,
-        "t1": 333.69,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
-      "symbol": "GCSL",
-      "company": "GCSL",
+      "symbol": "OMAXE",
+      "company": "OMAXE",
       "sector": "Finance",
       "risk_sector": "Finance",
-      "cmp": 508.15,
+      "cmp": 87.6,
       "parkhu_score": 14.0,
       "band": "Watch",
       "levels": {
-        "entry": 508.15,
-        "stop": 481.22,
-        "t1": 533.56,
+        "entry": 87.6,
+        "stop": 81.36,
+        "t1": 91.98,
+        "t2": null,
+        "t3": null,
+        "rr_t1": null,
+        "hold_days_t1": null
+      },
+      "source": "swing_candidates.csv"
+    },
+    {
+      "symbol": "IVC",
+      "company": "IVC",
+      "sector": "Finance",
+      "risk_sector": "Finance",
+      "cmp": 8.48,
+      "parkhu_score": 14.0,
+      "band": "Watch",
+      "levels": {
+        "entry": 8.48,
+        "stop": 8.15,
+        "t1": 8.9,
+        "t2": null,
+        "t3": null,
+        "rr_t1": null,
+        "hold_days_t1": null
+      },
+      "source": "swing_candidates.csv"
+    },
+    {
+      "symbol": "MMP",
+      "company": "MMP",
+      "sector": "Non-Energy Minerals",
+      "risk_sector": "Non-Energy Minerals",
+      "cmp": 301.05,
+      "parkhu_score": 14.0,
+      "band": "Watch",
+      "levels": {
+        "entry": 301.05,
+        "stop": 283.51,
+        "t1": 316.1,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -2299,7 +2299,6 @@
           "SHILPAMED",
           "THYROCARE",
           "SCPL",
-          "NILKAMAL",
           "SPECTRUM",
           "WELCORP",
           "VADILALIND",
@@ -2307,7 +2306,8 @@
           "ARIHANT",
           "SREEL",
           "STEELCAS",
-          "RADICO"
+          "RADICO",
+          "BAJFINANCE"
         ],
         "dropped_symbols": [
           "TANLA",
@@ -2352,14 +2352,14 @@
           "KRBL",
           "RAJPALAYAM",
           "KRYSTAL",
+          "SPORTKING",
           "UFLEX",
           "FLUOROCHEM",
           "TALBROAUTO",
           "PICCADIL",
           "CRISIL",
           "DIXON",
-          "NAHARINDUS",
-          "DIVGIITTS"
+          "NAHARINDUS"
         ],
         "survivor_symbols_truncated": true,
         "dropped_symbols_truncated": true
@@ -2430,7 +2430,6 @@
           "UYFINCORP",
           "SONATSOFTW",
           "HESTERBIO",
-          "NILKAMAL",
           "SPECTRUM",
           "ANANTRAJ",
           "GATECHDVR",
@@ -2456,6 +2455,7 @@
           "SACHEEROME",
           "PAYTM",
           "GNA",
+          "NILKAMAL",
           "LANDMARK",
           "RHETAN",
           "BIKEWO",
@@ -2743,7 +2743,7 @@
         "names": 3
       },
       {
-        "sector": "Producer Manufacturing",
+        "sector": "Finance",
         "names": 2
       },
       {
@@ -2759,25 +2759,25 @@
         "names": 1
       },
       {
-        "sector": "Finance",
+        "sector": "Health Technology",
         "names": 1
       },
       {
-        "sector": "Health Technology",
+        "sector": "Non-Energy Minerals",
+        "names": 1
+      },
+      {
+        "sector": "Producer Manufacturing",
         "names": 1
       },
       {
         "sector": "Real Estate",
         "names": 1
-      },
-      {
-        "sector": "Utilities",
-        "names": 1
       }
     ],
     "book": {
       "open": 7,
-      "needs_action": 3,
+      "needs_action": 1,
       "avg_mfe_pct": 4.6,
       "avg_mae_pct": -3.17
     },
@@ -3031,46 +3031,6 @@
         "score_now": null
       },
       {
-        "symbol": "MEDICO",
-        "date_opened": "2026-08-03",
-        "status": "open",
-        "entry": 49.66,
-        "stop": 45.69,
-        "t1": 57.61,
-        "price": 49.06,
-        "pct": -1.21,
-        "r_multiple": -0.15,
-        "days_held": 1,
-        "horizon_t1": 10,
-        "mfe_pct": 3.69,
-        "mae_pct": -9.99,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b945.69 (last \u20b949.06)",
-        "score_at_open": 85.2,
-        "score_now": null
-      },
-      {
-        "symbol": "SREEL",
-        "date_opened": "2026-07-26",
-        "status": "open",
-        "entry": 227.97,
-        "stop": 209.73,
-        "t1": 264.45,
-        "price": 212.61,
-        "pct": -6.74,
-        "r_multiple": -0.84,
-        "days_held": 7,
-        "horizon_t1": 16,
-        "mfe_pct": 2.6,
-        "mae_pct": -8.32,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b9209.73 (last \u20b9212.61)",
-        "score_at_open": 88.1,
-        "score_now": null
-      },
-      {
         "symbol": "CREDITACC",
         "date_opened": "2026-07-27",
         "status": "open",
@@ -3211,46 +3171,6 @@
         "detail": "results inside 21 days \u2014 KB-05 says reduce or stand aside rather than hold through the print",
         "score_at_open": 82.0,
         "score_now": null
-      },
-      {
-        "symbol": "MEDICO",
-        "date_opened": "2026-08-03",
-        "status": "open",
-        "entry": 49.66,
-        "stop": 45.69,
-        "t1": 57.61,
-        "price": 49.06,
-        "pct": -1.21,
-        "r_multiple": -0.15,
-        "days_held": 1,
-        "horizon_t1": 10,
-        "mfe_pct": 3.69,
-        "mae_pct": -9.99,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b945.69 (last \u20b949.06)",
-        "score_at_open": 85.2,
-        "score_now": null
-      },
-      {
-        "symbol": "SREEL",
-        "date_opened": "2026-07-26",
-        "status": "open",
-        "entry": 227.97,
-        "stop": 209.73,
-        "t1": 264.45,
-        "price": 212.61,
-        "pct": -6.74,
-        "r_multiple": -0.84,
-        "days_held": 7,
-        "horizon_t1": 16,
-        "mfe_pct": 2.6,
-        "mae_pct": -8.32,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b9209.73 (last \u20b9212.61)",
-        "score_at_open": 88.1,
-        "score_now": null
       }
     ],
     "closed_today": [
@@ -3329,166 +3249,22 @@
   },
   "swing_candidates_top": [
     {
-      "symbol": "NESTLEIND",
-      "close": 1520.0,
+      "symbol": "TASTYBITE",
+      "close": 9461.0,
       "score": 14,
-      "perf_1m": 4.9723756906,
-      "rs_vs_nifty_1m": 4.21,
-      "rs_vs_sector_1m": 5.23,
-      "deliv_pct": 53.8,
-      "pct_change_oi": 13.61,
-      "upside_to_target_pct": 5.25,
-      "atr": 37.2887556676,
-      "stop_1_5atr": 1464.07,
-      "target_5pct": 1596.0,
+      "perf_1m": 6.6869643663,
+      "rs_vs_nifty_1m": 5.93,
+      "rs_vs_sector_1m": 6.95,
+      "deliv_pct": 53.22,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 26.39,
+      "atr": 332.795755714,
+      "stop_1_5atr": 8961.81,
+      "target_5pct": 9934.05,
       "earnings_within_21d": false,
-      "event_risk_score": 0,
+      "event_risk_score": 2,
       "tech_rating": "Buy",
       "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "RELTD",
-      "close": 168.56,
-      "score": 14,
-      "perf_1m": 1.462709926,
-      "rs_vs_nifty_1m": 0.7,
-      "rs_vs_sector_1m": 5.52,
-      "deliv_pct": 42.35,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 16.55,
-      "atr": 7.3969990011,
-      "stop_1_5atr": 157.46,
-      "target_5pct": 176.99,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Utilities"
-    },
-    {
-      "symbol": "EUROPRATIK",
-      "close": 317.8,
-      "score": 14,
-      "perf_1m": 4.4707429323,
-      "rs_vs_nifty_1m": 3.71,
-      "rs_vs_sector_1m": 5.31,
-      "deliv_pct": 49.26,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 22.72,
-      "atr": 12.2610341176,
-      "stop_1_5atr": 299.41,
-      "target_5pct": 333.69,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "GCSL",
-      "close": 508.15,
-      "score": 14,
-      "perf_1m": 9.7753294448,
-      "rs_vs_nifty_1m": 9.02,
-      "rs_vs_sector_1m": 8.79,
-      "deliv_pct": 42.06,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.01,
-      "atr": 17.9562121005,
-      "stop_1_5atr": 481.22,
-      "target_5pct": 533.56,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "TORNTPHARM",
-      "close": 5030.0,
-      "score": 14,
-      "perf_1m": 7.4786324786,
-      "rs_vs_nifty_1m": 6.72,
-      "rs_vs_sector_1m": 4.65,
-      "deliv_pct": 71.19,
-      "pct_change_oi": -2.34,
-      "upside_to_target_pct": 7.3,
-      "atr": 141.5995607767,
-      "stop_1_5atr": 4817.6,
-      "target_5pct": 5281.5,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
-    },
-    {
-      "symbol": "JLHL",
-      "close": 321.55,
-      "score": 14,
-      "perf_1m": 13.6138788778,
-      "rs_vs_nifty_1m": 12.85,
-      "rs_vs_sector_1m": 10.78,
-      "deliv_pct": 51.03,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 7.5,
-      "atr": 11.5615497572,
-      "stop_1_5atr": 304.21,
-      "target_5pct": 337.63,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Services"
-    },
-    {
-      "symbol": "MMP",
-      "close": 301.05,
-      "score": 14,
-      "perf_1m": 7.3453378499,
-      "rs_vs_nifty_1m": 6.59,
-      "rs_vs_sector_1m": 7.18,
-      "deliv_pct": 64.33,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.29,
-      "atr": 11.6913117716,
-      "stop_1_5atr": 283.51,
-      "target_5pct": 316.1,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Non-Energy Minerals"
-    },
-    {
-      "symbol": "IVC",
-      "close": 8.48,
-      "score": 14,
-      "perf_1m": 4.1769041769,
-      "rs_vs_nifty_1m": 3.42,
-      "rs_vs_sector_1m": 3.19,
-      "deliv_pct": 77.75,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 16.51,
-      "atr": 0.2167820681,
-      "stop_1_5atr": 8.15,
-      "target_5pct": 8.9,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "SPECIALITY",
-      "close": 139.46,
-      "score": 14,
-      "perf_1m": 6.287630516,
-      "rs_vs_nifty_1m": 5.53,
-      "rs_vs_sector_1m": 6.55,
-      "deliv_pct": 51.33,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 10.43,
-      "atr": 6.827504332,
-      "stop_1_5atr": 129.22,
-      "target_5pct": 146.43,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Consumer Services"
     },
     {
       "symbol": "OMAXE",
@@ -3509,6 +3285,78 @@
       "sector": "Finance"
     },
     {
+      "symbol": "IVC",
+      "close": 8.48,
+      "score": 14,
+      "perf_1m": 4.1769041769,
+      "rs_vs_nifty_1m": 3.42,
+      "rs_vs_sector_1m": 3.19,
+      "deliv_pct": 77.75,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 16.51,
+      "atr": 0.2167820681,
+      "stop_1_5atr": 8.15,
+      "target_5pct": 8.9,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "MMP",
+      "close": 301.05,
+      "score": 14,
+      "perf_1m": 7.3453378499,
+      "rs_vs_nifty_1m": 6.59,
+      "rs_vs_sector_1m": 7.18,
+      "deliv_pct": 64.33,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.29,
+      "atr": 11.6913117716,
+      "stop_1_5atr": 283.51,
+      "target_5pct": 316.1,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Non-Energy Minerals"
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "close": 5030.0,
+      "score": 14,
+      "perf_1m": 7.4786324786,
+      "rs_vs_nifty_1m": 6.72,
+      "rs_vs_sector_1m": 4.65,
+      "deliv_pct": 71.19,
+      "pct_change_oi": -2.53,
+      "upside_to_target_pct": 7.3,
+      "atr": 141.5995607767,
+      "stop_1_5atr": 4817.6,
+      "target_5pct": 5281.5,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "SPECIALITY",
+      "close": 139.46,
+      "score": 14,
+      "perf_1m": 6.287630516,
+      "rs_vs_nifty_1m": 5.53,
+      "rs_vs_sector_1m": 6.55,
+      "deliv_pct": 51.33,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 10.43,
+      "atr": 6.827504332,
+      "stop_1_5atr": 129.22,
+      "target_5pct": 146.43,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Consumer Services"
+    },
+    {
       "symbol": "ARTEMISMED",
       "close": 301.75,
       "score": 14,
@@ -3527,76 +3375,148 @@
       "sector": "Health Services"
     },
     {
-      "symbol": "TASTYBITE",
-      "close": 9461.0,
+      "symbol": "EUROPRATIK",
+      "close": 317.8,
       "score": 14,
-      "perf_1m": 6.6869643663,
-      "rs_vs_nifty_1m": 5.93,
-      "rs_vs_sector_1m": 6.95,
-      "deliv_pct": 53.22,
+      "perf_1m": 4.4707429323,
+      "rs_vs_nifty_1m": 3.71,
+      "rs_vs_sector_1m": 5.31,
+      "deliv_pct": 49.26,
       "pct_change_oi": null,
-      "upside_to_target_pct": 26.39,
-      "atr": 332.795755714,
-      "stop_1_5atr": 8961.81,
-      "target_5pct": 9934.05,
-      "earnings_within_21d": false,
-      "event_risk_score": 2,
-      "tech_rating": "Buy",
-      "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "THYROCARE",
-      "close": 604.65,
-      "score": 13,
-      "perf_1m": 8.515793252,
-      "rs_vs_nifty_1m": 7.76,
-      "rs_vs_sector_1m": 5.69,
-      "deliv_pct": 55.78,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.07,
-      "atr": 24.2873080412,
-      "stop_1_5atr": 568.22,
-      "target_5pct": 634.88,
+      "upside_to_target_pct": 22.72,
+      "atr": 12.2610341176,
+      "stop_1_5atr": 299.41,
+      "target_5pct": 333.69,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Health Services"
+      "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "TMB",
-      "close": 856.8,
-      "score": 13,
-      "perf_1m": 13.4984766194,
-      "rs_vs_nifty_1m": 12.74,
-      "rs_vs_sector_1m": 14.16,
-      "deliv_pct": 52.12,
+      "symbol": "RELTD",
+      "close": 168.56,
+      "score": 14,
+      "perf_1m": 1.462709926,
+      "rs_vs_nifty_1m": 0.7,
+      "rs_vs_sector_1m": 5.52,
+      "deliv_pct": 42.35,
       "pct_change_oi": null,
-      "upside_to_target_pct": 7.03,
-      "atr": 31.8904961357,
-      "stop_1_5atr": 808.96,
-      "target_5pct": 899.64,
+      "upside_to_target_pct": 16.55,
+      "atr": 7.3969990011,
+      "stop_1_5atr": 157.46,
+      "target_5pct": 176.99,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Utilities"
+    },
+    {
+      "symbol": "GCSL",
+      "close": 508.15,
+      "score": 14,
+      "perf_1m": 9.7753294448,
+      "rs_vs_nifty_1m": 9.02,
+      "rs_vs_sector_1m": 8.79,
+      "deliv_pct": 42.06,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.01,
+      "atr": 17.9562121005,
+      "stop_1_5atr": 481.22,
+      "target_5pct": 533.56,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Finance"
     },
     {
-      "symbol": "STEELCAS",
-      "close": 339.05,
-      "score": 13,
-      "perf_1m": 11.3647561176,
-      "rs_vs_nifty_1m": 10.6,
-      "rs_vs_sector_1m": 11.19,
-      "deliv_pct": 64.37,
+      "symbol": "JLHL",
+      "close": 321.55,
+      "score": 14,
+      "perf_1m": 13.6138788778,
+      "rs_vs_nifty_1m": 12.85,
+      "rs_vs_sector_1m": 10.78,
+      "deliv_pct": 51.03,
       "pct_change_oi": null,
-      "upside_to_target_pct": 1.46,
-      "atr": 14.70849818,
-      "stop_1_5atr": 316.99,
-      "target_5pct": 356.0,
+      "upside_to_target_pct": 7.5,
+      "atr": 11.5615497572,
+      "stop_1_5atr": 304.21,
+      "target_5pct": 337.63,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Services"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "close": 1964.0,
+      "score": 13,
+      "perf_1m": 4.4680851064,
+      "rs_vs_nifty_1m": 3.71,
+      "rs_vs_sector_1m": 1.64,
+      "deliv_pct": 67.26,
+      "pct_change_oi": -1.71,
+      "upside_to_target_pct": 10.91,
+      "atr": 34.8037223751,
+      "stop_1_5atr": 1911.79,
+      "target_5pct": 2062.2,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "close": 1454.6,
+      "score": 13,
+      "perf_1m": 2.8712871287,
+      "rs_vs_nifty_1m": 2.11,
+      "rs_vs_sector_1m": 3.53,
+      "deliv_pct": 48.19,
+      "pct_change_oi": 0.54,
+      "upside_to_target_pct": 19.38,
+      "atr": 24.3770466035,
+      "stop_1_5atr": 1418.03,
+      "target_5pct": 1527.33,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "PONNIERODE",
+      "close": 327.6,
+      "score": 13,
+      "perf_1m": 2.7281279398,
+      "rs_vs_nifty_1m": 1.97,
+      "rs_vs_sector_1m": null,
+      "deliv_pct": 44.98,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 9.58,
+      "atr": 11.8774015862,
+      "stop_1_5atr": 309.78,
+      "target_5pct": 343.98,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Non-Energy Minerals"
+      "sector": "Process Industries"
+    },
+    {
+      "symbol": "BALPHARMA",
+      "close": 87.87,
+      "score": 13,
+      "perf_1m": 9.0875232775,
+      "rs_vs_nifty_1m": 8.33,
+      "rs_vs_sector_1m": 6.26,
+      "deliv_pct": 78.8,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 12.5,
+      "atr": 3.513924438,
+      "stop_1_5atr": 82.6,
+      "target_5pct": 92.26,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Technology"
     }
   ],
   "urls": {
@@ -3662,68 +3582,35 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-08-04T18:07:04.377808+05:30",
-    "market_brief": "The market is currently in a bearish regime with a low India VIX. Despite this, the Asia and Europe cues are bullish. The Nifty trend is bearish with a -0.64% change. FII and DII net flows are positive at 922.26 and 1571.18 respectively.",
+    "generated_at_ist": "2026-08-04T20:38:28.737075+05:30",
+    "market_brief": "The Indian market is currently in a bearish regime with a low India VIX, indicating a medium overall risk. The Nifty trend is also bearish with a 0.64% decline. Foreign institutional investors have a net inflow of 2446.47, while domestic institutional investors have a net outflow of -936.14.",
     "stance": "defensive",
     "focus": [
+      "Market volatility",
       "Earnings season",
-      "Global cues",
       "Risk management"
     ],
     "suggestions": [
       {
-        "symbol": "NESTLEIND",
+        "symbol": "TASTYBITE",
         "action": "watch",
         "conviction": "medium",
-        "entry": 1520.0,
-        "stop": 1464.07,
-        "t1": 1596.0,
+        "entry": 9461.0,
+        "stop": 8961.81,
+        "t1": 9934.05,
         "hold_days": null,
-        "rationale": "Relative strength and volume filters",
+        "rationale": "Parkhu score of 14.0, watch band",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "RELTD",
+        "symbol": "OMAXE",
         "action": "watch",
         "conviction": "medium",
-        "entry": 168.56,
-        "stop": 157.46,
-        "t1": 176.99,
+        "entry": 87.6,
+        "stop": 81.36,
+        "t1": 91.98,
         "hold_days": null,
-        "rationale": "Relative strength and volume filters",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "EUROPRATIK",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 317.8,
-        "stop": 299.41,
-        "t1": 333.69,
-        "hold_days": null,
-        "rationale": "Relative strength and volume filters",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "GCSL",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 508.15,
-        "stop": 481.22,
-        "t1": 533.56,
-        "hold_days": null,
-        "rationale": "Relative strength and volume filters",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "TORNTPHARM",
-        "action": "watch",
-        "conviction": "medium",
-        "entry": 5030.0,
-        "stop": 4817.6,
-        "t1": 5281.5,
-        "hold_days": null,
-        "rationale": "Relative strength and volume filters",
+        "rationale": "Parkhu score of 14.0, watch band",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -3734,242 +3621,243 @@
         "stop": 1306.54,
         "t1": 1473.0,
         "hold_days": 7,
-        "rationale": "Earnings ahead, reduce or stand aside",
+        "rationale": "Earnings ahead, reduce or stand aside recommended",
         "levels_source": "parkhu_deterministic"
       }
     ],
     "open_book_notes": [
-      "CREDITACC: monitor stop loss",
-      "UJJIVANSFB: monitor stop loss",
-      "IIFL: trailing stop loss",
-      "INDNIPPON: monitor stop loss",
-      "LODHA: monitor stop loss",
-      "GATECHDVR: monitor stop loss"
+      "CREDITACC: 2.3% MFE, -4.21% MAE",
+      "UJJIVANSFB: 2.4% MFE, -4.26% MAE",
+      "IIFL: 6.98% MFE, -1.61% MAE",
+      "INDNIPPON: 4.43% MFE, -3.23% MAE",
+      "LODHA: 3.24% MFE, -4.72% MAE",
+      "GATECHDVR: 11.32% MFE, -3.77% MAE",
+      "IFBIND: 1.55% MFE, -0.36% MAE, earnings ahead"
     ],
-    "claude_feed": "Bearish regime, defensive stance, watching NESTLEIND, RELTD, EUROPRATIK, GCSL, TORNTPHARM. Caveats include incomplete data and provisional scores.",
+    "claude_feed": "Bearish regime, defensive stance, top ideas: TASTYBITE, OMAXE, caveats: 35 of KB-14's score points cannot be computed, promoter pledge and ownership data are empty",
     "stock_reviews": [
       {
-        "symbol": "NESTLEIND",
+        "symbol": "TASTYBITE",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "medium",
-        "thesis": "NESTLEIND's setup fits a \u22641-month swing due to its current price action and the overall market regime. The bearish market regime and medium overall risk suggest a potential for a short-term swing trade. The company's presence in the consumer non-durables sector, which is less volatile, adds to the thesis. The stock's current price near the entry level presents an opportunity for a swing trade.",
-        "catalysts": [
-          "Earnings Report",
-          "Sector Rotation",
-          "Market Rebound"
-        ],
-        "risks": [
-          "Market Downturn",
-          "Sector Underperformance",
-          "Company-Specific News"
-        ],
-        "what_to_watch": "Triggers for this trade include a breakout above the current level, while invalidation cues include a breach of the stop level. The trade's success depends on the stock's ability to move swiftly towards the target level.",
-        "entry": 1520.0,
-        "stop": 1464.07,
-        "t1": 1596.0,
-        "hold_days": null,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-04T18:07:08.466441+05:30"
-      },
-      {
-        "symbol": "RELTD",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "medium",
-        "thesis": "The RELTD setup fits a \u22641-month swing due to its current market regime and overall risk assessment. Given the bearish market regime and medium overall risk, a short-term swing trade could be viable. The Utilities sector, although risky, may provide an opportunity for a quick profit. The stock's current price and levels suggest a potential for a short-term bounce.",
+        "thesis": "The setup for TASTYBITE fits a \u22641-month swing due to its current market regime and risk sector. Given the bearish market regime and medium overall risk, a potential swing could be imminent. The company's parkhu score of 14.0 also suggests a possible short-term movement. This could be an opportunity for a swing trade in the consumer non-durables sector.",
         "catalysts": [
           "Earnings report",
           "Sector rotation",
           "Market sentiment shift"
-        ],
-        "risks": [
-          "Sector downturn",
-          "Market volatility",
-          "Company-specific news"
-        ],
-        "what_to_watch": "Triggers for this trade include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a shift in market sentiment.",
-        "entry": 168.56,
-        "stop": 157.46,
-        "t1": 176.99,
-        "hold_days": null,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-04T18:07:09.422375+05:30"
-      },
-      {
-        "symbol": "EUROPRATIK",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "medium",
-        "thesis": "EUROPRATIK is poised for a potential swing trade within a \u22641-month timeframe due to its current market positioning and technical indicators. The stock's parkhu score of 14.0 suggests a favorable setup for a short-term trade. Given the bearish market regime, a precise entry and stop-loss strategy is crucial. The overall medium risk sector and moderate India VIX level of 12.19 may contribute to volatility, making this a swing trade candidate.",
-        "catalysts": [
-          "Earnings report",
-          "Sector rotation",
-          "Short squeeze"
         ],
         "risks": [
           "Market downturn",
-          "Sector underperformance",
-          "Earnings miss"
+          "Sector decline",
+          "Company-specific news"
         ],
-        "what_to_watch": "Traders should watch for a breakout above the current level or a bounce from the stop-loss level as a potential trigger, while a close below the stop-loss level could serve as an invalidation cue.",
-        "entry": 317.8,
-        "stop": 299.41,
-        "t1": 333.69,
+        "what_to_watch": "Triggers for this trade include a break above the current level, while invalidation cues would be a drop below the stop level. Monitoring the overall market regime and sector performance will also be crucial.",
+        "entry": 9461.0,
+        "stop": 8961.81,
+        "t1": 9934.05,
         "hold_days": null,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-04T18:07:11.604693+05:30"
+        "generated_at_ist": "2026-08-04T20:38:32.015002+05:30"
       },
       {
-        "symbol": "GCSL",
+        "symbol": "OMAXE",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "medium",
-        "thesis": "The GCSL setup fits a \u22641-month swing due to its current market regime and overall risk assessment. With a Parkhu score of 14.0, it indicates a potential short-term opportunity. The finance sector, despite being risky, can offer significant returns in a short span. This setup seems promising for a swing trade within the given timeframe.",
+        "thesis": "The OMAXE setup fits a \u22641-month swing due to its current price action and the overall market regime. The bearish market regime and medium overall risk suggest a potential short-term opportunity. With a Parkhu score of 14.0, OMAXE is on the watchlist, indicating a possible swing trade. The finance sector risk is a consideration, but the current levels provide a defined risk-reward ratio.",
         "catalysts": [
           "Earnings report",
           "Sector rotation",
           "Market sentiment shift"
         ],
         "risks": [
-          "Market volatility",
-          "Sector-specific downturn",
+          "Market regime change",
+          "Sector-wide downturn",
           "Company-specific news"
         ],
-        "what_to_watch": "Traders should watch for a breakout above the current level to confirm the trade, while a drop below the stop level would invalidate the setup. Close monitoring of market and sector trends is essential.",
-        "entry": 508.15,
-        "stop": 481.22,
-        "t1": 533.56,
+        "what_to_watch": "Triggers for this trade include a breakout above the current level, while invalidation cues would be a breach of the stop level, indicating a change in market sentiment.",
+        "entry": 87.6,
+        "stop": 81.36,
+        "t1": 91.98,
         "hold_days": null,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-04T18:07:13.740643+05:30"
+        "generated_at_ist": "2026-08-04T20:38:33.317368+05:30"
+      },
+      {
+        "symbol": "IVC",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "medium",
+        "thesis": "The IVC setup fits a \u22641-month swing due to its current market regime and overall risk assessment. The bearish market regime and medium overall risk suggest a potential short-term opportunity. The company's risk sector, Finance, is also a key factor in this setup. The Parkhu score of 14.0 further supports this thesis.",
+        "catalysts": [
+          "Earnings announcement",
+          "Sector rotation",
+          "Market sentiment shift"
+        ],
+        "risks": [
+          "Regulatory changes",
+          "Economic downturn",
+          "Company-specific news"
+        ],
+        "what_to_watch": "Triggers for this setup include a break above the t1 level of 8.9, while invalidation cues include a drop below the stop level of 8.15. Close monitoring of market sentiment and sector rotation is also necessary.",
+        "entry": 8.48,
+        "stop": 8.15,
+        "t1": 8.9,
+        "hold_days": null,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-08-04T20:38:35.201776+05:30"
+      },
+      {
+        "symbol": "MMP",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "medium",
+        "thesis": "The MMP setup fits a \u22641-month swing due to its current price action and the overall market regime. The bearish market regime and medium overall risk suggest a potential short-term opportunity. The company's parkhu score of 14.0 and its classification in the Non-Energy Minerals sector also contribute to this swing setup. The current price near the entry level of 301.05 presents a potential entry point.",
+        "catalysts": [
+          "Earnings report",
+          "Sector rotation",
+          "Market sentiment shift"
+        ],
+        "risks": [
+          "Global economic downturn",
+          "Sector-specific headwinds",
+          "Company-specific news"
+        ],
+        "what_to_watch": "Traders should watch for a breakout above 316.1 to confirm the swing, while a drop below 283.51 would invalidate the setup.",
+        "entry": 301.05,
+        "stop": 283.51,
+        "t1": 316.1,
+        "hold_days": null,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-08-04T20:38:37.199067+05:30"
       },
       {
         "symbol": "TORNTPHARM",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "medium",
-        "thesis": "The TORNTPHARM setup fits a \u22641-month swing due to its current price action and the overall market regime. Given the bearish market regime and medium overall risk, a potential swing could be driven by sector-specific catalysts. The health technology sector's volatility might provide an opportunity for a short-term swing trade. The stock's current price near the entry level presents a potential entry point.",
+        "thesis": "The TORNTPHARM setup fits a \u22641-month swing due to its current price action and the overall market regime. Given the bearish market regime and medium overall risk, a short-term swing could be a viable strategy. The company's health technology sector also presents opportunities for short-term movements. This setup could capitalize on potential volatility.",
         "catalysts": [
-          "Sector rotation",
           "Earnings report",
-          "Regulatory news"
+          "Sector rotation",
+          "Market sentiment shift"
         ],
         "risks": [
-          "Market downturn",
-          "Sector-wide decline",
-          "Company-specific issues"
+          "Regulatory changes",
+          "Competition in the sector",
+          "Overall market downturn"
         ],
-        "what_to_watch": "Triggers for this trade include a strong bounce from the current levels, while invalidation cues would be a break below the stop level, indicating a failure of the potential swing setup. Monitoring the stock's price action around the entry and stop levels is crucial.",
+        "what_to_watch": "Triggers for this setup include a strong earnings report or positive sector rotation, while invalidation cues would be a significant drop below the stop level or a sudden increase in overall market risk.",
         "entry": 5030.0,
         "stop": 4817.6,
         "t1": 5281.5,
         "hold_days": null,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-04T18:07:15.995346+05:30"
+        "generated_at_ist": "2026-08-04T20:38:39.369917+05:30"
       }
     ]
   },
   "market_news_top10": [
     {
       "rank": 1,
-      "headline": "UYFINCORP: Trading Window closure",
-      "symbol": "UYFINCORP",
+      "headline": "Sanofi India delivers strong Q2 2026 performance",
+      "symbol": "SANOFI",
       "impact": "high",
-      "why_it_matters": "Insider trading regulation closure may indicate significant upcoming announcements",
+      "why_it_matters": "Double digit growth in Diabetes Portfolio and a Robust Performance",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886624+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280159+05:30"
     },
     {
       "rank": 2,
-      "headline": "ICICIPRULI: Disclosure under Regulation 30 and Regulation 51",
-      "symbol": "ICICIPRULI",
+      "headline": "AEQUS Limited has informed the Exchange about Transcript of Earnings Conference Call",
+      "symbol": "AEQUS",
       "impact": "high",
-      "why_it_matters": "Disclosure under key regulations may impact stock price and investor sentiment",
+      "why_it_matters": "Un-audited Financial Results of the Company for the quarter ended June 30, 2026",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886652+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280189+05:30"
     },
     {
       "rank": 3,
-      "headline": "JAINREC, SUDEEPPHRM, CLEDUCATE, OMNI, CNL: Outcome of Board Meeting and Financial Results",
-      "symbol": null,
-      "impact": "medium",
-      "why_it_matters": "Multiple companies releasing financial results and board meeting outcomes may influence sector performance",
+      "headline": "REFEX has informed the Exchange regarding Transcript of the Earnings Conference Call",
+      "symbol": "REFEX",
+      "impact": "high",
+      "why_it_matters": "Q1 FY27 Earnings Conference Call",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886658+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280195+05:30"
     },
     {
       "rank": 4,
-      "headline": "Market Regime: Bearish, India VIX: 12.19",
-      "symbol": null,
+      "headline": "Sanofi India Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026",
+      "symbol": "SANOFI",
       "impact": "medium",
-      "why_it_matters": "Current market regime and volatility index may affect overall market sentiment and risk appetite",
+      "why_it_matters": "Financial results for the period ended Jun 30, 2026",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886663+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280200+05:30"
     },
     {
       "rank": 5,
-      "headline": "FII Net: 922.26",
+      "headline": "India VIX at 12.19, indicating medium overall risk",
       "symbol": null,
-      "impact": "low",
-      "why_it_matters": "Foreign institutional investor activity may have a minor impact on market performance",
+      "impact": "medium",
+      "why_it_matters": "Market volatility and risk sentiment",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886667+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280203+05:30"
     },
     {
       "rank": 6,
-      "headline": "A2ZINFRA: Significant price movement",
-      "symbol": "A2ZINFRA",
-      "impact": "low",
-      "why_it_matters": "Individual stock price movement may not have a significant impact on the overall market",
+      "headline": "FII net buying at 2446.47, indicating positive foreign investor sentiment",
+      "symbol": null,
+      "impact": "medium",
+      "why_it_matters": "Foreign investor sentiment and market trends",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886671+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280206+05:30"
     },
     {
       "rank": 7,
-      "headline": "JINDALPHOT: Re-appointment of Managing Director",
-      "symbol": "JINDALPHOT",
-      "impact": "low",
-      "why_it_matters": "Individual company appointments may have a minor impact on stock performance",
+      "headline": "Bearish market regime, indicating downward market trend",
+      "symbol": null,
+      "impact": "medium",
+      "why_it_matters": "Market trend and investor sentiment",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886674+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280209+05:30"
     },
     {
       "rank": 8,
-      "headline": "ANANTRAJ, IKIO, RRKABEL, STOVEKRAFT: Analysts/Institutional Investor Meet/Con. Call Updates",
-      "symbol": null,
+      "headline": "Vindhya Telelinks Limited has informed the Exchange regarding Appointment of Mr Pandanda Kariappa Madappa",
+      "symbol": "VINDHYATEL",
       "impact": "low",
-      "why_it_matters": "Scheduled meetings and calls may have a minor impact on individual stock prices",
+      "why_it_matters": "Appointment of Non-Executive Independent Director",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886678+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280212+05:30"
     },
     {
       "rank": 9,
-      "headline": "KRYSTAL, CAPILLARY, NOCIL: General Updates and Monitoring Agency Reports",
-      "symbol": null,
+      "headline": "Vindhya Telelinks Limited has informed the Exchange regarding Appointment of Mr Priya Shankar Dasgupta",
+      "symbol": "VINDHYATEL",
       "impact": "low",
-      "why_it_matters": "General updates and monitoring reports may not have a significant impact on market performance",
+      "why_it_matters": "Appointment of Non-Executive Independent Director",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886681+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280215+05:30"
     },
     {
       "rank": 10,
-      "headline": "Overall Risk: Medium",
-      "symbol": null,
+      "headline": "BIL VYAPAR LIMITED has informed the Exchange about Resignation of Statutory Auditor",
+      "symbol": "BILVYAPAR",
       "impact": "low",
-      "why_it_matters": "Current overall risk level may influence investor sentiment and market volatility",
+      "why_it_matters": "Resignation of Statutory Auditor",
       "source_date": "2026-08-04",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-04T18:07:18.886684+05:30"
+      "generated_at_ist": "2026-08-04T20:38:42.280218+05:30"
     }
   ]
 }

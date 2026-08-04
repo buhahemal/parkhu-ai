@@ -610,7 +610,6 @@
         "SHILPAMED",
         "THYROCARE",
         "SCPL",
-        "NILKAMAL",
         "SPECTRUM",
         "WELCORP",
         "VADILALIND",
@@ -618,7 +617,8 @@
         "ARIHANT",
         "SREEL",
         "STEELCAS",
-        "RADICO"
+        "RADICO",
+        "BAJFINANCE"
       ],
       "dropped_symbols": [
         "TANLA",
@@ -663,14 +663,14 @@
         "KRBL",
         "RAJPALAYAM",
         "KRYSTAL",
+        "SPORTKING",
         "UFLEX",
         "FLUOROCHEM",
         "TALBROAUTO",
         "PICCADIL",
         "CRISIL",
         "DIXON",
-        "NAHARINDUS",
-        "DIVGIITTS"
+        "NAHARINDUS"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -738,7 +738,6 @@
         "UYFINCORP",
         "SONATSOFTW",
         "HESTERBIO",
-        "NILKAMAL",
         "SPECTRUM",
         "ANANTRAJ",
         "GATECHDVR",
@@ -764,6 +763,7 @@
         "SACHEEROME",
         "PAYTM",
         "GNA",
+        "NILKAMAL",
         "LANDMARK",
         "RHETAN",
         "BIKEWO",
