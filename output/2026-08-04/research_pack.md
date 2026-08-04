@@ -1,125 +1,107 @@
 # Parkhu research pack — 2026-08-04
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-04T06:07:56.032565+05:30
+- **generated_at_ist:** 2026-08-04T09:26:17.189156+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.27%)
-- india_vix: 11.76 (Low)
+- nifty: Bullish (0.95%)
+- india_vix: 11.92 (Low)
 - fii_net: 922.26 | dii_net: 1571.18
 - overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
 - universe: 2971
-- trend = Bullish: 1444
-- price > SMA200: 1060
-- price > EMA50: 1049
-- ADX14 > 25: 525
-- RSI14 in 40-80: 490
-- RS > 0 vs NIFTY and sector: 223
-- delivery% >= 40: 134
-- relative_volume >= 1: 51
-- no earnings within 21d: 36
-- event_risk_score <= 1: 34
-- TV rating not Sell: 34
+- trend = Bullish: 1490
+- price > SMA200: 1079
+- price > EMA50: 1061
+- ADX14 > 25: 528
+- RSI14 in 40-80: 497
+- RS > 0 vs NIFTY and sector: 232
+- delivery% >= 40: 139
+- relative_volume >= 1: 3
+- no earnings within 21d: 2
+- event_risk_score <= 1: 2
+- TV rating not Sell: 2
 
-## Survivors (top 34 of 34)
+## Survivors (top 2 of 2)
 
-- **MEDICO** [idea] score 85.1 — selected as idea
-- **GATECHDVR** [idea] score 83.9 — selected as idea
-- **BFINVEST** [rejected] score 82.6 — T1 needs more than 22 trading days (~1 month)
-- **IFBIND** [idea] score 82.0 — selected as idea
-- **DYNPRO** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
-- **NILKAMAL** [watchlist] score 79.2 — score in Watch band (70–80)
-- **BAJFINANCE** [watchlist] score 76.7 — score in Watch band (70–80)
-- **SCPL** [watchlist] score 74.7 — score in Watch band (70–80)
-- **WELCORP** [watchlist] score 74.7 — score in Watch band (70–80)
-- **STEELCAS** [watchlist] score 74.3 — score in Watch band (70–80)
-- **GLAXO** [watchlist] score 71.4 — score in Watch band (70–80)
-- **LALPATHLAB** [watchlist] score 71.2 — score in Watch band (70–80)
-- **BAJAJFINSV** [watchlist] score 70.9 — score in Watch band (70–80)
-- **DOLPHIN** [rejected] score 70.3 — T1 needs more than 22 trading days (~1 month)
-- **MEDANTA** [watchlist] score 70.2 — score in Watch band (70–80)
-- **TORNTPHARM** [rejected] score 67.0 — T1 needs more than 22 trading days (~1 month)
-- **MUTHOOTCAP** [rejected] score 65.6 — T1 needs more than 22 trading days (~1 month)
-- **KECL** [rejected] score 62.5 — score below Watch band
-- **MMP** [rejected] score 61.7 — score below Watch band
-- **ARMANFIN** [rejected] score 61.6 — score below Watch band
-- **PFOCUS** [rejected] score 60.7 — T1 needs more than 22 trading days (~1 month)
-- **ARIS** [rejected] score 60.4 — T1 needs more than 22 trading days (~1 month)
-- **SAMBHV** [rejected] score 57.9 — score below Watch band
-- **NDGL** [rejected] score 56.3 — score below Watch band
-- **JLHL** [rejected] score 56.0 — score below Watch band
-- **SHOPERSTOP** [rejected] score 55.4 — T1 needs more than 22 trading days (~1 month)
+- **NDGL** [rejected] score 56.6 — score below Watch band
 - **CINELINE** [rejected] score 53.6 — score below Watch band
-- **AARTIDRUGS** [rejected] score 52.9 — T1 needs more than 22 trading days (~1 month)
-- **IVC** [rejected] score 52.4 — T1 needs more than 22 trading days (~1 month)
-- **CTE** [rejected] score 50.9 — T1 needs more than 22 trading days (~1 month)
-- **TEXINFRA** [rejected] score 50.3 — score below Watch band
-- **UNIMECH** [rejected] score 49.2 — score below Watch band
-- **MUTHOOTMF** [rejected] score 48.7 — score below Watch band
-- **RKFORGE** [rejected] score 44.1 — score below Watch band
 
 ## Ideas
 
-### MEDICO — Buy (score 85.1)
-- Medico Remedies Ltd. | risk_sector: Health Technology
-- entry 49.66 | stop 45.69 | t1 57.61 | t2 61.58 | t3 65.55 | R:R 2.0
-- qty 201 | deployed 9982.0 (9.98%) | risk ₹798.0
+### KICL — Watch (score 13.0)
+- KICL | risk_sector: Finance
+- entry 5522.0 | stop 5296.85 | t1 5798.1 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### GATECHDVR — Buy (score 83.9)
-- GACM Technologies Limited | risk_sector: NBFC & Capital Markets
-- entry 0.53 | stop 0.49 | t1 0.67 | t2 0.71 | t3 0.74 | R:R 3.82
-- qty 18867 | deployed 10000.0 (10.0%) | risk ₹755.0
+### TASTYBITE — Watch (score 13.0)
+- TASTYBITE | risk_sector: Consumer Non-Durables
+- entry 9482.0 | stop 8993.73 | t1 9956.1 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### IFBIND — Buy (score 82.0)
-- IFB Industries Ltd | risk_sector: Consumer Durables
-- entry 1354.0 | stop 1306.54 | t1 1473.0 | t2 1520.46 | t3 1567.93 | R:R 2.51
-- qty 7 | deployed 9478.0 (9.48%) | risk ₹332.0
+### ICICIBANK — Watch (score 13.0)
+- ICICIBANK | risk_sector: Finance
+- entry 1448.6 | stop 1413.35 | t1 1521.03 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### NESTLEIND — Watch (score 13.0)
+- NESTLEIND | risk_sector: Consumer Non-Durables
+- entry 1523.3 | stop 1474.81 | t1 1599.46 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### NILKAMAL — Watch (score 13.0)
+- NILKAMAL | risk_sector: Consumer Durables
+- entry 1681.9 | stop 1539.56 | t1 1766.0 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **SREEL** status=open entry=227.97 last=216.45 mfe=2.6 mae=-7.07 opened=2026-07-26
-- **CREDITACC** status=open entry=1597.3 last=1558.2 mfe=2.3 mae=-3.45 opened=2026-07-27
-- **UJJIVANSFB** status=open entry=71.57 last=71.14 mfe=2.4 mae=-3.73 opened=2026-07-27
-- **IIFL** status=open entry=582.35 last=617.85 mfe=6.98 mae=-1.61 opened=2026-07-28
-- **INDNIPPON** status=open entry=1163.1 last=1173.2 mfe=4.43 mae=-3.23 opened=2026-07-28
-- **LODHA** status=open entry=1287.15 last=1239.8 mfe=3.24 mae=-4.72 opened=2026-07-30
-- **GATECHDVR** status=open entry=0.53 last=0.53 mfe=11.32 mae=0.0 opened=2026-08-01
-- **MEDICO** status=open entry=49.66 last=49.66 mfe=3.69 mae=-5.36 opened=2026-08-03
-- **IFBIND** status=open entry=1354.0 last=1354.0 mfe=0.0 mae=0.0 opened=2026-08-04
+- **SREEL** status=open entry=227.97 last=215.5 mfe=2.6 mae=-7.07 opened=2026-07-26
+- **CREDITACC** status=open entry=1597.3 last=1565.7 mfe=2.3 mae=-3.67 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=71.18 mfe=2.4 mae=-3.73 opened=2026-07-27
+- **IIFL** status=open entry=582.35 last=613.05 mfe=6.98 mae=-1.61 opened=2026-07-28
+- **INDNIPPON** status=open entry=1163.1 last=1183.0 mfe=4.43 mae=-3.23 opened=2026-07-28
+- **LODHA** status=open entry=1287.15 last=1246.8 mfe=3.24 mae=-4.72 opened=2026-07-30
+- **GATECHDVR** status=open entry=0.53 last=0.52 mfe=11.32 mae=-3.77 opened=2026-08-01
+- **MEDICO** status=open entry=49.66 last=49.0 mfe=3.69 mae=-5.36 opened=2026-08-03
+- **IFBIND** status=open entry=1354.0 last=1364.4 mfe=1.15 mae=-0.36 opened=2026-08-04
+
+## Needs action
+
+- **IFBIND**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
 
 ## Swing candidates (top)
 
-- STEELCAS: score=14 rs_nifty=6.19 deliv=48.5
-- NILKAMAL: score=14 rs_nifty=29.84 deliv=56.27
-- TORNTPHARM: score=14 rs_nifty=7.05 deliv=59.5
-- SAMBHV: score=14 rs_nifty=2.11 deliv=52.67
-- PFOCUS: score=14 rs_nifty=23.72 deliv=45.71
-- WELCORP: score=14 rs_nifty=13.58 deliv=56.46
-- BFINVEST: score=14 rs_nifty=6.47 deliv=41.49
-- JLHL: score=14 rs_nifty=11.85 deliv=53.18
-- MMP: score=14 rs_nifty=4.2 deliv=56.24
-- TASTYBITE: score=14 rs_nifty=5.48 deliv=41.55
-- UNIMECH: score=14 rs_nifty=5.87 deliv=44.77
-- IVC: score=14 rs_nifty=2.95 deliv=94.8
-- MEDANTA: score=14 rs_nifty=6.25 deliv=48.26
-- KECL: score=14 rs_nifty=8.49 deliv=53.46
-- STYLAMIND: score=13 rs_nifty=5.4 deliv=45.2
+- KICL: score=13 rs_nifty=0.16 deliv=65.45
+- TASTYBITE: score=13 rs_nifty=5.52 deliv=41.55
+- ICICIBANK: score=13 rs_nifty=1.05 deliv=67.68
+- NESTLEIND: score=13 rs_nifty=3.8 deliv=59.12
+- NILKAMAL: score=13 rs_nifty=27.92 deliv=56.27
+- RRKABEL: score=13 rs_nifty=6.64 deliv=50.54
+- IIFL: score=13 rs_nifty=16.27 deliv=51.66
+- PYRAMID: score=13 rs_nifty=6.16 deliv=58.67
+- HESTERBIO: score=13 rs_nifty=10.98 deliv=53.08
+- VSSL: score=13 rs_nifty=9.19 deliv=50.94
+- GNA: score=13 rs_nifty=15.11 deliv=47.77
+- SENCO: score=13 rs_nifty=13.59 deliv=42.98
+- BALPHARMA: score=13 rs_nifty=9.9 deliv=64.55
+- MMP: score=13 rs_nifty=3.91 deliv=56.24
+- ANANDRATHI: score=13 rs_nifty=1.19 deliv=55.51
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.17% (bear)
-- Hang Seng: +0.10% (neutral)
-- Shanghai: +0.72% (bull)
-- Kospi: -4.97% (bear)
-- Taiwan: +7.98% (bull)
-- ASX 200: +0.84% (bull)
+- Nikkei: -1.27% (bear)
+- Hang Seng: +0.08% (neutral)
+- Shanghai: -0.44% (bear)
+- Kospi: -5.82% (bear)
+- Taiwan: +0.53% (bull)
+- ASX 200: +1.70% (bull)
 
 ### Europe
 - FTSE 100: -0.27% (bear)
@@ -133,10 +115,10 @@
 - US VIX: -0.81% (bull)
 
 ### Macro
-- USDINR: -0.08% (neutral)
-- Crude WTI: -4.76% (bear)
-- Brent: -6.68% (bear)
-- DXY: +0.16% (neutral)
+- USDINR: -0.10% (neutral)
+- Crude WTI: -4.13% (bear)
+- Brent: -5.77% (bear)
+- DXY: +0.21% (neutral)
 - US 10Y: -1.24% (bull)
 - India ETF: +0.72% (bull)
 - EM ETF: +0.36% (bull)
@@ -147,46 +129,47 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The market is in a bullish regime with a low India VIX, indicating low overall risk. The Nifty trend is also bullish, with a 0.27% increase. However, the Asia cue is bearish and the Europe cue is mixed. Foreign institutional investors have a net inflow of 922.26, while domestic institutional investors have a net inflow of 1571.18.
+The Indian market is in a bullish regime with low overall risk. Nifty trend is bullish with a 0.95% change, and India VIX is at a low level of 11.92. However, Asian cues are bearish, and European cues are mixed.
 
-- **MEDICO** [consider_entry/high] entry=49.66 stop=45.69 t1=57.61 hold=10d — High Parkhu score of 85.1 and a favorable risk sector
-- **GATECHDVR** [consider_entry/high] entry=0.53 stop=0.49 t1=0.67 hold=15d — High Parkhu score of 83.9 and a favorable risk sector
-- **IFBIND** [consider_entry/high] entry=1354.0 stop=1306.54 t1=1473.0 hold=7d — High Parkhu score of 82.0 and a favorable risk sector
-- **IIFL** [manage_open/medium] entry=582.35 stop=541.29 t1=675.0 hold=21d — Open position with a favorable mfe_pct of 6.98
-- **INDNIPPON** [manage_open/medium] entry=1163.1 stop=1070.05 t1=1349.2 hold=13d — Open position with a favorable mfe_pct of 4.43
+- **KICL** [consider_entry/medium] entry=5522.0 stop=5296.85 t1=5798.1 hold=Noned — Watch band with a parkhu score of 13.0
+- **TASTYBITE** [consider_entry/medium] entry=9482.0 stop=8993.73 t1=9956.1 hold=Noned — Watch band with a parkhu score of 13.0
+- **ICICIBANK** [consider_entry/medium] entry=1448.6 stop=1413.35 t1=1521.03 hold=Noned — Watch band with a parkhu score of 13.0
+- **NESTLEIND** [consider_entry/medium] entry=1523.3 stop=1474.81 t1=1599.46 hold=Noned — Watch band with a parkhu score of 13.0
+- **NILKAMAL** [consider_entry/medium] entry=1681.9 stop=1539.56 t1=1766.0 hold=Noned — Watch band with a parkhu score of 13.0
 
 ### AI stock reviews
 
-- **MEDICO** [high] This setup fits a ≤1-month swing as MEDICO has shown a strong bullish trend with a high RSI14 value of 79.37 and a significant return of 22.89% in the last month, indicating a potential for further upside. The company's health technology sector has a low overall risk, and the India VIX is at 11.76, suggesting a favorable market environment. The stock's distance from its 52-week high is -12.69%, providing room for growth.
-  - catalysts: Bullish trend, High RSI14, Favorable market regime
-  - risks: High RSI14 may lead to reversal, Sector-specific risks
-  - watch: Triggers for this setup include a breakout above the current level, while invalidation cues would be a breach of the stop level at 45.69. Close monitoring of the stock's price action and overall market sentiment is necessary.
-- **GATECHDVR** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with a high RSI of 72.9 and a strong ADX of 36.3, indicating a potential for further upside. The recent 1-month return of 12.77% and 3-month return of 6% also suggest a positive momentum. The distance from the 52-week high is -20.9%, providing room for growth. The overall market regime is bullish with low risk, further supporting the swing trade.
-  - catalysts: Bullish trend, High RSI, Strong ADX, Positive momentum
-  - risks: Market regime change, Sector-specific risks, NBFC & Capital Markets volatility
-  - watch: Triggers for this trade include a breakout above the current level, while invalidation cues include a drop below the stop level of 0.49. The trade should be monitored closely for any changes in the market regime or sector-specific news.
-- **IFBIND** [high] IFB Industries Ltd is poised for a short-term swing due to its bullish trend label, high delivery percentage, and outperformance against Nifty and its sector in the last month. The company's consumer durables segment is expected to drive growth. With a low overall risk regime and a bullish market regime, this setup fits a ≤1-month swing.
-  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
-  - risks: Economic downturn, Sectoral decline, Company-specific negative news
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level. The stock's price action and overall market sentiment should be closely monitored.
+- **KICL** [high] KICL fits a ≤1-month swing due to its high Parkhu score of 13.0, indicating a strong potential for short-term movement. The current market regime is bullish, which supports the idea of a swing trade. With an overall risk level of 'Low' and a low India VIX of 11.92, the conditions are favorable for a swing trade. The company's presence in the finance sector, which can be volatile, adds to the potential for a significant move.
+  - catalysts: Earnings report, Sector rotation, Market momentum
+  - risks: Global economic downturn, Interest rate changes, Sector-specific news
+  - watch: Triggers for this trade include a strong move above the current price, while invalidation cues would be a break below the stop level of 5296.85. Watching for these cues will be crucial in managing the trade.
+- **TASTYBITE** [medium] The TASTYBITE setup fits a ≤1-month swing due to its current market regime being bullish and an overall low risk environment. The company operates in the Consumer Non-Durables sector, which can experience increased demand in a growing economy. With a Parkhu score of 13.0, this idea has shown potential for a short-term swing. The current India VIX of 11.92 suggests a relatively stable market, supporting a swing trade.
+  - catalysts: Earnings Report, Sector Growth, Market Momentum
+  - risks: Economic Downturn, Sector Rotation, Company-Specific News
+  - watch: Traders should watch for a breakout above the current level to confirm the swing, while a close below the stop level would invalidate the thesis. Monitoring the overall market regime and sector performance will also be crucial.
+- **ICICIBANK** [high] ICICIBANK's current setup fits a ≤1-month swing due to its strong Parkhu score of 13.0 and the overall low risk regime in the market. The bullish market regime and low India VIX of 11.92 also support a potential upside. With the company being in the finance sector, any positive news or sectoral tailwinds could act as a catalyst for the stock to reach its target. The current price near the entry level of 1448.6 presents an attractive opportunity for a swing trade.
+  - catalysts: Sectoral tailwinds, Positive Q2 earnings, Monetary policy easing
+  - risks: Global economic downturn, Rise in India VIX, Weaker-than-expected Q2 earnings
+  - watch: Traders should watch for a strong close above the current price to confirm the bullish thesis, while a close below the stop level of 1413.35 would invalidate the setup. A breakout above the recent highs could also act as a trigger to enter the trade.
+- **NESTLEIND** [high] NESTLEIND fits a ≤1-month swing due to its high Parkhu score of 13.0, indicating a strong potential for short-term movement. The current market regime is bullish, which supports the stock's upward momentum. With an overall risk level of 'Low' and a low India VIX of 11.92, the market conditions are favorable for a swing trade. The company's presence in the Consumer Non-Durables sector, which is less volatile, adds to the stability of the trade.
+  - catalysts: Bullish market regime, Low India VIX, High Parkhu score
+  - risks: Market sentiment shift, Sector-specific downturn, Global economic factors
+  - watch: Traders should watch for the stock to break above the current level and approach the target price of 1599.46, while a move below the stop loss of 1474.81 would invalidate the swing trade. The overall market sentiment and sector performance will also be crucial in determining the trade's success.
+- **NILKAMAL** [medium] NILKAMAL fits a ≤1-month swing due to its current market regime being bullish and an overall low risk environment. The company's parkhu score of 13.0 indicates a favorable setup. With the India VIX at 11.92, volatility is relatively low, which could lead to a stable swing. The consumer durables sector, although risky, has potential for growth in a bullish market.
+  - catalysts: Bullish market regime, Low India VIX, Favorable parkhu score
+  - risks: Consumer durables sector risk, Market regime change, Volatility increase
+  - watch: Triggers for this setup include a strong breakout above the current level, while invalidation cues would be a breach of the stop level at 1539.56, indicating a shift in market sentiment.
 
 ### Claude feed
 
-Regime: Bullish, Stance: Selective Aggressive, Top Ideas: MEDICO, GATECHDVR, IFBIND, Caveats: Low score coverage, provisional scores, and lack of trade outcome history
+Bullish regime, selective aggressive stance, top ideas: KICL, TASTYBITE, ICICIBANK, NESTLEIND, NILKAMAL. Caveats: 35 of KB-14's 100 score points cannot be computed, promoter pledge and ownership data are empty.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Acquisition (IKS) — Update on acquisition may impact stock price and investor sentiment
-2. **[high]** Acquisition (MITCON) — Acquisition news may lead to changes in company's growth prospects and market position
-3. **[high]** Updates (SHALPAINTS) — Receipt of No Objection may have significant implications for the company's operations and future plans
-4. **[medium]** Record Date (MGL) — Final Dividend record date may influence investor decisions and stock price
-5. **[medium]** General Updates (PNGJL) — QIP update may indicate the company's plans for future growth and expansion
-6. **[medium]** Allotment of Securities (NAZARA) — Allotment of equity shares may affect the company's capital structure and investor sentiment
-7. **[medium]** Copy of Newspaper Publication (INDTERRAIN) — Un-audited financial results may provide insights into the company's current performance and future prospects
-8. **[low]** Resignation (NAZARA) — CEO resignation may lead to changes in company leadership and strategy
-9. **[low]** General Updates (MITCON) — General updates may not have significant implications for the company's operations or market position
-10. **[low]** Shareholders meeting (KALPATARU) — Proceedings of Annual General Meeting may provide insights into the company's future plans and strategies
+1. **[high]** MGL: Record Date for Final Dividend (MGL) — The record date for the final dividend is set, which may impact the stock price and investor sentiment
+2. **[high]** PNGJL: QIP Update (PNGJL) — The company has informed about a QIP, which may lead to changes in the company's capital structure and impact investor sentiment
+3. **[medium]** INDTERRAIN: Un-audited Financial Results (INDTERRAIN) — The company has published its un-audited financial results, which may provide insights into its financial performance and impact investor sentiment
 
 ## Deep-dive URLs (after push)
 
