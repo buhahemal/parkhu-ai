@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-05",
-  "generated_at_ist": "2026-08-05T18:07:29.970981+05:30",
+  "generated_at_ist": "2026-08-05T20:32:32.688716+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -38,24 +38,24 @@
     "best_sector_perf_1m": 3.63,
     "worst_sector": "Communications",
     "worst_sector_perf_1m": -5.39,
-    "fii_net": 2446.47,
-    "dii_net": -936.14,
-    "crude": 76.04,
-    "crude_pct_change": 0.36,
-    "usdinr": 95.12,
-    "usdinr_pct_change": -0.22,
-    "us_sp500_pct": 1.79,
-    "us_dow_pct": 1.71,
-    "us_vix": 16.78,
-    "us_vix_pct": 1.7,
-    "dxy": 99.67,
-    "dxy_pct": -0.22,
-    "us_10y": 4.61,
+    "fii_net": -943.42,
+    "dii_net": 2883.17,
+    "crude": 75.08,
+    "crude_pct_change": -0.91,
+    "usdinr": 95.11,
+    "usdinr_pct_change": -0.24,
+    "us_sp500_pct": 0.3,
+    "us_dow_pct": 1.11,
+    "us_vix": 16.26,
+    "us_vix_pct": -1.45,
+    "dxy": 99.69,
+    "dxy_pct": -0.2,
+    "us_10y": 4.63,
     "asia_cue": "Bullish",
-    "europe_cue": "Bullish",
+    "europe_cue": "Mixed",
     "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-05T18:07:17.173707+05:30"
+    "generated_at_ist": "2026-08-05T20:32:16.547382+05:30"
   },
   "world_markets": [
     {
@@ -64,10 +64,10 @@
         {
           "label": "Nikkei",
           "metric": "NIKKEI",
-          "value": 66300.44,
-          "pct_change": 3.66,
+          "value": 63957.53,
+          "pct_change": 0.32,
           "tone": "bull",
-          "session_date": "2026-08-05"
+          "session_date": "2026-08-04"
         },
         {
           "label": "Hang Seng",
@@ -88,10 +88,10 @@
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 6598.26,
-          "pct_change": 3.76,
+          "value": 6358.95,
+          "pct_change": 1.62,
           "tone": "bull",
-          "session_date": "2026-08-05"
+          "session_date": "2026-08-04"
         },
         {
           "label": "Taiwan",
@@ -104,10 +104,10 @@
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 9227.8,
-          "pct_change": 0.9,
+          "value": 9145.8,
+          "pct_change": 1.4,
           "tone": "bull",
-          "session_date": "2026-08-05"
+          "session_date": "2026-08-04"
         }
       ]
     },
@@ -117,24 +117,24 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10929.45,
-          "pct_change": 0.46,
+          "value": 10907.71,
+          "pct_change": 0.26,
           "tone": "bull",
           "session_date": "2026-08-05"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 26258.19,
-          "pct_change": 0.21,
-          "tone": "bull",
+          "value": 26182.88,
+          "pct_change": -0.07,
+          "tone": "neutral",
           "session_date": "2026-08-05"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6493.68,
-          "pct_change": 0.11,
+          "value": 6479.64,
+          "pct_change": -0.11,
           "tone": "neutral",
           "session_date": "2026-08-05"
         }
@@ -146,33 +146,33 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7736.52,
-          "pct_change": 1.79,
+          "value": 7759.86,
+          "pct_change": 0.3,
           "tone": "bull",
-          "session_date": "2026-08-04"
+          "session_date": "2026-08-05"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 26584.99,
-          "pct_change": 2.59,
-          "tone": "bull",
-          "session_date": "2026-08-04"
+          "value": 26618.62,
+          "pct_change": 0.13,
+          "tone": "neutral",
+          "session_date": "2026-08-05"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 54085.88,
-          "pct_change": 1.71,
+          "value": 54684.19,
+          "pct_change": 1.11,
           "tone": "bull",
-          "session_date": "2026-08-04"
+          "session_date": "2026-08-05"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 16.78,
-          "pct_change": 1.7,
-          "tone": "bear",
+          "value": 16.26,
+          "pct_change": -1.45,
+          "tone": "bull",
           "session_date": "2026-08-05"
         }
       ]
@@ -183,58 +183,58 @@
         {
           "label": "USDINR",
           "metric": "USDINR",
-          "value": 95.12,
-          "pct_change": -0.22,
+          "value": 95.11,
+          "pct_change": -0.24,
           "tone": "neutral",
           "session_date": "2026-08-05"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 76.04,
-          "pct_change": 0.36,
-          "tone": "bull",
+          "value": 75.08,
+          "pct_change": -0.91,
+          "tone": "bear",
           "session_date": "2026-08-05"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 80.0,
-          "pct_change": 0.81,
-          "tone": "bull",
+          "value": 78.9,
+          "pct_change": -0.58,
+          "tone": "bear",
           "session_date": "2026-08-05"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 99.67,
-          "pct_change": -0.22,
+          "value": 99.69,
+          "pct_change": -0.2,
           "tone": "neutral",
           "session_date": "2026-08-05"
         },
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 4.61,
-          "pct_change": -0.39,
-          "tone": "bull",
+          "value": 4.63,
+          "pct_change": 0.0,
+          "tone": "neutral",
           "session_date": "2026-08-05"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 50.53,
-          "pct_change": 0.74,
-          "tone": "bull",
-          "session_date": "2026-08-04"
+          "value": 50.33,
+          "pct_change": -0.4,
+          "tone": "bear",
+          "session_date": "2026-08-05"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 66.0,
-          "pct_change": 2.61,
-          "tone": "bull",
-          "session_date": "2026-08-04"
+          "value": 65.98,
+          "pct_change": -0.03,
+          "tone": "neutral",
+          "session_date": "2026-08-05"
         }
       ]
     }
@@ -1410,9 +1410,9 @@
         "composite_factor_rank": 78.0,
         "risk_score": 50,
         "in_oi_spurt": true,
-        "oi_change_pct": 3.1,
+        "oi_change_pct": 1.86,
         "tech_rating": "Buy",
-        "analyst_rec": 1.043478,
+        "analyst_rec": 1.054348,
         "price_target_avg": 1736.565217,
         "days_to_earnings": 75.0,
         "trend_score": 100.0,
@@ -3091,8 +3091,8 @@
     "book": {
       "open": 12,
       "needs_action": 1,
-      "avg_mfe_pct": 3.46,
-      "avg_mae_pct": -2.08
+      "avg_mfe_pct": 3.87,
+      "avg_mae_pct": -2.92
     },
     "ideas_count": 5,
     "score_coverage_pct": 65.0,
@@ -3231,7 +3231,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 3,
+        "reconfirmed_count": 4,
         "notes": null
       },
       {
@@ -3313,12 +3313,12 @@
         "status": "open",
         "last_price": 1450.1,
         "last_checked": "2026-08-05",
-        "mfe_pct": 0.0,
-        "mae_pct": 0.0,
+        "mfe_pct": 0.31,
+        "mae_pct": -1.3,
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 0,
+        "reconfirmed_count": 1,
         "notes": null
       },
       {
@@ -3371,12 +3371,12 @@
         "status": "open",
         "last_price": 438.3,
         "last_checked": "2026-08-05",
-        "mfe_pct": 0.0,
-        "mae_pct": 0.0,
+        "mfe_pct": 0.84,
+        "mae_pct": -5.09,
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 0,
+        "reconfirmed_count": 1,
         "notes": null
       },
       {
@@ -3400,12 +3400,12 @@
         "status": "open",
         "last_price": 371.9,
         "last_checked": "2026-08-05",
-        "mfe_pct": 0.0,
-        "mae_pct": 0.0,
+        "mfe_pct": 0.89,
+        "mae_pct": -3.13,
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 0,
+        "reconfirmed_count": 1,
         "notes": null
       },
       {
@@ -3458,12 +3458,12 @@
         "status": "open",
         "last_price": 19.25,
         "last_checked": "2026-08-05",
-        "mfe_pct": 0.0,
-        "mae_pct": 0.0,
+        "mfe_pct": 2.86,
+        "mae_pct": -0.52,
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 0,
+        "reconfirmed_count": 1,
         "notes": null
       }
     ],
@@ -3506,6 +3506,26 @@
         "action": "HOLD",
         "detail": "-4.36% (-0.67R), 7d held, ~10d left to the T1 horizon",
         "score_at_open": 80.2,
+        "score_now": null
+      },
+      {
+        "symbol": "ICICIBANK",
+        "date_opened": "2026-08-05",
+        "status": "open",
+        "entry": 1450.1,
+        "stop": 1401.49,
+        "t1": 1547.33,
+        "price": 1450.1,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 17,
+        "mfe_pct": 0.31,
+        "mae_pct": -1.3,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~17d left to the T1 horizon",
+        "score_at_open": 82.5,
         "score_now": null
       },
       {
@@ -3589,6 +3609,46 @@
         "score_now": null
       },
       {
+        "symbol": "TALBROAUTO",
+        "date_opened": "2026-08-05",
+        "status": "open",
+        "entry": 438.3,
+        "stop": 403.91,
+        "t1": 507.08,
+        "price": 438.3,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 16,
+        "mfe_pct": 0.84,
+        "mae_pct": -5.09,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~16d left to the T1 horizon",
+        "score_at_open": 81.9,
+        "score_now": null
+      },
+      {
+        "symbol": "TATACAP",
+        "date_opened": "2026-08-05",
+        "status": "open",
+        "entry": 371.9,
+        "stop": 351.32,
+        "t1": 413.05,
+        "price": 371.9,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 17,
+        "mfe_pct": 0.89,
+        "mae_pct": -3.13,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~17d left to the T1 horizon",
+        "score_at_open": 80.4,
+        "score_now": null
+      },
+      {
         "symbol": "UJJIVANSFB",
         "date_opened": "2026-07-27",
         "status": "open",
@@ -3626,6 +3686,26 @@
         "action": "HOLD",
         "detail": "+9.37% (+1.24R), 0d held, ~17d left to the T1 horizon",
         "score_at_open": 93.5,
+        "score_now": null
+      },
+      {
+        "symbol": "UYFINCORP",
+        "date_opened": "2026-08-05",
+        "status": "open",
+        "entry": 19.25,
+        "stop": 17.71,
+        "t1": 22.33,
+        "price": 19.25,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 13,
+        "mfe_pct": 2.86,
+        "mae_pct": -0.52,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~13d left to the T1 horizon",
+        "score_at_open": 83.5,
         "score_now": null
       }
     ],
@@ -3692,39 +3772,21 @@
   },
   "swing_candidates_top": [
     {
-      "symbol": "RELTD",
-      "close": 171.67,
+      "symbol": "UNIMECH",
+      "close": 1344.7,
       "score": 14,
-      "perf_1m": 2.3795324427,
-      "rs_vs_nifty_1m": 1.45,
-      "rs_vs_sector_1m": 6.4,
-      "deliv_pct": 66.84,
+      "perf_1m": 16.3839362991,
+      "rs_vs_nifty_1m": 15.45,
+      "rs_vs_sector_1m": 16.87,
+      "deliv_pct": 50.61,
       "pct_change_oi": null,
-      "upside_to_target_pct": 14.43,
-      "atr": 7.3579276438,
-      "stop_1_5atr": 160.63,
-      "target_5pct": 180.25,
+      "upside_to_target_pct": 10.25,
+      "atr": 60.8989837415,
+      "stop_1_5atr": 1253.35,
+      "target_5pct": 1411.94,
       "earnings_within_21d": false,
       "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Utilities"
-    },
-    {
-      "symbol": "GNA",
-      "close": 529.7,
-      "score": 14,
-      "perf_1m": 13.9139784946,
-      "rs_vs_nifty_1m": 12.98,
-      "rs_vs_sector_1m": 3.95,
-      "deliv_pct": 45.56,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 39.51,
-      "atr": 30.3488148956,
-      "stop_1_5atr": 484.18,
-      "target_5pct": 556.19,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
+      "tech_rating": "Strong buy",
       "sector": "Producer Manufacturing"
     },
     {
@@ -3746,94 +3808,22 @@
       "sector": "Health Technology"
     },
     {
-      "symbol": "360ONE",
-      "close": 1192.0,
+      "symbol": "SPECIALITY",
+      "close": 142.03,
       "score": 14,
-      "perf_1m": 7.3680417943,
-      "rs_vs_nifty_1m": 6.44,
-      "rs_vs_sector_1m": 6.38,
-      "deliv_pct": 53.0,
-      "pct_change_oi": 14.65,
-      "upside_to_target_pct": 10.79,
-      "atr": 33.7270752727,
-      "stop_1_5atr": 1141.41,
-      "target_5pct": 1251.6,
+      "perf_1m": 7.5984848485,
+      "rs_vs_nifty_1m": 6.67,
+      "rs_vs_sector_1m": 8.15,
+      "deliv_pct": 43.17,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.43,
+      "atr": 7.0919683083,
+      "stop_1_5atr": 131.39,
+      "target_5pct": 149.13,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "EUROPRATIK",
-      "close": 311.95,
-      "score": 14,
-      "perf_1m": 2.2786885246,
-      "rs_vs_nifty_1m": 1.35,
-      "rs_vs_sector_1m": 2.77,
-      "deliv_pct": 41.9,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 25.02,
-      "atr": 12.0923888235,
-      "stop_1_5atr": 293.81,
-      "target_5pct": 327.55,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "TATACAP",
-      "close": 371.9,
-      "score": 14,
-      "perf_1m": 6.5616045845,
-      "rs_vs_nifty_1m": 5.63,
-      "rs_vs_sector_1m": 5.57,
-      "deliv_pct": 48.63,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.8,
-      "atr": 10.2878282462,
-      "stop_1_5atr": 356.47,
-      "target_5pct": 390.5,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "ICICIBANK",
-      "close": 1450.1,
-      "score": 14,
-      "perf_1m": 2.6983002833,
-      "rs_vs_nifty_1m": 1.77,
-      "rs_vs_sector_1m": 3.49,
-      "deliv_pct": 50.17,
-      "pct_change_oi": 3.1,
-      "upside_to_target_pct": 19.75,
-      "atr": 24.3072575604,
-      "stop_1_5atr": 1413.64,
-      "target_5pct": 1522.6,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "SAMBHV",
-      "close": 121.16,
-      "score": 14,
-      "perf_1m": 5.3565217391,
-      "rs_vs_nifty_1m": 4.43,
-      "rs_vs_sector_1m": 3.47,
-      "deliv_pct": 49.99,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 16.64,
-      "atr": 5.0943830267,
-      "stop_1_5atr": 113.52,
-      "target_5pct": 127.22,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Non-Energy Minerals"
+      "sector": "Consumer Services"
     },
     {
       "symbol": "SMCGLOBAL",
@@ -3854,22 +3844,40 @@
       "sector": "Finance"
     },
     {
-      "symbol": "SPECIALITY",
-      "close": 142.03,
+      "symbol": "360ONE",
+      "close": 1192.0,
       "score": 14,
-      "perf_1m": 7.5984848485,
-      "rs_vs_nifty_1m": 6.67,
-      "rs_vs_sector_1m": 8.15,
-      "deliv_pct": 43.17,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.43,
-      "atr": 7.0919683083,
-      "stop_1_5atr": 131.39,
-      "target_5pct": 149.13,
+      "perf_1m": 7.3680417943,
+      "rs_vs_nifty_1m": 6.44,
+      "rs_vs_sector_1m": 6.38,
+      "deliv_pct": 53.0,
+      "pct_change_oi": 10.99,
+      "upside_to_target_pct": 10.79,
+      "atr": 33.7270752727,
+      "stop_1_5atr": 1141.41,
+      "target_5pct": 1251.6,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Consumer Services"
+      "sector": "Finance"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "close": 1450.1,
+      "score": 14,
+      "perf_1m": 2.6983002833,
+      "rs_vs_nifty_1m": 1.77,
+      "rs_vs_sector_1m": 3.49,
+      "deliv_pct": 50.17,
+      "pct_change_oi": 1.86,
+      "upside_to_target_pct": 19.75,
+      "atr": 24.3072575604,
+      "stop_1_5atr": 1413.64,
+      "target_5pct": 1522.6,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
     },
     {
       "symbol": "INDHOTEL",
@@ -3879,7 +3887,7 @@
       "rs_vs_nifty_1m": 0.58,
       "rs_vs_sector_1m": 2.06,
       "deliv_pct": 54.23,
-      "pct_change_oi": 2.3,
+      "pct_change_oi": 1.66,
       "upside_to_target_pct": 12.07,
       "atr": 15.399138465,
       "stop_1_5atr": 717.95,
@@ -3890,76 +3898,148 @@
       "sector": "Consumer Services"
     },
     {
-      "symbol": "UNIMECH",
-      "close": 1344.7,
+      "symbol": "GNA",
+      "close": 529.7,
       "score": 14,
-      "perf_1m": 16.3839362991,
-      "rs_vs_nifty_1m": 15.45,
-      "rs_vs_sector_1m": 16.87,
-      "deliv_pct": 50.61,
+      "perf_1m": 13.9139784946,
+      "rs_vs_nifty_1m": 12.98,
+      "rs_vs_sector_1m": 3.95,
+      "deliv_pct": 45.56,
       "pct_change_oi": null,
-      "upside_to_target_pct": 10.25,
-      "atr": 60.8989837415,
-      "stop_1_5atr": 1253.35,
-      "target_5pct": 1411.94,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "MUKANDLTD",
-      "close": 142.17,
-      "score": 13,
-      "perf_1m": 6.9027746447,
-      "rs_vs_nifty_1m": 5.97,
-      "rs_vs_sector_1m": 5.01,
-      "deliv_pct": 54.61,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.5,
-      "atr": 3.9060563625,
-      "stop_1_5atr": 136.31,
-      "target_5pct": 149.28,
-      "earnings_within_21d": false,
-      "event_risk_score": 2,
-      "tech_rating": "Strong buy",
-      "sector": "Non-Energy Minerals"
-    },
-    {
-      "symbol": "PRECOT",
-      "close": 826.85,
-      "score": 13,
-      "perf_1m": 13.2593657969,
-      "rs_vs_nifty_1m": 12.33,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 84.69,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.03,
-      "atr": 42.5781448646,
-      "stop_1_5atr": 762.98,
-      "target_5pct": 868.19,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Process Industries"
-    },
-    {
-      "symbol": "KANPRPLA",
-      "close": 209.57,
-      "score": 13,
-      "perf_1m": 7.460773254,
-      "rs_vs_nifty_1m": 6.53,
-      "rs_vs_sector_1m": 7.95,
-      "deliv_pct": 41.2,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 17.86,
-      "atr": 10.9934606599,
-      "stop_1_5atr": 193.08,
-      "target_5pct": 220.05,
+      "upside_to_target_pct": 39.51,
+      "atr": 30.3488148956,
+      "stop_1_5atr": 484.18,
+      "target_5pct": 556.19,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "SAMBHV",
+      "close": 121.16,
+      "score": 14,
+      "perf_1m": 5.3565217391,
+      "rs_vs_nifty_1m": 4.43,
+      "rs_vs_sector_1m": 3.47,
+      "deliv_pct": 49.99,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 16.64,
+      "atr": 5.0943830267,
+      "stop_1_5atr": 113.52,
+      "target_5pct": 127.22,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Non-Energy Minerals"
+    },
+    {
+      "symbol": "TATACAP",
+      "close": 371.9,
+      "score": 14,
+      "perf_1m": 6.5616045845,
+      "rs_vs_nifty_1m": 5.63,
+      "rs_vs_sector_1m": 5.57,
+      "deliv_pct": 48.63,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.8,
+      "atr": 10.2878282462,
+      "stop_1_5atr": 356.47,
+      "target_5pct": 390.5,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "RELTD",
+      "close": 171.67,
+      "score": 14,
+      "perf_1m": 2.3795324427,
+      "rs_vs_nifty_1m": 1.45,
+      "rs_vs_sector_1m": 6.4,
+      "deliv_pct": 66.84,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 14.43,
+      "atr": 7.3579276438,
+      "stop_1_5atr": 160.63,
+      "target_5pct": 180.25,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Utilities"
+    },
+    {
+      "symbol": "EUROPRATIK",
+      "close": 311.95,
+      "score": 14,
+      "perf_1m": 2.2786885246,
+      "rs_vs_nifty_1m": 1.35,
+      "rs_vs_sector_1m": 2.77,
+      "deliv_pct": 41.9,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 25.02,
+      "atr": 12.0923888235,
+      "stop_1_5atr": 293.81,
+      "target_5pct": 327.55,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "NAHARCAP",
+      "close": 264.58,
+      "score": 13,
+      "perf_1m": 4.5770750988,
+      "rs_vs_nifty_1m": 3.65,
+      "rs_vs_sector_1m": 3.59,
+      "deliv_pct": 96.32,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 18.09,
+      "atr": 8.4346190347,
+      "stop_1_5atr": 251.93,
+      "target_5pct": 277.81,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "GANDHITUBE",
+      "close": 896.95,
+      "score": 13,
+      "perf_1m": 4.3025757311,
+      "rs_vs_nifty_1m": 3.37,
+      "rs_vs_sector_1m": 2.41,
+      "deliv_pct": 60.5,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 15.03,
+      "atr": 15.4424349857,
+      "stop_1_5atr": 873.79,
+      "target_5pct": 941.8,
+      "earnings_within_21d": false,
+      "event_risk_score": 2,
+      "tech_rating": "Buy",
+      "sector": "Non-Energy Minerals"
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "close": 85.3,
+      "score": 13,
+      "perf_1m": 5.9627329193,
+      "rs_vs_nifty_1m": 5.03,
+      "rs_vs_sector_1m": 6.75,
+      "deliv_pct": 51.09,
+      "pct_change_oi": 2.97,
+      "upside_to_target_pct": 7.64,
+      "atr": 1.9604950381,
+      "stop_1_5atr": 82.36,
+      "target_5pct": 89.56,
+      "earnings_within_21d": false,
+      "event_risk_score": 2,
+      "tech_rating": "Strong buy",
+      "sector": "Finance"
     }
   ],
   "urls": {
@@ -4025,13 +4105,13 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-08-05T18:07:31.791525+05:30",
-    "market_brief": "The market is in a neutral regime with a low India VIX of 12.06, indicating low overall risk. The Nifty trend is also neutral with a 0.04% change. The FII net is positive at 2446.47, while the DII net is negative at -936.14.",
+    "generated_at_ist": "2026-08-05T20:32:34.405968+05:30",
+    "market_brief": "The market is in a neutral regime with low overall risk. Nifty trend is neutral with a 0.04% change, and India VIX is at 12.06, indicating low volatility. FII net is -943.42, and DII net is 2883.17, showing a mixed sentiment from foreign and domestic investors.",
     "stance": "selective_aggressive",
     "focus": [
-      "NBFC & Capital Markets",
-      "Banks",
-      "Producer Manufacturing"
+      "Low volatility",
+      "Mixed investor sentiment",
+      "Earnings ahead for some stocks"
     ],
     "suggestions": [
       {
@@ -4042,7 +4122,7 @@
         "stop": 17.71,
         "t1": 22.33,
         "hold_days": 13,
-        "rationale": "Parkhu score of 83.5 with a buy band",
+        "rationale": "Buy band with a high Parkhu score of 83.5",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -4053,7 +4133,7 @@
         "stop": 1401.49,
         "t1": 1547.33,
         "hold_days": 17,
-        "rationale": "Parkhu score of 82.5 with a buy band",
+        "rationale": "Buy band with a high Parkhu score of 82.5",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -4064,29 +4144,7 @@
         "stop": 1045.67,
         "t1": 1318.46,
         "hold_days": 12,
-        "rationale": "Already in open book with a last price of 1136.6",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "TALBROAUTO",
-        "action": "consider_entry",
-        "conviction": "high",
-        "entry": 438.3,
-        "stop": 403.91,
-        "t1": 507.08,
-        "hold_days": 16,
-        "rationale": "Parkhu score of 81.9 with a buy band",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "TATACAP",
-        "action": "consider_entry",
-        "conviction": "high",
-        "entry": 371.9,
-        "stop": 351.32,
-        "t1": 413.05,
-        "hold_days": 17,
-        "rationale": "Parkhu score of 80.4 with a buy band",
+        "rationale": "Already in open book with a buy band and a Parkhu score of 82.4",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -4103,238 +4161,232 @@
     ],
     "open_book_notes": [
       "Monitor CREDITACC for potential stop loss",
-      "UJJIVANSFB is near its stop loss",
-      "IIFL is performing well with a high mfe_pct",
-      "INDNIPPON is already in open book",
-      "LODHA is near its stop loss",
-      "IFBIND needs to be reduced or stood aside due to upcoming earnings",
-      "ICICIBANK is a new entry in open book",
-      "SHRIPISTON is performing well with a high mfe_pct",
-      "TALBROAUTO is a new entry in open book",
-      "TATACAP is a new entry in open book"
+      "UJJIVANSFB and IIFL showing positive mfe_pct",
+      "INDNIPPON and ICICIBANK recently entered open book"
     ],
-    "claude_feed": "Regime: Neutral, Stance: Selective Aggressive, Top Ideas: UYFINCORP, ICICIBANK, INDNIPPON, TALBROAUTO, TATACAP, Caveats: 35 of KB-14's 100 score points cannot be computed, promoter pledge and ownership data are empty",
+    "claude_feed": "Regime: Neutral, Stance: Selective Aggressive, Top Ideas: UYFINCORP, ICICIBANK, INDNIPPON, Caveats: Earnings ahead for IFBIND, low score coverage",
     "stock_reviews": [
       {
         "symbol": "UYFINCORP",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "UYFINCORP fits a \u22641-month swing due to its recent bullish trend, with a high return of 26.23% in the last month and a strong relative performance against Nifty and its sector. The stock's RSI14 is at 69.45, indicating a potential for further upside. With a parkhu score of 83.5 and a buy band, the setup appears favorable for a short-term swing. The distance from its 52-week high is also relatively close at -3.61%, suggesting potential for a breakout.",
+        "thesis": "UYFINCORP is a suitable \u22641-month swing trade due to its strong recent performance, with a 1-month return of 26.23% and a 3-month return of 31.85%, outperforming both the Nifty and its sector. The stock's trend label is bullish, and its RSI14 is 69.45, indicating a potential for further upside. The company's parkhu score of 83.5 and buy band also support this setup.",
         "catalysts": [
-          "Bullish trend",
-          "High relative performance",
-          "Favorable technical ratings"
+          "Strong momentum",
+          "Outperforming sector",
+          "Bullish trend"
         ],
         "risks": [
           "Market regime change",
-          "Sector-specific risks",
-          "NBFC & Capital Markets volatility"
+          "Sector rotation",
+          "Economic downturn"
         ],
-        "what_to_watch": "Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 17.71, indicating a shift in market sentiment against the stock.",
+        "what_to_watch": "Triggers for this trade include a strong breakout above the current price, while invalidation cues include a drop below the stop level of 17.71. A close eye should be kept on the overall market regime and sector performance.",
         "entry": 19.25,
         "stop": 17.71,
         "t1": 22.33,
         "hold_days": 13,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-05T18:07:33.236595+05:30"
+        "generated_at_ist": "2026-08-05T20:32:35.734877+05:30"
       },
       {
         "symbol": "ICICIBANK",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "ICICIBANK's current setup fits a \u22641-month swing due to its bullish trend label, high parkhu score of 82.5, and recent outperformance against the Nifty and its sector. The stock's RSI14 at 61.53 is not overbought, and its distance from the 52-week high is only -2.02%, indicating potential for further upside. The overall low risk regime and neutral market regime also support a swing trade.",
+        "thesis": "ICICIBANK's current setup fits a \u22641-month swing due to its bullish trend label, high parkhu score of 82.5, and recent outperformance against the Nifty and its sector. The stock's RSI14 is at 61.53, indicating a potential for further upside without being overbought. With a low overall risk regime and a Neutral market regime, the conditions seem favorable for a swing trade.",
         "catalysts": [
           "Earnings anticipation",
           "Sector outperformance",
           "Bullish trend"
         ],
         "risks": [
-          "Interest rate changes",
-          "Sectoral downturn",
-          "Global market volatility"
+          "Market regime shift",
+          "Sector rotation",
+          "Earnings disappointment"
         ],
-        "what_to_watch": "Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a close below the stop level of 1401.49. A drop in the RSI14 below 50 would also be a warning sign.",
+        "what_to_watch": "Triggers for this trade include a strong move above the current price, while invalidation cues would be a breach of the stop level at 1401.49, indicating a failure of the bullish thesis.",
         "entry": 1450.1,
         "stop": 1401.49,
         "t1": 1547.33,
         "hold_days": 17,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-05T18:07:35.389358+05:30"
+        "generated_at_ist": "2026-08-05T20:32:37.992837+05:30"
       },
       {
         "symbol": "INDNIPPON",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "The setup for INDNIPPON fits a \u22641-month swing as the stock has shown a strong return of 14.81% in the last month and 44.06% in the last three months, indicating a bullish trend. The RSI14 is at 51.83, which is not overbought, and the ADX14 is at 33.82, indicating a strong trend. The stock is also trading close to its 52-week high, with a distance of -11.08%, which could act as a catalyst for further upside.",
+        "thesis": "This setup fits a \u22641-month swing as the stock has shown a strong return of 14.80% in the last month and 44.06% in the last 3 months, with a bullish trend label and a relatively high delivery percentage of 56.58%. The distance from the 52-week high is -11.08%, indicating potential for upside. The ATR percentage of price is 4.63%, suggesting manageable volatility.",
         "catalysts": [
           "Strong momentum",
           "Bullish trend",
-          "Close to 52-week high"
+          "High delivery percentage"
         ],
         "risks": [
-          "Neutral market regime",
-          "Producer Manufacturing sector risk"
+          "Neutral technical rating",
+          "Producer Manufacturing sector risks"
         ],
-        "what_to_watch": "Triggers for this setup would be a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1045.67, indicating a reversal of the trend.",
+        "what_to_watch": "Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 1045.67. A close eye should be kept on the stock's ability to hold above its recent gains.",
         "entry": 1136.6,
         "stop": 1045.67,
         "t1": 1318.46,
         "hold_days": 12,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-05T18:07:37.229549+05:30"
+        "generated_at_ist": "2026-08-05T20:32:39.886421+05:30"
       },
       {
         "symbol": "TALBROAUTO",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "TALBROAUTO fits a \u22641-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The company's strong technical rating and high Parkhu score also support this setup. With a relatively low risk sector and overall low risk regime, this stock is poised for a short-term uptrend.",
+        "thesis": "Talbros Automotive Components Limited fits a \u22641-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The company's strong technical rating and high Parkhu score further support this setup. With a relatively low India VIX, the overall risk is low, making it an attractive opportunity for a short-term swing.",
         "catalysts": [
           "Strong trend",
           "High RSI",
           "Outperformance"
         ],
         "risks": [
-          "Market volatility",
-          "Sector downturn"
+          "Market regime change",
+          "Sector downturn",
+          "Economic downturn"
         ],
-        "what_to_watch": "Watch for a breakout above the current level to confirm the bullish trend, and a close below the stop level to invalidate the setup.",
+        "what_to_watch": "Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a drop below the stop level, indicating a potential reversal in the trend.",
         "entry": 438.3,
         "stop": 403.91,
         "t1": 507.08,
         "hold_days": 16,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-05T18:07:39.230587+05:30"
+        "generated_at_ist": "2026-08-05T20:32:42.080052+05:30"
       },
       {
         "symbol": "TATACAP",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "TATACAP fits a \u22641-month swing due to its strong bullish trend, with an ADX of 25.09 and RSI of 64.38, indicating a potential continuation of its recent 6.56% 1-month return. The stock's distance from its 52-week high is -2.12%, suggesting room for upside. The overall market regime is neutral with low risk, supporting a swing trade. The company's strong technical rating and recent outperformance versus Nifty and its sector add to the bullish case.",
+        "thesis": "TATACAP fits a \u22641-month swing due to its strong bullish trend, with an ADX of 25.09 and RSI of 64.38, indicating a potential for further upside. The stock has outperformed Nifty and its sector in the last month, with returns of 6.56% and 5.63% respectively. The distance from its 52-week high is only -2.12%, suggesting a possible breakout. The overall market regime is neutral with low risk, supporting a swing trade.",
         "catalysts": [
-          "Earnings anticipation",
-          "Sector outperformance",
-          "Bullish trend continuation"
+          "Strong trend",
+          "Outperformance",
+          "Breakout potential"
         ],
         "risks": [
-          "Market regime shift",
+          "Market regime change",
           "Earnings disappointment",
-          "Sector rotation"
+          "Sector downturn"
         ],
-        "what_to_watch": "Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 351.32, indicating a failed swing setup.",
+        "what_to_watch": "Triggers for this trade include a strong breakout above the current price, while invalidation cues would be a drop below the stop level of 351.32, indicating a reversal of the trend.",
         "entry": 371.9,
         "stop": 351.32,
         "t1": 413.05,
         "hold_days": 17,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-05T18:07:41.612397+05:30"
+        "generated_at_ist": "2026-08-05T20:32:44.212643+05:30"
       }
     ]
   },
   "market_news_top10": [
     {
       "rank": 1,
-      "headline": "Aarti Surfactants Limited has informed the Exchange regarding 'Payment Intimation under Reg. 57 of SEBI (LODR) Regulations, 2015'.",
-      "symbol": "AARTISURF",
+      "headline": "Outcome of Board Meeting",
+      "symbol": "IONEXCHANG",
       "impact": "high",
-      "why_it_matters": "High news score and major catalyst indicate significant market impact",
+      "why_it_matters": "The company has submitted its unaudited financial results for the first quarter ended June 30, 2026, which may have a significant impact on the stock price and investor sentiment.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782782+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363622+05:30"
     },
     {
       "rank": 2,
-      "headline": "Pace Digitek Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026.",
-      "symbol": "PACEDIGITK",
+      "headline": "Press Release",
+      "symbol": "BIKAJI",
       "impact": "high",
-      "why_it_matters": "High news score, major catalyst, and risk event indicate significant market impact",
+      "why_it_matters": "The company has released its financial results for Q1 FY27, which may influence the stock price and investor decisions.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782812+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363652+05:30"
     },
     {
       "rank": 3,
-      "headline": "Datamatics Global Services Limited has submitted to the Exchange, the financial results for the period ended June 30, 2026.",
-      "symbol": "DATAMATICS",
-      "impact": "high",
-      "why_it_matters": "High news score, major catalyst, and risk event indicate significant market impact",
+      "headline": "Updates",
+      "symbol": "PASHUPATI",
+      "impact": "medium",
+      "why_it_matters": "The company has informed the Exchange regarding the details of Key Managerial Personnel authorized to determine materiality of events, which may have some impact on the company's operations and investor trust.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782815+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363655+05:30"
     },
     {
       "rank": 4,
-      "headline": "Indo Count Industries Limited has informed the Exchange about Newspaper Advertisement  completion of dispatch of notice of 37th AGM of the Company along with E-voting Information and Book Closure",
-      "symbol": "ICIL",
-      "impact": "medium",
-      "why_it_matters": "Risk event indicates potential market impact",
+      "headline": "Shareholders meeting",
+      "symbol": "RML",
+      "impact": "low",
+      "why_it_matters": "The company has held its 22nd AGM, which is a routine event, but the proceedings and voting results may be of interest to shareholders.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782818+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363658+05:30"
     },
     {
       "rank": 5,
-      "headline": "BSE Limited has informed the Exchange about Schedule of meet",
-      "symbol": "BSE",
+      "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "symbol": "HINDPETRO",
       "impact": "low",
-      "why_it_matters": "Low news score indicates minimal market impact",
+      "why_it_matters": "The company has informed the Exchange about a schedule of meet, which may be of interest to analysts and institutional investors, but is unlikely to have a significant impact on the stock price.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782820+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363660+05:30"
     },
     {
       "rank": 6,
-      "headline": "Fiem Industries Limited has informed the Exchange about Schedule of meet",
-      "symbol": "FIEMIND",
+      "headline": "Investor Presentation",
+      "symbol": "AJAXENGG",
       "impact": "low",
-      "why_it_matters": "Low news score indicates minimal market impact",
+      "why_it_matters": "The company has informed the Exchange about an investor presentation, which may provide some insight into the company's operations and strategy, but is unlikely to have a significant impact on the stock price.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782822+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363663+05:30"
     },
     {
       "rank": 7,
-      "headline": "Bharti Airtel Limited has informed the Exchange about Link of Recording",
-      "symbol": "BHARTIARTL",
+      "headline": "General Updates",
+      "symbol": "KPITTECH",
       "impact": "low",
-      "why_it_matters": "Low news score indicates minimal market impact",
+      "why_it_matters": "The company has informed the Exchange about its Business Responsibility and Sustainability Report for FY 2025-26, which may be of interest to environmentally and socially responsible investors.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782824+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363665+05:30"
     },
     {
       "rank": 8,
-      "headline": "Nuvoco Vistas Corporation Limited has informed the Exchange about Schedule of meet",
-      "symbol": "NUVOCO",
+      "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "symbol": "PERSISTENT",
       "impact": "low",
-      "why_it_matters": "Low news score indicates minimal market impact",
+      "why_it_matters": "The company has informed the Exchange about a presentation, which may be of interest to analysts and institutional investors, but is unlikely to have a significant impact on the stock price.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782826+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363667+05:30"
     },
     {
       "rank": 9,
-      "headline": "Cohance Lifesciences Limited has informed the Exchange regarding a press release dated August 05, 2026, titled \"Press Release\".",
-      "symbol": "COHANCE",
+      "headline": "Shareholders meeting",
+      "symbol": "CPPLUS",
       "impact": "low",
-      "why_it_matters": "Low news score indicates minimal market impact",
+      "why_it_matters": "The company has submitted the Exchange a copy of Voting Results and Scrutinizer's report of its 31st Annual General Meeting, which is a routine event.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782828+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363669+05:30"
     },
     {
       "rank": 10,
-      "headline": "IFGL Refractories Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on August 05, 2026.",
-      "symbol": "IFGLEXPOR",
+      "headline": "Disclosure of material issue",
+      "symbol": "JAINREC",
       "impact": "low",
-      "why_it_matters": "Low news score indicates minimal market impact",
+      "why_it_matters": "The company has informed the Stock Exchanges regarding the order permitting resumption of manufacturing operations at its Unit-II manufacturing facility, which may have some impact on the company's operations.",
       "source_date": "2026-08-05",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-05T18:07:44.782830+05:30"
+      "generated_at_ist": "2026-08-05T20:32:47.363671+05:30"
     }
   ]
 }

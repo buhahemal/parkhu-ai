@@ -5,68 +5,68 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-05",
-  "generated_at_ist": "2026-08-05T09:21:10.980041+05:30",
-  "duration_seconds": 332.9,
+  "generated_at_ist": "2026-08-05T18:07:29.970981+05:30",
+  "duration_seconds": 333.9,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 2972,
-      "seconds": 2.4
+      "rows": 2974,
+      "seconds": 7.2
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 13475,
-      "cache_rows": 7805345,
-      "symbols": 2695,
-      "failed": 5,
+      "rows": 13485,
+      "cache_rows": 7808504,
+      "symbols": 2697,
+      "failed": 6,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2448,
+      "warm": 2451,
       "cold": 252,
-      "new_symbols": 5,
+      "new_symbols": 7,
       "retries": 2,
-      "seconds": 249.3
+      "seconds": 268.8
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 2972,
-      "seconds": 0.1
+      "rows": 2974,
+      "seconds": 0.0
     },
     {
       "agent": "indices",
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.5
+      "seconds": 0.7
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.9
+      "seconds": 1.4
     },
     {
       "agent": "smartmoney",
       "status": "partial",
       "rows": 2,
-      "seconds": 3.9
+      "seconds": 3.7
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.1
+      "seconds": 4.3
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 446,
-      "seconds": 5.0
+      "seconds": 5.1
     },
     {
       "agent": "stock_options",
@@ -78,14 +78,14 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2070,
-      "seconds": 17.3
+      "rows": 2072,
+      "seconds": 4.7
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.5
+      "seconds": 2.8
     },
     {
       "agent": "news",
@@ -97,25 +97,25 @@
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.1
+      "seconds": 4.3
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 2972,
-      "seconds": 0.3
+      "rows": 2974,
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 2972,
-      "seconds": 1.0
+      "rows": 2974,
+      "seconds": 0.4
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 206,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -138,35 +138,36 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2695,
-      "with_structure": 2695,
+      "rows": 2697,
+      "with_structure": 2697,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.5
+      "seconds": 10.9
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 2972,
-      "seconds": 3.4
+      "rows": 2974,
+      "seconds": 1.6
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 0,
-      "open_positions": 9,
+      "rows": 5,
+      "ideas": [
+        "UYFINCORP",
+        "ICICIBANK",
+        "INDNIPPON",
+        "TALBROAUTO",
+        "TATACAP"
+      ],
+      "watchlist": 5,
+      "open_positions": 8,
       "needing_action": [
-        "GATECHDVR",
-        "IFBIND",
-        "SHRIPISTON",
-        "UNIPARTS"
+        "IFBIND"
       ],
-      "closed_today": [
-        "GATECHDVR"
-      ],
-      "seconds": 0.3
+      "closed_today": [],
+      "seconds": 0.2
     }
   ],
   "ok": 19,

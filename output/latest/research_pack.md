@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-05
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-05T18:07:29.970981+05:30
+- **generated_at_ist:** 2026-08-05T20:32:32.688716+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,7 +9,7 @@
 - market_regime: **Neutral**
 - nifty: Neutral (0.04%)
 - india_vix: 12.06 (Low)
-- fii_net: 2446.47 | dii_net: -936.14
+- fii_net: -943.42 | dii_net: 2883.17
 - overall_risk: Low | global_risk: Neutral
 
 ## Funnel
@@ -97,12 +97,12 @@
 - **INDNIPPON** status=open entry=1163.1 last=1136.6 mfe=4.43 mae=-4.09 opened=2026-07-28
 - **LODHA** status=open entry=1287.15 last=1250.0 mfe=3.24 mae=-4.72 opened=2026-07-30
 - **IFBIND** status=open entry=1354.0 last=1443.0 mfe=8.42 mae=-0.36 opened=2026-08-04
-- **ICICIBANK** status=open entry=1450.1 last=1450.1 mfe=0.0 mae=0.0 opened=2026-08-05
+- **ICICIBANK** status=open entry=1450.1 last=1450.1 mfe=0.31 mae=-1.3 opened=2026-08-05
 - **SHRIPISTON** status=open entry=4402.7 last=4440.8 mfe=2.96 mae=-4.33 opened=2026-08-05
-- **TALBROAUTO** status=open entry=438.3 last=438.3 mfe=0.0 mae=0.0 opened=2026-08-05
-- **TATACAP** status=open entry=371.9 last=371.9 mfe=0.0 mae=0.0 opened=2026-08-05
+- **TALBROAUTO** status=open entry=438.3 last=438.3 mfe=0.84 mae=-5.09 opened=2026-08-05
+- **TATACAP** status=open entry=371.9 last=371.9 mfe=0.89 mae=-3.13 opened=2026-08-05
 - **UNIPARTS** status=open entry=732.95 last=801.65 mfe=10.79 mae=0.0 opened=2026-08-05
-- **UYFINCORP** status=open entry=19.25 last=19.25 mfe=0.0 mae=0.0 opened=2026-08-05
+- **UYFINCORP** status=open entry=19.25 last=19.25 mfe=2.86 mae=-0.52 opened=2026-08-05
 
 ## Needs action
 
@@ -114,51 +114,51 @@
 
 ## Swing candidates (top)
 
-- RELTD: score=14 rs_nifty=1.45 deliv=66.84
-- GNA: score=14 rs_nifty=12.98 deliv=45.56
-- BLUEJET: score=14 rs_nifty=5.31 deliv=47.81
-- 360ONE: score=14 rs_nifty=6.44 deliv=53.0
-- EUROPRATIK: score=14 rs_nifty=1.35 deliv=41.9
-- TATACAP: score=14 rs_nifty=5.63 deliv=48.63
-- ICICIBANK: score=14 rs_nifty=1.77 deliv=50.17
-- SAMBHV: score=14 rs_nifty=4.43 deliv=49.99
-- SMCGLOBAL: score=14 rs_nifty=13.23 deliv=68.55
-- SPECIALITY: score=14 rs_nifty=6.67 deliv=43.17
-- INDHOTEL: score=14 rs_nifty=0.58 deliv=54.23
 - UNIMECH: score=14 rs_nifty=15.45 deliv=50.61
-- MUKANDLTD: score=13 rs_nifty=5.97 deliv=54.61
-- PRECOT: score=13 rs_nifty=12.33 deliv=84.69
-- KANPRPLA: score=13 rs_nifty=6.53 deliv=41.2
+- BLUEJET: score=14 rs_nifty=5.31 deliv=47.81
+- SPECIALITY: score=14 rs_nifty=6.67 deliv=43.17
+- SMCGLOBAL: score=14 rs_nifty=13.23 deliv=68.55
+- 360ONE: score=14 rs_nifty=6.44 deliv=53.0
+- ICICIBANK: score=14 rs_nifty=1.77 deliv=50.17
+- INDHOTEL: score=14 rs_nifty=0.58 deliv=54.23
+- GNA: score=14 rs_nifty=12.98 deliv=45.56
+- SAMBHV: score=14 rs_nifty=4.43 deliv=49.99
+- TATACAP: score=14 rs_nifty=5.63 deliv=48.63
+- RELTD: score=14 rs_nifty=1.45 deliv=66.84
+- EUROPRATIK: score=14 rs_nifty=1.35 deliv=41.9
+- NAHARCAP: score=13 rs_nifty=3.65 deliv=96.32
+- GANDHITUBE: score=13 rs_nifty=3.37 deliv=60.5
+- IDFCFIRSTB: score=13 rs_nifty=5.03 deliv=51.09
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +3.66% (bull)
+- Nikkei: +0.32% (bull)
 - Hang Seng: +0.24% (bull)
 - Shanghai: +1.47% (bull)
-- Kospi: +3.76% (bull)
+- Kospi: +1.62% (bull)
 - Taiwan: +2.88% (bull)
-- ASX 200: +0.90% (bull)
+- ASX 200: +1.40% (bull)
 
 ### Europe
-- FTSE 100: +0.46% (bull)
-- DAX: +0.21% (bull)
-- Euro Stoxx 50: +0.11% (neutral)
+- FTSE 100: +0.26% (bull)
+- DAX: -0.07% (neutral)
+- Euro Stoxx 50: -0.11% (neutral)
 
 ### US
-- S&P 500: +1.79% (bull)
-- Nasdaq: +2.59% (bull)
-- Dow: +1.71% (bull)
-- US VIX: +1.70% (bear)
+- S&P 500: +0.30% (bull)
+- Nasdaq: +0.13% (neutral)
+- Dow: +1.11% (bull)
+- US VIX: -1.45% (bull)
 
 ### Macro
-- USDINR: -0.22% (neutral)
-- Crude WTI: +0.36% (bull)
-- Brent: +0.81% (bull)
-- DXY: -0.22% (neutral)
-- US 10Y: -0.39% (bull)
-- India ETF: +0.74% (bull)
-- EM ETF: +2.61% (bull)
+- USDINR: -0.24% (neutral)
+- Crude WTI: -0.91% (bear)
+- Brent: -0.58% (bear)
+- DXY: -0.20% (neutral)
+- US 10Y: +0.00% (neutral)
+- India ETF: -0.40% (bear)
+- EM ETF: -0.03% (neutral)
 
 
 ## Groq desk note
@@ -166,55 +166,53 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The market is in a neutral regime with a low India VIX of 12.06, indicating low overall risk. The Nifty trend is also neutral with a 0.04% change. The FII net is positive at 2446.47, while the DII net is negative at -936.14.
+The market is in a neutral regime with low overall risk. Nifty trend is neutral with a 0.04% change, and India VIX is at 12.06, indicating low volatility. FII net is -943.42, and DII net is 2883.17, showing a mixed sentiment from foreign and domestic investors.
 
-- **UYFINCORP** [consider_entry/high] entry=19.25 stop=17.71 t1=22.33 hold=13d — Parkhu score of 83.5 with a buy band
-- **ICICIBANK** [consider_entry/high] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Parkhu score of 82.5 with a buy band
-- **INDNIPPON** [manage_open/medium] entry=1136.6 stop=1045.67 t1=1318.46 hold=12d — Already in open book with a last price of 1136.6
-- **TALBROAUTO** [consider_entry/high] entry=438.3 stop=403.91 t1=507.08 hold=16d — Parkhu score of 81.9 with a buy band
-- **TATACAP** [consider_entry/high] entry=371.9 stop=351.32 t1=413.05 hold=17d — Parkhu score of 80.4 with a buy band
+- **UYFINCORP** [consider_entry/high] entry=19.25 stop=17.71 t1=22.33 hold=13d — Buy band with a high Parkhu score of 83.5
+- **ICICIBANK** [consider_entry/high] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Buy band with a high Parkhu score of 82.5
+- **INDNIPPON** [manage_open/medium] entry=1136.6 stop=1045.67 t1=1318.46 hold=12d — Already in open book with a buy band and a Parkhu score of 82.4
 - **IFBIND** [stand_aside/low] entry=1354.0 stop=1306.54 t1=1473.0 hold=7d — Earnings ahead, reduce or stand aside
 
 ### AI stock reviews
 
-- **UYFINCORP** [high] UYFINCORP fits a ≤1-month swing due to its recent bullish trend, with a high return of 26.23% in the last month and a strong relative performance against Nifty and its sector. The stock's RSI14 is at 69.45, indicating a potential for further upside. With a parkhu score of 83.5 and a buy band, the setup appears favorable for a short-term swing. The distance from its 52-week high is also relatively close at -3.61%, suggesting potential for a breakout.
-  - catalysts: Bullish trend, High relative performance, Favorable technical ratings
-  - risks: Market regime change, Sector-specific risks, NBFC & Capital Markets volatility
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 17.71, indicating a shift in market sentiment against the stock.
-- **ICICIBANK** [high] ICICIBANK's current setup fits a ≤1-month swing due to its bullish trend label, high parkhu score of 82.5, and recent outperformance against the Nifty and its sector. The stock's RSI14 at 61.53 is not overbought, and its distance from the 52-week high is only -2.02%, indicating potential for further upside. The overall low risk regime and neutral market regime also support a swing trade.
+- **UYFINCORP** [high] UYFINCORP is a suitable ≤1-month swing trade due to its strong recent performance, with a 1-month return of 26.23% and a 3-month return of 31.85%, outperforming both the Nifty and its sector. The stock's trend label is bullish, and its RSI14 is 69.45, indicating a potential for further upside. The company's parkhu score of 83.5 and buy band also support this setup.
+  - catalysts: Strong momentum, Outperforming sector, Bullish trend
+  - risks: Market regime change, Sector rotation, Economic downturn
+  - watch: Triggers for this trade include a strong breakout above the current price, while invalidation cues include a drop below the stop level of 17.71. A close eye should be kept on the overall market regime and sector performance.
+- **ICICIBANK** [high] ICICIBANK's current setup fits a ≤1-month swing due to its bullish trend label, high parkhu score of 82.5, and recent outperformance against the Nifty and its sector. The stock's RSI14 is at 61.53, indicating a potential for further upside without being overbought. With a low overall risk regime and a Neutral market regime, the conditions seem favorable for a swing trade.
   - catalysts: Earnings anticipation, Sector outperformance, Bullish trend
-  - risks: Interest rate changes, Sectoral downturn, Global market volatility
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a close below the stop level of 1401.49. A drop in the RSI14 below 50 would also be a warning sign.
-- **INDNIPPON** [high] The setup for INDNIPPON fits a ≤1-month swing as the stock has shown a strong return of 14.81% in the last month and 44.06% in the last three months, indicating a bullish trend. The RSI14 is at 51.83, which is not overbought, and the ADX14 is at 33.82, indicating a strong trend. The stock is also trading close to its 52-week high, with a distance of -11.08%, which could act as a catalyst for further upside.
-  - catalysts: Strong momentum, Bullish trend, Close to 52-week high
-  - risks: Neutral market regime, Producer Manufacturing sector risk
-  - watch: Triggers for this setup would be a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1045.67, indicating a reversal of the trend.
-- **TALBROAUTO** [high] TALBROAUTO fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The company's strong technical rating and high Parkhu score also support this setup. With a relatively low risk sector and overall low risk regime, this stock is poised for a short-term uptrend.
+  - risks: Market regime shift, Sector rotation, Earnings disappointment
+  - watch: Triggers for this trade include a strong move above the current price, while invalidation cues would be a breach of the stop level at 1401.49, indicating a failure of the bullish thesis.
+- **INDNIPPON** [high] This setup fits a ≤1-month swing as the stock has shown a strong return of 14.80% in the last month and 44.06% in the last 3 months, with a bullish trend label and a relatively high delivery percentage of 56.58%. The distance from the 52-week high is -11.08%, indicating potential for upside. The ATR percentage of price is 4.63%, suggesting manageable volatility.
+  - catalysts: Strong momentum, Bullish trend, High delivery percentage
+  - risks: Neutral technical rating, Producer Manufacturing sector risks
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 1045.67. A close eye should be kept on the stock's ability to hold above its recent gains.
+- **TALBROAUTO** [high] Talbros Automotive Components Limited fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The company's strong technical rating and high Parkhu score further support this setup. With a relatively low India VIX, the overall risk is low, making it an attractive opportunity for a short-term swing.
   - catalysts: Strong trend, High RSI, Outperformance
-  - risks: Market volatility, Sector downturn
-  - watch: Watch for a breakout above the current level to confirm the bullish trend, and a close below the stop level to invalidate the setup.
-- **TATACAP** [high] TATACAP fits a ≤1-month swing due to its strong bullish trend, with an ADX of 25.09 and RSI of 64.38, indicating a potential continuation of its recent 6.56% 1-month return. The stock's distance from its 52-week high is -2.12%, suggesting room for upside. The overall market regime is neutral with low risk, supporting a swing trade. The company's strong technical rating and recent outperformance versus Nifty and its sector add to the bullish case.
-  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend continuation
-  - risks: Market regime shift, Earnings disappointment, Sector rotation
-  - watch: Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 351.32, indicating a failed swing setup.
+  - risks: Market regime change, Sector downturn, Economic downturn
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a drop below the stop level, indicating a potential reversal in the trend.
+- **TATACAP** [high] TATACAP fits a ≤1-month swing due to its strong bullish trend, with an ADX of 25.09 and RSI of 64.38, indicating a potential for further upside. The stock has outperformed Nifty and its sector in the last month, with returns of 6.56% and 5.63% respectively. The distance from its 52-week high is only -2.12%, suggesting a possible breakout. The overall market regime is neutral with low risk, supporting a swing trade.
+  - catalysts: Strong trend, Outperformance, Breakout potential
+  - risks: Market regime change, Earnings disappointment, Sector downturn
+  - watch: Triggers for this trade include a strong breakout above the current price, while invalidation cues would be a drop below the stop level of 351.32, indicating a reversal of the trend.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Selective Aggressive, Top Ideas: UYFINCORP, ICICIBANK, INDNIPPON, TALBROAUTO, TATACAP, Caveats: 35 of KB-14's 100 score points cannot be computed, promoter pledge and ownership data are empty
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: UYFINCORP, ICICIBANK, INDNIPPON, Caveats: Earnings ahead for IFBIND, low score coverage
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Aarti Surfactants Limited has informed the Exchange regarding 'Payment Intimation under Reg. 57 of SEBI (LODR) Regulations, 2015'. (AARTISURF) — High news score and major catalyst indicate significant market impact
-2. **[high]** Pace Digitek Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (PACEDIGITK) — High news score, major catalyst, and risk event indicate significant market impact
-3. **[high]** Datamatics Global Services Limited has submitted to the Exchange, the financial results for the period ended June 30, 2026. (DATAMATICS) — High news score, major catalyst, and risk event indicate significant market impact
-4. **[medium]** Indo Count Industries Limited has informed the Exchange about Newspaper Advertisement  completion of dispatch of notice of 37th AGM of the Company along with E-voting Information and Book Closure (ICIL) — Risk event indicates potential market impact
-5. **[low]** BSE Limited has informed the Exchange about Schedule of meet (BSE) — Low news score indicates minimal market impact
-6. **[low]** Fiem Industries Limited has informed the Exchange about Schedule of meet (FIEMIND) — Low news score indicates minimal market impact
-7. **[low]** Bharti Airtel Limited has informed the Exchange about Link of Recording (BHARTIARTL) — Low news score indicates minimal market impact
-8. **[low]** Nuvoco Vistas Corporation Limited has informed the Exchange about Schedule of meet (NUVOCO) — Low news score indicates minimal market impact
-9. **[low]** Cohance Lifesciences Limited has informed the Exchange regarding a press release dated August 05, 2026, titled "Press Release". (COHANCE) — Low news score indicates minimal market impact
-10. **[low]** IFGL Refractories Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on August 05, 2026. (IFGLEXPOR) — Low news score indicates minimal market impact
+1. **[high]** Outcome of Board Meeting (IONEXCHANG) — The company has submitted its unaudited financial results for the first quarter ended June 30, 2026, which may have a significant impact on the stock price and investor sentiment.
+2. **[high]** Press Release (BIKAJI) — The company has released its financial results for Q1 FY27, which may influence the stock price and investor decisions.
+3. **[medium]** Updates (PASHUPATI) — The company has informed the Exchange regarding the details of Key Managerial Personnel authorized to determine materiality of events, which may have some impact on the company's operations and investor trust.
+4. **[low]** Shareholders meeting (RML) — The company has held its 22nd AGM, which is a routine event, but the proceedings and voting results may be of interest to shareholders.
+5. **[low]** Analysts/Institutional Investor Meet/Con. Call Updates (HINDPETRO) — The company has informed the Exchange about a schedule of meet, which may be of interest to analysts and institutional investors, but is unlikely to have a significant impact on the stock price.
+6. **[low]** Investor Presentation (AJAXENGG) — The company has informed the Exchange about an investor presentation, which may provide some insight into the company's operations and strategy, but is unlikely to have a significant impact on the stock price.
+7. **[low]** General Updates (KPITTECH) — The company has informed the Exchange about its Business Responsibility and Sustainability Report for FY 2025-26, which may be of interest to environmentally and socially responsible investors.
+8. **[low]** Analysts/Institutional Investor Meet/Con. Call Updates (PERSISTENT) — The company has informed the Exchange about a presentation, which may be of interest to analysts and institutional investors, but is unlikely to have a significant impact on the stock price.
+9. **[low]** Shareholders meeting (CPPLUS) — The company has submitted the Exchange a copy of Voting Results and Scrutinizer's report of its 31st Annual General Meeting, which is a routine event.
+10. **[low]** Disclosure of material issue (JAINREC) — The company has informed the Stock Exchanges regarding the order permitting resumption of manufacturing operations at its Unit-II manufacturing facility, which may have some impact on the company's operations.
 
 ## Deep-dive URLs (after push)
 
