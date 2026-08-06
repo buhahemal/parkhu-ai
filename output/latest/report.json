@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-06",
-  "generated_at_ist": "2026-08-06T06:07:47.829792+05:30",
-  "duration_seconds": 346.9,
+  "generated_at_ist": "2026-08-06T09:27:51.172985+05:30",
+  "duration_seconds": 372.7,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 2974,
-      "seconds": 3.6
+      "rows": 2973,
+      "seconds": 3.3
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 13485,
-      "cache_rows": 7808509,
-      "symbols": 2697,
+      "rows": 13480,
+      "cache_rows": 7810003,
+      "symbols": 2696,
       "failed": 6,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2452,
+      "warm": 2451,
       "cold": 251,
       "new_symbols": 6,
       "retries": 2,
-      "seconds": 264.3
+      "seconds": 282.9
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 2974,
+      "rows": 2973,
       "seconds": 0.1
     },
     {
@@ -42,25 +42,25 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.4
+      "seconds": 0.6
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.0
+      "seconds": 1.2
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 3.7
+      "status": "ok",
+      "rows": 4,
+      "seconds": 4.3
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.1
+      "seconds": 3.9
     },
     {
       "agent": "derivatives",
@@ -79,37 +79,37 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2072,
-      "seconds": 17.4
+      "seconds": 19.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.8
+      "seconds": 4.8
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.5
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.8
+      "seconds": 10.1
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 2974,
-      "seconds": 0.3
+      "rows": 2973,
+      "seconds": 0.5
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 2974,
-      "seconds": 0.7
+      "rows": 2973,
+      "seconds": 0.6
     },
     {
       "agent": "fno_momentum",
@@ -121,13 +121,13 @@
       "agent": "swing_candidates",
       "status": "ok",
       "rows": 20,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -138,44 +138,40 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2697,
-      "with_structure": 2697,
+      "rows": 2696,
+      "with_structure": 2696,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 19.3
+      "seconds": 16.1
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 2974,
-      "seconds": 2.7
+      "rows": 2973,
+      "seconds": 2.1
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 5,
-      "ideas": [
-        "SHRIPISTON",
-        "UYFINCORP",
-        "INDNIPPON",
-        "ICICIBANK",
-        "TATACAP"
-      ],
-      "watchlist": 6,
+      "rows": 0,
+      "ideas": [],
+      "watchlist": 0,
       "open_positions": 12,
-      "needing_action": [],
+      "needing_action": [
+        "IFBIND"
+      ],
       "closed_today": [],
       "seconds": 0.3
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,
@@ -288,6 +284,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-06/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-06/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-06/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-06/report.json"
+    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-06/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-06/research_pack.json"
@@ -327,10 +327,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-06/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-06/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-06/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-06/report.json"
     }
   }
 }
