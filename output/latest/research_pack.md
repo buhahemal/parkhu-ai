@@ -1,161 +1,129 @@
 # Parkhu research pack — 2026-08-06
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-06T06:07:47.829792+05:30
+- **generated_at_ist:** 2026-08-06T09:27:51.172985+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.64%)
-- india_vix: 12.19 (Low)
+- nifty: Bearish (-0.56%)
+- india_vix: 12.06 (Low)
 - fii_net: -943.42 | dii_net: 2883.17
-- overall_risk: Medium | global_risk: Neutral
+- overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 2974
-- trend = Bullish: 1506
-- price > SMA200: 1112
-- price > EMA50: 1101
-- ADX14 > 25: 550
-- RSI14 in 40-80: 519
-- RS > 0 vs NIFTY and sector: 274
-- delivery% >= 40: 158
-- relative_volume >= 1: 51
-- no earnings within 21d: 40
-- event_risk_score <= 1: 37
-- TV rating not Sell: 37
+- universe: 2973
+- trend = Bullish: 1536
+- price > SMA200: 1125
+- price > EMA50: 1113
+- ADX14 > 25: 572
+- RSI14 in 40-80: 542
+- RS > 0 vs NIFTY and sector: 253
+- delivery% >= 40: 134
+- relative_volume >= 1: 3
+- no earnings within 21d: 1
+- event_risk_score <= 1: 1
+- TV rating not Sell: 1
 
-## Survivors (top 37 of 37)
+## Survivors (top 1 of 1)
 
-- **SHRIPISTON** [idea] score 86.9 — selected as idea
-- **IFBIND** [rejected] score 84.7 — T1 needs more than 22 trading days (~1 month)
-- **UYFINCORP** [idea] score 83.5 — selected as idea
-- **INDNIPPON** [idea] score 82.7 — selected as idea
-- **ICICIBANK** [idea] score 82.4 — selected as idea
-- **AUTOAXLES** [rejected] score 82.0 — 25% sector cap for Producer Manufacturing would be breached
-- **TALBROAUTO** [rejected] score 81.9 — 25% sector cap for Producer Manufacturing would be breached
-- **EMUDHRA** [rejected] score 81.1 — T1 needs more than 22 trading days (~1 month)
-- **TATACAP** [idea] score 80.2 — selected as idea
-- **SUNDRMFAST** [watchlist] score 79.4 — score in Watch band (70–80)
-- **WELCORP** [watchlist] score 77.8 — score in Watch band (70–80)
-- **PGIL** [watchlist] score 77.6 — score in Watch band (70–80)
-- **DCI** [rejected] score 76.7 — T1 needs more than 22 trading days (~1 month)
-- **GNA** [watchlist] score 76.4 — score in Watch band (70–80)
-- **RADICO** [watchlist] score 75.0 — score in Watch band (70–80)
-- **BAJAJFINSV** [watchlist] score 70.7 — score in Watch band (70–80)
-- **EXIDEIND** [rejected] score 69.9 — score below Watch band
-- **RELTD** [rejected] score 69.4 — score below Watch band
-- **SPECIALITY** [rejected] score 66.4 — score below Watch band
-- **ARMANFIN** [rejected] score 63.7 — score below Watch band
-- **KECL** [rejected] score 63.4 — T1 needs more than 22 trading days (~1 month)
-- **SAMBHV** [rejected] score 62.1 — score below Watch band
-- **SMCGLOBAL** [rejected] score 60.7 — score below Watch band
-- **MMP** [rejected] score 59.8 — score below Watch band
-- **SHANKARA** [rejected] score 59.5 — T1 needs more than 22 trading days (~1 month)
-- **INDHOTEL** [rejected] score 58.4 — score below Watch band
-- **POONAWALLA** [rejected] score 57.7 — T1 needs more than 22 trading days (~1 month)
-- **UNIMECH** [rejected] score 56.9 — score below Watch band
-- **GCSL** [rejected] score 50.2 — score below Watch band
-- **BATLIBOI** [rejected] score 49.9 — score below Watch band
-- **SUMIT** [rejected] score 49.1 — T1 needs more than 22 trading days (~1 month)
-- **BLUEJET** [rejected] score 48.5 — T1 needs more than 22 trading days (~1 month)
-- **VLSFINANCE** [rejected] score 48.3 — T1 needs more than 22 trading days (~1 month)
-- **CAPTRUST** [rejected] score 46.9 — score below Watch band
-- **EUROPRATIK** [rejected] score 46.6 — T1 needs more than 22 trading days (~1 month)
-- **KABRAEXTRU** [rejected] score 44.8 — score below Watch band
-- **MUTHOOTMF** [rejected] score 43.0 — score below Watch band
+- **BATLIBOI** [rejected] score 51.1 — score below Watch band
 
 ## Ideas
 
-### SHRIPISTON — Buy (score 86.9)
-- SPR Auto Technologies Ltd | risk_sector: Producer Manufacturing
-- entry 4440.8 | stop 4096.46 | t1 5129.49 | t2 5473.83 | t3 5818.18 | R:R 2.0
-- qty 2 | deployed 8882.0 (8.88%) | risk ₹689.0
+### SAHYADRI — Watch (score 13.0)
+- SAHYADRI | risk_sector: Non-Energy Minerals
+- entry 314.05 | stop 293.55 | t1 329.75 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### UYFINCORP — Buy (score 83.5)
-- U. Y. Fincorp Limited | risk_sector: NBFC & Capital Markets
-- entry 19.25 | stop 17.71 | t1 22.33 | t2 23.87 | t3 25.41 | R:R 2.0
-- qty 519 | deployed 9991.0 (9.99%) | risk ₹799.0
+### SAMBHV — Watch (score 13.0)
+- SAMBHV | risk_sector: Non-Energy Minerals
+- entry 121.2 | stop 113.97 | t1 127.26 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### INDNIPPON — Buy (score 82.7)
-- India Nippon Electricals Limited | risk_sector: Producer Manufacturing
-- entry 1136.6 | stop 1045.67 | t1 1318.46 | t2 1409.38 | t3 1500.31 | R:R 2.0
-- qty 8 | deployed 9093.0 (9.09%) | risk ₹727.0
+### LODHA — Watch (score 13.0)
+- LODHA | risk_sector: Finance
+- entry 1241.5 | stop 1174.89 | t1 1303.58 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### ICICIBANK — Buy (score 82.4)
-- ICICI Bank Limited | risk_sector: Banks
-- entry 1450.1 | stop 1401.49 | t1 1547.33 | t2 1595.94 | t3 1644.56 | R:R 2.0
-- qty 6 | deployed 8701.0 (8.7%) | risk ₹292.0
+### UJJIVANSFB — Watch (score 13.0)
+- UJJIVANSFB | risk_sector: Finance
+- entry 70.49 | stop 66.66 | t1 74.01 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### TATACAP — Buy (score 80.2)
-- Tata Capital Ltd. | risk_sector: NBFC & Capital Markets
-- entry 371.9 | stop 351.32 | t1 413.05 | t2 433.63 | t3 454.2 | R:R 2.0
-- qty 26 | deployed 9669.0 (9.67%) | risk ₹535.0
+### INDGN — Watch (score 13.0)
+- INDGN | risk_sector: Health Technology
+- entry 548.35 | stop 517.98 | t1 575.77 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **CREDITACC** status=open entry=1597.3 last=1527.6 mfe=2.3 mae=-5.62 opened=2026-07-27
-- **UJJIVANSFB** status=open entry=71.57 last=69.59 mfe=2.4 mae=-4.26 opened=2026-07-27
-- **IIFL** status=open entry=582.35 last=610.2 mfe=6.98 mae=-1.61 opened=2026-07-28
-- **INDNIPPON** status=open entry=1163.1 last=1136.6 mfe=4.43 mae=-4.09 opened=2026-07-28
-- **LODHA** status=open entry=1287.15 last=1250.0 mfe=3.24 mae=-4.72 opened=2026-07-30
-- **IFBIND** status=open entry=1354.0 last=1443.0 mfe=8.42 mae=-0.36 opened=2026-08-04
-- **ICICIBANK** status=open entry=1450.1 last=1450.1 mfe=0.31 mae=-1.3 opened=2026-08-05
-- **SHRIPISTON** status=open entry=4402.7 last=4440.8 mfe=2.96 mae=-4.33 opened=2026-08-05
-- **TALBROAUTO** status=open entry=438.3 last=438.3 mfe=0.84 mae=-5.09 opened=2026-08-05
-- **TATACAP** status=open entry=371.9 last=371.9 mfe=0.89 mae=-3.13 opened=2026-08-05
-- **UNIPARTS** status=open entry=732.95 last=801.65 mfe=10.79 mae=0.0 opened=2026-08-05
-- **UYFINCORP** status=open entry=19.25 last=19.25 mfe=2.86 mae=-0.52 opened=2026-08-05
+- **CREDITACC** status=open entry=1597.3 last=1541.6 mfe=2.3 mae=-5.62 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=70.49 mfe=2.4 mae=-4.26 opened=2026-07-27
+- **IIFL** status=open entry=582.35 last=611.15 mfe=6.98 mae=-1.61 opened=2026-07-28
+- **INDNIPPON** status=open entry=1163.1 last=1141.3 mfe=4.43 mae=-4.09 opened=2026-07-28
+- **LODHA** status=open entry=1287.15 last=1241.5 mfe=3.24 mae=-4.72 opened=2026-07-30
+- **IFBIND** status=open entry=1354.0 last=1460.6 mfe=8.42 mae=-0.36 opened=2026-08-04
+- **ICICIBANK** status=open entry=1450.1 last=1449.3 mfe=0.68 mae=-1.3 opened=2026-08-05
+- **SHRIPISTON** status=open entry=4402.7 last=4446.2 mfe=2.96 mae=-4.33 opened=2026-08-05
+- **TALBROAUTO** status=open entry=438.3 last=439.85 mfe=2.64 mae=-5.09 opened=2026-08-05
+- **TATACAP** status=open entry=371.9 last=373.4 mfe=0.97 mae=-3.13 opened=2026-08-05
+- **UNIPARTS** status=open entry=732.95 last=814.8 mfe=11.92 mae=0.0 opened=2026-08-05
+- **UYFINCORP** status=open entry=19.25 last=19.51 mfe=2.86 mae=-0.52 opened=2026-08-05
+
+## Needs action
+
+- **IFBIND**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
 
 ## Swing candidates (top)
 
-- ICICIBANK: score=14 rs_nifty=1.94 deliv=50.17
-- TATACAP: score=14 rs_nifty=5.8 deliv=48.63
-- SMCGLOBAL: score=14 rs_nifty=13.4 deliv=68.55
-- SHRIPISTON: score=14 rs_nifty=5.04 deliv=42.51
-- GNA: score=14 rs_nifty=13.15 deliv=45.56
-- PGIL: score=14 rs_nifty=3.61 deliv=53.86
-- EUROPRATIK: score=14 rs_nifty=1.52 deliv=41.9
-- RELTD: score=14 rs_nifty=1.62 deliv=66.84
-- SPECIALITY: score=14 rs_nifty=6.84 deliv=43.17
-- INDHOTEL: score=14 rs_nifty=0.75 deliv=54.23
-- SAMBHV: score=14 rs_nifty=4.6 deliv=49.99
-- 360ONE: score=14 rs_nifty=6.61 deliv=53.0
-- SHANKARA: score=14 rs_nifty=10.2 deliv=70.59
-- BLUEJET: score=14 rs_nifty=5.48 deliv=47.81
-- UNIMECH: score=14 rs_nifty=15.62 deliv=50.61
+- SAHYADRI: score=13 rs_nifty=9.28 deliv=68.03
+- SAMBHV: score=13 rs_nifty=2.02 deliv=49.99
+- LODHA: score=13 rs_nifty=10.65 deliv=41.13
+- UJJIVANSFB: score=13 rs_nifty=15.04 deliv=54.1
+- INDGN: score=13 rs_nifty=7.4 deliv=60.78
+- TMB: score=13 rs_nifty=9.9 deliv=53.19
+- CRAFTSMAN: score=13 rs_nifty=10.52 deliv=46.54
+- KTKBANK: score=13 rs_nifty=10.04 deliv=63.21
+- BALPHARMA: score=13 rs_nifty=14.69 deliv=58.47
+- ADOR: score=13 rs_nifty=11.23 deliv=63.0
+- PYRAMID: score=13 rs_nifty=7.02 deliv=60.96
+- IIFL: score=13 rs_nifty=13.11 deliv=52.42
+- BFINVEST: score=13 rs_nifty=4.85 deliv=47.73
+- UNIMECH: score=13 rs_nifty=9.72 deliv=50.61
+- SREEL: score=13 rs_nifty=0.14 deliv=56.43
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.09% (bull)
-- Hang Seng: -0.60% (bear)
-- Shanghai: +0.33% (bull)
-- Kospi: +2.11% (bull)
-- Taiwan: -0.06% (neutral)
-- ASX 200: +1.52% (bull)
+- Nikkei: +2.76% (bull)
+- Hang Seng: -2.07% (bear)
+- Shanghai: +1.82% (bull)
+- Kospi: +0.84% (bull)
+- Taiwan: -0.46% (bear)
+- ASX 200: +2.83% (bull)
 
 ### Europe
-- FTSE 100: +0.20% (bull)
-- DAX: +0.77% (bull)
-- Euro Stoxx 50: +0.94% (bull)
+- FTSE 100: -0.36% (bear)
+- DAX: +1.52% (bull)
+- Euro Stoxx 50: +1.29% (bull)
 
 ### US
-- S&P 500: -0.17% (bear)
-- Nasdaq: -0.83% (bear)
-- Dow: +0.49% (bull)
-- US VIX: -4.18% (bull)
+- S&P 500: +1.62% (bull)
+- Nasdaq: +1.73% (bull)
+- Dow: +2.20% (bull)
+- US VIX: -0.32% (neutral)
 
 ### Macro
-- USDINR: +0.01% (neutral)
-- Crude WTI: -1.29% (bear)
-- Brent: -0.25% (bear)
-- DXY: -0.24% (neutral)
-- US 10Y: -0.22% (neutral)
-- India ETF: -0.44% (bear)
-- EM ETF: -0.42% (bear)
+- USDINR: -0.27% (neutral)
+- Crude WTI: -6.62% (bear)
+- Brent: -0.01% (neutral)
+- DXY: -0.23% (neutral)
+- US 10Y: -1.47% (bull)
+- India ETF: +0.30% (bull)
+- EM ETF: +2.18% (bull)
 
 
 ## Groq desk note
@@ -163,52 +131,52 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market is in a bearish regime with a low India VIX, indicating a potential for increased volatility. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers. The overall risk is medium, with bullish cues from Asia and Europe.
+The market is in a bearish regime with a low India VIX, indicating a potential for volatility. FII net sales and DII net purchases are notable, with an overall medium risk stance. Asian and European cues are bullish, which could influence the market. The Nifty trend is bearish with a -0.56% change.
 
-- **SHRIPISTON** [consider_entry/high] entry=4440.8 stop=4096.46 t1=5129.49 hold=16d — Strong Parkhu score and favorable risk-reward ratio
-- **UYFINCORP** [consider_entry/medium] entry=19.25 stop=17.71 t1=22.33 hold=13d — Decent Parkhu score and relatively low risk
-- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Already in open book, monitor and adjust stop loss as needed
+- **SAHYADRI** [watch/medium] entry=314.05 stop=293.55 t1=329.75 hold=Noned — Relative strength and volume filters suggest a potential watchlist candidate
+- **UJJIVANSFB** [manage_open/high] entry=70.49 stop=66.66 t1=74.01 hold=Noned — Open position with a stop loss, considering the overall market stance and symbol-specific metrics
+- **LODHA** [consider_entry/low] entry=1241.5 stop=1174.89 t1=1303.58 hold=Noned — Watchlist candidate with a potential entry point, but cautious due to market regime
 
 ### AI stock reviews
 
-- **SHRIPISTON** [high] This setup fits a ≤1-month swing as the stock is showing a bullish trend with a high Parkhu score of 86.9 and a recent 1-month return of 5.80%, indicating strong momentum. The ADX of 37.22 and RSI of 61.19 suggest a potential for further upside. The company's recent outperformance against Nifty and its sector also adds to the bullish case.
-  - catalysts: Earnings momentum, Sector outperformance, Momentum indicators
-  - risks: Market regime risk, Economic downturn, Sector rotation
-  - watch: Triggers for this setup include a breakout above the recent high, while invalidation cues include a breach of the stop level at 4096.46. Watching the overall market regime and sector performance will also be crucial.
-- **UYFINCORP** [high] UYFINCORP fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, such as a high RSI and ADX. The stock's return over the past month has outperformed both the Nifty and its sector, indicating a potential for continued upside. With a relatively low distance from its 52-week high and a favorable technical rating, this setup appears promising for a short-term swing.
-  - catalysts: Strong Momentum, Outperforming Sector, Favorable Technicals
-  - risks: Market Regime Risk, Sector Volatility, Economic Uncertainty
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a breach of the stop level, indicating a shift in market sentiment. Close monitoring of the stock's price action and broader market conditions is necessary.
-- **INDNIPPON** [medium] This setup fits a ≤1-month swing as the stock has shown a strong return of 14.80% in the last month and 44.06% in the last 3 months, with a bullish trend label and a relatively high delivery percentage of 56.58%, indicating a potential for a short-term uptrend. The ADX of 33.82 and RSI of 51.83 suggest a moderate trend with room for growth. The distance from the 52-week high is -11.08%, providing a potential upside.
-  - catalysts: Strong recent returns, Bullish trend, High delivery percentage
-  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risk
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1045.67. A close eye should be kept on the stock's ability to maintain its bullish trend and momentum.
-- **ICICIBANK** [high] ICICIBANK's recent price action and technical indicators suggest a bullish trend, with a high Parkhu score of 82.4 and a bullish trend label. The stock's relative strength against Nifty and its sector is also promising, with returns of 1.94% and 3.36% respectively over the last month. This setup fits a ≤1-month swing as the stock is close to its 52-week high and has a reasonable ATR percentage of price, indicating potential for a short-term upside. The overall market regime is bearish, but the stock's resilience and strong technicals make it an attractive buy candidate.
-  - catalysts: Strong technicals, Bullish trend, Relative strength
-  - risks: Market regime, Sector risk, Earnings uncertainty
-  - watch: Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in India VIX. The trade should be monitored closely for any changes in the market regime or sector-specific news that could impact the stock's price.
-- **TATACAP** [high] TATACAP fits a ≤1-month swing due to its recent bullish trend and strong technical rating. The stock has shown a significant return over the past month and its distance from the 52-week high is relatively small, indicating potential for further growth. Additionally, the risk sector of NBFC & Capital Markets has shown resilience, supporting the case for a short-term swing. The overall market regime is bearish, but TATACAP's strong performance and high parkhu score suggest it can outperform.
-  - catalysts: Strong technical rating, Recent bullish trend, Resilient sector
-  - risks: Bearish market regime, High overall risk, NBFC sector volatility
-  - watch: Triggers for this swing include a breakout above the recent highs, while invalidation cues would be a drop below the stop level or a significant increase in India VIX. A close eye on the stock's ability to hold above its entry level is crucial.
+- **SAHYADRI** [medium] The SAHYADRI setup fits a ≤1-month swing due to its current market regime and overall risk assessment. With a parkhu score of 13.0, the stock has shown potential for a short-term move. The Non-Energy Minerals sector, although risky, presents an opportunity for a swing trade in a bearish market. The current price near the entry level of 314.05 makes it an attractive setup for a short-term trade.
+  - catalysts: Sector rotation, Short squeeze, Earnings surprise
+  - risks: Sector downturn, Global market volatility, Company-specific news
+  - watch: Traders should watch for a breakout above the current price level to confirm the trade, while a drop below the stop level of 293.55 would invalidate the setup. A move towards the target price of 329.75 would be a key trigger to assess the trade's progress.
+- **SAMBHV** [medium] The SAMBHV setup fits a ≤1-month swing due to its current price action and the overall market regime. The bearish market regime and medium overall risk suggest a potential short-term opportunity. The company's parkhu score of 13.0 and its classification in the Non-Energy Minerals sector also contribute to this thesis. The current price near the entry level of 121.2 presents a possible swing trade opportunity.
+  - catalysts: Earnings report, Sector rotation, Market sentiment shift
+  - risks: Global economic downturn, Sector-specific headwinds, Company-specific news
+  - watch: Traders should watch for a strong bounce off the entry level of 121.2 as a trigger to enter the trade, while a break below the stop level of 113.97 would be an invalidation cue.
+- **LODHA** [medium] The LODHA stock is poised for a potential swing trade within a month due to its current market positioning and the overall risk environment. Given the bearish market regime and medium overall risk, a well-timed entry could yield a profitable trade. The stock's Parkhu score of 13.0 suggests a favorable setup. The finance sector's risk could be mitigated by a precise entry and stop-loss strategy.
+  - catalysts: Earnings Report, Sector Rotation, Market Rebound
+  - risks: Market Downturn, Sector Decline, Company-Specific News
+  - watch: Traders should watch for a breakout above the current level or a bounce from the stop-loss level as a trigger to enter the trade, while a breach of the stop-loss level could serve as an invalidation cue.
+- **UJJIVANSFB** [medium] UJJIVANSFB is a potential swing trade candidate given its current price level and the overall market regime. The finance sector, despite being risky, can offer opportunities for short-term gains in a bearish market. This setup fits a ≤1-month swing due to the defined risk-reward ratio and the potential for a quick move to the target. The current India VIX level suggests moderate volatility, which can aid in a swift price movement.
+  - catalysts: Earnings announcement, Sector rotation, Short squeeze
+  - risks: Market downturn, Sector-specific news, Liquidity crunch
+  - watch: Traders should watch for a strong bounce off the current level to confirm the thesis, while a break below the stop level would invalidate the setup. Close monitoring of sector peers and overall market sentiment is also necessary.
+- **INDGN** [medium] The current setup for INDGN fits a ≤1-month swing due to its medium overall risk and a bearish market regime, which could lead to a potential bounce. The company's presence in the Health Technology sector, which may be less affected by broader market trends, adds to the thesis. With a Parkhu score of 13.0, the stock has shown some inherent strength. This combination could lead to a short-term swing opportunity.
+  - catalysts: Earnings report, Sector rotation, Short squeeze
+  - risks: Market downturn, Sector-specific news, Global economic factors
+  - watch: Traders should watch for a strong bounce off the current levels and a break above the recent highs as a trigger, while a close below the stop level could be an invalidation cue.
 
 ### Claude feed
 
-Bearish regime, defensive stance, top ideas: SHRIPISTON, UYFINCORP; caveats: provisional scores, limited data, and no trade outcome history
+Regime: Bearish, Stance: Defensive, Top Ideas: SAHYADRI, UJJIVANSFB, Caveats: Earnings season, global cues, and risk management are key considerations
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Shareholders meeting (HEROMOTOCO) — The 43rd Annual General Meeting of Hero MotoCorp was held, and the proceedings may have a significant impact on the company's future plans and investor sentiment.
-2. **[high]** Shareholders meeting (REFEX) — The NCLT-convened meeting of equity shareholders, secured creditors, and unsecured creditors of Refex Industries may have significant implications for the company's restructuring plans.
-3. **[medium]** Analysts/Institutional Investor Meet/Con. Call Updates (QPOWER) — Quality Power Electrical Equipments will be hosting an earnings conference call with analysts and investors, which may provide insights into the company's financial performance and future outlook.
-4. **[medium]** Shareholders meeting (UNITDSPR) — The annual general meeting of United Spirits was held, and the voting results may have implications for the company's governance and strategic decisions.
-5. **[low]** Corrigendum (PGIL) — Pearl Global Industries issued a corrigendum to the board meeting outcome, which may have minor implications for the company's operations or investor communication.
-6. **[low]** Shareholders meeting (3IINFOLTD) — 3i Infotech informed the exchange about the notice of the annual general meeting to be held on August 28, 2026, which is a routine corporate event.
-7. **[low]** General Updates (KHADIM) — Khadim India informed the exchange about general updates related to the in-principle approval of fully convertible equity share warrants, which may have minor implications for the company's capital structure.
-8. **[low]** General Updates (POWERGRID) — Power Grid Corporation of India informed the exchange about the amended code of practices and procedures for fair disclosure of unpublished price-sensitive information, which is a routine corporate update.
-9. **[low]** Analysts/Institutional Investor Meet/Con. Call Updates (ZENTEC) — Zen Technologies informed the exchange about the schedule of the meet with analysts and institutional investors, which may provide some insights into the company's operations and future plans.
-10. **[low]** General Updates (MAXHEALTH) — Max Healthcare Institute informed the exchange about the transcript of the 25th annual general meeting, which is a routine corporate update.
+1. **[high]** HEROMOTOCO - 43rd Annual General Meeting updates (HEROMOTOCO) — The 43rd Annual General Meeting of Hero MotoCorp was held, and the proceedings may have a significant impact on the company's stock price and investor sentiment.
+2. **[high]** SATIN - Announcement under Regulation 30 of SEBI (LODR) Regulations, 2015 (SATIN) — Satin Creditcare Network Limited made an announcement under Regulation 30, which may have a significant impact on the company's stock price and investor sentiment.
+3. **[high]** IKS - Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 (IKS) — Inventurus Knowledge Solutions Limited made a disclosure under Regulation 30, which may have a significant impact on the company's stock price and investor sentiment.
+4. **[medium]** QPOWER - Earnings Conference Call with Analysts/Investors (QPOWER) — Quality Power Electrical Equipments Limited is hosting an earnings conference call, which may provide insights into the company's financial performance and future outlook.
+5. **[medium]** PGIL - Corrigendum to the Board Meeting Outcome (PGIL) — Pearl Global Industries Limited issued a corrigendum to the board meeting outcome, which may have some impact on the company's stock price and investor sentiment.
+6. **[low]** SWANDEF - Press Release: SDHI Wins Order from Svitzer (SWANDEF) — Swan Defence and Heavy Industries Limited won an order from Svitzer, which may have a positive impact on the company's stock price.
+7. **[low]** KOLTEPATIL - Press Release: Kolte-Patil Developers announces Mumbai expansion (KOLTEPATIL) — Kolte-Patil Developers Limited announced a Mumbai expansion, which may have a positive impact on the company's stock price.
+8. **[low]** SEPC - Press Release: SEPC secures Rs.854.57 crore Letter of Acceptance (SEPC) — SEPC Limited secured a letter of acceptance worth Rs.854.57 crore, which may have a positive impact on the company's stock price.
+9. **[low]** UNITDSPR - Annual General Meeting updates (UNITDSPR) — United Spirits Limited provided updates on its annual general meeting, which may have some impact on the company's stock price and investor sentiment.
+10. **[low]** 3IINFOLTD - Notice of Annual General Meeting (3IINFOLTD) — 3i Infotech Limited announced its annual general meeting, which may have some impact on the company's stock price and investor sentiment.
 
 ## Deep-dive URLs (after push)
 
