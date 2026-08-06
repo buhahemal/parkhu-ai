@@ -1,15 +1,15 @@
 # Parkhu research pack — 2026-08-06
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-06T18:07:29.458876+05:30
+- **generated_at_ist:** 2026-08-06T20:33:55.581661+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Neutral**
-- nifty: Neutral (0.01%)
-- india_vix: 12.36 (Low)
-- fii_net: -943.42 | dii_net: 2883.17
+- nifty: Neutral (0.05%)
+- india_vix: 12.16 (Low)
+- fii_net: -17.86 | dii_net: 4013.6
 - overall_risk: Low | global_risk: Neutral
 
 ## Funnel
@@ -81,10 +81,10 @@
 - **ICICIBANK** status=open entry=1450.1 last=1457.5 mfe=0.68 mae=-1.3 opened=2026-08-05
 - **SHRIPISTON** status=open entry=4402.7 last=4325.4 mfe=2.96 mae=-4.33 opened=2026-08-05
 - **TALBROAUTO** status=open entry=438.3 last=437.0 mfe=2.64 mae=-5.09 opened=2026-08-05
-- **TATACAP** status=open entry=371.9 last=382.7 mfe=3.25 mae=-3.13 opened=2026-08-05
+- **TATACAP** status=open entry=371.9 last=382.7 mfe=4.92 mae=-3.13 opened=2026-08-05
 - **UNIPARTS** status=open entry=732.95 last=781.5 mfe=11.92 mae=0.0 opened=2026-08-05
-- **UYFINCORP** status=open entry=19.25 last=19.2 mfe=2.86 mae=-0.52 opened=2026-08-05
-- **KTKBANK** status=open entry=306.8 last=306.8 mfe=0.0 mae=0.0 opened=2026-08-06
+- **UYFINCORP** status=open entry=19.25 last=19.2 mfe=2.86 mae=-1.3 opened=2026-08-05
+- **KTKBANK** status=open entry=306.8 last=306.8 mfe=3.26 mae=-3.1 opened=2026-08-06
 
 ## Needs action
 
@@ -92,92 +92,92 @@
 
 ## Swing candidates (top)
 
-- LMW: score=14 rs_nifty=2.93 deliv=58.18
-- STYL: score=14 rs_nifty=14.03 deliv=51.99
-- TECHM: score=14 rs_nifty=13.59 deliv=67.34
-- MEDANTA: score=14 rs_nifty=3.48 deliv=70.39
-- SHANKARA: score=14 rs_nifty=7.03 deliv=84.58
-- MANAKALUCO: score=14 rs_nifty=4.94 deliv=59.22
-- SMCGLOBAL: score=14 rs_nifty=8.28 deliv=58.93
-- KTKBANK: score=14 rs_nifty=12.68 deliv=48.07
-- GUFICBIO: score=14 rs_nifty=5.28 deliv=56.44
-- UNIMECH: score=14 rs_nifty=9.57 deliv=52.12
-- BETA: score=14 rs_nifty=14.15 deliv=43.06
-- SPECIALITY: score=14 rs_nifty=8.0 deliv=57.07
-- SHRIRAMFIN: score=14 rs_nifty=3.52 deliv=64.14
-- GULPOLY: score=14 rs_nifty=1.01 deliv=55.02
-- KRONOX: score=13 rs_nifty=2.5 deliv=45.55
+- TECHM: score=14 rs_nifty=13.55 deliv=67.34
+- SHANKARA: score=14 rs_nifty=6.99 deliv=84.58
+- KTKBANK: score=14 rs_nifty=12.64 deliv=48.07
+- BETA: score=14 rs_nifty=14.11 deliv=43.06
+- MANAKALUCO: score=14 rs_nifty=4.9 deliv=59.22
+- GUFICBIO: score=14 rs_nifty=5.24 deliv=56.44
+- LMW: score=14 rs_nifty=2.89 deliv=58.18
+- UNIMECH: score=14 rs_nifty=9.53 deliv=52.12
+- SPECIALITY: score=14 rs_nifty=7.96 deliv=57.07
+- MEDANTA: score=14 rs_nifty=3.44 deliv=70.39
+- STYL: score=14 rs_nifty=13.99 deliv=51.99
+- GULPOLY: score=14 rs_nifty=0.97 deliv=55.02
+- SMCGLOBAL: score=14 rs_nifty=8.24 deliv=58.93
+- UNIONBANK: score=13 rs_nifty=9.99 deliv=51.34
+- SAYAJIHOTL: score=13 rs_nifty=2.19 deliv=83.54
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.93% (bear)
-- Hang Seng: -1.61% (bear)
+- Nikkei: +3.66% (bull)
+- Hang Seng: -1.49% (bear)
 - Shanghai: +0.57% (bull)
-- Kospi: -4.58% (bear)
+- Kospi: +3.76% (bull)
 - Taiwan: -0.48% (bear)
-- ASX 200: +0.47% (bull)
+- ASX 200: +0.90% (bull)
 
 ### Europe
-- FTSE 100: +0.30% (bull)
-- DAX: +0.17% (bull)
-- Euro Stoxx 50: +0.49% (bull)
+- FTSE 100: +0.02% (neutral)
+- DAX: +0.32% (bull)
+- Euro Stoxx 50: +0.73% (bull)
 
 ### US
-- S&P 500: -0.17% (bear)
-- Nasdaq: -0.83% (bear)
-- Dow: +0.49% (bull)
-- US VIX: +0.25% (neutral)
+- S&P 500: +0.03% (neutral)
+- Nasdaq: +0.22% (bull)
+- Dow: -0.36% (bear)
+- US VIX: -1.96% (bull)
 
 ### Macro
-- USDINR: +0.15% (neutral)
-- Crude WTI: -0.03% (neutral)
-- Brent: +0.24% (bull)
-- DXY: +0.05% (neutral)
-- US 10Y: -0.22% (neutral)
-- India ETF: -0.44% (bear)
-- EM ETF: -0.42% (bear)
+- USDINR: +0.12% (neutral)
+- Crude WTI: +1.89% (bull)
+- Brent: +2.29% (bull)
+- DXY: +0.17% (neutral)
+- US 10Y: +0.52% (bear)
+- India ETF: -0.08% (neutral)
+- EM ETF: -0.49% (bear)
 
 
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** neutral
+- **stance:** selective_aggressive
 
-The Indian market is currently in a neutral regime with low overall risk. The Nifty trend is also neutral with a minimal percentage change. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers. The India VIX is at a low level, indicating a stable market.
+The market is in a neutral regime with low overall risk. Nifty trend is neutral with a 0.05% change, and India VIX is at 12.16, indicating low volatility. FII net is -17.86, while DII net is 4013.6, suggesting domestic investors are bullish.
 
-- **KTKBANK** [consider_entry/high] entry=306.8 stop=286.94 t1=346.52 hold=17d — Strong Parkhu score and favorable risk sector
-- **TALBROAUTO** [consider_entry/high] entry=437.0 stop=402.67 t1=505.65 hold=17d — Strong Parkhu score and favorable risk sector
+- **KTKBANK** [consider_entry/high] entry=306.8 stop=286.94 t1=346.52 hold=17d — Strong Parkhu score of 84.8 and favorable risk sector
+- **TALBROAUTO** [consider_entry/high] entry=437.0 stop=402.67 t1=505.65 hold=17d — Strong Parkhu score of 82.5 and favorable risk sector
 - **IFBIND** [stand_aside/medium] entry=1354.0 stop=1306.54 t1=1473.0 hold=7d — Earnings ahead, reduce or stand aside rather than hold through the print
 
 ### AI stock reviews
 
-- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong technical rating. The recent price action and momentum indicators suggest a potential breakout. The stock's distance from its 52-week high and relatively low ATR percentage of price also indicate a possible upward movement.
-  - catalysts: Bullish trend, Strong technical rating, High RSI
-  - risks: Market regime change, Sector-specific risks, Earnings uncertainty
-  - watch: Triggers for this setup include a strong breakout above the current levels, while invalidation cues would be a breach of the stop level or a significant change in market regime.
-- **TALBROAUTO** [high] TALBROAUTO fits a ≤1-month swing due to its strong bullish trend, high return over the past month, and relatively low risk sector. The stock's recent price action and technical indicators, such as RSI and ADX, suggest a potential for further upside. The company's strong performance compared to the Nifty and its sector also supports this setup.
-  - catalysts: Strong trend, High returns, Low risk sector
-  - risks: Market volatility, Sector downturn, Company-specific news
-  - watch: Triggers for this setup include a breakout above the recent high, while invalidation cues include a drop below the stop level or a significant increase in India VIX.
+- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong bullish trend, with an ADX of 30.56 and RSI of 69.83, indicating a potential continuation of the uptrend. The recent 1-month return of 15.80% and strong technical rating support this thesis. The distance from the 52-week high is only 3.16%, suggesting limited downside risk.
+  - catalysts: Strong trend, Bullish technicals, Low risk sector
+  - risks: Earnings uncertainty, Market regime change, Sector rotation
+  - watch: Watch for a breakout above the current price to confirm the thesis, and a close below the stop level to invalidate it. Triggers include a strong sector performance and overall market stability.
+- **TALBROAUTO** [high] TALBROAUTO fits a ≤1-month swing due to its strong bullish trend, high return over the past month, and a relatively low risk sector. The company's recent price action and technical indicators, such as RSI and ADX, suggest a potential upward movement. With a strong buy technical rating and a high Parkhu score of 82.5, this setup appears promising for a short-term swing trade.
+  - catalysts: Bullish trend, High returns, Strong buy technical rating
+  - risks: Market regime change, Sector-specific risks, Overall market volatility
+  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues would be a drop below the stop level or a significant change in the market regime. The trade's progress should be monitored closely, especially around the T1 target level.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Neutral, Top Ideas: KTKBANK, TALBROAUTO, Caveats: Low score coverage, provisional scores, and lack of trade outcome history
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: KTKBANK, TALBROAUTO, Caveats: Earnings ahead for IFBIND, score coverage at 65%
 
 
 ## Market news (AI top impact)
 
-1. **[high]** COSMO FIRST LIMITED has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (COSMOFIRST) — The company's financial results can significantly impact its stock price and investor sentiment.
-2. **[medium]** Carraro India Limited has informed the Exchange that Record date for the purpose of Dividend is 03-Sep-2026. (CARRARO) — The record date for dividend can affect the stock's price and attractiveness to investors.
-3. **[low]** Significant increase in volume has been observed in Authum Investment & Infrastructure Limited. (AIIL) — The increase in volume may indicate a potential trend or change in investor sentiment.
-4. **[low]** Significant movement in price has been observed in Dc Infotech And Communication Limited. (DCI) — The price movement may be a sign of changing market conditions or investor sentiment.
-5. **[low]** Significant increase in volume has been observed in PVP Ventures Limited. (PVP) — The increase in volume may indicate a potential trend or change in investor sentiment.
-6. **[low]** Significant increase in volume has been observed in Tata Technologies Limited. (TATATECH) — The increase in volume may indicate a potential trend or change in investor sentiment.
-7. **[low]** Aadhar Housing Finance Limited has informed the Exchange regarding Proceedings of the 36th Annual General Meeting held on August 06, 2026 (AADHARHFC) — The proceedings of the AGM can provide insight into the company's future plans and strategies.
-8. **[low]** Navkar Corporation Limited has submitted the Exchange a copy Srutinizers report of Annual General Meeting held on August 05, 2025. (NAVKARCORP) — The report can provide information about the company's governance and decision-making processes.
-9. **[low]** Premier Energies Limited has informed the Exchange regarding Change in Director(s) of the company. (PREMIERENE) — Changes in the company's leadership can impact its strategy and direction.
-10. **[low]** ITC Hotels Limited has informed the Exchange regarding 'Address by the Chairman at the 3rd Annual General Meeting of the Company'. (ITCHOTELS) — The address by the chairman can provide insight into the company's vision and goals.
+1. **[high]** IFB Industries Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (IFBIND) — Major catalyst and risk event with a news score of 10, indicating a significant impact on the company's stock price.
+2. **[high]** Transrail Lighting Limited has informed the Exchange regarding a press release dated August 06, 2026, titled "Press Release for the  Un-audited Financial Results  for quarter ended June 30, 2026". (TRANSRAILL) — Major catalyst and risk event with a news score of 10, indicating a significant impact on the company's stock price.
+3. **[high]** Earnings Conference Call Outcome on the unaudited financial results for the quarter ended June 30, 2026. (MOTHERSON) — Major catalyst and risk event with a news score of 10, indicating a significant impact on the company's stock price.
+4. **[high]** Disclosure Under Regulation 30 Of SEBI (LODR) Regulations, 2015 (GRASIM) — Major catalyst and risk event with a news score of 12, indicating a significant impact on the company's stock price.
+5. **[medium]** Abans Financial Services Limited has informed the Exchange about change in Management (AFSL) — Change in management can impact the company's strategy and stock price.
+6. **[medium]** Bharat Road Network Limited has informed the Exchange regarding Change in Director(s) of the company. (BRNL) — Change in director(s) can impact the company's strategy and stock price.
+7. **[medium]** Saurashtra Cement Limited has informed the Exchange about Resignation of Director/KMP/SMP (SAURASHCEM) — Resignation of a director can impact the company's strategy and stock price.
+8. **[low]** Interarch Building Solutions Limited has informed the Exchange regarding Allotment of 45415  Shares. (INTERARCH) — Allotment of shares can impact the company's capital structure.
+9. **[low]** Interarch Building Solutions Limited has informed the Exchange about  sub-division of Face value of Equity shares from Rs 10 each to Rs 2 each subject to Shareholder approval (INTERARCH) — Sub-division of face value can impact the company's stock price and trading liquidity.
+10. **[low]** Healthcare Global Enterprises Limited has informed the Exchange about statement of deviation(s) or variation(s) under Reg. 32 (HCG) — Statement of deviation(s) or variation(s) can impact the company's financial reporting and transparency.
 
 ## Deep-dive URLs (after push)
 
