@@ -1,0 +1,10 @@
+symbol,yf_ticker,reason
+AVATAR,AVATAR.NS,no_ohlc_after_retry
+DIRL,DIRL.NS,no_ohlc_after_retry
+JNPR,JNPR.NS,no_ohlc_after_retry
+MANIPALHOS,MANIPALHOS.NS,no_ohlc_after_retry
+METALIC,METALIC.NS,no_ohlc_after_retry
+MVELECTRO,MVELECTRO.NS,no_ohlc_after_retry
+NEELAM,NEELAM.NS,no_ohlc_after_retry
+PROPSHOP,PROPSHOP.NS,no_ohlc_after_retry
+VISDEM,VISDEM.NS,no_ohlc_after_retry
