@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-07
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-07T18:07:28.317048+05:30
+- **generated_at_ist:** 2026-08-07T19:26:50.158399+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.27%)
 - india_vix: 12.16 (Low)
-- fii_net: -17.86 | dii_net: 4013.6
-- overall_risk: Medium | global_risk: Neutral
+- fii_net: 480.24 | dii_net: 235.56
+- overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
@@ -102,9 +102,9 @@
 - **UNIPARTS** status=open entry=732.95 last=814.6 mfe=11.92 mae=0.0 opened=2026-08-05
 - **UYFINCORP** status=open entry=19.25 last=20.36 mfe=16.05 mae=-1.3 opened=2026-08-05
 - **KTKBANK** status=open entry=306.8 last=310.0 mfe=3.26 mae=-3.1 opened=2026-08-06
-- **MANAKSTEEL** status=open entry=84.43 last=84.43 mfe=0.0 mae=0.0 opened=2026-08-07
+- **MANAKSTEEL** status=open entry=84.43 last=84.43 mfe=6.48 mae=-0.83 opened=2026-08-07
 - **RACLGEAR** status=open entry=1475.0 last=1482.7 mfe=2.38 mae=-2.51 opened=2026-08-07
-- **SJS** status=open entry=2446.1 last=2446.1 mfe=0.0 mae=0.0 opened=2026-08-07
+- **SJS** status=open entry=2446.1 last=2446.1 mfe=1.37 mae=-3.21 opened=2026-08-07
 - **SUPRAJIT** status=open entry=527.55 last=521.8 mfe=2.55 mae=-2.7 opened=2026-08-07
 
 ## Needs action
@@ -114,19 +114,19 @@
 ## Swing candidates (top)
 
 - BAJFINANCE: score=15 rs_nifty=2.63 deliv=55.76
+- INDGN: score=14 rs_nifty=11.08 deliv=48.52
+- TATACAP: score=14 rs_nifty=3.26 deliv=46.01
+- IKIO: score=14 rs_nifty=6.58 deliv=46.88
+- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
+- JLHL: score=14 rs_nifty=8.65 deliv=72.33
+- SPECIALITY: score=14 rs_nifty=11.7 deliv=45.12
 - SJS: score=14 rs_nifty=9.05 deliv=44.87
+- REDTAPE: score=14 rs_nifty=1.14 deliv=56.01
 - STYL: score=14 rs_nifty=14.63 deliv=47.63
 - SETL: score=14 rs_nifty=5.58 deliv=51.74
 - GUFICBIO: score=14 rs_nifty=7.77 deliv=54.51
-- INDGN: score=14 rs_nifty=11.08 deliv=48.52
-- JLHL: score=14 rs_nifty=8.65 deliv=72.33
-- TATACAP: score=14 rs_nifty=3.26 deliv=46.01
-- SPECIALITY: score=14 rs_nifty=11.7 deliv=45.12
-- IKIO: score=14 rs_nifty=6.58 deliv=46.88
-- KABRAEXTRU: score=14 rs_nifty=52.15 deliv=43.48
-- RACLGEAR: score=14 rs_nifty=9.79 deliv=49.32
-- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
-- GNA: score=14 rs_nifty=9.83 deliv=43.46
+- MEDANTA: score=14 rs_nifty=7.17 deliv=75.27
+- PRIMESECU: score=14 rs_nifty=4.63 deliv=80.31
 - INDNIPPON: score=14 rs_nifty=10.82 deliv=47.51
 
 ## World markets (India cues)
@@ -140,24 +140,24 @@
 - ASX 200: -0.09% (neutral)
 
 ### Europe
-- FTSE 100: +0.73% (bull)
-- DAX: +0.92% (bull)
-- Euro Stoxx 50: +0.71% (bull)
+- FTSE 100: +0.48% (bull)
+- DAX: +0.90% (bull)
+- Euro Stoxx 50: +0.57% (bull)
 
 ### US
-- S&P 500: -0.18% (bear)
-- Nasdaq: -0.06% (neutral)
-- Dow: -0.85% (bear)
-- US VIX: +0.07% (neutral)
+- S&P 500: +0.36% (bull)
+- Nasdaq: +0.87% (bull)
+- Dow: +0.18% (bull)
+- US VIX: +0.00% (neutral)
 
 ### Macro
 - USDINR: +0.13% (neutral)
-- Crude WTI: -0.01% (neutral)
-- Brent: -0.39% (bear)
-- DXY: -0.09% (neutral)
-- US 10Y: -0.04% (neutral)
-- India ETF: -0.38% (bear)
-- EM ETF: -1.07% (bear)
+- Crude WTI: -0.28% (bear)
+- Brent: -0.48% (bear)
+- DXY: -0.46% (bull)
+- US 10Y: -0.92% (bull)
+- India ETF: +0.57% (bull)
+- EM ETF: +0.72% (bull)
 
 
 ## Groq desk note
@@ -165,48 +165,49 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market is in a bearish regime with a low India VIX, indicating a potential for increased volatility. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers. The overall risk is medium, with a bullish cue from Asia and Europe.
+The market is in a bearish regime with a low India VIX, indicating a potential for volatility. The Nifty trend is also bearish, with a percentage change of -0.27. Foreign institutional investors have a net inflow of 480.24, while domestic institutional investors have a net inflow of 235.56.
 
-- **SJS** [consider_entry/high] entry=2446.1 stop=2257.95 t1=2822.4 hold=17d — Strong Parkhu score and favorable risk sector
-- **KTKBANK** [consider_entry/medium] entry=310.0 stop=290.37 t1=349.27 hold=16d — Decent Parkhu score and potential for banking sector recovery
-- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable and thinning thesis
+- **SJS** [consider_entry/high] entry=2446.1 stop=2257.95 t1=2822.4 hold=17d — Strong Parkhu score and favorable risk-reward ratio
+- **KTKBANK** [consider_entry/medium] entry=310.0 stop=290.37 t1=349.27 hold=16d — Buy band and reasonable risk-reward ratio
+- **INDNIPPON** [manage_open/high] entry=1166.0 stop=1089.54 t1=1318.92 hold=9d — Existing open position with favorable metrics
+- **ICICIBANK** [stand_aside/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Tighten or review stop loss due to thinning thesis
 
 ### AI stock reviews
 
-- **SJS** [high] S.J.S. Enterprises Limited (SJS) fits a ≤1-month swing due to its bullish trend label, high ADX, and relatively high RSI, indicating strong momentum. The stock's recent outperformance versus Nifty and its sector, along with its proximity to its 52-week high, suggests potential for further upside. The overall market regime is bearish, but the stock's technicals and recent price action are favorable.
-  - catalysts: Earnings anticipation, Sector outperformance, Momentum continuation
-  - risks: Market regime risk, Sector downturn, Earnings disappointment
-  - watch: Watch for a strong move above the recent highs to confirm the bullish thesis, and a break below the stop level to invalidate the setup.
-- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong technical rating. The recent price action and momentum indicators suggest a potential breakout. With a high parkhu score of 81.2 and a strong relative performance against the Nifty and its sector, this setup has a high potential for a short-term gain.
-  - catalysts: Strong trend, High RSI, Strong technical rating
-  - risks: Market regime is bearish, India VIX is high
-  - watch: A break above the recent high or a bounce from the stop level could trigger the swing, while a break below the stop level could invalidate the setup.
-- **INDNIPPON** [high] This setup fits a ≤1-month swing as the company's recent price action and technical indicators suggest a bullish trend, with a high Parkhu score of 80.9 and a bullish trend label. The stock's relative strength against Nifty and its sector over the past month also indicates a strong momentum. The distance from the 52-week high is relatively close, which could act as a magnet, attracting buyers to push the price higher.
-  - catalysts: Bullish trend, High Parkhu score, Strong momentum
-  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risk
-  - watch: Triggers for this setup include a strong breakout above the current levels, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish trend. The Relative Strength Index (RSI) and Average Directional Index (ADX) will be closely monitored for any signs of trend reversal.
-- **MANAKSTEEL** [high] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating upward momentum and an RSI of 64.16, suggesting the stock has room to run. The stock's return over the past month is 3.09%, outperforming the sector. With a Parkhu score of 80.4, the setup appears promising for a short-term swing.
-  - catalysts: Bullish trend, High delivery percentage, Outperformance vs sector
-  - risks: Bearish market regime, Medium overall risk, High India VIX
-  - watch: Triggers for this setup include a breakout above the current level, while invalidation cues would be a drop below the stop level of 77.68, indicating a reversal of the trend.
+- **SJS** [high] The SJS setup fits a ≤1-month swing due to its bullish trend label, high ADX, and relatively low RSI, indicating potential for a short-term uptrend. The stock's recent outperformance against Nifty and its sector, combined with a high delivery percentage, suggests strong investor interest. The proximity to its 52-week high also presents an opportunity for a breakout.
+  - catalysts: Earnings anticipation, Sectoral tailwinds, Technical breakout
+  - risks: Market regime turns bearish, Sectoral downturn, Earnings disappointment
+  - watch: Triggers for this setup include a strong move above the current price level, while invalidation cues would be a breach of the stop level, indicating a failure of the anticipated uptrend. Monitoring the overall market regime and sector performance will also be crucial.
+- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The stock's distance from its 52-week high and relatively low ATR percentage of price suggest potential for a short-term upside. The overall market regime is bearish, but the stock's technical rating of 'Strong buy' and high Parkhu score indicate a favorable setup.
+  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend
+  - risks: Market regime, Interest rate changes, Sector volatility
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a failure of the bullish trend.
+- **INDNIPPON** [high] INDNIPPON fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating upward momentum and an ADX14 of 29.56, suggesting a strong trend. The stock's RSI14 of 56.73 is not overbought, allowing for further upside. Additionally, the company's return over the past month is 13.36%, outperforming the Nifty and its sector, indicating strong relative strength.
+  - catalysts: Bullish trend, Strong relative strength, Favorable risk-reward ratio
+  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risks
+  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues include a close below the stop level of 1089.54, indicating a failure of the bullish trend.
+- **MANAKSTEEL** [medium] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, with an ADX of 25.20 and RSI of 64.16, suggesting a potential continuation of the uptrend. The stock's delivery percentage of 61.95% and outperformance of the sector over the last month also support this setup. Additionally, the stock is trading near its 52-week high, which could lead to a breakout. The overall market regime is bearish, but the stock's sector and technical indicators suggest a potential short-term swing opportunity.
+  - catalysts: Bullish trend, Strong momentum, Sector outperformance
+  - risks: Bearish market regime, High India VIX, Sector volatility
+  - watch: A breakout above the recent highs or a pullback to the stop level could trigger the next move, while a failure to hold above the stop level could invalidate the setup.
 
 ### Claude feed
 
-Bearish regime, defensive stance, top ideas include SJS and KTKBANK, caveats include incomplete data and provisional scores
+Bearish regime, defensive stance, top ideas: SJS, KTKBANK, INDNIPPON. Caveats: provisional scores, incomplete data, and lack of trade outcome history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Raymond Realty Limited has informed the Exchange about Acquisition. (RAYMONDREL) — The acquisition by Raymond Realty Limited may have significant implications for the company's growth and the real estate sector as a whole.
-2. **[high]** Praxis Home Retail Limited has submitted to the Exchange about the outcome of the Board meeting regarding the unaudited financial results for the period ended Jun 30, 2026 and other matters. (PRAXIS) — The outcome of the board meeting may impact the company's stock price and investor sentiment.
-3. **[high]** Anuh Pharma Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (ANUHPHR) — The financial results may have a significant impact on the company's stock price and the pharmaceutical sector.
-4. **[high]** Gopal Snacks Limited has informed the Exchange regarding a press release dated August 07, 2026, titled "Press release on financial results for the quarter ended 30th June 2026". (GOPAL) — The financial results may impact the company's stock price and the food processing sector.
-5. **[high]** The Ramco Cements Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (RAMCOCEM) — The financial results may have a significant impact on the company's stock price and the cement sector.
-6. **[medium]** Oswal Agro Mills Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (OSWALAGRO) — The financial results may impact the company's stock price and the agro processing sector.
-7. **[medium]** Life Insurance Corporation Of India has informed the Exchange about the launch of new product. (LICI) — The launch of a new product may impact the company's sales and the insurance sector.
-8. **[low]** National Aluminium Company Limited has informed the Exchange about Business Responsibility and Sustainability Report for the financial year 2025-26. (NATIONALUM) — The report may have a minor impact on the company's reputation and the aluminium sector.
-9. **[low]** Sula Vineyards Limited has informed the Exchange about Link of Recording (SULA) — The link of recording may have a minor impact on the company's investor relations.
-10. **[low]** RACL Geartech Limited has informed the Exchange regarding Appointment of  Mr Gursharan Singh as Chairman & Managing Director of the company w.e.f. August 23, 2027. (RACLGEAR) — The appointment of a new Chairman and Managing Director may have a minor impact on the company's management and the automotive sector.
+1. **[high]** Disclosure under SEBI Takeover Regulations (GANGAFORGE) — Pine Oak Global Fund has submitted to the Exchange a copy of Disclosures under Regulation 29(1) of SEBI (SAST) Regulations, 2011, indicating a potential takeover or significant stake acquisition.
+2. **[high]** Outcome of Board Meeting (OMKARCHEM) — Omkar Speciality Chemicals Limited has submitted to the Exchange, the financial results for the period ended March 31, 2026, which may have a significant impact on the company's stock price.
+3. **[medium]** Outcome of Board Meeting (JSLL) — Jeena Sikho Lifecare Limited has submitted to the Exchange, Outcome of the Meeting of the Board of Directors of Jeena Sikho Lifecare Limited held on August 07, 2026, which may have a moderate impact on the company's stock price.
+4. **[medium]** Press Release - Q1 Results (ASHAPURMIN) — Ashapura Minechem Limited has informed the Exchange regarding a press release dated August 07, 2026, titled 'Ashapura Minechem Ltd. Results Q1 FV2026-27', which may have a moderate impact on the company's stock price.
+5. **[low]** Shareholders meeting (STANLEY) — Stanley Lifestyles Limited has submitted the Exchange a copy Srutinizers report of Postal Ballot, which is a routine update and may not have a significant impact on the company's stock price.
+6. **[low]** Shareholders meeting (MUTHOOTFIN) — Muthoot Finance Limited has informed the Exchange about Shareholders meeting, which is a routine update and may not have a significant impact on the company's stock price.
+7. **[low]** Change in Director(s) (SUBROS) — Subros Limited has informed the Exchange regarding Change in Director(s) of the company, which is a routine update and may not have a significant impact on the company's stock price.
+8. **[low]** Change in Management (RGL) — Renaissance Global Limited has informed the Exchange about change in Management, which is a routine update and may not have a significant impact on the company's stock price.
+9. **[low]** General Updates (BOMDYEING) — Bombay Dyeing & Mfg Company Limited has informed the Exchange about General Updates - Proceedings of the 146th Annual General Meeting of the Company, which is a routine update and may not have a significant impact on the company's stock price.
+10. **[low]** Copy of Newspaper Publication (GUFICBIO) — Gufic Biosciences Limited has informed the Exchange about Copy of Newspaper Publication - Notice of the 42nd Annual General Meeting of the Company, which is a routine update and may not have a significant impact on the company's stock price.
 
 ## Deep-dive URLs (after push)
 

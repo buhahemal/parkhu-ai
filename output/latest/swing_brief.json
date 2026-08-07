@@ -25,24 +25,24 @@
     "best_sector_perf_1m": 4.89,
     "worst_sector": "Communications",
     "worst_sector_perf_1m": -3.51,
-    "fii_net": -17.86,
-    "dii_net": 4013.6,
-    "crude": 77.28,
-    "crude_pct_change": -0.01,
+    "fii_net": 480.24,
+    "dii_net": 235.56,
+    "crude": 77.07,
+    "crude_pct_change": -0.28,
     "usdinr": 95.2,
     "usdinr_pct_change": 0.13,
-    "us_sp500_pct": -0.18,
-    "us_dow_pct": -0.85,
-    "us_vix": 15.16,
-    "us_vix_pct": 0.07,
-    "dxy": 99.89,
-    "dxy_pct": -0.09,
-    "us_10y": 4.67,
+    "us_sp500_pct": 0.36,
+    "us_dow_pct": 0.18,
+    "us_vix": 15.15,
+    "us_vix_pct": 0.0,
+    "dxy": 99.51,
+    "dxy_pct": -0.46,
+    "us_10y": 4.63,
     "asia_cue": "Bullish",
     "europe_cue": "Bullish",
-    "global_risk": "Neutral",
+    "global_risk": "Risk-On",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-08-07T18:07:03.743050+05:30"
+    "generated_at_ist": "2026-08-07T19:26:25.078894+05:30"
   },
   "funnel": [
     {
@@ -1148,7 +1148,7 @@
         "oi_change_pct": null,
         "tech_rating": "Buy",
         "analyst_rec": 1.1,
-        "price_target_avg": 2379.1,
+        "price_target_avg": 2402.1,
         "days_to_earnings": 96.0,
         "trend_score": 100.0,
         "momentum_score": 80,
@@ -2083,6 +2083,26 @@
         "score_now": null
       },
       {
+        "symbol": "MANAKSTEEL",
+        "date_opened": "2026-08-07",
+        "status": "open",
+        "entry": 84.43,
+        "stop": 77.68,
+        "t1": 97.94,
+        "price": 84.43,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 8,
+        "mfe_pct": 6.48,
+        "mae_pct": -0.83,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~8d left to the T1 horizon",
+        "score_at_open": 80.4,
+        "score_now": null
+      },
+      {
         "symbol": "RACLGEAR",
         "date_opened": "2026-08-07",
         "status": "open",
@@ -2120,6 +2140,26 @@
         "action": "HOLD",
         "detail": "-0.22% (-0.03R), 2d held, ~15d left to the T1 horizon",
         "score_at_open": 85.6,
+        "score_now": null
+      },
+      {
+        "symbol": "SJS",
+        "date_opened": "2026-08-07",
+        "status": "open",
+        "entry": 2446.1,
+        "stop": 2257.95,
+        "t1": 2822.4,
+        "price": 2446.1,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 17,
+        "mfe_pct": 1.37,
+        "mae_pct": -3.21,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~17d left to the T1 horizon",
+        "score_at_open": 87.4,
         "score_now": null
       },
       {
@@ -2259,13 +2299,12 @@
     }
   },
   "ledger": {
-    "opened": [
-      "SJS",
-      "MANAKSTEEL"
-    ],
+    "opened": [],
     "reconfirmed": [
+      "SJS",
       "KTKBANK",
-      "INDNIPPON"
+      "INDNIPPON",
+      "MANAKSTEEL"
     ]
   },
   "run_mode": "post_close",

@@ -7,11 +7,11 @@ SBIN,True,0.0,2026-08-07,False,,0,3
 TCS,False,68.0,2026-10-14,False,,0,0
 BAJFINANCE,False,81.0,2026-10-27,False,,0,0
 LT,False,89.0,2026-11-04,False,,0,0
-LICI,False,91.0,2026-11-06,False,,1,1
+LICI,False,91.0,2026-11-06,False,,0,0
 HINDUNILVR,False,82.0,2026-10-28,False,,0,0
 INFY,False,77.0,2026-10-23,False,,0,0
 SUNPHARMA,False,88.0,2026-11-03,False,,0,0
-TITAN,True,0.0,2026-08-07,False,,0,3
+TITAN,True,0.0,2026-08-07,False,,1,4
 MARUTI,False,83.0,2026-10-29,True,Dividend - Rs 140 Per Share,0,2
 M&M,False,95.0,2026-11-10,False,,0,0
 ADANIENT,False,82.0,2026-10-28,False,,0,0
@@ -55,11 +55,11 @@ HYUNDAI,False,102.0,2026-11-17,False,,0,0
 JIOFIN,False,69.0,2026-10-15,True,Dividend - Rs 0.60 Per Share,0,2
 PIDILITIND,False,96.0,2026-11-11,False,,0,0
 TMCV,False,26.0,2026-09-02,False,,0,0
-SOLARINDS,True,7.0,2026-08-14,False,,0,3
+SOLARINDS,True,6.0,2026-08-13,False,,0,3
 TRENT,False,90.0,2026-11-05,False,,0,0
 CHOLAFIN,False,83.0,2026-10-29,False,,0,0
 ABB,False,90.0,2026-11-05,True,Special Dividend - Rs 90 Per Share,0,2
-MOTHERSON,False,102.0,2026-11-17,False,,0,0
+MOTHERSON,False,102.0,2026-11-17,False,,2,2
 TATACAP,False,117.0,2026-12-02,False,,0,0
 TECHM,False,82.0,2026-10-28,False,,0,0
 DLF,False,83.0,2026-10-29,False,,0,0
@@ -93,14 +93,14 @@ HDFCLIFE,False,70.0,2026-10-16,False,,0,0
 INDIANB,False,76.0,2026-10-22,False,,0,0
 IRFC,False,,,False,,0,0
 ABCAPITAL,False,83.0,2026-10-29,False,,0,0
-MUTHOOTFIN,False,90.0,2026-11-05,False,,0,0
+MUTHOOTFIN,False,90.0,2026-11-05,False,,1,1
 SBIFUNDS,False,,,False,,0,0
 ENRIN,False,115.0,2026-11-30,False,,0,0
 GAIL,False,84.0,2026-10-30,False,,0,0
 LLOYDSME,True,3.0,2026-08-10,False,,0,3
 GVT&D,False,96.0,2026-11-11,True,Dividend - Rs 10 Per Share,0,2
 HEROMOTOCO,False,89.0,2026-11-04,False,,0,0
-JINDALSTEL,False,88.0,2026-11-03,False,,0,0
+JINDALSTEL,False,99.0,2026-11-14,False,,0,0
 MARICO,False,89.0,2026-11-04,False,,0,0
 GMRAIRPORT,True,0.0,2026-08-07,False,,0,3
 GODREJCP,True,0.0,2026-08-07,False,,0,3
@@ -163,7 +163,7 @@ BAJAJHFL,False,80.0,2026-10-26,False,,0,0
 YESBANK,False,73.0,2026-10-19,False,,0,0
 BIOCON,False,102.0,2026-11-17,False,,0,0
 FORTIS,False,99.0,2026-11-14,False,,0,0
-NATIONALUM,False,91.0,2026-11-06,False,,1,1
+NATIONALUM,False,91.0,2026-11-06,False,,0,0
 PHOENIXLTD,False,89.0,2026-11-04,False,,0,0
 PRESTIGE,False,96.0,2026-11-11,False,,0,0
 MCX,False,73.0,2026-10-19,False,,0,0
@@ -179,7 +179,7 @@ APARINDS,False,89.0,2026-11-04,False,,0,0
 OBEROIRLTY,False,70.0,2026-10-16,False,,0,0
 GODREJPROP,False,96.0,2026-11-11,False,,0,0
 SCHAEFFLER,False,76.0,2026-10-22,False,,0,0
-GICRE,True,0.0,2026-08-07,False,,0,3
+GICRE,True,5.0,2026-08-12,False,,0,3
 SBICARD,False,76.0,2026-10-22,False,,0,0
 BERGEPAINT,False,90.0,2026-11-05,False,,0,0
 KALYANKJIL,False,90.0,2026-11-05,False,,0,0
@@ -223,7 +223,7 @@ MPHASIS,False,90.0,2026-11-05,False,,0,0
 AIAENG,True,5.0,2026-08-12,False,,0,3
 PAGEIND,True,6.0,2026-08-13,False,,0,3
 NAVINFLUOR,False,89.0,2026-11-04,False,,0,0
-IPCALAB,True,10.0,2026-08-17,True,Dividend - Rs 6 Per Share,0,5
+IPCALAB,True,6.0,2026-08-13,True,Dividend - Rs 6 Per Share,0,5
 GODREJIND,False,,,False,,0,0
 SUPREMEIND,False,87.0,2026-11-02,False,,0,0
 ASTERDM,False,90.0,2026-11-05,False,,0,0
@@ -254,7 +254,7 @@ HSCL,False,69.0,2026-10-15,False,,0,0
 LTTS,False,99.0,2026-11-14,False,,0,0
 UBL,False,76.0,2026-10-22,True,Dividend - Rs 10 Per Share,0,2
 KPRMILL,True,0.0,2026-08-07,False,,0,3
-EMCURE,False,90.0,2026-11-05,False,,0,0
+EMCURE,False,90.0,2026-11-05,False,,3,3
 NHIT,False,,,False,,0,0
 BAGMANE.RR,False,,,False,,0,0
 PWL,False,26.0,2026-09-02,False,,0,0
@@ -298,7 +298,7 @@ IKS,False,83.0,2026-10-29,False,,0,0
 NIACL,False,90.0,2026-11-05,False,,0,0
 MRPL,False,89.0,2026-11-04,False,,0,0
 ZFCVINDIA,False,99.0,2026-11-14,False,,0,0
-BIRET.RR,True,5.0,2026-08-12,False,,0,3
+BIRET.RR,True,3.0,2026-08-10,False,,0,3
 APOLLOTYRE,False,103.0,2026-11-18,False,,0,0
 CENTRALBK,False,69.0,2026-10-15,False,,0,0
 SHYAMMETL,False,91.0,2026-11-06,True,Dividend - Rs 2.70 Per Share,0,2
@@ -312,7 +312,7 @@ ITI,False,,,False,,0,0
 PGHH,False,90.0,2026-11-05,False,,0,0
 REDINGTON,False,95.0,2026-11-10,False,,0,0
 NETWEB,False,84.0,2026-10-30,True,Dividend - Rs 3 Per Share,0,2
-PTCIL,True,3.0,2026-08-10,False,,0,3
+PTCIL,True,7.0,2026-08-14,False,,0,3
 SYRMA,False,101.0,2026-11-16,False,,0,0
 MSUMI,False,99.0,2026-11-14,False,,0,0
 ANGELONE,False,75.0,2026-10-21,False,,0,0
@@ -353,7 +353,7 @@ PFOCUS,False,,,False,,0,0
 AADHARHFC,False,90.0,2026-11-05,False,,0,0
 PFIZER,False,96.0,2026-11-11,False,,0,0
 ANANTRAJ,False,,,False,,0,0
-RAMCOCEM,True,0.0,2026-08-07,True,Dividend - Rs 2.50 Per Share,1,6
+RAMCOCEM,True,0.0,2026-08-07,True,Dividend - Rs 2.50 Per Share,0,5
 KPIL,True,4.0,2026-08-11,False,,0,3
 GABRIEL,False,97.0,2026-11-12,True,Dividend - Rs 3.10 Per Share,0,2
 URBANCO,False,117.0,2026-12-02,False,,0,0
@@ -381,12 +381,12 @@ JYOTICNC,True,0.0,2026-08-07,False,,0,3
 DEEPAKFERT,False,90.0,2026-11-05,False,,0,0
 CAPLIPOINT,True,5.0,2026-08-12,False,,0,3
 GESHIP,False,91.0,2026-11-06,True,Interim Dividend - Rs 14.40 Per Share,0,2
-SUNTV,True,0.0,2026-08-07,False,,0,3
+SUNTV,True,5.0,2026-08-12,False,,0,3
 ERIS,False,96.0,2026-11-11,False,,0,0
 CHENNPETRO,False,99.0,2026-11-14,True,Dividend - Rs 54 Per Share,0,2
 TDPOWERSYS,True,4.0,2026-08-11,False,,0,3
 CASTROLIND,False,87.0,2026-11-02,True,Interim Dividend - Rs 6.25 Per Share,0,2
-SAMMAANCAP,True,11.0,2026-08-18,False,,0,3
+SAMMAANCAP,True,6.0,2026-08-13,False,,0,3
 OLAELEC,True,0.0,2026-08-07,False,,0,3
 SHRIPISTON,False,88.0,2026-11-03,False,,0,0
 GMDCLTD,False,97.0,2026-11-12,False,,0,0
@@ -421,7 +421,7 @@ MINDACORP,True,6.0,2026-08-13,True,Dividend - Re 0.80 Per Share,0,5
 ASTRAMICRO,True,3.0,2026-08-10,False,,0,3
 KPITTECH,False,82.0,2026-10-28,True,Dividend - Rs 5.25 Per Share,0,2
 KANSAINER,False,95.0,2026-11-10,False,,0,0
-GRWRHITECH,True,0.0,2026-08-07,False,,0,3
+GRWRHITECH,False,97.0,2026-11-12,False,,0,0
 THELEELA,False,117.0,2026-12-02,False,,0,0
 INOXWIND,True,0.0,2026-08-07,False,,0,3
 INDIGRID,True,0.0,2026-08-07,False,,0,3
@@ -438,7 +438,7 @@ VERTIS,False,,,False,,0,0
 RATNAMANI,True,0.0,2026-08-07,True,Dividend - Rs 10 Per Share,0,5
 APLLTD,False,95.0,2026-11-10,False,,0,0
 GPIL,True,0.0,2026-08-07,True,Dividend - Re 1 Per Share,0,5
-NATCOPHARM,True,11.0,2026-08-18,False,,0,3
+NATCOPHARM,True,7.0,2026-08-14,False,,0,3
 FIVESTAR,False,88.0,2026-11-03,False,,0,0
 ALIVUS,False,90.0,2026-11-05,False,,0,0
 SYNGENE,False,75.0,2026-10-21,False,,0,0
@@ -468,7 +468,7 @@ DEVYANI,False,99.0,2026-11-14,False,,0,0
 HONASA,True,6.0,2026-08-13,False,,0,3
 CEATLTD,False,69.0,2026-10-15,False,,0,0
 CCL,False,76.0,2026-10-22,False,,0,0
-WELSPUNLIV,True,0.0,2026-08-07,False,,0,3
+WELSPUNLIV,True,6.0,2026-08-13,False,,0,3
 APOLLO,True,1.0,2026-08-08,False,,0,3
 GALLANTT,False,,,False,,0,0
 JNPR,False,,,False,,0,0
@@ -482,7 +482,7 @@ BEML,True,0.0,2026-08-07,False,,0,3
 SCI,False,,,False,,0,0
 VENTIVE,False,97.0,2026-11-12,False,,0,0
 ARVIND,True,5.0,2026-08-12,False,,0,3
-PRIVISCL,False,94.0,2026-11-09,False,,1,1
+PRIVISCL,False,94.0,2026-11-09,False,,0,0
 CANHLIFE,False,,,False,,0,0
 GRAPHITE,False,101.0,2026-11-16,False,,0,0
 VGUARD,False,89.0,2026-11-04,False,,0,0
@@ -490,7 +490,7 @@ SHADOWFAX,False,26.0,2026-09-02,False,,0,0
 VIJAYA,False,90.0,2026-11-05,False,,0,0
 AMAGI,False,26.0,2026-09-02,False,,0,0
 VISL,False,,,False,,0,0
-JSWDULUX,True,7.0,2026-08-14,False,,0,3
+JSWDULUX,True,4.0,2026-08-11,False,,0,3
 VOGL,False,,,False,,0,0
 UJJIVANSFB,False,94.0,2026-11-09,False,,0,0
 VEDPOWER,False,,,False,,0,0
@@ -499,15 +499,15 @@ SWANDEF,False,,,False,,0,0
 FRACTAL,False,117.0,2026-12-02,False,,0,0
 TMB,False,,,False,,0,0
 ANURAS,True,0.0,2026-08-07,False,,0,3
-INGERRAND,True,0.0,2026-08-07,False,,0,3
+INGERRAND,True,6.0,2026-08-13,False,,0,3
 KSB,False,84.0,2026-10-30,False,,0,0
 DOMS,False,94.0,2026-11-09,False,,0,0
 ENGINERSIN,True,6.0,2026-08-13,False,,0,3
 PRUDENT,False,89.0,2026-11-04,False,,0,0
 SKFINDUS,False,26.0,2026-09-02,False,,0,0
-CARTRADE,False,88.0,2026-11-03,False,,0,0
+CARTRADE,False,88.0,2026-11-03,False,,1,1
 ASKAUTOLTD,False,99.0,2026-11-14,False,,0,0
-JSWHL,False,,,False,,1,1
+JSWHL,False,,,False,,0,0
 INDGN,False,89.0,2026-11-04,False,,0,0
 BALRAMCHIN,True,4.0,2026-08-11,False,,0,3
 ACE,False,91.0,2026-11-06,False,,0,0
@@ -535,7 +535,7 @@ SOUTHBANK,False,69.0,2026-10-15,False,,0,0
 JMFINANCIL,False,99.0,2026-11-14,False,,0,0
 JPPOWER,False,,,False,,0,0
 SEDEMAC,False,117.0,2026-12-02,False,,0,0
-UTLSOLAR,False,,,False,,0,0
+UTLSOLAR,False,,,False,,1,1
 ATLANTAELE,False,117.0,2026-12-02,False,,0,0
 SIGMAADV,False,,,False,,0,0
 MARKSANS,True,5.0,2026-08-12,True,Dividend - Re 0.90 Per Share,0,5
@@ -548,17 +548,17 @@ TI,False,90.0,2026-11-05,False,,0,0
 JUBLINGREA,False,75.0,2026-10-21,False,,0,0
 JKTYRE,True,0.0,2026-08-07,False,,0,3
 VIYASH,True,4.0,2026-08-11,False,,0,3
-TEGA,True,0.0,2026-08-07,False,,0,3
+TEGA,True,6.0,2026-08-13,False,,0,3
 AVALON,False,96.0,2026-11-11,False,,0,0
 METROPOLIS,False,95.0,2026-11-10,False,,0,0
-TITAGARH,True,0.0,2026-08-07,False,,0,3
+TITAGARH,True,5.0,2026-08-12,False,,0,3
 KTKBANK,False,76.0,2026-10-22,False,,0,0
 UTIAMC,False,69.0,2026-10-15,False,,0,0
 ABLBL,False,117.0,2026-12-02,True,Dividend - Re 0.50 Per Share,0,2
-TECHNOE,True,11.0,2026-08-18,False,,0,3
+TECHNOE,True,4.0,2026-08-11,False,,0,3
 LUMAXTECH,True,3.0,2026-08-10,False,,0,3
 OLECTRA,True,12.0,2026-08-19,False,,0,3
-EDELWEISS,True,0.0,2026-08-07,False,,0,3
+EDELWEISS,False,83.0,2026-10-29,False,,0,0
 SIGNATURE,False,91.0,2026-11-06,False,,0,0
 IEX,False,82.0,2026-10-28,False,,0,0
 ZENSARTECH,False,99.0,2026-11-14,False,,0,0
@@ -613,7 +613,7 @@ THYROCARE,False,89.0,2026-11-04,False,,0,0
 CYIENT,False,69.0,2026-10-15,False,,0,0
 KIRLPNU,False,69.0,2026-10-15,False,,0,0
 WAAREERTL,False,117.0,2026-12-02,False,,0,0
-GENUSPOWER,True,0.0,2026-08-07,False,,0,3
+GENUSPOWER,True,6.0,2026-08-13,False,,0,3
 SONATSOFTW,False,90.0,2026-11-05,False,,0,0
 BATAINDIA,True,4.0,2026-08-11,False,,0,3
 RAILTEL,False,90.0,2026-11-05,False,,0,0
@@ -622,7 +622,7 @@ PRICOLLTD,False,99.0,2026-11-14,False,,0,0
 STAR,False,83.0,2026-10-29,False,,0,0
 PGINVIT,False,,,False,,0,0
 SGMART,False,117.0,2026-12-02,False,,0,0
-VESUVIUS,True,0.0,2026-08-07,False,,0,3
+VESUVIUS,True,12.0,2026-08-19,False,,0,3
 NCC,False,90.0,2026-11-05,True,Dividend - Rs 2.20 Per Share,0,2
 JAYNECOIND,False,,,False,,0,0
 WESTLIFE,False,96.0,2026-11-11,True,Interim Dividend - Re 0.40 Per Share,0,2
@@ -632,22 +632,22 @@ LEMONTREE,True,0.0,2026-08-07,False,,0,3
 BSOFT,False,90.0,2026-11-05,False,,0,0
 IXIGO,False,82.0,2026-10-28,False,,0,0
 TARIL,False,91.0,2026-11-06,False,,0,0
-EUREKAFORB,True,0.0,2026-08-07,False,,0,3
+EUREKAFORB,True,5.0,2026-08-12,False,,0,3
 ZEEL,True,3.0,2026-08-10,False,,0,3
-SUDARSCHEM,True,0.0,2026-08-07,True,Dividend - Rs 5 Per Share,0,5
+SUDARSCHEM,True,5.0,2026-08-12,True,Dividend - Rs 5 Per Share,0,5
 GRINFRA,False,90.0,2026-11-05,False,,0,0
 EQUITASBNK,False,89.0,2026-11-04,False,,0,0
 TTKPRESTIG,False,100.0,2026-11-15,False,,0,0
 ESABINDIA,True,4.0,2026-08-11,False,,0,3
 PNGJL,False,103.0,2026-11-18,False,,0,0
-KRBL,True,0.0,2026-08-07,False,,0,3
+KRBL,True,6.0,2026-08-13,False,,0,3
 RELIGARE,False,,,False,,0,0
 RHIM,True,4.0,2026-08-11,False,,0,3
-EMBDL,False,90.0,2026-11-05,False,,0,0
+EMBDL,True,3.0,2026-08-10,False,,0,3
 SUVEN,False,,,False,,0,0
 YATHARTH,True,3.0,2026-08-10,False,,0,3
 PCJEWELLER,False,,,False,,0,0
-CELLO,True,0.0,2026-08-07,False,,1,4
+CELLO,True,0.0,2026-08-07,False,,0,3
 TIPSMUSIC,False,75.0,2026-10-21,False,,0,0
 ICIL,True,7.0,2026-08-14,False,,0,3
 MEDPLUS,False,90.0,2026-11-05,False,,0,0
@@ -689,8 +689,8 @@ SFL,False,83.0,2026-10-29,False,,0,0
 REDTAPE,False,,,False,,0,0
 JYOTHYLAB,True,5.0,2026-08-12,False,,0,3
 ETHOSLTD,False,94.0,2026-11-09,False,,0,0
-JSLL,True,0.0,2026-08-07,False,,0,3
-SKFINDIA,True,0.0,2026-08-07,False,,0,3
+JSLL,True,0.0,2026-08-07,False,,1,4
+SKFINDIA,True,5.0,2026-08-12,False,,0,3
 SHARDACROP,False,83.0,2026-10-29,True,Dividend - Rs 9 Per Share,0,2
 KPIGREEN,True,3.0,2026-08-10,False,,0,3
 DBL,True,3.0,2026-08-10,False,,0,3
@@ -703,19 +703,19 @@ SAFARI,False,102.0,2026-11-17,False,,0,0
 KINGFA,False,,,False,,0,0
 SUPRAJIT,False,101.0,2026-11-16,False,,0,0
 BENGALASM,False,,,False,,0,0
-SUPRIYA,True,3.0,2026-08-10,False,,0,3
+SUPRIYA,True,6.0,2026-08-13,False,,0,3
 TCI,False,76.0,2026-10-22,False,,0,0
 JKLAKSHMI,False,96.0,2026-11-11,False,,0,0
 JKPAPER,False,83.0,2026-10-29,False,,0,0
 RCF,False,,,False,,0,0
 SPARC,False,,,False,,0,0
 MBAPL,False,,,False,,0,0
-GALAXYSURF,True,4.0,2026-08-11,False,,0,3
+GALAXYSURF,True,6.0,2026-08-13,False,,0,3
 BIRLACORPN,False,96.0,2026-11-11,False,,0,0
 SUNFLAG,False,,,False,,0,0
 BAJAJCON,False,90.0,2026-11-05,False,,0,0
 INOXGREEN,False,,,False,,0,0
-ASHAPURMIN,False,,,False,,0,0
+ASHAPURMIN,False,,,False,,1,1
 GREENLAM,True,0.0,2026-08-07,False,,0,3
 AXISCADES,True,5.0,2026-08-12,False,,0,3
 NEPHROPLUS,False,26.0,2026-09-02,False,,0,0
@@ -729,7 +729,7 @@ MAXESTATES,True,7.0,2026-08-14,False,,0,3
 CAMPUS,False,90.0,2026-11-05,False,,0,0
 GOKULAGRO,False,,,False,,0,0
 POWERICA,False,,,False,,0,0
-TRANSRAILL,True,0.0,2026-08-07,False,,0,3
+TRANSRAILL,False,95.0,2026-11-10,False,,0,0
 FIEMIND,True,5.0,2026-08-12,False,,0,3
 AJAXENGG,False,97.0,2026-11-12,False,,0,0
 VMART,False,94.0,2026-11-09,False,,0,0
@@ -772,7 +772,7 @@ ALOKINDS,False,,,False,,0,0
 SKIPPER,True,4.0,2026-08-11,True,Dividend - Re 0.10 Per Share,0,5
 JSFB,False,80.0,2026-10-26,False,,0,0
 PTC,False,102.0,2026-11-17,True,Interim Dividend - Rs 23 Per Share,0,2
-PRAJIND,True,7.0,2026-08-14,False,,0,3
+PRAJIND,True,6.0,2026-08-13,False,,0,3
 MAPMYINDIA,False,76.0,2026-10-22,False,,0,0
 IFBIND,False,83.0,2026-10-29,False,,0,0
 TVSSCS,True,3.0,2026-08-10,False,,0,3
@@ -791,7 +791,7 @@ FEDFINA,False,129.0,2026-12-14,False,,0,0
 RPTECH,False,,,False,,0,0
 IONEXCHANG,False,102.0,2026-11-17,False,,0,0
 GOLDIAM,True,0.0,2026-08-07,False,,0,3
-HCC,True,0.0,2026-08-07,False,,0,3
+HCC,False,90.0,2026-11-05,False,,0,0
 MASTEK,False,69.0,2026-10-15,False,,0,0
 LCL,False,,,False,,0,0
 MASFIN,False,82.0,2026-10-28,False,,0,0
@@ -809,7 +809,7 @@ KRISHANA,False,,,False,,0,0
 LUMAXIND,True,1.0,2026-08-08,False,,0,3
 ENTERO,True,0.0,2026-08-07,False,,0,3
 INDIGOPNTS,True,7.0,2026-08-14,False,,0,3
-SUBROS,True,0.0,2026-08-07,False,,0,3
+SUBROS,True,0.0,2026-08-07,False,,1,4
 SOTL,False,,,False,,0,0
 NEOGEN,False,94.0,2026-11-09,False,,0,0
 SHARDAMOTR,False,,,False,,0,0
@@ -854,7 +854,7 @@ EPIGRAL,False,90.0,2026-11-05,False,,0,0
 QUESS,False,89.0,2026-11-04,True,Dividend - Rs 3 Per Share,0,2
 RTNPOWER,False,,,False,,0,0
 RENUKA,False,,,False,,0,0
-RAYMONDREL,False,,,False,,1,1
+RAYMONDREL,False,,,False,,0,0
 GREAVESCOT,False,95.0,2026-11-10,False,,0,0
 COCKERILL,False,,,False,,0,0
 MHRIL,False,83.0,2026-10-29,False,,0,0
@@ -871,7 +871,7 @@ NORTHARC,False,,,False,,0,0
 DECNGOLD,False,,,False,,0,0
 SYMPHONY,False,99.0,2026-11-14,True,Interim Dividend - Re 1  Per Share,0,2
 BOSCH_HCIL,False,76.0,2026-10-22,False,,0,0
-VIPIND,True,7.0,2026-08-14,False,,0,3
+VIPIND,True,5.0,2026-08-12,False,,0,3
 EMUDHRA,False,96.0,2026-11-11,False,,0,0
 HAWKINCOOK,False,,,False,,0,0
 HIRECT,False,,,False,,0,0
@@ -898,7 +898,7 @@ NRBBEARING,True,0.0,2026-08-07,False,,0,3
 WPIL,False,89.0,2026-11-04,False,,0,0
 MSTCLTD,True,6.0,2026-08-13,False,,0,3
 WAKEFIT,False,,,False,,0,0
-BAJAJHIND,True,0.0,2026-08-07,False,,0,3
+BAJAJHIND,True,6.0,2026-08-13,False,,0,3
 RALLIS,False,74.0,2026-10-20,False,,0,0
 NACLIND,False,,,False,,0,0
 RAYMOND,True,0.0,2026-08-07,False,,0,3
@@ -916,7 +916,7 @@ MOSCHIP,False,,,False,,0,0
 WEBELSOLAR,True,3.0,2026-08-10,False,,0,3
 TATVA,False,84.0,2026-10-30,False,,0,0
 VAIBHAVGBL,False,89.0,2026-11-04,True,Interim Dividend - Rs 1.50 Per Share,0,2
-GUFICBIO,False,,,False,,0,0
+GUFICBIO,False,,,False,,1,1
 PACEDIGITK,False,117.0,2026-12-02,False,,0,0
 GHCL,False,87.0,2026-11-02,False,,0,0
 SPECTRUM,False,,,False,,0,0
@@ -925,7 +925,7 @@ AURIONPRO,False,80.0,2026-10-26,False,,0,0
 INDOTECH,False,,,False,,0,0
 ASHIKAG,False,,,False,,0,0
 STYRENIX,False,103.0,2026-11-18,True,Interim Dividend - Rs 23 Per Share,0,2
-TARC,True,0.0,2026-08-07,False,,0,3
+TARC,True,4.0,2026-08-11,False,,0,3
 DEEPINDS,False,117.0,2026-12-02,False,,0,0
 VISHNU,False,103.0,2026-11-18,True,Dividend - Re 0.30 Per Share,0,2
 ANUP,False,83.0,2026-10-29,False,,0,0
@@ -934,8 +934,8 @@ KSCL,True,6.0,2026-08-13,False,,0,3
 SGFIN,False,,,False,,0,0
 NOVARTIND,False,,,False,,0,0
 ELLEN,False,26.0,2026-09-02,False,,0,0
-KIRLOSIND,False,,,True,Dividend - Rs 13 Per Share,1,3
-SANDHAR,True,0.0,2026-08-07,False,,0,3
+KIRLOSIND,False,,,True,Dividend - Rs 13 Per Share,0,2
+SANDHAR,True,4.0,2026-08-11,False,,0,3
 63MOONS,False,,,False,,0,0
 VSTTILLERS,True,6.0,2026-08-13,False,,0,3
 KNRCON,True,10.0,2026-08-17,False,,0,3
@@ -959,7 +959,7 @@ CMLL,False,,,False,,0,0
 SHAREINDIA,False,,,False,,0,0
 MUTHOOTMF,False,,,False,,0,0
 EIEL,False,,,False,,0,0
-ZOTA,True,3.0,2026-08-10,False,,0,3
+ZOTA,True,6.0,2026-08-13,False,,0,3
 INDOSTAR,False,96.0,2026-11-11,False,,0,0
 DBCORP,False,76.0,2026-10-22,False,,0,0
 AARTIDRUGS,False,76.0,2026-10-22,False,,0,0
@@ -970,7 +970,7 @@ ADVENZYMES,True,1.0,2026-08-08,False,,0,3
 JKIL,False,95.0,2026-11-10,False,,0,0
 OSWALPUMPS,False,26.0,2026-09-02,False,,0,0
 FILATEX,False,95.0,2026-11-10,False,,0,0
-HGINFRA,True,0.0,2026-08-07,True,Dividend - Rs 2 Per Share,0,5
+HGINFRA,True,5.0,2026-08-12,True,Dividend - Rs 2 Per Share,0,5
 GREENPLY,False,99.0,2026-11-14,False,,0,0
 PREMEXPLN,False,,,False,,0,0
 BHAGCHEM,False,,,False,,0,0
@@ -985,7 +985,7 @@ FUSION,True,3.0,2026-08-10,False,,0,3
 UFLEX,False,,,False,,0,0
 CARYSIL,True,3.0,2026-08-10,False,,0,3
 WHEELS,False,,,False,,0,0
-GOPAL,True,0.0,2026-08-07,False,,1,4
+GOPAL,True,0.0,2026-08-07,False,,0,3
 STEELCAS,False,,,True,Interim Dividend - Re 0.45 Per Share,0,2
 UEL,False,,,False,,0,0
 AIMTRON,False,,,False,,0,0
@@ -1014,7 +1014,7 @@ KKCL,False,76.0,2026-10-22,False,,0,0
 DALMIASUG,True,0.0,2026-08-07,False,,0,3
 NPST,False,,,False,,0,0
 HLEGLAS,True,3.0,2026-08-10,False,,0,3
-UFBL,False,95.0,2026-11-10,False,,0,0
+UFBL,False,95.0,2026-11-10,False,,1,1
 EUROPRATIK,False,,,False,,0,0
 GRAUWEIL,False,,,False,,0,0
 STALLION,False,,,False,,0,0
@@ -1029,14 +1029,14 @@ CARRARO,False,,,False,,0,0
 DREDGECORP,False,,,False,,0,0
 DCAL,True,5.0,2026-08-12,False,,0,3
 BEPL,False,,,False,,0,0
-RPSGVENT,True,7.0,2026-08-14,False,,0,3
+RPSGVENT,True,6.0,2026-08-13,False,,0,3
 RSYSTEMS,False,91.0,2026-11-06,False,,0,0
-TVSSRICHAK,True,5.0,2026-08-12,False,,0,3
+TVSSRICHAK,True,6.0,2026-08-13,False,,0,3
 PRINCEPIPE,False,95.0,2026-11-10,False,,0,0
 JTLIND,False,68.0,2026-10-14,False,,0,0
 BALMLAWRIE,False,,,False,,0,0
 ANTELOPUS,False,,,False,,0,0
-DIVGIITTS,True,0.0,2026-08-07,False,,0,3
+DIVGIITTS,True,4.0,2026-08-11,False,,0,3
 ELPROINTL,False,,,False,,0,0
 POKARNA,False,,,False,,0,0
 RELINFRA,False,,,False,,0,0
@@ -1073,7 +1073,7 @@ SUNCLAY,False,117.0,2026-12-02,False,,0,0
 JINDALPOLY,False,,,False,,0,0
 EFCIL,False,102.0,2026-11-17,False,,0,0
 ZAGGLE,False,68.0,2026-10-14,False,,0,0
-ARVSMART,True,0.0,2026-08-07,False,,1,4
+ARVSMART,True,0.0,2026-08-07,False,,0,3
 GSPCROP,False,,,False,,0,0
 KPL,False,,,False,,0,0
 MEDIASSIST,True,1.0,2026-08-08,False,,0,3
@@ -1116,12 +1116,12 @@ BETA,False,82.0,2026-10-28,False,,0,0
 DRAGARWQ,False,,,False,,0,0
 ADVAIT,False,,,False,,0,0
 RANEHOLDIN,False,,,False,,0,0
-SUNDROP,True,0.0,2026-08-07,False,,0,3
+SUNDROP,False,69.0,2026-10-15,False,,0,0
 EPACKPEB,False,,,False,,0,0
 RAJESHEXPO,False,41.0,2026-09-17,False,,0,0
 RISHABH,False,,,False,,0,0
 VERANDA,False,,,False,,0,0
-BOMDYEING,False,,,False,,0,0
+BOMDYEING,False,,,False,,1,1
 INA,False,,,False,,0,0
 GREENPANEL,True,1.0,2026-08-08,False,,0,3
 GIPCL,True,4.0,2026-08-11,False,,0,3
@@ -1138,14 +1138,14 @@ SAIPARENT,False,,,False,,0,0
 GANDHAR,False,,,False,,0,0
 SHK,False,99.0,2026-11-14,False,,0,0
 SIKA,True,0.0,2026-08-07,False,,0,3
-JNKINDIA,True,11.0,2026-08-18,False,,0,3
+JNKINDIA,True,4.0,2026-08-11,False,,0,3
 TASTYBITE,False,,,False,,0,0
 EXICOM,False,,,False,,0,0
 RAMCOSYS,False,95.0,2026-11-10,False,,0,0
 BRIGHOTEL,False,117.0,2026-12-02,False,,0,0
 THEJO,False,,,False,,0,0
 SAKSOFT,True,0.0,2026-08-07,False,,0,3
-STYLEBAAZA,True,0.0,2026-08-07,False,,0,3
+STYLEBAAZA,True,6.0,2026-08-13,False,,0,3
 APOLLOPIPE,False,83.0,2026-10-29,False,,0,0
 TIL,False,,,False,,0,0
 PIXTRANS,False,,,False,,0,0
@@ -1162,14 +1162,14 @@ ANANTAM,False,,,False,,0,0
 GNA,False,70.0,2026-10-16,False,,0,0
 SANSTAR,False,,,False,,0,0
 SAGCEM,False,82.0,2026-10-28,False,,0,0
-LANDMARK,True,11.0,2026-08-18,False,,0,3
+LANDMARK,True,4.0,2026-08-11,False,,0,3
 PROTEAN,False,111.0,2026-11-26,False,,0,0
 MOLDTKPAC,False,96.0,2026-11-11,False,,0,0
-EMSLIMITED,True,3.0,2026-08-10,False,,0,3
+EMSLIMITED,True,5.0,2026-08-12,False,,0,3
 BAJEL,False,26.0,2026-09-02,False,,0,0
 NELCO,False,,,False,,0,0
 TCIEXP,False,99.0,2026-11-14,False,,0,0
-KLBRENG_B,True,0.0,2026-08-07,False,,0,3
+KLBRENG_B,True,7.0,2026-08-14,False,,0,3
 SHRINGARMS,False,26.0,2026-09-02,False,,0,0
 ALEMBICLTD,False,,,False,,0,0
 ELCIDIN,False,,,False,,0,0
@@ -1179,12 +1179,12 @@ PENIND,True,5.0,2026-08-12,False,,0,3
 ESAFSFB,False,,,False,,0,0
 PRABHA,False,,,False,,0,0
 VINCOFE,False,,,False,,0,0
-EPACK,True,0.0,2026-08-07,False,,0,3
+EPACK,True,4.0,2026-08-11,False,,0,3
 GEOJITFSL,False,,,False,,0,0
 HUHTAMAKI,False,69.0,2026-10-15,False,,0,0
 PARACABLES,False,,,False,,0,0
 GRANDOAK,False,,,False,,0,0
-LAOPALA,True,6.0,2026-08-13,False,,0,3
+LAOPALA,True,5.0,2026-08-12,False,,0,3
 MSPL,False,,,False,,0,0
 ARMANFIN,False,,,False,,0,0
 NIBE,False,,,False,,0,0
@@ -1208,7 +1208,7 @@ AEROPLANE,False,,,False,,0,0
 JAYKAY,False,,,False,,0,0
 GOCLCORP,False,,,False,,0,0
 INDIANHUME,True,5.0,2026-08-12,False,,0,3
-DCXINDIA,True,0.0,2026-08-07,False,,0,3
+DCXINDIA,True,5.0,2026-08-12,False,,0,3
 SAKAR,False,,,False,,0,0
 VIDYAWIRES,False,26.0,2026-09-02,False,,0,0
 MONOLITH,False,117.0,2026-12-02,False,,0,0
@@ -1225,7 +1225,7 @@ SERVOTECH,False,,,False,,0,0
 SCILAL,False,,,False,,0,0
 CANTABIL,False,96.0,2026-11-11,False,,0,0
 CAPACITE,True,0.0,2026-08-07,False,,0,3
-ASIANENE,True,0.0,2026-08-07,False,,0,3
+ASIANENE,True,6.0,2026-08-13,False,,0,3
 EIHAHOTELS,False,,,False,,0,0
 INSECTICID,True,4.0,2026-08-11,False,,0,3
 OBSCP,False,,,False,,0,0
@@ -1241,21 +1241,21 @@ VIKRAN,False,26.0,2026-09-02,False,,0,0
 MARSONS,False,,,False,,0,0
 WINDLAS,False,,,False,,0,0
 NUCLEUS,False,94.0,2026-11-09,False,,0,0
-HINDWAREAP,True,0.0,2026-08-07,False,,0,3
+HINDWAREAP,True,5.0,2026-08-12,False,,0,3
 JAICORPLTD,False,,,False,,0,0
 KRSNAA,True,0.0,2026-08-07,False,,0,3
 TBZ,False,,,False,,0,0
 JINDRILL,False,,,False,,0,0
 BFINVEST,False,,,False,,0,0
-CEINSYS,True,0.0,2026-08-07,False,,0,3
+CEINSYS,True,4.0,2026-08-11,False,,0,3
 KRISHNADEF,False,,,False,,0,0
 STUDDS,False,26.0,2026-09-02,False,,0,0
 KODYTECH,False,,,False,,0,0
 SHALBY,False,74.0,2026-10-20,False,,0,0
 MTNL,False,,,False,,0,0
-RACLGEAR,False,,,False,,1,1
+RACLGEAR,False,,,False,,0,0
 YATRA,False,73.0,2026-10-19,False,,0,0
-HITECH,True,0.0,2026-08-07,False,,0,3
+HITECH,True,5.0,2026-08-12,False,,0,3
 GOCOLORS,False,83.0,2026-10-29,False,,0,0
 SURYODAY,False,90.0,2026-11-05,False,,0,0
 BLUSPRING,False,,,False,,0,0
@@ -1268,7 +1268,7 @@ MVELECTRO,False,,,False,,0,0
 DELTACORP,False,,,False,,0,0
 GARUDA,False,,,False,,0,0
 MAHASTEEL,False,,,False,,0,0
-TARSONS,True,3.0,2026-08-10,False,,1,4
+TARSONS,True,3.0,2026-08-10,False,,0,3
 SMCGLOBAL,False,,,False,,0,0
 IPL,False,,,False,,0,0
 SHANTIGOLD,False,26.0,2026-09-02,False,,0,0
@@ -1342,7 +1342,7 @@ TEXINFRA,False,,,False,,0,0
 SIGNPOST,False,,,False,,0,0
 ALLTIME,False,,,False,,0,0
 INDOTHAI,False,,,False,,0,0
-SULA,False,102.0,2026-11-17,False,,1,1
+SULA,False,102.0,2026-11-17,False,,0,0
 UDS,False,96.0,2026-11-11,False,,0,0
 BHARATWIRE,True,0.0,2026-08-07,False,,0,3
 BHARATSE,False,,,False,,0,0
@@ -1371,11 +1371,11 @@ CENTENKA,False,99.0,2026-11-14,False,,0,0
 ZSARACOM,False,,,False,,0,0
 INDOBORAX,False,,,False,,0,0
 ROTO,False,,,False,,0,0
-RGL,True,0.0,2026-08-07,False,,0,3
+RGL,True,0.0,2026-08-07,False,,1,4
 EXCELINDUS,False,,,False,,0,0
-SURAKSHA,True,0.0,2026-08-07,False,,0,3
+SURAKSHA,True,5.0,2026-08-12,False,,0,3
 GODAVARIB,False,,,False,,0,0
-FAZE3Q,True,0.0,2026-08-07,False,,0,3
+FAZE3Q,True,4.0,2026-08-11,False,,0,3
 ICEMAKE,False,,,False,,0,0
 DEN,False,,,False,,0,0
 TCC,False,,,False,,0,0
@@ -1397,7 +1397,7 @@ EKC,True,6.0,2026-08-13,False,,0,3
 SKMEGGPROD,False,,,False,,0,0
 PLATIND,False,,,False,,0,0
 SYNCOMF,False,,,False,,0,0
-HARIOMPIPE,True,0.0,2026-08-07,False,,0,3
+HARIOMPIPE,True,5.0,2026-08-12,False,,0,3
 UNIHEALTH,False,,,False,,0,0
 QLINE,False,,,False,,0,0
 ACCENTMIC,False,,,False,,0,0
@@ -1409,7 +1409,7 @@ RUBYMILLS,False,,,False,,0,0
 LINCOLN,False,,,False,,0,0
 BHAGYANGR,False,,,False,,0,0
 BUTTERFLY,False,99.0,2026-11-14,False,,0,0
-ALICON,True,0.0,2026-08-07,False,,0,3
+ALICON,True,6.0,2026-08-13,False,,0,3
 SRM,False,,,False,,0,0
 AWHCL,True,3.0,2026-08-10,False,,0,3
 UTSSAV,False,,,False,,0,0
@@ -1426,7 +1426,7 @@ DOLATALGO,False,,,False,,0,0
 TEMBO,False,,,False,,0,0
 ANDHRSUGAR,False,,,False,,0,0
 SAFEENTP,False,,,False,,0,0
-APEX,True,3.0,2026-08-10,False,,0,3
+APEX,True,6.0,2026-08-13,False,,0,3
 BIRLANU,False,,,False,,0,0
 GREENPOWER,False,,,False,,0,0
 ARIHANTSUP,True,0.0,2026-08-07,False,,0,3
@@ -1458,7 +1458,7 @@ TNPL,False,,,False,,0,0
 GANDHITUBE,False,,,False,,0,0
 SALZERELEC,False,,,False,,0,0
 UNITECH,False,,,False,,0,0
-BCLIND,True,0.0,2026-08-07,False,,0,3
+BCLIND,True,5.0,2026-08-12,False,,0,3
 ARIS,False,,,False,,0,0
 MADRASFERT,False,,,False,,0,0
 TSFINV,False,,,False,,0,0
@@ -1476,7 +1476,7 @@ EIMCOELECO,False,83.0,2026-10-29,False,,0,0
 MUNJALAU,False,,,False,,0,0
 THEMISMED,False,,,False,,0,0
 MONTECARLO,False,,,False,,0,0
-3BBLACKBIO,True,0.0,2026-08-07,False,,0,3
+3BBLACKBIO,True,6.0,2026-08-13,False,,0,3
 SALASAR,False,,,False,,0,0
 IRISDOREME,False,90.0,2026-11-05,False,,0,0
 AFSL,False,,,False,,0,0
@@ -1486,7 +1486,7 @@ LGHL,False,,,False,,0,0
 JARO,False,,,False,,0,0
 SWELECTES,False,,,False,,0,0
 RSWM,False,,,False,,0,0
-HIMATSEIDE,True,0.0,2026-08-07,False,,0,3
+HIMATSEIDE,True,5.0,2026-08-12,False,,0,3
 HEALTHX,False,,,False,,0,0
 KRISHIVAL,False,,,False,,0,0
 SUDARCOLOR,False,,,False,,0,0
@@ -1507,7 +1507,7 @@ FAIRCHEMOR,False,,,False,,0,0
 MAFATIND,False,,,False,,0,0
 EXCELSOFT,False,,,False,,0,0
 WANBURY,True,0.0,2026-08-07,False,,0,3
-UNIECOM,True,4.0,2026-08-11,False,,0,3
+UNIECOM,True,6.0,2026-08-13,False,,1,4
 DHAMPURSUG,False,90.0,2026-11-05,False,,0,0
 DVL,False,,,True,Dividend - Rs 1.50 Per Share,0,2
 REMUS,False,,,False,,0,0
@@ -1520,7 +1520,7 @@ MATRIMONY,True,4.0,2026-08-11,False,,0,3
 SGIL,False,26.0,2026-09-02,False,,0,0
 ASTAR,False,,,False,,0,0
 RAJOOENG,False,,,False,,0,0
-ESTER,True,5.0,2026-08-12,False,,0,3
+ESTER,True,4.0,2026-08-11,False,,0,3
 KOPRAN,False,,,True,Dividend - Rs 3 Per Share,0,2
 WCIL,False,,,False,,0,0
 GAYAPROJ,False,,,False,,0,0
@@ -1550,7 +1550,7 @@ REGAAL,False,,,False,,0,0
 KOTHARIPET,False,,,False,,0,0
 SRHHYPOLTD,False,,,False,,0,0
 SHRIAHIMSA,False,,,False,,0,0
-STANLEY,False,,,False,,0,0
+STANLEY,False,,,False,,1,1
 RITCO,False,,,False,,0,0
 TEJASCARGO,False,,,False,,0,0
 NDTV,False,,,False,,0,0
@@ -1564,7 +1564,7 @@ GANESHBE,False,,,False,,0,0
 OMINFRAL,False,,,False,,0,0
 VHLTD,False,,,False,,0,0
 SVLL,False,,,False,,0,0
-ROHLTD,True,0.0,2026-08-07,False,,0,3
+ROHLTD,True,4.0,2026-08-11,False,,0,3
 SCODATUBES,False,,,False,,0,0
 ORICONENT,False,,,False,,0,0
 RAMBHAJO,False,,,False,,0,0
@@ -1572,7 +1572,7 @@ PROSTARM,False,,,False,,0,0
 BAHETI,False,,,False,,0,0
 FEDDERSHOL,False,,,False,,0,0
 NEUEON,False,,,False,,0,0
-QUICKHEAL,False,,,False,,1,1
+QUICKHEAL,False,,,False,,0,0
 COMSYN,False,,,False,,0,0
 ARIHANTCAP,False,,,False,,0,0
 KRYSTAL,False,82.0,2026-10-28,False,,0,0
@@ -1583,7 +1583,7 @@ FINKURVE,False,,,False,,0,0
 ADVANCE,False,,,False,,0,0
 SSEGL,False,,,False,,0,0
 FRESHARA,False,,,False,,0,0
-RADHIKAJWE,True,0.0,2026-08-07,False,,0,3
+RADHIKAJWE,True,4.0,2026-08-11,False,,0,3
 SEJALLTD,False,,,False,,0,0
 SAHASRA,False,,,False,,0,0
 SICALLOG,False,,,False,,0,0
@@ -1602,7 +1602,7 @@ HEXAGON,False,,,False,,0,0
 NRL,False,,,False,,0,0
 VALIANTORG,False,,,False,,0,0
 SUBEXLTD,False,,,False,,0,0
-ANUHPHR,False,,,False,,1,1
+ANUHPHR,False,,,False,,0,0
 INDOFARM,False,,,False,,0,0
 ADVENTHTL,False,,,False,,0,0
 ECOSMOBLTY,False,53.0,2026-09-29,False,,0,0
@@ -1639,8 +1639,8 @@ BIRLACABLE,False,,,False,,0,0
 GLOSTERLTD,False,,,False,,0,0
 DCMSIL,False,,,False,,0,0
 VISAKAIND,False,,,False,,0,0
-ATL,False,,,False,,0,0
 ATLPP.E1,False,,,False,,0,0
+ATL,False,,,False,,0,0
 TRANSPEK,True,0.0,2026-08-07,False,,0,3
 PATELRMART,False,,,False,,0,0
 SHALPAINTS,False,,,False,,0,0
@@ -1658,7 +1658,7 @@ VIVIANA,False,,,False,,0,0
 BESTAGRO,False,103.0,2026-11-18,False,,0,0
 ELDEHSG,False,,,False,,0,0
 WELINV,False,,,False,,0,0
-KUANTUM,True,0.0,2026-08-07,False,,0,3
+KUANTUM,True,5.0,2026-08-12,False,,0,3
 AQYLON,False,,,False,,0,0
 PARTH,False,,,False,,0,0
 LAXMIINDIA,False,,,False,,0,0
@@ -1693,7 +1693,7 @@ UNITEDPOLY,False,,,False,,0,0
 JAYAGROGN,False,,,True,Dividend - Rs 3.50 Per Share,0,2
 GANESHCP,False,,,False,,0,0
 KANORICHEM,False,,,False,,0,0
-ADSL,True,0.0,2026-08-07,False,,0,3
+ADSL,False,91.0,2026-11-06,False,,0,0
 BIGBLOC,False,,,False,,0,0
 ORBTEXP,False,,,False,,0,0
 EMKAY,False,,,False,,0,0
@@ -1743,8 +1743,8 @@ DCI,False,,,False,,0,0
 CEWATER,False,,,False,,0,0
 SHIVAUM,False,,,False,,0,0
 MUFTI,False,,,False,,0,0
-OSWALAGRO,False,,,False,,1,1
-MOLDTECH,True,0.0,2026-08-07,False,,0,3
+OSWALAGRO,False,,,False,,0,0
+MOLDTECH,False,87.0,2026-11-02,False,,0,0
 GFLLIMITED,True,3.0,2026-08-10,False,,0,3
 OSWALGREEN,False,,,False,,0,0
 APTECHT,False,,,False,,0,0
@@ -1793,7 +1793,7 @@ SHREERAMA,False,,,False,,0,0
 UNIVPHOTO,False,,,False,,0,0
 APS,False,,,False,,0,0
 SCHAND,True,3.0,2026-08-10,False,,0,3
-ELIN,True,0.0,2026-08-07,False,,0,3
+ELIN,False,102.0,2026-11-17,False,,0,0
 KAMATHOTEL,False,,,False,,0,0
 SUKHJITS,False,89.0,2026-11-04,False,,0,0
 SREEL,False,,,False,,0,0
@@ -1902,7 +1902,7 @@ SINCLAIR,False,,,False,,0,0
 MEGATHERM,False,,,False,,0,0
 MANOMAY,False,,,False,,0,0
 CONNPLEX,False,,,False,,0,0
-FOODSIN,True,3.0,2026-08-10,False,,0,3
+FOODSIN,True,4.0,2026-08-11,False,,0,3
 CPEDU,False,,,False,,0,0
 INSPIRISYS,False,,,False,,0,0
 VGINFOTECH,False,,,False,,0,0
@@ -2220,7 +2220,7 @@ DUCOL,False,,,False,,0,0
 FIDEL,False,,,False,,0,0
 MUNISH,False,,,False,,0,0
 MASTER,False,,,False,,0,0
-VIPCLOTHNG,True,0.0,2026-08-07,False,,0,3
+VIPCLOTHNG,True,6.0,2026-08-13,False,,0,3
 LANCORHOL,False,,,False,,0,0
 ASPINWALL,False,,,False,,0,0
 AIRAN,False,,,False,,0,0
@@ -2286,7 +2286,7 @@ TIPSFILMS,False,,,False,,0,0
 NECCLTD,False,,,False,,0,0
 TTL,False,,,False,,0,0
 INDTERRAIN,False,,,False,,0,0
-EMMBI,True,0.0,2026-08-07,False,,0,3
+EMMBI,True,7.0,2026-08-14,False,,0,3
 NEOCHEM,False,,,False,,0,0
 SHBAJRG,False,,,False,,0,0
 BEACON,False,,,False,,0,0
@@ -2309,7 +2309,7 @@ BAIDFIN,False,,,False,,0,0
 DENEERS,False,,,False,,0,0
 MRIL,False,,,False,,0,0
 DURLAX,False,,,False,,0,0
-SADBHAV,True,12.0,2026-08-19,False,,0,3
+SADBHAV,True,6.0,2026-08-13,False,,0,3
 DEVIT,False,,,False,,0,0
 LLOYDS,False,,,False,,0,0
 INFOLLION,False,,,False,,0,0
@@ -2358,7 +2358,7 @@ SURANASOL,False,,,False,,0,0
 AIROLAM,False,,,False,,0,0
 CORALFINAC,False,,,False,,0,0
 AVIENCE,False,,,False,,0,0
-PRAXIS,False,,,False,,1,1
+PRAXIS,False,,,False,,0,0
 SIDDHIKA,False,,,False,,0,0
 BALAXI,False,,,False,,0,0
 HECPROJECT,False,,,False,,0,0
@@ -2558,8 +2558,8 @@ FIBERWEB,False,,,False,,0,0
 NIBL,False,,,False,,0,0
 NOIDATOLL,False,,,False,,0,0
 AMBANIORGO,False,,,False,,0,0
-GATECH,False,,,False,,0,0
 GATECHDVR,False,,,False,,0,0
+GATECH,False,,,False,,0,0
 DELAPLEX,False,,,False,,0,0
 SHKSIL,False,,,False,,0,0
 BRACEPORT,False,,,False,,0,0
@@ -2592,7 +2592,7 @@ CTE,False,,,False,,0,0
 PREMIUM,False,,,False,,0,0
 TOUCHWOOD,False,,,False,,0,0
 OMFURN,False,,,False,,0,0
-ROLLT,False,,,False,,1,1
+ROLLT,False,,,False,,0,0
 CURAA,False,,,False,,0,0
 ATAM,False,,,False,,0,0
 PARSVNATH,False,,,False,,0,0
@@ -2615,7 +2615,7 @@ ALKALI,False,,,False,,0,0
 SAJHOTELS,False,,,False,,0,0
 UMAEXPORTS,False,,,False,,0,0
 K2INFRA,False,,,False,,0,0
-GANGAFORGE,False,,,False,,0,0
+GANGAFORGE,False,,,False,,1,1
 TRUST,False,,,False,,0,0
 ITTL,False,,,False,,0,0
 AISL,False,,,False,,0,0
@@ -2773,7 +2773,7 @@ SANWARIA,False,,,False,,0,0
 NKIND,False,,,False,,0,0
 HRHNEXT,False,,,False,,0,0
 SHRIKANHA,False,,,False,,0,0
-ASHOKAMET,False,,,False,,2,2
+ASHOKAMET,False,,,False,,0,0
 GSS,False,,,False,,0,0
 AKSHAR,False,,,False,,0,0
 CEREBRAINT,False,,,False,,0,0
@@ -2790,8 +2790,8 @@ AGUL,False,,,False,,0,0
 AUROIMPEX,False,,,False,,0,0
 PHOGLOBAL,False,,,False,,0,0
 MADHAV,False,,,False,,0,0
-FELDVR,False,,,False,,0,0
 FEL,False,,,False,,0,0
+FELDVR,False,,,False,,0,0
 KEEPLEARN,False,,,False,,0,0
 LEXUS,False,,,False,,0,0
 PROLIFE,False,,,False,,0,0
@@ -2944,35 +2944,35 @@ CMICABLES,False,,,False,,0,0
 PERFECT,False,,,False,,0,0
 RAJVIR,False,,,False,,0,0
 JALAN,False,,,False,,0,0
-GURUNANAK,False,,,False,,0,0
-ARISTO,False,,,False,,0,0
-MOXSH,False,,,False,,0,0
-GREENLEAF,False,,,False,,0,0
-STRIDERS,False,,,False,,0,0
-NDRINVIT,False,,,False,,0,0
-ARHAM,False,,,False,,0,0
-JFLLIFE,False,,,False,,0,0
-SARTELE,False,,,False,,0,0
-NEPHROCARE,False,,,False,,0,0
-BMLL,False,,,False,,0,0
-CAPINVIT,False,,,False,,0,0
-RFBL,False,,,False,,0,0
-QUADPRO,False,,,False,,0,0
-ISHAN,False,,,False,,0,0
-ETL,False,,,False,,0,0
-GKWLIMITED,False,,,False,,0,0
-ROCKPP.E1,False,,,False,,0,0
 AILIMITED,False,,,False,,0,0
-AGL,False,,,False,,0,0
-APSISAERO,False,,,False,,0,0
+QUADPRO,False,,,False,,0,0
 SWARAJ,False,,,False,,0,0
+KKVAPOW,False,,,False,,0,0
+BMLL,False,,,False,,0,0
+RIIT,False,,,False,,0,0
+KDL,False,,,False,,0,0
+UMA,False,,,False,,0,0
+NDRINVIT,False,,,False,,0,0
 TIMESCAN,False,,,False,,0,0
 INVICTA,False,,,False,,0,0
-KDL,False,,,False,,0,0
+GKWLIMITED,False,,,False,,0,0
+ARHAM,False,,,False,,0,0
 SAIFL,False,,,False,,0,0
+MOXSH,False,,,False,,0,0
 BIRDYS,False,,,False,,0,0
-UMA,False,,,False,,0,0
-ACETEC,False,,,False,,0,0
+STRIDERS,False,,,False,,0,0
+GREENLEAF,False,,,False,,0,0
 ENSER,False,,,False,,0,0
-KKVAPOW,False,,,False,,0,0
-RIIT,False,,,False,,0,0
+RFBL,False,,,False,,0,0
+ARISTO,False,,,False,,0,0
+ETL,False,,,False,,0,0
+AGL,False,,,False,,0,0
+APSISAERO,False,,,False,,0,0
+SARTELE,False,,,False,,0,0
+GURUNANAK,False,,,False,,0,0
+ISHAN,False,,,False,,0,0
+ACETEC,False,,,False,,0,0
+CAPINVIT,False,,,False,,0,0
+ROCKPP.E1,False,,,False,,0,0
+NEPHROCARE,False,,,False,,0,0
+JFLLIFE,False,,,False,,0,0
