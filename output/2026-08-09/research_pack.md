@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-09
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-09T06:07:50.186550+05:30
+- **generated_at_ist:** 2026-08-09T18:07:07.930558+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -127,21 +127,21 @@
 
 ## Swing candidates (top)
 
-- TITAN: score=14 rs_nifty=5.1 deliv=54.17
+- GUFICBIO: score=14 rs_nifty=7.77 deliv=54.51
 - KABRAEXTRU: score=14 rs_nifty=52.15 deliv=43.48
-- IKIO: score=14 rs_nifty=6.58 deliv=46.88
-- RACLGEAR: score=14 rs_nifty=9.79 deliv=49.32
-- SJS: score=14 rs_nifty=9.05 deliv=44.87
-- MEDANTA: score=14 rs_nifty=7.17 deliv=75.27
-- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
-- SHANTIGOLD: score=14 rs_nifty=1.69 deliv=52.7
 - REDTAPE: score=14 rs_nifty=1.14 deliv=56.01
-- MANAKALUCO: score=14 rs_nifty=13.15 deliv=79.61
+- IKIO: score=14 rs_nifty=6.58 deliv=46.88
 - BAJFINANCE: score=14 rs_nifty=2.63 deliv=55.76
+- TATACAP: score=14 rs_nifty=3.26 deliv=46.01
+- PRIMESECU: score=14 rs_nifty=4.63 deliv=80.31
+- SHANTIGOLD: score=14 rs_nifty=1.69 deliv=52.7
+- JLHL: score=14 rs_nifty=8.65 deliv=72.33
+- SJS: score=14 rs_nifty=9.05 deliv=44.87
+- SUPRAJIT: score=14 rs_nifty=5.05 deliv=42.54
+- RACLGEAR: score=14 rs_nifty=9.79 deliv=49.32
 - SETL: score=14 rs_nifty=5.58 deliv=51.74
-- SHRIPISTON: score=14 rs_nifty=0.17 deliv=54.99
-- INDNIPPON: score=14 rs_nifty=10.82 deliv=47.51
-- INDGN: score=14 rs_nifty=11.08 deliv=48.52
+- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
+- GNA: score=14 rs_nifty=9.83 deliv=43.46
 
 ## World markets (India cues)
 
@@ -179,55 +179,53 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market regime remains bearish with a low India VIX, while FII and DII net flows are positive. The overall risk is medium, with bullish cues from Asia and Europe. The Nifty trend is bearish with a -0.27% change.
+The current market regime is bearish with a low India VIX, indicating a potential for increased volatility. The Nifty trend is also bearish, with a percentage change of -0.27. Foreign institutional investors have a net inflow of 480.24, while domestic institutional investors have a net inflow of 235.56.
 
 - **SJS** [consider_entry/high] entry=2446.1 stop=2257.95 t1=2822.4 hold=17d — Parkhu score of 83.1 with a buy band
 - **RACLGEAR** [consider_entry/high] entry=1482.7 stop=1364.08 t1=1719.93 hold=14d — Parkhu score of 81.6 with a buy band
 - **KTKBANK** [consider_entry/high] entry=310.0 stop=290.37 t1=349.27 hold=16d — Parkhu score of 81.2 with a buy band
-- **MANAKSTEEL** [consider_entry/high] entry=84.43 stop=77.68 t1=97.94 hold=8d — Parkhu score of 81.1 with a buy band
-- **M&M** [consider_entry/high] entry=3502.0 stop=3322.9 t1=3860.19 hold=19d — Parkhu score of 81.0 with a buy band
-- **ICICIBANK** [manage_open/medium] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action: tighten or review stop loss
+- **ICICIBANK** [manage_open/medium] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
 
 ### AI stock reviews
 
-- **SJS** [high] S.J.S. Enterprises Limited (SJS) fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, such as a high ADX and RSI. The company's stock has also outperformed the Nifty and its sector over the past month, indicating a strong relative strength. With a Parkhu score of 83.1, the stock appears to have a favorable technical setup for a short-term swing trade.
-  - catalysts: Bullish trend, Strong momentum, Outperformance vs Nifty and sector
+- **SJS** [high] The setup for S.J.S. Enterprises Limited fits a ≤1-month swing due to its recent bullish trend and strong relative performance against the Nifty and its sector. The stock's RSI and ADX indicators suggest a potential for continued upward momentum. With a Parkhu score of 83.1, the stock's technicals and fundamentals align for a short-term swing trade.
+  - catalysts: Bullish trend, Strong relative performance, Favorable technical indicators
+  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risks
+  - watch: Triggers for this trade include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a shift in market sentiment. Close monitoring of the stock's price action and technical indicators is necessary to adjust the trade accordingly.
+- **RACLGEAR** [high] RACL Geartech Ltd fits a ≤1-month swing due to its recent bullish trend and strong technical ratings. The company's return over the past month and quarter has outperformed the market, with a return of 12.33% and 15.39% respectively. The strong ADX and RSI values also indicate a potential upward movement. The stock is also close to its 52-week high, which could act as a catalyst for further growth.
+  - catalysts: Bullish trend, Strong technical ratings, Outperformance vs market
   - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risk
-  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues include a drop below the stop level of 2257.95, which would indicate a failed swing trade setup.
-- **RACLGEAR** [high] RACL Geartech Ltd fits a ≤1-month swing due to its strong technical rating and recent bullish trend. The company's return over the past month and three months has been significantly higher than the market, indicating strong momentum. With a high parkhu score of 81.6, this setup appears promising for a short-term swing trade.
-  - catalysts: Bullish trend, Strong technical rating, High momentum
-  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risk
-  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1364.08, indicating a failure of the bullish trend.
-- **KTKBANK** [high] KTKBANK fits a ≤1-month swing as it has shown a strong bullish trend with an ADX of 33.21 and RSI of 71.28, indicating a potential for continuation. The stock has also outperformed Nifty and its sector in the last month, with returns of 16.98% and 16.12% respectively. The distance from its 52-week high is only -2.15%, suggesting a possible breakout. The overall risk regime is medium, which aligns with the risk sector of Banks.
-  - catalysts: Strong trend, Outperformance, Breakout potential
-  - risks: Market regime is bearish, India VIX is 12.16, Banking sector risks
-  - watch: Triggers for this setup include a strong close above the current price, while invalidation cues would be a close below the stop level of 290.37. The stock's price action and ability to hold above its recent gains will be crucial to watch.
-- **MANAKSTEEL** [high] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend, with a high delivery percentage and a strong return over the past month. The stock's RSI and ADX levels suggest a potential for further upside. Additionally, the stock is close to its 52-week high, which could act as a catalyst for a breakout.
-  - catalysts: Breakout above 52-week high, Continued bullish trend, Strong sector performance
-  - risks: Reversal of trend, Market regime change, Sector downturn
-  - watch: Triggers for this setup include a breakout above the current level, while invalidation cues include a drop below the stop level. The stock's price action around the 52-week high will be crucial to watch.
-- **M&M** [high] The setup for M&M fits a ≤1-month swing due to its strong technical rating and recent bullish trend, with the stock showing a 10.3% return over the past month. The high delivery percentage and strong performance relative to Nifty and its sector also support this thesis. Additionally, the stock is trading near its 52-week high, which could lead to a breakout. The overall market regime is bearish, but the stock's strong momentum could help it outperform.
-  - catalysts: Earnings expectation, Sector outperformance, Breakout from 52-week high
-  - risks: Market regime, Economic downturn, Sector rotation
-  - watch: Triggers for this setup include a strong earnings report or a breakout above the 52-week high, while invalidation cues include a breach of the stop level or a significant decline in the stock's relative strength.
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 1364.08. A close eye should be kept on the stock's price movement and overall market sentiment.
+- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong technical rating. The recent price action and high delivery percentage also suggest a potential upside. With a strong momentum and a reasonable risk-reward ratio, this setup appears attractive for a short-term swing trade.
+  - catalysts: Earnings surprise, Sector outperformance, Positive macroeconomic data
+  - risks: Economic downturn, Sector-wide sell-off, Company-specific negative news
+  - watch: Triggers for this trade include a breakout above the recent high, while invalidation cues include a breach of the stop level or a significant increase in India VIX. A close eye on the overall market regime and sector performance is also necessary.
+- **MANAKSTEEL** [high] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend, with a high Parkhu score of 81.1 and a favorable risk-reward ratio of 2.0 for the first target. The stock's relative strength against Nifty and its sector over the last month, along with its high delivery percentage, supports a short-term bullish outlook. The distance from its 52-week high also presents an opportunity for a potential rebound.
+  - catalysts: Bullish trend, High Parkhu score, Favorable risk-reward ratio
+  - risks: Bearish market regime, Medium overall risk, High India VIX
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 77.68, indicating a failure of the bullish thesis.
+- **M&M** [high] M&M fits a ≤1-month swing due to its strong technical rating and recent bullish trend, with a high parkhu score of 81.0. The company's stock has shown a significant return of 10.29% in the last month, outperforming the Nifty and its sector. The relatively low ATR percentage of price and strong RSI value also support a potential swing. The stock is also close to its 52-week high, which could act as a catalyst for further upside.
+  - catalysts: Earnings anticipation, Sector outperformance, Technical breakout
+  - risks: Market regime risk, Sector rotation, Economic downturn
+  - watch: Triggers for this swing include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 3322.9, indicating a failure of the bullish trend.
 
 ### Claude feed
 
-Bearish market regime, defensive stance, top ideas: SJS, RACLGEAR, KTKBANK, MANAKSTEEL, M&M. Caveats: provisional scores, no promoter pledge and ownership data, trade levels are rebuilt, hold periods are estimates.
+Regime: Bearish, Stance: Defensive, Top Ideas: SJS, RACLGEAR, KTKBANK, Caveats: Promoter pledge and ownership data are empty, trade levels are rebuilt by this module
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Unaudited Financial Results for the quarter ended June 30, 2026 (MANCREDIT) — Major catalyst and risk event, indicating potential market movement
-2. **[high]** Outcome of Board Meeting (SVLL) — Major catalyst and risk event, indicating potential market movement
-3. **[medium]** Outcome of Board Meeting (SVLL) — Risk event, may influence market sentiment
-4. **[medium]** Press Release: Maruti Suzuki Annual Integrated Report 2025-26 (MARUTI) — Influence on automotive sector and overall market
-5. **[low]** Business Responsibility and Sustainability Report (BRSR) for the financial year 2025-26 (MARUTI) — ESG factors and corporate governance
-6. **[low]** Issuance of letter providing Web-link of the Annual Report for the financial year 2025-26 (MARUTI) — Corporate updates and transparency
-7. **[low]** Shareholders meeting: Notice of Annual General Meeting to be held on August 31, 2026 (JUSTDIAL) — Corporate event, may influence stock price
-8. **[low]** Shareholders meeting: Notice of Annual General Meeting to be held on August 31, 2026 (IDFCFIRSTB) — Corporate event, may influence stock price
-9. **[low]** Srutinizers report of Annual General Meeting held on August 06, 2026 (BIOCON) — Corporate governance and transparency
-10. **[low]** Srutinizers report of Annual General Meeting held on August 07, 2026 (PRSMJOHNSN) — Corporate governance and transparency
+1. **[high]** Market Regime Turns Bearish — The overall market regime has turned bearish, indicating a high-risk environment for investors.
+2. **[medium]** FII Net Inflow at 480.24 — Foreign Institutional Investors (FII) have shown a net inflow of 480.24, which may have a positive impact on the market.
+3. **[medium]** India VIX at 12.16 — The India VIX, a measure of market volatility, is at 12.16, indicating a moderate level of risk.
+4. **[low]** EXCELSOFT Q1 FY27 Results (EXCELSOFT) — Excelsoft Technologies Limited has announced its Q1 FY27 results, which may have a limited impact on the overall market.
+5. **[low]** DELHIVERY Q1 FY27 Results (DELHIVERY) — Delhivery Limited has announced its Q1 FY27 results, which may have a limited impact on the overall market.
+6. **[low]** KNACK Q1 FY27 Results (KNACK) — Knack Packaging Limited has announced its Q1 FY27 results, which may have a limited impact on the overall market.
+7. **[low]** ANUHPHR Q1 FY27 Results (ANUHPHR) — Anuh Pharma Limited has announced its Q1 FY27 results, which may have a limited impact on the overall market.
+8. **[low]** MARATHON Q1 FY27 Results (MARATHON) — Marathon Nextgen Realty Limited has announced its Q1 FY27 results, which may have a limited impact on the overall market.
+9. **[low]** LUMAXIND Q1 FY27 Results (LUMAXIND) — Lumax Industries Limited has announced its Q1 FY27 results, which may have a limited impact on the overall market.
+10. **[medium]** Overall Risk Medium — The overall risk sentiment in the market is medium, indicating a moderate level of caution for investors.
 
 ## Deep-dive URLs (after push)
 
