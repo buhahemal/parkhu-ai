@@ -1,176 +1,184 @@
 # Parkhu research pack — 2026-08-10
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-10T08:18:39.116897+05:30
+- **generated_at_ist:** 2026-08-10T18:07:23.179240+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.27%)
-- india_vix: 12.16 (Low)
-- fii_net: 480.24 | dii_net: 235.56
-- overall_risk: Medium | global_risk: Risk-On
+- market_regime: **Neutral**
+- nifty: Neutral (0.05%)
+- india_vix: 12.24 (Low)
+- fii_net: 1974.76 | dii_net: -1290.29
+- overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 2977
-- trend = Bullish: 1474
-- price > SMA200: 1099
-- price > EMA50: 1087
-- ADX14 > 25: 583
-- RSI14 in 40-80: 549
-- RS > 0 vs NIFTY and sector: 287
-- delivery% >= 40: 169
-- relative_volume >= 1: 51
-- no earnings within 21d: 46
-- event_risk_score <= 1: 43
-- TV rating not Sell: 43
+- universe: 2980
+- trend = Bullish: 1466
+- price > SMA200: 1109
+- price > EMA50: 1097
+- ADX14 > 25: 605
+- RSI14 in 40-80: 568
+- RS > 0 vs NIFTY and sector: 280
+- delivery% >= 40: 167
+- relative_volume >= 1: 53
+- no earnings within 21d: 43
+- event_risk_score <= 1: 42
+- TV rating not Sell: 41
 
-## Survivors (top 43 of 43)
+## Survivors (top 41 of 41)
 
-- **SHARDAMOTR** [rejected] score 94.2 — T1 needs more than 22 trading days (~1 month)
-- **CRISIL** [rejected] score 84.0 — T1 needs more than 22 trading days (~1 month)
-- **SJS** [idea] score 83.1 — selected as idea
-- **SKYGOLD** [idea] score 81.7 — selected as idea
-- **RACLGEAR** [idea] score 81.6 — selected as idea
-- **INDNIPPON** [rejected] score 81.4 — 25% sector cap for Producer Manufacturing would be breached
-- **KTKBANK** [idea] score 81.2 — selected as idea
-- **MANAKSTEEL** [idea] score 81.1 — selected as idea
-- **MANAKALUCO** [rejected] score 80.8 — T1 needs more than 22 trading days (~1 month)
-- **BTML** [rejected] score 80.0 — not selected
-- **TARMAT** [rejected] score 76.7 — T1 needs more than 22 trading days (~1 month)
-- **REDTAPE** [rejected] score 76.3 — T1 needs more than 22 trading days (~1 month)
-- **TATACAP** [watchlist] score 76.2 — score in Watch band (70–80)
-- **AUROPHARMA** [watchlist] score 75.9 — score in Watch band (70–80)
-- **VADILALIND** [watchlist] score 75.8 — score in Watch band (70–80)
-- **TITAN** [watchlist] score 73.6 — score in Watch band (70–80)
-- **GNA** [watchlist] score 73.5 — score in Watch band (70–80)
-- **MEDANTA** [watchlist] score 73.1 — score in Watch band (70–80)
-- **RGL** [rejected] score 73.0 — T1 needs more than 22 trading days (~1 month)
-- **BAJFINANCE** [watchlist] score 72.1 — score in Watch band (70–80)
-- **M&MFIN** [watchlist] score 70.7 — score in Watch band (70–80)
-- **SUPRAJIT** [watchlist] score 70.4 — score in Watch band (70–80)
-- **INDGN** [rejected] score 69.9 — score below Watch band
-- **BAJAJFINSV** [rejected] score 67.9 — T1 needs more than 22 trading days (~1 month)
-- **SPECIALITY** [rejected] score 67.7 — score below Watch band
-- **SHANTIGOLD** [rejected] score 67.3 — T1 needs more than 22 trading days (~1 month)
-- **NUVOCO** [rejected] score 66.5 — score below Watch band
-- **SHRIPISTON** [rejected] score 66.1 — score below Watch band
-- **SONACOMS** [rejected] score 65.9 — score below Watch band
-- **GUFICBIO** [rejected] score 65.1 — score below Watch band
-- **IKIO** [rejected] score 61.3 — score below Watch band
-- **AKUMS** [rejected] score 61.1 — score below Watch band
-- **ARMANFIN** [rejected] score 61.0 — score below Watch band
-- **ARCHIDPLY** [rejected] score 60.8 — T1 needs more than 22 trading days (~1 month)
-- **POONAWALLA** [rejected] score 54.8 — T1 needs more than 22 trading days (~1 month)
-- **JLHL** [rejected] score 53.4 — score below Watch band
-- **VSSL** [rejected] score 53.4 — score below Watch band
-- **STYL** [rejected] score 52.0 — score below Watch band
-- **SETL** [rejected] score 50.3 — score below Watch band
-- **KABRAEXTRU** [rejected] score 49.4 — score below Watch band
-- **CYIENTDLM** [rejected] score 48.3 — score below Watch band
-- **PRIMESECU** [rejected] score 47.5 — score below Watch band
-- **PFOCUS** [rejected] score 41.3 — T1 needs more than 22 trading days (~1 month)
+- **CRISIL** [rejected] score 84.5 — T1 needs more than 22 trading days (~1 month)
+- **SREEL** [idea] score 83.3 — selected as idea
+- **STYLAMIND** [idea] score 83.0 — selected as idea
+- **BFINVEST** [rejected] score 82.1 — T1 needs more than 22 trading days (~1 month)
+- **EMCURE** [idea] score 81.8 — selected as idea
+- **UYFINCORP** [idea] score 80.8 — selected as idea
+- **SAHYADRI** [idea] score 80.5 — selected as idea
+- **SCPL** [watchlist] score 79.0 — score in Watch band (70–80)
+- **GNA** [watchlist] score 76.0 — score in Watch band (70–80)
+- **RISHABH** [watchlist] score 74.9 — score in Watch band (70–80)
+- **DOLPHIN** [rejected] score 74.1 — T1 needs more than 22 trading days (~1 month)
+- **ALIVUS** [watchlist] score 74.0 — score in Watch band (70–80)
+- **BETA** [watchlist] score 71.9 — score in Watch band (70–80)
+- **SSWL** [watchlist] score 71.1 — score in Watch band (70–80)
+- **MAZDOCK** [rejected] score 69.6 — T1 needs more than 22 trading days (~1 month)
+- **INDGN** [rejected] score 69.2 — score below Watch band
+- **HEROMOTOCO** [rejected] score 68.8 — score below Watch band
+- **SPECIALITY** [rejected] score 67.9 — score below Watch band
+- **BALPHARMA** [rejected] score 65.4 — score below Watch band
+- **NATCAPSUQ** [rejected] score 64.5 — T1 needs more than 22 trading days (~1 month)
+- **KECL** [rejected] score 64.3 — score below Watch band
+- **ADOR** [rejected] score 63.9 — score below Watch band
+- **GUFICBIO** [rejected] score 62.7 — score below Watch band
+- **HINDALCO** [rejected] score 62.3 — T1 needs more than 22 trading days (~1 month)
+- **POLYMED** [rejected] score 62.1 — T1 needs more than 22 trading days (~1 month)
+- **PDSL** [rejected] score 61.7 — score below Watch band
+- **ARCHIDPLY** [rejected] score 60.8 — score below Watch band
+- **AARTIDRUGS** [rejected] score 59.7 — T1 needs more than 22 trading days (~1 month)
+- **LMW** [rejected] score 59.6 — score below Watch band
+- **TASTYBITE** [rejected] score 59.2 — score below Watch band
+- **ARMANFIN** [rejected] score 58.8 — score below Watch band
+- **CENTRUM** [rejected] score 55.1 — T1 needs more than 22 trading days (~1 month)
+- **AGARWALEYE** [rejected] score 53.4 — score below Watch band
+- **NURECA** [rejected] score 51.2 — score below Watch band
+- **VLSFINANCE** [rejected] score 48.4 — T1 needs more than 22 trading days (~1 month)
+- **ASTERDM** [rejected] score 47.6 — score below Watch band
+- **PRIMESECU** [rejected] score 47.6 — score below Watch band
+- **RKFORGE** [rejected] score 46.8 — score below Watch band
+- **RADIOCITY** [rejected] score 43.7 — T1 needs more than 22 trading days (~1 month)
+- **LOTUSDEV** [rejected] score 42.5 — score below Watch band
+- **GCSL** [rejected] score 41.2 — score below Watch band
 
 ## Ideas
 
-### SJS — Buy (score 83.1)
-- S.J.S. Enterprises Limited | risk_sector: Producer Manufacturing
-- entry 2446.1 | stop 2257.95 | t1 2822.4 | t2 3010.55 | t3 3198.69 | R:R 2.0
-- qty 4 | deployed 9784.0 (9.78%) | risk ₹753.0
+### SREEL — Buy (score 83.3)
+- Sreeleathers Ltd. | risk_sector: Retail Trade
+- entry 221.22 | stop 206.39 | t1 258.0 | t2 272.83 | t3 287.67 | R:R 2.48
+- qty 45 | deployed 9955.0 (9.95%) | risk ₹667.0
 
-### SKYGOLD — Buy (score 81.7)
-- Sky Gold and Diamonds Limited | risk_sector: Consumer Durables
-- entry 719.4 | stop 661.85 | t1 834.5 | t2 892.06 | t3 949.61 | R:R 2.0
-- qty 13 | deployed 9352.0 (9.35%) | risk ₹748.0
+### STYLAMIND — Buy (score 83.0)
+- Stylam Industries Limited | risk_sector: Non-Energy Minerals
+- entry 3651.2 | stop 3359.1 | t1 4235.39 | t2 4527.49 | t3 4819.58 | R:R 2.0
+- qty 2 | deployed 7302.0 (7.3%) | risk ₹584.0
 
-### RACLGEAR — Buy (score 81.6)
-- RACL Geartech Ltd | risk_sector: Producer Manufacturing
-- entry 1482.7 | stop 1364.08 | t1 1719.93 | t2 1838.55 | t3 1957.16 | R:R 2.0
-- qty 6 | deployed 8896.0 (8.9%) | risk ₹712.0
+### EMCURE — Buy (score 81.8)
+- Emcure Pharmaceuticals Limited | risk_sector: Health Technology
+- entry 1995.2 | stop 1878.59 | t1 2228.42 | t2 2345.04 | t3 2461.65 | R:R 2.0
+- qty 5 | deployed 9976.0 (9.98%) | risk ₹583.0
 
-### KTKBANK — Buy (score 81.2)
-- Karnataka Bank Ltd. | risk_sector: Banks
-- entry 310.0 | stop 290.37 | t1 349.27 | t2 368.9 | t3 388.53 | R:R 2.0
-- qty 32 | deployed 9920.0 (9.92%) | risk ₹628.0
+### UYFINCORP — Buy (score 80.8)
+- U. Y. Fincorp Limited | risk_sector: NBFC & Capital Markets
+- entry 21.02 | stop 19.34 | t1 24.38 | t2 26.06 | t3 27.75 | R:R 2.0
+- qty 475 | deployed 9984.0 (9.98%) | risk ₹798.0
 
-### MANAKSTEEL — Buy (score 81.1)
-- Manaksia Steels Ltd | risk_sector: Non-Energy Minerals
-- entry 84.43 | stop 77.68 | t1 97.94 | t2 104.69 | t3 111.45 | R:R 2.0
-- qty 118 | deployed 9963.0 (9.96%) | risk ₹796.0
+### SAHYADRI — Buy (score 80.5)
+- Sahyadri Industries Limited. | risk_sector: Non-Energy Minerals
+- entry 349.85 | stop 321.86 | t1 405.83 | t2 433.81 | t3 461.8 | R:R 2.0
+- qty 28 | deployed 9796.0 (9.8%) | risk ₹784.0
 
 ## Open ledger
 
-- **CREDITACC** status=open entry=1597.3 last=1523.6 mfe=2.3 mae=-5.62 opened=2026-07-27
-- **UJJIVANSFB** status=open entry=71.57 last=70.11 mfe=2.4 mae=-4.26 opened=2026-07-27
-- **IIFL** status=open entry=582.35 last=611.75 mfe=6.98 mae=-1.61 opened=2026-07-28
-- **INDNIPPON** status=open entry=1163.1 last=1166.0 mfe=4.43 mae=-4.09 opened=2026-07-28
-- **LODHA** status=open entry=1287.15 last=1218.7 mfe=3.24 mae=-6.41 opened=2026-07-30
-- **IFBIND** status=open entry=1354.0 last=1404.4 mfe=9.02 mae=-0.36 opened=2026-08-04
-- **ICICIBANK** status=open entry=1450.1 last=1421.0 mfe=0.68 mae=-2.2 opened=2026-08-05
-- **SHRIPISTON** status=open entry=4402.7 last=4392.8 mfe=2.96 mae=-4.33 opened=2026-08-05
-- **TALBROAUTO** status=open entry=438.3 last=439.35 mfe=2.64 mae=-5.09 opened=2026-08-05
-- **TATACAP** status=open entry=371.9 last=370.3 mfe=4.92 mae=-3.13 opened=2026-08-05
-- **UNIPARTS** status=open entry=732.95 last=814.6 mfe=11.92 mae=0.0 opened=2026-08-05
-- **UYFINCORP** status=open entry=19.25 last=20.36 mfe=16.05 mae=-1.3 opened=2026-08-05
-- **KTKBANK** status=open entry=306.8 last=310.0 mfe=3.26 mae=-3.1 opened=2026-08-06
-- **MANAKSTEEL** status=open entry=84.43 last=84.43 mfe=6.48 mae=-0.83 opened=2026-08-07
-- **RACLGEAR** status=open entry=1475.0 last=1482.7 mfe=2.38 mae=-2.51 opened=2026-08-07
-- **SJS** status=open entry=2446.1 last=2446.1 mfe=1.37 mae=-3.21 opened=2026-08-07
-- **SUPRAJIT** status=open entry=527.55 last=521.8 mfe=2.55 mae=-2.7 opened=2026-08-07
-- **M&M** status=open entry=3502.0 last=3502.0 mfe=0.0 mae=0.0 opened=2026-08-08
-- **SKYGOLD** status=open entry=719.4 last=719.4 mfe=0.0 mae=0.0 opened=2026-08-10
+- **CREDITACC** status=open entry=1597.3 last=1530.5 mfe=2.3 mae=-5.62 opened=2026-07-27
+- **UJJIVANSFB** status=open entry=71.57 last=69.76 mfe=2.4 mae=-4.26 opened=2026-07-27
+- **IIFL** status=open entry=582.35 last=625.9 mfe=7.67 mae=-1.61 opened=2026-07-28
+- **LODHA** status=open entry=1287.15 last=1213.0 mfe=3.24 mae=-6.46 opened=2026-07-30
+- **IFBIND** status=open entry=1354.0 last=1404.7 mfe=9.02 mae=-0.36 opened=2026-08-04
+- **ICICIBANK** status=open entry=1450.1 last=1431.8 mfe=0.68 mae=-2.39 opened=2026-08-05
+- **SHRIPISTON** status=open entry=4402.7 last=4410.6 mfe=2.96 mae=-4.33 opened=2026-08-05
+- **TATACAP** status=open entry=371.9 last=367.85 mfe=4.92 mae=-3.13 opened=2026-08-05
+- **UNIPARTS** status=open entry=732.95 last=824.8 mfe=14.47 mae=0.0 opened=2026-08-05
+- **UYFINCORP** status=open entry=19.25 last=21.02 mfe=16.05 mae=-1.3 opened=2026-08-05
+- **KTKBANK** status=open entry=306.8 last=305.25 mfe=3.26 mae=-3.1 opened=2026-08-06
+- **MANAKSTEEL** status=open entry=84.43 last=80.68 mfe=6.48 mae=-5.0 opened=2026-08-07
+- **SJS** status=open entry=2446.1 last=2372.0 mfe=3.51 mae=-3.72 opened=2026-08-07
+- **SUPRAJIT** status=open entry=527.55 last=529.25 mfe=6.01 mae=-2.7 opened=2026-08-07
+- **M&M** status=open entry=3502.0 last=3517.0 mfe=0.93 mae=-0.31 opened=2026-08-08
+- **EMCURE** status=open entry=1995.2 last=1995.2 mfe=0.0 mae=0.0 opened=2026-08-10
+- **SAHYADRI** status=open entry=349.85 last=349.85 mfe=0.0 mae=0.0 opened=2026-08-10
+- **SKYGOLD** status=open entry=719.4 last=779.6 mfe=13.42 mae=0.0 opened=2026-08-10
+- **SREEL** status=open entry=221.22 last=221.22 mfe=0.0 mae=0.0 opened=2026-08-10
+- **STYLAMIND** status=open entry=3651.2 last=3651.2 mfe=0.0 mae=0.0 opened=2026-08-10
 
 ## Needs action
 
-- **ICICIBANK**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
+- **ICICIBANK**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
+- **INDNIPPON**: EXIT — STOP HIT — session low at/below stop ₹1,070.05 (last ₹1,124.30)
+- **RACLGEAR**: EXIT — STOP HIT — session low at/below stop ₹1,357.00 (last ₹1,387.60)
+- **TALBROAUTO**: EXIT — STOP HIT — session low at/below stop ₹403.91 (last ₹422.05)
+
+## Closed today
+
+- INDNIPPON: {'trade_id': '2026-07-28-INDNIPPON', 'symbol': 'INDNIPPON', 'company': 'India Nippon Electricals Limited', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-07-28', 'taken': None, 'entry': 1163.1, 'stop': 1070.05, 't1': 1349.2, 't2': 1442.24, 't3': 1535.29, 'structure_invalidation': 1024.01, 'horizon_days_t1': 13, 'horizon_days_t2': 22, 'score_at_open': 85.5, 'qty': 8, 'risk_rupees': 744.0, 'status': 'closed', 'last_price': 1124.3, 'last_checked': '2026-08-10', 'mfe_pct': 4.43, 'mae_pct': -9.46, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 7, 'notes': None, 'date_closed': '2026-08-10', 'exit_price': 1124.3, 'exit_reason': 'stop', 'pct_return': -3.34, 'r_multiple': -0.42, 'days_held': 9}
+- TALBROAUTO: {'trade_id': '2026-08-05-TALBROAUTO', 'symbol': 'TALBROAUTO', 'company': 'Talbros Automotive Components Limited', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-08-05', 'taken': None, 'entry': 438.3, 'stop': 403.91, 't1': 507.08, 't2': 541.47, 't3': 575.86, 'structure_invalidation': 386.32, 'horizon_days_t1': 16, 'horizon_days_t2': 22, 'score_at_open': 81.9, 'qty': 22, 'risk_rupees': 757.0, 'status': 'closed', 'last_price': 422.05, 'last_checked': '2026-08-10', 'mfe_pct': 3.03, 'mae_pct': -7.93, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 5, 'notes': None, 'date_closed': '2026-08-10', 'exit_price': 422.05, 'exit_reason': 'stop', 'pct_return': -3.71, 'r_multiple': -0.47, 'days_held': 3}
+- RACLGEAR: {'trade_id': '2026-08-07-RACLGEAR', 'symbol': 'RACLGEAR', 'company': 'RACL Geartech Ltd', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-08-07', 'taken': None, 'entry': 1475.0, 'stop': 1357.0, 't1': 1711.0, 't2': 1829.0, 't3': 1947.0, 'structure_invalidation': 1320.03, 'horizon_days_t1': 14, 'horizon_days_t2': 22, 'score_at_open': 80.8, 'qty': 6, 'risk_rupees': 708.0, 'status': 'closed', 'last_price': 1387.6, 'last_checked': '2026-08-10', 'mfe_pct': 2.38, 'mae_pct': -9.83, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 6, 'notes': None, 'date_closed': '2026-08-10', 'exit_price': 1387.6, 'exit_reason': 'stop', 'pct_return': -5.93, 'r_multiple': -0.74, 'days_held': 1}
 
 ## Swing candidates (top)
 
-- MANAKALUCO: score=14 rs_nifty=13.15 deliv=79.61
-- SHRIPISTON: score=14 rs_nifty=0.17 deliv=54.99
-- SPECIALITY: score=14 rs_nifty=11.7 deliv=45.12
-- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
-- MEDANTA: score=14 rs_nifty=7.17 deliv=75.27
-- INDGN: score=14 rs_nifty=11.08 deliv=48.52
-- JLHL: score=14 rs_nifty=8.65 deliv=72.33
-- GNA: score=14 rs_nifty=9.83 deliv=43.46
-- SETL: score=14 rs_nifty=5.58 deliv=51.74
-- INDNIPPON: score=14 rs_nifty=10.82 deliv=47.51
-- SJS: score=14 rs_nifty=9.05 deliv=44.87
-- REDTAPE: score=14 rs_nifty=1.14 deliv=56.01
-- IKIO: score=14 rs_nifty=6.58 deliv=46.88
-- KABRAEXTRU: score=14 rs_nifty=52.15 deliv=43.48
-- TITAN: score=14 rs_nifty=5.1 deliv=54.17
+- POLYMED: score=14 rs_nifty=5.94 deliv=41.15
+- BALPHARMA: score=14 rs_nifty=15.2 deliv=62.36
+- SREEL: score=14 rs_nifty=2.4 deliv=79.81
+- PDSL: score=14 rs_nifty=7.13 deliv=41.49
+- SCPL: score=14 rs_nifty=27.44 deliv=70.85
+- STYLAMIND: score=14 rs_nifty=14.0 deliv=50.08
+- ADOR: score=14 rs_nifty=13.04 deliv=52.85
+- ARMANFIN: score=14 rs_nifty=13.16 deliv=51.29
+- EMCURE: score=14 rs_nifty=8.14 deliv=44.37
+- PRIMESECU: score=14 rs_nifty=5.87 deliv=71.11
+- INDGN: score=14 rs_nifty=11.29 deliv=56.04
+- TASTYBITE: score=14 rs_nifty=5.46 deliv=45.12
+- BETA: score=14 rs_nifty=12.76 deliv=43.15
+- HINDALCO: score=14 rs_nifty=6.44 deliv=48.56
+- BFINVEST: score=14 rs_nifty=5.23 deliv=44.71
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.02% (bull)
-- Hang Seng: +0.69% (bull)
-- Shanghai: +0.32% (bull)
-- Kospi: +0.41% (bull)
-- Taiwan: +2.03% (bull)
-- ASX 200: -0.48% (bear)
+- Nikkei: +2.08% (bull)
+- Hang Seng: +1.05% (bull)
+- Shanghai: +0.67% (bull)
+- Kospi: +0.65% (bull)
+- Taiwan: +1.59% (bull)
+- ASX 200: -0.33% (bear)
 
 ### Europe
-- FTSE 100: +0.31% (bull)
-- DAX: +0.69% (bull)
-- Euro Stoxx 50: +0.33% (bull)
+- FTSE 100: -0.23% (bear)
+- DAX: +0.27% (bull)
+- Euro Stoxx 50: +0.46% (bull)
 
 ### US
 - S&P 500: +0.62% (bull)
 - Nasdaq: +1.30% (bull)
 - Dow: +0.28% (bull)
-- US VIX: -1.65% (bull)
+- US VIX: +3.56% (bear)
 
 ### Macro
-- USDINR: -0.12% (neutral)
-- Crude WTI: +0.64% (bull)
-- Brent: +0.87% (bull)
-- DXY: +0.09% (neutral)
-- US 10Y: -0.21% (neutral)
+- USDINR: -0.02% (neutral)
+- Crude WTI: +1.57% (bull)
+- Brent: +1.53% (bull)
+- DXY: +0.16% (neutral)
+- US 10Y: +0.09% (neutral)
 - India ETF: +0.50% (bull)
 - EM ETF: +0.95% (bull)
 
@@ -178,54 +186,54 @@
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** defensive
+- **stance:** selective_aggressive
 
-The market regime remains bearish with a low India VIX, while FII and DII net flows are positive. The overall risk is medium, with bullish cues from Asia and Europe. The Nifty trend is bearish with a -0.27% change. 
+The Indian market remains neutral with a low India VIX of 12.24. The Nifty trend is neutral with a 0.05% change. FII net is positive at 1974.76, while DII net is negative at -1290.29. The overall risk is low.
 
-- **SJS** [consider_entry/medium] entry=2446.1 stop=2257.95 t1=2822.4 hold=17d — Buy band with a parkhu score of 83.1
-- **SKYGOLD** [consider_entry/medium] entry=719.4 stop=661.85 t1=834.5 hold=16d — Buy band with a parkhu score of 81.7
-- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
+- **SREEL** [consider_entry/high] entry=221.22 stop=206.39 t1=258.0 hold=20d — Parkhu score of 83.3 with a buy band
+- **STYLAMIND** [consider_entry/high] entry=3651.2 stop=3359.1 t1=4235.39 hold=14d — Parkhu score of 83.0 with a buy band
+- **UYFINCORP** [manage_open/medium] entry=21.02 stop=19.34 t1=24.38 hold=11d — Already in open book with a positive mfe_pct
 
 ### AI stock reviews
 
-- **SJS** [high] The SJS setup fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating a strong uptrend. The stock's ADX14 of 41.17 and RSI14 of 63.56 suggest a strong momentum with room for further upside. The company's recent outperformance against Nifty and its sector, with returns of 11.59% and 10.19% respectively, adds to the bullish case.
-  - catalysts: Earnings momentum, Sector outperformance, Bullish trend
-  - risks: Market regime risk, Sector volatility, Earnings disappointment
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 2257.95, indicating a reversal of the trend.
-- **SKYGOLD** [high] The setup for SKYGOLD fits a ≤1-month swing due to its strong bullish trend label, high RSI, and significant outperformance against Nifty and its sector over the past month. The stock's price is also close to its 52-week high, indicating potential for a breakout. The overall risk regime is medium, but the stock's strong technical rating and high Parkhu score suggest a favorable risk-reward ratio.
-  - catalysts: Bullish trend, High RSI, Outperformance
-  - risks: Market regime is bearish, High India VIX
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a failure of the bullish trend.
-- **RACLGEAR** [high] RACL Geartech Ltd fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong return over the past month. The company's recent price action and technical indicators suggest a potential for further upside. With a high Parkhu score of 81.6, this setup appears promising for a short-term swing trade.
-  - catalysts: Bullish trend, High RSI, Strong return
-  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risk
-  - watch: Triggers for this trade include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a reversal of the trend.
-- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong recent performance, with a 1-month return of 16.98% and a 3-month return of 16.56%, outperforming both the Nifty and its sector. The stock's RSI14 is at 71.28, indicating a bullish trend. The high delivery percentage of 59.42 and strong technical rating also support this setup.
-  - catalysts: Earnings momentum, Sector outperformance, Strong technicals
-  - risks: Market regime risk, Sectoral headwinds, Economic downturn
-  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues include a breach of the stop level at 290.37. A close eye should be kept on the overall market regime and sector performance.
-- **MANAKSTEEL** [high] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend, with a high Parkhu score of 81.1 and a strong relative performance against its sector. The stock's RSI14 at 64.16 indicates room for further upside, and its distance from the 52-week high at -6.08% suggests potential for a rebound. The overall market regime is bearish, but the stock's resilience and strong technical ratings make it an attractive swing opportunity.
-  - catalysts: Strong technical ratings, Bullish trend, Resilience in bearish market
-  - risks: Bearish market regime, High India VIX, Sector volatility
-  - watch: Triggers for this swing include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 77.68, indicating a failure of the bullish trend. A close eye should be kept on the stock's ability to hold above its recent lows.
+- **SREEL** [high] The setup in SREEL fits a ≤1-month swing as the stock has shown a bullish trend with a high delivery percentage of 79.81% and a strong relative performance against Nifty and its sector over the past month. The RSI of 57.88 and ADX of 35.97 indicate a potential for further upside. The stock is also trading at a reasonable distance from its 52-week high, providing room for growth.
+  - catalysts: Strong relative performance, Bullish trend, High delivery percentage
+  - risks: Market regime change, Sectoral downturn, Overall risk increase
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 206.39. The stock's ability to hold above its recent highs will be crucial.
+- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with a high Parkhu score of 83.0 and a strong buy technical rating, indicating potential for a short-term price increase. The recent 1-month return of 15.56% and 3-month return of 42.50% also suggest momentum in the stock. With a low overall risk regime and a neutral market regime, the conditions seem favorable for a swing trade.
+  - catalysts: Bullish trend, Strong technical rating, Momentum in stock
+  - risks: Market regime change, Sector-specific risks, Earnings report in 67 days
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a drop below the stop level of 3359.1, indicating a potential reversal in trend.
+- **EMCURE** [high] Emcure Pharmaceuticals Limited (EMCURE) fits a ≤1-month swing due to its strong bullish trend, high Parkhu score of 81.8, and recent outperformance against Nifty and its sector. The company's health technology sector has low overall risk, and its current price is close to its 52-week high. This setup indicates potential for a short-term upside.
+  - catalysts: Strong buy tech rating, Recent outperformance, Bullish trend
+  - risks: Sector volatility, Earnings uncertainty, Market regime shift
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1878.59. Monitoring the stock's price action and overall market sentiment is crucial.
+- **UYFINCORP** [high] UYFINCORP fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The stock's distance from its 52-week high and relatively low ATR percentage of price also suggest potential for a short-term upside. With a Parkhu score of 80.8, the evidence points towards a favorable risk-reward ratio.
+  - catalysts: Strong trend, High RSI, Outperformance
+  - risks: Market regime change, Sector volatility, Economic downturn
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a potential reversal in the trend.
+- **SAHYADRI** [high] Sahyadri Industries Limited (SAHYADRI) fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against Nifty and its sector. The recent price action and technical indicators such as RSI and ADX suggest a potential for further upside. With a strong buy technical rating and a high Parkhu score of 80.5, this setup appears promising for a short-term swing trade.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
+  - risks: Market regime change, Sector-specific downturn, Overbought conditions
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 321.86, indicating a potential reversal of the trend.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: SJS, SKYGOLD, Caveats: Low India VIX, provisional scores, and lack of trade outcome history
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: SREEL, STYLAMIND, Caveats: Low score coverage, provisional scores
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Press Release for Un-audited Financial Results for the quarter ended June 30, 2026 - Company Delivers Robust Performance (KNACK) — The company's robust performance in the quarter ended June 30, 2026, may have a positive impact on the stock price and investor sentiment.
-2. **[medium]** Appointment of Ms. Shveta Arya as the Group Chief Strategy Officer of the Mahindra Group (M&M) — The appointment of a new Group Chief Strategy Officer may lead to changes in the company's strategy and direction, which could impact the stock price.
-3. **[medium]** Medi Assist Q1 FY27: Revenue Up 24.1% - Paramount Integration is at its logical closure; AI Platform (MEDIASSIST) — The company's revenue growth and integration updates may have a positive impact on the stock price and investor sentiment.
-4. **[low]** Cessation of Mr RAJ VARDHAN KEJRIWAL as Non-Executive Independent Director (DHUNINV) — The cessation of a non-executive independent director may not have a significant impact on the company's operations or stock price.
-5. **[low]** Schedule of meet with Analysts/Institutional Investor (UNIPARTS) — The meeting with analysts and institutional investors may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
-6. **[low]** Schedule of meet with Analysts/Institutional Investor (MBEL) — The meeting with analysts and institutional investors may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
-7. **[low]** Copy of Newspaper Publication regarding dispatch of Notice of the AGM, Integrated Annual Report of the Bank for FY 2025-2026 and E-voting related matters (IDFCFIRSTB) — The publication of the notice of the AGM and annual report may not have a significant impact on the stock price or investor sentiment.
-8. **[low]** Investor Presentation (JSLL) — The investor presentation may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
-9. **[low]** Investor Presentation (MEDIASSIST) — The investor presentation may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
-10. **[low]** General Updates regarding Karnataka State Pollution Control Board (KSPCB) w.r.t non-compliance under the provisions of Water (Prevention and Control of Pollution) Act (AUTOAXLES) — The general updates on non-compliance with pollution control regulations may not have a significant impact on the stock price or investor sentiment.
+1. **[high]** Multiple companies announce financial results for the quarter ended June 30, 2026 — The announcements of financial results by multiple companies may have a significant impact on the market, as they provide insight into the financial health and performance of these companies, which can influence investor sentiment and market trends.
+2. **[medium]** HLE Glascoat Limited announces financial results for the period ended June 30, 2026 (HLEGLAS) — The announcement of financial results by HLE Glascoat Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
+3. **[medium]** NDL Ventures Limited announces financial results for the period ended June 30, 2026 (NDLVENTURE) — The announcement of financial results by NDL Ventures Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
+4. **[medium]** Vaxtex Cotfab Limited announces financial results for the period ended June 30, 2026 (VCL) — The announcement of financial results by Vaxtex Cotfab Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
+5. **[medium]** United Polyfab Gujarat Limited announces financial results for the period ended June 30, 2026 (UNITEDPOLY) — The announcement of financial results by United Polyfab Gujarat Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
+6. **[medium]** Transrail Lighting Limited announces unaudited financial results for the quarter ended June 30, 2026 (TRANSRAILL) — The announcement of unaudited financial results by Transrail Lighting Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
+7. **[medium]** Healthcare Global Enterprises Limited announces unaudited financial results and transcript of earnings call (HCG) — The announcement of unaudited financial results and transcript of earnings call by Healthcare Global Enterprises Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
+8. **[low]** Lupin Limited announces approval of Sodium Zirconium Cyclosilicate for Oral Suspension in the United States (LUPIN) — The announcement of approval of a new product by Lupin Limited may have a limited impact on the market, as it is a specific event related to the company's product portfolio.
+9. **[low]** Texmaco Rail & Engineering Limited announces memorandum of understanding with The Signalling Company, NV (TEXRAIL) — The announcement of a memorandum of understanding by Texmaco Rail & Engineering Limited may have a limited impact on the market, as it is a specific event related to the company's business operations.
+10. **[low]** Knowledge Marine & Engineering Works Limited announces bagging/receiving of orders/contracts (KMEW) — The announcement of bagging/receiving of orders/contracts by Knowledge Marine & Engineering Works Limited may have a limited impact on the market, as it is a specific event related to the company's business operations.
 
 ## Deep-dive URLs (after push)
 

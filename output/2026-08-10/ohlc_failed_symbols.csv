@@ -1,4 +1,5 @@
 symbol,yf_ticker,reason
+ANAWIL,ANAWIL.NS,no_ohlc_after_retry
 AVATAR,AVATAR.NS,no_ohlc_after_retry
 DIRL,DIRL.NS,no_ohlc_after_retry
 METALIC,METALIC.NS,no_ohlc_after_retry
