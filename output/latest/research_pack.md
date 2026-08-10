@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-10
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-10T18:07:23.179240+05:30
+- **generated_at_ist:** 2026-08-10T19:32:11.365145+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Neutral (0.05%)
 - india_vix: 12.24 (Low)
 - fii_net: 1974.76 | dii_net: -1290.29
-- overall_risk: Low | global_risk: Risk-On
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
@@ -115,18 +115,15 @@
 - **SJS** status=open entry=2446.1 last=2372.0 mfe=3.51 mae=-3.72 opened=2026-08-07
 - **SUPRAJIT** status=open entry=527.55 last=529.25 mfe=6.01 mae=-2.7 opened=2026-08-07
 - **M&M** status=open entry=3502.0 last=3517.0 mfe=0.93 mae=-0.31 opened=2026-08-08
-- **EMCURE** status=open entry=1995.2 last=1995.2 mfe=0.0 mae=0.0 opened=2026-08-10
-- **SAHYADRI** status=open entry=349.85 last=349.85 mfe=0.0 mae=0.0 opened=2026-08-10
+- **EMCURE** status=open entry=1995.2 last=1995.2 mfe=2.65 mae=-1.41 opened=2026-08-10
+- **SAHYADRI** status=open entry=349.85 last=349.85 mfe=0.54 mae=-4.23 opened=2026-08-10
 - **SKYGOLD** status=open entry=719.4 last=779.6 mfe=13.42 mae=0.0 opened=2026-08-10
-- **SREEL** status=open entry=221.22 last=221.22 mfe=0.0 mae=0.0 opened=2026-08-10
-- **STYLAMIND** status=open entry=3651.2 last=3651.2 mfe=0.0 mae=0.0 opened=2026-08-10
+- **SREEL** status=open entry=221.22 last=221.22 mfe=0.8 mae=-3.44 opened=2026-08-10
+- **STYLAMIND** status=open entry=3651.2 last=3651.2 mfe=1.24 mae=-3.91 opened=2026-08-10
 
 ## Needs action
 
 - **ICICIBANK**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
-- **INDNIPPON**: EXIT — STOP HIT — session low at/below stop ₹1,070.05 (last ₹1,124.30)
-- **RACLGEAR**: EXIT — STOP HIT — session low at/below stop ₹1,357.00 (last ₹1,387.60)
-- **TALBROAUTO**: EXIT — STOP HIT — session low at/below stop ₹403.91 (last ₹422.05)
 
 ## Closed today
 
@@ -160,27 +157,27 @@
 - Shanghai: +0.67% (bull)
 - Kospi: +0.65% (bull)
 - Taiwan: +1.59% (bull)
-- ASX 200: -0.33% (bear)
+- ASX 200: -0.09% (neutral)
 
 ### Europe
-- FTSE 100: -0.23% (bear)
-- DAX: +0.27% (bull)
-- Euro Stoxx 50: +0.46% (bull)
+- FTSE 100: -0.45% (bear)
+- DAX: +0.03% (neutral)
+- Euro Stoxx 50: +0.10% (neutral)
 
 ### US
-- S&P 500: +0.62% (bull)
-- Nasdaq: +1.30% (bull)
-- Dow: +0.28% (bull)
-- US VIX: +3.56% (bear)
+- S&P 500: +0.03% (neutral)
+- Nasdaq: -0.15% (neutral)
+- Dow: -0.13% (neutral)
+- US VIX: +2.01% (bear)
 
 ### Macro
 - USDINR: -0.02% (neutral)
-- Crude WTI: +1.57% (bull)
-- Brent: +1.53% (bull)
-- DXY: +0.16% (neutral)
-- US 10Y: +0.09% (neutral)
-- India ETF: +0.50% (bull)
-- EM ETF: +0.95% (bull)
+- Crude WTI: +3.03% (bull)
+- Brent: +2.94% (bull)
+- DXY: +0.20% (neutral)
+- US 10Y: +0.56% (bear)
+- India ETF: -0.29% (bear)
+- EM ETF: -0.71% (bear)
 
 
 ## Groq desk note
@@ -188,52 +185,53 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** selective_aggressive
 
-The Indian market remains neutral with a low India VIX of 12.24. The Nifty trend is neutral with a 0.05% change. FII net is positive at 1974.76, while DII net is negative at -1290.29. The overall risk is low.
+The market is in a neutral regime with a low India VIX of 12.24. The Nifty trend is also neutral with a 0.05% change. FII net is 1974.76, while DII net is -1290.29. The overall risk is low with a bullish Asia cue and mixed Europe cue.
 
-- **SREEL** [consider_entry/high] entry=221.22 stop=206.39 t1=258.0 hold=20d — Parkhu score of 83.3 with a buy band
-- **STYLAMIND** [consider_entry/high] entry=3651.2 stop=3359.1 t1=4235.39 hold=14d — Parkhu score of 83.0 with a buy band
-- **UYFINCORP** [manage_open/medium] entry=21.02 stop=19.34 t1=24.38 hold=11d — Already in open book with a positive mfe_pct
+- **SREEL** [consider_entry/high] entry=221.22 stop=206.39 t1=258.0 hold=20d — Strong Parkhu score of 83.3 and favorable risk-reward ratio
+- **STYLAMIND** [consider_entry/high] entry=3651.2 stop=3359.1 t1=4235.39 hold=14d — High Parkhu score of 83.0 and promising sector outlook
+- **UYFINCORP** [manage_open/medium] entry=21.02 stop=19.34 t1=24.38 hold=11d — Already in open book with a favorable mfe_pct of 16.05
+- **ICICIBANK** [stand_aside/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable and thinning thesis
 
 ### AI stock reviews
 
-- **SREEL** [high] The setup in SREEL fits a ≤1-month swing as the stock has shown a bullish trend with a high delivery percentage of 79.81% and a strong relative performance against Nifty and its sector over the past month. The RSI of 57.88 and ADX of 35.97 indicate a potential for further upside. The stock is also trading at a reasonable distance from its 52-week high, providing room for growth.
-  - catalysts: Strong relative performance, Bullish trend, High delivery percentage
-  - risks: Market regime change, Sectoral downturn, Overall risk increase
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 206.39. The stock's ability to hold above its recent highs will be crucial.
-- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with a high Parkhu score of 83.0 and a strong buy technical rating, indicating potential for a short-term price increase. The recent 1-month return of 15.56% and 3-month return of 42.50% also suggest momentum in the stock. With a low overall risk regime and a neutral market regime, the conditions seem favorable for a swing trade.
-  - catalysts: Bullish trend, Strong technical rating, Momentum in stock
+- **SREEL** [high] SREEL's recent price action and technical indicators suggest a bullish trend, with a high Parkhu score of 83.3 and a strong trend label. The stock's relative strength against Nifty and its sector over the past month is also a positive sign. With a low overall risk regime and a Neutral market regime, this setup fits a ≤1-month swing. The stock is also not too far from its 52-week high, with a distance of -14.26%, indicating potential for further upside.
+  - catalysts: Strong trend, High Parkhu score, Bullish technical indicators
+  - risks: Market regime change, Sector-specific risks, Overall market volatility
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 206.39. The trade should be monitored closely for any changes in the market regime or sector-specific news.
+- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an ADX of 46.28 and RSI of 65.71, indicating a potential for further upside. The recent 1-month return of 15.55% and 3-month return of 42.50% also support this thesis. The distance from the 52-week high is -12.02%, providing room for growth. The overall risk is low with an India VIX of 12.24.
+  - catalysts: Strong trend, High delivery percentage, Favorable technical ratings
   - risks: Market regime change, Sector-specific risks, Earnings report in 67 days
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a drop below the stop level of 3359.1, indicating a potential reversal in trend.
-- **EMCURE** [high] Emcure Pharmaceuticals Limited (EMCURE) fits a ≤1-month swing due to its strong bullish trend, high Parkhu score of 81.8, and recent outperformance against Nifty and its sector. The company's health technology sector has low overall risk, and its current price is close to its 52-week high. This setup indicates potential for a short-term upside.
-  - catalysts: Strong buy tech rating, Recent outperformance, Bullish trend
-  - risks: Sector volatility, Earnings uncertainty, Market regime shift
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 1878.59. Monitoring the stock's price action and overall market sentiment is crucial.
-- **UYFINCORP** [high] UYFINCORP fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The stock's distance from its 52-week high and relatively low ATR percentage of price also suggest potential for a short-term upside. With a Parkhu score of 80.8, the evidence points towards a favorable risk-reward ratio.
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 3359.1. The stock's price action and ability to hold above the entry level will be crucial in determining the success of this trade.
+- **EMCURE** [high] Emcure Pharmaceuticals Limited (EMCURE) is poised for a ≤1-month swing due to its strong bullish trend, with an ADX of 37.91 and RSI of 66.05, indicating a potential upward momentum. The stock's recent 1-month return of 9.70% and 3-month return of 18.77% also support this thesis. Additionally, the distance from its 52-week high is only -2.58%, suggesting a possible breakout.
+  - catalysts: Strong buy tech rating, Recent bullish trend, High return in 1 and 3 months
+  - risks: Overall market regime is neutral, India VIX is 12.24, Risk sector is Health Technology
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level of 1878.59. A close eye should be kept on the stock's price action and overall market sentiment.
+- **UYFINCORP** [high] UYFINCORP fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The stock's distance from its 52-week high and relatively low ATR percentage of price suggest potential for a short-term upside. The overall low risk regime and neutral market regime also support a short-term swing trade.
   - catalysts: Strong trend, High RSI, Outperformance
-  - risks: Market regime change, Sector volatility, Economic downturn
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a potential reversal in the trend.
-- **SAHYADRI** [high] Sahyadri Industries Limited (SAHYADRI) fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against Nifty and its sector. The recent price action and technical indicators such as RSI and ADX suggest a potential for further upside. With a strong buy technical rating and a high Parkhu score of 80.5, this setup appears promising for a short-term swing trade.
-  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
-  - risks: Market regime change, Sector-specific downturn, Overbought conditions
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 321.86, indicating a potential reversal of the trend.
+  - risks: NBFC sector risks, Market volatility
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a drop below the stop level of 19.34. A failure to reach the target within the expected hold days may also be a sign to reevaluate the trade.
+- **SAHYADRI** [high] The setup in SAHYADRI fits a ≤1-month swing due to its strong bullish trend, high delivery percentage, and outperformance against Nifty and its sector. The recent price action and technical indicators such as RSI and ADX suggest a potential continuation of the uptrend. With a strong buy technical rating and a high Parkhu score of 80.5, the stock is poised for a short-term rally.
+  - catalysts: Strong trend, High delivery percentage, Outperformance
+  - risks: Market regime change, Sector rotation, Economic downturn
+  - watch: Triggers for the trade include a breakout above the current price level, while invalidation cues would be a breach of the stop level at 321.86. Monitoring the overall market regime and sector performance will also be crucial.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Selective Aggressive, Top Ideas: SREEL, STYLAMIND, Caveats: Low score coverage, provisional scores
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: SREEL, STYLAMIND, Caveats: Provisional scores, missing data, and thinning thesis for some stocks
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Multiple companies announce financial results for the quarter ended June 30, 2026 — The announcements of financial results by multiple companies may have a significant impact on the market, as they provide insight into the financial health and performance of these companies, which can influence investor sentiment and market trends.
-2. **[medium]** HLE Glascoat Limited announces financial results for the period ended June 30, 2026 (HLEGLAS) — The announcement of financial results by HLE Glascoat Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
-3. **[medium]** NDL Ventures Limited announces financial results for the period ended June 30, 2026 (NDLVENTURE) — The announcement of financial results by NDL Ventures Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
-4. **[medium]** Vaxtex Cotfab Limited announces financial results for the period ended June 30, 2026 (VCL) — The announcement of financial results by Vaxtex Cotfab Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
-5. **[medium]** United Polyfab Gujarat Limited announces financial results for the period ended June 30, 2026 (UNITEDPOLY) — The announcement of financial results by United Polyfab Gujarat Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
-6. **[medium]** Transrail Lighting Limited announces unaudited financial results for the quarter ended June 30, 2026 (TRANSRAILL) — The announcement of unaudited financial results by Transrail Lighting Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
-7. **[medium]** Healthcare Global Enterprises Limited announces unaudited financial results and transcript of earnings call (HCG) — The announcement of unaudited financial results and transcript of earnings call by Healthcare Global Enterprises Limited may have a moderate impact on the market, as it provides insight into the company's financial performance and may influence investor sentiment.
-8. **[low]** Lupin Limited announces approval of Sodium Zirconium Cyclosilicate for Oral Suspension in the United States (LUPIN) — The announcement of approval of a new product by Lupin Limited may have a limited impact on the market, as it is a specific event related to the company's product portfolio.
-9. **[low]** Texmaco Rail & Engineering Limited announces memorandum of understanding with The Signalling Company, NV (TEXRAIL) — The announcement of a memorandum of understanding by Texmaco Rail & Engineering Limited may have a limited impact on the market, as it is a specific event related to the company's business operations.
-10. **[low]** Knowledge Marine & Engineering Works Limited announces bagging/receiving of orders/contracts (KMEW) — The announcement of bagging/receiving of orders/contracts by Knowledge Marine & Engineering Works Limited may have a limited impact on the market, as it is a specific event related to the company's business operations.
+1. **[high]** Rupa & Company Limited has informed the Exchange regarding 'Intimation Under Regulation 30(5) Of The SEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015. (RUPA) — The company's intimation under Regulation 30(5) may have significant implications for its shareholders and the market.
+2. **[high]** ROUTE MOBILE LIMITED has informed the Exchange about Letter to Shareholders under Regulation 36(1)(b) of SEBI (LODR) Regulations, 2015 - Annual Report and AGM Notice for FY 2025-26. (ROUTE) — The annual report and AGM notice may provide valuable insights into the company's financial performance and future plans.
+3. **[medium]** Dilip Buildcon Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. (DBL) — The company's financial results may impact its stock price and investor sentiment.
+4. **[low]** Emkay Global Financial Services Limited has informed the Exchange about Proceedings of 32nd AGM (EMKAY) — The proceedings of the AGM may provide some insights into the company's governance and shareholder engagement.
+5. **[low]** Jain Irrigation Systems Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on August 10, 2026. (JISLJALEQS) — The srutinizers report may provide some information about the company's AGM proceedings.
+6. **[low]** Ind-Swift Laboratories Limited has informed the Exchange about statement of deviation(s) or variation(s) under Reg. 32 (INDSWFTLAB) — The statement of deviation may have some implications for the company's regulatory compliance.
+7. **[low]** Zee Entertainment Enterprises Limited has informed the Exchange about audio recording (ZEEL) — The audio recording may provide some insights into the company's investor engagement.
+8. **[low]** Oberoi Realty Limited has informed the Exchange about Schedule of meet (OBEROIRLTY) — The schedule of meet may provide some information about the company's investor engagement.
+9. **[low]** Arvind Limited has informed the Exchange about Schedule of meet (ARVIND) — The schedule of meet may provide some information about the company's investor engagement.
+10. **[low]** TVS Supply Chain Solutions Limited has informed the Exchange regarding a press release dated August 10, 2026, titled "Press Release for Unaudited Standalone and Consolidated for the quarter ended June 30,2026". (TVSSCS) — The press release may provide some information about the company's financial performance.
 
 ## Deep-dive URLs (after push)
 
