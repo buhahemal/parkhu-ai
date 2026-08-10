@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-10
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-10T06:07:33.994960+05:30
+- **generated_at_ist:** 2026-08-10T08:18:39.116897+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,9 +15,9 @@
 ## Funnel
 
 - universe: 2977
-- trend = Bullish: 1475
-- price > SMA200: 1100
-- price > EMA50: 1088
+- trend = Bullish: 1474
+- price > SMA200: 1099
+- price > EMA50: 1087
 - ADX14 > 25: 583
 - RSI14 in 40-80: 549
 - RS > 0 vs NIFTY and sector: 287
@@ -38,12 +38,12 @@
 - **KTKBANK** [idea] score 81.2 — selected as idea
 - **MANAKSTEEL** [idea] score 81.1 — selected as idea
 - **MANAKALUCO** [rejected] score 80.8 — T1 needs more than 22 trading days (~1 month)
-- **BTML** [watchlist] score 78.3 — score in Watch band (70–80)
-- **TARMAT** [rejected] score 77.7 — T1 needs more than 22 trading days (~1 month)
-- **TATACAP** [watchlist] score 76.1 — score in Watch band (70–80)
+- **BTML** [rejected] score 80.0 — not selected
+- **TARMAT** [rejected] score 76.7 — T1 needs more than 22 trading days (~1 month)
+- **REDTAPE** [rejected] score 76.3 — T1 needs more than 22 trading days (~1 month)
+- **TATACAP** [watchlist] score 76.2 — score in Watch band (70–80)
 - **AUROPHARMA** [watchlist] score 75.9 — score in Watch band (70–80)
-- **REDTAPE** [rejected] score 74.7 — T1 needs more than 22 trading days (~1 month)
-- **VADILALIND** [watchlist] score 74.2 — score in Watch band (70–80)
+- **VADILALIND** [watchlist] score 75.8 — score in Watch band (70–80)
 - **TITAN** [watchlist] score 73.6 — score in Watch band (70–80)
 - **GNA** [watchlist] score 73.5 — score in Watch band (70–80)
 - **MEDANTA** [watchlist] score 73.1 — score in Watch band (70–80)
@@ -53,25 +53,25 @@
 - **SUPRAJIT** [watchlist] score 70.4 — score in Watch band (70–80)
 - **INDGN** [rejected] score 69.9 — score below Watch band
 - **BAJAJFINSV** [rejected] score 67.9 — T1 needs more than 22 trading days (~1 month)
-- **NUVOCO** [rejected] score 67.5 — score below Watch band
+- **SPECIALITY** [rejected] score 67.7 — score below Watch band
 - **SHANTIGOLD** [rejected] score 67.3 — T1 needs more than 22 trading days (~1 month)
+- **NUVOCO** [rejected] score 66.5 — score below Watch band
 - **SHRIPISTON** [rejected] score 66.1 — score below Watch band
-- **SPECIALITY** [rejected] score 66.1 — score below Watch band
 - **SONACOMS** [rejected] score 65.9 — score below Watch band
 - **GUFICBIO** [rejected] score 65.1 — score below Watch band
-- **IKIO** [rejected] score 62.3 — score below Watch band
-- **ARCHIDPLY** [rejected] score 61.8 — T1 needs more than 22 trading days (~1 month)
+- **IKIO** [rejected] score 61.3 — score below Watch band
 - **AKUMS** [rejected] score 61.1 — score below Watch band
 - **ARMANFIN** [rejected] score 61.0 — score below Watch band
+- **ARCHIDPLY** [rejected] score 60.8 — T1 needs more than 22 trading days (~1 month)
 - **POONAWALLA** [rejected] score 54.8 — T1 needs more than 22 trading days (~1 month)
 - **JLHL** [rejected] score 53.4 — score below Watch band
 - **VSSL** [rejected] score 53.4 — score below Watch band
 - **STYL** [rejected] score 52.0 — score below Watch band
-- **KABRAEXTRU** [rejected] score 50.4 — score below Watch band
 - **SETL** [rejected] score 50.3 — score below Watch band
+- **KABRAEXTRU** [rejected] score 49.4 — score below Watch band
 - **CYIENTDLM** [rejected] score 48.3 — score below Watch band
 - **PRIMESECU** [rejected] score 47.5 — score below Watch band
-- **PFOCUS** [rejected] score 39.6 — T1 needs more than 22 trading days (~1 month)
+- **PFOCUS** [rejected] score 41.3 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -128,31 +128,31 @@
 
 ## Swing candidates (top)
 
-- INDGN: score=14 rs_nifty=11.08 deliv=48.52
-- SPECIALITY: score=14 rs_nifty=11.7 deliv=45.12
-- TATACAP: score=14 rs_nifty=3.26 deliv=46.01
-- PRIMESECU: score=14 rs_nifty=4.63 deliv=80.31
-- SHRIPISTON: score=14 rs_nifty=0.17 deliv=54.99
-- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
-- JLHL: score=14 rs_nifty=8.65 deliv=72.33
 - MANAKALUCO: score=14 rs_nifty=13.15 deliv=79.61
-- KABRAEXTRU: score=14 rs_nifty=52.15 deliv=43.48
-- SJS: score=14 rs_nifty=9.05 deliv=44.87
-- SUPRAJIT: score=14 rs_nifty=5.05 deliv=42.54
-- STYL: score=14 rs_nifty=14.63 deliv=47.63
+- SHRIPISTON: score=14 rs_nifty=0.17 deliv=54.99
+- SPECIALITY: score=14 rs_nifty=11.7 deliv=45.12
+- MANAKSTEEL: score=14 rs_nifty=0.55 deliv=61.95
+- MEDANTA: score=14 rs_nifty=7.17 deliv=75.27
+- INDGN: score=14 rs_nifty=11.08 deliv=48.52
+- JLHL: score=14 rs_nifty=8.65 deliv=72.33
 - GNA: score=14 rs_nifty=9.83 deliv=43.46
 - SETL: score=14 rs_nifty=5.58 deliv=51.74
+- INDNIPPON: score=14 rs_nifty=10.82 deliv=47.51
+- SJS: score=14 rs_nifty=9.05 deliv=44.87
+- REDTAPE: score=14 rs_nifty=1.14 deliv=56.01
+- IKIO: score=14 rs_nifty=6.58 deliv=46.88
+- KABRAEXTRU: score=14 rs_nifty=52.15 deliv=43.48
 - TITAN: score=14 rs_nifty=5.1 deliv=54.17
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.22% (bull)
-- Hang Seng: +0.54% (bull)
-- Shanghai: +1.02% (bull)
-- Kospi: +1.67% (bull)
-- Taiwan: -0.38% (bear)
-- ASX 200: -0.15% (neutral)
+- Nikkei: +2.02% (bull)
+- Hang Seng: +0.69% (bull)
+- Shanghai: +0.32% (bull)
+- Kospi: +0.41% (bull)
+- Taiwan: +2.03% (bull)
+- ASX 200: -0.48% (bear)
 
 ### Europe
 - FTSE 100: +0.31% (bull)
@@ -167,9 +167,9 @@
 
 ### Macro
 - USDINR: -0.12% (neutral)
-- Crude WTI: +0.87% (bull)
-- Brent: +1.14% (bull)
-- DXY: +0.04% (neutral)
+- Crude WTI: +0.64% (bull)
+- Brent: +0.87% (bull)
+- DXY: +0.09% (neutral)
 - US 10Y: -0.21% (neutral)
 - India ETF: +0.50% (bull)
 - EM ETF: +0.95% (bull)
@@ -180,45 +180,52 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The Indian market is currently in a bearish regime with a low India VIX of 12.16. Despite this, the Asia and Europe cues are bullish. The Nifty trend is bearish with a -0.27% change. The overall risk is medium.
+The market regime remains bearish with a low India VIX, while FII and DII net flows are positive. The overall risk is medium, with bullish cues from Asia and Europe. The Nifty trend is bearish with a -0.27% change. 
 
-- **SJS** [consider_entry/high] entry=2446.1 stop=2257.95 t1=2822.4 hold=17d — Strong Parkhu score of 83.1 and a buy band
-- **SKYGOLD** [consider_entry/high] entry=719.4 stop=661.85 t1=834.5 hold=16d — Strong Parkhu score of 81.7 and a buy band
-- **ICICIBANK** [manage_open/medium] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
+- **SJS** [consider_entry/medium] entry=2446.1 stop=2257.95 t1=2822.4 hold=17d — Buy band with a parkhu score of 83.1
+- **SKYGOLD** [consider_entry/medium] entry=719.4 stop=661.85 t1=834.5 hold=16d — Buy band with a parkhu score of 81.7
+- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
 
 ### AI stock reviews
 
-- **SJS** [high] S.J.S. Enterprises Limited is a promising swing trade candidate due to its bullish trend label, high ADX, and strong RSI. The stock has outperformed Nifty and its sector in the last month, indicating momentum. With a distance of only 5.56% from its 52-week high, there's potential for a breakout. The overall risk regime is medium, but the stock's technical rating and recent returns support a short-term long position.
-  - catalysts: Bullish trend, Strong momentum, Outperformance vs Nifty and sector
-  - risks: Bearish market regime, Medium overall risk, Earnings uncertainty
-  - watch: Triggers for this trade include a strong close above the current price, while invalidation cues would be a close below the stop level or a significant increase in India VIX. A break of the 52-week high could also be a bullish trigger.
-- **SKYGOLD** [high] The setup for SKYGOLD fits a ≤1-month swing due to its strong technical rating and recent bullish trend, with the stock nearing its 52-week high. The high return over the past month and strong performance relative to the Nifty and its sector also support this thesis. The overall market regime is bearish, but the stock's momentum and low distance to its 52-week high make it an attractive swing trade.
-  - catalysts: Strong technical rating, Bullish trend, High returns
-  - risks: Bearish market regime, High India VIX
-  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues include a drop below the stop level. The trade's success will depend on the stock's ability to maintain its momentum and break out to new highs.
-- **RACLGEAR** [high] RACLGEAR fits a ≤1-month swing due to its strong technical rating and recent bullish trend. The stock's RSI14 is 68.18, indicating a potential for further upside. Additionally, the return over the past month is 12.33%, outperforming the Nifty and its sector. The distance from the 52-week high is -12.36%, providing room for growth.
-  - catalysts: Strong technical rating, Bullish trend, Outperforming Nifty and sector
-  - risks: Medium overall risk, Producer Manufacturing sector risk
-  - watch: Triggers for this setup include a strong breakout above the current level, while invalidation cues would be a drop below the stop level. The stock's price action and ability to hold above the entry level will be crucial to watch.
-- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong bullish trend, high RSI, and recent outperformance against Nifty and its sector. The stock is close to its 52-week high, indicating potential for a breakout. With a Parkhu score of 81.2, the setup appears promising. The overall risk regime is medium, but the stock's technical rating of 'Strong buy' supports the bullish thesis.
-  - catalysts: Earnings anticipation, Sector outperformance, Breakout potential
-  - risks: Market regime bearish, Interest rate changes, Sectoral risks
-  - watch: Triggers for this setup include a strong breakout above recent highs, while invalidation cues would be a close below the stop level or a significant increase in India VIX. A failure to reach the target within the specified hold days could also be a concern.
-- **MANAKSTEEL** [high] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating a strong upward movement. The stock's RSI14 is at 64.16, suggesting it has room to run before reaching overbought levels. Additionally, the return over the past month is 3.09%, and over three months is 27.90%, showing significant momentum. The distance from its 52-week high is -6.08%, indicating potential for further upside.
-  - catalysts: Bullish trend, Momentum buildup, RSI14 not overbought
-  - risks: Bearish market regime, Medium overall risk, Non-Energy Minerals sector risk
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level of 77.68, indicating a failure of the bullish trend. The ADX14 at 25.20 and ATR percentage of price at 5.88 should also be monitored for signs of trend strength and volatility.
+- **SJS** [high] The SJS setup fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating a strong uptrend. The stock's ADX14 of 41.17 and RSI14 of 63.56 suggest a strong momentum with room for further upside. The company's recent outperformance against Nifty and its sector, with returns of 11.59% and 10.19% respectively, adds to the bullish case.
+  - catalysts: Earnings momentum, Sector outperformance, Bullish trend
+  - risks: Market regime risk, Sector volatility, Earnings disappointment
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 2257.95, indicating a reversal of the trend.
+- **SKYGOLD** [high] The setup for SKYGOLD fits a ≤1-month swing due to its strong bullish trend label, high RSI, and significant outperformance against Nifty and its sector over the past month. The stock's price is also close to its 52-week high, indicating potential for a breakout. The overall risk regime is medium, but the stock's strong technical rating and high Parkhu score suggest a favorable risk-reward ratio.
+  - catalysts: Bullish trend, High RSI, Outperformance
+  - risks: Market regime is bearish, High India VIX
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a failure of the bullish trend.
+- **RACLGEAR** [high] RACL Geartech Ltd fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong return over the past month. The company's recent price action and technical indicators suggest a potential for further upside. With a high Parkhu score of 81.6, this setup appears promising for a short-term swing trade.
+  - catalysts: Bullish trend, High RSI, Strong return
+  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risk
+  - watch: Triggers for this trade include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a reversal of the trend.
+- **KTKBANK** [high] KTKBANK fits a ≤1-month swing due to its strong recent performance, with a 1-month return of 16.98% and a 3-month return of 16.56%, outperforming both the Nifty and its sector. The stock's RSI14 is at 71.28, indicating a bullish trend. The high delivery percentage of 59.42 and strong technical rating also support this setup.
+  - catalysts: Earnings momentum, Sector outperformance, Strong technicals
+  - risks: Market regime risk, Sectoral headwinds, Economic downturn
+  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues include a breach of the stop level at 290.37. A close eye should be kept on the overall market regime and sector performance.
+- **MANAKSTEEL** [high] MANAKSTEEL fits a ≤1-month swing due to its recent bullish trend, with a high Parkhu score of 81.1 and a strong relative performance against its sector. The stock's RSI14 at 64.16 indicates room for further upside, and its distance from the 52-week high at -6.08% suggests potential for a rebound. The overall market regime is bearish, but the stock's resilience and strong technical ratings make it an attractive swing opportunity.
+  - catalysts: Strong technical ratings, Bullish trend, Resilience in bearish market
+  - risks: Bearish market regime, High India VIX, Sector volatility
+  - watch: Triggers for this swing include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 77.68, indicating a failure of the bullish trend. A close eye should be kept on the stock's ability to hold above its recent lows.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: SJS, SKYGOLD, Caveats: Limited score coverage, provisional scores, and lack of trade outcome history
+Regime: Bearish, Stance: Defensive, Top Ideas: SJS, SKYGOLD, Caveats: Low India VIX, provisional scores, and lack of trade outcome history
 
 
 ## Market news (AI top impact)
 
-1. **[high]** India VIX at 12.16, FII net buy 480.24 cr, Overall risk Medium — Market regime is bearish, and overall risk is medium, which may impact investor sentiment
-2. **[medium]** IDFC First Bank Limited has informed the Exchange about Copy of Newspaper Publication regarding dispatch of Notice of the AGM (IDFCFIRSTB) — AGM and e-voting related matters may have an impact on the company's stock price
-3. **[medium]** Knack Packaging Limited has informed the Exchange regarding a press release dated August 09, 2026, titled "Press Release for Un-audited Financial Results for the quarter ended June 30, 2026 - Company Delivers Robust Perf (KNACK) — The company's financial results may have an impact on its stock price
+1. **[high]** Press Release for Un-audited Financial Results for the quarter ended June 30, 2026 - Company Delivers Robust Performance (KNACK) — The company's robust performance in the quarter ended June 30, 2026, may have a positive impact on the stock price and investor sentiment.
+2. **[medium]** Appointment of Ms. Shveta Arya as the Group Chief Strategy Officer of the Mahindra Group (M&M) — The appointment of a new Group Chief Strategy Officer may lead to changes in the company's strategy and direction, which could impact the stock price.
+3. **[medium]** Medi Assist Q1 FY27: Revenue Up 24.1% - Paramount Integration is at its logical closure; AI Platform (MEDIASSIST) — The company's revenue growth and integration updates may have a positive impact on the stock price and investor sentiment.
+4. **[low]** Cessation of Mr RAJ VARDHAN KEJRIWAL as Non-Executive Independent Director (DHUNINV) — The cessation of a non-executive independent director may not have a significant impact on the company's operations or stock price.
+5. **[low]** Schedule of meet with Analysts/Institutional Investor (UNIPARTS) — The meeting with analysts and institutional investors may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
+6. **[low]** Schedule of meet with Analysts/Institutional Investor (MBEL) — The meeting with analysts and institutional investors may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
+7. **[low]** Copy of Newspaper Publication regarding dispatch of Notice of the AGM, Integrated Annual Report of the Bank for FY 2025-2026 and E-voting related matters (IDFCFIRSTB) — The publication of the notice of the AGM and annual report may not have a significant impact on the stock price or investor sentiment.
+8. **[low]** Investor Presentation (JSLL) — The investor presentation may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
+9. **[low]** Investor Presentation (MEDIASSIST) — The investor presentation may provide an update on the company's performance and outlook, but may not have a significant impact on the stock price.
+10. **[low]** General Updates regarding Karnataka State Pollution Control Board (KSPCB) w.r.t non-compliance under the provisions of Water (Prevention and Control of Pollution) Act (AUTOAXLES) — The general updates on non-compliance with pollution control regulations may not have a significant impact on the stock price or investor sentiment.
 
 ## Deep-dive URLs (after push)
 

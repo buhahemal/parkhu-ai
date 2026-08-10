@@ -12,7 +12,7 @@ Regime **Bearish**. Sector leader Energy Minerals (4.89% 1m), laggard Communicat
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (18)
+## Open suggestions (19)
 
 **1 need action today.**
 
@@ -30,6 +30,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | RACLGEAR | 2026-08-07 | ₹1,475 | ₹1,483 | 0.52% | 0.07R | 1/14d | HOLD |
 | SHRIPISTON | 2026-08-05 | ₹4,403 | ₹4,393 | -0.22% | -0.03R | 3/17d | HOLD |
 | SJS | 2026-08-07 | ₹2,446 | ₹2,446 | 0% | 0R | 1/17d | HOLD |
+| SKYGOLD | 2026-08-10 | ₹719 | ₹719 | 0% | 0R | 0/16d | HOLD |
 | SUPRAJIT | 2026-08-07 | ₹528 | ₹522 | -1.09% | -0.19R | 1/16d | HOLD |
 | TALBROAUTO | 2026-08-05 | ₹438 | ₹439 | 0.24% | 0.03R | 3/16d | HOLD |
 | TATACAP | 2026-08-05 | ₹372 | ₹370 | -0.43% | -0.08R | 3/17d | HOLD |
@@ -49,6 +50,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **RACLGEAR** — HOLD: +0.52% (+0.07R), 1d held, ~13d left to the T1 horizon. Best 2.38% / worst -2.51% while held.
 - **SHRIPISTON** — HOLD: -0.22% (-0.03R), 3d held, ~14d left to the T1 horizon. Best 2.96% / worst -4.33% while held.
 - **SJS** — HOLD: +0.00% (+0.00R), 1d held, ~16d left to the T1 horizon. Best 1.37% / worst -3.21% while held.
+- **SKYGOLD** — HOLD: +0.00% (+0.00R), 0d held, ~16d left to the T1 horizon.
 - **SUPRAJIT** — HOLD: -1.09% (-0.19R), 1d held, ~15d left to the T1 horizon. Best 2.55% / worst -2.7% while held.
 - **TALBROAUTO** — HOLD: +0.24% (+0.03R), 3d held, ~13d left to the T1 horizon. Best 2.64% / worst -5.09% while held.
 - **TATACAP** — HOLD: -0.43% (-0.08R), 3d held, ~14d left to the T1 horizon. Best 4.92% / worst -3.13% while held.
@@ -100,9 +102,9 @@ Consumer Durables (Other Consumer Specialties) · CMP ₹719 · score **81.7** (
 
 **Position:** 13 shares · deploy ₹9,352 (9.35% of capital) · risk ₹748 (0.75%) if stopped · profit ₹1,496 at T1, ₹2,245 at T2 · size set by exposure cap (10%/name)
 
-**Evidence:** ADX 35.7 · RSI 71.2 · delivery 46.4% · RS vs Nifty 22.8%, vs sector 24% · 1m 25.4%, 3m 45% · -1.2% from 52w high · ATR 4.1% of price · factor rank 93 · TV Strong buy · next earnings in 100d
+**Evidence:** ADX 35.7 · RSI 71.2 · delivery 46.4% · RS vs Nifty 22.8%, vs sector 24% · 1m 25.4%, 3m 45% · -1.2% from 52w high · ATR 4.1% of price · factor rank 93 · TV Strong buy · next earnings date **unknown**
 
-**Invalidation:** a close below ₹662; the real structural invalidation is lower, at ₹603 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 1.26% above entry.
+**Invalidation:** a close below ₹662; no earnings date is available for this name, so the KB-05 21-day results blackout could not be verified — check the calendar before entering; the real structural invalidation is lower, at ₹603 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 1.26% above entry.
 
 ### RACLGEAR — RACL Geartech Ltd
 
@@ -178,10 +180,9 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: BAJAJFINSV (~23d), POON
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| BTML | Consumer Services | ₹8 | 78.3 | ₹8 | ₹7 | ₹10 | 31.09% |
-| TATACAP | NBFC & Capital Markets | ₹370 | 76.1 | ₹370 | ₹344 | ₹423 | 14.34% |
+| TATACAP | NBFC & Capital Markets | ₹370 | 76.2 | ₹370 | ₹344 | ₹423 | 14.34% |
 | AUROPHARMA | Health Technology | ₹1,658 | 75.9 | ₹1,658 | ₹1,570 | ₹1,833 | 10.55% |
-| VADILALIND | Consumer Non-Durables | ₹7,208 | 74.2 | ₹7,208 | ₹6,744 | ₹8,134 | 12.85% |
+| VADILALIND | Consumer Non-Durables | ₹7,208 | 75.8 | ₹7,208 | ₹6,744 | ₹8,134 | 12.85% |
 | TITAN | Consumer Durables | ₹4,941 | 73.6 | ₹4,941 | ₹4,765 | ₹5,293 | 7.13% |
 | GNA | Producer Manufacturing | ₹527 | 73.5 | ₹527 | ₹485 | ₹612 | 16% |
 | MEDANTA | Health Services | ₹1,456 | 73.1 | ₹1,456 | ₹1,372 | ₹1,623 | 11.5% |
