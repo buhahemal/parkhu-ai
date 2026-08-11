@@ -1,16 +1,16 @@
 # Parkhu research pack — 2026-08-11
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-11T06:09:04.211939+05:30
+- **generated_at_ist:** 2026-08-11T08:12:49.830586+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.27%)
-- india_vix: 12.16 (Low)
+- market_regime: **Neutral**
+- nifty: Neutral (0.05%)
+- india_vix: 12.25 (Low)
 - fii_net: 1974.76 | dii_net: -1290.29
-- overall_risk: Medium | global_risk: Neutral
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
@@ -20,26 +20,28 @@
 - price > EMA50: 1097
 - ADX14 > 25: 605
 - RSI14 in 40-80: 568
-- RS > 0 vs NIFTY and sector: 293
-- delivery% >= 40: 173
-- relative_volume >= 1: 57
-- no earnings within 21d: 49
-- event_risk_score <= 1: 47
-- TV rating not Sell: 46
+- RS > 0 vs NIFTY and sector: 299
+- delivery% >= 40: 178
+- relative_volume >= 1: 59
+- no earnings within 21d: 51
+- event_risk_score <= 1: 49
+- TV rating not Sell: 48
 
-## Survivors (top 46 of 46)
+## Survivors (top 48 of 48)
 
 - **LLOYDSME** [idea] score 88.0 — selected as idea
+- **CRISIL** [rejected] score 84.5 — T1 needs more than 22 trading days (~1 month)
 - **SREEL** [idea] score 83.3 — selected as idea
 - **STYLAMIND** [idea] score 83.1 — selected as idea
-- **BFINVEST** [rejected] score 81.9 — T1 needs more than 22 trading days (~1 month)
+- **BFINVEST** [rejected] score 81.8 — T1 needs more than 22 trading days (~1 month)
 - **EMCURE** [idea] score 81.7 — selected as idea
-- **SJS** [idea] score 81.6 — selected as idea
+- **SJS** [idea] score 81.5 — selected as idea
 - **UYFINCORP** [rejected] score 80.8 — not selected
 - **SAHYADRI** [rejected] score 80.5 — not selected
 - **SCPL** [watchlist] score 78.9 — score in Watch band (70–80)
 - **LUMAXTECH** [watchlist] score 77.1 — score in Watch band (70–80)
 - **GNA** [watchlist] score 76.5 — score in Watch band (70–80)
+- **RISHABH** [watchlist] score 74.8 — score in Watch band (70–80)
 - **DOLPHIN** [rejected] score 74.1 — T1 needs more than 22 trading days (~1 month)
 - **ALIVUS** [watchlist] score 74.0 — score in Watch band (70–80)
 - **TVSHLTD** [watchlist] score 73.7 — score in Watch band (70–80)
@@ -55,10 +57,10 @@
 - **SHRIPISTON** [rejected] score 64.7 — score below Watch band
 - **NATCAPSUQ** [rejected] score 64.4 — T1 needs more than 22 trading days (~1 month)
 - **KECL** [rejected] score 64.3 — score below Watch band
-- **ADOR** [rejected] score 63.9 — score below Watch band
+- **ADOR** [rejected] score 63.8 — score below Watch band
 - **HINDALCO** [rejected] score 62.7 — T1 needs more than 22 trading days (~1 month)
 - **GUFICBIO** [rejected] score 62.6 — score below Watch band
-- **POLYMED** [rejected] score 62.0 — T1 needs more than 22 trading days (~1 month)
+- **POLYMED** [rejected] score 62.1 — T1 needs more than 22 trading days (~1 month)
 - **ARCHIDPLY** [rejected] score 60.8 — score below Watch band
 - **LMW** [rejected] score 59.6 — score below Watch band
 - **AARTIDRUGS** [rejected] score 59.5 — T1 needs more than 22 trading days (~1 month)
@@ -67,10 +69,10 @@
 - **CENTRUM** [rejected] score 54.9 — T1 needs more than 22 trading days (~1 month)
 - **AGARWALEYE** [rejected] score 53.4 — score below Watch band
 - **NURECA** [rejected] score 51.2 — score below Watch band
-- **PDSL** [rejected] score 48.3 — score below Watch band
+- **PDSL** [rejected] score 48.2 — score below Watch band
 - **VLSFINANCE** [rejected] score 47.9 — T1 needs more than 22 trading days (~1 month)
 - **ASTERDM** [rejected] score 47.4 — score below Watch band
-- **PRIMESECU** [rejected] score 47.4 — score below Watch band
+- **PRIMESECU** [rejected] score 47.3 — score below Watch band
 - **RKFORGE** [rejected] score 46.8 — score below Watch band
 - **RADIOCITY** [rejected] score 43.7 — T1 needs more than 22 trading days (~1 month)
 - **LOTUSDEV** [rejected] score 42.4 — score below Watch band
@@ -98,7 +100,7 @@
 - entry 1995.2 | stop 1878.59 | t1 2228.42 | t2 2345.04 | t3 2461.65 | R:R 2.0
 - qty 5 | deployed 9976.0 (9.98%) | risk ₹583.0
 
-### SJS — Buy (score 81.6)
+### SJS — Buy (score 81.5)
 - S.J.S. Enterprises Limited | risk_sector: Producer Manufacturing
 - entry 2372.0 | stop 2182.24 | t1 2751.52 | t2 2941.28 | t3 3131.04 | R:R 2.0
 - qty 4 | deployed 9488.0 (9.49%) | risk ₹759.0
@@ -133,36 +135,36 @@
 
 ## Swing candidates (top)
 
-- INDGN: score=14 rs_nifty=10.31 deliv=56.04
-- HINDALCO: score=14 rs_nifty=5.46 deliv=48.56
-- POLYMED: score=14 rs_nifty=4.96 deliv=41.15
-- BALPHARMA: score=14 rs_nifty=14.22 deliv=62.36
-- SJS: score=14 rs_nifty=5.08 deliv=49.53
-- SREEL: score=14 rs_nifty=1.42 deliv=79.81
-- PDSL: score=14 rs_nifty=6.15 deliv=41.49
-- SHRIPISTON: score=14 rs_nifty=0.92 deliv=52.99
-- SCPL: score=14 rs_nifty=26.46 deliv=70.85
-- STYLAMIND: score=14 rs_nifty=13.02 deliv=50.08
-- BETA: score=14 rs_nifty=11.78 deliv=43.15
-- TASTYBITE: score=14 rs_nifty=4.48 deliv=45.12
-- ADOR: score=14 rs_nifty=12.06 deliv=52.85
-- RACLGEAR: score=14 rs_nifty=6.04 deliv=43.14
-- BFINVEST: score=14 rs_nifty=4.25 deliv=44.71
+- INDGN: score=14 rs_nifty=11.29 deliv=56.04
+- HINDALCO: score=14 rs_nifty=6.44 deliv=48.56
+- SJS: score=14 rs_nifty=6.06 deliv=49.53
+- PDSL: score=14 rs_nifty=7.13 deliv=41.49
+- STYLAMIND: score=14 rs_nifty=14.0 deliv=50.08
+- SHRIPISTON: score=14 rs_nifty=1.9 deliv=52.99
+- BALPHARMA: score=14 rs_nifty=15.2 deliv=62.36
+- POLYMED: score=14 rs_nifty=5.94 deliv=41.15
+- RACLGEAR: score=14 rs_nifty=7.02 deliv=43.14
+- BETA: score=14 rs_nifty=12.76 deliv=43.15
+- ARMANFIN: score=14 rs_nifty=13.16 deliv=51.29
+- EMCURE: score=14 rs_nifty=8.14 deliv=44.37
+- BFINVEST: score=14 rs_nifty=5.23 deliv=44.71
+- GNA: score=14 rs_nifty=12.81 deliv=44.36
+- TASTYBITE: score=14 rs_nifty=5.46 deliv=45.12
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.12% (neutral)
-- Hang Seng: +0.54% (bull)
-- Shanghai: +1.02% (bull)
-- Kospi: -0.62% (bear)
-- Taiwan: -0.38% (bear)
-- ASX 200: -0.28% (bear)
+- Nikkei: +2.08% (bull)
+- Hang Seng: -0.24% (bear)
+- Shanghai: -0.32% (bear)
+- Kospi: +0.30% (bull)
+- Taiwan: -0.53% (bear)
+- ASX 200: +0.15% (neutral)
 
 ### Europe
-- FTSE 100: +0.31% (bull)
-- DAX: +0.69% (bull)
-- Euro Stoxx 50: +0.33% (bull)
+- FTSE 100: -0.35% (bear)
+- DAX: +0.02% (neutral)
+- Euro Stoxx 50: +0.18% (bull)
 
 ### US
 - S&P 500: -0.06% (neutral)
@@ -171,10 +173,10 @@
 - US VIX: +3.76% (bear)
 
 ### Macro
-- USDINR: -0.11% (neutral)
-- Crude WTI: +5.24% (bull)
-- Brent: +5.17% (bull)
-- DXY: +0.16% (neutral)
+- USDINR: +0.09% (neutral)
+- Crude WTI: +5.19% (bull)
+- Brent: +5.09% (bull)
+- DXY: +0.22% (neutral)
 - US 10Y: +0.84% (bear)
 - India ETF: -0.46% (bear)
 - EM ETF: -0.72% (bear)
@@ -183,54 +185,54 @@
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** defensive
+- **stance:** selective_aggressive
 
-The market is in a bearish regime with a low India VIX, indicating a potential for increased volatility. The Nifty trend is also bearish, with a -0.27% change. Foreign institutional investors have a net inflow of 1974.76, while domestic institutional investors have a net outflow of -1290.29.
+The market is currently in a neutral regime with low overall risk. The Nifty trend is neutral with a 0.05% change, and the India VIX is at a low level of 12.25. The FII net is positive at 1974.76, while the DII net is negative at -1290.29.
 
-- **LLOYDSME** [consider_entry/high] entry=2052.8 stop=1927.52 t1=2303.37 hold=16d — Strong Parkhu score of 88.0 with a buy band
+- **LLOYDSME** [consider_entry/high] entry=2052.8 stop=1927.52 t1=2303.37 hold=16d — Parkhu score of 88.0 with a buy band
 - **SREEL** [consider_entry/medium] entry=221.22 stop=206.39 t1=258.0 hold=20d — Parkhu score of 83.3 with a buy band
-- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
+- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action: tighten or review due to thinning thesis
 
 ### AI stock reviews
 
-- **LLOYDSME** [high] Lloyds Metals & Energy Ltd. is poised for a potential swing trade within a month due to its strong technical indicators, including a bullish trend label, high ADX, and favorable RSI. The stock's recent outperformance against Nifty and its sector further supports this thesis. With a Parkhu score of 88, the setup indicates a high likelihood of success.
-  - catalysts: Bullish trend, High ADX, Favorable RSI, Outperformance
-  - risks: Bearish market regime, Medium overall risk, Non-Energy Minerals sector risks
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 1927.52, indicating a failure of the bullish thesis.
-- **SREEL** [medium] The setup for SREEL fits a ≤1-month swing as it has a bullish trend label, a high delivery percentage of 79.81%, and a strong relative performance against Nifty and its sector over the past month. The RSI of 57.88 and ADX of 35.97 indicate a potential for further upside. The stock is also trading at a reasonable distance from its 52-week high, with a -14.26% gap, providing room for growth.
-  - catalysts: Bullish trend, High delivery percentage, Strong relative performance
-  - risks: Market regime is bearish, India VIX is elevated
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 206.39. A close eye should be kept on the overall market regime and India VIX levels.
-- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with a high ADX and RSI, indicating a potential for continuation. The recent price action has also shown a significant return over the past month, with a strong technical rating. The distance from the 52-week high also provides room for upside. The overall market regime is bearish, but the stock's relative strength against the Nifty and its sector is a positive sign.
-  - catalysts: Earnings anticipation, Sector outperformance, Technical breakout
-  - risks: Market regime, Economic downturn, Sector rotation
-  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in the India VIX. The stock's price action around the earnings announcement will also be crucial.
-- **EMCURE** [high] EMCURE fits a ≤1-month swing due to its strong bullish trend, with an ADX of 37.91 and RSI of 66.05, indicating a potential continuation of its recent 9.7% 1-month return. The stock's distance from its 52-week high is only -2.58%, suggesting a possible breakout. With a Parkhu score of 81.7, the overall technical rating is a strong buy. The recent 1-month return of 9.7% outperforming Nifty and its sector is a positive sign.
-  - catalysts: Strong trend, Recent outperformance, Breakout potential
-  - risks: Bearish market regime, Medium overall risk, Health Technology sector risks
-  - watch: Triggers for this setup include a breakout above recent highs, while invalidation cues would be a close below the stop level of 1878.59, indicating a failure to continue the bullish trend.
-- **SJS** [high] S.J.S. Enterprises Limited fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, such as a high ADX and a rising RSI. The company's return over the past month has outperformed the Nifty and its sector, indicating a strong relative strength. Additionally, the stock is trading near its 52-week high, but still has room to grow. The overall market regime is bearish, but the medium risk sector and medium overall risk make this a viable swing opportunity.
-  - catalysts: Bullish trend, High ADX, Rising RSI, Outperforming Nifty and sector
-  - risks: Bearish market regime, Medium overall risk, High India VIX
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a drop below the stop level. The stock's price action and ability to hold above the entry level will be crucial in determining the success of this swing.
+- **LLOYDSME** [high] LLOYDSME fits a ≤1-month swing due to its bullish trend label, high ADX, and strong RSI. The stock has also outperformed Nifty and its sector in the last month, with a return of 16.97% and 21.38% respectively. This momentum, combined with a low overall risk regime and a high Parkhu score of 88.0, makes it an attractive swing trade opportunity.
+  - catalysts: Bullish trend, High ADX, Strong RSI, Outperformance vs Nifty and sector
+  - risks: Neutral market regime, Non-Energy Minerals sector risks
+  - watch: Triggers for this trade include a breakout above the current price level, while invalidation cues include a drop below the stop level of 1927.52. A close eye should be kept on the stock's ability to hold above its recent gains.
+- **SREEL** [high] SREEL fits a ≤1-month swing due to its bullish trend label, high delivery percentage, and recent outperformance against Nifty and its sector. The stock's RSI14 is below 60, indicating room for further upside. With a Parkhu score of 83.3, the setup appears promising. The distance from the 52-week high also suggests potential for a rebound.
+  - catalysts: Earnings, Sector Rebound, Short Squeeze
+  - risks: Market Downturn, Sector Underperformance, Earnings Miss
+  - watch: Triggers for this setup include a strong earnings report or a sector-wide rebound, while invalidation cues would be a break below the stop level or a significant increase in India VIX.
+- **STYLAMIND** [high] The setup in STYLAMIND fits a ≤1-month swing due to its strong bullish trend, high ADX, and strong RSI. The stock has also outperformed Nifty and its sector in the last month, indicating strong momentum. With a low overall risk regime and a strong technical rating, this setup has a high potential for a short-term swing.
+  - catalysts: Strong momentum, Outperforming sector, Low risk regime
+  - risks: Market volatility, Earnings surprise, Sector rotation
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level. The stock's price action around the earnings date should also be closely watched.
+- **EMCURE** [high] Emcure Pharmaceuticals Limited (EMCURE) is poised for a ≤1-month swing due to its strong bullish trend, high Parkhu score of 81.7, and recent outperformance against Nifty and its sector. The company's health technology sector has low overall risk, and the current Neutral market regime with low India VIX of 12.25 supports a potential upside. With a strong technical rating and high delivery percentage, EMCURE is well-positioned for a short-term swing.
+  - catalysts: Strong Bullish Trend, High Parkhu Score, Recent Outperformance
+  - risks: Market Regime Change, Sector Rotation, Earnings Disappointment
+  - watch: Triggers for this swing include a breakout above the recent highs, while invalidation cues would be a close below the stop level of 1878.59, indicating a reversal of the trend.
+- **SJS** [high] S.J.S. Enterprises Limited (SJS) is poised for a ≤1-month swing due to its bullish trend label, high ADX, and recent outperformance against Nifty and its sector. The stock's RSI is at 55, indicating room for further upside. With a Parkhu score of 81.5 and a 'Buy' technical rating, the setup appears favorable.
+  - catalysts: Bullish trend, High ADX, Outperformance
+  - risks: Earnings uncertainty, Market volatility
+  - watch: Triggers include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level of 2182.24, indicating a failed swing setup.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: LLOYDSME, SREEL, Caveats: Limited score coverage, provisional scores
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: LLOYDSME, SREEL, Caveats: Limited score coverage, provisional scores, and no trade outcome history
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Analysts/Institutional Investor Meet/Con. Call Updates (SKFINDUS) — Earnings call scheduled for August 14, 2026, may impact stock price and investor sentiment
-2. **[high]** Analysts/Institutional Investor Meet/Con. Call Updates (QPOWER) — Earnings conference call recording available, may influence investor decisions
-3. **[medium]** Copy of Newspaper Publication (ROLLT) — Notice of Extra Ordinary General Meeting (EGM) may lead to changes in company's strategy or policies
-4. **[medium]** Analysts/Institutional Investor Meet/Con. Call Updates (COFORGE) — Schedule of meet with analysts and institutional investors may impact stock price
-5. **[low]** Change in Director(s) (GSLSU) — Change in director may have minimal impact on company's operations or stock price
-6. **[low]** General Updates (GSLSU) — General updates may not have significant impact on investor sentiment or stock price
-7. **[low]** Analysts/Institutional Investor Meet/Con. Call Updates (VINCOFE) — Transcript of earnings conference call may have minimal impact on investor decisions
-8. **[low]** Press Release (HLEGLAS) — Press release about Q1 FY 2026-27 results may have minimal impact on investor sentiment
-9. **[low]** General Updates (WEBELSOLAR) — General updates may not have significant impact on investor sentiment or stock price
-10. **[low]** Press Release (ASTRAZEN) — Press release may have minimal impact on investor sentiment or stock price
+1. **[high]** India VIX at 12.25, overall risk sentiment Low — The low India VIX indicates a stable market, which could impact investor decisions
+2. **[medium]** FII net inflow at 1974.76, indicating positive foreign investor sentiment — Foreign investor sentiment can significantly influence the market
+3. **[low]** SKFINDUS schedules earnings call on August 14, 2026 (SKFINDUS) — Earnings calls can provide insight into a company's performance
+4. **[low]** QPOWER releases link to earnings conference call recording (QPOWER) — Earnings conference calls can impact investor decisions
+5. **[low]** AUTOAXLES releases transcript and recording link of earnings conference call (AUTOAXLES) — Earnings conference calls can provide insight into a company's performance
+6. **[low]** ROLLT publishes newspaper publication for EGM notice (ROLLT) — EGM notices can be important for shareholder decisions
+7. **[low]** ASTRAZEN releases proceedings of annual general meeting (ASTRAZEN) — AGM proceedings can provide insight into a company's decisions
+8. **[low]** COFORGE schedules meet with analysts/institutional investors (COFORGE) — Meetings with analysts and institutional investors can impact investor sentiment
+9. **[low]** GSLSU announces change in director (GSLSU) — Changes in company leadership can impact investor decisions
+10. **[low]** HLEGLAS releases press release for Q1 FY 2026-27 (HLEGLAS) — Quarterly financial updates can impact investor decisions
 
 ## Deep-dive URLs (after push)
 
