@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-11
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-11T18:07:15.850494+05:30
+- **generated_at_ist:** 2026-08-11T19:31:22.862947+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,7 +9,7 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.46%)
 - india_vix: 11.85 (Low)
-- fii_net: 1974.76 | dii_net: -1290.29
+- fii_net: 258.55 | dii_net: 24.77
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
@@ -115,25 +115,30 @@
 
 ## Needs action
 
+- **BTML**: EXIT — STOP HIT — session low at/below stop ₹7.87 (last ₹8.55)
 - **ICICIBANK**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
+
+## Closed today
+
+- BTML: {'trade_id': '2026-08-11-BTML', 'symbol': 'BTML', 'company': 'Bodhi Tree Multimedia Ltd.', 'risk_sector': 'Consumer Services', 'date_opened': '2026-08-11', 'taken': None, 'entry': 8.55, 'stop': 7.87, 't1': 10.5, 't2': 11.18, 't3': 11.87, 'structure_invalidation': 7.23, 'horizon_days_t1': 11, 'horizon_days_t2': 19, 'score_at_open': 80.4, 'qty': 1169, 'risk_rupees': 795.0, 'status': 'closed', 'last_price': 8.55, 'last_checked': '2026-08-11', 'mfe_pct': 7.02, 'mae_pct': -8.77, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-08-11', 'exit_price': 8.55, 'exit_reason': 'stop', 'pct_return': 0.0, 'r_multiple': 0.0, 'days_held': 0}
 
 ## Swing candidates (top)
 
 - CANHLIFE: score=14 rs_nifty=3.16 deliv=69.93
 - AUSOMENT: score=14 rs_nifty=20.45 deliv=85.04
-- LLOYDSME: score=14 rs_nifty=12.09 deliv=41.13
 - BFINVEST: score=14 rs_nifty=3.45 deliv=49.73
-- TASTYBITE: score=14 rs_nifty=4.05 deliv=57.73
-- NILKAMAL: score=14 rs_nifty=41.56 deliv=43.37
+- LLOYDSME: score=14 rs_nifty=12.09 deliv=41.13
 - AGARWALEYE: score=14 rs_nifty=10.52 deliv=42.24
-- FMGOETZE: score=14 rs_nifty=6.04 deliv=60.39
-- SREEL: score=14 rs_nifty=7.33 deliv=74.83
+- ASTERDM: score=14 rs_nifty=4.46 deliv=60.88
+- TASTYBITE: score=14 rs_nifty=4.05 deliv=57.73
 - KANPRPLA: score=14 rs_nifty=13.16 deliv=63.87
+- SREEL: score=14 rs_nifty=7.33 deliv=74.83
+- NILKAMAL: score=14 rs_nifty=41.56 deliv=43.37
+- FMGOETZE: score=14 rs_nifty=6.04 deliv=60.39
 - RACLGEAR: score=13 rs_nifty=10.02 deliv=38.01
-- UJJIVANSFB: score=13 rs_nifty=9.81 deliv=52.06
-- JSWENERGY: score=13 rs_nifty=3.94 deliv=45.84
-- UNIONBANK: score=13 rs_nifty=14.57 deliv=52.56
 - INDGN: score=13 rs_nifty=11.54 deliv=59.55
+- JUBLINGREA: score=13 rs_nifty=1.31 deliv=41.96
+- BALPHARMA: score=13 rs_nifty=10.66 deliv=65.05
 
 ## World markets (India cues)
 
@@ -143,27 +148,27 @@
 - Shanghai: -0.82% (bear)
 - Kospi: +0.73% (bull)
 - Taiwan: +0.43% (bull)
-- ASX 200: +0.19% (bull)
+- ASX 200: -0.33% (bear)
 
 ### Europe
-- FTSE 100: +0.13% (neutral)
-- DAX: +0.28% (bull)
-- Euro Stoxx 50: +0.37% (bull)
+- FTSE 100: +0.25% (bull)
+- DAX: +0.43% (bull)
+- Euro Stoxx 50: +0.55% (bull)
 
 ### US
-- S&P 500: -0.06% (neutral)
-- Nasdaq: -0.32% (bear)
-- Dow: -0.11% (neutral)
-- US VIX: +0.32% (neutral)
+- S&P 500: +0.12% (neutral)
+- Nasdaq: -0.10% (neutral)
+- Dow: +0.40% (bull)
+- US VIX: +0.58% (bear)
 
 ### Macro
-- USDINR: +0.24% (neutral)
-- Crude WTI: +0.49% (bull)
-- Brent: +0.35% (bull)
-- DXY: +0.05% (neutral)
-- US 10Y: -0.15% (neutral)
-- India ETF: -0.46% (bear)
-- EM ETF: -0.72% (bear)
+- USDINR: +0.23% (neutral)
+- Crude WTI: -0.94% (bear)
+- Brent: -0.96% (bear)
+- DXY: -0.03% (neutral)
+- US 10Y: -0.66% (bull)
+- India ETF: +0.07% (neutral)
+- EM ETF: +0.72% (bull)
 
 
 ## Groq desk note
@@ -171,45 +176,44 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market is in a bearish regime with a low India VIX, indicating a potential for increased volatility. The Nifty trend is also bearish, with a 0.46% decrease. Foreign institutional investors have a net positive inflow, while domestic institutional investors have a net outflow.
+The Indian market is currently in a bearish regime with a low India VIX. Despite this, the Asia and Europe cues are bullish. The Nifty trend is also bearish with a percentage change of -0.46. Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) have net investments of 258.55 and 24.77 respectively.
 
-- **SREEL** [consider_entry/medium] entry=230.7 stop=212.42 t1=267.26 hold=16d — Buy band with a Parkhu score of 86.7
-- **SAHYADRI** [consider_entry/medium] entry=340.55 stop=313.31 t1=395.04 hold=15d — Buy band with a Parkhu score of 83.8
-- **BTML** [consider_entry/low] entry=8.55 stop=7.87 t1=10.5 hold=11d — Buy band with a Parkhu score of 80.4
-- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Tighten/Review stop due to trend no longer being tradeable
+- **SREEL** [consider_entry/high] entry=230.7 stop=212.42 t1=267.26 hold=16d — Parkhu score of 86.7 with a buy band
+- **SAHYADRI** [consider_entry/high] entry=340.55 stop=313.31 t1=395.04 hold=15d — Parkhu score of 83.8 with a buy band
+- **BTML** [stand_aside/low] entry=8.55 stop=7.87 t1=10.5 hold=11d — Recent stop hit, reassess before re-entry
 
 ### AI stock reviews
 
-- **SREEL** [high] SREEL's recent price action and strong technical indicators such as a high Parkhu score of 86.7, a bullish trend label, and a strong RSI of 65.93, suggest a potential short-term swing opportunity in a bearish market regime. The stock's strong delivery percentage of 74.83% and outperformance against the Nifty and its sector over the past month also support this thesis. With a relatively low distance from its 52-week high and a favorable risk-reward ratio of 2.0 for the first target, this setup fits a ≤1-month swing. The stock's strong technical rating and recent returns also contribute to its potential for a short-term swing.
-  - catalysts: Strong technical indicators, High delivery percentage, Outperformance against Nifty and sector
-  - risks: Bearish market regime, High India VIX, Retail trade sector risks
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a breach of the stop level at 212.42. A close eye should be kept on the stock's price action and technical indicators to adjust the trade accordingly.
-- **SAHYADRI** [high] The setup for SAHYADRI fits a ≤1-month swing due to its recent bullish trend, with the stock showing a return of 21.36% over the last month, outperforming both Nifty and its sector. The high delivery percentage of 75.85% and a positive relative strength against Nifty and its sector over the last month further support the bullish stance. The stock is also close to its 52-week high, with a distance of only -4.07%, indicating potential for a breakout.
+- **SREEL** [high] This setup fits a ≤1-month swing as SREEL has shown a strong bullish trend with an ADX of 37.12 and RSI of 65.93, indicating a potential for further upside. The stock has outperformed Nifty and its sector in the last month, with returns of 8.41% and 10.16% respectively. The distance from its 52-week high is -10.58%, suggesting room for growth. The overall risk regime is medium, but the stock's strong technical rating and high Parkhu score of 86.7 support a bullish outlook.
+  - catalysts: Strong trend, Outperformance vs Nifty and sector, Room for growth from 52-week high
+  - risks: Bearish market regime, Medium overall risk, Retail trade sector risks
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 212.42. The stock's ability to hold above its recent gains will be crucial to the success of this trade.
+- **SAHYADRI** [high] The setup for SAHYADRI fits a ≤1-month swing due to its recent bullish trend, high delivery percentage, and outperformance against Nifty and its sector over the last month. The stock's RSI14 is at 68.73, indicating a potential for further upside without being overbought. The distance from its 52-week high is only -4.07%, suggesting room for growth.
   - catalysts: Bullish Trend, High Delivery Percentage, Outperformance
-  - risks: Market Volatility, Sectoral Risks, Overbought Conditions
-  - watch: Triggers for this setup include the stock breaking out above its recent highs, while invalidation cues would be a breach of the stop level at 313.31, indicating a failure of the bullish trend.
-- **BTML** [high] The setup for BTML fits a ≤1-month swing due to its strong bullish trend label and high RSI14 value of 74.3532671709234, indicating potential for a short-term price increase. The stock's recent 1-month return of 43.69747899159665% outperforms the Nifty and its sector, suggesting momentum. The distance from the 52-week high is -18.57%, providing room for growth.
-  - catalysts: Strong trend, High RSI14, Outperforming sector
-  - risks: Bearish market regime, Medium overall risk, High RSI14 may lead to reversal
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 7.87, indicating a failure of the bullish trend.
+  - risks: Market Regime is Bearish, Overall Risk is Medium
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level of 313.31, indicating a failure of the bullish trend.
+- **BTML** [high] The setup in BTML fits a ≤1-month swing due to its strong bullish trend, high RSI, and significant outperformance against Nifty and its sector. The high delivery percentage and strong technical rating further support this thesis. With a reasonable ATR percentage of price, the stock has potential for a short-term upside.
+  - catalysts: Bullish trend, High RSI, Outperformance
+  - risks: Market regime is bearish, High India VIX, Consumer Services sector risk
+  - watch: Triggers for this setup include a breakout above the current levels, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish trend to sustain.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, SAHYADRI, BTML, Caveats: Low India VIX, FII net positive inflow, DII net outflow
+Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, SAHYADRI, Caveats: Low India VIX, bullish Asia and Europe cues, monitor price action and adjust stop losses accordingly
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Manappuram Finance Limited has informed the Exchange that Record date for the purpose of Dividend  is 17-Aug-2026 (MANAPPURAM) — Record date announcement for dividend payment, may impact stock price
-2. **[high]** OnMobile Global Limited has informed the Exchange about the 26th Annual General Meeting of the members (ONMOBILE) — Annual General Meeting updates, may impact stock price and investor sentiment
-3. **[high]** Syncom Formulations Limited has informed the Exchange about the Outcome of the 2/2026-27 Meeting of the Board of Directors (SYNCOMF) — Board meeting outcome, may impact stock price and investor sentiment
-4. **[medium]** Repco Home Finance Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (REPCOHOME) — Financial results announcement, may impact stock price
-5. **[medium]** Vidya Wires Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (VIDYAWIRES) — Financial results announcement, may impact stock price
-6. **[medium]** Popular Vehicles and Services Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026 (PVSL) — Financial results announcement, may impact stock price
-7. **[low]** Focus Lighting and Fixtures Limited has informed the Exchange regarding Outcome of Board Meeting held on August 11, 2026 (FOCUS) — Board meeting outcome, may have limited impact on stock price
-8. **[low]** Alpa Laboratories Limited has informed the Exchange regarding 'clarification board meeting date' (ALPA) — Board meeting date clarification, may have limited impact on stock price
-9. **[low]** Kakatiya Cement Sugar & Industries Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on August 10, 2026 (KAKATCEM) — Annual General Meeting updates, may have limited impact on stock price
-10. **[low]** Bank Of Baroda has informed the Exchange about Investor Conference Intimation (BANKBARODA) — Investor conference intimation, may have limited impact on stock price
+1. **[high]** Q1 FY27 Financial Results (POLYPLEX) — Major catalyst and risk event with high news score
+2. **[high]** Q1 FY27 Financial Results (LAXMIDENTL) — Major catalyst and risk event with high news score
+3. **[high]** Earnings Conference call - Audio Recording for Q1 FY27 (CHOICEIN) — Major catalyst and risk event with high news score
+4. **[high]** Q1 FY27 Financial Results (MANAKALUCO) — Major catalyst and risk event with high news score
+5. **[high]** Q1 FY27 Financial Results (MANINDS) — Major catalyst and risk event with high news score
+6. **[medium]** Outcome of Board Meeting (NECCLTD) — Risk event with low news score
+7. **[medium]** Outcome of Board Meeting Updates (MANAKALUCO) — Risk event with low news score
+8. **[low]** Credit Rating- New (IRIS) — No major catalyst or risk event
+9. **[low]** General Updates (ATLANTAA) — No major catalyst or risk event
+10. **[low]** Statement of deviation(s) or variation(s) under Reg. 32 (ATL) — No major catalyst or risk event
 
 ## Deep-dive URLs (after push)
 

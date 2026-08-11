@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-11",
-  "generated_at_ist": "2026-08-11T18:07:15.850494+05:30",
+  "generated_at_ist": "2026-08-11T19:31:22.862947+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -38,24 +38,24 @@
     "best_sector_perf_1m": 7.79,
     "worst_sector": "Communications",
     "worst_sector_perf_1m": -4.27,
-    "fii_net": 1974.76,
-    "dii_net": -1290.29,
-    "crude": 82.53,
-    "crude_pct_change": 0.49,
+    "fii_net": 258.55,
+    "dii_net": 24.77,
+    "crude": 81.36,
+    "crude_pct_change": -0.94,
     "usdinr": 95.43,
-    "usdinr_pct_change": 0.24,
-    "us_sp500_pct": -0.06,
-    "us_dow_pct": -0.11,
-    "us_vix": 15.51,
-    "us_vix_pct": 0.32,
-    "dxy": 99.86,
-    "dxy_pct": 0.05,
-    "us_10y": 4.69,
+    "usdinr_pct_change": 0.23,
+    "us_sp500_pct": 0.12,
+    "us_dow_pct": 0.4,
+    "us_vix": 15.55,
+    "us_vix_pct": 0.58,
+    "dxy": 99.79,
+    "dxy_pct": -0.03,
+    "us_10y": 4.67,
     "asia_cue": "Bullish",
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-08-11T18:06:51.204274+05:30"
+    "generated_at_ist": "2026-08-11T19:30:58.143666+05:30"
   },
   "world_markets": [
     {
@@ -104,10 +104,10 @@
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 9250.6,
-          "pct_change": 0.19,
-          "tone": "bull",
-          "session_date": "2026-08-11"
+          "value": 9232.6,
+          "pct_change": -0.33,
+          "tone": "bear",
+          "session_date": "2026-08-10"
         }
       ]
     },
@@ -117,24 +117,24 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10876.08,
-          "pct_change": 0.13,
-          "tone": "neutral",
+          "value": 10889.72,
+          "pct_change": 0.25,
+          "tone": "bull",
           "session_date": "2026-08-11"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 26397.45,
-          "pct_change": 0.28,
+          "value": 26435.96,
+          "pct_change": 0.43,
           "tone": "bull",
           "session_date": "2026-08-11"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6559.91,
-          "pct_change": 0.37,
+          "value": 6571.82,
+          "pct_change": 0.55,
           "tone": "bull",
           "session_date": "2026-08-11"
         }
@@ -146,33 +146,33 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7753.11,
-          "pct_change": -0.06,
+          "value": 7762.48,
+          "pct_change": 0.12,
           "tone": "neutral",
-          "session_date": "2026-08-10"
+          "session_date": "2026-08-11"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 26605.36,
-          "pct_change": -0.32,
-          "tone": "bear",
-          "session_date": "2026-08-10"
+          "value": 26578.06,
+          "pct_change": -0.1,
+          "tone": "neutral",
+          "session_date": "2026-08-11"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 53975.98,
-          "pct_change": -0.11,
-          "tone": "neutral",
-          "session_date": "2026-08-10"
+          "value": 54193.46,
+          "pct_change": 0.4,
+          "tone": "bull",
+          "session_date": "2026-08-11"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 15.51,
-          "pct_change": 0.32,
-          "tone": "neutral",
+          "value": 15.55,
+          "pct_change": 0.58,
+          "tone": "bear",
           "session_date": "2026-08-11"
         }
       ]
@@ -184,57 +184,57 @@
           "label": "USDINR",
           "metric": "USDINR",
           "value": 95.43,
-          "pct_change": 0.24,
+          "pct_change": 0.23,
           "tone": "neutral",
           "session_date": "2026-08-11"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 82.53,
-          "pct_change": 0.49,
-          "tone": "bull",
+          "value": 81.36,
+          "pct_change": -0.94,
+          "tone": "bear",
           "session_date": "2026-08-11"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 88.03,
-          "pct_change": 0.35,
-          "tone": "bull",
+          "value": 86.88,
+          "pct_change": -0.96,
+          "tone": "bear",
           "session_date": "2026-08-11"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 99.86,
-          "pct_change": 0.05,
+          "value": 99.79,
+          "pct_change": -0.03,
           "tone": "neutral",
           "session_date": "2026-08-11"
         },
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 4.69,
-          "pct_change": -0.15,
-          "tone": "neutral",
+          "value": 4.67,
+          "pct_change": -0.66,
+          "tone": "bull",
           "session_date": "2026-08-11"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 50.14,
-          "pct_change": -0.46,
-          "tone": "bear",
-          "session_date": "2026-08-10"
+          "value": 50.17,
+          "pct_change": 0.07,
+          "tone": "neutral",
+          "session_date": "2026-08-11"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 65.17,
-          "pct_change": -0.72,
-          "tone": "bear",
-          "session_date": "2026-08-10"
+          "value": 65.64,
+          "pct_change": 0.72,
+          "tone": "bull",
+          "session_date": "2026-08-11"
         }
       ]
     }
@@ -253,7 +253,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "PNB",
@@ -294,7 +293,8 @@
         "DIVGIITTS",
         "EMUDHRA",
         "UTTAMSUGAR",
-        "DYNPRO"
+        "DYNPRO",
+        "UNIONBANK"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -313,7 +313,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "PNB",
@@ -354,7 +353,8 @@
         "DIVGIITTS",
         "EMUDHRA",
         "UTTAMSUGAR",
-        "DYNPRO"
+        "DYNPRO",
+        "UNIONBANK"
       ],
       "dropped_symbols": [
         "BALUFORGE",
@@ -424,7 +424,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "CAPLIPOINT",
@@ -465,7 +464,8 @@
         "JSWDULUX",
         "THOMASCOTT",
         "SJS",
-        "M&M"
+        "M&M",
+        "STYLAMIND"
       ],
       "dropped_symbols": [
         "PNB",
@@ -496,7 +496,6 @@
         "SHILCTECH",
         "KIRIINDUS",
         "DBCORP",
-        "DOLLAR",
         "SIRCA",
         "BANKINDIA",
         "ALICON",
@@ -517,7 +516,8 @@
         "MODIS",
         "SHINDL",
         "AHLUCONT",
-        "SBICARD"
+        "SBICARD",
+        "AYE"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -535,7 +535,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "CAPLIPOINT",
@@ -576,7 +575,8 @@
         "JSWDULUX",
         "THOMASCOTT",
         "SJS",
-        "M&M"
+        "M&M",
+        "STYLAMIND"
       ],
       "dropped_symbols": [
         "SANDHAR",
@@ -660,7 +660,6 @@
         "SEAMECLTD",
         "INDIANB",
         "SRM",
-        "CARYSIL",
         "KERNEX",
         "SYNCOMF",
         "AIAENG",
@@ -683,6 +682,7 @@
         "ENGINERSIN",
         "AEROENTER",
         "TDPOWERSYS",
+        "CARYSIL",
         "ACCENTMIC",
         "SWELECTES",
         "SBIN",
@@ -692,7 +692,6 @@
         "INDOTECH",
         "LANCORHOL",
         "FINEORG",
-        "PRECWIRE",
         "CHOLAFIN",
         "NATIONALUM",
         "PERSISTENT",
@@ -705,7 +704,8 @@
         "ARVIND",
         "ICICIBANK",
         "NAVINFLUOR",
-        "KPIL"
+        "KPIL",
+        "PNBHOUSING"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -995,6 +995,7 @@
         "MOREPENLAB",
         "GATECH",
         "DYCL",
+        "SENCO",
         "BAFNAPH",
         "MOLDTECH",
         "UYFINCORP",
@@ -1011,7 +1012,6 @@
         "APARINDS",
         "ATALREAL",
         "SMLMAH",
-        "SENCO",
         "SAHASRA",
         "SPECTRUM",
         "KDDL",
@@ -1986,7 +1986,6 @@
           "INDIANB",
           "HARRMALAYA",
           "SRM",
-          "CARYSIL",
           "FIEMIND",
           "KERNEX",
           "PNB",
@@ -2027,7 +2026,8 @@
           "DIVGIITTS",
           "EMUDHRA",
           "UTTAMSUGAR",
-          "DYNPRO"
+          "DYNPRO",
+          "UNIONBANK"
         ],
         "dropped_symbols": [],
         "survivor_symbols_truncated": true,
@@ -2049,7 +2049,6 @@
           "INDIANB",
           "HARRMALAYA",
           "SRM",
-          "CARYSIL",
           "FIEMIND",
           "KERNEX",
           "PNB",
@@ -2090,7 +2089,8 @@
           "DIVGIITTS",
           "EMUDHRA",
           "UTTAMSUGAR",
-          "DYNPRO"
+          "DYNPRO",
+          "UNIONBANK"
         ],
         "dropped_symbols": [
           "BALUFORGE",
@@ -2163,7 +2163,6 @@
           "INDIANB",
           "HARRMALAYA",
           "SRM",
-          "CARYSIL",
           "FIEMIND",
           "KERNEX",
           "CAPLIPOINT",
@@ -2204,7 +2203,8 @@
           "JSWDULUX",
           "THOMASCOTT",
           "SJS",
-          "M&M"
+          "M&M",
+          "STYLAMIND"
         ],
         "dropped_symbols": [
           "PNB",
@@ -2235,7 +2235,6 @@
           "SHILCTECH",
           "KIRIINDUS",
           "DBCORP",
-          "DOLLAR",
           "SIRCA",
           "BANKINDIA",
           "ALICON",
@@ -2256,7 +2255,8 @@
           "MODIS",
           "SHINDL",
           "AHLUCONT",
-          "SBICARD"
+          "SBICARD",
+          "AYE"
         ],
         "survivor_symbols_truncated": true,
         "dropped_symbols_truncated": true
@@ -2277,7 +2277,6 @@
           "INDIANB",
           "HARRMALAYA",
           "SRM",
-          "CARYSIL",
           "FIEMIND",
           "KERNEX",
           "CAPLIPOINT",
@@ -2318,7 +2317,8 @@
           "JSWDULUX",
           "THOMASCOTT",
           "SJS",
-          "M&M"
+          "M&M",
+          "STYLAMIND"
         ],
         "dropped_symbols": [
           "SANDHAR",
@@ -2405,7 +2405,6 @@
           "SEAMECLTD",
           "INDIANB",
           "SRM",
-          "CARYSIL",
           "KERNEX",
           "SYNCOMF",
           "AIAENG",
@@ -2428,6 +2427,7 @@
           "ENGINERSIN",
           "AEROENTER",
           "TDPOWERSYS",
+          "CARYSIL",
           "ACCENTMIC",
           "SWELECTES",
           "SBIN",
@@ -2437,7 +2437,6 @@
           "INDOTECH",
           "LANCORHOL",
           "FINEORG",
-          "PRECWIRE",
           "CHOLAFIN",
           "NATIONALUM",
           "PERSISTENT",
@@ -2450,7 +2449,8 @@
           "ARVIND",
           "ICICIBANK",
           "NAVINFLUOR",
-          "KPIL"
+          "KPIL",
+          "PNBHOUSING"
         ],
         "survivor_symbols_truncated": true,
         "dropped_symbols_truncated": true
@@ -2749,6 +2749,7 @@
           "MOREPENLAB",
           "GATECH",
           "DYCL",
+          "SENCO",
           "BAFNAPH",
           "MOLDTECH",
           "UYFINCORP",
@@ -2765,7 +2766,6 @@
           "APARINDS",
           "ATALREAL",
           "SMLMAH",
-          "SENCO",
           "SAHASRA",
           "SPECTRUM",
           "KDDL",
@@ -3105,22 +3105,22 @@
     ],
     "book": {
       "open": 22,
-      "needs_action": 1,
+      "needs_action": 2,
       "avg_mfe_pct": 5.06,
       "avg_mae_pct": -2.86
     },
     "ideas_count": 3,
     "score_coverage_pct": 65.0,
     "kill_status": {
-      "closed": 10,
+      "closed": 11,
       "min_closed": 20,
       "min_win_rate_pct": 40.0,
       "min_avg_return_pct": 0.0,
       "win_rate_pct": 0.0,
-      "avg_return_pct": -4.01,
+      "avg_return_pct": -3.65,
       "status": "insufficient_sample",
       "pause": false,
-      "detail": "Need 20 closed suggestions before the kill bar applies (have 10)."
+      "detail": "Need 20 closed suggestions before the kill bar applies (have 11)."
     },
     "caveats": [
       "35 of KB-14's 100 score points cannot be computed (news, institutional, options, macro); scores are provisional",
@@ -3623,7 +3623,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 2,
+        "reconfirmed_count": 3,
         "notes": null
       },
       {
@@ -3681,7 +3681,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 4,
+        "reconfirmed_count": 5,
         "notes": null
       },
       {
@@ -3773,6 +3773,26 @@
       }
     ],
     "review": [
+      {
+        "symbol": "BTML",
+        "date_opened": "2026-08-11",
+        "status": "open",
+        "entry": 8.55,
+        "stop": 7.87,
+        "t1": 10.5,
+        "price": 8.55,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 11,
+        "mfe_pct": 7.02,
+        "mae_pct": -8.77,
+        "gap_flag": false,
+        "action": "EXIT \u2014 STOP HIT",
+        "detail": "session low at/below stop \u20b97.87 (last \u20b98.55)",
+        "score_at_open": 80.4,
+        "score_now": null
+      },
       {
         "symbol": "ICICIBANK",
         "date_opened": "2026-08-05",
@@ -4196,6 +4216,26 @@
     ],
     "needs_action": [
       {
+        "symbol": "BTML",
+        "date_opened": "2026-08-11",
+        "status": "open",
+        "entry": 8.55,
+        "stop": 7.87,
+        "t1": 10.5,
+        "price": 8.55,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 11,
+        "mfe_pct": 7.02,
+        "mae_pct": -8.77,
+        "gap_flag": false,
+        "action": "EXIT \u2014 STOP HIT",
+        "detail": "session low at/below stop \u20b97.87 (last \u20b98.55)",
+        "score_at_open": 80.4,
+        "score_now": null
+      },
+      {
         "symbol": "ICICIBANK",
         "date_opened": "2026-08-05",
         "status": "open",
@@ -4216,7 +4256,43 @@
         "score_now": null
       }
     ],
-    "closed_today": [],
+    "closed_today": [
+      {
+        "trade_id": "2026-08-11-BTML",
+        "symbol": "BTML",
+        "company": "Bodhi Tree Multimedia Ltd.",
+        "risk_sector": "Consumer Services",
+        "date_opened": "2026-08-11",
+        "taken": null,
+        "entry": 8.55,
+        "stop": 7.87,
+        "t1": 10.5,
+        "t2": 11.18,
+        "t3": 11.87,
+        "structure_invalidation": 7.23,
+        "horizon_days_t1": 11,
+        "horizon_days_t2": 19,
+        "score_at_open": 80.4,
+        "qty": 1169,
+        "risk_rupees": 795.0,
+        "status": "closed",
+        "last_price": 8.55,
+        "last_checked": "2026-08-11",
+        "mfe_pct": 7.02,
+        "mae_pct": -8.77,
+        "gap_flag": false,
+        "hit_t1": false,
+        "hit_t2": false,
+        "reconfirmed_count": 0,
+        "notes": null,
+        "date_closed": "2026-08-11",
+        "exit_price": 8.55,
+        "exit_reason": "stop",
+        "pct_return": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0
+      }
+    ],
     "as_of": "2026-08-11"
   },
   "swing_candidates_top": [
@@ -4257,24 +4333,6 @@
       "sector": "Finance"
     },
     {
-      "symbol": "LLOYDSME",
-      "close": 1986.2,
-      "score": 14,
-      "perf_1m": 13.1737891738,
-      "rs_vs_nifty_1m": 12.09,
-      "rs_vs_sector_1m": 12.48,
-      "deliv_pct": 41.13,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.99,
-      "atr": 65.309746263,
-      "stop_1_5atr": 1888.24,
-      "target_5pct": 2085.51,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Non-Energy Minerals"
-    },
-    {
       "symbol": "BFINVEST",
       "close": 468.3,
       "score": 14,
@@ -4293,40 +4351,22 @@
       "sector": "Finance"
     },
     {
-      "symbol": "TASTYBITE",
-      "close": 9357.0,
+      "symbol": "LLOYDSME",
+      "close": 1986.2,
       "score": 14,
-      "perf_1m": 5.1348314607,
-      "rs_vs_nifty_1m": 4.05,
-      "rs_vs_sector_1m": 6.88,
-      "deliv_pct": 57.73,
+      "perf_1m": 13.1737891738,
+      "rs_vs_nifty_1m": 12.09,
+      "rs_vs_sector_1m": 12.48,
+      "deliv_pct": 41.13,
       "pct_change_oi": null,
-      "upside_to_target_pct": 13.33,
-      "atr": 337.6361607632,
-      "stop_1_5atr": 8850.55,
-      "target_5pct": 9824.85,
+      "upside_to_target_pct": 6.99,
+      "atr": 65.309746263,
+      "stop_1_5atr": 1888.24,
+      "target_5pct": 2085.51,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "NILKAMAL",
-      "close": 1868.6,
-      "score": 14,
-      "perf_1m": 42.641221374,
-      "rs_vs_nifty_1m": 41.56,
-      "rs_vs_sector_1m": 32.5,
-      "deliv_pct": 43.37,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.15,
-      "atr": 98.8702534979,
-      "stop_1_5atr": 1720.29,
-      "target_5pct": 1962.03,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Durables"
+      "sector": "Non-Energy Minerals"
     },
     {
       "symbol": "AGARWALEYE",
@@ -4347,18 +4387,54 @@
       "sector": "Health Services"
     },
     {
-      "symbol": "FMGOETZE",
-      "close": 487.4,
+      "symbol": "ASTERDM",
+      "close": 854.9,
       "score": 14,
-      "perf_1m": 7.1208791209,
-      "rs_vs_nifty_1m": 6.04,
-      "rs_vs_sector_1m": 8.33,
-      "deliv_pct": 60.39,
+      "perf_1m": 5.5432098765,
+      "rs_vs_nifty_1m": 4.46,
+      "rs_vs_sector_1m": 1.22,
+      "deliv_pct": 60.88,
       "pct_change_oi": null,
-      "upside_to_target_pct": 18.47,
-      "atr": 15.0351183911,
-      "stop_1_5atr": 464.85,
-      "target_5pct": 511.77,
+      "upside_to_target_pct": 6.82,
+      "atr": 27.5813410361,
+      "stop_1_5atr": 813.53,
+      "target_5pct": 897.64,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Services"
+    },
+    {
+      "symbol": "TASTYBITE",
+      "close": 9357.0,
+      "score": 14,
+      "perf_1m": 5.1348314607,
+      "rs_vs_nifty_1m": 4.05,
+      "rs_vs_sector_1m": 6.88,
+      "deliv_pct": 57.73,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 13.33,
+      "atr": 337.6361607632,
+      "stop_1_5atr": 8850.55,
+      "target_5pct": 9824.85,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Non-Durables"
+    },
+    {
+      "symbol": "KANPRPLA",
+      "close": 215.92,
+      "score": 14,
+      "perf_1m": 14.2433862434,
+      "rs_vs_nifty_1m": 13.16,
+      "rs_vs_sector_1m": 15.45,
+      "deliv_pct": 63.87,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 14.39,
+      "atr": 10.1764702183,
+      "stop_1_5atr": 200.66,
+      "target_5pct": 226.72,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
@@ -4383,18 +4459,36 @@
       "sector": "Retail Trade"
     },
     {
-      "symbol": "KANPRPLA",
-      "close": 215.92,
+      "symbol": "NILKAMAL",
+      "close": 1868.6,
       "score": 14,
-      "perf_1m": 14.2433862434,
-      "rs_vs_nifty_1m": 13.16,
-      "rs_vs_sector_1m": 15.45,
-      "deliv_pct": 63.87,
+      "perf_1m": 42.641221374,
+      "rs_vs_nifty_1m": 41.56,
+      "rs_vs_sector_1m": 32.5,
+      "deliv_pct": 43.37,
       "pct_change_oi": null,
-      "upside_to_target_pct": 14.39,
-      "atr": 10.1764702183,
-      "stop_1_5atr": 200.66,
-      "target_5pct": 226.72,
+      "upside_to_target_pct": 6.15,
+      "atr": 98.8702534979,
+      "stop_1_5atr": 1720.29,
+      "target_5pct": 1962.03,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Durables"
+    },
+    {
+      "symbol": "FMGOETZE",
+      "close": 487.4,
+      "score": 14,
+      "perf_1m": 7.1208791209,
+      "rs_vs_nifty_1m": 6.04,
+      "rs_vs_sector_1m": 8.33,
+      "deliv_pct": 60.39,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 18.47,
+      "atr": 15.0351183911,
+      "stop_1_5atr": 464.85,
+      "target_5pct": 511.77,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
@@ -4419,60 +4513,6 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "UJJIVANSFB",
-      "close": 70.14,
-      "score": 13,
-      "perf_1m": 10.8932806324,
-      "rs_vs_nifty_1m": 9.81,
-      "rs_vs_sector_1m": 12.07,
-      "deliv_pct": 52.06,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 18.06,
-      "atr": 2.5351684159,
-      "stop_1_5atr": 66.34,
-      "target_5pct": 73.65,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "JSWENERGY",
-      "close": 563.0,
-      "score": 13,
-      "perf_1m": 5.0177205745,
-      "rs_vs_nifty_1m": 3.94,
-      "rs_vs_sector_1m": 9.34,
-      "deliv_pct": 45.84,
-      "pct_change_oi": 3.97,
-      "upside_to_target_pct": 9.65,
-      "atr": 13.2226071452,
-      "stop_1_5atr": 543.17,
-      "target_5pct": 591.15,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Utilities"
-    },
-    {
-      "symbol": "UNIONBANK",
-      "close": 182.5,
-      "score": 13,
-      "perf_1m": 15.6527249683,
-      "rs_vs_nifty_1m": 14.57,
-      "rs_vs_sector_1m": 16.83,
-      "deliv_pct": 52.56,
-      "pct_change_oi": -0.16,
-      "upside_to_target_pct": 12.6,
-      "atr": 4.9178534866,
-      "stop_1_5atr": 175.12,
-      "target_5pct": 191.62,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
       "symbol": "INDGN",
       "close": 567.6,
       "score": 13,
@@ -4488,6 +4528,42 @@
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "JUBLINGREA",
+      "close": 733.1,
+      "score": 13,
+      "perf_1m": 2.3882681564,
+      "rs_vs_nifty_1m": 1.31,
+      "rs_vs_sector_1m": null,
+      "deliv_pct": 41.96,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 27.79,
+      "atr": 25.6691177064,
+      "stop_1_5atr": 694.6,
+      "target_5pct": 769.76,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Process Industries"
+    },
+    {
+      "symbol": "BALPHARMA",
+      "close": 86.99,
+      "score": 13,
+      "perf_1m": 11.7405266538,
+      "rs_vs_nifty_1m": 10.66,
+      "rs_vs_sector_1m": 7.42,
+      "deliv_pct": 65.05,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 13.63,
+      "atr": 3.6305820981,
+      "stop_1_5atr": 81.54,
+      "target_5pct": 91.34,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Neutral",
       "sector": "Health Technology"
     }
   ],
@@ -4554,249 +4630,237 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-08-11T18:07:17.365721+05:30",
-    "market_brief": "The market is in a bearish regime with a low India VIX, indicating a potential for increased volatility. The Nifty trend is also bearish, with a 0.46% decrease. Foreign institutional investors have a net positive inflow, while domestic institutional investors have a net outflow.",
+    "generated_at_ist": "2026-08-11T19:31:24.622383+05:30",
+    "market_brief": "The Indian market is currently in a bearish regime with a low India VIX. Despite this, the Asia and Europe cues are bullish. The Nifty trend is also bearish with a percentage change of -0.46. Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) have net investments of 258.55 and 24.77 respectively.",
     "stance": "defensive",
     "focus": [
       "Bearish market regime",
       "Low India VIX",
-      "FII net positive inflow",
-      "DII net outflow"
+      "Bullish Asia and Europe cues",
+      "Nifty trend"
     ],
     "suggestions": [
       {
         "symbol": "SREEL",
         "action": "consider_entry",
-        "conviction": "medium",
+        "conviction": "high",
         "entry": 230.7,
         "stop": 212.42,
         "t1": 267.26,
         "hold_days": 16,
-        "rationale": "Buy band with a Parkhu score of 86.7",
+        "rationale": "Parkhu score of 86.7 with a buy band",
         "levels_source": "parkhu_deterministic"
       },
       {
         "symbol": "SAHYADRI",
         "action": "consider_entry",
-        "conviction": "medium",
+        "conviction": "high",
         "entry": 340.55,
         "stop": 313.31,
         "t1": 395.04,
         "hold_days": 15,
-        "rationale": "Buy band with a Parkhu score of 83.8",
+        "rationale": "Parkhu score of 83.8 with a buy band",
         "levels_source": "parkhu_deterministic"
       },
       {
         "symbol": "BTML",
-        "action": "consider_entry",
+        "action": "stand_aside",
         "conviction": "low",
         "entry": 8.55,
         "stop": 7.87,
         "t1": 10.5,
         "hold_days": 11,
-        "rationale": "Buy band with a Parkhu score of 80.4",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "ICICIBANK",
-        "action": "manage_open",
-        "conviction": "low",
-        "entry": 1450.1,
-        "stop": 1401.49,
-        "t1": 1547.33,
-        "hold_days": 17,
-        "rationale": "Tighten/Review stop due to trend no longer being tradeable",
+        "rationale": "Recent stop hit, reassess before re-entry",
         "levels_source": "parkhu_deterministic"
       }
     ],
     "open_book_notes": [
-      "CREDITACC: Monitor for potential stop loss",
-      "UJJIVANSFB: Keep an eye on the stock's performance",
-      "IIFL: Consider taking profits",
-      "LODHA: Stop loss may be triggered",
-      "IFBIND: Potential for further upside",
-      "ICICIBANK: Review and tighten stop loss",
-      "SHRIPISTON: Monitor for potential stop loss",
-      "TATACAP: Keep an eye on the stock's performance",
-      "UNIPARTS: Consider taking profits",
-      "UYFINCORP: Potential for further upside"
+      "CREDITACC: monitor price action near stop loss",
+      "UJJIVANSFB: watch for potential trend reversal",
+      "IIFL: adjust stop loss to lock in profits",
+      "LODHA: consider exiting if price action worsens",
+      "IFBIND: trail stop loss to maximize gains",
+      "ICICIBANK: tighten stop loss due to weakening trend",
+      "SHRIPISTON: monitor price action near resistance levels",
+      "TATACAP: adjust stop loss to lock in profits",
+      "UNIPARTS: consider taking partial profits",
+      "UYFINCORP: monitor price action near resistance levels"
     ],
-    "claude_feed": "Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, SAHYADRI, BTML, Caveats: Low India VIX, FII net positive inflow, DII net outflow",
+    "claude_feed": "Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, SAHYADRI, Caveats: Low India VIX, bullish Asia and Europe cues, monitor price action and adjust stop losses accordingly",
     "stock_reviews": [
       {
         "symbol": "SREEL",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "SREEL's recent price action and strong technical indicators such as a high Parkhu score of 86.7, a bullish trend label, and a strong RSI of 65.93, suggest a potential short-term swing opportunity in a bearish market regime. The stock's strong delivery percentage of 74.83% and outperformance against the Nifty and its sector over the past month also support this thesis. With a relatively low distance from its 52-week high and a favorable risk-reward ratio of 2.0 for the first target, this setup fits a \u22641-month swing. The stock's strong technical rating and recent returns also contribute to its potential for a short-term swing.",
+        "thesis": "This setup fits a \u22641-month swing as SREEL has shown a strong bullish trend with an ADX of 37.12 and RSI of 65.93, indicating a potential for further upside. The stock has outperformed Nifty and its sector in the last month, with returns of 8.41% and 10.16% respectively. The distance from its 52-week high is -10.58%, suggesting room for growth. The overall risk regime is medium, but the stock's strong technical rating and high Parkhu score of 86.7 support a bullish outlook.",
         "catalysts": [
-          "Strong technical indicators",
-          "High delivery percentage",
-          "Outperformance against Nifty and sector"
+          "Strong trend",
+          "Outperformance vs Nifty and sector",
+          "Room for growth from 52-week high"
         ],
         "risks": [
           "Bearish market regime",
-          "High India VIX",
+          "Medium overall risk",
           "Retail trade sector risks"
         ],
-        "what_to_watch": "Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a breach of the stop level at 212.42. A close eye should be kept on the stock's price action and technical indicators to adjust the trade accordingly.",
+        "what_to_watch": "Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 212.42. The stock's ability to hold above its recent gains will be crucial to the success of this trade.",
         "entry": 230.7,
         "stop": 212.42,
         "t1": 267.26,
         "hold_days": 16,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-11T18:07:19.200041+05:30"
+        "generated_at_ist": "2026-08-11T19:31:26.301797+05:30"
       },
       {
         "symbol": "SAHYADRI",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "The setup for SAHYADRI fits a \u22641-month swing due to its recent bullish trend, with the stock showing a return of 21.36% over the last month, outperforming both Nifty and its sector. The high delivery percentage of 75.85% and a positive relative strength against Nifty and its sector over the last month further support the bullish stance. The stock is also close to its 52-week high, with a distance of only -4.07%, indicating potential for a breakout.",
+        "thesis": "The setup for SAHYADRI fits a \u22641-month swing due to its recent bullish trend, high delivery percentage, and outperformance against Nifty and its sector over the last month. The stock's RSI14 is at 68.73, indicating a potential for further upside without being overbought. The distance from its 52-week high is only -4.07%, suggesting room for growth.",
         "catalysts": [
           "Bullish Trend",
           "High Delivery Percentage",
           "Outperformance"
         ],
         "risks": [
-          "Market Volatility",
-          "Sectoral Risks",
-          "Overbought Conditions"
+          "Market Regime is Bearish",
+          "Overall Risk is Medium"
         ],
-        "what_to_watch": "Triggers for this setup include the stock breaking out above its recent highs, while invalidation cues would be a breach of the stop level at 313.31, indicating a failure of the bullish trend.",
+        "what_to_watch": "Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level of 313.31, indicating a failure of the bullish trend.",
         "entry": 340.55,
         "stop": 313.31,
         "t1": 395.04,
         "hold_days": 15,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-11T18:07:21.138951+05:30"
+        "generated_at_ist": "2026-08-11T19:31:27.942407+05:30"
       },
       {
         "symbol": "BTML",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "The setup for BTML fits a \u22641-month swing due to its strong bullish trend label and high RSI14 value of 74.3532671709234, indicating potential for a short-term price increase. The stock's recent 1-month return of 43.69747899159665% outperforms the Nifty and its sector, suggesting momentum. The distance from the 52-week high is -18.57%, providing room for growth.",
+        "thesis": "The setup in BTML fits a \u22641-month swing due to its strong bullish trend, high RSI, and significant outperformance against Nifty and its sector. The high delivery percentage and strong technical rating further support this thesis. With a reasonable ATR percentage of price, the stock has potential for a short-term upside.",
         "catalysts": [
-          "Strong trend",
-          "High RSI14",
-          "Outperforming sector"
+          "Bullish trend",
+          "High RSI",
+          "Outperformance"
         ],
         "risks": [
-          "Bearish market regime",
-          "Medium overall risk",
-          "High RSI14 may lead to reversal"
+          "Market regime is bearish",
+          "High India VIX",
+          "Consumer Services sector risk"
         ],
-        "what_to_watch": "Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 7.87, indicating a failure of the bullish trend.",
+        "what_to_watch": "Triggers for this setup include a breakout above the current levels, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish trend to sustain.",
         "entry": 8.55,
         "stop": 7.87,
         "t1": 10.5,
         "hold_days": 11,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-11T18:07:23.114621+05:30"
+        "generated_at_ist": "2026-08-11T19:31:30.037021+05:30"
       }
     ]
   },
   "market_news_top10": [
     {
       "rank": 1,
-      "headline": "Manappuram Finance Limited has informed the Exchange that Record date for the purpose of Dividend  is 17-Aug-2026",
-      "symbol": "MANAPPURAM",
+      "headline": "Q1 FY27 Financial Results",
+      "symbol": "POLYPLEX",
       "impact": "high",
-      "why_it_matters": "Record date announcement for dividend payment, may impact stock price",
-      "source_date": "11-Aug-2026 18:04:41",
+      "why_it_matters": "Major catalyst and risk event with high news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320375+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.785980+05:30"
     },
     {
       "rank": 2,
-      "headline": "OnMobile Global Limited has informed the Exchange about the 26th Annual General Meeting of the members",
-      "symbol": "ONMOBILE",
+      "headline": "Q1 FY27 Financial Results",
+      "symbol": "LAXMIDENTL",
       "impact": "high",
-      "why_it_matters": "Annual General Meeting updates, may impact stock price and investor sentiment",
-      "source_date": "11-Aug-2026 18:03:16",
+      "why_it_matters": "Major catalyst and risk event with high news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320396+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786026+05:30"
     },
     {
       "rank": 3,
-      "headline": "Syncom Formulations Limited has informed the Exchange about the Outcome of the 2/2026-27 Meeting of the Board of Directors",
-      "symbol": "SYNCOMF",
+      "headline": "Earnings Conference call - Audio Recording for Q1 FY27",
+      "symbol": "CHOICEIN",
       "impact": "high",
-      "why_it_matters": "Board meeting outcome, may impact stock price and investor sentiment",
-      "source_date": "11-Aug-2026 18:04:49",
+      "why_it_matters": "Major catalyst and risk event with high news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320403+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786032+05:30"
     },
     {
       "rank": 4,
-      "headline": "Repco Home Finance Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026",
-      "symbol": "REPCOHOME",
-      "impact": "medium",
-      "why_it_matters": "Financial results announcement, may impact stock price",
-      "source_date": "11-Aug-2026 18:04:44",
+      "headline": "Q1 FY27 Financial Results",
+      "symbol": "MANAKALUCO",
+      "impact": "high",
+      "why_it_matters": "Major catalyst and risk event with high news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320408+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786036+05:30"
     },
     {
       "rank": 5,
-      "headline": "Vidya Wires Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026",
-      "symbol": "VIDYAWIRES",
-      "impact": "medium",
-      "why_it_matters": "Financial results announcement, may impact stock price",
-      "source_date": "11-Aug-2026 18:04:21",
+      "headline": "Q1 FY27 Financial Results",
+      "symbol": "MANINDS",
+      "impact": "high",
+      "why_it_matters": "Major catalyst and risk event with high news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320412+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786039+05:30"
     },
     {
       "rank": 6,
-      "headline": "Popular Vehicles and Services Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026",
-      "symbol": "PVSL",
+      "headline": "Outcome of Board Meeting",
+      "symbol": "NECCLTD",
       "impact": "medium",
-      "why_it_matters": "Financial results announcement, may impact stock price",
-      "source_date": "11-Aug-2026 18:02:27",
+      "why_it_matters": "Risk event with low news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320417+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786043+05:30"
     },
     {
       "rank": 7,
-      "headline": "Focus Lighting and Fixtures Limited has informed the Exchange regarding Outcome of Board Meeting held on August 11, 2026",
-      "symbol": "FOCUS",
-      "impact": "low",
-      "why_it_matters": "Board meeting outcome, may have limited impact on stock price",
-      "source_date": "11-Aug-2026 18:03:38",
+      "headline": "Outcome of Board Meeting Updates",
+      "symbol": "MANAKALUCO",
+      "impact": "medium",
+      "why_it_matters": "Risk event with low news score",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320421+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786046+05:30"
     },
     {
       "rank": 8,
-      "headline": "Alpa Laboratories Limited has informed the Exchange regarding 'clarification board meeting date'",
-      "symbol": "ALPA",
+      "headline": "Credit Rating- New",
+      "symbol": "IRIS",
       "impact": "low",
-      "why_it_matters": "Board meeting date clarification, may have limited impact on stock price",
-      "source_date": "11-Aug-2026 18:01:50",
+      "why_it_matters": "No major catalyst or risk event",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320425+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786050+05:30"
     },
     {
       "rank": 9,
-      "headline": "Kakatiya Cement Sugar & Industries Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on August 10, 2026",
-      "symbol": "KAKATCEM",
+      "headline": "General Updates",
+      "symbol": "ATLANTAA",
       "impact": "low",
-      "why_it_matters": "Annual General Meeting updates, may have limited impact on stock price",
-      "source_date": "11-Aug-2026 18:01:41",
+      "why_it_matters": "No major catalyst or risk event",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320429+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786053+05:30"
     },
     {
       "rank": 10,
-      "headline": "Bank Of Baroda has informed the Exchange about Investor Conference Intimation",
-      "symbol": "BANKBARODA",
+      "headline": "Statement of deviation(s) or variation(s) under Reg. 32",
+      "symbol": "ATL",
       "impact": "low",
-      "why_it_matters": "Investor conference intimation, may have limited impact on stock price",
-      "source_date": "11-Aug-2026 18:02:13",
+      "why_it_matters": "No major catalyst or risk event",
+      "source_date": "2026-08-11",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-11T18:07:26.320433+05:30"
+      "generated_at_ist": "2026-08-11T19:31:32.786056+05:30"
     }
   ]
 }

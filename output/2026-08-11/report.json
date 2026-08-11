@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-11",
-  "generated_at_ist": "2026-08-11T18:07:15.850494+05:30",
-  "duration_seconds": 305.0,
+  "generated_at_ist": "2026-08-11T19:31:22.862947+05:30",
+  "duration_seconds": 343.9,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 2979,
-      "seconds": 3.8
+      "seconds": 3.4
     },
     {
       "agent": "ohlc_history",
@@ -25,11 +25,11 @@
       "failed": 7,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2452,
-      "cold": 257,
-      "new_symbols": 10,
+      "warm": 2458,
+      "cold": 251,
+      "new_symbols": 7,
       "retries": 2,
-      "seconds": 236.3
+      "seconds": 274.8
     },
     {
       "agent": "earnings",
@@ -48,25 +48,25 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.9
+      "seconds": 1.1
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 3.6
+      "seconds": 4.2
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.5
+      "seconds": 3.8
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 446,
-      "seconds": 4.8
+      "seconds": 4.9
     },
     {
       "agent": "stock_options",
@@ -79,25 +79,25 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2113,
-      "seconds": 6.3
+      "seconds": 5.9
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.9
+      "seconds": 3.0
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.9
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.7
+      "seconds": 3.2
     },
     {
       "agent": "relative_strength",
@@ -109,7 +109,7 @@
       "agent": "event_risk",
       "status": "ok",
       "rows": 2979,
-      "seconds": 1.0
+      "seconds": 1.1
     },
     {
       "agent": "fno_momentum",
@@ -142,7 +142,7 @@
       "with_structure": 2700,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.6
+      "seconds": 20.7
     },
     {
       "agent": "stock_analysis",
@@ -160,11 +160,14 @@
         "BTML"
       ],
       "watchlist": 6,
-      "open_positions": 21,
+      "open_positions": 22,
       "needing_action": [
+        "BTML",
         "ICICIBANK"
       ],
-      "closed_today": [],
+      "closed_today": [
+        "BTML"
+      ],
       "seconds": 0.4
     }
   ],

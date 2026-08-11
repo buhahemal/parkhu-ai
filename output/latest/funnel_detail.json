@@ -15,7 +15,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "PNB",
@@ -56,7 +55,8 @@
         "DIVGIITTS",
         "EMUDHRA",
         "UTTAMSUGAR",
-        "DYNPRO"
+        "DYNPRO",
+        "UNIONBANK"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -75,7 +75,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "PNB",
@@ -116,7 +115,8 @@
         "DIVGIITTS",
         "EMUDHRA",
         "UTTAMSUGAR",
-        "DYNPRO"
+        "DYNPRO",
+        "UNIONBANK"
       ],
       "dropped_symbols": [
         "BALUFORGE",
@@ -186,7 +186,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "CAPLIPOINT",
@@ -227,7 +226,8 @@
         "JSWDULUX",
         "THOMASCOTT",
         "SJS",
-        "M&M"
+        "M&M",
+        "STYLAMIND"
       ],
       "dropped_symbols": [
         "PNB",
@@ -258,7 +258,6 @@
         "SHILCTECH",
         "KIRIINDUS",
         "DBCORP",
-        "DOLLAR",
         "SIRCA",
         "BANKINDIA",
         "ALICON",
@@ -279,7 +278,8 @@
         "MODIS",
         "SHINDL",
         "AHLUCONT",
-        "SBICARD"
+        "SBICARD",
+        "AYE"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -297,7 +297,6 @@
         "INDIANB",
         "HARRMALAYA",
         "SRM",
-        "CARYSIL",
         "FIEMIND",
         "KERNEX",
         "CAPLIPOINT",
@@ -338,7 +337,8 @@
         "JSWDULUX",
         "THOMASCOTT",
         "SJS",
-        "M&M"
+        "M&M",
+        "STYLAMIND"
       ],
       "dropped_symbols": [
         "SANDHAR",
@@ -422,7 +422,6 @@
         "SEAMECLTD",
         "INDIANB",
         "SRM",
-        "CARYSIL",
         "KERNEX",
         "SYNCOMF",
         "AIAENG",
@@ -445,6 +444,7 @@
         "ENGINERSIN",
         "AEROENTER",
         "TDPOWERSYS",
+        "CARYSIL",
         "ACCENTMIC",
         "SWELECTES",
         "SBIN",
@@ -454,7 +454,6 @@
         "INDOTECH",
         "LANCORHOL",
         "FINEORG",
-        "PRECWIRE",
         "CHOLAFIN",
         "NATIONALUM",
         "PERSISTENT",
@@ -467,7 +466,8 @@
         "ARVIND",
         "ICICIBANK",
         "NAVINFLUOR",
-        "KPIL"
+        "KPIL",
+        "PNBHOUSING"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -757,6 +757,7 @@
         "MOREPENLAB",
         "GATECH",
         "DYCL",
+        "SENCO",
         "BAFNAPH",
         "MOLDTECH",
         "UYFINCORP",
@@ -773,7 +774,6 @@
         "APARINDS",
         "ATALREAL",
         "SMLMAH",
-        "SENCO",
         "SAHASRA",
         "SPECTRUM",
         "KDDL",
