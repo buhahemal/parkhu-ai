@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-12",
-  "generated_at_ist": "2026-08-12T18:08:11.798323+05:30",
-  "duration_seconds": 364.3,
+  "generated_at_ist": "2026-08-12T19:36:02.028891+05:30",
+  "duration_seconds": 421.1,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 2981,
-      "seconds": 3.7
+      "seconds": 3.3
     },
     {
       "agent": "ohlc_history",
@@ -25,11 +25,11 @@
       "failed": 8,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2458,
-      "cold": 252,
+      "warm": 2459,
+      "cold": 251,
       "new_symbols": 8,
       "retries": 2,
-      "seconds": 286.7
+      "seconds": 335.1
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.7
+      "seconds": 1.1
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.5
+      "seconds": 2.4
     },
     {
       "agent": "smartmoney",
       "status": "partial",
       "rows": 2,
-      "seconds": 4.4
+      "seconds": 5.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.0
+      "seconds": 5.7
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 447,
-      "seconds": 5.5
+      "seconds": 6.2
     },
     {
       "agent": "stock_options",
@@ -79,37 +79,37 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2112,
-      "seconds": 5.1
+      "seconds": 5.2
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.8
+      "seconds": 4.1
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 3.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 4.4
+      "seconds": 6.8
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 2981,
-      "seconds": 0.3
+      "seconds": 0.4
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 2981,
-      "seconds": 1.0
+      "seconds": 1.1
     },
     {
       "agent": "fno_momentum",
@@ -142,21 +142,21 @@
       "with_structure": 2701,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.6
+      "seconds": 20.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 2981,
-      "seconds": 3.6
+      "seconds": 3.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
       "rows": 5,
       "ideas": [
-        "CASTROLIND",
         "SREEL",
+        "CASTROLIND",
         "EMCURE",
         "UJJIVANSFB",
         "GANDHITUBE"
@@ -165,14 +165,9 @@
       "open_positions": 23,
       "needing_action": [
         "CREDITACC",
-        "ICICIBANK",
-        "LLOYDSME",
-        "LODHA"
+        "ICICIBANK"
       ],
-      "closed_today": [
-        "LODHA",
-        "LLOYDSME"
-      ],
+      "closed_today": [],
       "seconds": 0.5
     }
   ],
