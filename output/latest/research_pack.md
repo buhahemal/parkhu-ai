@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-08-12
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-12T06:08:45.000440+05:30
+- **generated_at_ist:** 2026-08-12T08:42:02.437942+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
 - nifty: Bearish (-0.46%)
-- india_vix: 12.25 (Low)
+- india_vix: 11.86 (Low)
 - fii_net: 258.55 | dii_net: 24.77
 - overall_risk: Medium | global_risk: Risk-Off
 
@@ -53,23 +53,23 @@
 - **ARCHIDPLY** [rejected] score 65.8 — score below Watch band
 - **KANPRPLA** [rejected] score 64.8 — score below Watch band
 - **LMW** [rejected] score 63.2 — score below Watch band
-- **GUFICBIO** [rejected] score 63.0 — score below Watch band
+- **GUFICBIO** [rejected] score 62.9 — score below Watch band
 - **MONARCH** [rejected] score 60.1 — score below Watch band
 - **MMP** [rejected] score 59.9 — score below Watch band
-- **BALPHARMA** [rejected] score 59.5 — score below Watch band
+- **BALPHARMA** [rejected] score 59.4 — score below Watch band
 - **TASTYBITE** [rejected] score 56.7 — score below Watch band
-- **AGARWALEYE** [rejected] score 55.2 — score below Watch band
-- **SETL** [rejected] score 54.2 — score below Watch band
+- **AGARWALEYE** [rejected] score 55.1 — score below Watch band
+- **SETL** [rejected] score 54.0 — score below Watch band
 - **CENTRUM** [rejected] score 53.8 — T1 needs more than 22 trading days (~1 month)
 - **HPAL** [rejected] score 53.1 — T1 needs more than 22 trading days (~1 month)
-- **ASTERDM** [rejected] score 50.4 — score below Watch band
+- **ASTERDM** [rejected] score 50.2 — score below Watch band
 - **AUSOMENT** [rejected] score 49.8 — T1 needs more than 22 trading days (~1 month)
 - **PVSL** [rejected] score 49.1 — T1 needs more than 22 trading days (~1 month)
-- **JLHL** [rejected] score 48.9 — score below Watch band
+- **JLHL** [rejected] score 48.7 — score below Watch band
 - **CYIENTDLM** [rejected] score 48.6 — score below Watch band
 - **ABMINTLLTD** [rejected] score 46.5 — score below Watch band
 - **ATLANTAA** [rejected] score 46.2 — T1 needs more than 22 trading days (~1 month)
-- **VLSFINANCE** [rejected] score 45.5 — T1 needs more than 22 trading days (~1 month)
+- **VLSFINANCE** [rejected] score 45.6 — T1 needs more than 22 trading days (~1 month)
 - **CANHLIFE** [rejected] score 44.5 — score below Watch band
 - **MAHAPEXLTD** [rejected] score 41.6 — T1 needs more than 22 trading days (~1 month)
 
@@ -128,7 +128,6 @@
 
 ## Needs action
 
-- **BTML**: EXIT — STOP HIT — session low at/below stop ₹7.87 (last ₹8.55)
 - **ICICIBANK**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
@@ -137,31 +136,31 @@
 
 ## Swing candidates (top)
 
+- TASTYBITE: score=14 rs_nifty=4.05 deliv=57.73
+- FMGOETZE: score=14 rs_nifty=6.04 deliv=60.39
 - LLOYDSME: score=14 rs_nifty=12.09 deliv=41.13
-- AUSOMENT: score=14 rs_nifty=20.45 deliv=85.04
+- SREEL: score=14 rs_nifty=7.33 deliv=74.83
+- SJS: score=14 rs_nifty=7.94 deliv=56.29
+- AGARWALEYE: score=14 rs_nifty=10.52 deliv=42.24
+- BFINVEST: score=14 rs_nifty=3.45 deliv=49.73
+- KANPRPLA: score=14 rs_nifty=13.16 deliv=63.87
 - CANHLIFE: score=14 rs_nifty=3.16 deliv=69.93
 - ASTERDM: score=14 rs_nifty=4.46 deliv=60.88
-- TASTYBITE: score=14 rs_nifty=4.05 deliv=57.73
-- BFINVEST: score=14 rs_nifty=3.45 deliv=49.73
-- SJS: score=14 rs_nifty=7.94 deliv=56.29
-- SREEL: score=14 rs_nifty=7.33 deliv=74.83
-- KANPRPLA: score=14 rs_nifty=13.16 deliv=63.87
-- AGARWALEYE: score=14 rs_nifty=10.52 deliv=42.24
+- AUSOMENT: score=14 rs_nifty=20.45 deliv=85.04
 - NILKAMAL: score=14 rs_nifty=41.56 deliv=43.37
-- FMGOETZE: score=14 rs_nifty=6.04 deliv=60.39
-- NATIONALUM: score=13 rs_nifty=8.22 deliv=45.61
-- MCX: score=13 rs_nifty=2.31 deliv=40.89
-- HESTERBIO: score=13 rs_nifty=16.84 deliv=42.48
+- INDGN: score=13 rs_nifty=11.54 deliv=59.55
+- SHANKARA: score=13 rs_nifty=7.74 deliv=75.56
+- UJJIVANSFB: score=13 rs_nifty=9.81 deliv=52.06
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.10% (neutral)
-- Hang Seng: -1.10% (bear)
-- Shanghai: -0.82% (bear)
-- Kospi: +1.98% (bull)
-- Taiwan: +0.43% (bull)
-- ASX 200: -0.41% (bear)
+- Nikkei: +0.10% (neutral)
+- Hang Seng: -1.05% (bear)
+- Shanghai: +0.22% (bull)
+- Kospi: +4.30% (bull)
+- Taiwan: +0.77% (bull)
+- ASX 200: -0.62% (bear)
 
 ### Europe
 - FTSE 100: -0.17% (bear)
@@ -176,9 +175,9 @@
 
 ### Macro
 - USDINR: +0.03% (neutral)
-- Crude WTI: +1.98% (bull)
-- Brent: +1.99% (bull)
-- DXY: -0.02% (neutral)
+- Crude WTI: +2.39% (bull)
+- Brent: +2.26% (bull)
+- DXY: +0.05% (neutral)
 - US 10Y: -0.32% (neutral)
 - India ETF: -0.10% (neutral)
 - EM ETF: +0.40% (bull)
@@ -189,52 +188,52 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** defensive
 
-The market is in a bearish regime with a low India VIX, indicating a potential for increased volatility. The Nifty trend is also bearish, with a percentage change of -0.46. The overall risk is medium, with mixed cues from Asia and Europe.
+The market is currently in a bearish regime with a low India VIX, indicating a potential for increased volatility. The Nifty trend is also bearish, with a -0.46% change. Despite this, the Asia cue is bullish, and the FII net is positive at 258.55.
 
-- **SREEL** [consider_entry/medium] entry=230.7 stop=212.42 t1=267.26 hold=16d — Parkhu score of 86.7 with a buy band
-- **SAHYADRI** [consider_entry/medium] entry=340.55 stop=313.31 t1=395.04 hold=15d — Parkhu score of 83.7 with a buy band
-- **ICICIBANK** [manage_open/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
+- **SREEL** [consider_entry/high] entry=230.7 stop=212.42 t1=267.26 hold=16d — Strong Parkhu score of 86.7 and a favorable risk-reward ratio
+- **SAHYADRI** [consider_entry/high] entry=340.55 stop=313.31 t1=395.04 hold=15d — High Parkhu score of 83.7 and a promising risk sector
+- **ICICIBANK** [manage_open/medium] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable and a thinning thesis
 
 ### AI stock reviews
 
-- **SREEL** [high] SREEL's strong price momentum, as indicated by its high return over the past month and its outperformance of the Nifty and its sector, makes it a suitable candidate for a short-term swing trade. The bullish trend label and strong technical rating further support this setup. With a relatively high Parkhu score of 86.7, this stock has shown significant strength in recent times, fitting the criteria for a ≤1-month swing. Its current distance from the 52-week high also presents an opportunity for upside.
-  - catalysts: Strong momentum, Outperformance of sector and Nifty, Bullish trend
-  - risks: Bearish market regime, Medium overall risk, Retail trade sector risks
-  - watch: Triggers for this trade include a strong breakout above current levels, while invalidation cues would be a breach of the stop level at 212.42, indicating a failure of the bullish momentum to continue.
-- **SAHYADRI** [high] The setup in SAHYADRI fits a ≤1-month swing due to its recent bullish trend, high delivery percentage, and outperformance against the Nifty and its sector over the last month. The stock's RSI and ADX levels suggest a strong uptrend with room for further growth. The proximity to its 52-week high and a reasonable ATR percentage of price also support a short-term bullish outlook.
-  - catalysts: Bullish Trend, High Delivery Percentage, Outperformance
-  - risks: Market Regime Risk, Sector Risk, Reversal Risk
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level, indicating a potential trend reversal.
-- **DIVGIITTS** [high] The DIVGIITTS setup fits a ≤1-month swing due to its strong bullish trend label, high RSI14 of 72.11, and recent outperformance against Nifty and its sector. The company's strong technical rating and high parkhu score of 82.7 also support this thesis. Additionally, the stock is close to its 52-week high, indicating potential for a breakout.
-  - catalysts: Earnings momentum, Sector outperformance, Bullish trend
-  - risks: Market regime bearish, High RSI14, Producer Manufacturing risk sector
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 993.48. A close eye should be kept on the overall market regime and sector performance.
-- **SJS** [high] S.J.S. Enterprises Limited (SJS) fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, such as a high ADX and a relatively low RSI. The stock's recent outperformance against the Nifty and its sector, combined with its high delivery percentage, suggests a strong upward trajectory. The proximity to its 52-week high also indicates a potential breakout. The overall market regime is bearish, but the stock's resilience and strong technical rating make it an attractive swing trade.
-  - catalysts: Bullish trend, High ADX, Low RSI, Outperformance vs Nifty and sector
-  - risks: Bearish market regime, High India VIX, Producer Manufacturing sector risk
-  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues include a drop below the stop level or a significant increase in the India VIX. A close eye should be kept on the stock's ability to hold above its recent lows.
-- **BTML** [high] The setup in BTML fits a ≤1-month swing as the stock has shown a strong bullish trend with a high RSI of 74.35 and a strong ADX of 37.59, indicating a potential for a short-term upside. The delivery percentage of 67.87 also suggests a strong investor interest. The stock's return of 43.70% in the last month and 35.71% in the last three months further supports the bullish thesis.
-  - catalysts: Strong trend, High RSI, Strong ADX, High delivery percentage
-  - risks: Bearish market regime, Medium overall risk, High India VIX
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 7.87. A close eye should be kept on the stock's price action and overall market sentiment.
+- **SREEL** [high] SREEL's strong price momentum, as indicated by its high return over the past month and its outperformance of the Nifty and its sector, makes it a suitable candidate for a short-term swing trade. The stock's technical rating of 'Strong buy' and its relatively high delivery percentage also support this setup. With the overall market regime being bearish, a stock with such strong momentum could be an attractive opportunity for a ≤1-month swing. The distance from its 52-week high also provides room for potential upside.
+  - catalysts: Strong momentum, Outperformance of Nifty and sector, High delivery percentage
+  - risks: Bearish market regime, Sector-specific risks in Retail Trade
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level, indicating a failure of the bullish momentum. Monitoring the stock's ability to hold above its recent highs will also be crucial.
+- **SAHYADRI** [high] The setup for SAHYADRI fits a ≤1-month swing due to its recent bullish trend, high delivery percentage, and outperformance against Nifty and its sector. The ADX and RSI levels indicate a strong trend with room for further upside. The proximity to its 52-week high also suggests potential for a breakout.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance
+  - risks: Bearish market regime, Medium overall risk, Sector volatility
+  - watch: A close above the current levels could trigger further upside, while a failure to hold above the stop level could invalidate the setup.
+- **DIVGIITTS** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an RSI of 72.11 and a strong buy technical rating, indicating potential for further upside. The recent price action has been supported by a high delivery percentage of 50.15% and a strong return over the past month. The company's overall risk is medium, but the stock's risk sector is producer manufacturing, which could be a potential catalyst for growth. The proximity to the 52-week high also suggests a potential breakout.
+  - catalysts: Strong technical rating, High delivery percentage, Recent bullish trend
+  - risks: Medium overall risk, Producer manufacturing sector risks, Potential for bearish market regime to impact stock
+  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 993.48. The stock's price action in relation to its 52-week high will also be closely watched.
+- **SJS** [high] The setup in S.J.S. Enterprises Limited fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, such as a high ADX and a relatively low RSI. The company's return over the past month has outperformed the Nifty and its sector, indicating strong relative strength. With a high Parkhu score of 81.8, this stock has a favorable technical rating, supporting a potential short-term upside.
+  - catalysts: Strong momentum, Outperforming sector, Favorable technical rating
+  - risks: Bearish market regime, Medium overall risk, Producer Manufacturing sector risks
+  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a close below the stop level, indicating a failure of the bullish trend. The stock's price action around the earnings date, 91 days away, should also be closely monitored.
+- **BTML** [medium] The setup in BTML fits a ≤1-month swing due to its strong technical rating and bullish trend label. The high RSI14 and strong return over the past month also indicate potential for a short-term rally. The company's position in the Consumer Services sector, which may be less affected by the overall bearish market regime, adds to the thesis.
+  - catalysts: Strong technicals, Bullish trend, High RSI14
+  - risks: Bearish market regime, High India VIX, Consumer Services sector risks
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level. Watching the overall market regime and India VIX levels will also be crucial.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, SAHYADRI, Caveats: Limited score coverage, provisional scores, and lack of trade outcome history
+Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, SAHYADRI, Caveats: Low India VIX, provisional scores, and lack of trade outcome history
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Disclosure of material issue (FOODSIN) — Resignation of a key personnel and disclosure of material issue may impact the stock price and investor sentiment
-2. **[high]** Disclosure of material issue (FOODSIN) — Disclosure of material issue may impact the stock price and investor sentiment
-3. **[high]** Press Release (JNKINDIA) — Q1FY27 press release may impact the stock price and investor sentiment
-4. **[medium]** Outcome of Board Meeting (SADBHIN) — Financial results for the period ended Jun 30, 2026, may impact the stock price and investor sentiment
-5. **[medium]** Press Release (ECOSMOBLTY) — Unaudited Financial Results may impact the stock price and investor sentiment
-6. **[medium]** Disclosure of material issue (FOODSIN) — Resignation of a key personnel may impact the stock price and investor sentiment
-7. **[low]** Outcome of Board Meeting (SADBHIN) — Outcome of board meeting may not have a significant impact on the stock price
-8. **[low]** Risk Event (SADBHIN) — Risk event may not have a significant impact on the stock price
-9. **[low]** Press Release (ONMOBILE) — Q1FY27 results may not have a significant impact on the stock price
-10. **[low]** Press Release (SENCO) — Q1FY27 results may not have a significant impact on the stock price
+1. **[high]** Disclosure of material issue (FOODSIN) — Resignation of a key personnel may impact the company's operations and investor sentiment
+2. **[high]** Disclosure of material issue (FOODSIN) — Disclosure of material issues can significantly impact the company's stock price and investor confidence
+3. **[high]** Press Release (JNKINDIA) — Q1FY27 press release may contain key information about the company's financial performance and future outlook
+4. **[medium]** Outcome of Board Meeting (SADBHIN) — The board meeting outcome may contain important decisions that can impact the company's future prospects
+5. **[medium]** Press Release (ECOSMOBLTY) — Press release on unaudited financial results may provide insights into the company's current financial performance
+6. **[low]** Outcome of Board Meeting (SADBHIN) — The board meeting outcome may not contain significant information that can impact the company's stock price
+7. **[low]** Disclosure of material issue — The disclosure may not be related to a specific company, but can still impact the overall market sentiment
+8. **[low]** Appointment (SADBHIN) — The appointment of a new director may not have a significant impact on the company's operations or stock price
+9. **[low]** Resignation (SADBHIN) — The resignation of a personnel may not have a significant impact on the company's operations or stock price
+10. **[low]** Updates (SADBHIN) — The update may not contain significant information that can impact the company's stock price
 
 ## Deep-dive URLs (after push)
 
