@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-13
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-13T18:07:57.108394+05:30
+- **generated_at_ist:** 2026-08-13T19:37:01.202088+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -20,49 +20,48 @@
 - price > EMA50: 1050
 - ADX14 > 25: 619
 - RSI14 in 40-80: 576
-- RS > 0 vs NIFTY and sector: 295
-- delivery% >= 40: 168
+- RS > 0 vs NIFTY and sector: 323
+- delivery% >= 40: 184
 - relative_volume >= 1: 35
-- no earnings within 21d: 32
-- event_risk_score <= 1: 30
-- TV rating not Sell: 30
+- no earnings within 21d: 31
+- event_risk_score <= 1: 29
+- TV rating not Sell: 29
 
-## Survivors (top 30 of 30)
+## Survivors (top 29 of 29)
 
-- **MEDICO** [idea] score 86.3 — selected as idea
+- **MEDICO** [idea] score 86.2 — selected as idea
 - **SREEL** [idea] score 86.2 — selected as idea
-- **IIFL** [idea] score 83.8 — selected as idea
-- **AJANTPHARM** [idea] score 82.3 — selected as idea
-- **PLAZACABLE** [rejected] score 81.0 — T1 needs more than 22 trading days (~1 month)
-- **THYROCARE** [watchlist] score 79.7 — score in Watch band (70–80)
-- **SAHYADRI** [watchlist] score 76.1 — score in Watch band (70–80)
+- **IIFL** [idea] score 83.7 — selected as idea
+- **AJANTPHARM** [idea] score 82.2 — selected as idea
+- **PLAZACABLE** [rejected] score 80.9 — T1 needs more than 22 trading days (~1 month)
+- **THYROCARE** [watchlist] score 79.6 — score in Watch band (70–80)
+- **SAHYADRI** [watchlist] score 76.0 — score in Watch band (70–80)
 - **SPECIALITY** [watchlist] score 75.5 — score in Watch band (70–80)
 - **IDFCFIRSTB** [watchlist] score 75.1 — score in Watch band (70–80)
 - **DOLPHIN** [watchlist] score 75.0 — score in Watch band (70–80)
 - **RADICO** [watchlist] score 73.8 — score in Watch band (70–80)
 - **TTKHLTCARE** [watchlist] score 73.6 — score in Watch band (70–80)
-- **GANDHITUBE** [watchlist] score 72.7 — score in Watch band (70–80)
-- **ARIHANT** [watchlist] score 70.6 — score in Watch band (70–80)
-- **LLOYDSME** [rejected] score 68.2 — score below Watch band
-- **WSTCSTPAPR** [rejected] score 63.4 — score below Watch band
-- **PARAS** [rejected] score 62.0 — score below Watch band
+- **GANDHITUBE** [watchlist] score 72.8 — score in Watch band (70–80)
+- **ARIHANT** [watchlist] score 70.7 — score in Watch band (70–80)
+- **LLOYDSME** [rejected] score 68.3 — score below Watch band
+- **WSTCSTPAPR** [rejected] score 63.3 — score below Watch band
 - **TIJARIA** [rejected] score 60.9 — score below Watch band
-- **POONAWALLA** [rejected] score 59.7 — score below Watch band
+- **POONAWALLA** [rejected] score 59.6 — score below Watch band
 - **AUSOMENT** [rejected] score 58.0 — score below Watch band
-- **PVSL** [rejected] score 57.5 — T1 needs more than 22 trading days (~1 month)
-- **ETERNAL** [rejected] score 57.3 — T1 needs more than 22 trading days (~1 month)
+- **PVSL** [rejected] score 57.4 — T1 needs more than 22 trading days (~1 month)
+- **ETERNAL** [rejected] score 57.1 — T1 needs more than 22 trading days (~1 month)
 - **BALPHARMA** [rejected] score 51.9 — score below Watch band
-- **STYL** [rejected] score 51.5 — score below Watch band
-- **PRIMESECU** [rejected] score 48.9 — score below Watch band
+- **PRIMESECU** [rejected] score 48.8 — score below Watch band
 - **CYIENTDLM** [rejected] score 48.3 — score below Watch band
-- **BIL** [rejected] score 48.0 — score below Watch band
-- **ESSENTIA** [rejected] score 47.3 — T1 needs more than 22 trading days (~1 month)
+- **BIL** [rejected] score 47.9 — score below Watch band
+- **ESSENTIA** [rejected] score 47.2 — T1 needs more than 22 trading days (~1 month)
 - **VMSTMT** [rejected] score 35.1 — T1 needs more than 22 trading days (~1 month)
-- **RADIOCITY** [rejected] score 33.9 — T1 needs more than 22 trading days (~1 month)
+- **INDIQUBE** [rejected] score 34.9 — T1 needs more than 22 trading days (~1 month)
+- **RADIOCITY** [rejected] score 33.8 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### MEDICO — Buy (score 86.3)
+### MEDICO — Buy (score 86.2)
 - Medico Remedies Ltd. | risk_sector: Health Technology
 - entry 47.86 | stop 44.03 | t1 56.88 | t2 60.71 | t3 64.54 | R:R 2.36
 - qty 208 | deployed 9955.0 (9.95%) | risk ₹797.0
@@ -72,12 +71,12 @@
 - entry 239.76 | stop 220.89 | t1 277.51 | t2 296.38 | t3 315.26 | R:R 2.0
 - qty 41 | deployed 9830.0 (9.83%) | risk ₹774.0
 
-### IIFL — Buy (score 83.8)
+### IIFL — Buy (score 83.7)
 - IIFL Finance Limited | risk_sector: NBFC & Capital Markets
 - entry 635.95 | stop 600.37 | t1 707.1 | t2 742.68 | t3 778.26 | R:R 2.0
 - qty 15 | deployed 9539.0 (9.54%) | risk ₹534.0
 
-### AJANTPHARM — Buy (score 82.3)
+### AJANTPHARM — Buy (score 82.2)
 - Ajanta Pharma Limited | risk_sector: Health Technology
 - entry 3614.6 | stop 3420.26 | t1 4003.29 | t2 4197.63 | t3 4391.97 | R:R 2.0
 - qty 2 | deployed 7229.0 (7.23%) | risk ₹389.0
@@ -106,13 +105,12 @@
 - **BTML** status=open entry=8.55 last=8.9 mfe=6.32 mae=-0.58 opened=2026-08-12
 - **CASTROLIND** status=open entry=188.38 last=187.42 mfe=1.1 mae=-1.21 opened=2026-08-12
 - **DIVGIITTS** status=open entry=1076.4 last=1219.75 mfe=19.66 mae=0.0 opened=2026-08-12
-- **AJANTPHARM** status=open entry=3614.6 last=3614.6 mfe=0.0 mae=0.0 opened=2026-08-13
-- **MEDICO** status=open entry=47.86 last=47.86 mfe=0.0 mae=0.0 opened=2026-08-13
+- **AJANTPHARM** status=open entry=3614.6 last=3614.6 mfe=1.67 mae=-2.06 opened=2026-08-13
+- **MEDICO** status=open entry=47.86 last=47.86 mfe=2.09 mae=-4.35 opened=2026-08-13
 
 ## Needs action
 
 - **CREDITACC**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
-- **GANDHITUBE**: EXIT — STOP HIT — gapped through stop ₹914.06 (open ≤ stop; prior close above) — last ₹882.65
 - **ICICIBANK**: TIGHTEN / REVIEW — ADX 20 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
@@ -121,21 +119,21 @@
 
 ## Swing candidates (top)
 
-- ETERNAL: score=14 rs_nifty=11.03 deliv=54.27
-- IDFCFIRSTB: score=14 rs_nifty=6.99 deliv=60.22
-- TTKHLTCARE: score=14 rs_nifty=11.24 deliv=69.49
-- SPECIALITY: score=14 rs_nifty=17.21 deliv=47.24
-- POONAWALLA: score=14 rs_nifty=3.19 deliv=58.27
-- THYROCARE: score=14 rs_nifty=18.43 deliv=41.24
-- CANHLIFE: score=14 rs_nifty=0.88 deliv=60.81
-- WSTCSTPAPR: score=14 rs_nifty=12.0 deliv=40.85
-- ARIHANT: score=14 rs_nifty=31.11 deliv=59.66
-- PRIMESECU: score=14 rs_nifty=5.87 deliv=84.82
-- PARAS: score=14 rs_nifty=9.06 deliv=40.29
-- LT: score=13 rs_nifty=3.27 deliv=56.17
-- MANAKSTEEL: score=13 rs_nifty=6.26 deliv=79.74
-- WENDT: score=13 rs_nifty=1.05 deliv=60.66
-- SSWL: score=13 rs_nifty=20.42 deliv=50.44
+- WSTCSTPAPR: score=14 rs_nifty=12.54 deliv=40.85
+- ETERNAL: score=14 rs_nifty=11.57 deliv=54.27
+- CANHLIFE: score=14 rs_nifty=1.42 deliv=60.81
+- THYROCARE: score=14 rs_nifty=18.97 deliv=41.24
+- POONAWALLA: score=14 rs_nifty=3.73 deliv=58.27
+- IDFCFIRSTB: score=14 rs_nifty=7.53 deliv=60.22
+- SPECIALITY: score=14 rs_nifty=17.75 deliv=47.24
+- PRIMESECU: score=14 rs_nifty=6.41 deliv=84.82
+- TTKHLTCARE: score=14 rs_nifty=11.78 deliv=69.49
+- ARIHANT: score=14 rs_nifty=31.65 deliv=59.66
+- LT: score=13 rs_nifty=3.81 deliv=56.17
+- MAWANASUG: score=13 rs_nifty=0.93 deliv=56.96
+- INDGN: score=13 rs_nifty=9.65 deliv=64.17
+- TMB: score=13 rs_nifty=5.08 deliv=60.17
+- AARTIDRUGS: score=13 rs_nifty=7.2 deliv=44.38
 
 ## World markets (India cues)
 
@@ -145,27 +143,27 @@
 - Shanghai: -0.50% (bear)
 - Kospi: +3.56% (bull)
 - Taiwan: +1.11% (bull)
-- ASX 200: -0.23% (bear)
+- ASX 200: -0.45% (bear)
 
 ### Europe
-- FTSE 100: -0.31% (bear)
-- DAX: +0.42% (bull)
-- Euro Stoxx 50: +0.45% (bull)
+- FTSE 100: -0.36% (bear)
+- DAX: +0.10% (neutral)
+- Euro Stoxx 50: +0.41% (bull)
 
 ### US
-- S&P 500: +0.26% (bull)
-- Nasdaq: +0.54% (bull)
-- Dow: -0.04% (neutral)
-- US VIX: +0.21% (neutral)
+- S&P 500: +0.73% (bull)
+- Nasdaq: +0.91% (bull)
+- Dow: +0.38% (bull)
+- US VIX: -0.14% (neutral)
 
 ### Macro
 - USDINR: +0.05% (neutral)
-- Crude WTI: -2.07% (bear)
-- Brent: -1.87% (bear)
-- DXY: -0.07% (neutral)
-- US 10Y: -0.21% (neutral)
-- India ETF: -0.38% (bear)
-- EM ETF: +1.57% (bull)
+- Crude WTI: -3.05% (bear)
+- Brent: -2.84% (bear)
+- DXY: -0.11% (neutral)
+- US 10Y: -0.96% (bull)
+- India ETF: +0.31% (bull)
+- EM ETF: +0.35% (bull)
 
 
 ## Groq desk note
@@ -173,49 +171,51 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** neutral
 
-The Indian market is currently in a neutral regime with low overall risk. The Nifty trend is neutral, and the India VIX is at a low level. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers.
+The market is in a neutral regime with a low India VIX of 11.42. The Nifty trend is also neutral with a -0.16% change. FII net is -510.69, while DII net is 4353.09, indicating a mixed sentiment. The overall risk is low, with an Asia cue of bullish and a Europe cue of mixed.
 
-- **MEDICO** [consider_entry/high] entry=47.86 stop=44.03 t1=56.88 hold=11d — High Parkhu score and favorable risk sector
-- **SREEL** [consider_entry/high] entry=239.76 stop=220.89 t1=277.51 hold=17d — High Parkhu score and favorable risk sector
-- **IIFL** [manage_open/medium] entry=635.95 stop=600.37 t1=707.1 hold=17d — Existing open position with favorable price movement
-- **AJANTPHARM** [consider_entry/medium] entry=3614.6 stop=3420.26 t1=4003.29 hold=17d — Favorable risk sector and Parkhu score
+- **MEDICO** [consider_entry/high] entry=47.86 stop=44.03 t1=56.88 hold=11d — Buy band with a high Parkhu score of 86.2
+- **SREEL** [consider_entry/high] entry=239.76 stop=220.89 t1=277.51 hold=17d — Buy band with a high Parkhu score of 86.2
+- **IIFL** [manage_open/medium] entry=635.95 stop=600.37 t1=707.1 hold=17d — Already in open book with a positive mfe_pct of 9.54
+- **AJANTPHARM** [consider_entry/medium] entry=3614.6 stop=3420.26 t1=4003.29 hold=17d — Buy band with a Parkhu score of 82.2
+- **CREDITACC** [stand_aside/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Needs action due to trend no longer being tradeable
+- **ICICIBANK** [stand_aside/low] entry=1450.1 stop=1401.49 t1=1547.33 hold=17d — Needs action due to trend no longer being tradeable
 
 ### AI stock reviews
 
-- **MEDICO** [high] MEDICO fits a ≤1-month swing due to its strong bullish trend, with a high Parkhu score of 86.3 and a strong buy technical rating. The recent 1-month return of 21.19% and outperformance against Nifty and its sector also support this setup. The relatively low India VIX of 11.42 and low overall risk regime further enhance the potential for a swing trade.
-  - catalysts: Bullish trend, Strong buy technicals, Outperformance
-  - risks: Market regime shift, Sector rotation, Earnings disappointment
-  - watch: Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 44.03. A close eye on the trend and technical indicators is necessary to adjust the trade accordingly.
-- **SREEL** [high] SREEL fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong delivery percentage. The recent price action and technical indicators suggest a potential upside move. The stock's distance from its 52-week high and ATR percentage of price also indicate a favorable risk-reward ratio.
-  - catalysts: Strong trend, High RSI, Strong delivery percentage
-  - risks: Market regime change, Sector-specific risks
-  - watch: Watch for a breakout above the current levels and monitor the stock's price action in relation to its stop and target levels. Invalidation cues would be a close below the stop level.
-- **IIFL** [high] IIFL Finance Limited is poised for a potential swing trade within the next month due to its strong technical indicators, including a bullish trend label, high ADX, and strong RSI. The recent price action and delivery percentage suggest a strong buying interest. The company's risk sector, NBFC & Capital Markets, has shown resilience, further supporting the bullish thesis.
-  - catalysts: Strong technical indicators, High delivery percentage, Resilient sector
-  - risks: Market regime shift, Economic downturn, Sector-specific risks
-  - watch: Traders should watch for a breakout above the recent highs to confirm the bullish trend, while a close below the stop level would invalidate the thesis.
-- **AJANTPHARM** [high] Ajanta Pharma Limited is poised for a ≤1-month swing due to its strong bullish trend, high Parkhu score of 82.3, and favorable technical indicators such as a high RSI of 66.52 and a strong buy tech rating. The recent price action also shows a significant return of 5.14% and 9.87% over the past 1 and 3 months, respectively. Additionally, the stock's distance from its 52-week high is only -1.64%, indicating potential for further upside.
-  - catalysts: Earnings momentum, Sector outperformance, Favorable technicals
-  - risks: Regulatory changes, Competition in Health Technology, Economic downturn
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level of 3420.26, indicating a failure of the bullish trend.
+- **MEDICO** [high] MEDICO fits a ≤1-month swing due to its strong bullish trend, with an ADX of 36.62 and RSI of 63.70, indicating a potential continuation of the uptrend. The stock has outperformed Nifty and its sector in the last month, with returns of 21.20% and 17.26%, respectively. The distance from its 52-week high is -15.86%, providing room for potential upside.
+  - catalysts: Strong trend, Outperforming sector, Low India VIX
+  - risks: Health Technology sector risks, Market regime change
+  - watch: Triggers for this setup include a strong breakout above the current price, while invalidation cues include a breach of the stop level at 44.03. The stock's price action and ability to hold above its stop level will be crucial in determining its next move.
+- **SREEL** [high] SREEL fits a ≤1-month swing due to its strong bullish trend, high ADX, and recent outperformance against Nifty and its sector. The stock's RSI is above 70, indicating potential for further upside. With a strong technical rating and high delivery percentage, the setup appears favorable for a short-term swing. The proximity to its 52-week high also suggests potential for a breakout.
+  - catalysts: Strong trend, High ADX, Outperformance
+  - risks: Overbought RSI, Sector volatility, Market regime shift
+  - watch: Triggers include a breakout above the current price level, while invalidation cues would be a drop below the stop level or a significant increase in India VIX. Watching the stock's ability to hold above its recent highs will be crucial.
+- **IIFL** [high] IIFL Finance Limited's current setup fits a ≤1-month swing due to its strong bullish trend, high RSI, and significant outperformance against Nifty and its sector. The company's recent price action and technical indicators, such as ADX and delivery percentage, also support a potential upward move. With a strong buy technical rating and relatively low risk, this setup appears promising for a short-term swing trade.
+  - catalysts: Earnings anticipation, Sector outperformance, Bullish trend
+  - risks: Market regime shift, Interest rate changes, Sectoral downturn
+  - watch: Triggers for this trade include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a shift in market sentiment. Close monitoring of the stock's price action and overall market conditions is essential.
+- **AJANTPHARM** [high] Ajanta Pharma Limited is poised for a swing trade due to its strong technical rating, bullish trend label, and recent outperformance against the Nifty and its sector. The company's health technology sector is considered low risk, and its current price is close to its 52-week high, indicating potential for a breakout. With a high Parkhu score of 82.2, this setup fits a ≤1-month swing trade. The recent delivery percentage and return over the last month also support a bullish stance.
+  - catalysts: Strong technical rating, Bullish trend label, Recent outperformance
+  - risks: Sector-specific risks, Earnings report in 83 days
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level or a significant increase in India VIX. A close eye should be kept on the overall market regime and the company's performance relative to its sector.
 
 ### Claude feed
 
-Neutral market regime with low overall risk. Top ideas include MEDICO, SREEL, and IIFL. Caveats include provisional scores and lack of trade outcome history.
+Regime: Neutral, Stance: Neutral, Top ideas: MEDICO, SREEL, IIFL, Caveats: Low score coverage, provisional scores, no trade outcome history
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Multiple companies declare financial results — Several companies have submitted their financial results for the quarter ended June 30, 2026, which may impact the market and investor sentiment
-2. **[medium]** India VIX at 11.42, overall risk low — The India VIX, a measure of market volatility, is currently at 11.42, indicating a low overall risk environment
-3. **[medium]** FII net outflow of -510.69 — Foreign Institutional Investors (FII) have had a net outflow of -510.69, which may impact the market and investor sentiment
-4. **[low]** Kamdhenu Ventures Limited submits financial results (KAMOPAINTS) — Kamdhenu Ventures Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact the company's stock price
-5. **[low]** Intrasoft Technologies Limited submits financial results (ISFT) — Intrasoft Technologies Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact the company's stock price
-6. **[low]** Vishwaraj Sugar Industries Limited submits financial results (VISHWARAJ) — Vishwaraj Sugar Industries Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact the company's stock price
-7. **[low]** Vascon Engineers Limited submits financial results (VASCONEQ) — Vascon Engineers Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact the company's stock price
-8. **[low]** KNR Constructions Limited submits financial results (KNRCON) — KNR Constructions Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact the company's stock price
-9. **[low]** Travel Food Services Limited submits financial results (TRAVELFOOD) — Travel Food Services Limited has submitted its financial results for the quarter ended June 30, 2026, which may impact the company's stock price
-10. **[low]** Alicon Castalloy Limited recommends final dividend (ALICON) — Alicon Castalloy Limited has recommended a final dividend of Rs. 3 per equity share, which may impact the company's stock price
+1. **[high]** Sale or disposal (VESUVIUS) — Disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, related to sale or disposal, which can significantly impact the company's financials and operations
+2. **[high]** Outcome of Board Meeting (VESUVIUS) — Outcome of the Board Meeting under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, which can have significant implications for the company's future plans and strategies
+3. **[medium]** Copy of Newspaper Publication (HIMATSEIDE) — Un-audited Financial Results for the quarter ended June 30, 2026, which provides insight into the company's current financial performance
+4. **[medium]** Allotment of Securities (EIFFL) — Allotment of 464410 securities pursuant to Preferential Issue, which can impact the company's capital structure and ownership
+5. **[medium]** Monitoring Agency Report (STYLEBAAZA) — Monitoring Agency Report for the First Quarter of FY 2027 ended June 30, 2026, which provides updates on the company's utilization of IPO proceeds
+6. **[medium]** General Updates (MELSTAR) — Disclosure pursuant to Reg 44 of the SEBI (LODR) Regulations, 2015, Intimation of E-voting facility for the 38th Annual General Meeting, which is a significant corporate event
+7. **[low]** General Updates (MELSTAR) — Announcement of Book Closure Date and Cut off date for the Purpose of determining the shareholders eligible to vote in the 38th Annual General Meet
+8. **[low]** Shareholders meeting (VIJIFIN) — Viji Finance Limited has submitted the Exchange a copy Srutinizers report of  Annual General Meeting held on August 13, 2026
+9. **[low]** Analysts/Institutional Investor Meet/Con. Call Updates (PENIND) — Link of Recording of Analysts/Institutional Investor Meet/Con. Call
+10. **[low]** Investor Presentation (FINOPB) — Fino Payments Bank Limited has informed the Exchange about Investor Presentation
 
 ## Deep-dive URLs (after push)
 

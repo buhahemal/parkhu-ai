@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-13",
-  "generated_at_ist": "2026-08-13T18:07:57.108394+05:30",
-  "duration_seconds": 351.6,
+  "generated_at_ist": "2026-08-13T19:37:01.202088+05:30",
+  "duration_seconds": 466.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 2979,
-      "seconds": 3.1
+      "seconds": 3.6
     },
     {
       "agent": "ohlc_history",
@@ -25,11 +25,11 @@
       "failed": 7,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2457,
-      "cold": 251,
-      "new_symbols": 8,
+      "warm": 2458,
+      "cold": 250,
+      "new_symbols": 7,
       "retries": 2,
-      "seconds": 285.7
+      "seconds": 396.3
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.7
+      "seconds": 0.9
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.4
+      "seconds": 1.7
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 4,
-      "seconds": 3.7
+      "seconds": 4.3
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.9
+      "seconds": 4.8
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 447,
-      "seconds": 5.3
+      "seconds": 5.8
     },
     {
       "agent": "stock_options",
@@ -79,31 +79,31 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2116,
-      "seconds": 4.8
+      "seconds": 5.5
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.0
+      "seconds": 3.7
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 2.5
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 4.4
+      "seconds": 5.5
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 2979,
-      "seconds": 0.2
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
@@ -142,13 +142,13 @@
       "with_structure": 2700,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 16.8
+      "seconds": 15.2
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 2979,
-      "seconds": 2.4
+      "seconds": 2.1
     },
     {
       "agent": "swing_brief",
@@ -161,15 +161,12 @@
         "AJANTPHARM"
       ],
       "watchlist": 9,
-      "open_positions": 23,
+      "open_positions": 24,
       "needing_action": [
         "CREDITACC",
-        "GANDHITUBE",
         "ICICIBANK"
       ],
-      "closed_today": [
-        "GANDHITUBE"
-      ],
+      "closed_today": [],
       "seconds": 0.3
     }
   ],
