@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-13",
-  "generated_at_ist": "2026-08-13T08:46:21.050997+05:30",
-  "duration_seconds": 399.3,
+  "generated_at_ist": "2026-08-13T18:07:57.108394+05:30",
+  "duration_seconds": 351.6,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 2981,
-      "seconds": 3.6
+      "rows": 2979,
+      "seconds": 3.1
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 13509,
-      "cache_rows": 7831112,
-      "symbols": 2702,
-      "failed": 8,
+      "rows": 13502,
+      "cache_rows": 7826869,
+      "symbols": 2701,
+      "failed": 7,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2459,
+      "warm": 2457,
       "cold": 251,
       "new_symbols": 8,
       "retries": 2,
-      "seconds": 306.7
+      "seconds": 285.7
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 2981,
+      "rows": 2979,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.9
+      "seconds": 0.7
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.8
+      "seconds": 1.4
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 4.7
+      "status": "ok",
+      "rows": 4,
+      "seconds": 3.7
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.1
+      "seconds": 3.9
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 447,
-      "seconds": 6.5
+      "seconds": 5.3
     },
     {
       "agent": "stock_options",
@@ -78,38 +78,38 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2112,
-      "seconds": 18.5
+      "rows": 2116,
+      "seconds": 4.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.1
+      "seconds": 3.0
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.8
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 5.1
+      "seconds": 4.4
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 2981,
-      "seconds": 0.3
+      "rows": 2979,
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 2981,
-      "seconds": 0.7
+      "rows": 2979,
+      "seconds": 0.6
     },
     {
       "agent": "fno_momentum",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -138,47 +138,49 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2702,
-      "with_structure": 2701,
+      "rows": 2701,
+      "with_structure": 2700,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 19.4
+      "seconds": 16.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 2981,
-      "seconds": 2.7
+      "rows": 2979,
+      "seconds": 2.4
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 5,
+      "rows": 4,
       "ideas": [
+        "MEDICO",
         "SREEL",
-        "CASTROLIND",
-        "EMCURE",
-        "UJJIVANSFB",
-        "GANDHITUBE"
+        "IIFL",
+        "AJANTPHARM"
       ],
       "watchlist": 9,
       "open_positions": 23,
       "needing_action": [
         "CREDITACC",
+        "GANDHITUBE",
         "ICICIBANK"
       ],
-      "closed_today": [],
-      "seconds": 0.4
+      "closed_today": [
+        "GANDHITUBE"
+      ],
+      "seconds": 0.3
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,

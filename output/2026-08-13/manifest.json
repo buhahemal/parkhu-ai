@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-08-13",
-  "generated_at_ist": "2026-08-13T08:46:21.042262+05:30",
+  "generated_at_ist": "2026-08-13T18:07:57.103348+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -19,7 +19,7 @@
         "perf_1y"
       ],
       "present": true,
-      "rows": 2981
+      "rows": 2979
     },
     "history/ohlc.csv": {
       "agent": "ohlc_history",
@@ -36,7 +36,7 @@
         "volume"
       ],
       "present": true,
-      "rows": 13509
+      "rows": 13502
     },
     "ohlc_features.csv": {
       "agent": "ohlc_features (derived)",
@@ -51,7 +51,7 @@
         "volume_ratio_vs_20d"
       ],
       "present": true,
-      "rows": 2702
+      "rows": 2701
     },
     "stock_options.csv": {
       "agent": "stock_options",
@@ -107,7 +107,7 @@
         "next_earnings_date"
       ],
       "present": true,
-      "rows": 2981
+      "rows": 2979
     },
     "fii.csv": {
       "agent": "smartmoney",
@@ -135,7 +135,7 @@
         "price"
       ],
       "present": true,
-      "rows": 0
+      "rows": 2
     },
     "options.csv": {
       "agent": "options",
@@ -164,7 +164,7 @@
         "underlying_value"
       ],
       "present": true,
-      "rows": 213
+      "rows": 214
     },
     "most_active_contracts.csv": {
       "agent": "derivatives",
@@ -192,7 +192,7 @@
         "latest_oi"
       ],
       "present": true,
-      "rows": 214
+      "rows": 213
     },
     "corporate_actions.csv": {
       "agent": "corpactions",
@@ -277,7 +277,7 @@
         "close"
       ],
       "present": true,
-      "rows": 2112
+      "rows": 2116
     },
     "relative_strength.csv": {
       "agent": "relative_strength (derived)",
@@ -291,7 +291,7 @@
         "perf_1m"
       ],
       "present": true,
-      "rows": 2981
+      "rows": 2979
     },
     "event_risk.csv": {
       "agent": "event_risk (derived)",
@@ -305,7 +305,7 @@
         "event_risk_score"
       ],
       "present": true,
-      "rows": 2981
+      "rows": 2979
     },
     "fno_momentum.csv": {
       "agent": "fno_momentum (derived)",
@@ -359,7 +359,7 @@
         "risk_score"
       ],
       "present": true,
-      "rows": 2981
+      "rows": 2979
     },
     "market_summary.csv": {
       "agent": "market_summary (derived)",
