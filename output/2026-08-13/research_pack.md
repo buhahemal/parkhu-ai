@@ -1,16 +1,16 @@
 # Parkhu research pack — 2026-08-13
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-13T06:08:40.868834+05:30
+- **generated_at_ist:** 2026-08-13T08:46:21.050997+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.46%)
-- india_vix: 11.86 (Low)
+- market_regime: **Neutral**
+- nifty: Neutral (-0.15%)
+- india_vix: 11.69 (Low)
 - fii_net: -1002.5 | dii_net: 5841.66
-- overall_risk: Medium | global_risk: Risk-On
+- overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
@@ -20,14 +20,14 @@
 - price > EMA50: 1033
 - ADX14 > 25: 600
 - RSI14 in 40-80: 559
-- RS > 0 vs NIFTY and sector: 301
-- delivery% >= 40: 180
-- relative_volume >= 1: 52
-- no earnings within 21d: 47
-- event_risk_score <= 1: 47
-- TV rating not Sell: 44
+- RS > 0 vs NIFTY and sector: 307
+- delivery% >= 40: 183
+- relative_volume >= 1: 53
+- no earnings within 21d: 48
+- event_risk_score <= 1: 48
+- TV rating not Sell: 45
 
-## Survivors (top 44 of 44)
+## Survivors (top 45 of 45)
 
 - **SREEL** [idea] score 87.4 — selected as idea
 - **CASTROLIND** [idea] score 87.3 — selected as idea
@@ -35,10 +35,10 @@
 - **UJJIVANSFB** [idea] score 83.8 — selected as idea
 - **GANDHITUBE** [idea] score 80.6 — selected as idea
 - **ARTEMISMED** [rejected] score 80.4 — not selected
-- **PLAZACABLE** [rejected] score 80.4 — T1 needs more than 22 trading days (~1 month)
+- **PLAZACABLE** [rejected] score 80.3 — T1 needs more than 22 trading days (~1 month)
 - **IDFCFIRSTB** [watchlist] score 78.9 — score in Watch band (70–80)
+- **THYROCARE** [watchlist] score 78.7 — score in Watch band (70–80)
 - **SANSERA** [watchlist] score 78.6 — score in Watch band (70–80)
-- **THYROCARE** [watchlist] score 78.6 — score in Watch band (70–80)
 - **HINDZINC** [rejected] score 77.7 — T1 needs more than 22 trading days (~1 month)
 - **SCPL** [watchlist] score 77.4 — score in Watch band (70–80)
 - **BETA** [watchlist] score 74.5 — score in Watch band (70–80)
@@ -46,17 +46,18 @@
 - **HEROMOTOCO** [watchlist] score 72.8 — score in Watch band (70–80)
 - **FIEMIND** [watchlist] score 70.8 — score in Watch band (70–80)
 - **PREMIERPOL** [watchlist] score 70.2 — score in Watch band (70–80)
+- **ANANDRATHI** [rejected] score 68.1 — score below Watch band
 - **M&MFIN** [rejected] score 67.5 — score below Watch band
 - **SHRIPISTON** [rejected] score 66.8 — score below Watch band
+- **BALPHARMA** [rejected] score 65.3 — score below Watch band
 - **KANPRPLA** [rejected] score 65.3 — score below Watch band
-- **BALPHARMA** [rejected] score 65.2 — score below Watch band
+- **GUFICBIO** [rejected] score 65.2 — score below Watch band
 - **AARTIDRUGS** [rejected] score 65.1 — T1 needs more than 22 trading days (~1 month)
-- **GUFICBIO** [rejected] score 65.1 — score below Watch band
 - **MANAKSTEEL** [rejected] score 64.7 — score below Watch band
 - **LMW** [rejected] score 62.6 — score below Watch band
-- **GLAXO** [rejected] score 62.0 — T1 needs more than 22 trading days (~1 month)
-- **IKIO** [rejected] score 61.7 — score below Watch band
+- **GLAXO** [rejected] score 62.1 — T1 needs more than 22 trading days (~1 month)
 - **ASHIANA** [rejected] score 61.6 — score below Watch band
+- **IKIO** [rejected] score 61.6 — score below Watch band
 - **VLSFINANCE** [rejected] score 61.0 — T1 needs more than 22 trading days (~1 month)
 - **AUSOMENT** [rejected] score 60.8 — T1 needs more than 22 trading days (~1 month)
 - **TASTYBITE** [rejected] score 59.6 — score below Watch band
@@ -69,7 +70,7 @@
 - **A2ZINFRA** [rejected] score 50.0 — score below Watch band
 - **PRIMESECU** [rejected] score 47.1 — score below Watch band
 - **IVC** [rejected] score 47.0 — score below Watch band
-- **YUKEN** [rejected] score 46.9 — T1 needs more than 22 trading days (~1 month)
+- **YUKEN** [rejected] score 46.8 — T1 needs more than 22 trading days (~1 month)
 - **21STCENMGM** [rejected] score 43.4 — T1 needs more than 22 trading days (~1 month)
 - **MAHAPEXLTD** [rejected] score 42.5 — T1 needs more than 22 trading days (~1 month)
 - **SMARTWORKS** [rejected] score 36.4 — T1 needs more than 22 trading days (~1 month)
@@ -134,36 +135,36 @@
 
 ## Swing candidates (top)
 
-- AARTIDRUGS: score=14 rs_nifty=6.29 deliv=43.94
-- GUFICBIO: score=14 rs_nifty=5.24 deliv=47.79
-- ARTEMISMED: score=14 rs_nifty=12.55 deliv=49.86
-- SMARTWORKS: score=14 rs_nifty=2.27 deliv=58.79
-- AUSOMENT: score=14 rs_nifty=12.96 deliv=94.15
-- IDFCFIRSTB: score=14 rs_nifty=4.79 deliv=65.31
-- BETA: score=14 rs_nifty=5.5 deliv=60.24
-- BALPHARMA: score=14 rs_nifty=12.09 deliv=63.21
-- TASTYBITE: score=14 rs_nifty=3.15 deliv=69.43
-- UJJIVANSFB: score=14 rs_nifty=8.88 deliv=51.36
-- EMCURE: score=14 rs_nifty=8.61 deliv=70.04
-- KANPRPLA: score=14 rs_nifty=16.19 deliv=50.43
-- BATLIBOI: score=14 rs_nifty=6.3 deliv=68.86
-- IKIO: score=14 rs_nifty=2.31 deliv=42.43
-- AGARWALEYE: score=14 rs_nifty=4.3 deliv=83.8
+- MANAKSTEEL: score=14 rs_nifty=3.97 deliv=52.54
+- KANPRPLA: score=14 rs_nifty=16.69 deliv=50.43
+- BETA: score=14 rs_nifty=6.0 deliv=60.24
+- BALPHARMA: score=14 rs_nifty=12.59 deliv=63.21
+- PREMIERPOL: score=14 rs_nifty=13.87 deliv=44.6
+- IKIO: score=14 rs_nifty=2.81 deliv=42.43
+- SMARTWORKS: score=14 rs_nifty=2.77 deliv=58.79
+- SHRIPISTON: score=14 rs_nifty=5.77 deliv=48.45
+- AARTIDRUGS: score=14 rs_nifty=6.79 deliv=43.94
+- AGARWALEYE: score=14 rs_nifty=4.8 deliv=83.8
+- ARTEMISMED: score=14 rs_nifty=13.05 deliv=49.86
+- TASTYBITE: score=14 rs_nifty=3.65 deliv=69.43
+- BATLIBOI: score=14 rs_nifty=6.8 deliv=68.86
+- EMCURE: score=14 rs_nifty=9.11 deliv=70.04
+- PRIMESECU: score=14 rs_nifty=2.55 deliv=76.1
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.59% (bull)
-- Hang Seng: -1.10% (bear)
-- Shanghai: -0.82% (bear)
-- Kospi: +8.31% (bull)
-- Taiwan: +0.43% (bull)
-- ASX 200: -0.85% (bear)
+- Nikkei: +1.61% (bull)
+- Hang Seng: +0.03% (neutral)
+- Shanghai: +0.41% (bull)
+- Kospi: +4.10% (bull)
+- Taiwan: +1.03% (bull)
+- ASX 200: -0.57% (bear)
 
 ### Europe
-- FTSE 100: -0.17% (bear)
-- DAX: +0.26% (bull)
-- Euro Stoxx 50: +0.24% (bull)
+- FTSE 100: -0.10% (neutral)
+- DAX: -0.23% (bear)
+- Euro Stoxx 50: -0.26% (bear)
 
 ### US
 - S&P 500: +0.26% (bull)
@@ -172,10 +173,10 @@
 - US VIX: -4.78% (bull)
 
 ### Macro
-- USDINR: -0.02% (neutral)
-- Crude WTI: -1.02% (bear)
-- Brent: -0.81% (bear)
-- DXY: +0.11% (neutral)
+- USDINR: -0.06% (neutral)
+- Crude WTI: -1.32% (bear)
+- Brent: -1.11% (bear)
+- DXY: +0.17% (neutral)
 - US 10Y: -0.04% (neutral)
 - India ETF: -0.28% (bear)
 - EM ETF: +1.57% (bull)
@@ -184,54 +185,55 @@
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** defensive
+- **stance:** neutral
 
-The market is currently in a bearish regime with a low India VIX. The Nifty trend is also bearish with a -0.46% change. Foreign institutional investors have a net outflow of -1002.5, while domestic institutional investors have a net inflow of 5841.66. The overall risk is medium.
+The Indian market is in a neutral regime with a low overall risk. The Nifty trend is neutral, and the India VIX is at a low level. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers.
 
-- **SREEL** [consider_entry/high] entry=239.12 stop=220.7 t1=275.96 hold=17d — Strong Parkhu score of 87.4 and a favorable risk-reward ratio
-- **CASTROLIND** [consider_entry/high] entry=188.38 stop=185.55 t1=195.0 hold=6d — High Parkhu score of 87.3 and a good risk-reward ratio
-- **UJJIVANSFB** [manage_open/medium] entry=72.38 stop=67.31 t1=82.52 hold=16d — Already in open book with a favorable price movement
+- **SREEL** [consider_entry/high] entry=239.12 stop=220.7 t1=275.96 hold=17d — Strong Parkhu score and favorable risk sector
+- **CASTROLIND** [consider_entry/high] entry=188.38 stop=185.55 t1=195.0 hold=6d — High Parkhu score and attractive risk-reward ratio
+- **UJJIVANSFB** [manage_open/medium] entry=72.38 stop=67.31 t1=82.52 hold=16d — Already in open book, monitor for potential stop loss adjustment
+- **CREDITACC** [stand_aside/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Needs action, consider tightening or reviewing the position
 
 ### AI stock reviews
 
-- **SREEL** [high] SREEL's strong price momentum, indicated by its high RSI and ADX values, along with its outperformance against the Nifty and its sector over the past month, makes it a suitable candidate for a short-term swing trade. The company's recent delivery percentage and return over the past month further support this thesis. Given the current bearish market regime, a strong stock-specific move could be expected in the short term. The proximity to its 52-week high also suggests potential for a breakout.
-  - catalysts: Strong price momentum, Outperformance against Nifty and sector, High delivery percentage
-  - risks: Bearish market regime, Sector-specific risks in Retail Trade, Potential for mean reversion
-  - watch: Traders should watch for a strong move above the current price level to confirm the bullish thesis, while a break below the stop level would invalidate this setup. The stock's ability to hold above its recent highs will be crucial.
-- **CASTROLIND** [medium] CASTROLIND fits a ≤1-month swing due to its bullish trend label, high delivery percentage, and outperformance against the sector over the past month. The stock's RSI and ADX levels suggest a potential for further upside. With a relatively low distance from its 52-week high, CASTROLIND may be poised for a short-term rally.
-  - catalysts: Bullish trend, High delivery percentage, Outperformance vs sector
-  - risks: Energy sector volatility, Overall market risk
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a drop below the stop level. A failure to reach the target within the specified hold days could also be a sign to reevaluate the position.
-- **EMCURE** [high] Emcure Pharmaceuticals Limited (EMCURE) is poised for a ≤1-month swing due to its strong momentum indicators, such as a bullish trend label, high ADX, and RSI below overbought levels. The stock's recent outperformance against Nifty and its sector, coupled with high delivery percentage, suggests a strong investor interest. With a distance of only -1.88% from its 52-week high, EMCURE has the potential to break out and reach new highs.
-  - catalysts: Strong momentum, High delivery percentage, Outperformance against Nifty and sector
-  - risks: Bearish market regime, Overall medium risk, Health Technology sector risks
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues would be a drop below the stop level, indicating a failure to sustain the momentum.
-- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with an ADX of 44.08 and RSI of 65.12, indicating a strong uptrend. The stock has also outperformed Nifty and its sector in the last month, with returns of 11.35% and 10.11%, respectively. With a Parkhu score of 83.8 and a technical rating of 'Buy', this setup appears promising for a short-term swing.
-  - catalysts: Bullish trend, Outperformance vs Nifty and sector, High Parkhu score
-  - risks: Medium overall risk, India VIX at 11.86, Regime is Bearish
-  - watch: Triggers for this setup include a strong breakout above the current level, while invalidation cues would be a breach of the stop level at 67.31. A close eye should be kept on the stock's price action and overall market sentiment.
-- **GANDHITUBE** [high] Gandhi Special Tubes Limited (GANDHITUBE) fits a ≤1-month swing due to its strong technical rating and recent bullish trend. The stock's RSI14 is 78.54, indicating potential for a short-term pullback, but its high delivery percentage of 74.09% and strong return over the past month suggest a robust uptrend. The distance from its 52-week high is -7.18%, leaving room for a potential bounce. The overall market regime is bearish, but the stock's relative strength against Nifty and its sector is promising.
-  - catalysts: Strong technical rating, Bullish trend, High delivery percentage
-  - risks: Bearish market regime, High RSI14, Sectoral risks
-  - watch: Triggers for this setup include a strong bounce from the current levels, while invalidation cues would be a breach of the stop level at 914.06, indicating a failure of the bullish trend.
+- **SREEL** [high] The setup for SREEL fits a ≤1-month swing due to its strong bullish trend, high RSI, and strong delivery percentage. The recent price action and technical indicators suggest a potential upside movement. The stock's distance from its 52-week high and ATR percentage of price also indicate a possible breakout. The overall market regime is neutral with low risk, which could support the swing trade.
+  - catalysts: Bullish trend, High RSI, Strong delivery
+  - risks: Market regime change, Sector risk, Stop loss trigger
+  - watch: Triggers for the trade include a strong bullish candlestick pattern, while invalidation cues would be a break below the stop loss level or a significant increase in India VIX. The trade should be monitored closely for any changes in the market regime or sector-specific news.
+- **CASTROLIND** [high] CASTROLIND fits a ≤1-month swing due to its bullish trend label, high delivery percentage, and recent outperformance against the Nifty and its sector. The stock's RSI14 is at 53.73, indicating a relatively neutral momentum, while the ADX14 is at 44.18, suggesting a strong trend. With a distance of -10.89% from its 52-week high, there's potential for upside. The overall low-risk regime and neutral market regime further support this setup.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance against Nifty and sector
+  - risks: Energy Minerals sector risks, Market regime change, Earnings disappointment
+  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 185.55. A move towards the target levels would be a key indicator of the setup's success.
+- **EMCURE** [high] Emcure Pharmaceuticals Limited (EMCURE) fits a ≤1-month swing due to its bullish trend label, high delivery percentage, and recent outperformance against Nifty and its sector. The stock's RSI14 is at 67.61, indicating a potential for further upside without being overbought. The overall low-risk regime and neutral market regime also support a swing trade.
+  - catalysts: Earnings momentum, Sector outperformance, Bullish trend
+  - risks: Regulatory changes, Competition in Health Technology, Market volatility
+  - watch: Triggers for this trade include a strong breakout above the recent highs, while invalidation cues would be a breach of the stop level at 1898.09, indicating a failure of the bullish momentum.
+- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with a trend label of 'Bullish' and an ADX of 44.085, indicating strong momentum. The stock's RSI of 65.121 is not overbought, allowing for further upside. Additionally, its return over the past month is 11.35%, outperforming the Nifty and its sector, suggesting strong relative strength.
+  - catalysts: Strong momentum, Bullish trend, Outperforming sector
+  - risks: Market regime change, Interest rate changes, Sector rotation
+  - watch: Triggers for this setup include a breakout above the recent high, while invalidation cues include a close below the stop level of 67.31, indicating a loss of momentum.
+- **GANDHITUBE** [high] Gandhi Special Tubes Limited (GANDHITUBE) is poised for a ≤1-month swing due to its strong bullish trend, high RSI, and significant delivery percentage. The company's recent price action and technical indicators suggest a potential breakout. With a Parkhu score of 80.6, this setup appears promising for a short-term swing trade.
+  - catalysts: Bullish trend, High RSI, Strong delivery
+  - risks: Market volatility, Sector risks, Overbought conditions
+  - watch: Triggers for this trade include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level or a significant reversal in the trend.
 
 ### Claude feed
 
-Regime: Bearish, Stance: Defensive, Top Ideas: SREEL, CASTROLIND, Caveats: Provisional scores, incomplete data
+Regime: Neutral, Stance: Neutral, Top Ideas: SREEL, CASTROLIND, Caveats: Low score coverage, provisional scores, and lack of trade outcome history
 
 
 ## Market news (AI top impact)
 
 1. **[high]** Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company (PAYTM) — SEBI proceedings related to the company may impact its stock price and overall market sentiment
-2. **[high]** General Updates (POWERGRID) — Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 may have a significant impact on the company's stock price
-3. **[high]** General Updates (SHALPAINTS) — Disclosure under Regulation 30(5) of SEBI LODR, 2015 may have a significant impact on the company's stock price
-4. **[medium]** Press Release (YATRA) — Q1FY27 Financial Results may impact the company's stock price and overall market sentiment
-5. **[medium]** Outcome of Board Meeting (SHALPAINTS) — Financial results for the period ended Jun 30, 2026 may impact the company's stock price and overall market sentiment
-6. **[medium]** Preferential issue (SHALPAINTS) — Preferential issue may impact the company's stock price and overall market sentiment
-7. **[medium]** Press Release (NATCAPSUQ) — Press Release made to analysts and investors in connection with the Unaudited Consolidated & Standalone Financial Results may impact the company's stock price and overall market sentiment
-8. **[low]** Shareholders meeting (CENTRUM) — Proceedings of 48th Annual General Meeting may not have a significant impact on the company's stock price and overall market sentiment
-9. **[low]** Investor Presentation (RELIGARE) — Investor Presentation may not have a significant impact on the company's stock price and overall market sentiment
-10. **[low]** Monitoring Agency Report (YATRA) — Monitoring Agency Report for Q1FY27 may not have a significant impact on the company's stock price and overall market sentiment
+2. **[high]** General Updates (SHALPAINTS) — Disclosure under Regulation 30(5) of SEBI LODR, 2015 may have a significant impact on the company's stock price
+3. **[medium]** Press Release (NATCAPSUQ) — Unaudited Consolidated & Standalone Financial Results may influence investor decisions
+4. **[medium]** Preferential issue (SHALPAINTS) — The company's decision to issue securities may affect its capital structure and stock price
+5. **[medium]** Outcome of Board Meeting (SHALPAINTS) — The company's financial results for the period ended June 30, 2026, may impact investor sentiment
+6. **[medium]** Press Release (YATRA) — Q1FY27 Financial Results may influence investor decisions
+7. **[low]** Press Release (SPMLINFRA) — Q1 FY27 Revenue and PAT may have a limited impact on the company's stock price
+8. **[low]** Appointment (YATRA) — Appointment of Ms E&Y as Other may have a minimal impact on the company's operations
+9. **[low]** Updates (CENTRUM) — Summary of the proceedings of the 48th Annual General Meeting may have a limited impact on the company's stock price
+10. **[low]** Allotment of Securities (CHOLAFIN) — Allotment of securities pursuant to ESOP/ESPS may have a minimal impact on the company's capital structure
 
 ## Deep-dive URLs (after push)
 
