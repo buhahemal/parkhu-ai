@@ -2,7 +2,11 @@ symbol,yf_ticker,reason
 ANAWIL,ANAWIL.NS,no_ohlc_after_retry
 AVATAR,AVATAR.NS,no_ohlc_after_retry
 DIRL,DIRL.NS,no_ohlc_after_retry
+LEAPIND,LEAPIND.NS,no_ohlc_after_retry
 METALIC,METALIC.NS,no_ohlc_after_retry
 NEELAM,NEELAM.NS,no_ohlc_after_retry
+OPTIMYSTIX,OPTIMYSTIX.NS,no_ohlc_after_retry
 PROPSHOP,PROPSHOP.NS,no_ohlc_after_retry
+SHUKRAPHAR,SHUKRAPHAR.NS,no_ohlc_after_retry
+TECHNOCRAF,TECHNOCRAF.NS,no_ohlc_after_retry
 VISDEM,VISDEM.NS,no_ohlc_after_retry
