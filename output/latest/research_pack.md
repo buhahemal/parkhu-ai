@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-14
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-14T18:08:24.195401+05:30
+- **generated_at_ist:** 2026-08-14T19:30:30.694956+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Neutral**
 - nifty: Neutral (-0.12%)
 - india_vix: 11.31 (Low)
-- fii_net: -510.69 | dii_net: 4353.09
-- overall_risk: Low | global_risk: Risk-On
+- fii_net: 508.12 | dii_net: 356.4
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
@@ -20,41 +20,43 @@
 - price > EMA50: 1025
 - ADX14 > 25: 605
 - RSI14 in 40-80: 565
-- RS > 0 vs NIFTY and sector: 305
-- delivery% >= 40: 179
-- relative_volume >= 1: 32
-- no earnings within 21d: 28
-- event_risk_score <= 1: 27
-- TV rating not Sell: 26
+- RS > 0 vs NIFTY and sector: 313
+- delivery% >= 40: 184
+- relative_volume >= 1: 33
+- no earnings within 21d: 30
+- event_risk_score <= 1: 29
+- TV rating not Sell: 28
 
-## Survivors (top 26 of 26)
+## Survivors (top 28 of 28)
 
 - **SJS** [idea] score 84.2 — selected as idea
 - **UJJIVANSFB** [idea] score 80.5 — selected as idea
 - **STYLAMIND** [idea] score 80.4 — selected as idea
-- **UNIONBANK** [watchlist] score 79.7 — score in Watch band (70–80)
+- **UNIONBANK** [watchlist] score 79.8 — score in Watch band (70–80)
 - **THYROCARE** [watchlist] score 78.2 — score in Watch band (70–80)
 - **KROSS** [watchlist] score 70.6 — score in Watch band (70–80)
 - **GROBTEA** [rejected] score 69.7 — T1 needs more than 22 trading days (~1 month)
-- **ARIHANT** [rejected] score 67.2 — score below Watch band
+- **ARIHANT** [rejected] score 67.3 — score below Watch band
 - **TECHM** [rejected] score 66.8 — T1 needs more than 22 trading days (~1 month)
-- **BLSE** [rejected] score 64.8 — score below Watch band
+- **ASIANENE** [rejected] score 65.3 — score below Watch band
+- **BLSE** [rejected] score 64.9 — score below Watch band
 - **GUFICBIO** [rejected] score 64.5 — score below Watch band
 - **GLAXO** [rejected] score 64.3 — score below Watch band
 - **ADOR** [rejected] score 64.1 — score below Watch band
 - **AMDIND** [rejected] score 63.5 — score below Watch band
 - **HATSUN** [rejected] score 63.5 — T1 needs more than 22 trading days (~1 month)
-- **STYLEBAAZA** [rejected] score 63.4 — score below Watch band
+- **STYLEBAAZA** [rejected] score 63.3 — score below Watch band
 - **LMW** [rejected] score 61.8 — score below Watch band
 - **UNITDSPR** [rejected] score 60.5 — score below Watch band
-- **POONAWALLA** [rejected] score 59.2 — score below Watch band
+- **POONAWALLA** [rejected] score 59.1 — score below Watch band
 - **TIJARIA** [rejected] score 58.9 — score below Watch band
 - **ETERNAL** [rejected] score 54.9 — T1 needs more than 22 trading days (~1 month)
 - **BIL** [rejected] score 52.2 — score below Watch band
-- **NDGL** [rejected] score 51.6 — T1 needs more than 22 trading days (~1 month)
+- **NDGL** [rejected] score 51.4 — T1 needs more than 22 trading days (~1 month)
 - **ABMINTLLTD** [rejected] score 47.9 — score below Watch band
 - **TGBHOTELS** [rejected] score 45.5 — score below Watch band
-- **IVC** [rejected] score 37.9 — score below Watch band
+- **IVC** [rejected] score 37.7 — score below Watch band
+- **SMARTWORKS** [rejected] score 37.3 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -102,8 +104,6 @@
 
 - **CREDITACC**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
 - **DIVGIITTS**: BANK PARTIAL — T1 REACHED — ₹1,301.05 above T1 ₹1,242.23 — bank part, trail the rest, move stop to breakeven ₹1,076.40
-- **ICICIBANK**: EXIT — STOP HIT — session low at/below stop ₹1,401.49 (last ₹1,417.00)
-- **MEDICO**: EXIT — STOP HIT — session low at/below stop ₹44.03 (last ₹45.58)
 - **SHRIPISTON**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
@@ -114,20 +114,20 @@
 ## Swing candidates (top)
 
 - STYLAMIND: score=14 rs_nifty=9.14 deliv=52.29
-- TECHM: score=14 rs_nifty=10.22 deliv=66.46
-- SJS: score=14 rs_nifty=15.79 deliv=50.91
-- UNIONBANK: score=14 rs_nifty=8.22 deliv=56.88
 - KROSS: score=14 rs_nifty=11.91 deliv=44.53
+- UNIONBANK: score=14 rs_nifty=8.22 deliv=56.88
 - POONAWALLA: score=14 rs_nifty=4.5 deliv=48.51
-- AMDIND: score=14 rs_nifty=16.83 deliv=62.83
-- THYROCARE: score=14 rs_nifty=14.42 deliv=68.46
+- UJJIVANSFB: score=14 rs_nifty=9.68 deliv=59.97
+- SJS: score=14 rs_nifty=15.79 deliv=50.91
 - GUFICBIO: score=14 rs_nifty=4.08 deliv=58.32
 - ETERNAL: score=14 rs_nifty=10.53 deliv=50.11
 - NATIONALUM: score=14 rs_nifty=1.32 deliv=35.87
-- UJJIVANSFB: score=14 rs_nifty=9.68 deliv=59.97
-- INNOVACAP: score=13 rs_nifty=2.38 deliv=45.31
-- GRINDWELL: score=13 rs_nifty=7.02 deliv=53.13
-- MANAKALUCO: score=13 rs_nifty=6.53 deliv=60.93
+- TECHM: score=14 rs_nifty=10.22 deliv=66.46
+- AMDIND: score=14 rs_nifty=16.83 deliv=62.83
+- SMARTWORKS: score=14 rs_nifty=1.92 deliv=69.14
+- THYROCARE: score=14 rs_nifty=14.42 deliv=68.46
+- NILKAMAL: score=13 rs_nifty=37.79 deliv=50.19
+- BETA: score=13 rs_nifty=7.1 deliv=48.91
 
 ## World markets (India cues)
 
@@ -137,69 +137,73 @@
 - Shanghai: +0.01% (neutral)
 - Kospi: +2.42% (bull)
 - Taiwan: -0.46% (bear)
-- ASX 200: -0.80% (bear)
+- ASX 200: -0.23% (bear)
 
 ### Europe
-- FTSE 100: -0.01% (neutral)
-- DAX: +0.81% (bull)
-- Euro Stoxx 50: +0.24% (bull)
+- FTSE 100: -0.09% (neutral)
+- DAX: +0.62% (bull)
+- Euro Stoxx 50: +0.05% (neutral)
 
 ### US
-- S&P 500: +0.65% (bull)
-- Nasdaq: +0.81% (bull)
-- Dow: +0.13% (neutral)
-- US VIX: -0.75% (bull)
+- S&P 500: +0.09% (neutral)
+- Nasdaq: +0.03% (neutral)
+- Dow: +0.02% (neutral)
+- US VIX: -0.27% (neutral)
 
 ### Macro
 - USDINR: +0.07% (neutral)
-- Crude WTI: +0.78% (bull)
-- Brent: +0.47% (bull)
-- DXY: -0.37% (bull)
-- US 10Y: +0.09% (neutral)
-- India ETF: +0.06% (neutral)
-- EM ETF: +0.33% (bull)
+- Crude WTI: -0.33% (bear)
+- Brent: -0.23% (bear)
+- DXY: -0.47% (bull)
+- US 10Y: +0.17% (neutral)
+- India ETF: -0.22% (bear)
+- EM ETF: +0.28% (bull)
 
 
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** neutral
+- **stance:** selective_aggressive
 
-The Indian market is in a neutral regime with a slight decline of 0.12% in Nifty. The India VIX is at a low level of 11.31, indicating low overall risk. Foreign institutional investors have been net sellers, while domestic institutional investors have been net buyers.
+The market is in a neutral regime with low overall risk. Nifty trend is neutral with a slight decline of 0.12%. India VIX is at 11.31, indicating low volatility. FII and DII net flows are positive, with FII net at 508.12 and DII net at 356.4.
 
-- **SJS** [consider_entry/high] entry=2532.5 stop=2333.72 t1=2930.06 hold=17d — High Parkhu score of 84.2 and a favorable risk-reward ratio of 2.0
-- **UJJIVANSFB** [consider_entry/medium] entry=72.47 stop=67.64 t1=82.14 hold=16d — Parkhu score of 80.5 and a favorable risk-reward ratio of 2.0
-- **STYLAMIND** [consider_entry/medium] entry=3642.0 stop=3350.64 t1=4224.72 hold=16d — Parkhu score of 80.4 and a favorable risk-reward ratio of 2.0
-- **CREDITACC** [manage_open/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Tighten or review the position due to trend no longer being tradeable
-- **SHRIPISTON** [manage_open/low] entry=4402.7 stop=4081.21 t1=5045.69 hold=17d — Tighten or review the position due to trend no longer being tradeable
+- **SJS** [consider_entry/high] entry=2532.5 stop=2333.72 t1=2930.06 hold=17d — Buy band with high Parkhu score of 84.2 and favorable risk sector
+- **UJJIVANSFB** [consider_entry/high] entry=72.47 stop=67.64 t1=82.14 hold=16d — Buy band with high Parkhu score of 80.5 and favorable risk sector
+- **STYLAMIND** [consider_entry/high] entry=3642.0 stop=3350.64 t1=4224.72 hold=16d — Buy band with high Parkhu score of 80.4 and favorable risk sector
+- **CREDITACC** [manage_open/medium] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Open position with recent price movement, consider tightening or reviewing stop
 
 ### AI stock reviews
 
-- **SJS** [high] The setup in S.J.S. Enterprises Limited fits a ≤1-month swing due to its strong bullish trend, high ADX, and strong RSI. The stock has shown a significant return over the past month and is close to its 52-week high. The overall market regime is neutral with low risk, which supports a swing trade. The company's strong technical rating and high Parkhu score also add to the thesis.
-  - catalysts: Strong trend, High ADX, Strong RSI, Close to 52-week high
-  - risks: Market regime change, Earnings surprise, Sector rotation
-  - watch: Triggers for the trade include a breakout above the current level, while invalidation cues include a drop below the stop level. The trade should be monitored closely for any changes in the market regime or sector rotation.
-- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating a strong upward momentum. The stock's RSI14 is at 63.49, which is not overbought, and its ADX14 is at 44.11, indicating a strong trend. The company's recent returns of 10.90% and 28.15% over the past 1 and 3 months, respectively, also support this setup.
-  - catalysts: Strong trend momentum, Recent price appreciation, Favorable risk-reward ratio
-  - risks: Market regime shift, Sector-specific risks, Earnings disappointment
-  - watch: Triggers for this setup include a breakout above the recent high, while invalidation cues include a close below the stop level of 67.64. A move below this level could indicate a shift in trend and invalidate the bullish thesis.
-- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an ADX of 48.76 and RSI of 62.80, indicating a potential continuation of the uptrend. The recent 1-month return of 10.36% and 3-month return of 41.40% also support the bullish thesis. The distance from the 52-week high is -12.24%, providing room for potential upside.
+- **SJS** [high] S.J.S. Enterprises Limited (SJS) fits a ≤1-month swing due to its strong bullish trend, high ADX, and strong RSI. The company's recent price action and technical indicators suggest a potential upside. With a Parkhu score of 84.2 and a strong buy tech rating, the stock has a high likelihood of reaching its target in the given timeframe.
+  - catalysts: Strong trend, High ADX, Strong RSI, Recent price momentum
+  - risks: Market volatility, Economic downturn, Sector-specific risks
+  - watch: Triggers for this setup include a strong breakout above the current level, while invalidation cues include a breach of the stop level. The stock's price action and technical indicators will be closely monitored to adjust the strategy as needed.
+- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend and strong momentum indicators, such as a high ADX and a relatively low RSI. The stock's recent outperformance of the Nifty and its sector also supports a short-term buying opportunity. With a Parkhu score of 80.5, the stock's technicals are aligned for a potential upside.
+  - catalysts: Strong momentum, Bullish trend, Outperformance of Nifty and sector
+  - risks: Market regime change, Earnings disappointment, Sector-wide downturn
+  - watch: Triggers for this setup include a strong breakout above the recent highs, while invalidation cues would be a close below the stop level of 67.64. A failure to hold above the entry level could also be a warning sign.
+- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an ADX of 48.76 and RSI of 62.80, indicating a potential for further upside. The company's recent returns of 10.36% and 41.39% over the past 1 and 3 months, respectively, also support this thesis. Additionally, the stock's distance from its 52-week high of -12.24% suggests room for growth.
   - catalysts: Strong trend, High delivery percentage, Outperformance vs Nifty and sector
-  - risks: Earnings risk in 63 days, Potential trend reversal, Market regime change
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 3350.64, which would indicate a trend reversal.
+  - risks: Earnings report in 63 days, Market regime change, Sector-specific risks
+  - watch: Triggers for this setup include a strong breakout above the current level, while invalidation cues would be a breach of the stop level, indicating a potential reversal in trend.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Neutral, Top Ideas: SJS, UJJIVANSFB, STYLAMIND, Caveats: Low score coverage, provisional scores, no trade outcome history
+Regime: Neutral, Stance: Selective Aggressive, Top Ideas: SJS, UJJIVANSFB, STYLAMIND, Caveats: Low volatility, positive FII and DII flows, neutral Nifty trend
 
 
 ## Market news (AI top impact)
 
-1. **[high]** LEAP India Limited updates under Regulation 30(5) of SEBI Listing Regulations (LEAPIND) — Disclosure under Regulation 30(5) may indicate significant events or decisions
-2. **[high]** GAUDIUMIVF Earnings Call on Financial Results for quarter ended June 30, 2026 (GAUDIUMIVF) — Earnings calls provide insights into company performance and future prospects
-3. **[medium]** KN Agri Resources Limited submits financial results for period ended June 30, 2026 (KNAGRI) — Financial results provide insights into company performance and future prospects
-4. **[medium]** R M Drip and Sprinklers Systems Limited submits financial results for period ended June 30, 2026 (RMDRIP) — Financial results provide insights into company performance and future prospects
-5. **[medium]** B&B Triplewall Containers Limited submits financial results for period ended June 30, 2026 (BBTCL) — Financial results provide insights into company performance and future prospects
+1. **[high]** India VIX at 11.31, FII net inflow at 508.12 cr — Overall risk sentiment in the market is low, with India VIX at 11.31 and FII net inflow at 508.12 cr, indicating a positive market outlook
+2. **[medium]** BELRISE: Press Release and General Updates (BELRISE) — Belrise Industries Limited has informed the Exchange about Press Release and General Updates, which may have an impact on the company's stock price
+3. **[medium]** SKFINDIA: Copy of Newspaper Publication (SKFINDIA) — SKF India Limited has informed the Exchange about the publication of its financial results in a newspaper, which may have an impact on the company's stock price
+4. **[medium]** AARTECH: Analysts/Institutional Investor Meet/Con. Call Updates (AARTECH) — Aartech Solonics Limited has informed the Exchange about the audio recording of its investor/analyst meet, which may have an impact on the company's stock price
+5. **[medium]** SHANTI: Outcome of Board Meeting (SHANTI) — Shanti Overseas (India) Limited has submitted its financial results for the quarter ended June 30, 2026, which may have an impact on the company's stock price
+6. **[medium]** USK: General Updates (USK) — Udayshivakumar Infra Limited has informed the Exchange about its unaudited financial results for the quarter ended June 30, 2026, which may have an impact on the company's stock price
+7. **[medium]** AMNPLST: Record Date (AMNPLST) — Amines & Plasticizers Limited has informed the Exchange about the record date for payment of final dividend, which may have an impact on the company's stock price
+8. **[low]** BELRISE: General Updates (BELRISE) — Belrise Industries Limited has informed the Exchange about general updates, which may not have a significant impact on the company's stock price
+9. **[low]** NMDC: General Updates (NMDC) — NMDC Limited has informed the Exchange about general updates, which may not have a significant impact on the company's stock price
+10. **[low]** NAVA: General Updates (NAVA) — NAVA LIMITED has informed the Exchange about grant of RSUs, which may not have a significant impact on the company's stock price
 
 ## Deep-dive URLs (after push)
 
