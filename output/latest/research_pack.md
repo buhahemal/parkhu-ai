@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-16
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-16T06:08:51.362972+05:30
+- **generated_at_ist:** 2026-08-16T18:08:37.416793+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -124,21 +124,21 @@
 
 ## Swing candidates (top)
 
+- STYLAMIND: score=14 rs_nifty=9.72 deliv=52.29
+- GOLDIAM: score=14 rs_nifty=0.59 deliv=70.63
+- SMARTWORKS: score=14 rs_nifty=2.5 deliv=69.14
+- AMDIND: score=14 rs_nifty=17.41 deliv=62.83
+- KROSS: score=14 rs_nifty=12.49 deliv=44.53
+- POONAWALLA: score=14 rs_nifty=5.08 deliv=48.51
+- MMFL: score=14 rs_nifty=11.8 deliv=60.65
+- SJS: score=14 rs_nifty=16.37 deliv=50.91
+- THYROCARE: score=14 rs_nifty=15.0 deliv=68.46
+- GUFICBIO: score=14 rs_nifty=4.66 deliv=58.32
+- UJJIVANSFB: score=14 rs_nifty=10.26 deliv=59.97
+- UNIONBANK: score=14 rs_nifty=8.8 deliv=56.88
 - TECHM: score=14 rs_nifty=10.8 deliv=66.46
 - ETERNAL: score=14 rs_nifty=11.11 deliv=50.11
-- SMARTWORKS: score=14 rs_nifty=2.5 deliv=69.14
-- UNIONBANK: score=14 rs_nifty=8.8 deliv=56.88
-- GOLDIAM: score=14 rs_nifty=0.59 deliv=70.63
-- AMDIND: score=14 rs_nifty=17.41 deliv=62.83
-- UJJIVANSFB: score=14 rs_nifty=10.26 deliv=59.97
-- MMFL: score=14 rs_nifty=11.8 deliv=60.65
-- KROSS: score=14 rs_nifty=12.49 deliv=44.53
-- STYLAMIND: score=14 rs_nifty=9.72 deliv=52.29
 - NATIONALUM: score=14 rs_nifty=1.9 deliv=35.87
-- SJS: score=14 rs_nifty=16.37 deliv=50.91
-- GUFICBIO: score=14 rs_nifty=4.66 deliv=58.32
-- POONAWALLA: score=14 rs_nifty=5.08 deliv=48.51
-- THYROCARE: score=14 rs_nifty=15.0 deliv=68.46
 
 ## World markets (India cues)
 
@@ -174,56 +174,49 @@
 ## Groq desk note
 
 - **model:** llama-3.3-70b-versatile
-- **stance:** selective_aggressive
+- **stance:** neutral
 
-The Indian market is currently in a neutral regime with a low overall risk. The Nifty trend is also neutral, with a slight decline of 0.12%. The India VIX is at a low level of 11.31. Foreign institutional investors have a net inflow of 508.12, while domestic institutional investors have a net inflow of 356.4.
+The market regime is neutral with a low India VIX of 11.31. The Nifty trend is also neutral with a slight decline of 0.12%. The FII and DII net flows are positive at 508.12 and 356.4 respectively. The overall risk is low with a bullish Asia cue and mixed Europe cue.
 
-- **KENNAMET** [consider_entry/high] entry=3513.3 stop=3232.24 t1=4075.43 hold=14d — Strong Parkhu score of 88.6 and a favorable risk sector
-- **SJS** [consider_entry/medium] entry=2532.5 stop=2333.72 t1=2930.06 hold=17d — Parkhu score of 84.5 and a relatively stable risk sector
-- **UJJIVANSFB** [manage_open/medium] entry=72.47 stop=67.64 t1=82.14 hold=16d — Already in the open book with a favorable entry price
-- **STYLAMIND** [consider_entry/medium] entry=3642.0 stop=3350.64 t1=4224.72 hold=16d — Parkhu score of 80.4 and a relatively stable risk sector
-- **GOLDIAM** [consider_entry/low] entry=365.65 stop=341.83 t1=413.29 hold=7d — Parkhu score of 80.2, but a less favorable risk sector
+- **KENNAMET** [consider_entry/high] entry=3513.3 stop=3232.24 t1=4075.43 hold=14d — High Parkhu score of 88.6 with a buy band
+- **SJS** [consider_entry/high] entry=2532.5 stop=2333.72 t1=2930.06 hold=17d — High Parkhu score of 84.5 with a buy band
+- **UJJIVANSFB** [manage_open/medium] entry=72.47 stop=67.64 t1=82.14 hold=16d — Already in open book with a positive mfe_pct
+- **CREDITACC** [stand_aside/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Needs action with a tighten/review signal
 
 ### AI stock reviews
 
-- **KENNAMET** [high] The KENNAMET setup fits a ≤1-month swing due to its bullish trend label, high RSI14 of 70.57, and strong recent returns of 23.71% over the last month. The stock is also close to its 52-week high, with a distance of -6.93%, indicating potential for a breakout. The overall market regime is neutral with low overall risk, further supporting a swing trade. The company's recent outperformance versus Nifty and its sector adds to the bullish case.
-  - catalysts: Bullish trend, High RSI14, Recent outperformance
-  - risks: Market regime shift, Earnings disappointment, Sector downturn
-  - watch: Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a drop below the stop level of 3232.24, indicating a failure of the bullish setup.
-- **SJS** [high] S.J.S. Enterprises Limited (SJS) presents a compelling ≤1-month swing opportunity due to its strong technical rating, bullish trend label, and high return over the past month. The company's recent price action, with a return of 17.01% in the last month, outperforming both Nifty and its sector, suggests a strong momentum. Additionally, the stock's distance from its 52-week high is relatively small, indicating potential for further upside.
-  - catalysts: Strong technical rating, Bullish trend, Outperformance vs Nifty and sector
-  - risks: Economic downturn, Sector-specific risks, Overall market volatility
-  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level, indicating a shift in market sentiment. Close monitoring of the stock's price action and overall market conditions is necessary.
-- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating a strong uptrend and an ADX of 44.10, suggesting a potential continuation. The stock's RSI of 63.49 is not overbought, allowing for further upside. With a return of 10.90% and 28.15% over the last 1 and 3 months, respectively, UJJIVANSFB has shown significant momentum.
-  - catalysts: Strong momentum, Bullish trend, Low risk regime
-  - risks: Market volatility, Sector-specific risks, Earnings surprise
-  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a close below the stop level of 67.64, indicating a loss of momentum.
-- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with a high ADX and RSI, indicating a potential continuation of the uptrend. The recent price action has also shown a significant return over the past month, with a strong technical rating. The distance from the 52-week high also provides room for potential upside. The overall market regime is neutral with low overall risk, which supports a swing trade.
-  - catalysts: Earnings anticipation, Sector outperformance, Momentum continuation
-  - risks: Earnings disappointment, Sector rotation, Market volatility
-  - watch: Triggers for this trade include a strong earnings report or continued sector outperformance, while invalidation cues include a break below the stop level or a significant increase in market volatility.
-- **GOLDIAM** [high] The GOLDIAM setup fits a ≤1-month swing due to its recent bullish trend, with a high delivery percentage and a strong relative performance against the Nifty and its sector. The stock's RSI and ADX levels suggest a potential for further upside. The proximity to its 52-week high also indicates a possible breakout. The overall low-risk market regime adds to the attractiveness of this setup.
-  - catalysts: Strong sector performance, Bullish trend, High delivery percentage
+- **KENNAMET** [high] The KENNAMET setup fits a ≤1-month swing due to its strong momentum indicators, such as a high RSI and a bullish trend label. Additionally, the stock's recent outperformance relative to Nifty and its sector, along with a favorable risk-reward ratio, supports a short-term long position. The company's upcoming earnings report is still over two months away, reducing the likelihood of significant news-driven volatility in the near term.
+  - catalysts: Momentum continuation, Sector outperformance, Favorable risk-reward ratio
+  - risks: Reversal of momentum, Sector rotation, Economic downturn
+  - watch: Triggers for this setup include a strong breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant shift in market regime. A close eye should be kept on the stock's price action and broader market conditions to adjust the position accordingly.
+- **SJS** [high] S.J.S. Enterprises Limited (SJS) presents a compelling ≤1-month swing opportunity, driven by its strong technical rating and recent price momentum. The stock's 1-month return of 17.01% outperforms both the Nifty and its sector, indicating robust relative strength. With a low overall risk environment and a neutral market regime, the conditions are favorable for a continuation of this trend.
+  - catalysts: Strong technical rating, High relative strength, Favorable risk environment
+  - risks: Earnings surprise, Sector rotation, Market regime shift
+  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in India VIX. A close eye on the stock's price action relative to its sector and the Nifty will be crucial.
+- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with a high parkhu score of 80.5 and a strong relative performance against the Nifty and its sector. The stock's RSI of 63.49 and ADX of 44.1 indicate a potential for further upside. The proximity to its 52-week high also suggests a possible breakout.
+  - catalysts: Strong sector performance, Bullish trend, High parkhu score
   - risks: Market regime change, Earnings disappointment, Sector rotation
-  - watch: Triggers for this setup include a strong breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in the India VIX. A close eye should be kept on the overall market regime and sector performance.
+  - watch: A close above the recent high or a breakout from the current range could trigger the upside, while a close below the stop level would invalidate the setup.
+- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an ADX of 48.76 and RSI of 62.80, indicating a potential for further upside. The recent price action has been supported by a delivery percentage of 52.29, which suggests a strong buying interest. The stock's return over the past month has outperformed the Nifty and its sector, adding to the bullish case.
+  - catalysts: Strong trend, High delivery percentage, Outperformance vs Nifty and sector
+  - risks: Earnings uncertainty, Market volatility, Sector-specific risks
+  - watch: Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 3350.64, indicating a loss of momentum.
+- **GOLDIAM** [high] GOLDIAM fits a ≤1-month swing due to its recent bullish trend, with a trend label of 'Bullish' and a high delivery percentage of 70.63%. The stock has also outperformed the sector in the last month, with a relative strength of 1.23. The current price is close to the 52-week high, with a distance of -8.17%, indicating potential for further upside.
+  - catalysts: Bullish trend, High delivery percentage, Outperformance vs sector
+  - risks: Neutral market regime, Consumer Durables sector risk
+  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a drop below the stop level of 341.83. The relative strength vs Nifty and sector will also be closely monitored.
 
 ### Claude feed
 
-Neutral market regime, selective aggressive stance, top ideas include KENNAMET, SJS, and UJJIVANSFB. Caveats include incomplete data and provisional scores.
+Regime: Neutral, Stance: Neutral, Top Ideas: KENNAMET, SJS, Caveats: Low score coverage, provisional scores
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Corporate Insolvency Resolution Process (DPSCLTD) — Invocation of Bank Guarantee indicates potential financial distress and may impact investor sentiment
-2. **[high]** Corporate Insolvency Resolution Process (DPSCLTD) — Prior Intimation of the 4th Meeting of the Committee of Creditors may lead to significant developments in the insolvency resolution process
-3. **[high]** Updates (YESBANK) — Invocation of Bank Guarantee issued in favour of Department of Telecommunications may have implications for the bank's financials and regulatory relationships
-4. **[medium]** General Updates (DPSCLTD) — Intimation under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 regarding Invocation of Bank Guarantee may be a significant development for investors
-5. **[low]** General Updates (MMFL) — General updates may not have a significant impact on the market or investor sentiment
-6. **[low]** Copy of Newspaper Publication (PARKHOTELS) — Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment
-7. **[low]** Copy of Newspaper Publication (RAMASTEEL) — Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment
-8. **[low]** Copy of Newspaper Publication (PREMIER) — Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment
-9. **[low]** Copy of Newspaper Publication (SUVIDHAA) — Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment
-10. **[low]** Copy of Newspaper Publication (ZAGGLE) — Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment
+1. **[high]** Yes Bank Limited has informed the Exchange regarding 'Intimation regarding Invocation of Bank Guarantee issued in favour of Department of Telecommunications (YESBANK) — Invocation of bank guarantee may impact the bank's financials and reputation
+2. **[high]** Natco Pharma Limited has informed the Exchange about Copy of Newspaper Publication for the Un-Audited Financial Results for the quarter ended June 30, 2026 (NATCOPHARM) — Unaudited financial results may impact investor sentiment and stock price
+3. **[medium]** Rishabh Instruments Limited has informed the Exchange about Newspaper Publication Unaudited Financial Results of Rishabh Instruments Limited for the Quarter ended June 30, 2026 (RISHABH) — Unaudited financial results may impact investor sentiment and stock price
+4. **[low]** TD Power Systems Limited has informed the Exchange about Copy of Newspaper Publication - Pre EGM Notice (TDPOWERSYS) — Pre EGM notice may indicate potential changes in the company's structure or management
 
 ## Deep-dive URLs (after push)
 

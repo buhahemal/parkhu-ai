@@ -42,7 +42,7 @@
     "europe_cue": "Mixed",
     "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-16T06:08:26.228262+05:30"
+    "generated_at_ist": "2026-08-16T18:08:14.375344+05:30"
   },
   "funnel": [
     {
@@ -2081,6 +2081,26 @@
         "score_now": null
       },
       {
+        "symbol": "GOLDIAM",
+        "date_opened": "2026-08-16",
+        "status": "open",
+        "entry": 365.65,
+        "stop": 341.83,
+        "t1": 413.29,
+        "price": 365.65,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 7,
+        "mfe_pct": 0.0,
+        "mae_pct": 0.0,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~7d left to the T1 horizon",
+        "score_at_open": 80.2,
+        "score_now": null
+      },
+      {
         "symbol": "IFBIND",
         "date_opened": "2026-08-04",
         "status": "open",
@@ -2417,14 +2437,13 @@
     }
   },
   "ledger": {
-    "opened": [
-      "GOLDIAM"
-    ],
+    "opened": [],
     "reconfirmed": [
       "KENNAMET",
       "SJS",
       "UJJIVANSFB",
-      "STYLAMIND"
+      "STYLAMIND",
+      "GOLDIAM"
     ]
   },
   "run_mode": "post_close",

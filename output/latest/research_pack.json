@@ -5,7 +5,7 @@
   "is_trading_day": false,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-16",
-  "generated_at_ist": "2026-08-16T06:08:51.362972+05:30",
+  "generated_at_ist": "2026-08-16T18:08:37.416793+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -55,7 +55,7 @@
     "europe_cue": "Mixed",
     "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-16T06:08:26.228262+05:30"
+    "generated_at_ist": "2026-08-16T18:08:14.375344+05:30"
   },
   "world_markets": [
     {
@@ -186,7 +186,7 @@
           "value": 95.43,
           "pct_change": 0.03,
           "tone": "neutral",
-          "session_date": "2026-08-15"
+          "session_date": "2026-08-16"
         },
         {
           "label": "Crude WTI",
@@ -3175,7 +3175,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 14,
+        "reconfirmed_count": 15,
         "notes": null
       },
       {
@@ -3436,7 +3436,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 16,
+        "reconfirmed_count": 17,
         "notes": null
       },
       {
@@ -3639,7 +3639,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 8,
+        "reconfirmed_count": 9,
         "notes": null
       },
       {
@@ -3784,7 +3784,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 2,
+        "reconfirmed_count": 3,
         "notes": null
       },
       {
@@ -3813,7 +3813,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 0,
+        "reconfirmed_count": 1,
         "notes": null
       }
     ],
@@ -3956,6 +3956,26 @@
         "action": "HOLD",
         "detail": "-3.15% (-0.54R), 4d held, ~13d left to the T1 horizon",
         "score_at_open": 81.8,
+        "score_now": null
+      },
+      {
+        "symbol": "GOLDIAM",
+        "date_opened": "2026-08-16",
+        "status": "open",
+        "entry": 365.65,
+        "stop": 341.83,
+        "t1": 413.29,
+        "price": 365.65,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 7,
+        "mfe_pct": 0.0,
+        "mae_pct": 0.0,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~7d left to the T1 horizon",
+        "score_at_open": 80.2,
         "score_now": null
       },
       {
@@ -4346,6 +4366,222 @@
   },
   "swing_candidates_top": [
     {
+      "symbol": "STYLAMIND",
+      "close": 3642.0,
+      "score": 14,
+      "perf_1m": 10.3636363636,
+      "rs_vs_nifty_1m": 9.72,
+      "rs_vs_sector_1m": 10.36,
+      "deliv_pct": 52.29,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 13.95,
+      "atr": 149.6152418464,
+      "stop_1_5atr": 3417.58,
+      "target_5pct": 3824.1,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Non-Energy Minerals"
+    },
+    {
+      "symbol": "GOLDIAM",
+      "close": 365.65,
+      "score": 14,
+      "perf_1m": 1.2320044297,
+      "rs_vs_nifty_1m": 0.59,
+      "rs_vs_sector_1m": 1.23,
+      "deliv_pct": 70.63,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.9,
+      "atr": 19.2066687233,
+      "stop_1_5atr": 336.84,
+      "target_5pct": 383.93,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Durables"
+    },
+    {
+      "symbol": "SMARTWORKS",
+      "close": 488.75,
+      "score": 14,
+      "perf_1m": 3.1444549963,
+      "rs_vs_nifty_1m": 2.5,
+      "rs_vs_sector_1m": 3.14,
+      "deliv_pct": 69.14,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 30.28,
+      "atr": 17.82031472,
+      "stop_1_5atr": 462.02,
+      "target_5pct": 513.19,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "AMDIND",
+      "close": 54.8,
+      "score": 14,
+      "perf_1m": 18.0525635502,
+      "rs_vs_nifty_1m": 17.41,
+      "rs_vs_sector_1m": 18.05,
+      "deliv_pct": 62.83,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 24.22,
+      "atr": 3.3182968211,
+      "stop_1_5atr": 49.82,
+      "target_5pct": 57.54,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "KROSS",
+      "close": 210.2,
+      "score": 14,
+      "perf_1m": 13.1324004306,
+      "rs_vs_nifty_1m": 12.49,
+      "rs_vs_sector_1m": 13.13,
+      "deliv_pct": 44.53,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 13.04,
+      "atr": 7.8513960867,
+      "stop_1_5atr": 198.42,
+      "target_5pct": 220.71,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "POONAWALLA",
+      "close": 497.9,
+      "score": 14,
+      "perf_1m": 5.7224758467,
+      "rs_vs_nifty_1m": 5.08,
+      "rs_vs_sector_1m": 5.72,
+      "deliv_pct": 48.51,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 14.56,
+      "atr": 15.7960073614,
+      "stop_1_5atr": 474.21,
+      "target_5pct": 522.79,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "MMFL",
+      "close": 589.75,
+      "score": 14,
+      "perf_1m": 12.4404194471,
+      "rs_vs_nifty_1m": 11.8,
+      "rs_vs_sector_1m": 12.44,
+      "deliv_pct": 60.65,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 12.59,
+      "atr": 25.9793657554,
+      "stop_1_5atr": 550.78,
+      "target_5pct": 619.24,
+      "earnings_within_21d": false,
+      "event_risk_score": 1,
+      "tech_rating": "Buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "SJS",
+      "close": 2532.5,
+      "score": 14,
+      "perf_1m": 17.0070227315,
+      "rs_vs_nifty_1m": 16.37,
+      "rs_vs_sector_1m": 17.01,
+      "deliv_pct": 50.91,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 9.34,
+      "atr": 99.3901033478,
+      "stop_1_5atr": 2383.41,
+      "target_5pct": 2659.12,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "THYROCARE",
+      "close": 624.05,
+      "score": 14,
+      "perf_1m": 15.6397665153,
+      "rs_vs_nifty_1m": 15.0,
+      "rs_vs_sector_1m": 12.51,
+      "deliv_pct": 68.46,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.31,
+      "atr": 26.1881787775,
+      "stop_1_5atr": 584.77,
+      "target_5pct": 655.25,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Services"
+    },
+    {
+      "symbol": "GUFICBIO",
+      "close": 422.2,
+      "score": 14,
+      "perf_1m": 5.2999127073,
+      "rs_vs_nifty_1m": 4.66,
+      "rs_vs_sector_1m": 2.17,
+      "deliv_pct": 58.32,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.11,
+      "atr": 15.7978433151,
+      "stop_1_5atr": 398.5,
+      "target_5pct": 443.31,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "UJJIVANSFB",
+      "close": 72.47,
+      "score": 14,
+      "perf_1m": 10.8951798011,
+      "rs_vs_nifty_1m": 10.26,
+      "rs_vs_sector_1m": 12.0,
+      "deliv_pct": 59.97,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 14.27,
+      "atr": 2.4166927878,
+      "stop_1_5atr": 68.84,
+      "target_5pct": 76.09,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "UNIONBANK",
+      "close": 187.38,
+      "score": 14,
+      "perf_1m": 9.4445417908,
+      "rs_vs_nifty_1m": 8.8,
+      "rs_vs_sector_1m": 10.54,
+      "deliv_pct": 56.88,
+      "pct_change_oi": -0.74,
+      "upside_to_target_pct": 9.66,
+      "atr": 4.7283907107,
+      "stop_1_5atr": 180.29,
+      "target_5pct": 196.75,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
       "symbol": "TECHM",
       "close": 1632.8,
       "score": 14,
@@ -4382,150 +4618,6 @@
       "sector": "Technology Services"
     },
     {
-      "symbol": "SMARTWORKS",
-      "close": 488.75,
-      "score": 14,
-      "perf_1m": 3.1444549963,
-      "rs_vs_nifty_1m": 2.5,
-      "rs_vs_sector_1m": 3.14,
-      "deliv_pct": 69.14,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 30.28,
-      "atr": 17.82031472,
-      "stop_1_5atr": 462.02,
-      "target_5pct": 513.19,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "UNIONBANK",
-      "close": 187.38,
-      "score": 14,
-      "perf_1m": 9.4445417908,
-      "rs_vs_nifty_1m": 8.8,
-      "rs_vs_sector_1m": 10.54,
-      "deliv_pct": 56.88,
-      "pct_change_oi": -0.74,
-      "upside_to_target_pct": 9.66,
-      "atr": 4.7283907107,
-      "stop_1_5atr": 180.29,
-      "target_5pct": 196.75,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "GOLDIAM",
-      "close": 365.65,
-      "score": 14,
-      "perf_1m": 1.2320044297,
-      "rs_vs_nifty_1m": 0.59,
-      "rs_vs_sector_1m": 1.23,
-      "deliv_pct": 70.63,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.9,
-      "atr": 19.2066687233,
-      "stop_1_5atr": 336.84,
-      "target_5pct": 383.93,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Durables"
-    },
-    {
-      "symbol": "AMDIND",
-      "close": 54.8,
-      "score": 14,
-      "perf_1m": 18.0525635502,
-      "rs_vs_nifty_1m": 17.41,
-      "rs_vs_sector_1m": 18.05,
-      "deliv_pct": 62.83,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 24.22,
-      "atr": 3.3182968211,
-      "stop_1_5atr": 49.82,
-      "target_5pct": 57.54,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "UJJIVANSFB",
-      "close": 72.47,
-      "score": 14,
-      "perf_1m": 10.8951798011,
-      "rs_vs_nifty_1m": 10.26,
-      "rs_vs_sector_1m": 12.0,
-      "deliv_pct": 59.97,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 14.27,
-      "atr": 2.4166927878,
-      "stop_1_5atr": 68.84,
-      "target_5pct": 76.09,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "MMFL",
-      "close": 589.75,
-      "score": 14,
-      "perf_1m": 12.4404194471,
-      "rs_vs_nifty_1m": 11.8,
-      "rs_vs_sector_1m": 12.44,
-      "deliv_pct": 60.65,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 12.59,
-      "atr": 25.9793657554,
-      "stop_1_5atr": 550.78,
-      "target_5pct": 619.24,
-      "earnings_within_21d": false,
-      "event_risk_score": 1,
-      "tech_rating": "Buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "KROSS",
-      "close": 210.2,
-      "score": 14,
-      "perf_1m": 13.1324004306,
-      "rs_vs_nifty_1m": 12.49,
-      "rs_vs_sector_1m": 13.13,
-      "deliv_pct": 44.53,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 13.04,
-      "atr": 7.8513960867,
-      "stop_1_5atr": 198.42,
-      "target_5pct": 220.71,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "STYLAMIND",
-      "close": 3642.0,
-      "score": 14,
-      "perf_1m": 10.3636363636,
-      "rs_vs_nifty_1m": 9.72,
-      "rs_vs_sector_1m": 10.36,
-      "deliv_pct": 52.29,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 13.95,
-      "atr": 149.6152418464,
-      "stop_1_5atr": 3417.58,
-      "target_5pct": 3824.1,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Non-Energy Minerals"
-    },
-    {
       "symbol": "NATIONALUM",
       "close": 376.0,
       "score": 14,
@@ -4542,78 +4634,6 @@
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Non-Energy Minerals"
-    },
-    {
-      "symbol": "SJS",
-      "close": 2532.5,
-      "score": 14,
-      "perf_1m": 17.0070227315,
-      "rs_vs_nifty_1m": 16.37,
-      "rs_vs_sector_1m": 17.01,
-      "deliv_pct": 50.91,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 9.34,
-      "atr": 99.3901033478,
-      "stop_1_5atr": 2383.41,
-      "target_5pct": 2659.12,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "GUFICBIO",
-      "close": 422.2,
-      "score": 14,
-      "perf_1m": 5.2999127073,
-      "rs_vs_nifty_1m": 4.66,
-      "rs_vs_sector_1m": 2.17,
-      "deliv_pct": 58.32,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.11,
-      "atr": 15.7978433151,
-      "stop_1_5atr": 398.5,
-      "target_5pct": 443.31,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
-    },
-    {
-      "symbol": "POONAWALLA",
-      "close": 497.9,
-      "score": 14,
-      "perf_1m": 5.7224758467,
-      "rs_vs_nifty_1m": 5.08,
-      "rs_vs_sector_1m": 5.72,
-      "deliv_pct": 48.51,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 14.56,
-      "atr": 15.7960073614,
-      "stop_1_5atr": 474.21,
-      "target_5pct": 522.79,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "THYROCARE",
-      "close": 624.05,
-      "score": 14,
-      "perf_1m": 15.6397665153,
-      "rs_vs_nifty_1m": 15.0,
-      "rs_vs_sector_1m": 12.51,
-      "deliv_pct": 68.46,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.31,
-      "atr": 26.1881787775,
-      "stop_1_5atr": 584.77,
-      "target_5pct": 655.25,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Services"
     }
   ],
   "urls": {
@@ -4679,14 +4699,13 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-08-16T06:08:53.048260+05:30",
-    "market_brief": "The Indian market is currently in a neutral regime with a low overall risk. The Nifty trend is also neutral, with a slight decline of 0.12%. The India VIX is at a low level of 11.31. Foreign institutional investors have a net inflow of 508.12, while domestic institutional investors have a net inflow of 356.4.",
-    "stance": "selective_aggressive",
+    "generated_at_ist": "2026-08-16T18:08:38.765478+05:30",
+    "market_brief": "The market regime is neutral with a low India VIX of 11.31. The Nifty trend is also neutral with a slight decline of 0.12%. The FII and DII net flows are positive at 508.12 and 356.4 respectively. The overall risk is low with a bullish Asia cue and mixed Europe cue.",
+    "stance": "neutral",
     "focus": [
-      "Producer Manufacturing",
-      "Banks",
-      "Non-Energy Minerals",
-      "Consumer Durables"
+      "Low volatility",
+      "Positive FII and DII flows",
+      "Bullish Asia cue"
     ],
     "suggestions": [
       {
@@ -4697,18 +4716,18 @@
         "stop": 3232.24,
         "t1": 4075.43,
         "hold_days": 14,
-        "rationale": "Strong Parkhu score of 88.6 and a favorable risk sector",
+        "rationale": "High Parkhu score of 88.6 with a buy band",
         "levels_source": "parkhu_deterministic"
       },
       {
         "symbol": "SJS",
         "action": "consider_entry",
-        "conviction": "medium",
+        "conviction": "high",
         "entry": 2532.5,
         "stop": 2333.72,
         "t1": 2930.06,
         "hold_days": 17,
-        "rationale": "Parkhu score of 84.5 and a relatively stable risk sector",
+        "rationale": "High Parkhu score of 84.5 with a buy band",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -4719,261 +4738,189 @@
         "stop": 67.64,
         "t1": 82.14,
         "hold_days": 16,
-        "rationale": "Already in the open book with a favorable entry price",
+        "rationale": "Already in open book with a positive mfe_pct",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "STYLAMIND",
-        "action": "consider_entry",
-        "conviction": "medium",
-        "entry": 3642.0,
-        "stop": 3350.64,
-        "t1": 4224.72,
-        "hold_days": 16,
-        "rationale": "Parkhu score of 80.4 and a relatively stable risk sector",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "GOLDIAM",
-        "action": "consider_entry",
+        "symbol": "CREDITACC",
+        "action": "stand_aside",
         "conviction": "low",
-        "entry": 365.65,
-        "stop": 341.83,
-        "t1": 413.29,
-        "hold_days": 7,
-        "rationale": "Parkhu score of 80.2, but a less favorable risk sector",
+        "entry": 1597.3,
+        "stop": 1492.91,
+        "t1": 1806.07,
+        "hold_days": 17,
+        "rationale": "Needs action with a tighten/review signal",
         "levels_source": "parkhu_deterministic"
       }
     ],
     "open_book_notes": [
-      "CREDITACC: Consider tightening or reviewing the position due to a non-tradeable trend",
-      "UJJIVANSFB: Manage the open position with a favorable entry price",
-      "SHRIPISTON: Consider tightening or reviewing the position due to a non-tradeable trend"
+      "UJJIVANSFB is in open book with a positive mfe_pct",
+      "CREDITACC needs action with a tighten/review signal",
+      "SHRIPISTON needs action with a tighten/review signal"
     ],
-    "claude_feed": "Neutral market regime, selective aggressive stance, top ideas include KENNAMET, SJS, and UJJIVANSFB. Caveats include incomplete data and provisional scores.",
+    "claude_feed": "Regime: Neutral, Stance: Neutral, Top Ideas: KENNAMET, SJS, Caveats: Low score coverage, provisional scores",
     "stock_reviews": [
       {
         "symbol": "KENNAMET",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "The KENNAMET setup fits a \u22641-month swing due to its bullish trend label, high RSI14 of 70.57, and strong recent returns of 23.71% over the last month. The stock is also close to its 52-week high, with a distance of -6.93%, indicating potential for a breakout. The overall market regime is neutral with low overall risk, further supporting a swing trade. The company's recent outperformance versus Nifty and its sector adds to the bullish case.",
+        "thesis": "The KENNAMET setup fits a \u22641-month swing due to its strong momentum indicators, such as a high RSI and a bullish trend label. Additionally, the stock's recent outperformance relative to Nifty and its sector, along with a favorable risk-reward ratio, supports a short-term long position. The company's upcoming earnings report is still over two months away, reducing the likelihood of significant news-driven volatility in the near term.",
         "catalysts": [
-          "Bullish trend",
-          "High RSI14",
-          "Recent outperformance"
+          "Momentum continuation",
+          "Sector outperformance",
+          "Favorable risk-reward ratio"
         ],
         "risks": [
-          "Market regime shift",
-          "Earnings disappointment",
-          "Sector downturn"
+          "Reversal of momentum",
+          "Sector rotation",
+          "Economic downturn"
         ],
-        "what_to_watch": "Triggers for this trade include a breakout above the recent highs, while invalidation cues would be a drop below the stop level of 3232.24, indicating a failure of the bullish setup.",
+        "what_to_watch": "Triggers for this setup include a strong breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant shift in market regime. A close eye should be kept on the stock's price action and broader market conditions to adjust the position accordingly.",
         "entry": 3513.3,
         "stop": 3232.24,
         "t1": 4075.43,
         "hold_days": 14,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-16T06:08:54.546213+05:30"
+        "generated_at_ist": "2026-08-16T18:08:40.726206+05:30"
       },
       {
         "symbol": "SJS",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "S.J.S. Enterprises Limited (SJS) presents a compelling \u22641-month swing opportunity due to its strong technical rating, bullish trend label, and high return over the past month. The company's recent price action, with a return of 17.01% in the last month, outperforming both Nifty and its sector, suggests a strong momentum. Additionally, the stock's distance from its 52-week high is relatively small, indicating potential for further upside.",
+        "thesis": "S.J.S. Enterprises Limited (SJS) presents a compelling \u22641-month swing opportunity, driven by its strong technical rating and recent price momentum. The stock's 1-month return of 17.01% outperforms both the Nifty and its sector, indicating robust relative strength. With a low overall risk environment and a neutral market regime, the conditions are favorable for a continuation of this trend.",
         "catalysts": [
           "Strong technical rating",
-          "Bullish trend",
-          "Outperformance vs Nifty and sector"
+          "High relative strength",
+          "Favorable risk environment"
         ],
         "risks": [
-          "Economic downturn",
-          "Sector-specific risks",
-          "Overall market volatility"
+          "Earnings surprise",
+          "Sector rotation",
+          "Market regime shift"
         ],
-        "what_to_watch": "Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level, indicating a shift in market sentiment. Close monitoring of the stock's price action and overall market conditions is necessary.",
+        "what_to_watch": "Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in India VIX. A close eye on the stock's price action relative to its sector and the Nifty will be crucial.",
         "entry": 2532.5,
         "stop": 2333.72,
         "t1": 2930.06,
         "hold_days": 17,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-16T06:08:56.655829+05:30"
+        "generated_at_ist": "2026-08-16T18:08:42.686557+05:30"
       },
       {
         "symbol": "UJJIVANSFB",
         "status": "ok",
         "model": "llama-3.3-70b-versatile",
         "conviction": "high",
-        "thesis": "UJJIVANSFB fits a \u22641-month swing due to its recent bullish trend, with a trend label indicating a strong uptrend and an ADX of 44.10, suggesting a potential continuation. The stock's RSI of 63.49 is not overbought, allowing for further upside. With a return of 10.90% and 28.15% over the last 1 and 3 months, respectively, UJJIVANSFB has shown significant momentum.",
-        "catalysts": [
-          "Strong momentum",
-          "Bullish trend",
-          "Low risk regime"
-        ],
-        "risks": [
-          "Market volatility",
-          "Sector-specific risks",
-          "Earnings surprise"
-        ],
-        "what_to_watch": "Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a close below the stop level of 67.64, indicating a loss of momentum.",
-        "entry": 72.47,
-        "stop": 67.64,
-        "t1": 82.14,
-        "hold_days": 16,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-16T06:08:58.623194+05:30"
-      },
-      {
-        "symbol": "STYLAMIND",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "high",
-        "thesis": "This setup fits a \u22641-month swing as the stock has shown a strong bullish trend with a high ADX and RSI, indicating a potential continuation of the uptrend. The recent price action has also shown a significant return over the past month, with a strong technical rating. The distance from the 52-week high also provides room for potential upside. The overall market regime is neutral with low overall risk, which supports a swing trade.",
-        "catalysts": [
-          "Earnings anticipation",
-          "Sector outperformance",
-          "Momentum continuation"
-        ],
-        "risks": [
-          "Earnings disappointment",
-          "Sector rotation",
-          "Market volatility"
-        ],
-        "what_to_watch": "Triggers for this trade include a strong earnings report or continued sector outperformance, while invalidation cues include a break below the stop level or a significant increase in market volatility.",
-        "entry": 3642.0,
-        "stop": 3350.64,
-        "t1": 4224.72,
-        "hold_days": 16,
-        "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-16T06:09:00.606252+05:30"
-      },
-      {
-        "symbol": "GOLDIAM",
-        "status": "ok",
-        "model": "llama-3.3-70b-versatile",
-        "conviction": "high",
-        "thesis": "The GOLDIAM setup fits a \u22641-month swing due to its recent bullish trend, with a high delivery percentage and a strong relative performance against the Nifty and its sector. The stock's RSI and ADX levels suggest a potential for further upside. The proximity to its 52-week high also indicates a possible breakout. The overall low-risk market regime adds to the attractiveness of this setup.",
+        "thesis": "UJJIVANSFB fits a \u22641-month swing due to its recent bullish trend, with a high parkhu score of 80.5 and a strong relative performance against the Nifty and its sector. The stock's RSI of 63.49 and ADX of 44.1 indicate a potential for further upside. The proximity to its 52-week high also suggests a possible breakout.",
         "catalysts": [
           "Strong sector performance",
           "Bullish trend",
-          "High delivery percentage"
+          "High parkhu score"
         ],
         "risks": [
           "Market regime change",
           "Earnings disappointment",
           "Sector rotation"
         ],
-        "what_to_watch": "Triggers for this setup include a strong breakout above the recent highs, while invalidation cues would be a breach of the stop level or a significant increase in the India VIX. A close eye should be kept on the overall market regime and sector performance.",
+        "what_to_watch": "A close above the recent high or a breakout from the current range could trigger the upside, while a close below the stop level would invalidate the setup.",
+        "entry": 72.47,
+        "stop": 67.64,
+        "t1": 82.14,
+        "hold_days": 16,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-08-16T18:08:44.621733+05:30"
+      },
+      {
+        "symbol": "STYLAMIND",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "high",
+        "thesis": "This setup fits a \u22641-month swing as the stock has shown a strong bullish trend with an ADX of 48.76 and RSI of 62.80, indicating a potential for further upside. The recent price action has been supported by a delivery percentage of 52.29, which suggests a strong buying interest. The stock's return over the past month has outperformed the Nifty and its sector, adding to the bullish case.",
+        "catalysts": [
+          "Strong trend",
+          "High delivery percentage",
+          "Outperformance vs Nifty and sector"
+        ],
+        "risks": [
+          "Earnings uncertainty",
+          "Market volatility",
+          "Sector-specific risks"
+        ],
+        "what_to_watch": "Triggers for this setup include a breakout above the recent highs, while invalidation cues would be a breach of the stop level at 3350.64, indicating a loss of momentum.",
+        "entry": 3642.0,
+        "stop": 3350.64,
+        "t1": 4224.72,
+        "hold_days": 16,
+        "levels_source": "parkhu_deterministic",
+        "generated_at_ist": "2026-08-16T18:08:46.758893+05:30"
+      },
+      {
+        "symbol": "GOLDIAM",
+        "status": "ok",
+        "model": "llama-3.3-70b-versatile",
+        "conviction": "high",
+        "thesis": "GOLDIAM fits a \u22641-month swing due to its recent bullish trend, with a trend label of 'Bullish' and a high delivery percentage of 70.63%. The stock has also outperformed the sector in the last month, with a relative strength of 1.23. The current price is close to the 52-week high, with a distance of -8.17%, indicating potential for further upside.",
+        "catalysts": [
+          "Bullish trend",
+          "High delivery percentage",
+          "Outperformance vs sector"
+        ],
+        "risks": [
+          "Neutral market regime",
+          "Consumer Durables sector risk"
+        ],
+        "what_to_watch": "Triggers for this setup include a strong breakout above the current price level, while invalidation cues include a drop below the stop level of 341.83. The relative strength vs Nifty and sector will also be closely monitored.",
         "entry": 365.65,
         "stop": 341.83,
         "t1": 413.29,
         "hold_days": 7,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-08-16T06:09:02.887496+05:30"
+        "generated_at_ist": "2026-08-16T18:08:48.870231+05:30"
       }
     ]
   },
   "market_news_top10": [
     {
       "rank": 1,
-      "headline": "Corporate Insolvency Resolution Process",
-      "symbol": "DPSCLTD",
+      "headline": "Yes Bank Limited has informed the Exchange regarding 'Intimation regarding Invocation of Bank Guarantee issued in favour of Department of Telecommunications",
+      "symbol": "YESBANK",
       "impact": "high",
-      "why_it_matters": "Invocation of Bank Guarantee indicates potential financial distress and may impact investor sentiment",
-      "source_date": "15-Aug-2026",
+      "why_it_matters": "Invocation of bank guarantee may impact the bank's financials and reputation",
+      "source_date": "15-Aug-2026 23:52:38",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527669+05:30"
+      "generated_at_ist": "2026-08-16T18:08:51.220653+05:30"
     },
     {
       "rank": 2,
-      "headline": "Corporate Insolvency Resolution Process",
-      "symbol": "DPSCLTD",
+      "headline": "Natco Pharma Limited has informed the Exchange about Copy of Newspaper Publication for the Un-Audited Financial Results for the quarter ended June 30, 2026",
+      "symbol": "NATCOPHARM",
       "impact": "high",
-      "why_it_matters": "Prior Intimation of the 4th Meeting of the Committee of Creditors may lead to significant developments in the insolvency resolution process",
-      "source_date": "15-Aug-2026",
+      "why_it_matters": "Unaudited financial results may impact investor sentiment and stock price",
+      "source_date": "16-Aug-2026 09:06:14",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527696+05:30"
+      "generated_at_ist": "2026-08-16T18:08:51.220689+05:30"
     },
     {
       "rank": 3,
-      "headline": "Updates",
-      "symbol": "YESBANK",
-      "impact": "high",
-      "why_it_matters": "Invocation of Bank Guarantee issued in favour of Department of Telecommunications may have implications for the bank's financials and regulatory relationships",
-      "source_date": "15-Aug-2026",
+      "headline": "Rishabh Instruments Limited has informed the Exchange about Newspaper Publication Unaudited Financial Results of Rishabh Instruments Limited for the Quarter ended June 30, 2026",
+      "symbol": "RISHABH",
+      "impact": "medium",
+      "why_it_matters": "Unaudited financial results may impact investor sentiment and stock price",
+      "source_date": "16-Aug-2026 17:52:55",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527702+05:30"
+      "generated_at_ist": "2026-08-16T18:08:51.220695+05:30"
     },
     {
       "rank": 4,
-      "headline": "General Updates",
-      "symbol": "DPSCLTD",
-      "impact": "medium",
-      "why_it_matters": "Intimation under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 regarding Invocation of Bank Guarantee may be a significant development for investors",
-      "source_date": "15-Aug-2026",
-      "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527707+05:30"
-    },
-    {
-      "rank": 5,
-      "headline": "General Updates",
-      "symbol": "MMFL",
+      "headline": "TD Power Systems Limited has informed the Exchange about Copy of Newspaper Publication - Pre EGM Notice",
+      "symbol": "TDPOWERSYS",
       "impact": "low",
-      "why_it_matters": "General updates may not have a significant impact on the market or investor sentiment",
-      "source_date": "15-Aug-2026",
+      "why_it_matters": "Pre EGM notice may indicate potential changes in the company's structure or management",
+      "source_date": "16-Aug-2026 14:33:53",
       "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527711+05:30"
-    },
-    {
-      "rank": 6,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "PARKHOTELS",
-      "impact": "low",
-      "why_it_matters": "Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment",
-      "source_date": "15-Aug-2026",
-      "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527716+05:30"
-    },
-    {
-      "rank": 7,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "RAMASTEEL",
-      "impact": "low",
-      "why_it_matters": "Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment",
-      "source_date": "15-Aug-2026",
-      "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527720+05:30"
-    },
-    {
-      "rank": 8,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "PREMIER",
-      "impact": "low",
-      "why_it_matters": "Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment",
-      "source_date": "15-Aug-2026",
-      "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527724+05:30"
-    },
-    {
-      "rank": 9,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "SUVIDHAA",
-      "impact": "low",
-      "why_it_matters": "Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment",
-      "source_date": "15-Aug-2026",
-      "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527729+05:30"
-    },
-    {
-      "rank": 10,
-      "headline": "Copy of Newspaper Publication",
-      "symbol": "ZAGGLE",
-      "impact": "low",
-      "why_it_matters": "Copy of Newspaper Publication may not have a significant impact on the market or investor sentiment",
-      "source_date": "15-Aug-2026",
-      "model": "llama-3.3-70b-versatile",
-      "generated_at_ist": "2026-08-16T06:09:05.527733+05:30"
+      "generated_at_ist": "2026-08-16T18:08:51.220700+05:30"
     }
   ]
 }
