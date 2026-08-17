@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-17
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-17T06:07:37.751983+05:30
+- **generated_at_ist:** 2026-08-17T07:42:04.128436+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -116,31 +116,31 @@
 
 ## Swing candidates (top)
 
-- STYLAMIND: score=14 rs_nifty=9.14 deliv=52.29
-- MMFL: score=14 rs_nifty=11.22 deliv=60.65
-- ETERNAL: score=14 rs_nifty=10.53 deliv=50.11
-- THYROCARE: score=14 rs_nifty=14.42 deliv=68.46
-- TECHM: score=14 rs_nifty=10.22 deliv=66.46
-- GUFICBIO: score=14 rs_nifty=4.08 deliv=58.32
-- POONAWALLA: score=14 rs_nifty=4.5 deliv=48.51
-- UJJIVANSFB: score=14 rs_nifty=9.68 deliv=59.97
-- AMDIND: score=14 rs_nifty=16.83 deliv=62.83
 - UNIONBANK: score=14 rs_nifty=8.22 deliv=56.88
-- NATIONALUM: score=14 rs_nifty=1.32 deliv=35.87
-- SJS: score=14 rs_nifty=15.79 deliv=50.91
 - KROSS: score=14 rs_nifty=11.91 deliv=44.53
-- CRAFTSMAN: score=13 rs_nifty=10.2 deliv=48.71
-- EIMCOELECO: score=13 rs_nifty=10.01 deliv=53.31
+- NATIONALUM: score=14 rs_nifty=1.32 deliv=35.87
+- GUFICBIO: score=14 rs_nifty=4.08 deliv=58.32
+- THYROCARE: score=14 rs_nifty=14.42 deliv=68.46
+- UJJIVANSFB: score=14 rs_nifty=9.68 deliv=59.97
+- STYLAMIND: score=14 rs_nifty=9.14 deliv=52.29
+- AMDIND: score=14 rs_nifty=16.83 deliv=62.83
+- MMFL: score=14 rs_nifty=11.22 deliv=60.65
+- TECHM: score=14 rs_nifty=10.22 deliv=66.46
+- ETERNAL: score=14 rs_nifty=10.53 deliv=50.11
+- POONAWALLA: score=14 rs_nifty=4.5 deliv=48.51
+- SJS: score=14 rs_nifty=15.79 deliv=50.91
+- GRINDWELL: score=13 rs_nifty=7.02 deliv=53.13
+- BELRISE: score=13 rs_nifty=6.71 deliv=48.38
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.37% (bull)
-- Hang Seng: -1.10% (bear)
-- Shanghai: +0.01% (neutral)
+- Nikkei: +0.01% (neutral)
+- Hang Seng: +1.40% (bull)
+- Shanghai: +0.32% (bull)
 - Kospi: +2.42% (bull)
-- Taiwan: -0.46% (bear)
-- ASX 200: -0.37% (bear)
+- Taiwan: +0.16% (bull)
+- ASX 200: -0.21% (bear)
 
 ### Europe
 - FTSE 100: -0.21% (bear)
@@ -155,9 +155,9 @@
 
 ### Macro
 - USDINR: +0.01% (neutral)
-- Crude WTI: -0.35% (bear)
-- Brent: -0.06% (neutral)
-- DXY: -0.14% (neutral)
+- Crude WTI: +0.29% (bull)
+- Brent: +0.52% (bull)
+- DXY: -0.16% (neutral)
 - US 10Y: +1.19% (bear)
 - India ETF: -0.40% (bear)
 - EM ETF: -0.10% (neutral)
@@ -168,50 +168,49 @@
 - **model:** llama-3.3-70b-versatile
 - **stance:** neutral
 
-The Indian market is currently in a neutral regime with a low overall risk. The Nifty trend is also neutral, with a slight decline of 0.12% and a low India VIX of 11.31. Foreign institutional investors have a net inflow of 508.12, while domestic institutional investors have a net inflow of 356.4.
+The Indian market is currently in a neutral regime with a low overall risk. The Nifty trend is neutral, and the India VIX is at a low level. The FII and DII net flows are positive, indicating a bullish cue from Asia, but mixed from Europe.
 
-- **KENNAMET** [consider_entry/high] entry=3513.3 stop=3232.24 t1=4075.43 hold=14d — High Parkhu score of 88.7 and a buy band
-- **SJS** [consider_entry/high] entry=2532.5 stop=2333.72 t1=2930.06 hold=17d — High Parkhu score of 84.5 and a buy band
-- **STYLAMIND** [consider_entry/medium] entry=3642.0 stop=3350.64 t1=4224.72 hold=16d — Parkhu score of 80.6 and a buy band
-- **UJJIVANSFB** [manage_open/medium] entry=72.47 stop=67.64 t1=82.14 hold=16d — Already in open book with a buy band
-- **CREDITACC** [stand_aside/low] entry=1597.3 stop=1492.91 t1=1806.07 hold=17d — Needs action due to trend no longer being tradeable
+- **KENNAMET** [consider_entry/high] entry=3513.3 stop=3232.24 t1=4075.43 hold=14d — High Parkhu score and favorable risk-reward ratio
+- **SJS** [consider_entry/medium] entry=2532.5 stop=2333.72 t1=2930.06 hold=17d — Positive Parkhu score and improving trend
+- **STYLAMIND** [watch/low] entry=3642.0 stop=3350.64 t1=4224.72 hold=16d — Neutral Parkhu score and uncertain trend
+- **UJJIVANSFB** [manage_open/high] entry=72.47 stop=67.64 t1=82.14 hold=16d — Existing open position with favorable trend and risk-reward ratio
 
 ### AI stock reviews
 
-- **KENNAMET** [high] Kennametal India Limited (KENNAMET) is poised for a ≤1-month swing due to its strong bullish trend, high return over the past month, and favorable technical indicators such as a high RSI and ADX. The company's recent outperformance against the Nifty and its sector further supports this setup. With a low overall risk regime and a high Parkhu score, the conditions are favorable for a short-term swing.
-  - catalysts: Bullish trend, High RSI, Outperformance vs Nifty and sector
-  - risks: Earnings report in 80 days, Producer Manufacturing sector risks
-  - watch: Watch for the stock to break above its recent highs to confirm the bullish trend, and monitor for any signs of trend reversal or increased volatility as potential invalidation cues.
-- **SJS** [high] S.J.S. Enterprises Limited (SJS) fits a ≤1-month swing due to its strong bullish trend, high ADX, and strong RSI. The company's recent price action and technical indicators suggest a potential upside. With a strong buy tech rating and a high parkhu score of 84.5, this setup appears promising. The stock's proximity to its 52-week high also indicates potential for a breakout.
-  - catalysts: Strong trend, High ADX, Strong RSI, Proximity to 52-week high
-  - risks: Earnings uncertainty, Market volatility, Sector risks
-  - watch: Triggers for this setup include a strong breakout above the current price level, while invalidation cues would be a breach of the stop level at 2333.72. A close eye should be kept on the stock's price action and overall market sentiment.
-- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an ADX of 48.76 and RSI of 62.80, indicating a potential continuation of the uptrend. The recent 1-month return of 10.36% and 3-month return of 41.40% also suggest momentum. The distance from the 52-week high is -12.24%, providing room for potential upside.
-  - catalysts: Strong trend momentum, Bullish technical indicators, Recent price momentum
-  - risks: Market regime change, Sector rotation, Earnings disappointment
-  - watch: Triggers for this setup include a breakout above the current price level, while invalidation cues include a drop below the stop level of 3350.64. A close eye should be kept on the overall market regime and sector performance.
-- **UJJIVANSFB** [high] UJJIVANSFB fits a ≤1-month swing due to its recent bullish trend, with a trend label indicating a strong uptrend and an ADX of 44.1, suggesting a potential continuation. The stock's RSI of 63.5 is not overbought, allowing for further upside. The recent 1-month return of 10.9% and 3-month return of 28.15% also support a bullish outlook.
-  - catalysts: Strong trend, Bullish RSI, Recent price momentum
-  - risks: Market regime change, Sector-specific risks, Earnings disappointment
-  - watch: Triggers for this setup include a strong breakout above the recent high, while invalidation cues include a close below the stop level of 67.64, indicating a potential trend reversal.
+- **KENNAMET** [high] Kennametal India Limited fits a ≤1-month swing due to its strong recent performance, with a 1-month return of 23.71% and a 3-month return of 17.23%, outperforming both the Nifty and its sector. The stock's trend label is bullish, and its technical rating is a 'Buy'. The distance from its 52-week high is -6.93%, indicating potential for further upside. The ATR percentage of price is 4.29%, suggesting manageable volatility.
+  - catalysts: Strong recent performance, Bullish trend label, Outperforming Nifty and sector
+  - risks: Volatility, Earnings risk in 80 days
+  - watch: Watch for the stock to break above its recent highs to confirm the bullish trend, and monitor for any signs of weakness or reversal that could trigger a stop loss at 3232.24. Invalidation cues include a drop below the stop loss or a significant increase in India VIX.
+- **SJS** [high] S.J.S. Enterprises Limited (SJS) fits a ≤1-month swing due to its strong bullish trend, high ADX, and strong RSI. The stock has shown significant returns over the past month and quarter, outperforming the Nifty and its sector. With a distance of only -2.22% from its 52-week high, it has potential for a short-term upside.
+  - catalysts: Strong trend, High ADX, Outperforming sector
+  - risks: Earnings uncertainty, Market volatility
+  - watch: Triggers include a breakout above the current level, while invalidation cues would be a drop below the stop level, indicating a failure to sustain the uptrend.
+- **STYLAMIND** [high] This setup fits a ≤1-month swing as the stock has shown a strong bullish trend with an ADX of 48.76 and RSI of 62.80, indicating a potential for further upside. The delivery percentage of 52.29 and strong returns over the past month and quarter also support this thesis. The distance from the 52-week high is -12.24%, providing a potential target for the stock to reach.
+  - catalysts: Strong technical rating, Bullish trend, High delivery percentage
+  - risks: Overall market regime is neutral, India VIX is relatively low
+  - watch: A break above the current price level with increasing volumes could be a trigger for this setup, while a break below the stop level could be an invalidation cue.
+- **UJJIVANSFB** [high] Ujjivan Small Finance Bank Ltd. is poised for a short-term swing due to its strong momentum indicators, such as a high ADX and a bullish trend label. The recent price action and the bank's relative performance against the Nifty and its sector also support a bullish outlook. With a low overall risk environment and a Neutral market regime, this setup fits a ≤1-month swing. The stock's proximity to its 52-week high also suggests potential for a breakout.
+  - catalysts: Strong momentum, Bullish trend, Relative outperformance
+  - risks: Market regime shift, Earnings disappointment, Sector-wide downturn
+  - watch: Triggers for this trade include a strong close above the current price level, while invalidation cues would be a close below the stop level or a significant increase in India VIX. A move below the stop level would indicate a shift in market sentiment and potentially invalidate the trade.
 
 ### Claude feed
 
-Regime: Neutral, Stance: Neutral, Top Ideas: KENNAMET, SJS, Caveats: Low score coverage, provisional scores, and no trade outcome history
+Neutral regime, low overall risk, and positive FII and DII flows. Top ideas include KENNAMET and SJS. Caveats include incomplete score coverage and provisional scores.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** CTE publishes newspaper publication pursuant to SEBI regulations (CTE) — The company has published its financial results in a newspaper, which is a regulatory requirement. This event has a high impact as it provides transparency and accountability to the stakeholders.
-2. **[high]** GENESYS publishes un-audited financial results for the quarter ended June 30, 2026 (GENESYS) — The company has published its un-audited financial results, which provides an update on its financial performance. This event has a high impact as it provides insight into the company's current financial situation.
-3. **[high]** PRUDMOULI publishes un-audited financial results for the quarter ended June 30, 2026 (PRUDMOULI) — The company has published its un-audited financial results, which provides an update on its financial performance. This event has a high impact as it provides insight into the company's current financial situation.
-4. **[high]** KINGFA publishes copy of newspaper publication for financial results (KINGFA) — The company has published a copy of its newspaper publication for financial results, which provides transparency and accountability to the stakeholders. This event has a high impact as it provides insight into the company's current financial situation.
-5. **[high]** KITEX publishes copy of newspaper publication for unaudited financial results (KITEX) — The company has published a copy of its newspaper publication for unaudited financial results, which provides transparency and accountability to the stakeholders. This event has a high impact as it provides insight into the company's current financial situation.
-6. **[high]** SURAJEST publishes press release on unaudited financial results (SURAJEST) — The company has published a press release on its unaudited financial results, which provides an update on its financial performance. This event has a high impact as it provides insight into the company's current financial situation.
-7. **[medium]** EMBDL publishes transcript of earnings conference call (EMBDL) — The company has published a transcript of its earnings conference call, which provides insight into the company's financial performance and future plans. This event has a medium impact as it provides additional information to the stakeholders.
-8. **[medium]** YESBANK revises intimation under SEBI regulations (YESBANK) — The company has revised its intimation under SEBI regulations, which provides an update on its compliance with regulatory requirements. This event has a medium impact as it provides transparency and accountability to the stakeholders.
-9. **[medium]** YESBANK publishes intimation under SEBI regulations (YESBANK) — The company has published an intimation under SEBI regulations, which provides an update on its compliance with regulatory requirements. This event has a medium impact as it provides transparency and accountability to the stakeholders.
-10. **[low]** Embassy Developments Limited convenes 20th Annual General Meeting (EMBDL) — The company has convened its 20th Annual General Meeting, which is a routine event. This event has a low impact as it is a regular occurrence and does not provide significant new information.
+1. **[high]** Multiple Companies Release Q1 Financial Results — Multiple companies have released their Q1 financial results, which may impact the overall market sentiment and sector-specific performance.
+2. **[medium]** GENESYS Releases Un-audited Financial Results (GENESYS) — GENESYS has released its un-audited financial results for the quarter ended June 30, 2026, which may impact the company's stock price and investor sentiment.
+3. **[medium]** PRUDMOULI Releases Un-Audited Financial Results (PRUDMOULI) — PRUDMOULI has released its un-audited financial results for the quarter ended June 30, 2026, which may impact the company's stock price and investor sentiment.
+4. **[medium]** KINGFA Releases Financial Results for Q1 (KINGFA) — KINGFA has released its financial results for the quarter ended June 30, 2026, which may impact the company's stock price and investor sentiment.
+5. **[medium]** KITEX Releases Unaudited Standalone and Consolidated Financial Results (KITEX) — KITEX has released its unaudited standalone and consolidated financial results for the quarter ended June 30, 2026, which may impact the company's stock price and investor sentiment.
+6. **[medium]** SURAJEST Releases Press Release on Unaudited Financial Results (SURAJEST) — SURAJEST has released a press release on its unaudited financial results for the quarter ended June 30, 2026, which may impact the company's stock price and investor sentiment.
+7. **[medium]** EMBDL Releases Transcript of Earnings Conference Call (EMBDL) — EMBDL has released the transcript of its earnings conference call held on August 11, 2026, which may impact the company's stock price and investor sentiment.
+8. **[medium]** CTE Releases Newspaper Publication of Financial Results (CTE) — CTE has released a newspaper publication of its financial results for the quarter ended June 30, 2026, which may impact the company's stock price and investor sentiment.
+9. **[low]** India VIX Remains Low at 11.31 — The India VIX remains low at 11.31, indicating a stable market sentiment and low volatility.
+10. **[low]** FII Net Inflow at 508.12 — The FII net inflow is at 508.12, indicating a positive sentiment from foreign investors towards the Indian market.
 
 ## Deep-dive URLs (after push)
 

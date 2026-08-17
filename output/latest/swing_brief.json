@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -5.01,
     "fii_net": 508.12,
     "dii_net": 356.4,
-    "crude": 82.11,
-    "crude_pct_change": -0.35,
+    "crude": 82.64,
+    "crude_pct_change": 0.29,
     "usdinr": 95.42,
     "usdinr_pct_change": 0.01,
     "us_sp500_pct": -0.17,
     "us_dow_pct": -0.2,
     "us_vix": 14.25,
     "us_vix_pct": -2.6,
-    "dxy": 99.53,
-    "dxy_pct": -0.14,
+    "dxy": 99.51,
+    "dxy_pct": -0.16,
     "us_10y": 4.7,
     "asia_cue": "Bullish",
     "europe_cue": "Mixed",
     "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-17T06:07:13.506675+05:30"
+    "generated_at_ist": "2026-08-17T07:41:46.735449+05:30"
   },
   "funnel": [
     {
