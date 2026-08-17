@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-17
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-17T18:09:29.811392+05:30
+- **generated_at_ist:** 2026-08-17T18:59:56.185579+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -112,7 +112,6 @@
 
 - **CREDITACC**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 - **DIVGIITTS**: BANK PARTIAL — T1 REACHED — ₹1,284.45 above T1 ₹1,242.23 — bank part, trail the rest, move stop to breakeven ₹1,076.40
-- **EMCURE**: EXIT — STOP HIT — session low at/below stop ₹1,878.59 (last ₹1,873.90)
 - **SHRIPISTON**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 - **SREEL**: BANK PARTIAL — T1 REACHED — ₹260.75 above T1 ₹258.00 — bank part, trail the rest, move stop to breakeven ₹221.22
 
@@ -122,21 +121,21 @@
 
 ## Swing candidates (top)
 
-- PLAZACABLE: score=14 rs_nifty=26.65 deliv=65.17
+- MMFL: score=14 rs_nifty=20.4 deliv=40.92
+- MGL: score=14 rs_nifty=1.92 deliv=59.56
+- STYLAMIND: score=14 rs_nifty=10.45 deliv=59.56
+- WENDT: score=14 rs_nifty=4.16 deliv=52.77
+- NRBBEARING: score=14 rs_nifty=14.11 deliv=44.77
+- CRAFTSMAN: score=14 rs_nifty=15.34 deliv=52.54
+- SJS: score=14 rs_nifty=18.69 deliv=64.87
+- AMDIND: score=14 rs_nifty=13.18 deliv=82.23
 - LAXMIINDIA: score=14 rs_nifty=25.59 deliv=62.84
 - THELEELA: score=14 rs_nifty=2.84 deliv=75.97
-- WENDT: score=14 rs_nifty=4.16 deliv=52.77
-- CRAFTSMAN: score=14 rs_nifty=15.34 deliv=52.54
-- MGL: score=14 rs_nifty=1.92 deliv=59.56
-- NRBBEARING: score=14 rs_nifty=14.11 deliv=44.77
+- PLAZACABLE: score=14 rs_nifty=26.65 deliv=65.17
 - CYBERMEDIA: score=14 rs_nifty=12.87 deliv=84.08
-- SJS: score=14 rs_nifty=18.69 deliv=64.87
-- STYLAMIND: score=14 rs_nifty=10.45 deliv=59.56
-- MMFL: score=14 rs_nifty=20.4 deliv=40.92
-- AMDIND: score=14 rs_nifty=13.18 deliv=82.23
-- HINDALCO: score=13 rs_nifty=10.13 deliv=43.12
-- BAJAJHLDNG: score=13 rs_nifty=9.14 deliv=74.45
-- SSWL: score=13 rs_nifty=17.54 deliv=54.73
+- ACE: score=13 rs_nifty=10.58 deliv=54.34
+- KKCL: score=13 rs_nifty=4.59 deliv=65.98
+- TITAN: score=13 rs_nifty=9.76 deliv=57.35
 
 ## World markets (India cues)
 
@@ -149,22 +148,22 @@
 - ASX 200: -0.46% (bear)
 
 ### Europe
-- FTSE 100: -0.09% (neutral)
-- DAX: -0.08% (neutral)
-- Euro Stoxx 50: +0.10% (neutral)
+- FTSE 100: -0.19% (bear)
+- DAX: -0.23% (bear)
+- Euro Stoxx 50: -0.04% (neutral)
 
 ### US
 - S&P 500: -0.17% (bear)
 - Nasdaq: -0.28% (bear)
 - Dow: -0.20% (bear)
-- US VIX: +4.84% (bear)
+- US VIX: +5.47% (bear)
 
 ### Macro
 - USDINR: +0.20% (neutral)
-- Crude WTI: +0.28% (bull)
-- Brent: +0.49% (bull)
-- DXY: -0.21% (neutral)
-- US 10Y: +0.04% (neutral)
+- Crude WTI: +0.08% (neutral)
+- Brent: +0.29% (bull)
+- DXY: -0.25% (neutral)
+- US 10Y: +0.26% (neutral)
 - India ETF: -0.40% (bear)
 - EM ETF: -0.10% (neutral)
 

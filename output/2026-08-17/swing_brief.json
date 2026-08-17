@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -4.74,
     "fii_net": -2535.1,
     "dii_net": 5101.46,
-    "crude": 82.63,
-    "crude_pct_change": 0.28,
+    "crude": 82.47,
+    "crude_pct_change": 0.08,
     "usdinr": 95.59,
     "usdinr_pct_change": 0.2,
     "us_sp500_pct": -0.17,
     "us_dow_pct": -0.2,
-    "us_vix": 14.94,
-    "us_vix_pct": 4.84,
-    "dxy": 99.46,
-    "dxy_pct": -0.21,
-    "us_10y": 4.7,
+    "us_vix": 15.03,
+    "us_vix_pct": 5.47,
+    "dxy": 99.42,
+    "dxy_pct": -0.25,
+    "us_10y": 4.71,
     "asia_cue": "Bullish",
     "europe_cue": "Mixed",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-08-17T18:09:10.594607+05:30"
+    "generated_at_ist": "2026-08-17T18:59:38.204778+05:30"
   },
   "funnel": [
     {
@@ -65,7 +65,6 @@
         "CASTROLIND",
         "LTM",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -76,7 +75,6 @@
         "VALIANTLAB",
         "DICIND",
         "HAPPSTMNDS",
-        "KNAGRI",
         "KOVAI",
         "ATUL",
         "DIVGIITTS",
@@ -99,7 +97,9 @@
         "ARVSMART",
         "COSMOFIRST",
         "GOLDIAM",
-        "WELCORP"
+        "WELCORP",
+        "SKYGOLD",
+        "RPEL"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -125,7 +125,6 @@
         "CASTROLIND",
         "LTM",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -136,7 +135,6 @@
         "VALIANTLAB",
         "DICIND",
         "HAPPSTMNDS",
-        "KNAGRI",
         "KOVAI",
         "ATUL",
         "DIVGIITTS",
@@ -159,7 +157,9 @@
         "ARVSMART",
         "COSMOFIRST",
         "GOLDIAM",
-        "WELCORP"
+        "WELCORP",
+        "SKYGOLD",
+        "RPEL"
       ],
       "dropped_symbols": [
         "HCLTECH",
@@ -182,7 +182,6 @@
         "3PLAND",
         "CAPITALSFB",
         "BSHSL",
-        "REMSONSIND",
         "SYSTANGO",
         "STAR",
         "AESTHETIK",
@@ -190,7 +189,6 @@
         "HISARMETAL",
         "VBL",
         "GULPOLY",
-        "NAHARINDUS",
         "KRSNAA",
         "KIRIINDUS",
         "VR",
@@ -211,7 +209,9 @@
         "TVSHLTD",
         "VARDMNPOLY",
         "INDRAMEDCO",
-        "JAYKAY"
+        "HECPROJECT",
+        "HINDCON",
+        "NSIL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -232,7 +232,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -270,19 +269,20 @@
         "RPEL",
         "SACHEEROME",
         "NRAIL",
-        "ARTEMISMED"
+        "ARTEMISMED",
+        "OIL"
       ],
       "dropped_symbols": [
         "ELANTAS",
         "DRAGARWQ",
         "ULTRAMAR",
         "LTM",
-        "KNAGRI",
         "BLS",
         "NEAGI",
         "TAALTECH",
         "DBCORP",
         "KPL",
+        "KNAGRI",
         "SIGMA",
         "TREJHARA",
         "SINGERIND",
@@ -291,6 +291,7 @@
         "GARUDA",
         "INTLCONV",
         "KHAICHEM",
+        "RUDRA",
         "IFBAGRO",
         "VERTIS",
         "ARVEE",
@@ -301,8 +302,6 @@
         "SBFC",
         "SURAJEST",
         "FINKURVE",
-        "RUDRA",
-        "ALGOQUANT",
         "BANKINDIA",
         "MANAKSIA",
         "ALICON",
@@ -322,7 +321,8 @@
         "ABANSENT",
         "AWL",
         "STEELCITY",
-        "HMAAGRO"
+        "HMAAGRO",
+        "SCANSTL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -343,7 +343,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -381,15 +380,16 @@
         "RPEL",
         "SACHEEROME",
         "NRAIL",
-        "ARTEMISMED"
+        "ARTEMISMED",
+        "OIL"
       ],
       "dropped_symbols": [
         "FEDFINA",
-        "KOTHARIPET",
         "PNGJL",
         "INDIAGLYCO",
         "VILINBIO",
         "YESBANK",
+        "KOTHARIPET",
         "SASKEN",
         "BORORENEW",
         "NIBL",
@@ -416,7 +416,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -456,7 +455,8 @@
         "OIL",
         "KTKBANK",
         "NAVINFLUOR",
-        "JGCHEM"
+        "JGCHEM",
+        "PANAMAPET"
       ],
       "dropped_symbols": [
         "EXPLEOSOL",
@@ -527,7 +527,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -567,7 +566,8 @@
         "VISAKAIND",
         "POLYPLEX",
         "FILATEX",
-        "PLAZACABLE"
+        "PLAZACABLE",
+        "TIIL"
       ],
       "dropped_symbols": [
         "TFCILTD",
@@ -626,7 +626,6 @@
         "IIFL",
         "UNIPARTS",
         "CASTROLIND",
-        "TARMAT",
         "EMUDHRA",
         "STYLAMIND",
         "MPSLTD",
@@ -669,7 +668,8 @@
         "MANINDS",
         "ASHOKLEY",
         "TMB",
-        "ARIHANT"
+        "ARIHANT",
+        "MASTER"
       ],
       "dropped_symbols": [
         "MANALIPETC",
@@ -737,7 +737,6 @@
         "IIFL",
         "UNIPARTS",
         "CASTROLIND",
-        "TARMAT",
         "EMUDHRA",
         "STYLAMIND",
         "MPSLTD",
@@ -780,7 +779,8 @@
         "TVSMOTOR",
         "VIJAYA",
         "KKCL",
-        "WINDLAS"
+        "WINDLAS",
+        "GAEL"
       ],
       "dropped_symbols": [
         "HAPPSTMNDS",
@@ -800,6 +800,7 @@
         "MASTER",
         "SHEETAL",
         "MENONBE",
+        "KMEW",
         "GALAXYSURF",
         "MTARTECH",
         "UYFINCORP",
@@ -807,7 +808,6 @@
         "MANORAMA",
         "MOLDTECH",
         "CENTEXT",
-        "KMEW",
         "MAZDOCK",
         "NETWEB",
         "FORCAS",
@@ -891,7 +891,6 @@
         "IIFL",
         "UNIPARTS",
         "CASTROLIND",
-        "TARMAT",
         "EMUDHRA",
         "MPSLTD",
         "KOVAI",
@@ -935,7 +934,8 @@
         "DVL",
         "MANCREDIT",
         "YASHO",
-        "IDFCFIRSTB"
+        "IDFCFIRSTB",
+        "TTKHLTCARE"
       ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": true
@@ -1919,26 +1919,6 @@
         "score_now": null
       },
       {
-        "symbol": "EMCURE",
-        "date_opened": "2026-08-10",
-        "status": "open",
-        "entry": 1995.2,
-        "stop": 1878.59,
-        "t1": 2228.42,
-        "price": 1873.9,
-        "pct": -6.08,
-        "r_multiple": -1.04,
-        "days_held": 5,
-        "horizon_t1": 17,
-        "mfe_pct": 2.65,
-        "mae_pct": -6.33,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b91,878.59 (last \u20b91,873.90)",
-        "score_at_open": 81.8,
-        "score_now": null
-      },
-      {
         "symbol": "SHRIPISTON",
         "date_opened": "2026-08-05",
         "status": "open",
@@ -2359,9 +2339,7 @@
         "score_now": null
       }
     ],
-    "closed_today": [
-      "EMCURE"
-    ],
+    "closed_today": [],
     "stats": {
       "closed": 18,
       "win_rate_pct": 0.0,

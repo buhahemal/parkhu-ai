@@ -12,15 +12,14 @@ Regime **Bearish**. Sector leader Energy Minerals (4.9% 1m), laggard Communicati
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (24)
+## Open suggestions (23)
 
-**5 need action today.**
+**4 need action today.**
 
 | Symbol | Opened | Entry | Now | P/L | R | Held | Action |
 |---|---|---|---|---|---|---|---|
 | CREDITACC | 2026-07-27 | ₹1,597 | ₹1,539 | -3.67% | -0.56R | 15/17d | TIGHTEN / REVIEW |
 | DIVGIITTS | 2026-08-12 | ₹1,076 | ₹1,284 | 19.33% | 2.51R | 3/16d | BANK PARTIAL — T1 REACHED |
-| EMCURE | 2026-08-10 | ₹1,995 | ₹1,874 | -6.08% | -1.04R | 5/17d | EXIT — STOP HIT |
 | SHRIPISTON | 2026-08-05 | ₹4,403 | ₹4,437 | 0.77% | 0.11R | 8/17d | TIGHTEN / REVIEW |
 | SREEL | 2026-08-10 | ₹221 | ₹261 | 17.87% | 2.67R | 5/20d | BANK PARTIAL — T1 REACHED |
 | AJANTPHARM | 2026-08-13 | ₹3,615 | ₹3,718 | 2.87% | 0.53R | 2/17d | HOLD |
@@ -45,7 +44,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 
 - **CREDITACC** — TIGHTEN / REVIEW: ADX 23 — trend no longer tradeable — one condition gone, thesis thinning. Best 2.3% / worst -5.62% while held.
 - **DIVGIITTS** — BANK PARTIAL — T1 REACHED: ₹1,284.45 above T1 ₹1,242.23 — bank part, trail the rest, move stop to breakeven ₹1,076.40. Best 22.52% / worst 0% while held.
-- **EMCURE** — EXIT — STOP HIT: session low at/below stop ₹1,878.59 (last ₹1,873.90). Best 2.65% / worst -6.33% while held.
 - **SHRIPISTON** — TIGHTEN / REVIEW: ADX 23 — trend no longer tradeable — one condition gone, thesis thinning. Best 4.21% / worst -4.33% while held.
 - **SREEL** — BANK PARTIAL — T1 REACHED: ₹260.75 above T1 ₹258.00 — bank part, trail the rest, move stop to breakeven ₹221.22. Best 20.9% / worst -3.44% while held.
 - **AJANTPHARM** — HOLD: +2.87% (+0.53R), 2d held, ~15d left to the T1 horizon. Best 3.41% / worst -2.06% while held.
@@ -67,8 +65,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **UJJIVANSFB** — HOLD: +0.89% (+0.11R), 15d held, ~2d left to the T1 horizon. Best 2.4% / worst -4.26% while held.
 - **UNIPARTS** — HOLD: +9.30% (+1.23R), 8d held, ~9d left to the T1 horizon. Best 14.47% / worst 0% while held.
 - **UYFINCORP** — HOLD: +11.12% (+1.39R), 8d held, ~5d left to the T1 horizon. Best 16.05% / worst -1.4% while held.
-
-Closed today: EMCURE — moved to `trades/closed.csv`.
 
 ### Measured so far
 

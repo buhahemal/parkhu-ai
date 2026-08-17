@@ -22,7 +22,6 @@
         "CASTROLIND",
         "LTM",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -33,7 +32,6 @@
         "VALIANTLAB",
         "DICIND",
         "HAPPSTMNDS",
-        "KNAGRI",
         "KOVAI",
         "ATUL",
         "DIVGIITTS",
@@ -56,7 +54,9 @@
         "ARVSMART",
         "COSMOFIRST",
         "GOLDIAM",
-        "WELCORP"
+        "WELCORP",
+        "SKYGOLD",
+        "RPEL"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -82,7 +82,6 @@
         "CASTROLIND",
         "LTM",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -93,7 +92,6 @@
         "VALIANTLAB",
         "DICIND",
         "HAPPSTMNDS",
-        "KNAGRI",
         "KOVAI",
         "ATUL",
         "DIVGIITTS",
@@ -116,7 +114,9 @@
         "ARVSMART",
         "COSMOFIRST",
         "GOLDIAM",
-        "WELCORP"
+        "WELCORP",
+        "SKYGOLD",
+        "RPEL"
       ],
       "dropped_symbols": [
         "HCLTECH",
@@ -139,7 +139,6 @@
         "3PLAND",
         "CAPITALSFB",
         "BSHSL",
-        "REMSONSIND",
         "SYSTANGO",
         "STAR",
         "AESTHETIK",
@@ -147,7 +146,6 @@
         "HISARMETAL",
         "VBL",
         "GULPOLY",
-        "NAHARINDUS",
         "KRSNAA",
         "KIRIINDUS",
         "VR",
@@ -168,7 +166,9 @@
         "TVSHLTD",
         "VARDMNPOLY",
         "INDRAMEDCO",
-        "JAYKAY"
+        "HECPROJECT",
+        "HINDCON",
+        "NSIL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -189,7 +189,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -227,19 +226,20 @@
         "RPEL",
         "SACHEEROME",
         "NRAIL",
-        "ARTEMISMED"
+        "ARTEMISMED",
+        "OIL"
       ],
       "dropped_symbols": [
         "ELANTAS",
         "DRAGARWQ",
         "ULTRAMAR",
         "LTM",
-        "KNAGRI",
         "BLS",
         "NEAGI",
         "TAALTECH",
         "DBCORP",
         "KPL",
+        "KNAGRI",
         "SIGMA",
         "TREJHARA",
         "SINGERIND",
@@ -248,6 +248,7 @@
         "GARUDA",
         "INTLCONV",
         "KHAICHEM",
+        "RUDRA",
         "IFBAGRO",
         "VERTIS",
         "ARVEE",
@@ -258,8 +259,6 @@
         "SBFC",
         "SURAJEST",
         "FINKURVE",
-        "RUDRA",
-        "ALGOQUANT",
         "BANKINDIA",
         "MANAKSIA",
         "ALICON",
@@ -279,7 +278,8 @@
         "ABANSENT",
         "AWL",
         "STEELCITY",
-        "HMAAGRO"
+        "HMAAGRO",
+        "SCANSTL"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -300,7 +300,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -338,15 +337,16 @@
         "RPEL",
         "SACHEEROME",
         "NRAIL",
-        "ARTEMISMED"
+        "ARTEMISMED",
+        "OIL"
       ],
       "dropped_symbols": [
         "FEDFINA",
-        "KOTHARIPET",
         "PNGJL",
         "INDIAGLYCO",
         "VILINBIO",
         "YESBANK",
+        "KOTHARIPET",
         "SASKEN",
         "BORORENEW",
         "NIBL",
@@ -373,7 +373,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -413,7 +412,8 @@
         "OIL",
         "KTKBANK",
         "NAVINFLUOR",
-        "JGCHEM"
+        "JGCHEM",
+        "PANAMAPET"
       ],
       "dropped_symbols": [
         "EXPLEOSOL",
@@ -484,7 +484,6 @@
         "MHLXMIRU",
         "CASTROLIND",
         "KRBL",
-        "TARMAT",
         "LODHA",
         "DCMNVL",
         "EMUDHRA",
@@ -524,7 +523,8 @@
         "VISAKAIND",
         "POLYPLEX",
         "FILATEX",
-        "PLAZACABLE"
+        "PLAZACABLE",
+        "TIIL"
       ],
       "dropped_symbols": [
         "TFCILTD",
@@ -583,7 +583,6 @@
         "IIFL",
         "UNIPARTS",
         "CASTROLIND",
-        "TARMAT",
         "EMUDHRA",
         "STYLAMIND",
         "MPSLTD",
@@ -626,7 +625,8 @@
         "MANINDS",
         "ASHOKLEY",
         "TMB",
-        "ARIHANT"
+        "ARIHANT",
+        "MASTER"
       ],
       "dropped_symbols": [
         "MANALIPETC",
@@ -694,7 +694,6 @@
         "IIFL",
         "UNIPARTS",
         "CASTROLIND",
-        "TARMAT",
         "EMUDHRA",
         "STYLAMIND",
         "MPSLTD",
@@ -737,7 +736,8 @@
         "TVSMOTOR",
         "VIJAYA",
         "KKCL",
-        "WINDLAS"
+        "WINDLAS",
+        "GAEL"
       ],
       "dropped_symbols": [
         "HAPPSTMNDS",
@@ -757,6 +757,7 @@
         "MASTER",
         "SHEETAL",
         "MENONBE",
+        "KMEW",
         "GALAXYSURF",
         "MTARTECH",
         "UYFINCORP",
@@ -764,7 +765,6 @@
         "MANORAMA",
         "MOLDTECH",
         "CENTEXT",
-        "KMEW",
         "MAZDOCK",
         "NETWEB",
         "FORCAS",
@@ -848,7 +848,6 @@
         "IIFL",
         "UNIPARTS",
         "CASTROLIND",
-        "TARMAT",
         "EMUDHRA",
         "MPSLTD",
         "KOVAI",
@@ -892,7 +891,8 @@
         "DVL",
         "MANCREDIT",
         "YASHO",
-        "IDFCFIRSTB"
+        "IDFCFIRSTB",
+        "TTKHLTCARE"
       ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": true
