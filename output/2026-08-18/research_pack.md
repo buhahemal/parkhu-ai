@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-18
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-18T06:09:46.153003+05:30
+- **generated_at_ist:** 2026-08-18T07:38:09.759564+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -48,7 +48,7 @@
 - **MUKKA** [rejected] score 66.7 — score below Watch band
 - **SENORES** [rejected] score 66.3 — score below Watch band
 - **HAL** [rejected] score 66.2 — score below Watch band
-- **GLAXO** [rejected] score 66.0 — score below Watch band
+- **GLAXO** [rejected] score 65.9 — score below Watch band
 - **AMDIND** [rejected] score 64.8 — score below Watch band
 - **SONACOMS** [rejected] score 64.1 — score below Watch band
 - **PFIZER** [rejected] score 63.8 — score below Watch band
@@ -117,31 +117,31 @@
 
 ## Swing candidates (top)
 
-- CYBERMEDIA: score=14 rs_nifty=11.46 deliv=84.08
-- WENDT: score=14 rs_nifty=2.75 deliv=52.77
-- MMFL: score=14 rs_nifty=18.99 deliv=40.92
 - SJS: score=14 rs_nifty=17.28 deliv=64.87
-- LAXMIINDIA: score=14 rs_nifty=24.18 deliv=62.84
+- WENDT: score=14 rs_nifty=2.75 deliv=52.77
 - MGL: score=14 rs_nifty=0.51 deliv=59.56
-- AMDIND: score=14 rs_nifty=11.77 deliv=82.23
-- CRAFTSMAN: score=14 rs_nifty=13.93 deliv=52.54
-- STYLAMIND: score=14 rs_nifty=9.04 deliv=59.56
-- THELEELA: score=14 rs_nifty=1.43 deliv=75.97
 - NRBBEARING: score=14 rs_nifty=12.7 deliv=44.77
+- MMFL: score=14 rs_nifty=18.99 deliv=40.92
+- CRAFTSMAN: score=14 rs_nifty=13.93 deliv=52.54
 - PLAZACABLE: score=14 rs_nifty=25.24 deliv=65.17
-- LALPATHLAB: score=13 rs_nifty=7.13 deliv=42.13
-- TTKHLTCARE: score=13 rs_nifty=13.38 deliv=49.49
-- SAREGAMA: score=13 rs_nifty=5.71 deliv=60.02
+- AMDIND: score=14 rs_nifty=11.77 deliv=82.23
+- THELEELA: score=14 rs_nifty=1.43 deliv=75.97
+- STYLAMIND: score=14 rs_nifty=9.04 deliv=59.56
+- LAXMIINDIA: score=14 rs_nifty=24.18 deliv=62.84
+- CYBERMEDIA: score=14 rs_nifty=11.46 deliv=84.08
+- SHANKARA: score=13 rs_nifty=0.15 deliv=88.54
+- MSTCLTD: score=13 rs_nifty=0.87 deliv=48.0
+- EICHERMOT: score=13 rs_nifty=6.83 deliv=62.95
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.32% (bull)
-- Hang Seng: -1.10% (bear)
-- Shanghai: +0.01% (neutral)
-- Kospi: +2.36% (bull)
-- Taiwan: -0.46% (bear)
-- ASX 200: -0.36% (bear)
+- Nikkei: -0.52% (bear)
+- Hang Seng: +0.74% (bull)
+- Shanghai: +1.32% (bull)
+- Kospi: +1.59% (bull)
+- Taiwan: -0.29% (bear)
+- ASX 200: -0.32% (bear)
 
 ### Europe
 - FTSE 100: -0.21% (bear)
@@ -156,8 +156,8 @@
 
 ### Macro
 - USDINR: +0.15% (neutral)
-- Crude WTI: +3.02% (bull)
-- Brent: +2.89% (bull)
+- Crude WTI: +3.03% (bull)
+- Brent: +2.93% (bull)
 - DXY: -0.10% (neutral)
 - US 10Y: +0.60% (bear)
 - India ETF: -0.40% (bear)

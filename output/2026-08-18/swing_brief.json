@@ -27,8 +27,8 @@
     "worst_sector_perf_1m": -4.74,
     "fii_net": -2535.1,
     "dii_net": 5101.46,
-    "crude": 84.89,
-    "crude_pct_change": 3.02,
+    "crude": 84.9,
+    "crude_pct_change": 3.03,
     "usdinr": 95.59,
     "usdinr_pct_change": 0.15,
     "us_sp500_pct": -0.52,
@@ -42,7 +42,7 @@
     "europe_cue": "Mixed",
     "global_risk": "Risk-Off",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-18T06:09:23.673428+05:30"
+    "generated_at_ist": "2026-08-18T07:37:46.379612+05:30"
   },
   "funnel": [
     {
@@ -1419,7 +1419,7 @@
     },
     {
       "symbol": "GLAXO",
-      "score": 66.0
+      "score": 65.9
     },
     {
       "symbol": "AMDIND",
@@ -1649,7 +1649,7 @@
     },
     {
       "symbol": "GLAXO",
-      "score": 66.0,
+      "score": 65.9,
       "band": "Ignore",
       "cmp": 2702.9,
       "risk_sector": "Health Technology",
