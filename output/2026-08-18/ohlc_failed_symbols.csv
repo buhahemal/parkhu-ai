@@ -1,5 +1,6 @@
 symbol,yf_ticker,reason
 ACGL,ACGL.NS,no_ohlc_after_retry
+ADDIND,ADDIND.NS,no_ohlc_after_retry
 ADVIKCA,ADVIKCA.NS,no_ohlc_after_retry
 ALFREDHE,ALFREDHE.NS,no_ohlc_after_retry
 ALUFLUOR,ALUFLUOR.NS,no_ohlc_after_retry
@@ -67,13 +68,17 @@ MANBRO,MANBRO.NS,no_ohlc_after_retry
 MEDICAPQ,MEDICAPQ.NS,no_ohlc_after_retry
 METALIC,METALIC.NS,no_ohlc_after_retry
 MIIL,MIIL.NS,no_ohlc_after_retry
+MILKYMIST,MILKYMIST.NS,no_ohlc_after_retry
 MINALIND,MINALIND.NS,no_ohlc_after_retry
 MKEXIM,MKEXIM.NS,no_ohlc_after_retry
 MLKFOOD,MLKFOOD.NS,no_ohlc_after_retry
 MOHITE,MOHITE.NS,no_ohlc_after_retry
+MPDL,MPDL.NS,no_ohlc_after_retry
 MSL,MSL.NS,no_ohlc_after_retry
 MUKESHB,MUKESHB.NS,no_ohlc_after_retry
+MYSORPETRO,MYSORPETRO.NS,no_ohlc_after_retry
 NEELAM,NEELAM.NS,no_ohlc_after_retry
+NICCOPAR,NICCOPAR.NS,no_ohlc_after_retry
 NTCIND,NTCIND.NS,no_ohlc_after_retry
 ODYCORP,ODYCORP.NS,no_ohlc_after_retry
 ONEGLOBAL,ONEGLOBAL.NS,no_ohlc_after_retry
@@ -109,6 +114,8 @@ SHRJAGP,SHRJAGP.NS,no_ohlc_after_retry
 SIEL,SIEL.NS,no_ohlc_after_retry
 SIMPLXREA,SIMPLXREA.NS,no_ohlc_after_retry
 SPELS,SPELS.NS,no_ohlc_after_retry
+SRIKPRIND,SRIKPRIND.NS,no_ohlc_after_retry
+STLSTRINF,STLSTRINF.NS,no_ohlc_after_retry
 SUMEDHA,SUMEDHA.NS,no_ohlc_after_retry
 SUNLOC,SUNLOC.NS,no_ohlc_after_retry
 SUNRAKSHAK,SUNRAKSHAK.NS,no_ohlc_after_retry
@@ -125,6 +132,7 @@ TRANSCOR,TRANSCOR.NS,no_ohlc_after_retry
 TRITONV,TRITONV.NS,no_ohlc_after_retry
 TUTIALKA,TUTIALKA.NS,no_ohlc_after_retry
 UDAYJEW,UDAYJEW.NS,no_ohlc_after_retry
+UPHOT,UPHOT.NS,no_ohlc_after_retry
 VADILENT,VADILENT.NS,no_ohlc_after_retry
 VASUPRADA,VASUPRADA.NS,no_ohlc_after_retry
 VEDAVAAG,VEDAVAAG.NS,no_ohlc_after_retry
@@ -138,3 +146,5 @@ VOITHPAPR,VOITHPAPR.NS,no_ohlc_after_retry
 VTMLTD,VTMLTD.NS,no_ohlc_after_retry
 WARDINMOBI,WARDINMOBI.NS,no_ohlc_after_retry
 WATERBASE,WATERBASE.NS,no_ohlc_after_retry
+WHBRADY,WHBRADY.NS,no_ohlc_after_retry
+YOGI,YOGI.NS,no_ohlc_after_retry
