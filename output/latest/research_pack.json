@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-18",
-  "generated_at_ist": "2026-08-18T18:09:55.228191+05:30",
+  "generated_at_ist": "2026-08-18T19:03:15.322435+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -40,22 +40,22 @@
     "worst_sector_perf_1m": -6.05,
     "fii_net": 1651.53,
     "dii_net": 2579.31,
-    "crude": 84.27,
-    "crude_pct_change": -0.27,
+    "crude": 84.52,
+    "crude_pct_change": 0.02,
     "usdinr": 95.67,
     "usdinr_pct_change": 0.23,
-    "us_sp500_pct": -0.17,
-    "us_dow_pct": -0.2,
-    "us_vix": 15.66,
-    "us_vix_pct": 9.89,
-    "dxy": 99.65,
-    "dxy_pct": -0.02,
-    "us_10y": 4.73,
+    "us_sp500_pct": -1.03,
+    "us_dow_pct": -0.72,
+    "us_vix": 15.8,
+    "us_vix_pct": 10.88,
+    "dxy": 99.63,
+    "dxy_pct": -0.04,
+    "us_10y": 4.74,
     "asia_cue": "Mixed",
     "europe_cue": "Bearish",
-    "global_risk": "Neutral",
+    "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-08-18T18:09:32.406863+05:30"
+    "generated_at_ist": "2026-08-18T19:02:52.473737+05:30"
   },
   "world_markets": [
     {
@@ -117,24 +117,24 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10751.75,
-          "pct_change": 0.02,
+          "value": 10750.19,
+          "pct_change": 0.0,
           "tone": "neutral",
           "session_date": "2026-08-18"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 26271.44,
-          "pct_change": -0.64,
+          "value": 26238.61,
+          "pct_change": -0.76,
           "tone": "bear",
           "session_date": "2026-08-18"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6506.52,
-          "pct_change": -0.51,
+          "value": 6499.51,
+          "pct_change": -0.61,
           "tone": "bear",
           "session_date": "2026-08-18"
         }
@@ -146,32 +146,32 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7785.76,
-          "pct_change": -0.17,
+          "value": 7705.52,
+          "pct_change": -1.03,
           "tone": "bear",
-          "session_date": "2026-08-14"
+          "session_date": "2026-08-18"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 26729.16,
-          "pct_change": -0.28,
+          "value": 26334.48,
+          "pct_change": -1.48,
           "tone": "bear",
-          "session_date": "2026-08-14"
+          "session_date": "2026-08-18"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 53732.41,
-          "pct_change": -0.2,
+          "value": 53343.07,
+          "pct_change": -0.72,
           "tone": "bear",
-          "session_date": "2026-08-14"
+          "session_date": "2026-08-18"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 15.66,
-          "pct_change": 9.89,
+          "value": 15.8,
+          "pct_change": 10.88,
           "tone": "bear",
           "session_date": "2026-08-18"
         }
@@ -191,50 +191,50 @@
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 84.27,
-          "pct_change": -0.27,
-          "tone": "bear",
+          "value": 84.52,
+          "pct_change": 0.02,
+          "tone": "neutral",
           "session_date": "2026-08-18"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 91.15,
-          "pct_change": 0.31,
+          "value": 91.18,
+          "pct_change": 0.34,
           "tone": "bull",
           "session_date": "2026-08-18"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 99.65,
-          "pct_change": -0.02,
+          "value": 99.63,
+          "pct_change": -0.04,
           "tone": "neutral",
           "session_date": "2026-08-18"
         },
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 4.73,
-          "pct_change": 0.81,
+          "value": 4.74,
+          "pct_change": 0.85,
           "tone": "bear",
           "session_date": "2026-08-18"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 49.78,
-          "pct_change": -0.4,
+          "value": 49.54,
+          "pct_change": -0.47,
           "tone": "bear",
-          "session_date": "2026-08-14"
+          "session_date": "2026-08-18"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 66.61,
-          "pct_change": -0.1,
-          "tone": "neutral",
-          "session_date": "2026-08-14"
+          "value": 66.21,
+          "pct_change": -0.61,
+          "tone": "bear",
+          "session_date": "2026-08-18"
         }
       ]
     }
@@ -3105,7 +3105,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 7,
+        "reconfirmed_count": 8,
         "notes": null
       },
       {
@@ -3511,7 +3511,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 16,
+        "reconfirmed_count": 17,
         "notes": null
       },
       {
@@ -4561,7 +4561,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-08-18T18:09:59.523179+05:30",
+    "generated_at_ist": "2026-08-18T19:03:19.602837+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,

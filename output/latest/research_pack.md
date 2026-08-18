@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-18
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-18T18:09:55.228191+05:30
+- **generated_at_ist:** 2026-08-18T19:03:15.322435+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Bearish (-0.87%)
 - india_vix: 11.39 (Low)
 - fii_net: 1651.53 | dii_net: 2579.31
-- overall_risk: Medium | global_risk: Neutral
+- overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
@@ -141,24 +141,24 @@
 - ASX 200: -0.50% (bear)
 
 ### Europe
-- FTSE 100: +0.02% (neutral)
-- DAX: -0.64% (bear)
-- Euro Stoxx 50: -0.51% (bear)
+- FTSE 100: +0.00% (neutral)
+- DAX: -0.76% (bear)
+- Euro Stoxx 50: -0.61% (bear)
 
 ### US
-- S&P 500: -0.17% (bear)
-- Nasdaq: -0.28% (bear)
-- Dow: -0.20% (bear)
-- US VIX: +9.89% (bear)
+- S&P 500: -1.03% (bear)
+- Nasdaq: -1.48% (bear)
+- Dow: -0.72% (bear)
+- US VIX: +10.88% (bear)
 
 ### Macro
 - USDINR: +0.23% (neutral)
-- Crude WTI: -0.27% (bear)
-- Brent: +0.31% (bull)
-- DXY: -0.02% (neutral)
-- US 10Y: +0.81% (bear)
-- India ETF: -0.40% (bear)
-- EM ETF: -0.10% (neutral)
+- Crude WTI: +0.02% (neutral)
+- Brent: +0.34% (bull)
+- DXY: -0.04% (neutral)
+- US 10Y: +0.85% (bear)
+- India ETF: -0.47% (bear)
+- EM ETF: -0.61% (bear)
 
 
 ## Groq desk note
