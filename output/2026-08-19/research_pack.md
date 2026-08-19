@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-19
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-19T18:09:26.013722+05:30
+- **generated_at_ist:** 2026-08-19T19:04:07.708864+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,57 +10,58 @@
 - nifty: Bearish (-0.32%)
 - india_vix: 11.32 (Low)
 - fii_net: 407.99 | dii_net: 3973.72
-- overall_risk: Medium | global_risk: Risk-Off
+- overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 3135
-- trend = Bullish: 1251
-- price > SMA200: 991
-- price > EMA50: 975
-- ADX14 > 25: 598
+- universe: 3136
+- trend = Bullish: 1252
+- price > SMA200: 992
+- price > EMA50: 976
+- ADX14 > 25: 599
 - RSI14 in 40-80: 556
-- RS > 0 vs NIFTY and sector: 350
-- delivery% >= 40: 207
+- RS > 0 vs NIFTY and sector: 333
+- delivery% >= 40: 195
 - relative_volume >= 1: 34
 - no earnings within 21d: 34
-- event_risk_score <= 1: 32
-- TV rating not Sell: 32
+- event_risk_score <= 1: 33
+- TV rating not Sell: 33
 
-## Survivors (top 32 of 32)
+## Survivors (top 33 of 33)
 
 - **KENNAMET** [idea] score 85.5 — selected as idea
 - **CASTROLIND** [idea] score 81.6 — selected as idea
 - **IIFL** [idea] score 80.3 — selected as idea
 - **MPSLTD** [watchlist] score 79.0 — score in Watch band (70–80)
 - **CRISIL** [rejected] score 76.9 — T1 needs more than 22 trading days (~1 month)
-- **KTKBANK** [watchlist] score 76.3 — score in Watch band (70–80)
 - **UJJIVANSFB** [watchlist] score 76.3 — score in Watch band (70–80)
+- **KTKBANK** [watchlist] score 76.2 — score in Watch band (70–80)
 - **HEG** [watchlist] score 73.6 — score in Watch band (70–80)
 - **ORIENTCER** [rejected] score 73.6 — T1 needs more than 22 trading days (~1 month)
 - **TMB** [watchlist] score 73.1 — score in Watch band (70–80)
 - **VEEDOL** [rejected] score 73.0 — T1 needs more than 22 trading days (~1 month)
-- **RISHABH** [watchlist] score 70.4 — score in Watch band (70–80)
-- **POLICYBZR** [rejected] score 69.0 — score below Watch band
-- **HNDFDS** [rejected] score 68.7 — score below Watch band
+- **RISHABH** [watchlist] score 70.6 — score in Watch band (70–80)
+- **HNDFDS** [rejected] score 68.9 — score below Watch band
+- **POLICYBZR** [rejected] score 68.9 — score below Watch band
 - **RRKABEL** [rejected] score 67.3 — score below Watch band
 - **PFIZER** [rejected] score 66.7 — T1 needs more than 22 trading days (~1 month)
 - **ADOR** [rejected] score 66.2 — score below Watch band
-- **PITTIENG** [rejected] score 59.0 — score below Watch band
-- **GFLLIMITED** [rejected] score 57.5 — T1 needs more than 22 trading days (~1 month)
+- **PITTIENG** [rejected] score 59.1 — score below Watch band
+- **GFLLIMITED** [rejected] score 57.6 — T1 needs more than 22 trading days (~1 month)
 - **MAHSEAMLES** [rejected] score 57.3 — T1 needs more than 22 trading days (~1 month)
 - **ETERNAL** [rejected] score 55.5 — T1 needs more than 22 trading days (~1 month)
-- **HYUNDAI** [rejected] score 52.7 — T1 needs more than 22 trading days (~1 month)
-- **PVRINOX** [rejected] score 51.8 — score below Watch band
-- **CINELINE** [rejected] score 51.0 — score below Watch band
-- **SAYAJIHOTL** [rejected] score 49.4 — score below Watch band
+- **PVRINOX** [rejected] score 51.9 — score below Watch band
+- **CINELINE** [rejected] score 51.2 — score below Watch band
+- **HYUNDAI** [rejected] score 50.4 — T1 needs more than 22 trading days (~1 month)
+- **SAYAJIHOTL** [rejected] score 49.7 — score below Watch band
 - **HCG** [rejected] score 49.2 — score below Watch band
+- **SAMBHV** [rejected] score 49.0 — score below Watch band
 - **YUKEN** [rejected] score 48.8 — score below Watch band
 - **TIJARIA** [rejected] score 47.2 — score below Watch band
-- **PATELRMART** [rejected] score 46.1 — T1 needs more than 22 trading days (~1 month)
-- **THELEELA** [rejected] score 45.6 — score below Watch band
-- **INDIQUBE** [rejected] score 37.8 — T1 needs more than 22 trading days (~1 month)
+- **PATELRMART** [rejected] score 46.3 — T1 needs more than 22 trading days (~1 month)
+- **THELEELA** [rejected] score 45.8 — score below Watch band
 - **SALSTEEL** [rejected] score 37.6 — score below Watch band
+- **INDIQUBE** [rejected] score 37.4 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -114,20 +115,20 @@
 ## Swing candidates (top)
 
 - ETERNAL: score=14 rs_nifty=12.4 deliv=55.3
-- MAHSEAMLES: score=14 rs_nifty=6.27 deliv=60.69
-- PETRONET: score=14 rs_nifty=5.53 deliv=59.65
-- PATELRMART: score=14 rs_nifty=8.32 deliv=55.54
-- THELEELA: score=14 rs_nifty=10.68 deliv=43.86
-- HEG: score=14 rs_nifty=21.01 deliv=49.02
-- IIFL: score=14 rs_nifty=13.85 deliv=51.93
-- UJJIVANSFB: score=14 rs_nifty=10.97 deliv=46.11
 - DEEPINDS: score=14 rs_nifty=40.65 deliv=58.75
 - SAMBHV: score=14 rs_nifty=4.14 deliv=48.76
-- UNIVCABLES: score=13 rs_nifty=42.03 deliv=43.59
-- TITAN: score=13 rs_nifty=9.25 deliv=52.03
-- SHANTIGOLD: score=13 rs_nifty=14.13 deliv=36.35
-- TTKHLTCARE: score=13 rs_nifty=12.67 deliv=58.5
-- HAL: score=13 rs_nifty=11.47 deliv=64.56
+- MAHSEAMLES: score=14 rs_nifty=6.27 deliv=60.69
+- THELEELA: score=14 rs_nifty=10.68 deliv=43.86
+- PETRONET: score=14 rs_nifty=5.53 deliv=59.65
+- PATELRMART: score=14 rs_nifty=8.32 deliv=55.54
+- IIFL: score=14 rs_nifty=13.85 deliv=51.93
+- HEG: score=14 rs_nifty=21.01 deliv=49.02
+- UJJIVANSFB: score=14 rs_nifty=10.97 deliv=46.11
+- AARVI: score=13 rs_nifty=4.97 deliv=41.15
+- SHOPERSTOP: score=13 rs_nifty=6.07 deliv=54.04
+- MPSLTD: score=13 rs_nifty=39.75 deliv=41.92
+- SMLMAH: score=13 rs_nifty=28.0 deliv=43.05
+- HNDFDS: score=13 rs_nifty=15.18 deliv=40.45
 
 ## World markets (India cues)
 
@@ -140,24 +141,24 @@
 - ASX 200: -0.18% (bear)
 
 ### Europe
-- FTSE 100: -0.05% (neutral)
-- DAX: -0.13% (neutral)
-- Euro Stoxx 50: +0.06% (neutral)
+- FTSE 100: -0.01% (neutral)
+- DAX: -0.09% (neutral)
+- Euro Stoxx 50: +0.09% (neutral)
 
 ### US
-- S&P 500: -0.69% (bear)
-- Nasdaq: -1.33% (bear)
-- Dow: -0.22% (bear)
-- US VIX: -1.07% (bull)
+- S&P 500: +0.39% (bull)
+- Nasdaq: +0.41% (bull)
+- Dow: +0.21% (bull)
+- US VIX: -4.29% (bull)
 
 ### Macro
 - USDINR: +0.05% (neutral)
-- Crude WTI: -0.64% (bear)
-- Brent: +0.41% (bull)
-- DXY: -0.27% (neutral)
-- US 10Y: -0.55% (bull)
-- India ETF: -0.40% (bear)
-- EM ETF: -2.94% (bear)
+- Crude WTI: -0.57% (bear)
+- Brent: +0.42% (bull)
+- DXY: -0.65% (bull)
+- US 10Y: -1.38% (bull)
+- India ETF: +0.35% (bull)
+- EM ETF: +1.77% (bull)
 
 
 ## Groq desk note
