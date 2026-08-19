@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-08-19
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-19T06:09:03.185949+05:30
+- **generated_at_ist:** 2026-08-19T07:40:08.368539+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.32%)
-- india_vix: 11.33 (Low)
+- nifty: Bearish (-0.55%)
+- india_vix: 11.39 (Low)
 - fii_net: 1651.53 | dii_net: 2579.31
 - overall_risk: Medium | global_risk: Risk-Off
 
@@ -20,58 +20,55 @@
 - price > EMA50: 1010
 - ADX14 > 25: 613
 - RSI14 in 40-80: 568
-- RS > 0 vs NIFTY and sector: 336
-- delivery% >= 40: 207
-- relative_volume >= 1: 40
-- no earnings within 21d: 40
-- event_risk_score <= 1: 39
-- TV rating not Sell: 39
+- RS > 0 vs NIFTY and sector: 333
+- delivery% >= 40: 205
+- relative_volume >= 1: 37
+- no earnings within 21d: 37
+- event_risk_score <= 1: 36
+- TV rating not Sell: 36
 
-## Survivors (top 39 of 39)
+## Survivors (top 36 of 36)
 
-- **STYLAMIND** [idea] score 80.7 — selected as idea
+- **STYLAMIND** [idea] score 80.8 — selected as idea
 - **IIFL** [idea] score 80.5 — selected as idea
-- **LODHA** [watchlist] score 77.3 — score in Watch band (70–80)
 - **RADICO** [watchlist] score 76.0 — score in Watch band (70–80)
 - **AJANTPHARM** [watchlist] score 75.5 — score in Watch band (70–80)
 - **PLAZACABLE** [rejected] score 75.5 — T1 needs more than 22 trading days (~1 month)
 - **SHAREINDIA** [watchlist] score 75.3 — score in Watch band (70–80)
-- **KMEW** [watchlist] score 74.9 — score in Watch band (70–80)
+- **KMEW** [watchlist] score 74.8 — score in Watch band (70–80)
 - **GAEL** [watchlist] score 74.1 — score in Watch band (70–80)
-- **GRASIM** [watchlist] score 73.3 — score in Watch band (70–80)
-- **ORIENTCER** [rejected] score 72.7 — T1 needs more than 22 trading days (~1 month)
-- **APARINDS** [watchlist] score 72.4 — score in Watch band (70–80)
+- **GRASIM** [watchlist] score 73.2 — score in Watch band (70–80)
+- **ORIENTCER** [rejected] score 73.1 — T1 needs more than 22 trading days (~1 month)
+- **APARINDS** [watchlist] score 72.5 — score in Watch band (70–80)
 - **HNDFDS** [rejected] score 69.6 — score below Watch band
-- **ARIHANT** [rejected] score 69.4 — score below Watch band
 - **RISHABH** [rejected] score 69.4 — score below Watch band
 - **ZFCVINDIA** [rejected] score 69.3 — T1 needs more than 22 trading days (~1 month)
-- **TBOTEK** [rejected] score 67.9 — score below Watch band
+- **ARIHANT** [rejected] score 69.2 — score below Watch band
+- **TBOTEK** [rejected] score 68.0 — score below Watch band
 - **SGMART** [rejected] score 67.2 — score below Watch band
-- **ADOR** [rejected] score 66.7 — score below Watch band
+- **ADOR** [rejected] score 66.6 — score below Watch band
 - **HATSUN** [rejected] score 65.9 — T1 needs more than 22 trading days (~1 month)
 - **JSFB** [rejected] score 65.4 — score below Watch band
 - **STYLEBAAZA** [rejected] score 63.6 — score below Watch band
+- **AVALON** [rejected] score 62.3 — score below Watch band
 - **PITTIENG** [rejected] score 62.3 — score below Watch band
-- **AVALON** [rejected] score 62.2 — score below Watch band
 - **SONACOMS** [rejected] score 62.1 — score below Watch band
 - **MMFL** [rejected] score 58.7 — score below Watch band
 - **ALPHAGEO** [rejected] score 56.5 — score below Watch band
 - **CYBERMEDIA** [rejected] score 54.3 — T1 needs more than 22 trading days (~1 month)
 - **PVRINOX** [rejected] score 54.1 — score below Watch band
-- **URBANCO** [rejected] score 52.7 — T1 needs more than 22 trading days (~1 month)
+- **URBANCO** [rejected] score 53.0 — T1 needs more than 22 trading days (~1 month)
 - **WENDT** [rejected] score 51.8 — T1 needs more than 22 trading days (~1 month)
 - **BLUEJET** [rejected] score 50.7 — T1 needs more than 22 trading days (~1 month)
 - **YUKEN** [rejected] score 48.8 — T1 needs more than 22 trading days (~1 month)
-- **CYIENTDLM** [rejected] score 47.7 — score below Watch band
+- **CYIENTDLM** [rejected] score 47.8 — score below Watch band
 - **JLHL** [rejected] score 46.9 — score below Watch band
-- **MAXESTATES** [rejected] score 43.1 — score below Watch band
+- **MAXESTATES** [rejected] score 42.4 — score below Watch band
 - **MAHAPEXLTD** [rejected] score 41.0 — T1 needs more than 22 trading days (~1 month)
-- **SMARTWORKS** [rejected] score 38.4 — T1 needs more than 22 trading days (~1 month)
-- **INDIQUBE** [rejected] score 37.7 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### STYLAMIND — Buy (score 80.7)
+### STYLAMIND — Buy (score 80.8)
 - Stylam Industries Limited | risk_sector: Non-Energy Minerals
 - entry 3736.4 | stop 3437.49 | t1 4334.22 | t2 4633.14 | t3 4932.05 | R:R 2.0
 - qty 2 | deployed 7473.0 (7.47%) | risk ₹598.0
@@ -115,36 +112,36 @@
 
 ## Swing candidates (top)
 
-- PVRINOX: score=14 rs_nifty=18.78 deliv=46.02
-- ZFCVINDIA: score=14 rs_nifty=14.82 deliv=64.58
-- BLUEJET: score=14 rs_nifty=3.46 deliv=54.1
-- GRASIM: score=14 rs_nifty=6.66 deliv=62.72
-- RISHABH: score=14 rs_nifty=0.45 deliv=49.87
-- JLHL: score=14 rs_nifty=2.1 deliv=63.26
-- TBOTEK: score=14 rs_nifty=17.75 deliv=50.64
-- STYLAMIND: score=14 rs_nifty=15.19 deliv=50.65
-- PLAZACABLE: score=14 rs_nifty=23.84 deliv=44.15
-- WENDT: score=14 rs_nifty=3.46 deliv=55.61
-- KMEW: score=14 rs_nifty=12.11 deliv=45.32
-- CYBERMEDIA: score=14 rs_nifty=10.22 deliv=70.5
-- PITTIENG: score=14 rs_nifty=8.78 deliv=62.33
-- GAEL: score=14 rs_nifty=19.98 deliv=41.39
-- URBANCO: score=14 rs_nifty=9.26 deliv=80.46
+- GRASIM: score=14 rs_nifty=6.81 deliv=62.72
+- WENDT: score=14 rs_nifty=3.61 deliv=55.61
+- PVRINOX: score=14 rs_nifty=18.93 deliv=46.02
+- IIFL: score=14 rs_nifty=9.92 deliv=53.79
+- URBANCO: score=14 rs_nifty=9.41 deliv=80.46
+- JLHL: score=14 rs_nifty=2.25 deliv=63.26
+- ZFCVINDIA: score=14 rs_nifty=14.97 deliv=64.58
+- PITTIENG: score=14 rs_nifty=8.93 deliv=62.33
+- SHAREINDIA: score=14 rs_nifty=3.59 deliv=60.48
+- GAEL: score=14 rs_nifty=20.13 deliv=41.39
+- CYBERMEDIA: score=14 rs_nifty=10.37 deliv=70.5
+- RISHABH: score=14 rs_nifty=0.6 deliv=49.87
+- BLUEJET: score=14 rs_nifty=3.61 deliv=54.1
+- TBOTEK: score=14 rs_nifty=17.9 deliv=50.64
+- PLAZACABLE: score=14 rs_nifty=23.99 deliv=44.15
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -5.35% (bear)
-- Hang Seng: +1.34% (bull)
-- Shanghai: +1.41% (bull)
-- Kospi: -8.18% (bear)
-- Taiwan: +0.10% (neutral)
-- ASX 200: -0.39% (bear)
+- Nikkei: -2.42% (bear)
+- Hang Seng: -0.32% (bear)
+- Shanghai: -1.12% (bear)
+- Kospi: -4.76% (bear)
+- Taiwan: -1.10% (bear)
+- ASX 200: -0.33% (bear)
 
 ### Europe
-- FTSE 100: -0.28% (bear)
-- DAX: -0.38% (bear)
-- Euro Stoxx 50: -0.14% (neutral)
+- FTSE 100: +0.07% (neutral)
+- DAX: -0.80% (bear)
+- Euro Stoxx 50: -0.95% (bear)
 
 ### US
 - S&P 500: -0.69% (bear)
@@ -154,9 +151,9 @@
 
 ### Macro
 - USDINR: -0.03% (neutral)
-- Crude WTI: +0.30% (bull)
-- Brent: +0.80% (bull)
-- DXY: -0.03% (neutral)
+- Crude WTI: +0.59% (bull)
+- Brent: +1.07% (bull)
+- DXY: -0.01% (neutral)
 - US 10Y: -0.38% (bull)
 - India ETF: -0.40% (bear)
 - EM ETF: -2.94% (bear)
