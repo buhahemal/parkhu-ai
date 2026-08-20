@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-20T18:09:02.641876+05:30
+- **generated_at_ist:** 2026-08-20T19:06:23.238995+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Bullish (0.64%)
 - india_vix: 10.76 (Low)
 - fii_net: -583.36 | dii_net: 3537.71
-- overall_risk: Low | global_risk: Risk-On
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
@@ -29,16 +29,16 @@
 
 ## Survivors (top 38 of 38)
 
-- **IIFL** [idea] score 80.6 — selected as idea
+- **IIFL** [idea] score 80.5 — selected as idea
 - **KTKBANK** [watchlist] score 77.1 — score in Watch band (70–80)
-- **TMB** [watchlist] score 75.5 — score in Watch band (70–80)
+- **TMB** [watchlist] score 75.6 — score in Watch band (70–80)
 - **ARTEMISMED** [watchlist] score 74.4 — score in Watch band (70–80)
+- **IDFCFIRSTB** [watchlist] score 72.8 — score in Watch band (70–80)
 - **ORIENTCER** [rejected] score 72.7 — T1 needs more than 22 trading days (~1 month)
 - **RADICO** [watchlist] score 72.6 — score in Watch band (70–80)
-- **IDFCFIRSTB** [watchlist] score 72.5 — score in Watch band (70–80)
 - **INDGN** [rejected] score 71.7 — T1 needs more than 22 trading days (~1 month)
 - **ARIHANT** [watchlist] score 70.3 — score in Watch band (70–80)
-- **PNBHOUSING** [rejected] score 69.0 — score below Watch band
+- **PNBHOUSING** [rejected] score 68.9 — score below Watch band
 - **COFORGE** [rejected] score 68.6 — score below Watch band
 - **PFIZER** [rejected] score 67.3 — T1 needs more than 22 trading days (~1 month)
 - **ADOR** [rejected] score 66.7 — score below Watch band
@@ -47,13 +47,13 @@
 - **LALPATHLAB** [rejected] score 65.7 — T1 needs more than 22 trading days (~1 month)
 - **VOLTAMP** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
 - **CARTRADE** [rejected] score 64.9 — score below Watch band
-- **NYKAA** [rejected] score 62.2 — score below Watch band
-- **BCLIND** [rejected] score 60.6 — T1 needs more than 22 trading days (~1 month)
+- **NYKAA** [rejected] score 62.3 — score below Watch band
+- **BCLIND** [rejected] score 60.7 — T1 needs more than 22 trading days (~1 month)
 - **HERITGFOOD** [rejected] score 60.4 — T1 needs more than 22 trading days (~1 month)
 - **SONACOMS** [rejected] score 60.2 — score below Watch band
 - **WESTLIFE** [rejected] score 59.8 — T1 needs more than 22 trading days (~1 month)
+- **FEDERALBNK** [rejected] score 59.2 — score below Watch band
 - **UNITDSPR** [rejected] score 59.1 — score below Watch band
-- **FEDERALBNK** [rejected] score 58.7 — score below Watch band
 - **GFLLIMITED** [rejected] score 58.4 — T1 needs more than 22 trading days (~1 month)
 - **AUSOMENT** [rejected] score 57.8 — score below Watch band
 - **EIMCOELECO** [rejected] score 57.4 — score below Watch band
@@ -62,7 +62,7 @@
 - **HYUNDAI** [rejected] score 53.7 — T1 needs more than 22 trading days (~1 month)
 - **DODLA** [rejected] score 51.9 — T1 needs more than 22 trading days (~1 month)
 - **SAMBHV** [rejected] score 51.5 — score below Watch band
-- **5PAISA** [rejected] score 46.4 — score below Watch band
+- **5PAISA** [rejected] score 46.3 — score below Watch band
 - **THELEELA** [rejected] score 45.8 — score below Watch band
 - **APOLLOPIPE** [rejected] score 39.3 — score below Watch band
 - **21STCENMGM** [rejected] score 38.9 — T1 needs more than 22 trading days (~1 month)
@@ -70,7 +70,7 @@
 
 ## Ideas
 
-### IIFL — Buy (score 80.6)
+### IIFL — Buy (score 80.5)
 - IIFL Finance Limited | risk_sector: NBFC & Capital Markets
 - entry 636.7 | stop 601.66 | t1 706.79 | t2 741.83 | t3 776.88 | R:R 2.0
 - qty 15 | deployed 9550.0 (9.55%) | risk ₹526.0
@@ -102,7 +102,6 @@
 
 ## Needs action
 
-- **BTML**: EXIT — STOP HIT — session low at/below stop ₹7.87 (last ₹7.92)
 - **CREDITACC**: TIGHTEN / REVIEW — ADX 19 — trend no longer tradeable — one condition gone, thesis thinning
 - **DIVGIITTS**: BANK PARTIAL — T1 REACHED — ₹1,263.45 above T1 ₹1,242.23 — bank part, trail the rest, move stop to breakeven ₹1,076.40
 - **GOLDIAM**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
@@ -114,21 +113,21 @@
 
 ## Swing candidates (top)
 
-- ETERNAL: score=15 rs_nifty=15.09 deliv=64.15
-- IDFCFIRSTB: score=15 rs_nifty=5.38 deliv=53.48
-- NYKAA: score=15 rs_nifty=2.13 deliv=61.7
-- PNBHOUSING: score=15 rs_nifty=7.68 deliv=45.99
-- NAUKRI: score=14 rs_nifty=14.4 deliv=54.69
-- BAJFINANCE: score=14 rs_nifty=3.33 deliv=66.55
-- JSWSTEEL: score=14 rs_nifty=3.65 deliv=53.61
-- FEDERALBNK: score=14 rs_nifty=1.62 deliv=50.08
-- IIFL: score=14 rs_nifty=14.59 deliv=47.03
-- MAHSEAMLES: score=14 rs_nifty=4.85 deliv=71.21
+- VOLTAMP: score=14 rs_nifty=8.41 deliv=51.16
+- TMB: score=14 rs_nifty=7.8 deliv=51.29
+- CARTRADE: score=14 rs_nifty=6.08 deliv=40.24
+- INDGN: score=14 rs_nifty=11.73 deliv=79.29
 - AUSOMENT: score=14 rs_nifty=10.79 deliv=63.18
-- INDHOTEL: score=14 rs_nifty=1.36 deliv=62.48
+- GAEL: score=14 rs_nifty=28.2 deliv=44.76
 - WESTLIFE: score=14 rs_nifty=32.24 deliv=63.17
-- LALPATHLAB: score=14 rs_nifty=11.76 deliv=57.78
+- MAHSEAMLES: score=14 rs_nifty=4.85 deliv=71.21
+- ARIHANT: score=14 rs_nifty=17.16 deliv=49.96
+- BCLIND: score=14 rs_nifty=5.45 deliv=44.2
+- IDFCFIRSTB: score=14 rs_nifty=5.38 deliv=53.48
+- 5PAISA: score=14 rs_nifty=2.8 deliv=45.73
 - SAMBHV: score=14 rs_nifty=10.59 deliv=44.22
+- THELEELA: score=14 rs_nifty=10.56 deliv=68.04
+- ARTEMISMED: score=14 rs_nifty=19.38 deliv=43.86
 
 ## World markets (India cues)
 
@@ -141,24 +140,24 @@
 - ASX 200: +0.33% (bull)
 
 ### Europe
-- FTSE 100: -0.48% (bear)
-- DAX: -0.62% (bear)
-- Euro Stoxx 50: -0.51% (bear)
+- FTSE 100: -0.33% (bear)
+- DAX: -0.50% (bear)
+- Euro Stoxx 50: -0.39% (bear)
 
 ### US
-- S&P 500: +0.21% (bull)
-- Nasdaq: +0.16% (bull)
-- Dow: +0.22% (bull)
-- US VIX: +7.32% (bear)
+- S&P 500: -0.15% (neutral)
+- Nasdaq: -0.29% (bear)
+- Dow: -0.57% (bear)
+- US VIX: +6.98% (bear)
 
 ### Macro
 - USDINR: -0.13% (neutral)
-- Crude WTI: +1.99% (bull)
-- Brent: +3.21% (bull)
-- DXY: -0.06% (neutral)
-- US 10Y: +1.10% (bear)
-- India ETF: +0.32% (bull)
-- EM ETF: +1.18% (bull)
+- Crude WTI: +0.86% (bull)
+- Brent: +2.35% (bull)
+- DXY: -0.07% (neutral)
+- US 10Y: +1.01% (bear)
+- India ETF: +0.09% (neutral)
+- EM ETF: +0.49% (bull)
 
 
 ## Groq desk note
