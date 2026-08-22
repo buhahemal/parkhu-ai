@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-08-22
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-22T06:08:11.000179+05:30
+- **generated_at_ist:** 2026-08-22T18:09:30.356871+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.64%)
-- india_vix: 10.76 (Low)
+- market_regime: **Neutral**
+- nifty: Neutral (0.08%)
+- india_vix: 11.2 (Low)
 - fii_net: -542.71 | dii_net: 2124.14
 - overall_risk: Low | global_risk: Risk-On
 
@@ -20,24 +20,23 @@
 - price > EMA50: 1033
 - ADX14 > 25: 613
 - RSI14 in 40-80: 576
-- RS > 0 vs NIFTY and sector: 358
-- delivery% >= 40: 214
-- relative_volume >= 1: 53
-- no earnings within 21d: 53
-- event_risk_score <= 1: 52
-- TV rating not Sell: 51
+- RS > 0 vs NIFTY and sector: 352
+- delivery% >= 40: 210
+- relative_volume >= 1: 51
+- no earnings within 21d: 51
+- event_risk_score <= 1: 50
+- TV rating not Sell: 49
 
-## Survivors (top 50 of 51)
+## Survivors (top 49 of 49)
 
-- **LODHA** [idea] score 81.6 — selected as idea
-- **KTKBANK** [watchlist] score 78.3 — score in Watch band (70–80)
+- **LODHA** [idea] score 81.7 — selected as idea
+- **KTKBANK** [watchlist] score 78.2 — score in Watch band (70–80)
 - **ASKAUTOLTD** [watchlist] score 75.5 — score in Watch band (70–80)
 - **ORIENTCER** [rejected] score 74.6 — T1 needs more than 22 trading days (~1 month)
-- **IDFCFIRSTB** [rejected] score 73.4 — T1 needs more than 22 trading days (~1 month)
-- **STYLAMIND** [watchlist] score 72.9 — score in Watch band (70–80)
+- **IDFCFIRSTB** [rejected] score 73.3 — T1 needs more than 22 trading days (~1 month)
 - **ARTEMISMED** [watchlist] score 72.4 — score in Watch band (70–80)
 - **TVSMOTOR** [watchlist] score 72.3 — score in Watch band (70–80)
-- **KOTAKBANK** [rejected] score 72.1 — T1 needs more than 22 trading days (~1 month)
+- **KOTAKBANK** [rejected] score 71.9 — T1 needs more than 22 trading days (~1 month)
 - **GRASIM** [watchlist] score 71.1 — score in Watch band (70–80)
 - **RATEGAIN** [rejected] score 69.5 — score below Watch band
 - **KANPRPLA** [rejected] score 68.6 — score below Watch band
@@ -49,10 +48,9 @@
 - **SSWL** [rejected] score 65.5 — score below Watch band
 - **VOLTAMP** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
 - **JAGSNPHARM** [rejected] score 65.0 — score below Watch band
-- **FEDERALBNK** [rejected] score 64.6 — score below Watch band
 - **MCX** [rejected] score 64.0 — score below Watch band
 - **GULFOILLUB** [rejected] score 63.3 — T1 needs more than 22 trading days (~1 month)
-- **JSFB** [rejected] score 62.6 — score below Watch band
+- **JSFB** [rejected] score 62.4 — score below Watch band
 - **STYLEBAAZA** [rejected] score 62.1 — score below Watch band
 - **HATSUN** [rejected] score 61.8 — T1 needs more than 22 trading days (~1 month)
 - **TPHQ** [rejected] score 60.8 — score below Watch band
@@ -79,10 +77,11 @@
 - **PATELRMART** [rejected] score 43.6 — T1 needs more than 22 trading days (~1 month)
 - **THELEELA** [rejected] score 43.5 — score below Watch band
 - **MAHAPEXLTD** [rejected] score 39.9 — score below Watch band
+- **SMARTWORKS** [rejected] score 36.8 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### LODHA — Buy (score 81.6)
+### LODHA — Buy (score 81.7)
 - Lodha Developers Ltd. | risk_sector: Real Estate
 - entry 1242.0 | stop 1164.16 | t1 1397.69 | t2 1475.53 | t3 1553.38 | R:R 2.0
 - qty 8 | deployed 9936.0 (9.94%) | risk ₹623.0
@@ -120,36 +119,36 @@
 
 ## Swing candidates (top)
 
-- TTKHLTCARE: score=14 rs_nifty=6.27 deliv=49.49
-- SAMBHV: score=14 rs_nifty=8.44 deliv=40.03
-- ETERNAL: score=14 rs_nifty=12.99 deliv=68.56
-- ZFCVINDIA: score=14 rs_nifty=9.21 deliv=65.33
-- GULFOILLUB: score=14 rs_nifty=14.16 deliv=64.99
-- PFOCUS: score=14 rs_nifty=0.89 deliv=51.44
-- PATELRMART: score=14 rs_nifty=6.95 deliv=47.02
-- AUSOMENT: score=14 rs_nifty=11.97 deliv=69.21
-- MCX: score=14 rs_nifty=12.44 deliv=43.15
-- IDFCFIRSTB: score=14 rs_nifty=5.66 deliv=61.14
-- STYLAMIND: score=14 rs_nifty=0.5 deliv=62.61
-- SMARTWORKS: score=14 rs_nifty=2.12 deliv=59.35
-- KANPRPLA: score=14 rs_nifty=26.39 deliv=45.92
-- DEEPINDS: score=14 rs_nifty=43.72 deliv=44.7
-- KTKBANK: score=14 rs_nifty=15.46 deliv=54.66
+- GRASIM: score=14 rs_nifty=2.98 deliv=59.41
+- LODHA: score=14 rs_nifty=2.68 deliv=46.95
+- PATELRMART: score=14 rs_nifty=6.33 deliv=47.02
+- WESTLIFE: score=14 rs_nifty=17.46 deliv=75.24
+- GAEL: score=14 rs_nifty=22.82 deliv=46.46
+- AUSOMENT: score=14 rs_nifty=11.35 deliv=69.21
+- IDFCFIRSTB: score=14 rs_nifty=5.04 deliv=61.14
+- MCX: score=14 rs_nifty=11.82 deliv=43.15
+- ZFCVINDIA: score=14 rs_nifty=8.59 deliv=65.33
+- ORIENTCER: score=14 rs_nifty=9.1 deliv=60.81
+- ENGINERSIN: score=14 rs_nifty=5.93 deliv=43.4
+- GULFOILLUB: score=14 rs_nifty=13.54 deliv=64.99
+- JAGSNPHARM: score=14 rs_nifty=4.5 deliv=53.95
+- TTKHLTCARE: score=14 rs_nifty=5.65 deliv=49.49
+- SMARTWORKS: score=14 rs_nifty=1.5 deliv=59.35
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.36% (bull)
-- Hang Seng: +0.80% (bull)
-- Shanghai: +0.24% (bull)
-- Kospi: +5.89% (bull)
-- Taiwan: +0.48% (bull)
-- ASX 200: +0.33% (bull)
+- Nikkei: -0.30% (bear)
+- Hang Seng: +1.21% (bull)
+- Shanghai: +0.04% (neutral)
+- Kospi: +0.88% (bull)
+- Taiwan: +0.65% (bull)
+- ASX 200: -0.27% (bear)
 
 ### Europe
-- FTSE 100: +0.04% (neutral)
-- DAX: -0.42% (bear)
-- Euro Stoxx 50: -0.35% (bear)
+- FTSE 100: +0.64% (bull)
+- DAX: +0.59% (bull)
+- Euro Stoxx 50: +0.63% (bull)
 
 ### US
 - S&P 500: +0.43% (bull)
@@ -158,10 +157,10 @@
 - US VIX: -5.50% (bull)
 
 ### Macro
-- USDINR: +0.20% (neutral)
-- Crude WTI: -1.35% (bear)
-- Brent: +0.10% (neutral)
-- DXY: -0.06% (neutral)
+- USDINR: -0.06% (neutral)
+- Crude WTI: -0.88% (bear)
+- Brent: +0.65% (bull)
+- DXY: -0.10% (neutral)
 - US 10Y: +0.89% (bear)
 - India ETF: +0.18% (bull)
 - EM ETF: +0.75% (bull)

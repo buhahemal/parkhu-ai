@@ -20,4 +20,4 @@ trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,struct
 2026-08-13-AJANTPHARM,AJANTPHARM,Ajanta Pharma Limited,Health Technology,2026-08-13,,3614.6,3420.26,4003.29,4197.63,4391.97,3342.43,17,22,82.3,2,389.0,open,3639.8,2026-08-22,5.02,-2.06,False,False,False,3,
 2026-08-15-KENNAMET,KENNAMET,Kennametal India Limited,Producer Manufacturing,2026-08-15,,3513.3,3232.24,4075.43,4356.49,4637.56,3001.23,14,22,88.7,2,562.0,open,4044.7,2026-08-22,18.27,-0.95,False,False,False,9,
 2026-08-16-GOLDIAM,GOLDIAM,Goldiam International Limited,Consumer Durables,2026-08-16,,365.65,341.83,413.29,437.11,460.94,351.43,7,14,80.2,27,643.0,open,360.35,2026-08-22,3.38,-2.2,False,False,False,1,
-2026-08-21-LODHA,LODHA,Lodha Developers Ltd.,Real Estate,2026-08-21,,1242.0,1164.16,1397.69,1475.53,1553.38,1150.1,16,22,81.7,8,623.0,open,1242.0,2026-08-22,1.61,-0.79,False,False,False,1,
+2026-08-21-LODHA,LODHA,Lodha Developers Ltd.,Real Estate,2026-08-21,,1242.0,1164.16,1397.69,1475.53,1553.38,1150.1,16,22,81.7,8,623.0,open,1242.0,2026-08-22,1.61,-0.79,False,False,False,2,
