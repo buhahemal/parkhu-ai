@@ -5,7 +5,7 @@
   "is_trading_day": false,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-23",
-  "generated_at_ist": "2026-08-23T06:09:18.617592+05:30",
+  "generated_at_ist": "2026-08-23T18:08:19.850645+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -41,7 +41,7 @@
     "fii_net": -542.71,
     "dii_net": 2124.14,
     "crude": 87.06,
-    "crude_pct_change": -0.88,
+    "crude_pct_change": 0.0,
     "usdinr": 95.71,
     "usdinr_pct_change": -0.06,
     "us_sp500_pct": 0.43,
@@ -55,7 +55,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Risk-On",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-23T06:08:54.874703+05:30"
+    "generated_at_ist": "2026-08-23T18:07:53.761265+05:30"
   },
   "world_markets": [
     {
@@ -186,14 +186,14 @@
           "value": 95.71,
           "pct_change": -0.06,
           "tone": "neutral",
-          "session_date": "2026-08-22"
+          "session_date": "2026-08-23"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
           "value": 87.06,
-          "pct_change": -0.88,
-          "tone": "bear",
+          "pct_change": 0.0,
+          "tone": "neutral",
           "session_date": "2026-08-21"
         },
         {
@@ -3712,7 +3712,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 3,
+        "reconfirmed_count": 4,
         "notes": null
       }
     ],
@@ -4243,18 +4243,18 @@
       "sector": "Non-Energy Minerals"
     },
     {
-      "symbol": "KTKBANK",
-      "close": 328.3,
+      "symbol": "LODHA",
+      "close": 1242.0,
       "score": 14,
-      "perf_1m": 16.4390849441,
-      "rs_vs_nifty_1m": 14.84,
-      "rs_vs_sector_1m": 14.37,
-      "deliv_pct": 54.66,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 10.87,
-      "atr": 10.1711079813,
-      "stop_1_5atr": 313.04,
-      "target_5pct": 344.72,
+      "perf_1m": 4.282115869,
+      "rs_vs_nifty_1m": 2.68,
+      "rs_vs_sector_1m": 4.28,
+      "deliv_pct": 46.95,
+      "pct_change_oi": 0.81,
+      "upside_to_target_pct": 8.33,
+      "atr": 38.9222009909,
+      "stop_1_5atr": 1183.62,
+      "target_5pct": 1304.1,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
@@ -4279,22 +4279,22 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "GAEL",
-      "close": 177.46,
+      "symbol": "KTKBANK",
+      "close": 328.3,
       "score": 14,
-      "perf_1m": 24.4198275258,
-      "rs_vs_nifty_1m": 22.82,
-      "rs_vs_sector_1m": 24.42,
-      "deliv_pct": 46.46,
+      "perf_1m": 16.4390849441,
+      "rs_vs_nifty_1m": 14.84,
+      "rs_vs_sector_1m": 14.37,
+      "deliv_pct": 54.66,
       "pct_change_oi": null,
-      "upside_to_target_pct": 11.57,
-      "atr": 7.1782914221,
-      "stop_1_5atr": 166.69,
-      "target_5pct": 186.33,
+      "upside_to_target_pct": 10.87,
+      "atr": 10.1711079813,
+      "stop_1_5atr": 313.04,
+      "target_5pct": 344.72,
       "earnings_within_21d": false,
-      "event_risk_score": 2,
+      "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Consumer Non-Durables"
+      "sector": "Finance"
     },
     {
       "symbol": "ASKAUTOLTD",
@@ -4315,22 +4315,22 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "LODHA",
-      "close": 1242.0,
+      "symbol": "GULFOILLUB",
+      "close": 1139.9,
       "score": 14,
-      "perf_1m": 4.282115869,
-      "rs_vs_nifty_1m": 2.68,
-      "rs_vs_sector_1m": 4.28,
-      "deliv_pct": 46.95,
-      "pct_change_oi": 0.81,
-      "upside_to_target_pct": 8.33,
-      "atr": 38.9222009909,
-      "stop_1_5atr": 1183.62,
-      "target_5pct": 1304.1,
+      "perf_1m": 15.1414141414,
+      "rs_vs_nifty_1m": 13.54,
+      "rs_vs_sector_1m": 15.14,
+      "deliv_pct": 64.99,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 37.69,
+      "atr": 30.9182783316,
+      "stop_1_5atr": 1093.52,
+      "target_5pct": 1196.9,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Finance"
+      "sector": "Energy Minerals"
     },
     {
       "symbol": "RATEGAIN",
@@ -4387,22 +4387,22 @@
       "sector": "Finance"
     },
     {
-      "symbol": "JAGSNPHARM",
-      "close": 236.54,
+      "symbol": "MCX",
+      "close": 3185.0,
       "score": 14,
-      "perf_1m": 6.0955371159,
-      "rs_vs_nifty_1m": 4.5,
-      "rs_vs_sector_1m": 3.35,
-      "deliv_pct": 53.95,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 11.82,
-      "atr": 8.7886619821,
-      "stop_1_5atr": 223.36,
-      "target_5pct": 248.37,
+      "perf_1m": 13.4218866849,
+      "rs_vs_nifty_1m": 11.82,
+      "rs_vs_sector_1m": 13.42,
+      "deliv_pct": 43.15,
+      "pct_change_oi": 2.97,
+      "upside_to_target_pct": 9.26,
+      "atr": 99.7386473193,
+      "stop_1_5atr": 3035.39,
+      "target_5pct": 3344.25,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Health Technology"
+      "sector": "Finance"
     },
     {
       "symbol": "ZFCVINDIA",
@@ -4459,22 +4459,22 @@
       "sector": "Finance"
     },
     {
-      "symbol": "MCX",
-      "close": 3185.0,
+      "symbol": "DEEPINDS",
+      "close": 688.05,
       "score": 14,
-      "perf_1m": 13.4218866849,
-      "rs_vs_nifty_1m": 11.82,
-      "rs_vs_sector_1m": 13.42,
-      "deliv_pct": 43.15,
-      "pct_change_oi": 2.97,
-      "upside_to_target_pct": 9.26,
-      "atr": 99.7386473193,
-      "stop_1_5atr": 3035.39,
-      "target_5pct": 3344.25,
+      "perf_1m": 44.7003154574,
+      "rs_vs_nifty_1m": 43.1,
+      "rs_vs_sector_1m": 44.7,
+      "deliv_pct": 44.7,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 35.53,
+      "atr": 34.7868451047,
+      "stop_1_5atr": 635.87,
+      "target_5pct": 722.45,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Finance"
+      "sector": "Industrial Services"
     },
     {
       "symbol": "PATELRMART",
@@ -4568,7 +4568,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-08-23T06:09:22.987476+05:30",
+    "generated_at_ist": "2026-08-23T18:08:24.129078+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,

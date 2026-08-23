@@ -28,7 +28,7 @@
     "fii_net": -542.71,
     "dii_net": 2124.14,
     "crude": 87.06,
-    "crude_pct_change": -0.88,
+    "crude_pct_change": 0.0,
     "usdinr": 95.71,
     "usdinr_pct_change": -0.06,
     "us_sp500_pct": 0.43,
@@ -42,7 +42,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Risk-On",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-08-23T06:08:54.874703+05:30"
+    "generated_at_ist": "2026-08-23T18:07:53.761265+05:30"
   },
   "funnel": [
     {

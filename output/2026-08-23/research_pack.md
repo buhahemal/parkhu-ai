@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-23
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-23T06:09:18.617592+05:30
+- **generated_at_ist:** 2026-08-23T18:08:19.850645+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -120,19 +120,19 @@
 ## Swing candidates (top)
 
 - GRASIM: score=14 rs_nifty=2.98 deliv=59.41
-- KTKBANK: score=14 rs_nifty=14.84 deliv=54.66
-- KANPRPLA: score=14 rs_nifty=25.77 deliv=45.92
-- GAEL: score=14 rs_nifty=22.82 deliv=46.46
-- ASKAUTOLTD: score=14 rs_nifty=25.19 deliv=44.89
 - LODHA: score=14 rs_nifty=2.68 deliv=46.95
+- KANPRPLA: score=14 rs_nifty=25.77 deliv=45.92
+- KTKBANK: score=14 rs_nifty=14.84 deliv=54.66
+- ASKAUTOLTD: score=14 rs_nifty=25.19 deliv=44.89
+- GULFOILLUB: score=14 rs_nifty=13.54 deliv=64.99
 - RATEGAIN: score=14 rs_nifty=6.01 deliv=40.22
 - SAMBHV: score=14 rs_nifty=7.82 deliv=40.03
 - AUSOMENT: score=14 rs_nifty=11.35 deliv=69.21
-- JAGSNPHARM: score=14 rs_nifty=4.5 deliv=53.95
+- MCX: score=14 rs_nifty=11.82 deliv=43.15
 - ZFCVINDIA: score=14 rs_nifty=8.59 deliv=65.33
 - ENGINERSIN: score=14 rs_nifty=5.93 deliv=43.4
 - IDFCFIRSTB: score=14 rs_nifty=5.04 deliv=61.14
-- MCX: score=14 rs_nifty=11.82 deliv=43.15
+- DEEPINDS: score=14 rs_nifty=43.1 deliv=44.7
 - PATELRMART: score=14 rs_nifty=6.33 deliv=47.02
 
 ## World markets (India cues)
@@ -158,7 +158,7 @@
 
 ### Macro
 - USDINR: -0.06% (neutral)
-- Crude WTI: -0.88% (bear)
+- Crude WTI: +0.00% (neutral)
 - Brent: +0.65% (bull)
 - DXY: -0.10% (neutral)
 - US 10Y: +0.89% (bear)
