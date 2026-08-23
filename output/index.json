@@ -1,10 +1,9 @@
 {
-  "latest": "2026-08-22",
+  "latest": "2026-08-23",
   "session_date": "2026-07-24",
   "is_trading_day": false,
-  "generated_at_ist": "2026-08-22T18:09:30.356871+05:30",
+  "generated_at_ist": "2026-08-23T06:09:18.617592+05:30",
   "dates": [
-    "2026-07-24",
     "2026-07-25",
     "2026-07-26",
     "2026-07-27",
@@ -33,10 +32,10 @@
     "2026-08-19",
     "2026-08-20",
     "2026-08-21",
-    "2026-08-22"
+    "2026-08-22",
+    "2026-08-23"
   ],
   "pack_dates": [
-    "2026-07-24",
     "2026-07-25",
     "2026-07-26",
     "2026-07-27",
@@ -65,7 +64,8 @@
     "2026-08-19",
     "2026-08-20",
     "2026-08-21",
-    "2026-08-22"
+    "2026-08-22",
+    "2026-08-23"
   ],
   "brief_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.md",
   "pack_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md",
@@ -93,7 +93,6 @@
     "oi_spurts.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/oi_spurts.csv",
     "options.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/options.csv",
     "relative_strength.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/relative_strength.csv",
-    "report.json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/report.json",
     "research_pack.json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.json",
     "research_pack.md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/research_pack.md",
     "sectors.csv": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/sectors.csv",
