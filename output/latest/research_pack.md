@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-24
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-24T18:09:12.664652+05:30
+- **generated_at_ist:** 2026-08-24T19:09:29.216500+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Neutral (-0.14%)
 - india_vix: 11.52 (Low)
 - fii_net: 1181.66 | dii_net: 2493.41
-- overall_risk: Low | global_risk: Risk-On
+- overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
 
@@ -90,19 +90,19 @@
 - entry 3288.0 | stop 3178.44 | t1 3452.4 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GIPCL — Watch (score 14.0)
-- GIPCL | risk_sector: Utilities
-- entry 178.39 | stop 170.36 | t1 187.31 | t2 None | t3 None | R:R None
+### CANHLIFE — Watch (score 14.0)
+- CANHLIFE | risk_sector: Finance
+- entry 154.7 | stop 147.41 | t1 162.44 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GLENMARK — Watch (score 14.0)
-- GLENMARK | risk_sector: Health Technology
-- entry 2390.7 | stop 2304.09 | t1 2510.24 | t2 None | t3 None | R:R None
+### AUSOMENT — Watch (score 14.0)
+- AUSOMENT | risk_sector: Finance
+- entry 147.69 | stop 136.31 | t1 155.07 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GULFOILLUB — Watch (score 14.0)
-- GULFOILLUB | risk_sector: Energy Minerals
-- entry 1164.1 | stop 1116.81 | t1 1222.3 | t2 None | t3 None | R:R None
+### DLF — Watch (score 14.0)
+- DLF | risk_sector: Finance
+- entry 689.0 | stop 664.88 | t1 723.45 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -144,19 +144,19 @@
 
 - IDFCFIRSTB: score=15 rs_nifty=5.87 deliv=56.52
 - GRASIM: score=14 rs_nifty=4.16 deliv=58.87
-- GIPCL: score=14 rs_nifty=12.82 deliv=49.51
-- GLENMARK: score=14 rs_nifty=7.66 deliv=43.44
-- GULFOILLUB: score=14 rs_nifty=10.25 deliv=60.04
-- RATEGAIN: score=14 rs_nifty=8.69 deliv=45.35
-- KKCL: score=14 rs_nifty=3.04 deliv=72.23
-- KDDL: score=14 rs_nifty=22.49 deliv=71.31
+- CANHLIFE: score=14 rs_nifty=0.9 deliv=64.76
 - AUSOMENT: score=14 rs_nifty=15.94 deliv=50.65
+- DLF: score=14 rs_nifty=5.9 deliv=67.32
+- GLENMARK: score=14 rs_nifty=7.66 deliv=43.44
+- KDDL: score=14 rs_nifty=22.49 deliv=71.31
+- GULFOILLUB: score=14 rs_nifty=10.25 deliv=60.04
+- CYBERMEDIA: score=14 rs_nifty=7.93 deliv=70.75
 - AUBANK: score=14 rs_nifty=13.06 deliv=62.17
-- DPABHUSHAN: score=14 rs_nifty=11.76 deliv=46.43
-- PNBHOUSING: score=14 rs_nifty=8.53 deliv=47.84
-- NAHARCAP: score=14 rs_nifty=1.4 deliv=53.26
-- JAGSNPHARM: score=14 rs_nifty=8.9 deliv=46.14
 - RACLGEAR: score=14 rs_nifty=12.28 deliv=47.37
+- TATACAP: score=14 rs_nifty=5.37 deliv=63.28
+- NAHARCAP: score=14 rs_nifty=1.4 deliv=53.26
+- ENGINERSIN: score=14 rs_nifty=12.3 deliv=48.13
+- PNBHOUSING: score=14 rs_nifty=8.53 deliv=47.84
 
 ## World markets (India cues)
 
@@ -169,24 +169,24 @@
 - ASX 200: +0.49% (bull)
 
 ### Europe
-- FTSE 100: +0.05% (neutral)
-- DAX: +0.01% (neutral)
-- Euro Stoxx 50: -0.08% (neutral)
+- FTSE 100: -0.02% (neutral)
+- DAX: -0.19% (bear)
+- Euro Stoxx 50: -0.24% (bear)
 
 ### US
-- S&P 500: +0.43% (bull)
-- Nasdaq: +0.43% (bull)
-- Dow: +0.98% (bull)
-- US VIX: +4.89% (bear)
+- S&P 500: -0.33% (bear)
+- Nasdaq: -0.67% (bear)
+- Dow: +0.15% (neutral)
+- US VIX: +4.76% (bear)
 
 ### Macro
 - USDINR: -0.04% (neutral)
-- Crude WTI: -1.87% (bear)
-- Brent: -1.58% (bear)
-- DXY: +0.12% (neutral)
-- US 10Y: -0.72% (bull)
-- India ETF: +0.18% (bull)
-- EM ETF: +0.75% (bull)
+- Crude WTI: -1.45% (bear)
+- Brent: -0.93% (bear)
+- DXY: +0.14% (neutral)
+- US 10Y: -0.46% (bull)
+- India ETF: -0.55% (bear)
+- EM ETF: -1.59% (bear)
 
 
 ## Groq desk note
