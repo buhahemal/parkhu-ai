@@ -1,138 +1,140 @@
 # Parkhu research pack — 2026-08-24
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-24T07:46:38.048269+05:30
+- **generated_at_ist:** 2026-08-24T18:09:12.664652+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Neutral**
-- nifty: Neutral (0.08%)
-- india_vix: 11.2 (Low)
-- fii_net: -542.71 | dii_net: 2124.14
+- nifty: Neutral (-0.14%)
+- india_vix: 11.52 (Low)
+- fii_net: 1181.66 | dii_net: 2493.41
 - overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 3139
-- trend = Bullish: 1324
-- price > SMA200: 1041
-- price > EMA50: 1033
-- ADX14 > 25: 613
-- RSI14 in 40-80: 576
-- RS > 0 vs NIFTY and sector: 340
-- delivery% >= 40: 204
-- relative_volume >= 1: 48
-- no earnings within 21d: 48
-- event_risk_score <= 1: 47
-- TV rating not Sell: 47
+- universe: 3141
+- trend = Bullish: 1325
+- price > SMA200: 1059
+- price > EMA50: 1045
+- ADX14 > 25: 632
+- RSI14 in 40-80: 589
+- RS > 0 vs NIFTY and sector: 382
+- delivery% >= 40: 232
+- relative_volume >= 1: 51
+- no earnings within 21d: 51
+- event_risk_score <= 1: 49
+- TV rating not Sell: 48
 
-## Survivors (top 47 of 47)
+## Survivors (top 48 of 48)
 
-- **KTKBANK** [watchlist] score 78.2 — score in Watch band (70–80)
-- **ASKAUTOLTD** [watchlist] score 75.5 — score in Watch band (70–80)
-- **ORIENTCER** [rejected] score 74.7 — T1 needs more than 22 trading days (~1 month)
-- **IDFCFIRSTB** [rejected] score 73.3 — T1 needs more than 22 trading days (~1 month)
-- **ARTEMISMED** [watchlist] score 72.4 — score in Watch band (70–80)
-- **TVSMOTOR** [watchlist] score 72.2 — score in Watch band (70–80)
-- **KOTAKBANK** [rejected] score 71.9 — T1 needs more than 22 trading days (~1 month)
-- **GRASIM** [watchlist] score 71.2 — score in Watch band (70–80)
-- **RATEGAIN** [rejected] score 69.5 — score below Watch band
-- **KANPRPLA** [rejected] score 68.6 — score below Watch band
-- **SILINV** [rejected] score 68.3 — T1 needs more than 22 trading days (~1 month)
-- **KDDL** [rejected] score 67.6 — score below Watch band
-- **ENGINERSIN** [rejected] score 67.1 — score below Watch band
-- **ZFCVINDIA** [rejected] score 66.9 — T1 needs more than 22 trading days (~1 month)
-- **TTKHLTCARE** [rejected] score 65.8 — score below Watch band
-- **SSWL** [rejected] score 65.3 — score below Watch band
-- **VOLTAMP** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
-- **JAGSNPHARM** [rejected] score 65.0 — score below Watch band
-- **MCX** [rejected] score 63.9 — score below Watch band
-- **GULFOILLUB** [rejected] score 63.4 — T1 needs more than 22 trading days (~1 month)
-- **JSFB** [rejected] score 62.4 — score below Watch band
-- **STYLEBAAZA** [rejected] score 62.1 — score below Watch band
-- **HATSUN** [rejected] score 61.9 — T1 needs more than 22 trading days (~1 month)
-- **TPHQ** [rejected] score 60.8 — score below Watch band
-- **GUFICBIO** [rejected] score 60.7 — score below Watch band
-- **ETERNAL** [rejected] score 60.6 — T1 needs more than 22 trading days (~1 month)
-- **HERITGFOOD** [rejected] score 60.4 — T1 needs more than 22 trading days (~1 month)
-- **WESTLIFE** [rejected] score 60.4 — T1 needs more than 22 trading days (~1 month)
-- **UNITDSPR** [rejected] score 58.8 — score below Watch band
-- **GFLLIMITED** [rejected] score 58.3 — T1 needs more than 22 trading days (~1 month)
-- **AUSOMENT** [rejected] score 58.2 — score below Watch band
-- **EIMCOELECO** [rejected] score 58.0 — score below Watch band
-- **DEEPINDS** [rejected] score 56.7 — score below Watch band
-- **SIEMENS** [rejected] score 53.6 — score below Watch band
-- **HYUNDAI** [rejected] score 53.4 — T1 needs more than 22 trading days (~1 month)
-- **PVRINOX** [rejected] score 53.2 — score below Watch band
-- **DOLATALGO** [rejected] score 53.0 — T1 needs more than 22 trading days (~1 month)
-- **SAMBHV** [rejected] score 51.4 — score below Watch band
-- **BIL** [rejected] score 48.4 — score below Watch band
-- **GILLANDERS** [rejected] score 47.0 — score below Watch band
-- **ANTHEM** [rejected] score 46.9 — score below Watch band
-- **BALAJITELE** [rejected] score 46.9 — T1 needs more than 22 trading days (~1 month)
-- **TGBHOTELS** [rejected] score 46.6 — score below Watch band
-- **PFOCUS** [rejected] score 43.9 — T1 needs more than 22 trading days (~1 month)
-- **PATELRMART** [rejected] score 43.8 — T1 needs more than 22 trading days (~1 month)
-- **THELEELA** [rejected] score 43.5 — score below Watch band
-- **MAHAPEXLTD** [rejected] score 39.8 — score below Watch band
+- **FINKURVE** [rejected] score 76.5 — T1 needs more than 22 trading days (~1 month)
+- **AUBANK** [watchlist] score 75.7 — score in Watch band (70–80)
+- **LAURUSLABS** [rejected] score 74.7 — T1 needs more than 22 trading days (~1 month)
+- **IDFCFIRSTB** [watchlist] score 74.4 — score in Watch band (70–80)
+- **ORIENTBELL** [watchlist] score 74.1 — score in Watch band (70–80)
+- **KOTAKBANK** [rejected] score 73.8 — T1 needs more than 22 trading days (~1 month)
+- **ALBERTDAVD** [watchlist] score 72.4 — score in Watch band (70–80)
+- **DPABHUSHAN** [watchlist] score 72.1 — score in Watch band (70–80)
+- **RATEGAIN** [watchlist] score 71.9 — score in Watch band (70–80)
+- **ENGINERSIN** [watchlist] score 71.6 — score in Watch band (70–80)
+- **MPSLTD** [watchlist] score 71.3 — score in Watch band (70–80)
+- **JAGSNPHARM** [watchlist] score 70.9 — score in Watch band (70–80)
+- **GRASIM** [watchlist] score 70.6 — score in Watch band (70–80)
+- **SREEL** [watchlist] score 70.6 — score in Watch band (70–80)
+- **RACLGEAR** [watchlist] score 70.5 — score in Watch band (70–80)
+- **DCI** [rejected] score 70.1 — T1 needs more than 22 trading days (~1 month)
+- **JSWSTEEL** [rejected] score 70.1 — T1 needs more than 22 trading days (~1 month)
+- **AUROPHARMA** [watchlist] score 70.0 — score in Watch band (70–80)
+- **KKCL** [rejected] score 69.9 — score below Watch band
+- **SILINV** [rejected] score 69.8 — T1 needs more than 22 trading days (~1 month)
+- **TATACAP** [rejected] score 69.5 — score below Watch band
+- **RISHABH** [rejected] score 69.2 — score below Watch band
+- **KDDL** [rejected] score 68.9 — score below Watch band
+- **GIPCL** [rejected] score 68.7 — score below Watch band
+- **NAHARCAP** [rejected] score 67.8 — score below Watch band
+- **JSFB** [rejected] score 66.2 — score below Watch band
+- **GARFIBRES** [rejected] score 64.3 — score below Watch band
+- **BLSE** [rejected] score 63.8 — score below Watch band
+- **MANGLMCEM** [rejected] score 63.7 — score below Watch band
+- **GULFOILLUB** [rejected] score 62.0 — T1 needs more than 22 trading days (~1 month)
+- **PITTIENG** [rejected] score 60.4 — score below Watch band
+- **HERITGFOOD** [rejected] score 59.4 — T1 needs more than 22 trading days (~1 month)
+- **SETL** [rejected] score 58.0 — score below Watch band
+- **AUSOMENT** [rejected] score 56.8 — score below Watch band
+- **CYBERMEDIA** [rejected] score 54.0 — T1 needs more than 22 trading days (~1 month)
+- **MUTHOOTCAP** [rejected] score 52.7 — T1 needs more than 22 trading days (~1 month)
+- **PVRINOX** [rejected] score 52.6 — score below Watch band
+- **DODLA** [rejected] score 52.1 — T1 needs more than 22 trading days (~1 month)
+- **CINELINE** [rejected] score 51.2 — score below Watch band
+- **SAYAJIHOTL** [rejected] score 49.5 — score below Watch band
+- **NATCAPSUQ** [rejected] score 48.0 — T1 needs more than 22 trading days (~1 month)
+- **SHOPERSTOP** [rejected] score 47.7 — T1 needs more than 22 trading days (~1 month)
+- **CANHLIFE** [rejected] score 47.3 — score below Watch band
+- **ARIS** [rejected] score 47.2 — T1 needs more than 22 trading days (~1 month)
+- **TGBHOTELS** [rejected] score 47.0 — score below Watch band
+- **GILLANDERS** [rejected] score 45.2 — T1 needs more than 22 trading days (~1 month)
+- **ANTHEM** [rejected] score 44.5 — score below Watch band
+- **SMARTWORKS** [rejected] score 36.4 — score below Watch band
 
 ## Ideas
 
-### GAEL — Watch (score 14.0)
-- GAEL | risk_sector: Consumer Non-Durables
-- entry 177.46 | stop 166.69 | t1 186.33 | t2 None | t3 None | R:R None
+### IDFCFIRSTB — Watch (score 15.0)
+- IDFCFIRSTB | risk_sector: Finance
+- entry 85.89 | stop 83.7 | t1 90.18 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### RATEGAIN — Watch (score 14.0)
-- RATEGAIN | risk_sector: Technology Services
-- entry 990.05 | stop 926.38 | t1 1039.55 | t2 None | t3 None | R:R None
+### GRASIM — Watch (score 14.0)
+- GRASIM | risk_sector: Non-Energy Minerals
+- entry 3288.0 | stop 3178.44 | t1 3452.4 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### KTKBANK — Watch (score 14.0)
-- KTKBANK | risk_sector: Finance
-- entry 328.3 | stop 313.04 | t1 344.72 | t2 None | t3 None | R:R None
+### GIPCL — Watch (score 14.0)
+- GIPCL | risk_sector: Utilities
+- entry 178.39 | stop 170.36 | t1 187.31 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ETERNAL — Watch (score 14.0)
-- ETERNAL | risk_sector: Technology Services
-- entry 328.0 | stop 315.77 | t1 344.4 | t2 None | t3 None | R:R None
+### GLENMARK — Watch (score 14.0)
+- GLENMARK | risk_sector: Health Technology
+- entry 2390.7 | stop 2304.09 | t1 2510.24 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ASKAUTOLTD — Watch (score 14.0)
-- ASKAUTOLTD | risk_sector: Producer Manufacturing
-- entry 621.15 | stop 581.48 | t1 652.21 | t2 None | t3 None | R:R None
+### GULFOILLUB — Watch (score 14.0)
+- GULFOILLUB | risk_sector: Energy Minerals
+- entry 1164.1 | stop 1116.81 | t1 1222.3 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UJJIVANSFB** status=open entry=71.57 last=72.07 mfe=3.31 mae=-4.26 opened=2026-07-27
-- **IIFL** status=partial entry=582.35 last=679.8 mfe=17.99 mae=-1.61 opened=2026-07-28
-- **SHRIPISTON** status=open entry=4402.7 last=4600.1 mfe=5.52 mae=-4.33 opened=2026-08-05
-- **TATACAP** status=open entry=371.9 last=365.05 mfe=4.92 mae=-4.52 opened=2026-08-05
-- **UNIPARTS** status=open entry=732.95 last=815.3 mfe=14.47 mae=0.0 opened=2026-08-05
-- **UYFINCORP** status=open entry=19.25 last=20.14 mfe=16.05 mae=-1.4 opened=2026-08-05
-- **KTKBANK** status=open entry=306.8 last=328.3 mfe=10.25 mae=-3.1 opened=2026-08-06
-- **MANAKSTEEL** status=open entry=84.43 last=85.46 mfe=6.48 mae=-5.0 opened=2026-08-07
-- **SJS** status=open entry=2446.1 last=2497.4 mfe=5.84 mae=-3.72 opened=2026-08-07
-- **SUPRAJIT** status=open entry=527.55 last=505.4 mfe=6.01 mae=-5.22 opened=2026-08-07
-- **M&M** status=open entry=3502.0 last=3412.2 mfe=0.93 mae=-3.74 opened=2026-08-08
-- **SAHYADRI** status=open entry=349.85 last=374.05 mfe=14.65 mae=-4.23 opened=2026-08-10
-- **SKYGOLD** status=open entry=719.4 last=803.5 mfe=17.88 mae=0.0 opened=2026-08-10
-- **SREEL** status=partial entry=221.22 last=240.84 mfe=20.9 mae=-3.44 opened=2026-08-10
-- **STYLAMIND** status=open entry=3651.2 last=3601.7 mfe=3.09 mae=-4.56 opened=2026-08-10
-- **CASTROLIND** status=open entry=188.38 last=187.77 mfe=1.34 mae=-1.21 opened=2026-08-12
-- **DIVGIITTS** status=partial entry=1076.4 last=1217.9 mfe=22.52 mae=0.0 opened=2026-08-12
-- **AJANTPHARM** status=open entry=3614.6 last=3639.8 mfe=5.02 mae=-2.06 opened=2026-08-13
-- **KENNAMET** status=open entry=3513.3 last=4044.7 mfe=18.27 mae=-0.95 opened=2026-08-15
-- **GOLDIAM** status=open entry=365.65 last=360.35 mfe=3.38 mae=-2.2 opened=2026-08-16
-- **LODHA** status=open entry=1242.0 last=1242.0 mfe=1.61 mae=-0.79 opened=2026-08-21
+- **UJJIVANSFB** status=open entry=71.57 last=70.29 mfe=3.31 mae=-4.26 opened=2026-07-27
+- **IIFL** status=partial entry=582.35 last=696.4 mfe=21.06 mae=-1.61 opened=2026-07-28
+- **SHRIPISTON** status=open entry=4402.7 last=4746.8 mfe=8.7 mae=-4.33 opened=2026-08-05
+- **TATACAP** status=open entry=371.9 last=364.45 mfe=4.92 mae=-4.52 opened=2026-08-05
+- **UNIPARTS** status=open entry=732.95 last=808.2 mfe=14.47 mae=0.0 opened=2026-08-05
+- **UYFINCORP** status=open entry=19.25 last=20.09 mfe=16.05 mae=-1.4 opened=2026-08-05
+- **KTKBANK** status=open entry=306.8 last=333.25 mfe=10.25 mae=-3.1 opened=2026-08-06
+- **MANAKSTEEL** status=open entry=84.43 last=87.38 mfe=6.48 mae=-5.0 opened=2026-08-07
+- **SJS** status=open entry=2446.1 last=2561.7 mfe=5.84 mae=-3.72 opened=2026-08-07
+- **SUPRAJIT** status=open entry=527.55 last=507.75 mfe=6.01 mae=-5.22 opened=2026-08-07
+- **M&M** status=open entry=3502.0 last=3414.1 mfe=0.93 mae=-3.74 opened=2026-08-08
+- **SAHYADRI** status=open entry=349.85 last=351.25 mfe=14.65 mae=-4.23 opened=2026-08-10
+- **SKYGOLD** status=open entry=719.4 last=798.0 mfe=17.88 mae=0.0 opened=2026-08-10
+- **SREEL** status=partial entry=221.22 last=249.71 mfe=20.9 mae=-3.44 opened=2026-08-10
+- **STYLAMIND** status=open entry=3651.2 last=3573.2 mfe=3.09 mae=-4.56 opened=2026-08-10
+- **CASTROLIND** status=open entry=188.38 last=186.87 mfe=1.34 mae=-1.21 opened=2026-08-12
+- **DIVGIITTS** status=partial entry=1076.4 last=1221.05 mfe=22.52 mae=0.0 opened=2026-08-12
+- **AJANTPHARM** status=open entry=3614.6 last=3579.9 mfe=5.02 mae=-2.06 opened=2026-08-13
+- **KENNAMET** status=partial entry=3513.3 last=4232.0 mfe=21.25 mae=-0.95 opened=2026-08-15
+- **GOLDIAM** status=open entry=365.65 last=360.55 mfe=3.38 mae=-2.2 opened=2026-08-16
+- **LODHA** status=open entry=1242.0 last=1258.4 mfe=1.77 mae=-1.34 opened=2026-08-21
 
 ## Needs action
 
-- **GOLDIAM**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
-- **IIFL**: BANK PARTIAL — T1 REACHED — ₹679.80 above T1 ₹675.00 — bank part, trail the rest, move stop to breakeven ₹582.35
-- **SHRIPISTON**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
+- **GOLDIAM**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
+- **IIFL**: BANK PARTIAL — T1 REACHED — ₹696.40 above T1 ₹675.00 — bank part, trail the rest, move stop to breakeven ₹582.35
+- **KENNAMET**: BANK PARTIAL — T1 REACHED — ₹4,232.00 above T1 ₹4,075.43 — bank part, trail the rest, move stop to breakeven ₹3,513.30
+- **SHRIPISTON**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
 
@@ -140,49 +142,49 @@
 
 ## Swing candidates (top)
 
-- GAEL: score=14 rs_nifty=22.82 deliv=46.46
-- RATEGAIN: score=14 rs_nifty=6.01 deliv=40.22
-- KTKBANK: score=14 rs_nifty=14.84 deliv=54.66
-- ETERNAL: score=14 rs_nifty=12.37 deliv=68.56
-- ASKAUTOLTD: score=14 rs_nifty=25.19 deliv=44.89
-- WESTLIFE: score=14 rs_nifty=17.46 deliv=75.24
-- SAMBHV: score=14 rs_nifty=7.82 deliv=40.03
-- ENGINERSIN: score=14 rs_nifty=5.93 deliv=43.4
-- MCX: score=14 rs_nifty=11.82 deliv=43.15
-- DEEPINDS: score=14 rs_nifty=43.1 deliv=44.7
-- PATELRMART: score=14 rs_nifty=6.33 deliv=47.02
-- TTKHLTCARE: score=14 rs_nifty=5.65 deliv=49.49
-- AUSOMENT: score=14 rs_nifty=11.35 deliv=69.21
-- JAGSNPHARM: score=14 rs_nifty=4.5 deliv=53.95
-- IDFCFIRSTB: score=14 rs_nifty=5.04 deliv=61.14
+- IDFCFIRSTB: score=15 rs_nifty=5.87 deliv=56.52
+- GRASIM: score=14 rs_nifty=4.16 deliv=58.87
+- GIPCL: score=14 rs_nifty=12.82 deliv=49.51
+- GLENMARK: score=14 rs_nifty=7.66 deliv=43.44
+- GULFOILLUB: score=14 rs_nifty=10.25 deliv=60.04
+- RATEGAIN: score=14 rs_nifty=8.69 deliv=45.35
+- KKCL: score=14 rs_nifty=3.04 deliv=72.23
+- KDDL: score=14 rs_nifty=22.49 deliv=71.31
+- AUSOMENT: score=14 rs_nifty=15.94 deliv=50.65
+- AUBANK: score=14 rs_nifty=13.06 deliv=62.17
+- DPABHUSHAN: score=14 rs_nifty=11.76 deliv=46.43
+- PNBHOUSING: score=14 rs_nifty=8.53 deliv=47.84
+- NAHARCAP: score=14 rs_nifty=1.4 deliv=53.26
+- JAGSNPHARM: score=14 rs_nifty=8.9 deliv=46.14
+- RACLGEAR: score=14 rs_nifty=12.28 deliv=47.37
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.34% (bear)
-- Hang Seng: -2.05% (bear)
-- Shanghai: -0.53% (bear)
-- Kospi: -2.05% (bear)
-- Taiwan: -0.17% (bear)
-- ASX 200: +0.57% (bull)
+- Nikkei: -0.74% (bear)
+- Hang Seng: -1.89% (bear)
+- Shanghai: -0.59% (bear)
+- Kospi: -3.12% (bear)
+- Taiwan: -1.02% (bear)
+- ASX 200: +0.49% (bull)
 
 ### Europe
-- FTSE 100: +0.64% (bull)
-- DAX: +0.59% (bull)
-- Euro Stoxx 50: +0.63% (bull)
+- FTSE 100: +0.05% (neutral)
+- DAX: +0.01% (neutral)
+- Euro Stoxx 50: -0.08% (neutral)
 
 ### US
 - S&P 500: +0.43% (bull)
 - Nasdaq: +0.43% (bull)
 - Dow: +0.98% (bull)
-- US VIX: -5.50% (bull)
+- US VIX: +4.89% (bear)
 
 ### Macro
-- USDINR: -0.10% (neutral)
-- Crude WTI: -1.93% (bear)
-- Brent: -1.92% (bear)
-- DXY: +0.02% (neutral)
-- US 10Y: +0.89% (bear)
+- USDINR: -0.04% (neutral)
+- Crude WTI: -1.87% (bear)
+- Brent: -1.58% (bear)
+- DXY: +0.12% (neutral)
+- US 10Y: -0.72% (bull)
 - India ETF: +0.18% (bull)
 - EM ETF: +0.75% (bull)
 
