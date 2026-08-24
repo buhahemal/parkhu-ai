@@ -1,6 +1,4 @@
 date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
-23-Aug-2026 09:52:01,DONEAR,Updates,Donear Industries Limited has informed the Exchange regarding 'Communication To Shareholders - Intimation On Tax Deduction On Dividend'.,Updates,0.5,2,True,False,12,keyword
-23-Aug-2026 11:47:55,EFCIL,Copy of Newspaper Publication,"EFC (I) Limited has informed the Exchange about Newspaper Advertisements regarding the dispatch of the Corrigendum to the Postal Ballot Notice dated August 18, 2026.",Copy of Newspaper Publication,0.0,0,False,False,0,none
 23-Aug-2026 12:04:14,TEXINFRA,Copy of Newspaper Publication,Texmaco Infrastructure & Holdings Limited has informed the Exchange about Copy of Newspaper Publication,Copy of Newspaper Publication,0.0,0,False,False,0,none
 23-Aug-2026 12:22:17,DHARAN,Updates,DHARAN INFRA-EPC LIMITED has informed the Exchange regarding 'Ongoing submission of information with SEBI'.,Updates,-0.7,2,True,True,12,keyword
 23-Aug-2026 12:27:56,GUJTHEM,Amendment to AOA/MOA,Gujarat Themis Biosyn Limited has informed the Exchange regarding the Amendment to AOA/MOA of the company.,Amendment to AOA/MOA,0.0,0,False,False,0,none
@@ -19,3 +17,5 @@ date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_cata
 23-Aug-2026 19:50:13,GAIL,Change in Management,GAIL (India) Limited has informed the Exchange about change in Management,Change in Management,0.0,0,False,False,0,none
 23-Aug-2026 20:00:11,NEULANDLAB,Copy of Newspaper Publication,Neuland Laboratories Limited has informed the Exchange about Copy of Newspaper Publication,Copy of Newspaper Publication,0.0,0,False,False,0,none
 23-Aug-2026 20:21:17,MEESHO,ESOP/ESOS/ESPS,Meesho Limited has informed the Exchange regarding Allotment of 1298744  Shares.,ESOP/ESOS/ESPS,0.0,0,False,False,0,none
+24-Aug-2026 07:01:02,JTLIND,Press Release,"JTL INDUSTRIES LIMITED has informed the Exchange regarding a press release dated August 24, 2026, titled ""Expansion of Narrow-width HR Coil manufacturing capacity by Subsidiary Company"".",Press Release,0.0,0,False,False,0,none
+24-Aug-2026 07:42:51,SMARTWORKS,Updates,Smartworks Coworking Spaces Limited has informed the Exchange regarding 'Smartworks Announces INR 235 Crore in Incremental Contracted Rental Revenue Driven by Enterprise Expansions'.,Updates,0.0,0,False,False,0,none
