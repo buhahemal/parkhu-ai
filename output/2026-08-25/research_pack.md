@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-25
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-25T18:08:57.799764+05:30
+- **generated_at_ist:** 2026-08-25T19:09:42.966260+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Bullish (0.48%)
 - india_vix: 11.07 (Low)
 - fii_net: 1181.66 | dii_net: 2493.41
-- overall_risk: Low | global_risk: Risk-Off
+- overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
@@ -130,17 +130,17 @@
 - SUPERHOUSE: score=14 rs_nifty=11.52 deliv=66.74
 - DPABHUSHAN: score=14 rs_nifty=6.78 deliv=53.6
 - GULPOLY: score=14 rs_nifty=2.43 deliv=42.62
-- DCI: score=14 rs_nifty=31.31 deliv=60.97
-- STYLEBAAZA: score=14 rs_nifty=45.79 deliv=51.99
 - BAJAJHLDNG: score=14 rs_nifty=4.85 deliv=56.97
-- MAHSEAMLES: score=14 rs_nifty=11.92 deliv=43.58
-- ZFCVINDIA: score=14 rs_nifty=8.5 deliv=86.92
-- IIFL: score=14 rs_nifty=16.93 deliv=43.06
+- GULFOILLUB: score=14 rs_nifty=9.8 deliv=53.32
+- DCI: score=14 rs_nifty=31.31 deliv=60.97
+- LANCORHOL: score=14 rs_nifty=33.92 deliv=43.27
 - SAIL: score=14 rs_nifty=13.78 deliv=40.26
-- MACPOWER: score=14 rs_nifty=39.22 deliv=40.0
+- MAHSEAMLES: score=14 rs_nifty=11.92 deliv=43.58
 - NAHARCAP: score=14 rs_nifty=3.0 deliv=87.98
+- MACPOWER: score=14 rs_nifty=39.22 deliv=40.0
 - PATELRMART: score=14 rs_nifty=4.29 deliv=68.48
 - KEI: score=14 rs_nifty=12.7 deliv=43.01
+- ZFCVINDIA: score=14 rs_nifty=8.5 deliv=86.92
 
 ## World markets (India cues)
 
@@ -153,24 +153,24 @@
 - ASX 200: +0.68% (bull)
 
 ### Europe
-- FTSE 100: +0.10% (neutral)
-- DAX: +0.73% (bull)
-- Euro Stoxx 50: +0.44% (bull)
+- FTSE 100: -0.16% (bear)
+- DAX: +0.65% (bull)
+- Euro Stoxx 50: +0.28% (bull)
 
 ### US
-- S&P 500: -0.28% (bear)
-- Nasdaq: -0.76% (bear)
-- Dow: +0.26% (bull)
+- S&P 500: +0.36% (bull)
+- Nasdaq: +0.64% (bull)
+- Dow: +0.16% (bull)
 - US VIX: -0.38% (bull)
 
 ### Macro
 - USDINR: -0.30% (neutral)
-- Crude WTI: -3.11% (bear)
-- Brent: -4.47% (bear)
-- DXY: +0.01% (neutral)
-- US 10Y: -0.81% (bull)
-- India ETF: -0.58% (bear)
-- EM ETF: -1.50% (bear)
+- Crude WTI: -2.92% (bear)
+- Brent: -4.44% (bear)
+- DXY: -0.06% (neutral)
+- US 10Y: -0.98% (bull)
+- India ETF: +1.38% (bull)
+- EM ETF: +1.18% (bull)
 
 
 ## Groq desk note

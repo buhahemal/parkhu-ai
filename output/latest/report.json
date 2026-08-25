@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-25",
-  "generated_at_ist": "2026-08-25T07:41:40.347612+05:30",
-  "duration_seconds": 382.0,
+  "generated_at_ist": "2026-08-25T18:08:57.799764+05:30",
+  "duration_seconds": 383.9,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3141,
-      "seconds": 2.9
+      "rows": 3144,
+      "seconds": 2.8
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14256,
-      "cache_rows": 7850844,
-      "symbols": 2857,
-      "failed": 12,
+      "rows": 14272,
+      "cache_rows": 7852757,
+      "symbols": 2858,
+      "failed": 14,
       "lookback": 0,
       "pack_sessions": 5,
       "warm": 2469,
-      "cold": 400,
-      "new_symbols": 12,
+      "cold": 403,
+      "new_symbols": 15,
       "retries": 2,
-      "seconds": 271.7
+      "seconds": 299.3
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3141,
+      "rows": 3144,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.7
+      "seconds": 0.9
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.4
+      "seconds": 3.8
     },
     {
       "agent": "smartmoney",
-      "status": "ok",
-      "rows": 3,
-      "seconds": 4.5
+      "status": "partial",
+      "rows": 2,
+      "seconds": 3.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.4
+      "seconds": 4.7
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 448,
-      "seconds": 6.1
+      "seconds": 5.3
     },
     {
       "agent": "stock_options",
@@ -78,44 +78,44 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2284,
-      "seconds": 19.3
+      "rows": 2282,
+      "seconds": 5.2
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.0
+      "seconds": 2.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.7
+      "seconds": 3.1
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 4.0
+      "seconds": 3.6
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3141,
-      "seconds": 0.2
+      "rows": 3144,
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3141,
-      "seconds": 0.5
+      "rows": 3144,
+      "seconds": 0.8
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 206,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "news_classify",
@@ -138,43 +138,47 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2857,
-      "with_structure": 2840,
+      "rows": 2858,
+      "with_structure": 2849,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 15.2
+      "seconds": 20.2
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3141,
-      "seconds": 1.8
+      "rows": 3144,
+      "seconds": 2.8
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 13,
+      "rows": 2,
+      "ideas": [
+        "IIFL",
+        "UNIPARTS"
+      ],
+      "watchlist": 10,
       "open_positions": 21,
       "needing_action": [
         "GOLDIAM",
-        "IIFL",
         "KENNAMET",
-        "SHRIPISTON"
+        "SHRIPISTON",
+        "SKYGOLD",
+        "TATACAP"
       ],
       "closed_today": [],
-      "seconds": 0.3
+      "seconds": 0.4
     }
   ],
-  "ok": 20,
-  "partial": 1,
+  "ok": 19,
+  "partial": 2,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 20,
-    "agents_partial": 1,
+    "agents_ok": 19,
+    "agents_partial": 2,
     "agents_error": 0
   },
   "latest_promoted": true,
