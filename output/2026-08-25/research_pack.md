@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-08-25
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-25T06:10:18.845374+05:30
+- **generated_at_ist:** 2026-08-25T07:41:40.347612+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Neutral**
-- nifty: Neutral (0.08%)
-- india_vix: 11.2 (Low)
+- nifty: Neutral (-0.14%)
+- india_vix: 11.53 (Low)
 - fii_net: 1181.66 | dii_net: 2493.41
 - overall_risk: Low | global_risk: Risk-Off
 
@@ -20,8 +20,8 @@
 - price > EMA50: 1045
 - ADX14 > 25: 632
 - RSI14 in 40-80: 589
-- RS > 0 vs NIFTY and sector: 385
-- delivery% >= 40: 235
+- RS > 0 vs NIFTY and sector: 382
+- delivery% >= 40: 232
 - relative_volume >= 1: 51
 - no earnings within 21d: 51
 - event_risk_score <= 1: 48
@@ -32,16 +32,16 @@
 - **FINKURVE** [rejected] score 76.5 — T1 needs more than 22 trading days (~1 month)
 - **AUBANK** [watchlist] score 75.7 — score in Watch band (70–80)
 - **LAURUSLABS** [rejected] score 74.7 — T1 needs more than 22 trading days (~1 month)
-- **IDFCFIRSTB** [watchlist] score 74.3 — score in Watch band (70–80)
+- **IDFCFIRSTB** [watchlist] score 74.4 — score in Watch band (70–80)
 - **ORIENTBELL** [watchlist] score 74.1 — score in Watch band (70–80)
-- **KOTAKBANK** [rejected] score 73.7 — T1 needs more than 22 trading days (~1 month)
+- **KOTAKBANK** [rejected] score 73.8 — T1 needs more than 22 trading days (~1 month)
 - **ALBERTDAVD** [watchlist] score 72.4 — score in Watch band (70–80)
 - **DPABHUSHAN** [watchlist] score 72.1 — score in Watch band (70–80)
-- **RATEGAIN** [watchlist] score 71.8 — score in Watch band (70–80)
-- **ENGINERSIN** [watchlist] score 71.7 — score in Watch band (70–80)
+- **RATEGAIN** [watchlist] score 71.9 — score in Watch band (70–80)
+- **ENGINERSIN** [watchlist] score 71.6 — score in Watch band (70–80)
 - **MPSLTD** [watchlist] score 71.3 — score in Watch band (70–80)
-- **JAGSNPHARM** [watchlist] score 71.0 — score in Watch band (70–80)
-- **GRASIM** [watchlist] score 70.7 — score in Watch band (70–80)
+- **JAGSNPHARM** [watchlist] score 70.9 — score in Watch band (70–80)
+- **GRASIM** [watchlist] score 70.6 — score in Watch band (70–80)
 - **SREEL** [watchlist] score 70.6 — score in Watch band (70–80)
 - **RACLGEAR** [watchlist] score 70.5 — score in Watch band (70–80)
 - **DCI** [rejected] score 70.1 — T1 needs more than 22 trading days (~1 month)
@@ -53,9 +53,9 @@
 - **RISHABH** [rejected] score 69.2 — score below Watch band
 - **GIPCL** [rejected] score 68.7 — score below Watch band
 - **NAHARCAP** [rejected] score 67.8 — score below Watch band
-- **JSFB** [rejected] score 66.1 — score below Watch band
+- **JSFB** [rejected] score 66.2 — score below Watch band
 - **GARFIBRES** [rejected] score 64.3 — score below Watch band
-- **BLSE** [rejected] score 63.7 — score below Watch band
+- **BLSE** [rejected] score 63.8 — score below Watch band
 - **MANGLMCEM** [rejected] score 63.7 — score below Watch band
 - **GULFOILLUB** [rejected] score 62.0 — T1 needs more than 22 trading days (~1 month)
 - **PITTIENG** [rejected] score 60.4 — score below Watch band
@@ -68,7 +68,7 @@
 - **DODLA** [rejected] score 52.1 — T1 needs more than 22 trading days (~1 month)
 - **CINELINE** [rejected] score 51.2 — score below Watch band
 - **SAYAJIHOTL** [rejected] score 49.5 — score below Watch band
-- **NATCAPSUQ** [rejected] score 48.1 — T1 needs more than 22 trading days (~1 month)
+- **NATCAPSUQ** [rejected] score 48.0 — T1 needs more than 22 trading days (~1 month)
 - **SHOPERSTOP** [rejected] score 47.7 — T1 needs more than 22 trading days (~1 month)
 - **CANHLIFE** [rejected] score 47.3 — score below Watch band
 - **ARIS** [rejected] score 47.2 — T1 needs more than 22 trading days (~1 month)
@@ -79,29 +79,29 @@
 
 ## Ideas
 
-### GRASIM — Watch (score 14.0)
-- GRASIM | risk_sector: Non-Energy Minerals
-- entry 3288.0 | stop 3178.44 | t1 3452.4 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### TATACAP — Watch (score 14.0)
 - TATACAP | risk_sector: Finance
 - entry 364.45 | stop 351.36 | t1 382.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### RACLGEAR — Watch (score 14.0)
-- RACLGEAR | risk_sector: Producer Manufacturing
-- entry 1513.5 | stop 1400.89 | t1 1589.18 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### JAGSNPHARM — Watch (score 14.0)
-- JAGSNPHARM | risk_sector: Health Technology
-- entry 240.77 | stop 227.3 | t1 252.81 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### SREEL — Watch (score 14.0)
 - SREEL | risk_sector: Retail Trade
 - entry 249.71 | stop 233.12 | t1 262.2 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### AUSOMENT — Watch (score 14.0)
+- AUSOMENT | risk_sector: Finance
+- entry 147.69 | stop 136.31 | t1 155.07 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### KKCL — Watch (score 14.0)
+- KKCL | risk_sector: Consumer Non-Durables
+- entry 522.9 | stop 498.02 | t1 549.04 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### CYBERMEDIA — Watch (score 14.0)
+- CYBERMEDIA | risk_sector: Consumer Services
+- entry 17.54 | stop 16.22 | t1 18.42 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -137,36 +137,36 @@
 
 ## Swing candidates (top)
 
-- GRASIM: score=14 rs_nifty=4.46 deliv=58.87
-- TATACAP: score=14 rs_nifty=5.67 deliv=63.28
-- RACLGEAR: score=14 rs_nifty=12.58 deliv=47.37
-- JAGSNPHARM: score=14 rs_nifty=9.2 deliv=46.14
-- SREEL: score=14 rs_nifty=10.94 deliv=59.99
-- GIPCL: score=14 rs_nifty=13.12 deliv=49.51
-- CYBERMEDIA: score=14 rs_nifty=8.23 deliv=70.75
-- GULFOILLUB: score=14 rs_nifty=10.55 deliv=60.04
-- KDDL: score=14 rs_nifty=22.79 deliv=71.31
-- DPABHUSHAN: score=14 rs_nifty=12.06 deliv=46.43
-- KKCL: score=14 rs_nifty=3.34 deliv=72.23
-- NAHARCAP: score=14 rs_nifty=1.7 deliv=53.26
-- GARFIBRES: score=14 rs_nifty=7.63 deliv=51.81
-- GAEL: score=14 rs_nifty=28.37 deliv=42.99
-- CANHLIFE: score=14 rs_nifty=1.2 deliv=64.76
+- TATACAP: score=14 rs_nifty=5.37 deliv=63.28
+- SREEL: score=14 rs_nifty=10.64 deliv=59.99
+- AUSOMENT: score=14 rs_nifty=15.94 deliv=50.65
+- KKCL: score=14 rs_nifty=3.04 deliv=72.23
+- CYBERMEDIA: score=14 rs_nifty=7.93 deliv=70.75
+- GAEL: score=14 rs_nifty=28.07 deliv=42.99
+- KDDL: score=14 rs_nifty=22.49 deliv=71.31
+- JAGSNPHARM: score=14 rs_nifty=8.9 deliv=46.14
+- GARFIBRES: score=14 rs_nifty=7.33 deliv=51.81
+- CANHLIFE: score=14 rs_nifty=0.9 deliv=64.76
+- RACLGEAR: score=14 rs_nifty=12.28 deliv=47.37
+- GULFOILLUB: score=14 rs_nifty=10.25 deliv=60.04
+- GRASIM: score=14 rs_nifty=4.16 deliv=58.87
+- NAHARCAP: score=14 rs_nifty=1.4 deliv=53.26
+- ENGINERSIN: score=14 rs_nifty=12.3 deliv=48.13
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.73% (bear)
-- Hang Seng: +1.21% (bull)
-- Shanghai: +0.04% (neutral)
-- Kospi: -7.05% (bear)
-- Taiwan: +0.65% (bull)
-- ASX 200: +0.85% (bull)
+- Nikkei: -0.46% (bear)
+- Hang Seng: -0.07% (neutral)
+- Shanghai: -0.33% (bear)
+- Kospi: -1.69% (bear)
+- Taiwan: -0.68% (bear)
+- ASX 200: +0.80% (bull)
 
 ### Europe
-- FTSE 100: +0.64% (bull)
-- DAX: +0.59% (bull)
-- Euro Stoxx 50: +0.63% (bull)
+- FTSE 100: +0.35% (bull)
+- DAX: -0.11% (neutral)
+- Euro Stoxx 50: -0.22% (bear)
 
 ### US
 - S&P 500: -0.28% (bear)
@@ -175,10 +175,10 @@
 - US VIX: +4.76% (bear)
 
 ### Macro
-- USDINR: -0.08% (neutral)
-- Crude WTI: -2.24% (bear)
-- Brent: -2.44% (bear)
-- DXY: +0.16% (neutral)
+- USDINR: +0.04% (neutral)
+- Crude WTI: -1.80% (bear)
+- Brent: -2.02% (bear)
+- DXY: +0.22% (neutral)
 - US 10Y: -0.72% (bull)
 - India ETF: -0.58% (bear)
 - EM ETF: -1.50% (bear)
