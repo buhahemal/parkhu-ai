@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-26
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-26T18:09:23.789315+05:30
+- **generated_at_ist:** 2026-08-26T19:13:25.564873+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Bearish (-0.52%)
 - india_vix: 10.56 (Low)
 - fii_net: 502.63 | dii_net: 6425.16
-- overall_risk: Medium | global_risk: Risk-On
+- overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
@@ -24,10 +24,10 @@
 - delivery% >= 40: 236
 - relative_volume >= 1: 54
 - no earnings within 21d: 54
-- event_risk_score <= 1: 50
-- TV rating not Sell: 50
+- event_risk_score <= 1: 51
+- TV rating not Sell: 51
 
-## Survivors (top 50 of 50)
+## Survivors (top 50 of 51)
 
 - **LODHA** [rejected] score 84.5 — T1 needs more than 22 trading days (~1 month)
 - **TMB** [idea] score 80.0 — selected as idea
@@ -55,6 +55,7 @@
 - **ADOR** [rejected] score 60.8 — score below Watch band
 - **AKUMS** [rejected] score 60.5 — score below Watch band
 - **STYLEBAAZA** [rejected] score 60.5 — score below Watch band
+- **PITTIENG** [rejected] score 60.4 — score below Watch band
 - **MWL** [rejected] score 60.2 — score below Watch band
 - **ETERNAL** [rejected] score 58.7 — T1 needs more than 22 trading days (~1 month)
 - **SETL** [rejected] score 58.7 — score below Watch band
@@ -78,7 +79,6 @@
 - **ROSSTECH** [rejected] score 38.3 — score below Watch band
 - **NDGL** [rejected] score 37.8 — T1 needs more than 22 trading days (~1 month)
 - **SHANKARA** [rejected] score 36.5 — T1 needs more than 22 trading days (~1 month)
-- **21STCENMGM** [rejected] score 33.5 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -109,11 +109,10 @@
 - **KENNAMET** status=partial entry=3513.3 last=4325.5 mfe=24.36 mae=-0.95 opened=2026-08-15
 - **GOLDIAM** status=open entry=365.65 last=357.05 mfe=3.38 mae=-2.63 opened=2026-08-16
 - **LODHA** status=open entry=1242.0 last=1265.0 mfe=5.23 mae=-1.34 opened=2026-08-21
-- **TMB** status=open entry=897.6 last=897.6 mfe=0.0 mae=0.0 opened=2026-08-26
+- **TMB** status=open entry=897.6 last=897.6 mfe=1.14 mae=-2.36 opened=2026-08-26
 
 ## Needs action
 
-- **CASTROLIND**: EXIT — STOP HIT — session low at/below stop ₹185.55 (last ₹186.75)
 - **GOLDIAM**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 - **KENNAMET**: BANK PARTIAL — T1 REACHED — ₹4,325.50 above T1 ₹4,075.43 — bank part, trail the rest, move stop to breakeven ₹3,513.30
 - **SKYGOLD**: BANK PARTIAL — T1 REACHED — ₹848.10 above T1 ₹834.50 — bank part, trail the rest, move stop to breakeven ₹719.40
@@ -126,21 +125,21 @@
 
 ## Swing candidates (top)
 
-- UNIONBANK: score=15 rs_nifty=8.09 deliv=40.24
 - ETERNAL: score=15 rs_nifty=15.23 deliv=69.05
 - LODHA: score=15 rs_nifty=8.59 deliv=48.77
-- STYLEBAAZA: score=14 rs_nifty=46.21 deliv=54.14
-- SHRIRAMFIN: score=14 rs_nifty=8.63 deliv=47.51
-- ROSSTECH: score=14 rs_nifty=10.85 deliv=65.21
-- PDSL: score=14 rs_nifty=3.88 deliv=68.89
+- UNIONBANK: score=15 rs_nifty=8.09 deliv=40.24
 - MOTHERSON: score=14 rs_nifty=11.32 deliv=61.23
-- TITAN: score=14 rs_nifty=7.88 deliv=56.74
-- VEDL: score=14 rs_nifty=6.35 deliv=52.79
-- AKUMS: score=14 rs_nifty=10.52 deliv=56.57
-- CANHLIFE: score=14 rs_nifty=3.08 deliv=65.12
 - RKFORGE: score=14 rs_nifty=22.1 deliv=50.11
+- CANHLIFE: score=14 rs_nifty=3.08 deliv=65.12
+- ROSSTECH: score=14 rs_nifty=10.85 deliv=65.21
+- TITAN: score=14 rs_nifty=7.88 deliv=56.74
+- BURNPUR: score=14 rs_nifty=117.01 deliv=71.26
+- ATHERENERG: score=14 rs_nifty=22.09 deliv=44.09
 - KROSS: score=14 rs_nifty=5.27 deliv=42.57
 - BCLIND: score=14 rs_nifty=4.06 deliv=42.93
+- PDSL: score=14 rs_nifty=3.88 deliv=68.89
+- CDSL: score=14 rs_nifty=5.68 deliv=43.12
+- PNBHOUSING: score=14 rs_nifty=10.03 deliv=31.39
 
 ## World markets (India cues)
 
@@ -153,24 +152,24 @@
 - ASX 200: -0.40% (bear)
 
 ### Europe
-- FTSE 100: +0.01% (neutral)
-- DAX: +0.44% (bull)
-- Euro Stoxx 50: +0.49% (bull)
+- FTSE 100: +0.14% (neutral)
+- DAX: +0.38% (bull)
+- Euro Stoxx 50: +0.48% (bull)
 
 ### US
-- S&P 500: +0.32% (bull)
-- Nasdaq: +0.66% (bull)
-- Dow: +0.30% (bull)
-- US VIX: +1.04% (bear)
+- S&P 500: -0.02% (neutral)
+- Nasdaq: -0.17% (bear)
+- Dow: +0.05% (neutral)
+- US VIX: +1.68% (bear)
 
 ### Macro
 - USDINR: -0.34% (neutral)
-- Crude WTI: -2.55% (bear)
-- Brent: -3.76% (bear)
-- DXY: +0.04% (neutral)
-- US 10Y: -0.13% (neutral)
-- India ETF: +1.78% (bull)
-- EM ETF: +1.72% (bull)
+- Crude WTI: -1.71% (bear)
+- Brent: -2.99% (bear)
+- DXY: +0.19% (neutral)
+- US 10Y: +0.37% (bear)
+- India ETF: -0.56% (bear)
+- EM ETF: +0.30% (bull)
 
 
 ## Groq desk note

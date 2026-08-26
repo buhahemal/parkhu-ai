@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-26",
-  "generated_at_ist": "2026-08-26T18:09:23.789315+05:30",
-  "duration_seconds": 394.6,
+  "generated_at_ist": "2026-08-26T19:13:25.564873+05:30",
+  "duration_seconds": 380.3,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3145,
-      "seconds": 3.7
+      "seconds": 4.6
     },
     {
       "agent": "ohlc_history",
@@ -29,7 +29,7 @@
       "cold": 404,
       "new_symbols": 13,
       "retries": 2,
-      "seconds": 313.1
+      "seconds": 301.5
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.9
+      "seconds": 0.6
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 2.0
+      "seconds": 1.3
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 6,
-      "seconds": 4.3
+      "seconds": 3.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.3
+      "seconds": 4.8
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 449,
-      "seconds": 5.0
+      "seconds": 4.6
     },
     {
       "agent": "stock_options",
@@ -79,25 +79,25 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2278,
-      "seconds": 5.5
+      "seconds": 4.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.3
+      "seconds": 3.4
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 2.8
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 5.5
+      "seconds": 4.0
     },
     {
       "agent": "relative_strength",
@@ -142,13 +142,13 @@
       "with_structure": 2852,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.6
+      "seconds": 21.4
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3145,
-      "seconds": 3.5
+      "seconds": 3.4
     },
     {
       "agent": "swing_brief",
@@ -160,17 +160,14 @@
       "watchlist": 6,
       "open_positions": 21,
       "needing_action": [
-        "CASTROLIND",
         "GOLDIAM",
         "KENNAMET",
         "SKYGOLD",
         "SREEL",
         "TATACAP"
       ],
-      "closed_today": [
-        "CASTROLIND"
-      ],
-      "seconds": 0.5
+      "closed_today": [],
+      "seconds": 0.4
     }
   ],
   "ok": 20,

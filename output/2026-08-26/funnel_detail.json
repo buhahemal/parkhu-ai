@@ -957,8 +957,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 50,
-      "dropped_count": 4,
+      "surviving": 51,
+      "dropped_count": 3,
       "survivor_symbols": [
         "LODHA",
         "TMB",
@@ -986,6 +986,7 @@
         "ADOR",
         "AKUMS",
         "STYLEBAAZA",
+        "PITTIENG",
         "MWL",
         "ETERNAL",
         "SETL",
@@ -1008,21 +1009,19 @@
         "PDSL",
         "ROSSTECH",
         "NDGL",
-        "SHANKARA",
-        "21STCENMGM"
+        "SHANKARA"
       ],
       "dropped_symbols": [
         "APLAPOLLO",
         "GAEL",
-        "PITTIENG",
         "VSSL"
       ],
-      "survivor_symbols_truncated": false,
+      "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 50,
+      "surviving": 51,
       "dropped_count": 0,
       "survivor_symbols": [
         "LODHA",
@@ -1051,6 +1050,7 @@
         "ADOR",
         "AKUMS",
         "STYLEBAAZA",
+        "PITTIENG",
         "MWL",
         "ETERNAL",
         "SETL",
@@ -1073,11 +1073,10 @@
         "PDSL",
         "ROSSTECH",
         "NDGL",
-        "SHANKARA",
-        "21STCENMGM"
+        "SHANKARA"
       ],
       "dropped_symbols": [],
-      "survivor_symbols_truncated": false,
+      "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": false
     }
   ],
@@ -1317,6 +1316,15 @@
       "reason": "score below Watch band"
     },
     {
+      "symbol": "PITTIENG",
+      "score": 60.4,
+      "band": "Ignore",
+      "cmp": 1123.45,
+      "risk_sector": "Producer Manufacturing",
+      "status": "rejected",
+      "reason": "score below Watch band"
+    },
+    {
       "symbol": "MWL",
       "score": 60.2,
       "band": "Ignore",
@@ -1522,17 +1530,8 @@
       "risk_sector": "Retail Trade",
       "status": "rejected",
       "reason": "T1 needs more than 22 trading days (~1 month)"
-    },
-    {
-      "symbol": "21STCENMGM",
-      "score": 33.5,
-      "band": "Ignore",
-      "cmp": 42.59,
-      "risk_sector": "NBFC & Capital Markets",
-      "status": "rejected",
-      "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 50,
-  "survivor_outcomes_truncated": false
+  "survivor_outcomes_total": 51,
+  "survivor_outcomes_truncated": true
 }
