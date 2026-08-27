@@ -66,7 +66,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 
 ## No trade today
 
-64 name(s) survived the screen but none reached the score-80 Buy band. Under KB-00 this is a correct outcome rather than a gap — the bar is not lowered to produce ideas.
+67 name(s) survived the screen but none reached the score-80 Buy band. Under KB-00 this is a correct outcome rather than a gap — the bar is not lowered to produce ideas.
 
 ### Gate funnel
 
@@ -79,31 +79,29 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | ADX14 > 25 | 639 |
 | RSI14 in 40-80 | 606 |
 | RS > 0 vs NIFTY and sector | 397 |
-| delivery% >= 40 | 228 |
-| relative_volume >= 1 | 68 |
-| no earnings within 21d | 68 |
-| event_risk_score <= 1 | 65 |
-| TV rating not Sell | 64 |
+| delivery% >= 40 | 245 |
+| relative_volume >= 1 | 72 |
+| no earnings within 21d | 72 |
+| event_risk_score <= 1 | 68 |
+| TV rating not Sell | 67 |
 
 ## Watchlist (score 70–79, no position)
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| UNIPARTS | Producer Manufacturing | ₹808 | 79.2 | ₹808 | ₹749 | ₹926 | 14.61% |
-| LAURUSLABS | Health Technology | ₹1,929 | 77.5 | ₹1,929 | ₹1,846 | ₹2,096 | 8.62% |
-| ORIENTBELL | Producer Manufacturing | ₹377 | 77.4 | ₹377 | ₹349 | ₹433 | 14.89% |
-| CRISIL | Technology Services | ₹4,703 | 76.9 | ₹4,703 | ₹4,481 | ₹5,147 | 9.44% |
-| SIGMA | Technology Services | ₹48 | 76.3 | ₹48 | ₹44 | ₹57 | 20.32% |
-| SBCL | Non-Energy Minerals | ₹1,044 | 76.1 | ₹1,044 | ₹961 | ₹1,211 | 16% |
-| SYNCOMF | Health Technology | ₹17 | 76.1 | ₹17 | ₹16 | ₹20 | 16% |
-| GUJTHEM | Health Technology | ₹412 | 74.8 | ₹412 | ₹379 | ₹479 | 16.21% |
-| KMEW | Producer Manufacturing | ₹2,969 | 74.4 | ₹2,969 | ₹2,731 | ₹3,444 | 16% |
-| DIVISLAB | Health Technology | ₹9,060 | 74.3 | ₹9,060 | ₹8,711 | ₹9,758 | 7.7% |
+| UNIPARTS | Producer Manufacturing | ₹808 | 78.6 | ₹808 | ₹749 | ₹926 | 14.61% |
+| ORIENTBELL | Producer Manufacturing | ₹377 | 78.6 | ₹377 | ₹349 | ₹433 | 14.89% |
+| LAURUSLABS | Health Technology | ₹1,929 | 77.8 | ₹1,929 | ₹1,846 | ₹2,096 | 8.62% |
+| SIGMA | Technology Services | ₹48 | 76.7 | ₹48 | ₹44 | ₹57 | 20.32% |
+| SBCL | Non-Energy Minerals | ₹1,044 | 76.6 | ₹1,044 | ₹961 | ₹1,211 | 16% |
+| CRISIL | Technology Services | ₹4,703 | 76.3 | ₹4,703 | ₹4,481 | ₹5,147 | 9.44% |
+| DCBBANK | Banks | ₹218 | 75.9 | ₹218 | ₹203 | ₹247 | 13.36% |
+| DIVISLAB | Health Technology | ₹9,060 | 75.2 | ₹9,060 | ₹8,711 | ₹9,758 | 7.7% |
+| GUJTHEM | Health Technology | ₹412 | 74.9 | ₹412 | ₹379 | ₹479 | 16.21% |
 | MANAKSTEEL | Non-Energy Minerals | ₹90 | 74.2 | ₹90 | ₹83 | ₹105 | 16% |
-| PIXTRANS | Producer Manufacturing | ₹1,864 | 72.9 | ₹1,864 | ₹1,755 | ₹2,089 | 12.09% |
-| KOTAKBANK | Banks | ₹424 | 71.7 | ₹424 | ₹409 | ₹456 | 7.39% |
-| TITAN | Consumer Durables | ₹5,139 | 71.5 | ₹5,139 | ₹4,976 | ₹5,466 | 6.35% |
-| KROSS | Producer Manufacturing | ₹215 | 70.4 | ₹215 | ₹198 | ₹248 | 15.45% |
+| PIXTRANS | Producer Manufacturing | ₹1,864 | 73.4 | ₹1,864 | ₹1,755 | ₹2,089 | 12.09% |
+| KOTAKBANK | Banks | ₹424 | 72.2 | ₹424 | ₹409 | ₹456 | 7.39% |
+| TITAN | Consumer Durables | ₹5,139 | 71.6 | ₹5,139 | ₹4,976 | ₹5,466 | 6.35% |
 
 These need a score of 80 or above to become positions (KB-14 Fig 3-1).
 
