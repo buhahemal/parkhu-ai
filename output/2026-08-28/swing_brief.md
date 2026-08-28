@@ -12,14 +12,13 @@ Regime **Bearish**. Sector leader Health Technology (6.01% 1m), laggard Communic
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (20)
+## Open suggestions (19)
 
-**7 need action today.**
+**6 need action today.**
 
 | Symbol | Opened | Entry | Now | P/L | R | Held | Action |
 |---|---|---|---|---|---|---|---|
 | GOLDIAM | 2026-08-16 | ₹366 | ₹353 | -3.53% | -0.54R | 10/7d | TIGHTEN / REVIEW |
-| IIFL | 2026-07-28 | ₹582 | ₹636 | 9.15% | 1.3R | 23/21d | EXIT — TIME STOP |
 | KENNAMET | 2026-08-15 | ₹3,513 | ₹4,515 | 28.51% | 3.56R | 10/14d | BANK MORE — T2 REACHED |
 | SHRIPISTON | 2026-08-05 | ₹4,403 | ₹4,498 | 2.17% | 0.3R | 17/17d | TIGHTEN / REVIEW |
 | SKYGOLD | 2026-08-10 | ₹719 | ₹843 | 17.19% | 2.15R | 14/16d | BANK PARTIAL — T1 REACHED |
@@ -40,7 +39,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | UNIPARTS | 2026-08-05 | ₹733 | ₹808 | 10.28% | 1.35R | 17/17d | HOLD |
 
 - **GOLDIAM** — TIGHTEN / REVIEW: ADX 22 — trend no longer tradeable — one condition gone, thesis thinning. Best 3.38% / worst -4.25% while held.
-- **IIFL** — EXIT — TIME STOP: 23 trading days held, past the 22-day horizon and still at +9.15% — capital has an opportunity cost. Best 21.06% / worst -1.61% while held.
 - **KENNAMET** — BANK MORE — T2 REACHED: ₹4,515.10 above T2 ₹4,356.49 — trail the remainder toward T3 ₹4,637.56. Best 29.65% / worst -0.95% while held.
 - **SHRIPISTON** — TIGHTEN / REVIEW: ADX 25 — trend no longer tradeable — one condition gone, thesis thinning. Best 8.7% / worst -4.33% while held.
 - **SKYGOLD** — BANK PARTIAL — T1 REACHED: ₹843.05 above T1 ₹834.50 — bank part, trail the rest, move stop to breakeven ₹719.40. Best 20.77% / worst 0% while held.
@@ -59,8 +57,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **TATACAP** — HOLD: +1.10% (+0.20R), 17d held, ~0d left to the T1 horizon. Best 4.92% / worst -4.52% while held.
 - **TMB** — HOLD: -0.42% (-0.07R), 2d held, ~14d left to the T1 horizon. Best 1.14% / worst -2.36% while held.
 - **UNIPARTS** — HOLD: +10.28% (+1.35R), 17d held, ~0d left to the T1 horizon. Best 15.27% / worst 0% while held.
-
-Closed today: IIFL — moved to `trades/closed.csv`.
 
 ### Measured so far
 

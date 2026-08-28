@@ -1,5 +1,4 @@
 date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
-27-Aug-2026 22:25:24,EXCELSOFT,General Updates,Letter providing weblink for accessing the Notice of the 26th (Twenty Sixth) Annual General Meeting ( AGM ),General Updates,0.0,1,False,True,3,keyword
 27-Aug-2026 22:30:07,DREAMFOLKS,General Updates,"Intimation under Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Letter to Members is attached herewith.",General Updates,-0.7,2,True,True,12,keyword
 27-Aug-2026 22:36:07,TATASTEEL,Acquisition,Tata Steel Limited has informed the Exchange about acquisition of equity stake in T Steel Holdings Pte. Ltd,Acquisition,0.6,3,True,False,15,keyword
 27-Aug-2026 22:39:28,DREAMFOLKS,Shareholders meeting,"Dreamfolks Services Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on September 28, 2026",Shareholders meeting,0.0,0,False,False,0,none
@@ -19,3 +18,4 @@ date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_cata
 28-Aug-2026 00:53:17,OLAELEC,Updates,Ola Electric Mobility Limited has informed the Exchange regarding 'General Update - Social Media Post By The Promoter And Chairman & Managing Director Of The Company'.,Updates,0.0,0,False,False,0,none
 28-Aug-2026 01:00:10,ASAHIINDIA,General Updates,Asahi India Glass Limited has informed the Exchange about Communication sent to Shareholders.,General Updates,0.0,0,False,False,0,none
 28-Aug-2026 01:02:01,SMARTWORKS,Copy of Newspaper Publication,"Smartworks Coworking Spaces Limited has informed the Exchange regarding Corrigendum to Cover Letter dated August 26, 2026 for Submission of copies of Newspaper Publication - Pre-Dispatch   Notice of 11th (Eleventh) Annual General Meeting to be held through Video Conference (VC)/ Other Audio Visual M",Copy of Newspaper Publication,0.0,0,False,False,0,none
+28-Aug-2026 05:58:22,EBGNG,Outcome of Board Meeting,"GNG Electronics Limited has informed the Exchange regarding Revised Outcome of Board Meeting held on August 27, 2026.",Outcome of Board Meeting,0.0,1,False,True,3,keyword

@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -3.83,
     "fii_net": -298.26,
     "dii_net": 4977.17,
-    "crude": 83.66,
-    "crude_pct_change": 1.74,
+    "crude": 83.42,
+    "crude_pct_change": 1.45,
     "usdinr": 95.53,
-    "usdinr_pct_change": 2.12,
+    "usdinr_pct_change": 0.1,
     "us_sp500_pct": 0.72,
     "us_dow_pct": 0.2,
     "us_vix": 14.51,
     "us_vix_pct": -4.6,
-    "dxy": 99.13,
-    "dxy_pct": -0.04,
+    "dxy": 99.12,
+    "dxy_pct": -0.05,
     "us_10y": 4.67,
     "asia_cue": "Bullish",
     "europe_cue": "Mixed",
     "global_risk": "Risk-On",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-08-28T04:08:17.884893+05:30"
+    "generated_at_ist": "2026-08-28T06:09:25.971635+05:30"
   },
   "funnel": [
     {
@@ -2012,26 +2012,6 @@
         "score_now": null
       },
       {
-        "symbol": "IIFL",
-        "date_opened": "2026-07-28",
-        "status": "partial",
-        "entry": 582.35,
-        "stop": 541.29,
-        "t1": 675.0,
-        "price": 635.65,
-        "pct": 9.15,
-        "r_multiple": 1.3,
-        "days_held": 23,
-        "horizon_t1": 21,
-        "mfe_pct": 21.06,
-        "mae_pct": -1.61,
-        "gap_flag": false,
-        "action": "EXIT \u2014 TIME STOP",
-        "detail": "23 trading days held, past the 22-day horizon and still at +9.15% \u2014 capital has an opportunity cost",
-        "score_at_open": 89.5,
-        "score_now": null
-      },
-      {
         "symbol": "KENNAMET",
         "date_opened": "2026-08-15",
         "status": "partial",
@@ -2392,9 +2372,7 @@
         "score_now": null
       }
     ],
-    "closed_today": [
-      "IIFL"
-    ],
+    "closed_today": [],
     "stats": {
       "closed": 24,
       "win_rate_pct": 8.3,

@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-28
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-08-28T04:08:42.476730+05:30
+- **generated_at_ist:** 2026-08-28T06:09:46.268670+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -87,24 +87,24 @@
 - entry 1495.3 | stop 1412.89 | t1 1570.06 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SBCL — Watch (score 14.0)
-- SBCL | risk_sector: Non-Energy Minerals
-- entry 1044.2 | stop 971.16 | t1 1096.41 | t2 None | t3 None | R:R None
+### TITAN — Watch (score 14.0)
+- TITAN | risk_sector: Consumer Durables
+- entry 5139.3 | stop 5016.93 | t1 5396.26 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### BURNPUR — Watch (score 14.0)
-- BURNPUR | risk_sector: Non-Energy Minerals
-- entry 14.69 | stop 12.77 | t1 15.42 | t2 None | t3 None | R:R None
+### MAHABANK — Watch (score 14.0)
+- MAHABANK | risk_sector: Finance
+- entry 84.69 | stop 81.41 | t1 88.92 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### ORIENTCER — Watch (score 14.0)
+- ORIENTCER | risk_sector: Non-Energy Minerals
+- entry 45.29 | stop 41.93 | t1 47.55 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### THELEELA — Watch (score 14.0)
 - THELEELA | risk_sector: Consumer Services
 - entry 553.8 | stop 525.39 | t1 581.49 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### BIL — Watch (score 14.0)
-- BIL | risk_sector: Consumer Non-Durables
-- entry 867.15 | stop 817.83 | t1 910.51 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -132,7 +132,6 @@
 ## Needs action
 
 - **GOLDIAM**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
-- **IIFL**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at +9.15% — capital has an opportunity cost
 - **KENNAMET**: BANK MORE — T2 REACHED — ₹4,515.10 above T2 ₹4,356.49 — trail the remainder toward T3 ₹4,637.56
 - **SHRIPISTON**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
 - **SKYGOLD**: BANK PARTIAL — T1 REACHED — ₹843.05 above T1 ₹834.50 — bank part, trail the rest, move stop to breakeven ₹719.40
@@ -146,33 +145,33 @@
 ## Swing candidates (top)
 
 - ATHERENERG: score=15 rs_nifty=22.34 deliv=45.85
-- SBCL: score=14 rs_nifty=39.75 deliv=51.03
-- BURNPUR: score=14 rs_nifty=138.71 deliv=67.8
-- THELEELA: score=14 rs_nifty=14.93 deliv=80.45
-- BIL: score=14 rs_nifty=11.1 deliv=60.21
-- ARIS: score=14 rs_nifty=13.27 deliv=47.38
-- ORIENTBELL: score=14 rs_nifty=14.92 deliv=77.7
+- TITAN: score=14 rs_nifty=7.27 deliv=58.21
+- MAHABANK: score=14 rs_nifty=4.11 deliv=56.13
 - ORIENTCER: score=14 rs_nifty=9.53 deliv=47.65
-- CANHLIFE: score=14 rs_nifty=7.49 deliv=63.8
+- THELEELA: score=14 rs_nifty=14.93 deliv=80.45
 - INDGN: score=14 rs_nifty=10.74 deliv=62.33
-- PPLPHARMA: score=14 rs_nifty=11.17 deliv=42.51
-- RRKABEL: score=14 rs_nifty=1.98 deliv=51.15
-- WENDT: score=14 rs_nifty=0.11 deliv=49.15
+- PDSL: score=14 rs_nifty=1.13 deliv=60.79
+- ORIENTBELL: score=14 rs_nifty=14.92 deliv=77.7
+- WSTCSTPAPR: score=14 rs_nifty=3.0 deliv=65.59
 - HFCL: score=14 rs_nifty=30.54 deliv=40.24
-- APOLSINHOT: score=14 rs_nifty=2.61 deliv=62.01
+- WENDT: score=14 rs_nifty=0.11 deliv=49.15
+- SGMART: score=14 rs_nifty=12.37 deliv=58.83
+- PPLPHARMA: score=14 rs_nifty=11.17 deliv=42.51
+- ARCHIDPLY: score=14 rs_nifty=21.9 deliv=50.21
+- PRICOLLTD: score=14 rs_nifty=15.81 deliv=61.52
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.62% (bull)
+- Nikkei: +0.38% (bull)
 - Hang Seng: +0.56% (bull)
 - Shanghai: +0.59% (bull)
-- Kospi: +0.97% (bull)
+- Kospi: +0.18% (bull)
 - Taiwan: +1.47% (bull)
-- ASX 200: -0.40% (bear)
+- ASX 200: -0.86% (bear)
 
 ### Europe
-- FTSE 100: -0.79% (bear)
+- FTSE 100: -0.07% (neutral)
 - DAX: +0.08% (neutral)
 - Euro Stoxx 50: +0.23% (bull)
 
@@ -183,10 +182,10 @@
 - US VIX: -4.60% (bull)
 
 ### Macro
-- USDINR: +2.12% (bear)
-- Crude WTI: +1.74% (bull)
-- Brent: +0.89% (bull)
-- DXY: -0.04% (neutral)
+- USDINR: +0.10% (neutral)
+- Crude WTI: +1.45% (bull)
+- Brent: +0.71% (bull)
+- DXY: -0.05% (neutral)
 - US 10Y: +0.17% (neutral)
 - India ETF: -0.44% (bear)
 - EM ETF: +0.66% (bull)
