@@ -1,5 +1,5 @@
 trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,gap_flag,hit_t1,hit_t2,reconfirmed_count,notes
-2026-08-05-UNIPARTS,UNIPARTS,Uniparts India Ltd.,Producer Manufacturing,2026-08-05,,732.95,677.34,844.17,899.78,955.39,664.68,17,22,93.5,13,723.0,partial,873.15,2026-08-28,20.04,0.0,False,True,False,5,
+2026-08-05-UNIPARTS,UNIPARTS,Uniparts India Ltd.,Producer Manufacturing,2026-08-05,,732.95,677.34,844.17,899.78,955.39,664.68,17,22,93.5,13,723.0,partial,873.15,2026-08-28,20.04,0.0,False,True,False,6,
 2026-08-05-SHRIPISTON,SHRIPISTON,SPR Auto Technologies Ltd,Producer Manufacturing,2026-08-05,,4402.7,4081.21,5045.69,5367.18,5688.68,4088.0,17,22,85.6,2,643.0,open,4572.2,2026-08-28,8.7,-4.33,False,False,False,1,
 2026-08-05-UYFINCORP,UYFINCORP,U. Y. Fincorp Limited,NBFC & Capital Markets,2026-08-05,,19.25,17.71,22.33,23.87,25.41,16.6,13,22,83.5,519,799.0,open,19.86,2026-08-28,16.05,-1.4,False,False,False,4,
 2026-08-05-TATACAP,TATACAP,Tata Capital Ltd.,NBFC & Capital Markets,2026-08-05,,371.9,351.32,413.05,433.63,454.2,347.19,17,22,80.4,26,535.0,open,375.7,2026-08-28,4.92,-4.52,False,False,False,2,
@@ -16,5 +16,5 @@ trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,struct
 2026-08-15-KENNAMET,KENNAMET,Kennametal India Limited,Producer Manufacturing,2026-08-15,,3513.3,3232.24,4075.43,4356.49,4637.56,3001.23,14,22,88.7,2,562.0,partial,4580.3,2026-08-28,38.33,-0.95,False,True,True,9,
 2026-08-21-LODHA,LODHA,Lodha Developers Ltd.,Real Estate,2026-08-21,,1242.0,1164.16,1397.69,1475.53,1553.38,1150.1,16,22,81.7,8,623.0,open,1274.0,2026-08-28,5.23,-1.34,False,False,False,5,
 2026-08-26-TMB,TMB,Tamilnad Mercantile Bank Limited,Banks,2026-08-26,,897.6,845.67,1001.46,1053.38,1105.31,823.6,16,22,80.0,11,571.0,open,886.05,2026-08-28,1.14,-2.36,False,False,False,2,
-2026-08-28-CRISIL,CRISIL,CRISIL Limited,Technology Services,2026-08-28,,4732.7,4511.51,5175.09,5396.28,5617.47,4386.71,16,22,81.9,2,442.0,open,4732.7,2026-08-28,0.0,0.0,False,False,False,0,
-2026-08-28-SIGMA,SIGMA,Sigma Solve Ltd,Technology Services,2026-08-28,,47.25,44.22,53.98,57.01,60.03,45.68,6,12,80.1,211,639.0,open,47.25,2026-08-28,0.0,0.0,False,False,False,0,
+2026-08-28-CRISIL,CRISIL,CRISIL Limited,Technology Services,2026-08-28,,4732.7,4511.51,5175.09,5396.28,5617.47,4386.71,16,22,81.9,2,442.0,open,4732.7,2026-08-28,1.33,-0.89,False,False,False,1,
+2026-08-28-SIGMA,SIGMA,Sigma Solve Ltd,Technology Services,2026-08-28,,47.25,44.22,53.98,57.01,60.03,45.68,6,12,80.1,211,639.0,open,47.25,2026-08-28,3.89,-1.59,False,False,False,1,
