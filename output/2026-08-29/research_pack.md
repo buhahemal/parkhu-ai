@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-29
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-29T04:09:13.743192+05:30
+- **generated_at_ist:** 2026-08-29T06:07:55.585515+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -133,21 +133,21 @@
 
 ## Swing candidates (top)
 
-- TATACAP: score=14 rs_nifty=3.8 deliv=64.08
-- ENGINERSIN: score=14 rs_nifty=14.44 deliv=42.13
-- BEML: score=14 rs_nifty=13.76 deliv=42.71
-- ROLEXRINGS: score=14 rs_nifty=31.59 deliv=45.75
-- EICHERMOT: score=14 rs_nifty=2.79 deliv=56.48
-- INDGN: score=14 rs_nifty=14.83 deliv=55.55
-- VIJAYA: score=14 rs_nifty=7.93 deliv=50.54
-- BATLIBOI: score=14 rs_nifty=4.05 deliv=54.02
-- LUMAXTECH: score=14 rs_nifty=34.44 deliv=47.52
-- KEI: score=14 rs_nifty=15.51 deliv=53.36
-- KOVAI: score=14 rs_nifty=2.66 deliv=46.43
-- PPLPHARMA: score=14 rs_nifty=13.12 deliv=41.77
-- SHANKARA: score=14 rs_nifty=3.98 deliv=84.99
 - ETERNAL: score=14 rs_nifty=6.5 deliv=68.97
-- NAUKRI: score=14 rs_nifty=8.99 deliv=49.49
+- LAL: score=14 rs_nifty=8.65 deliv=83.32
+- EICHERMOT: score=14 rs_nifty=2.79 deliv=56.48
+- TATACAP: score=14 rs_nifty=3.8 deliv=64.08
+- BEML: score=14 rs_nifty=13.76 deliv=42.71
+- VIJAYA: score=14 rs_nifty=7.93 deliv=50.54
+- SKYGOLD: score=14 rs_nifty=21.33 deliv=52.1
+- LUMAXTECH: score=14 rs_nifty=34.44 deliv=47.52
+- STYLEBAAZA: score=14 rs_nifty=50.04 deliv=55.35
+- KOVAI: score=14 rs_nifty=2.66 deliv=46.43
+- IVC: score=14 rs_nifty=3.44 deliv=84.49
+- ADOR: score=14 rs_nifty=12.47 deliv=43.93
+- TTKHLTCARE: score=14 rs_nifty=9.17 deliv=62.86
+- SHANKARA: score=14 rs_nifty=3.98 deliv=84.99
+- PDSL: score=14 rs_nifty=6.61 deliv=72.97
 
 ## World markets (India cues)
 
@@ -160,7 +160,7 @@
 - ASX 200: -0.98% (bear)
 
 ### Europe
-- FTSE 100: +0.29% (bull)
+- FTSE 100: -0.79% (bear)
 - DAX: +0.31% (bull)
 - Euro Stoxx 50: -0.71% (bear)
 

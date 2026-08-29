@@ -5,8 +5,8 @@
   "is_trading_day": false,
   "run_mode": "post_close",
   "source_brief_date": "2026-08-29",
-  "generated_at_ist": "2026-08-29T06:07:55.585515+05:30",
-  "duration_seconds": 323.0,
+  "generated_at_ist": "2026-08-29T04:09:13.743192+05:30",
+  "duration_seconds": 305.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3146,
-      "seconds": 3.5
+      "seconds": 3.9
     },
     {
       "agent": "ohlc_history",
@@ -29,13 +29,13 @@
       "cold": 401,
       "new_symbols": 13,
       "retries": 2,
-      "seconds": 220.6
+      "seconds": 219.8
     },
     {
       "agent": "earnings",
       "status": "ok",
       "rows": 3146,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "indices",
@@ -48,25 +48,25 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.7
+      "seconds": 0.6
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 7,
-      "seconds": 4.3
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 6.1
+      "seconds": 5.0
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 10.4
+      "seconds": 4.9
     },
     {
       "agent": "stock_options",
@@ -79,43 +79,43 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2275,
-      "seconds": 5.2
+      "seconds": 7.3
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.0
+      "seconds": 4.5
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.4
+      "seconds": 3.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 1.9
+      "seconds": 2.0
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3146,
-      "seconds": 0.3
+      "seconds": 0.1
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3146,
-      "seconds": 1.0
+      "seconds": 0.4
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 208,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -142,13 +142,13 @@
       "with_structure": 2859,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.1
+      "seconds": 11.2
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3146,
-      "seconds": 3.4
+      "seconds": 1.7
     },
     {
       "agent": "swing_brief",
@@ -169,7 +169,7 @@
         "UYFINCORP"
       ],
       "closed_today": [],
-      "seconds": 0.4
+      "seconds": 0.2
     }
   ],
   "ok": 20,
@@ -292,10 +292,6 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-29/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-29/relative_strength.csv"
     },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-29/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-29/report.json"
-    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-29/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-29/research_pack.json"
@@ -335,6 +331,10 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-29/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-29/watchlist.csv"
+    },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-08-29/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-08-29/report.json"
     }
   }
 }
