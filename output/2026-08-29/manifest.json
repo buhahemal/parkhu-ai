@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-08-29",
-  "generated_at_ist": "2026-08-29T06:07:55.579826+05:30",
+  "generated_at_ist": "2026-08-29T18:13:28.483474+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -36,7 +36,7 @@
         "volume"
       ],
       "present": true,
-      "rows": 14306
+      "rows": 14307
     },
     "ohlc_features.csv": {
       "agent": "ohlc_features (derived)",
@@ -51,7 +51,7 @@
         "volume_ratio_vs_20d"
       ],
       "present": true,
-      "rows": 2862
+      "rows": 2863
     },
     "stock_options.csv": {
       "agent": "stock_options",
@@ -192,7 +192,7 @@
         "latest_oi"
       ],
       "present": true,
-      "rows": 216
+      "rows": 215
     },
     "corporate_actions.csv": {
       "agent": "corpactions",
@@ -206,7 +206,7 @@
         "face_value"
       ],
       "present": true,
-      "rows": 500
+      "rows": 0
     },
     "news.csv": {
       "agent": "news",
