@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-08-30
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-08-30T06:08:44.129824+05:30
+- **generated_at_ist:** 2026-08-30T18:09:22.240701+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -24,10 +24,10 @@
 - delivery% >= 40: 255
 - relative_volume >= 1: 73
 - no earnings within 21d: 73
-- event_risk_score <= 1: 69
-- TV rating not Sell: 69
+- event_risk_score <= 1: 68
+- TV rating not Sell: 68
 
-## Survivors (top 50 of 69)
+## Survivors (top 50 of 68)
 
 - **CRISIL** [idea] score 81.9 — selected as idea
 - **MANAKSTEEL** [idea] score 81.4 — selected as idea
@@ -72,13 +72,13 @@
 - **RAJRATAN** [rejected] score 61.6 — score below Watch band
 - **AKUMS** [rejected] score 61.3 — score below Watch band
 - **LUMAXTECH** [rejected] score 61.0 — score below Watch band
-- **STYLEBAAZA** [rejected] score 60.5 — score below Watch band
 - **GENCON** [rejected] score 58.1 — T1 needs more than 22 trading days (~1 month)
 - **EXIDEIND** [rejected] score 56.1 — score below Watch band
 - **HYUNDAI** [rejected] score 56.0 — T1 needs more than 22 trading days (~1 month)
 - **ETERNAL** [rejected] score 55.3 — T1 needs more than 22 trading days (~1 month)
 - **KEI** [rejected] score 54.0 — score below Watch band
 - **NATCAPSUQ** [rejected] score 52.9 — T1 needs more than 22 trading days (~1 month)
+- **ASTRAL** [rejected] score 52.1 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -133,21 +133,21 @@
 
 ## Swing candidates (top)
 
-- BURNPUR: score=14 rs_nifty=164.04 deliv=42.1
-- ETERNAL: score=14 rs_nifty=6.42 deliv=68.97
-- NAHARCAP: score=14 rs_nifty=4.37 deliv=94.21
-- BATLIBOI: score=14 rs_nifty=3.97 deliv=54.02
-- BEML: score=14 rs_nifty=13.68 deliv=42.71
-- VIJAYA: score=14 rs_nifty=7.85 deliv=50.54
-- IVC: score=14 rs_nifty=3.36 deliv=84.49
-- CANHLIFE: score=14 rs_nifty=9.39 deliv=58.78
-- ENGINERSIN: score=14 rs_nifty=14.36 deliv=42.13
-- TATACAP: score=14 rs_nifty=3.72 deliv=64.08
+- STYLEBAAZA: score=14 rs_nifty=49.96 deliv=55.35
+- SREEL: score=14 rs_nifty=12.96 deliv=72.55
 - INDGN: score=14 rs_nifty=14.75 deliv=55.55
-- BIL: score=14 rs_nifty=15.0 deliv=79.13
-- KEI: score=14 rs_nifty=15.43 deliv=53.36
+- ENGINERSIN: score=14 rs_nifty=14.36 deliv=42.13
+- BEML: score=14 rs_nifty=13.68 deliv=42.71
+- BURNPUR: score=14 rs_nifty=164.04 deliv=42.1
+- VIJAYA: score=14 rs_nifty=7.85 deliv=50.54
+- AKUMS: score=14 rs_nifty=17.29 deliv=59.23
+- CANHLIFE: score=14 rs_nifty=9.39 deliv=58.78
+- LAL: score=14 rs_nifty=8.57 deliv=83.32
+- SKYGOLD: score=14 rs_nifty=21.25 deliv=52.1
+- LUMAXTECH: score=14 rs_nifty=34.36 deliv=47.52
+- BATLIBOI: score=14 rs_nifty=3.97 deliv=54.02
+- TTKHLTCARE: score=14 rs_nifty=9.09 deliv=62.86
 - SBCL: score=14 rs_nifty=42.75 deliv=45.46
-- EICHERMOT: score=14 rs_nifty=2.71 deliv=56.48
 
 ## World markets (India cues)
 
@@ -173,7 +173,7 @@
 ### Macro
 - USDINR: -0.09% (neutral)
 - Crude WTI: -0.16% (bear)
-- Brent: -0.43% (bear)
+- Brent: -1.78% (bear)
 - DXY: +0.54% (bear)
 - US 10Y: +1.03% (bear)
 - India ETF: +0.06% (neutral)

@@ -962,8 +962,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 69,
-      "dropped_count": 4,
+      "surviving": 68,
+      "dropped_count": 5,
       "survivor_symbols": [
         "CRISIL",
         "MANAKSTEEL",
@@ -1008,18 +1008,19 @@
         "RAJRATAN",
         "AKUMS",
         "LUMAXTECH",
-        "STYLEBAAZA",
         "GENCON",
         "EXIDEIND",
         "HYUNDAI",
         "ETERNAL",
         "KEI",
-        "NATCAPSUQ"
+        "NATCAPSUQ",
+        "ASTRAL"
       ],
       "dropped_symbols": [
         "VADILALIND",
         "HEG",
         "MAHSEAMLES",
+        "STYLEBAAZA",
         "SUPRAJIT"
       ],
       "survivor_symbols_truncated": true,
@@ -1027,7 +1028,7 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 69,
+      "surviving": 68,
       "dropped_count": 0,
       "survivor_symbols": [
         "CRISIL",
@@ -1073,13 +1074,13 @@
         "RAJRATAN",
         "AKUMS",
         "LUMAXTECH",
-        "STYLEBAAZA",
         "GENCON",
         "EXIDEIND",
         "HYUNDAI",
         "ETERNAL",
         "KEI",
-        "NATCAPSUQ"
+        "NATCAPSUQ",
+        "ASTRAL"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -1475,15 +1476,6 @@
       "reason": "score below Watch band"
     },
     {
-      "symbol": "STYLEBAAZA",
-      "score": 60.5,
-      "band": "Ignore",
-      "cmp": 410.8,
-      "risk_sector": "Retail Trade",
-      "status": "rejected",
-      "reason": "score below Watch band"
-    },
-    {
       "symbol": "GENCON",
       "score": 58.1,
       "band": "Ignore",
@@ -1536,8 +1528,17 @@
       "risk_sector": "Health Technology",
       "status": "rejected",
       "reason": "T1 needs more than 22 trading days (~1 month)"
+    },
+    {
+      "symbol": "ASTRAL",
+      "score": 52.1,
+      "band": "Ignore",
+      "cmp": 1532.3,
+      "risk_sector": "Producer Manufacturing",
+      "status": "rejected",
+      "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 69,
+  "survivor_outcomes_total": 68,
   "survivor_outcomes_truncated": true
 }
