@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-08-31",
-  "generated_at_ist": "2026-08-31T11:34:26.523176+05:30",
+  "generated_at_ist": "2026-08-31T18:08:31.467106+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -19,7 +19,7 @@
         "perf_1y"
       ],
       "present": true,
-      "rows": 3146
+      "rows": 3147
     },
     "history/ohlc.csv": {
       "agent": "ohlc_history",
@@ -107,7 +107,7 @@
         "next_earnings_date"
       ],
       "present": true,
-      "rows": 3146
+      "rows": 3147
     },
     "fii.csv": {
       "agent": "smartmoney",
@@ -192,7 +192,7 @@
         "latest_oi"
       ],
       "present": true,
-      "rows": 215
+      "rows": 216
     },
     "corporate_actions.csv": {
       "agent": "corpactions",
@@ -277,7 +277,7 @@
         "close"
       ],
       "present": true,
-      "rows": 2275
+      "rows": 2291
     },
     "relative_strength.csv": {
       "agent": "relative_strength (derived)",
@@ -291,7 +291,7 @@
         "perf_1m"
       ],
       "present": true,
-      "rows": 3146
+      "rows": 3147
     },
     "event_risk.csv": {
       "agent": "event_risk (derived)",
@@ -305,7 +305,7 @@
         "event_risk_score"
       ],
       "present": true,
-      "rows": 3146
+      "rows": 3147
     },
     "fno_momentum.csv": {
       "agent": "fno_momentum (derived)",
@@ -359,7 +359,7 @@
         "risk_score"
       ],
       "present": true,
-      "rows": 3146
+      "rows": 3147
     },
     "market_summary.csv": {
       "agent": "market_summary (derived)",
