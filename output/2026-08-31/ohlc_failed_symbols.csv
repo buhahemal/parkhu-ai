@@ -1,5 +1,6 @@
 symbol,yf_ticker,reason
 ANAWIL,ANAWIL.NS,no_ohlc_after_retry
+AUGMONT,AUGMONT.NS,no_ohlc_after_retry
 AVATAR,AVATAR.NS,no_ohlc_after_retry
 CREDENT,CREDENT.NS,no_ohlc_after_retry
 DIRL,DIRL.NS,no_ohlc_after_retry
