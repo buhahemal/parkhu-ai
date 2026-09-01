@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-01",
-  "generated_at_ist": "2026-09-01T18:10:17.767404+05:30",
-  "duration_seconds": 440.0,
+  "generated_at_ist": "2026-09-01T22:32:01.462148+05:30",
+  "duration_seconds": 587.6,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3153,
-      "seconds": 3.4
+      "seconds": 4.2
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
       "rows": 14320,
-      "cache_rows": 7877154,
+      "cache_rows": 7877155,
       "symbols": 2865,
       "failed": 17,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2475,
-      "cold": 407,
-      "new_symbols": 19,
+      "warm": 2476,
+      "cold": 406,
+      "new_symbols": 17,
       "retries": 2,
-      "seconds": 359.5
+      "seconds": 498.9
     },
     {
       "agent": "earnings",
@@ -48,7 +48,7 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 2.9
+      "seconds": 3.6
     },
     {
       "agent": "smartmoney",
@@ -60,13 +60,13 @@
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.3
+      "seconds": 5.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 5.6
+      "seconds": 4.8
     },
     {
       "agent": "stock_options",
@@ -79,25 +79,25 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2290,
-      "seconds": 6.5
+      "seconds": 8.0
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.7
+      "seconds": 2.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.7
+      "seconds": 3.9
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 7.9
+      "seconds": 13.4
     },
     {
       "agent": "relative_strength",
@@ -142,7 +142,7 @@
       "with_structure": 2863,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 16.7
+      "seconds": 15.5
     },
     {
       "agent": "stock_analysis",

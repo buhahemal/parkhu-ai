@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-01
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-01T18:10:17.767404+05:30
+- **generated_at_ist:** 2026-09-01T22:32:01.462148+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,7 +9,7 @@
 - market_regime: **Neutral**
 - nifty: Neutral (-0.1%)
 - india_vix: 11.19 (Low)
-- fii_net: -7985.88 | dii_net: 4588.88
+- fii_net: 1143.38 | dii_net: 1846.94
 - overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
@@ -20,18 +20,18 @@
 - price > EMA50: 993
 - ADX14 > 25: 627
 - RSI14 in 40-80: 594
-- RS > 0 vs NIFTY and sector: 391
-- delivery% >= 40: 215
-- relative_volume >= 1: 61
-- no earnings within 21d: 61
-- event_risk_score <= 1: 58
-- TV rating not Sell: 56
+- RS > 0 vs NIFTY and sector: 387
+- delivery% >= 40: 214
+- relative_volume >= 1: 60
+- no earnings within 21d: 60
+- event_risk_score <= 1: 57
+- TV rating not Sell: 55
 
-## Survivors (top 50 of 56)
+## Survivors (top 50 of 55)
 
 - **UNIPARTS** [idea] score 81.0 — selected as idea
 - **ALMONDZ** [rejected] score 80.2 — T1 needs more than 22 trading days (~1 month)
-- **CRISIL** [watchlist] score 79.4 — score in Watch band (70–80)
+- **CRISIL** [watchlist] score 79.2 — score in Watch band (70–80)
 - **KRN** [watchlist] score 79.0 — score in Watch band (70–80)
 - **SONAMLTD** [watchlist] score 78.9 — score in Watch band (70–80)
 - **ORIENTBELL** [watchlist] score 78.2 — score in Watch band (70–80)
@@ -44,7 +44,7 @@
 - **SKYGOLD** [watchlist] score 72.9 — score in Watch band (70–80)
 - **ARTEMISMED** [watchlist] score 72.8 — score in Watch band (70–80)
 - **HAPPYFORGE** [watchlist] score 72.4 — score in Watch band (70–80)
-- **MATRIMONY** [watchlist] score 70.1 — score in Watch band (70–80)
+- **MATRIMONY** [watchlist] score 70.0 — score in Watch band (70–80)
 - **GMMPFAUDLR** [rejected] score 69.7 — T1 needs more than 22 trading days (~1 month)
 - **RRKABEL** [rejected] score 68.8 — score below Watch band
 - **INDGN** [rejected] score 68.5 — score below Watch band
@@ -61,24 +61,24 @@
 - **ARIHANTCAP** [rejected] score 63.9 — T1 needs more than 22 trading days (~1 month)
 - **LALPATHLAB** [rejected] score 63.8 — score below Watch band
 - **RADICO** [rejected] score 63.8 — score below Watch band
-- **WSTCSTPAPR** [rejected] score 63.4 — score below Watch band
+- **WSTCSTPAPR** [rejected] score 63.5 — score below Watch band
 - **VEEDOL** [rejected] score 62.1 — score below Watch band
 - **AKUMS** [rejected] score 61.2 — score below Watch band
-- **TBOTEK** [rejected] score 60.7 — score below Watch band
+- **TBOTEK** [rejected] score 60.5 — score below Watch band
 - **MOTHERSON** [rejected] score 60.2 — T1 needs more than 22 trading days (~1 month)
-- **NAUKRI** [rejected] score 60.2 — score below Watch band
+- **NAUKRI** [rejected] score 60.0 — score below Watch band
 - **STEL** [rejected] score 58.9 — score below Watch band
 - **TEXINFRA** [rejected] score 58.6 — score below Watch band
 - **AUSOMENT** [rejected] score 57.9 — score below Watch band
-- **LOKESHMACH** [rejected] score 57.0 — score below Watch band
 - **TIJARIA** [rejected] score 57.0 — score below Watch band
 - **CYBERMEDIA** [rejected] score 54.9 — score below Watch band
 - **MMP** [rejected] score 54.0 — score below Watch band
-- **UNOMINDA** [rejected] score 53.4 — score below Watch band
-- **BECTORFOOD** [rejected] score 52.8 — score below Watch band
+- **UNOMINDA** [rejected] score 53.5 — score below Watch band
+- **BECTORFOOD** [rejected] score 52.9 — score below Watch band
 - **HCG** [rejected] score 51.0 — score below Watch band
 - **CYIENTDLM** [rejected] score 48.2 — score below Watch band
 - **APOLSINHOT** [rejected] score 48.0 — score below Watch band
+- **ANTHEM** [rejected] score 46.7 — score below Watch band
 
 ## Ideas
 
@@ -126,50 +126,50 @@
 ## Swing candidates (top)
 
 - UNOMINDA: score=15 rs_nifty=9.25 deliv=47.95
-- PGIL: score=14 rs_nifty=16.78 deliv=48.62
-- KRN: score=14 rs_nifty=33.4 deliv=52.29
-- ESABINDIA: score=14 rs_nifty=10.35 deliv=48.11
-- TBOTEK: score=14 rs_nifty=15.03 deliv=41.82
 - WSTCSTPAPR: score=14 rs_nifty=18.05 deliv=48.14
-- TIJARIA: score=14 rs_nifty=52.58 deliv=86.65
-- SONAMLTD: score=14 rs_nifty=26.28 deliv=51.26
 - AUSOMENT: score=14 rs_nifty=10.58 deliv=73.74
+- MMP: score=14 rs_nifty=37.24 deliv=53.83
+- TBOTEK: score=14 rs_nifty=15.03 deliv=41.82
 - CYBERMEDIA: score=14 rs_nifty=23.3 deliv=64.98
 - STEL: score=14 rs_nifty=8.79 deliv=49.22
-- ARTEMISMED: score=14 rs_nifty=8.51 deliv=40.33
+- GUJTHEM: score=14 rs_nifty=19.62 deliv=64.31
 - AKUMS: score=14 rs_nifty=19.04 deliv=51.16
 - TTKHLTCARE: score=14 rs_nifty=14.44 deliv=46.33
-- GUJTHEM: score=14 rs_nifty=19.62 deliv=64.31
+- KPRMILL: score=14 rs_nifty=13.33 deliv=49.56
+- ESABINDIA: score=14 rs_nifty=10.35 deliv=48.11
+- TIJARIA: score=14 rs_nifty=52.58 deliv=86.65
+- SONAMLTD: score=14 rs_nifty=26.28 deliv=51.26
+- PGIL: score=14 rs_nifty=16.78 deliv=48.62
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.15% (neutral)
-- Hang Seng: -0.93% (bear)
-- Shanghai: -0.16% (bear)
-- Kospi: +0.23% (bull)
-- Taiwan: +1.78% (bull)
-- ASX 200: -0.10% (neutral)
+- Nikkei: -0.14% (neutral)
+- Hang Seng: +0.00% (neutral)
+- Shanghai: +0.75% (bull)
+- Kospi: -1.34% (bear)
+- Taiwan: -0.44% (bear)
+- ASX 200: +0.42% (bull)
 
 ### Europe
-- FTSE 100: -0.58% (bear)
-- DAX: -0.95% (bear)
-- Euro Stoxx 50: -0.53% (bear)
+- FTSE 100: -0.03% (neutral)
+- DAX: -1.10% (bear)
+- Euro Stoxx 50: -0.80% (bear)
 
 ### US
-- S&P 500: -0.58% (bear)
-- Nasdaq: -0.12% (neutral)
-- Dow: -0.72% (bear)
-- US VIX: +6.30% (bear)
+- S&P 500: -0.64% (bear)
+- Nasdaq: -0.83% (bear)
+- Dow: -0.82% (bear)
+- US VIX: +6.77% (bear)
 
 ### Macro
 - USDINR: -0.46% (bull)
-- Crude WTI: +2.43% (bull)
-- Brent: +1.91% (bull)
-- DXY: +0.18% (neutral)
-- US 10Y: +0.63% (bear)
-- India ETF: +0.34% (bull)
-- EM ETF: -0.87% (bear)
+- Crude WTI: +4.20% (bull)
+- Brent: +3.59% (bull)
+- DXY: +0.25% (neutral)
+- US 10Y: +0.50% (bear)
+- India ETF: -0.13% (neutral)
+- EM ETF: +0.03% (neutral)
 
 
 ## Groq desk note
