@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-01",
-  "generated_at_ist": "2026-09-01T06:09:07.688017+05:30",
-  "duration_seconds": 390.9,
+  "generated_at_ist": "2026-09-01T11:10:57.575434+05:30",
+  "duration_seconds": 539.3,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3147,
-      "seconds": 3.6
+      "rows": 3152,
+      "seconds": 3.8
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14306,
-      "cache_rows": 7867188,
-      "symbols": 2862,
-      "failed": 13,
+      "rows": 14313,
+      "cache_rows": 7874487,
+      "symbols": 2863,
+      "failed": 18,
       "lookback": 0,
       "pack_sessions": 5,
       "warm": 2473,
-      "cold": 402,
-      "new_symbols": 13,
+      "cold": 408,
+      "new_symbols": 19,
       "retries": 2,
-      "seconds": 278.1
+      "seconds": 440.2
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3147,
+      "rows": 3152,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.6
+      "seconds": 1.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.2
+      "seconds": 3.1
     },
     {
       "agent": "smartmoney",
-      "status": "ok",
-      "rows": 4,
-      "seconds": 4.0
+      "status": "partial",
+      "rows": 2,
+      "seconds": 4.3
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.6
+      "seconds": 6.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
-      "rows": 452,
-      "seconds": 5.7
+      "rows": 451,
+      "seconds": 5.0
     },
     {
       "agent": "stock_options",
@@ -85,37 +85,37 @@
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 5.3
+      "seconds": 3.2
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 5.1
+      "seconds": 4.1
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.7
+      "seconds": 8.7
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3147,
-      "seconds": 0.2
+      "rows": 3152,
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3147,
+      "rows": 3152,
       "seconds": 0.7
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 208,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -138,50 +138,53 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2862,
-      "with_structure": 2860,
+      "rows": 2863,
+      "with_structure": 2862,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.0
+      "seconds": 19.1
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3147,
-      "seconds": 2.8
+      "rows": 3152,
+      "seconds": 2.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 4,
+      "rows": 1,
       "ideas": [
-        "TMB",
-        "UNIPARTS",
-        "LAURUSLABS",
         "MANAKSTEEL"
       ],
-      "watchlist": 25,
+      "watchlist": 6,
       "open_positions": 20,
       "needing_action": [
+        "DIVGIITTS",
         "KENNAMET",
         "MANAKSTEEL",
         "SHRIPISTON",
+        "STYLAMIND",
         "SUPRAJIT",
+        "TATACAP",
         "UNIPARTS",
         "UYFINCORP"
       ],
-      "closed_today": [],
+      "closed_today": [
+        "SUPRAJIT",
+        "STYLAMIND"
+      ],
       "seconds": 0.4
     }
   ],
-  "ok": 20,
-  "partial": 1,
+  "ok": 19,
+  "partial": 2,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 20,
-    "agents_partial": 1,
+    "agents_ok": 19,
+    "agents_partial": 2,
     "agents_error": 0
   },
   "latest_promoted": true,
