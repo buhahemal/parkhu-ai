@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-02
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-02T18:09:11.694489+05:30
+- **generated_at_ist:** 2026-09-02T22:25:18.658508+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.59%)
 - india_vix: 11.59 (Low)
-- fii_net: 1143.38 | dii_net: 1846.94
-- overall_risk: Medium | global_risk: Risk-Off
+- fii_net: 6688.37 | dii_net: 2812.98
+- overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
@@ -125,50 +125,50 @@
 ## Swing candidates (top)
 
 - BOSCHLTD: score=15 rs_nifty=17.81 deliv=40.05
-- VADILALIND: score=14 rs_nifty=8.25 deliv=47.91
-- UNIONBANK: score=14 rs_nifty=12.49 deliv=52.26
+- SANSERA: score=14 rs_nifty=16.28 deliv=50.26
+- AKUMS: score=14 rs_nifty=19.0 deliv=62.56
 - HNDFDS: score=14 rs_nifty=10.85 deliv=62.21
-- MUKKA: score=14 rs_nifty=21.75 deliv=45.07
+- NAUKRI: score=14 rs_nifty=12.55 deliv=59.49
+- SAHYADRI: score=14 rs_nifty=16.91 deliv=47.81
+- NEULANDLAB: score=14 rs_nifty=23.37 deliv=50.16
+- SHANKARA: score=14 rs_nifty=6.28 deliv=56.25
+- AMDIND: score=14 rs_nifty=25.6 deliv=59.59
+- VARROC: score=14 rs_nifty=23.36 deliv=43.92
+- UEL: score=14 rs_nifty=30.51 deliv=56.9
 - IRMENERGY: score=14 rs_nifty=13.43 deliv=46.17
 - WSTCSTPAPR: score=14 rs_nifty=13.83 deliv=48.79
-- GUJTHEM: score=14 rs_nifty=19.4 deliv=89.65
-- PGIL: score=14 rs_nifty=17.74 deliv=48.29
-- DEEPINDS: score=14 rs_nifty=16.63 deliv=46.85
 - KPRMILL: score=14 rs_nifty=13.12 deliv=42.22
-- BATLIBOI: score=14 rs_nifty=17.58 deliv=51.55
-- SAHYADRI: score=14 rs_nifty=16.91 deliv=47.81
-- ALIVUS: score=14 rs_nifty=23.35 deliv=55.84
-- AMDIND: score=14 rs_nifty=25.6 deliv=59.59
+- VADILALIND: score=14 rs_nifty=8.25 deliv=47.91
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.85% (bear)
-- Hang Seng: -0.07% (neutral)
-- Shanghai: -0.97% (bear)
-- Kospi: -3.99% (bear)
-- Taiwan: -1.67% (bear)
-- ASX 200: -0.97% (bear)
+- Nikkei: -0.15% (neutral)
+- Hang Seng: -0.93% (bear)
+- Shanghai: -0.16% (bear)
+- Kospi: +0.23% (bull)
+- Taiwan: +1.78% (bull)
+- ASX 200: -0.10% (neutral)
 
 ### Europe
-- FTSE 100: -0.36% (bear)
-- DAX: -0.45% (bear)
-- Euro Stoxx 50: -0.04% (neutral)
+- FTSE 100: -0.30% (bear)
+- DAX: -0.50% (bear)
+- Euro Stoxx 50: -0.11% (neutral)
 
 ### US
-- S&P 500: -0.71% (bear)
-- Nasdaq: -1.03% (bear)
-- Dow: -0.79% (bear)
-- US VIX: -1.65% (bull)
+- S&P 500: +0.47% (bull)
+- Nasdaq: +0.43% (bull)
+- Dow: +0.43% (bull)
+- US VIX: -5.69% (bull)
 
 ### Macro
 - USDINR: -0.16% (neutral)
-- Crude WTI: -0.67% (bear)
-- Brent: -0.41% (bear)
-- DXY: +0.06% (neutral)
-- US 10Y: -0.42% (bull)
-- India ETF: -0.24% (bear)
-- EM ETF: -0.37% (bear)
+- Crude WTI: +1.04% (bull)
+- Brent: +1.24% (bull)
+- DXY: -0.12% (neutral)
+- US 10Y: +0.00% (neutral)
+- India ETF: +0.64% (bull)
+- EM ETF: +0.34% (bull)
 
 
 ## Groq desk note

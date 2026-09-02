@@ -1,5 +1,5 @@
 trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,gap_flag,hit_t1,hit_t2,reconfirmed_count,notes
-2026-08-05-UNIPARTS,UNIPARTS,Uniparts India Ltd.,Producer Manufacturing,2026-08-05,,732.95,677.34,844.17,899.78,955.39,664.68,17,22,93.5,13,723.0,partial,886.35,2026-09-02,24.97,0.0,False,True,True,20,
+2026-08-05-UNIPARTS,UNIPARTS,Uniparts India Ltd.,Producer Manufacturing,2026-08-05,,732.95,677.34,844.17,899.78,955.39,664.68,17,22,93.5,13,723.0,partial,886.35,2026-09-02,24.97,0.0,False,True,True,21,
 2026-08-05-SHRIPISTON,SHRIPISTON,SPR Auto Technologies Ltd,Producer Manufacturing,2026-08-05,,4402.7,4081.21,5045.69,5367.18,5688.68,4088.0,17,22,85.6,2,643.0,open,4600.4,2026-09-02,8.7,-4.33,False,False,False,1,
 2026-08-05-UYFINCORP,UYFINCORP,U. Y. Fincorp Limited,NBFC & Capital Markets,2026-08-05,,19.25,17.71,22.33,23.87,25.41,16.6,13,22,83.5,519,799.0,open,19.3,2026-09-02,16.05,-1.82,False,False,False,4,
 2026-08-05-TATACAP,TATACAP,Tata Capital Ltd.,NBFC & Capital Markets,2026-08-05,,371.9,351.32,413.05,433.63,454.2,347.19,17,22,80.4,26,535.0,open,364.75,2026-09-02,4.92,-4.52,False,False,False,2,

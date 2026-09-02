@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-02",
-  "generated_at_ist": "2026-09-02T18:09:11.694489+05:30",
-  "duration_seconds": 371.5,
+  "generated_at_ist": "2026-09-02T22:25:18.658508+05:30",
+  "duration_seconds": 360.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -27,9 +27,9 @@
       "pack_sessions": 5,
       "warm": 2478,
       "cold": 404,
-      "new_symbols": 18,
+      "new_symbols": 15,
       "retries": 2,
-      "seconds": 292.7
+      "seconds": 281.9
     },
     {
       "agent": "earnings",
@@ -48,25 +48,25 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.9
+      "seconds": 1.0
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 4,
-      "seconds": 4.2
+      "seconds": 3.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.9
+      "seconds": 4.7
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 5.0
+      "seconds": 5.5
     },
     {
       "agent": "stock_options",
@@ -79,7 +79,7 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2290,
-      "seconds": 6.3
+      "seconds": 6.2
     },
     {
       "agent": "corpactions",
@@ -91,13 +91,13 @@
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.4
+      "seconds": 3.1
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.8
+      "seconds": 3.0
     },
     {
       "agent": "relative_strength",
@@ -142,7 +142,7 @@
       "with_structure": 2862,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.2
+      "seconds": 21.4
     },
     {
       "agent": "stock_analysis",
