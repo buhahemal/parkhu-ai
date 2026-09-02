@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-02",
-  "generated_at_ist": "2026-09-02T06:09:01.220042+05:30",
-  "duration_seconds": 369.4,
+  "generated_at_ist": "2026-09-02T10:33:51.967707+05:30",
+  "duration_seconds": 334.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3153,
-      "seconds": 2.6
+      "seconds": 2.9
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14320,
-      "cache_rows": 7877155,
-      "symbols": 2865,
-      "failed": 17,
+      "rows": 14317,
+      "cache_rows": 7878988,
+      "symbols": 2864,
+      "failed": 18,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2476,
-      "cold": 406,
-      "new_symbols": 17,
+      "warm": 2475,
+      "cold": 407,
+      "new_symbols": 18,
       "retries": 2,
-      "seconds": 268.5
+      "seconds": 249.4
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.8
+      "seconds": 0.4
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.9
+      "seconds": 0.8
     },
     {
       "agent": "smartmoney",
       "status": "ok",
-      "rows": 3,
-      "seconds": 10.0
+      "rows": 4,
+      "seconds": 3.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.8
+      "seconds": 4.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 5.1
+      "seconds": 5.5
     },
     {
       "agent": "stock_options",
@@ -79,43 +79,43 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2290,
-      "seconds": 19.7
+      "seconds": 17.3
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.8
+      "seconds": 3.1
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.4
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 4.1
+      "seconds": 3.1
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3153,
-      "seconds": 0.4
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3153,
-      "seconds": 1.0
+      "seconds": 0.7
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 208,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -138,37 +138,44 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2865,
-      "with_structure": 2863,
+      "rows": 2864,
+      "with_structure": 2862,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.1
+      "seconds": 19.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3153,
-      "seconds": 3.4
+      "seconds": 2.7
     },
     {
       "agent": "swing_brief",
       "status": "ok",
       "rows": 1,
       "ideas": [
-        "UNIPARTS"
+        "MARKSANS"
       ],
-      "watchlist": 15,
+      "watchlist": 2,
       "open_positions": 18,
       "needing_action": [
-        "DIVGIITTS",
+        "AJANTPHARM",
         "KENNAMET",
+        "LAURUSLABS",
+        "LODHA",
         "MANAKSTEEL",
         "SHRIPISTON",
+        "SREEL",
         "TATACAP",
         "UNIPARTS",
         "UYFINCORP"
       ],
-      "closed_today": [],
+      "closed_today": [
+        "AJANTPHARM",
+        "KENNAMET",
+        "LAURUSLABS"
+      ],
       "seconds": 0.4
     }
   ],
@@ -292,6 +299,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-02/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-02/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-02/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-02/report.json"
+    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-02/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-02/research_pack.json"
@@ -331,10 +342,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-02/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-02/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-02/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-02/report.json"
     }
   }
 }
