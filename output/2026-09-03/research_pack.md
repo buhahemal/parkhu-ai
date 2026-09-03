@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-03
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-03T18:09:14.215155+05:30
+- **generated_at_ist:** 2026-09-03T22:14:55.159502+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -110,9 +110,9 @@
 - **CRISIL** status=open entry=4732.7 last=4759.7 mfe=2.67 mae=-1.28 opened=2026-08-28
 - **SIGMA** status=open entry=47.25 last=47.42 mfe=4.61 mae=-1.78 opened=2026-08-28
 - **MARKSANS** status=open entry=333.5 last=332.2 mfe=2.25 mae=-4.42 opened=2026-09-02
-- **IPCALAB** status=open entry=1956.1 last=1956.1 mfe=0.0 mae=0.0 opened=2026-09-03
-- **KARURVYSYA** status=open entry=350.0 last=350.0 mfe=0.0 mae=0.0 opened=2026-09-03
-- **QPOWER** status=open entry=1424.1 last=1424.1 mfe=0.0 mae=0.0 opened=2026-09-03
+- **IPCALAB** status=open entry=1956.1 last=1956.1 mfe=1.13 mae=-2.46 opened=2026-09-03
+- **KARURVYSYA** status=open entry=350.0 last=350.0 mfe=2.29 mae=-0.67 opened=2026-09-03
+- **QPOWER** status=open entry=1424.1 last=1424.1 mfe=4.94 mae=-2.28 opened=2026-09-03
 
 ## Needs action
 
@@ -129,51 +129,51 @@
 
 ## Swing candidates (top)
 
+- UNIONBANK: score=14 rs_nifty=11.44 deliv=51.24
+- APLAPOLLO: score=14 rs_nifty=13.4 deliv=56.5
+- IDFCFIRSTB: score=14 rs_nifty=4.95 deliv=57.69
 - WHEELS: score=14 rs_nifty=19.56 deliv=44.28
-- AARTIDRUGS: score=14 rs_nifty=6.66 deliv=46.17
-- AMDIND: score=14 rs_nifty=25.07 deliv=48.0
 - DIVGIITTS: score=14 rs_nifty=29.74 deliv=47.14
+- SHANKARA: score=14 rs_nifty=6.69 deliv=94.03
 - GUJTHEM: score=14 rs_nifty=24.14 deliv=66.3
 - HEG: score=14 rs_nifty=9.35 deliv=50.67
-- IIFL: score=14 rs_nifty=6.99 deliv=52.46
-- BATLIBOI: score=14 rs_nifty=9.65 deliv=58.22
-- WINDMACHIN: score=14 rs_nifty=13.72 deliv=53.33
-- EMIL: score=14 rs_nifty=35.6 deliv=47.57
 - JAGSNPHARM: score=14 rs_nifty=6.35 deliv=44.46
-- APLAPOLLO: score=14 rs_nifty=13.4 deliv=56.5
 - HCG: score=14 rs_nifty=8.22 deliv=86.09
-- QPOWER: score=14 rs_nifty=25.19 deliv=49.29
+- WSTCSTPAPR: score=14 rs_nifty=18.53 deliv=53.28
+- MAHSEAMLES: score=14 rs_nifty=16.96 deliv=44.84
+- GALAXYSURF: score=14 rs_nifty=16.31 deliv=46.87
+- KPIL: score=14 rs_nifty=13.89 deliv=47.46
 - WENDT: score=14 rs_nifty=3.99 deliv=43.3
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.17% (bear)
-- Hang Seng: -0.39% (bear)
-- Shanghai: +0.02% (neutral)
-- Kospi: +0.26% (bull)
-- Taiwan: -0.67% (bear)
-- ASX 200: +0.46% (bull)
+- Nikkei: -2.85% (bear)
+- Hang Seng: -0.07% (neutral)
+- Shanghai: -0.97% (bear)
+- Kospi: -3.99% (bear)
+- Taiwan: -1.67% (bear)
+- ASX 200: -0.97% (bear)
 
 ### Europe
-- FTSE 100: +0.55% (bull)
-- DAX: +0.03% (neutral)
-- Euro Stoxx 50: -0.20% (bear)
+- FTSE 100: +0.70% (bull)
+- DAX: +0.63% (bull)
+- Euro Stoxx 50: +0.32% (bull)
 
 ### US
-- S&P 500: +0.46% (bull)
-- Nasdaq: +0.45% (bull)
-- Dow: +0.56% (bull)
-- US VIX: +0.92% (bear)
+- S&P 500: +1.07% (bull)
+- Nasdaq: +1.41% (bull)
+- Dow: +1.20% (bull)
+- US VIX: -3.95% (bull)
 
 ### Macro
 - USDINR: -0.51% (bull)
-- Crude WTI: +1.19% (bull)
-- Brent: +0.73% (bull)
-- DXY: -0.41% (bull)
-- US 10Y: -0.63% (bull)
-- India ETF: +0.79% (bull)
-- EM ETF: +0.57% (bull)
+- Crude WTI: +0.66% (bull)
+- Brent: +0.13% (neutral)
+- DXY: -0.69% (bull)
+- US 10Y: -1.00% (bull)
+- India ETF: -0.13% (neutral)
+- EM ETF: +0.32% (bull)
 
 
 ## Groq desk note

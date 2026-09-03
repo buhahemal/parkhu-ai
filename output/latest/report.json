@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-03",
-  "generated_at_ist": "2026-09-03T10:32:10.839918+05:30",
-  "duration_seconds": 424.0,
+  "generated_at_ist": "2026-09-03T18:09:14.215155+05:30",
+  "duration_seconds": 379.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3153,
-      "seconds": 3.9
+      "rows": 3156,
+      "seconds": 2.9
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14318,
-      "cache_rows": 7881021,
-      "symbols": 2865,
-      "failed": 17,
+      "rows": 14335,
+      "cache_rows": 7883917,
+      "symbols": 2869,
+      "failed": 16,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2477,
+      "warm": 2480,
       "cold": 405,
       "new_symbols": 17,
       "retries": 2,
-      "seconds": 306.5
+      "seconds": 291.9
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3153,
+      "rows": 3156,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.7
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.4
+      "seconds": 1.0
     },
     {
       "agent": "smartmoney",
       "status": "ok",
-      "rows": 4,
-      "seconds": 3.9
+      "rows": 5,
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.0
+      "seconds": 4.9
     },
     {
       "agent": "derivatives",
       "status": "ok",
-      "rows": 451,
-      "seconds": 4.7
+      "rows": 452,
+      "seconds": 4.6
     },
     {
       "agent": "stock_options",
@@ -78,38 +78,38 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2289,
-      "seconds": 17.8
+      "rows": 2277,
+      "seconds": 4.7
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.1
+      "seconds": 2.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.2
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.9
+      "seconds": 2.9
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3153,
+      "rows": 3156,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3153,
-      "seconds": 1.0
+      "rows": 3156,
+      "seconds": 1.1
     },
     {
       "agent": "fno_momentum",
@@ -138,37 +138,38 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2865,
-      "with_structure": 2861,
+      "rows": 2869,
+      "with_structure": 2864,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.0
+      "seconds": 21.5
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3153,
+      "rows": 3156,
       "seconds": 3.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 3,
-      "open_positions": 16,
+      "rows": 3,
+      "ideas": [
+        "KARURVYSYA",
+        "IPCALAB",
+        "QPOWER"
+      ],
+      "watchlist": 15,
+      "open_positions": 15,
       "needing_action": [
-        "DIVGIITTS",
         "LODHA",
-        "MANAKSTEEL",
         "SHRIPISTON",
+        "SREEL",
         "TATACAP",
         "UNIPARTS",
         "UYFINCORP"
       ],
-      "closed_today": [
-        "MANAKSTEEL"
-      ],
+      "closed_today": [],
       "seconds": 0.4
     }
   ],
