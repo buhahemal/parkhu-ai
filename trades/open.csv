@@ -10,7 +10,7 @@ trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,struct
 2026-08-12-DIVGIITTS,DIVGIITTS,Divgi TorqTransfer Systems Ltd.,Producer Manufacturing,2026-08-12,,1076.4,993.48,1242.23,1325.15,1408.06,919.5,16,22,82.7,9,746.0,partial,1235.8,2026-09-04,23.54,0.0,False,True,False,1,
 2026-08-21-LODHA,LODHA,Lodha Developers Ltd.,Real Estate,2026-08-21,,1242.0,1164.16,1397.69,1475.53,1553.38,1150.1,16,22,81.7,8,623.0,open,1222.0,2026-09-04,5.23,-6.09,False,False,False,5,
 2026-08-26-TMB,TMB,Tamilnad Mercantile Bank Limited,Banks,2026-08-26,,897.6,845.67,1001.46,1053.38,1105.31,823.6,16,22,80.0,11,571.0,open,932.45,2026-09-04,5.83,-2.36,False,False,False,5,
-2026-08-28-CRISIL,CRISIL,CRISIL Limited,Technology Services,2026-08-28,,4732.7,4511.51,5175.09,5396.28,5617.47,4386.71,16,22,81.9,2,442.0,open,4802.0,2026-09-04,2.94,-1.28,False,False,False,8,
+2026-08-28-CRISIL,CRISIL,CRISIL Limited,Technology Services,2026-08-28,,4732.7,4511.51,5175.09,5396.28,5617.47,4386.71,16,22,81.9,2,442.0,open,4802.0,2026-09-04,2.94,-1.28,False,False,False,9,
 2026-08-28-SIGMA,SIGMA,Sigma Solve Ltd,Technology Services,2026-08-28,,47.25,44.22,53.98,57.01,60.03,45.68,6,12,80.1,211,639.0,open,46.66,2026-09-04,4.61,-3.13,False,False,False,7,
 2026-09-02-MARKSANS,MARKSANS,Marksans Pharma Limited,Health Technology,2026-09-02,,333.5,306.82,386.86,413.54,440.22,287.5,16,22,80.1,29,774.0,open,326.75,2026-09-04,2.25,-4.42,False,False,False,0,
 2026-09-03-KARURVYSYA,KARURVYSYA,Karur Vysya Bank Ltd.,Banks,2026-09-03,,350.0,333.16,383.68,400.53,417.37,328.83,16,22,87.1,28,472.0,open,348.85,2026-09-04,2.29,-0.67,False,False,False,2,

@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-04",
-  "generated_at_ist": "2026-09-04T18:09:14.038223+05:30",
-  "duration_seconds": 371.4,
+  "generated_at_ist": "2026-09-04T22:10:46.147661+05:30",
+  "duration_seconds": 374.6,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3158,
-      "seconds": 3.0
+      "seconds": 3.3
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
       "rows": 14342,
-      "cache_rows": 7887884,
+      "cache_rows": 7888202,
       "symbols": 2870,
       "failed": 17,
       "lookback": 0,
       "pack_sessions": 5,
       "warm": 2480,
       "cold": 407,
-      "new_symbols": 18,
+      "new_symbols": 17,
       "retries": 2,
-      "seconds": 293.8
+      "seconds": 296.1
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.7
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.3
+      "seconds": 1.2
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.2
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.6
+      "seconds": 4.9
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 4.7
+      "seconds": 5.3
     },
     {
       "agent": "stock_options",
@@ -79,37 +79,37 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2277,
-      "seconds": 4.5
+      "seconds": 5.1
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.0
+      "seconds": 3.4
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 5.1
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.6
+      "seconds": 3.3
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3158,
-      "seconds": 0.3
+      "seconds": 0.4
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3158,
-      "seconds": 0.7
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
@@ -142,13 +142,13 @@
       "with_structure": 2865,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.3
+      "seconds": 21.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3158,
-      "seconds": 2.8
+      "seconds": 3.4
     },
     {
       "agent": "swing_brief",
@@ -158,19 +158,16 @@
         "CRISIL"
       ],
       "watchlist": 10,
-      "open_positions": 19,
+      "open_positions": 18,
       "needing_action": [
         "LODHA",
         "SHRIPISTON",
-        "SJS",
         "SREEL",
         "TATACAP",
         "UNIPARTS",
         "UYFINCORP"
       ],
-      "closed_today": [
-        "SJS"
-      ],
+      "closed_today": [],
       "seconds": 0.4
     }
   ],

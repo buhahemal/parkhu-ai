@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-04
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-04T18:09:14.038223+05:30
+- **generated_at_ist:** 2026-09-04T22:10:46.147661+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Neutral**
 - nifty: Neutral (0.1%)
 - india_vix: 10.68 (Low)
-- fii_net: -2345.87 | dii_net: 4977.46
-- overall_risk: Low | global_risk: Risk-On
+- fii_net: -3111.94 | dii_net: 8930.12
+- overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
 
@@ -20,8 +20,8 @@
 - price > EMA50: 1071
 - ADX14 > 25: 642
 - RSI14 in 40-80: 599
-- RS > 0 vs NIFTY and sector: 382
-- delivery% >= 40: 221
+- RS > 0 vs NIFTY and sector: 376
+- delivery% >= 40: 219
 - relative_volume >= 1: 44
 - no earnings within 21d: 44
 - event_risk_score <= 1: 40
@@ -29,48 +29,48 @@
 
 ## Survivors (top 38 of 38)
 
-- **CRISIL** [idea] score 82.4 — selected as idea
-- **LINCOLN** [rejected] score 80.3 — T1 needs more than 22 trading days (~1 month)
+- **CRISIL** [idea] score 82.3 — selected as idea
+- **LINCOLN** [rejected] score 80.1 — T1 needs more than 22 trading days (~1 month)
 - **PLAZACABLE** [watchlist] score 79.3 — score in Watch band (70–80)
 - **LICHSGFIN** [watchlist] score 77.7 — score in Watch band (70–80)
 - **KRN** [watchlist] score 76.7 — score in Watch band (70–80)
 - **MODISONLTD** [watchlist] score 76.0 — score in Watch band (70–80)
-- **SAHYADRI** [watchlist] score 75.1 — score in Watch band (70–80)
+- **SAHYADRI** [watchlist] score 75.2 — score in Watch band (70–80)
 - **SEAMECLTD** [watchlist] score 74.9 — score in Watch band (70–80)
-- **VSSL** [watchlist] score 74.3 — score in Watch band (70–80)
+- **VSSL** [watchlist] score 74.2 — score in Watch band (70–80)
 - **ARTEMISMED** [watchlist] score 73.4 — score in Watch band (70–80)
 - **EDELWEISS** [watchlist] score 73.3 — score in Watch band (70–80)
 - **DOLPHIN** [watchlist] score 72.5 — score in Watch band (70–80)
-- **VGUARD** [rejected] score 70.9 — T1 needs more than 22 trading days (~1 month)
-- **SKYGOLD** [rejected] score 69.7 — score below Watch band
-- **RACLGEAR** [rejected] score 69.1 — score below Watch band
-- **LANCORHOL** [rejected] score 68.7 — score below Watch band
-- **GLAND** [rejected] score 68.0 — score below Watch band
-- **MEDANTA** [rejected] score 67.3 — score below Watch band
-- **AARTIPHARM** [rejected] score 67.1 — score below Watch band
-- **EMIL** [rejected] score 67.0 — score below Watch band
+- **VGUARD** [rejected] score 71.1 — T1 needs more than 22 trading days (~1 month)
+- **SKYGOLD** [rejected] score 69.5 — score below Watch band
+- **RACLGEAR** [rejected] score 69.0 — score below Watch band
+- **LANCORHOL** [rejected] score 68.6 — score below Watch band
+- **GLAND** [rejected] score 67.9 — score below Watch band
+- **CEMPRO** [rejected] score 67.3 — T1 needs more than 22 trading days (~1 month)
+- **EMIL** [rejected] score 67.1 — score below Watch band
+- **MEDANTA** [rejected] score 67.1 — score below Watch band
+- **AARTIPHARM** [rejected] score 67.0 — score below Watch band
 - **AMDIND** [rejected] score 66.4 — score below Watch band
 - **PNBHOUSING** [rejected] score 65.4 — score below Watch band
-- **PAYTM** [rejected] score 65.2 — score below Watch band
-- **PGIL** [rejected] score 64.6 — score below Watch band
-- **ARIHANTCAP** [rejected] score 63.6 — T1 needs more than 22 trading days (~1 month)
-- **AARTIDRUGS** [rejected] score 63.3 — T1 needs more than 22 trading days (~1 month)
-- **HNDFDS** [rejected] score 62.9 — score below Watch band
-- **PRUDENT** [rejected] score 61.2 — score below Watch band
-- **IRMENERGY** [rejected] score 60.7 — score below Watch band
-- **GFLLIMITED** [rejected] score 58.8 — T1 needs more than 22 trading days (~1 month)
-- **MMFL** [rejected] score 57.5 — score below Watch band
-- **UNIMECH** [rejected] score 53.5 — score below Watch band
-- **BLKASHYAP** [rejected] score 51.2 — T1 needs more than 22 trading days (~1 month)
-- **CINELINE** [rejected] score 49.6 — score below Watch band
-- **JINDALSTEL** [rejected] score 46.6 — T1 needs more than 22 trading days (~1 month)
-- **STEELXIND** [rejected] score 45.2 — T1 needs more than 22 trading days (~1 month)
-- **NDGL** [rejected] score 41.9 — score below Watch band
-- **ROSSTECH** [rejected] score 36.9 — score below Watch band
+- **PAYTM** [rejected] score 65.3 — score below Watch band
+- **PGIL** [rejected] score 65.0 — score below Watch band
+- **ARIHANTCAP** [rejected] score 63.8 — T1 needs more than 22 trading days (~1 month)
+- **HNDFDS** [rejected] score 63.2 — score below Watch band
+- **AARTIDRUGS** [rejected] score 63.1 — T1 needs more than 22 trading days (~1 month)
+- **IRMENERGY** [rejected] score 61.4 — score below Watch band
+- **PRUDENT** [rejected] score 61.3 — score below Watch band
+- **GFLLIMITED** [rejected] score 58.9 — T1 needs more than 22 trading days (~1 month)
+- **MMFL** [rejected] score 57.6 — score below Watch band
+- **UNIMECH** [rejected] score 53.6 — score below Watch band
+- **BLKASHYAP** [rejected] score 51.3 — T1 needs more than 22 trading days (~1 month)
+- **CINELINE** [rejected] score 50.1 — score below Watch band
+- **JINDALSTEL** [rejected] score 46.1 — T1 needs more than 22 trading days (~1 month)
+- **NDGL** [rejected] score 42.0 — score below Watch band
+- **ROSSTECH** [rejected] score 36.8 — score below Watch band
 
 ## Ideas
 
-### CRISIL — Buy (score 82.4)
+### CRISIL — Buy (score 82.3)
 - CRISIL Limited | risk_sector: Technology Services
 - entry 4802.0 | stop 4569.21 | t1 5267.57 | t2 5500.36 | t3 5733.15 | R:R 2.0
 - qty 2 | deployed 9604.0 (9.6%) | risk ₹466.0
@@ -100,7 +100,6 @@
 
 - **LODHA**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 - **SHRIPISTON**: TIGHTEN / REVIEW — ADX 20 — trend no longer tradeable — one condition gone, thesis thinning
-- **SJS**: EXIT — THESIS INVALIDATED — trend now Neutral; lost EMA50; RSI 38 below 40
 - **SREEL**: BANK PARTIAL — T1 REACHED — ₹265.52 above T1 ₹258.00 — bank part, trail the rest, move stop to breakeven ₹221.22
 - **TATACAP**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 - **UNIPARTS**: BANK PARTIAL — T1 REACHED — ₹874.05 above T1 ₹844.17 — bank part, trail the rest, move stop to breakeven ₹732.95
@@ -112,51 +111,51 @@
 
 ## Swing candidates (top)
 
-- AARTIDRUGS: score=14 rs_nifty=7.26 deliv=46.12
+- RACLGEAR: score=14 rs_nifty=19.9 deliv=43.33
 - MODISONLTD: score=14 rs_nifty=68.5 deliv=47.87
 - PNBHOUSING: score=14 rs_nifty=11.95 deliv=44.99
-- BLKASHYAP: score=14 rs_nifty=11.38 deliv=43.58
-- CRISIL: score=14 rs_nifty=13.23 deliv=80.86
-- RACLGEAR: score=14 rs_nifty=19.9 deliv=43.33
-- PRUDENT: score=14 rs_nifty=4.57 deliv=57.86
-- KRN: score=14 rs_nifty=32.54 deliv=48.12
-- LINCOLN: score=14 rs_nifty=6.64 deliv=62.42
 - MEDANTA: score=14 rs_nifty=5.43 deliv=50.9
-- AARTIPHARM: score=14 rs_nifty=27.01 deliv=52.68
+- LINCOLN: score=14 rs_nifty=6.64 deliv=62.42
 - MMP: score=14 rs_nifty=35.51 deliv=64.71
-- SKYGOLD: score=14 rs_nifty=17.16 deliv=45.14
+- CRISIL: score=14 rs_nifty=13.23 deliv=80.86
 - NDGL: score=14 rs_nifty=4.85 deliv=89.29
-- QUADFUTURE: score=13 rs_nifty=20.52 deliv=47.06
+- PRUDENT: score=14 rs_nifty=4.57 deliv=57.86
+- AARTIDRUGS: score=14 rs_nifty=7.26 deliv=46.12
+- SKYGOLD: score=14 rs_nifty=17.16 deliv=45.14
+- KRN: score=14 rs_nifty=32.54 deliv=48.12
+- AARTIPHARM: score=14 rs_nifty=27.01 deliv=52.68
+- BLKASHYAP: score=14 rs_nifty=11.38 deliv=43.58
+- SBCL: score=13 rs_nifty=46.36 deliv=39.86
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.26% (bull)
-- Hang Seng: +1.74% (bull)
-- Shanghai: -0.30% (bear)
-- Kospi: +1.64% (bull)
-- Taiwan: +1.51% (bull)
-- ASX 200: -0.16% (bear)
+- Nikkei: -0.17% (bear)
+- Hang Seng: -0.39% (bear)
+- Shanghai: +0.02% (neutral)
+- Kospi: +0.26% (bull)
+- Taiwan: -0.67% (bear)
+- ASX 200: +0.46% (bull)
 
 ### Europe
-- FTSE 100: -0.03% (neutral)
-- DAX: +0.37% (bull)
-- Euro Stoxx 50: +0.14% (neutral)
+- FTSE 100: +0.00% (neutral)
+- DAX: +0.17% (bull)
+- Euro Stoxx 50: +0.16% (bull)
 
 ### US
-- S&P 500: +1.06% (bull)
-- Nasdaq: +1.40% (bull)
-- Dow: +1.18% (bull)
-- US VIX: -0.56% (bull)
+- S&P 500: -0.31% (bear)
+- Nasdaq: -0.27% (bear)
+- Dow: -0.49% (bear)
+- US VIX: -2.03% (bull)
 
 ### Macro
-- USDINR: +0.00% (neutral)
-- Crude WTI: -1.03% (bear)
-- Brent: -0.81% (bear)
-- DXY: +0.04% (neutral)
-- US 10Y: -0.21% (neutral)
-- India ETF: -0.10% (neutral)
-- EM ETF: +0.48% (bull)
+- USDINR: -0.01% (neutral)
+- Crude WTI: -0.72% (bear)
+- Brent: -0.12% (neutral)
+- DXY: +0.10% (neutral)
+- US 10Y: +0.08% (neutral)
+- India ETF: +0.07% (neutral)
+- EM ETF: +1.61% (bull)
 
 
 ## Groq desk note
