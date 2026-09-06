@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-06
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-09-06T06:10:16.471741+05:30
+- **generated_at_ist:** 2026-09-06T18:08:14.069932+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -106,21 +106,21 @@
 
 ## Swing candidates (top)
 
-- MMP: score=14 rs_nifty=35.51 deliv=64.71
-- LINCOLN: score=14 rs_nifty=6.64 deliv=62.42
-- BLKASHYAP: score=14 rs_nifty=11.38 deliv=43.58
-- SKYGOLD: score=14 rs_nifty=17.16 deliv=45.14
-- AARTIPHARM: score=14 rs_nifty=27.01 deliv=52.68
 - CRISIL: score=14 rs_nifty=13.23 deliv=80.86
-- MODISONLTD: score=14 rs_nifty=68.5 deliv=47.87
-- MEDANTA: score=14 rs_nifty=5.43 deliv=50.9
-- RACLGEAR: score=14 rs_nifty=19.9 deliv=43.33
-- PNBHOUSING: score=14 rs_nifty=11.95 deliv=44.99
-- KRN: score=14 rs_nifty=32.54 deliv=48.12
 - AARTIDRUGS: score=14 rs_nifty=7.26 deliv=46.12
+- RACLGEAR: score=14 rs_nifty=19.9 deliv=43.33
+- MODISONLTD: score=14 rs_nifty=68.5 deliv=47.87
+- SKYGOLD: score=14 rs_nifty=17.16 deliv=45.14
+- LINCOLN: score=14 rs_nifty=6.64 deliv=62.42
+- PNBHOUSING: score=14 rs_nifty=11.95 deliv=44.99
+- BLKASHYAP: score=14 rs_nifty=11.38 deliv=43.58
+- MMP: score=14 rs_nifty=35.51 deliv=64.71
+- MEDANTA: score=14 rs_nifty=5.43 deliv=50.9
+- KRN: score=14 rs_nifty=32.54 deliv=48.12
+- AARTIPHARM: score=14 rs_nifty=27.01 deliv=52.68
+- NOVARTIND: score=13 rs_nifty=4.52 deliv=74.1
+- PARACABLES: score=13 rs_nifty=3.21 deliv=45.65
 - VADILALIND: score=13 rs_nifty=8.01 deliv=46.77
-- STEL: score=13 rs_nifty=10.89 deliv=79.33
-- NDGL: score=13 rs_nifty=4.85 deliv=89.29
 
 ## World markets (India cues)
 
