@@ -25,24 +25,24 @@
     "best_sector_perf_1m": 50.77,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -5.53,
-    "fii_net": -3111.94,
-    "dii_net": 8930.12,
+    "fii_net": 280.13,
+    "dii_net": 566.76,
     "crude": 91.48,
     "crude_pct_change": 0.0,
-    "usdinr": 94.49,
-    "usdinr_pct_change": -0.01,
+    "usdinr": 94.47,
+    "usdinr_pct_change": -0.02,
     "us_sp500_pct": -0.38,
     "us_dow_pct": -0.51,
-    "us_vix": 15.27,
-    "us_vix_pct": 5.09,
-    "dxy": 98.93,
-    "dxy_pct": -0.24,
+    "us_vix": 15.3,
+    "us_vix_pct": 5.3,
+    "dxy": 98.9,
+    "dxy_pct": -0.26,
     "us_10y": 4.78,
     "asia_cue": "Bullish",
     "europe_cue": "Mixed",
     "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-09-07T18:09:25.190267+05:30"
+    "generated_at_ist": "2026-09-07T23:27:48.540051+05:30"
   },
   "funnel": [
     {
@@ -2251,6 +2251,26 @@
         "score_now": null
       },
       {
+        "symbol": "ALMONDZ",
+        "date_opened": "2026-09-07",
+        "status": "open",
+        "entry": 19.2,
+        "stop": 17.66,
+        "t1": 22.27,
+        "price": 19.2,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 10,
+        "mfe_pct": 3.13,
+        "mae_pct": -6.77,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~10d left to the T1 horizon",
+        "score_at_open": 81.6,
+        "score_now": null
+      },
+      {
         "symbol": "CRISIL",
         "date_opened": "2026-08-28",
         "status": "open",
@@ -2331,6 +2351,26 @@
         "score_now": null
       },
       {
+        "symbol": "KOVAI",
+        "date_opened": "2026-09-07",
+        "status": "open",
+        "entry": 6069.0,
+        "stop": 5893.63,
+        "t1": 6419.74,
+        "price": 6069.0,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 6,
+        "mfe_pct": 0.92,
+        "mae_pct": -1.13,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~6d left to the T1 horizon",
+        "score_at_open": 82.1,
+        "score_now": null
+      },
+      {
         "symbol": "KTKBANK",
         "date_opened": "2026-08-06",
         "status": "open",
@@ -2368,6 +2408,26 @@
         "action": "HOLD",
         "detail": "+0.46% (+0.06R), 3d held, ~13d left to the T1 horizon",
         "score_at_open": 80.1,
+        "score_now": null
+      },
+      {
+        "symbol": "PLAZACABLE",
+        "date_opened": "2026-09-07",
+        "status": "open",
+        "entry": 59.05,
+        "stop": 54.33,
+        "t1": 68.5,
+        "price": 59.05,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 10,
+        "mfe_pct": 3.64,
+        "mae_pct": -1.02,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~10d left to the T1 horizon",
+        "score_at_open": 81.3,
         "score_now": null
       },
       {
@@ -2489,12 +2549,12 @@
     }
   },
   "ledger": {
-    "opened": [
+    "opened": [],
+    "reconfirmed": [
       "KOVAI",
       "ALMONDZ",
       "PLAZACABLE"
-    ],
-    "reconfirmed": []
+    ]
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",
