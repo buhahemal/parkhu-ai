@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-09
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-09T18:11:56.604607+05:30
+- **generated_at_ist:** 2026-09-09T22:28:34.781150+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,7 +9,7 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.86%)
 - india_vix: 11.92 (Low)
-- fii_net: -123.19 | dii_net: 1349.64
+- fii_net: -582.99 | dii_net: 1509.04
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
@@ -24,10 +24,10 @@
 - delivery% >= 40: 228
 - relative_volume >= 1: 58
 - no earnings within 21d: 58
-- event_risk_score <= 1: 58
-- TV rating not Sell: 55
+- event_risk_score <= 1: 57
+- TV rating not Sell: 54
 
-## Survivors (top 50 of 55)
+## Survivors (top 50 of 54)
 
 - **KENNAMET** [idea] score 87.5 — selected as idea
 - **KOVAI** [idea] score 82.4 — selected as idea
@@ -63,7 +63,6 @@
 - **NEULANDLAB** [rejected] score 59.5 — score below Watch band
 - **NPST** [rejected] score 59.3 — T1 needs more than 22 trading days (~1 month)
 - **POLICYBZR** [rejected] score 59.2 — score below Watch band
-- **COFORGE** [rejected] score 59.0 — score below Watch band
 - **BHEL** [rejected] score 58.7 — score below Watch band
 - **IIFLCAPS** [rejected] score 58.0 — T1 needs more than 22 trading days (~1 month)
 - **SETL** [rejected] score 56.6 — score below Watch band
@@ -79,6 +78,7 @@
 - **BATLIBOI** [rejected] score 49.1 — score below Watch band
 - **ATLASCYCLE** [rejected] score 47.8 — T1 needs more than 22 trading days (~1 month)
 - **SUVEN** [rejected] score 43.1 — score below Watch band
+- **TGBHOTELS** [rejected] score 40.9 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -108,12 +108,10 @@
 - **ALMONDZ** status=open entry=19.2 last=19.0 mfe=4.17 mae=-6.77 opened=2026-09-07
 - **KOVAI** status=open entry=6069.0 last=6149.5 mfe=1.96 mae=-1.63 opened=2026-09-07
 - **PLAZACABLE** status=open entry=59.05 last=59.68 mfe=3.64 mae=-5.83 opened=2026-09-07
-- **KENNAMET** status=open entry=4746.7 last=4746.7 mfe=0.0 mae=0.0 opened=2026-09-09
+- **KENNAMET** status=open entry=4746.7 last=4746.7 mfe=2.81 mae=-4.25 opened=2026-09-09
 
 ## Needs action
 
-- **BIRLACABLE**: EXIT — STOP HIT — session low at/below stop ₹328.30 (last ₹356.85)
-- **LODHA**: EXIT — STOP HIT — session low at/below stop ₹1,164.16 (last ₹1,166.00)
 - **UNIPARTS**: BANK PARTIAL — T1 REACHED — ₹894.05 above T1 ₹844.17 — bank part, trail the rest, move stop to breakeven ₹732.95
 
 ## Closed today
@@ -124,51 +122,51 @@
 
 ## Swing candidates (top)
 
-- MATRIMONY: score=14 rs_nifty=11.7 deliv=72.7
-- SIEMENS: score=14 rs_nifty=4.48 deliv=52.37
-- AHCL: score=14 rs_nifty=13.51 deliv=44.13
-- TEXINFRA: score=14 rs_nifty=6.69 deliv=70.98
+- NPST: score=14 rs_nifty=14.95 deliv=44.83
+- IIFLCAPS: score=14 rs_nifty=5.31 deliv=72.71
 - LAL: score=14 rs_nifty=5.47 deliv=63.57
-- OIL: score=14 rs_nifty=15.13 deliv=41.79
+- SKYGOLD: score=14 rs_nifty=11.63 deliv=40.31
 - UTLSOLAR: score=14 rs_nifty=20.02 deliv=49.86
-- PAYTM: score=14 rs_nifty=25.46 deliv=44.33
-- GALAXYSURF: score=14 rs_nifty=13.94 deliv=52.44
-- RBA: score=14 rs_nifty=9.98 deliv=41.3
+- AKUMS: score=14 rs_nifty=8.62 deliv=51.35
+- VIDHIING: score=14 rs_nifty=14.72 deliv=64.02
+- TTKHLTCARE: score=14 rs_nifty=13.38 deliv=40.05
+- ATLASCYCLE: score=14 rs_nifty=11.04 deliv=47.84
 - RVTH: score=14 rs_nifty=15.76 deliv=72.15
-- ORIENTCER: score=14 rs_nifty=13.24 deliv=54.67
-- FEDFINA: score=14 rs_nifty=8.88 deliv=53.03
 - MEDANTA: score=14 rs_nifty=5.72 deliv=58.33
-- SMARTWORKS: score=14 rs_nifty=16.74 deliv=57.35
+- FEDFINA: score=14 rs_nifty=8.88 deliv=53.03
+- ORIENTCER: score=14 rs_nifty=13.24 deliv=54.67
+- TEXINFRA: score=14 rs_nifty=6.69 deliv=70.98
+- IDFCFIRSTB: score=14 rs_nifty=6.22 deliv=61.8
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.19% (bear)
-- Hang Seng: -0.17% (bear)
-- Shanghai: +0.28% (bull)
-- Kospi: +1.40% (bull)
-- Taiwan: +0.16% (bull)
-- ASX 200: -0.11% (neutral)
+- Nikkei: -1.70% (bear)
+- Hang Seng: -0.38% (bear)
+- Shanghai: +0.20% (bull)
+- Kospi: -0.58% (bear)
+- Taiwan: -0.47% (bear)
+- ASX 200: -1.00% (bear)
 
 ### Europe
-- FTSE 100: -1.10% (bear)
-- DAX: -1.69% (bear)
-- Euro Stoxx 50: -1.98% (bear)
+- FTSE 100: -1.31% (bear)
+- DAX: -1.66% (bear)
+- Euro Stoxx 50: -1.58% (bear)
 
 ### US
-- S&P 500: -0.58% (bear)
-- Nasdaq: -0.32% (bear)
-- Dow: -1.18% (bear)
-- US VIX: +5.03% (bear)
+- S&P 500: -0.42% (bear)
+- Nasdaq: -0.59% (bear)
+- Dow: -0.60% (bear)
+- US VIX: +3.94% (bear)
 
 ### Macro
 - USDINR: +0.64% (bear)
-- Crude WTI: +3.06% (bull)
-- Brent: +2.99% (bull)
-- DXY: -0.17% (neutral)
-- US 10Y: +0.04% (neutral)
-- India ETF: -1.64% (bear)
-- EM ETF: +0.19% (bull)
+- Crude WTI: +2.84% (bull)
+- Brent: +2.69% (bull)
+- DXY: -0.10% (neutral)
+- US 10Y: +0.73% (bear)
+- India ETF: -0.74% (bear)
+- EM ETF: -0.36% (bear)
 
 
 ## Groq desk note

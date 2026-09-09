@@ -25,24 +25,24 @@
     "best_sector_perf_1m": 55.62,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -4.77,
-    "fii_net": -123.19,
-    "dii_net": 1349.64,
-    "crude": 95.88,
-    "crude_pct_change": 3.06,
+    "fii_net": -582.99,
+    "dii_net": 1509.04,
+    "crude": 95.67,
+    "crude_pct_change": 2.84,
     "usdinr": 95.1,
     "usdinr_pct_change": 0.64,
-    "us_sp500_pct": -0.58,
-    "us_dow_pct": -1.18,
-    "us_vix": 16.51,
-    "us_vix_pct": 5.03,
-    "dxy": 98.67,
-    "dxy_pct": -0.17,
-    "us_10y": 4.81,
-    "asia_cue": "Bullish",
+    "us_sp500_pct": -0.42,
+    "us_dow_pct": -0.6,
+    "us_vix": 16.34,
+    "us_vix_pct": 3.94,
+    "dxy": 98.75,
+    "dxy_pct": -0.1,
+    "us_10y": 4.84,
+    "asia_cue": "Bearish",
     "europe_cue": "Bearish",
     "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-09-09T18:11:32.882274+05:30"
+    "generated_at_ist": "2026-09-09T22:28:08.475071+05:30"
   },
   "funnel": [
     {
@@ -1006,8 +1006,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 58,
-      "dropped_count": 0,
+      "surviving": 57,
+      "dropped_count": 1,
       "survivor_symbols": [
         "KENNAMET",
         "KOVAI",
@@ -1044,7 +1044,6 @@
         "NEULANDLAB",
         "NPST",
         "POLICYBZR",
-        "COFORGE",
         "BHEL",
         "IIFLCAPS",
         "LMW",
@@ -1058,15 +1057,18 @@
         "YUKEN",
         "ETHOSLTD",
         "SIEMENS",
-        "BATLIBOI"
+        "BATLIBOI",
+        "ATLASCYCLE"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "COFORGE"
+      ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 55,
+      "surviving": 54,
       "dropped_count": 3,
       "survivor_symbols": [
         "KENNAMET",
@@ -1103,7 +1105,6 @@
         "NEULANDLAB",
         "NPST",
         "POLICYBZR",
-        "COFORGE",
         "BHEL",
         "IIFLCAPS",
         "SETL",
@@ -1118,7 +1119,8 @@
         "SIEMENS",
         "BATLIBOI",
         "ATLASCYCLE",
-        "SUVEN"
+        "SUVEN",
+        "TGBHOTELS"
       ],
       "dropped_symbols": [
         "IIFL",
@@ -1192,7 +1194,7 @@
         "revenue_growth": 29.07552973342447,
         "profit_growth": 90.4472543198274,
         "composite_factor_rank": 90.0,
-        "risk_score": 60,
+        "risk_score": 70,
         "in_oi_spurt": null,
         "oi_change_pct": null,
         "tech_rating": "Strong buy",
@@ -1500,10 +1502,6 @@
     {
       "symbol": "POLICYBZR",
       "score": 59.2
-    },
-    {
-      "symbol": "COFORGE",
-      "score": 59.0
     },
     {
       "symbol": "BHEL",
@@ -1875,15 +1873,6 @@
       "reason": "score below Watch band"
     },
     {
-      "symbol": "COFORGE",
-      "score": 59.0,
-      "band": "Ignore",
-      "cmp": 1845.0,
-      "risk_sector": "Technology Services",
-      "status": "rejected",
-      "reason": "score below Watch band"
-    },
-    {
       "symbol": "BHEL",
       "score": 58.7,
       "band": "Ignore",
@@ -2017,9 +2006,18 @@
       "risk_sector": "Health Technology",
       "status": "rejected",
       "reason": "score below Watch band"
+    },
+    {
+      "symbol": "TGBHOTELS",
+      "score": 40.9,
+      "band": "Ignore",
+      "cmp": 9.82,
+      "risk_sector": "Consumer Services",
+      "status": "rejected",
+      "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 55,
+  "survivor_outcomes_total": 54,
   "survivor_outcomes_truncated": true,
   "scoring": {
     "live_weights": {
@@ -2062,46 +2060,6 @@
   ],
   "review": {
     "reviewed": [
-      {
-        "symbol": "BIRLACABLE",
-        "date_opened": "2026-09-09",
-        "status": "open",
-        "entry": 356.85,
-        "stop": 328.3,
-        "t1": 413.95,
-        "price": 356.85,
-        "pct": 0.0,
-        "r_multiple": 0.0,
-        "days_held": 0,
-        "horizon_t1": 11,
-        "mfe_pct": 0.0,
-        "mae_pct": -8.65,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b9328.30 (last \u20b9356.85)",
-        "score_at_open": 81.3,
-        "score_now": null
-      },
-      {
-        "symbol": "LODHA",
-        "date_opened": "2026-08-21",
-        "status": "open",
-        "entry": 1242.0,
-        "stop": 1164.16,
-        "t1": 1397.69,
-        "price": 1166.0,
-        "pct": -6.12,
-        "r_multiple": -0.98,
-        "days_held": 13,
-        "horizon_t1": 16,
-        "mfe_pct": 5.23,
-        "mae_pct": -6.52,
-        "gap_flag": false,
-        "action": "EXIT \u2014 STOP HIT",
-        "detail": "session low at/below stop \u20b91,164.16 (last \u20b91,166.00)",
-        "score_at_open": 81.7,
-        "score_now": null
-      },
       {
         "symbol": "UNIPARTS",
         "date_opened": "2026-08-05",
@@ -2220,6 +2178,26 @@
         "action": "HOLD",
         "detail": "-2.69% (-0.56R), 4d held, ~12d left to the T1 horizon",
         "score_at_open": 87.1,
+        "score_now": null
+      },
+      {
+        "symbol": "KENNAMET",
+        "date_opened": "2026-09-09",
+        "status": "open",
+        "entry": 4746.7,
+        "stop": 4366.96,
+        "t1": 5506.17,
+        "price": 4746.7,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 13,
+        "mfe_pct": 2.81,
+        "mae_pct": -4.25,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~13d left to the T1 horizon",
+        "score_at_open": 87.5,
         "score_now": null
       },
       {
@@ -2383,10 +2361,7 @@
         "score_now": null
       }
     ],
-    "closed_today": [
-      "LODHA",
-      "BIRLACABLE"
-    ],
+    "closed_today": [],
     "stats": {
       "closed": 41,
       "win_rate_pct": 22.0,
@@ -2404,10 +2379,9 @@
     }
   },
   "ledger": {
-    "opened": [
-      "KENNAMET"
-    ],
+    "opened": [],
     "reconfirmed": [
+      "KENNAMET",
       "KOVAI"
     ]
   },

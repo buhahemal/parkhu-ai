@@ -963,8 +963,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 58,
-      "dropped_count": 0,
+      "surviving": 57,
+      "dropped_count": 1,
       "survivor_symbols": [
         "KENNAMET",
         "KOVAI",
@@ -1001,7 +1001,6 @@
         "NEULANDLAB",
         "NPST",
         "POLICYBZR",
-        "COFORGE",
         "BHEL",
         "IIFLCAPS",
         "LMW",
@@ -1015,15 +1014,18 @@
         "YUKEN",
         "ETHOSLTD",
         "SIEMENS",
-        "BATLIBOI"
+        "BATLIBOI",
+        "ATLASCYCLE"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "COFORGE"
+      ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 55,
+      "surviving": 54,
       "dropped_count": 3,
       "survivor_symbols": [
         "KENNAMET",
@@ -1060,7 +1062,6 @@
         "NEULANDLAB",
         "NPST",
         "POLICYBZR",
-        "COFORGE",
         "BHEL",
         "IIFLCAPS",
         "SETL",
@@ -1075,7 +1076,8 @@
         "SIEMENS",
         "BATLIBOI",
         "ATLASCYCLE",
-        "SUVEN"
+        "SUVEN",
+        "TGBHOTELS"
       ],
       "dropped_symbols": [
         "IIFL",
@@ -1394,15 +1396,6 @@
       "reason": "score below Watch band"
     },
     {
-      "symbol": "COFORGE",
-      "score": 59.0,
-      "band": "Ignore",
-      "cmp": 1845.0,
-      "risk_sector": "Technology Services",
-      "status": "rejected",
-      "reason": "score below Watch band"
-    },
-    {
       "symbol": "BHEL",
       "score": 58.7,
       "band": "Ignore",
@@ -1536,8 +1529,17 @@
       "risk_sector": "Health Technology",
       "status": "rejected",
       "reason": "score below Watch band"
+    },
+    {
+      "symbol": "TGBHOTELS",
+      "score": 40.9,
+      "band": "Ignore",
+      "cmp": 9.82,
+      "risk_sector": "Consumer Services",
+      "status": "rejected",
+      "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 55,
+  "survivor_outcomes_total": 54,
   "survivor_outcomes_truncated": true
 }
