@@ -1,117 +1,96 @@
 # Parkhu research pack — 2026-09-10
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-10T06:09:19.168391+05:30
+- **generated_at_ist:** 2026-09-10T10:42:44.180486+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.61%)
-- india_vix: 11.23 (Low)
+- market_regime: **Neutral**
+- nifty: Neutral (0.03%)
+- india_vix: 11.8 (Low)
 - fii_net: -582.99 | dii_net: 1509.04
-- overall_risk: Medium | global_risk: Risk-Off
+- overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3160
-- trend = Bullish: 1292
+- universe: 3156
+- trend = Bullish: 1291
 - price > SMA200: 1069
-- price > EMA50: 1052
-- ADX14 > 25: 656
-- RSI14 in 40-80: 622
-- RS > 0 vs NIFTY and sector: 392
-- delivery% >= 40: 214
-- relative_volume >= 1: 51
-- no earnings within 21d: 51
-- event_risk_score <= 1: 51
-- TV rating not Sell: 49
+- price > EMA50: 1056
+- ADX14 > 25: 663
+- RSI14 in 40-80: 631
+- RS > 0 vs NIFTY and sector: 411
+- delivery% >= 40: 227
+- relative_volume >= 1: 16
+- no earnings within 21d: 16
+- event_risk_score <= 1: 15
+- TV rating not Sell: 15
 
-## Survivors (top 49 of 49)
+## Survivors (top 15 of 15)
 
-- **KENNAMET** [idea] score 87.5 — selected as idea
-- **KOVAI** [idea] score 82.4 — selected as idea
-- **RVTH** [rejected] score 78.0 — T1 needs more than 22 trading days (~1 month)
-- **TIIL** [watchlist] score 77.8 — score in Watch band (70–80)
-- **OIL** [watchlist] score 76.8 — score in Watch band (70–80)
-- **ORIENTCER** [watchlist] score 76.6 — score in Watch band (70–80)
-- **AVTNPL** [watchlist] score 76.4 — score in Watch band (70–80)
-- **FEDFINA** [watchlist] score 76.4 — score in Watch band (70–80)
-- **ARTEMISMED** [watchlist] score 76.2 — score in Watch band (70–80)
-- **SEAMECLTD** [watchlist] score 75.1 — score in Watch band (70–80)
-- **IDFCFIRSTB** [watchlist] score 74.9 — score in Watch band (70–80)
-- **VIDHIING** [watchlist] score 72.7 — score in Watch band (70–80)
-- **TTKHLTCARE** [rejected] score 69.7 — score below Watch band
-- **MATRIMONY** [rejected] score 69.3 — score below Watch band
-- **SKYGOLD** [rejected] score 68.6 — score below Watch band
-- **AMDIND** [rejected] score 68.2 — score below Watch band
-- **ANANDRATHI** [rejected] score 67.8 — score below Watch band
-- **ANUHPHR** [rejected] score 67.6 — score below Watch band
-- **EMIL** [rejected] score 67.3 — score below Watch band
-- **GLAND** [rejected] score 67.2 — score below Watch band
-- **KROSS** [rejected] score 66.5 — score below Watch band
-- **PAYTM** [rejected] score 66.5 — score below Watch band
-- **GALAXYSURF** [rejected] score 66.4 — score below Watch band
-- **AARTIPHARM** [rejected] score 64.9 — score below Watch band
-- **TEXMOPIPES** [rejected] score 64.8 — score below Watch band
-- **LAL** [rejected] score 64.3 — score below Watch band
-- **MCX** [rejected] score 62.8 — score below Watch band
-- **SANSERA** [rejected] score 60.0 — score below Watch band
-- **TEXINFRA** [rejected] score 59.7 — score below Watch band
-- **NPST** [rejected] score 59.2 — T1 needs more than 22 trading days (~1 month)
-- **POLICYBZR** [rejected] score 59.1 — score below Watch band
-- **EMKAY** [rejected] score 59.0 — score below Watch band
-- **COFORGE** [rejected] score 58.9 — score below Watch band
-- **BHEL** [rejected] score 58.6 — score below Watch band
-- **SETL** [rejected] score 56.6 — score below Watch band
-- **AKUMS** [rejected] score 55.9 — score below Watch band
-- **RBA** [rejected] score 55.5 — score below Watch band
-- **KAMATHOTEL** [rejected] score 52.8 — T1 needs more than 22 trading days (~1 month)
-- **ZIMLAB** [rejected] score 52.6 — score below Watch band
-- **AHCL** [rejected] score 52.3 — score below Watch band
-- **COALINDIA** [rejected] score 52.3 — T1 needs more than 22 trading days (~1 month)
-- **YUKEN** [rejected] score 51.4 — score below Watch band
-- **SIEMENS** [rejected] score 50.4 — score below Watch band
-- **ATLASCYCLE** [rejected] score 48.2 — T1 needs more than 22 trading days (~1 month)
-- **SUVEN** [rejected] score 43.1 — score below Watch band
-- **TGBHOTELS** [rejected] score 40.5 — T1 needs more than 22 trading days (~1 month)
-- **SAPPHIRE** [rejected] score 39.5 — score below Watch band
-- **TI** [rejected] score 37.7 — score below Watch band
-- **UTLSOLAR** [rejected] score 34.2 — score below Watch band
+- **CASTROLIND** [rejected] score 87.3 — T1 needs more than 22 trading days (~1 month)
+- **VSSL** [watchlist] score 72.7 — score in Watch band (70–80)
+- **GUJTHEM** [watchlist] score 72.3 — score in Watch band (70–80)
+- **KROSS** [rejected] score 68.9 — score below Watch band
+- **VARROC** [rejected] score 68.1 — score below Watch band
+- **GARFIBRES** [rejected] score 66.2 — score below Watch band
+- **MEDICAMEQ** [rejected] score 62.8 — T1 needs more than 22 trading days (~1 month)
+- **SUNDRMFAST** [rejected] score 62.6 — score below Watch band
+- **BOROLTD** [rejected] score 61.7 — T1 needs more than 22 trading days (~1 month)
+- **SOLARA** [rejected] score 59.8 — score below Watch band
+- **ROLEXRINGS** [rejected] score 54.3 — score below Watch band
+- **ZIMLAB** [rejected] score 52.8 — score below Watch band
+- **HLEGLAS** [rejected] score 50.2 — T1 needs more than 22 trading days (~1 month)
+- **SIGACHI** [rejected] score 42.8 — score below Watch band
+- **MAHAPEXLTD** [rejected] score 34.0 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### KENNAMET — Buy (score 87.5)
-- Kennametal India Limited | risk_sector: Producer Manufacturing
-- entry 4746.7 | stop 4366.96 | t1 5506.17 | t2 5885.91 | t3 6265.64 | R:R 2.0
-- qty 2 | deployed 9493.0 (9.49%) | risk ₹759.0
+### ZIMLAB — Watch (score 14.0)
+- ZIMLAB | risk_sector: Health Technology
+- entry 137.01 | stop 126.38 | t1 143.86 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### KOVAI — Buy (score 82.4)
-- Kovai Medical Center & Hospital Ltd. | risk_sector: Health Services
-- entry 6149.5 | stop 5899.68 | t1 6649.14 | t2 6898.97 | t3 7148.79 | R:R 2.0
-- qty 1 | deployed 6150.0 (6.15%) | risk ₹250.0
+### GUJTHEM — Watch (score 14.0)
+- GUJTHEM | risk_sector: Health Technology
+- entry 432.3 | stop 400.21 | t1 453.92 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### OIL — Watch (score 14.0)
+- OIL | risk_sector: Energy Minerals
+- entry 509.15 | stop 490.19 | t1 534.61 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### HLEGLAS — Watch (score 14.0)
+- HLEGLAS | risk_sector: Producer Manufacturing
+- entry 385.15 | stop 358.44 | t1 404.41 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### GARFIBRES — Watch (score 14.0)
+- GARFIBRES | risk_sector: Producer Manufacturing
+- entry 810.2 | stop 768.86 | t1 850.71 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIPARTS** status=partial entry=732.95 last=894.05 mfe=24.97 mae=0.0 opened=2026-08-05
-- **DIVGIITTS** status=partial entry=1076.4 last=1149.6 mfe=23.54 mae=0.0 opened=2026-08-12
-- **TMB** status=open entry=897.6 last=922.25 mfe=6.31 mae=-2.36 opened=2026-08-26
-- **CRISIL** status=open entry=4732.7 last=4690.6 mfe=2.94 mae=-2.74 opened=2026-08-28
-- **SIGMA** status=open entry=47.25 last=45.83 mfe=4.61 mae=-3.28 opened=2026-08-28
-- **MARKSANS** status=open entry=333.5 last=330.15 mfe=4.93 mae=-4.42 opened=2026-09-02
-- **IPCALAB** status=open entry=1956.1 last=1963.6 mfe=2.09 mae=-2.46 opened=2026-09-03
-- **KARURVYSYA** status=open entry=350.0 last=340.6 mfe=2.29 mae=-4.34 opened=2026-09-03
-- **QPOWER** status=open entry=1424.1 last=1513.2 mfe=10.25 mae=-2.28 opened=2026-09-03
-- **ALMONDZ** status=open entry=19.2 last=19.0 mfe=4.17 mae=-6.77 opened=2026-09-07
-- **KOVAI** status=open entry=6069.0 last=6149.5 mfe=1.96 mae=-1.63 opened=2026-09-07
-- **PLAZACABLE** status=open entry=59.05 last=59.68 mfe=3.64 mae=-5.83 opened=2026-09-07
-- **KENNAMET** status=open entry=4746.7 last=4746.7 mfe=2.81 mae=-4.25 opened=2026-09-09
+- **UNIPARTS** status=partial entry=732.95 last=901.1 mfe=24.97 mae=0.0 opened=2026-08-05
+- **DIVGIITTS** status=partial entry=1076.4 last=1147.0 mfe=23.54 mae=0.0 opened=2026-08-12
+- **TMB** status=open entry=897.6 last=925.0 mfe=6.31 mae=-2.36 opened=2026-08-26
+- **CRISIL** status=open entry=4732.7 last=4720.1 mfe=2.94 mae=-2.74 opened=2026-08-28
+- **SIGMA** status=open entry=47.25 last=45.46 mfe=4.61 mae=-6.33 opened=2026-08-28
+- **MARKSANS** status=open entry=333.5 last=330.1 mfe=4.93 mae=-4.42 opened=2026-09-02
+- **IPCALAB** status=open entry=1956.1 last=1976.4 mfe=2.09 mae=-2.46 opened=2026-09-03
+- **KARURVYSYA** status=open entry=350.0 last=339.05 mfe=2.29 mae=-4.34 opened=2026-09-03
+- **QPOWER** status=open entry=1424.1 last=1496.2 mfe=10.25 mae=-2.28 opened=2026-09-03
+- **ALMONDZ** status=open entry=19.2 last=19.62 mfe=4.17 mae=-6.77 opened=2026-09-07
+- **KOVAI** status=open entry=6069.0 last=6177.5 mfe=2.14 mae=-1.63 opened=2026-09-07
+- **PLAZACABLE** status=open entry=59.05 last=58.7 mfe=5.13 mae=-5.83 opened=2026-09-07
+- **KENNAMET** status=open entry=4746.7 last=4871.2 mfe=3.33 mae=-4.25 opened=2026-09-09
 
 ## Needs action
 
-- **SAHYADRI**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at +7.77% — capital has an opportunity cost
-- **SKYGOLD**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at +15.68% — capital has an opportunity cost
-- **UNIPARTS**: BANK PARTIAL — T1 REACHED — ₹894.05 above T1 ₹844.17 — bank part, trail the rest, move stop to breakeven ₹732.95
+- **UNIPARTS**: BANK MORE — T2 REACHED — ₹901.10 above T2 ₹899.78 — trail the remainder toward T3 ₹955.39
 
 ## Closed today
 
@@ -120,36 +99,36 @@
 
 ## Swing candidates (top)
 
-- AMDIND: score=14 rs_nifty=21.71 deliv=61.48
-- LAL: score=14 rs_nifty=5.08 deliv=63.57
-- TTKHLTCARE: score=14 rs_nifty=12.99 deliv=40.05
-- KROSS: score=14 rs_nifty=11.02 deliv=48.53
-- TIIL: score=14 rs_nifty=19.48 deliv=57.15
-- RVTH: score=14 rs_nifty=15.37 deliv=72.15
-- VIDHIING: score=14 rs_nifty=14.33 deliv=64.02
-- PAYTM: score=14 rs_nifty=25.07 deliv=44.33
-- IDFCFIRSTB: score=14 rs_nifty=5.83 deliv=61.8
-- FEDFINA: score=14 rs_nifty=8.49 deliv=53.03
-- ATLASCYCLE: score=14 rs_nifty=10.65 deliv=47.84
-- TEXINFRA: score=14 rs_nifty=6.3 deliv=70.98
-- MATRIMONY: score=14 rs_nifty=11.31 deliv=72.7
-- OIL: score=14 rs_nifty=14.74 deliv=41.79
-- ORIENTCER: score=14 rs_nifty=12.85 deliv=54.67
+- ZIMLAB: score=14 rs_nifty=24.93 deliv=63.18
+- GUJTHEM: score=14 rs_nifty=21.72 deliv=49.06
+- OIL: score=14 rs_nifty=13.76 deliv=41.79
+- HLEGLAS: score=14 rs_nifty=5.56 deliv=47.19
+- GARFIBRES: score=14 rs_nifty=5.76 deliv=58.95
+- CASTROLIND: score=14 rs_nifty=4.64 deliv=73.56
+- ROLEXRINGS: score=14 rs_nifty=15.77 deliv=51.2
+- GFLLIMITED: score=13 rs_nifty=21.67 deliv=53.93
+- JINDALSAW: score=13 rs_nifty=16.04 deliv=43.12
+- BRIGADE: score=13 rs_nifty=11.33 deliv=44.36
+- GIPCL: score=13 rs_nifty=25.73 deliv=59.09
+- RVTH: score=13 rs_nifty=9.44 deliv=72.15
+- MANGLMCEM: score=13 rs_nifty=19.83 deliv=44.17
+- SREEL: score=13 rs_nifty=73.23 deliv=63.77
+- ADROITINFO: score=13 rs_nifty=14.19 deliv=74.36
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.82% (bear)
-- Hang Seng: -0.38% (bear)
-- Shanghai: +0.20% (bull)
-- Kospi: +1.07% (bull)
-- Taiwan: -0.47% (bear)
-- ASX 200: -1.54% (bear)
+- Nikkei: -0.35% (bear)
+- Hang Seng: -1.29% (bear)
+- Shanghai: -0.35% (bear)
+- Kospi: -0.22% (bear)
+- Taiwan: -0.65% (bear)
+- ASX 200: -1.37% (bear)
 
 ### Europe
-- FTSE 100: -0.10% (neutral)
-- DAX: +0.00% (neutral)
-- Euro Stoxx 50: +0.14% (neutral)
+- FTSE 100: -1.31% (bear)
+- DAX: -1.66% (bear)
+- Euro Stoxx 50: -1.58% (bear)
 
 ### US
 - S&P 500: -0.48% (bear)
@@ -158,13 +137,13 @@
 - US VIX: +4.71% (bear)
 
 ### Macro
-- USDINR: +0.35% (neutral)
-- Crude WTI: +3.88% (bull)
-- Brent: +3.49% (bull)
-- DXY: -0.04% (neutral)
+- USDINR: +0.45% (bear)
+- Crude WTI: +0.10% (neutral)
+- Brent: -0.13% (neutral)
+- DXY: -0.02% (neutral)
 - US 10Y: +0.65% (bear)
-- India ETF: -1.64% (bear)
-- EM ETF: +0.19% (bull)
+- India ETF: -0.86% (bear)
+- EM ETF: -0.51% (bear)
 
 
 ## Groq desk note
