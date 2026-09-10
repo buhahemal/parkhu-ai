@@ -143,7 +143,6 @@
         "DHARIWAL",
         "NGLFINE",
         "INTLCONV",
-        "BSE",
         "CENTRALBK",
         "PGHL",
         "STYRENIX",
@@ -168,7 +167,8 @@
         "BAJAJHFL",
         "BAJFINANCE",
         "TANLA",
-        "MEGAFLEX"
+        "MEGAFLEX",
+        "NATIONALUM"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true

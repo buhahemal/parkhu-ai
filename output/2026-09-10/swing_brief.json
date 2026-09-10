@@ -25,24 +25,24 @@
     "best_sector_perf_1m": 58.86,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -5.01,
-    "fii_net": -582.99,
-    "dii_net": 1509.04,
-    "crude": 99.77,
-    "crude_pct_change": 3.87,
+    "fii_net": -438.24,
+    "dii_net": 1025.85,
+    "crude": 101.92,
+    "crude_pct_change": 6.11,
     "usdinr": 95.43,
     "usdinr_pct_change": 0.64,
-    "us_sp500_pct": -0.48,
-    "us_dow_pct": -0.77,
-    "us_vix": 17.07,
-    "us_vix_pct": 3.71,
+    "us_sp500_pct": -0.45,
+    "us_dow_pct": -0.55,
+    "us_vix": 17.68,
+    "us_vix_pct": 7.41,
     "dxy": 98.97,
-    "dxy_pct": 0.21,
-    "us_10y": 4.88,
-    "asia_cue": "Bearish",
+    "dxy_pct": 0.2,
+    "us_10y": 4.92,
+    "asia_cue": "Bullish",
     "europe_cue": "Bearish",
     "global_risk": "Risk-Off",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-09-10T18:09:49.222219+05:30"
+    "generated_at_ist": "2026-09-10T22:15:20.533444+05:30"
   },
   "funnel": [
     {
@@ -186,7 +186,6 @@
         "DHARIWAL",
         "NGLFINE",
         "INTLCONV",
-        "BSE",
         "CENTRALBK",
         "PGHL",
         "STYRENIX",
@@ -211,7 +210,8 @@
         "BAJAJHFL",
         "BAJFINANCE",
         "TANLA",
-        "MEGAFLEX"
+        "MEGAFLEX",
+        "NATIONALUM"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -1731,26 +1731,6 @@
   "review": {
     "reviewed": [
       {
-        "symbol": "SIGMA",
-        "date_opened": "2026-08-28",
-        "status": "open",
-        "entry": 47.25,
-        "stop": 44.22,
-        "t1": 53.98,
-        "price": 44.97,
-        "pct": -4.83,
-        "r_multiple": -0.75,
-        "days_held": 9,
-        "horizon_t1": 6,
-        "mfe_pct": 4.61,
-        "mae_pct": -6.33,
-        "gap_flag": false,
-        "action": "EXIT \u2014 THESIS INVALIDATED",
-        "detail": "trend now Neutral; lost EMA50",
-        "score_at_open": 80.1,
-        "score_now": null
-      },
-      {
         "symbol": "UNIPARTS",
         "date_opened": "2026-08-05",
         "status": "partial",
@@ -1991,9 +1971,7 @@
         "score_now": null
       }
     ],
-    "closed_today": [
-      "SIGMA"
-    ],
+    "closed_today": [],
     "stats": {
       "closed": 44,
       "win_rate_pct": 25.0,
