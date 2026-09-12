@@ -9,4 +9,4 @@ trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,struct
 2026-09-07-KOVAI,KOVAI,Kovai Medical Center & Hospital Ltd.,Health Services,2026-09-07,,6069.0,5893.63,6419.74,6595.11,6770.47,5968.44,6,13,82.1,1,175.0,open,6203.5,2026-09-12,6.18,-1.63,False,False,False,8,
 2026-09-07-ALMONDZ,ALMONDZ,Almondz Global Securities Limited,NBFC & Capital Markets,2026-09-07,,19.2,17.66,22.27,23.81,25.34,15.6,10,22,81.6,520,801.0,open,19.13,2026-09-12,4.17,-6.77,False,False,False,2,
 2026-09-07-PLAZACABLE,PLAZACABLE,Plaza Wires Limited,Producer Manufacturing,2026-09-07,,59.05,54.33,68.5,73.22,77.95,50.57,10,22,81.3,169,798.0,open,62.97,2026-09-12,7.54,-5.83,False,False,False,2,
-2026-09-09-KENNAMET,KENNAMET,Kennametal India Limited,Producer Manufacturing,2026-09-09,,4746.7,4366.96,5506.17,5885.91,6265.64,3699.7,13,22,87.5,2,759.0,open,4682.4,2026-09-12,8.2,-4.25,False,False,False,5,
+2026-09-09-KENNAMET,KENNAMET,Kennametal India Limited,Producer Manufacturing,2026-09-09,,4746.7,4366.96,5506.17,5885.91,6265.64,3699.7,13,22,87.5,2,759.0,open,4682.4,2026-09-12,8.2,-4.25,False,False,False,6,
