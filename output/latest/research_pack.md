@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-13
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-09-13T06:08:16.278007+05:30
+- **generated_at_ist:** 2026-09-13T18:09:02.744495+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -90,21 +90,21 @@
 
 ## Swing candidates (top)
 
-- EVEREADY: score=14 rs_nifty=6.63 deliv=42.31
-- KSL: score=14 rs_nifty=18.91 deliv=43.4
-- IVC: score=14 rs_nifty=13.85 deliv=80.03
-- ACE: score=14 rs_nifty=9.28 deliv=41.04
-- AKUMS: score=14 rs_nifty=6.11 deliv=49.15
-- QPOWER: score=14 rs_nifty=13.72 deliv=54.14
-- WENDT: score=14 rs_nifty=13.9 deliv=42.56
-- OIL: score=14 rs_nifty=7.88 deliv=36.27
-- TIIL: score=14 rs_nifty=26.74 deliv=45.59
 - SAMBHV: score=14 rs_nifty=14.26 deliv=41.41
 - TDPOWERSYS: score=14 rs_nifty=19.49 deliv=45.69
+- IVC: score=14 rs_nifty=13.85 deliv=80.03
+- OIL: score=14 rs_nifty=7.88 deliv=36.27
 - KENNAMET: score=14 rs_nifty=44.87 deliv=63.14
-- CASTROLIND: score=13 rs_nifty=4.91 deliv=65.31
-- JINDALSAW: score=13 rs_nifty=18.15 deliv=44.78
-- SHYAMMETL: score=13 rs_nifty=13.23 deliv=50.29
+- WENDT: score=14 rs_nifty=13.9 deliv=42.56
+- ACE: score=14 rs_nifty=9.28 deliv=41.04
+- TIIL: score=14 rs_nifty=26.74 deliv=45.59
+- QPOWER: score=14 rs_nifty=13.72 deliv=54.14
+- KSL: score=14 rs_nifty=18.91 deliv=43.4
+- EVEREADY: score=14 rs_nifty=6.63 deliv=42.31
+- AKUMS: score=14 rs_nifty=6.11 deliv=49.15
+- CINELINE: score=13 rs_nifty=11.22 deliv=72.74
+- EMIL: score=13 rs_nifty=5.91 deliv=47.52
+- SBCL: score=13 rs_nifty=6.64 deliv=55.17
 
 ## World markets (India cues)
 
@@ -128,7 +128,7 @@
 - US VIX: -11.21% (bull)
 
 ### Macro
-- USDINR: -0.16% (neutral)
+- USDINR: -0.15% (neutral)
 - Crude WTI: -2.37% (bear)
 - Brent: -2.81% (bear)
 - DXY: +0.03% (neutral)
