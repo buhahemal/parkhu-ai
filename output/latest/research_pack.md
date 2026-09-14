@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-14
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-14T06:08:58.617456+05:30
+- **generated_at_ist:** 2026-09-14T10:56:14.814114+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,10 +14,10 @@
 
 ## Funnel
 
-- universe: 3156
-- trend = Bullish: 1247
-- price > SMA200: 996
-- price > EMA50: 984
+- universe: 3154
+- trend = Bullish: 1248
+- price > SMA200: 997
+- price > EMA50: 985
 - ADX14 > 25: 648
 - RSI14 in 40-80: 615
 - RS > 0 vs NIFTY and sector: 385
@@ -30,16 +30,16 @@
 ## Survivors (top 33 of 33)
 
 - **KENNAMET** [idea] score 90.6 — selected as idea
-- **LICHSGFIN** [watchlist] score 79.0 — score in Watch band (70–80)
 - **PLAZACABLE** [watchlist] score 78.8 — score in Watch band (70–80)
 - **BIRLACABLE** [watchlist] score 78.4 — score in Watch band (70–80)
+- **LICHSGFIN** [watchlist] score 78.1 — score in Watch band (70–80)
 - **TDPOWERSYS** [watchlist] score 77.2 — score in Watch band (70–80)
 - **TIIL** [watchlist] score 77.0 — score in Watch band (70–80)
-- **STEELCITY** [watchlist] score 75.4 — score in Watch band (70–80)
 - **MANAKSIA** [watchlist] score 75.2 — score in Watch band (70–80)
-- **NRBBEARING** [watchlist] score 74.0 — score in Watch band (70–80)
+- **STEELCITY** [watchlist] score 74.5 — score in Watch band (70–80)
 - **EVEREADY** [rejected] score 73.6 — T1 needs more than 22 trading days (~1 month)
 - **QPOWER** [watchlist] score 73.6 — score in Watch band (70–80)
+- **NRBBEARING** [watchlist] score 72.6 — score in Watch band (70–80)
 - **ACE** [watchlist] score 71.1 — score in Watch band (70–80)
 - **DIVISLAB** [watchlist] score 70.1 — score in Watch band (70–80)
 - **KOTAKBANK** [rejected] score 68.6 — T1 needs more than 22 trading days (~1 month)
@@ -47,10 +47,10 @@
 - **MATRIMONY** [rejected] score 64.6 — score below Watch band
 - **NEULANDLAB** [rejected] score 64.6 — score below Watch band
 - **MEDICAMEQ** [rejected] score 63.6 — T1 needs more than 22 trading days (~1 month)
-- **SILINV** [rejected] score 63.0 — T1 needs more than 22 trading days (~1 month)
-- **ARIHANTCAP** [rejected] score 61.8 — T1 needs more than 22 trading days (~1 month)
+- **SILINV** [rejected] score 62.1 — T1 needs more than 22 trading days (~1 month)
+- **ARIHANTCAP** [rejected] score 60.9 — T1 needs more than 22 trading days (~1 month)
 - **WENDT** [rejected] score 60.4 — score below Watch band
-- **WONDERLA** [rejected] score 59.5 — score below Watch band
+- **WONDERLA** [rejected] score 60.1 — score below Watch band
 - **UNIMECH** [rejected] score 58.3 — score below Watch band
 - **BALPHARMA** [rejected] score 54.4 — score below Watch band
 - **RUBICON** [rejected] score 52.9 — score below Watch band
@@ -59,8 +59,8 @@
 - **SAMBHV** [rejected] score 51.5 — score below Watch band
 - **KSL** [rejected] score 50.0 — score below Watch band
 - **AAREYDRUGS** [rejected] score 44.8 — score below Watch band
-- **TGBHOTELS** [rejected] score 43.3 — T1 needs more than 22 trading days (~1 month)
-- **GILLANDERS** [rejected] score 40.9 — T1 needs more than 22 trading days (~1 month)
+- **TGBHOTELS** [rejected] score 43.9 — T1 needs more than 22 trading days (~1 month)
+- **GILLANDERS** [rejected] score 41.5 — T1 needs more than 22 trading days (~1 month)
 - **KAVDEFENCE** [rejected] score 37.9 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
@@ -85,7 +85,6 @@
 
 ## Needs action
 
-- **DIVGIITTS**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at +10.40% — capital has an opportunity cost
 - **UNIPARTS**: BANK PARTIAL — T1 REACHED — ₹897.45 above T1 ₹844.17 — bank part, trail the rest, move stop to breakeven ₹732.95
 
 ## Closed today
@@ -94,31 +93,31 @@
 
 ## Swing candidates (top)
 
-- EVEREADY: score=14 rs_nifty=6.63 deliv=42.31
-- KSL: score=14 rs_nifty=18.91 deliv=43.4
-- IVC: score=14 rs_nifty=13.85 deliv=80.03
-- ACE: score=14 rs_nifty=9.28 deliv=41.04
-- AKUMS: score=14 rs_nifty=6.11 deliv=49.15
-- QPOWER: score=14 rs_nifty=13.72 deliv=54.14
-- WENDT: score=14 rs_nifty=13.9 deliv=42.56
-- OIL: score=14 rs_nifty=7.88 deliv=36.27
-- TIIL: score=14 rs_nifty=26.74 deliv=45.59
 - SAMBHV: score=14 rs_nifty=14.26 deliv=41.41
+- KSL: score=14 rs_nifty=18.91 deliv=43.4
+- ACE: score=14 rs_nifty=9.28 deliv=41.04
+- IVC: score=14 rs_nifty=13.85 deliv=80.03
 - TDPOWERSYS: score=14 rs_nifty=19.49 deliv=45.69
+- OIL: score=14 rs_nifty=7.88 deliv=36.27
+- EVEREADY: score=14 rs_nifty=6.63 deliv=42.31
+- TIIL: score=14 rs_nifty=26.74 deliv=45.59
+- AKUMS: score=14 rs_nifty=6.11 deliv=49.15
+- WENDT: score=14 rs_nifty=13.9 deliv=42.56
 - KENNAMET: score=14 rs_nifty=44.87 deliv=63.14
-- CASTROLIND: score=13 rs_nifty=4.91 deliv=65.31
-- JINDALSAW: score=13 rs_nifty=18.15 deliv=44.78
-- SHYAMMETL: score=13 rs_nifty=13.23 deliv=50.29
+- QPOWER: score=14 rs_nifty=13.72 deliv=54.14
+- STEL: score=13 rs_nifty=16.63 deliv=65.4
+- KOPRAN: score=13 rs_nifty=40.55 deliv=42.9
+- GFLLIMITED: score=13 rs_nifty=23.5 deliv=50.63
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.73% (bear)
-- Hang Seng: -0.60% (bear)
-- Shanghai: -1.18% (bear)
-- Kospi: -1.76% (bear)
-- Taiwan: -1.61% (bear)
-- ASX 200: +0.08% (neutral)
+- Nikkei: -0.95% (bear)
+- Hang Seng: +0.22% (bull)
+- Shanghai: -0.06% (neutral)
+- Kospi: -2.82% (bear)
+- Taiwan: -0.41% (bear)
+- ASX 200: +0.05% (neutral)
 
 ### Europe
 - FTSE 100: +0.39% (bull)
@@ -133,9 +132,9 @@
 
 ### Macro
 - USDINR: -0.16% (neutral)
-- Crude WTI: +2.75% (bull)
-- Brent: +2.98% (bull)
-- DXY: +0.06% (neutral)
+- Crude WTI: +2.55% (bull)
+- Brent: +2.47% (bull)
+- DXY: +0.23% (neutral)
 - US 10Y: +0.63% (bear)
 - India ETF: +0.96% (bull)
 - EM ETF: +1.25% (bull)

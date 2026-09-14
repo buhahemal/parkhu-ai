@@ -12,13 +12,12 @@ Regime **Bearish**. Sector leader Industrial Services (61.34% 1m), laggard Utili
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (11)
+## Open suggestions (10)
 
-**2 need action today.**
+**1 need action today.**
 
 | Symbol | Opened | Entry | Now | P/L | R | Held | Action |
 |---|---|---|---|---|---|---|---|
-| DIVGIITTS | 2026-08-12 | ₹1,076 | ₹1,188 | 10.4% | 1.35R | 23/16d | EXIT — TIME STOP |
 | UNIPARTS | 2026-08-05 | ₹733 | ₹897 | 22.44% | 2.96R | 28/17d | BANK PARTIAL — T1 REACHED |
 | ALMONDZ | 2026-09-07 | ₹19 | ₹19 | -0.36% | -0.05R | 5/10d | HOLD |
 | CRISIL | 2026-08-28 | ₹4,733 | ₹4,698 | -0.74% | -0.16R | 11/16d | HOLD |
@@ -30,7 +29,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | QPOWER | 2026-09-03 | ₹1,424 | ₹1,426 | 0.17% | 0.02R | 7/14d | HOLD |
 | TMB | 2026-08-26 | ₹898 | ₹911 | 1.48% | 0.26R | 13/16d | HOLD |
 
-- **DIVGIITTS** — EXIT — TIME STOP: 23 trading days held, past the 22-day horizon and still at +10.40% — capital has an opportunity cost. Best 23.54% / worst 0% while held.
 - **UNIPARTS** — BANK PARTIAL — T1 REACHED: ₹897.45 above T1 ₹844.17 — bank part, trail the rest, move stop to breakeven ₹732.95. Best 24.97% / worst 0% while held.
 - **ALMONDZ** — HOLD: -0.36% (-0.05R), 5d held, ~5d left to the T1 horizon. Best 4.17% / worst -6.77% while held.
 - **CRISIL** — HOLD: -0.74% (-0.16R), 11d held, ~5d left to the T1 horizon. Best 2.94% / worst -2.74% while held.
@@ -41,8 +39,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **PLAZACABLE** — HOLD: +6.64% (+0.83R), 5d held, ~5d left to the T1 horizon. Best 7.54% / worst -5.83% while held.
 - **QPOWER** — HOLD: +0.17% (+0.02R), 7d held, ~7d left to the T1 horizon. Best 10.25% / worst -2.28% while held.
 - **TMB** — HOLD: +1.48% (+0.26R), 13d held, ~3d left to the T1 horizon. Best 6.31% / worst -2.36% while held.
-
-Closed today: DIVGIITTS — moved to `trades/closed.csv`.
 
 ### Measured so far
 
@@ -82,15 +78,15 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: KOTAKBANK (~32d), EVERE
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| LICHSGFIN | NBFC & Capital Markets | ₹563 | 79 | ₹563 | ₹533 | ₹622 | 10.46% |
 | PLAZACABLE | Producer Manufacturing | ₹63 | 78.8 | ₹63 | ₹58 | ₹73 | 16% |
 | BIRLACABLE | Producer Manufacturing | ₹392 | 78.4 | ₹392 | ₹361 | ₹455 | 16% |
+| LICHSGFIN | NBFC & Capital Markets | ₹563 | 78.1 | ₹563 | ₹533 | ₹622 | 10.46% |
 | TDPOWERSYS | Producer Manufacturing | ₹805 | 77.2 | ₹805 | ₹741 | ₹934 | 16% |
 | TIIL | Producer Manufacturing | ₹3,250 | 77 | ₹3,250 | ₹2,992 | ₹3,767 | 15.9% |
-| STEELCITY | NBFC & Capital Markets | ₹90 | 75.4 | ₹90 | ₹83 | ₹106 | 16.91% |
 | MANAKSIA | Non-Energy Minerals | ₹71 | 75.2 | ₹71 | ₹65 | ₹82 | 16% |
-| NRBBEARING | Producer Manufacturing | ₹515 | 74 | ₹515 | ₹475 | ₹593 | 15.29% |
+| STEELCITY | NBFC & Capital Markets | ₹90 | 74.5 | ₹90 | ₹83 | ₹106 | 16.91% |
 | QPOWER | Producer Manufacturing | ₹1,426 | 73.6 | ₹1,426 | ₹1,312 | ₹1,655 | 16% |
+| NRBBEARING | Producer Manufacturing | ₹515 | 72.6 | ₹515 | ₹475 | ₹593 | 15.29% |
 | ACE | Producer Manufacturing | ₹1,129 | 71.1 | ₹1,129 | ₹1,062 | ₹1,262 | 11.82% |
 | DIVISLAB | Health Technology | ₹9,322 | 70.1 | ₹9,322 | ₹8,924 | ₹10,119 | 8.55% |
 
