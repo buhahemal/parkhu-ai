@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-14
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-14T10:56:14.814114+05:30
+- **generated_at_ist:** 2026-09-14T18:09:04.553103+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Bearish (-0.34%)
 - india_vix: 12.29 (Low)
 - fii_net: -930.9 | dii_net: 1968.17
-- overall_risk: Medium | global_risk: Risk-On
+- overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
@@ -93,49 +93,49 @@
 
 ## Swing candidates (top)
 
-- SAMBHV: score=14 rs_nifty=14.26 deliv=41.41
-- KSL: score=14 rs_nifty=18.91 deliv=43.4
-- ACE: score=14 rs_nifty=9.28 deliv=41.04
-- IVC: score=14 rs_nifty=13.85 deliv=80.03
-- TDPOWERSYS: score=14 rs_nifty=19.49 deliv=45.69
-- OIL: score=14 rs_nifty=7.88 deliv=36.27
-- EVEREADY: score=14 rs_nifty=6.63 deliv=42.31
-- TIIL: score=14 rs_nifty=26.74 deliv=45.59
-- AKUMS: score=14 rs_nifty=6.11 deliv=49.15
-- WENDT: score=14 rs_nifty=13.9 deliv=42.56
 - KENNAMET: score=14 rs_nifty=44.87 deliv=63.14
+- SAMBHV: score=14 rs_nifty=14.26 deliv=41.41
+- TDPOWERSYS: score=14 rs_nifty=19.49 deliv=45.69
+- ACE: score=14 rs_nifty=9.28 deliv=41.04
+- EVEREADY: score=14 rs_nifty=6.63 deliv=42.31
+- WENDT: score=14 rs_nifty=13.9 deliv=42.56
+- IVC: score=14 rs_nifty=13.85 deliv=80.03
 - QPOWER: score=14 rs_nifty=13.72 deliv=54.14
-- STEL: score=13 rs_nifty=16.63 deliv=65.4
-- KOPRAN: score=13 rs_nifty=40.55 deliv=42.9
-- GFLLIMITED: score=13 rs_nifty=23.5 deliv=50.63
+- OIL: score=14 rs_nifty=7.88 deliv=36.27
+- TIIL: score=14 rs_nifty=26.74 deliv=45.59
+- KSL: score=14 rs_nifty=18.91 deliv=43.4
+- AKUMS: score=14 rs_nifty=6.11 deliv=49.15
+- BALPHARMA: score=13 rs_nifty=26.3 deliv=41.82
+- DYNAMATECH: score=13 rs_nifty=18.91 deliv=34.59
+- RELIGARE: score=13 rs_nifty=17.05 deliv=63.34
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.95% (bear)
-- Hang Seng: +0.22% (bull)
-- Shanghai: -0.06% (neutral)
-- Kospi: -2.82% (bear)
-- Taiwan: -0.41% (bear)
-- ASX 200: +0.05% (neutral)
+- Nikkei: -0.81% (bear)
+- Hang Seng: +0.45% (bull)
+- Shanghai: -0.07% (neutral)
+- Kospi: -3.26% (bear)
+- Taiwan: -0.70% (bear)
+- ASX 200: +0.10% (neutral)
 
 ### Europe
-- FTSE 100: +0.39% (bull)
-- DAX: +0.82% (bull)
-- Euro Stoxx 50: +0.90% (bull)
+- FTSE 100: +0.52% (bull)
+- DAX: -0.60% (bear)
+- Euro Stoxx 50: -1.16% (bear)
 
 ### US
 - S&P 500: +0.86% (bull)
 - Nasdaq: +0.96% (bull)
 - Dow: +0.98% (bull)
-- US VIX: -11.21% (bull)
+- US VIX: +11.05% (bear)
 
 ### Macro
 - USDINR: -0.16% (neutral)
-- Crude WTI: +2.55% (bull)
-- Brent: +2.47% (bull)
-- DXY: +0.23% (neutral)
-- US 10Y: +0.63% (bear)
+- Crude WTI: +3.43% (bull)
+- Brent: +3.82% (bull)
+- DXY: +0.46% (bear)
+- US 10Y: +0.12% (neutral)
 - India ETF: +0.96% (bull)
 - EM ETF: +1.25% (bull)
 
