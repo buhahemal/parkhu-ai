@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-15",
-  "generated_at_ist": "2026-09-15T10:48:24.940124+05:30",
-  "duration_seconds": 374.7,
+  "generated_at_ist": "2026-09-15T18:08:54.145603+05:30",
+  "duration_seconds": 334.4,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3154,
-      "seconds": 2.9
+      "rows": 3157,
+      "seconds": 4.1
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14325,
-      "cache_rows": 7880286,
-      "symbols": 2865,
+      "rows": 14340,
+      "cache_rows": 7888309,
+      "symbols": 2868,
       "failed": 18,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2475,
-      "cold": 408,
+      "warm": 2481,
+      "cold": 405,
       "new_symbols": 18,
       "retries": 2,
-      "seconds": 248.3
+      "seconds": 239.5
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3154,
+      "rows": 3157,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.5
+      "seconds": 0.3
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.0
+      "seconds": 0.6
     },
     {
       "agent": "smartmoney",
       "status": "partial",
       "rows": 2,
-      "seconds": 10.2
+      "seconds": 3.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 6.3
+      "seconds": 4.2
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 6.7
+      "seconds": 4.6
     },
     {
       "agent": "stock_options",
@@ -79,37 +79,37 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2280,
-      "seconds": 17.8
+      "seconds": 18.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.3
+      "seconds": 3.7
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.7
+      "seconds": 3.0
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.9
+      "seconds": 1.8
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3154,
+      "rows": 3157,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3154,
-      "seconds": 1.1
+      "rows": 3157,
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
@@ -138,29 +138,39 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2865,
-      "with_structure": 2865,
+      "rows": 2868,
+      "with_structure": 2868,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 22.9
+      "seconds": 21.3
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3154,
-      "seconds": 3.6
+      "rows": 3157,
+      "seconds": 3.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 1,
+      "rows": 2,
+      "ideas": [
+        "KENNAMET",
+        "BIRLACABLE"
+      ],
+      "watchlist": 11,
       "open_positions": 10,
       "needing_action": [
+        "ALMONDZ",
+        "KENNAMET",
+        "MARKSANS",
         "UNIPARTS"
       ],
-      "closed_today": [],
+      "closed_today": [
+        "MARKSANS",
+        "ALMONDZ",
+        "KENNAMET"
+      ],
       "seconds": 0.4
     }
   ],

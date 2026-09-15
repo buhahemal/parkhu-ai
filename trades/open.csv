@@ -6,5 +6,5 @@ trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,struct
 2026-09-03-QPOWER,QPOWER,Quality Power Electrical Equipments Ltd.,Producer Manufacturing,2026-09-03,,1424.1,1310.17,1651.96,1765.88,1879.81,1252.82,14,22,80.1,7,798.0,open,1355.2,2026-09-15,10.25,-4.84,False,False,False,2,
 2026-09-07-KOVAI,KOVAI,Kovai Medical Center & Hospital Ltd.,Health Services,2026-09-07,,6069.0,5893.63,6419.74,6595.11,6770.47,5968.44,6,13,82.1,1,175.0,open,6019.0,2026-09-15,6.18,-1.63,False,False,False,8,
 2026-09-07-PLAZACABLE,PLAZACABLE,Plaza Wires Limited,Producer Manufacturing,2026-09-07,,59.05,54.33,68.5,73.22,77.95,50.57,10,22,81.3,169,798.0,open,61.38,2026-09-15,11.77,-5.83,False,False,False,2,
-2026-09-15-KENNAMET,KENNAMET,Kennametal India Limited,Producer Manufacturing,2026-09-15,,4266.4,3925.09,5136.0,5477.31,5818.62,3807.03,12,22,83.7,2,683.0,open,4266.4,2026-09-15,0.0,0.0,False,False,False,0,
-2026-09-15-BIRLACABLE,BIRLACABLE,Birla Cable Limited,Producer Manufacturing,2026-09-15,,377.95,347.71,438.42,468.66,498.89,279.35,10,21,80.4,26,786.0,open,377.95,2026-09-15,0.0,0.0,False,False,False,0,
+2026-09-15-KENNAMET,KENNAMET,Kennametal India Limited,Producer Manufacturing,2026-09-15,,4266.4,3925.09,5136.0,5477.31,5818.62,3807.03,12,22,83.7,2,683.0,open,4266.4,2026-09-15,11.09,-1.31,False,False,False,1,
+2026-09-15-BIRLACABLE,BIRLACABLE,Birla Cable Limited,Producer Manufacturing,2026-09-15,,377.95,347.71,438.42,468.66,498.89,279.35,10,21,80.4,26,786.0,open,377.95,2026-09-15,9.0,-1.38,False,False,False,1,
