@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-16
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-16T18:09:14.417430+05:30
+- **generated_at_ist:** 2026-09-16T22:51:26.350738+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bullish**
 - nifty: Bullish (0.43%)
 - india_vix: 13.17 (Low)
-- fii_net: -2977.86 | dii_net: 2686.05
-- overall_risk: Low | global_risk: Risk-Off
+- fii_net: -2032.61 | dii_net: 3908.23
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
@@ -96,51 +96,51 @@
 
 ## Swing candidates (top)
 
-- SOMANYCERA: score=14 rs_nifty=11.17 deliv=55.14
-- POLICYBZR: score=14 rs_nifty=9.99 deliv=37.08
-- DYNAMATECH: score=14 rs_nifty=12.77 deliv=42.12
-- GPTHEALTH: score=14 rs_nifty=8.99 deliv=48.91
-- HAPPYFORGE: score=14 rs_nifty=5.57 deliv=56.21
-- BIRLACABLE: score=14 rs_nifty=40.99 deliv=40.69
-- SURAKSHA: score=14 rs_nifty=11.59 deliv=55.47
 - QPOWER: score=14 rs_nifty=17.34 deliv=47.5
-- ALBERTDAVD: score=14 rs_nifty=10.25 deliv=86.72
+- BIRLACABLE: score=14 rs_nifty=40.99 deliv=40.69
 - TMB: score=14 rs_nifty=10.86 deliv=51.16
+- GPTHEALTH: score=14 rs_nifty=8.99 deliv=48.91
+- POLICYBZR: score=14 rs_nifty=9.99 deliv=37.08
+- SOMANYCERA: score=14 rs_nifty=11.17 deliv=55.14
 - SANSERA: score=14 rs_nifty=5.24 deliv=55.77
+- HAPPYFORGE: score=14 rs_nifty=5.57 deliv=56.21
+- SURAKSHA: score=14 rs_nifty=11.59 deliv=55.47
 - GLAXO: score=14 rs_nifty=10.67 deliv=55.37
-- ENTERO: score=13 rs_nifty=24.01 deliv=44.93
-- VTMLTD: score=13 rs_nifty=8.3 deliv=43.54
-- LAURUSLABS: score=13 rs_nifty=12.07 deliv=52.2
+- ALBERTDAVD: score=14 rs_nifty=10.25 deliv=86.72
+- DYNAMATECH: score=14 rs_nifty=12.77 deliv=42.12
+- YATHARTH: score=13 rs_nifty=19.97 deliv=43.11
+- PRUDENT: score=13 rs_nifty=4.67 deliv=52.91
+- SKYGOLD: score=13 rs_nifty=6.35 deliv=40.28
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.69% (bull)
-- Hang Seng: +0.19% (bull)
-- Shanghai: +0.71% (bull)
-- Kospi: +1.37% (bull)
-- Taiwan: +0.74% (bull)
-- ASX 200: +0.28% (bull)
+- Nikkei: -0.01% (neutral)
+- Hang Seng: -1.00% (bear)
+- Shanghai: -0.54% (bear)
+- Kospi: -0.85% (bear)
+- Taiwan: -0.77% (bear)
+- ASX 200: -0.88% (bear)
 
 ### Europe
-- FTSE 100: +0.65% (bull)
-- DAX: +0.35% (bull)
-- Euro Stoxx 50: +0.59% (bull)
+- FTSE 100: +0.28% (bull)
+- DAX: +0.53% (bull)
+- Euro Stoxx 50: +0.48% (bull)
 
 ### US
-- S&P 500: -0.45% (bear)
-- Nasdaq: -0.78% (bear)
-- Dow: -0.63% (bear)
-- US VIX: -2.44% (bull)
+- S&P 500: +0.31% (bull)
+- Nasdaq: +0.66% (bull)
+- Dow: -0.02% (neutral)
+- US VIX: -1.98% (bull)
 
 ### Macro
 - USDINR: +0.11% (neutral)
-- Crude WTI: -2.11% (bear)
-- Brent: -1.42% (bear)
-- DXY: +0.08% (neutral)
-- US 10Y: -0.34% (neutral)
-- India ETF: -1.73% (bear)
-- EM ETF: -0.35% (bear)
+- Crude WTI: -3.03% (bear)
+- Brent: -2.60% (bear)
+- DXY: +0.07% (neutral)
+- US 10Y: -0.82% (bull)
+- India ETF: +0.33% (bull)
+- EM ETF: +0.77% (bull)
 
 
 ## Groq desk note
