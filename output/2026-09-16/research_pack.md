@@ -1,136 +1,120 @@
 # Parkhu research pack — 2026-09-16
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-16T06:09:04.541904+05:30
+- **generated_at_ist:** 2026-09-16T10:44:20.057909+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.34%)
-- india_vix: 12.29 (Low)
+- market_regime: **Bullish**
+- nifty: Bullish (0.52%)
+- india_vix: 13.37 (Low)
 - fii_net: -2977.86 | dii_net: 2686.05
-- overall_risk: Medium | global_risk: Risk-Off
+- overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3157
-- trend = Bullish: 1017
-- price > SMA200: 807
-- price > EMA50: 790
-- ADX14 > 25: 552
-- RSI14 in 40-80: 535
-- RS > 0 vs NIFTY and sector: 333
-- delivery% >= 40: 182
-- relative_volume >= 1: 53
-- no earnings within 21d: 53
-- event_risk_score <= 1: 49
-- TV rating not Sell: 41
+- universe: 3158
+- trend = Bullish: 915
+- price > SMA200: 718
+- price > EMA50: 691
+- ADX14 > 25: 487
+- RSI14 in 40-80: 475
+- RS > 0 vs NIFTY and sector: 280
+- delivery% >= 40: 149
+- relative_volume >= 1: 6
+- no earnings within 21d: 6
+- event_risk_score <= 1: 6
+- TV rating not Sell: 5
 
-## Survivors (top 41 of 41)
+## Survivors (top 5 of 5)
 
-- **CASTROLIND** [rejected] score 84.2 — T1 needs more than 22 trading days (~1 month)
-- **KENNAMET** [idea] score 82.2 — selected as idea
-- **BIRLACABLE** [idea] score 80.2 — selected as idea
-- **PLAZACABLE** [watchlist] score 77.9 — score in Watch band (70–80)
-- **ALMONDZ** [watchlist] score 77.4 — score in Watch band (70–80)
-- **KOVAI** [watchlist] score 76.6 — score in Watch band (70–80)
-- **LICHSGFIN** [watchlist] score 76.5 — score in Watch band (70–80)
-- **IPCALAB** [watchlist] score 75.8 — score in Watch band (70–80)
-- **WELCORP** [watchlist] score 73.0 — score in Watch band (70–80)
-- **NRBBEARING** [watchlist] score 72.7 — score in Watch band (70–80)
-- **RATNAVEER** [watchlist] score 72.3 — score in Watch band (70–80)
-- **ACE** [watchlist] score 72.1 — score in Watch band (70–80)
-- **CRAFTSMAN** [watchlist] score 72.0 — score in Watch band (70–80)
-- **TFCILTD** [watchlist] score 70.8 — score in Watch band (70–80)
-- **DYNAMATECH** [rejected] score 69.7 — score below Watch band
-- **QPOWER** [rejected] score 68.7 — score below Watch band
-- **WSTCSTPAPR** [rejected] score 66.1 — score below Watch band
-- **TEXMOPIPES** [rejected] score 65.8 — score below Watch band
-- **AEROFLEX** [rejected] score 64.5 — score below Watch band
-- **MEDICAMEQ** [rejected] score 64.0 — T1 needs more than 22 trading days (~1 month)
-- **KOTAKBANK** [rejected] score 63.8 — T1 needs more than 22 trading days (~1 month)
-- **KIRLFER** [rejected] score 63.3 — score below Watch band
-- **ALBERTDAVD** [rejected] score 62.7 — score below Watch band
-- **ARIHANTCAP** [rejected] score 62.6 — T1 needs more than 22 trading days (~1 month)
-- **SBCL** [rejected] score 60.7 — score below Watch band
-- **WELENT** [rejected] score 60.0 — score below Watch band
-- **GIPCL** [rejected] score 59.9 — score below Watch band
-- **LUMAXTECH** [rejected] score 56.8 — score below Watch band
-- **WONDERLA** [rejected] score 56.8 — score below Watch band
-- **MANYAVAR** [rejected] score 55.0 — T1 needs more than 22 trading days (~1 month)
-- **GPTHEALTH** [rejected] score 54.7 — score below Watch band
-- **YUKEN** [rejected] score 53.1 — score below Watch band
-- **GCSL** [rejected] score 51.8 — score below Watch band
-- **KAMATHOTEL** [rejected] score 47.8 — score below Watch band
-- **PFOCUS** [rejected] score 47.3 — score below Watch band
-- **WELSPUNLIV** [rejected] score 46.4 — score below Watch band
-- **MAXESTATES** [rejected] score 46.3 — score below Watch band
-- **LIBAS** [rejected] score 45.9 — score below Watch band
-- **TASTYBITE** [rejected] score 42.6 — score below Watch band
-- **ASHOKAMET** [rejected] score 42.2 — score below Watch band
-- **SHANKARA** [rejected] score 38.9 — T1 needs more than 22 trading days (~1 month)
+- **RATNAVEER** [watchlist] score 70.6 — score in Watch band (70–80)
+- **ARIHANTCAP** [rejected] score 66.5 — T1 needs more than 22 trading days (~1 month)
+- **PAYTM** [rejected] score 66.0 — score below Watch band
+- **NPST** [rejected] score 58.1 — score below Watch band
+- **INDSWFTLAB** [rejected] score 53.5 — score below Watch band
 
 ## Ideas
 
-### KENNAMET — Buy (score 82.2)
-- Kennametal India Limited | risk_sector: Producer Manufacturing
-- entry 4266.4 | stop 3925.09 | t1 5136.0 | t2 5477.31 | t3 5818.62 | R:R 2.55
-- qty 2 | deployed 8533.0 (8.53%) | risk ₹683.0
+### PAYTM — Watch (score 15.0)
+- PAYTM | risk_sector: Finance
+- entry 1738.4 | stop 1641.42 | t1 1825.32 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### BIRLACABLE — Buy (score 80.2)
-- Birla Cable Limited | risk_sector: Producer Manufacturing
-- entry 377.95 | stop 347.71 | t1 438.42 | t2 468.66 | t3 498.89 | R:R 2.0
-- qty 26 | deployed 9827.0 (9.83%) | risk ₹786.0
+### NPST — Watch (score 14.0)
+- NPST | risk_sector: Technology Services
+- entry 1874.0 | stop 1737.66 | t1 1967.7 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### ANUHPHR — Watch (score 13.0)
+- ANUHPHR | risk_sector: Health Technology
+- entry 90.37 | stop 83.73 | t1 94.89 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### BIL — Watch (score 13.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 1010.15 | stop 927.39 | t1 1060.66 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### WELSPUNLIV — Watch (score 13.0)
+- WELSPUNLIV | risk_sector: Consumer Non-Durables
+- entry 197.16 | stop 186.04 | t1 207.02 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIPARTS** status=partial entry=732.95 last=865.7 mfe=24.97 mae=0.0 opened=2026-08-05
-- **TMB** status=open entry=897.6 last=868.35 mfe=6.31 mae=-4.19 opened=2026-08-26
-- **CRISIL** status=open entry=4732.7 last=4596.9 mfe=2.94 mae=-4.25 opened=2026-08-28
-- **IPCALAB** status=open entry=1956.1 last=1932.4 mfe=2.09 mae=-2.46 opened=2026-09-03
-- **QPOWER** status=open entry=1424.1 last=1355.2 mfe=10.25 mae=-4.84 opened=2026-09-03
-- **KOVAI** status=open entry=6069.0 last=6019.0 mfe=6.18 mae=-1.63 opened=2026-09-07
-- **PLAZACABLE** status=open entry=59.05 last=61.38 mfe=11.77 mae=-5.83 opened=2026-09-07
-- **BIRLACABLE** status=open entry=377.95 last=377.95 mfe=9.0 mae=-1.38 opened=2026-09-15
-- **KENNAMET** status=open entry=4266.4 last=4266.4 mfe=11.09 mae=-1.31 opened=2026-09-15
+- **TMB** status=open entry=897.6 last=871.45 mfe=6.31 mae=-4.19 opened=2026-08-26
+- **IPCALAB** status=open entry=1956.1 last=1930.0 mfe=2.09 mae=-2.61 opened=2026-09-03
+- **KOVAI** status=open entry=6069.0 last=6000.0 mfe=6.18 mae=-1.63 opened=2026-09-07
+- **PLAZACABLE** status=open entry=59.05 last=60.99 mfe=11.77 mae=-5.83 opened=2026-09-07
+- **BIRLACABLE** status=open entry=377.95 last=359.1 mfe=9.0 mae=-4.99 opened=2026-09-15
+- **KENNAMET** status=open entry=4266.4 last=4210.0 mfe=11.09 mae=-2.72 opened=2026-09-15
 
 ## Needs action
 
-- **UNIPARTS**: BANK PARTIAL — T1 REACHED — ₹865.70 above T1 ₹844.17 — bank part, trail the rest, move stop to breakeven ₹732.95
+- **CRISIL**: EXIT — STOP HIT — session low at/below stop ₹4,511.51 (last ₹4,533.50)
+- **QPOWER**: EXIT — STOP HIT — session low at/below stop ₹1,310.17 (last ₹1,352.80)
+- **UNIPARTS**: EXIT — TIME STOP — 30 trading days held, past the 22-day horizon and still at +14.65% — capital has an opportunity cost
+
+## Closed today
+
+- UNIPARTS: {'trade_id': '2026-08-05-UNIPARTS', 'symbol': 'UNIPARTS', 'company': 'Uniparts India Ltd.', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-08-05', 'taken': None, 'entry': 732.95, 'stop': 677.34, 't1': 844.17, 't2': 899.78, 't3': 955.39, 'structure_invalidation': 664.68, 'horizon_days_t1': 17, 'horizon_days_t2': 22, 'score_at_open': 93.5, 'qty': 13, 'risk_rupees': 723.0, 'status': 'closed', 'last_price': 840.35, 'last_checked': '2026-09-16', 'mfe_pct': 24.97, 'mae_pct': 0.0, 'gap_flag': False, 'hit_t1': True, 'hit_t2': True, 'reconfirmed_count': 22, 'notes': None, 'date_closed': '2026-09-16', 'exit_price': 840.35, 'exit_reason': 'time_stop', 'pct_return': 14.65, 'r_multiple': 1.93, 'days_held': 30}
+- CRISIL: {'trade_id': '2026-08-28-CRISIL', 'symbol': 'CRISIL', 'company': 'CRISIL Limited', 'risk_sector': 'Technology Services', 'date_opened': '2026-08-28', 'taken': None, 'entry': 4732.7, 'stop': 4511.51, 't1': 5175.09, 't2': 5396.28, 't3': 5617.47, 'structure_invalidation': 4386.71, 'horizon_days_t1': 16, 'horizon_days_t2': 22, 'score_at_open': 81.9, 'qty': 2, 'risk_rupees': 442.0, 'status': 'closed', 'last_price': 4533.5, 'last_checked': '2026-09-16', 'mfe_pct': 2.94, 'mae_pct': -5.04, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 14, 'notes': None, 'date_closed': '2026-09-16', 'exit_price': 4533.5, 'exit_reason': 'stop', 'pct_return': -4.21, 'r_multiple': -0.9, 'days_held': 13}
+- QPOWER: {'trade_id': '2026-09-03-QPOWER', 'symbol': 'QPOWER', 'company': 'Quality Power Electrical Equipments Ltd.', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-09-03', 'taken': None, 'entry': 1424.1, 'stop': 1310.17, 't1': 1651.96, 't2': 1765.88, 't3': 1879.81, 'structure_invalidation': 1252.82, 'horizon_days_t1': 14, 'horizon_days_t2': 22, 'score_at_open': 80.1, 'qty': 7, 'risk_rupees': 798.0, 'status': 'closed', 'last_price': 1352.8, 'last_checked': '2026-09-16', 'mfe_pct': 10.25, 'mae_pct': -9.3, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 2, 'notes': None, 'date_closed': '2026-09-16', 'exit_price': 1352.8, 'exit_reason': 'stop', 'pct_return': -5.01, 'r_multiple': -0.63, 'days_held': 9}
 
 ## Swing candidates (top)
 
-- BIRLACABLE: score=14 rs_nifty=31.35 deliv=40.38
-- ALBERTDAVD: score=14 rs_nifty=10.33 deliv=51.64
-- NRBBEARING: score=14 rs_nifty=6.19 deliv=47.92
-- PLAZACABLE: score=14 rs_nifty=12.96 deliv=56.13
-- DYNAMATECH: score=14 rs_nifty=15.38 deliv=45.43
-- TFCILTD: score=14 rs_nifty=21.95 deliv=40.7
-- PFOCUS: score=14 rs_nifty=19.36 deliv=42.27
-- CASTROLIND: score=14 rs_nifty=4.32 deliv=66.87
-- WELSPUNLIV: score=14 rs_nifty=22.7 deliv=59.68
-- GPTHEALTH: score=14 rs_nifty=6.28 deliv=47.28
-- MANYAVAR: score=14 rs_nifty=11.82 deliv=52.89
-- ACE: score=14 rs_nifty=9.0 deliv=50.85
-- LUMAXTECH: score=14 rs_nifty=5.17 deliv=52.42
-- RATNAVEER: score=14 rs_nifty=35.65 deliv=42.53
-- WELENT: score=14 rs_nifty=33.89 deliv=80.59
+- PAYTM: score=15 rs_nifty=12.73 deliv=42.71
+- NPST: score=14 rs_nifty=21.21 deliv=51.25
+- ANUHPHR: score=13 rs_nifty=20.89 deliv=47.1
+- BIL: score=13 rs_nifty=25.26 deliv=58.41
+- WELSPUNLIV: score=13 rs_nifty=23.73 deliv=59.68
+- MUKKA: score=13 rs_nifty=13.84 deliv=49.91
+- RML: score=13 rs_nifty=16.54 deliv=48.06
+- PFOCUS: score=13 rs_nifty=21.84 deliv=42.27
+- RATNAMANI: score=13 rs_nifty=17.37 deliv=48.77
+- CASTROLIND: score=13 rs_nifty=5.14 deliv=66.87
+- KSL: score=13 rs_nifty=12.93 deliv=50.56
+- MAHSEAMLES: score=13 rs_nifty=15.91 deliv=49.46
+- ZIMLAB: score=13 rs_nifty=24.19 deliv=47.03
+- IONEXCHANG: score=13 rs_nifty=17.82 deliv=43.58
+- SMLMAH: score=13 rs_nifty=19.37 deliv=52.48
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.10% (neutral)
-- Hang Seng: +0.45% (bull)
-- Shanghai: -0.07% (neutral)
-- Kospi: -0.72% (bear)
-- Taiwan: -0.70% (bear)
-- ASX 200: -0.59% (bear)
+- Nikkei: +0.29% (bull)
+- Hang Seng: +0.12% (neutral)
+- Shanghai: +0.57% (bull)
+- Kospi: +0.80% (bull)
+- Taiwan: +0.72% (bull)
+- ASX 200: +0.26% (bull)
 
 ### Europe
-- FTSE 100: +0.44% (bull)
-- DAX: -0.50% (bear)
-- Euro Stoxx 50: -1.02% (bear)
+- FTSE 100: -0.37% (bear)
+- DAX: -0.15% (neutral)
+- Euro Stoxx 50: -0.38% (bear)
 
 ### US
 - S&P 500: -0.45% (bear)
@@ -139,13 +123,13 @@
 - US VIX: +0.58% (bear)
 
 ### Macro
-- USDINR: +0.84% (bear)
-- Crude WTI: +3.42% (bull)
-- Brent: +2.01% (bull)
-- DXY: +0.21% (neutral)
+- USDINR: +0.10% (neutral)
+- Crude WTI: -1.00% (bear)
+- Brent: -0.53% (bear)
+- DXY: -0.02% (neutral)
 - US 10Y: +0.71% (bear)
-- India ETF: -0.29% (bear)
-- EM ETF: -2.73% (bear)
+- India ETF: -1.73% (bear)
+- EM ETF: -0.35% (bear)
 
 
 ## Groq desk note
