@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-17",
-  "generated_at_ist": "2026-09-17T10:46:13.734394+05:30",
-  "duration_seconds": 341.2,
+  "generated_at_ist": "2026-09-17T18:08:24.335796+05:30",
+  "duration_seconds": 334.2,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3165,
+      "rows": 3169,
       "seconds": 3.0
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14339,
-      "cache_rows": 7893286,
-      "symbols": 2870,
-      "failed": 24,
+      "rows": 14360,
+      "cache_rows": 7899174,
+      "symbols": 2875,
+      "failed": 23,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2482,
-      "cold": 412,
-      "new_symbols": 24,
+      "warm": 2490,
+      "cold": 408,
+      "new_symbols": 25,
       "retries": 2,
-      "seconds": 228.9
+      "seconds": 232.7
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3165,
+      "rows": 3169,
       "seconds": 0.1
     },
     {
@@ -48,13 +48,13 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.8
+      "seconds": 0.9
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 4.3
+      "status": "ok",
+      "rows": 4,
+      "seconds": 3.9
     },
     {
       "agent": "options",
@@ -65,8 +65,8 @@
     {
       "agent": "derivatives",
       "status": "ok",
-      "rows": 451,
-      "seconds": 4.3
+      "rows": 452,
+      "seconds": 5.1
     },
     {
       "agent": "stock_options",
@@ -78,38 +78,38 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2295,
-      "seconds": 17.6
+      "rows": 2294,
+      "seconds": 6.3
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.3
+      "seconds": 2.7
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.1
+      "seconds": 3.4
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.4
+      "seconds": 2.6
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3165,
+      "rows": 3169,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3165,
-      "seconds": 1.0
+      "rows": 3169,
+      "seconds": 1.1
     },
     {
       "agent": "fno_momentum",
@@ -121,7 +121,7 @@
       "agent": "swing_candidates",
       "status": "ok",
       "rows": 20,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "market_summary",
@@ -138,38 +138,38 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2870,
-      "with_structure": 2866,
+      "rows": 2875,
+      "with_structure": 2870,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.9
+      "seconds": 21.4
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3165,
-      "seconds": 3.4
+      "rows": 3169,
+      "seconds": 3.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
       "rows": 0,
       "ideas": [],
-      "watchlist": 1,
+      "watchlist": 6,
       "open_positions": 6,
       "needing_action": [],
       "closed_today": [],
       "seconds": 0.3
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,

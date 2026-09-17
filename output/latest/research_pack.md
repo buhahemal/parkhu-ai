@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-17
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-17T18:08:24.335796+05:30
+- **generated_at_ist:** 2026-09-17T22:52:03.692998+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bullish**
 - nifty: Bullish (0.23%)
 - india_vix: 12.29 (Low)
-- fii_net: -2032.61 | dii_net: 3908.23
-- overall_risk: Low | global_risk: Risk-Off
+- fii_net: -3208.76 | dii_net: 3617.75
+- overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
@@ -55,9 +55,9 @@
 
 ## Ideas
 
-### MACPOWER — Watch (score 14.0)
-- MACPOWER | risk_sector: Producer Manufacturing
-- entry 1921.6 | stop 1744.4 | t1 2017.68 | t2 None | t3 None | R:R None
+### TFCILTD — Watch (score 14.0)
+- TFCILTD | risk_sector: Finance
+- entry 139.06 | stop 131.45 | t1 146.01 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### NORTHARC — Watch (score 14.0)
@@ -65,19 +65,19 @@
 - entry 310.55 | stop 291.97 | t1 326.08 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### QPOWER — Watch (score 14.0)
-- QPOWER | risk_sector: Producer Manufacturing
-- entry 1489.8 | stop 1378.72 | t1 1564.29 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SURAKSHA — Watch (score 14.0)
-- SURAKSHA | risk_sector: Health Services
-- entry 328.95 | stop 308.28 | t1 345.4 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### INDIQUBE — Watch (score 14.0)
 - INDIQUBE | risk_sector: Finance
 - entry 202.45 | stop 189.66 | t1 212.57 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MACPOWER — Watch (score 14.0)
+- MACPOWER | risk_sector: Producer Manufacturing
+- entry 1921.6 | stop 1744.4 | t1 2017.68 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### QPOWER — Watch (score 14.0)
+- QPOWER | risk_sector: Producer Manufacturing
+- entry 1489.8 | stop 1378.72 | t1 1564.29 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -91,51 +91,51 @@
 
 ## Swing candidates (top)
 
-- MACPOWER: score=14 rs_nifty=11.46 deliv=48.08
+- TFCILTD: score=14 rs_nifty=18.21 deliv=46.76
 - NORTHARC: score=14 rs_nifty=15.21 deliv=43.89
+- INDIQUBE: score=14 rs_nifty=16.44 deliv=54.93
+- MACPOWER: score=14 rs_nifty=11.46 deliv=48.08
 - QPOWER: score=14 rs_nifty=18.0 deliv=50.39
 - SURAKSHA: score=14 rs_nifty=9.94 deliv=70.95
-- INDIQUBE: score=14 rs_nifty=16.44 deliv=54.93
-- TFCILTD: score=14 rs_nifty=18.21 deliv=46.76
 - CASTROLIND: score=14 rs_nifty=6.34 deliv=56.76
-- RAMRAT: score=13 rs_nifty=22.93 deliv=46.41
-- STAR: score=13 rs_nifty=25.53 deliv=46.7
-- KABRAEXTRU: score=13 rs_nifty=24.66 deliv=48.92
-- ASIANHOTNR: score=13 rs_nifty=30.21 deliv=63.09
-- VOLTAMP: score=13 rs_nifty=11.13 deliv=44.33
-- WELENT: score=13 rs_nifty=40.43 deliv=59.83
+- INNOVACAP: score=13 rs_nifty=15.25 deliv=49.32
 - DEEPINDS: score=13 rs_nifty=11.16 deliv=41.18
-- ISFT: score=13 rs_nifty=13.4 deliv=28.39
+- RAMRAT: score=13 rs_nifty=22.93 deliv=46.41
+- GUFICBIO: score=13 rs_nifty=4.61 deliv=64.25
+- HNDFDS: score=13 rs_nifty=4.53 deliv=58.43
+- SAMBHV: score=13 rs_nifty=11.24 deliv=41.45
+- PAYTM: score=13 rs_nifty=15.23 deliv=44.27
+- DCBBANK: score=13 rs_nifty=23.2 deliv=53.3
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.33% (bull)
-- Hang Seng: -0.44% (bear)
-- Shanghai: -0.41% (bear)
-- Kospi: -0.04% (neutral)
-- Taiwan: +0.96% (bull)
-- ASX 200: +0.41% (bull)
+- Nikkei: +0.69% (bull)
+- Hang Seng: +0.19% (bull)
+- Shanghai: +0.71% (bull)
+- Kospi: +1.37% (bull)
+- Taiwan: +0.74% (bull)
+- ASX 200: +0.28% (bull)
 
 ### Europe
-- FTSE 100: +0.77% (bull)
-- DAX: +0.96% (bull)
-- Euro Stoxx 50: +1.02% (bull)
+- FTSE 100: +1.19% (bull)
+- DAX: +0.70% (bull)
+- Euro Stoxx 50: +0.90% (bull)
 
 ### US
-- S&P 500: -0.45% (bear)
-- Nasdaq: -0.01% (neutral)
-- Dow: -1.21% (bear)
-- US VIX: -11.86% (bull)
+- S&P 500: +1.05% (bull)
+- Nasdaq: +1.56% (bull)
+- Dow: +0.62% (bull)
+- US VIX: -12.20% (bull)
 
 ### Macro
-- USDINR: -0.07% (neutral)
-- Crude WTI: -3.03% (bear)
-- Brent: -7.29% (bear)
-- DXY: -0.26% (neutral)
-- US 10Y: -1.10% (bull)
-- India ETF: -0.27% (bear)
-- EM ETF: -0.06% (neutral)
+- USDINR: -0.08% (neutral)
+- Crude WTI: -0.18% (bear)
+- Brent: -1.04% (bear)
+- DXY: -0.06% (neutral)
+- US 10Y: -1.02% (bull)
+- India ETF: +1.19% (bull)
+- EM ETF: +1.96% (bull)
 
 
 ## Groq desk note
