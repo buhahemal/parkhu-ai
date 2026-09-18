@@ -1,127 +1,91 @@
 # Parkhu research pack — 2026-09-18
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-18T06:09:41.195009+05:30
+- **generated_at_ist:** 2026-09-18T10:40:10.440735+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.43%)
-- india_vix: 13.17 (Low)
+- market_regime: **Neutral**
+- nifty: Neutral (0.14%)
+- india_vix: 11.96 (Low)
 - fii_net: -3208.76 | dii_net: 3617.75
 - overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 3169
-- trend = Bullish: 1056
-- price > SMA200: 842
-- price > EMA50: 822
-- ADX14 > 25: 536
-- RSI14 in 40-80: 516
-- RS > 0 vs NIFTY and sector: 314
-- delivery% >= 40: 138
-- relative_volume >= 1: 25
-- no earnings within 21d: 25
-- event_risk_score <= 1: 25
-- TV rating not Sell: 24
+- universe: 3166
+- trend = Bullish: 1155
+- price > SMA200: 910
+- price > EMA50: 891
+- ADX14 > 25: 547
+- RSI14 in 40-80: 526
+- RS > 0 vs NIFTY and sector: 324
+- delivery% >= 40: 145
+- relative_volume >= 1: 8
+- no earnings within 21d: 7
+- event_risk_score <= 1: 7
+- TV rating not Sell: 7
 
-## Survivors (top 24 of 24)
+## Survivors (top 7 of 7)
 
-- **CASTROLIND** [rejected] score 86.5 — T1 needs more than 22 trading days (~1 month)
-- **ACE** [watchlist] score 78.3 — score in Watch band (70–80)
-- **IPCALAB** [watchlist] score 78.1 — score in Watch band (70–80)
-- **ALMONDZ** [watchlist] score 77.9 — score in Watch band (70–80)
-- **QPOWER** [watchlist] score 75.6 — score in Watch band (70–80)
-- **TFCILTD** [watchlist] score 72.0 — score in Watch band (70–80)
-- **MATRIMONY** [watchlist] score 71.5 — score in Watch band (70–80)
-- **KOTAKBANK** [rejected] score 70.6 — T1 needs more than 22 trading days (~1 month)
-- **NORTHARC** [rejected] score 67.9 — score below Watch band
-- **VIJAYA** [rejected] score 67.0 — score below Watch band
-- **SURAKSHA** [rejected] score 66.7 — score below Watch band
-- **APARINDS** [rejected] score 65.2 — score below Watch band
-- **MACPOWER** [rejected] score 65.1 — score below Watch band
-- **LGBBROSLTD** [rejected] score 62.2 — T1 needs more than 22 trading days (~1 month)
-- **PARAGMILK** [rejected] score 58.2 — T1 needs more than 22 trading days (~1 month)
-- **GEEKAYWIRE** [rejected] score 57.2 — score below Watch band
-- **VMSTMT** [rejected] score 53.2 — T1 needs more than 22 trading days (~1 month)
-- **ZIMLAB** [rejected] score 52.8 — score below Watch band
-- **PRIMESECU** [rejected] score 47.7 — score below Watch band
-- **MOTILALOFS** [rejected] score 45.2 — score below Watch band
-- **BALAJITELE** [rejected] score 45.1 — T1 needs more than 22 trading days (~1 month)
-- **SHANKARA** [rejected] score 37.3 — T1 needs more than 22 trading days (~1 month)
-- **INDIQUBE** [rejected] score 33.7 — T1 needs more than 22 trading days (~1 month)
-- **NAZARA** [rejected] score 32.5 — score below Watch band
+- **CASTROLIND** [idea] score 84.7 — selected as idea
+- **ACE** [watchlist] score 77.5 — score in Watch band (70–80)
+- **MACPOWER** [rejected] score 68.5 — score below Watch band
+- **STEL** [rejected] score 60.9 — score below Watch band
+- **GEEKAYWIRE** [rejected] score 57.3 — score below Watch band
+- **GPTHEALTH** [rejected] score 55.5 — score below Watch band
+- **SAMBHV** [rejected] score 53.0 — score below Watch band
 
 ## Ideas
 
-### MACPOWER — Watch (score 14.0)
-- MACPOWER | risk_sector: Producer Manufacturing
-- entry 1921.6 | stop 1744.4 | t1 2017.68 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### INDIQUBE — Watch (score 14.0)
-- INDIQUBE | risk_sector: Finance
-- entry 202.45 | stop 189.66 | t1 212.57 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SURAKSHA — Watch (score 14.0)
-- SURAKSHA | risk_sector: Health Services
-- entry 328.95 | stop 308.28 | t1 345.4 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### NORTHARC — Watch (score 14.0)
-- NORTHARC | risk_sector: Finance
-- entry 310.55 | stop 291.97 | t1 326.08 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### TFCILTD — Watch (score 14.0)
-- TFCILTD | risk_sector: Finance
-- entry 139.06 | stop 131.45 | t1 146.01 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
+### CASTROLIND — Buy (score 84.7)
+- Castrol India Limited | risk_sector: Energy Minerals
+- entry 195.57 | stop 190.35 | t1 207.2 | t2 212.42 | t3 217.64 | R:R 2.23
+- qty 51 | deployed 9974.0 (9.97%) | risk ₹266.0
 
 ## Open ledger
 
-- **TMB** status=open entry=897.6 last=891.45 mfe=6.31 mae=-4.19 opened=2026-08-26
-- **IPCALAB** status=open entry=1956.1 last=1970.3 mfe=2.96 mae=-2.61 opened=2026-09-03
-- **KOVAI** status=open entry=6069.0 last=6112.0 mfe=6.18 mae=-1.63 opened=2026-09-07
-- **PLAZACABLE** status=open entry=59.05 last=62.31 mfe=11.77 mae=-5.83 opened=2026-09-07
-- **BIRLACABLE** status=open entry=377.95 last=401.65 mfe=9.0 mae=-4.99 opened=2026-09-15
-- **KENNAMET** status=open entry=4266.4 last=4321.6 mfe=11.09 mae=-3.9 opened=2026-09-15
+- **TMB** status=open entry=897.6 last=901.35 mfe=6.31 mae=-4.19 opened=2026-08-26
+- **IPCALAB** status=open entry=1956.1 last=1984.6 mfe=2.96 mae=-2.61 opened=2026-09-03
+- **KOVAI** status=open entry=6069.0 last=6131.0 mfe=6.18 mae=-1.63 opened=2026-09-07
+- **PLAZACABLE** status=open entry=59.05 last=61.54 mfe=11.77 mae=-5.83 opened=2026-09-07
+- **BIRLACABLE** status=open entry=377.95 last=413.3 mfe=10.81 mae=-4.99 opened=2026-09-15
+- **KENNAMET** status=open entry=4266.4 last=4302.5 mfe=11.09 mae=-3.9 opened=2026-09-15
+- **CASTROLIND** status=open entry=195.57 last=195.57 mfe=0.0 mae=0.0 opened=2026-09-18
 
 ## Swing candidates (top)
 
-- MACPOWER: score=14 rs_nifty=12.21 deliv=48.08
-- INDIQUBE: score=14 rs_nifty=17.19 deliv=54.93
-- SURAKSHA: score=14 rs_nifty=10.69 deliv=70.95
-- NORTHARC: score=14 rs_nifty=15.96 deliv=43.89
-- TFCILTD: score=14 rs_nifty=18.96 deliv=46.76
-- QPOWER: score=14 rs_nifty=18.75 deliv=50.39
-- CASTROLIND: score=14 rs_nifty=7.09 deliv=56.76
-- RATNAVEER: score=13 rs_nifty=28.38 deliv=25.76
-- SANSTAR: score=13 rs_nifty=10.38 deliv=52.47
-- PITTIENG: score=13 rs_nifty=12.49 deliv=42.47
-- KABRAEXTRU: score=13 rs_nifty=25.41 deliv=48.92
-- SOMANYCERA: score=13 rs_nifty=12.91 deliv=64.41
-- WINDLAS: score=13 rs_nifty=23.43 deliv=46.91
-- DOLPHIN: score=13 rs_nifty=21.58 deliv=43.89
-- KSL: score=13 rs_nifty=21.37 deliv=33.05
+- SAMBHV: score=14 rs_nifty=15.2 deliv=41.45
+- STEL: score=14 rs_nifty=15.3 deliv=70.91
+- SOMANYCERA: score=13 rs_nifty=13.5 deliv=64.41
+- RATNAVEER: score=13 rs_nifty=26.79 deliv=25.76
+- APLAPOLLO: score=13 rs_nifty=6.84 deliv=40.61
+- MOTILALOFS: score=13 rs_nifty=9.57 deliv=42.81
+- SEAMECLTD: score=13 rs_nifty=11.64 deliv=48.31
+- BALPHARMA: score=13 rs_nifty=24.15 deliv=48.04
+- ACE: score=13 rs_nifty=6.57 deliv=43.98
+- LUMAXTECH: score=13 rs_nifty=7.63 deliv=43.51
+- PRUDENT: score=13 rs_nifty=5.41 deliv=60.1
+- DVL: score=13 rs_nifty=11.7 deliv=57.66
+- SALSTEEL: score=13 rs_nifty=15.68 deliv=43.42
+- MCX: score=13 rs_nifty=9.48 deliv=40.11
+- MWL: score=13 rs_nifty=6.58 deliv=46.93
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.20% (bull)
-- Hang Seng: +0.19% (bull)
-- Shanghai: +0.71% (bull)
-- Kospi: +2.27% (bull)
-- Taiwan: +0.74% (bull)
-- ASX 200: +0.82% (bull)
+- Nikkei: +1.75% (bull)
+- Hang Seng: +0.67% (bull)
+- Shanghai: +1.04% (bull)
+- Kospi: +2.60% (bull)
+- Taiwan: +1.65% (bull)
+- ASX 200: -0.01% (neutral)
 
 ### Europe
-- FTSE 100: +0.29% (bull)
-- DAX: +0.53% (bull)
-- Euro Stoxx 50: +0.48% (bull)
+- FTSE 100: +1.19% (bull)
+- DAX: +0.70% (bull)
+- Euro Stoxx 50: +0.90% (bull)
 
 ### US
 - S&P 500: +1.14% (bull)
@@ -130,13 +94,13 @@
 - US VIX: -12.82% (bull)
 
 ### Macro
-- USDINR: +0.15% (neutral)
-- Crude WTI: -1.48% (bear)
-- Brent: -1.92% (bear)
-- DXY: -0.07% (neutral)
+- USDINR: -0.38% (bull)
+- Crude WTI: -0.88% (bear)
+- Brent: -1.14% (bear)
+- DXY: +0.03% (neutral)
 - US 10Y: -1.18% (bull)
-- India ETF: -0.27% (bear)
-- EM ETF: -0.06% (neutral)
+- India ETF: +1.16% (bull)
+- EM ETF: +1.81% (bull)
 
 
 ## Groq desk note
