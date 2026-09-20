@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-20
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-09-20T06:08:53.331800+05:30
+- **generated_at_ist:** 2026-09-20T18:09:17.884411+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -111,21 +111,21 @@
 
 ## Swing candidates (top)
 
-- TSFINV: score=14 rs_nifty=12.22 deliv=54.54
-- SMARTWORKS: score=14 rs_nifty=11.65 deliv=83.8
-- CGCL: score=14 rs_nifty=23.33 deliv=44.42
-- KPIL: score=14 rs_nifty=6.0 deliv=61.31
-- IIFLCAPS: score=14 rs_nifty=6.33 deliv=66.58
-- GEOJITFSL: score=14 rs_nifty=4.65 deliv=48.27
-- ANTHEM: score=14 rs_nifty=6.55 deliv=69.5
-- AKUMS: score=14 rs_nifty=8.09 deliv=61.67
-- MOTILALOFS: score=14 rs_nifty=10.63 deliv=70.36
-- ATHERENERG: score=14 rs_nifty=14.75 deliv=43.89
 - ASKAUTOLTD: score=14 rs_nifty=5.23 deliv=42.54
-- PRUDENT: score=14 rs_nifty=6.85 deliv=54.46
-- CANHLIFE: score=14 rs_nifty=5.94 deliv=59.99
-- INDGN: score=14 rs_nifty=8.76 deliv=58.87
-- LUMAXTECH: score=14 rs_nifty=7.65 deliv=45.46
+- GEOJITFSL: score=14 rs_nifty=4.65 deliv=48.27
+- SMARTWORKS: score=14 rs_nifty=11.65 deliv=83.8
+- PVRINOX: score=14 rs_nifty=13.61 deliv=45.15
+- MOTILALOFS: score=14 rs_nifty=10.63 deliv=70.36
+- MCX: score=14 rs_nifty=9.58 deliv=50.09
+- KPIL: score=14 rs_nifty=6.0 deliv=61.31
+- CGCL: score=14 rs_nifty=23.33 deliv=44.42
+- AUSOMENT: score=14 rs_nifty=6.97 deliv=60.71
+- TSFINV: score=14 rs_nifty=12.22 deliv=54.54
+- IIFLCAPS: score=14 rs_nifty=6.33 deliv=66.58
+- AKUMS: score=14 rs_nifty=8.09 deliv=61.67
+- STEL: score=14 rs_nifty=16.81 deliv=74.44
+- GPTHEALTH: score=14 rs_nifty=11.67 deliv=45.8
+- LAL: score=14 rs_nifty=7.15 deliv=97.31
 
 ## World markets (India cues)
 
@@ -134,7 +134,7 @@
 - Hang Seng: +0.60% (bull)
 - Shanghai: +0.94% (bull)
 - Kospi: +2.66% (bull)
-- Taiwan: +1.93% (bull)
+- Taiwan: +0.40% (bull)
 - ASX 200: -0.01% (neutral)
 
 ### Europe
@@ -150,8 +150,8 @@
 
 ### Macro
 - USDINR: +0.08% (neutral)
-- Crude WTI: -1.58% (bear)
-- Brent: -0.91% (bear)
+- Crude WTI: -5.72% (bear)
+- Brent: -5.28% (bear)
 - DXY: +0.00% (neutral)
 - US 10Y: +1.03% (bear)
 - India ETF: +0.02% (neutral)

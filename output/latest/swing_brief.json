@@ -27,8 +27,8 @@
     "worst_sector_perf_1m": -3.53,
     "fii_net": 599.54,
     "dii_net": 1019.69,
-    "crude": 100.3,
-    "crude_pct_change": -1.58,
+    "crude": 96.08,
+    "crude_pct_change": -5.72,
     "usdinr": 95.88,
     "usdinr_pct_change": 0.08,
     "us_sp500_pct": 0.17,
@@ -42,7 +42,7 @@
     "europe_cue": "Bearish",
     "global_risk": "Neutral",
     "overall_risk": "Low",
-    "generated_at_ist": "2026-09-20T06:08:26.721099+05:30"
+    "generated_at_ist": "2026-09-20T18:08:52.696884+05:30"
   },
   "funnel": [
     {
