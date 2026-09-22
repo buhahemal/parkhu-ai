@@ -22,7 +22,6 @@
         "EMCURE",
         "KOVAI",
         "ARROWGREEN",
-        "TAALTECH",
         "LAURUSLABS",
         "AMEYA",
         "SHYAMMETL",
@@ -56,7 +55,8 @@
         "AUROPHARMA",
         "BHAGYANGR",
         "CAPLIPOINT",
-        "MENONBE"
+        "MENONBE",
+        "VALIANTORG"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -82,7 +82,6 @@
         "EMCURE",
         "KOVAI",
         "ARROWGREEN",
-        "TAALTECH",
         "LAURUSLABS",
         "AMEYA",
         "SHYAMMETL",
@@ -116,7 +115,8 @@
         "BHAGYANGR",
         "CAPLIPOINT",
         "MENONBE",
-        "VALIANTORG"
+        "VALIANTORG",
+        "EFFWA"
       ],
       "dropped_symbols": [
         "SIGNPOST",
@@ -231,12 +231,12 @@
       ],
       "dropped_symbols": [
         "ELANTAS",
-        "TAALTECH",
         "NEAGI",
         "KPL",
         "PRSMJOHNSN",
         "VELJAN",
         "SUNDARMFIN",
+        "TAALTECH",
         "SONUINFRA",
         "ULTRAMAR",
         "AXTEL",

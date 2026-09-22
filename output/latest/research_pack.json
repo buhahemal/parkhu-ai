@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-22",
-  "generated_at_ist": "2026-09-22T18:09:45.480882+05:30",
+  "generated_at_ist": "2026-09-22T22:49:55.375630+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -38,24 +38,24 @@
     "best_sector_perf_1m": 78.85,
     "worst_sector": "Utilities",
     "worst_sector_perf_1m": -2.72,
-    "fii_net": -576.2,
-    "dii_net": 2797.27,
-    "crude": 90.33,
-    "crude_pct_change": -5.69,
+    "fii_net": -3809.99,
+    "dii_net": 4120.07,
+    "crude": 91.18,
+    "crude_pct_change": -4.8,
     "usdinr": 95.58,
     "usdinr_pct_change": -0.45,
-    "us_sp500_pct": 1.49,
-    "us_dow_pct": 0.71,
-    "us_vix": 14.65,
-    "us_vix_pct": -1.48,
-    "dxy": 100.39,
-    "dxy_pct": -0.04,
-    "us_10y": 4.93,
+    "us_sp500_pct": -0.02,
+    "us_dow_pct": -0.47,
+    "us_vix": 14.25,
+    "us_vix_pct": -4.17,
+    "dxy": 100.67,
+    "dxy_pct": 0.23,
+    "us_10y": 4.98,
     "asia_cue": "Bullish",
-    "europe_cue": "Bullish",
-    "global_risk": "Risk-On",
+    "europe_cue": "Mixed",
+    "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-09-22T18:09:28.756032+05:30"
+    "generated_at_ist": "2026-09-22T22:49:32.319105+05:30"
   },
   "world_markets": [
     {
@@ -72,42 +72,42 @@
         {
           "label": "Hang Seng",
           "metric": "HANG_SENG",
-          "value": 25087.75,
-          "pct_change": 0.18,
+          "value": 25042.71,
+          "pct_change": 1.18,
           "tone": "bull",
-          "session_date": "2026-09-22"
+          "session_date": "2026-09-21"
         },
         {
           "label": "Shanghai",
           "metric": "SHANGHAI",
-          "value": 3952.13,
-          "pct_change": 0.06,
-          "tone": "neutral",
-          "session_date": "2026-09-22"
+          "value": 3949.91,
+          "pct_change": 0.97,
+          "tone": "bull",
+          "session_date": "2026-09-21"
         },
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 7017.91,
-          "pct_change": 0.15,
-          "tone": "neutral",
-          "session_date": "2026-09-22"
+          "value": 7007.72,
+          "pct_change": 1.65,
+          "tone": "bull",
+          "session_date": "2026-09-21"
         },
         {
           "label": "Taiwan",
           "metric": "TAIWAN",
-          "value": 47800.17,
-          "pct_change": 0.17,
+          "value": 47718.84,
+          "pct_change": 1.14,
           "tone": "bull",
-          "session_date": "2026-09-22"
+          "session_date": "2026-09-21"
         },
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 8757.8,
-          "pct_change": 0.3,
-          "tone": "bull",
-          "session_date": "2026-09-22"
+          "value": 8731.9,
+          "pct_change": 0.01,
+          "tone": "neutral",
+          "session_date": "2026-09-21"
         }
       ]
     },
@@ -117,25 +117,25 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10749.34,
-          "pct_change": 0.1,
-          "tone": "neutral",
+          "value": 10708.33,
+          "pct_change": -0.29,
+          "tone": "bear",
           "session_date": "2026-09-22"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 25707.76,
-          "pct_change": 0.52,
-          "tone": "bull",
+          "value": 25578.85,
+          "pct_change": 0.02,
+          "tone": "neutral",
           "session_date": "2026-09-22"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6340.51,
-          "pct_change": 0.35,
-          "tone": "bull",
+          "value": 6324.72,
+          "pct_change": 0.1,
+          "tone": "neutral",
           "session_date": "2026-09-22"
         }
       ]
@@ -146,32 +146,32 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7764.7,
-          "pct_change": 1.49,
-          "tone": "bull",
-          "session_date": "2026-09-21"
+          "value": 7763.06,
+          "pct_change": -0.02,
+          "tone": "neutral",
+          "session_date": "2026-09-22"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 27122.09,
-          "pct_change": 2.26,
+          "value": 27212.67,
+          "pct_change": 0.33,
           "tone": "bull",
-          "session_date": "2026-09-21"
+          "session_date": "2026-09-22"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 52048.83,
-          "pct_change": 0.71,
-          "tone": "bull",
-          "session_date": "2026-09-21"
+          "value": 51805.85,
+          "pct_change": -0.47,
+          "tone": "bear",
+          "session_date": "2026-09-22"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 14.65,
-          "pct_change": -1.48,
+          "value": 14.25,
+          "pct_change": -4.17,
           "tone": "bull",
           "session_date": "2026-09-22"
         }
@@ -191,50 +191,50 @@
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 90.33,
-          "pct_change": -5.69,
+          "value": 91.18,
+          "pct_change": -4.8,
           "tone": "bear",
           "session_date": "2026-09-22"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 98.61,
-          "pct_change": -1.72,
+          "value": 99.87,
+          "pct_change": -0.47,
           "tone": "bear",
           "session_date": "2026-09-22"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 100.39,
-          "pct_change": -0.04,
+          "value": 100.67,
+          "pct_change": 0.23,
           "tone": "neutral",
           "session_date": "2026-09-22"
         },
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 4.93,
-          "pct_change": -0.75,
-          "tone": "bull",
+          "value": 4.98,
+          "pct_change": 0.3,
+          "tone": "neutral",
           "session_date": "2026-09-22"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 48.5,
-          "pct_change": 1.0,
-          "tone": "bull",
-          "session_date": "2026-09-21"
+          "value": 48.21,
+          "pct_change": -0.6,
+          "tone": "bear",
+          "session_date": "2026-09-22"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 68.83,
-          "pct_change": 2.69,
-          "tone": "bull",
-          "session_date": "2026-09-21"
+          "value": 68.75,
+          "pct_change": -0.11,
+          "tone": "neutral",
+          "session_date": "2026-09-22"
         }
       ]
     }
@@ -260,7 +260,6 @@
         "EMCURE",
         "KOVAI",
         "ARROWGREEN",
-        "TAALTECH",
         "LAURUSLABS",
         "AMEYA",
         "SHYAMMETL",
@@ -294,7 +293,8 @@
         "AUROPHARMA",
         "BHAGYANGR",
         "CAPLIPOINT",
-        "MENONBE"
+        "MENONBE",
+        "VALIANTORG"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -320,7 +320,6 @@
         "EMCURE",
         "KOVAI",
         "ARROWGREEN",
-        "TAALTECH",
         "LAURUSLABS",
         "AMEYA",
         "SHYAMMETL",
@@ -354,7 +353,8 @@
         "BHAGYANGR",
         "CAPLIPOINT",
         "MENONBE",
-        "VALIANTORG"
+        "VALIANTORG",
+        "EFFWA"
       ],
       "dropped_symbols": [
         "SIGNPOST",
@@ -469,12 +469,12 @@
       ],
       "dropped_symbols": [
         "ELANTAS",
-        "TAALTECH",
         "NEAGI",
         "KPL",
         "PRSMJOHNSN",
         "VELJAN",
         "SUNDARMFIN",
+        "TAALTECH",
         "SONUINFRA",
         "ULTRAMAR",
         "AXTEL",
@@ -1608,7 +1608,6 @@
           "EMCURE",
           "KOVAI",
           "ARROWGREEN",
-          "TAALTECH",
           "LAURUSLABS",
           "AMEYA",
           "SHYAMMETL",
@@ -1642,7 +1641,8 @@
           "AUROPHARMA",
           "BHAGYANGR",
           "CAPLIPOINT",
-          "MENONBE"
+          "MENONBE",
+          "VALIANTORG"
         ],
         "dropped_symbols": [],
         "survivor_symbols_truncated": true,
@@ -1671,7 +1671,6 @@
           "EMCURE",
           "KOVAI",
           "ARROWGREEN",
-          "TAALTECH",
           "LAURUSLABS",
           "AMEYA",
           "SHYAMMETL",
@@ -1705,7 +1704,8 @@
           "BHAGYANGR",
           "CAPLIPOINT",
           "MENONBE",
-          "VALIANTORG"
+          "VALIANTORG",
+          "EFFWA"
         ],
         "dropped_symbols": [
           "SIGNPOST",
@@ -1823,12 +1823,12 @@
         ],
         "dropped_symbols": [
           "ELANTAS",
-          "TAALTECH",
           "NEAGI",
           "KPL",
           "PRSMJOHNSN",
           "VELJAN",
           "SUNDARMFIN",
+          "TAALTECH",
           "SONUINFRA",
           "ULTRAMAR",
           "AXTEL",
@@ -2878,7 +2878,7 @@
         "gap_flag": false,
         "hit_t1": false,
         "hit_t2": false,
-        "reconfirmed_count": 8,
+        "reconfirmed_count": 9,
         "notes": null
       },
       {
@@ -3099,22 +3099,40 @@
   },
   "swing_candidates_top": [
     {
-      "symbol": "MMP",
-      "close": 461.3,
+      "symbol": "URBANCO",
+      "close": 174.21,
       "score": 14,
-      "perf_1m": 13.3415233415,
-      "rs_vs_nifty_1m": 17.15,
-      "rs_vs_sector_1m": 13.34,
-      "deliv_pct": 52.42,
+      "perf_1m": 14.6571014874,
+      "rs_vs_nifty_1m": 18.47,
+      "rs_vs_sector_1m": 21.05,
+      "deliv_pct": 44.75,
       "pct_change_oi": null,
-      "upside_to_target_pct": 7.96,
-      "atr": 27.7088848287,
-      "stop_1_5atr": 419.74,
-      "target_5pct": 484.36,
+      "upside_to_target_pct": 5.6,
+      "atr": 7.4899635674,
+      "stop_1_5atr": 162.98,
+      "target_5pct": 182.92,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Non-Energy Minerals"
+      "sector": "Technology Services"
+    },
+    {
+      "symbol": "MANBA",
+      "close": 136.41,
+      "score": 14,
+      "perf_1m": 3.4820209376,
+      "rs_vs_nifty_1m": 7.29,
+      "rs_vs_sector_1m": 3.48,
+      "deliv_pct": 44.62,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 12.89,
+      "atr": 4.5587118215,
+      "stop_1_5atr": 129.57,
+      "target_5pct": 143.23,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
     },
     {
       "symbol": "ALMONDZ",
@@ -3135,42 +3153,6 @@
       "sector": "Finance"
     },
     {
-      "symbol": "NIBL",
-      "close": 33.08,
-      "score": 14,
-      "perf_1m": 0.6082725061,
-      "rs_vs_nifty_1m": 4.42,
-      "rs_vs_sector_1m": 0.61,
-      "deliv_pct": 53.9,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 23.34,
-      "atr": 2.1316872493,
-      "stop_1_5atr": 29.88,
-      "target_5pct": 34.73,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "MANKIND",
-      "close": 2480.0,
-      "score": 14,
-      "perf_1m": 3.9832285115,
-      "rs_vs_nifty_1m": 7.79,
-      "rs_vs_sector_1m": 1.89,
-      "deliv_pct": 43.18,
-      "pct_change_oi": 0.31,
-      "upside_to_target_pct": 11.31,
-      "atr": 58.3339883169,
-      "stop_1_5atr": 2392.5,
-      "target_5pct": 2604.0,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Health Technology"
-    },
-    {
       "symbol": "APARINDS",
       "close": 18233.0,
       "score": 14,
@@ -3187,6 +3169,42 @@
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Electronic Technology"
+    },
+    {
+      "symbol": "MMP",
+      "close": 461.3,
+      "score": 14,
+      "perf_1m": 13.3415233415,
+      "rs_vs_nifty_1m": 17.15,
+      "rs_vs_sector_1m": 13.34,
+      "deliv_pct": 52.42,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 7.96,
+      "atr": 27.7088848287,
+      "stop_1_5atr": 419.74,
+      "target_5pct": 484.36,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Non-Energy Minerals"
+    },
+    {
+      "symbol": "CASTROLIND",
+      "close": 195.61,
+      "score": 14,
+      "perf_1m": 3.7333616164,
+      "rs_vs_nifty_1m": 7.54,
+      "rs_vs_sector_1m": 3.73,
+      "deliv_pct": 61.41,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 12.88,
+      "atr": 2.8398644954,
+      "stop_1_5atr": 191.35,
+      "target_5pct": 205.39,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Energy Minerals"
     },
     {
       "symbol": "SHARDAMOTR",
@@ -3225,22 +3243,22 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "MANBA",
-      "close": 136.41,
+      "symbol": "ARCHIDPLY",
+      "close": 107.68,
       "score": 14,
-      "perf_1m": 3.4820209376,
-      "rs_vs_nifty_1m": 7.29,
-      "rs_vs_sector_1m": 3.48,
-      "deliv_pct": 44.62,
+      "perf_1m": 13.3473684211,
+      "rs_vs_nifty_1m": 17.16,
+      "rs_vs_sector_1m": 13.35,
+      "deliv_pct": 78.32,
       "pct_change_oi": null,
-      "upside_to_target_pct": 12.89,
-      "atr": 4.5587118215,
-      "stop_1_5atr": 129.57,
-      "target_5pct": 143.23,
+      "upside_to_target_pct": 15.88,
+      "atr": 4.99626339,
+      "stop_1_5atr": 100.19,
+      "target_5pct": 113.06,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Finance"
+      "sector": "Producer Manufacturing"
     },
     {
       "symbol": "ORIENTCER",
@@ -3261,58 +3279,22 @@
       "sector": "Non-Energy Minerals"
     },
     {
-      "symbol": "URBANCO",
-      "close": 174.21,
+      "symbol": "MANKIND",
+      "close": 2480.0,
       "score": 14,
-      "perf_1m": 14.6571014874,
-      "rs_vs_nifty_1m": 18.47,
-      "rs_vs_sector_1m": 21.05,
-      "deliv_pct": 44.75,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 5.6,
-      "atr": 7.4899635674,
-      "stop_1_5atr": 162.98,
-      "target_5pct": 182.92,
+      "perf_1m": 3.9832285115,
+      "rs_vs_nifty_1m": 7.79,
+      "rs_vs_sector_1m": 1.89,
+      "deliv_pct": 43.18,
+      "pct_change_oi": -1.04,
+      "upside_to_target_pct": 11.31,
+      "atr": 58.3339883169,
+      "stop_1_5atr": 2392.5,
+      "target_5pct": 2604.0,
       "earnings_within_21d": false,
       "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Technology Services"
-    },
-    {
-      "symbol": "CASTROLIND",
-      "close": 195.61,
-      "score": 14,
-      "perf_1m": 3.7333616164,
-      "rs_vs_nifty_1m": 7.54,
-      "rs_vs_sector_1m": 3.73,
-      "deliv_pct": 61.41,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 12.88,
-      "atr": 2.8398644954,
-      "stop_1_5atr": 191.35,
-      "target_5pct": 205.39,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Energy Minerals"
-    },
-    {
-      "symbol": "ARCHIDPLY",
-      "close": 107.68,
-      "score": 14,
-      "perf_1m": 13.3473684211,
-      "rs_vs_nifty_1m": 17.16,
-      "rs_vs_sector_1m": 13.35,
-      "deliv_pct": 78.32,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 15.88,
-      "atr": 4.99626339,
-      "stop_1_5atr": 100.19,
-      "target_5pct": 113.06,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Producer Manufacturing"
+      "tech_rating": "Strong buy",
+      "sector": "Health Technology"
     },
     {
       "symbol": "SUDEEPPHRM",
@@ -3333,40 +3315,58 @@
       "sector": "Health Technology"
     },
     {
-      "symbol": "GKB",
-      "close": 68.37,
-      "score": 13,
-      "perf_1m": 5.1846153846,
-      "rs_vs_nifty_1m": 8.99,
-      "rs_vs_sector_1m": 3.09,
-      "deliv_pct": 53.15,
+      "symbol": "NIBL",
+      "close": 33.08,
+      "score": 14,
+      "perf_1m": 0.6082725061,
+      "rs_vs_nifty_1m": 4.42,
+      "rs_vs_sector_1m": 0.61,
+      "deliv_pct": 53.9,
       "pct_change_oi": null,
-      "upside_to_target_pct": 11.19,
-      "atr": 5.2690608245,
-      "stop_1_5atr": 60.47,
-      "target_5pct": 71.79,
+      "upside_to_target_pct": 23.34,
+      "atr": 2.1316872493,
+      "stop_1_5atr": 29.88,
+      "target_5pct": 34.73,
       "earnings_within_21d": false,
       "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
+      "tech_rating": "Strong buy",
+      "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "PRABHA",
-      "close": 235.72,
+      "symbol": "PVP",
+      "close": 65.35,
       "score": 13,
-      "perf_1m": 11.1886792453,
-      "rs_vs_nifty_1m": 15.0,
-      "rs_vs_sector_1m": 11.19,
-      "deliv_pct": 53.8,
+      "perf_1m": 47.5169300226,
+      "rs_vs_nifty_1m": 51.33,
+      "rs_vs_sector_1m": 53.91,
+      "deliv_pct": 45.65,
       "pct_change_oi": null,
-      "upside_to_target_pct": 11.49,
-      "atr": 14.0044934712,
-      "stop_1_5atr": 214.71,
-      "target_5pct": 247.51,
+      "upside_to_target_pct": 10.02,
+      "atr": 3.9031670986,
+      "stop_1_5atr": 59.5,
+      "target_5pct": 68.62,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Energy Minerals"
+      "sector": "Technology Services"
+    },
+    {
+      "symbol": "BHAGERIA",
+      "close": 345.25,
+      "score": 13,
+      "perf_1m": 66.7874396135,
+      "rs_vs_nifty_1m": 70.6,
+      "rs_vs_sector_1m": null,
+      "deliv_pct": 58.85,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 6.65,
+      "atr": 17.3636553182,
+      "stop_1_5atr": 319.2,
+      "target_5pct": 362.51,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Process Industries"
     }
   ],
   "urls": {
@@ -3442,7 +3442,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-09-22T18:09:49.769845+05:30",
+    "generated_at_ist": "2026-09-22T22:49:59.722428+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,
