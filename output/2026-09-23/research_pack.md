@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-23
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-23T18:10:10.425023+05:30
+- **generated_at_ist:** 2026-09-23T23:01:01.674206+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Neutral**
 - nifty: Neutral (0.14%)
 - india_vix: 10.35 (Low)
-- fii_net: -3809.99 | dii_net: 4120.07
-- overall_risk: Low | global_risk: Risk-On
+- fii_net: 1617.45 | dii_net: 2341.46
+- overall_risk: Low | global_risk: Risk-Off
 
 ## Funnel
 
@@ -91,11 +91,7 @@
 - **KENNAMET** status=open entry=4266.4 last=4316.7 mfe=11.09 mae=-3.9 opened=2026-09-15
 - **ACMESOLAR** status=open entry=435.25 last=452.3 mfe=9.57 mae=-5.46 opened=2026-09-18
 - **WELCORP** status=open entry=2660.1 last=2796.8 mfe=6.61 mae=-7.05 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=193.23 mfe=0.0 mae=0.0 opened=2026-09-23
-
-## Needs action
-
-- **CASTROLIND**: EXIT — STOP HIT — session low at/below stop ₹190.35 (last ₹193.23)
+- **CASTROLIND** status=open entry=193.23 last=193.23 mfe=1.41 mae=-1.62 opened=2026-09-23
 
 ## Closed today
 
@@ -103,51 +99,51 @@
 
 ## Swing candidates (top)
 
+- SAKAR: score=14 rs_nifty=30.72 deliv=45.04
+- CGCL: score=14 rs_nifty=22.75 deliv=51.06
+- MARKSANS: score=14 rs_nifty=11.07 deliv=43.44
+- STOVEKRAFT: score=14 rs_nifty=10.16 deliv=53.56
+- CASTROLIND: score=14 rs_nifty=6.32 deliv=52.97
 - OMAXAUTO: score=14 rs_nifty=11.57 deliv=70.11
-- GIPCL: score=14 rs_nifty=13.78 deliv=50.11
+- PITTIENG: score=14 rs_nifty=13.53 deliv=55.4
+- MAHSEAMLES: score=14 rs_nifty=13.46 deliv=47.32
+- KAMATHOTEL: score=14 rs_nifty=17.01 deliv=49.24
+- WESTLIFE: score=14 rs_nifty=4.79 deliv=93.0
+- SBCL: score=14 rs_nifty=18.93 deliv=51.79
+- STEL: score=14 rs_nifty=6.83 deliv=46.95
 - POLICYBZR: score=14 rs_nifty=8.39 deliv=54.17
 - LGEINDIA: score=14 rs_nifty=7.71 deliv=46.53
-- IDFCFIRSTB: score=14 rs_nifty=4.46 deliv=47.27
-- SAKAR: score=14 rs_nifty=30.72 deliv=45.04
-- STOVEKRAFT: score=14 rs_nifty=10.16 deliv=53.56
-- ORIENTBELL: score=14 rs_nifty=12.24 deliv=52.29
-- APOLLOHOSP: score=14 rs_nifty=7.8 deliv=63.23
-- WESTLIFE: score=14 rs_nifty=4.79 deliv=93.0
-- LLOYDSENGG: score=14 rs_nifty=4.9 deliv=42.78
-- MAHSEAMLES: score=14 rs_nifty=13.46 deliv=47.32
-- KTKBANK: score=14 rs_nifty=7.81 deliv=47.26
-- SBCL: score=14 rs_nifty=18.93 deliv=51.79
-- CGCL: score=14 rs_nifty=22.75 deliv=51.06
+- INDGN: score=14 rs_nifty=7.98 deliv=54.66
 
 ## World markets (India cues)
 
 ### Asia
 - Nikkei: +1.38% (bull)
-- Hang Seng: -0.83% (bear)
-- Shanghai: -0.34% (bear)
-- Kospi: +1.04% (bull)
-- Taiwan: +0.92% (bull)
-- ASX 200: +0.38% (bull)
+- Hang Seng: +1.18% (bull)
+- Shanghai: +0.97% (bull)
+- Kospi: +1.65% (bull)
+- Taiwan: +1.14% (bull)
+- ASX 200: +0.01% (neutral)
 
 ### Europe
-- FTSE 100: -0.51% (bear)
-- DAX: -0.70% (bear)
-- Euro Stoxx 50: -0.41% (bear)
+- FTSE 100: -0.31% (bear)
+- DAX: -0.64% (bear)
+- Euro Stoxx 50: -0.29% (bear)
 
 ### US
-- S&P 500: +1.49% (bull)
-- Nasdaq: +2.26% (bull)
-- Dow: +0.71% (bull)
-- US VIX: -3.70% (bull)
+- S&P 500: -0.82% (bear)
+- Nasdaq: -0.87% (bear)
+- Dow: -0.97% (bear)
+- US VIX: +3.63% (bear)
 
 ### Macro
-- USDINR: +0.03% (neutral)
-- Crude WTI: -4.26% (bear)
-- Brent: -3.03% (bear)
-- DXY: +0.50% (bear)
-- US 10Y: +0.54% (bear)
-- India ETF: +1.00% (bull)
-- EM ETF: +2.69% (bull)
+- USDINR: +0.02% (neutral)
+- Crude WTI: -3.51% (bear)
+- Brent: -1.82% (bear)
+- DXY: +0.78% (bear)
+- US 10Y: +3.30% (bear)
+- India ETF: -0.98% (bear)
+- EM ETF: -1.80% (bear)
 
 
 ## Groq desk note
