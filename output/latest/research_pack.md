@@ -1,83 +1,100 @@
 # Parkhu research pack — 2026-09-24
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-24T10:50:31.972816+05:30
+- **generated_at_ist:** 2026-09-24T18:10:41.634097+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.95%)
-- india_vix: 11.31 (Low)
+- nifty: Bearish (-1.64%)
+- india_vix: 12.69 (Low)
 - fii_net: 1617.45 | dii_net: 2341.46
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
 - universe: 3168
-- trend = Bullish: 1241
-- price > SMA200: 988
-- price > EMA50: 977
-- ADX14 > 25: 544
-- RSI14 in 40-80: 515
-- RS > 0 vs NIFTY and sector: 318
-- delivery% >= 40: 147
-- relative_volume >= 1: 7
-- no earnings within 21d: 7
-- event_risk_score <= 1: 7
-- TV rating not Sell: 7
+- trend = Bullish: 1180
+- price > SMA200: 939
+- price > EMA50: 922
+- ADX14 > 25: 523
+- RSI14 in 40-80: 499
+- RS > 0 vs NIFTY and sector: 307
+- delivery% >= 40: 160
+- relative_volume >= 1: 26
+- no earnings within 21d: 26
+- event_risk_score <= 1: 26
+- TV rating not Sell: 25
 
-## Survivors (top 7 of 7)
+## Survivors (top 25 of 25)
 
-- **REMSONSIND** [rejected] score 69.3 — T1 needs more than 22 trading days (~1 month)
-- **DCBBANK** [rejected] score 68.4 — score below Watch band
-- **OMAXAUTO** [rejected] score 66.2 — T1 needs more than 22 trading days (~1 month)
-- **AARTIDRUGS** [rejected] score 62.7 — T1 needs more than 22 trading days (~1 month)
-- **KABRAEXTRU** [rejected] score 50.3 — score below Watch band
-- **PVP** [rejected] score 49.5 — score below Watch band
-- **SALSTEEL** [rejected] score 43.9 — score below Watch band
+- **MANBA** [watchlist] score 78.3 — score in Watch band (70–80)
+- **ALMONDZ** [watchlist] score 77.5 — score in Watch band (70–80)
+- **TFCILTD** [watchlist] score 76.2 — score in Watch band (70–80)
+- **TMB** [watchlist] score 71.7 — score in Watch band (70–80)
+- **DIVISLAB** [watchlist] score 71.3 — score in Watch band (70–80)
+- **LALPATHLAB** [watchlist] score 71.0 — score in Watch band (70–80)
+- **DCBBANK** [rejected] score 66.9 — score below Watch band
+- **DVL** [rejected] score 66.3 — T1 needs more than 22 trading days (~1 month)
+- **ALEMBICLTD** [rejected] score 66.1 — score below Watch band
+- **LGBBROSLTD** [rejected] score 65.4 — T1 needs more than 22 trading days (~1 month)
+- **LAL** [rejected] score 64.8 — score below Watch band
+- **OMAXAUTO** [rejected] score 64.7 — T1 needs more than 22 trading days (~1 month)
+- **RPGLIFE** [rejected] score 63.9 — score below Watch band
+- **SONACOMS** [rejected] score 62.0 — score below Watch band
+- **EIMCOELECO** [rejected] score 58.1 — score below Watch band
+- **STEL** [rejected] score 58.1 — score below Watch band
+- **BOROLTD** [rejected] score 57.9 — T1 needs more than 22 trading days (~1 month)
+- **MANUGRAPH** [rejected] score 56.4 — score below Watch band
+- **MSTCLTD** [rejected] score 50.5 — score below Watch band
+- **KABRAEXTRU** [rejected] score 50.2 — score below Watch band
+- **PVRINOX** [rejected] score 49.9 — score below Watch band
+- **PRIMESECU** [rejected] score 47.8 — score below Watch band
+- **PVP** [rejected] score 44.2 — score below Watch band
+- **SALSTEEL** [rejected] score 42.9 — score below Watch band
+- **PROZONER** [rejected] score 35.3 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### AARTIDRUGS — Watch (score 14.0)
-- AARTIDRUGS | risk_sector: Health Technology
-- entry 445.95 | stop 423.7 | t1 468.25 | t2 None | t3 None | R:R None
+### ALEMBICLTD — Watch (score 14.0)
+- ALEMBICLTD | risk_sector: Health Technology
+- entry 107.18 | stop 100.64 | t1 112.54 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### OMAXAUTO — Watch (score 14.0)
-- OMAXAUTO | risk_sector: Producer Manufacturing
-- entry 199.82 | stop 182.27 | t1 209.81 | t2 None | t3 None | R:R None
+### NYKAA — Watch (score 14.0)
+- NYKAA | risk_sector: Retail Trade
+- entry 335.3 | stop 322.42 | t1 352.07 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### MARKSANS — Watch (score 13.0)
-- MARKSANS | risk_sector: Health Technology
-- entry 343.4 | stop 322.82 | t1 360.57 | t2 None | t3 None | R:R None
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 299.7 | stop 283.88 | t1 314.68 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ACE — Watch (score 13.0)
-- ACE | risk_sector: Producer Manufacturing
-- entry 1242.6 | stop 1182.02 | t1 1304.73 | t2 None | t3 None | R:R None
+### PHOENIXLTD — Watch (score 14.0)
+- PHOENIXLTD | risk_sector: Finance
+- entry 1955.0 | stop 1881.52 | t1 2052.75 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ADOR — Watch (score 13.0)
-- ADOR | risk_sector: Producer Manufacturing
-- entry 1638.3 | stop 1548.9 | t1 1720.22 | t2 None | t3 None | R:R None
+### PVP — Watch (score 14.0)
+- PVP | risk_sector: Technology Services
+- entry 65.2 | stop 59.09 | t1 68.46 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **TMB** status=open entry=897.6 last=902.5 mfe=6.31 mae=-4.19 opened=2026-08-26
-- **IPCALAB** status=open entry=1956.1 last=1999.8 mfe=4.19 mae=-2.61 opened=2026-09-03
-- **KOVAI** status=open entry=6069.0 last=6147.0 mfe=6.18 mae=-1.63 opened=2026-09-07
-- **PLAZACABLE** status=open entry=59.05 last=61.52 mfe=11.77 mae=-5.83 opened=2026-09-07
-- **KENNAMET** status=open entry=4266.4 last=4272.9 mfe=11.09 mae=-3.9 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=454.2 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2787.9 mfe=6.61 mae=-7.05 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=194.9 mfe=1.41 mae=-1.62 opened=2026-09-23
+- **TMB** status=open entry=897.6 last=893.55 mfe=6.31 mae=-4.19 opened=2026-08-26
+- **IPCALAB** status=open entry=1956.1 last=1997.1 mfe=4.19 mae=-2.61 opened=2026-09-03
+- **KOVAI** status=open entry=6069.0 last=6101.0 mfe=6.18 mae=-1.63 opened=2026-09-07
+- **PLAZACABLE** status=open entry=59.05 last=60.69 mfe=11.77 mae=-5.83 opened=2026-09-07
+- **KENNAMET** status=open entry=4266.4 last=4266.4 mfe=11.09 mae=-3.9 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=446.65 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2692.2 mfe=6.61 mae=-7.05 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=194.8 mfe=1.41 mae=-1.62 opened=2026-09-23
 
 ## Needs action
 
-- **BIRLACABLE**: EXIT — STOP HIT — session low at/below stop ₹347.71 (last ₹350.75)
 - **IPCALAB**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
@@ -86,49 +103,49 @@
 
 ## Swing candidates (top)
 
-- AARTIDRUGS: score=14 rs_nifty=9.51 deliv=40.4
-- OMAXAUTO: score=14 rs_nifty=4.5 deliv=70.11
-- MARKSANS: score=13 rs_nifty=9.32 deliv=43.44
-- ACE: score=13 rs_nifty=10.05 deliv=49.17
-- ADOR: score=13 rs_nifty=4.9 deliv=45.14
-- MACPOWER: score=13 rs_nifty=8.68 deliv=44.41
-- INDNIPPON: score=13 rs_nifty=20.39 deliv=41.11
-- STOVEKRAFT: score=13 rs_nifty=4.55 deliv=53.56
-- VINCOFE: score=13 rs_nifty=20.51 deliv=46.95
-- WINDLAS: score=13 rs_nifty=13.44 deliv=56.09
-- SHANTIGEAR: score=13 rs_nifty=31.06 deliv=45.02
-- MSTCLTD: score=13 rs_nifty=6.74 deliv=46.33
-- PAYTM: score=13 rs_nifty=12.42 deliv=44.73
-- DOLPHIN: score=13 rs_nifty=18.91 deliv=43.05
-- ABDL: score=13 rs_nifty=15.52 deliv=46.74
+- ALEMBICLTD: score=14 rs_nifty=20.8 deliv=45.92
+- NYKAA: score=14 rs_nifty=6.38 deliv=52.35
+- PRIMESECU: score=14 rs_nifty=13.79 deliv=58.42
+- PHOENIXLTD: score=14 rs_nifty=6.81 deliv=48.24
+- PVP: score=14 rs_nifty=40.6 deliv=50.2
+- MANBA: score=14 rs_nifty=13.32 deliv=42.94
+- DIVISLAB: score=14 rs_nifty=17.73 deliv=58.87
+- GAIL: score=14 rs_nifty=5.26 deliv=61.78
+- MAXHEALTH: score=14 rs_nifty=10.37 deliv=49.64
+- PVRINOX: score=14 rs_nifty=5.31 deliv=57.21
+- OMAXAUTO: score=14 rs_nifty=6.09 deliv=46.5
+- DVL: score=14 rs_nifty=7.23 deliv=76.13
+- LAL: score=14 rs_nifty=7.84 deliv=73.66
+- RPGLIFE: score=14 rs_nifty=14.61 deliv=41.97
+- STEL: score=14 rs_nifty=4.91 deliv=50.86
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.38% (bull)
-- Hang Seng: -0.36% (bear)
-- Shanghai: -0.72% (bear)
+- Nikkei: +0.76% (bull)
+- Hang Seng: -0.29% (bear)
+- Shanghai: -1.22% (bear)
 - Kospi: +1.04% (bull)
-- Taiwan: -0.40% (bear)
-- ASX 200: -0.73% (bear)
+- Taiwan: -0.28% (bear)
+- ASX 200: -0.72% (bear)
 
 ### Europe
-- FTSE 100: -0.31% (bear)
-- DAX: -0.64% (bear)
-- Euro Stoxx 50: -0.29% (bear)
+- FTSE 100: +0.10% (neutral)
+- DAX: -0.24% (bear)
+- Euro Stoxx 50: -0.11% (neutral)
 
 ### US
 - S&P 500: -0.76% (bear)
 - Nasdaq: -0.69% (bear)
 - Dow: -1.03% (bear)
-- US VIX: +2.08% (bear)
+- US VIX: +4.94% (bear)
 
 ### Macro
-- USDINR: +0.19% (neutral)
-- Crude WTI: -0.84% (bear)
-- Brent: -5.55% (bear)
-- DXY: -0.03% (neutral)
-- US 10Y: +3.04% (bear)
+- USDINR: +0.27% (neutral)
+- Crude WTI: +1.76% (bull)
+- Brent: +1.97% (bull)
+- DXY: +0.18% (neutral)
+- US 10Y: +0.04% (neutral)
 - India ETF: -0.93% (bear)
 - EM ETF: -1.63% (bear)
 
