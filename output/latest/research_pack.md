@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-25
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-25T18:09:28.028583+05:30
+- **generated_at_ist:** 2026-09-25T23:04:37.928935+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bullish**
 - nifty: Bullish (0.34%)
 - india_vix: 12.16 (Low)
-- fii_net: -5027.36 | dii_net: 4301.18
-- overall_risk: Low | global_risk: Neutral
+- fii_net: -3693.93 | dii_net: 2838.17
+- overall_risk: Low | global_risk: Risk-On
 
 ## Funnel
 
@@ -20,8 +20,8 @@
 - price > EMA50: 943
 - ADX14 > 25: 515
 - RSI14 in 40-80: 488
-- RS > 0 vs NIFTY and sector: 303
-- delivery% >= 40: 124
+- RS > 0 vs NIFTY and sector: 304
+- delivery% >= 40: 125
 - relative_volume >= 1: 23
 - no earnings within 21d: 23
 - event_risk_score <= 1: 23
@@ -37,7 +37,7 @@
 - **SOMANYCERA** [rejected] score 68.8 — score below Watch band
 - **ADOR** [rejected] score 67.1 — score below Watch band
 - **WHEELS** [rejected] score 67.1 — score below Watch band
-- **DVL** [rejected] score 66.3 — T1 needs more than 22 trading days (~1 month)
+- **DVL** [rejected] score 66.4 — T1 needs more than 22 trading days (~1 month)
 - **TSFINV** [rejected] score 65.7 — T1 needs more than 22 trading days (~1 month)
 - **RPGLIFE** [rejected] score 65.3 — score below Watch band
 - **YASHO** [rejected] score 64.0 — score below Watch band
@@ -81,51 +81,51 @@
 
 ## Swing candidates (top)
 
-- ADOR: score=14 rs_nifty=9.3 deliv=41.46
-- LGEINDIA: score=14 rs_nifty=6.7 deliv=48.46
-- GILLANDERS: score=14 rs_nifty=5.55 deliv=94.58
-- PHOENIXLTD: score=14 rs_nifty=7.05 deliv=56.11
-- RAMRAT: score=14 rs_nifty=21.24 deliv=41.16
-- SONACOMS: score=14 rs_nifty=6.85 deliv=51.33
-- YASHO: score=14 rs_nifty=5.58 deliv=44.64
-- ORIENTBELL: score=14 rs_nifty=13.23 deliv=60.21
-- TSFINV: score=14 rs_nifty=16.88 deliv=67.42
-- TORNTPHARM: score=14 rs_nifty=6.61 deliv=65.31
-- DVL: score=14 rs_nifty=7.48 deliv=46.67
-- APOLLOHOSP: score=13 rs_nifty=5.41 deliv=71.36
-- LUMAXTECH: score=13 rs_nifty=9.81 deliv=46.37
-- ZYDUSLIFE: score=13 rs_nifty=11.7 deliv=41.98
-- UNIDT: score=13 rs_nifty=13.16 deliv=61.52
+- TSFINV: score=14 rs_nifty=16.38 deliv=67.42
+- DVL: score=14 rs_nifty=6.98 deliv=46.67
+- GILLANDERS: score=14 rs_nifty=5.05 deliv=94.58
+- ADOR: score=14 rs_nifty=8.8 deliv=41.46
+- YASHO: score=14 rs_nifty=5.08 deliv=44.64
+- LGEINDIA: score=14 rs_nifty=6.2 deliv=48.46
+- RAMRAT: score=14 rs_nifty=20.74 deliv=41.16
+- ORIENTBELL: score=14 rs_nifty=12.73 deliv=60.21
+- DMCC: score=13 rs_nifty=11.93 deliv=55.2
+- RELIABLE: score=13 rs_nifty=8.6 deliv=71.61
+- MAXESTATES: score=13 rs_nifty=10.58 deliv=40.98
+- AKUMS: score=13 rs_nifty=13.39 deliv=50.25
+- STAR: score=13 rs_nifty=24.51 deliv=54.83
+- YATHARTH: score=13 rs_nifty=25.64 deliv=40.16
+- PVRINOX: score=13 rs_nifty=5.91 deliv=41.08
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.30% (bull)
-- Hang Seng: -1.01% (bear)
+- Nikkei: +0.76% (bull)
+- Hang Seng: -0.29% (bear)
 - Shanghai: -1.22% (bear)
-- Kospi: +1.04% (bull)
+- Kospi: +0.90% (bull)
 - Taiwan: -0.28% (bear)
-- ASX 200: -0.43% (bear)
+- ASX 200: -0.72% (bear)
 
 ### Europe
-- FTSE 100: +0.25% (bull)
-- DAX: +0.69% (bull)
-- Euro Stoxx 50: +0.70% (bull)
+- FTSE 100: +0.14% (neutral)
+- DAX: +0.56% (bull)
+- Euro Stoxx 50: +0.48% (bull)
 
 ### US
-- S&P 500: -0.02% (neutral)
-- Nasdaq: +0.01% (neutral)
-- Dow: -0.31% (bear)
-- US VIX: -3.51% (bull)
+- S&P 500: +0.44% (bull)
+- Nasdaq: +0.50% (bull)
+- Dow: +0.75% (bull)
+- US VIX: -4.21% (bull)
 
 ### Macro
-- USDINR: +0.07% (neutral)
-- Crude WTI: -1.91% (bear)
-- Brent: -7.40% (bear)
-- DXY: -0.33% (neutral)
-- US 10Y: +0.25% (neutral)
-- India ETF: -1.02% (bear)
-- EM ETF: -0.68% (bear)
+- USDINR: +0.06% (neutral)
+- Crude WTI: -2.53% (bear)
+- Brent: -9.11% (bear)
+- DXY: -0.24% (neutral)
+- US 10Y: +0.66% (bear)
+- India ETF: +0.47% (bull)
+- EM ETF: +0.92% (bull)
 
 
 ## Groq desk note
