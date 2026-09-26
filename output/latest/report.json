@@ -5,8 +5,8 @@
   "is_trading_day": false,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-26",
-  "generated_at_ist": "2026-09-26T18:08:20.160764+05:30",
-  "duration_seconds": 290.1,
+  "generated_at_ist": "2026-09-26T06:09:04.426164+05:30",
+  "duration_seconds": 345.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,13 +14,13 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3169,
-      "seconds": 3.4
+      "seconds": 3.1
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
       "rows": 14371,
-      "cache_rows": 7899323,
+      "cache_rows": 7899017,
       "symbols": 2876,
       "failed": 22,
       "lookback": 0,
@@ -29,7 +29,7 @@
       "cold": 407,
       "new_symbols": 22,
       "retries": 2,
-      "seconds": 215.7
+      "seconds": 262.7
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.3
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.7
+      "seconds": 1.0
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 4,
-      "seconds": 3.9
+      "seconds": 4.4
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.4
+      "seconds": 4.1
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 5.2
+      "seconds": 5.9
     },
     {
       "agent": "stock_options",
@@ -79,25 +79,25 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2302,
-      "seconds": 4.6
+      "seconds": 6.4
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.0
+      "seconds": 3.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.2
+      "seconds": 4.5
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.0
+      "seconds": 3.2
     },
     {
       "agent": "relative_strength",
@@ -109,7 +109,7 @@
       "agent": "event_risk",
       "status": "ok",
       "rows": 3169,
-      "seconds": 1.0
+      "seconds": 1.1
     },
     {
       "agent": "fno_momentum",
@@ -142,13 +142,13 @@
       "with_structure": 2872,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.0
+      "seconds": 23.3
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3169,
-      "seconds": 3.5
+      "seconds": 3.6
     },
     {
       "agent": "swing_brief",
@@ -164,7 +164,7 @@
         "TMB"
       ],
       "closed_today": [],
-      "seconds": 0.3
+      "seconds": 0.4
     }
   ],
   "ok": 20,
@@ -287,10 +287,6 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-26/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-26/relative_strength.csv"
     },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-26/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-26/report.json"
-    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-26/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-26/research_pack.json"
@@ -330,6 +326,10 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-26/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-26/watchlist.csv"
+    },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-09-26/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-09-26/report.json"
     }
   }
 }
