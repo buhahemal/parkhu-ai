@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-27
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-09-27T06:09:08.100519+05:30
+- **generated_at_ist:** 2026-09-27T18:09:14.120137+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -77,21 +77,21 @@
 
 ## Swing candidates (top)
 
-- ADOR: score=14 rs_nifty=8.8 deliv=41.46
 - LGEINDIA: score=14 rs_nifty=6.2 deliv=48.46
 - RAMRAT: score=14 rs_nifty=20.74 deliv=41.16
-- YASHO: score=14 rs_nifty=5.08 deliv=44.64
 - ORIENTBELL: score=14 rs_nifty=12.73 deliv=60.21
+- ADOR: score=14 rs_nifty=8.8 deliv=41.46
+- TSFINV: score=14 rs_nifty=16.38 deliv=67.42
+- YASHO: score=14 rs_nifty=5.08 deliv=44.64
 - DVL: score=14 rs_nifty=6.98 deliv=46.67
 - GILLANDERS: score=14 rs_nifty=5.05 deliv=94.58
-- TSFINV: score=14 rs_nifty=16.38 deliv=67.42
-- GEOJITFSL: score=13 rs_nifty=5.04 deliv=47.05
-- OMAXAUTO: score=13 rs_nifty=9.41 deliv=50.76
-- ASIANENE: score=13 rs_nifty=11.65 deliv=48.31
-- WINDLAS: score=13 rs_nifty=15.64 deliv=43.45
-- VENUSREM: score=13 rs_nifty=9.92 deliv=61.87
-- HERITGFOOD: score=13 rs_nifty=8.34 deliv=40.49
-- RACLGEAR: score=13 rs_nifty=15.0 deliv=54.36
+- MSTCLTD: score=13 rs_nifty=6.18 deliv=31.44
+- LUMAXTECH: score=13 rs_nifty=9.31 deliv=46.37
+- RPGLIFE: score=13 rs_nifty=22.44 deliv=49.41
+- ACE: score=13 rs_nifty=10.42 deliv=43.59
+- MANUGRAPH: score=13 rs_nifty=28.6 deliv=85.7
+- EDELWEISS: score=13 rs_nifty=10.51 deliv=41.79
+- BBOX: score=13 rs_nifty=10.94 deliv=29.94
 
 ## World markets (India cues)
 
@@ -117,7 +117,7 @@
 ### Macro
 - USDINR: -0.35% (neutral)
 - Crude WTI: -2.33% (bear)
-- Brent: -2.14% (bear)
+- Brent: -8.59% (bear)
 - DXY: -0.32% (neutral)
 - US 10Y: +0.43% (bear)
 - India ETF: +0.63% (bull)
