@@ -1,78 +1,81 @@
 # Parkhu research pack — 2026-09-28
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-28T06:09:48.477994+05:30
+- **generated_at_ist:** 2026-09-28T11:22:45.832276+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.34%)
-- india_vix: 12.16 (Low)
+- market_regime: **Bearish**
+- nifty: Bearish (-1.4%)
+- india_vix: 14.0 (Medium)
 - fii_net: -3693.93 | dii_net: 2838.17
-- overall_risk: Low | global_risk: Risk-On
+- overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 3169
-- trend = Bullish: 1226
-- price > SMA200: 959
-- price > EMA50: 943
-- ADX14 > 25: 515
-- RSI14 in 40-80: 488
-- RS > 0 vs NIFTY and sector: 304
-- delivery% >= 40: 125
-- relative_volume >= 1: 23
-- no earnings within 21d: 23
-- event_risk_score <= 1: 23
-- TV rating not Sell: 23
+- universe: 3170
+- trend = Bullish: 1135
+- price > SMA200: 879
+- price > EMA50: 871
+- ADX14 > 25: 497
+- RSI14 in 40-80: 471
+- RS > 0 vs NIFTY and sector: 286
+- delivery% >= 40: 114
+- relative_volume >= 1: 7
+- no earnings within 21d: 7
+- event_risk_score <= 1: 7
+- TV rating not Sell: 7
 
-## Survivors (top 23 of 23)
+## Survivors (top 7 of 7)
 
-- **CASTROLIND** [idea] score 88.1 — selected as idea
-- **ALMONDZ** [watchlist] score 78.2 — score in Watch band (70–80)
-- **ORIENTBELL** [watchlist] score 76.0 — score in Watch band (70–80)
-- **AIROLAM** [rejected] score 71.2 — T1 needs more than 22 trading days (~1 month)
-- **VETO** [watchlist] score 70.1 — score in Watch band (70–80)
-- **SOMANYCERA** [rejected] score 68.8 — score below Watch band
-- **ADOR** [rejected] score 67.1 — score below Watch band
-- **WHEELS** [rejected] score 67.1 — score below Watch band
-- **DVL** [rejected] score 66.4 — T1 needs more than 22 trading days (~1 month)
-- **TSFINV** [rejected] score 65.7 — T1 needs more than 22 trading days (~1 month)
-- **RPGLIFE** [rejected] score 65.3 — score below Watch band
-- **YASHO** [rejected] score 64.0 — score below Watch band
-- **RISHABH** [rejected] score 63.6 — score below Watch band
-- **RAMRAT** [rejected] score 63.3 — score below Watch band
-- **KIRLFER** [rejected] score 62.7 — score below Watch band
-- **SONACOMS** [rejected] score 62.3 — score below Watch band
-- **NAGREEKCAP** [rejected] score 57.6 — T1 needs more than 22 trading days (~1 month)
-- **KABRAEXTRU** [rejected] score 52.4 — score below Watch band
-- **PVP** [rejected] score 41.4 — score below Watch band
-- **SALSTEEL** [rejected] score 41.4 — score below Watch band
-- **LGEINDIA** [rejected] score 40.3 — T1 needs more than 22 trading days (~1 month)
-- **GILLANDERS** [rejected] score 39.6 — score below Watch band
-- **PROZONER** [rejected] score 38.5 — T1 needs more than 22 trading days (~1 month)
+- **VETO** [watchlist] score 72.3 — score in Watch band (70–80)
+- **STARTECK** [rejected] score 68.1 — T1 needs more than 22 trading days (~1 month)
+- **SMCGLOBAL** [rejected] score 58.6 — score below Watch band
+- **EMKAY** [rejected] score 52.5 — T1 needs more than 22 trading days (~1 month)
+- **GILLANDERS** [rejected] score 40.2 — score below Watch band
+- **RETAIL** [rejected] score 39.6 — T1 needs more than 22 trading days (~1 month)
+- **PROZONER** [rejected] score 39.2 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### CASTROLIND — Buy (score 88.1)
-- Castrol India Limited | risk_sector: Energy Minerals
-- entry 201.67 | stop 194.77 | t1 215.46 | t2 222.36 | t3 229.25 | R:R 2.0
-- qty 49 | deployed 9882.0 (9.88%) | risk ₹338.0
+### GILLANDERS — Watch (score 14.0)
+- GILLANDERS | risk_sector: Consumer Non-Durables
+- entry 106.15 | stop 97.91 | t1 111.46 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### LUMAXTECH — Watch (score 13.0)
+- LUMAXTECH | risk_sector: Producer Manufacturing
+- entry 2036.1 | stop 1916.04 | t1 2137.91 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### KSL — Watch (score 13.0)
+- KSL | risk_sector: Non-Energy Minerals
+- entry 954.1 | stop 891.68 | t1 1001.8 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PATINTLOG — Watch (score 13.0)
+- PATINTLOG | risk_sector: Transportation
+- entry 13.85 | stop 12.8 | t1 14.54 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### OMAXAUTO — Watch (score 13.0)
+- OMAXAUTO | risk_sector: Producer Manufacturing
+- entry 208.15 | stop 190.55 | t1 218.56 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **IPCALAB** status=open entry=1956.1 last=1970.8 mfe=4.19 mae=-2.61 opened=2026-09-03
-- **PLAZACABLE** status=open entry=59.05 last=59.94 mfe=11.77 mae=-5.83 opened=2026-09-07
-- **KENNAMET** status=open entry=4266.4 last=4207.2 mfe=11.09 mae=-3.9 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=442.9 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2832.4 mfe=6.67 mae=-7.05 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=201.67 mfe=4.59 mae=-1.62 opened=2026-09-23
+- **IPCALAB** status=open entry=1956.1 last=1932.5 mfe=4.19 mae=-2.61 opened=2026-09-03
+- **PLAZACABLE** status=open entry=59.05 last=57.72 mfe=11.77 mae=-5.83 opened=2026-09-07
+- **KENNAMET** status=open entry=4266.4 last=4162.8 mfe=11.09 mae=-3.9 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=441.4 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2764.7 mfe=6.69 mae=-7.05 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=201.53 mfe=5.26 mae=-1.62 opened=2026-09-23
 
 ## Needs action
 
-- **IPCALAB**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
-- **TMB**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at -1.75% — capital has an opportunity cost
+- **IPCALAB**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
 
@@ -80,31 +83,31 @@
 
 ## Swing candidates (top)
 
-- ORIENTBELL: score=14 rs_nifty=12.73 deliv=60.21
-- LGEINDIA: score=14 rs_nifty=6.2 deliv=48.46
-- ADOR: score=14 rs_nifty=8.8 deliv=41.46
-- TSFINV: score=14 rs_nifty=16.38 deliv=67.42
-- RAMRAT: score=14 rs_nifty=20.74 deliv=41.16
-- DVL: score=14 rs_nifty=6.98 deliv=46.67
-- GILLANDERS: score=14 rs_nifty=5.05 deliv=94.58
-- YASHO: score=14 rs_nifty=5.08 deliv=44.64
-- WSTCSTPAPR: score=13 rs_nifty=25.19 deliv=45.51
-- EXPLEOSOL: score=13 rs_nifty=5.87 deliv=66.48
-- LENSKART: score=13 rs_nifty=7.09 deliv=55.41
-- ALEMBICLTD: score=13 rs_nifty=15.54 deliv=41.56
-- DOLPHIN: score=13 rs_nifty=15.43 deliv=43.91
-- ASHIANA: score=13 rs_nifty=11.81 deliv=42.87
-- MANKIND: score=13 rs_nifty=9.37 deliv=58.61
+- GILLANDERS: score=14 rs_nifty=6.38 deliv=94.58
+- LUMAXTECH: score=13 rs_nifty=10.28 deliv=46.37
+- KSL: score=13 rs_nifty=13.54 deliv=59.2
+- PATINTLOG: score=13 rs_nifty=9.81 deliv=79.08
+- OMAXAUTO: score=13 rs_nifty=15.45 deliv=50.76
+- CENTUM: score=13 rs_nifty=44.64 deliv=49.65
+- EMKAY: score=13 rs_nifty=24.51 deliv=52.37
+- BIL: score=13 rs_nifty=20.58 deliv=59.81
+- VETO: score=13 rs_nifty=20.5 deliv=61.92
+- WENDT: score=13 rs_nifty=6.62 deliv=41.81
+- ASIANHOTNR: score=13 rs_nifty=31.0 deliv=63.45
+- ABBOTINDIA: score=13 rs_nifty=7.42 deliv=48.43
+- PARAGMILK: score=13 rs_nifty=15.58 deliv=41.24
+- SAKAR: score=13 rs_nifty=30.74 deliv=45.39
+- RPGLIFE: score=13 rs_nifty=20.51 deliv=49.41
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.97% (bull)
-- Hang Seng: -1.01% (bear)
-- Shanghai: -1.22% (bear)
-- Kospi: -0.44% (bear)
+- Nikkei: -0.21% (bear)
+- Hang Seng: +0.64% (bull)
+- Shanghai: -1.99% (bear)
+- Kospi: -2.37% (bear)
 - Taiwan: -0.28% (bear)
-- ASX 200: +0.15% (neutral)
+- ASX 200: +0.12% (neutral)
 
 ### Europe
 - FTSE 100: +0.14% (neutral)
@@ -118,10 +121,10 @@
 - US VIX: -5.11% (bull)
 
 ### Macro
-- USDINR: -0.37% (bull)
-- Crude WTI: +1.13% (bull)
-- Brent: -5.47% (bear)
-- DXY: -0.32% (neutral)
+- USDINR: -0.21% (neutral)
+- Crude WTI: +2.50% (bull)
+- Brent: -4.57% (bear)
+- DXY: +0.16% (neutral)
 - US 10Y: +0.43% (bear)
 - India ETF: +0.63% (bull)
 - EM ETF: +1.09% (bull)
