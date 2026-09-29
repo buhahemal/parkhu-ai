@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-09-29",
-  "generated_at_ist": "2026-09-29T11:39:45.220967+05:30",
-  "duration_seconds": 370.4,
+  "generated_at_ist": "2026-09-29T18:10:03.109935+05:30",
+  "duration_seconds": 365.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3171,
-      "seconds": 3.3
+      "seconds": 3.2
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
       "rows": 14379,
-      "cache_rows": 7905944,
+      "cache_rows": 7906254,
       "symbols": 2876,
       "failed": 24,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2491,
-      "cold": 409,
+      "warm": 2492,
+      "cold": 408,
       "new_symbols": 24,
       "retries": 2,
-      "seconds": 254.9
+      "seconds": 283.3
     },
     {
       "agent": "earnings",
@@ -48,25 +48,25 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.1
+      "seconds": 1.0
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 4,
-      "seconds": 4.0
+      "seconds": 3.4
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.3
+      "seconds": 3.9
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 452,
-      "seconds": 6.9
+      "seconds": 4.9
     },
     {
       "agent": "stock_options",
@@ -78,20 +78,20 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2320,
-      "seconds": 17.4
+      "rows": 2314,
+      "seconds": 5.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.0
+      "seconds": 2.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.1
+      "seconds": 2.9
     },
     {
       "agent": "macro",
@@ -142,7 +142,7 @@
       "with_structure": 2875,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 21.4
+      "seconds": 21.8
     },
     {
       "agent": "stock_analysis",
@@ -153,15 +153,18 @@
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 2,
+      "rows": 2,
+      "ideas": [
+        "CASTROLIND",
+        "LLOYDSME"
+      ],
+      "watchlist": 6,
       "open_positions": 6,
       "needing_action": [
         "IPCALAB"
       ],
       "closed_today": [],
-      "seconds": 0.3
+      "seconds": 0.4
     }
   ],
   "ok": 20,
