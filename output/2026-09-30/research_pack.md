@@ -1,100 +1,82 @@
 # Parkhu research pack — 2026-09-30
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-30T06:08:59.476599+05:30
+- **generated_at_ist:** 2026-09-30T11:28:29.174780+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-1.56%)
-- india_vix: 13.64 (Low)
+- market_regime: **Neutral**
+- nifty: Neutral (-0.12%)
+- india_vix: 13.36 (Low)
 - fii_net: -9980.22 | dii_net: 6952.71
-- overall_risk: Medium | global_risk: Neutral
+- overall_risk: Low | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3171
-- trend = Bullish: 1037
-- price > SMA200: 817
-- price > EMA50: 800
-- ADX14 > 25: 456
-- RSI14 in 40-80: 430
-- RS > 0 vs NIFTY and sector: 269
-- delivery% >= 40: 117
-- relative_volume >= 1: 41
-- no earnings within 21d: 39
-- event_risk_score <= 1: 39
-- TV rating not Sell: 39
+- universe: 3177
+- trend = Bullish: 1102
+- price > SMA200: 855
+- price > EMA50: 833
+- ADX14 > 25: 446
+- RSI14 in 40-80: 417
+- RS > 0 vs NIFTY and sector: 261
+- delivery% >= 40: 119
+- relative_volume >= 1: 9
+- no earnings within 21d: 8
+- event_risk_score <= 1: 8
+- TV rating not Sell: 7
 
-## Survivors (top 39 of 39)
+## Survivors (top 7 of 7)
 
-- **CASTROLIND** [idea] score 89.8 — selected as idea
-- **LLOYDSME** [idea] score 82.2 — selected as idea
-- **ORIENTBELL** [watchlist] score 77.3 — score in Watch band (70–80)
-- **PRITIKAUTO** [watchlist] score 77.3 — score in Watch band (70–80)
-- **MENONBE** [watchlist] score 76.1 — score in Watch band (70–80)
-- **TDPOWERSYS** [watchlist] score 75.4 — score in Watch band (70–80)
-- **LAURUSLABS** [watchlist] score 73.9 — score in Watch band (70–80)
-- **DIVISLAB** [watchlist] score 71.4 — score in Watch band (70–80)
-- **INDGN** [rejected] score 69.8 — T1 needs more than 22 trading days (~1 month)
-- **MANAKSIA** [rejected] score 68.5 — score below Watch band
-- **DYNAMATECH** [rejected] score 68.3 — score below Watch band
-- **INNOVACAP** [rejected] score 67.3 — score below Watch band
-- **WINDLAS** [rejected] score 66.5 — score below Watch band
-- **RPGLIFE** [rejected] score 66.4 — score below Watch band
-- **RML** [rejected] score 65.7 — score below Watch band
-- **CEIGALL** [rejected] score 65.4 — score below Watch band
-- **SANSERA** [rejected] score 64.9 — score below Watch band
-- **GLAND** [rejected] score 64.6 — score below Watch band
-- **APARINDS** [rejected] score 62.3 — score below Watch band
-- **APLAPOLLO** [rejected] score 62.3 — score below Watch band
-- **LGBBROSLTD** [rejected] score 61.4 — T1 needs more than 22 trading days (~1 month)
-- **SOFTTECH** [rejected] score 61.4 — score below Watch band
-- **CENTUM** [rejected] score 61.3 — score below Watch band
-- **DRREDDY** [rejected] score 60.7 — T1 needs more than 22 trading days (~1 month)
-- **SUDEEPPHRM** [rejected] score 60.4 — score below Watch band
-- **WESTLIFE** [rejected] score 60.2 — score below Watch band
-- **MAHSEAMLES** [rejected] score 58.4 — score below Watch band
-- **EMKAY** [rejected] score 54.6 — T1 needs more than 22 trading days (~1 month)
-- **MMP** [rejected] score 54.2 — score below Watch band
-- **UNIMECH** [rejected] score 54.1 — score below Watch band
-- **JHS** [rejected] score 53.4 — T1 needs more than 22 trading days (~1 month)
-- **BBOX** [rejected] score 52.3 — T1 needs more than 22 trading days (~1 month)
-- **COHANCE** [rejected] score 51.9 — T1 needs more than 22 trading days (~1 month)
-- **JUBLPHARMA** [rejected] score 51.7 — score below Watch band
-- **GILLANDERS** [rejected] score 46.0 — score below Watch band
-- **BIL** [rejected] score 42.9 — score below Watch band
-- **RELIABLE** [rejected] score 40.4 — T1 needs more than 22 trading days (~1 month)
-- **PROZONER** [rejected] score 40.0 — T1 needs more than 22 trading days (~1 month)
-- **NAZARA** [rejected] score 38.0 — score below Watch band
+- **GALAXYSURF** [watchlist] score 72.8 — score in Watch band (70–80)
+- **INNOVACAP** [rejected] score 66.9 — score below Watch band
+- **SOFTTECH** [rejected] score 61.5 — score below Watch band
+- **TNTELE** [rejected] score 59.6 — score below Watch band
+- **MAHSEAMLES** [rejected] score 58.5 — score below Watch band
+- **BBOX** [rejected] score 52.5 — T1 needs more than 22 trading days (~1 month)
+- **GILLANDERS** [rejected] score 45.4 — score below Watch band
 
 ## Ideas
 
-### CASTROLIND — Buy (score 89.8)
-- Castrol India Limited | risk_sector: Energy Minerals
-- entry 199.83 | stop 192.67 | t1 214.15 | t2 221.3 | t3 228.46 | R:R 2.0
-- qty 50 | deployed 9992.0 (9.99%) | risk ₹358.0
+### INNOVACAP — Watch (score 14.0)
+- INNOVACAP | risk_sector: Health Technology
+- entry 1204.9 | stop 1123.26 | t1 1265.15 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### LLOYDSME — Buy (score 82.2)
-- Lloyds Metals & Energy Ltd. | risk_sector: Non-Energy Minerals
-- entry 1902.2 | stop 1851.91 | t1 2125.0 | t2 2175.29 | t3 2225.58 | R:R 4.43
-- qty 5 | deployed 9511.0 (9.51%) | risk ₹251.0
+### GALAXYSURF — Watch (score 14.0)
+- GALAXYSURF | risk_sector: Consumer Non-Durables
+- entry 2331.6 | stop 2198.73 | t1 2448.18 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### BBOX — Watch (score 14.0)
+- BBOX | risk_sector: Technology Services
+- entry 822.9 | stop 764.84 | t1 864.04 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SOFTTECH — Watch (score 14.0)
+- SOFTTECH | risk_sector: Technology Services
+- entry 508.05 | stop 474.22 | t1 533.45 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### GILLANDERS — Watch (score 13.0)
+- GILLANDERS | risk_sector: Consumer Non-Durables
+- entry 117.66 | stop 108.84 | t1 123.54 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **IPCALAB** status=open entry=1956.1 last=1938.1 mfe=4.19 mae=-2.75 opened=2026-09-03
-- **PLAZACABLE** status=open entry=59.05 last=59.9 mfe=11.77 mae=-5.83 opened=2026-09-07
-- **KENNAMET** status=open entry=4266.4 last=4039.6 mfe=11.09 mae=-5.95 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=437.95 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2842.0 mfe=9.02 mae=-7.05 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=199.83 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **LLOYDSME** status=open entry=1902.2 last=1902.2 mfe=0.0 mae=0.0 opened=2026-09-30
+- **IPCALAB** status=open entry=1956.1 last=1939.1 mfe=4.19 mae=-2.75 opened=2026-09-03
+- **PLAZACABLE** status=open entry=59.05 last=59.98 mfe=11.77 mae=-5.83 opened=2026-09-07
+- **KENNAMET** status=open entry=4266.4 last=3994.2 mfe=11.09 mae=-6.69 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=442.0 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2725.0 mfe=9.02 mae=-7.05 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=200.13 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **LLOYDSME** status=open entry=1902.2 last=1898.9 mfe=0.87 mae=-0.75 opened=2026-09-30
 
 ## Needs action
 
-- **IPCALAB**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
-- **LLOYDSME**: EXIT — STOP HIT — session low at/below stop ₹1,851.91 (last ₹1,902.20)
+- **IPCALAB**: TIGHTEN / REVIEW — ADX 20 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
 
@@ -102,36 +84,36 @@
 
 ## Swing candidates (top)
 
-- RELIABLE: score=14 rs_nifty=7.31 deliv=95.13
-- APLAPOLLO: score=14 rs_nifty=5.51 deliv=63.43
-- PRITIKAUTO: score=14 rs_nifty=14.9 deliv=49.23
-- WINDLAS: score=14 rs_nifty=16.13 deliv=44.66
-- WESTLIFE: score=14 rs_nifty=10.51 deliv=41.94
-- ORIENTBELL: score=14 rs_nifty=15.14 deliv=74.78
-- MMP: score=14 rs_nifty=16.37 deliv=45.75
-- EMKAY: score=14 rs_nifty=23.68 deliv=53.36
-- INDGN: score=14 rs_nifty=12.1 deliv=54.66
-- GILLANDERS: score=14 rs_nifty=10.92 deliv=78.82
-- TDPOWERSYS: score=14 rs_nifty=9.24 deliv=63.82
-- CASTROLIND: score=14 rs_nifty=13.14 deliv=57.91
+- INNOVACAP: score=14 rs_nifty=19.76 deliv=42.67
+- GALAXYSURF: score=14 rs_nifty=6.92 deliv=51.85
+- BBOX: score=14 rs_nifty=16.23 deliv=42.67
 - SOFTTECH: score=14 rs_nifty=25.31 deliv=90.84
-- BIL: score=14 rs_nifty=20.19 deliv=75.94
-- UNIMECH: score=14 rs_nifty=17.26 deliv=49.26
+- GILLANDERS: score=13 rs_nifty=23.31 deliv=78.82
+- VETO: score=13 rs_nifty=20.2 deliv=55.79
+- MEESHO: score=13 rs_nifty=12.46 deliv=47.1
+- LENSKART: score=13 rs_nifty=12.5 deliv=63.32
+- AARTIPHARM: score=13 rs_nifty=19.02 deliv=40.68
+- SETL: score=13 rs_nifty=19.45 deliv=48.28
+- LLOYDSME: score=13 rs_nifty=10.68 deliv=52.7
+- BIL: score=13 rs_nifty=21.09 deliv=75.94
+- SHARDAMOTR: score=13 rs_nifty=16.56 deliv=55.31
+- MENONBE: score=13 rs_nifty=12.43 deliv=63.57
+- EBGNG: score=13 rs_nifty=15.44 deliv=44.9
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.88% (bull)
-- Hang Seng: +0.54% (bull)
-- Shanghai: -1.67% (bear)
-- Kospi: +0.57% (bull)
-- Taiwan: -0.28% (bear)
-- ASX 200: +0.33% (bull)
+- Nikkei: +2.15% (bull)
+- Hang Seng: +0.04% (neutral)
+- Shanghai: +0.43% (bull)
+- Kospi: +0.01% (neutral)
+- Taiwan: +0.65% (bull)
+- ASX 200: +1.09% (bull)
 
 ### Europe
-- FTSE 100: -0.10% (neutral)
-- DAX: -0.13% (neutral)
-- Euro Stoxx 50: -0.02% (neutral)
+- FTSE 100: -0.45% (bear)
+- DAX: +0.10% (neutral)
+- Euro Stoxx 50: +0.30% (bull)
 
 ### US
 - S&P 500: -0.17% (bear)
@@ -141,12 +123,12 @@
 
 ### Macro
 - USDINR: -0.01% (neutral)
-- Crude WTI: -3.63% (bear)
-- Brent: -8.84% (bear)
-- DXY: +0.21% (neutral)
+- Crude WTI: +0.12% (neutral)
+- Brent: -6.17% (bear)
+- DXY: -0.01% (neutral)
 - US 10Y: +0.29% (neutral)
-- India ETF: -1.61% (bear)
-- EM ETF: -1.15% (bear)
+- India ETF: -0.32% (bear)
+- EM ETF: +0.30% (bull)
 
 
 ## Groq desk note
