@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-09-30
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-09-30T18:09:22.699550+05:30
+- **generated_at_ist:** 2026-09-30T23:43:15.810062+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.42%)
 - india_vix: 13.49 (Low)
-- fii_net: -9980.22 | dii_net: 6952.71
-- overall_risk: Medium | global_risk: Neutral
+- fii_net: -10148.41 | dii_net: 11271.73
+- overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
@@ -73,19 +73,19 @@
 - entry 736.6 | stop 690.28 | t1 773.43 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### RELIABLE — Watch (score 14.0)
-- RELIABLE | risk_sector: Technology Services
-- entry 144.28 | stop 134.95 | t1 151.49 | t2 None | t3 None | R:R None
+### GALAXYSURF — Watch (score 14.0)
+- GALAXYSURF | risk_sector: Consumer Non-Durables
+- entry 2332.8 | stop 2199.93 | t1 2449.44 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### EBGNG — Watch (score 14.0)
+- EBGNG | risk_sector: Technology Services
+- entry 686.75 | stop 633.08 | t1 721.09 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### TARMAT — Watch (score 14.0)
 - TARMAT | risk_sector: Industrial Services
 - entry 59.4 | stop 53.81 | t1 62.37 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### BIL — Watch (score 14.0)
-- BIL | risk_sector: Consumer Non-Durables
-- entry 995.1 | stop 919.65 | t1 1044.86 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -110,49 +110,49 @@
 
 - MANKIND: score=15 rs_nifty=10.06 deliv=59.04
 - WSTCSTPAPR: score=14 rs_nifty=27.01 deliv=43.65
-- RELIABLE: score=14 rs_nifty=9.52 deliv=60.98
+- GALAXYSURF: score=14 rs_nifty=7.27 deliv=46.22
+- EBGNG: score=14 rs_nifty=15.06 deliv=40.1
 - TARMAT: score=14 rs_nifty=7.82 deliv=54.41
+- RELIABLE: score=14 rs_nifty=9.52 deliv=60.98
+- PENIND: score=14 rs_nifty=19.64 deliv=45.2
+- PTCIL: score=14 rs_nifty=7.29 deliv=42.45
 - BIL: score=14 rs_nifty=21.37 deliv=69.8
 - LUMAXTECH: score=14 rs_nifty=10.65 deliv=43.88
-- EBGNG: score=14 rs_nifty=15.06 deliv=40.1
-- THELEELA: score=14 rs_nifty=8.52 deliv=42.79
-- PENIND: score=14 rs_nifty=19.64 deliv=45.2
 - PRITIKAUTO: score=14 rs_nifty=6.47 deliv=57.94
-- GALAXYSURF: score=14 rs_nifty=7.27 deliv=46.22
+- PVRINOX: score=14 rs_nifty=7.26 deliv=50.47
+- THELEELA: score=14 rs_nifty=8.52 deliv=42.79
 - SOFTTECH: score=14 rs_nifty=22.18 deliv=82.2
 - ORIENTBELL: score=14 rs_nifty=8.25 deliv=60.84
-- PTCIL: score=14 rs_nifty=7.29 deliv=42.45
-- PVRINOX: score=14 rs_nifty=7.26 deliv=50.47
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.94% (bull)
-- Hang Seng: +0.37% (bull)
-- Shanghai: +0.31% (bull)
-- Kospi: -0.48% (bear)
-- Taiwan: +0.65% (bull)
-- ASX 200: +0.92% (bull)
+- Nikkei: -0.60% (bear)
+- Hang Seng: -0.48% (bear)
+- Shanghai: +0.18% (bull)
+- Kospi: -0.27% (bear)
+- Taiwan: -0.82% (bear)
+- ASX 200: +0.34% (bull)
 
 ### Europe
-- FTSE 100: +0.01% (neutral)
-- DAX: -0.42% (bear)
-- Euro Stoxx 50: -0.42% (bear)
+- FTSE 100: -0.29% (bear)
+- DAX: -0.79% (bear)
+- Euro Stoxx 50: -0.81% (bear)
 
 ### US
-- S&P 500: -0.17% (bear)
-- Nasdaq: -0.09% (neutral)
-- Dow: -0.26% (bear)
-- US VIX: +0.62% (bear)
+- S&P 500: +0.44% (bull)
+- Nasdaq: +0.96% (bull)
+- Dow: -0.25% (bear)
+- US VIX: -1.31% (bull)
 
 ### Macro
-- USDINR: -0.16% (neutral)
-- Crude WTI: +1.15% (bull)
-- Brent: -4.86% (bear)
-- DXY: -0.17% (neutral)
-- US 10Y: -0.32% (neutral)
-- India ETF: -0.32% (bear)
-- EM ETF: +0.30% (bull)
+- USDINR: -0.17% (neutral)
+- Crude WTI: +1.45% (bull)
+- Brent: -4.26% (bear)
+- DXY: +0.04% (neutral)
+- US 10Y: +0.82% (bear)
+- India ETF: -0.51% (bear)
+- EM ETF: -0.99% (bear)
 
 
 ## Groq desk note
