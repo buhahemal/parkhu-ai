@@ -881,8 +881,8 @@
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 28,
-      "dropped_count": 2,
+      "surviving": 27,
+      "dropped_count": 3,
       "survivor_symbols": [
         "LALPATHLAB",
         "KOVAI",
@@ -900,7 +900,6 @@
         "UNIMECH",
         "LGBBROSLTD",
         "ISGEC",
-        "EIMCOELECO",
         "LIKHITHA",
         "JHS",
         "MAHSEAMLES",
@@ -915,14 +914,15 @@
       ],
       "dropped_symbols": [
         "KOTAKBANK",
-        "SMLMAH"
+        "SMLMAH",
+        "EIMCOELECO"
       ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 27,
+      "surviving": 26,
       "dropped_count": 1,
       "survivor_symbols": [
         "LALPATHLAB",
@@ -940,7 +940,6 @@
         "UNIMECH",
         "LGBBROSLTD",
         "ISGEC",
-        "EIMCOELECO",
         "LIKHITHA",
         "JHS",
         "MAHSEAMLES",
@@ -961,7 +960,7 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 24,
+      "surviving": 23,
       "dropped_count": 3,
       "survivor_symbols": [
         "LALPATHLAB",
@@ -976,7 +975,6 @@
         "UNIMECH",
         "LGBBROSLTD",
         "ISGEC",
-        "EIMCOELECO",
         "LIKHITHA",
         "JHS",
         "MAHSEAMLES",
@@ -1108,15 +1106,6 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     },
     {
-      "symbol": "EIMCOELECO",
-      "score": 54.9,
-      "band": "Ignore",
-      "cmp": 2268.8,
-      "risk_sector": "Producer Manufacturing",
-      "status": "rejected",
-      "reason": "score below Watch band"
-    },
-    {
       "symbol": "LIKHITHA",
       "score": 54.9,
       "band": "Ignore",
@@ -1216,6 +1205,6 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 24,
+  "survivor_outcomes_total": 23,
   "survivor_outcomes_truncated": false
 }
