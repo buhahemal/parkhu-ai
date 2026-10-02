@@ -5,12 +5,12 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-02",
-  "generated_at_ist": "2026-10-02T00:17:47.166748+05:30",
+  "generated_at_ist": "2026-10-02T06:08:37.748571+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "capital": 100000.0,
@@ -40,22 +40,22 @@
     "worst_sector_perf_1m": -5.45,
     "fii_net": -9484.22,
     "dii_net": 10041.84,
-    "crude": 92.86,
-    "crude_pct_change": 2.7,
-    "usdinr": 96.31,
-    "usdinr_pct_change": 0.26,
-    "us_sp500_pct": 0.27,
-    "us_dow_pct": -0.02,
-    "us_vix": 16.52,
-    "us_vix_pct": 1.1,
-    "dxy": 102.12,
-    "dxy_pct": 0.66,
+    "crude": 93.12,
+    "crude_pct_change": 2.99,
+    "usdinr": 95.93,
+    "usdinr_pct_change": -0.13,
+    "us_sp500_pct": 0.19,
+    "us_dow_pct": 0.04,
+    "us_vix": 16.39,
+    "us_vix_pct": 0.31,
+    "dxy": 102.05,
+    "dxy_pct": 0.59,
     "us_10y": 5.24,
     "asia_cue": "Bullish",
     "europe_cue": "Bearish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-02T00:17:23.840189+05:30"
+    "generated_at_ist": "2026-10-02T06:08:14.645950+05:30"
   },
   "world_markets": [
     {
@@ -64,10 +64,10 @@
         {
           "label": "Nikkei",
           "metric": "NIKKEI",
-          "value": 66753.72,
-          "pct_change": 1.94,
+          "value": 68659.29,
+          "pct_change": 2.85,
           "tone": "bull",
-          "session_date": "2026-09-30"
+          "session_date": "2026-10-02"
         },
         {
           "label": "Hang Seng",
@@ -88,10 +88,10 @@
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 6838.04,
-          "pct_change": -0.48,
-          "tone": "bear",
-          "session_date": "2026-09-30"
+          "value": 6960.88,
+          "pct_change": 1.8,
+          "tone": "bull",
+          "session_date": "2026-10-02"
         },
         {
           "label": "Taiwan",
@@ -104,10 +104,10 @@
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 8789.3,
-          "pct_change": 0.92,
-          "tone": "bull",
-          "session_date": "2026-09-30"
+          "value": 8656.8,
+          "pct_change": -1.51,
+          "tone": "bear",
+          "session_date": "2026-10-02"
         }
       ]
     },
@@ -117,26 +117,26 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10428.27,
-          "pct_change": -1.68,
+          "value": 10606.0,
+          "pct_change": -0.29,
           "tone": "bear",
-          "session_date": "2026-10-01"
+          "session_date": "2026-09-30"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 24939.35,
-          "pct_change": -1.03,
+          "value": 25199.19,
+          "pct_change": -0.79,
           "tone": "bear",
-          "session_date": "2026-10-01"
+          "session_date": "2026-09-30"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6175.45,
-          "pct_change": -1.49,
+          "value": 6269.02,
+          "pct_change": -0.81,
           "tone": "bear",
-          "session_date": "2026-10-01"
+          "session_date": "2026-09-30"
         }
       ]
     },
@@ -146,33 +146,33 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7671.96,
-          "pct_change": 0.27,
+          "value": 7666.45,
+          "pct_change": 0.19,
           "tone": "bull",
           "session_date": "2026-10-01"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 26939.71,
-          "pct_change": 0.29,
-          "tone": "bull",
+          "value": 26871.6,
+          "pct_change": 0.04,
+          "tone": "neutral",
           "session_date": "2026-10-01"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 50893.98,
-          "pct_change": -0.02,
+          "value": 50926.56,
+          "pct_change": 0.04,
           "tone": "neutral",
           "session_date": "2026-10-01"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 16.52,
-          "pct_change": 1.1,
-          "tone": "bear",
+          "value": 16.39,
+          "pct_change": 0.31,
+          "tone": "neutral",
           "session_date": "2026-10-01"
         }
       ]
@@ -183,32 +183,32 @@
         {
           "label": "USDINR",
           "metric": "USDINR",
-          "value": 96.31,
-          "pct_change": 0.26,
+          "value": 95.93,
+          "pct_change": -0.13,
           "tone": "neutral",
           "session_date": "2026-10-01"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 92.86,
-          "pct_change": 2.7,
+          "value": 93.12,
+          "pct_change": 2.99,
           "tone": "bull",
           "session_date": "2026-10-01"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 102.29,
-          "pct_change": -1.2,
+          "value": 102.64,
+          "pct_change": -0.86,
           "tone": "bear",
           "session_date": "2026-10-01"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 102.12,
-          "pct_change": 0.66,
+          "value": 102.05,
+          "pct_change": 0.59,
           "tone": "bear",
           "session_date": "2026-10-01"
         },
@@ -216,25 +216,25 @@
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
           "value": 5.24,
-          "pct_change": -0.98,
+          "pct_change": -1.06,
           "tone": "bull",
           "session_date": "2026-10-01"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 46.39,
-          "pct_change": -0.62,
+          "value": 46.68,
+          "pct_change": -0.55,
           "tone": "bear",
-          "session_date": "2026-10-01"
+          "session_date": "2026-09-30"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
           "value": 66.79,
-          "pct_change": 0.0,
-          "tone": "neutral",
-          "session_date": "2026-10-01"
+          "pct_change": -0.91,
+          "tone": "bear",
+          "session_date": "2026-09-30"
         }
       ]
     }
@@ -716,7 +716,7 @@
         "EMAMIPAP",
         "BLBLIMITED",
         "DPABHUSHAN",
-        "ARIHANTACA"
+        "AUROPHARMA"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -1162,8 +1162,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 29,
-      "dropped_count": 0,
+      "surviving": 28,
+      "dropped_count": 1,
       "survivor_symbols": [
         "LALPATHLAB",
         "KOVAI",
@@ -1177,7 +1177,6 @@
         "ANUHPHR",
         "JUNIPER",
         "BOROLTD",
-        "BLSE",
         "SANSERA",
         "UNIMECH",
         "LGBBROSLTD",
@@ -1195,13 +1194,15 @@
         "BIL",
         "SHANTIGEAR"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "BLSE"
+      ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 26,
+      "surviving": 25,
       "dropped_count": 3,
       "survivor_symbols": [
         "LALPATHLAB",
@@ -1213,7 +1214,6 @@
         "SUDEEPPHRM",
         "JUNIPER",
         "BOROLTD",
-        "BLSE",
         "SANSERA",
         "UNIMECH",
         "LGBBROSLTD",
@@ -1242,17 +1242,17 @@
   ],
   "ideas": [
     {
-      "symbol": "BIL",
-      "company": "BIL",
-      "sector": "Consumer Non-Durables",
-      "risk_sector": "Consumer Non-Durables",
-      "cmp": 987.55,
+      "symbol": "LIKHITHA",
+      "company": "LIKHITHA",
+      "sector": "Industrial Services",
+      "risk_sector": "Industrial Services",
+      "cmp": 225.62,
       "parkhu_score": 14.0,
       "band": "Watch",
       "levels": {
-        "entry": 987.55,
-        "stop": 914.96,
-        "t1": 1036.93,
+        "entry": 225.62,
+        "stop": 205.74,
+        "t1": 236.9,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1261,17 +1261,17 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "PRIMESECU",
-      "company": "PRIMESECU",
-      "sector": "Finance",
-      "risk_sector": "Finance",
-      "cmp": 301.5,
+      "symbol": "BOROLTD",
+      "company": "BOROLTD",
+      "sector": "Producer Manufacturing",
+      "risk_sector": "Producer Manufacturing",
+      "cmp": 280.2,
       "parkhu_score": 14.0,
       "band": "Watch",
       "levels": {
-        "entry": 301.5,
-        "stop": 284.97,
-        "t1": 316.58,
+        "entry": 280.2,
+        "stop": 260.37,
+        "t1": 294.21,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1299,17 +1299,17 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "BOROLTD",
-      "company": "BOROLTD",
-      "sector": "Producer Manufacturing",
-      "risk_sector": "Producer Manufacturing",
-      "cmp": 280.2,
+      "symbol": "PRIMESECU",
+      "company": "PRIMESECU",
+      "sector": "Finance",
+      "risk_sector": "Finance",
+      "cmp": 301.5,
       "parkhu_score": 14.0,
       "band": "Watch",
       "levels": {
-        "entry": 280.2,
-        "stop": 260.37,
-        "t1": 294.21,
+        "entry": 301.5,
+        "stop": 284.97,
+        "t1": 316.58,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1441,15 +1441,6 @@
       "risk_sector": "Producer Manufacturing",
       "status": "rejected",
       "reason": "T1 needs more than 22 trading days (~1 month)"
-    },
-    {
-      "symbol": "BLSE",
-      "score": 59.6,
-      "band": "Ignore",
-      "cmp": 322.05,
-      "risk_sector": "Technology Services",
-      "status": "rejected",
-      "reason": "score below Watch band"
     },
     {
       "symbol": "SANSERA",
@@ -1596,7 +1587,7 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 26,
+  "survivor_outcomes_total": 25,
   "survivor_outcomes_truncated": false,
   "analytics": {
     "funnel_conversions": [
@@ -2091,7 +2082,7 @@
           "EMAMIPAP",
           "BLBLIMITED",
           "DPABHUSHAN",
-          "ARIHANTACA"
+          "AUROPHARMA"
         ],
         "survivor_symbols_truncated": true,
         "dropped_symbols_truncated": true
@@ -2552,11 +2543,11 @@
       },
       {
         "gate": "event_risk_score <= 1",
-        "surviving": 29,
+        "surviving": 28,
         "from_prev": 29,
-        "keep_pct": 100.0,
-        "dropped": 0,
-        "dropped_count": 0,
+        "keep_pct": 96.6,
+        "dropped": 1,
+        "dropped_count": 1,
         "survivor_symbols": [
           "LALPATHLAB",
           "KOVAI",
@@ -2570,7 +2561,6 @@
           "ANUHPHR",
           "JUNIPER",
           "BOROLTD",
-          "BLSE",
           "SANSERA",
           "UNIMECH",
           "LGBBROSLTD",
@@ -2588,15 +2578,17 @@
           "BIL",
           "SHANTIGEAR"
         ],
-        "dropped_symbols": [],
+        "dropped_symbols": [
+          "BLSE"
+        ],
         "survivor_symbols_truncated": false,
         "dropped_symbols_truncated": false
       },
       {
         "gate": "TV rating not Sell",
-        "surviving": 26,
-        "from_prev": 29,
-        "keep_pct": 89.7,
+        "surviving": 25,
+        "from_prev": 28,
+        "keep_pct": 89.3,
         "dropped": 3,
         "dropped_count": 3,
         "survivor_symbols": [
@@ -2609,7 +2601,6 @@
           "SUDEEPPHRM",
           "JUNIPER",
           "BOROLTD",
-          "BLSE",
           "SANSERA",
           "UNIMECH",
           "LGBBROSLTD",
@@ -2646,8 +2637,8 @@
         "names": 2
       },
       {
-        "sector": "Consumer Non-Durables",
-        "names": 1
+        "sector": "Industrial Services",
+        "names": 2
       },
       {
         "sector": "Energy Minerals",
@@ -2655,10 +2646,6 @@
       },
       {
         "sector": "Finance",
-        "names": 1
-      },
-      {
-        "sector": "Industrial Services",
         "names": 1
       }
     ],
@@ -3036,58 +3023,22 @@
   },
   "swing_candidates_top": [
     {
-      "symbol": "BIL",
-      "close": 987.55,
+      "symbol": "LIKHITHA",
+      "close": 225.62,
       "score": 14,
-      "perf_1m": 14.1676300578,
-      "rs_vs_nifty_1m": 20.23,
-      "rs_vs_sector_1m": 14.17,
-      "deliv_pct": 82.2,
+      "perf_1m": 8.2110311751,
+      "rs_vs_nifty_1m": 14.27,
+      "rs_vs_sector_1m": 8.21,
+      "deliv_pct": 50.17,
       "pct_change_oi": null,
-      "upside_to_target_pct": 16.45,
-      "atr": 48.3901400507,
-      "stop_1_5atr": 914.96,
-      "target_5pct": 1036.93,
+      "upside_to_target_pct": 20.56,
+      "atr": 13.2518397236,
+      "stop_1_5atr": 205.74,
+      "target_5pct": 236.9,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "PRIMESECU",
-      "close": 301.5,
-      "score": 14,
-      "perf_1m": 5.0705697857,
-      "rs_vs_nifty_1m": 11.13,
-      "rs_vs_sector_1m": 5.07,
-      "deliv_pct": 73.95,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 7.79,
-      "atr": 11.0181403655,
-      "stop_1_5atr": 284.97,
-      "target_5pct": 316.58,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "ZIMLAB",
-      "close": 137.02,
-      "score": 14,
-      "perf_1m": 11.7618270799,
-      "rs_vs_nifty_1m": 17.82,
-      "rs_vs_sector_1m": 14.51,
-      "deliv_pct": 51.18,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 5.45,
-      "atr": 7.5629311281,
-      "stop_1_5atr": 125.68,
-      "target_5pct": 143.87,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
+      "sector": "Industrial Services"
     },
     {
       "symbol": "BOROLTD",
@@ -3108,6 +3059,42 @@
       "sector": "Producer Manufacturing"
     },
     {
+      "symbol": "ZIMLAB",
+      "close": 137.02,
+      "score": 14,
+      "perf_1m": 11.7618270799,
+      "rs_vs_nifty_1m": 17.82,
+      "rs_vs_sector_1m": 14.51,
+      "deliv_pct": 51.18,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 5.45,
+      "atr": 7.5629311281,
+      "stop_1_5atr": 125.68,
+      "target_5pct": 143.87,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "PRIMESECU",
+      "close": 301.5,
+      "score": 14,
+      "perf_1m": 5.0705697857,
+      "rs_vs_nifty_1m": 11.13,
+      "rs_vs_sector_1m": 5.07,
+      "deliv_pct": 73.95,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 7.79,
+      "atr": 11.0181403655,
+      "stop_1_5atr": 284.97,
+      "target_5pct": 316.58,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
       "symbol": "SANSERA",
       "close": 4276.6,
       "score": 14,
@@ -3126,22 +3113,22 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "LIKHITHA",
-      "close": 225.62,
+      "symbol": "BIL",
+      "close": 987.55,
       "score": 14,
-      "perf_1m": 8.2110311751,
-      "rs_vs_nifty_1m": 14.27,
-      "rs_vs_sector_1m": 8.21,
-      "deliv_pct": 50.17,
+      "perf_1m": 14.1676300578,
+      "rs_vs_nifty_1m": 20.23,
+      "rs_vs_sector_1m": 14.17,
+      "deliv_pct": 82.2,
       "pct_change_oi": null,
-      "upside_to_target_pct": 20.56,
-      "atr": 13.2518397236,
-      "stop_1_5atr": 205.74,
-      "target_5pct": 236.9,
+      "upside_to_target_pct": 16.45,
+      "atr": 48.3901400507,
+      "stop_1_5atr": 914.96,
+      "target_5pct": 1036.93,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Industrial Services"
+      "sector": "Consumer Non-Durables"
     },
     {
       "symbol": "UNIMECH",
@@ -3162,148 +3149,148 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "MANKIND",
-      "close": 2535.0,
+      "symbol": "OMAXAUTO",
+      "close": 201.14,
       "score": 13,
-      "perf_1m": 6.4499874024,
-      "rs_vs_nifty_1m": 12.51,
-      "rs_vs_sector_1m": 9.2,
-      "deliv_pct": 53.59,
-      "pct_change_oi": 1.98,
-      "upside_to_target_pct": 9.09,
-      "atr": 63.5882492653,
-      "stop_1_5atr": 2439.62,
-      "target_5pct": 2661.75,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
-    },
-    {
-      "symbol": "GREAVESCOT",
-      "close": 225.98,
-      "score": 13,
-      "perf_1m": 14.2467138524,
-      "rs_vs_nifty_1m": 20.31,
-      "rs_vs_sector_1m": 14.25,
-      "deliv_pct": 48.33,
+      "perf_1m": 8.7243243243,
+      "rs_vs_nifty_1m": 14.78,
+      "rs_vs_sector_1m": 8.72,
+      "deliv_pct": 52.69,
       "pct_change_oi": null,
-      "upside_to_target_pct": 20.32,
-      "atr": 9.093050655,
-      "stop_1_5atr": 212.34,
-      "target_5pct": 237.28,
+      "upside_to_target_pct": 30.95,
+      "atr": 11.7548392984,
+      "stop_1_5atr": 183.51,
+      "target_5pct": 211.2,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "RPGLIFE",
-      "close": 2930.7,
+      "symbol": "NDLVENTURE",
+      "close": 125.24,
       "score": 13,
-      "perf_1m": 9.9699812383,
-      "rs_vs_nifty_1m": 16.03,
-      "rs_vs_sector_1m": 12.72,
-      "deliv_pct": 44.26,
+      "perf_1m": 1.4089068826,
+      "rs_vs_nifty_1m": 7.47,
+      "rs_vs_sector_1m": 1.41,
+      "deliv_pct": 80.25,
       "pct_change_oi": null,
-      "upside_to_target_pct": 6.73,
-      "atr": 150.6694876881,
-      "stop_1_5atr": 2704.7,
-      "target_5pct": 3077.24,
+      "upside_to_target_pct": 11.79,
+      "atr": 5.714088441,
+      "stop_1_5atr": 116.67,
+      "target_5pct": 131.5,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Health Technology"
+      "sector": "Consumer Services"
     },
     {
-      "symbol": "DEEPINDS",
-      "close": 749.0,
+      "symbol": "LGEINDIA",
+      "close": 1721.8,
       "score": 13,
-      "perf_1m": 6.4374023021,
-      "rs_vs_nifty_1m": 12.5,
-      "rs_vs_sector_1m": 6.44,
-      "deliv_pct": 40.22,
+      "perf_1m": 1.3419658623,
+      "rs_vs_nifty_1m": 7.4,
+      "rs_vs_sector_1m": 1.34,
+      "deliv_pct": 54.55,
       "pct_change_oi": null,
-      "upside_to_target_pct": 24.5,
-      "atr": 36.2509565455,
-      "stop_1_5atr": 694.62,
-      "target_5pct": 786.45,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Neutral",
-      "sector": "Industrial Services"
-    },
-    {
-      "symbol": "NOVARTIND",
-      "close": 1965.0,
-      "score": 13,
-      "perf_1m": 27.0528902108,
-      "rs_vs_nifty_1m": 33.11,
-      "rs_vs_sector_1m": 29.8,
-      "deliv_pct": 41.46,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 31.75,
-      "atr": 123.3761416419,
-      "stop_1_5atr": 1779.94,
-      "target_5pct": 2063.25,
+      "upside_to_target_pct": 9.62,
+      "atr": 41.8718070379,
+      "stop_1_5atr": 1658.99,
+      "target_5pct": 1807.89,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Health Technology"
+      "sector": "Consumer Durables"
     },
     {
-      "symbol": "ROLEXRINGS",
-      "close": 196.36,
+      "symbol": "SKYGOLD",
+      "close": 810.65,
       "score": 13,
-      "perf_1m": 8.7264673311,
-      "rs_vs_nifty_1m": 14.79,
-      "rs_vs_sector_1m": 8.73,
-      "deliv_pct": 47.65,
+      "perf_1m": 0.4274033697,
+      "rs_vs_nifty_1m": 6.49,
+      "rs_vs_sector_1m": 0.43,
+      "deliv_pct": 64.36,
       "pct_change_oi": null,
-      "upside_to_target_pct": 4.15,
-      "atr": 7.6706879416,
-      "stop_1_5atr": 184.85,
-      "target_5pct": 206.18,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "STEELCAS",
-      "close": 356.45,
-      "score": 13,
-      "perf_1m": 1.901086335,
-      "rs_vs_nifty_1m": 7.96,
-      "rs_vs_sector_1m": 1.9,
-      "deliv_pct": 48.36,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 9.66,
-      "atr": 18.5758910618,
-      "stop_1_5atr": 328.59,
-      "target_5pct": 374.27,
+      "upside_to_target_pct": 31.35,
+      "atr": 33.6194458678,
+      "stop_1_5atr": 760.22,
+      "target_5pct": 851.18,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Non-Energy Minerals"
+      "sector": "Consumer Durables"
     },
     {
-      "symbol": "MEESHO",
-      "close": 218.69,
+      "symbol": "PGIL",
+      "close": 1263.0,
       "score": 13,
-      "perf_1m": 6.1601941748,
-      "rs_vs_nifty_1m": 12.22,
-      "rs_vs_sector_1m": 6.16,
-      "deliv_pct": 42.72,
+      "perf_1m": 2.2672064777,
+      "rs_vs_nifty_1m": 8.33,
+      "rs_vs_sector_1m": 2.27,
+      "deliv_pct": 50.39,
       "pct_change_oi": null,
-      "upside_to_target_pct": 16.33,
-      "atr": 10.0687981583,
-      "stop_1_5atr": 203.59,
-      "target_5pct": 229.62,
+      "upside_to_target_pct": 17.61,
+      "atr": 60.2167690545,
+      "stop_1_5atr": 1172.67,
+      "target_5pct": 1326.15,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Retail Trade"
+      "sector": "Consumer Non-Durables"
+    },
+    {
+      "symbol": "OAL",
+      "close": 532.2,
+      "score": 13,
+      "perf_1m": 14.4639208517,
+      "rs_vs_nifty_1m": 20.52,
+      "rs_vs_sector_1m": null,
+      "deliv_pct": 44.73,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 7.1,
+      "atr": 30.1093400586,
+      "stop_1_5atr": 487.04,
+      "target_5pct": 558.81,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Process Industries"
+    },
+    {
+      "symbol": "BHAGERIA",
+      "close": 382.05,
+      "score": 13,
+      "perf_1m": 45.155775076,
+      "rs_vs_nifty_1m": 51.22,
+      "rs_vs_sector_1m": null,
+      "deliv_pct": 45.78,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.83,
+      "atr": 22.0574466466,
+      "stop_1_5atr": 348.96,
+      "target_5pct": 401.15,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Process Industries"
+    },
+    {
+      "symbol": "GILLANDERS",
+      "close": 112.72,
+      "score": 13,
+      "perf_1m": 6.1793519216,
+      "rs_vs_nifty_1m": 12.24,
+      "rs_vs_sector_1m": 6.18,
+      "deliv_pct": 36.64,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 14.8,
+      "atr": 6.0179924685,
+      "stop_1_5atr": 103.69,
+      "target_5pct": 118.36,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Non-Durables"
     }
   ],
   "urls": {
@@ -3379,7 +3366,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-10-02T00:17:51.460123+05:30",
+    "generated_at_ist": "2026-10-02T06:08:42.039288+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,
@@ -3389,13 +3376,13 @@
     "claude_feed": "",
     "stock_reviews": [
       {
-        "symbol": "BIL",
+        "symbol": "LIKHITHA",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "PRIMESECU",
+        "symbol": "BOROLTD",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
@@ -3407,7 +3394,7 @@
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "BOROLTD",
+        "symbol": "PRIMESECU",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"

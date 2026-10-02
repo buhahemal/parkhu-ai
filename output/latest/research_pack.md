@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-02
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-02T00:17:47.166748+05:30
+- **generated_at_ist:** 2026-10-02T06:08:37.748571+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -24,10 +24,10 @@
 - delivery% >= 40: 103
 - relative_volume >= 1: 31
 - no earnings within 21d: 29
-- event_risk_score <= 1: 29
-- TV rating not Sell: 26
+- event_risk_score <= 1: 28
+- TV rating not Sell: 25
 
-## Survivors (top 26 of 26)
+## Survivors (top 25 of 25)
 
 - **LALPATHLAB** [watchlist] score 74.1 — score in Watch band (70–80)
 - **VSSL** [watchlist] score 70.1 — score in Watch band (70–80)
@@ -38,7 +38,6 @@
 - **SUDEEPPHRM** [rejected] score 61.1 — score below Watch band
 - **JUNIPER** [rejected] score 60.3 — score below Watch band
 - **BOROLTD** [rejected] score 60.2 — T1 needs more than 22 trading days (~1 month)
-- **BLSE** [rejected] score 59.6 — score below Watch band
 - **SANSERA** [rejected] score 58.6 — score below Watch band
 - **UNIMECH** [rejected] score 57.0 — score below Watch band
 - **LGBBROSLTD** [rejected] score 56.5 — T1 needs more than 22 trading days (~1 month)
@@ -58,14 +57,14 @@
 
 ## Ideas
 
-### BIL — Watch (score 14.0)
-- BIL | risk_sector: Consumer Non-Durables
-- entry 987.55 | stop 914.96 | t1 1036.93 | t2 None | t3 None | R:R None
+### LIKHITHA — Watch (score 14.0)
+- LIKHITHA | risk_sector: Industrial Services
+- entry 225.62 | stop 205.74 | t1 236.9 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PRIMESECU — Watch (score 14.0)
-- PRIMESECU | risk_sector: Finance
-- entry 301.5 | stop 284.97 | t1 316.58 | t2 None | t3 None | R:R None
+### BOROLTD — Watch (score 14.0)
+- BOROLTD | risk_sector: Producer Manufacturing
+- entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### ZIMLAB — Watch (score 14.0)
@@ -73,9 +72,9 @@
 - entry 137.02 | stop 125.68 | t1 143.87 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### BOROLTD — Watch (score 14.0)
-- BOROLTD | risk_sector: Producer Manufacturing
-- entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 301.5 | stop 284.97 | t1 316.58 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### SANSERA — Watch (score 14.0)
@@ -99,51 +98,51 @@
 
 ## Swing candidates (top)
 
-- BIL: score=14 rs_nifty=20.23 deliv=82.2
-- PRIMESECU: score=14 rs_nifty=11.13 deliv=73.95
-- ZIMLAB: score=14 rs_nifty=17.82 deliv=51.18
-- BOROLTD: score=14 rs_nifty=20.62 deliv=45.4
-- SANSERA: score=14 rs_nifty=10.75 deliv=41.69
 - LIKHITHA: score=14 rs_nifty=14.27 deliv=50.17
+- BOROLTD: score=14 rs_nifty=20.62 deliv=45.4
+- ZIMLAB: score=14 rs_nifty=17.82 deliv=51.18
+- PRIMESECU: score=14 rs_nifty=11.13 deliv=73.95
+- SANSERA: score=14 rs_nifty=10.75 deliv=41.69
+- BIL: score=14 rs_nifty=20.23 deliv=82.2
 - UNIMECH: score=14 rs_nifty=24.47 deliv=45.45
-- MANKIND: score=13 rs_nifty=12.51 deliv=53.59
-- GREAVESCOT: score=13 rs_nifty=20.31 deliv=48.33
-- RPGLIFE: score=13 rs_nifty=16.03 deliv=44.26
-- DEEPINDS: score=13 rs_nifty=12.5 deliv=40.22
-- NOVARTIND: score=13 rs_nifty=33.11 deliv=41.46
-- ROLEXRINGS: score=13 rs_nifty=14.79 deliv=47.65
-- STEELCAS: score=13 rs_nifty=7.96 deliv=48.36
-- MEESHO: score=13 rs_nifty=12.22 deliv=42.72
+- OMAXAUTO: score=13 rs_nifty=14.78 deliv=52.69
+- NDLVENTURE: score=13 rs_nifty=7.47 deliv=80.25
+- LGEINDIA: score=13 rs_nifty=7.4 deliv=54.55
+- SKYGOLD: score=13 rs_nifty=6.49 deliv=64.36
+- PGIL: score=13 rs_nifty=8.33 deliv=50.39
+- OAL: score=13 rs_nifty=20.52 deliv=44.73
+- BHAGERIA: score=13 rs_nifty=51.22 deliv=45.78
+- GILLANDERS: score=13 rs_nifty=12.24 deliv=36.64
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.94% (bull)
+- Nikkei: +2.85% (bull)
 - Hang Seng: +0.37% (bull)
 - Shanghai: +0.31% (bull)
-- Kospi: -0.48% (bear)
+- Kospi: +1.80% (bull)
 - Taiwan: +0.65% (bull)
-- ASX 200: +0.92% (bull)
+- ASX 200: -1.51% (bear)
 
 ### Europe
-- FTSE 100: -1.68% (bear)
-- DAX: -1.03% (bear)
-- Euro Stoxx 50: -1.49% (bear)
+- FTSE 100: -0.29% (bear)
+- DAX: -0.79% (bear)
+- Euro Stoxx 50: -0.81% (bear)
 
 ### US
-- S&P 500: +0.27% (bull)
-- Nasdaq: +0.29% (bull)
-- Dow: -0.02% (neutral)
-- US VIX: +1.10% (bear)
+- S&P 500: +0.19% (bull)
+- Nasdaq: +0.04% (neutral)
+- Dow: +0.04% (neutral)
+- US VIX: +0.31% (neutral)
 
 ### Macro
-- USDINR: +0.26% (neutral)
-- Crude WTI: +2.70% (bull)
-- Brent: -1.20% (bear)
-- DXY: +0.66% (bear)
-- US 10Y: -0.98% (bull)
-- India ETF: -0.62% (bear)
-- EM ETF: +0.00% (neutral)
+- USDINR: -0.13% (neutral)
+- Crude WTI: +2.99% (bull)
+- Brent: -0.86% (bear)
+- DXY: +0.59% (bear)
+- US 10Y: -1.06% (bull)
+- India ETF: -0.55% (bear)
+- EM ETF: -0.91% (bear)
 
 
 ## Groq desk note

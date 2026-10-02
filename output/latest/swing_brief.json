@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -5.45,
     "fii_net": -9484.22,
     "dii_net": 10041.84,
-    "crude": 92.86,
-    "crude_pct_change": 2.7,
-    "usdinr": 96.31,
-    "usdinr_pct_change": 0.26,
-    "us_sp500_pct": 0.27,
-    "us_dow_pct": -0.02,
-    "us_vix": 16.52,
-    "us_vix_pct": 1.1,
-    "dxy": 102.12,
-    "dxy_pct": 0.66,
+    "crude": 93.12,
+    "crude_pct_change": 2.99,
+    "usdinr": 95.93,
+    "usdinr_pct_change": -0.13,
+    "us_sp500_pct": 0.19,
+    "us_dow_pct": 0.04,
+    "us_vix": 16.39,
+    "us_vix_pct": 0.31,
+    "dxy": 102.05,
+    "dxy_pct": 0.59,
     "us_10y": 5.24,
     "asia_cue": "Bullish",
     "europe_cue": "Bearish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-02T00:17:23.840189+05:30"
+    "generated_at_ist": "2026-10-02T06:08:14.645950+05:30"
   },
   "funnel": [
     {
@@ -521,7 +521,7 @@
         "EMAMIPAP",
         "BLBLIMITED",
         "DPABHUSHAN",
-        "ARIHANTACA"
+        "AUROPHARMA"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -967,8 +967,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 29,
-      "dropped_count": 0,
+      "surviving": 28,
+      "dropped_count": 1,
       "survivor_symbols": [
         "LALPATHLAB",
         "KOVAI",
@@ -982,7 +982,6 @@
         "ANUHPHR",
         "JUNIPER",
         "BOROLTD",
-        "BLSE",
         "SANSERA",
         "UNIMECH",
         "LGBBROSLTD",
@@ -1000,13 +999,15 @@
         "BIL",
         "SHANTIGEAR"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "BLSE"
+      ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 26,
+      "surviving": 25,
       "dropped_count": 3,
       "survivor_symbols": [
         "LALPATHLAB",
@@ -1018,7 +1019,6 @@
         "SUDEEPPHRM",
         "JUNIPER",
         "BOROLTD",
-        "BLSE",
         "SANSERA",
         "UNIMECH",
         "LGBBROSLTD",
@@ -1116,10 +1116,6 @@
     {
       "symbol": "JUNIPER",
       "score": 60.3
-    },
-    {
-      "symbol": "BLSE",
-      "score": 59.6
     },
     {
       "symbol": "SANSERA",
@@ -1256,15 +1252,6 @@
       "risk_sector": "Producer Manufacturing",
       "status": "rejected",
       "reason": "T1 needs more than 22 trading days (~1 month)"
-    },
-    {
-      "symbol": "BLSE",
-      "score": 59.6,
-      "band": "Ignore",
-      "cmp": 322.05,
-      "risk_sector": "Technology Services",
-      "status": "rejected",
-      "reason": "score below Watch band"
     },
     {
       "symbol": "SANSERA",
@@ -1411,7 +1398,7 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 26,
+  "survivor_outcomes_total": 25,
   "survivor_outcomes_truncated": false,
   "scoring": {
     "live_weights": {

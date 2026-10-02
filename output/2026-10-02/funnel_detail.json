@@ -478,7 +478,7 @@
         "EMAMIPAP",
         "BLBLIMITED",
         "DPABHUSHAN",
-        "ARIHANTACA"
+        "AUROPHARMA"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -924,8 +924,8 @@
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 29,
-      "dropped_count": 0,
+      "surviving": 28,
+      "dropped_count": 1,
       "survivor_symbols": [
         "LALPATHLAB",
         "KOVAI",
@@ -939,7 +939,6 @@
         "ANUHPHR",
         "JUNIPER",
         "BOROLTD",
-        "BLSE",
         "SANSERA",
         "UNIMECH",
         "LGBBROSLTD",
@@ -957,13 +956,15 @@
         "BIL",
         "SHANTIGEAR"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "BLSE"
+      ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 26,
+      "surviving": 25,
       "dropped_count": 3,
       "survivor_symbols": [
         "LALPATHLAB",
@@ -975,7 +976,6 @@
         "SUDEEPPHRM",
         "JUNIPER",
         "BOROLTD",
-        "BLSE",
         "SANSERA",
         "UNIMECH",
         "LGBBROSLTD",
@@ -1083,15 +1083,6 @@
       "risk_sector": "Producer Manufacturing",
       "status": "rejected",
       "reason": "T1 needs more than 22 trading days (~1 month)"
-    },
-    {
-      "symbol": "BLSE",
-      "score": 59.6,
-      "band": "Ignore",
-      "cmp": 322.05,
-      "risk_sector": "Technology Services",
-      "status": "rejected",
-      "reason": "score below Watch band"
     },
     {
       "symbol": "SANSERA",
@@ -1238,6 +1229,6 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 26,
+  "survivor_outcomes_total": 25,
   "survivor_outcomes_truncated": false
 }

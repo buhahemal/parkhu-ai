@@ -38,7 +38,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 
 ## No trade today
 
-26 name(s) survived the screen but none reached the score-80 Buy band. Under KB-00 this is a correct outcome rather than a gap — the bar is not lowered to produce ideas.
+25 name(s) survived the screen but none reached the score-80 Buy band. Under KB-00 this is a correct outcome rather than a gap — the bar is not lowered to produce ideas.
 
 ### Gate funnel
 
@@ -54,8 +54,8 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | delivery% >= 40 | 103 |
 | relative_volume >= 1 | 31 |
 | no earnings within 21d | 29 |
-| event_risk_score <= 1 | 29 |
-| TV rating not Sell | 26 |
+| event_risk_score <= 1 | 28 |
+| TV rating not Sell | 25 |
 
 ## Watchlist (score 70–79, no position)
 
