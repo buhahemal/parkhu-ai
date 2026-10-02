@@ -1,41 +1,40 @@
 # Parkhu research pack — 2026-10-02
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-02T06:08:37.748571+05:30
+- **generated_at_ist:** 2026-10-02T11:39:50.057237+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.42%)
-- india_vix: 13.49 (Low)
+- nifty: Bearish (-0.88%)
+- india_vix: 14.46 (Medium)
 - fii_net: -9484.22 | dii_net: 10041.84
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3179
+- universe: 3177
 - trend = Bullish: 932
 - price > SMA200: 732
 - price > EMA50: 705
 - ADX14 > 25: 398
 - RSI14 in 40-80: 376
-- RS > 0 vs NIFTY and sector: 235
-- delivery% >= 40: 103
-- relative_volume >= 1: 31
-- no earnings within 21d: 29
-- event_risk_score <= 1: 28
-- TV rating not Sell: 25
+- RS > 0 vs NIFTY and sector: 233
+- delivery% >= 40: 101
+- relative_volume >= 1: 30
+- no earnings within 21d: 28
+- event_risk_score <= 1: 27
+- TV rating not Sell: 24
 
-## Survivors (top 25 of 25)
+## Survivors (top 24 of 24)
 
 - **LALPATHLAB** [watchlist] score 74.1 — score in Watch band (70–80)
 - **VSSL** [watchlist] score 70.1 — score in Watch band (70–80)
 - **WELCORP** [rejected] score 69.4 — score below Watch band
-- **DIVISLAB** [rejected] score 67.5 — score below Watch band
-- **CONFIPET** [rejected] score 65.7 — score below Watch band
+- **DIVISLAB** [rejected] score 67.4 — score below Watch band
+- **CONFIPET** [rejected] score 65.8 — score below Watch band
 - **ROLEXRINGS** [rejected] score 61.1 — score below Watch band
-- **SUDEEPPHRM** [rejected] score 61.1 — score below Watch band
 - **JUNIPER** [rejected] score 60.3 — score below Watch band
 - **BOROLTD** [rejected] score 60.2 — T1 needs more than 22 trading days (~1 month)
 - **SANSERA** [rejected] score 58.6 — score below Watch band
@@ -43,8 +42,8 @@
 - **LGBBROSLTD** [rejected] score 56.5 — T1 needs more than 22 trading days (~1 month)
 - **ISGEC** [rejected] score 56.1 — T1 needs more than 22 trading days (~1 month)
 - **EIMCOELECO** [rejected] score 54.9 — score below Watch band
+- **LIKHITHA** [rejected] score 54.9 — score below Watch band
 - **JHS** [rejected] score 54.8 — score below Watch band
-- **LIKHITHA** [rejected] score 54.8 — score below Watch band
 - **MAHSEAMLES** [rejected] score 54.7 — score below Watch band
 - **DEEPINDS** [rejected] score 53.6 — score below Watch band
 - **KREBSBIO** [rejected] score 51.7 — score below Watch band
@@ -57,6 +56,16 @@
 
 ## Ideas
 
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 301.5 | stop 284.97 | t1 316.58 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### UNIMECH — Watch (score 14.0)
+- UNIMECH | risk_sector: Producer Manufacturing
+- entry 1773.0 | stop 1648.45 | t1 1861.65 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### LIKHITHA — Watch (score 14.0)
 - LIKHITHA | risk_sector: Industrial Services
 - entry 225.62 | stop 205.74 | t1 236.9 | t2 None | t3 None | R:R None
@@ -67,19 +76,9 @@
 - entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ZIMLAB — Watch (score 14.0)
-- ZIMLAB | risk_sector: Health Technology
-- entry 137.02 | stop 125.68 | t1 143.87 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### PRIMESECU — Watch (score 14.0)
-- PRIMESECU | risk_sector: Finance
-- entry 301.5 | stop 284.97 | t1 316.58 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SANSERA — Watch (score 14.0)
-- SANSERA | risk_sector: Producer Manufacturing
-- entry 4276.6 | stop 3960.29 | t1 4490.43 | t2 None | t3 None | R:R None
+### BIL — Watch (score 14.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 987.55 | stop 914.96 | t1 1036.93 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -98,36 +97,36 @@
 
 ## Swing candidates (top)
 
-- LIKHITHA: score=14 rs_nifty=14.27 deliv=50.17
-- BOROLTD: score=14 rs_nifty=20.62 deliv=45.4
-- ZIMLAB: score=14 rs_nifty=17.82 deliv=51.18
-- PRIMESECU: score=14 rs_nifty=11.13 deliv=73.95
-- SANSERA: score=14 rs_nifty=10.75 deliv=41.69
-- BIL: score=14 rs_nifty=20.23 deliv=82.2
-- UNIMECH: score=14 rs_nifty=24.47 deliv=45.45
-- OMAXAUTO: score=13 rs_nifty=14.78 deliv=52.69
-- NDLVENTURE: score=13 rs_nifty=7.47 deliv=80.25
-- LGEINDIA: score=13 rs_nifty=7.4 deliv=54.55
-- SKYGOLD: score=13 rs_nifty=6.49 deliv=64.36
-- PGIL: score=13 rs_nifty=8.33 deliv=50.39
-- OAL: score=13 rs_nifty=20.52 deliv=44.73
-- BHAGERIA: score=13 rs_nifty=51.22 deliv=45.78
-- GILLANDERS: score=13 rs_nifty=12.24 deliv=36.64
+- PRIMESECU: score=14 rs_nifty=11.86 deliv=73.95
+- UNIMECH: score=14 rs_nifty=25.2 deliv=45.45
+- LIKHITHA: score=14 rs_nifty=15.0 deliv=50.17
+- BOROLTD: score=14 rs_nifty=21.35 deliv=45.4
+- BIL: score=14 rs_nifty=20.96 deliv=82.2
+- ZIMLAB: score=14 rs_nifty=18.55 deliv=51.18
+- SANSERA: score=14 rs_nifty=11.48 deliv=41.69
+- PHOENIXLTD: score=13 rs_nifty=9.44 deliv=59.45
+- WELCORP: score=13 rs_nifty=15.46 deliv=41.47
+- PREMIERPOL: score=13 rs_nifty=7.7 deliv=44.06
+- BALPHARMA: score=13 rs_nifty=31.19 deliv=49.54
+- LGEINDIA: score=13 rs_nifty=8.13 deliv=54.55
+- ARIHANTCAP: score=13 rs_nifty=21.1 deliv=50.31
+- BBOX: score=13 rs_nifty=13.98 deliv=33.94
+- SUPRIYA: score=13 rs_nifty=23.41 deliv=47.64
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.85% (bull)
-- Hang Seng: +0.37% (bull)
+- Nikkei: -1.07% (bear)
+- Hang Seng: -2.85% (bear)
 - Shanghai: +0.31% (bull)
-- Kospi: +1.80% (bull)
-- Taiwan: +0.65% (bull)
-- ASX 200: -1.51% (bear)
+- Kospi: +0.09% (neutral)
+- Taiwan: +0.25% (bull)
+- ASX 200: +0.77% (bull)
 
 ### Europe
-- FTSE 100: -0.29% (bear)
-- DAX: -0.79% (bear)
-- Euro Stoxx 50: -0.81% (bear)
+- FTSE 100: -1.68% (bear)
+- DAX: -1.03% (bear)
+- Euro Stoxx 50: -1.49% (bear)
 
 ### US
 - S&P 500: +0.19% (bull)
@@ -136,13 +135,13 @@
 - US VIX: +0.31% (neutral)
 
 ### Macro
-- USDINR: -0.13% (neutral)
-- Crude WTI: +2.99% (bull)
-- Brent: -0.86% (bear)
-- DXY: +0.59% (bear)
+- USDINR: +0.39% (bear)
+- Crude WTI: -0.45% (bear)
+- Brent: -0.29% (bear)
+- DXY: -0.13% (neutral)
 - US 10Y: -1.06% (bull)
-- India ETF: -0.55% (bear)
-- EM ETF: -0.91% (bear)
+- India ETF: -0.69% (bear)
+- EM ETF: +0.03% (neutral)
 
 
 ## Groq desk note
