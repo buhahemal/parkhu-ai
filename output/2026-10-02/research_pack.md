@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-02
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-02T11:39:50.057237+05:30
+- **generated_at_ist:** 2026-10-02T18:11:49.527445+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -61,16 +61,6 @@
 - entry 301.5 | stop 284.97 | t1 316.58 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### UNIMECH — Watch (score 14.0)
-- UNIMECH | risk_sector: Producer Manufacturing
-- entry 1773.0 | stop 1648.45 | t1 1861.65 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### LIKHITHA — Watch (score 14.0)
-- LIKHITHA | risk_sector: Industrial Services
-- entry 225.62 | stop 205.74 | t1 236.9 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### BOROLTD — Watch (score 14.0)
 - BOROLTD | risk_sector: Producer Manufacturing
 - entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
@@ -79,6 +69,16 @@
 ### BIL — Watch (score 14.0)
 - BIL | risk_sector: Consumer Non-Durables
 - entry 987.55 | stop 914.96 | t1 1036.93 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### UNIMECH — Watch (score 14.0)
+- UNIMECH | risk_sector: Producer Manufacturing
+- entry 1773.0 | stop 1648.45 | t1 1861.65 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### ZIMLAB — Watch (score 14.0)
+- ZIMLAB | risk_sector: Health Technology
+- entry 137.02 | stop 125.68 | t1 143.87 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -98,48 +98,48 @@
 ## Swing candidates (top)
 
 - PRIMESECU: score=14 rs_nifty=11.86 deliv=73.95
-- UNIMECH: score=14 rs_nifty=25.2 deliv=45.45
-- LIKHITHA: score=14 rs_nifty=15.0 deliv=50.17
 - BOROLTD: score=14 rs_nifty=21.35 deliv=45.4
 - BIL: score=14 rs_nifty=20.96 deliv=82.2
+- UNIMECH: score=14 rs_nifty=25.2 deliv=45.45
 - ZIMLAB: score=14 rs_nifty=18.55 deliv=51.18
 - SANSERA: score=14 rs_nifty=11.48 deliv=41.69
-- PHOENIXLTD: score=13 rs_nifty=9.44 deliv=59.45
+- LIKHITHA: score=14 rs_nifty=15.0 deliv=50.17
+- EIMCOELECO: score=13 rs_nifty=10.65 deliv=50.43
+- GMMPFAUDLR: score=13 rs_nifty=44.65 deliv=55.16
+- CEIGALL: score=13 rs_nifty=17.72 deliv=44.66
 - WELCORP: score=13 rs_nifty=15.46 deliv=41.47
-- PREMIERPOL: score=13 rs_nifty=7.7 deliv=44.06
-- BALPHARMA: score=13 rs_nifty=31.19 deliv=49.54
-- LGEINDIA: score=13 rs_nifty=8.13 deliv=54.55
-- ARIHANTCAP: score=13 rs_nifty=21.1 deliv=50.31
-- BBOX: score=13 rs_nifty=13.98 deliv=33.94
-- SUPRIYA: score=13 rs_nifty=23.41 deliv=47.64
+- HLEGLAS: score=13 rs_nifty=48.63 deliv=56.53
+- SUNFLAG: score=13 rs_nifty=34.29 deliv=62.5
+- SETL: score=13 rs_nifty=17.09 deliv=54.92
+- PHOENIXLTD: score=13 rs_nifty=9.44 deliv=59.45
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.07% (bear)
-- Hang Seng: -2.85% (bear)
+- Nikkei: -0.94% (bear)
+- Hang Seng: -2.60% (bear)
 - Shanghai: +0.31% (bull)
-- Kospi: +0.09% (neutral)
+- Kospi: +0.46% (bull)
 - Taiwan: +0.25% (bull)
-- ASX 200: +0.77% (bull)
+- ASX 200: +0.79% (bull)
 
 ### Europe
-- FTSE 100: -1.68% (bear)
-- DAX: -1.03% (bear)
-- Euro Stoxx 50: -1.49% (bear)
+- FTSE 100: +0.20% (bull)
+- DAX: +0.94% (bull)
+- Euro Stoxx 50: +0.58% (bull)
 
 ### US
 - S&P 500: +0.19% (bull)
 - Nasdaq: +0.04% (neutral)
 - Dow: +0.04% (neutral)
-- US VIX: +0.31% (neutral)
+- US VIX: -2.14% (bull)
 
 ### Macro
 - USDINR: +0.39% (bear)
-- Crude WTI: -0.45% (bear)
-- Brent: -0.29% (bear)
-- DXY: -0.13% (neutral)
-- US 10Y: -1.06% (bull)
+- Crude WTI: -3.34% (bear)
+- Brent: -2.50% (bear)
+- DXY: -0.29% (neutral)
+- US 10Y: -0.32% (neutral)
 - India ETF: -0.69% (bear)
 - EM ETF: +0.03% (neutral)
 
