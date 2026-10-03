@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-03
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-03T06:09:16.528761+05:30
+- **generated_at_ist:** 2026-10-03T18:08:36.425969+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -55,29 +55,29 @@
 
 ## Ideas
 
-### BOROLTD — Watch (score 14.0)
-- BOROLTD | risk_sector: Producer Manufacturing
-- entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SANSERA — Watch (score 14.0)
-- SANSERA | risk_sector: Producer Manufacturing
-- entry 4276.6 | stop 3960.29 | t1 4490.43 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### LIKHITHA — Watch (score 14.0)
-- LIKHITHA | risk_sector: Industrial Services
-- entry 225.62 | stop 205.74 | t1 236.9 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### ZIMLAB — Watch (score 14.0)
 - ZIMLAB | risk_sector: Health Technology
 - entry 137.02 | stop 125.68 | t1 143.87 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
+### BIL — Watch (score 14.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 987.55 | stop 914.96 | t1 1036.93 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### UNIMECH — Watch (score 14.0)
 - UNIMECH | risk_sector: Producer Manufacturing
 - entry 1773.0 | stop 1648.45 | t1 1861.65 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 301.5 | stop 284.97 | t1 316.58 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### LIKHITHA — Watch (score 14.0)
+- LIKHITHA | risk_sector: Industrial Services
+- entry 225.62 | stop 205.74 | t1 236.9 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -96,36 +96,36 @@
 
 ## Swing candidates (top)
 
-- BOROLTD: score=14 rs_nifty=21.35 deliv=45.4
-- SANSERA: score=14 rs_nifty=11.48 deliv=41.69
-- LIKHITHA: score=14 rs_nifty=15.0 deliv=50.17
 - ZIMLAB: score=14 rs_nifty=18.55 deliv=51.18
+- BIL: score=14 rs_nifty=20.96 deliv=82.2
 - UNIMECH: score=14 rs_nifty=25.2 deliv=45.45
 - PRIMESECU: score=14 rs_nifty=11.86 deliv=73.95
-- BIL: score=14 rs_nifty=20.96 deliv=82.2
-- NDLVENTURE: score=13 rs_nifty=8.2 deliv=80.25
-- ENRIN: score=13 rs_nifty=10.01 deliv=31.07
-- OMAXAUTO: score=13 rs_nifty=15.51 deliv=52.69
-- SOMANYCERA: score=13 rs_nifty=16.63 deliv=56.7
-- LGEINDIA: score=13 rs_nifty=8.13 deliv=54.55
-- BBOX: score=13 rs_nifty=13.98 deliv=33.94
-- SETL: score=13 rs_nifty=17.09 deliv=54.92
-- SATIA: score=13 rs_nifty=26.9 deliv=69.67
+- LIKHITHA: score=14 rs_nifty=15.0 deliv=50.17
+- SANSERA: score=14 rs_nifty=11.48 deliv=41.69
+- BOROLTD: score=14 rs_nifty=21.35 deliv=45.4
+- MANKIND: score=13 rs_nifty=13.24 deliv=53.59
+- GMMPFAUDLR: score=13 rs_nifty=44.65 deliv=55.16
+- CEIGALL: score=13 rs_nifty=17.72 deliv=44.66
+- SUPRIYA: score=13 rs_nifty=23.41 deliv=47.64
+- MWL: score=13 rs_nifty=20.5 deliv=71.18
+- PGIL: score=13 rs_nifty=9.06 deliv=50.39
+- BLACKBUCK: score=13 rs_nifty=9.77 deliv=40.35
+- MAHSEAMLES: score=13 rs_nifty=13.76 deliv=44.4
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +3.30% (bull)
-- Hang Seng: +0.37% (bull)
+- Nikkei: -0.94% (bear)
+- Hang Seng: -2.60% (bear)
 - Shanghai: +0.31% (bull)
-- Kospi: +1.95% (bull)
-- Taiwan: +0.86% (bull)
-- ASX 200: -1.99% (bear)
+- Kospi: +0.46% (bull)
+- Taiwan: +0.25% (bull)
+- ASX 200: +0.79% (bull)
 
 ### Europe
-- FTSE 100: -1.68% (bear)
-- DAX: -1.03% (bear)
-- Euro Stoxx 50: -1.49% (bear)
+- FTSE 100: +0.32% (bull)
+- DAX: +1.17% (bull)
+- Euro Stoxx 50: +1.02% (bull)
 
 ### US
 - S&P 500: +0.73% (bull)
@@ -134,13 +134,13 @@
 - US VIX: -6.59% (bull)
 
 ### Macro
-- USDINR: +0.39% (bear)
-- Crude WTI: -1.73% (bear)
-- Brent: +0.38% (bull)
+- USDINR: +0.08% (neutral)
+- Crude WTI: -1.90% (bear)
+- Brent: -0.06% (neutral)
 - DXY: -0.17% (neutral)
 - US 10Y: +0.76% (bear)
-- India ETF: -0.69% (bear)
-- EM ETF: +0.03% (neutral)
+- India ETF: +0.35% (bull)
+- EM ETF: +1.29% (bull)
 
 
 ## Groq desk note
