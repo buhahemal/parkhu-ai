@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-04
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-04T06:09:28.457850+05:30
+- **generated_at_ist:** 2026-10-04T18:07:46.760832+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -55,6 +55,16 @@
 
 ## Ideas
 
+### BOROLTD — Watch (score 14.0)
+- BOROLTD | risk_sector: Producer Manufacturing
+- entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### UNIMECH — Watch (score 14.0)
+- UNIMECH | risk_sector: Producer Manufacturing
+- entry 1773.0 | stop 1648.45 | t1 1861.65 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### ZIMLAB — Watch (score 14.0)
 - ZIMLAB | risk_sector: Health Technology
 - entry 137.02 | stop 125.68 | t1 143.87 | t2 None | t3 None | R:R None
@@ -63,16 +73,6 @@
 ### BIL — Watch (score 14.0)
 - BIL | risk_sector: Consumer Non-Durables
 - entry 987.55 | stop 914.96 | t1 1036.93 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### UNIMECH — Watch (score 14.0)
-- UNIMECH | risk_sector: Producer Manufacturing
-- entry 1773.0 | stop 1648.45 | t1 1861.65 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### BOROLTD — Watch (score 14.0)
-- BOROLTD | risk_sector: Producer Manufacturing
-- entry 280.2 | stop 260.37 | t1 294.21 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### LIKHITHA — Watch (score 14.0)
@@ -96,21 +96,21 @@
 
 ## Swing candidates (top)
 
+- BOROLTD: score=14 rs_nifty=21.35 deliv=45.4
+- UNIMECH: score=14 rs_nifty=25.2 deliv=45.45
 - ZIMLAB: score=14 rs_nifty=18.55 deliv=51.18
 - BIL: score=14 rs_nifty=20.96 deliv=82.2
-- UNIMECH: score=14 rs_nifty=25.2 deliv=45.45
-- BOROLTD: score=14 rs_nifty=21.35 deliv=45.4
 - LIKHITHA: score=14 rs_nifty=15.0 deliv=50.17
-- SANSERA: score=14 rs_nifty=11.48 deliv=41.69
 - PRIMESECU: score=14 rs_nifty=11.86 deliv=73.95
-- SATIA: score=13 rs_nifty=26.9 deliv=69.67
+- SANSERA: score=14 rs_nifty=11.48 deliv=41.69
+- LGEINDIA: score=13 rs_nifty=8.13 deliv=54.55
 - MEESHO: score=13 rs_nifty=12.95 deliv=42.72
-- NOVARTIND: score=13 rs_nifty=33.84 deliv=41.46
-- GREENPLY: score=13 rs_nifty=11.51 deliv=55.29
-- ASHIANA: score=13 rs_nifty=11.72 deliv=55.7
 - PHOENIXLTD: score=13 rs_nifty=9.44 deliv=59.45
-- RGL: score=13 rs_nifty=26.5 deliv=57.44
-- RML: score=13 rs_nifty=25.88 deliv=26.19
+- MANKIND: score=13 rs_nifty=13.24 deliv=53.59
+- ROLEXRINGS: score=13 rs_nifty=15.52 deliv=47.65
+- BLSE: score=13 rs_nifty=4.1 deliv=45.81
+- BLACKBUCK: score=13 rs_nifty=9.77 deliv=40.35
+- CONFIPET: score=13 rs_nifty=11.86 deliv=49.27
 
 ## World markets (India cues)
 
