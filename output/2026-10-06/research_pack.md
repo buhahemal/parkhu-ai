@@ -1,85 +1,77 @@
 # Parkhu research pack — 2026-10-06
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-06T06:09:34.937242+05:30
+- **generated_at_ist:** 2026-10-06T12:23:42.612096+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.88%)
-- india_vix: 14.46 (Medium)
+- market_regime: **Bullish**
+- nifty: Bullish (0.56%)
+- india_vix: 14.03 (Medium)
 - fii_net: -4699.14 | dii_net: 5181.62
 - overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
 - universe: 3188
-- trend = Bullish: 949
-- price > SMA200: 751
-- price > EMA50: 731
-- ADX14 > 25: 399
-- RSI14 in 40-80: 373
-- RS > 0 vs NIFTY and sector: 216
-- delivery% >= 40: 93
-- relative_volume >= 1: 16
-- no earnings within 21d: 13
-- event_risk_score <= 1: 12
-- TV rating not Sell: 12
+- trend = Bullish: 1035
+- price > SMA200: 827
+- price > EMA50: 808
+- ADX14 > 25: 403
+- RSI14 in 40-80: 374
+- RS > 0 vs NIFTY and sector: 222
+- delivery% >= 40: 99
+- relative_volume >= 1: 9
+- no earnings within 21d: 8
+- event_risk_score <= 1: 8
+- TV rating not Sell: 8
 
-## Survivors (top 12 of 12)
+## Survivors (top 8 of 8)
 
-- **VSSL** [watchlist] score 72.0 — score in Watch band (70–80)
-- **MWL** [rejected] score 67.8 — score below Watch band
-- **JHS** [rejected] score 59.4 — score below Watch band
-- **PARAGMILK** [rejected] score 58.6 — T1 needs more than 22 trading days (~1 month)
-- **KAMATHOTEL** [rejected] score 58.0 — T1 needs more than 22 trading days (~1 month)
-- **SETL** [rejected] score 53.9 — score below Watch band
-- **KREBSBIO** [rejected] score 53.2 — score below Watch band
-- **YUKEN** [rejected] score 46.8 — score below Watch band
-- **BIL** [rejected] score 45.9 — score below Watch band
-- **GILLANDERS** [rejected] score 44.0 — score below Watch band
-- **LGEINDIA** [rejected] score 42.4 — score below Watch band
-- **NAZARA** [rejected] score 39.2 — score below Watch band
+- **BIRLACABLE** [watchlist] score 72.3 — score in Watch band (70–80)
+- **HEGAM** [watchlist] score 71.9 — score in Watch band (70–80)
+- **DOLPHIN** [rejected] score 64.7 — score below Watch band
+- **PARAGMILK** [rejected] score 60.8 — score below Watch band
+- **KAMATHOTEL** [rejected] score 56.1 — T1 needs more than 22 trading days (~1 month)
+- **CPCAP** [rejected] score 54.2 — score below Watch band
+- **BIL** [rejected] score 45.5 — score below Watch band
+- **URBANCO** [rejected] score 40.9 — score below Watch band
 
 ## Ideas
 
-### MWL — Watch (score 14.0)
-- MWL | risk_sector: Non-Energy Minerals
-- entry 41.53 | stop 38.16 | t1 43.61 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SETL — Watch (score 14.0)
-- SETL | risk_sector: Health Technology
-- entry 430.05 | stop 399.96 | t1 451.55 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### LGEINDIA — Watch (score 14.0)
-- LGEINDIA | risk_sector: Consumer Durables
-- entry 1770.9 | stop 1700.79 | t1 1859.45 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### BIL — Watch (score 14.0)
 - BIL | risk_sector: Consumer Non-Durables
-- entry 1071.15 | stop 991.92 | t1 1124.71 | t2 None | t3 None | R:R None
+- entry 1057.65 | stop 978.26 | t1 1110.53 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ENRIN — Watch (score 14.0)
-- ENRIN | risk_sector: Producer Manufacturing
-- entry 3316.4 | stop 3145.61 | t1 3482.22 | t2 None | t3 None | R:R None
+### BIRLACABLE — Watch (score 14.0)
+- BIRLACABLE | risk_sector: Producer Manufacturing
+- entry 395.45 | stop 361.49 | t1 415.22 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### CPCAP — Watch (score 14.0)
+- CPCAP | risk_sector: Consumer Services
+- entry 152.2 | stop 138.18 | t1 159.81 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PARAGMILK — Watch (score 14.0)
+- PARAGMILK | risk_sector: Consumer Non-Durables
+- entry 306.55 | stop 283.68 | t1 321.88 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### EMKAY — Watch (score 13.0)
+- EMKAY | risk_sector: Finance
+- entry 284.5 | stop 264.61 | t1 298.73 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **KENNAMET** status=open entry=4266.4 last=4193.7 mfe=11.09 mae=-7.23 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=427.65 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2497.5 mfe=9.02 mae=-7.9 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=199.51 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=open entry=96.02 last=101.54 mfe=10.45 mae=-6.47 opened=2026-10-05
-
-## Needs action
-
-- **IPCALAB**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at -0.25% — capital has an opportunity cost
+- **KENNAMET** status=open entry=4266.4 last=4270.2 mfe=11.09 mae=-7.23 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=435.9 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2612.0 mfe=9.02 mae=-7.9 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=199.57 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=open entry=96.02 last=100.86 mfe=10.45 mae=-6.47 opened=2026-10-05
 
 ## Closed today
 
@@ -87,36 +79,36 @@
 
 ## Swing candidates (top)
 
-- MWL: score=14 rs_nifty=11.4 deliv=52.5
-- SETL: score=14 rs_nifty=15.66 deliv=49.29
-- LGEINDIA: score=14 rs_nifty=13.39 deliv=41.07
-- BIL: score=14 rs_nifty=22.72 deliv=42.79
-- ENRIN: score=14 rs_nifty=11.74 deliv=48.49
-- VSSL: score=14 rs_nifty=12.54 deliv=50.63
-- KAMATHOTEL: score=14 rs_nifty=20.17 deliv=55.84
-- PARAGMILK: score=14 rs_nifty=16.99 deliv=47.91
-- ADFFOODS: score=13 rs_nifty=12.27 deliv=48.81
-- MEESHO: score=13 rs_nifty=14.78 deliv=45.04
-- HALEOSLABS: score=13 rs_nifty=9.43 deliv=92.12
-- YUKEN: score=13 rs_nifty=18.57 deliv=46.8
-- OMAXAUTO: score=13 rs_nifty=16.51 deliv=52.01
-- CASTROLIND: score=13 rs_nifty=13.93 deliv=52.71
-- BALPHARMA: score=13 rs_nifty=28.56 deliv=59.17
+- BIL: score=14 rs_nifty=19.44 deliv=42.79
+- BIRLACABLE: score=14 rs_nifty=10.0 deliv=41.07
+- CPCAP: score=14 rs_nifty=30.05 deliv=54.21
+- PARAGMILK: score=14 rs_nifty=25.2 deliv=47.91
+- EMKAY: score=13 rs_nifty=14.83 deliv=54.91
+- MAHSEAMLES: score=13 rs_nifty=11.01 deliv=47.87
+- GALAXYSURF: score=13 rs_nifty=12.79 deliv=39.86
+- ICIL: score=13 rs_nifty=11.55 deliv=40.37
+- ALKYLAMINE: score=13 rs_nifty=5.29 deliv=42.36
+- YATHARTH: score=13 rs_nifty=12.81 deliv=42.18
+- MAXESTATES: score=13 rs_nifty=10.98 deliv=50.7
+- PGIL: score=13 rs_nifty=13.32 deliv=56.47
+- SKYGOLD: score=13 rs_nifty=20.05 deliv=55.09
+- SALSTEEL: score=13 rs_nifty=13.61 deliv=48.86
+- MIDHANI: score=13 rs_nifty=15.12 deliv=40.76
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.86% (bull)
-- Hang Seng: -2.60% (bear)
+- Nikkei: +1.05% (bull)
+- Hang Seng: +0.77% (bull)
 - Shanghai: +0.31% (bull)
-- Kospi: -0.26% (bear)
-- Taiwan: +0.25% (bull)
-- ASX 200: +0.46% (bull)
+- Kospi: -0.89% (bear)
+- Taiwan: +0.22% (bull)
+- ASX 200: +0.57% (bull)
 
 ### Europe
-- FTSE 100: +0.32% (bull)
-- DAX: +1.17% (bull)
-- Euro Stoxx 50: +1.02% (bull)
+- FTSE 100: +0.34% (bull)
+- DAX: +0.09% (neutral)
+- Euro Stoxx 50: +0.06% (neutral)
 
 ### US
 - S&P 500: +0.66% (bull)
@@ -125,13 +117,13 @@
 - US VIX: +1.37% (bear)
 
 ### Macro
-- USDINR: -0.03% (neutral)
-- Crude WTI: -1.99% (bear)
-- Brent: -1.90% (bear)
-- DXY: +0.24% (neutral)
+- USDINR: +0.09% (neutral)
+- Crude WTI: -0.87% (bear)
+- Brent: -0.65% (bear)
+- DXY: +0.10% (neutral)
 - US 10Y: +0.64% (bear)
-- India ETF: +0.35% (bull)
-- EM ETF: +1.29% (bull)
+- India ETF: +0.11% (neutral)
+- EM ETF: +1.57% (bull)
 
 
 ## Groq desk note
