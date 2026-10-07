@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-07",
-  "generated_at_ist": "2026-10-07T00:11:46.023188+05:30",
-  "duration_seconds": 391.9,
+  "generated_at_ist": "2026-10-07T06:10:51.543899+05:30",
+  "duration_seconds": 446.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,41 +14,41 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3189,
-      "seconds": 3.0
+      "seconds": 2.7
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14434,
-      "cache_rows": 7917652,
-      "symbols": 2890,
-      "failed": 28,
+      "rows": 14438,
+      "cache_rows": 7918059,
+      "symbols": 2892,
+      "failed": 26,
       "lookback": 0,
       "pack_sessions": 5,
       "warm": 2498,
       "cold": 420,
       "new_symbols": 28,
       "retries": 2,
-      "seconds": 286.6
+      "seconds": 331.5
     },
     {
       "agent": "earnings",
       "status": "ok",
       "rows": 3189,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "indices",
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 1.0
+      "seconds": 0.8
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 2.1
+      "seconds": 1.4
     },
     {
       "agent": "smartmoney",
@@ -60,13 +60,13 @@
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.1
+      "seconds": 3.7
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 458,
-      "seconds": 4.7
+      "seconds": 4.9
     },
     {
       "agent": "stock_options",
@@ -79,13 +79,13 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2321,
-      "seconds": 17.9
+      "seconds": 17.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.9
+      "seconds": 4.6
     },
     {
       "agent": "news",
@@ -103,19 +103,19 @@
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3189,
-      "seconds": 0.2
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3189,
-      "seconds": 0.4
+      "seconds": 0.8
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 211,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "news_classify",
@@ -138,17 +138,17 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2890,
-      "with_structure": 2882,
+      "rows": 2892,
+      "with_structure": 2884,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 11.2
+      "seconds": 20.1
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3189,
-      "seconds": 1.7
+      "seconds": 2.8
     },
     {
       "agent": "swing_brief",
@@ -159,7 +159,7 @@
       "open_positions": 5,
       "needing_action": [],
       "closed_today": [],
-      "seconds": 0.2
+      "seconds": 0.3
     }
   ],
   "ok": 19,
@@ -282,6 +282,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-07/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-07/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-07/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-07/report.json"
+    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-07/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-07/research_pack.json"
@@ -321,10 +325,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-07/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-07/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-07/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-07/report.json"
     }
   }
 }

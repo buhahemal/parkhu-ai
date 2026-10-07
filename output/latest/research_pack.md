@@ -1,13 +1,13 @@
 # Parkhu research pack — 2026-10-07
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-07T00:11:46.023188+05:30
+- **generated_at_ist:** 2026-10-07T06:10:51.543899+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.6%)
+- nifty: Bullish (0.98%)
 - india_vix: 14.78 (Medium)
 - fii_net: -2961.3 | dii_net: 5088.92
 - overall_risk: Medium | global_risk: Risk-On
@@ -20,7 +20,7 @@
 - price > EMA50: 829
 - ADX14 > 25: 403
 - RSI14 in 40-80: 374
-- RS > 0 vs NIFTY and sector: 228
+- RS > 0 vs NIFTY and sector: 227
 - delivery% >= 40: 96
 - relative_volume >= 1: 17
 - no earnings within 21d: 13
@@ -45,24 +45,24 @@
 
 ## Ideas
 
+### SWELECTES — Watch (score 14.0)
+- SWELECTES | risk_sector: Producer Manufacturing
+- entry 613.8 | stop 575.17 | t1 644.49 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### GALAXYSURF — Watch (score 14.0)
 - GALAXYSURF | risk_sector: Consumer Non-Durables
 - entry 2442.4 | stop 2297.21 | t1 2564.52 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### THELEELA — Watch (score 14.0)
-- THELEELA | risk_sector: Consumer Services
-- entry 582.7 | stop 548.55 | t1 611.84 | t2 None | t3 None | R:R None
+### BIL — Watch (score 14.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 1092.85 | stop 1011.76 | t1 1147.49 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### OMAXAUTO — Watch (score 14.0)
 - OMAXAUTO | risk_sector: Producer Manufacturing
 - entry 209.29 | stop 191.41 | t1 219.75 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### PETRONET — Watch (score 14.0)
-- PETRONET | risk_sector: Utilities
-- entry 297.5 | stop 288.08 | t1 312.38 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### YASHO — Watch (score 14.0)
@@ -80,31 +80,31 @@
 
 ## Swing candidates (top)
 
-- GALAXYSURF: score=14 rs_nifty=14.15 deliv=57.56
-- THELEELA: score=14 rs_nifty=8.91 deliv=65.7
-- OMAXAUTO: score=14 rs_nifty=19.68 deliv=57.58
-- PETRONET: score=14 rs_nifty=8.18 deliv=63.06
-- YASHO: score=14 rs_nifty=10.65 deliv=58.81
-- BIRLACABLE: score=14 rs_nifty=10.7 deliv=56.49
-- BIL: score=14 rs_nifty=23.95 deliv=54.95
-- SWELECTES: score=14 rs_nifty=10.78 deliv=55.65
-- BBOX: score=14 rs_nifty=22.02 deliv=41.35
-- AKUMS: score=13 rs_nifty=9.54 deliv=55.89
-- PGIL: score=13 rs_nifty=15.03 deliv=61.06
-- CGPOWER: score=13 rs_nifty=7.58 deliv=47.89
-- TRENT: score=13 rs_nifty=7.68 deliv=13.94
-- INDSWFTLAB: score=13 rs_nifty=13.01 deliv=45.98
-- BOROLTD: score=13 rs_nifty=20.88 deliv=49.33
+- SWELECTES: score=14 rs_nifty=9.7 deliv=55.65
+- GALAXYSURF: score=14 rs_nifty=13.07 deliv=57.56
+- BIL: score=14 rs_nifty=22.87 deliv=54.95
+- OMAXAUTO: score=14 rs_nifty=18.6 deliv=57.58
+- YASHO: score=14 rs_nifty=9.57 deliv=58.81
+- THELEELA: score=14 rs_nifty=7.83 deliv=65.7
+- BBOX: score=14 rs_nifty=20.94 deliv=41.35
+- PETRONET: score=14 rs_nifty=7.1 deliv=63.06
+- BIRLACABLE: score=14 rs_nifty=9.62 deliv=56.49
+- PDMJEPAPER: score=13 rs_nifty=4.77 deliv=52.94
+- SOTL: score=13 rs_nifty=8.97 deliv=52.47
+- ASHIANA: score=13 rs_nifty=9.17 deliv=47.53
+- LIKHITHA: score=13 rs_nifty=15.41 deliv=46.18
+- PAYTM: score=13 rs_nifty=8.2 deliv=42.82
+- LGEINDIA: score=13 rs_nifty=10.46 deliv=49.54
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.40% (bull)
-- Hang Seng: +0.28% (bull)
+- Nikkei: +0.11% (neutral)
+- Hang Seng: +1.00% (bull)
 - Shanghai: +0.31% (bull)
-- Kospi: +0.46% (bull)
-- Taiwan: +2.55% (bull)
-- ASX 200: +0.57% (bull)
+- Kospi: -0.05% (neutral)
+- Taiwan: +0.22% (bull)
+- ASX 200: -0.34% (bear)
 
 ### Europe
 - FTSE 100: +0.42% (bull)
@@ -112,19 +112,19 @@
 - Euro Stoxx 50: +0.48% (bull)
 
 ### US
-- S&P 500: +0.67% (bull)
-- Nasdaq: +0.59% (bull)
-- Dow: +0.51% (bull)
-- US VIX: -3.03% (bull)
+- S&P 500: +0.58% (bull)
+- Nasdaq: +0.45% (bull)
+- Dow: +0.49% (bull)
+- US VIX: -3.29% (bull)
 
 ### Macro
-- USDINR: +0.09% (neutral)
-- Crude WTI: +0.11% (neutral)
-- Brent: +0.40% (bull)
-- DXY: -0.32% (neutral)
-- US 10Y: -0.83% (bull)
-- India ETF: +0.34% (bull)
-- EM ETF: -0.35% (bear)
+- USDINR: +0.02% (neutral)
+- Crude WTI: +0.88% (bull)
+- Brent: +1.19% (bull)
+- DXY: -0.22% (neutral)
+- US 10Y: -0.79% (bull)
+- India ETF: +0.11% (neutral)
+- EM ETF: -0.67% (bear)
 
 
 ## Groq desk note
