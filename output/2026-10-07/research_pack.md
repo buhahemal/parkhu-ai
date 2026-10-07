@@ -1,110 +1,106 @@
 # Parkhu research pack — 2026-10-07
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-07T06:10:51.543899+05:30
+- **generated_at_ist:** 2026-10-07T12:00:13.200400+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.98%)
-- india_vix: 14.78 (Medium)
+- market_regime: **Bearish**
+- nifty: Bearish (-0.39%)
+- india_vix: 13.78 (Low)
 - fii_net: -2961.3 | dii_net: 5088.92
 - overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 3189
-- trend = Bullish: 1064
-- price > SMA200: 852
-- price > EMA50: 829
-- ADX14 > 25: 403
-- RSI14 in 40-80: 374
-- RS > 0 vs NIFTY and sector: 227
-- delivery% >= 40: 96
-- relative_volume >= 1: 17
-- no earnings within 21d: 13
-- event_risk_score <= 1: 13
-- TV rating not Sell: 13
+- universe: 3192
+- trend = Bullish: 1094
+- price > SMA200: 862
+- price > EMA50: 846
+- ADX14 > 25: 404
+- RSI14 in 40-80: 381
+- RS > 0 vs NIFTY and sector: 234
+- delivery% >= 40: 98
+- relative_volume >= 1: 11
+- no earnings within 21d: 9
+- event_risk_score <= 1: 9
+- TV rating not Sell: 9
 
-## Survivors (top 13 of 13)
+## Survivors (top 9 of 9)
 
-- **GALAXYSURF** [watchlist] score 74.3 — score in Watch band (70–80)
-- **BIRLACABLE** [watchlist] score 73.6 — score in Watch band (70–80)
-- **NINSYS** [watchlist] score 70.1 — score in Watch band (70–80)
-- **YASHO** [rejected] score 68.9 — score below Watch band
-- **OMAXAUTO** [rejected] score 68.8 — score below Watch band
-- **GLAND** [rejected] score 67.1 — T1 needs more than 22 trading days (~1 month)
-- **DOLPHIN** [rejected] score 64.6 — score below Watch band
-- **TEXINFRA** [rejected] score 58.9 — score below Watch band
-- **SWELECTES** [rejected] score 55.8 — T1 needs more than 22 trading days (~1 month)
+- **AIROLAM** [watchlist] score 71.5 — score in Watch band (70–80)
+- **GLAND** [watchlist] score 71.5 — score in Watch band (70–80)
+- **CONFIPET** [watchlist] score 70.0 — score in Watch band (70–80)
+- **YASHO** [rejected] score 69.9 — score below Watch band
+- **PTCIL** [rejected] score 63.0 — score below Watch band
+- **NELCAST** [rejected] score 56.3 — score below Watch band
 - **BBOX** [rejected] score 55.7 — T1 needs more than 22 trading days (~1 month)
-- **BIL** [rejected] score 46.7 — score below Watch band
-- **THELEELA** [rejected] score 44.2 — score below Watch band
-- **LIBAS** [rejected] score 36.9 — score below Watch band
+- **ZIMLAB** [rejected] score 53.5 — score below Watch band
+- **RPSGVENT** [rejected] score 46.5 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### SWELECTES — Watch (score 14.0)
-- SWELECTES | risk_sector: Producer Manufacturing
-- entry 613.8 | stop 575.17 | t1 644.49 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### GALAXYSURF — Watch (score 14.0)
-- GALAXYSURF | risk_sector: Consumer Non-Durables
-- entry 2442.4 | stop 2297.21 | t1 2564.52 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### BIL — Watch (score 14.0)
-- BIL | risk_sector: Consumer Non-Durables
-- entry 1092.85 | stop 1011.76 | t1 1147.49 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### OMAXAUTO — Watch (score 14.0)
-- OMAXAUTO | risk_sector: Producer Manufacturing
-- entry 209.29 | stop 191.41 | t1 219.75 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### YASHO — Watch (score 14.0)
 - YASHO | risk_sector: Consumer Non-Durables
-- entry 4282.8 | stop 3961.9 | t1 4496.94 | t2 None | t3 None | R:R None
+- entry 4363.6 | stop 4045.71 | t1 4581.78 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### RPSGVENT — Watch (score 14.0)
+- RPSGVENT | risk_sector: Finance
+- entry 890.9 | stop 845.45 | t1 935.44 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### BBOX — Watch (score 14.0)
+- BBOX | risk_sector: Technology Services
+- entry 867.2 | stop 807.19 | t1 910.56 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MANBA — Watch (score 13.0)
+- MANBA | risk_sector: Finance
+- entry 140.3 | stop 133.32 | t1 147.32 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### GALAXYSURF — Watch (score 13.0)
+- GALAXYSURF | risk_sector: Consumer Non-Durables
+- entry 2463.2 | stop 2320.01 | t1 2586.36 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **KENNAMET** status=open entry=4266.4 last=4268.6 mfe=11.09 mae=-7.23 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=448.2 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2660.9 mfe=9.02 mae=-7.9 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=200.2 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=open entry=96.02 last=97.23 mfe=10.45 mae=-6.47 opened=2026-10-05
+- **KENNAMET** status=open entry=4266.4 last=4211.0 mfe=11.09 mae=-7.23 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=437.15 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2677.6 mfe=9.02 mae=-7.9 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=197.69 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=open entry=96.02 last=102.26 mfe=10.45 mae=-6.47 opened=2026-10-05
 
 ## Swing candidates (top)
 
-- SWELECTES: score=14 rs_nifty=9.7 deliv=55.65
-- GALAXYSURF: score=14 rs_nifty=13.07 deliv=57.56
-- BIL: score=14 rs_nifty=22.87 deliv=54.95
-- OMAXAUTO: score=14 rs_nifty=18.6 deliv=57.58
-- YASHO: score=14 rs_nifty=9.57 deliv=58.81
-- THELEELA: score=14 rs_nifty=7.83 deliv=65.7
-- BBOX: score=14 rs_nifty=20.94 deliv=41.35
-- PETRONET: score=14 rs_nifty=7.1 deliv=63.06
-- BIRLACABLE: score=14 rs_nifty=9.62 deliv=56.49
-- PDMJEPAPER: score=13 rs_nifty=4.77 deliv=52.94
-- SOTL: score=13 rs_nifty=8.97 deliv=52.47
-- ASHIANA: score=13 rs_nifty=9.17 deliv=47.53
-- LIKHITHA: score=13 rs_nifty=15.41 deliv=46.18
-- PAYTM: score=13 rs_nifty=8.2 deliv=42.82
-- LGEINDIA: score=13 rs_nifty=10.46 deliv=49.54
+- YASHO: score=14 rs_nifty=10.61 deliv=58.81
+- RPSGVENT: score=14 rs_nifty=11.8 deliv=60.24
+- BBOX: score=14 rs_nifty=25.2 deliv=41.35
+- MANBA: score=13 rs_nifty=12.96 deliv=50.95
+- GALAXYSURF: score=13 rs_nifty=19.4 deliv=57.56
+- GREAVESCOT: score=13 rs_nifty=15.1 deliv=43.77
+- ROLEXRINGS: score=13 rs_nifty=12.63 deliv=54.12
+- WHEELS: score=13 rs_nifty=37.77 deliv=46.88
+- PAYTM: score=13 rs_nifty=9.82 deliv=42.82
+- PVRINOX: score=13 rs_nifty=15.06 deliv=57.09
+- ASHIANA: score=13 rs_nifty=10.44 deliv=47.53
+- BLACKBUCK: score=13 rs_nifty=9.92 deliv=46.58
+- PGIL: score=13 rs_nifty=18.19 deliv=61.06
+- SWELECTES: score=13 rs_nifty=10.89 deliv=55.65
+- DEEPINDS: score=13 rs_nifty=5.95 deliv=43.35
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.11% (neutral)
-- Hang Seng: +1.00% (bull)
+- Nikkei: -0.69% (bear)
+- Hang Seng: -0.45% (bear)
 - Shanghai: +0.31% (bull)
-- Kospi: -0.05% (neutral)
-- Taiwan: +0.22% (bull)
-- ASX 200: -0.34% (bear)
+- Kospi: -1.76% (bear)
+- Taiwan: -0.03% (neutral)
+- ASX 200: -0.09% (neutral)
 
 ### Europe
 - FTSE 100: +0.42% (bull)
@@ -118,12 +114,12 @@
 - US VIX: -3.29% (bull)
 
 ### Macro
-- USDINR: +0.02% (neutral)
-- Crude WTI: +0.88% (bull)
-- Brent: +1.19% (bull)
-- DXY: -0.22% (neutral)
+- USDINR: +0.32% (neutral)
+- Crude WTI: +0.94% (bull)
+- Brent: +0.93% (bull)
+- DXY: +0.28% (neutral)
 - US 10Y: -0.79% (bull)
-- India ETF: +0.11% (neutral)
+- India ETF: +0.34% (bull)
 - EM ETF: -0.67% (bear)
 
 
