@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-10-08",
-  "generated_at_ist": "2026-10-08T12:09:39.897531+05:30",
+  "generated_at_ist": "2026-10-08T18:09:30.148500+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -135,7 +135,7 @@
         "price"
       ],
       "present": true,
-      "rows": 0
+      "rows": 5
     },
     "options.csv": {
       "agent": "options",
@@ -277,7 +277,7 @@
         "close"
       ],
       "present": true,
-      "rows": 2321
+      "rows": 2323
     },
     "relative_strength.csv": {
       "agent": "relative_strength (derived)",
