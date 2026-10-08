@@ -7,6 +7,8 @@ AXIOMGAS,AXIOMGAS.NS,no_ohlc_after_retry
 BMISL,BMISL.NS,no_ohlc_after_retry
 COREIN,COREIN.NS,no_ohlc_after_retry
 CREDENT,CREDENT.NS,no_ohlc_after_retry
+DIRL,DIRL.NS,no_ohlc_after_retry
+EVENTIONS,EVENTIONS.NS,no_ohlc_after_retry
 FASCINATE,FASCINATE.NS,no_ohlc_after_retry
 GREENASIA,GREENASIA.NS,no_ohlc_after_retry
 HIMALAYAN,HIMALAYAN.NS,no_ohlc_after_retry
@@ -15,6 +17,7 @@ KHERIAAUTO,KHERIAAUTO.NS,no_ohlc_after_retry
 MADHURKNIT,MADHURKNIT.NS,no_ohlc_after_retry
 METALIC,METALIC.NS,no_ohlc_after_retry
 NEELAM,NEELAM.NS,no_ohlc_after_retry
+NITYAS,NITYAS.NS,no_ohlc_after_retry
 OPTIMYSTIX,OPTIMYSTIX.NS,no_ohlc_after_retry
 PAPADMALJI,PAPADMALJI.NS,no_ohlc_after_retry
 POOJALOGIS,POOJALOGIS.NS,no_ohlc_after_retry
@@ -27,3 +30,4 @@ SPECTRAA,SPECTRAA.NS,no_ohlc_after_retry
 SUMAX,SUMAX.NS,no_ohlc_after_retry
 VINOD,VINOD.NS,no_ohlc_after_retry
 VISDEM,VISDEM.NS,no_ohlc_after_retry
+VNL,VNL.NS,no_ohlc_after_retry
