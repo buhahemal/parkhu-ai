@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-08
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-08T00:43:43.018466+05:30
+- **generated_at_ist:** 2026-10-08T06:09:53.667067+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -49,19 +49,14 @@
 
 ## Ideas
 
-### THELEELA — Watch (score 14.0)
-- THELEELA | risk_sector: Consumer Services
-- entry 602.45 | stop 567.45 | t1 632.57 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### YASHO — Watch (score 14.0)
-- YASHO | risk_sector: Consumer Non-Durables
-- entry 4337.6 | stop 4019.71 | t1 4554.48 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### NOVARTIND — Watch (score 14.0)
 - NOVARTIND | risk_sector: Health Technology
 - entry 2010.4 | stop 1819.22 | t1 2110.92 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### COHANCE — Watch (score 14.0)
+- COHANCE | risk_sector: Health Technology
+- entry 455.45 | stop 429.17 | t1 478.22 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### HLEGLAS — Watch (score 14.0)
@@ -69,9 +64,14 @@
 - entry 469.45 | stop 431.25 | t1 492.92 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GALAXYSURF — Watch (score 14.0)
-- GALAXYSURF | risk_sector: Consumer Non-Durables
-- entry 2434.0 | stop 2290.38 | t1 2555.7 | t2 None | t3 None | R:R None
+### YASHO — Watch (score 14.0)
+- YASHO | risk_sector: Consumer Non-Durables
+- entry 4337.6 | stop 4019.71 | t1 4554.48 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### THELEELA — Watch (score 14.0)
+- THELEELA | risk_sector: Consumer Services
+- entry 602.45 | stop 567.45 | t1 632.57 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -88,51 +88,51 @@
 
 ## Swing candidates (top)
 
-- THELEELA: score=14 rs_nifty=13.16 deliv=41.99
-- YASHO: score=14 rs_nifty=9.52 deliv=41.97
 - NOVARTIND: score=14 rs_nifty=25.62 deliv=45.35
-- HLEGLAS: score=14 rs_nifty=44.36 deliv=53.47
-- GALAXYSURF: score=14 rs_nifty=17.59 deliv=47.38
 - COHANCE: score=14 rs_nifty=5.81 deliv=44.39
-- SMSPHARMA: score=13 rs_nifty=24.82 deliv=43.29
-- ASHIANA: score=13 rs_nifty=9.76 deliv=59.92
-- MAHSEAMLES: score=13 rs_nifty=4.85 deliv=58.22
-- LGEINDIA: score=13 rs_nifty=12.2 deliv=48.07
-- PATELRMART: score=13 rs_nifty=8.97 deliv=41.0
-- PAYTM: score=13 rs_nifty=8.96 deliv=33.89
-- EMKAY: score=13 rs_nifty=10.71 deliv=53.88
-- KAMATHOTEL: score=13 rs_nifty=21.89 deliv=46.12
-- BIL: score=13 rs_nifty=19.97 deliv=62.82
+- HLEGLAS: score=14 rs_nifty=44.36 deliv=53.47
+- YASHO: score=14 rs_nifty=9.52 deliv=41.97
+- THELEELA: score=14 rs_nifty=13.16 deliv=41.99
+- GALAXYSURF: score=14 rs_nifty=17.59 deliv=47.38
+- LIKHITHA: score=13 rs_nifty=19.37 deliv=52.27
+- BBOX: score=13 rs_nifty=27.18 deliv=28.28
+- ABDL: score=13 rs_nifty=18.43 deliv=58.33
+- SWELECTES: score=13 rs_nifty=10.66 deliv=48.63
+- TBOTEK: score=13 rs_nifty=5.82 deliv=52.18
+- AHCL: score=13 rs_nifty=83.63 deliv=100.0
+- GALAPREC: score=13 rs_nifty=16.87 deliv=47.61
+- KROSS: score=13 rs_nifty=28.59 deliv=30.48
+- BELRISE: score=13 rs_nifty=9.41 deliv=40.87
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.05% (bull)
+- Nikkei: -1.41% (bear)
 - Hang Seng: +1.00% (bull)
 - Shanghai: +0.31% (bull)
-- Kospi: -0.89% (bear)
+- Kospi: -2.23% (bear)
 - Taiwan: +0.22% (bull)
-- ASX 200: -0.09% (neutral)
+- ASX 200: -0.32% (bear)
 
 ### Europe
-- FTSE 100: -0.79% (bear)
-- DAX: -1.35% (bear)
-- Euro Stoxx 50: -1.47% (bear)
+- FTSE 100: +0.42% (bull)
+- DAX: +0.77% (bull)
+- Euro Stoxx 50: +0.48% (bull)
 
 ### US
-- S&P 500: -0.23% (bear)
-- Nasdaq: -0.33% (bear)
-- Dow: -0.63% (bear)
-- US VIX: +0.40% (bear)
+- S&P 500: -0.22% (bear)
+- Nasdaq: -0.22% (bear)
+- Dow: -0.66% (bear)
+- US VIX: +0.47% (bear)
 
 ### Macro
-- USDINR: +0.44% (bear)
-- Crude WTI: -0.94% (bear)
-- Brent: +0.04% (neutral)
+- USDINR: +0.30% (neutral)
+- Crude WTI: -0.39% (bear)
+- Brent: +0.65% (bull)
 - DXY: +0.40% (bear)
 - US 10Y: +0.15% (neutral)
-- India ETF: -1.31% (bear)
-- EM ETF: -1.25% (bear)
+- India ETF: +0.34% (bull)
+- EM ETF: -0.67% (bear)
 
 
 ## Groq desk note
