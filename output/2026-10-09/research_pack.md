@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-09
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-09T00:38:03.158017+05:30
+- **generated_at_ist:** 2026-10-09T06:10:37.886166+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -50,19 +50,9 @@
 
 ## Ideas
 
-### UNIMECH — Watch (score 14.0)
-- UNIMECH | risk_sector: Producer Manufacturing
-- entry 1751.9 | stop 1624.27 | t1 1839.5 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### MMP — Watch (score 14.0)
 - MMP | risk_sector: Non-Energy Minerals
 - entry 483.25 | stop 441.17 | t1 507.41 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### PRIMESECU — Watch (score 14.0)
-- PRIMESECU | risk_sector: Finance
-- entry 296.5 | stop 279.63 | t1 311.32 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### NINSYS — Watch (score 14.0)
@@ -70,9 +60,19 @@
 - entry 816.45 | stop 769.62 | t1 857.27 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### EPACKPEB — Watch (score 13.0)
-- EPACKPEB | risk_sector: Industrial Services
-- entry 256.33 | stop 237.49 | t1 269.15 | t2 None | t3 None | R:R None
+### UNIMECH — Watch (score 14.0)
+- UNIMECH | risk_sector: Producer Manufacturing
+- entry 1751.9 | stop 1624.27 | t1 1839.5 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 296.5 | stop 279.63 | t1 311.32 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### NOVARTIND — Watch (score 13.0)
+- NOVARTIND | risk_sector: Health Technology
+- entry 1987.7 | stop 1800.76 | t1 2087.08 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -90,51 +90,51 @@
 
 ## Swing candidates (top)
 
-- UNIMECH: score=14 rs_nifty=21.13 deliv=43.7
 - MMP: score=14 rs_nifty=11.69 deliv=45.49
-- PRIMESECU: score=14 rs_nifty=12.02 deliv=57.68
 - NINSYS: score=14 rs_nifty=19.61 deliv=61.26
-- EPACKPEB: score=13 rs_nifty=15.43 deliv=47.85
+- UNIMECH: score=14 rs_nifty=21.13 deliv=43.7
+- PRIMESECU: score=14 rs_nifty=12.02 deliv=57.68
+- NOVARTIND: score=13 rs_nifty=25.23 deliv=40.05
+- STEELCAS: score=13 rs_nifty=14.6 deliv=55.05
+- SMSPHARMA: score=13 rs_nifty=16.36 deliv=47.41
 - BOROLTD: score=13 rs_nifty=12.15 deliv=47.1
-- OMAXAUTO: score=13 rs_nifty=18.1 deliv=63.24
-- CPCAP: score=13 rs_nifty=14.11 deliv=55.35
+- WHEELS: score=13 rs_nifty=30.82 deliv=40.08
+- ALICON: score=13 rs_nifty=31.42 deliv=47.76
+- ARIS: score=13 rs_nifty=6.83 deliv=49.57
+- PREMEXPLN: score=13 rs_nifty=9.33 deliv=73.96
 - SYNCOMF: score=13 rs_nifty=20.96 deliv=40.62
-- VIDYAWIRES: score=13 rs_nifty=17.45 deliv=47.39
-- MUKANDLTD: score=13 rs_nifty=33.18 deliv=45.76
-- SOMANYCERA: score=13 rs_nifty=13.26 deliv=50.67
-- SETL: score=13 rs_nifty=10.52 deliv=62.07
-- VHL: score=13 rs_nifty=5.5 deliv=63.82
-- THELEELA: score=13 rs_nifty=12.14 deliv=54.92
+- MEESHO: score=13 rs_nifty=15.83 deliv=58.32
+- HLEGLAS: score=13 rs_nifty=34.7 deliv=68.01
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.92% (bear)
+- Nikkei: -2.50% (bear)
 - Hang Seng: -0.62% (bear)
 - Shanghai: +0.31% (bull)
 - Kospi: -1.98% (bear)
 - Taiwan: -0.03% (neutral)
-- ASX 200: -0.77% (bear)
+- ASX 200: -0.32% (bear)
 
 ### Europe
-- FTSE 100: -0.16% (bear)
-- DAX: -1.18% (bear)
-- Euro Stoxx 50: -0.87% (bear)
+- FTSE 100: -0.79% (bear)
+- DAX: -1.35% (bear)
+- Euro Stoxx 50: -1.47% (bear)
 
 ### US
-- S&P 500: -0.66% (bear)
-- Nasdaq: -1.43% (bear)
-- Dow: -0.14% (neutral)
-- US VIX: +3.91% (bear)
+- S&P 500: -0.47% (bear)
+- Nasdaq: -1.25% (bear)
+- Dow: +0.10% (neutral)
+- US VIX: +2.19% (bear)
 
 ### Macro
-- USDINR: +0.41% (bear)
-- Crude WTI: +3.53% (bull)
-- Brent: +4.08% (bull)
-- DXY: -0.11% (neutral)
+- USDINR: +0.40% (bear)
+- Crude WTI: +3.10% (bull)
+- Brent: +3.46% (bull)
+- DXY: -0.14% (neutral)
 - US 10Y: -0.87% (bull)
-- India ETF: -1.31% (bear)
-- EM ETF: -2.15% (bear)
+- India ETF: -1.33% (bear)
+- EM ETF: -1.32% (bear)
 
 
 ## Groq desk note
