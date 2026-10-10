@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-10-10
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-10T06:09:22.327184+05:30
+- **generated_at_ist:** 2026-10-10T18:09:06.545969+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-1.64%)
-- india_vix: 15.28 (Medium)
+- market_regime: **Bullish**
+- nifty: Bullish (1.3%)
+- india_vix: 14.38 (Medium)
 - fii_net: -3568.9 | dii_net: 4743.26
 - overall_risk: Medium | global_risk: Risk-On
 
@@ -20,35 +20,36 @@
 - price > EMA50: 642
 - ADX14 > 25: 334
 - RSI14 in 40-80: 316
-- RS > 0 vs NIFTY and sector: 193
+- RS > 0 vs NIFTY and sector: 192
 - delivery% >= 40: 58
 - relative_volume >= 1: 14
 - no earnings within 21d: 11
-- event_risk_score <= 1: 10
-- TV rating not Sell: 9
+- event_risk_score <= 1: 11
+- TV rating not Sell: 10
 
-## Survivors (top 9 of 9)
+## Survivors (top 10 of 10)
 
-- **GALAXYSURF** [watchlist] score 78.4 — score in Watch band (70–80)
+- **GALAXYSURF** [watchlist] score 78.5 — score in Watch band (70–80)
 - **SMLT** [watchlist] score 77.3 — score in Watch band (70–80)
-- **TFCILTD** [watchlist] score 75.2 — score in Watch band (70–80)
-- **NINSYS** [watchlist] score 73.4 — score in Watch band (70–80)
-- **ACE** [rejected] score 65.1 — score below Watch band
-- **AAATECH** [rejected] score 49.4 — score below Watch band
+- **TFCILTD** [watchlist] score 75.3 — score in Watch band (70–80)
+- **NINSYS** [watchlist] score 73.3 — score in Watch band (70–80)
+- **ACE** [rejected] score 65.2 — score below Watch band
+- **PTCIL** [rejected] score 62.4 — score below Watch band
+- **AAATECH** [rejected] score 49.3 — score below Watch band
 - **PRIMESECU** [rejected] score 42.6 — score below Watch band
 - **HLEGLAS** [rejected] score 42.1 — T1 needs more than 22 trading days (~1 month)
 - **YUKEN** [rejected] score 38.8 — score below Watch band
 
 ## Ideas
 
-### NINSYS — Watch (score 14.0)
-- NINSYS | risk_sector: Technology Services
-- entry 803.1 | stop 755.29 | t1 843.26 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### GALAXYSURF — Watch (score 14.0)
 - GALAXYSURF | risk_sector: Consumer Non-Durables
 - entry 2502.2 | stop 2356.23 | t1 2627.31 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### NINSYS — Watch (score 14.0)
+- NINSYS | risk_sector: Technology Services
+- entry 803.1 | stop 755.29 | t1 843.26 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### PRIMESECU — Watch (score 14.0)
@@ -56,14 +57,14 @@
 - entry 299.45 | stop 282.73 | t1 314.42 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### TFCILTD — Watch (score 13.0)
-- TFCILTD | risk_sector: Finance
-- entry 147.05 | stop 138.5 | t1 154.4 | t2 None | t3 None | R:R None
+### BIL — Watch (score 13.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 1042.1 | stop 967.11 | t1 1094.2 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### OMAXAUTO — Watch (score 13.0)
-- OMAXAUTO | risk_sector: Producer Manufacturing
-- entry 200.45 | stop 182.64 | t1 210.47 | t2 None | t3 None | R:R None
+### ALICON — Watch (score 13.0)
+- ALICON | risk_sector: Producer Manufacturing
+- entry 861.7 | stop 799.39 | t1 904.79 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -82,36 +83,36 @@
 
 ## Swing candidates (top)
 
-- NINSYS: score=14 rs_nifty=19.78 deliv=49.92
-- GALAXYSURF: score=14 rs_nifty=17.63 deliv=41.47
-- PRIMESECU: score=14 rs_nifty=13.49 deliv=91.01
-- TFCILTD: score=13 rs_nifty=10.79 deliv=47.56
-- OMAXAUTO: score=13 rs_nifty=18.68 deliv=59.58
-- RAMRAT: score=13 rs_nifty=16.81 deliv=43.31
-- SUNFLAG: score=13 rs_nifty=35.86 deliv=42.42
-- HALEOSLABS: score=13 rs_nifty=14.05 deliv=66.22
-- LGEINDIA: score=13 rs_nifty=11.81 deliv=49.73
-- ALICON: score=13 rs_nifty=30.42 deliv=44.74
-- BIL: score=13 rs_nifty=17.56 deliv=64.65
-- WSTCSTPAPR: score=13 rs_nifty=13.98 deliv=39.49
-- SILINV: score=13 rs_nifty=10.14 deliv=77.52
-- VMART: score=13 rs_nifty=6.63 deliv=50.6
-- TAINWALCHM: score=13 rs_nifty=9.77 deliv=64.73
+- GALAXYSURF: score=14 rs_nifty=15.84 deliv=41.47
+- NINSYS: score=14 rs_nifty=17.99 deliv=49.92
+- PRIMESECU: score=14 rs_nifty=11.7 deliv=91.01
+- BIL: score=13 rs_nifty=15.77 deliv=64.65
+- ALICON: score=13 rs_nifty=28.63 deliv=44.74
+- SUNFLAG: score=13 rs_nifty=34.07 deliv=42.42
+- DHANBANK: score=13 rs_nifty=13.88 deliv=38.04
+- UEL: score=13 rs_nifty=8.06 deliv=41.99
+- BIRLACABLE: score=13 rs_nifty=22.88 deliv=53.02
+- NAZARA: score=13 rs_nifty=7.41 deliv=56.26
+- OMAXAUTO: score=13 rs_nifty=16.89 deliv=59.58
+- MOREPENLAB: score=13 rs_nifty=15.41 deliv=41.62
+- 21STCENMGM: score=13 rs_nifty=15.34 deliv=78.15
+- MWL: score=13 rs_nifty=14.46 deliv=52.04
+- ARIHANTCAP: score=13 rs_nifty=28.02 deliv=44.12
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.42% (bear)
-- Hang Seng: -1.43% (bear)
-- Shanghai: -0.79% (bear)
+- Nikkei: -0.02% (neutral)
+- Hang Seng: +1.79% (bull)
+- Shanghai: +0.05% (neutral)
 - Kospi: -2.62% (bear)
 - Taiwan: -0.99% (bear)
 - ASX 200: +0.64% (bull)
 
 ### Europe
-- FTSE 100: -0.16% (bear)
-- DAX: -1.18% (bear)
-- Euro Stoxx 50: -0.87% (bear)
+- FTSE 100: +1.06% (bull)
+- DAX: +1.13% (bull)
+- Euro Stoxx 50: +0.76% (bull)
 
 ### US
 - S&P 500: +0.59% (bull)
@@ -120,13 +121,13 @@
 - US VIX: -3.70% (bull)
 
 ### Macro
-- USDINR: +0.02% (neutral)
-- Crude WTI: +0.19% (bull)
-- Brent: +0.14% (neutral)
-- DXY: +0.09% (neutral)
+- USDINR: -0.10% (neutral)
+- Crude WTI: +0.39% (bull)
+- Brent: +0.42% (bull)
+- DXY: +0.07% (neutral)
 - US 10Y: +0.25% (neutral)
-- India ETF: -1.19% (bear)
-- EM ETF: -1.89% (bear)
+- India ETF: +1.03% (bull)
+- EM ETF: +1.06% (bull)
 
 
 ## Groq desk note
