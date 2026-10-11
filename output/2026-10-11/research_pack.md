@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-11
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-11T06:09:16.194979+05:30
+- **generated_at_ist:** 2026-10-11T18:09:02.581004+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -42,9 +42,9 @@
 
 ## Ideas
 
-### PRIMESECU — Watch (score 14.0)
-- PRIMESECU | risk_sector: Finance
-- entry 299.45 | stop 282.73 | t1 314.42 | t2 None | t3 None | R:R None
+### NINSYS — Watch (score 14.0)
+- NINSYS | risk_sector: Technology Services
+- entry 803.1 | stop 755.29 | t1 843.26 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### GALAXYSURF — Watch (score 14.0)
@@ -52,19 +52,19 @@
 - entry 2502.2 | stop 2356.23 | t1 2627.31 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### NINSYS — Watch (score 14.0)
-- NINSYS | risk_sector: Technology Services
-- entry 803.1 | stop 755.29 | t1 843.26 | t2 None | t3 None | R:R None
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 299.45 | stop 282.73 | t1 314.42 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SILINV — Watch (score 13.0)
-- SILINV | risk_sector: Finance
-- entry 469.45 | stop 440.27 | t1 492.92 | t2 None | t3 None | R:R None
+### KILITCH — Watch (score 13.0)
+- KILITCH | risk_sector: Health Technology
+- entry 241.61 | stop 221.24 | t1 253.69 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### STEELCAS — Watch (score 13.0)
-- STEELCAS | risk_sector: Non-Energy Minerals
-- entry 356.5 | stop 329.73 | t1 374.32 | t2 None | t3 None | R:R None
+### LGEINDIA — Watch (score 13.0)
+- LGEINDIA | risk_sector: Consumer Durables
+- entry 1757.0 | stop 1684.62 | t1 1844.85 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -83,21 +83,21 @@
 
 ## Swing candidates (top)
 
-- PRIMESECU: score=14 rs_nifty=11.7 deliv=91.01
-- GALAXYSURF: score=14 rs_nifty=15.84 deliv=41.47
 - NINSYS: score=14 rs_nifty=17.99 deliv=49.92
-- SILINV: score=13 rs_nifty=8.35 deliv=77.52
-- STEELCAS: score=13 rs_nifty=11.52 deliv=44.75
-- OMAXAUTO: score=13 rs_nifty=16.89 deliv=59.58
-- THELEELA: score=13 rs_nifty=13.33 deliv=44.71
-- NAZARA: score=13 rs_nifty=7.41 deliv=56.26
+- GALAXYSURF: score=14 rs_nifty=15.84 deliv=41.47
+- PRIMESECU: score=14 rs_nifty=11.7 deliv=91.01
+- KILITCH: score=13 rs_nifty=35.31 deliv=43.78
 - LGEINDIA: score=13 rs_nifty=10.02 deliv=49.73
-- UEL: score=13 rs_nifty=8.06 deliv=41.99
-- HALEOSLABS: score=13 rs_nifty=12.26 deliv=66.22
+- PVRINOX: score=13 rs_nifty=12.51 deliv=46.35
 - HLEGLAS: score=13 rs_nifty=31.94 deliv=48.8
-- RPSGVENT: score=13 rs_nifty=14.76 deliv=34.22
-- KAMATHOTEL: score=13 rs_nifty=13.87 deliv=54.91
+- TAINWALCHM: score=13 rs_nifty=7.98 deliv=64.73
+- 21STCENMGM: score=13 rs_nifty=15.34 deliv=78.15
 - WSTCSTPAPR: score=13 rs_nifty=12.19 deliv=39.49
+- BIRLACABLE: score=13 rs_nifty=22.88 deliv=53.02
+- KAMATHOTEL: score=13 rs_nifty=13.87 deliv=54.91
+- RPSGVENT: score=13 rs_nifty=14.76 deliv=34.22
+- VHL: score=13 rs_nifty=6.11 deliv=88.39
+- EMKAY: score=13 rs_nifty=7.76 deliv=58.3
 
 ## World markets (India cues)
 
