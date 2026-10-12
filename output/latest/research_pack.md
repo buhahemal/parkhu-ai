@@ -1,113 +1,110 @@
 # Parkhu research pack — 2026-10-12
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-12T06:11:22.343978+05:30
+- **generated_at_ist:** 2026-10-12T11:59:40.828440+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (1.3%)
-- india_vix: 14.38 (Medium)
+- market_regime: **Bearish**
+- nifty: Bearish (-0.63%)
+- india_vix: 15.48 (Medium)
 - fii_net: -3568.9 | dii_net: 4743.26
 - overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
-- universe: 3197
-- trend = Bullish: 875
-- price > SMA200: 671
-- price > EMA50: 642
-- ADX14 > 25: 334
-- RSI14 in 40-80: 316
-- RS > 0 vs NIFTY and sector: 192
-- delivery% >= 40: 58
-- relative_volume >= 1: 14
-- no earnings within 21d: 11
-- event_risk_score <= 1: 11
-- TV rating not Sell: 10
+- universe: 3203
+- trend = Bullish: 929
+- price > SMA200: 710
+- price > EMA50: 693
+- ADX14 > 25: 333
+- RSI14 in 40-80: 308
+- RS > 0 vs NIFTY and sector: 177
+- delivery% >= 40: 56
+- relative_volume >= 1: 7
+- no earnings within 21d: 6
+- event_risk_score <= 1: 6
+- TV rating not Sell: 6
 
-## Survivors (top 10 of 10)
+## Survivors (top 6 of 6)
 
-- **GALAXYSURF** [watchlist] score 78.5 — score in Watch band (70–80)
-- **SMLT** [watchlist] score 77.3 — score in Watch band (70–80)
-- **TFCILTD** [watchlist] score 75.3 — score in Watch band (70–80)
-- **NINSYS** [watchlist] score 73.3 — score in Watch band (70–80)
-- **ACE** [rejected] score 65.2 — score below Watch band
-- **PTCIL** [rejected] score 62.4 — score below Watch band
-- **AAATECH** [rejected] score 49.3 — score below Watch band
-- **PRIMESECU** [rejected] score 42.6 — score below Watch band
-- **HLEGLAS** [rejected] score 42.1 — T1 needs more than 22 trading days (~1 month)
-- **YUKEN** [rejected] score 38.8 — score below Watch band
+- **OMAXAUTO** [rejected] score 68.2 — score below Watch band
+- **VIVIANA** [rejected] score 66.5 — T1 needs more than 22 trading days (~1 month)
+- **CPCAP** [rejected] score 61.7 — score below Watch band
+- **TEAMGTY** [rejected] score 54.0 — T1 needs more than 22 trading days (~1 month)
+- **PATELRMART** [rejected] score 46.7 — score below Watch band
+- **21STCENMGM** [rejected] score 38.8 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### PRIMESECU — Watch (score 14.0)
-- PRIMESECU | risk_sector: Finance
-- entry 299.45 | stop 282.73 | t1 314.42 | t2 None | t3 None | R:R None
+### OMAXAUTO — Watch (score 14.0)
+- OMAXAUTO | risk_sector: Producer Manufacturing
+- entry 214.09 | stop 195.35 | t1 224.79 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### NINSYS — Watch (score 14.0)
-- NINSYS | risk_sector: Technology Services
-- entry 803.1 | stop 755.29 | t1 843.26 | t2 None | t3 None | R:R None
+### PVRINOX — Watch (score 13.0)
+- PVRINOX | risk_sector: Consumer Services
+- entry 1362.3 | stop 1286.56 | t1 1430.42 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GALAXYSURF — Watch (score 14.0)
-- GALAXYSURF | risk_sector: Consumer Non-Durables
-- entry 2502.2 | stop 2356.23 | t1 2627.31 | t2 None | t3 None | R:R None
+### SHILPAMED — Watch (score 13.0)
+- SHILPAMED | risk_sector: Health Technology
+- entry 1032.3 | stop 960.26 | t1 1083.92 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### STEELCAS — Watch (score 13.0)
-- STEELCAS | risk_sector: Non-Energy Minerals
-- entry 356.5 | stop 329.73 | t1 374.32 | t2 None | t3 None | R:R None
+### CPCAP — Watch (score 13.0)
+- CPCAP | risk_sector: Consumer Services
+- entry 167.32 | stop 151.46 | t1 175.69 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### LGEINDIA — Watch (score 13.0)
-- LGEINDIA | risk_sector: Consumer Durables
-- entry 1757.0 | stop 1684.62 | t1 1844.85 | t2 None | t3 None | R:R None
+### THELEELA — Watch (score 13.0)
+- THELEELA | risk_sector: Consumer Services
+- entry 599.8 | stop 563.59 | t1 629.79 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **KENNAMET** status=open entry=4266.4 last=4165.7 mfe=11.09 mae=-7.23 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=418.1 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2640.4 mfe=9.02 mae=-7.9 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=194.67 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=open entry=96.02 last=102.85 mfe=11.12 mae=-6.47 opened=2026-10-05
+- **KENNAMET** status=open entry=4266.4 last=4254.0 mfe=11.09 mae=-7.23 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=418.45 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2765.1 mfe=9.02 mae=-7.9 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=194.26 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=partial entry=96.02 last=113.0 mfe=24.97 mae=-6.47 opened=2026-10-05
 
 ## Needs action
 
 - **CASTROLIND**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
-- **KENNAMET**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
-- **WELCORP**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
+- **KENNAMET**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
+- **PREMIERPOL**: BANK PARTIAL — T1 REACHED — ₹113.00 above T1 ₹111.38 — bank part, trail the rest, move stop to breakeven ₹96.02
+- **WELCORP**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Swing candidates (top)
 
-- PRIMESECU: score=14 rs_nifty=11.7 deliv=91.01
-- NINSYS: score=14 rs_nifty=17.99 deliv=49.92
-- GALAXYSURF: score=14 rs_nifty=15.84 deliv=41.47
-- STEELCAS: score=13 rs_nifty=11.52 deliv=44.75
-- LGEINDIA: score=13 rs_nifty=10.02 deliv=49.73
-- RGL: score=13 rs_nifty=12.59 deliv=48.91
-- PVRINOX: score=13 rs_nifty=12.51 deliv=46.35
-- 21STCENMGM: score=13 rs_nifty=15.34 deliv=78.15
-- ARIHANTCAP: score=13 rs_nifty=28.02 deliv=44.12
-- THELEELA: score=13 rs_nifty=13.33 deliv=44.71
-- BIL: score=13 rs_nifty=15.77 deliv=64.65
-- OMAXAUTO: score=13 rs_nifty=16.89 deliv=59.58
-- KAMATHOTEL: score=13 rs_nifty=13.87 deliv=54.91
-- ALICON: score=13 rs_nifty=28.63 deliv=44.74
-- DHANBANK: score=13 rs_nifty=13.88 deliv=38.04
+- OMAXAUTO: score=14 rs_nifty=26.15 deliv=59.58
+- PVRINOX: score=13 rs_nifty=15.45 deliv=46.35
+- SHILPAMED: score=13 rs_nifty=14.92 deliv=40.63
+- CPCAP: score=13 rs_nifty=27.09 deliv=61.86
+- THELEELA: score=13 rs_nifty=12.82 deliv=44.71
+- GALAXYSURF: score=13 rs_nifty=18.48 deliv=41.47
+- SUNFLAG: score=13 rs_nifty=33.42 deliv=42.42
+- MOREPENLAB: score=13 rs_nifty=16.65 deliv=41.62
+- RAMRAT: score=13 rs_nifty=14.68 deliv=43.31
+- ASHIANA: score=13 rs_nifty=13.3 deliv=46.62
+- SOMANYCERA: score=13 rs_nifty=11.76 deliv=52.58
+- RGL: score=13 rs_nifty=9.09 deliv=48.91
+- NINSYS: score=13 rs_nifty=18.57 deliv=49.92
+- ALICON: score=13 rs_nifty=22.33 deliv=44.74
+- AEROENTER: score=13 rs_nifty=6.76 deliv=41.95
 
 ## World markets (India cues)
 
 ### Asia
 - Nikkei: -0.02% (neutral)
-- Hang Seng: +1.79% (bull)
-- Shanghai: +0.05% (neutral)
-- Kospi: -1.07% (bear)
-- Taiwan: -0.99% (bear)
-- ASX 200: +0.53% (bull)
+- Hang Seng: +0.16% (bull)
+- Shanghai: -0.50% (bear)
+- Kospi: -3.66% (bear)
+- Taiwan: -0.02% (neutral)
+- ASX 200: +0.76% (bull)
 
 ### Europe
 - FTSE 100: +1.06% (bull)
@@ -121,10 +118,10 @@
 - US VIX: -3.70% (bull)
 
 ### Macro
-- USDINR: -0.04% (neutral)
-- Crude WTI: -1.34% (bear)
-- Brent: -1.19% (bear)
-- DXY: -0.06% (neutral)
+- USDINR: -1.07% (bull)
+- Crude WTI: -0.77% (bear)
+- Brent: -0.29% (bear)
+- DXY: +0.00% (neutral)
 - US 10Y: +0.25% (neutral)
 - India ETF: +1.03% (bull)
 - EM ETF: +1.06% (bull)
