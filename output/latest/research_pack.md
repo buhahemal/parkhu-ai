@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-10-11
+# Parkhu research pack — 2026-10-12
 
-- **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-11T18:09:02.581004+05:30
+- **session_date:** 2026-07-24 (trading day: True)
+- **generated_at_ist:** 2026-10-12T06:11:22.343978+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -42,6 +42,11 @@
 
 ## Ideas
 
+### PRIMESECU — Watch (score 14.0)
+- PRIMESECU | risk_sector: Finance
+- entry 299.45 | stop 282.73 | t1 314.42 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### NINSYS — Watch (score 14.0)
 - NINSYS | risk_sector: Technology Services
 - entry 803.1 | stop 755.29 | t1 843.26 | t2 None | t3 None | R:R None
@@ -52,14 +57,9 @@
 - entry 2502.2 | stop 2356.23 | t1 2627.31 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PRIMESECU — Watch (score 14.0)
-- PRIMESECU | risk_sector: Finance
-- entry 299.45 | stop 282.73 | t1 314.42 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### KILITCH — Watch (score 13.0)
-- KILITCH | risk_sector: Health Technology
-- entry 241.61 | stop 221.24 | t1 253.69 | t2 None | t3 None | R:R None
+### STEELCAS — Watch (score 13.0)
+- STEELCAS | risk_sector: Non-Energy Minerals
+- entry 356.5 | stop 329.73 | t1 374.32 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### LGEINDIA — Watch (score 13.0)
@@ -83,21 +83,21 @@
 
 ## Swing candidates (top)
 
+- PRIMESECU: score=14 rs_nifty=11.7 deliv=91.01
 - NINSYS: score=14 rs_nifty=17.99 deliv=49.92
 - GALAXYSURF: score=14 rs_nifty=15.84 deliv=41.47
-- PRIMESECU: score=14 rs_nifty=11.7 deliv=91.01
-- KILITCH: score=13 rs_nifty=35.31 deliv=43.78
+- STEELCAS: score=13 rs_nifty=11.52 deliv=44.75
 - LGEINDIA: score=13 rs_nifty=10.02 deliv=49.73
+- RGL: score=13 rs_nifty=12.59 deliv=48.91
 - PVRINOX: score=13 rs_nifty=12.51 deliv=46.35
-- HLEGLAS: score=13 rs_nifty=31.94 deliv=48.8
-- TAINWALCHM: score=13 rs_nifty=7.98 deliv=64.73
 - 21STCENMGM: score=13 rs_nifty=15.34 deliv=78.15
-- WSTCSTPAPR: score=13 rs_nifty=12.19 deliv=39.49
-- BIRLACABLE: score=13 rs_nifty=22.88 deliv=53.02
+- ARIHANTCAP: score=13 rs_nifty=28.02 deliv=44.12
+- THELEELA: score=13 rs_nifty=13.33 deliv=44.71
+- BIL: score=13 rs_nifty=15.77 deliv=64.65
+- OMAXAUTO: score=13 rs_nifty=16.89 deliv=59.58
 - KAMATHOTEL: score=13 rs_nifty=13.87 deliv=54.91
-- RPSGVENT: score=13 rs_nifty=14.76 deliv=34.22
-- VHL: score=13 rs_nifty=6.11 deliv=88.39
-- EMKAY: score=13 rs_nifty=7.76 deliv=58.3
+- ALICON: score=13 rs_nifty=28.63 deliv=44.74
+- DHANBANK: score=13 rs_nifty=13.88 deliv=38.04
 
 ## World markets (India cues)
 
@@ -105,9 +105,9 @@
 - Nikkei: -0.02% (neutral)
 - Hang Seng: +1.79% (bull)
 - Shanghai: +0.05% (neutral)
-- Kospi: -2.62% (bear)
+- Kospi: -1.07% (bear)
 - Taiwan: -0.99% (bear)
-- ASX 200: +0.64% (bull)
+- ASX 200: +0.53% (bull)
 
 ### Europe
 - FTSE 100: +1.06% (bull)
@@ -121,10 +121,10 @@
 - US VIX: -3.70% (bull)
 
 ### Macro
-- USDINR: -0.10% (neutral)
-- Crude WTI: +0.39% (bull)
-- Brent: +0.42% (bull)
-- DXY: +0.07% (neutral)
+- USDINR: -0.04% (neutral)
+- Crude WTI: -1.34% (bear)
+- Brent: -1.19% (bear)
+- DXY: -0.06% (neutral)
 - US 10Y: +0.25% (neutral)
 - India ETF: +1.03% (bull)
 - EM ETF: +1.06% (bull)
@@ -146,6 +146,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.

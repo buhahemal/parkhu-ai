@@ -1,11 +1,11 @@
 {
   "schema": "parkhu.research_pack.v2",
-  "collection_date": "2026-10-11",
+  "collection_date": "2026-10-12",
   "session_date": "2026-07-24",
-  "is_trading_day": false,
+  "is_trading_day": true,
   "run_mode": "post_close",
-  "source_brief_date": "2026-10-11",
-  "generated_at_ist": "2026-10-11T18:09:02.581004+05:30",
+  "source_brief_date": "2026-10-12",
+  "generated_at_ist": "2026-10-12T06:11:22.343978+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -40,22 +40,22 @@
     "worst_sector_perf_1m": -6.99,
     "fii_net": -3568.9,
     "dii_net": 4743.26,
-    "crude": 91.85,
-    "crude_pct_change": 0.39,
-    "usdinr": 96.73,
-    "usdinr_pct_change": -0.1,
+    "crude": 90.62,
+    "crude_pct_change": -1.34,
+    "usdinr": 96.78,
+    "usdinr_pct_change": -0.04,
     "us_sp500_pct": 0.59,
     "us_dow_pct": 0.83,
     "us_vix": 14.84,
     "us_vix_pct": -3.7,
-    "dxy": 102.21,
-    "dxy_pct": 0.07,
+    "dxy": 102.14,
+    "dxy_pct": -0.06,
     "us_10y": 5.24,
     "asia_cue": "Mixed",
     "europe_cue": "Bullish",
     "global_risk": "Risk-On",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-11T18:08:49.662524+05:30"
+    "generated_at_ist": "2026-10-12T06:10:56.864530+05:30"
   },
   "world_markets": [
     {
@@ -88,10 +88,10 @@
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 6625.93,
-          "pct_change": -2.62,
+          "value": 6554.85,
+          "pct_change": -1.07,
           "tone": "bear",
-          "session_date": "2026-10-08"
+          "session_date": "2026-10-12"
         },
         {
           "label": "Taiwan",
@@ -104,10 +104,10 @@
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 8716.6,
-          "pct_change": 0.64,
+          "value": 8763.0,
+          "pct_change": 0.53,
           "tone": "bull",
-          "session_date": "2026-10-09"
+          "session_date": "2026-10-12"
         }
       ]
     },
@@ -183,34 +183,34 @@
         {
           "label": "USDINR",
           "metric": "USDINR",
-          "value": 96.73,
-          "pct_change": -0.1,
+          "value": 96.78,
+          "pct_change": -0.04,
           "tone": "neutral",
           "session_date": "2026-10-11"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 91.85,
-          "pct_change": 0.39,
-          "tone": "bull",
-          "session_date": "2026-10-09"
+          "value": 90.62,
+          "pct_change": -1.34,
+          "tone": "bear",
+          "session_date": "2026-10-11"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 104.72,
-          "pct_change": 0.42,
-          "tone": "bull",
-          "session_date": "2026-10-09"
+          "value": 103.47,
+          "pct_change": -1.19,
+          "tone": "bear",
+          "session_date": "2026-10-11"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 102.21,
-          "pct_change": 0.07,
+          "value": 102.14,
+          "pct_change": -0.06,
           "tone": "neutral",
-          "session_date": "2026-10-09"
+          "session_date": "2026-10-11"
         },
         {
           "label": "US 10Y",
@@ -1164,6 +1164,25 @@
   ],
   "ideas": [
     {
+      "symbol": "PRIMESECU",
+      "company": "PRIMESECU",
+      "sector": "Finance",
+      "risk_sector": "Finance",
+      "cmp": 299.45,
+      "parkhu_score": 14.0,
+      "band": "Watch",
+      "levels": {
+        "entry": 299.45,
+        "stop": 282.73,
+        "t1": 314.42,
+        "t2": null,
+        "t3": null,
+        "rr_t1": null,
+        "hold_days_t1": null
+      },
+      "source": "swing_candidates.csv"
+    },
+    {
       "symbol": "NINSYS",
       "company": "NINSYS",
       "sector": "Technology Services",
@@ -1202,36 +1221,17 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "PRIMESECU",
-      "company": "PRIMESECU",
-      "sector": "Finance",
-      "risk_sector": "Finance",
-      "cmp": 299.45,
-      "parkhu_score": 14.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 299.45,
-        "stop": 282.73,
-        "t1": 314.42,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
-      "symbol": "KILITCH",
-      "company": "KILITCH",
-      "sector": "Health Technology",
-      "risk_sector": "Health Technology",
-      "cmp": 241.61,
+      "symbol": "STEELCAS",
+      "company": "STEELCAS",
+      "sector": "Non-Energy Minerals",
+      "risk_sector": "Non-Energy Minerals",
+      "cmp": 356.5,
       "parkhu_score": 13.0,
       "band": "Watch",
       "levels": {
-        "entry": 241.61,
-        "stop": 221.24,
-        "t1": 253.69,
+        "entry": 356.5,
+        "stop": 329.73,
+        "t1": 374.32,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -2358,6 +2358,10 @@
     ],
     "sector_counts": [
       {
+        "sector": "Non-Energy Minerals",
+        "names": 2
+      },
+      {
         "sector": "Producer Manufacturing",
         "names": 2
       },
@@ -2378,15 +2382,7 @@
         "names": 1
       },
       {
-        "sector": "Health Technology",
-        "names": 1
-      },
-      {
         "sector": "Industrial Services",
-        "names": 1
-      },
-      {
-        "sector": "Non-Energy Minerals",
         "names": 1
       },
       {
@@ -2444,7 +2440,7 @@
         "risk_rupees": 683.0,
         "status": "open",
         "last_price": 4165.7,
-        "last_checked": "2026-10-11",
+        "last_checked": "2026-10-12",
         "mfe_pct": 11.09,
         "mae_pct": -7.23,
         "gap_flag": false,
@@ -2473,7 +2469,7 @@
         "risk_rupees": 755.0,
         "status": "open",
         "last_price": 418.1,
-        "last_checked": "2026-10-11",
+        "last_checked": "2026-10-12",
         "mfe_pct": 9.57,
         "mae_pct": -5.46,
         "gap_flag": false,
@@ -2502,7 +2498,7 @@
         "risk_rupees": 638.0,
         "status": "open",
         "last_price": 2640.4,
-        "last_checked": "2026-10-11",
+        "last_checked": "2026-10-12",
         "mfe_pct": 9.02,
         "mae_pct": -7.9,
         "gap_flag": false,
@@ -2531,7 +2527,7 @@
         "risk_rupees": 321.0,
         "status": "open",
         "last_price": 194.67,
-        "last_checked": "2026-10-11",
+        "last_checked": "2026-10-12",
         "mfe_pct": 5.26,
         "mae_pct": -1.62,
         "gap_flag": false,
@@ -2560,7 +2556,7 @@
         "risk_rupees": 799.0,
         "status": "open",
         "last_price": 102.85,
-        "last_checked": "2026-10-11",
+        "last_checked": "2026-10-12",
         "mfe_pct": 11.12,
         "mae_pct": -6.47,
         "gap_flag": false,
@@ -2581,7 +2577,7 @@
         "price": 194.67,
         "pct": 0.75,
         "r_multiple": 0.23,
-        "days_held": 12,
+        "days_held": 13,
         "horizon_t1": 21,
         "mfe_pct": 5.26,
         "mae_pct": -1.62,
@@ -2601,7 +2597,7 @@
         "price": 4165.7,
         "pct": -2.36,
         "r_multiple": -0.3,
-        "days_held": 18,
+        "days_held": 19,
         "horizon_t1": 12,
         "mfe_pct": 11.09,
         "mae_pct": -7.23,
@@ -2621,7 +2617,7 @@
         "price": 2640.4,
         "pct": -0.74,
         "r_multiple": -0.09,
-        "days_held": 15,
+        "days_held": 16,
         "horizon_t1": 11,
         "mfe_pct": 9.02,
         "mae_pct": -7.9,
@@ -2641,13 +2637,13 @@
         "price": 418.1,
         "pct": -3.94,
         "r_multiple": -0.5,
-        "days_held": 15,
+        "days_held": 16,
         "horizon_t1": 16,
         "mfe_pct": 9.57,
         "mae_pct": -5.46,
         "gap_flag": false,
         "action": "HOLD",
-        "detail": "-3.94% (-0.50R), 15d held, ~1d left to the T1 horizon",
+        "detail": "-3.94% (-0.50R), 16d held, ~0d left to the T1 horizon",
         "score_at_open": 80.1,
         "score_now": null
       },
@@ -2661,13 +2657,13 @@
         "price": 102.85,
         "pct": 7.11,
         "r_multiple": 0.89,
-        "days_held": 4,
+        "days_held": 5,
         "horizon_t1": 6,
         "mfe_pct": 11.12,
         "mae_pct": -6.47,
         "gap_flag": false,
         "action": "HOLD",
-        "detail": "+7.11% (+0.89R), 4d held, ~2d left to the T1 horizon",
+        "detail": "+7.11% (+0.89R), 5d held, ~1d left to the T1 horizon",
         "score_at_open": 83.5,
         "score_now": null
       }
@@ -2683,7 +2679,7 @@
         "price": 194.67,
         "pct": 0.75,
         "r_multiple": 0.23,
-        "days_held": 12,
+        "days_held": 13,
         "horizon_t1": 21,
         "mfe_pct": 5.26,
         "mae_pct": -1.62,
@@ -2703,7 +2699,7 @@
         "price": 4165.7,
         "pct": -2.36,
         "r_multiple": -0.3,
-        "days_held": 18,
+        "days_held": 19,
         "horizon_t1": 12,
         "mfe_pct": 11.09,
         "mae_pct": -7.23,
@@ -2723,7 +2719,7 @@
         "price": 2640.4,
         "pct": -0.74,
         "r_multiple": -0.09,
-        "days_held": 15,
+        "days_held": 16,
         "horizon_t1": 11,
         "mfe_pct": 9.02,
         "mae_pct": -7.9,
@@ -2735,9 +2731,27 @@
       }
     ],
     "closed_today": [],
-    "as_of": "2026-10-11"
+    "as_of": "2026-10-12"
   },
   "swing_candidates_top": [
+    {
+      "symbol": "PRIMESECU",
+      "close": 299.45,
+      "score": 14,
+      "perf_1m": 6.9846373705,
+      "rs_vs_nifty_1m": 11.7,
+      "rs_vs_sector_1m": 6.98,
+      "deliv_pct": 91.01,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.53,
+      "atr": 11.146100008,
+      "stop_1_5atr": 282.73,
+      "target_5pct": 314.42,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
     {
       "symbol": "NINSYS",
       "close": 803.1,
@@ -2775,40 +2789,22 @@
       "sector": "Consumer Non-Durables"
     },
     {
-      "symbol": "PRIMESECU",
-      "close": 299.45,
-      "score": 14,
-      "perf_1m": 6.9846373705,
-      "rs_vs_nifty_1m": 11.7,
-      "rs_vs_sector_1m": 6.98,
-      "deliv_pct": 91.01,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.53,
-      "atr": 11.146100008,
-      "stop_1_5atr": 282.73,
-      "target_5pct": 314.42,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "KILITCH",
-      "close": 241.61,
+      "symbol": "STEELCAS",
+      "close": 356.5,
       "score": 13,
-      "perf_1m": 30.5858826073,
-      "rs_vs_nifty_1m": 35.31,
-      "rs_vs_sector_1m": 34.01,
-      "deliv_pct": 43.78,
+      "perf_1m": 6.8004793289,
+      "rs_vs_nifty_1m": 11.52,
+      "rs_vs_sector_1m": 6.8,
+      "deliv_pct": 44.75,
       "pct_change_oi": null,
-      "upside_to_target_pct": 10.88,
-      "atr": 13.5817377072,
-      "stop_1_5atr": 221.24,
-      "target_5pct": 253.69,
+      "upside_to_target_pct": 9.65,
+      "atr": 17.8457264272,
+      "stop_1_5atr": 329.73,
+      "target_5pct": 374.32,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Health Technology"
+      "sector": "Non-Energy Minerals"
     },
     {
       "symbol": "LGEINDIA",
@@ -2826,6 +2822,24 @@
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
+      "sector": "Consumer Durables"
+    },
+    {
+      "symbol": "RGL",
+      "close": 160.74,
+      "score": 13,
+      "perf_1m": 7.8719549024,
+      "rs_vs_nifty_1m": 12.59,
+      "rs_vs_sector_1m": 7.87,
+      "deliv_pct": 48.91,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.12,
+      "atr": 8.5639271837,
+      "stop_1_5atr": 147.89,
+      "target_5pct": 168.78,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
       "sector": "Consumer Durables"
     },
     {
@@ -2847,42 +2861,6 @@
       "sector": "Consumer Services"
     },
     {
-      "symbol": "HLEGLAS",
-      "close": 423.7,
-      "score": 13,
-      "perf_1m": 27.2181354151,
-      "rs_vs_nifty_1m": 31.94,
-      "rs_vs_sector_1m": 27.22,
-      "deliv_pct": 48.8,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 56.23,
-      "atr": 25.5388473297,
-      "stop_1_5atr": 385.39,
-      "target_5pct": 444.88,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Neutral",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "TAINWALCHM",
-      "close": 219.26,
-      "score": 13,
-      "perf_1m": 3.2589243666,
-      "rs_vs_nifty_1m": 7.98,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 64.73,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 17.21,
-      "atr": 10.6942635204,
-      "stop_1_5atr": 203.22,
-      "target_5pct": 230.22,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Process Industries"
-    },
-    {
       "symbol": "21STCENMGM",
       "close": 43.12,
       "score": 13,
@@ -2901,36 +2879,72 @@
       "sector": "Finance"
     },
     {
-      "symbol": "WSTCSTPAPR",
-      "close": 727.65,
+      "symbol": "ARIHANTCAP",
+      "close": 96.19,
       "score": 13,
-      "perf_1m": 7.4656623837,
-      "rs_vs_nifty_1m": 12.19,
-      "rs_vs_sector_1m": 7.47,
-      "deliv_pct": 39.49,
+      "perf_1m": 23.3047045251,
+      "rs_vs_nifty_1m": 28.02,
+      "rs_vs_sector_1m": 23.3,
+      "deliv_pct": 44.12,
       "pct_change_oi": null,
-      "upside_to_target_pct": 6.78,
-      "atr": 31.9020162414,
-      "stop_1_5atr": 679.8,
-      "target_5pct": 764.03,
+      "upside_to_target_pct": 24.75,
+      "atr": 4.2265721081,
+      "stop_1_5atr": 89.85,
+      "target_5pct": 101.0,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Producer Manufacturing"
+      "sector": "Finance"
     },
     {
-      "symbol": "BIRLACABLE",
-      "close": 385.2,
+      "symbol": "THELEELA",
+      "close": 587.5,
       "score": 13,
-      "perf_1m": 18.1595092025,
-      "rs_vs_nifty_1m": 22.88,
-      "rs_vs_sector_1m": 18.16,
-      "deliv_pct": 53.02,
+      "perf_1m": 8.6052315371,
+      "rs_vs_nifty_1m": 13.33,
+      "rs_vs_sector_1m": 8.61,
+      "deliv_pct": 44.71,
       "pct_change_oi": null,
-      "upside_to_target_pct": 8.72,
-      "atr": 23.0307479923,
-      "stop_1_5atr": 350.65,
-      "target_5pct": 404.46,
+      "upside_to_target_pct": 9.78,
+      "atr": 23.8852418946,
+      "stop_1_5atr": 551.67,
+      "target_5pct": 616.88,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Services"
+    },
+    {
+      "symbol": "BIL",
+      "close": 1042.1,
+      "score": 13,
+      "perf_1m": 11.0507246377,
+      "rs_vs_nifty_1m": 15.77,
+      "rs_vs_sector_1m": 11.05,
+      "deliv_pct": 64.65,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 10.35,
+      "atr": 49.9953557666,
+      "stop_1_5atr": 967.11,
+      "target_5pct": 1094.2,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Consumer Non-Durables"
+    },
+    {
+      "symbol": "OMAXAUTO",
+      "close": 200.45,
+      "score": 13,
+      "perf_1m": 12.1712367096,
+      "rs_vs_nifty_1m": 16.89,
+      "rs_vs_sector_1m": 12.17,
+      "deliv_pct": 59.58,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 31.4,
+      "atr": 11.8753097809,
+      "stop_1_5atr": 182.64,
+      "target_5pct": 210.47,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
@@ -2955,102 +2969,84 @@
       "sector": "Consumer Services"
     },
     {
-      "symbol": "RPSGVENT",
-      "close": 891.3,
+      "symbol": "ALICON",
+      "close": 861.7,
       "score": 13,
-      "perf_1m": 10.037037037,
-      "rs_vs_nifty_1m": 14.76,
-      "rs_vs_sector_1m": 10.04,
-      "deliv_pct": 34.22,
+      "perf_1m": 23.9053850025,
+      "rs_vs_nifty_1m": 28.63,
+      "rs_vs_sector_1m": 23.91,
+      "deliv_pct": 44.74,
       "pct_change_oi": null,
-      "upside_to_target_pct": 32.28,
-      "atr": 33.8084510376,
-      "stop_1_5atr": 840.59,
-      "target_5pct": 935.86,
+      "upside_to_target_pct": 18.6,
+      "atr": 41.5405015763,
+      "stop_1_5atr": 799.39,
+      "target_5pct": 904.79,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "DHANBANK",
+      "close": 33.96,
+      "score": 13,
+      "perf_1m": 9.1610414658,
+      "rs_vs_nifty_1m": 13.88,
+      "rs_vs_sector_1m": 11.84,
+      "deliv_pct": 38.04,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.51,
+      "atr": 1.813177401,
+      "stop_1_5atr": 31.24,
+      "target_5pct": 35.66,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
       "sector": "Finance"
-    },
-    {
-      "symbol": "VHL",
-      "close": 3650.0,
-      "score": 13,
-      "perf_1m": 1.3888888889,
-      "rs_vs_nifty_1m": 6.11,
-      "rs_vs_sector_1m": 1.39,
-      "deliv_pct": 88.39,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 17.12,
-      "atr": 113.8103060166,
-      "stop_1_5atr": 3479.28,
-      "target_5pct": 3832.5,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "EMKAY",
-      "close": 267.9,
-      "score": 13,
-      "perf_1m": 3.0384615385,
-      "rs_vs_nifty_1m": 7.76,
-      "rs_vs_sector_1m": 3.04,
-      "deliv_pct": 58.3,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 38.45,
-      "atr": 14.2584207406,
-      "stop_1_5atr": 246.51,
-      "target_5pct": 281.3,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
     }
   ],
   "urls": {
-    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/research_pack.md",
-    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/research_pack.json",
+    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/research_pack.md",
+    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/research_pack.json",
     "index": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json",
-    "brief_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/swing_brief.md",
-    "folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-10-11",
+    "brief_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/swing_brief.md",
+    "folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-10-12",
     "latest_folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/latest",
     "deep_dive": {
       "stock_analysis.csv": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/stock_analysis.csv",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/stock_analysis.csv",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/stock_analysis.csv",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/stock_analysis.csv"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/stock_analysis.csv"
       },
       "manifest.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/manifest.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/manifest.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/manifest.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/manifest.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/manifest.json"
       },
       "report.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/report.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/report.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/report.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/report.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/report.json"
       },
       "swing_brief.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/swing_brief.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/swing_brief.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/swing_brief.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/swing_brief.json"
       },
       "swing_brief.md": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/swing_brief.md",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/swing_brief.md",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.md",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/swing_brief.md"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/swing_brief.md"
       },
       "funnel_detail.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/funnel_detail.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/funnel_detail.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/funnel_detail.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/funnel_detail.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/funnel_detail.json"
       },
       "market_summary.csv": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-11/market_summary.csv",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/market_summary.csv",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-11/market_summary.csv"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-10-12/market_summary.csv"
       }
     }
   },
@@ -3082,7 +3078,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-10-11T18:09:06.870878+05:30",
+    "generated_at_ist": "2026-10-12T06:11:26.704034+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,
@@ -3091,6 +3087,12 @@
     "open_book_notes": [],
     "claude_feed": "",
     "stock_reviews": [
+      {
+        "symbol": "PRIMESECU",
+        "status": "skipped",
+        "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
+        "levels_source": "parkhu_deterministic"
+      },
       {
         "symbol": "NINSYS",
         "status": "skipped",
@@ -3104,13 +3106,7 @@
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "PRIMESECU",
-        "status": "skipped",
-        "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "KILITCH",
+        "symbol": "STEELCAS",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
