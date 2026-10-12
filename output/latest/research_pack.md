@@ -1,26 +1,26 @@
-# Parkhu research pack — 2026-10-12
+# Parkhu research pack — 2026-10-13
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-12T18:10:49.996798+05:30
+- **generated_at_ist:** 2026-10-13T03:01:47.961524+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.7%)
-- india_vix: 15.25 (Medium)
-- fii_net: -3568.9 | dii_net: 4743.26
-- overall_risk: Medium | global_risk: Risk-On
+- market_regime: **Bullish**
+- nifty: Bullish (1.3%)
+- india_vix: 14.38 (Medium)
+- fii_net: -1708.48 | dii_net: 3045.02
+- overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
 - universe: 3203
-- trend = Bullish: 947
+- trend = Bullish: 948
 - price > SMA200: 718
 - price > EMA50: 701
 - ADX14 > 25: 333
 - RSI14 in 40-80: 306
-- RS > 0 vs NIFTY and sector: 177
+- RS > 0 vs NIFTY and sector: 178
 - delivery% >= 40: 68
 - relative_volume >= 1: 13
 - no earnings within 21d: 12
@@ -36,17 +36,22 @@
 - **ASHIANA** [rejected] score 65.0 — score below Watch band
 - **CPCAP** [rejected] score 62.7 — T1 needs more than 22 trading days (~1 month)
 - **PVRINOX** [rejected] score 57.0 — score below Watch band
-- **PRIMESECU** [rejected] score 47.0 — score below Watch band
+- **PRIMESECU** [rejected] score 46.8 — score below Watch band
 - **PATELRMART** [rejected] score 46.5 — score below Watch band
 - **HLEGLAS** [rejected] score 38.2 — score below Watch band
-- **21STCENMGM** [rejected] score 37.9 — T1 needs more than 22 trading days (~1 month)
-- **NAZARA** [rejected] score 37.7 — score below Watch band
+- **NAZARA** [rejected] score 37.8 — score below Watch band
+- **21STCENMGM** [rejected] score 37.6 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### PNBHOUSING — Watch (score 14.0)
-- PNBHOUSING | risk_sector: Finance
-- entry 1200.0 | stop 1148.52 | t1 1260.0 | t2 None | t3 None | R:R None
+### OMAXAUTO — Watch (score 14.0)
+- OMAXAUTO | risk_sector: Producer Manufacturing
+- entry 220.61 | stop 201.65 | t1 231.64 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MAZDA — Watch (score 14.0)
+- MAZDA | risk_sector: Producer Manufacturing
+- entry 292.25 | stop 268.0 | t1 306.86 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### GALAXYSURF — Watch (score 14.0)
@@ -59,14 +64,9 @@
 - entry 1401.3 | stop 1320.84 | t1 1471.36 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### MAZDA — Watch (score 14.0)
-- MAZDA | risk_sector: Producer Manufacturing
-- entry 292.25 | stop 268.0 | t1 306.86 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### OMAXAUTO — Watch (score 14.0)
-- OMAXAUTO | risk_sector: Producer Manufacturing
-- entry 220.61 | stop 201.65 | t1 231.64 | t2 None | t3 None | R:R None
+### CPCAP — Watch (score 13.0)
+- CPCAP | risk_sector: Consumer Services
+- entry 175.66 | stop 159.39 | t1 184.44 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -79,6 +79,7 @@
 
 ## Needs action
 
+- **ACMESOLAR**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
 - **CASTROLIND**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
 - **KENNAMET**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 - **PREMIERPOL**: BANK PARTIAL — T1 REACHED — ₹114.91 above T1 ₹111.38 — bank part, trail the rest, move stop to breakeven ₹96.02
@@ -86,51 +87,51 @@
 
 ## Swing candidates (top)
 
-- PNBHOUSING: score=14 rs_nifty=6.95 deliv=51.08
-- GALAXYSURF: score=14 rs_nifty=17.25 deliv=44.6
-- PVRINOX: score=14 rs_nifty=18.67 deliv=45.6
-- MAZDA: score=14 rs_nifty=14.51 deliv=44.69
-- OMAXAUTO: score=14 rs_nifty=29.91 deliv=42.82
-- BOROLTD: score=13 rs_nifty=7.42 deliv=43.63
-- ENGINERSIN: score=13 rs_nifty=14.11 deliv=41.41
-- KAMATHOTEL: score=13 rs_nifty=15.5 deliv=61.46
-- YUKEN: score=13 rs_nifty=6.74 deliv=44.34
-- LGEINDIA: score=13 rs_nifty=9.71 deliv=55.16
-- MEESHO: score=13 rs_nifty=11.96 deliv=37.29
-- GPTINFRA: score=13 rs_nifty=12.03 deliv=40.48
-- SWELECTES: score=13 rs_nifty=12.44 deliv=45.03
-- AHCL: score=13 rs_nifty=71.0 deliv=51.67
-- PGIL: score=13 rs_nifty=15.44 deliv=35.01
+- OMAXAUTO: score=14 rs_nifty=30.07 deliv=42.82
+- MAZDA: score=14 rs_nifty=14.67 deliv=44.69
+- GALAXYSURF: score=14 rs_nifty=17.41 deliv=44.6
+- PVRINOX: score=14 rs_nifty=18.83 deliv=45.6
+- CPCAP: score=13 rs_nifty=33.41 deliv=49.19
+- KIRIINDUS: score=13 rs_nifty=9.71 deliv=54.06
+- WHEELS: score=13 rs_nifty=6.84 deliv=53.95
+- DCMFINSERV: score=13 rs_nifty=9.26 deliv=85.69
+- SVPGLOB: score=13 rs_nifty=11.41 deliv=71.26
+- 21STCENMGM: score=13 rs_nifty=16.29 deliv=66.4
+- ASHIANA: score=13 rs_nifty=12.97 deliv=60.05
+- THELEELA: score=13 rs_nifty=12.11 deliv=51.73
+- ENGINERSIN: score=13 rs_nifty=14.27 deliv=41.41
+- NECCLTD: score=13 rs_nifty=6.27 deliv=53.31
+- JASH: score=13 rs_nifty=13.45 deliv=42.32
 
 ## World markets (India cues)
 
 ### Asia
 - Nikkei: -0.02% (neutral)
-- Hang Seng: +0.25% (bull)
-- Shanghai: -0.43% (bear)
-- Kospi: -3.65% (bear)
-- Taiwan: -0.02% (neutral)
+- Hang Seng: +1.79% (bull)
+- Shanghai: +0.05% (neutral)
+- Kospi: -2.62% (bear)
+- Taiwan: -0.99% (bear)
 - ASX 200: +0.76% (bull)
 
 ### Europe
-- FTSE 100: +0.85% (bull)
-- DAX: +0.87% (bull)
-- Euro Stoxx 50: +0.70% (bull)
+- FTSE 100: +0.99% (bull)
+- DAX: +0.76% (bull)
+- Euro Stoxx 50: +0.45% (bull)
 
 ### US
-- S&P 500: +0.59% (bull)
-- Nasdaq: +0.64% (bull)
-- Dow: +0.83% (bull)
-- US VIX: +3.91% (bear)
+- S&P 500: -0.06% (neutral)
+- Nasdaq: -0.44% (bear)
+- Dow: +0.38% (bull)
+- US VIX: +2.49% (bear)
 
 ### Macro
 - USDINR: -1.10% (bull)
-- Crude WTI: +1.64% (bull)
-- Brent: +1.50% (bull)
-- DXY: +0.20% (neutral)
+- Crude WTI: +1.43% (bull)
+- Brent: +1.15% (bull)
+- DXY: +0.36% (bear)
 - US 10Y: -0.08% (neutral)
-- India ETF: +1.03% (bull)
-- EM ETF: +1.06% (bull)
+- India ETF: +0.72% (bull)
+- EM ETF: -0.97% (bear)
 
 
 ## Groq desk note
@@ -149,6 +150,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-12/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-13/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
