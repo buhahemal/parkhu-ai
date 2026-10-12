@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-12",
-  "generated_at_ist": "2026-10-12T11:59:40.828440+05:30",
-  "duration_seconds": 363.4,
+  "generated_at_ist": "2026-10-12T18:10:49.996798+05:30",
+  "duration_seconds": 459.0,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,59 +14,59 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3201,
-      "seconds": 2.3
+      "seconds": 3.1
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14476,
-      "cache_rows": 7931556,
-      "symbols": 2897,
+      "rows": 14471,
+      "cache_rows": 7931540,
+      "symbols": 2896,
       "failed": 34,
       "lookback": 0,
       "pack_sessions": 5,
       "warm": 2502,
-      "cold": 429,
+      "cold": 428,
       "new_symbols": 34,
       "retries": 2,
-      "seconds": 243.6
+      "seconds": 356.7
     },
     {
       "agent": "earnings",
       "status": "ok",
       "rows": 3201,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "indices",
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.6
+      "seconds": 1.1
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.1
+      "seconds": 2.2
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 4.2
+      "status": "ok",
+      "rows": 3,
+      "seconds": 4.8
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.1
+      "seconds": 6.4
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 457,
-      "seconds": 5.7
+      "seconds": 5.1
     },
     {
       "agent": "stock_options",
@@ -78,38 +78,38 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2319,
-      "seconds": 18.0
+      "rows": 2338,
+      "seconds": 7.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.3
+      "seconds": 3.4
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.7
+      "seconds": 3.3
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.3
+      "seconds": 6.1
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3201,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3201,
-      "seconds": 1.0
+      "seconds": 0.4
     },
     {
       "agent": "fno_momentum",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -138,24 +138,24 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2896,
-      "with_structure": 2894,
+      "rows": 2895,
+      "with_structure": 2893,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 20.9
+      "seconds": 11.5
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3203,
-      "seconds": 8.3
+      "seconds": 4.3
     },
     {
       "agent": "swing_brief",
       "status": "ok",
       "rows": 0,
       "ideas": [],
-      "watchlist": 0,
+      "watchlist": 2,
       "open_positions": 5,
       "needing_action": [
         "CASTROLIND",
@@ -164,17 +164,17 @@
         "WELCORP"
       ],
       "closed_today": [],
-      "seconds": 0.3
+      "seconds": 0.2
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,

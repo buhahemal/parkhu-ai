@@ -1,128 +1,134 @@
 # Parkhu research pack — 2026-10-12
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-12T11:59:40.828440+05:30
+- **generated_at_ist:** 2026-10-12T18:10:49.996798+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.63%)
-- india_vix: 15.48 (Medium)
+- nifty: Bearish (-0.7%)
+- india_vix: 15.25 (Medium)
 - fii_net: -3568.9 | dii_net: 4743.26
 - overall_risk: Medium | global_risk: Risk-On
 
 ## Funnel
 
 - universe: 3203
-- trend = Bullish: 929
-- price > SMA200: 710
-- price > EMA50: 693
+- trend = Bullish: 947
+- price > SMA200: 718
+- price > EMA50: 701
 - ADX14 > 25: 333
-- RSI14 in 40-80: 308
+- RSI14 in 40-80: 306
 - RS > 0 vs NIFTY and sector: 177
-- delivery% >= 40: 56
-- relative_volume >= 1: 7
-- no earnings within 21d: 6
-- event_risk_score <= 1: 6
-- TV rating not Sell: 6
+- delivery% >= 40: 68
+- relative_volume >= 1: 13
+- no earnings within 21d: 12
+- event_risk_score <= 1: 12
+- TV rating not Sell: 12
 
-## Survivors (top 6 of 6)
+## Survivors (top 12 of 12)
 
-- **OMAXAUTO** [rejected] score 68.2 — score below Watch band
-- **VIVIANA** [rejected] score 66.5 — T1 needs more than 22 trading days (~1 month)
-- **CPCAP** [rejected] score 61.7 — score below Watch band
-- **TEAMGTY** [rejected] score 54.0 — T1 needs more than 22 trading days (~1 month)
-- **PATELRMART** [rejected] score 46.7 — score below Watch band
-- **21STCENMGM** [rejected] score 38.8 — T1 needs more than 22 trading days (~1 month)
+- **GALAXYSURF** [watchlist] score 79.0 — score in Watch band (70–80)
+- **MAZDA** [watchlist] score 75.7 — score in Watch band (70–80)
+- **OMAXAUTO** [rejected] score 67.9 — score below Watch band
+- **VIVIANA** [rejected] score 65.9 — T1 needs more than 22 trading days (~1 month)
+- **ASHIANA** [rejected] score 65.0 — score below Watch band
+- **CPCAP** [rejected] score 62.7 — T1 needs more than 22 trading days (~1 month)
+- **PVRINOX** [rejected] score 57.0 — score below Watch band
+- **PRIMESECU** [rejected] score 47.0 — score below Watch band
+- **PATELRMART** [rejected] score 46.5 — score below Watch band
+- **HLEGLAS** [rejected] score 38.2 — score below Watch band
+- **21STCENMGM** [rejected] score 37.9 — T1 needs more than 22 trading days (~1 month)
+- **NAZARA** [rejected] score 37.7 — score below Watch band
 
 ## Ideas
 
+### PNBHOUSING — Watch (score 14.0)
+- PNBHOUSING | risk_sector: Finance
+- entry 1200.0 | stop 1148.52 | t1 1260.0 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### GALAXYSURF — Watch (score 14.0)
+- GALAXYSURF | risk_sector: Consumer Non-Durables
+- entry 2532.5 | stop 2384.79 | t1 2659.12 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PVRINOX — Watch (score 14.0)
+- PVRINOX | risk_sector: Consumer Services
+- entry 1401.3 | stop 1320.84 | t1 1471.36 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MAZDA — Watch (score 14.0)
+- MAZDA | risk_sector: Producer Manufacturing
+- entry 292.25 | stop 268.0 | t1 306.86 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### OMAXAUTO — Watch (score 14.0)
 - OMAXAUTO | risk_sector: Producer Manufacturing
-- entry 214.09 | stop 195.35 | t1 224.79 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### PVRINOX — Watch (score 13.0)
-- PVRINOX | risk_sector: Consumer Services
-- entry 1362.3 | stop 1286.56 | t1 1430.42 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SHILPAMED — Watch (score 13.0)
-- SHILPAMED | risk_sector: Health Technology
-- entry 1032.3 | stop 960.26 | t1 1083.92 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### CPCAP — Watch (score 13.0)
-- CPCAP | risk_sector: Consumer Services
-- entry 167.32 | stop 151.46 | t1 175.69 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### THELEELA — Watch (score 13.0)
-- THELEELA | risk_sector: Consumer Services
-- entry 599.8 | stop 563.59 | t1 629.79 | t2 None | t3 None | R:R None
+- entry 220.61 | stop 201.65 | t1 231.64 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **KENNAMET** status=open entry=4266.4 last=4254.0 mfe=11.09 mae=-7.23 opened=2026-09-15
-- **ACMESOLAR** status=open entry=435.25 last=418.45 mfe=9.57 mae=-5.46 opened=2026-09-18
-- **WELCORP** status=open entry=2660.1 last=2765.1 mfe=9.02 mae=-7.9 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=194.26 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=partial entry=96.02 last=113.0 mfe=24.97 mae=-6.47 opened=2026-10-05
+- **KENNAMET** status=open entry=4266.4 last=4285.2 mfe=11.09 mae=-7.23 opened=2026-09-15
+- **ACMESOLAR** status=open entry=435.25 last=418.75 mfe=9.57 mae=-5.46 opened=2026-09-18
+- **WELCORP** status=open entry=2660.1 last=2793.9 mfe=9.02 mae=-7.9 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=193.87 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=partial entry=96.02 last=114.91 mfe=24.97 mae=-6.47 opened=2026-10-05
 
 ## Needs action
 
 - **CASTROLIND**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
 - **KENNAMET**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
-- **PREMIERPOL**: BANK PARTIAL — T1 REACHED — ₹113.00 above T1 ₹111.38 — bank part, trail the rest, move stop to breakeven ₹96.02
-- **WELCORP**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
+- **PREMIERPOL**: BANK PARTIAL — T1 REACHED — ₹114.91 above T1 ₹111.38 — bank part, trail the rest, move stop to breakeven ₹96.02
+- **WELCORP**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
 
 ## Swing candidates (top)
 
-- OMAXAUTO: score=14 rs_nifty=26.15 deliv=59.58
-- PVRINOX: score=13 rs_nifty=15.45 deliv=46.35
-- SHILPAMED: score=13 rs_nifty=14.92 deliv=40.63
-- CPCAP: score=13 rs_nifty=27.09 deliv=61.86
-- THELEELA: score=13 rs_nifty=12.82 deliv=44.71
-- GALAXYSURF: score=13 rs_nifty=18.48 deliv=41.47
-- SUNFLAG: score=13 rs_nifty=33.42 deliv=42.42
-- MOREPENLAB: score=13 rs_nifty=16.65 deliv=41.62
-- RAMRAT: score=13 rs_nifty=14.68 deliv=43.31
-- ASHIANA: score=13 rs_nifty=13.3 deliv=46.62
-- SOMANYCERA: score=13 rs_nifty=11.76 deliv=52.58
-- RGL: score=13 rs_nifty=9.09 deliv=48.91
-- NINSYS: score=13 rs_nifty=18.57 deliv=49.92
-- ALICON: score=13 rs_nifty=22.33 deliv=44.74
-- AEROENTER: score=13 rs_nifty=6.76 deliv=41.95
+- PNBHOUSING: score=14 rs_nifty=6.95 deliv=51.08
+- GALAXYSURF: score=14 rs_nifty=17.25 deliv=44.6
+- PVRINOX: score=14 rs_nifty=18.67 deliv=45.6
+- MAZDA: score=14 rs_nifty=14.51 deliv=44.69
+- OMAXAUTO: score=14 rs_nifty=29.91 deliv=42.82
+- BOROLTD: score=13 rs_nifty=7.42 deliv=43.63
+- ENGINERSIN: score=13 rs_nifty=14.11 deliv=41.41
+- KAMATHOTEL: score=13 rs_nifty=15.5 deliv=61.46
+- YUKEN: score=13 rs_nifty=6.74 deliv=44.34
+- LGEINDIA: score=13 rs_nifty=9.71 deliv=55.16
+- MEESHO: score=13 rs_nifty=11.96 deliv=37.29
+- GPTINFRA: score=13 rs_nifty=12.03 deliv=40.48
+- SWELECTES: score=13 rs_nifty=12.44 deliv=45.03
+- AHCL: score=13 rs_nifty=71.0 deliv=51.67
+- PGIL: score=13 rs_nifty=15.44 deliv=35.01
 
 ## World markets (India cues)
 
 ### Asia
 - Nikkei: -0.02% (neutral)
-- Hang Seng: +0.16% (bull)
-- Shanghai: -0.50% (bear)
-- Kospi: -3.66% (bear)
+- Hang Seng: +0.25% (bull)
+- Shanghai: -0.43% (bear)
+- Kospi: -3.65% (bear)
 - Taiwan: -0.02% (neutral)
 - ASX 200: +0.76% (bull)
 
 ### Europe
-- FTSE 100: +1.06% (bull)
-- DAX: +1.13% (bull)
-- Euro Stoxx 50: +0.76% (bull)
+- FTSE 100: +0.85% (bull)
+- DAX: +0.87% (bull)
+- Euro Stoxx 50: +0.70% (bull)
 
 ### US
 - S&P 500: +0.59% (bull)
 - Nasdaq: +0.64% (bull)
 - Dow: +0.83% (bull)
-- US VIX: -3.70% (bull)
+- US VIX: +3.91% (bear)
 
 ### Macro
-- USDINR: -1.07% (bull)
-- Crude WTI: -0.77% (bear)
-- Brent: -0.29% (bear)
-- DXY: +0.00% (neutral)
-- US 10Y: +0.25% (neutral)
+- USDINR: -1.10% (bull)
+- Crude WTI: +1.64% (bull)
+- Brent: +1.50% (bull)
+- DXY: +0.20% (neutral)
+- US 10Y: -0.08% (neutral)
 - India ETF: +1.03% (bull)
 - EM ETF: +1.06% (bull)
 
