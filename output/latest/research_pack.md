@@ -1,13 +1,13 @@
 # Parkhu research pack — 2026-10-13
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-13T03:01:47.961524+05:30
+- **generated_at_ist:** 2026-10-13T06:09:42.812335+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (1.3%)
+- market_regime: **Bearish**
+- nifty: Bearish (-0.7%)
 - india_vix: 14.38 (Medium)
 - fii_net: -1708.48 | dii_net: 3045.02
 - overall_risk: Medium | global_risk: Neutral
@@ -15,12 +15,12 @@
 ## Funnel
 
 - universe: 3203
-- trend = Bullish: 948
-- price > SMA200: 718
-- price > EMA50: 701
-- ADX14 > 25: 333
-- RSI14 in 40-80: 306
-- RS > 0 vs NIFTY and sector: 178
+- trend = Bullish: 947
+- price > SMA200: 717
+- price > EMA50: 700
+- ADX14 > 25: 332
+- RSI14 in 40-80: 305
+- RS > 0 vs NIFTY and sector: 176
 - delivery% >= 40: 68
 - relative_volume >= 1: 13
 - no earnings within 21d: 12
@@ -39,20 +39,10 @@
 - **PRIMESECU** [rejected] score 46.8 — score below Watch band
 - **PATELRMART** [rejected] score 46.5 — score below Watch band
 - **HLEGLAS** [rejected] score 38.2 — score below Watch band
-- **NAZARA** [rejected] score 37.8 — score below Watch band
-- **21STCENMGM** [rejected] score 37.6 — T1 needs more than 22 trading days (~1 month)
+- **21STCENMGM** [rejected] score 37.7 — T1 needs more than 22 trading days (~1 month)
+- **NAZARA** [rejected] score 37.7 — score below Watch band
 
 ## Ideas
-
-### OMAXAUTO — Watch (score 14.0)
-- OMAXAUTO | risk_sector: Producer Manufacturing
-- entry 220.61 | stop 201.65 | t1 231.64 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### MAZDA — Watch (score 14.0)
-- MAZDA | risk_sector: Producer Manufacturing
-- entry 292.25 | stop 268.0 | t1 306.86 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
 
 ### GALAXYSURF — Watch (score 14.0)
 - GALAXYSURF | risk_sector: Consumer Non-Durables
@@ -64,9 +54,19 @@
 - entry 1401.3 | stop 1320.84 | t1 1471.36 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### CPCAP — Watch (score 13.0)
-- CPCAP | risk_sector: Consumer Services
-- entry 175.66 | stop 159.39 | t1 184.44 | t2 None | t3 None | R:R None
+### OMAXAUTO — Watch (score 14.0)
+- OMAXAUTO | risk_sector: Producer Manufacturing
+- entry 220.61 | stop 201.65 | t1 231.64 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MAZDA — Watch (score 14.0)
+- MAZDA | risk_sector: Producer Manufacturing
+- entry 292.25 | stop 268.0 | t1 306.86 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### TDPOWERSYS — Watch (score 13.0)
+- TDPOWERSYS | risk_sector: Producer Manufacturing
+- entry 825.65 | stop 763.1 | t1 866.93 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -87,31 +87,31 @@
 
 ## Swing candidates (top)
 
-- OMAXAUTO: score=14 rs_nifty=30.07 deliv=42.82
-- MAZDA: score=14 rs_nifty=14.67 deliv=44.69
-- GALAXYSURF: score=14 rs_nifty=17.41 deliv=44.6
-- PVRINOX: score=14 rs_nifty=18.83 deliv=45.6
-- CPCAP: score=13 rs_nifty=33.41 deliv=49.19
-- KIRIINDUS: score=13 rs_nifty=9.71 deliv=54.06
-- WHEELS: score=13 rs_nifty=6.84 deliv=53.95
-- DCMFINSERV: score=13 rs_nifty=9.26 deliv=85.69
-- SVPGLOB: score=13 rs_nifty=11.41 deliv=71.26
-- 21STCENMGM: score=13 rs_nifty=16.29 deliv=66.4
-- ASHIANA: score=13 rs_nifty=12.97 deliv=60.05
-- THELEELA: score=13 rs_nifty=12.11 deliv=51.73
-- ENGINERSIN: score=13 rs_nifty=14.27 deliv=41.41
-- NECCLTD: score=13 rs_nifty=6.27 deliv=53.31
-- JASH: score=13 rs_nifty=13.45 deliv=42.32
+- GALAXYSURF: score=14 rs_nifty=17.25 deliv=44.6
+- PVRINOX: score=14 rs_nifty=18.67 deliv=45.6
+- OMAXAUTO: score=14 rs_nifty=29.91 deliv=42.82
+- MAZDA: score=14 rs_nifty=14.51 deliv=44.69
+- TDPOWERSYS: score=13 rs_nifty=13.2 deliv=26.9
+- ARIHANTCAP: score=13 rs_nifty=31.7 deliv=48.02
+- MEESHO: score=13 rs_nifty=11.96 deliv=37.29
+- GPTINFRA: score=13 rs_nifty=12.03 deliv=40.48
+- ENGINERSIN: score=13 rs_nifty=14.11 deliv=41.41
+- DBSTOCKBRO: score=13 rs_nifty=12.73 deliv=61.49
+- PATELRMART: score=13 rs_nifty=19.26 deliv=43.54
+- RGL: score=13 rs_nifty=9.87 deliv=60.37
+- ASHIANA: score=13 rs_nifty=12.81 deliv=60.05
+- GREENPLY: score=13 rs_nifty=10.66 deliv=71.85
+- NRBBEARING: score=13 rs_nifty=5.7 deliv=51.05
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.02% (neutral)
-- Hang Seng: +1.79% (bull)
-- Shanghai: +0.05% (neutral)
-- Kospi: -2.62% (bear)
-- Taiwan: -0.99% (bear)
-- ASX 200: +0.76% (bull)
+- Nikkei: -1.72% (bear)
+- Hang Seng: +0.25% (bull)
+- Shanghai: -0.43% (bear)
+- Kospi: -4.71% (bear)
+- Taiwan: -0.02% (neutral)
+- ASX 200: -0.26% (bear)
 
 ### Europe
 - FTSE 100: +0.99% (bull)
@@ -126,11 +126,11 @@
 
 ### Macro
 - USDINR: -1.10% (bull)
-- Crude WTI: +1.43% (bull)
-- Brent: +1.15% (bull)
-- DXY: +0.36% (bear)
+- Crude WTI: +1.16% (bull)
+- Brent: +0.90% (bull)
+- DXY: +0.33% (neutral)
 - US 10Y: -0.08% (neutral)
-- India ETF: +0.72% (bull)
+- India ETF: +1.03% (bull)
 - EM ETF: -0.97% (bear)
 
 
