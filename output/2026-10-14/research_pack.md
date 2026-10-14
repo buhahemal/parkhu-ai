@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-14
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-14T01:07:35.087627+05:30
+- **generated_at_ist:** 2026-10-14T06:11:01.134674+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -50,14 +50,14 @@
 - entry 383.55 | stop 361.86 | t1 402.73 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### VINDHYATEL — Watch (score 14.0)
-- VINDHYATEL | risk_sector: Industrial Services
-- entry 2829.7 | stop 2617.25 | t1 2971.18 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### PGIL — Watch (score 14.0)
 - PGIL | risk_sector: Consumer Non-Durables
 - entry 1287.5 | stop 1196.4 | t1 1351.88 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### VINDHYATEL — Watch (score 14.0)
+- VINDHYATEL | risk_sector: Industrial Services
+- entry 2829.7 | stop 2617.25 | t1 2971.18 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### WHEELS — Watch (score 13.0)
@@ -82,49 +82,49 @@
 
 - CPCAP: score=14 rs_nifty=26.22 deliv=43.37
 - CEIGALL: score=14 rs_nifty=6.49 deliv=42.79
-- VINDHYATEL: score=14 rs_nifty=5.8 deliv=46.08
 - PGIL: score=14 rs_nifty=11.78 deliv=45.65
+- VINDHYATEL: score=14 rs_nifty=5.8 deliv=46.08
 - WHEELS: score=13 rs_nifty=6.23 deliv=42.27
-- LIKHITHA: score=13 rs_nifty=9.81 deliv=57.61
+- TDPOWERSYS: score=13 rs_nifty=9.54 deliv=44.68
+- KILITCH: score=13 rs_nifty=31.71 deliv=42.46
+- DBSTOCKBRO: score=13 rs_nifty=17.38 deliv=74.69
+- GALAXYSURF: score=13 rs_nifty=19.44 deliv=46.39
 - SWELECTES: score=13 rs_nifty=12.41 deliv=50.4
-- ARIHANTCAP: score=13 rs_nifty=31.28 deliv=52.48
-- SECMARK: score=13 rs_nifty=7.97 deliv=72.85
-- KAMATHOTEL: score=13 rs_nifty=14.96 deliv=50.84
 - EMKAY: score=13 rs_nifty=13.21 deliv=69.52
+- KAMATHOTEL: score=13 rs_nifty=14.96 deliv=50.84
+- LIKHITHA: score=13 rs_nifty=9.81 deliv=57.61
+- PATELRMART: score=13 rs_nifty=16.85 deliv=52.48
 - MANBA: score=13 rs_nifty=11.55 deliv=60.43
-- THELEELA: score=13 rs_nifty=13.13 deliv=50.06
-- LOKESHMACH: score=13 rs_nifty=35.81 deliv=44.27
-- MVGJL: score=13 rs_nifty=6.67 deliv=44.33
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.02% (neutral)
+- Nikkei: -1.57% (bear)
 - Hang Seng: +0.25% (bull)
 - Shanghai: -0.43% (bear)
-- Kospi: -3.65% (bear)
+- Kospi: -3.76% (bear)
 - Taiwan: -0.02% (neutral)
-- ASX 200: +0.01% (neutral)
+- ASX 200: -0.69% (bear)
 
 ### Europe
-- FTSE 100: -0.06% (neutral)
-- DAX: -0.07% (neutral)
-- Euro Stoxx 50: -0.55% (bear)
+- FTSE 100: +0.99% (bull)
+- DAX: +0.76% (bull)
+- Euro Stoxx 50: +0.45% (bull)
 
 ### US
-- S&P 500: +0.04% (neutral)
-- Nasdaq: -0.09% (neutral)
-- Dow: -0.25% (bear)
-- US VIX: +1.51% (bear)
+- S&P 500: -0.02% (neutral)
+- Nasdaq: -0.15% (neutral)
+- Dow: -0.35% (bear)
+- US VIX: +0.39% (bear)
 
 ### Macro
-- USDINR: -1.59% (bull)
-- Crude WTI: +0.76% (bull)
-- Brent: -0.66% (bear)
-- DXY: -0.38% (bull)
+- USDINR: -1.03% (bull)
+- Crude WTI: +1.30% (bull)
+- Brent: -0.07% (neutral)
+- DXY: -0.40% (bull)
 - US 10Y: -0.44% (bull)
-- India ETF: +1.95% (bull)
-- EM ETF: -0.70% (bear)
+- India ETF: +0.72% (bull)
+- EM ETF: -0.97% (bear)
 
 
 ## Groq desk note

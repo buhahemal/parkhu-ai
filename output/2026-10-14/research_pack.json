@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-14",
-  "generated_at_ist": "2026-10-14T01:07:35.087627+05:30",
+  "generated_at_ist": "2026-10-14T06:11:01.134674+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -40,22 +40,22 @@
     "worst_sector_perf_1m": -6.16,
     "fii_net": -1305.13,
     "dii_net": 2439.24,
-    "crude": 94.45,
-    "crude_pct_change": 0.76,
-    "usdinr": 95.28,
-    "usdinr_pct_change": -1.59,
-    "us_sp500_pct": 0.04,
-    "us_dow_pct": -0.25,
-    "us_vix": 15.44,
-    "us_vix_pct": 1.51,
-    "dxy": 102.19,
-    "dxy_pct": -0.38,
+    "crude": 94.96,
+    "crude_pct_change": 1.3,
+    "usdinr": 95.78,
+    "usdinr_pct_change": -1.03,
+    "us_sp500_pct": -0.02,
+    "us_dow_pct": -0.35,
+    "us_vix": 15.27,
+    "us_vix_pct": 0.39,
+    "dxy": 102.17,
+    "dxy_pct": -0.4,
     "us_10y": 5.22,
     "asia_cue": "Bearish",
-    "europe_cue": "Bearish",
+    "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-14T01:07:11.843956+05:30"
+    "generated_at_ist": "2026-10-14T06:10:35.817504+05:30"
   },
   "world_markets": [
     {
@@ -64,10 +64,10 @@
         {
           "label": "Nikkei",
           "metric": "NIKKEI",
-          "value": 69030.92,
-          "pct_change": -0.02,
-          "tone": "neutral",
-          "session_date": "2026-10-09"
+          "value": 67945.26,
+          "pct_change": -1.57,
+          "tone": "bear",
+          "session_date": "2026-10-14"
         },
         {
           "label": "Hang Seng",
@@ -88,10 +88,10 @@
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 6384.24,
-          "pct_change": -3.65,
+          "value": 6144.43,
+          "pct_change": -3.76,
           "tone": "bear",
-          "session_date": "2026-10-12"
+          "session_date": "2026-10-14"
         },
         {
           "label": "Taiwan",
@@ -104,10 +104,10 @@
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 8783.9,
-          "pct_change": 0.01,
-          "tone": "neutral",
-          "session_date": "2026-10-13"
+          "value": 8722.7,
+          "pct_change": -0.69,
+          "tone": "bear",
+          "session_date": "2026-10-14"
         }
       ]
     },
@@ -117,26 +117,26 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10650.33,
-          "pct_change": -0.06,
-          "tone": "neutral",
-          "session_date": "2026-10-13"
+          "value": 10656.3,
+          "pct_change": 0.99,
+          "tone": "bull",
+          "session_date": "2026-10-12"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 25259.9,
-          "pct_change": -0.07,
-          "tone": "neutral",
-          "session_date": "2026-10-13"
+          "value": 25277.68,
+          "pct_change": 0.76,
+          "tone": "bull",
+          "session_date": "2026-10-12"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6167.01,
-          "pct_change": -0.55,
-          "tone": "bear",
-          "session_date": "2026-10-13"
+          "value": 6201.21,
+          "pct_change": 0.45,
+          "tone": "bull",
+          "session_date": "2026-10-12"
         }
       ]
     },
@@ -146,32 +146,32 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7810.29,
-          "pct_change": 0.04,
+          "value": 7805.45,
+          "pct_change": -0.02,
           "tone": "neutral",
           "session_date": "2026-10-13"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 27221.49,
-          "pct_change": -0.09,
+          "value": 27204.38,
+          "pct_change": -0.15,
           "tone": "neutral",
           "session_date": "2026-10-13"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 51720.53,
-          "pct_change": -0.25,
+          "value": 51670.1,
+          "pct_change": -0.35,
           "tone": "bear",
           "session_date": "2026-10-13"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 15.44,
-          "pct_change": 1.51,
+          "value": 15.27,
+          "pct_change": 0.39,
           "tone": "bear",
           "session_date": "2026-10-13"
         }
@@ -183,32 +183,32 @@
         {
           "label": "USDINR",
           "metric": "USDINR",
-          "value": 95.28,
-          "pct_change": -1.59,
+          "value": 95.78,
+          "pct_change": -1.03,
           "tone": "bull",
           "session_date": "2026-10-13"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 94.45,
-          "pct_change": 0.76,
+          "value": 94.96,
+          "pct_change": 1.3,
           "tone": "bull",
           "session_date": "2026-10-13"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 105.95,
-          "pct_change": -0.66,
-          "tone": "bear",
+          "value": 106.58,
+          "pct_change": -0.07,
+          "tone": "neutral",
           "session_date": "2026-10-13"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 102.19,
-          "pct_change": -0.38,
+          "value": 102.17,
+          "pct_change": -0.4,
           "tone": "bull",
           "session_date": "2026-10-13"
         },
@@ -223,18 +223,18 @@
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 47.26,
-          "pct_change": 1.95,
+          "value": 46.36,
+          "pct_change": 0.72,
           "tone": "bull",
-          "session_date": "2026-10-13"
+          "session_date": "2026-10-12"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 65.69,
-          "pct_change": -0.7,
+          "value": 66.15,
+          "pct_change": -0.97,
           "tone": "bear",
-          "session_date": "2026-10-13"
+          "session_date": "2026-10-12"
         }
       ]
     }
@@ -1199,25 +1199,6 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "VINDHYATEL",
-      "company": "VINDHYATEL",
-      "sector": "Industrial Services",
-      "risk_sector": "Industrial Services",
-      "cmp": 2829.7,
-      "parkhu_score": 14.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 2829.7,
-        "stop": 2617.25,
-        "t1": 2971.18,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
       "symbol": "PGIL",
       "company": "PGIL",
       "sector": "Consumer Non-Durables",
@@ -1229,6 +1210,25 @@
         "entry": 1287.5,
         "stop": 1196.4,
         "t1": 1351.88,
+        "t2": null,
+        "t3": null,
+        "rr_t1": null,
+        "hold_days_t1": null
+      },
+      "source": "swing_candidates.csv"
+    },
+    {
+      "symbol": "VINDHYATEL",
+      "company": "VINDHYATEL",
+      "sector": "Industrial Services",
+      "risk_sector": "Industrial Services",
+      "cmp": 2829.7,
+      "parkhu_score": 14.0,
+      "band": "Watch",
+      "levels": {
+        "entry": 2829.7,
+        "stop": 2617.25,
+        "t1": 2971.18,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -2670,24 +2670,6 @@
       "sector": "Industrial Services"
     },
     {
-      "symbol": "VINDHYATEL",
-      "close": 2829.7,
-      "score": 14,
-      "perf_1m": 1.2415026834,
-      "rs_vs_nifty_1m": 5.8,
-      "rs_vs_sector_1m": 1.24,
-      "deliv_pct": 46.08,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 5.98,
-      "atr": 141.6341753267,
-      "stop_1_5atr": 2617.25,
-      "target_5pct": 2971.18,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Industrial Services"
-    },
-    {
       "symbol": "PGIL",
       "close": 1287.5,
       "score": 14,
@@ -2704,6 +2686,24 @@
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Consumer Non-Durables"
+    },
+    {
+      "symbol": "VINDHYATEL",
+      "close": 2829.7,
+      "score": 14,
+      "perf_1m": 1.2415026834,
+      "rs_vs_nifty_1m": 5.8,
+      "rs_vs_sector_1m": 1.24,
+      "deliv_pct": 46.08,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 5.98,
+      "atr": 141.6341753267,
+      "stop_1_5atr": 2617.25,
+      "target_5pct": 2971.18,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Industrial Services"
     },
     {
       "symbol": "WHEELS",
@@ -2724,22 +2724,76 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "LIKHITHA",
-      "close": 224.19,
+      "symbol": "TDPOWERSYS",
+      "close": 797.85,
       "score": 13,
-      "perf_1m": 5.2535211268,
-      "rs_vs_nifty_1m": 9.81,
-      "rs_vs_sector_1m": 5.25,
-      "deliv_pct": 57.61,
+      "perf_1m": 4.9802631579,
+      "rs_vs_nifty_1m": 9.54,
+      "rs_vs_sector_1m": 4.98,
+      "deliv_pct": 44.68,
       "pct_change_oi": null,
-      "upside_to_target_pct": 21.33,
-      "atr": 11.290821788,
-      "stop_1_5atr": 207.25,
-      "target_5pct": 235.4,
+      "upside_to_target_pct": 11.27,
+      "atr": 41.5329646545,
+      "stop_1_5atr": 735.55,
+      "target_5pct": 837.74,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Industrial Services"
+      "sector": "Producer Manufacturing"
+    },
+    {
+      "symbol": "KILITCH",
+      "close": 235.26,
+      "score": 13,
+      "perf_1m": 27.1469491434,
+      "rs_vs_nifty_1m": 31.71,
+      "rs_vs_sector_1m": 29.45,
+      "deliv_pct": 42.46,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 13.87,
+      "atr": 14.3420595537,
+      "stop_1_5atr": 213.75,
+      "target_5pct": 247.02,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Health Technology"
+    },
+    {
+      "symbol": "DBSTOCKBRO",
+      "close": 32.47,
+      "score": 13,
+      "perf_1m": 12.8214037526,
+      "rs_vs_nifty_1m": 17.38,
+      "rs_vs_sector_1m": 12.82,
+      "deliv_pct": 74.69,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 49.37,
+      "atr": 1.8189192799,
+      "stop_1_5atr": 29.74,
+      "target_5pct": 34.09,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "GALAXYSURF",
+      "close": 2581.9,
+      "score": 13,
+      "perf_1m": 14.8838658005,
+      "rs_vs_nifty_1m": 19.44,
+      "rs_vs_sector_1m": 14.88,
+      "deliv_pct": 46.39,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 8.1,
+      "atr": 97.2240161471,
+      "stop_1_5atr": 2436.06,
+      "target_5pct": 2711.0,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Consumer Non-Durables"
     },
     {
       "symbol": "SWELECTES",
@@ -2760,40 +2814,22 @@
       "sector": "Producer Manufacturing"
     },
     {
-      "symbol": "ARIHANTCAP",
-      "close": 96.31,
+      "symbol": "EMKAY",
+      "close": 269.45,
       "score": 13,
-      "perf_1m": 26.7236842105,
-      "rs_vs_nifty_1m": 31.28,
-      "rs_vs_sector_1m": 26.72,
-      "deliv_pct": 52.48,
+      "perf_1m": 8.6491935484,
+      "rs_vs_nifty_1m": 13.21,
+      "rs_vs_sector_1m": 8.65,
+      "deliv_pct": 69.52,
       "pct_change_oi": null,
-      "upside_to_target_pct": 24.6,
-      "atr": 4.0481157462,
-      "stop_1_5atr": 90.24,
-      "target_5pct": 101.13,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "SECMARK",
-      "close": 153.05,
-      "score": 13,
-      "perf_1m": 3.4121621622,
-      "rs_vs_nifty_1m": 7.97,
-      "rs_vs_sector_1m": 5.36,
-      "deliv_pct": 72.85,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 17.28,
-      "atr": 10.0248566112,
-      "stop_1_5atr": 138.01,
-      "target_5pct": 160.7,
+      "upside_to_target_pct": 37.65,
+      "atr": 14.0478219651,
+      "stop_1_5atr": 248.38,
+      "target_5pct": 282.92,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Technology Services"
+      "sector": "Finance"
     },
     {
       "symbol": "KAMATHOTEL",
@@ -2814,22 +2850,40 @@
       "sector": "Consumer Services"
     },
     {
-      "symbol": "EMKAY",
-      "close": 269.45,
+      "symbol": "LIKHITHA",
+      "close": 224.19,
       "score": 13,
-      "perf_1m": 8.6491935484,
-      "rs_vs_nifty_1m": 13.21,
-      "rs_vs_sector_1m": 8.65,
-      "deliv_pct": 69.52,
+      "perf_1m": 5.2535211268,
+      "rs_vs_nifty_1m": 9.81,
+      "rs_vs_sector_1m": 5.25,
+      "deliv_pct": 57.61,
       "pct_change_oi": null,
-      "upside_to_target_pct": 37.65,
-      "atr": 14.0478219651,
-      "stop_1_5atr": 248.38,
-      "target_5pct": 282.92,
+      "upside_to_target_pct": 21.33,
+      "atr": 11.290821788,
+      "stop_1_5atr": 207.25,
+      "target_5pct": 235.4,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Finance"
+      "sector": "Industrial Services"
+    },
+    {
+      "symbol": "PATELRMART",
+      "close": 240.3,
+      "score": 13,
+      "perf_1m": 12.2897196262,
+      "rs_vs_nifty_1m": 16.85,
+      "rs_vs_sector_1m": 12.29,
+      "deliv_pct": 52.48,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 10.69,
+      "atr": 8.653488864,
+      "stop_1_5atr": 227.32,
+      "target_5pct": 252.32,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Retail Trade"
     },
     {
       "symbol": "MANBA",
@@ -2848,60 +2902,6 @@
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Finance"
-    },
-    {
-      "symbol": "THELEELA",
-      "close": 601.25,
-      "score": 13,
-      "perf_1m": 8.5680751174,
-      "rs_vs_nifty_1m": 13.13,
-      "rs_vs_sector_1m": 8.57,
-      "deliv_pct": 50.06,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 7.59,
-      "atr": 23.5334483683,
-      "stop_1_5atr": 565.95,
-      "target_5pct": 631.31,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Consumer Services"
-    },
-    {
-      "symbol": "LOKESHMACH",
-      "close": 453.85,
-      "score": 13,
-      "perf_1m": 31.2463851938,
-      "rs_vs_nifty_1m": 35.81,
-      "rs_vs_sector_1m": 33.2,
-      "deliv_pct": 44.27,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 7.52,
-      "atr": 25.6149470187,
-      "stop_1_5atr": 415.43,
-      "target_5pct": 476.54,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Technology Services"
-    },
-    {
-      "symbol": "MVGJL",
-      "close": 213.11,
-      "score": 13,
-      "perf_1m": 2.1130809775,
-      "rs_vs_nifty_1m": 6.67,
-      "rs_vs_sector_1m": 2.11,
-      "deliv_pct": 44.33,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 9.8,
-      "atr": 12.6855598255,
-      "stop_1_5atr": 194.08,
-      "target_5pct": 223.77,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Retail Trade"
     }
   ],
   "urls": {
@@ -2977,7 +2977,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-10-14T01:07:39.442505+05:30",
+    "generated_at_ist": "2026-10-14T06:11:05.406008+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,
@@ -2999,13 +2999,13 @@
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "VINDHYATEL",
+        "symbol": "PGIL",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "PGIL",
+        "symbol": "VINDHYATEL",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
