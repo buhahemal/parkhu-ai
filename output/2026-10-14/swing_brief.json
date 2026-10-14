@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -5.85,
     "fii_net": -1857.44,
     "dii_net": 2670.44,
-    "crude": 95.19,
-    "crude_pct_change": 1.12,
+    "crude": 95.52,
+    "crude_pct_change": 1.47,
     "usdinr": 95.14,
     "usdinr_pct_change": -0.66,
-    "us_sp500_pct": -0.02,
-    "us_dow_pct": -0.35,
-    "us_vix": 15.28,
-    "us_vix_pct": 0.07,
-    "dxy": 102.2,
-    "dxy_pct": 0.02,
-    "us_10y": 5.19,
+    "us_sp500_pct": -1.24,
+    "us_dow_pct": -0.4,
+    "us_vix": 16.73,
+    "us_vix_pct": 9.56,
+    "dxy": 102.7,
+    "dxy_pct": 0.51,
+    "us_10y": 5.22,
     "asia_cue": "Bearish",
     "europe_cue": "Bullish",
-    "global_risk": "Neutral",
+    "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-14T18:10:03.826415+05:30"
+    "generated_at_ist": "2026-10-14T23:08:22.895368+05:30"
   },
   "funnel": [
     {
@@ -1432,6 +1432,26 @@
         "score_now": null
       },
       {
+        "symbol": "MAZDA",
+        "date_opened": "2026-10-14",
+        "status": "open",
+        "entry": 320.45,
+        "stop": 294.81,
+        "t1": 371.72,
+        "price": 320.45,
+        "pct": 0.0,
+        "r_multiple": 0.0,
+        "days_held": 0,
+        "horizon_t1": 8,
+        "mfe_pct": 1.78,
+        "mae_pct": -6.4,
+        "gap_flag": false,
+        "action": "HOLD",
+        "detail": "+0.00% (+0.00R), 0d held, ~8d left to the T1 horizon",
+        "score_at_open": 81.1,
+        "score_now": null
+      },
+      {
         "symbol": "PREMIERPOL",
         "date_opened": "2026-10-05",
         "status": "partial",
@@ -1470,10 +1490,10 @@
     }
   },
   "ledger": {
-    "opened": [
+    "opened": [],
+    "reconfirmed": [
       "MAZDA"
-    ],
-    "reconfirmed": []
+    ]
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",

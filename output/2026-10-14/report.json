@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-14",
-  "generated_at_ist": "2026-10-14T18:10:23.929102+05:30",
-  "duration_seconds": 409.5,
+  "generated_at_ist": "2026-10-14T23:08:47.989033+05:30",
+  "duration_seconds": 412.0,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,7 +14,7 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3194,
-      "seconds": 3.4
+      "seconds": 3.3
     },
     {
       "agent": "ohlc_history",
@@ -29,7 +29,7 @@
       "cold": 429,
       "new_symbols": 31,
       "retries": 2,
-      "seconds": 332.5
+      "seconds": 330.3
     },
     {
       "agent": "earnings",
@@ -42,13 +42,13 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 1.2
+      "seconds": 0.7
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 2.0
+      "seconds": 1.6
     },
     {
       "agent": "smartmoney",
@@ -66,7 +66,7 @@
       "agent": "derivatives",
       "status": "ok",
       "rows": 457,
-      "seconds": 5.0
+      "seconds": 6.2
     },
     {
       "agent": "stock_options",
@@ -79,25 +79,25 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2332,
-      "seconds": 6.1
+      "seconds": 5.5
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 2.9
+      "seconds": 3.9
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.6
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 5.9
+      "seconds": 5.3
     },
     {
       "agent": "relative_strength",
@@ -109,13 +109,13 @@
       "agent": "event_risk",
       "status": "ok",
       "rows": 3194,
-      "seconds": 0.6
+      "seconds": 1.1
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 211,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "news_classify",
@@ -142,13 +142,13 @@
       "with_structure": 2891,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 17.5
+      "seconds": 21.2
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3194,
-      "seconds": 2.3
+      "seconds": 3.5
     },
     {
       "agent": "swing_brief",
@@ -158,14 +158,14 @@
         "MAZDA"
       ],
       "watchlist": 1,
-      "open_positions": 4,
+      "open_positions": 5,
       "needing_action": [
         "CASTROLIND",
         "KENNAMET",
         "WELCORP"
       ],
       "closed_today": [],
-      "seconds": 0.2
+      "seconds": 0.3
     }
   ],
   "ok": 19,
