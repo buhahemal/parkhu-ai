@@ -1,14 +1,14 @@
-# Parkhu research pack — 2026-10-14
+# Parkhu research pack — 2026-10-15
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-14T23:08:47.989033+05:30
+- **generated_at_ist:** 2026-10-15T06:09:56.875848+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
 - nifty: Bearish (-0.44%)
-- india_vix: 14.62 (Medium)
+- india_vix: 14.12 (Medium)
 - fii_net: -1857.44 | dii_net: 2670.44
 - overall_risk: Medium | global_risk: Risk-Off
 
@@ -20,7 +20,7 @@
 - price > EMA50: 782
 - ADX14 > 25: 337
 - RSI14 in 40-80: 310
-- RS > 0 vs NIFTY and sector: 178
+- RS > 0 vs NIFTY and sector: 177
 - delivery% >= 40: 78
 - relative_volume >= 1: 22
 - no earnings within 21d: 19
@@ -35,7 +35,7 @@
 - **VIVIANA** [rejected] score 66.9 — T1 needs more than 22 trading days (~1 month)
 - **OMAXAUTO** [rejected] score 66.7 — score below Watch band
 - **MVGJL** [rejected] score 62.7 — score below Watch band
-- **CEIGALL** [rejected] score 62.0 — score below Watch band
+- **CEIGALL** [rejected] score 62.1 — score below Watch band
 - **DANGEE** [rejected] score 57.0 — T1 needs more than 22 trading days (~1 month)
 - **MMP** [rejected] score 53.7 — score below Watch band
 - **EMKAY** [rejected] score 52.0 — T1 needs more than 22 trading days (~1 month)
@@ -71,31 +71,31 @@
 
 ## Swing candidates (top)
 
+- AHCL: score=14 rs_nifty=67.1 deliv=47.25
+- OMAXAUTO: score=14 rs_nifty=18.83 deliv=55.83
 - DBSTOCKBRO: score=14 rs_nifty=14.43 deliv=97.15
 - AEQUS: score=14 rs_nifty=18.98 deliv=45.12
+- MVGJL: score=14 rs_nifty=6.71 deliv=40.34
 - EMKAY: score=14 rs_nifty=16.03 deliv=64.03
 - MEESHO: score=14 rs_nifty=9.52 deliv=61.86
-- MVGJL: score=14 rs_nifty=6.71 deliv=40.34
-- OMAXAUTO: score=14 rs_nifty=18.83 deliv=55.83
-- AHCL: score=14 rs_nifty=67.1 deliv=47.25
-- SUNFLAG: score=13 rs_nifty=29.63 deliv=59.12
-- TEGA: score=13 rs_nifty=17.69 deliv=40.15
-- GPPL: score=13 rs_nifty=13.02 deliv=42.18
-- ICIL: score=13 rs_nifty=9.74 deliv=41.45
-- EBGNG: score=13 rs_nifty=12.01 deliv=44.5
-- PGIL: score=13 rs_nifty=11.79 deliv=55.28
-- JAMNAAUTO: score=13 rs_nifty=16.19 deliv=42.82
-- RAMRAT: score=13 rs_nifty=13.94 deliv=49.62
+- SHREEPUSHK: score=13 rs_nifty=6.99 deliv=51.08
+- OAL: score=13 rs_nifty=3.36 deliv=45.68
+- YUKEN: score=13 rs_nifty=7.7 deliv=55.7
+- HLEGLAS: score=13 rs_nifty=16.11 deliv=47.9
+- RPSGVENT: score=13 rs_nifty=10.83 deliv=60.99
+- BOROLTD: score=13 rs_nifty=7.79 deliv=45.19
+- DYNPRO: score=13 rs_nifty=6.3 deliv=79.93
+- VINDHYATEL: score=13 rs_nifty=9.06 deliv=41.83
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.82% (bear)
-- Hang Seng: +0.30% (bull)
-- Shanghai: +0.10% (neutral)
-- Kospi: -5.46% (bear)
-- Taiwan: -1.95% (bear)
-- ASX 200: -0.64% (bear)
+- Nikkei: -3.20% (bear)
+- Hang Seng: -0.13% (neutral)
+- Shanghai: -0.89% (bear)
+- Kospi: -6.34% (bear)
+- Taiwan: +0.59% (bull)
+- ASX 200: -0.73% (bear)
 
 ### Europe
 - FTSE 100: +0.70% (bull)
@@ -103,19 +103,19 @@
 - Euro Stoxx 50: +0.38% (bull)
 
 ### US
-- S&P 500: -1.24% (bear)
-- Nasdaq: -1.89% (bear)
-- Dow: -0.40% (bear)
-- US VIX: +9.56% (bear)
+- S&P 500: -1.11% (bear)
+- Nasdaq: -1.88% (bear)
+- Dow: -0.09% (neutral)
+- US VIX: +10.48% (bear)
 
 ### Macro
-- USDINR: -0.66% (bull)
-- Crude WTI: +1.47% (bull)
-- Brent: +0.75% (bull)
-- DXY: +0.51% (bear)
-- US 10Y: +0.04% (neutral)
-- India ETF: -0.59% (bear)
-- EM ETF: -2.01% (bear)
+- USDINR: -0.51% (bull)
+- Crude WTI: +0.55% (bull)
+- Brent: -0.21% (bear)
+- DXY: +0.01% (neutral)
+- US 10Y: -0.52% (bull)
+- India ETF: +1.90% (bull)
+- EM ETF: -2.05% (bear)
 
 
 ## Groq desk note
@@ -134,6 +134,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-14/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-15/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
