@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-15
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-15T18:10:26.256556+05:30
+- **generated_at_ist:** 2026-10-15T22:55:54.459202+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,7 +10,7 @@
 - nifty: Bullish (1.66%)
 - india_vix: 14.02 (Medium)
 - fii_net: -5285.37 | dii_net: 3319.39
-- overall_risk: Medium | global_risk: Risk-Off
+- overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
@@ -41,16 +41,6 @@
 
 ## Ideas
 
-### CPPLUS — Watch (score 14.0)
-- CPPLUS | risk_sector: Consumer Durables
-- entry 4109.1 | stop 3768.25 | t1 4314.56 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### 21STCENMGM — Watch (score 14.0)
-- 21STCENMGM | risk_sector: Finance
-- entry 44.48 | stop 41.91 | t1 46.7 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### DYNAMATECH — Watch (score 14.0)
 - DYNAMATECH | risk_sector: Producer Manufacturing
 - entry 13638.0 | stop 12765.92 | t1 14319.9 | t2 None | t3 None | R:R None
@@ -61,9 +51,19 @@
 - entry 2834.8 | stop 2619.68 | t1 2976.54 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### RPSGVENT — Watch (score 13.0)
-- RPSGVENT | risk_sector: Finance
-- entry 871.9 | stop 822.01 | t1 915.5 | t2 None | t3 None | R:R None
+### CPPLUS — Watch (score 14.0)
+- CPPLUS | risk_sector: Consumer Durables
+- entry 4109.1 | stop 3768.25 | t1 4314.56 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### 21STCENMGM — Watch (score 14.0)
+- 21STCENMGM | risk_sector: Finance
+- entry 44.48 | stop 41.91 | t1 46.7 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SKYGOLD — Watch (score 13.0)
+- SKYGOLD | risk_sector: Consumer Durables
+- entry 1001.45 | stop 940.69 | t1 1051.52 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -82,51 +82,51 @@
 
 ## Swing candidates (top)
 
-- CPPLUS: score=14 rs_nifty=7.94 deliv=45.87
-- 21STCENMGM: score=14 rs_nifty=18.19 deliv=77.88
 - DYNAMATECH: score=14 rs_nifty=12.3 deliv=49.67
 - VINDHYATEL: score=14 rs_nifty=0.58 deliv=45.74
-- RPSGVENT: score=13 rs_nifty=5.34 deliv=53.52
-- EIMCOELECO: score=13 rs_nifty=0.56 deliv=47.33
-- BANARBEADS: score=13 rs_nifty=2.89 deliv=67.88
-- TEXINFRA: score=13 rs_nifty=7.84 deliv=43.31
-- KOPRAN: score=13 rs_nifty=16.94 deliv=43.07
-- TFCILTD: score=13 rs_nifty=11.86 deliv=44.0
-- PATELRMART: score=13 rs_nifty=12.64 deliv=53.95
-- ARCHIDPLY: score=13 rs_nifty=3.31 deliv=83.09
-- SUNFLAG: score=13 rs_nifty=26.1 deliv=55.5
-- ZIMLAB: score=13 rs_nifty=3.68 deliv=56.58
-- UNIMECH: score=13 rs_nifty=8.69 deliv=42.06
+- CPPLUS: score=14 rs_nifty=7.94 deliv=45.87
+- 21STCENMGM: score=14 rs_nifty=18.19 deliv=77.88
+- SKYGOLD: score=13 rs_nifty=20.45 deliv=45.29
+- DCMFINSERV: score=13 rs_nifty=4.46 deliv=100.0
+- PRINCEPIPE: score=13 rs_nifty=2.95 deliv=45.14
+- OMAXAUTO: score=13 rs_nifty=17.75 deliv=53.08
+- PCJEWELLER: score=13 rs_nifty=4.85 deliv=27.08
+- MAZDA: score=13 rs_nifty=21.05 deliv=32.95
+- MANBA: score=13 rs_nifty=5.93 deliv=61.68
+- PVRINOX: score=13 rs_nifty=12.42 deliv=51.07
+- ARVEE: score=13 rs_nifty=28.08 deliv=54.1
+- KAMATHOTEL: score=13 rs_nifty=13.52 deliv=66.1
+- EMKAY: score=13 rs_nifty=8.02 deliv=62.16
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -4.90% (bear)
-- Hang Seng: -1.03% (bear)
-- Shanghai: -1.59% (bear)
-- Kospi: -7.57% (bear)
-- Taiwan: -3.41% (bear)
+- Nikkei: -0.05% (neutral)
+- Hang Seng: -0.13% (neutral)
+- Shanghai: -0.89% (bear)
+- Kospi: -0.44% (bear)
+- Taiwan: +0.59% (bull)
 - ASX 200: -0.09% (neutral)
 
 ### Europe
-- FTSE 100: +0.79% (bull)
-- DAX: -0.32% (bear)
-- Euro Stoxx 50: -0.70% (bear)
+- FTSE 100: +1.08% (bull)
+- DAX: +0.33% (bull)
+- Euro Stoxx 50: -0.36% (bear)
 
 ### US
-- S&P 500: -1.11% (bear)
-- Nasdaq: -1.88% (bear)
-- Dow: -0.09% (neutral)
-- US VIX: +3.62% (bear)
+- S&P 500: +0.16% (bull)
+- Nasdaq: -0.25% (bear)
+- Dow: +0.94% (bull)
+- US VIX: -0.41% (bull)
 
 ### Macro
-- USDINR: -0.24% (neutral)
-- Crude WTI: -1.31% (bear)
-- Brent: -1.58% (bear)
-- DXY: -0.41% (bull)
-- US 10Y: -2.06% (bull)
-- India ETF: -0.42% (bear)
-- EM ETF: -2.05% (bear)
+- USDINR: -0.25% (neutral)
+- Crude WTI: +1.33% (bull)
+- Brent: -0.17% (bear)
+- DXY: -0.46% (bull)
+- US 10Y: -1.95% (bull)
+- India ETF: +1.78% (bull)
+- EM ETF: -1.07% (bear)
 
 
 ## Groq desk note
