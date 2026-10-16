@@ -1,5 +1,5 @@
 {
-  "data_date": "2026-10-15",
+  "data_date": "2026-10-16",
   "symbol_cap": 50,
   "funnel": [
     {
@@ -15,6 +15,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "SAPPL",
         "KARNIKA",
         "HMAAGRO",
@@ -23,9 +24,9 @@
         "SHRADDHA",
         "TCS",
         "AEGISLOG",
-        "SUNRAKSHAK",
         "MAZDA",
         "SEJALLTD",
+        "SUNRAKSHAK",
         "CASTROLIND",
         "ELANTAS",
         "NTCIND",
@@ -44,8 +45,8 @@
         "HALDYNGL",
         "INFOBEAN",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -55,8 +56,7 @@
         "PIXTRANS",
         "DMCC",
         "MHLXMIRU",
-        "GROWW",
-        "JAYNECOIND"
+        "GROWW"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -75,6 +75,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "SAPPL",
         "KARNIKA",
         "HMAAGRO",
@@ -83,9 +84,9 @@
         "SHRADDHA",
         "TCS",
         "AEGISLOG",
-        "SUNRAKSHAK",
         "MAZDA",
         "SEJALLTD",
+        "SUNRAKSHAK",
         "CASTROLIND",
         "ELANTAS",
         "NTCIND",
@@ -104,8 +105,8 @@
         "HALDYNGL",
         "INFOBEAN",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -115,8 +116,7 @@
         "PIXTRANS",
         "DMCC",
         "MHLXMIRU",
-        "GROWW",
-        "JAYNECOIND"
+        "GROWW"
       ],
       "dropped_symbols": [
         "INDIANB",
@@ -147,8 +147,8 @@
         "CANFINHOME",
         "MANAPPURAM",
         "PRUDMOULI",
-        "PFC",
         "TRANSTEEL",
+        "PFC",
         "DDEVPLSTIK",
         "ICRA",
         "STARHEALTH",
@@ -165,10 +165,10 @@
         "GLOBUSSPR",
         "KNAGRI",
         "LODHA",
+        "HESTERBIO",
         "SUZLON",
         "SWARAJENG",
-        "SBIN",
-        "SIGMA"
+        "SBIN"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -186,6 +186,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "KARNIKA",
         "HMAAGRO",
         "AVTNPL",
@@ -207,8 +208,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -226,8 +227,7 @@
         "ONEPOINT",
         "INDIAGLYCO",
         "SAHANA",
-        "SMLT",
-        "PRIZOR"
+        "SMLT"
       ],
       "dropped_symbols": [
         "SAPPL",
@@ -297,6 +297,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "KARNIKA",
         "HMAAGRO",
         "AVTNPL",
@@ -318,8 +319,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -337,8 +338,7 @@
         "ONEPOINT",
         "INDIAGLYCO",
         "SAHANA",
-        "SMLT",
-        "PRIZOR"
+        "SMLT"
       ],
       "dropped_symbols": [
         "SRHHYPOLTD",
@@ -385,8 +385,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "PASUPTAC",
         "DPABHUSHAN",
@@ -409,15 +409,15 @@
         "MODIS",
         "JAYKAY",
         "BHAGERIA",
-        "IVP",
         "MEGATHERM",
+        "IVP",
         "ALICON",
         "SBC",
         "PGIL",
         "SHEETAL",
         "RATNAVEER",
-        "VALIANTORG",
-        "KORE"
+        "KORE",
+        "VALIANTORG"
       ],
       "dropped_symbols": [
         "KARURVYSYA",
@@ -425,6 +425,7 @@
         "LTTS",
         "ICICIBANK",
         "HCLTECH",
+        "SOUTHBANK",
         "KARNIKA",
         "AEGISLOG",
         "BEPL",
@@ -450,7 +451,6 @@
         "INDOAMIN",
         "FINEORG",
         "PERSISTENT",
-        "SOUTHBANK",
         "SUNLITE",
         "GANDHITUBE",
         "KMEW",
@@ -495,8 +495,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "PASUPTAC",
         "DPABHUSHAN",
@@ -518,8 +518,8 @@
         "MODIS",
         "JAYKAY",
         "BHAGERIA",
-        "IVP",
         "MEGATHERM",
+        "IVP",
         "ALICON",
         "PGIL",
         "SHEETAL",
@@ -769,8 +769,8 @@
         "KILITCH",
         "POSITRON",
         "THELEELA",
-        "KROSS",
         "INFINIUM",
+        "KROSS",
         "SURANI",
         "RBZJEWEL",
         "PRESSTONIC",
@@ -857,13 +857,14 @@
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 9,
-      "dropped_count": 5,
+      "surviving": 10,
+      "dropped_count": 4,
       "survivor_symbols": [
         "TFCILTD",
         "DYNAMATECH",
         "TEXINFRA",
         "VINDHYATEL",
+        "CYIENTDLM",
         "ZOTA",
         "DEVX",
         "CPPLUS",
@@ -874,21 +875,21 @@
         "KOTAKBANK",
         "ONWARDTEC",
         "RATNAVEER",
-        "AURUM",
-        "CYIENTDLM"
+        "AURUM"
       ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 9,
+      "surviving": 10,
       "dropped_count": 0,
       "survivor_symbols": [
         "TFCILTD",
         "DYNAMATECH",
         "TEXINFRA",
         "VINDHYATEL",
+        "CYIENTDLM",
         "ZOTA",
         "DEVX",
         "CPPLUS",
@@ -901,13 +902,14 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 9,
+      "surviving": 10,
       "dropped_count": 0,
       "survivor_symbols": [
         "TFCILTD",
         "DYNAMATECH",
         "TEXINFRA",
         "VINDHYATEL",
+        "CYIENTDLM",
         "ZOTA",
         "DEVX",
         "CPPLUS",
@@ -957,6 +959,15 @@
       "reason": "score below Watch band"
     },
     {
+      "symbol": "CYIENTDLM",
+      "score": 50.4,
+      "band": "Ignore",
+      "cmp": 1030.1,
+      "risk_sector": "Electronic Technology",
+      "status": "rejected",
+      "reason": "score below Watch band"
+    },
+    {
       "symbol": "ZOTA",
       "score": 44.1,
       "band": "Ignore",
@@ -1002,6 +1013,6 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 9,
+  "survivor_outcomes_total": 10,
   "survivor_outcomes_truncated": false
 }

@@ -1,5 +1,5 @@
 {
-  "data_date": "2026-10-15",
+  "data_date": "2026-10-16",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -19,7 +19,7 @@
     "nifty_pct_change": 1.66,
     "banknifty_trend": "Bullish",
     "banknifty_pct_change": 0.89,
-    "india_vix": 14.02,
+    "india_vix": 14.63,
     "vix_level": "Medium",
     "best_sector": "Commercial Services",
     "best_sector_perf_1m": 1.08,
@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -6.84,
     "fii_net": -5285.37,
     "dii_net": 3319.39,
-    "crude": 96.35,
-    "crude_pct_change": 1.33,
-    "usdinr": 95.04,
-    "usdinr_pct_change": -0.25,
-    "us_sp500_pct": 0.16,
-    "us_dow_pct": 0.94,
-    "us_vix": 16.8,
-    "us_vix_pct": -0.41,
-    "dxy": 102.08,
-    "dxy_pct": -0.46,
+    "crude": 95.91,
+    "crude_pct_change": 0.86,
+    "usdinr": 95.15,
+    "usdinr_pct_change": -0.14,
+    "us_sp500_pct": 0.33,
+    "us_dow_pct": 1.08,
+    "us_vix": 16.46,
+    "us_vix_pct": -2.43,
+    "dxy": 102.06,
+    "dxy_pct": -0.48,
     "us_10y": 5.09,
-    "asia_cue": "Bearish",
+    "asia_cue": "Mixed",
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-15T22:55:29.592890+05:30"
+    "generated_at_ist": "2026-10-16T06:10:19.682523+05:30"
   },
   "funnel": [
     {
@@ -58,6 +58,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "SAPPL",
         "KARNIKA",
         "HMAAGRO",
@@ -66,9 +67,9 @@
         "SHRADDHA",
         "TCS",
         "AEGISLOG",
-        "SUNRAKSHAK",
         "MAZDA",
         "SEJALLTD",
+        "SUNRAKSHAK",
         "CASTROLIND",
         "ELANTAS",
         "NTCIND",
@@ -87,8 +88,8 @@
         "HALDYNGL",
         "INFOBEAN",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -98,8 +99,7 @@
         "PIXTRANS",
         "DMCC",
         "MHLXMIRU",
-        "GROWW",
-        "JAYNECOIND"
+        "GROWW"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -118,6 +118,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "SAPPL",
         "KARNIKA",
         "HMAAGRO",
@@ -126,9 +127,9 @@
         "SHRADDHA",
         "TCS",
         "AEGISLOG",
-        "SUNRAKSHAK",
         "MAZDA",
         "SEJALLTD",
+        "SUNRAKSHAK",
         "CASTROLIND",
         "ELANTAS",
         "NTCIND",
@@ -147,8 +148,8 @@
         "HALDYNGL",
         "INFOBEAN",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -158,8 +159,7 @@
         "PIXTRANS",
         "DMCC",
         "MHLXMIRU",
-        "GROWW",
-        "JAYNECOIND"
+        "GROWW"
       ],
       "dropped_symbols": [
         "INDIANB",
@@ -190,8 +190,8 @@
         "CANFINHOME",
         "MANAPPURAM",
         "PRUDMOULI",
-        "PFC",
         "TRANSTEEL",
+        "PFC",
         "DDEVPLSTIK",
         "ICRA",
         "STARHEALTH",
@@ -208,10 +208,10 @@
         "GLOBUSSPR",
         "KNAGRI",
         "LODHA",
+        "HESTERBIO",
         "SUZLON",
         "SWARAJENG",
-        "SBIN",
-        "SIGMA"
+        "SBIN"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -229,6 +229,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "KARNIKA",
         "HMAAGRO",
         "AVTNPL",
@@ -250,8 +251,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -269,8 +270,7 @@
         "ONEPOINT",
         "INDIAGLYCO",
         "SAHANA",
-        "SMLT",
-        "PRIZOR"
+        "SMLT"
       ],
       "dropped_symbols": [
         "SAPPL",
@@ -340,6 +340,7 @@
         "ICICIBANK",
         "OCCLLTD",
         "HCLTECH",
+        "SOUTHBANK",
         "KARNIKA",
         "HMAAGRO",
         "AVTNPL",
@@ -361,8 +362,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "BHARTIHEXA",
         "SAGILITY",
@@ -380,8 +381,7 @@
         "ONEPOINT",
         "INDIAGLYCO",
         "SAHANA",
-        "SMLT",
-        "PRIZOR"
+        "SMLT"
       ],
       "dropped_symbols": [
         "SRHHYPOLTD",
@@ -428,8 +428,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "PASUPTAC",
         "DPABHUSHAN",
@@ -452,15 +452,15 @@
         "MODIS",
         "JAYKAY",
         "BHAGERIA",
-        "IVP",
         "MEGATHERM",
+        "IVP",
         "ALICON",
         "SBC",
         "PGIL",
         "SHEETAL",
         "RATNAVEER",
-        "VALIANTORG",
-        "KORE"
+        "KORE",
+        "VALIANTORG"
       ],
       "dropped_symbols": [
         "KARURVYSYA",
@@ -468,6 +468,7 @@
         "LTTS",
         "ICICIBANK",
         "HCLTECH",
+        "SOUTHBANK",
         "KARNIKA",
         "AEGISLOG",
         "BEPL",
@@ -493,7 +494,6 @@
         "INDOAMIN",
         "FINEORG",
         "PERSISTENT",
-        "SOUTHBANK",
         "SUNLITE",
         "GANDHITUBE",
         "KMEW",
@@ -538,8 +538,8 @@
         "GPPL",
         "MRPL",
         "GOODLUCK",
-        "GALAXYSURF",
         "KINGFA",
+        "GALAXYSURF",
         "GLOBAL",
         "PASUPTAC",
         "DPABHUSHAN",
@@ -561,8 +561,8 @@
         "MODIS",
         "JAYKAY",
         "BHAGERIA",
-        "IVP",
         "MEGATHERM",
+        "IVP",
         "ALICON",
         "PGIL",
         "SHEETAL",
@@ -812,8 +812,8 @@
         "KILITCH",
         "POSITRON",
         "THELEELA",
-        "KROSS",
         "INFINIUM",
+        "KROSS",
         "SURANI",
         "RBZJEWEL",
         "PRESSTONIC",
@@ -900,13 +900,14 @@
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 9,
-      "dropped_count": 5,
+      "surviving": 10,
+      "dropped_count": 4,
       "survivor_symbols": [
         "TFCILTD",
         "DYNAMATECH",
         "TEXINFRA",
         "VINDHYATEL",
+        "CYIENTDLM",
         "ZOTA",
         "DEVX",
         "CPPLUS",
@@ -917,21 +918,21 @@
         "KOTAKBANK",
         "ONWARDTEC",
         "RATNAVEER",
-        "AURUM",
-        "CYIENTDLM"
+        "AURUM"
       ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 9,
+      "surviving": 10,
       "dropped_count": 0,
       "survivor_symbols": [
         "TFCILTD",
         "DYNAMATECH",
         "TEXINFRA",
         "VINDHYATEL",
+        "CYIENTDLM",
         "ZOTA",
         "DEVX",
         "CPPLUS",
@@ -944,13 +945,14 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 9,
+      "surviving": 10,
       "dropped_count": 0,
       "survivor_symbols": [
         "TFCILTD",
         "DYNAMATECH",
         "TEXINFRA",
         "VINDHYATEL",
+        "CYIENTDLM",
         "ZOTA",
         "DEVX",
         "CPPLUS",
@@ -1008,6 +1010,10 @@
       "score": 50.7
     },
     {
+      "symbol": "CYIENTDLM",
+      "score": 50.4
+    },
+    {
       "symbol": "DEVX",
       "score": 42.7
     },
@@ -1051,6 +1057,15 @@
       "band": "Ignore",
       "cmp": 2834.8,
       "risk_sector": "Industrial Services",
+      "status": "rejected",
+      "reason": "score below Watch band"
+    },
+    {
+      "symbol": "CYIENTDLM",
+      "score": 50.4,
+      "band": "Ignore",
+      "cmp": 1030.1,
+      "risk_sector": "Electronic Technology",
       "status": "rejected",
       "reason": "score below Watch band"
     },
@@ -1100,7 +1115,7 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     }
   ],
-  "survivor_outcomes_total": 9,
+  "survivor_outcomes_total": 10,
   "survivor_outcomes_truncated": false,
   "scoring": {
     "live_weights": {
@@ -1150,7 +1165,7 @@
         "price": 196.23,
         "pct": 1.55,
         "r_multiple": 0.48,
-        "days_held": 16,
+        "days_held": 17,
         "horizon_t1": 21,
         "mfe_pct": 5.26,
         "mae_pct": -1.62,
@@ -1170,13 +1185,13 @@
         "price": 4272.4,
         "pct": 0.14,
         "r_multiple": 0.02,
-        "days_held": 22,
+        "days_held": 23,
         "horizon_t1": 12,
         "mfe_pct": 11.09,
         "mae_pct": -7.23,
         "gap_flag": false,
-        "action": "TIGHTEN / REVIEW",
-        "detail": "ADX 21 \u2014 trend no longer tradeable \u2014 one condition gone, thesis thinning",
+        "action": "EXIT \u2014 TIME STOP",
+        "detail": "23 trading days held, past the 22-day horizon and still at +0.14% \u2014 capital has an opportunity cost",
         "score_at_open": 83.7,
         "score_now": null
       },
@@ -1190,7 +1205,7 @@
         "price": 2486.9,
         "pct": -6.51,
         "r_multiple": -0.81,
-        "days_held": 19,
+        "days_held": 20,
         "horizon_t1": 11,
         "mfe_pct": 9.02,
         "mae_pct": -7.9,
@@ -1210,13 +1225,13 @@
         "price": 307.65,
         "pct": -3.99,
         "r_multiple": -0.5,
-        "days_held": 1,
+        "days_held": 2,
         "horizon_t1": 8,
         "mfe_pct": 1.78,
         "mae_pct": -6.4,
         "gap_flag": false,
         "action": "HOLD",
-        "detail": "-3.99% (-0.50R), 1d held, ~7d left to the T1 horizon",
+        "detail": "-3.99% (-0.50R), 2d held, ~6d left to the T1 horizon",
         "score_at_open": 81.1,
         "score_now": null
       },
@@ -1230,32 +1245,34 @@
         "price": 106.13,
         "pct": 10.53,
         "r_multiple": 1.32,
-        "days_held": 8,
+        "days_held": 9,
         "horizon_t1": 6,
         "mfe_pct": 24.97,
         "mae_pct": -6.47,
         "gap_flag": false,
         "action": "HOLD",
-        "detail": "+10.53% (+1.32R), 8d held, ~0d left to the T1 horizon",
+        "detail": "+10.53% (+1.32R), 9d held, ~0d left to the T1 horizon",
         "score_at_open": 83.5,
         "score_now": null
       }
     ],
-    "closed_today": [],
+    "closed_today": [
+      "KENNAMET"
+    ],
     "stats": {
-      "closed": 62,
-      "win_rate_pct": 22.6,
-      "avg_return_pct": -0.64,
-      "median_return_pct": -3.79,
+      "closed": 63,
+      "win_rate_pct": 23.8,
+      "avg_return_pct": -0.62,
+      "median_return_pct": -3.77,
       "avg_r_multiple": -0.15,
-      "avg_days_held": 10.7,
+      "avg_days_held": 10.9,
       "by_exit_reason": {
         "stop": 39,
-        "time_stop": 14,
+        "time_stop": 15,
         "invalidated": 6,
         "t3": 3
       },
-      "hit_t1_pct": 11.3
+      "hit_t1_pct": 11.1
     }
   },
   "ledger": {
@@ -1264,5 +1281,5 @@
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",
-  "source_brief_date": "2026-10-15"
+  "source_brief_date": "2026-10-16"
 }
