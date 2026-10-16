@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-16
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-16T18:09:56.394975+05:30
+- **generated_at_ist:** 2026-10-16T22:30:27.167466+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,8 +9,8 @@
 - market_regime: **Bullish**
 - nifty: Bullish (0.65%)
 - india_vix: 14.02 (Medium)
-- fii_net: -5285.37 | dii_net: 3319.39
-- overall_risk: Medium | global_risk: Neutral
+- fii_net: 1165.92 | dii_net: -3661.28
+- overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
@@ -45,24 +45,24 @@
 - entry 405.4 | stop 379.07 | t1 425.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### JKIPL — Watch (score 13.0)
-- JKIPL | risk_sector: Distribution Services
-- entry 123.37 | stop 112.01 | t1 129.54 | t2 None | t3 None | R:R None
+### GFLLIMITED — Watch (score 13.0)
+- GFLLIMITED | risk_sector: Consumer Services
+- entry 61.32 | stop 56.93 | t1 64.39 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### KOPRAN — Watch (score 13.0)
-- KOPRAN | risk_sector: Health Technology
-- entry 271.15 | stop 246.24 | t1 284.71 | t2 None | t3 None | R:R None
+### BALRAMCHIN — Watch (score 13.0)
+- BALRAMCHIN | risk_sector: Process Industries
+- entry 721.15 | stop 678.55 | t1 757.21 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### IBULLSLTD — Watch (score 13.0)
-- IBULLSLTD | risk_sector: Finance
-- entry 35.42 | stop 32.39 | t1 37.19 | t2 None | t3 None | R:R None
+### ORBTEXP — Watch (score 13.0)
+- ORBTEXP | risk_sector: Process Industries
+- entry 263.55 | stop 242.51 | t1 276.73 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ARVEE — Watch (score 13.0)
-- ARVEE | risk_sector: Process Industries
-- entry 226.2 | stop 200.85 | t1 237.51 | t2 None | t3 None | R:R None
+### SHREEPUSHK — Watch (score 13.0)
+- SHREEPUSHK | risk_sector: Process Industries
+- entry 503.8 | stop 469.72 | t1 528.99 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -74,7 +74,6 @@
 ## Needs action
 
 - **CASTROLIND**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
-- **MAZDA**: EXIT — STOP HIT — session low at/below stop ₹294.81 (last ₹293.95)
 - **PREMIERPOL**: BANK PARTIAL — T1 REACHED — ₹111.51 above T1 ₹111.38 — bank part, trail the rest, move stop to breakeven ₹96.02
 - **WELCORP**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 
@@ -86,50 +85,50 @@
 ## Swing candidates (top)
 
 - HERITGFOOD: score=14 rs_nifty=3.24 deliv=43.49
-- JKIPL: score=13 rs_nifty=28.57 deliv=46.25
-- KOPRAN: score=13 rs_nifty=8.12 deliv=41.3
-- IBULLSLTD: score=13 rs_nifty=23.25 deliv=45.77
-- ARVEE: score=13 rs_nifty=31.21 deliv=43.82
-- GPTINFRA: score=13 rs_nifty=12.73 deliv=70.33
-- EIMCOELECO: score=13 rs_nifty=2.68 deliv=46.46
+- GFLLIMITED: score=13 rs_nifty=13.49 deliv=52.9
+- BALRAMCHIN: score=13 rs_nifty=7.16 deliv=44.03
+- ORBTEXP: score=13 rs_nifty=13.9 deliv=81.36
 - SHREEPUSHK: score=13 rs_nifty=0.78 deliv=41.97
 - DYNAMATECH: score=13 rs_nifty=15.09 deliv=52.06
-- OMAXAUTO: score=13 rs_nifty=21.96 deliv=48.75
-- SUNFLAG: score=13 rs_nifty=32.74 deliv=45.21
+- ARVEE: score=13 rs_nifty=31.21 deliv=43.82
+- MEESHO: score=13 rs_nifty=7.28 deliv=51.36
+- SIMPLEXINF: score=13 rs_nifty=14.96 deliv=42.51
+- PVRINOX: score=13 rs_nifty=15.15 deliv=51.3
+- DYNPRO: score=13 rs_nifty=9.57 deliv=68.32
+- OCCLLTD: score=13 rs_nifty=29.47 deliv=43.95
+- SMSPHARMA: score=13 rs_nifty=10.13 deliv=25.48
 - VHL: score=13 rs_nifty=10.65 deliv=77.82
-- 21STCENMGM: score=13 rs_nifty=18.67 deliv=68.79
-- ANGELONE: score=13 rs_nifty=2.0 deliv=25.5
-- KAMATHOTEL: score=13 rs_nifty=21.34 deliv=52.54
+- RPSGVENT: score=13 rs_nifty=5.59 deliv=46.56
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.39% (bull)
-- Hang Seng: +0.52% (bull)
-- Shanghai: +0.24% (bull)
-- Kospi: +2.05% (bull)
-- Taiwan: +0.30% (bull)
+- Nikkei: -4.90% (bear)
+- Hang Seng: -1.03% (bear)
+- Shanghai: -1.59% (bear)
+- Kospi: -7.57% (bear)
+- Taiwan: -3.41% (bear)
 - ASX 200: +1.00% (bull)
 
 ### Europe
-- FTSE 100: -0.02% (neutral)
-- DAX: +0.91% (bull)
-- Euro Stoxx 50: +0.68% (bull)
+- FTSE 100: +0.38% (bull)
+- DAX: +0.95% (bull)
+- Euro Stoxx 50: +0.58% (bull)
 
 ### US
-- S&P 500: +0.33% (bull)
-- Nasdaq: +0.08% (neutral)
-- Dow: +1.08% (bull)
-- US VIX: -2.73% (bull)
+- S&P 500: -0.73% (bear)
+- Nasdaq: -1.53% (bear)
+- Dow: -0.20% (bear)
+- US VIX: +7.90% (bear)
 
 ### Macro
-- USDINR: -0.20% (neutral)
-- Crude WTI: -2.30% (bear)
-- Brent: -0.04% (neutral)
-- DXY: -0.27% (neutral)
-- US 10Y: +0.26% (neutral)
-- India ETF: +1.93% (bull)
-- EM ETF: -0.67% (bear)
+- USDINR: -0.21% (neutral)
+- Crude WTI: +0.60% (bull)
+- Brent: +3.42% (bull)
+- DXY: -0.02% (neutral)
+- US 10Y: +0.59% (bear)
+- India ETF: -0.39% (bear)
+- EM ETF: -1.24% (bear)
 
 
 ## Groq desk note
