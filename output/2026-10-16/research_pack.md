@@ -1,83 +1,73 @@
 # Parkhu research pack — 2026-10-16
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-16T06:10:37.922716+05:30
+- **generated_at_ist:** 2026-10-16T10:30:00.959923+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (1.66%)
-- india_vix: 14.63 (Medium)
+- nifty: Bullish (0.64%)
+- india_vix: 14.04 (Medium)
 - fii_net: -5285.37 | dii_net: 3319.39
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
 - universe: 3195
-- trend = Bullish: 946
-- price > SMA200: 719
-- price > EMA50: 701
-- ADX14 > 25: 329
-- RSI14 in 40-80: 306
+- trend = Bullish: 965
+- price > SMA200: 724
+- price > EMA50: 707
+- ADX14 > 25: 330
+- RSI14 in 40-80: 303
 - RS > 0 vs NIFTY and sector: 172
-- delivery% >= 40: 78
-- relative_volume >= 1: 14
-- no earnings within 21d: 10
-- event_risk_score <= 1: 10
-- TV rating not Sell: 10
+- delivery% >= 40: 79
+- relative_volume >= 1: 2
+- no earnings within 21d: 2
+- event_risk_score <= 1: 1
+- TV rating not Sell: 1
 
-## Survivors (top 10 of 10)
+## Survivors (top 1 of 1)
 
-- **TFCILTD** [watchlist] score 78.3 — score in Watch band (70–80)
-- **DYNAMATECH** [rejected] score 59.6 — score below Watch band
-- **TEXINFRA** [rejected] score 58.4 — score below Watch band
-- **VINDHYATEL** [rejected] score 50.7 — score below Watch band
-- **CYIENTDLM** [rejected] score 50.4 — score below Watch band
-- **ZOTA** [rejected] score 44.1 — T1 needs more than 22 trading days (~1 month)
-- **DEVX** [rejected] score 42.7 — score below Watch band
-- **CPPLUS** [rejected] score 41.0 — score below Watch band
-- **21STCENMGM** [rejected] score 40.8 — T1 needs more than 22 trading days (~1 month)
-- **WSI** [rejected] score 38.1 — T1 needs more than 22 trading days (~1 month)
+- **MCLEODRUSS** [rejected] score 57.2 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### DYNAMATECH — Watch (score 14.0)
-- DYNAMATECH | risk_sector: Producer Manufacturing
-- entry 13638.0 | stop 12765.92 | t1 14319.9 | t2 None | t3 None | R:R None
+### MMWL — Watch (score 13.0)
+- MMWL | risk_sector: Technology Services
+- entry 21.14 | stop 19.1 | t1 22.2 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### VINDHYATEL — Watch (score 14.0)
-- VINDHYATEL | risk_sector: Industrial Services
-- entry 2834.8 | stop 2619.68 | t1 2976.54 | t2 None | t3 None | R:R None
+### RGL — Watch (score 13.0)
+- RGL | risk_sector: Consumer Durables
+- entry 163.06 | stop 151.51 | t1 171.21 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### CPPLUS — Watch (score 14.0)
-- CPPLUS | risk_sector: Consumer Durables
-- entry 4109.1 | stop 3768.25 | t1 4314.56 | t2 None | t3 None | R:R None
+### AHCL — Watch (score 13.0)
+- AHCL | risk_sector: Health Technology
+- entry 27.66 | stop 24.76 | t1 29.04 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### 21STCENMGM — Watch (score 14.0)
+### 21STCENMGM — Watch (score 13.0)
 - 21STCENMGM | risk_sector: Finance
-- entry 44.48 | stop 41.91 | t1 46.7 | t2 None | t3 None | R:R None
+- entry 44.52 | stop 41.91 | t1 46.75 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### MAZDA — Watch (score 13.0)
-- MAZDA | risk_sector: Producer Manufacturing
-- entry 307.65 | stop 279.8 | t1 323.03 | t2 None | t3 None | R:R None
+### PERSISTENT — Watch (score 13.0)
+- PERSISTENT | risk_sector: Technology Services
+- entry 5635.0 | stop 5358.58 | t1 5916.75 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **WELCORP** status=open entry=2660.1 last=2486.9 mfe=9.02 mae=-7.9 opened=2026-09-18
-- **CASTROLIND** status=open entry=193.23 last=196.23 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=partial entry=96.02 last=106.13 mfe=24.97 mae=-6.47 opened=2026-10-05
-- **MAZDA** status=open entry=320.45 last=307.65 mfe=1.78 mae=-6.4 opened=2026-10-14
+- **WELCORP** status=open entry=2660.1 last=2611.8 mfe=9.02 mae=-7.9 opened=2026-09-18
+- **CASTROLIND** status=open entry=193.23 last=195.5 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=partial entry=96.02 last=109.92 mfe=24.97 mae=-6.47 opened=2026-10-05
+- **MAZDA** status=open entry=320.45 last=300.4 mfe=1.78 mae=-6.4 opened=2026-10-14
 
 ## Needs action
 
-- **CASTROLIND**: EARNINGS AHEAD — results inside 21 days — KB-05 says reduce or stand aside rather than hold through the print
-- **KENNAMET**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at +0.14% — capital has an opportunity cost
+- **CASTROLIND**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
 - **WELCORP**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
@@ -86,31 +76,31 @@
 
 ## Swing candidates (top)
 
-- DYNAMATECH: score=14 rs_nifty=12.3 deliv=49.67
-- VINDHYATEL: score=14 rs_nifty=0.58 deliv=45.74
-- CPPLUS: score=14 rs_nifty=7.94 deliv=45.87
-- 21STCENMGM: score=14 rs_nifty=18.19 deliv=77.88
-- MAZDA: score=13 rs_nifty=21.05 deliv=32.95
-- NEOGEN: score=13 rs_nifty=5.84 deliv=43.67
-- OMAXAUTO: score=13 rs_nifty=17.75 deliv=53.08
-- SUNFLAG: score=13 rs_nifty=26.1 deliv=55.5
-- JAMNAAUTO: score=13 rs_nifty=4.19 deliv=46.42
-- TFCILTD: score=13 rs_nifty=11.86 deliv=44.0
-- TANLA: score=13 rs_nifty=8.75 deliv=27.35
-- PGIL: score=13 rs_nifty=7.48 deliv=36.27
-- LGEINDIA: score=13 rs_nifty=6.34 deliv=47.09
-- MARINE: score=13 rs_nifty=4.94 deliv=44.62
-- PARAGMILK: score=13 rs_nifty=10.52 deliv=51.63
+- MMWL: score=13 rs_nifty=53.86 deliv=80.0
+- RGL: score=13 rs_nifty=9.56 deliv=61.34
+- AHCL: score=13 rs_nifty=37.27 deliv=52.0
+- 21STCENMGM: score=13 rs_nifty=14.52 deliv=77.88
+- PERSISTENT: score=13 rs_nifty=2.39 deliv=50.01
+- MUKANDLTD: score=13 rs_nifty=28.77 deliv=51.21
+- JAMNAAUTO: score=13 rs_nifty=12.08 deliv=46.42
+- PATELRMART: score=13 rs_nifty=15.35 deliv=53.95
+- MODIS: score=13 rs_nifty=15.1 deliv=53.34
+- CPPLUS: score=13 rs_nifty=11.27 deliv=45.87
+- OMAXAUTO: score=13 rs_nifty=19.57 deliv=53.08
+- SUNFLAG: score=13 rs_nifty=33.51 deliv=55.5
+- SWELECTES: score=13 rs_nifty=14.41 deliv=73.67
+- ROSSTECH: score=13 rs_nifty=22.66 deliv=58.89
+- KOPRAN: score=13 rs_nifty=7.52 deliv=43.07
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.08% (bull)
-- Hang Seng: -1.03% (bear)
-- Shanghai: -1.59% (bear)
-- Kospi: +1.73% (bull)
-- Taiwan: -3.41% (bear)
-- ASX 200: +1.05% (bull)
+- Nikkei: +1.83% (bull)
+- Hang Seng: +1.21% (bull)
+- Shanghai: +0.95% (bull)
+- Kospi: +3.69% (bull)
+- Taiwan: +0.59% (bull)
+- ASX 200: +1.06% (bull)
 
 ### Europe
 - FTSE 100: +1.08% (bull)
@@ -124,12 +114,12 @@
 - US VIX: -2.43% (bull)
 
 ### Macro
-- USDINR: -0.14% (neutral)
-- Crude WTI: +0.86% (bull)
-- Brent: -0.61% (bear)
-- DXY: -0.48% (bull)
+- USDINR: -0.32% (neutral)
+- Crude WTI: -2.10% (bear)
+- Brent: -0.46% (bear)
+- DXY: -0.10% (neutral)
 - US 10Y: -1.95% (bull)
-- India ETF: -0.42% (bear)
+- India ETF: +1.93% (bull)
 - EM ETF: -0.67% (bear)
 
 
