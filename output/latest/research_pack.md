@@ -1,14 +1,14 @@
-# Parkhu research pack — 2026-10-16
+# Parkhu research pack — 2026-10-17
 
-- **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-16T22:30:27.167466+05:30
+- **session_date:** 2026-07-24 (trading day: False)
+- **generated_at_ist:** 2026-10-17T06:09:42.426938+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.65%)
-- india_vix: 14.02 (Medium)
+- nifty: Bullish (1.66%)
+- india_vix: 14.03 (Medium)
 - fii_net: 1165.92 | dii_net: -3661.28
 - overall_risk: Medium | global_risk: Risk-Off
 
@@ -20,7 +20,7 @@
 - price > EMA50: 747
 - ADX14 > 25: 331
 - RSI14 in 40-80: 308
-- RS > 0 vs NIFTY and sector: 176
+- RS > 0 vs NIFTY and sector: 178
 - delivery% >= 40: 68
 - relative_volume >= 1: 8
 - no earnings within 21d: 8
@@ -35,8 +35,8 @@
 - **MCLEODRUSS** [rejected] score 56.5 — T1 needs more than 22 trading days (~1 month)
 - **DIVISLAB** [rejected] score 55.6 — score below Watch band
 - **SAMBHV** [rejected] score 55.5 — score below Watch band
-- **PARAGMILK** [rejected] score 51.9 — score below Watch band
-- **21STCENMGM** [rejected] score 38.1 — score below Watch band
+- **PARAGMILK** [rejected] score 51.8 — score below Watch band
+- **21STCENMGM** [rejected] score 38.0 — score below Watch band
 
 ## Ideas
 
@@ -45,24 +45,24 @@
 - entry 405.4 | stop 379.07 | t1 425.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GFLLIMITED — Watch (score 13.0)
-- GFLLIMITED | risk_sector: Consumer Services
-- entry 61.32 | stop 56.93 | t1 64.39 | t2 None | t3 None | R:R None
+### BIL — Watch (score 13.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 1053.35 | stop 985.31 | t1 1106.02 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### BALRAMCHIN — Watch (score 13.0)
-- BALRAMCHIN | risk_sector: Process Industries
-- entry 721.15 | stop 678.55 | t1 757.21 | t2 None | t3 None | R:R None
+### PNB — Watch (score 13.0)
+- PNB | risk_sector: Finance
+- entry 116.3 | stop 111.96 | t1 122.12 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ORBTEXP — Watch (score 13.0)
-- ORBTEXP | risk_sector: Process Industries
-- entry 263.55 | stop 242.51 | t1 276.73 | t2 None | t3 None | R:R None
+### TANLA — Watch (score 13.0)
+- TANLA | risk_sector: Technology Services
+- entry 559.65 | stop 530.18 | t1 587.63 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SHREEPUSHK — Watch (score 13.0)
-- SHREEPUSHK | risk_sector: Process Industries
-- entry 503.8 | stop 469.72 | t1 528.99 | t2 None | t3 None | R:R None
+### SUNFLAG — Watch (score 13.0)
+- SUNFLAG | risk_sector: Non-Energy Minerals
+- entry 430.4 | stop 400.77 | t1 451.92 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -77,28 +77,23 @@
 - **PREMIERPOL**: BANK PARTIAL — T1 REACHED — ₹111.51 above T1 ₹111.38 — bank part, trail the rest, move stop to breakeven ₹96.02
 - **WELCORP**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 
-## Closed today
-
-- KENNAMET: {'trade_id': '2026-09-15-KENNAMET', 'symbol': 'KENNAMET', 'company': 'Kennametal India Limited', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-09-15', 'taken': None, 'entry': 4266.4, 'stop': 3925.09, 't1': 5136.0, 't2': 5477.31, 't3': 5818.62, 'structure_invalidation': 3807.03, 'horizon_days_t1': 12, 'horizon_days_t2': 22, 'score_at_open': 83.7, 'qty': 2, 'risk_rupees': 683.0, 'status': 'closed', 'last_price': 4272.4, 'last_checked': '2026-10-16', 'mfe_pct': 11.09, 'mae_pct': -7.23, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 5, 'notes': None, 'date_closed': '2026-10-16', 'exit_price': 4272.4, 'exit_reason': 'time_stop', 'pct_return': 0.14, 'r_multiple': 0.02, 'days_held': 23}
-- MAZDA: {'trade_id': '2026-10-14-MAZDA', 'symbol': 'MAZDA', 'company': 'Mazda Limited', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-10-14', 'taken': None, 'entry': 320.45, 'stop': 294.81, 't1': 371.72, 't2': 397.36, 't3': 422.99, 'structure_invalidation': 264.3, 'horizon_days_t1': 8, 'horizon_days_t2': 18, 'score_at_open': 81.1, 'qty': 31, 'risk_rupees': 795.0, 'status': 'closed', 'last_price': 293.95, 'last_checked': '2026-10-16', 'mfe_pct': 1.78, 'mae_pct': -9.38, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 2, 'notes': None, 'date_closed': '2026-10-16', 'exit_price': 293.95, 'exit_reason': 'stop', 'pct_return': -8.27, 'r_multiple': -1.03, 'days_held': 2}
-
 ## Swing candidates (top)
 
-- HERITGFOOD: score=14 rs_nifty=3.24 deliv=43.49
-- GFLLIMITED: score=13 rs_nifty=13.49 deliv=52.9
-- BALRAMCHIN: score=13 rs_nifty=7.16 deliv=44.03
-- ORBTEXP: score=13 rs_nifty=13.9 deliv=81.36
-- SHREEPUSHK: score=13 rs_nifty=0.78 deliv=41.97
-- DYNAMATECH: score=13 rs_nifty=15.09 deliv=52.06
-- ARVEE: score=13 rs_nifty=31.21 deliv=43.82
-- MEESHO: score=13 rs_nifty=7.28 deliv=51.36
-- SIMPLEXINF: score=13 rs_nifty=14.96 deliv=42.51
-- PVRINOX: score=13 rs_nifty=15.15 deliv=51.3
-- DYNPRO: score=13 rs_nifty=9.57 deliv=68.32
-- OCCLLTD: score=13 rs_nifty=29.47 deliv=43.95
-- SMSPHARMA: score=13 rs_nifty=10.13 deliv=25.48
-- VHL: score=13 rs_nifty=10.65 deliv=77.82
-- RPSGVENT: score=13 rs_nifty=5.59 deliv=46.56
+- HERITGFOOD: score=14 rs_nifty=3.45 deliv=43.49
+- BIL: score=13 rs_nifty=2.89 deliv=61.38
+- PNB: score=13 rs_nifty=1.89 deliv=43.88
+- TANLA: score=13 rs_nifty=13.58 deliv=31.61
+- SUNFLAG: score=13 rs_nifty=32.95 deliv=45.21
+- PATELRMART: score=13 rs_nifty=15.26 deliv=64.4
+- SGMART: score=13 rs_nifty=12.0 deliv=63.7
+- FEDFINA: score=13 rs_nifty=5.96 deliv=54.32
+- JAMNAAUTO: score=13 rs_nifty=10.5 deliv=42.52
+- TEMBO: score=13 rs_nifty=7.27 deliv=43.71
+- NECCLTD: score=13 rs_nifty=6.91 deliv=88.7
+- IIFLCAPS: score=13 rs_nifty=3.74 deliv=58.31
+- SIMPLEXINF: score=13 rs_nifty=15.17 deliv=42.51
+- EIMCOELECO: score=13 rs_nifty=2.89 deliv=46.46
+- GALAXYSURF: score=13 rs_nifty=18.94 deliv=48.38
 
 ## World markets (India cues)
 
@@ -111,24 +106,24 @@
 - ASX 200: +1.00% (bull)
 
 ### Europe
-- FTSE 100: +0.38% (bull)
-- DAX: +0.95% (bull)
-- Euro Stoxx 50: +0.58% (bull)
+- FTSE 100: +1.08% (bull)
+- DAX: +0.33% (bull)
+- Euro Stoxx 50: -0.36% (bear)
 
 ### US
-- S&P 500: -0.73% (bear)
-- Nasdaq: -1.53% (bear)
-- Dow: -0.20% (bear)
-- US VIX: +7.90% (bear)
+- S&P 500: -1.09% (bear)
+- Nasdaq: -2.15% (bear)
+- Dow: -0.34% (bear)
+- US VIX: +21.45% (bear)
 
 ### Macro
-- USDINR: -0.21% (neutral)
-- Crude WTI: +0.60% (bull)
-- Brent: +3.42% (bull)
-- DXY: -0.02% (neutral)
-- US 10Y: +0.59% (bear)
-- India ETF: -0.39% (bear)
-- EM ETF: -1.24% (bear)
+- USDINR: +0.45% (bear)
+- Crude WTI: +1.09% (bull)
+- Brent: +3.56% (bull)
+- DXY: -0.22% (neutral)
+- US 10Y: +0.18% (neutral)
+- India ETF: +1.93% (bull)
+- EM ETF: -0.67% (bear)
 
 
 ## Groq desk note
@@ -147,6 +142,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-16/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-17/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
