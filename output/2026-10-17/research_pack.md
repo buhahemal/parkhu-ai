@@ -1,14 +1,14 @@
 # Parkhu research pack — 2026-10-17
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-17T06:09:42.426938+05:30
+- **generated_at_ist:** 2026-10-17T18:10:20.489326+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (1.66%)
-- india_vix: 14.03 (Medium)
+- nifty: Bullish (0.65%)
+- india_vix: 14.06 (Medium)
 - fii_net: 1165.92 | dii_net: -3661.28
 - overall_risk: Medium | global_risk: Risk-Off
 
@@ -20,7 +20,7 @@
 - price > EMA50: 747
 - ADX14 > 25: 331
 - RSI14 in 40-80: 308
-- RS > 0 vs NIFTY and sector: 178
+- RS > 0 vs NIFTY and sector: 176
 - delivery% >= 40: 68
 - relative_volume >= 1: 8
 - no earnings within 21d: 8
@@ -35,8 +35,8 @@
 - **MCLEODRUSS** [rejected] score 56.5 — T1 needs more than 22 trading days (~1 month)
 - **DIVISLAB** [rejected] score 55.6 — score below Watch band
 - **SAMBHV** [rejected] score 55.5 — score below Watch band
-- **PARAGMILK** [rejected] score 51.8 — score below Watch band
-- **21STCENMGM** [rejected] score 38.0 — score below Watch band
+- **PARAGMILK** [rejected] score 51.9 — score below Watch band
+- **21STCENMGM** [rejected] score 38.1 — score below Watch band
 
 ## Ideas
 
@@ -45,24 +45,24 @@
 - entry 405.4 | stop 379.07 | t1 425.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### BIL — Watch (score 13.0)
-- BIL | risk_sector: Consumer Non-Durables
-- entry 1053.35 | stop 985.31 | t1 1106.02 | t2 None | t3 None | R:R None
+### SMSPHARMA — Watch (score 13.0)
+- SMSPHARMA | risk_sector: Health Technology
+- entry 450.5 | stop 419.49 | t1 473.02 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PNB — Watch (score 13.0)
-- PNB | risk_sector: Finance
-- entry 116.3 | stop 111.96 | t1 122.12 | t2 None | t3 None | R:R None
+### SWELECTES — Watch (score 13.0)
+- SWELECTES | risk_sector: Producer Manufacturing
+- entry 631.55 | stop 593.0 | t1 663.13 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### TANLA — Watch (score 13.0)
-- TANLA | risk_sector: Technology Services
-- entry 559.65 | stop 530.18 | t1 587.63 | t2 None | t3 None | R:R None
+### RPSGVENT — Watch (score 13.0)
+- RPSGVENT | risk_sector: Finance
+- entry 867.55 | stop 817.7 | t1 910.93 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SUNFLAG — Watch (score 13.0)
-- SUNFLAG | risk_sector: Non-Energy Minerals
-- entry 430.4 | stop 400.77 | t1 451.92 | t2 None | t3 None | R:R None
+### LOKESHMACH — Watch (score 13.0)
+- LOKESHMACH | risk_sector: Technology Services
+- entry 428.1 | stop 389.9 | t1 449.51 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -79,36 +79,36 @@
 
 ## Swing candidates (top)
 
-- HERITGFOOD: score=14 rs_nifty=3.45 deliv=43.49
-- BIL: score=13 rs_nifty=2.89 deliv=61.38
-- PNB: score=13 rs_nifty=1.89 deliv=43.88
-- TANLA: score=13 rs_nifty=13.58 deliv=31.61
-- SUNFLAG: score=13 rs_nifty=32.95 deliv=45.21
-- PATELRMART: score=13 rs_nifty=15.26 deliv=64.4
-- SGMART: score=13 rs_nifty=12.0 deliv=63.7
-- FEDFINA: score=13 rs_nifty=5.96 deliv=54.32
-- JAMNAAUTO: score=13 rs_nifty=10.5 deliv=42.52
-- TEMBO: score=13 rs_nifty=7.27 deliv=43.71
-- NECCLTD: score=13 rs_nifty=6.91 deliv=88.7
-- IIFLCAPS: score=13 rs_nifty=3.74 deliv=58.31
-- SIMPLEXINF: score=13 rs_nifty=15.17 deliv=42.51
-- EIMCOELECO: score=13 rs_nifty=2.89 deliv=46.46
-- GALAXYSURF: score=13 rs_nifty=18.94 deliv=48.38
+- HERITGFOOD: score=14 rs_nifty=3.24 deliv=43.49
+- SMSPHARMA: score=13 rs_nifty=10.13 deliv=25.48
+- SWELECTES: score=13 rs_nifty=14.27 deliv=53.16
+- RPSGVENT: score=13 rs_nifty=5.59 deliv=46.56
+- LOKESHMACH: score=13 rs_nifty=28.87 deliv=51.52
+- MAZDA: score=13 rs_nifty=11.7 deliv=56.38
+- AUSOMENT: score=13 rs_nifty=2.06 deliv=65.26
+- MUKANDLTD: score=13 rs_nifty=27.52 deliv=43.73
+- THELEELA: score=13 rs_nifty=19.52 deliv=39.97
+- PATELRMART: score=13 rs_nifty=15.05 deliv=64.4
+- BIL: score=13 rs_nifty=2.68 deliv=61.38
+- PNB: score=13 rs_nifty=1.68 deliv=43.88
+- FEDFINA: score=13 rs_nifty=5.75 deliv=54.32
+- KESORAMIND: score=13 rs_nifty=2.79 deliv=55.27
+- MMP: score=13 rs_nifty=7.68 deliv=47.64
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -4.90% (bear)
-- Hang Seng: -1.03% (bear)
-- Shanghai: -1.59% (bear)
-- Kospi: -7.57% (bear)
-- Taiwan: -3.41% (bear)
+- Nikkei: +1.39% (bull)
+- Hang Seng: +0.52% (bull)
+- Shanghai: +0.24% (bull)
+- Kospi: +2.05% (bull)
+- Taiwan: +0.30% (bull)
 - ASX 200: +1.00% (bull)
 
 ### Europe
-- FTSE 100: +1.08% (bull)
-- DAX: +0.33% (bull)
-- Euro Stoxx 50: -0.36% (bear)
+- FTSE 100: +0.38% (bull)
+- DAX: +0.95% (bull)
+- Euro Stoxx 50: +0.58% (bull)
 
 ### US
 - S&P 500: -1.09% (bear)
@@ -117,13 +117,13 @@
 - US VIX: +21.45% (bear)
 
 ### Macro
-- USDINR: +0.45% (bear)
-- Crude WTI: +1.09% (bull)
-- Brent: +3.56% (bull)
-- DXY: -0.22% (neutral)
+- USDINR: +0.46% (bear)
+- Crude WTI: +3.51% (bull)
+- Brent: +3.72% (bull)
+- DXY: -0.16% (neutral)
 - US 10Y: +0.18% (neutral)
-- India ETF: +1.93% (bull)
-- EM ETF: -0.67% (bear)
+- India ETF: -0.60% (bear)
+- EM ETF: -1.74% (bear)
 
 
 ## Groq desk note
