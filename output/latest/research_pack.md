@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-10-17
+# Parkhu research pack — 2026-10-18
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-17T18:10:20.489326+05:30
+- **generated_at_ist:** 2026-10-18T06:09:12.243260+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -45,24 +45,24 @@
 - entry 405.4 | stop 379.07 | t1 425.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SMSPHARMA — Watch (score 13.0)
-- SMSPHARMA | risk_sector: Health Technology
-- entry 450.5 | stop 419.49 | t1 473.02 | t2 None | t3 None | R:R None
+### KESORAMIND — Watch (score 13.0)
+- KESORAMIND | risk_sector: Non-Energy Minerals
+- entry 12.4 | stop 11.4 | t1 13.02 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SWELECTES — Watch (score 13.0)
-- SWELECTES | risk_sector: Producer Manufacturing
-- entry 631.55 | stop 593.0 | t1 663.13 | t2 None | t3 None | R:R None
+### BALRAMCHIN — Watch (score 13.0)
+- BALRAMCHIN | risk_sector: Process Industries
+- entry 721.15 | stop 678.55 | t1 757.21 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### RPSGVENT — Watch (score 13.0)
-- RPSGVENT | risk_sector: Finance
-- entry 867.55 | stop 817.7 | t1 910.93 | t2 None | t3 None | R:R None
+### NECCLTD — Watch (score 13.0)
+- NECCLTD | risk_sector: Transportation
+- entry 19.47 | stop 17.84 | t1 20.44 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### LOKESHMACH — Watch (score 13.0)
-- LOKESHMACH | risk_sector: Technology Services
-- entry 428.1 | stop 389.9 | t1 449.51 | t2 None | t3 None | R:R None
+### ARIHANTCAP — Watch (score 13.0)
+- ARIHANTCAP | risk_sector: Finance
+- entry 97.31 | stop 90.97 | t1 102.18 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -80,20 +80,20 @@
 ## Swing candidates (top)
 
 - HERITGFOOD: score=14 rs_nifty=3.24 deliv=43.49
-- SMSPHARMA: score=13 rs_nifty=10.13 deliv=25.48
-- SWELECTES: score=13 rs_nifty=14.27 deliv=53.16
-- RPSGVENT: score=13 rs_nifty=5.59 deliv=46.56
-- LOKESHMACH: score=13 rs_nifty=28.87 deliv=51.52
-- MAZDA: score=13 rs_nifty=11.7 deliv=56.38
-- AUSOMENT: score=13 rs_nifty=2.06 deliv=65.26
-- MUKANDLTD: score=13 rs_nifty=27.52 deliv=43.73
-- THELEELA: score=13 rs_nifty=19.52 deliv=39.97
-- PATELRMART: score=13 rs_nifty=15.05 deliv=64.4
-- BIL: score=13 rs_nifty=2.68 deliv=61.38
-- PNB: score=13 rs_nifty=1.68 deliv=43.88
-- FEDFINA: score=13 rs_nifty=5.75 deliv=54.32
 - KESORAMIND: score=13 rs_nifty=2.79 deliv=55.27
-- MMP: score=13 rs_nifty=7.68 deliv=47.64
+- BALRAMCHIN: score=13 rs_nifty=7.16 deliv=44.03
+- NECCLTD: score=13 rs_nifty=6.7 deliv=88.7
+- ARIHANTCAP: score=13 rs_nifty=19.78 deliv=41.4
+- DBSTOCKBRO: score=13 rs_nifty=12.65 deliv=99.34
+- ICICIBANK: score=13 rs_nifty=3.11 deliv=68.73
+- TEMBO: score=13 rs_nifty=7.06 deliv=43.71
+- OCCLLTD: score=13 rs_nifty=29.47 deliv=43.95
+- STYLEBAAZA: score=13 rs_nifty=6.28 deliv=40.74
+- MEESHO: score=13 rs_nifty=7.28 deliv=51.36
+- OMAXAUTO: score=13 rs_nifty=21.96 deliv=48.75
+- SMSPHARMA: score=13 rs_nifty=10.13 deliv=25.48
+- JAMNAAUTO: score=13 rs_nifty=10.29 deliv=42.52
+- 21STCENMGM: score=13 rs_nifty=18.67 deliv=68.79
 
 ## World markets (India cues)
 
@@ -142,6 +142,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-17/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-18/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.

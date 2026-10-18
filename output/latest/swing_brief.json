@@ -1,5 +1,5 @@
 {
-  "data_date": "2026-10-17",
+  "data_date": "2026-10-18",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -42,7 +42,7 @@
     "europe_cue": "Bullish",
     "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-17T18:09:56.804189+05:30"
+    "generated_at_ist": "2026-10-18T06:08:46.964434+05:30"
   },
   "funnel": [
     {
@@ -1192,5 +1192,5 @@
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",
-  "source_brief_date": "2026-10-17"
+  "source_brief_date": "2026-10-18"
 }
