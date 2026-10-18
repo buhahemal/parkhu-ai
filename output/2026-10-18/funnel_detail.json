@@ -9,6 +9,7 @@
       "survivor_symbols": [
         "PREMIERPOL",
         "TANLA",
+        "ICICIBANK",
         "TARIL",
         "ONWARDTEC",
         "PNB",
@@ -17,10 +18,10 @@
         "JAYNECOIND",
         "TCS",
         "ELANTAS",
-        "ICICIBANK",
         "LTTS",
         "SOUTHBANK",
         "SEJALLTD",
+        "KROSS",
         "SHRADDHA",
         "TECHM",
         "INDIANB",
@@ -33,6 +34,7 @@
         "CASTROLIND",
         "TRF",
         "VIJIFIN",
+        "AXISBANK",
         "STYLAMIND",
         "HALDYNGL",
         "OCCLLTD",
@@ -54,9 +56,7 @@
         "GANDHAR",
         "MRPL",
         "KINGFA",
-        "NTCIND",
-        "IIFL",
-        "FEDERALBNK"
+        "NTCIND"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -69,6 +69,7 @@
       "survivor_symbols": [
         "PREMIERPOL",
         "TANLA",
+        "ICICIBANK",
         "TARIL",
         "ONWARDTEC",
         "PNB",
@@ -77,10 +78,10 @@
         "JAYNECOIND",
         "TCS",
         "ELANTAS",
-        "ICICIBANK",
         "LTTS",
         "SOUTHBANK",
         "SEJALLTD",
+        "KROSS",
         "SHRADDHA",
         "TECHM",
         "INDIANB",
@@ -93,6 +94,7 @@
         "CASTROLIND",
         "TRF",
         "VIJIFIN",
+        "AXISBANK",
         "STYLAMIND",
         "HALDYNGL",
         "OCCLLTD",
@@ -114,11 +116,10 @@
         "GANDHAR",
         "MRPL",
         "KINGFA",
-        "NTCIND",
-        "IIFL",
-        "FEDERALBNK"
+        "NTCIND"
       ],
       "dropped_symbols": [
+        "HDFCBANK",
         "HSCL",
         "BUTTERFLY",
         "SIGNPOST",
@@ -126,6 +127,7 @@
         "CENTRALBK",
         "UJJIVANSFB",
         "ALLDIGI",
+        "LAGNAM",
         "VESUVIUS",
         "AESTHETIK",
         "HAPPSTMNDS",
@@ -136,7 +138,6 @@
         "ATUL",
         "LODHA",
         "ELDEHSG",
-        "HDFCBANK",
         "POLYCAB",
         "SUZLON",
         "ARIHANT",
@@ -167,8 +168,7 @@
         "VADILALIND",
         "FORCEMOT",
         "KOVAI",
-        "SRF",
-        "CANFINHOME"
+        "SRF"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -180,16 +180,17 @@
       "survivor_symbols": [
         "PREMIERPOL",
         "TANLA",
+        "ICICIBANK",
         "TARIL",
         "ONWARDTEC",
         "PNB",
         "HCLTECH",
         "KARURVYSYA",
         "JAYNECOIND",
-        "ICICIBANK",
         "LTTS",
         "SOUTHBANK",
         "SEJALLTD",
+        "KROSS",
         "TECHM",
         "SUPREMEPWR",
         "TIPSMUSIC",
@@ -199,6 +200,7 @@
         "AVTNPL",
         "CASTROLIND",
         "VIJIFIN",
+        "AXISBANK",
         "STYLAMIND",
         "OCCLLTD",
         "LLOYDSME",
@@ -225,9 +227,7 @@
         "SAGILITY",
         "SAHANA",
         "ALICON",
-        "DPABHUSHAN",
-        "E2E",
-        "FONEBOX"
+        "DPABHUSHAN"
       ],
       "dropped_symbols": [
         "TCS",
@@ -291,16 +291,17 @@
       "survivor_symbols": [
         "PREMIERPOL",
         "TANLA",
+        "ICICIBANK",
         "TARIL",
         "ONWARDTEC",
         "PNB",
         "HCLTECH",
         "KARURVYSYA",
         "JAYNECOIND",
-        "ICICIBANK",
         "LTTS",
         "SOUTHBANK",
         "SEJALLTD",
+        "KROSS",
         "TECHM",
         "SUPREMEPWR",
         "TIPSMUSIC",
@@ -310,6 +311,7 @@
         "AVTNPL",
         "CASTROLIND",
         "VIJIFIN",
+        "AXISBANK",
         "STYLAMIND",
         "OCCLLTD",
         "LLOYDSME",
@@ -336,9 +338,7 @@
         "SAGILITY",
         "SAHANA",
         "ALICON",
-        "DPABHUSHAN",
-        "E2E",
-        "FONEBOX"
+        "DPABHUSHAN"
       ],
       "dropped_symbols": [
         "AEROENTER",
@@ -377,6 +377,7 @@
         "TARIL",
         "ONWARDTEC",
         "SEJALLTD",
+        "KROSS",
         "SUPREMEPWR",
         "MAZDA",
         "GLOBAL",
@@ -420,21 +421,21 @@
         "SBC",
         "DHANBANK",
         "VALIANTORG",
-        "MODIS",
-        "INDIAGLYCO"
+        "MODIS"
       ],
       "dropped_symbols": [
+        "ICICIBANK",
         "PNB",
         "HCLTECH",
         "KARURVYSYA",
         "JAYNECOIND",
-        "ICICIBANK",
         "LTTS",
         "SOUTHBANK",
         "TECHM",
         "TIPSMUSIC",
         "KARNIKA",
         "CASTROLIND",
+        "AXISBANK",
         "STYLAMIND",
         "LLOYDSME",
         "BEPL",
@@ -472,8 +473,7 @@
         "AHLWEST",
         "COFORGE",
         "FINEORG",
-        "NUVOCO",
-        "GROWW"
+        "NUVOCO"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -487,6 +487,7 @@
         "TANLA",
         "TARIL",
         "SEJALLTD",
+        "KROSS",
         "SUPREMEPWR",
         "MAZDA",
         "GLOBAL",
@@ -531,8 +532,7 @@
         "VALIANTORG",
         "MODIS",
         "INDIAGLYCO",
-        "NINSYS",
-        "HEXT"
+        "NINSYS"
       ],
       "dropped_symbols": [
         "ONWARDTEC",
@@ -570,6 +570,7 @@
         "PREMIERPOL",
         "TANLA",
         "TARIL",
+        "KROSS",
         "SUPREMEPWR",
         "MAZDA",
         "AVTNPL",
@@ -615,8 +616,7 @@
         "OMAXAUTO",
         "FINCABLES",
         "SUNTV",
-        "GPTINFRA",
-        "SAHASRA"
+        "GPTINFRA"
       ],
       "dropped_symbols": [
         "SEJALLTD",
@@ -733,6 +733,7 @@
         "PREMIERPOL",
         "TANLA",
         "TARIL",
+        "KROSS",
         "SUPREMEPWR",
         "AVTNPL",
         "VIJIFIN",
@@ -766,7 +767,6 @@
         "MANINDS",
         "MVGJL",
         "SAAKSHI",
-        "KROSS",
         "CYIENT",
         "RBZJEWEL",
         "BIKEWO",
@@ -845,10 +845,10 @@
         "PATELRMART",
         "DBSTOCKBRO",
         "PROTEAN",
+        "TGBHOTELS",
         "ZOTA",
         "YATHARTH",
-        "LIKHITHA",
-        "DEVX"
+        "LIKHITHA"
       ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": true

@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-18
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-18T06:09:12.243260+05:30
+- **generated_at_ist:** 2026-10-18T18:09:50.458763+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -45,14 +45,9 @@
 - entry 405.4 | stop 379.07 | t1 425.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### KESORAMIND — Watch (score 13.0)
-- KESORAMIND | risk_sector: Non-Energy Minerals
-- entry 12.4 | stop 11.4 | t1 13.02 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### BALRAMCHIN — Watch (score 13.0)
-- BALRAMCHIN | risk_sector: Process Industries
-- entry 721.15 | stop 678.55 | t1 757.21 | t2 None | t3 None | R:R None
+### EMKAY — Watch (score 13.0)
+- EMKAY | risk_sector: Finance
+- entry 277.2 | stop 256.78 | t1 291.06 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### NECCLTD — Watch (score 13.0)
@@ -60,9 +55,14 @@
 - entry 19.47 | stop 17.84 | t1 20.44 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ARIHANTCAP — Watch (score 13.0)
-- ARIHANTCAP | risk_sector: Finance
-- entry 97.31 | stop 90.97 | t1 102.18 | t2 None | t3 None | R:R None
+### ANGELONE — Watch (score 13.0)
+- ANGELONE | risk_sector: Finance
+- entry 300.0 | stop 283.88 | t1 315.0 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SUNFLAG — Watch (score 13.0)
+- SUNFLAG | risk_sector: Non-Energy Minerals
+- entry 430.4 | stop 400.77 | t1 451.92 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -80,20 +80,20 @@
 ## Swing candidates (top)
 
 - HERITGFOOD: score=14 rs_nifty=3.24 deliv=43.49
-- KESORAMIND: score=13 rs_nifty=2.79 deliv=55.27
-- BALRAMCHIN: score=13 rs_nifty=7.16 deliv=44.03
+- EMKAY: score=13 rs_nifty=14.15 deliv=63.71
 - NECCLTD: score=13 rs_nifty=6.7 deliv=88.7
-- ARIHANTCAP: score=13 rs_nifty=19.78 deliv=41.4
-- DBSTOCKBRO: score=13 rs_nifty=12.65 deliv=99.34
-- ICICIBANK: score=13 rs_nifty=3.11 deliv=68.73
-- TEMBO: score=13 rs_nifty=7.06 deliv=43.71
-- OCCLLTD: score=13 rs_nifty=29.47 deliv=43.95
-- STYLEBAAZA: score=13 rs_nifty=6.28 deliv=40.74
+- ANGELONE: score=13 rs_nifty=2.0 deliv=25.5
+- SUNFLAG: score=13 rs_nifty=32.74 deliv=45.21
+- PATELRMART: score=13 rs_nifty=15.05 deliv=64.4
 - MEESHO: score=13 rs_nifty=7.28 deliv=51.36
-- OMAXAUTO: score=13 rs_nifty=21.96 deliv=48.75
-- SMSPHARMA: score=13 rs_nifty=10.13 deliv=25.48
-- JAMNAAUTO: score=13 rs_nifty=10.29 deliv=42.52
-- 21STCENMGM: score=13 rs_nifty=18.67 deliv=68.79
+- OCCLLTD: score=13 rs_nifty=29.47 deliv=43.95
+- PRINCEPIPE: score=13 rs_nifty=8.8 deliv=42.6
+- IBULLSLTD: score=13 rs_nifty=23.25 deliv=45.77
+- BIL: score=13 rs_nifty=2.68 deliv=61.38
+- SIMPLEXINF: score=13 rs_nifty=14.96 deliv=42.51
+- AVTNPL: score=13 rs_nifty=17.43 deliv=25.8
+- GFLLIMITED: score=13 rs_nifty=13.49 deliv=52.9
+- AUSOMENT: score=13 rs_nifty=2.06 deliv=65.26
 
 ## World markets (India cues)
 
@@ -118,7 +118,7 @@
 
 ### Macro
 - USDINR: +0.46% (bear)
-- Crude WTI: +3.51% (bull)
+- Crude WTI: +1.07% (bull)
 - Brent: +3.72% (bull)
 - DXY: -0.16% (neutral)
 - US 10Y: +0.18% (neutral)
