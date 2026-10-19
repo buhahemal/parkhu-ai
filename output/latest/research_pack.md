@@ -1,16 +1,16 @@
-# Parkhu research pack — 2026-10-19
+# Parkhu research pack — 2026-10-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-19T18:09:59.374823+05:30
+- **generated_at_ist:** 2026-10-20T00:26:45.601402+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-1.11%)
-- india_vix: 14.77 (Medium)
-- fii_net: 1165.92 | dii_net: -3661.28
-- overall_risk: Medium | global_risk: Risk-Off
+- market_regime: **Bullish**
+- nifty: Bullish (0.65%)
+- india_vix: 14.06 (Medium)
+- fii_net: -1148.64 | dii_net: 3201.19
+- overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
@@ -20,8 +20,8 @@
 - price > EMA50: 608
 - ADX14 > 25: 292
 - RSI14 in 40-80: 276
-- RS > 0 vs NIFTY and sector: 158
-- delivery% >= 40: 64
+- RS > 0 vs NIFTY and sector: 157
+- delivery% >= 40: 63
 - relative_volume >= 1: 9
 - no earnings within 21d: 9
 - event_risk_score <= 1: 9
@@ -29,7 +29,7 @@
 
 ## Survivors (top 7 of 7)
 
-- **TFCILTD** [watchlist] score 78.0 — score in Watch band (70–80)
+- **TFCILTD** [watchlist] score 78.1 — score in Watch band (70–80)
 - **WHEELS** [watchlist] score 71.4 — score in Watch band (70–80)
 - **KANANIIND** [rejected] score 63.0 — score below Watch band
 - **TEXINFRA** [rejected] score 61.0 — score below Watch band
@@ -39,29 +39,29 @@
 
 ## Ideas
 
+### UNIONBANK — Watch (score 14.0)
+- UNIONBANK | risk_sector: Finance
+- entry 180.7 | stop 172.65 | t1 189.74 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### THELEELA — Watch (score 14.0)
 - THELEELA | risk_sector: Consumer Services
 - entry 622.75 | stop 580.1 | t1 653.89 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PNB — Watch (score 13.0)
-- PNB | risk_sector: Finance
-- entry 121.9 | stop 116.92 | t1 128.0 | t2 None | t3 None | R:R None
+### ARIHANTCAP — Watch (score 13.0)
+- ARIHANTCAP | risk_sector: Finance
+- entry 94.09 | stop 87.69 | t1 98.79 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### MEESHO — Watch (score 13.0)
-- MEESHO | risk_sector: Retail Trade
-- entry 229.59 | stop 214.79 | t1 241.07 | t2 None | t3 None | R:R None
+### KOPRAN — Watch (score 13.0)
+- KOPRAN | risk_sector: Health Technology
+- entry 278.25 | stop 252.58 | t1 292.16 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### TEXINFRA — Watch (score 13.0)
-- TEXINFRA | risk_sector: Utilities
-- entry 128.27 | stop 120.54 | t1 134.68 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### GPTINFRA — Watch (score 13.0)
-- GPTINFRA | risk_sector: Industrial Services
-- entry 121.28 | stop 112.66 | t1 127.34 | t2 None | t3 None | R:R None
+### AHCL — Watch (score 13.0)
+- AHCL | risk_sector: Health Technology
+- entry 26.97 | stop 24.05 | t1 28.32 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -77,51 +77,51 @@
 
 ## Swing candidates (top)
 
-- THELEELA: score=14 rs_nifty=19.14 deliv=43.59
-- PNB: score=13 rs_nifty=5.83 deliv=28.09
-- MEESHO: score=13 rs_nifty=11.77 deliv=44.97
-- TEXINFRA: score=13 rs_nifty=13.3 deliv=61.77
-- GPTINFRA: score=13 rs_nifty=3.41 deliv=36.49
-- 21STCENMGM: score=13 rs_nifty=26.48 deliv=89.11
-- MANINDS: score=13 rs_nifty=8.85 deliv=36.8
-- FEDERALBNK: score=13 rs_nifty=6.46 deliv=33.33
-- AVTNPL: score=13 rs_nifty=18.26 deliv=40.7
-- AHCL: score=13 rs_nifty=20.56 deliv=41.03
-- MANAKCOAT: score=13 rs_nifty=1.78 deliv=75.1
-- BIL: score=13 rs_nifty=2.91 deliv=50.93
-- MMP: score=13 rs_nifty=2.82 deliv=48.11
-- NGIL: score=13 rs_nifty=8.8 deliv=67.6
-- KOPRAN: score=13 rs_nifty=5.62 deliv=33.33
+- UNIONBANK: score=14 rs_nifty=1.54 deliv=29.03
+- THELEELA: score=14 rs_nifty=17.81 deliv=43.59
+- ARIHANTCAP: score=13 rs_nifty=16.89 deliv=60.0
+- KOPRAN: score=13 rs_nifty=4.29 deliv=33.33
+- AHCL: score=13 rs_nifty=19.23 deliv=41.03
+- FEDERALBNK: score=13 rs_nifty=5.13 deliv=33.33
+- GFLLIMITED: score=13 rs_nifty=3.67 deliv=49.18
+- WHEELS: score=13 rs_nifty=14.84 deliv=58.95
+- EMKAY: score=13 rs_nifty=9.77 deliv=63.15
+- MANINDS: score=13 rs_nifty=7.52 deliv=36.8
+- MANAKCOAT: score=13 rs_nifty=0.45 deliv=75.1
+- MEESHO: score=13 rs_nifty=10.44 deliv=44.97
+- PRINCEPIPE: score=13 rs_nifty=7.07 deliv=47.31
+- CPPLUS: score=13 rs_nifty=19.01 deliv=44.7
+- TFCILTD: score=13 rs_nifty=12.11 deliv=41.54
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.62% (bear)
+- Nikkei: +1.39% (bull)
 - Hang Seng: +0.52% (bull)
-- Shanghai: +0.39% (bull)
-- Kospi: +1.76% (bull)
-- Taiwan: -0.61% (bear)
+- Shanghai: +0.24% (bull)
+- Kospi: +2.05% (bull)
+- Taiwan: +0.30% (bull)
 - ASX 200: +0.44% (bull)
 
 ### Europe
-- FTSE 100: -1.25% (bear)
-- DAX: -1.28% (bear)
-- Euro Stoxx 50: -1.17% (bear)
+- FTSE 100: -1.08% (bear)
+- DAX: -1.18% (bear)
+- Euro Stoxx 50: -0.96% (bear)
 
 ### US
-- S&P 500: -1.09% (bear)
-- Nasdaq: -2.15% (bear)
-- Dow: -0.34% (bear)
-- US VIX: -6.85% (bull)
+- S&P 500: +0.56% (bull)
+- Nasdaq: +1.25% (bull)
+- Dow: +0.06% (neutral)
+- US VIX: -8.05% (bull)
 
 ### Macro
 - USDINR: +0.41% (bear)
-- Crude WTI: -3.72% (bear)
-- Brent: -1.59% (bear)
-- DXY: +0.02% (neutral)
-- US 10Y: -0.08% (neutral)
-- India ETF: -0.60% (bear)
-- EM ETF: -1.74% (bear)
+- Crude WTI: -2.92% (bear)
+- Brent: -0.38% (bear)
+- DXY: +0.14% (neutral)
+- US 10Y: +0.61% (bear)
+- India ETF: -0.45% (bear)
+- EM ETF: +0.91% (bull)
 
 
 ## Groq desk note
@@ -140,6 +140,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-19/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-20/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
