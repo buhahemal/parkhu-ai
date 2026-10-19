@@ -1,5 +1,5 @@
 {
-  "data_date": "2026-10-18",
+  "data_date": "2026-10-19",
   "symbol_cap": 50,
   "funnel": [
     {
@@ -855,32 +855,32 @@
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 8,
-      "dropped_count": 0,
+      "surviving": 7,
+      "dropped_count": 1,
       "survivor_symbols": [
         "VIVIANA",
         "TEXINFRA",
         "HERITGFOOD",
         "MCLEODRUSS",
-        "DIVISLAB",
         "SAMBHV",
         "PARAGMILK",
         "21STCENMGM"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "DIVISLAB"
+      ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 8,
+      "surviving": 7,
       "dropped_count": 0,
       "survivor_symbols": [
         "VIVIANA",
         "TEXINFRA",
         "HERITGFOOD",
         "MCLEODRUSS",
-        "DIVISLAB",
         "SAMBHV",
         "PARAGMILK",
         "21STCENMGM"
@@ -891,14 +891,13 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 8,
+      "surviving": 7,
       "dropped_count": 0,
       "survivor_symbols": [
         "VIVIANA",
         "TEXINFRA",
         "HERITGFOOD",
         "MCLEODRUSS",
-        "DIVISLAB",
         "SAMBHV",
         "PARAGMILK",
         "21STCENMGM"
@@ -946,15 +945,6 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     },
     {
-      "symbol": "DIVISLAB",
-      "score": 55.6,
-      "band": "Ignore",
-      "cmp": 9144.5,
-      "risk_sector": "Health Technology",
-      "status": "rejected",
-      "reason": "score below Watch band"
-    },
-    {
       "symbol": "SAMBHV",
       "score": 55.5,
       "band": "Ignore",
@@ -982,6 +972,6 @@
       "reason": "score below Watch band"
     }
   ],
-  "survivor_outcomes_total": 8,
+  "survivor_outcomes_total": 7,
   "survivor_outcomes_truncated": false
 }

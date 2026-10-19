@@ -1,5 +1,5 @@
 {
-  "data_date": "2026-10-18",
+  "data_date": "2026-10-19",
   "capital": 100000.0,
   "kb_version": "KB v1.0 (2026-06-21)",
   "limits": {
@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -4.97,
     "fii_net": 1165.92,
     "dii_net": -3661.28,
-    "crude": 99.02,
-    "crude_pct_change": 1.07,
-    "usdinr": 94.96,
-    "usdinr_pct_change": 0.46,
+    "crude": 97.6,
+    "crude_pct_change": -3.76,
+    "usdinr": 94.95,
+    "usdinr_pct_change": 0.45,
     "us_sp500_pct": -1.09,
     "us_dow_pct": -0.34,
     "us_vix": 19.99,
     "us_vix_pct": 21.45,
-    "dxy": 101.84,
-    "dxy_pct": -0.16,
+    "dxy": 101.85,
+    "dxy_pct": 0.01,
     "us_10y": 5.1,
-    "asia_cue": "Bullish",
+    "asia_cue": "Bearish",
     "europe_cue": "Bullish",
     "global_risk": "Risk-Off",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-18T18:09:24.433361+05:30"
+    "generated_at_ist": "2026-10-19T06:10:32.691172+05:30"
   },
   "funnel": [
     {
@@ -898,32 +898,32 @@
     },
     {
       "gate": "no earnings within 21d",
-      "surviving": 8,
-      "dropped_count": 0,
+      "surviving": 7,
+      "dropped_count": 1,
       "survivor_symbols": [
         "VIVIANA",
         "TEXINFRA",
         "HERITGFOOD",
         "MCLEODRUSS",
-        "DIVISLAB",
         "SAMBHV",
         "PARAGMILK",
         "21STCENMGM"
       ],
-      "dropped_symbols": [],
+      "dropped_symbols": [
+        "DIVISLAB"
+      ],
       "survivor_symbols_truncated": false,
       "dropped_symbols_truncated": false
     },
     {
       "gate": "event_risk_score <= 1",
-      "surviving": 8,
+      "surviving": 7,
       "dropped_count": 0,
       "survivor_symbols": [
         "VIVIANA",
         "TEXINFRA",
         "HERITGFOOD",
         "MCLEODRUSS",
-        "DIVISLAB",
         "SAMBHV",
         "PARAGMILK",
         "21STCENMGM"
@@ -934,14 +934,13 @@
     },
     {
       "gate": "TV rating not Sell",
-      "surviving": 8,
+      "surviving": 7,
       "dropped_count": 0,
       "survivor_symbols": [
         "VIVIANA",
         "TEXINFRA",
         "HERITGFOOD",
         "MCLEODRUSS",
-        "DIVISLAB",
         "SAMBHV",
         "PARAGMILK",
         "21STCENMGM"
@@ -975,10 +974,6 @@
     {
       "symbol": "TEXINFRA",
       "score": 60.7
-    },
-    {
-      "symbol": "DIVISLAB",
-      "score": 55.6
     },
     {
       "symbol": "SAMBHV",
@@ -1032,15 +1027,6 @@
       "reason": "T1 needs more than 22 trading days (~1 month)"
     },
     {
-      "symbol": "DIVISLAB",
-      "score": 55.6,
-      "band": "Ignore",
-      "cmp": 9144.5,
-      "risk_sector": "Health Technology",
-      "status": "rejected",
-      "reason": "score below Watch band"
-    },
-    {
       "symbol": "SAMBHV",
       "score": 55.5,
       "band": "Ignore",
@@ -1068,7 +1054,7 @@
       "reason": "score below Watch band"
     }
   ],
-  "survivor_outcomes_total": 8,
+  "survivor_outcomes_total": 7,
   "survivor_outcomes_truncated": false,
   "scoring": {
     "live_weights": {
@@ -1118,7 +1104,7 @@
         "price": 197.74,
         "pct": 2.33,
         "r_multiple": 0.72,
-        "days_held": 17,
+        "days_held": 18,
         "horizon_t1": 21,
         "mfe_pct": 5.26,
         "mae_pct": -1.62,
@@ -1138,7 +1124,7 @@
         "price": 111.51,
         "pct": 16.13,
         "r_multiple": 2.02,
-        "days_held": 9,
+        "days_held": 10,
         "horizon_t1": 6,
         "mfe_pct": 24.97,
         "mae_pct": -6.47,
@@ -1158,7 +1144,7 @@
         "price": 2571.5,
         "pct": -3.33,
         "r_multiple": -0.42,
-        "days_held": 20,
+        "days_held": 21,
         "horizon_t1": 11,
         "mfe_pct": 9.02,
         "mae_pct": -7.9,
@@ -1192,5 +1178,5 @@
   },
   "run_mode": "post_close",
   "session_date": "2026-07-24",
-  "source_brief_date": "2026-10-18"
+  "source_brief_date": "2026-10-19"
 }

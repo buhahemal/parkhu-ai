@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-10-18
+# Parkhu research pack — 2026-10-19
 
-- **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-18T18:09:50.458763+05:30
+- **session_date:** 2026-07-24 (trading day: True)
+- **generated_at_ist:** 2026-10-19T06:10:58.878137+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -23,17 +23,16 @@
 - RS > 0 vs NIFTY and sector: 176
 - delivery% >= 40: 68
 - relative_volume >= 1: 8
-- no earnings within 21d: 8
-- event_risk_score <= 1: 8
-- TV rating not Sell: 8
+- no earnings within 21d: 7
+- event_risk_score <= 1: 7
+- TV rating not Sell: 7
 
-## Survivors (top 8 of 8)
+## Survivors (top 7 of 7)
 
 - **VIVIANA** [rejected] score 64.1 — score below Watch band
 - **TEXINFRA** [rejected] score 60.7 — score below Watch band
 - **HERITGFOOD** [rejected] score 59.2 — T1 needs more than 22 trading days (~1 month)
 - **MCLEODRUSS** [rejected] score 56.5 — T1 needs more than 22 trading days (~1 month)
-- **DIVISLAB** [rejected] score 55.6 — score below Watch band
 - **SAMBHV** [rejected] score 55.5 — score below Watch band
 - **PARAGMILK** [rejected] score 51.9 — score below Watch band
 - **21STCENMGM** [rejected] score 38.1 — score below Watch band
@@ -45,24 +44,24 @@
 - entry 405.4 | stop 379.07 | t1 425.67 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### EMKAY — Watch (score 13.0)
-- EMKAY | risk_sector: Finance
-- entry 277.2 | stop 256.78 | t1 291.06 | t2 None | t3 None | R:R None
+### ICICIBANK — Watch (score 13.0)
+- ICICIBANK | risk_sector: Finance
+- entry 1397.0 | stop 1360.04 | t1 1466.85 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### NECCLTD — Watch (score 13.0)
-- NECCLTD | risk_sector: Transportation
-- entry 19.47 | stop 17.84 | t1 20.44 | t2 None | t3 None | R:R None
+### MUKANDLTD — Watch (score 13.0)
+- MUKANDLTD | risk_sector: Non-Energy Minerals
+- entry 171.99 | stop 160.42 | t1 180.59 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ANGELONE — Watch (score 13.0)
-- ANGELONE | risk_sector: Finance
-- entry 300.0 | stop 283.88 | t1 315.0 | t2 None | t3 None | R:R None
+### MAZDA — Watch (score 13.0)
+- MAZDA | risk_sector: Producer Manufacturing
+- entry 293.95 | stop 266.06 | t1 308.65 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SUNFLAG — Watch (score 13.0)
-- SUNFLAG | risk_sector: Non-Energy Minerals
-- entry 430.4 | stop 400.77 | t1 451.92 | t2 None | t3 None | R:R None
+### GFLLIMITED — Watch (score 13.0)
+- GFLLIMITED | risk_sector: Consumer Services
+- entry 61.32 | stop 56.93 | t1 64.39 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -80,30 +79,30 @@
 ## Swing candidates (top)
 
 - HERITGFOOD: score=14 rs_nifty=3.24 deliv=43.49
-- EMKAY: score=13 rs_nifty=14.15 deliv=63.71
-- NECCLTD: score=13 rs_nifty=6.7 deliv=88.7
-- ANGELONE: score=13 rs_nifty=2.0 deliv=25.5
-- SUNFLAG: score=13 rs_nifty=32.74 deliv=45.21
-- PATELRMART: score=13 rs_nifty=15.05 deliv=64.4
-- MEESHO: score=13 rs_nifty=7.28 deliv=51.36
-- OCCLLTD: score=13 rs_nifty=29.47 deliv=43.95
-- PRINCEPIPE: score=13 rs_nifty=8.8 deliv=42.6
-- IBULLSLTD: score=13 rs_nifty=23.25 deliv=45.77
-- BIL: score=13 rs_nifty=2.68 deliv=61.38
-- SIMPLEXINF: score=13 rs_nifty=14.96 deliv=42.51
-- AVTNPL: score=13 rs_nifty=17.43 deliv=25.8
+- ICICIBANK: score=13 rs_nifty=3.11 deliv=68.73
+- MUKANDLTD: score=13 rs_nifty=27.52 deliv=43.73
+- MAZDA: score=13 rs_nifty=11.7 deliv=56.38
 - GFLLIMITED: score=13 rs_nifty=13.49 deliv=52.9
-- AUSOMENT: score=13 rs_nifty=2.06 deliv=65.26
+- SGMART: score=13 rs_nifty=11.79 deliv=63.7
+- MEESHO: score=13 rs_nifty=7.28 deliv=51.36
+- ARVEE: score=13 rs_nifty=31.21 deliv=43.82
+- VHL: score=13 rs_nifty=10.65 deliv=77.82
+- ORBTEXP: score=13 rs_nifty=13.9 deliv=81.36
+- DYNAMATECH: score=13 rs_nifty=15.09 deliv=52.06
+- JAMNAAUTO: score=13 rs_nifty=10.29 deliv=42.52
+- KESORAMIND: score=13 rs_nifty=2.79 deliv=55.27
+- GPTINFRA: score=13 rs_nifty=12.73 deliv=70.33
+- KILITCH: score=13 rs_nifty=21.0 deliv=56.03
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.39% (bull)
+- Nikkei: -1.92% (bear)
 - Hang Seng: +0.52% (bull)
 - Shanghai: +0.24% (bull)
-- Kospi: +2.05% (bull)
+- Kospi: -1.56% (bear)
 - Taiwan: +0.30% (bull)
-- ASX 200: +1.00% (bull)
+- ASX 200: +0.10% (neutral)
 
 ### Europe
 - FTSE 100: +0.38% (bull)
@@ -117,10 +116,10 @@
 - US VIX: +21.45% (bear)
 
 ### Macro
-- USDINR: +0.46% (bear)
-- Crude WTI: +1.07% (bull)
-- Brent: +3.72% (bull)
-- DXY: -0.16% (neutral)
+- USDINR: +0.45% (bear)
+- Crude WTI: -3.76% (bear)
+- Brent: -1.60% (bear)
+- DXY: +0.01% (neutral)
 - US 10Y: +0.18% (neutral)
 - India ETF: -0.60% (bear)
 - EM ETF: -1.74% (bear)
@@ -142,6 +141,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-18/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-19/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
