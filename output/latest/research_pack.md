@@ -1,27 +1,27 @@
 # Parkhu research pack — 2026-10-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-20T06:10:32.560640+05:30
+- **generated_at_ist:** 2026-10-20T10:47:38.695960+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.65%)
-- india_vix: 14.06 (Medium)
+- market_regime: **Bearish**
+- nifty: Bearish (-1.11%)
+- india_vix: 14.77 (Medium)
 - fii_net: -1148.64 | dii_net: 3201.19
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3199
-- trend = Bullish: 826
-- price > SMA200: 623
-- price > EMA50: 608
-- ADX14 > 25: 292
+- universe: 3196
+- trend = Bullish: 825
+- price > SMA200: 622
+- price > EMA50: 607
+- ADX14 > 25: 291
 - RSI14 in 40-80: 276
-- RS > 0 vs NIFTY and sector: 157
-- delivery% >= 40: 63
+- RS > 0 vs NIFTY and sector: 158
+- delivery% >= 40: 64
 - relative_volume >= 1: 9
 - no earnings within 21d: 9
 - event_risk_score <= 1: 9
@@ -29,7 +29,7 @@
 
 ## Survivors (top 7 of 7)
 
-- **TFCILTD** [watchlist] score 78.1 — score in Watch band (70–80)
+- **TFCILTD** [watchlist] score 78.0 — score in Watch band (70–80)
 - **WHEELS** [watchlist] score 71.4 — score in Watch band (70–80)
 - **KANANIIND** [rejected] score 63.0 — score below Watch band
 - **TEXINFRA** [rejected] score 61.0 — score below Watch band
@@ -49,19 +49,19 @@
 - entry 622.75 | stop 580.1 | t1 653.89 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
+### TEXINFRA — Watch (score 13.0)
+- TEXINFRA | risk_sector: Utilities
+- entry 128.27 | stop 120.54 | t1 134.68 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PGIL — Watch (score 13.0)
+- PGIL | risk_sector: Consumer Non-Durables
+- entry 1277.7 | stop 1193.03 | t1 1341.58 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### WHEELS — Watch (score 13.0)
 - WHEELS | risk_sector: Producer Manufacturing
 - entry 2439.4 | stop 2249.05 | t1 2561.37 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### GFLLIMITED — Watch (score 13.0)
-- GFLLIMITED | risk_sector: Consumer Services
-- entry 57.9 | stop 53.37 | t1 60.8 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### TFCILTD — Watch (score 13.0)
-- TFCILTD | risk_sector: Finance
-- entry 156.18 | stop 147.64 | t1 163.99 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -77,36 +77,36 @@
 
 ## Swing candidates (top)
 
-- UNIONBANK: score=14 rs_nifty=1.54 deliv=29.03
-- THELEELA: score=14 rs_nifty=17.81 deliv=43.59
-- WHEELS: score=13 rs_nifty=14.84 deliv=58.95
-- GFLLIMITED: score=13 rs_nifty=3.67 deliv=49.18
-- TFCILTD: score=13 rs_nifty=12.11 deliv=41.54
-- VETO: score=13 rs_nifty=4.6 deliv=44.34
-- IBULLSLTD: score=13 rs_nifty=14.24 deliv=62.16
-- MANINDS: score=13 rs_nifty=7.52 deliv=36.8
-- MEESHO: score=13 rs_nifty=10.44 deliv=44.97
-- FEDERALBNK: score=13 rs_nifty=5.13 deliv=33.33
-- RPEL: score=13 rs_nifty=8.31 deliv=41.19
-- PATELRMART: score=13 rs_nifty=18.06 deliv=51.58
-- MANAKCOAT: score=13 rs_nifty=0.45 deliv=75.1
-- CPPLUS: score=13 rs_nifty=19.01 deliv=44.7
-- EMKAY: score=13 rs_nifty=9.77 deliv=63.15
+- UNIONBANK: score=14 rs_nifty=2.87 deliv=29.03
+- THELEELA: score=14 rs_nifty=19.14 deliv=43.59
+- TEXINFRA: score=13 rs_nifty=13.3 deliv=61.77
+- PGIL: score=13 rs_nifty=14.3 deliv=45.14
+- WHEELS: score=13 rs_nifty=16.17 deliv=58.95
+- ARIHANTCAP: score=13 rs_nifty=18.22 deliv=60.0
+- KESORAMIND: score=13 rs_nifty=5.22 deliv=58.37
+- PVRINOX: score=13 rs_nifty=11.39 deliv=46.34
+- FEDERALBNK: score=13 rs_nifty=6.46 deliv=33.33
+- 21STCENMGM: score=13 rs_nifty=26.48 deliv=89.11
+- GALAXYSURF: score=13 rs_nifty=8.97 deliv=49.4
+- MEESHO: score=13 rs_nifty=11.77 deliv=44.97
+- GPTINFRA: score=13 rs_nifty=3.41 deliv=36.49
+- MANAKCOAT: score=13 rs_nifty=1.78 deliv=75.1
+- MMP: score=13 rs_nifty=2.82 deliv=48.11
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.66% (bear)
-- Hang Seng: +0.52% (bull)
-- Shanghai: +0.24% (bull)
-- Kospi: -0.65% (bear)
-- Taiwan: +0.30% (bull)
-- ASX 200: -0.47% (bear)
+- Nikkei: -1.41% (bear)
+- Hang Seng: -0.99% (bear)
+- Shanghai: -0.31% (bear)
+- Kospi: -4.25% (bear)
+- Taiwan: -1.10% (bear)
+- ASX 200: -0.35% (bear)
 
 ### Europe
-- FTSE 100: +0.38% (bull)
-- DAX: +0.95% (bull)
-- Euro Stoxx 50: +0.58% (bull)
+- FTSE 100: -1.08% (bear)
+- DAX: -1.18% (bear)
+- Euro Stoxx 50: -0.96% (bear)
 
 ### US
 - S&P 500: +0.41% (bull)
@@ -115,13 +115,13 @@
 - US VIX: -7.75% (bull)
 
 ### Macro
-- USDINR: +0.48% (bear)
-- Crude WTI: -2.88% (bear)
-- Brent: -0.39% (bear)
-- DXY: +0.09% (neutral)
+- USDINR: -0.06% (neutral)
+- Crude WTI: -4.75% (bear)
+- Brent: +0.32% (bull)
+- DXY: -0.20% (neutral)
 - US 10Y: +0.75% (bear)
-- India ETF: -0.60% (bear)
-- EM ETF: -1.74% (bear)
+- India ETF: -0.55% (bear)
+- EM ETF: +0.73% (bull)
 
 
 ## Groq desk note
