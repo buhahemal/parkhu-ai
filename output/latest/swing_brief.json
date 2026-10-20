@@ -27,22 +27,22 @@
     "worst_sector_perf_1m": -6.64,
     "fii_net": -1148.64,
     "dii_net": 3201.19,
-    "crude": 98.74,
-    "crude_pct_change": -4.75,
-    "usdinr": 94.92,
-    "usdinr_pct_change": -0.06,
+    "crude": 99.95,
+    "crude_pct_change": -3.58,
+    "usdinr": 94.93,
+    "usdinr_pct_change": -0.05,
     "us_sp500_pct": 0.41,
     "us_dow_pct": -0.07,
-    "us_vix": 18.44,
-    "us_vix_pct": -7.75,
-    "dxy": 101.78,
-    "dxy_pct": -0.2,
-    "us_10y": 5.14,
+    "us_vix": 18.85,
+    "us_vix_pct": 2.22,
+    "dxy": 101.74,
+    "dxy_pct": -0.24,
+    "us_10y": 5.09,
     "asia_cue": "Bearish",
     "europe_cue": "Bearish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-20T10:47:21.985163+05:30"
+    "generated_at_ist": "2026-10-20T18:09:10.299077+05:30"
   },
   "funnel": [
     {
@@ -192,6 +192,7 @@
         "HAPPSTMNDS",
         "GMBREW",
         "LTM",
+        "HINDZINC",
         "ATUL",
         "LLOYDSME",
         "LODHA",
@@ -210,8 +211,7 @@
         "POLYCAB",
         "CARERATING",
         "DMCC",
-        "INDOBORAX",
-        "SHAILY"
+        "INDOBORAX"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -448,6 +448,7 @@
         "SONAMLTD",
         "VIAZ",
         "DHANBANK",
+        "TATVA",
         "MAZDA",
         "MANAKSTEEL",
         "VHL",
@@ -456,8 +457,7 @@
         "INDIAGLYCO",
         "KORE",
         "NINSYS",
-        "GALAXYSURF",
-        "WEWIN"
+        "GALAXYSURF"
       ],
       "dropped_symbols": [
         "LTTS",
@@ -556,6 +556,7 @@
         "SONAMLTD",
         "VIAZ",
         "DHANBANK",
+        "TATVA",
         "MAZDA",
         "MANAKSTEEL",
         "VHL",
@@ -567,8 +568,7 @@
         "WEWIN",
         "OCCLLTD",
         "PGIL",
-        "GESHIP",
-        "WHEELS"
+        "GESHIP"
       ],
       "dropped_symbols": [
         "ONWARDTEC",
@@ -656,6 +656,7 @@
         "RPEL",
         "GANDHAR",
         "FSL",
+        "TATVA",
         "FINEORG",
         "INDIAGLYCO",
         "WEWIN",
@@ -671,7 +672,6 @@
         "TVSMOTOR",
         "BHAGERIA",
         "GPPL",
-        "TATVA",
         "UNITEDPOLY",
         "PANAMAPET",
         "CHEMCON",
@@ -795,7 +795,6 @@
         "SAAKSHI",
         "SAHASRA",
         "ARFIN",
-        "GALLANTT",
         "NRL",
         "HOLMARC",
         "GPTINFRA",
@@ -804,6 +803,7 @@
         "PANACHE",
         "INFINIUM",
         "WSTCSTPAPR",
+        "GALLANTT",
         "SYNCOMF",
         "DYNAMATECH",
         "BBOX",

@@ -149,6 +149,7 @@
         "HAPPSTMNDS",
         "GMBREW",
         "LTM",
+        "HINDZINC",
         "ATUL",
         "LLOYDSME",
         "LODHA",
@@ -167,8 +168,7 @@
         "POLYCAB",
         "CARERATING",
         "DMCC",
-        "INDOBORAX",
-        "SHAILY"
+        "INDOBORAX"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -405,6 +405,7 @@
         "SONAMLTD",
         "VIAZ",
         "DHANBANK",
+        "TATVA",
         "MAZDA",
         "MANAKSTEEL",
         "VHL",
@@ -413,8 +414,7 @@
         "INDIAGLYCO",
         "KORE",
         "NINSYS",
-        "GALAXYSURF",
-        "WEWIN"
+        "GALAXYSURF"
       ],
       "dropped_symbols": [
         "LTTS",
@@ -513,6 +513,7 @@
         "SONAMLTD",
         "VIAZ",
         "DHANBANK",
+        "TATVA",
         "MAZDA",
         "MANAKSTEEL",
         "VHL",
@@ -524,8 +525,7 @@
         "WEWIN",
         "OCCLLTD",
         "PGIL",
-        "GESHIP",
-        "WHEELS"
+        "GESHIP"
       ],
       "dropped_symbols": [
         "ONWARDTEC",
@@ -613,6 +613,7 @@
         "RPEL",
         "GANDHAR",
         "FSL",
+        "TATVA",
         "FINEORG",
         "INDIAGLYCO",
         "WEWIN",
@@ -628,7 +629,6 @@
         "TVSMOTOR",
         "BHAGERIA",
         "GPPL",
-        "TATVA",
         "UNITEDPOLY",
         "PANAMAPET",
         "CHEMCON",
@@ -752,7 +752,6 @@
         "SAAKSHI",
         "SAHASRA",
         "ARFIN",
-        "GALLANTT",
         "NRL",
         "HOLMARC",
         "GPTINFRA",
@@ -761,6 +760,7 @@
         "PANACHE",
         "INFINIUM",
         "WSTCSTPAPR",
+        "GALLANTT",
         "SYNCOMF",
         "DYNAMATECH",
         "BBOX",
