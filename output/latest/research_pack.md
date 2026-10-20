@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-20T00:26:45.601402+05:30
+- **generated_at_ist:** 2026-10-20T06:10:32.560640+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -49,19 +49,19 @@
 - entry 622.75 | stop 580.1 | t1 653.89 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ARIHANTCAP — Watch (score 13.0)
-- ARIHANTCAP | risk_sector: Finance
-- entry 94.09 | stop 87.69 | t1 98.79 | t2 None | t3 None | R:R None
+### WHEELS — Watch (score 13.0)
+- WHEELS | risk_sector: Producer Manufacturing
+- entry 2439.4 | stop 2249.05 | t1 2561.37 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### KOPRAN — Watch (score 13.0)
-- KOPRAN | risk_sector: Health Technology
-- entry 278.25 | stop 252.58 | t1 292.16 | t2 None | t3 None | R:R None
+### GFLLIMITED — Watch (score 13.0)
+- GFLLIMITED | risk_sector: Consumer Services
+- entry 57.9 | stop 53.37 | t1 60.8 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### AHCL — Watch (score 13.0)
-- AHCL | risk_sector: Health Technology
-- entry 26.97 | stop 24.05 | t1 28.32 | t2 None | t3 None | R:R None
+### TFCILTD — Watch (score 13.0)
+- TFCILTD | risk_sector: Finance
+- entry 156.18 | stop 147.64 | t1 163.99 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -79,49 +79,49 @@
 
 - UNIONBANK: score=14 rs_nifty=1.54 deliv=29.03
 - THELEELA: score=14 rs_nifty=17.81 deliv=43.59
-- ARIHANTCAP: score=13 rs_nifty=16.89 deliv=60.0
-- KOPRAN: score=13 rs_nifty=4.29 deliv=33.33
-- AHCL: score=13 rs_nifty=19.23 deliv=41.03
-- FEDERALBNK: score=13 rs_nifty=5.13 deliv=33.33
-- GFLLIMITED: score=13 rs_nifty=3.67 deliv=49.18
 - WHEELS: score=13 rs_nifty=14.84 deliv=58.95
-- EMKAY: score=13 rs_nifty=9.77 deliv=63.15
-- MANINDS: score=13 rs_nifty=7.52 deliv=36.8
-- MANAKCOAT: score=13 rs_nifty=0.45 deliv=75.1
-- MEESHO: score=13 rs_nifty=10.44 deliv=44.97
-- PRINCEPIPE: score=13 rs_nifty=7.07 deliv=47.31
-- CPPLUS: score=13 rs_nifty=19.01 deliv=44.7
+- GFLLIMITED: score=13 rs_nifty=3.67 deliv=49.18
 - TFCILTD: score=13 rs_nifty=12.11 deliv=41.54
+- VETO: score=13 rs_nifty=4.6 deliv=44.34
+- IBULLSLTD: score=13 rs_nifty=14.24 deliv=62.16
+- MANINDS: score=13 rs_nifty=7.52 deliv=36.8
+- MEESHO: score=13 rs_nifty=10.44 deliv=44.97
+- FEDERALBNK: score=13 rs_nifty=5.13 deliv=33.33
+- RPEL: score=13 rs_nifty=8.31 deliv=41.19
+- PATELRMART: score=13 rs_nifty=18.06 deliv=51.58
+- MANAKCOAT: score=13 rs_nifty=0.45 deliv=75.1
+- CPPLUS: score=13 rs_nifty=19.01 deliv=44.7
+- EMKAY: score=13 rs_nifty=9.77 deliv=63.15
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.39% (bull)
+- Nikkei: -1.66% (bear)
 - Hang Seng: +0.52% (bull)
 - Shanghai: +0.24% (bull)
-- Kospi: +2.05% (bull)
+- Kospi: -0.65% (bear)
 - Taiwan: +0.30% (bull)
-- ASX 200: +0.44% (bull)
+- ASX 200: -0.47% (bear)
 
 ### Europe
-- FTSE 100: -1.08% (bear)
-- DAX: -1.18% (bear)
-- Euro Stoxx 50: -0.96% (bear)
+- FTSE 100: +0.38% (bull)
+- DAX: +0.95% (bull)
+- Euro Stoxx 50: +0.58% (bull)
 
 ### US
-- S&P 500: +0.56% (bull)
-- Nasdaq: +1.25% (bull)
-- Dow: +0.06% (neutral)
-- US VIX: -8.05% (bull)
+- S&P 500: +0.41% (bull)
+- Nasdaq: +1.11% (bull)
+- Dow: -0.07% (neutral)
+- US VIX: -7.75% (bull)
 
 ### Macro
-- USDINR: +0.41% (bear)
-- Crude WTI: -2.92% (bear)
-- Brent: -0.38% (bear)
-- DXY: +0.14% (neutral)
-- US 10Y: +0.61% (bear)
-- India ETF: -0.45% (bear)
-- EM ETF: +0.91% (bull)
+- USDINR: +0.48% (bear)
+- Crude WTI: -2.88% (bear)
+- Brent: -0.39% (bear)
+- DXY: +0.09% (neutral)
+- US 10Y: +0.75% (bear)
+- India ETF: -0.60% (bear)
+- EM ETF: -1.74% (bear)
 
 
 ## Groq desk note
