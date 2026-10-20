@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-20T18:09:36.026512+05:30
+- **generated_at_ist:** 2026-10-20T23:05:21.095183+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -49,19 +49,19 @@
 - entry 622.75 | stop 580.1 | t1 653.89 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GALAXYSURF — Watch (score 13.0)
-- GALAXYSURF | risk_sector: Consumer Non-Durables
-- entry 2437.5 | stop 2287.86 | t1 2559.38 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### NGIL — Watch (score 13.0)
 - NGIL | risk_sector: Consumer Non-Durables
 - entry 38.93 | stop 34.59 | t1 40.88 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### MANINDS — Watch (score 13.0)
-- MANINDS | risk_sector: Producer Manufacturing
-- entry 884.5 | stop 805.18 | t1 928.72 | t2 None | t3 None | R:R None
+### GALAXYSURF — Watch (score 13.0)
+- GALAXYSURF | risk_sector: Consumer Non-Durables
+- entry 2437.5 | stop 2287.86 | t1 2559.38 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### RPEL — Watch (score 13.0)
+- RPEL | risk_sector: Process Industries
+- entry 1777.8 | stop 1621.65 | t1 1866.69 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -79,9 +79,8 @@
 
 - UNIONBANK: score=14 rs_nifty=2.87 deliv=29.03
 - THELEELA: score=14 rs_nifty=19.14 deliv=43.59
-- GALAXYSURF: score=13 rs_nifty=8.97 deliv=49.4
 - NGIL: score=13 rs_nifty=8.8 deliv=67.6
-- MANINDS: score=13 rs_nifty=8.85 deliv=36.8
+- GALAXYSURF: score=13 rs_nifty=8.97 deliv=49.4
 - RPEL: score=13 rs_nifty=9.64 deliv=41.19
 - VETO: score=13 rs_nifty=5.93 deliv=44.34
 - MEESHO: score=13 rs_nifty=11.77 deliv=44.97
@@ -89,39 +88,40 @@
 - CINELINE: score=13 rs_nifty=2.3 deliv=85.59
 - WHEELS: score=13 rs_nifty=16.17 deliv=58.95
 - IBULLSLTD: score=13 rs_nifty=15.57 deliv=62.16
-- PATELRMART: score=13 rs_nifty=19.39 deliv=51.58
-- BIL: score=13 rs_nifty=2.91 deliv=50.93
+- MANINDS: score=13 rs_nifty=8.85 deliv=36.8
+- MANAKCOAT: score=13 rs_nifty=1.78 deliv=75.1
 - TEXINFRA: score=13 rs_nifty=13.3 deliv=61.77
+- CPPLUS: score=13 rs_nifty=20.34 deliv=44.7
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.30% (bear)
-- Hang Seng: -1.32% (bear)
-- Shanghai: +0.12% (neutral)
-- Kospi: -3.73% (bear)
-- Taiwan: -1.13% (bear)
+- Nikkei: -0.62% (bear)
+- Hang Seng: +0.52% (bull)
+- Shanghai: +0.39% (bull)
+- Kospi: +1.76% (bull)
+- Taiwan: -0.61% (bear)
 - ASX 200: -0.33% (bear)
 
 ### Europe
-- FTSE 100: -0.68% (bear)
-- DAX: -0.87% (bear)
-- Euro Stoxx 50: -1.03% (bear)
+- FTSE 100: -0.29% (bear)
+- DAX: -0.06% (neutral)
+- Euro Stoxx 50: -0.38% (bear)
 
 ### US
-- S&P 500: +0.41% (bull)
-- Nasdaq: +1.11% (bull)
-- Dow: -0.07% (neutral)
-- US VIX: +2.22% (bear)
+- S&P 500: +0.39% (bull)
+- Nasdaq: +0.20% (bull)
+- Dow: +1.00% (bull)
+- US VIX: -4.23% (bull)
 
 ### Macro
-- USDINR: -0.05% (neutral)
-- Crude WTI: -3.58% (bear)
-- Brent: +1.06% (bull)
-- DXY: -0.24% (neutral)
-- US 10Y: -0.82% (bull)
-- India ETF: -0.55% (bear)
-- EM ETF: +0.73% (bull)
+- USDINR: -0.07% (neutral)
+- Crude WTI: -5.49% (bear)
+- Brent: -0.68% (bear)
+- DXY: -0.23% (neutral)
+- US 10Y: -0.14% (neutral)
+- India ETF: +0.83% (bull)
+- EM ETF: +0.17% (bull)
 
 
 ## Groq desk note
