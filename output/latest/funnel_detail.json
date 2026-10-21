@@ -54,8 +54,8 @@
         "SBC",
         "SONAMLTD",
         "MYMUDRA",
-        "ELDEHSG",
         "MANAKCOAT",
+        "ELDEHSG",
         "FEDFINA"
       ],
       "dropped_symbols": [],
@@ -64,8 +64,8 @@
     },
     {
       "gate": "trend = Bullish",
-      "surviving": 608,
-      "dropped_count": 2590,
+      "surviving": 609,
+      "dropped_count": 2589,
       "survivor_symbols": [
         "ICICIBANK",
         "UNIONBANK",
@@ -114,8 +114,8 @@
         "SBC",
         "SONAMLTD",
         "MYMUDRA",
-        "ELDEHSG",
         "MANAKCOAT",
+        "ELDEHSG",
         "FEDFINA"
       ],
       "dropped_symbols": [
@@ -175,7 +175,7 @@
     },
     {
       "gate": "price > SMA200",
-      "surviving": 459,
+      "surviving": 460,
       "dropped_count": 149,
       "survivor_symbols": [
         "ICICIBANK",
@@ -286,7 +286,7 @@
     },
     {
       "gate": "price > EMA50",
-      "surviving": 443,
+      "surviving": 444,
       "dropped_count": 16,
       "survivor_symbols": [
         "ICICIBANK",
@@ -363,7 +363,7 @@
     },
     {
       "gate": "ADX14 > 25",
-      "surviving": 233,
+      "surviving": 234,
       "dropped_count": 210,
       "survivor_symbols": [
         "UNIONBANK",
@@ -474,7 +474,7 @@
     },
     {
       "gate": "RSI14 in 40-80",
-      "surviving": 221,
+      "surviving": 222,
       "dropped_count": 12,
       "survivor_symbols": [
         "UNIONBANK",
@@ -548,7 +548,7 @@
     {
       "gate": "RS > 0 vs NIFTY and sector",
       "surviving": 110,
-      "dropped_count": 111,
+      "dropped_count": 112,
       "survivor_symbols": [
         "UNIONBANK",
         "KARURVYSYA",
@@ -617,6 +617,7 @@
         "NRAIL",
         "ANANDRATHI",
         "RPEL",
+        "VERANDA",
         "MPHASIS",
         "GANDHAR",
         "ONEPOINT",
@@ -650,8 +651,7 @@
         "KLL",
         "EIMCOELECO",
         "WSTCSTPAPR",
-        "PROV",
-        "BBOX"
+        "PROV"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true

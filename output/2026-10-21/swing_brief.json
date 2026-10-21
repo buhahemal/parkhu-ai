@@ -21,28 +21,28 @@
     "banknifty_pct_change": -0.92,
     "india_vix": 15.68,
     "vix_level": "Medium",
-    "best_sector": "Consumer Durables",
-    "best_sector_perf_1m": -1.08,
+    "best_sector": "Commercial Services",
+    "best_sector_perf_1m": -0.15,
     "worst_sector": "Health Services",
     "worst_sector_perf_1m": -9.28,
-    "fii_net": -1148.64,
-    "dii_net": 3201.19,
-    "crude": 97.98,
-    "crude_pct_change": -3.74,
+    "fii_net": 1022.32,
+    "dii_net": 1614.32,
+    "crude": 96.96,
+    "crude_pct_change": -4.75,
     "usdinr": 94.45,
     "usdinr_pct_change": -0.57,
-    "us_sp500_pct": 0.28,
-    "us_dow_pct": 1.02,
-    "us_vix": 17.28,
-    "us_vix_pct": -0.17,
+    "us_sp500_pct": 0.68,
+    "us_dow_pct": 0.49,
+    "us_vix": 16.75,
+    "us_vix_pct": -3.24,
     "dxy": 101.68,
     "dxy_pct": -0.05,
-    "us_10y": 5.1,
-    "asia_cue": "Bullish",
+    "us_10y": 5.11,
+    "asia_cue": "Bearish",
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-21T18:09:41.824202+05:30"
+    "generated_at_ist": "2026-10-21T23:11:15.368071+05:30"
   },
   "funnel": [
     {
@@ -97,8 +97,8 @@
         "SBC",
         "SONAMLTD",
         "MYMUDRA",
-        "ELDEHSG",
         "MANAKCOAT",
+        "ELDEHSG",
         "FEDFINA"
       ],
       "dropped_symbols": [],
@@ -107,8 +107,8 @@
     },
     {
       "gate": "trend = Bullish",
-      "surviving": 608,
-      "dropped_count": 2590,
+      "surviving": 609,
+      "dropped_count": 2589,
       "survivor_symbols": [
         "ICICIBANK",
         "UNIONBANK",
@@ -157,8 +157,8 @@
         "SBC",
         "SONAMLTD",
         "MYMUDRA",
-        "ELDEHSG",
         "MANAKCOAT",
+        "ELDEHSG",
         "FEDFINA"
       ],
       "dropped_symbols": [
@@ -218,7 +218,7 @@
     },
     {
       "gate": "price > SMA200",
-      "surviving": 459,
+      "surviving": 460,
       "dropped_count": 149,
       "survivor_symbols": [
         "ICICIBANK",
@@ -329,7 +329,7 @@
     },
     {
       "gate": "price > EMA50",
-      "surviving": 443,
+      "surviving": 444,
       "dropped_count": 16,
       "survivor_symbols": [
         "ICICIBANK",
@@ -406,7 +406,7 @@
     },
     {
       "gate": "ADX14 > 25",
-      "surviving": 233,
+      "surviving": 234,
       "dropped_count": 210,
       "survivor_symbols": [
         "UNIONBANK",
@@ -517,7 +517,7 @@
     },
     {
       "gate": "RSI14 in 40-80",
-      "surviving": 221,
+      "surviving": 222,
       "dropped_count": 12,
       "survivor_symbols": [
         "UNIONBANK",
@@ -591,7 +591,7 @@
     {
       "gate": "RS > 0 vs NIFTY and sector",
       "surviving": 110,
-      "dropped_count": 111,
+      "dropped_count": 112,
       "survivor_symbols": [
         "UNIONBANK",
         "KARURVYSYA",
@@ -660,6 +660,7 @@
         "NRAIL",
         "ANANDRATHI",
         "RPEL",
+        "VERANDA",
         "MPHASIS",
         "GANDHAR",
         "ONEPOINT",
@@ -693,8 +694,7 @@
         "KLL",
         "EIMCOELECO",
         "WSTCSTPAPR",
-        "PROV",
-        "BBOX"
+        "PROV"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true

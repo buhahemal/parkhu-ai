@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-21
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-21T18:10:07.500726+05:30
+- **generated_at_ist:** 2026-10-21T23:11:33.717795+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,17 +9,17 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.34%)
 - india_vix: 15.68 (Medium)
-- fii_net: -1148.64 | dii_net: 3201.19
+- fii_net: 1022.32 | dii_net: 1614.32
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
 - universe: 3198
-- trend = Bullish: 608
-- price > SMA200: 459
-- price > EMA50: 443
-- ADX14 > 25: 233
-- RSI14 in 40-80: 221
+- trend = Bullish: 609
+- price > SMA200: 460
+- price > EMA50: 444
+- ADX14 > 25: 234
+- RSI14 in 40-80: 222
 - RS > 0 vs NIFTY and sector: 110
 - delivery% >= 40: 43
 - relative_volume >= 1: 9
@@ -36,29 +36,29 @@
 
 ## Ideas
 
-### IBULLSLTD — Watch (score 14.0)
-- IBULLSLTD | risk_sector: Finance
-- entry 34.57 | stop 31.21 | t1 36.3 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### VHL — Watch (score 14.0)
 - VHL | risk_sector: Finance
 - entry 3607.4 | stop 3403.51 | t1 3787.77 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### BIMETAL — Watch (score 13.0)
-- BIMETAL | risk_sector: Producer Manufacturing
-- entry 648.0 | stop 613.77 | t1 680.4 | t2 None | t3 None | R:R None
+### IBULLSLTD — Watch (score 14.0)
+- IBULLSLTD | risk_sector: Finance
+- entry 34.57 | stop 31.21 | t1 36.3 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### UNIONBANK — Watch (score 13.0)
-- UNIONBANK | risk_sector: Finance
-- entry 182.0 | stop 173.9 | t1 191.1 | t2 None | t3 None | R:R None
+### THELEELA — Watch (score 13.0)
+- THELEELA | risk_sector: Consumer Services
+- entry 585.5 | stop 541.03 | t1 614.78 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PNB — Watch (score 13.0)
-- PNB | risk_sector: Finance
-- entry 122.5 | stop 117.57 | t1 128.62 | t2 None | t3 None | R:R None
+### MMWL — Watch (score 13.0)
+- MMWL | risk_sector: Technology Services
+- entry 21.92 | stop 19.75 | t1 23.02 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PATELRMART — Watch (score 13.0)
+- PATELRMART | risk_sector: Retail Trade
+- entry 234.5 | stop 221.87 | t1 246.23 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -76,51 +76,51 @@
 
 ## Swing candidates (top)
 
-- IBULLSLTD: score=14 rs_nifty=14.35 deliv=45.45
 - VHL: score=14 rs_nifty=9.97 deliv=55.5
-- BIMETAL: score=13 rs_nifty=2.51 deliv=97.13
-- UNIONBANK: score=13 rs_nifty=5.05 deliv=34.07
-- PNB: score=13 rs_nifty=6.79 deliv=52.74
-- TEXINFRA: score=13 rs_nifty=11.71 deliv=59.79
-- AUSOMENT: score=13 rs_nifty=7.11 deliv=56.82
-- DHANBANK: score=13 rs_nifty=22.04 deliv=45.22
-- DYNPRO: score=13 rs_nifty=7.72 deliv=85.62
+- IBULLSLTD: score=14 rs_nifty=14.35 deliv=45.45
+- THELEELA: score=13 rs_nifty=10.61 deliv=42.66
 - MMWL: score=13 rs_nifty=75.98 deliv=62.03
-- HALEOSLABS: score=13 rs_nifty=6.53 deliv=84.22
+- PATELRMART: score=13 rs_nifty=15.69 deliv=55.83
+- 21STCENMGM: score=13 rs_nifty=32.83 deliv=99.93
+- KARURVYSYA: score=13 rs_nifty=10.08 deliv=26.94
+- LOYALTEX: score=13 rs_nifty=8.34 deliv=82.75
 - ORBTEXP: score=13 rs_nifty=15.66 deliv=87.98
 - MANBA: score=13 rs_nifty=8.08 deliv=47.34
-- LOYALTEX: score=13 rs_nifty=8.34 deliv=82.75
-- KARURVYSYA: score=13 rs_nifty=10.08 deliv=26.94
+- ICICIBANK: score=13 rs_nifty=5.05 deliv=62.24
+- HALEOSLABS: score=13 rs_nifty=6.53 deliv=84.22
+- PNB: score=13 rs_nifty=6.79 deliv=52.74
+- MVGJL: score=13 rs_nifty=4.45 deliv=31.5
+- TFCILTD: score=13 rs_nifty=9.58 deliv=35.45
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.85% (bull)
-- Hang Seng: -0.90% (bear)
-- Shanghai: -0.60% (bear)
-- Kospi: +3.29% (bull)
-- Taiwan: +1.28% (bull)
+- Nikkei: -1.30% (bear)
+- Hang Seng: -1.32% (bear)
+- Shanghai: +0.12% (neutral)
+- Kospi: -3.73% (bear)
+- Taiwan: -1.13% (bear)
 - ASX 200: +0.16% (bull)
 
 ### Europe
-- FTSE 100: +0.04% (neutral)
-- DAX: +0.89% (bull)
-- Euro Stoxx 50: +1.00% (bull)
+- FTSE 100: +0.19% (bull)
+- DAX: +1.35% (bull)
+- Euro Stoxx 50: +1.40% (bull)
 
 ### US
-- S&P 500: +0.28% (bull)
-- Nasdaq: -0.02% (neutral)
-- Dow: +1.02% (bull)
-- US VIX: -0.17% (neutral)
+- S&P 500: +0.68% (bull)
+- Nasdaq: +1.23% (bull)
+- Dow: +0.49% (bull)
+- US VIX: -3.24% (bull)
 
 ### Macro
 - USDINR: -0.57% (bull)
-- Crude WTI: -3.74% (bear)
-- Brent: -0.08% (neutral)
+- Crude WTI: -4.75% (bear)
+- Brent: -0.07% (neutral)
 - DXY: -0.05% (neutral)
-- US 10Y: -0.33% (neutral)
-- India ETF: +0.80% (bull)
-- EM ETF: +0.02% (neutral)
+- US 10Y: -0.16% (neutral)
+- India ETF: -0.80% (bear)
+- EM ETF: +0.44% (bull)
 
 
 ## Groq desk note

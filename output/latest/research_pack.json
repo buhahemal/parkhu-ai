@@ -5,7 +5,7 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-21",
-  "generated_at_ist": "2026-10-21T18:10:07.500726+05:30",
+  "generated_at_ist": "2026-10-21T23:11:33.717795+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
@@ -34,28 +34,28 @@
     "banknifty_pct_change": -0.92,
     "india_vix": 15.68,
     "vix_level": "Medium",
-    "best_sector": "Consumer Durables",
-    "best_sector_perf_1m": -1.08,
+    "best_sector": "Commercial Services",
+    "best_sector_perf_1m": -0.15,
     "worst_sector": "Health Services",
     "worst_sector_perf_1m": -9.28,
-    "fii_net": -1148.64,
-    "dii_net": 3201.19,
-    "crude": 97.98,
-    "crude_pct_change": -3.74,
+    "fii_net": 1022.32,
+    "dii_net": 1614.32,
+    "crude": 96.96,
+    "crude_pct_change": -4.75,
     "usdinr": 94.45,
     "usdinr_pct_change": -0.57,
-    "us_sp500_pct": 0.28,
-    "us_dow_pct": 1.02,
-    "us_vix": 17.28,
-    "us_vix_pct": -0.17,
+    "us_sp500_pct": 0.68,
+    "us_dow_pct": 0.49,
+    "us_vix": 16.75,
+    "us_vix_pct": -3.24,
     "dxy": 101.68,
     "dxy_pct": -0.05,
-    "us_10y": 5.1,
-    "asia_cue": "Bullish",
+    "us_10y": 5.11,
+    "asia_cue": "Bearish",
     "europe_cue": "Bullish",
     "global_risk": "Neutral",
     "overall_risk": "Medium",
-    "generated_at_ist": "2026-10-21T18:09:41.824202+05:30"
+    "generated_at_ist": "2026-10-21T23:11:15.368071+05:30"
   },
   "world_markets": [
     {
@@ -64,42 +64,42 @@
         {
           "label": "Nikkei",
           "metric": "NIKKEI",
-          "value": 64621.24,
-          "pct_change": 0.85,
-          "tone": "bull",
-          "session_date": "2026-10-21"
+          "value": 64075.42,
+          "pct_change": -1.3,
+          "tone": "bear",
+          "session_date": "2026-10-20"
         },
         {
           "label": "Hang Seng",
           "metric": "HANG_SENG",
-          "value": 23651.87,
-          "pct_change": -0.9,
+          "value": 23867.74,
+          "pct_change": -1.32,
           "tone": "bear",
-          "session_date": "2026-10-21"
+          "session_date": "2026-10-20"
         },
         {
           "label": "Shanghai",
           "metric": "SHANGHAI",
-          "value": 3713.03,
-          "pct_change": -0.6,
-          "tone": "bear",
-          "session_date": "2026-10-21"
+          "value": 3735.37,
+          "pct_change": 0.12,
+          "tone": "neutral",
+          "session_date": "2026-10-20"
         },
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 5735.66,
-          "pct_change": 3.29,
-          "tone": "bull",
-          "session_date": "2026-10-21"
+          "value": 5552.74,
+          "pct_change": -3.73,
+          "tone": "bear",
+          "session_date": "2026-10-20"
         },
         {
           "label": "Taiwan",
           "metric": "TAIWAN",
-          "value": 46887.77,
-          "pct_change": 1.28,
-          "tone": "bull",
-          "session_date": "2026-10-21"
+          "value": 46292.93,
+          "pct_change": -1.13,
+          "tone": "bear",
+          "session_date": "2026-10-20"
         },
         {
           "label": "ASX 200",
@@ -117,24 +117,24 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10737.81,
-          "pct_change": 0.04,
-          "tone": "neutral",
+          "value": 10752.88,
+          "pct_change": 0.19,
+          "tone": "bull",
           "session_date": "2026-10-21"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 25529.28,
-          "pct_change": 0.89,
+          "value": 25645.04,
+          "pct_change": 1.35,
           "tone": "bull",
           "session_date": "2026-10-21"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 6182.74,
-          "pct_change": 1.0,
+          "value": 6207.52,
+          "pct_change": 1.4,
           "tone": "bull",
           "session_date": "2026-10-21"
         }
@@ -146,33 +146,33 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 7712.57,
-          "pct_change": 0.28,
+          "value": 7764.73,
+          "pct_change": 0.68,
           "tone": "bull",
-          "session_date": "2026-10-20"
+          "session_date": "2026-10-21"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 26424.82,
-          "pct_change": -0.02,
-          "tone": "neutral",
-          "session_date": "2026-10-20"
+          "value": 26750.4,
+          "pct_change": 1.23,
+          "tone": "bull",
+          "session_date": "2026-10-21"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 52495.88,
-          "pct_change": 1.02,
+          "value": 52753.56,
+          "pct_change": 0.49,
           "tone": "bull",
-          "session_date": "2026-10-20"
+          "session_date": "2026-10-21"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 17.28,
-          "pct_change": -0.17,
-          "tone": "neutral",
+          "value": 16.75,
+          "pct_change": -3.24,
+          "tone": "bull",
           "session_date": "2026-10-21"
         }
       ]
@@ -191,16 +191,16 @@
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 97.98,
-          "pct_change": -3.74,
+          "value": 96.96,
+          "pct_change": -4.75,
           "tone": "bear",
           "session_date": "2026-10-21"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 108.7,
-          "pct_change": -0.08,
+          "value": 108.71,
+          "pct_change": -0.07,
           "tone": "neutral",
           "session_date": "2026-10-21"
         },
@@ -215,26 +215,26 @@
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 5.1,
-          "pct_change": -0.33,
+          "value": 5.11,
+          "pct_change": -0.16,
           "tone": "neutral",
           "session_date": "2026-10-21"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 47.78,
-          "pct_change": 0.8,
-          "tone": "bull",
-          "session_date": "2026-10-20"
+          "value": 47.4,
+          "pct_change": -0.8,
+          "tone": "bear",
+          "session_date": "2026-10-21"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 63.32,
-          "pct_change": 0.02,
-          "tone": "neutral",
-          "session_date": "2026-10-20"
+          "value": 63.6,
+          "pct_change": 0.44,
+          "tone": "bull",
+          "session_date": "2026-10-21"
         }
       ]
     }
@@ -292,8 +292,8 @@
         "SBC",
         "SONAMLTD",
         "MYMUDRA",
-        "ELDEHSG",
         "MANAKCOAT",
+        "ELDEHSG",
         "FEDFINA"
       ],
       "dropped_symbols": [],
@@ -302,8 +302,8 @@
     },
     {
       "gate": "trend = Bullish",
-      "surviving": 608,
-      "dropped_count": 2590,
+      "surviving": 609,
+      "dropped_count": 2589,
       "survivor_symbols": [
         "ICICIBANK",
         "UNIONBANK",
@@ -352,8 +352,8 @@
         "SBC",
         "SONAMLTD",
         "MYMUDRA",
-        "ELDEHSG",
         "MANAKCOAT",
+        "ELDEHSG",
         "FEDFINA"
       ],
       "dropped_symbols": [
@@ -413,7 +413,7 @@
     },
     {
       "gate": "price > SMA200",
-      "surviving": 459,
+      "surviving": 460,
       "dropped_count": 149,
       "survivor_symbols": [
         "ICICIBANK",
@@ -524,7 +524,7 @@
     },
     {
       "gate": "price > EMA50",
-      "surviving": 443,
+      "surviving": 444,
       "dropped_count": 16,
       "survivor_symbols": [
         "ICICIBANK",
@@ -601,7 +601,7 @@
     },
     {
       "gate": "ADX14 > 25",
-      "surviving": 233,
+      "surviving": 234,
       "dropped_count": 210,
       "survivor_symbols": [
         "UNIONBANK",
@@ -712,7 +712,7 @@
     },
     {
       "gate": "RSI14 in 40-80",
-      "surviving": 221,
+      "surviving": 222,
       "dropped_count": 12,
       "survivor_symbols": [
         "UNIONBANK",
@@ -786,7 +786,7 @@
     {
       "gate": "RS > 0 vs NIFTY and sector",
       "surviving": 110,
-      "dropped_count": 111,
+      "dropped_count": 112,
       "survivor_symbols": [
         "UNIONBANK",
         "KARURVYSYA",
@@ -855,6 +855,7 @@
         "NRAIL",
         "ANANDRATHI",
         "RPEL",
+        "VERANDA",
         "MPHASIS",
         "GANDHAR",
         "ONEPOINT",
@@ -888,8 +889,7 @@
         "KLL",
         "EIMCOELECO",
         "WSTCSTPAPR",
-        "PROV",
-        "BBOX"
+        "PROV"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
@@ -1106,25 +1106,6 @@
   ],
   "ideas": [
     {
-      "symbol": "IBULLSLTD",
-      "company": "IBULLSLTD",
-      "sector": "Finance",
-      "risk_sector": "Finance",
-      "cmp": 34.57,
-      "parkhu_score": 14.0,
-      "band": "Watch",
-      "levels": {
-        "entry": 34.57,
-        "stop": 31.21,
-        "t1": 36.3,
-        "t2": null,
-        "t3": null,
-        "rr_t1": null,
-        "hold_days_t1": null
-      },
-      "source": "swing_candidates.csv"
-    },
-    {
       "symbol": "VHL",
       "company": "VHL",
       "sector": "Finance",
@@ -1144,17 +1125,17 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "BIMETAL",
-      "company": "BIMETAL",
-      "sector": "Producer Manufacturing",
-      "risk_sector": "Producer Manufacturing",
-      "cmp": 648.0,
-      "parkhu_score": 13.0,
+      "symbol": "IBULLSLTD",
+      "company": "IBULLSLTD",
+      "sector": "Finance",
+      "risk_sector": "Finance",
+      "cmp": 34.57,
+      "parkhu_score": 14.0,
       "band": "Watch",
       "levels": {
-        "entry": 648.0,
-        "stop": 613.77,
-        "t1": 680.4,
+        "entry": 34.57,
+        "stop": 31.21,
+        "t1": 36.3,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1163,17 +1144,17 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "UNIONBANK",
-      "company": "UNIONBANK",
-      "sector": "Finance",
-      "risk_sector": "Finance",
-      "cmp": 182.0,
+      "symbol": "THELEELA",
+      "company": "THELEELA",
+      "sector": "Consumer Services",
+      "risk_sector": "Consumer Services",
+      "cmp": 585.5,
       "parkhu_score": 13.0,
       "band": "Watch",
       "levels": {
-        "entry": 182.0,
-        "stop": 173.9,
-        "t1": 191.1,
+        "entry": 585.5,
+        "stop": 541.03,
+        "t1": 614.78,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1182,17 +1163,36 @@
       "source": "swing_candidates.csv"
     },
     {
-      "symbol": "PNB",
-      "company": "PNB",
-      "sector": "Finance",
-      "risk_sector": "Finance",
-      "cmp": 122.5,
+      "symbol": "MMWL",
+      "company": "MMWL",
+      "sector": "Technology Services",
+      "risk_sector": "Technology Services",
+      "cmp": 21.92,
       "parkhu_score": 13.0,
       "band": "Watch",
       "levels": {
-        "entry": 122.5,
-        "stop": 117.57,
-        "t1": 128.62,
+        "entry": 21.92,
+        "stop": 19.75,
+        "t1": 23.02,
+        "t2": null,
+        "t3": null,
+        "rr_t1": null,
+        "hold_days_t1": null
+      },
+      "source": "swing_candidates.csv"
+    },
+    {
+      "symbol": "PATELRMART",
+      "company": "PATELRMART",
+      "sector": "Retail Trade",
+      "risk_sector": "Retail Trade",
+      "cmp": 234.5,
+      "parkhu_score": 13.0,
+      "band": "Watch",
+      "levels": {
+        "entry": 234.5,
+        "stop": 221.87,
+        "t1": 246.23,
         "t2": null,
         "t3": null,
         "rr_t1": null,
@@ -1300,8 +1300,8 @@
           "SBC",
           "SONAMLTD",
           "MYMUDRA",
-          "ELDEHSG",
           "MANAKCOAT",
+          "ELDEHSG",
           "FEDFINA"
         ],
         "dropped_symbols": [],
@@ -1310,11 +1310,11 @@
       },
       {
         "gate": "trend = Bullish",
-        "surviving": 608,
+        "surviving": 609,
         "from_prev": 3198,
         "keep_pct": 19.0,
-        "dropped": 2590,
-        "dropped_count": 2590,
+        "dropped": 2589,
+        "dropped_count": 2589,
         "survivor_symbols": [
           "ICICIBANK",
           "UNIONBANK",
@@ -1363,8 +1363,8 @@
           "SBC",
           "SONAMLTD",
           "MYMUDRA",
-          "ELDEHSG",
           "MANAKCOAT",
+          "ELDEHSG",
           "FEDFINA"
         ],
         "dropped_symbols": [
@@ -1424,8 +1424,8 @@
       },
       {
         "gate": "price > SMA200",
-        "surviving": 459,
-        "from_prev": 608,
+        "surviving": 460,
+        "from_prev": 609,
         "keep_pct": 75.5,
         "dropped": 149,
         "dropped_count": 149,
@@ -1538,8 +1538,8 @@
       },
       {
         "gate": "price > EMA50",
-        "surviving": 443,
-        "from_prev": 459,
+        "surviving": 444,
+        "from_prev": 460,
         "keep_pct": 96.5,
         "dropped": 16,
         "dropped_count": 16,
@@ -1618,9 +1618,9 @@
       },
       {
         "gate": "ADX14 > 25",
-        "surviving": 233,
-        "from_prev": 443,
-        "keep_pct": 52.6,
+        "surviving": 234,
+        "from_prev": 444,
+        "keep_pct": 52.7,
         "dropped": 210,
         "dropped_count": 210,
         "survivor_symbols": [
@@ -1732,9 +1732,9 @@
       },
       {
         "gate": "RSI14 in 40-80",
-        "surviving": 221,
-        "from_prev": 233,
-        "keep_pct": 94.8,
+        "surviving": 222,
+        "from_prev": 234,
+        "keep_pct": 94.9,
         "dropped": 12,
         "dropped_count": 12,
         "survivor_symbols": [
@@ -1809,10 +1809,10 @@
       {
         "gate": "RS > 0 vs NIFTY and sector",
         "surviving": 110,
-        "from_prev": 221,
-        "keep_pct": 49.8,
-        "dropped": 111,
-        "dropped_count": 111,
+        "from_prev": 222,
+        "keep_pct": 49.5,
+        "dropped": 112,
+        "dropped_count": 112,
         "survivor_symbols": [
           "UNIONBANK",
           "KARURVYSYA",
@@ -1881,6 +1881,7 @@
           "NRAIL",
           "ANANDRATHI",
           "RPEL",
+          "VERANDA",
           "MPHASIS",
           "GANDHAR",
           "ONEPOINT",
@@ -1914,8 +1915,7 @@
           "KLL",
           "EIMCOELECO",
           "WSTCSTPAPR",
-          "PROV",
-          "BBOX"
+          "PROV"
         ],
         "survivor_symbols_truncated": true,
         "dropped_symbols_truncated": true
@@ -2148,7 +2148,11 @@
     "sector_counts": [
       {
         "sector": "Finance",
-        "names": 4
+        "names": 2
+      },
+      {
+        "sector": "Consumer Services",
+        "names": 1
       },
       {
         "sector": "Energy Minerals",
@@ -2159,7 +2163,11 @@
         "names": 1
       },
       {
-        "sector": "Producer Manufacturing",
+        "sector": "Retail Trade",
+        "names": 1
+      },
+      {
+        "sector": "Technology Services",
         "names": 1
       }
     ],
@@ -2357,24 +2365,6 @@
   },
   "swing_candidates_top": [
     {
-      "symbol": "IBULLSLTD",
-      "close": 34.57,
-      "score": 14,
-      "perf_1m": 12.0583468395,
-      "rs_vs_nifty_1m": 14.35,
-      "rs_vs_sector_1m": 12.06,
-      "deliv_pct": 45.45,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 12.5,
-      "atr": 2.2372520715,
-      "stop_1_5atr": 31.21,
-      "target_5pct": 36.3,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
       "symbol": "VHL",
       "close": 3607.4,
       "score": 14,
@@ -2393,130 +2383,40 @@
       "sector": "Finance"
     },
     {
-      "symbol": "BIMETAL",
-      "close": 648.0,
-      "score": 13,
-      "perf_1m": 0.2165171667,
-      "rs_vs_nifty_1m": 2.51,
-      "rs_vs_sector_1m": 0.22,
-      "deliv_pct": 97.13,
+      "symbol": "IBULLSLTD",
+      "close": 34.57,
+      "score": 14,
+      "perf_1m": 12.0583468395,
+      "rs_vs_nifty_1m": 14.35,
+      "rs_vs_sector_1m": 12.06,
+      "deliv_pct": 45.45,
       "pct_change_oi": null,
-      "upside_to_target_pct": 15.86,
-      "atr": 22.8175631376,
-      "stop_1_5atr": 613.77,
-      "target_5pct": 680.4,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Producer Manufacturing"
-    },
-    {
-      "symbol": "UNIONBANK",
-      "close": 182.0,
-      "score": 13,
-      "perf_1m": 2.7609959912,
-      "rs_vs_nifty_1m": 5.05,
-      "rs_vs_sector_1m": 5.21,
-      "deliv_pct": 34.07,
-      "pct_change_oi": -1.82,
-      "upside_to_target_pct": 12.91,
-      "atr": 5.4025322019,
-      "stop_1_5atr": 173.9,
-      "target_5pct": 191.1,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "PNB",
-      "close": 122.5,
-      "score": 13,
-      "perf_1m": 4.4954363218,
-      "rs_vs_nifty_1m": 6.79,
-      "rs_vs_sector_1m": 6.95,
-      "deliv_pct": 52.74,
-      "pct_change_oi": 1.87,
-      "upside_to_target_pct": 10.33,
-      "atr": 3.2871258387,
-      "stop_1_5atr": 117.57,
-      "target_5pct": 128.62,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "TEXINFRA",
-      "close": 122.28,
-      "score": 13,
-      "perf_1m": 9.4228187919,
-      "rs_vs_nifty_1m": 11.71,
-      "rs_vs_sector_1m": 9.42,
-      "deliv_pct": 59.79,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 6.95,
-      "atr": 5.2703877783,
-      "stop_1_5atr": 114.37,
-      "target_5pct": 128.39,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Utilities"
-    },
-    {
-      "symbol": "AUSOMENT",
-      "close": 156.71,
-      "score": 13,
-      "perf_1m": 4.8227424749,
-      "rs_vs_nifty_1m": 7.11,
-      "rs_vs_sector_1m": 4.82,
-      "deliv_pct": 56.82,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 13.59,
-      "atr": 8.7802587113,
-      "stop_1_5atr": 143.54,
-      "target_5pct": 164.55,
+      "upside_to_target_pct": 12.5,
+      "atr": 2.2372520715,
+      "stop_1_5atr": 31.21,
+      "target_5pct": 36.3,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
       "sector": "Finance"
     },
     {
-      "symbol": "DHANBANK",
-      "close": 35.53,
+      "symbol": "THELEELA",
+      "close": 585.5,
       "score": 13,
-      "perf_1m": 19.7505898214,
-      "rs_vs_nifty_1m": 22.04,
-      "rs_vs_sector_1m": 22.2,
-      "deliv_pct": 45.22,
+      "perf_1m": 8.3156044769,
+      "rs_vs_nifty_1m": 10.61,
+      "rs_vs_sector_1m": 8.32,
+      "deliv_pct": 42.66,
       "pct_change_oi": null,
-      "upside_to_target_pct": 5.54,
-      "atr": 2.0005978387,
-      "stop_1_5atr": 32.53,
-      "target_5pct": 37.31,
+      "upside_to_target_pct": 20.07,
+      "atr": 29.6443591119,
+      "stop_1_5atr": 541.03,
+      "target_5pct": 614.78,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "DYNPRO",
-      "close": 239.03,
-      "score": 13,
-      "perf_1m": 5.4342552159,
-      "rs_vs_nifty_1m": 7.72,
-      "rs_vs_sector_1m": 5.43,
-      "deliv_pct": 85.62,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 35.57,
-      "atr": 10.6328384675,
-      "stop_1_5atr": 223.08,
-      "target_5pct": 250.98,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Non-Durables"
+      "sector": "Consumer Services"
     },
     {
       "symbol": "MMWL",
@@ -2537,22 +2437,76 @@
       "sector": "Technology Services"
     },
     {
-      "symbol": "HALEOSLABS",
-      "close": 1583.8,
+      "symbol": "PATELRMART",
+      "close": 234.5,
       "score": 13,
-      "perf_1m": 4.2385152034,
-      "rs_vs_nifty_1m": 6.53,
-      "rs_vs_sector_1m": 8.52,
-      "deliv_pct": 84.22,
+      "perf_1m": 13.4000677015,
+      "rs_vs_nifty_1m": 15.69,
+      "rs_vs_sector_1m": 13.4,
+      "deliv_pct": 55.83,
       "pct_change_oi": null,
-      "upside_to_target_pct": 12.01,
-      "atr": 51.6453072534,
-      "stop_1_5atr": 1506.33,
-      "target_5pct": 1662.99,
+      "upside_to_target_pct": 13.43,
+      "atr": 8.4217133686,
+      "stop_1_5atr": 221.87,
+      "target_5pct": 246.23,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Retail Trade"
+    },
+    {
+      "symbol": "21STCENMGM",
+      "close": 50.87,
+      "score": 13,
+      "perf_1m": 30.536309982,
+      "rs_vs_nifty_1m": 32.83,
+      "rs_vs_sector_1m": 30.54,
+      "deliv_pct": 99.93,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 5.74,
+      "atr": 1.8345472222,
+      "stop_1_5atr": 48.12,
+      "target_5pct": 53.41,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Health Technology"
+      "sector": "Finance"
+    },
+    {
+      "symbol": "KARURVYSYA",
+      "close": 359.65,
+      "score": 13,
+      "perf_1m": 7.7925970328,
+      "rs_vs_nifty_1m": 10.08,
+      "rs_vs_sector_1m": 10.24,
+      "deliv_pct": 26.94,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 11.8,
+      "atr": 13.2120189065,
+      "stop_1_5atr": 339.83,
+      "target_5pct": 377.63,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "LOYALTEX",
+      "close": 214.79,
+      "score": 13,
+      "perf_1m": 6.0481880122,
+      "rs_vs_nifty_1m": 8.34,
+      "rs_vs_sector_1m": null,
+      "deliv_pct": 82.75,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 55.5,
+      "atr": 10.7791153064,
+      "stop_1_5atr": 198.62,
+      "target_5pct": 225.53,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Process Industries"
     },
     {
       "symbol": "ORBTEXP",
@@ -2591,36 +2545,90 @@
       "sector": "Finance"
     },
     {
-      "symbol": "LOYALTEX",
-      "close": 214.79,
+      "symbol": "ICICIBANK",
+      "close": 1385.0,
       "score": 13,
-      "perf_1m": 6.0481880122,
-      "rs_vs_nifty_1m": 8.34,
-      "rs_vs_sector_1m": null,
-      "deliv_pct": 82.75,
+      "perf_1m": 2.7600534204,
+      "rs_vs_nifty_1m": 5.05,
+      "rs_vs_sector_1m": 5.21,
+      "deliv_pct": 62.24,
+      "pct_change_oi": -4.17,
+      "upside_to_target_pct": 28.38,
+      "atr": 25.5430769376,
+      "stop_1_5atr": 1346.69,
+      "target_5pct": 1454.25,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "HALEOSLABS",
+      "close": 1583.8,
+      "score": 13,
+      "perf_1m": 4.2385152034,
+      "rs_vs_nifty_1m": 6.53,
+      "rs_vs_sector_1m": 8.52,
+      "deliv_pct": 84.22,
       "pct_change_oi": null,
-      "upside_to_target_pct": 55.5,
-      "atr": 10.7791153064,
-      "stop_1_5atr": 198.62,
-      "target_5pct": 225.53,
+      "upside_to_target_pct": 12.01,
+      "atr": 51.6453072534,
+      "stop_1_5atr": 1506.33,
+      "target_5pct": 1662.99,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Strong buy",
-      "sector": "Process Industries"
+      "sector": "Health Technology"
     },
     {
-      "symbol": "KARURVYSYA",
-      "close": 359.65,
+      "symbol": "PNB",
+      "close": 122.5,
       "score": 13,
-      "perf_1m": 7.7925970328,
-      "rs_vs_nifty_1m": 10.08,
-      "rs_vs_sector_1m": 10.24,
-      "deliv_pct": 26.94,
+      "perf_1m": 4.4954363218,
+      "rs_vs_nifty_1m": 6.79,
+      "rs_vs_sector_1m": 6.95,
+      "deliv_pct": 52.74,
+      "pct_change_oi": -1.51,
+      "upside_to_target_pct": 10.33,
+      "atr": 3.2871258387,
+      "stop_1_5atr": 117.57,
+      "target_5pct": 128.62,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Strong buy",
+      "sector": "Finance"
+    },
+    {
+      "symbol": "MVGJL",
+      "close": 220.36,
+      "score": 13,
+      "perf_1m": 2.160407974,
+      "rs_vs_nifty_1m": 4.45,
+      "rs_vs_sector_1m": 2.16,
+      "deliv_pct": 31.5,
       "pct_change_oi": null,
-      "upside_to_target_pct": 11.8,
-      "atr": 13.2120189065,
-      "stop_1_5atr": 339.83,
-      "target_5pct": 377.63,
+      "upside_to_target_pct": 13.18,
+      "atr": 15.0011142944,
+      "stop_1_5atr": 197.86,
+      "target_5pct": 231.38,
+      "earnings_within_21d": false,
+      "event_risk_score": 0,
+      "tech_rating": "Buy",
+      "sector": "Retail Trade"
+    },
+    {
+      "symbol": "TFCILTD",
+      "close": 150.2,
+      "score": 13,
+      "perf_1m": 7.2857142857,
+      "rs_vs_nifty_1m": 9.58,
+      "rs_vs_sector_1m": 7.29,
+      "deliv_pct": 35.45,
+      "pct_change_oi": null,
+      "upside_to_target_pct": 7.82,
+      "atr": 6.1553623196,
+      "stop_1_5atr": 140.97,
+      "target_5pct": 157.71,
       "earnings_within_21d": false,
       "event_risk_score": 0,
       "tech_rating": "Buy",
@@ -2700,7 +2708,7 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-10-21T18:10:11.792814+05:30",
+    "generated_at_ist": "2026-10-21T23:11:37.994007+05:30",
     "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
     "market_brief": "",
     "stance": null,
@@ -2710,31 +2718,31 @@
     "claude_feed": "",
     "stock_reviews": [
       {
-        "symbol": "IBULLSLTD",
-        "status": "skipped",
-        "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
         "symbol": "VHL",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "BIMETAL",
+        "symbol": "IBULLSLTD",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "UNIONBANK",
+        "symbol": "THELEELA",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
       },
       {
-        "symbol": "PNB",
+        "symbol": "MMWL",
+        "status": "skipped",
+        "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
+        "levels_source": "parkhu_deterministic"
+      },
+      {
+        "symbol": "PATELRMART",
         "status": "skipped",
         "reason": "all_models_failed:http_404:{\"error\":{\"message\":\"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}} ",
         "levels_source": "parkhu_deterministic"
