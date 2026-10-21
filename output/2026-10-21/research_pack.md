@@ -1,78 +1,67 @@
 # Parkhu research pack — 2026-10-21
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-21T06:10:33.878274+05:30
+- **generated_at_ist:** 2026-10-21T10:48:49.269311+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-1.11%)
-- india_vix: 14.77 (Medium)
+- market_regime: **Bullish**
+- nifty: Bullish (0.41%)
+- india_vix: 14.97 (Medium)
 - fii_net: -1148.64 | dii_net: 3201.19
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3196
-- trend = Bullish: 825
-- price > SMA200: 622
-- price > EMA50: 607
-- ADX14 > 25: 291
-- RSI14 in 40-80: 276
-- RS > 0 vs NIFTY and sector: 158
-- delivery% >= 40: 64
-- relative_volume >= 1: 9
-- no earnings within 21d: 9
-- event_risk_score <= 1: 9
-- TV rating not Sell: 7
-
-## Survivors (top 7 of 7)
-
-- **TFCILTD** [watchlist] score 78.0 — score in Watch band (70–80)
-- **WHEELS** [watchlist] score 71.4 — score in Watch band (70–80)
-- **KANANIIND** [rejected] score 63.0 — score below Watch band
-- **TEXINFRA** [rejected] score 61.0 — score below Watch band
-- **THELEELA** [rejected] score 60.0 — score below Watch band
-- **GCSL** [rejected] score 50.5 — score below Watch band
-- **21STCENMGM** [rejected] score 39.2 — score below Watch band
+- universe: 3194
+- trend = Bullish: 728
+- price > SMA200: 544
+- price > EMA50: 526
+- ADX14 > 25: 270
+- RSI14 in 40-80: 256
+- RS > 0 vs NIFTY and sector: 133
+- delivery% >= 40: 54
+- relative_volume >= 1: 1
+- no earnings within 21d: 0
+- event_risk_score <= 1: 0
+- TV rating not Sell: 0
 
 ## Ideas
 
-### UNIONBANK — Watch (score 14.0)
-- UNIONBANK | risk_sector: Finance
-- entry 180.7 | stop 172.65 | t1 189.74 | t2 None | t3 None | R:R None
+### AUSOMENT — Watch (score 13.0)
+- AUSOMENT | risk_sector: Finance
+- entry 159.0 | stop 146.37 | t1 166.95 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### THELEELA — Watch (score 14.0)
-- THELEELA | risk_sector: Consumer Services
-- entry 622.75 | stop 580.1 | t1 653.89 | t2 None | t3 None | R:R None
+### DYNPRO — Watch (score 13.0)
+- DYNPRO | risk_sector: Consumer Non-Durables
+- entry 244.6 | stop 229.24 | t1 256.83 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### NGIL — Watch (score 13.0)
-- NGIL | risk_sector: Consumer Non-Durables
-- entry 38.93 | stop 34.59 | t1 40.88 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### MANINDS — Watch (score 13.0)
-- MANINDS | risk_sector: Producer Manufacturing
-- entry 884.5 | stop 805.18 | t1 928.72 | t2 None | t3 None | R:R None
+### PVRINOX — Watch (score 13.0)
+- PVRINOX | risk_sector: Consumer Services
+- entry 1396.1 | stop 1322.18 | t1 1465.9 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### TFCILTD — Watch (score 13.0)
 - TFCILTD | risk_sector: Finance
-- entry 156.18 | stop 147.64 | t1 163.99 | t2 None | t3 None | R:R None
+- entry 149.22 | stop 140.36 | t1 156.68 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### IBULLSLTD — Watch (score 13.0)
+- IBULLSLTD | risk_sector: Finance
+- entry 32.98 | stop 29.96 | t1 34.63 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **CASTROLIND** status=open entry=193.23 last=196.79 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=partial entry=96.02 last=106.04 mfe=24.97 mae=-6.47 opened=2026-10-05
+- **CASTROLIND** status=open entry=193.23 last=196.65 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=partial entry=96.02 last=99.54 mfe=24.97 mae=-6.47 opened=2026-10-05
 
 ## Needs action
 
-- **CASTROLIND**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
-- **WELCORP**: EXIT — TIME STOP — 23 trading days held, past the 22-day horizon and still at -2.53% — capital has an opportunity cost
+- **CASTROLIND**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Closed today
 
@@ -80,36 +69,36 @@
 
 ## Swing candidates (top)
 
-- UNIONBANK: score=14 rs_nifty=2.87 deliv=29.03
-- THELEELA: score=14 rs_nifty=19.14 deliv=43.59
-- NGIL: score=13 rs_nifty=8.8 deliv=67.6
-- MANINDS: score=13 rs_nifty=8.85 deliv=36.8
-- TFCILTD: score=13 rs_nifty=13.44 deliv=41.54
-- RPEL: score=13 rs_nifty=9.64 deliv=41.19
-- IIFLCAPS: score=13 rs_nifty=4.13 deliv=60.9
-- VETO: score=13 rs_nifty=5.93 deliv=44.34
-- CINELINE: score=13 rs_nifty=2.3 deliv=85.59
-- IBULLSLTD: score=13 rs_nifty=15.57 deliv=62.16
-- WHEELS: score=13 rs_nifty=16.17 deliv=58.95
-- PRINCEPIPE: score=13 rs_nifty=8.4 deliv=47.31
-- MEESHO: score=13 rs_nifty=11.77 deliv=44.97
-- SWELECTES: score=13 rs_nifty=11.18 deliv=60.05
-- AVTNPL: score=13 rs_nifty=18.26 deliv=40.7
+- AUSOMENT: score=13 rs_nifty=7.91 deliv=65.16
+- DYNPRO: score=13 rs_nifty=9.45 deliv=79.93
+- PVRINOX: score=13 rs_nifty=6.63 deliv=46.34
+- TFCILTD: score=13 rs_nifty=8.15 deliv=41.54
+- IBULLSLTD: score=13 rs_nifty=8.46 deliv=62.16
+- CINELINE: score=13 rs_nifty=3.49 deliv=85.59
+- PREMEXPLN: score=13 rs_nifty=5.46 deliv=63.58
+- MMWL: score=13 rs_nifty=75.33 deliv=82.3
+- CPPLUS: score=13 rs_nifty=22.34 deliv=44.7
+- PRINCEPIPE: score=13 rs_nifty=2.48 deliv=47.31
+- HALEOSLABS: score=13 rs_nifty=5.23 deliv=82.34
+- PATELRMART: score=13 rs_nifty=16.68 deliv=51.58
+- THELEELA: score=13 rs_nifty=12.68 deliv=43.59
+- AVTNPL: score=13 rs_nifty=14.1 deliv=40.7
+- GKSL: score=13 rs_nifty=2.92 deliv=52.83
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.59% (bull)
-- Hang Seng: +0.52% (bull)
-- Shanghai: +0.39% (bull)
-- Kospi: -0.97% (bear)
-- Taiwan: -0.61% (bear)
-- ASX 200: -0.33% (bear)
+- Nikkei: +0.97% (bull)
+- Hang Seng: -0.47% (bear)
+- Shanghai: -0.43% (bear)
+- Kospi: +2.58% (bull)
+- Taiwan: +0.90% (bull)
+- ASX 200: +0.04% (neutral)
 
 ### Europe
-- FTSE 100: -1.08% (bear)
-- DAX: -1.18% (bear)
-- Euro Stoxx 50: -0.96% (bear)
+- FTSE 100: -0.29% (bear)
+- DAX: -0.06% (neutral)
+- Euro Stoxx 50: -0.38% (bear)
 
 ### US
 - S&P 500: +0.28% (bull)
@@ -118,13 +107,13 @@
 - US VIX: -6.13% (bull)
 
 ### Macro
-- USDINR: -0.24% (neutral)
-- Crude WTI: -4.91% (bear)
-- Brent: +0.02% (neutral)
-- DXY: -0.18% (neutral)
+- USDINR: -0.47% (bull)
+- Crude WTI: -2.86% (bear)
+- Brent: +1.17% (bull)
+- DXY: +0.04% (neutral)
 - US 10Y: -0.37% (bull)
-- India ETF: -0.55% (bear)
-- EM ETF: +0.73% (bull)
+- India ETF: +0.80% (bull)
+- EM ETF: +0.02% (neutral)
 
 
 ## Groq desk note
