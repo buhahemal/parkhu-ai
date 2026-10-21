@@ -1,63 +1,70 @@
 # Parkhu research pack — 2026-10-21
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-21T10:48:49.269311+05:30
+- **generated_at_ist:** 2026-10-21T18:10:07.500726+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.41%)
-- india_vix: 14.97 (Medium)
+- market_regime: **Bearish**
+- nifty: Bearish (-0.34%)
+- india_vix: 15.68 (Medium)
 - fii_net: -1148.64 | dii_net: 3201.19
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3194
-- trend = Bullish: 728
-- price > SMA200: 544
-- price > EMA50: 526
-- ADX14 > 25: 270
-- RSI14 in 40-80: 256
-- RS > 0 vs NIFTY and sector: 133
-- delivery% >= 40: 54
-- relative_volume >= 1: 1
-- no earnings within 21d: 0
-- event_risk_score <= 1: 0
-- TV rating not Sell: 0
+- universe: 3198
+- trend = Bullish: 608
+- price > SMA200: 459
+- price > EMA50: 443
+- ADX14 > 25: 233
+- RSI14 in 40-80: 221
+- RS > 0 vs NIFTY and sector: 110
+- delivery% >= 40: 43
+- relative_volume >= 1: 9
+- no earnings within 21d: 5
+- event_risk_score <= 1: 5
+- TV rating not Sell: 4
+
+## Survivors (top 4 of 4)
+
+- **VHL** [rejected] score 73.6 — T1 needs more than 22 trading days (~1 month)
+- **KANANIIND** [rejected] score 63.9 — score below Watch band
+- **ZOTA** [rejected] score 39.8 — score below Watch band
+- **IBULLSLTD** [rejected] score 38.4 — score below Watch band
 
 ## Ideas
 
-### AUSOMENT — Watch (score 13.0)
-- AUSOMENT | risk_sector: Finance
-- entry 159.0 | stop 146.37 | t1 166.95 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### DYNPRO — Watch (score 13.0)
-- DYNPRO | risk_sector: Consumer Non-Durables
-- entry 244.6 | stop 229.24 | t1 256.83 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### PVRINOX — Watch (score 13.0)
-- PVRINOX | risk_sector: Consumer Services
-- entry 1396.1 | stop 1322.18 | t1 1465.9 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### TFCILTD — Watch (score 13.0)
-- TFCILTD | risk_sector: Finance
-- entry 149.22 | stop 140.36 | t1 156.68 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### IBULLSLTD — Watch (score 13.0)
+### IBULLSLTD — Watch (score 14.0)
 - IBULLSLTD | risk_sector: Finance
-- entry 32.98 | stop 29.96 | t1 34.63 | t2 None | t3 None | R:R None
+- entry 34.57 | stop 31.21 | t1 36.3 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### VHL — Watch (score 14.0)
+- VHL | risk_sector: Finance
+- entry 3607.4 | stop 3403.51 | t1 3787.77 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### BIMETAL — Watch (score 13.0)
+- BIMETAL | risk_sector: Producer Manufacturing
+- entry 648.0 | stop 613.77 | t1 680.4 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### UNIONBANK — Watch (score 13.0)
+- UNIONBANK | risk_sector: Finance
+- entry 182.0 | stop 173.9 | t1 191.1 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PNB — Watch (score 13.0)
+- PNB | risk_sector: Finance
+- entry 122.5 | stop 117.57 | t1 128.62 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **CASTROLIND** status=open entry=193.23 last=196.65 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **PREMIERPOL** status=partial entry=96.02 last=99.54 mfe=24.97 mae=-6.47 opened=2026-10-05
+- **CASTROLIND** status=open entry=193.23 last=196.19 mfe=5.26 mae=-1.62 opened=2026-09-23
+- **PREMIERPOL** status=partial entry=96.02 last=97.7 mfe=24.97 mae=-6.47 opened=2026-10-05
 
 ## Needs action
 
@@ -69,49 +76,49 @@
 
 ## Swing candidates (top)
 
-- AUSOMENT: score=13 rs_nifty=7.91 deliv=65.16
-- DYNPRO: score=13 rs_nifty=9.45 deliv=79.93
-- PVRINOX: score=13 rs_nifty=6.63 deliv=46.34
-- TFCILTD: score=13 rs_nifty=8.15 deliv=41.54
-- IBULLSLTD: score=13 rs_nifty=8.46 deliv=62.16
-- CINELINE: score=13 rs_nifty=3.49 deliv=85.59
-- PREMEXPLN: score=13 rs_nifty=5.46 deliv=63.58
-- MMWL: score=13 rs_nifty=75.33 deliv=82.3
-- CPPLUS: score=13 rs_nifty=22.34 deliv=44.7
-- PRINCEPIPE: score=13 rs_nifty=2.48 deliv=47.31
-- HALEOSLABS: score=13 rs_nifty=5.23 deliv=82.34
-- PATELRMART: score=13 rs_nifty=16.68 deliv=51.58
-- THELEELA: score=13 rs_nifty=12.68 deliv=43.59
-- AVTNPL: score=13 rs_nifty=14.1 deliv=40.7
-- GKSL: score=13 rs_nifty=2.92 deliv=52.83
+- IBULLSLTD: score=14 rs_nifty=14.35 deliv=45.45
+- VHL: score=14 rs_nifty=9.97 deliv=55.5
+- BIMETAL: score=13 rs_nifty=2.51 deliv=97.13
+- UNIONBANK: score=13 rs_nifty=5.05 deliv=34.07
+- PNB: score=13 rs_nifty=6.79 deliv=52.74
+- TEXINFRA: score=13 rs_nifty=11.71 deliv=59.79
+- AUSOMENT: score=13 rs_nifty=7.11 deliv=56.82
+- DHANBANK: score=13 rs_nifty=22.04 deliv=45.22
+- DYNPRO: score=13 rs_nifty=7.72 deliv=85.62
+- MMWL: score=13 rs_nifty=75.98 deliv=62.03
+- HALEOSLABS: score=13 rs_nifty=6.53 deliv=84.22
+- ORBTEXP: score=13 rs_nifty=15.66 deliv=87.98
+- MANBA: score=13 rs_nifty=8.08 deliv=47.34
+- LOYALTEX: score=13 rs_nifty=8.34 deliv=82.75
+- KARURVYSYA: score=13 rs_nifty=10.08 deliv=26.94
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.97% (bull)
-- Hang Seng: -0.47% (bear)
-- Shanghai: -0.43% (bear)
-- Kospi: +2.58% (bull)
-- Taiwan: +0.90% (bull)
-- ASX 200: +0.04% (neutral)
+- Nikkei: +0.85% (bull)
+- Hang Seng: -0.90% (bear)
+- Shanghai: -0.60% (bear)
+- Kospi: +3.29% (bull)
+- Taiwan: +1.28% (bull)
+- ASX 200: +0.16% (bull)
 
 ### Europe
-- FTSE 100: -0.29% (bear)
-- DAX: -0.06% (neutral)
-- Euro Stoxx 50: -0.38% (bear)
+- FTSE 100: +0.04% (neutral)
+- DAX: +0.89% (bull)
+- Euro Stoxx 50: +1.00% (bull)
 
 ### US
 - S&P 500: +0.28% (bull)
 - Nasdaq: -0.02% (neutral)
 - Dow: +1.02% (bull)
-- US VIX: -6.13% (bull)
+- US VIX: -0.17% (neutral)
 
 ### Macro
-- USDINR: -0.47% (bull)
-- Crude WTI: -2.86% (bear)
-- Brent: +1.17% (bull)
-- DXY: +0.04% (neutral)
-- US 10Y: -0.37% (bull)
+- USDINR: -0.57% (bull)
+- Crude WTI: -3.74% (bear)
+- Brent: -0.08% (neutral)
+- DXY: -0.05% (neutral)
+- US 10Y: -0.33% (neutral)
 - India ETF: +0.80% (bull)
 - EM ETF: +0.02% (neutral)
 
