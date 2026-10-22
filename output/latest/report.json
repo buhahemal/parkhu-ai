@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-22",
-  "generated_at_ist": "2026-10-22T10:54:04.554382+05:30",
-  "duration_seconds": 431.3,
+  "generated_at_ist": "2026-10-22T18:09:54.948716+05:30",
+  "duration_seconds": 329.1,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3199,
-      "seconds": 3.5
+      "rows": 3203,
+      "seconds": 3.3
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14477,
-      "cache_rows": 7946685,
-      "symbols": 2896,
+      "rows": 14482,
+      "cache_rows": 7949407,
+      "symbols": 2898,
       "failed": 34,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2501,
-      "cold": 429,
-      "new_symbols": 34,
+      "warm": 2503,
+      "cold": 428,
+      "new_symbols": 35,
       "retries": 2,
-      "seconds": 319.7
+      "seconds": 251.1
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3199,
+      "rows": 3203,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.8
+      "seconds": 0.6
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.6
+      "seconds": 1.2
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 3.8
+      "status": "ok",
+      "rows": 4,
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.7
+      "seconds": 5.1
     },
     {
       "agent": "derivatives",
       "status": "ok",
-      "rows": 457,
-      "seconds": 5.1
+      "rows": 458,
+      "seconds": 5.8
     },
     {
       "agent": "stock_options",
@@ -78,44 +78,44 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2334,
-      "seconds": 19.3
+      "rows": 2332,
+      "seconds": 4.9
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.1
+      "seconds": 3.5
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.7
+      "seconds": 2.5
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 5.3
+      "seconds": 3.5
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3199,
-      "seconds": 0.2
+      "rows": 3203,
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3199,
-      "seconds": 0.6
+      "rows": 3203,
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 211,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -127,7 +127,7 @@
       "agent": "market_summary",
       "status": "ok",
       "rows": 1,
-      "seconds": 0.1
+      "seconds": 0.0
     },
     {
       "agent": "news_classify",
@@ -138,24 +138,26 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2896,
-      "with_structure": 2895,
+      "rows": 2897,
+      "with_structure": 2896,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 15.9
+      "seconds": 16.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3199,
-      "seconds": 2.2
+      "rows": 3209,
+      "seconds": 7.9
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 0,
+      "rows": 1,
+      "ideas": [
+        "UNIONBANK"
+      ],
+      "watchlist": 1,
       "open_positions": 1,
       "needing_action": [
         "CASTROLIND"
@@ -164,14 +166,14 @@
       "seconds": 0.2
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,

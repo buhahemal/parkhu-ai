@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-22
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-22T18:09:54.948716+05:30
+- **generated_at_ist:** 2026-10-22T23:10:17.591467+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,17 +10,17 @@
 - nifty: Bearish (-0.54%)
 - india_vix: 15.76 (Medium)
 - fii_net: -3458.7 | dii_net: 2891.32
-- overall_risk: Medium | global_risk: Neutral
+- overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
 - universe: 3209
-- trend = Bullish: 536
+- trend = Bullish: 539
 - price > SMA200: 413
 - price > EMA50: 399
-- ADX14 > 25: 213
-- RSI14 in 40-80: 202
-- RS > 0 vs NIFTY and sector: 100
+- ADX14 > 25: 216
+- RSI14 in 40-80: 205
+- RS > 0 vs NIFTY and sector: 99
 - delivery% >= 40: 33
 - relative_volume >= 1: 7
 - no earnings within 21d: 7
@@ -47,7 +47,7 @@
 ## Open ledger
 
 - **CASTROLIND** status=open entry=193.23 last=197.38 mfe=5.26 mae=-1.62 opened=2026-09-23
-- **UNIONBANK** status=open entry=182.85 last=182.85 mfe=0.0 mae=0.0 opened=2026-10-22
+- **UNIONBANK** status=open entry=182.85 last=182.85 mfe=1.47 mae=-1.45 opened=2026-10-22
 
 ## Needs action
 
@@ -59,51 +59,51 @@
 
 ## Swing candidates (top)
 
-- UNIONBANK: score=15 rs_nifty=5.82 deliv=50.6
-- INDHOTEL: score=14 rs_nifty=7.49 deliv=40.04
-- PNB: score=14 rs_nifty=6.52 deliv=59.04
-- ICICIBANK: score=14 rs_nifty=7.23 deliv=51.0
-- HAL: score=13 rs_nifty=3.93 deliv=54.54
+- UNIONBANK: score=14 rs_nifty=5.82 deliv=50.6
+- 21STCENMGM: score=13 rs_nifty=30.96 deliv=62.4
+- EVERESTIND: score=13 rs_nifty=17.7 deliv=72.59
+- SHREEJISPG: score=13 rs_nifty=13.65 deliv=54.92
+- ICICIBANK: score=13 rs_nifty=7.23 deliv=51.0
+- KARURVYSYA: score=13 rs_nifty=11.54 deliv=51.45
+- HALEOSLABS: score=13 rs_nifty=11.61 deliv=63.58
+- SAMBHV: score=13 rs_nifty=5.77 deliv=41.87
+- PATELRMART: score=13 rs_nifty=15.59 deliv=59.04
 - KINGFA: score=13 rs_nifty=10.85 deliv=57.29
 - MMWL: score=13 rs_nifty=61.02 deliv=47.61
-- SHREEJISPG: score=13 rs_nifty=13.65 deliv=54.92
-- HALEOSLABS: score=13 rs_nifty=11.61 deliv=63.58
-- 21STCENMGM: score=13 rs_nifty=30.96 deliv=62.4
-- PATELRMART: score=13 rs_nifty=15.59 deliv=59.04
+- INDHOTEL: score=13 rs_nifty=7.49 deliv=40.04
+- PNB: score=13 rs_nifty=6.52 deliv=59.04
+- IBULLSLTD: score=13 rs_nifty=17.89 deliv=52.91
 - THELEELA: score=13 rs_nifty=13.41 deliv=36.0
-- TEXINFRA: score=13 rs_nifty=8.96 deliv=58.65
-- VHL: score=13 rs_nifty=9.69 deliv=62.23
-- KARURVYSYA: score=13 rs_nifty=11.54 deliv=51.45
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.65% (bear)
-- Hang Seng: -3.03% (bear)
-- Shanghai: -1.48% (bear)
-- Kospi: -3.52% (bear)
-- Taiwan: -1.81% (bear)
+- Nikkei: +0.85% (bull)
+- Hang Seng: -0.90% (bear)
+- Shanghai: -0.60% (bear)
+- Kospi: +3.29% (bull)
+- Taiwan: +1.28% (bull)
 - ASX 200: -0.43% (bear)
 
 ### Europe
 - FTSE 100: -0.26% (bear)
-- DAX: -0.65% (bear)
-- Euro Stoxx 50: -1.37% (bear)
+- DAX: -1.07% (bear)
+- Euro Stoxx 50: -1.94% (bear)
 
 ### US
-- S&P 500: +0.58% (bull)
-- Nasdaq: +1.05% (bull)
-- Dow: +0.69% (bull)
-- US VIX: +8.51% (bear)
+- S&P 500: -1.27% (bear)
+- Nasdaq: -2.42% (bear)
+- Dow: -0.13% (neutral)
+- US VIX: +14.39% (bear)
 
 ### Macro
 - USDINR: +0.10% (neutral)
-- Crude WTI: +2.31% (bull)
-- Brent: +2.86% (bull)
-- DXY: +0.00% (neutral)
-- US 10Y: -2.06% (bull)
-- India ETF: -1.07% (bear)
-- EM ETF: +0.39% (bull)
+- Crude WTI: +2.23% (bull)
+- Brent: +3.29% (bull)
+- DXY: -0.17% (neutral)
+- US 10Y: -3.52% (bull)
+- India ETF: +0.00% (neutral)
+- EM ETF: -2.90% (bear)
 
 
 ## Groq desk note

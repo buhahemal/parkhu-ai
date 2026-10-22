@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-10-22",
-  "generated_at_ist": "2026-10-22T18:09:54.948716+05:30",
-  "duration_seconds": 329.1,
+  "generated_at_ist": "2026-10-22T23:10:17.591467+05:30",
+  "duration_seconds": 449.2,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3203,
-      "seconds": 3.3
+      "seconds": 4.0
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14482,
-      "cache_rows": 7949407,
-      "symbols": 2898,
+      "rows": 14487,
+      "cache_rows": 7950105,
+      "symbols": 2900,
       "failed": 34,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2503,
-      "cold": 428,
-      "new_symbols": 35,
+      "warm": 2504,
+      "cold": 429,
+      "new_symbols": 34,
       "retries": 2,
-      "seconds": 251.1
+      "seconds": 368.7
     },
     {
       "agent": "earnings",
@@ -42,13 +42,13 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.6
+      "seconds": 0.9
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.2
+      "seconds": 1.8
     },
     {
       "agent": "smartmoney",
@@ -60,13 +60,13 @@
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.1
+      "seconds": 4.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 458,
-      "seconds": 5.8
+      "seconds": 5.5
     },
     {
       "agent": "stock_options",
@@ -78,26 +78,26 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2332,
-      "seconds": 4.9
+      "rows": 2333,
+      "seconds": 5.7
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.5
+      "seconds": 3.2
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.5
+      "seconds": 2.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.5
+      "seconds": 5.4
     },
     {
       "agent": "relative_strength",
@@ -109,7 +109,7 @@
       "agent": "event_risk",
       "status": "ok",
       "rows": 3203,
-      "seconds": 1.0
+      "seconds": 0.8
     },
     {
       "agent": "fno_momentum",
@@ -138,17 +138,17 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2897,
-      "with_structure": 2896,
+      "rows": 2898,
+      "with_structure": 2897,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 16.8
+      "seconds": 17.0
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
       "rows": 3209,
-      "seconds": 7.9
+      "seconds": 7.1
     },
     {
       "agent": "swing_brief",
@@ -158,7 +158,7 @@
         "UNIONBANK"
       ],
       "watchlist": 1,
-      "open_positions": 1,
+      "open_positions": 2,
       "needing_action": [
         "CASTROLIND"
       ],
