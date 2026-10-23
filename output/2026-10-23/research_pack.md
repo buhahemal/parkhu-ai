@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-23
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-23T18:10:05.645258+05:30
+- **generated_at_ist:** 2026-10-23T23:01:34.555642+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,17 +9,17 @@
 - market_regime: **Bearish**
 - nifty: Bearish (-0.39%)
 - india_vix: 16.86 (Medium)
-- fii_net: -3458.7 | dii_net: 2891.32
+- fii_net: 887.65 | dii_net: 3235.36
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3219
-- trend = Bullish: 408
-- price > SMA200: 311
-- price > EMA50: 299
-- ADX14 > 25: 180
-- RSI14 in 40-80: 173
+- universe: 3225
+- trend = Bullish: 411
+- price > SMA200: 314
+- price > EMA50: 302
+- ADX14 > 25: 183
+- RSI14 in 40-80: 176
 - RS > 0 vs NIFTY and sector: 97
 - delivery% >= 40: 33
 - relative_volume >= 1: 11
@@ -32,7 +32,7 @@
 - **NINSYS** [watchlist] score 73.7 — score in Watch band (70–80)
 - **ANANDRATHI** [watchlist] score 71.3 — score in Watch band (70–80)
 - **MANBA** [watchlist] score 70.8 — score in Watch band (70–80)
-- **SGMART** [rejected] score 67.7 — score below Watch band
+- **SGMART** [rejected] score 66.1 — score below Watch band
 - **KANANIIND** [rejected] score 65.4 — score below Watch band
 - **DEVX** [rejected] score 44.1 — T1 needs more than 22 trading days (~1 month)
 - **GKSL** [rejected] score 42.1 — score below Watch band
@@ -44,24 +44,24 @@
 - entry 796.8 | stop 737.19 | t1 836.64 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### FEDERALBNK — Watch (score 14.0)
-- FEDERALBNK | risk_sector: Finance
-- entry 340.9 | stop 325.98 | t1 357.94 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### NINSYS — Watch (score 14.0)
 - NINSYS | risk_sector: Technology Services
 - entry 876.1 | stop 813.28 | t1 919.91 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ANANDRATHI — Watch (score 14.0)
-- ANANDRATHI | risk_sector: Finance
-- entry 2235.0 | stop 2160.01 | t1 2346.75 | t2 None | t3 None | R:R None
+### SHIVAUM — Watch (score 13.0)
+- SHIVAUM | risk_sector: Producer Manufacturing
+- entry 540.0 | stop 515.81 | t1 567.0 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### AAREYDRUGS — Watch (score 13.0)
-- AAREYDRUGS | risk_sector: Health Technology
-- entry 106.73 | stop 99.12 | t1 112.07 | t2 None | t3 None | R:R None
+### COFORGE — Watch (score 13.0)
+- COFORGE | risk_sector: Technology Services
+- entry 1900.5 | stop 1806.01 | t1 1995.52 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### PREMEXPLN — Watch (score 13.0)
+- PREMEXPLN | risk_sector: Process Industries
+- entry 687.4 | stop 675.9 | t1 721.77 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -76,50 +76,50 @@
 ## Swing candidates (top)
 
 - SGMART: score=14 rs_nifty=13.63 deliv=58.51
-- FEDERALBNK: score=14 rs_nifty=6.91 deliv=60.55
 - NINSYS: score=14 rs_nifty=26.33 deliv=40.35
-- ANANDRATHI: score=14 rs_nifty=5.69 deliv=50.04
-- AAREYDRUGS: score=13 rs_nifty=7.38 deliv=74.28
-- MMWL: score=13 rs_nifty=52.18 deliv=90.5
-- INDHOTEL: score=13 rs_nifty=9.01 deliv=58.89
-- 21STCENMGM: score=13 rs_nifty=23.43 deliv=89.33
-- ICICIBANK: score=13 rs_nifty=7.17 deliv=64.31
-- ORBTEXP: score=13 rs_nifty=13.42 deliv=76.47
 - SHIVAUM: score=13 rs_nifty=7.17 deliv=87.33
-- KMEW: score=13 rs_nifty=8.1 deliv=42.9
+- COFORGE: score=13 rs_nifty=8.0 deliv=43.92
 - PREMEXPLN: score=13 rs_nifty=4.82 deliv=84.79
+- INDHOTEL: score=13 rs_nifty=9.01 deliv=58.89
+- FEDERALBNK: score=13 rs_nifty=6.91 deliv=60.55
+- MMWL: score=13 rs_nifty=52.18 deliv=90.5
 - SOUTHBANK: score=13 rs_nifty=19.27 deliv=40.34
+- KMEW: score=13 rs_nifty=8.1 deliv=42.9
+- AAREYDRUGS: score=13 rs_nifty=7.38 deliv=74.28
+- ANANDRATHI: score=13 rs_nifty=5.69 deliv=50.04
+- 21STCENMGM: score=13 rs_nifty=23.43 deliv=89.33
+- ORBTEXP: score=13 rs_nifty=13.42 deliv=76.47
 - INTLCONV: score=13 rs_nifty=6.82 deliv=73.07
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.34% (bear)
-- Hang Seng: +0.69% (bull)
-- Shanghai: +0.89% (bull)
-- Kospi: +0.30% (bull)
+- Nikkei: -2.65% (bear)
+- Hang Seng: -3.03% (bear)
+- Shanghai: -1.48% (bear)
+- Kospi: -3.52% (bear)
 - Taiwan: -1.81% (bear)
 - ASX 200: +0.02% (neutral)
 
 ### Europe
-- FTSE 100: -0.58% (bear)
-- DAX: -0.99% (bear)
-- Euro Stoxx 50: -0.80% (bear)
+- FTSE 100: -0.32% (bear)
+- DAX: -0.75% (bear)
+- Euro Stoxx 50: -0.31% (bear)
 
 ### US
-- S&P 500: -1.21% (bear)
-- Nasdaq: -2.60% (bear)
-- Dow: +0.02% (neutral)
-- US VIX: +3.63% (bear)
+- S&P 500: -0.45% (bear)
+- Nasdaq: -0.10% (neutral)
+- Dow: -1.19% (bear)
+- US VIX: +7.09% (bear)
 
 ### Macro
-- USDINR: +0.67% (bear)
-- Crude WTI: +1.84% (bull)
-- Brent: -2.50% (bear)
-- DXY: +0.14% (neutral)
-- US 10Y: +0.67% (bear)
-- India ETF: +0.19% (bull)
-- EM ETF: -2.91% (bear)
+- USDINR: +0.65% (bear)
+- Crude WTI: +3.41% (bull)
+- Brent: -1.56% (bear)
+- DXY: +0.22% (neutral)
+- US 10Y: +0.75% (bear)
+- India ETF: -1.96% (bear)
+- EM ETF: +0.22% (bull)
 
 
 ## Groq desk note
