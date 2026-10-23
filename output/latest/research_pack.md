@@ -1,27 +1,27 @@
-# Parkhu research pack — 2026-10-22
+# Parkhu research pack — 2026-10-23
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-22T23:10:17.591467+05:30
+- **generated_at_ist:** 2026-10-23T06:11:10.333687+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.54%)
-- india_vix: 15.76 (Medium)
+- nifty: Bearish (-0.34%)
+- india_vix: 15.68 (Medium)
 - fii_net: -3458.7 | dii_net: 2891.32
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
 - universe: 3209
-- trend = Bullish: 539
+- trend = Bullish: 536
 - price > SMA200: 413
 - price > EMA50: 399
-- ADX14 > 25: 216
-- RSI14 in 40-80: 205
-- RS > 0 vs NIFTY and sector: 99
-- delivery% >= 40: 33
+- ADX14 > 25: 213
+- RSI14 in 40-80: 202
+- RS > 0 vs NIFTY and sector: 97
+- delivery% >= 40: 32
 - relative_volume >= 1: 7
 - no earnings within 21d: 7
 - event_risk_score <= 1: 7
@@ -53,57 +53,53 @@
 
 - **CASTROLIND**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 
-## Closed today
-
-- PREMIERPOL: {'trade_id': '2026-10-05-PREMIERPOL', 'symbol': 'PREMIERPOL', 'company': 'Premier Polyfilm Limited', 'risk_sector': 'Non-Energy Minerals', 'date_opened': '2026-10-05', 'taken': None, 'entry': 96.02, 'stop': 88.34, 't1': 111.38, 't2': 119.06, 't3': 126.75, 'structure_invalidation': 84.42, 'horizon_days_t1': 6, 'horizon_days_t2': 12, 'score_at_open': 83.5, 'qty': 104, 'risk_rupees': 799.0, 'status': 'closed', 'last_price': 97.7, 'last_checked': '2026-10-22', 'mfe_pct': 24.97, 'mae_pct': -6.47, 'gap_flag': False, 'hit_t1': True, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-10-22', 'exit_price': 97.7, 'exit_reason': 'time_stop', 'pct_return': 1.75, 'r_multiple': 0.22, 'days_held': 13}
-
 ## Swing candidates (top)
 
-- UNIONBANK: score=14 rs_nifty=5.82 deliv=50.6
-- 21STCENMGM: score=13 rs_nifty=30.96 deliv=62.4
-- EVERESTIND: score=13 rs_nifty=17.7 deliv=72.59
-- SHREEJISPG: score=13 rs_nifty=13.65 deliv=54.92
-- ICICIBANK: score=13 rs_nifty=7.23 deliv=51.0
-- KARURVYSYA: score=13 rs_nifty=11.54 deliv=51.45
-- HALEOSLABS: score=13 rs_nifty=11.61 deliv=63.58
-- SAMBHV: score=13 rs_nifty=5.77 deliv=41.87
-- PATELRMART: score=13 rs_nifty=15.59 deliv=59.04
-- KINGFA: score=13 rs_nifty=10.85 deliv=57.29
-- MMWL: score=13 rs_nifty=61.02 deliv=47.61
-- INDHOTEL: score=13 rs_nifty=7.49 deliv=40.04
-- PNB: score=13 rs_nifty=6.52 deliv=59.04
-- IBULLSLTD: score=13 rs_nifty=17.89 deliv=52.91
-- THELEELA: score=13 rs_nifty=13.41 deliv=36.0
+- UNIONBANK: score=14 rs_nifty=5.01 deliv=50.6
+- ICICIBANK: score=13 rs_nifty=6.42 deliv=51.0
+- PATELRMART: score=13 rs_nifty=14.78 deliv=59.04
+- FAIRCHEMOR: score=13 rs_nifty=20.64 deliv=61.2
+- EVERESTIND: score=13 rs_nifty=16.89 deliv=72.59
+- VHL: score=13 rs_nifty=8.88 deliv=62.23
+- TEXINFRA: score=13 rs_nifty=8.15 deliv=58.65
+- PNB: score=13 rs_nifty=5.71 deliv=59.04
+- SAMBHV: score=13 rs_nifty=4.96 deliv=41.87
+- MMWL: score=13 rs_nifty=60.21 deliv=47.61
+- THELEELA: score=13 rs_nifty=12.6 deliv=36.0
+- AUSOMENT: score=13 rs_nifty=7.82 deliv=86.34
+- FEDERALBNK: score=13 rs_nifty=6.95 deliv=54.02
+- SHREEJISPG: score=13 rs_nifty=12.84 deliv=54.92
+- INDHOTEL: score=13 rs_nifty=6.68 deliv=40.04
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.85% (bull)
+- Nikkei: -4.52% (bear)
 - Hang Seng: -0.90% (bear)
 - Shanghai: -0.60% (bear)
-- Kospi: +3.29% (bull)
+- Kospi: -6.47% (bear)
 - Taiwan: +1.28% (bull)
-- ASX 200: -0.43% (bear)
+- ASX 200: -0.62% (bear)
 
 ### Europe
-- FTSE 100: -0.26% (bear)
-- DAX: -1.07% (bear)
-- Euro Stoxx 50: -1.94% (bear)
+- FTSE 100: +0.19% (bull)
+- DAX: +1.35% (bull)
+- Euro Stoxx 50: +1.40% (bull)
 
 ### US
-- S&P 500: -1.27% (bear)
-- Nasdaq: -2.42% (bear)
-- Dow: -0.13% (neutral)
-- US VIX: +14.39% (bear)
+- S&P 500: -1.21% (bear)
+- Nasdaq: -2.60% (bear)
+- Dow: +0.02% (neutral)
+- US VIX: +14.09% (bear)
 
 ### Macro
-- USDINR: +0.10% (neutral)
-- Crude WTI: +2.23% (bull)
-- Brent: +3.29% (bull)
-- DXY: -0.17% (neutral)
-- US 10Y: -3.52% (bull)
-- India ETF: +0.00% (neutral)
-- EM ETF: -2.90% (bear)
+- USDINR: +0.53% (bear)
+- Crude WTI: +2.01% (bull)
+- Brent: +3.68% (bull)
+- DXY: -0.27% (neutral)
+- US 10Y: -3.75% (bull)
+- India ETF: -1.07% (bear)
+- EM ETF: +0.39% (bull)
 
 
 ## Groq desk note
@@ -122,6 +118,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-22/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-23/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
