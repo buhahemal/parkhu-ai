@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-10-24
+# Parkhu research pack — 2026-10-25
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-24T18:09:55.767487+05:30
+- **generated_at_ist:** 2026-10-25T06:09:04.458028+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3225
-- trend = Bullish: 408
-- price > SMA200: 311
-- price > EMA50: 299
-- ADX14 > 25: 180
-- RSI14 in 40-80: 173
+- universe: 3227
+- trend = Bullish: 407
+- price > SMA200: 310
+- price > EMA50: 298
+- ADX14 > 25: 179
+- RSI14 in 40-80: 172
 - RS > 0 vs NIFTY and sector: 97
 - delivery% >= 40: 33
 - relative_volume >= 1: 11
@@ -30,12 +30,12 @@
 ## Survivors (top 7 of 7)
 
 - **NINSYS** [watchlist] score 73.7 — score in Watch band (70–80)
-- **ANANDRATHI** [watchlist] score 71.2 — score in Watch band (70–80)
+- **ANANDRATHI** [watchlist] score 71.3 — score in Watch band (70–80)
 - **MANBA** [watchlist] score 70.8 — score in Watch band (70–80)
 - **SGMART** [rejected] score 67.7 — score below Watch band
-- **KANANIIND** [rejected] score 65.4 — score below Watch band
+- **KANANIIND** [rejected] score 65.6 — score below Watch band
 - **DEVX** [rejected] score 44.1 — T1 needs more than 22 trading days (~1 month)
-- **GKSL** [rejected] score 42.0 — score below Watch band
+- **GKSL** [rejected] score 42.1 — score below Watch band
 
 ## Ideas
 
@@ -49,19 +49,19 @@
 - entry 876.1 | stop 813.28 | t1 919.91 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### ORBTEXP — Watch (score 13.0)
-- ORBTEXP | risk_sector: Process Industries
-- entry 250.5 | stop 228.87 | t1 263.03 | t2 None | t3 None | R:R None
+### PREMEXPLN — Watch (score 13.0)
+- PREMEXPLN | risk_sector: Process Industries
+- entry 687.4 | stop 675.9 | t1 721.77 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SHIVAUM — Watch (score 13.0)
-- SHIVAUM | risk_sector: Producer Manufacturing
-- entry 540.0 | stop 515.81 | t1 567.0 | t2 None | t3 None | R:R None
+### INDHOTEL — Watch (score 13.0)
+- INDHOTEL | risk_sector: Consumer Services
+- entry 781.75 | stop 750.17 | t1 820.84 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### AAREYDRUGS — Watch (score 13.0)
-- AAREYDRUGS | risk_sector: Health Technology
-- entry 106.73 | stop 99.12 | t1 112.07 | t2 None | t3 None | R:R None
+### KMEW — Watch (score 13.0)
+- KMEW | risk_sector: Producer Manufacturing
+- entry 3149.7 | stop 2915.75 | t1 3307.18 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -77,19 +77,19 @@
 
 - SGMART: score=14 rs_nifty=13.63 deliv=58.51
 - NINSYS: score=14 rs_nifty=26.33 deliv=40.35
-- ORBTEXP: score=13 rs_nifty=13.42 deliv=76.47
-- SHIVAUM: score=13 rs_nifty=7.17 deliv=87.33
-- AAREYDRUGS: score=13 rs_nifty=7.38 deliv=74.28
-- COFORGE: score=13 rs_nifty=8.0 deliv=43.92
-- INDHOTEL: score=13 rs_nifty=9.01 deliv=58.89
-- INTLCONV: score=13 rs_nifty=6.82 deliv=73.07
-- FEDERALBNK: score=13 rs_nifty=6.91 deliv=60.55
-- ANANDRATHI: score=13 rs_nifty=5.69 deliv=50.04
-- MMWL: score=13 rs_nifty=52.18 deliv=90.5
 - PREMEXPLN: score=13 rs_nifty=4.82 deliv=84.79
-- 21STCENMGM: score=13 rs_nifty=23.43 deliv=89.33
+- INDHOTEL: score=13 rs_nifty=9.01 deliv=58.89
 - KMEW: score=13 rs_nifty=8.1 deliv=42.9
+- MMWL: score=13 rs_nifty=52.18 deliv=90.5
 - SOUTHBANK: score=13 rs_nifty=19.27 deliv=40.34
+- FEDERALBNK: score=13 rs_nifty=6.91 deliv=60.55
+- COFORGE: score=13 rs_nifty=8.0 deliv=43.92
+- 21STCENMGM: score=13 rs_nifty=23.43 deliv=89.33
+- INTLCONV: score=13 rs_nifty=6.82 deliv=73.07
+- ANANDRATHI: score=13 rs_nifty=5.69 deliv=50.04
+- SHIVAUM: score=13 rs_nifty=7.17 deliv=87.33
+- KOTAKBANK: score=13 rs_nifty=6.94 deliv=68.28
+- AAREYDRUGS: score=13 rs_nifty=7.38 deliv=74.28
 
 ## World markets (India cues)
 
@@ -138,6 +138,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-24/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-25/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
