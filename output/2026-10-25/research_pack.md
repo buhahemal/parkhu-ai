@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-25
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-25T06:09:04.458028+05:30
+- **generated_at_ist:** 2026-10-25T18:09:39.354025+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3227
-- trend = Bullish: 407
-- price > SMA200: 310
-- price > EMA50: 298
-- ADX14 > 25: 179
-- RSI14 in 40-80: 172
+- universe: 3219
+- trend = Bullish: 408
+- price > SMA200: 311
+- price > EMA50: 299
+- ADX14 > 25: 180
+- RSI14 in 40-80: 173
 - RS > 0 vs NIFTY and sector: 97
 - delivery% >= 40: 33
 - relative_volume >= 1: 11
@@ -30,12 +30,12 @@
 ## Survivors (top 7 of 7)
 
 - **NINSYS** [watchlist] score 73.7 — score in Watch band (70–80)
-- **ANANDRATHI** [watchlist] score 71.3 — score in Watch band (70–80)
-- **MANBA** [watchlist] score 70.8 — score in Watch band (70–80)
-- **SGMART** [rejected] score 67.7 — score below Watch band
+- **ANANDRATHI** [watchlist] score 71.2 — score in Watch band (70–80)
+- **MANBA** [watchlist] score 70.7 — score in Watch band (70–80)
+- **SGMART** [rejected] score 66.0 — score below Watch band
 - **KANANIIND** [rejected] score 65.6 — score below Watch band
 - **DEVX** [rejected] score 44.1 — T1 needs more than 22 trading days (~1 month)
-- **GKSL** [rejected] score 42.1 — score below Watch band
+- **GKSL** [rejected] score 42.0 — score below Watch band
 
 ## Ideas
 
@@ -49,14 +49,14 @@
 - entry 876.1 | stop 813.28 | t1 919.91 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PREMEXPLN — Watch (score 13.0)
-- PREMEXPLN | risk_sector: Process Industries
-- entry 687.4 | stop 675.9 | t1 721.77 | t2 None | t3 None | R:R None
+### SOUTHBANK — Watch (score 13.0)
+- SOUTHBANK | risk_sector: Finance
+- entry 52.57 | stop 49.52 | t1 55.2 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### INDHOTEL — Watch (score 13.0)
-- INDHOTEL | risk_sector: Consumer Services
-- entry 781.75 | stop 750.17 | t1 820.84 | t2 None | t3 None | R:R None
+### COFORGE — Watch (score 13.0)
+- COFORGE | risk_sector: Technology Services
+- entry 1900.5 | stop 1806.01 | t1 1995.52 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ### KMEW — Watch (score 13.0)
@@ -77,19 +77,19 @@
 
 - SGMART: score=14 rs_nifty=13.63 deliv=58.51
 - NINSYS: score=14 rs_nifty=26.33 deliv=40.35
-- PREMEXPLN: score=13 rs_nifty=4.82 deliv=84.79
-- INDHOTEL: score=13 rs_nifty=9.01 deliv=58.89
-- KMEW: score=13 rs_nifty=8.1 deliv=42.9
-- MMWL: score=13 rs_nifty=52.18 deliv=90.5
 - SOUTHBANK: score=13 rs_nifty=19.27 deliv=40.34
-- FEDERALBNK: score=13 rs_nifty=6.91 deliv=60.55
 - COFORGE: score=13 rs_nifty=8.0 deliv=43.92
-- 21STCENMGM: score=13 rs_nifty=23.43 deliv=89.33
+- KMEW: score=13 rs_nifty=8.1 deliv=42.9
 - INTLCONV: score=13 rs_nifty=6.82 deliv=73.07
+- FEDERALBNK: score=13 rs_nifty=6.91 deliv=60.55
+- INDHOTEL: score=13 rs_nifty=9.01 deliv=58.89
+- ORBTEXP: score=13 rs_nifty=13.42 deliv=76.47
 - ANANDRATHI: score=13 rs_nifty=5.69 deliv=50.04
-- SHIVAUM: score=13 rs_nifty=7.17 deliv=87.33
-- KOTAKBANK: score=13 rs_nifty=6.94 deliv=68.28
+- 21STCENMGM: score=13 rs_nifty=23.43 deliv=89.33
+- MMWL: score=13 rs_nifty=52.18 deliv=90.5
+- PREMEXPLN: score=13 rs_nifty=4.82 deliv=84.79
 - AAREYDRUGS: score=13 rs_nifty=7.38 deliv=74.28
+- KOTAKBANK: score=13 rs_nifty=6.94 deliv=68.28
 
 ## World markets (India cues)
 
@@ -115,7 +115,7 @@
 ### Macro
 - USDINR: +0.24% (neutral)
 - Crude WTI: +3.82% (bull)
-- Brent: +3.14% (bull)
+- Brent: -1.30% (bear)
 - DXY: +0.20% (neutral)
 - US 10Y: +0.71% (bear)
 - India ETF: -1.90% (bear)
