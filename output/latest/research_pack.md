@@ -1,62 +1,70 @@
 # Parkhu research pack — 2026-10-26
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-26T10:48:26.493022+05:30
+- **generated_at_ist:** 2026-10-26T18:09:33.348226+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Neutral**
-- nifty: Neutral (0.06%)
-- india_vix: 17.63 (Medium)
+- market_regime: **Bullish**
+- nifty: Bullish (0.68%)
+- india_vix: 17.16 (Medium)
 - fii_net: 887.65 | dii_net: 3235.36
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3221
-- trend = Bullish: 416
-- price > SMA200: 321
-- price > EMA50: 309
-- ADX14 > 25: 164
-- RSI14 in 40-80: 156
-- RS > 0 vs NIFTY and sector: 80
-- delivery% >= 40: 28
-- relative_volume >= 1: 0
-- no earnings within 21d: 0
-- event_risk_score <= 1: 0
-- TV rating not Sell: 0
+- universe: 3224
+- trend = Bullish: 441
+- price > SMA200: 346
+- price > EMA50: 333
+- ADX14 > 25: 170
+- RSI14 in 40-80: 161
+- RS > 0 vs NIFTY and sector: 84
+- delivery% >= 40: 33
+- relative_volume >= 1: 7
+- no earnings within 21d: 5
+- event_risk_score <= 1: 5
+- TV rating not Sell: 5
+
+## Survivors (top 5 of 5)
+
+- **KOTAKBANK** [rejected] score 84.2 — T1 needs more than 22 trading days (~1 month)
+- **SGMART** [watchlist] score 71.1 — score in Watch band (70–80)
+- **WESTLIFE** [rejected] score 46.8 — score below Watch band
+- **KREBSBIO** [rejected] score 46.5 — score below Watch band
+- **GKSL** [rejected] score 45.9 — score below Watch band
 
 ## Ideas
 
-### KOTAKBANK — Watch (score 13.0)
+### KOTAKBANK — Watch (score 15.0)
 - KOTAKBANK | risk_sector: Finance
-- entry 439.55 | stop 424.57 | t1 461.53 | t2 None | t3 None | R:R None
+- entry 440.75 | stop 425.77 | t1 462.79 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### SOUTHBANK — Watch (score 13.0)
-- SOUTHBANK | risk_sector: Finance
-- entry 52.45 | stop 49.45 | t1 55.07 | t2 None | t3 None | R:R None
+### WESTLIFE — Watch (score 14.0)
+- WESTLIFE | risk_sector: Consumer Services
+- entry 587.6 | stop 539.15 | t1 616.98 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### NINSYS — Watch (score 13.0)
-- NINSYS | risk_sector: Technology Services
-- entry 880.1 | stop 817.5 | t1 924.1 | t2 None | t3 None | R:R None
+### SGMART — Watch (score 14.0)
+- SGMART | risk_sector: Utilities
+- entry 799.7 | stop 740.88 | t1 839.68 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### FEDERALBNK — Watch (score 13.0)
-- FEDERALBNK | risk_sector: Finance
-- entry 339.5 | stop 325.18 | t1 356.48 | t2 None | t3 None | R:R None
+### 21STCENMGM — Watch (score 13.0)
+- 21STCENMGM | risk_sector: Finance
+- entry 47.59 | stop 44.34 | t1 49.97 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PATELRMART — Watch (score 13.0)
-- PATELRMART | risk_sector: Retail Trade
-- entry 230.11 | stop 216.96 | t1 241.62 | t2 None | t3 None | R:R None
+### MODIS — Watch (score 13.0)
+- MODIS | risk_sector: Finance
+- entry 397.0 | stop 369.62 | t1 416.85 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=180.77 mfe=1.47 mae=-3.04 opened=2026-10-22
+- **UNIONBANK** status=open entry=182.85 last=181.2 mfe=1.47 mae=-3.04 opened=2026-10-22
 
 ## Needs action
 
@@ -68,49 +76,49 @@
 
 ## Swing candidates (top)
 
-- KOTAKBANK: score=13 rs_nifty=11.59 deliv=68.28
-- SOUTHBANK: score=13 rs_nifty=8.37 deliv=40.34
-- NINSYS: score=13 rs_nifty=27.0 deliv=40.35
-- FEDERALBNK: score=13 rs_nifty=7.23 deliv=60.55
-- PATELRMART: score=13 rs_nifty=14.72 deliv=47.88
-- 21STCENMGM: score=13 rs_nifty=18.86 deliv=89.33
-- SGMART: score=13 rs_nifty=12.73 deliv=58.51
-- TECHM: score=12 rs_nifty=19.78 deliv=47.37
-- BAJAJHLDNG: score=12 rs_nifty=5.92 deliv=40.67
-- INDHOTEL: score=12 rs_nifty=11.05 deliv=58.89
-- SEJALLTD: score=12 rs_nifty=26.98 deliv=42.66
-- IBULLSLTD: score=12 rs_nifty=17.09 deliv=54.46
-- SHREEJISPG: score=12 rs_nifty=12.76 deliv=51.04
-- AUSOMENT: score=12 rs_nifty=7.92 deliv=74.87
-- KINGFA: score=12 rs_nifty=5.85 deliv=47.34
+- KOTAKBANK: score=15 rs_nifty=11.28 deliv=55.97
+- WESTLIFE: score=14 rs_nifty=5.2 deliv=45.0
+- SGMART: score=14 rs_nifty=13.44 deliv=74.53
+- 21STCENMGM: score=13 rs_nifty=21.46 deliv=61.59
+- MODIS: score=13 rs_nifty=12.58 deliv=49.15
+- ICICIBANK: score=13 rs_nifty=8.22 deliv=58.34
+- INDHOTEL: score=13 rs_nifty=12.52 deliv=55.2
+- TEXINFRA: score=13 rs_nifty=7.88 deliv=69.66
+- ATHERENERG: score=13 rs_nifty=8.67 deliv=25.22
+- MMWL: score=13 rs_nifty=42.41 deliv=76.69
+- NINSYS: score=13 rs_nifty=26.59 deliv=54.82
+- THELEELA: score=13 rs_nifty=14.0 deliv=48.3
+- PATELRMART: score=13 rs_nifty=15.53 deliv=51.57
+- SOUTHBANK: score=13 rs_nifty=8.25 deliv=44.87
+- KESORAMIND: score=13 rs_nifty=10.33 deliv=55.89
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.21% (bear)
-- Hang Seng: +0.56% (bull)
-- Shanghai: -0.22% (bear)
-- Kospi: -0.45% (bear)
+- Nikkei: -0.80% (bear)
+- Hang Seng: +0.51% (bull)
+- Shanghai: +0.19% (bull)
+- Kospi: -1.46% (bear)
 - Taiwan: -1.81% (bear)
-- ASX 200: +0.22% (bull)
+- ASX 200: +0.17% (bull)
 
 ### Europe
-- FTSE 100: -0.32% (bear)
-- DAX: -0.75% (bear)
-- Euro Stoxx 50: -0.31% (bear)
+- FTSE 100: +0.46% (bull)
+- DAX: +0.90% (bull)
+- Euro Stoxx 50: +0.68% (bull)
 
 ### US
 - S&P 500: -0.52% (bear)
 - Nasdaq: -0.21% (bear)
 - Dow: -1.23% (bear)
-- US VIX: +2.21% (bear)
+- US VIX: -1.90% (bull)
 
 ### Macro
-- USDINR: +0.38% (bear)
-- Crude WTI: -2.18% (bear)
-- Brent: -6.09% (bear)
-- DXY: -0.16% (neutral)
-- US 10Y: +0.71% (bear)
+- USDINR: +0.53% (bear)
+- Crude WTI: -2.21% (bear)
+- Brent: -5.72% (bear)
+- DXY: +0.05% (neutral)
+- US 10Y: +0.18% (neutral)
 - India ETF: -1.90% (bear)
 - EM ETF: +0.47% (bull)
 
