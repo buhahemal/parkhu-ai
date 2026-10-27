@@ -1,67 +1,73 @@
 # Parkhu research pack — 2026-10-27
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-27T11:03:48.364177+05:30
+- **generated_at_ist:** 2026-10-27T18:10:15.109906+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Neutral**
-- nifty: Neutral (0.02%)
-- india_vix: 16.89 (Medium)
+- nifty: Neutral (-0.02%)
+- india_vix: 16.4 (Medium)
 - fii_net: -1462.49 | dii_net: 2609.57
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3217
-- trend = Bullish: 551
-- price > SMA200: 434
-- price > EMA50: 420
-- ADX14 > 25: 191
-- RSI14 in 40-80: 181
-- RS > 0 vs NIFTY and sector: 83
-- delivery% >= 40: 34
-- relative_volume >= 1: 3
-- no earnings within 21d: 2
-- event_risk_score <= 1: 2
-- TV rating not Sell: 2
+- universe: 3227
+- trend = Bullish: 576
+- price > SMA200: 465
+- price > EMA50: 450
+- ADX14 > 25: 200
+- RSI14 in 40-80: 193
+- RS > 0 vs NIFTY and sector: 91
+- delivery% >= 40: 39
+- relative_volume >= 1: 11
+- no earnings within 21d: 8
+- event_risk_score <= 1: 8
+- TV rating not Sell: 8
 
-## Survivors (top 2 of 2)
+## Survivors (top 8 of 8)
 
-- **KREBSBIO** [rejected] score 50.5 — score below Watch band
-- **GKSL** [rejected] score 45.6 — score below Watch band
+- **KOTAKBANK** [rejected] score 86.2 — T1 needs more than 22 trading days (~1 month)
+- **CORONA** [rejected] score 54.4 — score below Watch band
+- **GCSL** [rejected] score 46.5 — score below Watch band
+- **GKSL** [rejected] score 46.1 — score below Watch band
+- **KREBSBIO** [rejected] score 45.1 — score below Watch band
+- **DBSTOCKBRO** [rejected] score 43.9 — T1 needs more than 22 trading days (~1 month)
+- **21STCENMGM** [rejected] score 41.9 — score below Watch band
+- **DEVX** [rejected] score 41.5 — score below Watch band
 
 ## Ideas
 
-### MANKIND — Watch (score 14.0)
-- MANKIND | risk_sector: Health Technology
-- entry 2495.5 | stop 2375.35 | t1 2620.28 | t2 None | t3 None | R:R None
+### CORONA — Watch (score 14.0)
+- CORONA | risk_sector: Health Technology
+- entry 2152.0 | stop 2055.21 | t1 2259.6 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### PARACABLES — Watch (score 13.0)
-- PARACABLES | risk_sector: Producer Manufacturing
-- entry 66.04 | stop 59.84 | t1 69.34 | t2 None | t3 None | R:R None
+### DBSTOCKBRO — Watch (score 14.0)
+- DBSTOCKBRO | risk_sector: Finance
+- entry 30.97 | stop 27.72 | t1 32.52 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### FEDERALBNK — Watch (score 13.0)
-- FEDERALBNK | risk_sector: Finance
-- entry 347.55 | stop 333.39 | t1 364.93 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### MMWL — Watch (score 13.0)
-- MMWL | risk_sector: Technology Services
-- entry 21.19 | stop 19.08 | t1 22.25 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### KOTAKBANK — Watch (score 13.0)
+### KOTAKBANK — Watch (score 14.0)
 - KOTAKBANK | risk_sector: Finance
-- entry 443.3 | stop 428.87 | t1 465.46 | t2 None | t3 None | R:R None
+- entry 442.5 | stop 428.07 | t1 464.62 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### 21STCENMGM — Watch (score 14.0)
+- 21STCENMGM | risk_sector: Finance
+- entry 49.96 | stop 46.53 | t1 52.46 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### NINSYS — Watch (score 13.0)
+- NINSYS | risk_sector: Technology Services
+- entry 875.05 | stop 813.82 | t1 918.8 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=184.49 mfe=1.47 mae=-3.04 opened=2026-10-22
+- **UNIONBANK** status=open entry=182.85 last=184.6 mfe=1.47 mae=-3.04 opened=2026-10-22
 
 ## Needs action
 
@@ -69,49 +75,49 @@
 
 ## Swing candidates (top)
 
-- MANKIND: score=14 rs_nifty=1.61 deliv=44.46
-- PARACABLES: score=13 rs_nifty=10.14 deliv=41.25
-- FEDERALBNK: score=13 rs_nifty=7.44 deliv=56.72
-- MMWL: score=13 rs_nifty=42.78 deliv=76.69
-- KOTAKBANK: score=13 rs_nifty=10.27 deliv=55.97
-- KESORAMIND: score=13 rs_nifty=15.19 deliv=55.89
-- EMKAY: score=13 rs_nifty=5.55 deliv=43.39
-- SAMBHV: score=13 rs_nifty=9.93 deliv=42.21
-- SOUTHBANK: score=13 rs_nifty=8.91 deliv=44.87
-- SGMART: score=13 rs_nifty=11.74 deliv=74.53
-- WESTLIFE: score=13 rs_nifty=5.26 deliv=45.0
-- 21STCENMGM: score=13 rs_nifty=16.24 deliv=61.59
-- NINSYS: score=13 rs_nifty=24.03 deliv=54.82
-- THELEELA: score=13 rs_nifty=13.97 deliv=48.3
-- SUNFLAG: score=12 rs_nifty=3.07 deliv=59.69
+- CORONA: score=14 rs_nifty=2.63 deliv=46.71
+- DBSTOCKBRO: score=14 rs_nifty=3.64 deliv=98.45
+- KOTAKBANK: score=14 rs_nifty=10.11 deliv=63.26
+- 21STCENMGM: score=14 rs_nifty=25.76 deliv=67.89
+- NINSYS: score=13 rs_nifty=24.08 deliv=71.66
+- THELEELA: score=13 rs_nifty=14.36 deliv=49.42
+- SOUTHBANK: score=13 rs_nifty=9.87 deliv=45.65
+- MMWL: score=13 rs_nifty=46.09 deliv=61.78
+- SGMART: score=13 rs_nifty=11.8 deliv=65.95
+- UNIONBANK: score=13 rs_nifty=4.62 deliv=55.67
+- SHIVAUM: score=13 rs_nifty=6.64 deliv=68.83
+- SUNFLAG: score=13 rs_nifty=3.11 deliv=58.58
+- SVPGLOB: score=13 rs_nifty=14.49 deliv=96.68
+- FEDERALBNK: score=13 rs_nifty=5.67 deliv=46.02
+- KMEW: score=13 rs_nifty=12.55 deliv=45.31
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.76% (bull)
-- Hang Seng: -0.46% (bear)
-- Shanghai: -0.35% (bear)
-- Kospi: +3.93% (bull)
-- Taiwan: +0.28% (bull)
+- Nikkei: +1.73% (bull)
+- Hang Seng: -0.73% (bear)
+- Shanghai: -1.33% (bear)
+- Kospi: +3.09% (bull)
+- Taiwan: +0.12% (neutral)
 - ASX 200: +0.46% (bull)
 
 ### Europe
-- FTSE 100: +0.72% (bull)
-- DAX: +0.91% (bull)
-- Euro Stoxx 50: +0.79% (bull)
+- FTSE 100: -0.77% (bear)
+- DAX: +0.36% (bull)
+- Euro Stoxx 50: +0.40% (bull)
 
 ### US
 - S&P 500: +0.70% (bull)
 - Nasdaq: +0.82% (bull)
 - Dow: +0.28% (bull)
-- US VIX: -5.45% (bull)
+- US VIX: -3.86% (bull)
 
 ### Macro
-- USDINR: +0.24% (neutral)
-- Crude WTI: -0.97% (bear)
-- Brent: -5.24% (bear)
-- DXY: +0.13% (neutral)
-- US 10Y: -0.04% (neutral)
+- USDINR: +0.18% (neutral)
+- Crude WTI: -1.01% (bear)
+- Brent: -5.07% (bear)
+- DXY: +0.18% (neutral)
+- US 10Y: -0.28% (neutral)
 - India ETF: +0.28% (bull)
 - EM ETF: -0.31% (bear)
 
