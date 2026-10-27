@@ -1,6 +1,4 @@
 date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
-26-Oct-2026 22:13:18,DEEPA,Investor Presentation,Deepa Jewellers Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
-26-Oct-2026 22:16:15,PAYTM,Monitoring Agency Report,"Monitoring Agency Report for the quarter ended September 30, 2026.",Monitoring Agency Report,0.0,0,False,False,0,none
 26-Oct-2026 22:26:19,LEAPIND,Press Release,"LEAP India Limited has informed the Exchange regarding a press release dated October 26, 2026, titled ""Press Release  for Unaudited Financial Results for the quarter and half year ended September 30, 2026 (Q2/H1 FY27)"".",Press Release,0.2,2,True,True,10,keyword
 26-Oct-2026 22:30:41,PAYTM,General Updates,One 97 Communications Limited has informed the Exchange about Closure of board meeting,General Updates,0.0,1,False,True,3,keyword
 26-Oct-2026 22:31:54,LEAPIND,Investor Presentation,LEAP India Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
@@ -19,3 +17,5 @@ date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_cata
 26-Oct-2026 23:34:43,HINDUNILVR,Copy of Newspaper Publication,Hindustan Unilever Limited has informed the Exchange about Copy of Newspaper Publication,Copy of Newspaper Publication,0.0,0,False,False,0,none
 26-Oct-2026 23:46:51,ICICIGI,ESOP/ESOS/ESPS,ICICI Lombard General Insurance Company Limited has informed the Exchange regarding Allotment of 84705   Shares.,ESOP/ESOS/ESPS,0.0,0,False,False,0,none
 26-Oct-2026 23:49:09,SUNTECK,Monitoring Agency Report,"Monitoring Agency Report for the quarter ended 30th September, 2026",Monitoring Agency Report,0.0,0,False,False,0,none
+27-Oct-2026 00:55:30,ASTRAZEN,"Certificate under SEBI (Depositories and Participants) Regulations, 2018","AstraZeneca Pharma India Limited has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018","Certificate under SEBI (Depositories and Participants) Regulations, 2018",-0.7,2,True,True,12,keyword
+27-Oct-2026 01:27:04,TMCV,Press Release,"Tata Motors Limited has informed the Exchange regarding a press release dated October 27, 2026, titled ""TML CV Holdings B.V., an Indirect Wholly Owned Subsidiary of Tata Motors Limited (formerly TML Commercial Vehicles Limited) ( the Company )   Voluntary Totalitarian Tender Offer for all the common",Press Release,0.0,0,False,False,0,none

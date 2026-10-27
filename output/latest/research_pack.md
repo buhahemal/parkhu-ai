@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-27
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-27T00:28:24.759212+05:30
+- **generated_at_ist:** 2026-10-27T06:09:20.388799+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,9 +14,9 @@
 
 ## Funnel
 
-- universe: 3220
-- trend = Bullish: 448
-- price > SMA200: 349
+- universe: 3222
+- trend = Bullish: 446
+- price > SMA200: 346
 - price > EMA50: 333
 - ADX14 > 25: 170
 - RSI14 in 40-80: 161
@@ -37,11 +37,6 @@
 
 ## Ideas
 
-### KOTAKBANK — Watch (score 14.0)
-- KOTAKBANK | risk_sector: Finance
-- entry 440.75 | stop 425.77 | t1 462.79 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
 ### WESTLIFE — Watch (score 14.0)
 - WESTLIFE | risk_sector: Consumer Services
 - entry 587.6 | stop 539.15 | t1 616.98 | t2 None | t3 None | R:R None
@@ -52,14 +47,19 @@
 - entry 799.7 | stop 740.88 | t1 839.68 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
+### KOTAKBANK — Watch (score 14.0)
+- KOTAKBANK | risk_sector: Finance
+- entry 440.75 | stop 425.77 | t1 462.79 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### FEDERALBNK — Watch (score 13.0)
+- FEDERALBNK | risk_sector: Finance
+- entry 344.4 | stop 329.73 | t1 361.62 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
 ### THELEELA — Watch (score 13.0)
 - THELEELA | risk_sector: Consumer Services
 - entry 582.95 | stop 538.0 | t1 612.1 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### PATELRMART — Watch (score 13.0)
-- PATELRMART | risk_sector: Retail Trade
-- entry 233.06 | stop 219.55 | t1 244.71 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -72,51 +72,51 @@
 
 ## Swing candidates (top)
 
-- KOTAKBANK: score=14 rs_nifty=11.44 deliv=55.97
 - WESTLIFE: score=14 rs_nifty=5.36 deliv=45.0
 - SGMART: score=14 rs_nifty=13.6 deliv=74.53
-- THELEELA: score=13 rs_nifty=14.16 deliv=48.3
-- PATELRMART: score=13 rs_nifty=15.69 deliv=51.57
-- TEXINFRA: score=13 rs_nifty=8.04 deliv=69.66
-- NINSYS: score=13 rs_nifty=26.75 deliv=54.82
-- MMWL: score=13 rs_nifty=42.57 deliv=76.69
+- KOTAKBANK: score=14 rs_nifty=11.44 deliv=55.97
 - FEDERALBNK: score=13 rs_nifty=8.28 deliv=56.72
-- MODIS: score=13 rs_nifty=12.74 deliv=49.15
-- SOUTHBANK: score=13 rs_nifty=8.41 deliv=44.87
-- 21STCENMGM: score=13 rs_nifty=21.62 deliv=61.59
+- THELEELA: score=13 rs_nifty=14.16 deliv=48.3
 - KESORAMIND: score=13 rs_nifty=10.49 deliv=55.89
+- 21STCENMGM: score=13 rs_nifty=21.62 deliv=61.59
+- MMWL: score=13 rs_nifty=42.57 deliv=76.69
 - ATHERENERG: score=13 rs_nifty=8.83 deliv=25.22
-- SECMARK: score=12 rs_nifty=15.69 deliv=69.92
+- MODIS: score=13 rs_nifty=12.74 deliv=49.15
+- NINSYS: score=13 rs_nifty=26.75 deliv=54.82
+- TEXINFRA: score=13 rs_nifty=8.04 deliv=69.66
+- SOUTHBANK: score=13 rs_nifty=8.41 deliv=44.87
+- PATELRMART: score=13 rs_nifty=15.69 deliv=51.57
+- GKSL: score=12 rs_nifty=6.52 deliv=71.74
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.34% (bear)
+- Nikkei: +1.07% (bull)
 - Hang Seng: +0.69% (bull)
 - Shanghai: +0.89% (bull)
-- Kospi: +0.30% (bull)
+- Kospi: +2.72% (bull)
 - Taiwan: -1.81% (bear)
-- ASX 200: +0.17% (bull)
+- ASX 200: -0.18% (bear)
 
 ### Europe
-- FTSE 100: +0.72% (bull)
-- DAX: +0.91% (bull)
-- Euro Stoxx 50: +0.79% (bull)
+- FTSE 100: -0.32% (bear)
+- DAX: -0.75% (bear)
+- Euro Stoxx 50: -0.31% (bear)
 
 ### US
-- S&P 500: +0.69% (bull)
-- Nasdaq: +0.88% (bull)
-- Dow: +0.23% (bull)
-- US VIX: -5.35% (bull)
+- S&P 500: +0.70% (bull)
+- Nasdaq: +0.82% (bull)
+- Dow: +0.28% (bull)
+- US VIX: -5.45% (bull)
 
 ### Macro
-- USDINR: +0.49% (bear)
-- Crude WTI: -1.34% (bear)
-- Brent: -5.11% (bear)
-- DXY: +0.14% (neutral)
+- USDINR: +0.25% (neutral)
+- Crude WTI: -2.17% (bear)
+- Brent: -5.83% (bear)
+- DXY: +0.21% (neutral)
 - US 10Y: -0.04% (neutral)
-- India ETF: +0.24% (bull)
-- EM ETF: -0.19% (bear)
+- India ETF: -1.90% (bear)
+- EM ETF: +0.47% (bull)
 
 
 ## Groq desk note
