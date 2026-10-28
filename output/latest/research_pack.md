@@ -1,70 +1,72 @@
 # Parkhu research pack — 2026-10-28
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-28T11:45:15.405419+05:30
+- **generated_at_ist:** 2026-10-28T18:10:18.339749+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.57%)
-- india_vix: 16.5 (Medium)
+- nifty: Bearish (-0.22%)
+- india_vix: 16.25 (Medium)
 - fii_net: 4240.39 | dii_net: -1250.03
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3219
-- trend = Bullish: 598
-- price > SMA200: 462
-- price > EMA50: 451
+- universe: 3223
+- trend = Bullish: 608
+- price > SMA200: 477
+- price > EMA50: 463
 - ADX14 > 25: 187
-- RSI14 in 40-80: 179
-- RS > 0 vs NIFTY and sector: 87
-- delivery% >= 40: 34
-- relative_volume >= 1: 7
-- no earnings within 21d: 5
-- event_risk_score <= 1: 5
-- TV rating not Sell: 5
+- RSI14 in 40-80: 181
+- RS > 0 vs NIFTY and sector: 94
+- delivery% >= 40: 37
+- relative_volume >= 1: 10
+- no earnings within 21d: 8
+- event_risk_score <= 1: 8
+- TV rating not Sell: 7
 
-## Survivors (top 5 of 5)
+## Survivors (top 7 of 7)
 
-- **MAZDA** [watchlist] score 72.6 — score in Watch band (70–80)
-- **SMLT** [rejected] score 62.5 — score below Watch band
-- **LENSKART** [rejected] score 51.8 — score below Watch band
-- **NELCAST** [rejected] score 47.5 — score below Watch band
-- **DEVX** [rejected] score 41.3 — score below Watch band
+- **SGMART** [rejected] score 69.7 — score below Watch band
+- **DRREDDY** [rejected] score 60.5 — score below Watch band
+- **THELEELA** [rejected] score 59.4 — score below Watch band
+- **CORONA** [rejected] score 55.8 — score below Watch band
+- **LENSKART** [rejected] score 51.4 — score below Watch band
+- **21STCENMGM** [rejected] score 41.9 — score below Watch band
+- **DEVX** [rejected] score 40.8 — score below Watch band
 
 ## Ideas
 
-### MAZDA — Watch (score 14.0)
-- MAZDA | risk_sector: Producer Manufacturing
-- entry 296.3 | stop 266.56 | t1 311.12 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SGMART — Watch (score 13.0)
+### SGMART — Watch (score 14.0)
 - SGMART | risk_sector: Utilities
-- entry 787.35 | stop 730.37 | t1 826.72 | t2 None | t3 None | R:R None
+- entry 802.95 | stop 745.2 | t1 843.1 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### LAL — Watch (score 13.0)
-- LAL | risk_sector: Consumer Non-Durables
-- entry 8.97 | stop 8.24 | t1 9.42 | t2 None | t3 None | R:R None
+### LENSKART — Watch (score 14.0)
+- LENSKART | risk_sector: Health Technology
+- entry 689.7 | stop 655.81 | t1 724.18 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### MMWL — Watch (score 13.0)
-- MMWL | risk_sector: Technology Services
-- entry 20.9 | stop 18.79 | t1 21.94 | t2 None | t3 None | R:R None
+### THELEELA — Watch (score 14.0)
+- THELEELA | risk_sector: Consumer Services
+- entry 605.2 | stop 562.56 | t1 635.46 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### GUFICBIO — Watch (score 13.0)
-- GUFICBIO | risk_sector: Health Technology
-- entry 424.8 | stop 397.88 | t1 446.04 | t2 None | t3 None | R:R None
+### KOTAKBANK — Watch (score 13.0)
+- KOTAKBANK | risk_sector: Finance
+- entry 440.0 | stop 425.95 | t1 462.0 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MODIS — Watch (score 13.0)
+- MODIS | risk_sector: Finance
+- entry 389.75 | stop 360.41 | t1 409.24 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=181.91 mfe=1.47 mae=-3.04 opened=2026-10-22
+- **UNIONBANK** status=open entry=182.85 last=182.98 mfe=1.47 mae=-3.04 opened=2026-10-22
 
 ## Needs action
 
@@ -72,49 +74,49 @@
 
 ## Swing candidates (top)
 
-- MAZDA: score=14 rs_nifty=5.5 deliv=61.24
-- SGMART: score=13 rs_nifty=10.85 deliv=65.95
-- LAL: score=13 rs_nifty=6.44 deliv=90.49
-- MMWL: score=13 rs_nifty=40.76 deliv=61.78
-- GUFICBIO: score=13 rs_nifty=2.32 deliv=61.3
-- TECHM: score=13 rs_nifty=15.41 deliv=54.64
-- LENSKART: score=13 rs_nifty=4.27 deliv=58.54
-- CORONA: score=13 rs_nifty=5.6 deliv=46.71
-- KOTAKBANK: score=13 rs_nifty=11.8 deliv=63.26
-- LUMAXTECH: score=13 rs_nifty=2.49 deliv=53.55
-- THELEELA: score=13 rs_nifty=11.63 deliv=49.42
-- SOUTHBANK: score=13 rs_nifty=10.82 deliv=45.65
-- NINSYS: score=13 rs_nifty=21.43 deliv=71.66
-- SVPGLOB: score=13 rs_nifty=23.36 deliv=96.68
-- EMKAY: score=13 rs_nifty=4.73 deliv=56.57
+- SGMART: score=14 rs_nifty=12.65 deliv=55.29
+- LENSKART: score=14 rs_nifty=3.34 deliv=59.46
+- THELEELA: score=14 rs_nifty=12.72 deliv=76.38
+- KOTAKBANK: score=13 rs_nifty=11.36 deliv=72.84
+- MODIS: score=13 rs_nifty=9.21 deliv=40.47
+- SAMBHV: score=13 rs_nifty=5.32 deliv=48.45
+- SOUTHBANK: score=13 rs_nifty=11.41 deliv=51.9
+- SONACOMS: score=13 rs_nifty=8.57 deliv=43.3
+- SVPGLOB: score=13 rs_nifty=25.46 deliv=84.22
+- CORONA: score=13 rs_nifty=5.71 deliv=45.01
+- MANKIND: score=13 rs_nifty=2.52 deliv=51.45
+- FEDERALBNK: score=13 rs_nifty=9.26 deliv=61.26
+- MAZDA: score=13 rs_nifty=4.07 deliv=35.16
+- EMKAY: score=13 rs_nifty=7.11 deliv=61.79
+- NINSYS: score=13 rs_nifty=21.84 deliv=57.65
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.22% (bull)
-- Hang Seng: +0.08% (neutral)
-- Shanghai: +0.54% (bull)
-- Kospi: +6.53% (bull)
+- Nikkei: +1.08% (bull)
+- Hang Seng: +0.23% (bull)
+- Shanghai: +0.91% (bull)
+- Kospi: +6.63% (bull)
 - Taiwan: +2.04% (bull)
 - ASX 200: -0.03% (neutral)
 
 ### Europe
-- FTSE 100: -0.75% (bear)
-- DAX: +0.71% (bull)
-- Euro Stoxx 50: +0.79% (bull)
+- FTSE 100: -0.08% (neutral)
+- DAX: +0.30% (bull)
+- Euro Stoxx 50: +0.01% (neutral)
 
 ### US
 - S&P 500: +0.60% (bull)
 - Nasdaq: +1.18% (bull)
 - Dow: +0.03% (neutral)
-- US VIX: -4.73% (bull)
+- US VIX: -0.63% (bull)
 
 ### Macro
-- USDINR: +0.04% (neutral)
-- Crude WTI: +1.59% (bull)
-- Brent: -2.45% (bear)
-- DXY: +0.11% (neutral)
-- US 10Y: +0.14% (neutral)
+- USDINR: +0.03% (neutral)
+- Crude WTI: +1.93% (bull)
+- Brent: -2.34% (bear)
+- DXY: +0.00% (neutral)
+- US 10Y: +0.00% (neutral)
 - India ETF: +0.32% (bull)
 - EM ETF: +1.13% (bull)
 
