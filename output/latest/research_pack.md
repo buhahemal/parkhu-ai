@@ -1,49 +1,45 @@
-# Parkhu research pack — 2026-10-27
+# Parkhu research pack — 2026-10-28
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-27T23:49:56.408441+05:30
+- **generated_at_ist:** 2026-10-28T06:10:48.165673+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Neutral**
-- nifty: Neutral (-0.02%)
-- india_vix: 16.4 (Medium)
+- market_regime: **Bullish**
+- nifty: Bullish (0.68%)
+- india_vix: 17.16 (Medium)
 - fii_net: 4240.39 | dii_net: -1250.03
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3225
-- trend = Bullish: 581
-- price > SMA200: 468
-- price > EMA50: 453
+- universe: 3223
+- trend = Bullish: 578
+- price > SMA200: 465
+- price > EMA50: 450
 - ADX14 > 25: 200
 - RSI14 in 40-80: 193
-- RS > 0 vs NIFTY and sector: 91
-- delivery% >= 40: 39
-- relative_volume >= 1: 11
-- no earnings within 21d: 8
-- event_risk_score <= 1: 8
-- TV rating not Sell: 8
+- RS > 0 vs NIFTY and sector: 99
+- delivery% >= 40: 44
+- relative_volume >= 1: 14
+- no earnings within 21d: 9
+- event_risk_score <= 1: 9
+- TV rating not Sell: 9
 
-## Survivors (top 8 of 8)
+## Survivors (top 9 of 9)
 
 - **KOTAKBANK** [rejected] score 86.2 — T1 needs more than 22 trading days (~1 month)
+- **LAL** [watchlist] score 74.1 — score in Watch band (70–80)
 - **CORONA** [rejected] score 54.5 — score below Watch band
-- **GCSL** [rejected] score 46.5 — score below Watch band
-- **GKSL** [rejected] score 46.2 — score below Watch band
-- **KREBSBIO** [rejected] score 45.2 — score below Watch band
-- **DBSTOCKBRO** [rejected] score 43.9 — T1 needs more than 22 trading days (~1 month)
-- **21STCENMGM** [rejected] score 41.9 — score below Watch band
+- **GCSL** [rejected] score 46.6 — score below Watch band
+- **GKSL** [rejected] score 46.1 — score below Watch band
+- **KREBSBIO** [rejected] score 45.1 — score below Watch band
+- **DBSTOCKBRO** [rejected] score 44.0 — T1 needs more than 22 trading days (~1 month)
+- **21STCENMGM** [rejected] score 42.0 — score below Watch band
 - **DEVX** [rejected] score 41.5 — score below Watch band
 
 ## Ideas
-
-### 21STCENMGM — Watch (score 14.0)
-- 21STCENMGM | risk_sector: Finance
-- entry 49.96 | stop 46.53 | t1 52.46 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
 
 ### CORONA — Watch (score 14.0)
 - CORONA | risk_sector: Health Technology
@@ -60,9 +56,14 @@
 - entry 442.5 | stop 428.07 | t1 464.62 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
-### FEDERALBNK — Watch (score 13.0)
-- FEDERALBNK | risk_sector: Finance
-- entry 341.6 | stop 327.25 | t1 358.68 | t2 None | t3 None | R:R None
+### 21STCENMGM — Watch (score 14.0)
+- 21STCENMGM | risk_sector: Finance
+- entry 49.96 | stop 46.53 | t1 52.46 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SGMART — Watch (score 13.0)
+- SGMART | risk_sector: Utilities
+- entry 799.4 | stop 743.36 | t1 839.37 | t2 None | t3 None | R:R None
 - qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
@@ -75,51 +76,51 @@
 
 ## Swing candidates (top)
 
-- 21STCENMGM: score=14 rs_nifty=25.76 deliv=67.89
-- CORONA: score=14 rs_nifty=2.63 deliv=46.71
-- DBSTOCKBRO: score=14 rs_nifty=3.64 deliv=98.45
-- KOTAKBANK: score=14 rs_nifty=10.11 deliv=63.26
-- FEDERALBNK: score=13 rs_nifty=5.67 deliv=46.02
-- MMWL: score=13 rs_nifty=46.09 deliv=61.78
-- KMEW: score=13 rs_nifty=12.55 deliv=45.31
-- SVPGLOB: score=13 rs_nifty=14.49 deliv=96.68
-- APLAPOLLO: score=13 rs_nifty=2.96 deliv=48.2
-- NINSYS: score=13 rs_nifty=24.08 deliv=71.66
-- SOUTHBANK: score=13 rs_nifty=9.87 deliv=45.65
-- EMKAY: score=13 rs_nifty=6.64 deliv=56.57
-- SGMART: score=13 rs_nifty=11.8 deliv=65.95
-- KESORAMIND: score=13 rs_nifty=12.25 deliv=46.79
-- THELEELA: score=13 rs_nifty=14.36 deliv=49.42
+- CORONA: score=14 rs_nifty=4.23 deliv=46.71
+- DBSTOCKBRO: score=14 rs_nifty=5.24 deliv=98.45
+- KOTAKBANK: score=14 rs_nifty=11.71 deliv=63.26
+- 21STCENMGM: score=14 rs_nifty=27.36 deliv=67.89
+- SGMART: score=13 rs_nifty=13.4 deliv=65.95
+- LAL: score=13 rs_nifty=0.46 deliv=90.49
+- SUNFLAG: score=13 rs_nifty=4.71 deliv=58.58
+- SOUTHBANK: score=13 rs_nifty=11.47 deliv=45.65
+- KMEW: score=13 rs_nifty=14.15 deliv=45.31
+- MMWL: score=13 rs_nifty=47.69 deliv=61.78
+- KESORAMIND: score=13 rs_nifty=13.85 deliv=46.79
+- UNIONBANK: score=13 rs_nifty=6.22 deliv=55.67
+- SHIVAUM: score=13 rs_nifty=8.24 deliv=68.83
+- ICICIBANK: score=13 rs_nifty=7.01 deliv=45.78
+- APLAPOLLO: score=13 rs_nifty=4.56 deliv=48.2
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.80% (bear)
+- Nikkei: +2.99% (bull)
 - Hang Seng: +0.51% (bull)
 - Shanghai: +0.19% (bull)
-- Kospi: -1.46% (bear)
+- Kospi: +6.23% (bull)
 - Taiwan: -1.81% (bear)
-- ASX 200: +0.46% (bull)
+- ASX 200: +1.26% (bull)
 
 ### Europe
-- FTSE 100: -0.75% (bear)
-- DAX: +0.71% (bull)
+- FTSE 100: +0.72% (bull)
+- DAX: +0.91% (bull)
 - Euro Stoxx 50: +0.79% (bull)
 
 ### US
-- S&P 500: +0.57% (bull)
-- Nasdaq: +1.13% (bull)
-- Dow: +0.06% (neutral)
-- US VIX: -3.64% (bull)
+- S&P 500: +0.60% (bull)
+- Nasdaq: +1.18% (bull)
+- Dow: +0.03% (neutral)
+- US VIX: -4.73% (bull)
 
 ### Macro
-- USDINR: +0.18% (neutral)
-- Crude WTI: -1.77% (bear)
-- Brent: -5.43% (bear)
-- DXY: +0.34% (neutral)
-- US 10Y: +0.04% (neutral)
-- India ETF: +0.33% (bull)
-- EM ETF: +1.14% (bull)
+- USDINR: -0.09% (neutral)
+- Crude WTI: -1.02% (bear)
+- Brent: -4.92% (bear)
+- DXY: +0.37% (bear)
+- US 10Y: +0.14% (neutral)
+- India ETF: +0.28% (bull)
+- EM ETF: -0.31% (bear)
 
 
 ## Groq desk note
@@ -138,6 +139,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-27/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-28/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
