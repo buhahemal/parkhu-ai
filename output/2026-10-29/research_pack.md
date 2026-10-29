@@ -1,67 +1,54 @@
 # Parkhu research pack — 2026-10-29
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-29T11:54:54.634832+05:30
+- **generated_at_ist:** 2026-10-29T18:10:49.427317+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.68%)
-- india_vix: 15.68 (Medium)
+- nifty: Bullish (1.05%)
+- india_vix: 15.12 (Medium)
 - fii_net: 871.83 | dii_net: 643.35
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3227
-- trend = Bullish: 651
-- price > SMA200: 507
-- price > EMA50: 494
+- universe: 3228
+- trend = Bullish: 682
+- price > SMA200: 529
+- price > EMA50: 518
 - ADX14 > 25: 196
 - RSI14 in 40-80: 189
-- RS > 0 vs NIFTY and sector: 94
-- delivery% >= 40: 37
-- relative_volume >= 1: 6
-- no earnings within 21d: 2
-- event_risk_score <= 1: 2
-- TV rating not Sell: 2
+- RS > 0 vs NIFTY and sector: 95
+- delivery% >= 40: 36
+- relative_volume >= 1: 13
+- no earnings within 21d: 8
+- event_risk_score <= 1: 8
+- TV rating not Sell: 8
 
-## Survivors (top 2 of 2)
+## Survivors (top 8 of 8)
 
-- **SGMART** [rejected] score 68.1 — score below Watch band
-- **21STCENMGM** [rejected] score 42.9 — T1 needs more than 22 trading days (~1 month)
+- **KOTAKBANK** [idea] score 92.5 — selected as idea
+- **TVSMOTOR** [watchlist] score 77.9 — score in Watch band (70–80)
+- **NINSYS** [watchlist] score 75.2 — score in Watch band (70–80)
+- **MONARCH** [watchlist] score 70.0 — score in Watch band (70–80)
+- **THELEELA** [rejected] score 60.4 — score below Watch band
+- **CORONA** [rejected] score 55.3 — score below Watch band
+- **LENSKART** [rejected] score 51.0 — score below Watch band
+- **21STCENMGM** [rejected] score 44.4 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### FEDERALBNK — Watch (score 13.0)
-- FEDERALBNK | risk_sector: Finance
-- entry 348.3 | stop 334.78 | t1 365.72 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SAMBHV — Watch (score 13.0)
-- SAMBHV | risk_sector: Non-Energy Minerals
-- entry 169.12 | stop 157.61 | t1 177.58 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### VADILALIND — Watch (score 13.0)
-- VADILALIND | risk_sector: Consumer Non-Durables
-- entry 7560.0 | stop 7189.14 | t1 7938.0 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### MMWL — Watch (score 13.0)
-- MMWL | risk_sector: Technology Services
-- entry 21.04 | stop 18.95 | t1 22.09 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
-
-### SOUTHBANK — Watch (score 13.0)
-- SOUTHBANK | risk_sector: Finance
-- entry 55.89 | stop 52.97 | t1 58.68 | t2 None | t3 None | R:R None
-- qty None | deployed None (None%) | risk ₹None
+### KOTAKBANK — Buy (score 92.5)
+- Kotak Mahindra Bank Limited | risk_sector: Banks
+- entry 459.0 | stop 438.62 | t1 499.77 | t2 520.15 | t3 540.53 | R:R 2.0
+- qty 21 | deployed 9639.0 (9.64%) | risk ₹428.0
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=185.35 mfe=2.54 mae=-3.04 opened=2026-10-22
+- **UNIONBANK** status=open entry=182.85 last=186.5 mfe=2.54 mae=-3.04 opened=2026-10-22
+- **KOTAKBANK** status=open entry=459.0 last=459.0 mfe=0.0 mae=0.0 opened=2026-10-29
 
 ## Needs action
 
@@ -69,49 +56,49 @@
 
 ## Swing candidates (top)
 
-- FEDERALBNK: score=13 rs_nifty=6.64 deliv=61.26
-- SAMBHV: score=13 rs_nifty=9.5 deliv=48.45
-- VADILALIND: score=13 rs_nifty=1.29 deliv=44.85
-- MMWL: score=13 rs_nifty=40.89 deliv=74.81
-- SOUTHBANK: score=13 rs_nifty=14.82 deliv=51.9
-- CORONA: score=13 rs_nifty=5.51 deliv=45.01
-- SASKEN: score=13 rs_nifty=15.33 deliv=58.25
-- KARURVYSYA: score=13 rs_nifty=11.22 deliv=53.04
-- YUKEN: score=13 rs_nifty=1.03 deliv=66.79
-- KOTAKBANK: score=13 rs_nifty=12.48 deliv=72.84
-- ADANIPORTS: score=13 rs_nifty=3.8 deliv=40.22
-- THELEELA: score=13 rs_nifty=13.52 deliv=76.38
-- ARIHANTCAP: score=12 rs_nifty=2.12 deliv=42.25
-- MAZDA: score=12 rs_nifty=1.87 deliv=35.16
-- SEJALLTD: score=12 rs_nifty=27.13 deliv=44.02
+- KOTAKBANK: score=15 rs_nifty=13.7 deliv=72.12
+- THELEELA: score=14 rs_nifty=15.77 deliv=50.27
+- TVSMOTOR: score=14 rs_nifty=4.34 deliv=43.52
+- LENSKART: score=14 rs_nifty=3.36 deliv=59.71
+- DLF: score=13 rs_nifty=4.43 deliv=45.92
+- YUKEN: score=13 rs_nifty=0.77 deliv=67.63
+- ADANIPORTS: score=13 rs_nifty=5.96 deliv=45.09
+- AVONMORE: score=13 rs_nifty=2.15 deliv=88.79
+- MMWL: score=13 rs_nifty=35.69 deliv=51.02
+- AUSOMENT: score=13 rs_nifty=8.35 deliv=74.02
+- PNB: score=13 rs_nifty=9.39 deliv=45.19
+- CORONA: score=13 rs_nifty=7.32 deliv=45.29
+- INDHOTEL: score=13 rs_nifty=13.56 deliv=68.8
+- NINSYS: score=13 rs_nifty=25.46 deliv=69.78
+- KARURVYSYA: score=13 rs_nifty=9.83 deliv=42.65
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.08% (bull)
-- Hang Seng: -0.29% (bear)
-- Shanghai: -0.74% (bear)
-- Kospi: -1.13% (bear)
+- Nikkei: +1.10% (bull)
+- Hang Seng: -0.59% (bear)
+- Shanghai: -0.82% (bear)
+- Kospi: -1.24% (bear)
 - Taiwan: -1.42% (bear)
 - ASX 200: +0.50% (bull)
 
 ### Europe
-- FTSE 100: +0.07% (neutral)
-- DAX: +0.44% (bull)
-- Euro Stoxx 50: +0.05% (neutral)
+- FTSE 100: +0.44% (bull)
+- DAX: +0.93% (bull)
+- Euro Stoxx 50: +0.27% (bull)
 
 ### US
 - S&P 500: +0.28% (bull)
 - Nasdaq: +0.27% (bull)
 - Dow: +0.19% (bull)
-- US VIX: -3.48% (bull)
+- US VIX: +1.54% (bear)
 
 ### Macro
-- USDINR: +0.19% (neutral)
-- Crude WTI: -1.38% (bear)
-- Brent: -4.44% (bear)
-- DXY: +0.10% (neutral)
-- US 10Y: +1.04% (bear)
+- USDINR: +0.08% (neutral)
+- Crude WTI: -0.97% (bear)
+- Brent: -4.17% (bear)
+- DXY: +0.01% (neutral)
+- US 10Y: -0.42% (bull)
 - India ETF: +0.11% (neutral)
 - EM ETF: +1.60% (bull)
 
