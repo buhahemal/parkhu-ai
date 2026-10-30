@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-10-30
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-10-30T18:10:11.343895+05:30
+- **generated_at_ist:** 2026-10-30T23:47:33.366046+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,11 +15,11 @@
 ## Funnel
 
 - universe: 3230
-- trend = Bullish: 590
+- trend = Bullish: 594
 - price > SMA200: 454
-- price > EMA50: 432
-- ADX14 > 25: 176
-- RSI14 in 40-80: 169
+- price > EMA50: 429
+- ADX14 > 25: 173
+- RSI14 in 40-80: 166
 - RS > 0 vs NIFTY and sector: 79
 - delivery% >= 40: 35
 - relative_volume >= 1: 10
@@ -30,7 +30,7 @@
 ## Survivors (top 5 of 5)
 
 - **NINSYS** [idea] score 82.9 — selected as idea
-- **WIPRO** [rejected] score 79.9 — T1 needs more than 22 trading days (~1 month)
+- **WIPRO** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
 - **TVSMOTOR** [watchlist] score 77.9 — score in Watch band (70–80)
 - **DEVX** [rejected] score 44.7 — score below Watch band
 - **MMP** [rejected] score 37.8 — score below Watch band
@@ -46,7 +46,7 @@
 
 - **UNIONBANK** status=open entry=182.85 last=186.0 mfe=2.67 mae=-3.04 opened=2026-10-22
 - **KOTAKBANK** status=open entry=459.0 last=461.6 mfe=0.85 mae=-4.3 opened=2026-10-29
-- **NINSYS** status=open entry=939.6 last=939.6 mfe=0.0 mae=0.0 opened=2026-10-30
+- **NINSYS** status=open entry=939.6 last=939.6 mfe=0.91 mae=-6.34 opened=2026-10-30
 
 ## Needs action
 
@@ -55,50 +55,50 @@
 ## Swing candidates (top)
 
 - TVSMOTOR: score=14 rs_nifty=0.84 deliv=59.5
-- TRENT: score=13 rs_nifty=12.33 deliv=28.97
 - KOTAKBANK: score=13 rs_nifty=12.19 deliv=65.53
-- PNB: score=13 rs_nifty=8.4 deliv=48.51
-- FEDERALBNK: score=13 rs_nifty=4.33 deliv=60.15
-- NGIL: score=13 rs_nifty=5.72 deliv=60.75
 - PVRINOX: score=13 rs_nifty=23.33 deliv=49.06
-- COFORGE: score=13 rs_nifty=14.87 deliv=40.93
-- THELEELA: score=13 rs_nifty=17.74 deliv=68.44
+- SOUTHBANK: score=13 rs_nifty=12.0 deliv=45.95
+- NGIL: score=13 rs_nifty=5.72 deliv=60.75
 - INDHOTEL: score=13 rs_nifty=12.14 deliv=58.23
 - DLF: score=13 rs_nifty=2.5 deliv=46.16
-- YUKEN: score=13 rs_nifty=1.16 deliv=65.63
+- PNB: score=13 rs_nifty=8.4 deliv=48.51
+- KARURVYSYA: score=13 rs_nifty=10.47 deliv=57.17
 - PATELRMART: score=13 rs_nifty=9.77 deliv=59.52
-- ALIVUS: score=13 rs_nifty=3.36 deliv=34.47
+- THELEELA: score=13 rs_nifty=17.74 deliv=68.44
 - MANBA: score=13 rs_nifty=4.18 deliv=54.98
+- FEDERALBNK: score=13 rs_nifty=4.33 deliv=60.15
+- GRPLTD: score=13 rs_nifty=0.08 deliv=80.2
+- YUKEN: score=13 rs_nifty=1.16 deliv=65.63
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.12% (bear)
-- Hang Seng: +1.46% (bull)
-- Shanghai: -1.44% (bear)
-- Kospi: -3.48% (bear)
-- Taiwan: -2.49% (bear)
+- Nikkei: +1.10% (bull)
+- Hang Seng: -0.59% (bear)
+- Shanghai: -0.82% (bear)
+- Kospi: -1.24% (bear)
+- Taiwan: -1.42% (bear)
 - ASX 200: +0.18% (bull)
 
 ### Europe
-- FTSE 100: +0.06% (neutral)
-- DAX: -0.91% (bear)
-- Euro Stoxx 50: -1.20% (bear)
+- FTSE 100: +0.07% (neutral)
+- DAX: -0.85% (bear)
+- Euro Stoxx 50: -1.22% (bear)
 
 ### US
-- S&P 500: -0.30% (bear)
-- Nasdaq: -1.38% (bear)
-- Dow: -0.25% (bear)
-- US VIX: +8.84% (bear)
+- S&P 500: -2.18% (bear)
+- Nasdaq: -3.44% (bear)
+- Dow: -1.21% (bear)
+- US VIX: +26.80% (bear)
 
 ### Macro
 - USDINR: -0.28% (neutral)
-- Crude WTI: +1.85% (bull)
-- Brent: -1.61% (bear)
-- DXY: -0.34% (neutral)
-- US 10Y: -1.24% (bull)
-- India ETF: +1.33% (bull)
-- EM ETF: -1.26% (bear)
+- Crude WTI: +2.75% (bull)
+- Brent: -1.13% (bear)
+- DXY: -0.08% (neutral)
+- US 10Y: -0.88% (bull)
+- India ETF: +0.50% (bull)
+- EM ETF: -3.20% (bear)
 
 
 ## Groq desk note
