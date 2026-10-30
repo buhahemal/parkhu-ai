@@ -1,8 +1,4 @@
 date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
-29-Oct-2026 22:31:56,SURYODAY,Investor Presentation,Suryoday Small Finance Bank Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
-29-Oct-2026 22:32:09,STLNETWORK,Monitoring Agency Report,Monitoring Agency Report,Monitoring Agency Report,0.0,0,False,False,0,none
-29-Oct-2026 22:33:42,STLNETWORK,Utilisation of Funds,STL Networks Limited has informed the Exchange about Utilisation of Funds,Utilisation of Funds,0.0,0,False,False,0,none
-29-Oct-2026 22:33:57,ALLDIGI,General Updates,Alldigi Tech Limited has informed the Exchange about Investor Presentation,General Updates,0.0,0,False,False,0,none
 29-Oct-2026 22:34:41,SUDARSHAN,Integrated Filing- Financial,We are submitting herewith the Unaudited Standalone and Consolidated Financial Results for the quarter ended 30/Sep/2026,Integrated Filing- Financial,0.2,2,True,True,10,keyword
 29-Oct-2026 22:35:13,ADL,"Certificate under SEBI (Depositories and Participants) Regulations, 2018","Archidply Decor Limited has informed the Exchange about Certificate under SEBI (Depositories and Participants) Regulations, 2018","Certificate under SEBI (Depositories and Participants) Regulations, 2018",-0.7,2,True,True,12,keyword
 29-Oct-2026 22:38:04,BRNL,Change in Company Secretary/Compliance Officer,Bharat Road Network Limited has informed the Exchange about Change in Company Secretary/Compliance Officer,Change in Company Secretary/Compliance Officer,0.0,0,False,False,0,none
@@ -19,3 +15,7 @@ date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_cata
 29-Oct-2026 23:20:44,TONBO,Bagging/Receiving of orders/contracts,Tonbo Imaging India Limited has informed the Exchange about Bagging/Receiving of orders/contracts,Bagging/Receiving of orders/contracts,0.0,0,False,False,0,none
 29-Oct-2026 23:25:18,KUANTUM,Investor Presentation,Kuantum Papers Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
 29-Oct-2026 23:26:01,DCW,Investor Presentation,DCW Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
+30-Oct-2026 00:19:10,RSSOFTWARE,Copy of Newspaper Publication,R. S. Software (India) Limited submitted the Exchange the Copy of paper cutting of Newspaper Publication of the Financial Results of the company for the period ending 30th September 2026,Copy of Newspaper Publication,0.2,2,True,True,10,keyword
+30-Oct-2026 00:24:32,RUBICON,General Updates,Rubicon Research Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
+30-Oct-2026 00:30:53,MTARTECH,Investor Presentation,Mtar Technologies Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
+30-Oct-2026 00:35:21,WAAREEENER,General Updates,Waaree Energies Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
