@@ -1,3 +1,4 @@
 trade_id,symbol,company,risk_sector,date_opened,taken,entry,stop,t1,t2,t3,structure_invalidation,horizon_days_t1,horizon_days_t2,score_at_open,qty,risk_rupees,status,last_price,last_checked,mfe_pct,mae_pct,gap_flag,hit_t1,hit_t2,reconfirmed_count,notes
-2026-10-22-UNIONBANK,UNIONBANK,Union Bank of India Limited,Banks,2026-10-22,,182.85,177.1,205.49,211.24,216.99,179.8,18,22,94.7,54,310.0,open,186.79,2026-10-30,2.54,-3.04,False,False,False,2,
-2026-10-29-KOTAKBANK,KOTAKBANK,Kotak Mahindra Bank Limited,Banks,2026-10-29,,459.0,438.62,499.77,520.15,540.53,423.76,16,22,92.5,21,428.0,open,459.95,2026-10-30,0.84,-4.3,False,False,False,2,
+2026-10-22-UNIONBANK,UNIONBANK,Union Bank of India Limited,Banks,2026-10-22,,182.85,177.1,205.49,211.24,216.99,179.8,18,22,94.7,54,310.0,open,186.0,2026-10-30,2.67,-3.04,False,False,False,2,
+2026-10-29-KOTAKBANK,KOTAKBANK,Kotak Mahindra Bank Limited,Banks,2026-10-29,,459.0,438.62,499.77,520.15,540.53,423.76,16,22,92.5,21,428.0,open,461.6,2026-10-30,0.85,-4.3,False,False,False,2,
+2026-10-30-NINSYS,NINSYS,NINtec Systems Ltd,Technology Services,2026-10-30,,939.6,864.43,1089.94,1165.1,1240.27,800.15,12,22,82.9,10,752.0,open,939.6,2026-10-30,0.0,0.0,False,False,False,0,
