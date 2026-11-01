@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-10-31
+# Parkhu research pack — 2026-11-01
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-10-31T18:10:19.458470+05:30
+- **generated_at_ist:** 2026-11-01T06:09:24.974254+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,7 +14,7 @@
 
 ## Funnel
 
-- universe: 3226
+- universe: 3230
 - trend = Bullish: 579
 - price > SMA200: 450
 - price > EMA50: 429
@@ -30,9 +30,9 @@
 ## Survivors (top 5 of 5)
 
 - **NINSYS** [idea] score 82.9 — selected as idea
-- **WIPRO** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
+- **WIPRO** [rejected] score 79.9 — T1 needs more than 22 trading days (~1 month)
 - **TVSMOTOR** [watchlist] score 77.9 — score in Watch band (70–80)
-- **DEVX** [rejected] score 45.0 — score below Watch band
+- **DEVX** [rejected] score 45.5 — score below Watch band
 - **MMP** [rejected] score 37.8 — score below Watch band
 
 ## Ideas
@@ -55,20 +55,20 @@
 ## Swing candidates (top)
 
 - TVSMOTOR: score=14 rs_nifty=0.84 deliv=59.5
-- INDHOTEL: score=13 rs_nifty=12.14 deliv=58.23
-- GRPLTD: score=13 rs_nifty=0.08 deliv=80.2
-- DLF: score=13 rs_nifty=2.5 deliv=46.16
-- SOUTHBANK: score=13 rs_nifty=12.0 deliv=45.95
-- FEDERALBNK: score=13 rs_nifty=4.33 deliv=60.15
-- ALIVUS: score=13 rs_nifty=3.36 deliv=34.47
-- YUKEN: score=13 rs_nifty=1.16 deliv=65.63
-- THELEELA: score=13 rs_nifty=17.74 deliv=68.44
-- PVRINOX: score=13 rs_nifty=23.33 deliv=49.06
 - PATELRMART: score=13 rs_nifty=9.77 deliv=59.52
-- KARURVYSYA: score=13 rs_nifty=10.47 deliv=57.17
-- NGIL: score=13 rs_nifty=5.72 deliv=60.75
 - PNB: score=13 rs_nifty=8.4 deliv=48.51
+- DLF: score=13 rs_nifty=2.5 deliv=46.16
+- THELEELA: score=13 rs_nifty=17.74 deliv=68.44
+- ALIVUS: score=13 rs_nifty=3.36 deliv=34.47
+- PVRINOX: score=13 rs_nifty=23.33 deliv=49.06
+- SOUTHBANK: score=13 rs_nifty=12.0 deliv=45.95
+- YUKEN: score=13 rs_nifty=1.16 deliv=65.63
+- GRPLTD: score=13 rs_nifty=0.08 deliv=80.2
+- FEDERALBNK: score=13 rs_nifty=4.33 deliv=60.15
+- INDHOTEL: score=13 rs_nifty=12.14 deliv=58.23
+- KARURVYSYA: score=13 rs_nifty=10.47 deliv=57.17
 - TRENT: score=13 rs_nifty=12.33 deliv=28.97
+- KOTAKBANK: score=13 rs_nifty=12.19 deliv=65.53
 
 ## World markets (India cues)
 
@@ -117,6 +117,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-10-31/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-01/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
