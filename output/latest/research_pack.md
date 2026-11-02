@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-11-01
+# Parkhu research pack — 2026-11-02
 
-- **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-01T18:09:24.432694+05:30
+- **session_date:** 2026-07-24 (trading day: True)
+- **generated_at_ist:** 2026-11-02T06:09:22.504151+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3230
-- trend = Bullish: 585
-- price > SMA200: 452
-- price > EMA50: 427
-- ADX14 > 25: 172
-- RSI14 in 40-80: 165
+- universe: 3232
+- trend = Bullish: 583
+- price > SMA200: 450
+- price > EMA50: 429
+- ADX14 > 25: 173
+- RSI14 in 40-80: 166
 - RS > 0 vs NIFTY and sector: 79
 - delivery% >= 40: 35
 - relative_volume >= 1: 10
@@ -30,9 +30,9 @@
 ## Survivors (top 5 of 5)
 
 - **NINSYS** [idea] score 82.9 — selected as idea
-- **WIPRO** [rejected] score 79.9 — T1 needs more than 22 trading days (~1 month)
-- **TVSMOTOR** [watchlist] score 77.9 — score in Watch band (70–80)
-- **DEVX** [rejected] score 45.6 — score below Watch band
+- **WIPRO** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
+- **TVSMOTOR** [watchlist] score 78.1 — score in Watch band (70–80)
+- **DEVX** [rejected] score 45.0 — score below Watch band
 - **MMP** [rejected] score 37.8 — score below Watch band
 
 ## Ideas
@@ -55,30 +55,30 @@
 ## Swing candidates (top)
 
 - TVSMOTOR: score=14 rs_nifty=0.84 deliv=59.5
-- TRENT: score=13 rs_nifty=12.33 deliv=28.97
-- SOUTHBANK: score=13 rs_nifty=12.0 deliv=45.95
-- PNB: score=13 rs_nifty=8.4 deliv=48.51
-- PVRINOX: score=13 rs_nifty=23.33 deliv=49.06
-- FEDERALBNK: score=13 rs_nifty=4.33 deliv=60.15
-- MMP: score=13 rs_nifty=0.79 deliv=60.83
-- ALIVUS: score=13 rs_nifty=3.36 deliv=34.47
-- KOTAKBANK: score=13 rs_nifty=12.19 deliv=65.53
-- MANBA: score=13 rs_nifty=4.18 deliv=54.98
-- THELEELA: score=13 rs_nifty=17.74 deliv=68.44
-- PATELRMART: score=13 rs_nifty=9.77 deliv=59.52
-- GRPLTD: score=13 rs_nifty=0.08 deliv=80.2
-- YUKEN: score=13 rs_nifty=1.16 deliv=65.63
 - DLF: score=13 rs_nifty=2.5 deliv=46.16
+- KOTAKBANK: score=13 rs_nifty=12.19 deliv=65.53
+- GRPLTD: score=13 rs_nifty=0.08 deliv=80.2
+- PATELRMART: score=13 rs_nifty=9.77 deliv=59.52
+- PNB: score=13 rs_nifty=8.4 deliv=48.51
+- MANBA: score=13 rs_nifty=4.18 deliv=54.98
+- MMP: score=13 rs_nifty=0.79 deliv=60.83
+- YUKEN: score=13 rs_nifty=1.16 deliv=65.63
+- TRENT: score=13 rs_nifty=12.33 deliv=28.97
+- THELEELA: score=13 rs_nifty=17.74 deliv=68.44
+- KARURVYSYA: score=13 rs_nifty=10.47 deliv=57.17
+- NGIL: score=13 rs_nifty=5.72 deliv=60.75
+- FEDERALBNK: score=13 rs_nifty=4.33 deliv=60.15
+- INDHOTEL: score=13 rs_nifty=12.14 deliv=58.23
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.12% (bear)
+- Nikkei: -0.58% (bear)
 - Hang Seng: +1.46% (bull)
 - Shanghai: -1.44% (bear)
-- Kospi: -3.48% (bear)
+- Kospi: -1.23% (bear)
 - Taiwan: -2.49% (bear)
-- ASX 200: +0.18% (bull)
+- ASX 200: -0.11% (neutral)
 
 ### Europe
 - FTSE 100: +0.07% (neutral)
@@ -92,10 +92,10 @@
 - US VIX: +12.91% (bear)
 
 ### Macro
-- USDINR: -0.21% (neutral)
-- Crude WTI: +2.08% (bull)
-- Brent: -1.26% (bear)
-- DXY: -0.16% (neutral)
+- USDINR: -0.22% (neutral)
+- Crude WTI: -1.58% (bear)
+- Brent: -4.94% (bear)
+- DXY: +0.07% (neutral)
 - US 10Y: -1.20% (bull)
 - India ETF: +0.65% (bull)
 - EM ETF: -2.68% (bear)
@@ -117,6 +117,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-01/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-02/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
