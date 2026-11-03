@@ -1,60 +1,66 @@
 # Parkhu research pack — 2026-11-03
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-03T06:09:58.487962+05:30
+- **generated_at_ist:** 2026-11-03T12:48:11.625272+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (0.51%)
-- india_vix: 15.3 (Medium)
+- nifty: Bullish (0.94%)
+- india_vix: 15.93 (Medium)
 - fii_net: 3114.68 | dii_net: -392.2
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3231
-- trend = Bullish: 673
-- price > SMA200: 514
-- price > EMA50: 494
-- ADX14 > 25: 185
-- RSI14 in 40-80: 177
-- RS > 0 vs NIFTY and sector: 85
-- delivery% >= 40: 39
-- relative_volume >= 1: 10
-- no earnings within 21d: 6
-- event_risk_score <= 1: 6
-- TV rating not Sell: 6
-
-## Survivors (top 6 of 6)
-
-- **ALIVUS** [idea] score 92.2 — selected as idea
-- **TFCILTD** [idea] score 81.6 — selected as idea
-- **THELEELA** [rejected] score 58.1 — score below Watch band
-- **RUBICON** [rejected] score 54.2 — score below Watch band
-- **CINELINE** [rejected] score 54.1 — score below Watch band
-- **WSI** [rejected] score 39.3 — T1 needs more than 22 trading days (~1 month)
+- universe: 3233
+- trend = Bullish: 740
+- price > SMA200: 566
+- price > EMA50: 543
+- ADX14 > 25: 198
+- RSI14 in 40-80: 191
+- RS > 0 vs NIFTY and sector: 81
+- delivery% >= 40: 33
+- relative_volume >= 1: 2
+- no earnings within 21d: 0
+- event_risk_score <= 1: 0
+- TV rating not Sell: 0
 
 ## Ideas
 
-### ALIVUS — Buy (score 92.2)
-- Alivus Life Sciences Ltd | risk_sector: Health Technology
-- entry 1447.6 | stop 1332.73 | t1 1677.35 | t2 1792.22 | t3 1907.09 | R:R 2.0
-- qty 6 | deployed 8686.0 (8.69%) | risk ₹689.0
+### KOTAKBANK — Watch (score 13.0)
+- KOTAKBANK | risk_sector: Finance
+- entry 456.55 | stop 442.31 | t1 479.38 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### TFCILTD — Buy (score 81.6)
-- Tourism Finance Corporation of India Limited | risk_sector: NBFC & Capital Markets
-- entry 157.96 | stop 146.05 | t1 181.78 | t2 193.69 | t3 205.59 | R:R 2.0
-- qty 63 | deployed 9951.0 (9.95%) | risk ₹750.0
+### PNB — Watch (score 13.0)
+- PNB | risk_sector: Finance
+- entry 122.04 | stop 117.61 | t1 128.14 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### MARKOLINES — Watch (score 13.0)
+- MARKOLINES | risk_sector: Industrial Services
+- entry 179.23 | stop 169.01 | t1 188.19 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SIMPLEXINF — Watch (score 13.0)
+- SIMPLEXINF | risk_sector: Industrial Services
+- entry 270.5 | stop 250.91 | t1 284.03 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### BIL — Watch (score 13.0)
+- BIL | risk_sector: Consumer Non-Durables
+- entry 1083.1 | stop 1011.24 | t1 1137.25 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=186.0 mfe=3.24 mae=-3.04 opened=2026-10-22
-- **KOTAKBANK** status=open entry=459.0 last=458.35 mfe=1.51 mae=-4.3 opened=2026-10-29
-- **NINSYS** status=open entry=939.6 last=955.95 mfe=2.81 mae=-6.34 opened=2026-10-30
-- **ALIVUS** status=open entry=1447.6 last=1447.6 mfe=3.97 mae=-1.84 opened=2026-11-02
-- **TFCILTD** status=open entry=157.96 last=157.96 mfe=1.98 mae=-1.02 opened=2026-11-02
+- **UNIONBANK** status=open entry=182.85 last=183.96 mfe=3.24 mae=-3.04 opened=2026-10-22
+- **KOTAKBANK** status=open entry=459.0 last=456.55 mfe=1.51 mae=-4.3 opened=2026-10-29
+- **NINSYS** status=open entry=939.6 last=963.3 mfe=4.83 mae=-6.34 opened=2026-10-30
+- **ALIVUS** status=open entry=1447.6 last=1489.9 mfe=3.97 mae=-1.84 opened=2026-11-02
+- **TFCILTD** status=open entry=157.96 last=157.8 mfe=1.98 mae=-1.59 opened=2026-11-02
 
 ## Needs action
 
@@ -62,36 +68,36 @@
 
 ## Swing candidates (top)
 
-- RUBICON: score=14 rs_nifty=0.46 deliv=52.2
-- PETRONET: score=14 rs_nifty=4.3 deliv=55.82
-- ALIVUS: score=14 rs_nifty=3.8 deliv=59.48
-- CINELINE: score=14 rs_nifty=4.66 deliv=50.84
-- PATELRMART: score=13 rs_nifty=13.99 deliv=58.35
-- MANBA: score=13 rs_nifty=2.94 deliv=44.11
-- MARKOLINES: score=13 rs_nifty=3.9 deliv=52.16
-- INDGN: score=13 rs_nifty=4.04 deliv=40.83
-- AAREYDRUGS: score=13 rs_nifty=2.98 deliv=73.34
-- BATLIBOI: score=13 rs_nifty=6.1 deliv=43.62
-- GAIL: score=13 rs_nifty=2.27 deliv=37.22
-- BIL: score=13 rs_nifty=4.0 deliv=54.88
-- SOUTHBANK: score=13 rs_nifty=12.34 deliv=47.61
-- PNB: score=13 rs_nifty=7.36 deliv=51.98
-- GRPLTD: score=13 rs_nifty=1.67 deliv=52.78
+- KOTAKBANK: score=13 rs_nifty=1.64 deliv=68.82
+- PNB: score=13 rs_nifty=2.41 deliv=51.98
+- MARKOLINES: score=13 rs_nifty=1.1 deliv=52.16
+- SIMPLEXINF: score=13 rs_nifty=4.56 deliv=51.69
+- BIL: score=13 rs_nifty=3.32 deliv=54.88
+- LAURUSLABS: score=13 rs_nifty=9.75 deliv=50.13
+- ANGELONE: score=13 rs_nifty=8.39 deliv=36.08
+- SOUTHBANK: score=13 rs_nifty=7.85 deliv=47.61
+- SAGARDEEP: score=13 rs_nifty=13.98 deliv=49.03
+- PETRONET: score=13 rs_nifty=0.74 deliv=55.82
+- MANAKCOAT: score=12 rs_nifty=9.01 deliv=35.97
+- SGFIN: score=12 rs_nifty=7.23 deliv=45.45
+- TIPSMUSIC: score=12 rs_nifty=17.64 deliv=43.14
+- PERSISTENT: score=12 rs_nifty=9.71 deliv=64.81
+- TRENT: score=12 rs_nifty=10.64 deliv=48.97
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.12% (bear)
-- Hang Seng: +1.46% (bull)
-- Shanghai: -1.44% (bear)
-- Kospi: -1.04% (bear)
-- Taiwan: -2.49% (bear)
-- ASX 200: -0.37% (bear)
+- Nikkei: -0.33% (bear)
+- Hang Seng: +0.20% (bull)
+- Shanghai: -0.82% (bear)
+- Kospi: -3.59% (bear)
+- Taiwan: -3.59% (bear)
+- ASX 200: +0.34% (bull)
 
 ### Europe
-- FTSE 100: +0.07% (neutral)
-- DAX: -0.85% (bear)
-- Euro Stoxx 50: -1.22% (bear)
+- FTSE 100: +0.29% (bull)
+- DAX: +0.63% (bull)
+- Euro Stoxx 50: +0.73% (bull)
 
 ### US
 - S&P 500: -0.51% (bear)
@@ -100,10 +106,10 @@
 - US VIX: +8.91% (bear)
 
 ### Macro
-- USDINR: -0.26% (neutral)
-- Crude WTI: -7.55% (bear)
-- Brent: -11.34% (bear)
-- DXY: -0.08% (neutral)
+- USDINR: -0.04% (neutral)
+- Crude WTI: +2.19% (bull)
+- Brent: +2.21% (bull)
+- DXY: +0.00% (neutral)
 - US 10Y: -0.71% (bull)
 - India ETF: +1.53% (bull)
 - EM ETF: +0.11% (neutral)
