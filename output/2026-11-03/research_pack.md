@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-03
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-03T03:32:48.573664+05:30
+- **generated_at_ist:** 2026-11-03T06:09:58.487962+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,11 +15,11 @@
 ## Funnel
 
 - universe: 3231
-- trend = Bullish: 678
-- price > SMA200: 519
-- price > EMA50: 499
-- ADX14 > 25: 189
-- RSI14 in 40-80: 181
+- trend = Bullish: 673
+- price > SMA200: 514
+- price > EMA50: 494
+- ADX14 > 25: 185
+- RSI14 in 40-80: 177
 - RS > 0 vs NIFTY and sector: 85
 - delivery% >= 40: 39
 - relative_volume >= 1: 10
@@ -66,17 +66,17 @@
 - PETRONET: score=14 rs_nifty=4.3 deliv=55.82
 - ALIVUS: score=14 rs_nifty=3.8 deliv=59.48
 - CINELINE: score=14 rs_nifty=4.66 deliv=50.84
-- SOUTHBANK: score=13 rs_nifty=12.34 deliv=47.61
-- CORONA: score=13 rs_nifty=2.24 deliv=50.38
-- BIL: score=13 rs_nifty=4.0 deliv=54.88
-- GAIL: score=13 rs_nifty=2.27 deliv=37.22
-- JSWSTEEL: score=13 rs_nifty=3.06 deliv=49.6
-- SHREEPUSHK: score=13 rs_nifty=13.79 deliv=44.48
-- PNB: score=13 rs_nifty=7.36 deliv=51.98
 - PATELRMART: score=13 rs_nifty=13.99 deliv=58.35
 - MANBA: score=13 rs_nifty=2.94 deliv=44.11
-- BATLIBOI: score=13 rs_nifty=6.1 deliv=43.62
 - MARKOLINES: score=13 rs_nifty=3.9 deliv=52.16
+- INDGN: score=13 rs_nifty=4.04 deliv=40.83
+- AAREYDRUGS: score=13 rs_nifty=2.98 deliv=73.34
+- BATLIBOI: score=13 rs_nifty=6.1 deliv=43.62
+- GAIL: score=13 rs_nifty=2.27 deliv=37.22
+- BIL: score=13 rs_nifty=4.0 deliv=54.88
+- SOUTHBANK: score=13 rs_nifty=12.34 deliv=47.61
+- PNB: score=13 rs_nifty=7.36 deliv=51.98
+- GRPLTD: score=13 rs_nifty=1.67 deliv=52.78
 
 ## World markets (India cues)
 
@@ -84,14 +84,14 @@
 - Nikkei: -2.12% (bear)
 - Hang Seng: +1.46% (bull)
 - Shanghai: -1.44% (bear)
-- Kospi: -3.48% (bear)
+- Kospi: -1.04% (bear)
 - Taiwan: -2.49% (bear)
-- ASX 200: -0.58% (bear)
+- ASX 200: -0.37% (bear)
 
 ### Europe
-- FTSE 100: +0.29% (bull)
-- DAX: +0.63% (bull)
-- Euro Stoxx 50: +0.73% (bull)
+- FTSE 100: +0.07% (neutral)
+- DAX: -0.85% (bear)
+- Euro Stoxx 50: -1.22% (bear)
 
 ### US
 - S&P 500: -0.51% (bear)
@@ -100,10 +100,10 @@
 - US VIX: +8.91% (bear)
 
 ### Macro
-- USDINR: -0.28% (neutral)
-- Crude WTI: -7.61% (bear)
-- Brent: -11.47% (bear)
-- DXY: -0.10% (neutral)
+- USDINR: -0.26% (neutral)
+- Crude WTI: -7.55% (bear)
+- Brent: -11.34% (bear)
+- DXY: -0.08% (neutral)
 - US 10Y: -0.71% (bull)
 - India ETF: +1.53% (bull)
 - EM ETF: +0.11% (neutral)
