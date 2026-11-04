@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-04
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-04T01:24:46.065792+05:30
+- **generated_at_ist:** 2026-11-04T06:10:28.302580+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3234
-- trend = Bullish: 726
-- price > SMA200: 555
-- price > EMA50: 540
-- ADX14 > 25: 193
-- RSI14 in 40-80: 185
+- universe: 3246
+- trend = Bullish: 742
+- price > SMA200: 557
+- price > EMA50: 542
+- ADX14 > 25: 196
+- RSI14 in 40-80: 188
 - RS > 0 vs NIFTY and sector: 81
 - delivery% >= 40: 37
 - relative_volume >= 1: 8
@@ -31,10 +31,10 @@
 
 - **ALIVUS** [idea] score 89.6 — selected as idea
 - **NINSYS** [idea] score 85.0 — selected as idea
-- **GAIL** [rejected] score 83.1 — T1 needs more than 22 trading days (~1 month)
+- **GAIL** [rejected] score 83.2 — T1 needs more than 22 trading days (~1 month)
 - **PGHL** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
 - **PVRINOX** [rejected] score 67.5 — score below Watch band
-- **DEVX** [rejected] score 42.9 — score below Watch band
+- **DEVX** [rejected] score 43.1 — score below Watch band
 
 ## Ideas
 
@@ -62,51 +62,51 @@
 
 ## Swing candidates (top)
 
-- GAIL: score=14 rs_nifty=2.91 deliv=57.81
 - LAURUSLABS: score=14 rs_nifty=14.07 deliv=48.44
-- KOTAKBANK: score=13 rs_nifty=5.44 deliv=68.84
-- JSWSTEEL: score=13 rs_nifty=1.72 deliv=60.16
-- PHOENIXLTD: score=13 rs_nifty=2.25 deliv=59.22
-- AARTIDRUGS: score=13 rs_nifty=4.55 deliv=45.23
-- RUBICON: score=13 rs_nifty=1.4 deliv=54.6
-- NUVAMA: score=13 rs_nifty=8.45 deliv=49.28
+- GAIL: score=14 rs_nifty=2.91 deliv=57.81
+- SIMPLEXINF: score=13 rs_nifty=7.36 deliv=50.27
+- PNB: score=13 rs_nifty=3.37 deliv=41.5
+- ICICIBANK: score=13 rs_nifty=4.61 deliv=59.39
+- BIL: score=13 rs_nifty=4.29 deliv=65.9
 - MANAKCOAT: score=13 rs_nifty=10.43 deliv=44.35
-- MARKOLINES: score=13 rs_nifty=3.06 deliv=55.91
-- THELEELA: score=13 rs_nifty=9.52 deliv=52.99
-- ALIVUS: score=13 rs_nifty=4.1 deliv=50.15
+- LAL: score=13 rs_nifty=5.25 deliv=57.98
 - MARICO: score=13 rs_nifty=8.13 deliv=25.22
-- INDGN: score=13 rs_nifty=0.77 deliv=68.45
-- SONAMLTD: score=13 rs_nifty=1.36 deliv=79.22
+- AARTIDRUGS: score=13 rs_nifty=4.55 deliv=45.23
+- PHOENIXLTD: score=13 rs_nifty=2.25 deliv=59.22
+- DLF: score=13 rs_nifty=3.07 deliv=56.09
+- ALIVUS: score=13 rs_nifty=4.1 deliv=50.15
+- NUVAMA: score=13 rs_nifty=8.45 deliv=49.28
+- MARKOLINES: score=13 rs_nifty=3.06 deliv=55.91
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -0.33% (bear)
+- Nikkei: -1.11% (bear)
 - Hang Seng: +0.42% (bull)
 - Shanghai: +1.08% (bull)
-- Kospi: +2.24% (bull)
+- Kospi: -1.69% (bear)
 - Taiwan: -0.65% (bear)
-- ASX 200: +0.34% (bull)
+- ASX 200: -0.06% (neutral)
 
 ### Europe
-- FTSE 100: -1.14% (bear)
-- DAX: -0.45% (bear)
-- Euro Stoxx 50: -0.51% (bear)
+- FTSE 100: +0.29% (bull)
+- DAX: +0.63% (bull)
+- Euro Stoxx 50: +0.73% (bull)
 
 ### US
-- S&P 500: +0.33% (bull)
-- Nasdaq: +0.73% (bull)
-- Dow: -0.37% (bear)
-- US VIX: -1.89% (bull)
+- S&P 500: +0.36% (bull)
+- Nasdaq: +0.83% (bull)
+- Dow: -0.38% (bear)
+- US VIX: -1.51% (bull)
 
 ### Macro
-- USDINR: -0.18% (neutral)
-- Crude WTI: -0.24% (bear)
-- Brent: -1.00% (bear)
-- DXY: +0.11% (neutral)
-- US 10Y: +1.06% (bear)
-- India ETF: +0.59% (bull)
-- EM ETF: -0.20% (bear)
+- USDINR: +0.00% (neutral)
+- Crude WTI: -0.01% (neutral)
+- Brent: -0.59% (bear)
+- DXY: +0.14% (neutral)
+- US 10Y: +1.19% (bear)
+- India ETF: +0.52% (bull)
+- EM ETF: -0.02% (neutral)
 
 
 ## Groq desk note
