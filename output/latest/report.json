@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-04",
-  "generated_at_ist": "2026-11-04T06:10:28.302580+05:30",
-  "duration_seconds": 387.3,
+  "generated_at_ist": "2026-11-04T12:32:16.766418+05:30",
+  "duration_seconds": 350.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3220,
-      "seconds": 4.3
+      "rows": 3222,
+      "seconds": 3.6
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14524,
-      "cache_rows": 7968107,
-      "symbols": 2915,
-      "failed": 35,
+      "rows": 14521,
+      "cache_rows": 7972639,
+      "symbols": 2913,
+      "failed": 36,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2514,
-      "cold": 431,
-      "new_symbols": 38,
+      "warm": 2511,
+      "cold": 435,
+      "new_symbols": 41,
       "retries": 2,
-      "seconds": 296.5
+      "seconds": 233.5
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3220,
+      "rows": 3222,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 1.2
+      "seconds": 0.6
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 2.3
+      "seconds": 1.1
     },
     {
       "agent": "smartmoney",
-      "status": "ok",
-      "rows": 3,
-      "seconds": 4.1
+      "status": "partial",
+      "rows": 2,
+      "seconds": 3.9
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.4
+      "seconds": 3.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 4.8
+      "seconds": 6.0
     },
     {
       "agent": "stock_options",
@@ -79,13 +79,13 @@
       "agent": "delivery",
       "status": "ok",
       "rows": 2378,
-      "seconds": 20.4
+      "seconds": 18.4
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.1
+      "seconds": 3.7
     },
     {
       "agent": "news",
@@ -97,25 +97,25 @@
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 6.1
+      "seconds": 3.2
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3220,
-      "seconds": 0.2
+      "rows": 3222,
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3220,
-      "seconds": 0.4
+      "rows": 3222,
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 216,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -139,42 +139,39 @@
       "agent": "ohlc_features",
       "status": "ok",
       "rows": 2906,
-      "with_structure": 2903,
+      "with_structure": 2902,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 9.3
+      "seconds": 17.6
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3246,
-      "seconds": 4.1
+      "rows": 3244,
+      "seconds": 8.5
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 2,
-      "ideas": [
-        "ALIVUS",
-        "NINSYS"
-      ],
+      "rows": 0,
+      "ideas": [],
       "watchlist": 0,
       "open_positions": 5,
       "needing_action": [
         "UNIONBANK"
       ],
       "closed_today": [],
-      "seconds": 0.1
+      "seconds": 0.3
     }
   ],
-  "ok": 20,
-  "partial": 1,
+  "ok": 19,
+  "partial": 2,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 20,
-    "agents_partial": 1,
+    "agents_ok": 19,
+    "agents_partial": 2,
     "agents_error": 0
   },
   "latest_promoted": true,

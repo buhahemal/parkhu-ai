@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-04",
-  "generated_at_ist": "2026-11-04T12:32:16.766418+05:30",
-  "duration_seconds": 350.5,
+  "generated_at_ist": "2026-11-04T18:09:49.306276+05:30",
+  "duration_seconds": 334.4,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3222,
-      "seconds": 3.6
+      "rows": 3223,
+      "seconds": 3.4
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14521,
-      "cache_rows": 7972639,
+      "rows": 14526,
+      "cache_rows": 7981164,
       "symbols": 2913,
-      "failed": 36,
+      "failed": 37,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2511,
-      "cold": 435,
+      "warm": 2515,
+      "cold": 432,
       "new_symbols": 41,
       "retries": 2,
-      "seconds": 233.5
+      "seconds": 245.4
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3222,
+      "rows": 3223,
       "seconds": 0.1
     },
     {
@@ -48,25 +48,25 @@
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.1
+      "seconds": 1.2
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 3.9
+      "status": "ok",
+      "rows": 3,
+      "seconds": 4.6
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.6
+      "seconds": 4.6
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 6.0
+      "seconds": 8.6
     },
     {
       "agent": "stock_options",
@@ -78,37 +78,37 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2378,
-      "seconds": 18.4
+      "rows": 2373,
+      "seconds": 5.1
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.7
+      "seconds": 4.2
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 2.5
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.2
+      "seconds": 3.6
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3222,
+      "rows": 3223,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3222,
+      "rows": 3223,
       "seconds": 1.0
     },
     {
@@ -138,24 +138,27 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2906,
-      "with_structure": 2902,
+      "rows": 2907,
+      "with_structure": 2903,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 17.6
+      "seconds": 17.1
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3244,
-      "seconds": 8.5
+      "rows": 3243,
+      "seconds": 8.2
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 0,
+      "rows": 2,
+      "ideas": [
+        "ALIVUS",
+        "GAIL"
+      ],
+      "watchlist": 4,
       "open_positions": 5,
       "needing_action": [
         "UNIONBANK"
@@ -164,14 +167,14 @@
       "seconds": 0.3
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,
