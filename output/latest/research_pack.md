@@ -1,97 +1,103 @@
 # Parkhu research pack — 2026-11-04
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-04T06:10:28.302580+05:30
+- **generated_at_ist:** 2026-11-04T12:32:16.766418+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (1.68%)
-- india_vix: 15.5 (Medium)
+- market_regime: **Neutral**
+- nifty: Neutral (0.0%)
+- india_vix: 15.75 (Medium)
 - fii_net: 6836.81 | dii_net: -3678.85
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3246
-- trend = Bullish: 742
-- price > SMA200: 557
-- price > EMA50: 542
-- ADX14 > 25: 196
-- RSI14 in 40-80: 188
-- RS > 0 vs NIFTY and sector: 81
-- delivery% >= 40: 37
-- relative_volume >= 1: 8
-- no earnings within 21d: 7
-- event_risk_score <= 1: 6
-- TV rating not Sell: 6
-
-## Survivors (top 6 of 6)
-
-- **ALIVUS** [idea] score 89.6 — selected as idea
-- **NINSYS** [idea] score 85.0 — selected as idea
-- **GAIL** [rejected] score 83.2 — T1 needs more than 22 trading days (~1 month)
-- **PGHL** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
-- **PVRINOX** [rejected] score 67.5 — score below Watch band
-- **DEVX** [rejected] score 43.1 — score below Watch band
+- universe: 3244
+- trend = Bullish: 839
+- price > SMA200: 635
+- price > EMA50: 614
+- ADX14 > 25: 204
+- RSI14 in 40-80: 199
+- RS > 0 vs NIFTY and sector: 84
+- delivery% >= 40: 42
+- relative_volume >= 1: 0
+- no earnings within 21d: 0
+- event_risk_score <= 1: 0
+- TV rating not Sell: 0
 
 ## Ideas
 
-### ALIVUS — Buy (score 89.6)
-- Alivus Life Sciences Ltd | risk_sector: Health Technology
-- entry 1481.3 | stop 1362.8 | t1 1718.31 | t2 1836.81 | t3 1955.32 | R:R 2.0
-- qty 6 | deployed 8888.0 (8.89%) | risk ₹711.0
+### ICICIBANK — Watch (score 13.0)
+- ICICIBANK | risk_sector: Finance
+- entry 1414.3 | stop 1374.89 | t1 1485.02 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### NINSYS — Buy (score 85.0)
-- NINtec Systems Ltd | risk_sector: Technology Services
-- entry 978.25 | stop 899.99 | t1 1134.77 | t2 1213.03 | t3 1291.29 | R:R 2.0
-- qty 10 | deployed 9782.0 (9.78%) | risk ₹783.0
+### SHRINGARMS — Watch (score 13.0)
+- SHRINGARMS | risk_sector: Consumer Durables
+- entry 280.6 | stop 253.81 | t1 294.63 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### DIACABS — Watch (score 13.0)
+- DIACABS | risk_sector: Producer Manufacturing
+- entry 385.85 | stop 357.8 | t1 405.14 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SICAGEN — Watch (score 13.0)
+- SICAGEN | risk_sector: Distribution Services
+- entry 57.0 | stop 53.17 | t1 59.85 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### 63MOONS — Watch (score 13.0)
+- 63MOONS | risk_sector: Technology Services
+- entry 917.45 | stop 845.89 | t1 963.32 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=183.2 mfe=3.24 mae=-3.04 opened=2026-10-22
-- **KOTAKBANK** status=open entry=459.0 last=464.65 mfe=1.51 mae=-4.3 opened=2026-10-29
-- **NINSYS** status=open entry=939.6 last=978.25 mfe=4.83 mae=-6.34 opened=2026-10-30
-- **ALIVUS** status=open entry=1447.6 last=1481.3 mfe=3.97 mae=-1.84 opened=2026-11-02
-- **TFCILTD** status=open entry=157.96 last=161.89 mfe=2.56 mae=-1.59 opened=2026-11-02
+- **UNIONBANK** status=open entry=182.85 last=182.36 mfe=3.24 mae=-3.04 opened=2026-10-22
+- **KOTAKBANK** status=open entry=459.0 last=457.5 mfe=1.51 mae=-4.3 opened=2026-10-29
+- **NINSYS** status=open entry=939.6 last=956.9 mfe=5.04 mae=-6.34 opened=2026-10-30
+- **ALIVUS** status=open entry=1447.6 last=1520.2 mfe=5.62 mae=-1.84 opened=2026-11-02
+- **TFCILTD** status=open entry=157.96 last=160.33 mfe=2.56 mae=-4.27 opened=2026-11-02
 
 ## Needs action
 
-- **UNIONBANK**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
+- **UNIONBANK**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Swing candidates (top)
 
-- LAURUSLABS: score=14 rs_nifty=14.07 deliv=48.44
-- GAIL: score=14 rs_nifty=2.91 deliv=57.81
-- SIMPLEXINF: score=13 rs_nifty=7.36 deliv=50.27
-- PNB: score=13 rs_nifty=3.37 deliv=41.5
-- ICICIBANK: score=13 rs_nifty=4.61 deliv=59.39
-- BIL: score=13 rs_nifty=4.29 deliv=65.9
-- MANAKCOAT: score=13 rs_nifty=10.43 deliv=44.35
-- LAL: score=13 rs_nifty=5.25 deliv=57.98
-- MARICO: score=13 rs_nifty=8.13 deliv=25.22
-- AARTIDRUGS: score=13 rs_nifty=4.55 deliv=45.23
-- PHOENIXLTD: score=13 rs_nifty=2.25 deliv=59.22
-- DLF: score=13 rs_nifty=3.07 deliv=56.09
-- ALIVUS: score=13 rs_nifty=4.1 deliv=50.15
-- NUVAMA: score=13 rs_nifty=8.45 deliv=49.28
-- MARKOLINES: score=13 rs_nifty=3.06 deliv=55.91
+- ICICIBANK: score=13 rs_nifty=2.35 deliv=59.39
+- SHRINGARMS: score=13 rs_nifty=20.38 deliv=27.6
+- DIACABS: score=13 rs_nifty=4.71 deliv=59.88
+- SICAGEN: score=13 rs_nifty=5.36 deliv=53.4
+- 63MOONS: score=13 rs_nifty=8.39 deliv=55.06
+- THELEELA: score=13 rs_nifty=10.23 deliv=52.99
+- GAIL: score=13 rs_nifty=1.26 deliv=57.81
+- PNB: score=13 rs_nifty=4.03 deliv=41.5
+- KOTAKBANK: score=13 rs_nifty=3.92 deliv=68.84
+- MAZDA: score=13 rs_nifty=1.39 deliv=58.29
+- ACUTAAS: score=13 rs_nifty=12.6 deliv=43.87
+- PPLPHARMA: score=13 rs_nifty=14.41 deliv=48.12
+- SAGARDEEP: score=13 rs_nifty=13.03 deliv=60.57
+- SATIN: score=12 rs_nifty=5.9 deliv=51.66
+- LAL: score=12 rs_nifty=4.82 deliv=57.98
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.11% (bear)
-- Hang Seng: +0.42% (bull)
-- Shanghai: +1.08% (bull)
-- Kospi: -1.69% (bear)
-- Taiwan: -0.65% (bear)
-- ASX 200: -0.06% (neutral)
+- Nikkei: -1.42% (bear)
+- Hang Seng: +1.34% (bull)
+- Shanghai: +1.79% (bull)
+- Kospi: +0.62% (bull)
+- Taiwan: -0.83% (bear)
+- ASX 200: -0.59% (bear)
 
 ### Europe
-- FTSE 100: +0.29% (bull)
-- DAX: +0.63% (bull)
-- Euro Stoxx 50: +0.73% (bull)
+- FTSE 100: -1.14% (bear)
+- DAX: -0.45% (bear)
+- Euro Stoxx 50: -0.51% (bear)
 
 ### US
 - S&P 500: +0.36% (bull)
@@ -100,10 +106,10 @@
 - US VIX: -1.51% (bull)
 
 ### Macro
-- USDINR: +0.00% (neutral)
-- Crude WTI: -0.01% (neutral)
-- Brent: -0.59% (bear)
-- DXY: +0.14% (neutral)
+- USDINR: +0.05% (neutral)
+- Crude WTI: +0.35% (bull)
+- Brent: +0.49% (bull)
+- DXY: -0.36% (bull)
 - US 10Y: +1.19% (bear)
 - India ETF: +0.52% (bull)
 - EM ETF: -0.02% (neutral)
