@@ -1,62 +1,95 @@
 # Parkhu research pack — 2026-11-05
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-05T12:52:41.079796+05:30
+- **generated_at_ist:** 2026-11-05T18:10:19.362755+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (2.01%)
-- india_vix: 15.32 (Medium)
+- nifty: Bullish (2.4%)
+- india_vix: 15.58 (Medium)
 - fii_net: 7284.03 | dii_net: -3712.23
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
 - universe: 3251
-- trend = Bullish: 1056
-- price > SMA200: 808
-- price > EMA50: 786
-- ADX14 > 25: 252
-- RSI14 in 40-80: 248
-- RS > 0 vs NIFTY and sector: 101
+- trend = Bullish: 1033
+- price > SMA200: 795
+- price > EMA50: 771
+- ADX14 > 25: 265
+- RSI14 in 40-80: 259
+- RS > 0 vs NIFTY and sector: 102
 - delivery% >= 40: 55
-- relative_volume >= 1: 10
-- no earnings within 21d: 5
-- event_risk_score <= 1: 5
-- TV rating not Sell: 5
+- relative_volume >= 1: 25
+- no earnings within 21d: 21
+- event_risk_score <= 1: 21
+- TV rating not Sell: 21
 
-## Survivors (top 5 of 5)
+## Survivors (top 21 of 21)
 
-- **ICICIBANK** [idea] score 91.0 — selected as idea
-- **CHOLAFIN** [idea] score 80.3 — selected as idea
-- **MAZDA** [watchlist] score 78.5 — score in Watch band (70–80)
-- **ANANDRATHI** [watchlist] score 72.8 — score in Watch band (70–80)
+- **ICICIBANK** [idea] score 93.2 — selected as idea
+- **PNB** [idea] score 93.2 — selected as idea
+- **KOTAKBANK** [rejected] score 89.6 — 25% sector cap for Banks would be breached
+- **HCLTECH** [rejected] score 89.5 — T1 needs more than 22 trading days (~1 month)
+- **TECHM** [idea] score 89.0 — selected as idea
+- **TCS** [rejected] score 85.8 — T1 needs more than 22 trading days (~1 month)
+- **GAIL** [idea] score 83.2 — selected as idea
+- **CHOLAFIN** [idea] score 80.0 — selected as idea
+- **SONACOMS** [watchlist] score 79.8 — score in Watch band (70–80)
+- **MAZDA** [watchlist] score 77.1 — score in Watch band (70–80)
+- **SHYAMMETL** [watchlist] score 75.9 — score in Watch band (70–80)
+- **ANANDRATHI** [watchlist] score 72.3 — score in Watch band (70–80)
+- **LT** [rejected] score 71.6 — T1 needs more than 22 trading days (~1 month)
+- **JLHL** [rejected] score 68.2 — T1 needs more than 22 trading days (~1 month)
+- **PVRINOX** [rejected] score 67.9 — score below Watch band
 - **ULTRACEMCO** [rejected] score 59.0 — T1 needs more than 22 trading days (~1 month)
+- **DEVX** [rejected] score 58.5 — score below Watch band
+- **THELEELA** [rejected] score 58.2 — score below Watch band
+- **RUBICON** [rejected] score 56.2 — score below Watch band
+- **SHREECEM** [rejected] score 51.0 — T1 needs more than 22 trading days (~1 month)
+- **GODREJPROP** [rejected] score 50.9 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### ICICIBANK — Buy (score 91.0)
+### ICICIBANK — Buy (score 93.2)
 - ICICI Bank Limited | risk_sector: Banks
-- entry 1477.3 | stop 1420.52 | t1 1590.85 | t2 1647.63 | t3 1704.41 | R:R 2.0
-- qty 6 | deployed 8864.0 (8.86%) | risk ₹341.0
+- entry 1500.0 | stop 1439.88 | t1 1620.24 | t2 1680.36 | t3 1740.48 | R:R 2.0
+- qty 6 | deployed 9000.0 (9.0%) | risk ₹361.0
 
-### CHOLAFIN — Buy (score 80.3)
+### PNB — Buy (score 93.2)
+- Punjab National Bank | risk_sector: Banks
+- entry 126.1 | stop 119.87 | t1 138.55 | t2 144.78 | t3 151.0 | R:R 2.0
+- qty 79 | deployed 9962.0 (9.96%) | risk ₹492.0
+
+### TECHM — Buy (score 89.0)
+- Tech Mahindra Limited | risk_sector: Technology Services
+- entry 1822.7 | stop 1719.51 | t1 2029.08 | t2 2132.26 | t3 2235.45 | R:R 2.0
+- qty 5 | deployed 9114.0 (9.11%) | risk ₹516.0
+
+### GAIL — Buy (score 83.2)
+- GAIL (India) Limited | risk_sector: Utilities
+- entry 185.99 | stop 177.03 | t1 203.92 | t2 212.88 | t3 221.84 | R:R 2.0
+- qty 53 | deployed 9857.0 (9.86%) | risk ₹475.0
+
+### CHOLAFIN — Buy (score 80.0)
 - Cholamandalam Investment and Finance Co. Ltd. | risk_sector: NBFC & Capital Markets
-- entry 1766.2 | stop 1659.89 | t1 1978.82 | t2 2085.13 | t3 2191.44 | R:R 2.0
-- qty 5 | deployed 8831.0 (8.83%) | risk ₹532.0
+- entry 1760.0 | stop 1659.29 | t1 1961.42 | t2 2062.13 | t3 2162.84 | R:R 2.0
+- qty 5 | deployed 8800.0 (8.8%) | risk ₹504.0
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=188.16 mfe=3.24 mae=-3.04 opened=2026-10-22
-- **KOTAKBANK** status=open entry=459.0 last=464.75 mfe=2.94 mae=-4.3 opened=2026-10-29
-- **NINSYS** status=open entry=939.6 last=957.55 mfe=5.36 mae=-6.34 opened=2026-10-30
-- **ALIVUS** status=open entry=1447.6 last=1486.8 mfe=6.8 mae=-1.84 opened=2026-11-02
-- **TFCILTD** status=open entry=157.96 last=161.2 mfe=2.56 mae=-4.27 opened=2026-11-02
-- **GAIL** status=open entry=186.22 last=185.38 mfe=1.44 mae=-3.34 opened=2026-11-04
-- **CHOLAFIN** status=open entry=1766.2 last=1766.2 mfe=0.0 mae=0.0 opened=2026-11-05
-- **ICICIBANK** status=open entry=1477.3 last=1477.3 mfe=0.0 mae=0.0 opened=2026-11-05
+- **UNIONBANK** status=open entry=182.85 last=188.0 mfe=3.31 mae=-3.04 opened=2026-10-22
+- **KOTAKBANK** status=open entry=459.0 last=467.0 mfe=2.94 mae=-4.3 opened=2026-10-29
+- **NINSYS** status=open entry=939.6 last=979.85 mfe=5.36 mae=-6.34 opened=2026-10-30
+- **ALIVUS** status=open entry=1447.6 last=1497.2 mfe=6.8 mae=-1.84 opened=2026-11-02
+- **TFCILTD** status=open entry=157.96 last=161.25 mfe=2.56 mae=-4.27 opened=2026-11-02
+- **GAIL** status=open entry=186.22 last=185.99 mfe=1.44 mae=-3.34 opened=2026-11-04
+- **CHOLAFIN** status=open entry=1766.2 last=1760.0 mfe=0.84 mae=-3.63 opened=2026-11-05
+- **ICICIBANK** status=open entry=1477.3 last=1500.0 mfe=1.63 mae=-2.13 opened=2026-11-05
+- **PNB** status=open entry=126.1 last=126.1 mfe=0.0 mae=0.0 opened=2026-11-05
+- **TECHM** status=open entry=1822.7 last=1822.7 mfe=0.0 mae=0.0 opened=2026-11-05
 
 ## Needs action
 
@@ -65,48 +98,48 @@
 
 ## Swing candidates (top)
 
-- CHOLAFIN: score=15 rs_nifty=2.63 deliv=54.21
-- MAZDA: score=14 rs_nifty=3.72 deliv=59.92
-- BAJFINANCE: score=14 rs_nifty=1.94 deliv=71.16
-- KOTAKBANK: score=13 rs_nifty=2.85 deliv=71.86
-- ICICIBANK: score=13 rs_nifty=3.79 deliv=61.5
-- TATACAP: score=13 rs_nifty=1.61 deliv=52.27
-- PNB: score=13 rs_nifty=4.9 deliv=52.89
-- LAURUSLABS: score=13 rs_nifty=9.94 deliv=57.26
-- PPLPHARMA: score=13 rs_nifty=14.96 deliv=40.59
-- SSWL: score=13 rs_nifty=21.39 deliv=41.24
-- 21STCENMGM: score=13 rs_nifty=44.22 deliv=73.63
-- RUBICON: score=13 rs_nifty=0.62 deliv=62.96
-- ALIVUS: score=13 rs_nifty=1.61 deliv=51.25
-- SKYGOLD: score=13 rs_nifty=8.48 deliv=41.88
-- SHRINGARMS: score=13 rs_nifty=33.21 deliv=32.43
+- DEVX: score=14 rs_nifty=5.68 deliv=79.37
+- PNB: score=14 rs_nifty=4.5 deliv=48.94
+- CHOLAFIN: score=14 rs_nifty=1.8 deliv=53.65
+- SONACOMS: score=14 rs_nifty=6.72 deliv=55.78
+- ICICIBANK: score=14 rs_nifty=5.04 deliv=70.82
+- KOTAKBANK: score=14 rs_nifty=2.93 deliv=57.88
+- KARURVYSYA: score=14 rs_nifty=3.35 deliv=44.39
+- RUBICON: score=14 rs_nifty=0.48 deliv=67.16
+- MAZDA: score=14 rs_nifty=1.95 deliv=45.27
+- BAJFINANCE: score=14 rs_nifty=2.58 deliv=73.11
+- INDIGO: score=13 rs_nifty=1.66 deliv=50.21
+- TECHM: score=13 rs_nifty=10.94 deliv=55.54
+- KESORAMIND: score=13 rs_nifty=13.3 deliv=44.88
+- DIACABS: score=13 rs_nifty=3.26 deliv=51.85
+- PVRINOX: score=13 rs_nifty=19.65 deliv=52.04
 
 ## World markets (India cues)
 
 ### Asia
 - Nikkei: -1.79% (bear)
-- Hang Seng: +3.79% (bull)
+- Hang Seng: +3.67% (bull)
 - Shanghai: +0.10% (neutral)
 - Kospi: -5.28% (bear)
 - Taiwan: -3.20% (bear)
 - ASX 200: +2.61% (bull)
 
 ### Europe
-- FTSE 100: +1.79% (bull)
-- DAX: +2.22% (bull)
-- Euro Stoxx 50: +1.97% (bull)
+- FTSE 100: +0.56% (bull)
+- DAX: +0.56% (bull)
+- Euro Stoxx 50: +0.50% (bull)
 
 ### US
 - S&P 500: +1.58% (bull)
 - Nasdaq: +1.44% (bull)
 - Dow: +3.03% (bull)
-- US VIX: -20.26% (bull)
+- US VIX: +1.63% (bear)
 
 ### Macro
-- USDINR: -0.32% (neutral)
-- Crude WTI: -1.08% (bear)
-- Brent: -0.41% (bear)
-- DXY: -0.24% (neutral)
+- USDINR: -0.29% (neutral)
+- Crude WTI: +1.52% (bull)
+- Brent: +2.28% (bull)
+- DXY: +0.07% (neutral)
 - US 10Y: -1.17% (bull)
 - India ETF: +2.73% (bull)
 - EM ETF: +0.85% (bull)
