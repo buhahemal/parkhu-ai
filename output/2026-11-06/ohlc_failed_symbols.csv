@@ -4,8 +4,8 @@ ANAWIL,ANAWIL.NS,no_ohlc_after_retry
 ASHUTOSH,ASHUTOSH.NS,no_ohlc_after_retry
 AVATAR,AVATAR.NS,no_ohlc_after_retry
 AXIOMGAS,AXIOMGAS.NS,no_ohlc_after_retry
-BCSSL,BCSSL.NS,no_ohlc_after_retry
 BMISL,BMISL.NS,no_ohlc_after_retry
+BRIGHTOUTD,BRIGHTOUTD.NS,no_ohlc_after_retry
 CENTEXTPP.E1,CENTEXTPP.E1.NS,no_ohlc_after_retry
 COREIN,COREIN.NS,no_ohlc_after_retry
 CREDENT,CREDENT.NS,no_ohlc_after_retry
@@ -14,11 +14,13 @@ DRSCARGO,DRSCARGO.NS,no_ohlc_after_retry
 EVENTIONS,EVENTIONS.NS,no_ohlc_after_retry
 FASCINATE,FASCINATE.NS,no_ohlc_after_retry
 GREENASIA,GREENASIA.NS,no_ohlc_after_retry
+HGSINDIALT,HGSINDIALT.NS,no_ohlc_after_retry
 HIMALAYAN,HIMALAYAN.NS,no_ohlc_after_retry
 JAYKAYPP.E1,JAYKAYPP.E1.NS,no_ohlc_after_retry
 KHERIAAUTO,KHERIAAUTO.NS,no_ohlc_after_retry
 LOANFRONT,LOANFRONT.NS,no_ohlc_after_retry
 MADHURKNIT,MADHURKNIT.NS,no_ohlc_after_retry
+MAXENGS,MAXENGS.NS,no_ohlc_after_retry
 METALIC,METALIC.NS,no_ohlc_after_retry
 NEELAM,NEELAM.NS,no_ohlc_after_retry
 OPTIMYSTIX,OPTIMYSTIX.NS,no_ohlc_after_retry
@@ -34,4 +36,3 @@ SKYTECH,SKYTECH.NS,no_ohlc_after_retry
 SPECTRAA,SPECTRAA.NS,no_ohlc_after_retry
 SUMAX,SUMAX.NS,no_ohlc_after_retry
 VINOD,VINOD.NS,no_ohlc_after_retry
-VISDEM,VISDEM.NS,no_ohlc_after_retry
