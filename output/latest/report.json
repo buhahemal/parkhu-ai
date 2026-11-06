@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-06",
-  "generated_at_ist": "2026-11-06T06:10:02.761765+05:30",
-  "duration_seconds": 365.7,
+  "generated_at_ist": "2026-11-06T12:51:45.436402+05:30",
+  "duration_seconds": 369.6,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3227,
-      "seconds": 3.4
+      "rows": 3230,
+      "seconds": 3.5
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14576,
-      "cache_rows": 7989580,
+      "rows": 14568,
+      "cache_rows": 7991536,
       "symbols": 2926,
-      "failed": 36,
+      "failed": 37,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2521,
+      "warm": 2519,
       "cold": 437,
-      "new_symbols": 36,
+      "new_symbols": 43,
       "retries": 2,
-      "seconds": 248.0
+      "seconds": 275.1
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3227,
+      "rows": 3230,
       "seconds": 0.1
     },
     {
@@ -42,25 +42,25 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.6
+      "seconds": 0.8
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.2
+      "seconds": 1.6
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 3.8
+      "status": "ok",
+      "rows": 3,
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.8
+      "seconds": 5.3
     },
     {
       "agent": "derivatives",
@@ -78,37 +78,37 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2379,
-      "seconds": 18.0
+      "rows": 2378,
+      "seconds": 18.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.7
+      "seconds": 3.4
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.3
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.7
+      "seconds": 4.6
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3227,
+      "rows": 3230,
       "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3227,
+      "rows": 3230,
       "seconds": 1.0
     },
     {
@@ -138,30 +138,26 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2918,
-      "with_structure": 2912,
+      "rows": 2916,
+      "with_structure": 2910,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 17.5
+      "seconds": 17.0
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3245,
-      "seconds": 8.3
+      "rows": 3254,
+      "seconds": 8.4
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 5,
+      "rows": 1,
       "ideas": [
-        "PNB",
-        "ICICIBANK",
-        "TECHM",
-        "GAIL",
-        "GLENMARK"
+        "ICICIBANK"
       ],
-      "watchlist": 5,
+      "watchlist": 3,
       "open_positions": 11,
       "needing_action": [
         "TFCILTD",
@@ -171,14 +167,14 @@
       "seconds": 0.3
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,
