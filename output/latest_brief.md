@@ -12,7 +12,7 @@ Regime **Bullish**. Sector leader Technology Services (44.69% 1m), laggard Indus
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (10)
+## Open suggestions (11)
 
 **2 need action today.**
 
@@ -23,6 +23,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | ALIVUS | 2026-11-02 | ₹1,448 | ₹1,497 | 3.43% | 0.43R | 4/14d | HOLD |
 | CHOLAFIN | 2026-11-05 | ₹1,766 | ₹1,760 | -0.35% | -0.06R | 1/16d | HOLD |
 | GAIL | 2026-11-04 | ₹186 | ₹186 | -0.12% | -0.03R | 2/17d | HOLD |
+| GLENMARK | 2026-11-06 | ₹2,482 | ₹2,482 | 0% | 0R | 0/19d | HOLD |
 | ICICIBANK | 2026-11-05 | ₹1,477 | ₹1,500 | 1.54% | 0.4R | 1/17d | HOLD |
 | KOTAKBANK | 2026-10-29 | ₹459 | ₹467 | 1.74% | 0.39R | 6/16d | HOLD |
 | NINSYS | 2026-10-30 | ₹940 | ₹980 | 4.28% | 0.54R | 5/12d | HOLD |
@@ -34,6 +35,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **ALIVUS** — HOLD: +3.43% (+0.43R), 4d held, ~10d left to the T1 horizon. Best 6.8% / worst -1.84% while held.
 - **CHOLAFIN** — HOLD: -0.35% (-0.06R), 1d held, ~15d left to the T1 horizon. Best 0.84% / worst -3.63% while held.
 - **GAIL** — HOLD: -0.12% (-0.03R), 2d held, ~15d left to the T1 horizon. Best 1.44% / worst -3.34% while held.
+- **GLENMARK** — HOLD: +0.00% (+0.00R), 0d held, ~19d left to the T1 horizon.
 - **ICICIBANK** — HOLD: +1.54% (+0.40R), 1d held, ~16d left to the T1 horizon. Best 1.63% / worst -2.13% while held.
 - **KOTAKBANK** — HOLD: +1.74% (+0.39R), 6d held, ~10d left to the T1 horizon. Best 2.94% / worst -4.3% while held.
 - **NINSYS** — HOLD: +4.28% (+0.54R), 5d held, ~7d left to the T1 horizon. Best 5.36% / worst -6.34% while held.
@@ -108,7 +110,7 @@ Technology Services (Information Technology Services) · CMP ₹1,823 · score *
 
 ### GAIL — GAIL (India) Limited
 
-Utilities (Gas Distributors) · CMP ₹186 · score **83.2** (Buy)
+Utilities (Gas Distributors) · CMP ₹186 · score **83.9** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -142,9 +144,9 @@ Health Technology (Pharmaceuticals: Major) · CMP ₹2,482 · score **80.6** (Bu
 
 **Position:** 4 shares · deploy ₹9,927 (9.93% of capital) · risk ₹615 (0.62%) if stopped · profit ₹1,231 at T1, ₹1,846 at T2 · size set by exposure cap (10%/name)
 
-**Evidence:** ADX 29.7 · RSI 64.7 · delivery 41.1% · RS vs Nifty 1.1%, vs sector 2.7% · 1m 7.3%, 3m 9.1% · -2.4% from 52w high · ATR 2.9% of price · factor rank 84 · TV Buy · next earnings date **unknown**
+**Evidence:** ADX 29.7 · RSI 64.7 · delivery 41.1% · RS vs Nifty 1.1%, vs sector 2.7% · 1m 7.3%, 3m 9.1% · -2.4% from 52w high · ATR 2.9% of price · factor rank 84 · TV Buy · next earnings in 91d
 
-**Invalidation:** a close below ₹2,328; no earnings date is available for this name, so the KB-05 21-day results blackout could not be verified — check the calendar before entering; T1 needs a break to new highs; the 52-week high is 2.44% above entry.
+**Invalidation:** a close below ₹2,328; T1 needs a break to new highs; the 52-week high is 2.44% above entry.
 
 ## Portfolio
 
@@ -160,7 +162,7 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: TCS (~144d), LT (~23d),
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| SONACOMS | Producer Manufacturing | ₹915 | 79.9 | ₹915 | ₹858 | ₹1,031 | 12.61% |
+| SONACOMS | Producer Manufacturing | ₹915 | 79.6 | ₹915 | ₹858 | ₹1,031 | 12.61% |
 | APLLTD | Health Technology | ₹894 | 78.5 | ₹894 | ₹829 | ₹1,023 | 14.51% |
 | MAZDA | Producer Manufacturing | ₹312 | 77.1 | ₹312 | ₹287 | ₹361 | 16% |
 | SHYAMMETL | Producer Manufacturing | ₹1,270 | 75.9 | ₹1,270 | ₹1,178 | ₹1,454 | 14.52% |

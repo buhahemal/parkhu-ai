@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-06
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-06T01:51:55.284311+05:30
+- **generated_at_ist:** 2026-11-06T06:10:02.761765+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,10 +14,10 @@
 
 ## Funnel
 
-- universe: 3249
-- trend = Bullish: 1037
-- price > SMA200: 797
-- price > EMA50: 773
+- universe: 3245
+- trend = Bullish: 1032
+- price > SMA200: 791
+- price > EMA50: 767
 - ADX14 > 25: 265
 - RSI14 in 40-80: 259
 - RS > 0 vs NIFTY and sector: 111
@@ -35,10 +35,10 @@
 - **KOTAKBANK** [rejected] score 89.1 — 25% sector cap for Banks would be breached
 - **TECHM** [idea] score 89.0 — selected as idea
 - **TCS** [rejected] score 85.9 — T1 needs more than 22 trading days (~1 month)
-- **GAIL** [idea] score 83.2 — selected as idea
+- **GAIL** [idea] score 83.9 — selected as idea
 - **GLENMARK** [idea] score 80.6 — selected as idea
 - **CHOLAFIN** [rejected] score 80.3 — not selected
-- **SONACOMS** [watchlist] score 79.9 — score in Watch band (70–80)
+- **SONACOMS** [watchlist] score 79.6 — score in Watch band (70–80)
 - **APLLTD** [watchlist] score 78.5 — score in Watch band (70–80)
 - **MAZDA** [watchlist] score 77.1 — score in Watch band (70–80)
 - **SHYAMMETL** [watchlist] score 75.9 — score in Watch band (70–80)
@@ -46,11 +46,11 @@
 - **LT** [rejected] score 71.5 — T1 needs more than 22 trading days (~1 month)
 - **JLHL** [rejected] score 68.1 — T1 needs more than 22 trading days (~1 month)
 - **PVRINOX** [rejected] score 67.9 — score below Watch band
+- **DEVX** [rejected] score 58.9 — score below Watch band
 - **ULTRACEMCO** [rejected] score 58.9 — T1 needs more than 22 trading days (~1 month)
-- **DEVX** [rejected] score 58.5 — score below Watch band
 - **THELEELA** [rejected] score 58.2 — score below Watch band
 - **RUBICON** [rejected] score 56.1 — score below Watch band
-- **GODREJPROP** [rejected] score 51.0 — T1 needs more than 22 trading days (~1 month)
+- **GODREJPROP** [rejected] score 51.3 — T1 needs more than 22 trading days (~1 month)
 - **SHREECEM** [rejected] score 50.9 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
@@ -70,7 +70,7 @@
 - entry 1822.7 | stop 1719.51 | t1 2029.08 | t2 2132.26 | t3 2235.45 | R:R 2.0
 - qty 5 | deployed 9114.0 (9.11%) | risk ₹516.0
 
-### GAIL — Buy (score 83.2)
+### GAIL — Buy (score 83.9)
 - GAIL (India) Limited | risk_sector: Utilities
 - entry 185.99 | stop 177.03 | t1 203.92 | t2 212.88 | t3 221.84 | R:R 2.0
 - qty 53 | deployed 9857.0 (9.86%) | risk ₹475.0
@@ -101,51 +101,51 @@
 
 ## Swing candidates (top)
 
-- CHOLAFIN: score=14 rs_nifty=3.3 deliv=53.65
-- KOTAKBANK: score=14 rs_nifty=4.43 deliv=57.88
-- PNB: score=14 rs_nifty=6.0 deliv=48.94
-- KARURVYSYA: score=14 rs_nifty=4.85 deliv=44.39
-- SONACOMS: score=14 rs_nifty=8.22 deliv=55.78
-- MAZDA: score=14 rs_nifty=3.45 deliv=45.27
 - DEVX: score=14 rs_nifty=7.18 deliv=79.37
+- CHOLAFIN: score=14 rs_nifty=3.3 deliv=53.65
+- PNB: score=14 rs_nifty=6.0 deliv=48.94
 - RUBICON: score=14 rs_nifty=1.98 deliv=67.16
+- SONACOMS: score=14 rs_nifty=8.22 deliv=55.78
+- KARURVYSYA: score=14 rs_nifty=4.85 deliv=44.39
+- MAZDA: score=14 rs_nifty=3.45 deliv=45.27
 - MPHASIS: score=14 rs_nifty=3.38 deliv=45.46
-- TATACAP: score=13 rs_nifty=3.29 deliv=56.83
+- KOTAKBANK: score=14 rs_nifty=4.43 deliv=57.88
+- ACUTAAS: score=13 rs_nifty=13.86 deliv=50.16
+- ASAHIINDIA: score=13 rs_nifty=1.22 deliv=54.26
+- ADANIENSOL: score=13 rs_nifty=0.62 deliv=42.63
 - TIPSMUSIC: score=13 rs_nifty=11.59 deliv=49.11
-- KHADIM: score=13 rs_nifty=5.46 deliv=59.67
-- TASTYBITE: score=13 rs_nifty=6.95 deliv=42.92
-- SHRINGARMS: score=13 rs_nifty=34.96 deliv=35.33
-- ICICIBANK: score=13 rs_nifty=6.54 deliv=70.82
+- GAIL: score=13 rs_nifty=4.22 deliv=65.67
+- PPLPHARMA: score=13 rs_nifty=15.84 deliv=48.01
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.42% (bear)
+- Nikkei: -8.13% (bear)
 - Hang Seng: +1.67% (bull)
 - Shanghai: +2.16% (bull)
-- Kospi: +0.62% (bull)
+- Kospi: -13.38% (bear)
 - Taiwan: -0.83% (bear)
-- ASX 200: +2.61% (bull)
+- ASX 200: +1.99% (bull)
 
 ### Europe
-- FTSE 100: -0.43% (bear)
-- DAX: -0.43% (bear)
-- Euro Stoxx 50: -0.55% (bear)
+- FTSE 100: +1.79% (bull)
+- DAX: +2.22% (bull)
+- Euro Stoxx 50: +1.97% (bull)
 
 ### US
-- S&P 500: -3.99% (bear)
-- Nasdaq: -5.07% (bear)
-- Dow: -3.16% (bear)
-- US VIX: +53.10% (bear)
+- S&P 500: -4.36% (bear)
+- Nasdaq: -5.52% (bear)
+- Dow: -3.44% (bear)
+- US VIX: +69.66% (bear)
 
 ### Macro
-- USDINR: -0.30% (neutral)
-- Crude WTI: +3.08% (bull)
-- Brent: +4.06% (bull)
+- USDINR: -0.25% (neutral)
+- Crude WTI: +3.31% (bull)
+- Brent: +4.65% (bull)
 - DXY: +0.06% (neutral)
 - US 10Y: -1.16% (bull)
-- India ETF: +0.19% (bull)
-- EM ETF: -5.33% (bear)
+- India ETF: -0.02% (neutral)
+- EM ETF: -5.79% (bear)
 
 
 ## Groq desk note
