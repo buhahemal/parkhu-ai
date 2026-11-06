@@ -1,51 +1,53 @@
-# Parkhu research pack — 2026-11-06
+# Parkhu research pack — 2026-11-07
 
-- **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-06T18:09:17.436509+05:30
+- **session_date:** 2026-07-24 (trading day: False)
+- **generated_at_ist:** 2026-11-07T01:16:41.096340+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (2.01%)
-- india_vix: 17.47 (Medium)
-- fii_net: 14974.68 | dii_net: -10444.54
+- nifty: Bullish (2.4%)
+- india_vix: 15.58 (Medium)
+- fii_net: 13749.82 | dii_net: -5968.7
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3248
-- trend = Bullish: 969
-- price > SMA200: 727
-- price > EMA50: 704
+- universe: 3258
+- trend = Bullish: 979
+- price > SMA200: 729
+- price > EMA50: 706
 - ADX14 > 25: 269
 - RSI14 in 40-80: 260
-- RS > 0 vs NIFTY and sector: 85
-- delivery% >= 40: 43
-- relative_volume >= 1: 18
-- no earnings within 21d: 18
-- event_risk_score <= 1: 18
-- TV rating not Sell: 18
+- RS > 0 vs NIFTY and sector: 105
+- delivery% >= 40: 57
+- relative_volume >= 1: 22
+- no earnings within 21d: 20
+- event_risk_score <= 1: 20
+- TV rating not Sell: 20
 
-## Survivors (top 18 of 18)
+## Survivors (top 20 of 20)
 
 - **ICICIBANK** [idea] score 94.4 — selected as idea
 - **PNB** [idea] score 94.4 — selected as idea
 - **HCLTECH** [rejected] score 88.8 — T1 needs more than 22 trading days (~1 month)
-- **TCS** [rejected] score 84.5 — T1 needs more than 22 trading days (~1 month)
-- **ORIENTELEC** [idea] score 80.7 — selected as idea
-- **IOC** [rejected] score 79.5 — T1 needs more than 22 trading days (~1 month)
-- **SAGARDEEP** [watchlist] score 77.7 — score in Watch band (70–80)
-- **M&M** [rejected] score 76.8 — T1 needs more than 22 trading days (~1 month)
+- **NINSYS** [idea] score 84.9 — selected as idea
+- **TCS** [rejected] score 84.6 — T1 needs more than 22 trading days (~1 month)
+- **ORIENTELEC** [idea] score 80.9 — selected as idea
+- **IOC** [rejected] score 78.7 — T1 needs more than 22 trading days (~1 month)
+- **SAGARDEEP** [watchlist] score 77.8 — score in Watch band (70–80)
+- **M&M** [rejected] score 77.0 — T1 needs more than 22 trading days (~1 month)
 - **SHYAMMETL** [watchlist] score 76.6 — score in Watch band (70–80)
-- **NHPC** [rejected] score 73.1 — T1 needs more than 22 trading days (~1 month)
-- **LAL** [watchlist] score 70.0 — score in Watch band (70–80)
+- **NHPC** [rejected] score 72.4 — T1 needs more than 22 trading days (~1 month)
+- **LT** [rejected] score 72.3 — T1 needs more than 22 trading days (~1 month)
+- **LAL** [watchlist] score 70.6 — score in Watch band (70–80)
 - **BAHETI** [rejected] score 69.3 — score below Watch band
 - **AIROLAM** [rejected] score 66.3 — score below Watch band
-- **SHRINGARMS** [rejected] score 63.3 — score below Watch band
+- **SHRINGARMS** [rejected] score 63.4 — score below Watch band
 - **ULTRACEMCO** [rejected] score 59.1 — score below Watch band
-- **UNOMINDA** [rejected] score 58.1 — score below Watch band
-- **GODREJPROP** [rejected] score 50.9 — T1 needs more than 22 trading days (~1 month)
+- **UNOMINDA** [rejected] score 58.3 — score below Watch band
+- **GODREJPROP** [rejected] score 51.0 — T1 needs more than 22 trading days (~1 month)
 - **BANKA** [rejected] score 47.0 — score below Watch band
 
 ## Ideas
@@ -60,7 +62,12 @@
 - entry 126.55 | stop 120.41 | t1 138.84 | t2 144.98 | t3 151.13 | R:R 2.0
 - qty 79 | deployed 9997.0 (10.0%) | risk ₹485.0
 
-### ORIENTELEC — Buy (score 80.7)
+### NINSYS — Buy (score 84.9)
+- NINtec Systems Ltd | risk_sector: Technology Services
+- entry 973.3 | stop 895.44 | t1 1129.03 | t2 1206.89 | t3 1284.76 | R:R 2.0
+- qty 10 | deployed 9733.0 (9.73%) | risk ₹779.0
+
+### ORIENTELEC — Buy (score 80.9)
 - Orient Electric Ltd. | risk_sector: Consumer Durables
 - entry 199.62 | stop 184.08 | t1 230.71 | t2 246.25 | t3 261.79 | R:R 2.0
 - qty 50 | deployed 9981.0 (9.98%) | risk ₹777.0
@@ -78,7 +85,7 @@
 - **PNB** status=open entry=126.1 last=126.55 mfe=0.59 mae=-2.38 opened=2026-11-05
 - **TECHM** status=open entry=1822.7 last=1831.0 mfe=2.05 mae=-0.84 opened=2026-11-05
 - **GLENMARK** status=open entry=2481.8 last=2590.0 mfe=8.09 mae=-4.69 opened=2026-11-06
-- **ORIENTELEC** status=open entry=199.62 last=199.62 mfe=0.0 mae=0.0 opened=2026-11-06
+- **ORIENTELEC** status=open entry=199.62 last=199.62 mfe=1.19 mae=-6.06 opened=2026-11-06
 
 ## Needs action
 
@@ -87,51 +94,51 @@
 
 ## Swing candidates (top)
 
-- SHRINGARMS: score=14 rs_nifty=27.41 deliv=44.35
-- BAHETI: score=14 rs_nifty=0.12 deliv=42.94
-- PNB: score=14 rs_nifty=2.66 deliv=48.03
-- KARURVYSYA: score=14 rs_nifty=2.74 deliv=41.8
-- ICICIBANK: score=14 rs_nifty=6.25 deliv=66.82
-- KMSUGAR: score=13 rs_nifty=11.98 deliv=51.25
-- SGMART: score=13 rs_nifty=4.89 deliv=61.5
-- TIPSMUSIC: score=13 rs_nifty=7.04 deliv=48.92
-- INDHOTEL: score=13 rs_nifty=9.81 deliv=61.86
-- AIROLAM: score=13 rs_nifty=11.4 deliv=59.64
-- CHOLAFIN: score=13 rs_nifty=0.33 deliv=55.22
-- TATACAP: score=13 rs_nifty=0.15 deliv=54.59
-- ACUTAAS: score=13 rs_nifty=9.09 deliv=43.72
-- CEMPRO: score=13 rs_nifty=2.95 deliv=44.8
-- TITAN: score=13 rs_nifty=1.9 deliv=39.57
+- PNB: score=14 rs_nifty=5.67 deliv=48.03
+- SHRINGARMS: score=14 rs_nifty=30.42 deliv=44.35
+- BAHETI: score=14 rs_nifty=3.13 deliv=42.94
+- KARURVYSYA: score=14 rs_nifty=5.75 deliv=41.8
+- TATACAP: score=13 rs_nifty=3.16 deliv=54.59
+- PRINCEPIPE: score=13 rs_nifty=11.74 deliv=41.99
+- RATNAVEER: score=13 rs_nifty=1.12 deliv=44.07
+- MPHASIS: score=13 rs_nifty=1.48 deliv=31.36
+- TITAN: score=13 rs_nifty=4.91 deliv=39.57
+- SAGARDEEP: score=13 rs_nifty=8.92 deliv=77.97
+- ICICIBANK: score=13 rs_nifty=9.26 deliv=66.82
+- KMSUGAR: score=13 rs_nifty=14.99 deliv=51.25
+- PATELRMART: score=13 rs_nifty=3.47 deliv=43.28
+- TIPSMUSIC: score=13 rs_nifty=10.05 deliv=48.92
+- AIROLAM: score=13 rs_nifty=14.41 deliv=59.64
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -5.96% (bear)
-- Hang Seng: -1.27% (bear)
-- Shanghai: -1.10% (bear)
-- Kospi: -6.02% (bear)
-- Taiwan: -4.51% (bear)
+- Nikkei: -1.79% (bear)
+- Hang Seng: +3.67% (bull)
+- Shanghai: +0.10% (neutral)
+- Kospi: -5.28% (bear)
+- Taiwan: -3.20% (bear)
 - ASX 200: -0.49% (bear)
 
 ### Europe
-- FTSE 100: -2.10% (bear)
-- DAX: -2.20% (bear)
-- Euro Stoxx 50: -1.33% (bear)
+- FTSE 100: -1.01% (bear)
+- DAX: -1.92% (bear)
+- Euro Stoxx 50: -0.98% (bear)
 
 ### US
-- S&P 500: -4.36% (bear)
-- Nasdaq: -5.52% (bear)
-- Dow: -3.44% (bear)
-- US VIX: -5.68% (bull)
+- S&P 500: +0.61% (bull)
+- Nasdaq: +1.36% (bull)
+- Dow: -0.17% (bear)
+- US VIX: -11.75% (bull)
 
 ### Macro
-- USDINR: -0.65% (bull)
-- Crude WTI: +0.14% (neutral)
+- USDINR: -0.66% (bull)
+- Crude WTI: +0.48% (bull)
 - Brent: +0.01% (neutral)
-- DXY: +0.44% (bear)
-- US 10Y: -1.16% (bull)
-- India ETF: -0.02% (neutral)
-- EM ETF: -5.79% (bear)
+- DXY: +0.73% (bear)
+- US 10Y: +0.33% (neutral)
+- India ETF: +1.75% (bull)
+- EM ETF: +2.17% (bull)
 
 
 ## Groq desk note
@@ -150,6 +157,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-06/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-07/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
