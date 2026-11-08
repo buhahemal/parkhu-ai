@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-11-07
+# Parkhu research pack — 2026-11-08
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-07T18:08:35.054717+05:30
+- **generated_at_ist:** 2026-11-08T06:09:36.779225+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,8 +14,8 @@
 
 ## Funnel
 
-- universe: 3248
-- trend = Bullish: 969
+- universe: 3250
+- trend = Bullish: 972
 - price > SMA200: 729
 - price > EMA50: 706
 - ADX14 > 25: 269
@@ -33,18 +33,18 @@
 - **PNB** [idea] score 94.4 — selected as idea
 - **HCLTECH** [rejected] score 88.8 — T1 needs more than 22 trading days (~1 month)
 - **TCS** [rejected] score 84.5 — T1 needs more than 22 trading days (~1 month)
-- **ORIENTELEC** [idea] score 80.5 — selected as idea
-- **IOC** [rejected] score 79.5 — T1 needs more than 22 trading days (~1 month)
+- **ORIENTELEC** [idea] score 80.9 — selected as idea
+- **IOC** [rejected] score 78.8 — T1 needs more than 22 trading days (~1 month)
 - **SAGARDEEP** [watchlist] score 77.7 — score in Watch band (70–80)
+- **M&M** [rejected] score 77.0 — T1 needs more than 22 trading days (~1 month)
 - **SHYAMMETL** [watchlist] score 76.6 — score in Watch band (70–80)
-- **M&M** [rejected] score 76.5 — T1 needs more than 22 trading days (~1 month)
-- **NHPC** [rejected] score 73.1 — T1 needs more than 22 trading days (~1 month)
-- **LAL** [watchlist] score 70.0 — score in Watch band (70–80)
+- **NHPC** [rejected] score 72.4 — T1 needs more than 22 trading days (~1 month)
+- **LAL** [watchlist] score 70.6 — score in Watch band (70–80)
 - **BAHETI** [rejected] score 69.3 — score below Watch band
 - **AIROLAM** [rejected] score 66.3 — score below Watch band
-- **SHRINGARMS** [rejected] score 63.0 — score below Watch band
+- **SHRINGARMS** [rejected] score 63.4 — score below Watch band
 - **ULTRACEMCO** [rejected] score 59.1 — score below Watch band
-- **UNOMINDA** [rejected] score 57.8 — score below Watch band
+- **UNOMINDA** [rejected] score 58.3 — score below Watch band
 - **GODREJPROP** [rejected] score 50.9 — T1 needs more than 22 trading days (~1 month)
 - **BANKA** [rejected] score 47.0 — score below Watch band
 
@@ -60,7 +60,7 @@
 - entry 126.55 | stop 120.41 | t1 138.84 | t2 144.98 | t3 151.13 | R:R 2.0
 - qty 79 | deployed 9997.0 (10.0%) | risk ₹485.0
 
-### ORIENTELEC — Buy (score 80.5)
+### ORIENTELEC — Buy (score 80.9)
 - Orient Electric Ltd. | risk_sector: Consumer Durables
 - entry 199.62 | stop 184.08 | t1 230.71 | t2 246.25 | t3 261.79 | R:R 2.0
 - qty 50 | deployed 9981.0 (9.98%) | risk ₹777.0
@@ -87,21 +87,21 @@
 
 ## Swing candidates (top)
 
-- BAHETI: score=14 rs_nifty=0.12 deliv=42.94
 - PNB: score=14 rs_nifty=2.66 deliv=48.03
 - SHRINGARMS: score=14 rs_nifty=27.41 deliv=44.35
 - KARURVYSYA: score=14 rs_nifty=2.74 deliv=41.8
+- BAHETI: score=14 rs_nifty=0.12 deliv=42.94
+- CHOLAFIN: score=13 rs_nifty=0.33 deliv=55.22
 - TATACAP: score=13 rs_nifty=0.15 deliv=54.59
 - TIPSMUSIC: score=13 rs_nifty=7.04 deliv=48.92
-- AIROLAM: score=13 rs_nifty=11.4 deliv=59.64
-- SGMART: score=13 rs_nifty=4.89 deliv=61.5
-- KMSUGAR: score=13 rs_nifty=11.98 deliv=51.25
 - PRINCEPIPE: score=13 rs_nifty=8.73 deliv=41.99
-- ACUTAAS: score=13 rs_nifty=9.09 deliv=43.72
 - SAGARDEEP: score=13 rs_nifty=5.91 deliv=77.97
-- PATELRMART: score=13 rs_nifty=0.46 deliv=43.28
+- SGMART: score=13 rs_nifty=4.89 deliv=61.5
 - TITAN: score=13 rs_nifty=1.9 deliv=39.57
-- BOSCHLTD: score=13 rs_nifty=1.93 deliv=33.99
+- CEMPRO: score=13 rs_nifty=2.95 deliv=44.8
+- ACUTAAS: score=13 rs_nifty=9.09 deliv=43.72
+- KMSUGAR: score=13 rs_nifty=11.98 deliv=51.25
+- AIROLAM: score=13 rs_nifty=11.4 deliv=59.64
 
 ## World markets (India cues)
 
@@ -150,6 +150,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-07/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-08/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
