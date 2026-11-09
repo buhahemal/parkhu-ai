@@ -1,49 +1,75 @@
 symbol,ex_date,record_date,purpose,face_value,series
 MEDIASSIST,20-Nov-2026,20-Nov-2026,Buy Back,5,EQ
+VENUSPIPES,20-Nov-2026,20-Nov-2026,Interim Dividend - Re 0.50 Per Share,10,EQ
+INGERRAND,19-Nov-2026,19-Nov-2026,Interim Dividend - Rs 20 Per Share,10,EQ
+PFC,17-Nov-2026,17-Nov-2026,Interim Dividend - Rs 4.10 Per Share,10,EQ
+SCI,16-Nov-2026,16-Nov-2026,Interim Dividend - Rs 4 Per Share,10,EQ
+TRANSWORLD,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 11 Per Share,10,EQ
+STARCEMENT,13-Nov-2026,13-Nov-2026,Interim Dividend - Re 1 Per Share,1,EQ
+IGPL,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 10 Per Share,10,EQ
+ORIENTTECH,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 2 Per Share,10,EQ
+PGIL,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 5 Per Share,5,EQ
+PPAP,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 1.50 Per Share,10,EQ
+RAIN,13-Nov-2026,13-Nov-2026,Interim Dividend - Re 0.50 Per Share,2,EQ
+REPCOHOME,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+SBCL,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
+SOMANYCERA,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 6 Per Share,2,EQ
+APTUS,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
+ASTRAL,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 1.50 Per Share,1,EQ
+BMWVENTLTD,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 1.50 Per Share,10,EQ
 CAMS,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 3.25 Per Share,2,EQ
+DYNAMATECH,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 2 Per Share,10,EQ
+EMAMILTD,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 5 Per Share,1,EQ
 FDC,13-Nov-2026,13-Nov-2026,Buy Back,1,EQ
-IMFA,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+GESHIP,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 14.40 Per Share,10,EQ
+GOLDIAM,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
+OCCLLTD,13-Nov-2026,13-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
+SAFARI,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
+INSECTICID,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
 IRB,12-Nov-2026,12-Nov-2026,Interim Dividend - Re 0.05 Per Share,1,EQ
 NLCINDIA,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 1.50 Per Share,10,EQ
-SAFARI,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
 ONGC,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 8 Per Share,5,EQ
+IMFA,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+GAJA,12-Nov-2026,12-Nov-2026,Interim Dividend - Re 0.50 Per Share,5,EQ
 GODFRYPHLP,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 10 Per Share,2,EQ
 GPPL,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 3 Per Share,10,EQ
 HINDUNILVR,12-Nov-2026,12-Nov-2026,Interim Dividend - Rs 19 Per Share,1,EQ
 CITIUSINVT,12-Nov-2026,12-Nov-2026,Distribution - Rs 5.0185 Per Unit Consists Of Rs 2.4686 Per Unit As Interest/ Re 0.0213 Per Unit As Repayment Of Debt/ Rs 0.6943 Per Unit As Dividend/ Rs 1.8343 Per Unit As Other Income,100,IV
-SONATSOFTW,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.25 Per Share,1,EQ
+ADFFOODS,11-Nov-2026,11-Nov-2026,Interim Dividend - Re 0.60 Per Share,2,EQ
 JMFINANCIL,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.65 Per Share,1,EQ
-HUDCO,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.35 Per Share,10,EQ
+INDIGRID,11-Nov-2026,11-Nov-2026,Distribution Rs 4.12 Per Unit Consists Of Interest - Rs 3.1878 Per Unit /Capital Repayment - Re 0.9322 Per Unit,100,IV
 LALPATHLAB,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+NAVNETEDUL,11-Nov-2026,11-Nov-2026,Special Dividend - Rs 1.50 Per Share/ Interim Dividend - Rs 1.50 Per Share,2,EQ
 NBCC,11-Nov-2026,11-Nov-2026,Interim Dividend - Re 0.25 Per Share,1,EQ
 NRBBEARING,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 2.50 Per Share,2,EQ
 PDSL,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 2.20 Per Share,2,EQ
 PREMIERENE,11-Nov-2026,11-Nov-2026,Interim Dividend - Re 0.50 Per Share,1,EQ
 RITES,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.90 Per Share,10,EQ
-NAVNETEDUL,11-Nov-2026,11-Nov-2026,Special Dividend - Rs 1.50 Per Share/ Interim Dividend - Rs 1.50 Per Share,2,EQ
-ADFFOODS,11-Nov-2026,11-Nov-2026,Interim Dividend - Re 0.60 Per Share,2,EQ
+SONATSOFTW,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.25 Per Share,1,EQ
 BALKRISIND,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 4 Per Share,2,EQ
+AUROPHARMA,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 7 Per Share,1,EQ
 BALRAMCHIN,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 4 Per Share,1,EQ
 CHAMBLFERT,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
 CONCOR,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.90 Per Share,5,EQ
+EVONILE,11-Nov-2026,11-Nov-2026,Rights 5:12 @ Premium Rs 855/-,5,EQ
 GALAXYSURF,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 18 Per Share,10,EQ
 GPTINFRA,11-Nov-2026,11-Nov-2026,Interim Dividend - Re 1 Per Share,10,EQ
+HUDCO,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 1.35 Per Share,10,EQ
 JYOTHYLAB,11-Nov-2026,11-Nov-2026,Buy Back,1,EQ
-AUROPHARMA,11-Nov-2026,11-Nov-2026,Interim Dividend - Rs 7 Per Share,1,EQ
-TVSINVIT,09-Nov-2026,09-Nov-2026,Distribution - Rs 1.67 Per Unit Consist Of Rs 1.57 Per Unit As Interest/ Re 0.10 Per Unit As Other Income,100,IV
-INTERISE,09-Nov-2026,10-Nov-2026,Distribution - Rs 2.05 Per Unit Consisting Of Interest Payment - Rs 1.82 Per Unit/ Return On Capital - Re 0.02 Per Unit/ Dividend- Re 0.19 Per Unit / Other Income - Re 0.02,100,IV
-METROPOLIS,09-Nov-2026,09-Nov-2026,Interim Dividend - Re 1 Per Share,2,EQ
-NXT-INFRA,09-Nov-2026,10-Nov-2026,Distribution - Rs 7.8073 Per Unit Consisting Of Rs 1.4766 As Dividend/ Rs 1.2924 As Interest/ Rs 1.2924 And Rs 5.0383 As Return Of Capital,100,IV
 OSWALAGRO,09-Nov-2026,10-Nov-2026,Interim Dividend - Re 0.50 Per Share,10,EQ
-GANESHCP,09-Nov-2026,09-Nov-2026,Interim Dividend - Rs 3.70 Per Share,10,EQ
 RIIT,09-Nov-2026,09-Nov-2026,Distribution - Rs 2.43 Per Unit Consists Of Interest - Rs 2.42/Other Income - Re 0.10,100,IV
+TVSINVIT,09-Nov-2026,09-Nov-2026,Distribution - Rs 1.67 Per Unit Consist Of Rs 1.57 Per Unit As Interest/ Re 0.10 Per Unit As Other Income,100,IV
+NXT-INFRA,09-Nov-2026,10-Nov-2026,Distribution - Rs 7.8073 Per Unit Consisting Of Rs 1.4766 As Dividend/ Rs 1.2924 As Interest/ Rs 1.2924 And Rs 5.0383 As Return Of Capital,100,IV
+METROPOLIS,09-Nov-2026,09-Nov-2026,Interim Dividend - Re 1 Per Share,2,EQ
+GANESHCP,09-Nov-2026,09-Nov-2026,Interim Dividend - Rs 3.70 Per Share,10,EQ
+INTERISE,09-Nov-2026,10-Nov-2026,Distribution - Rs 2.05 Per Unit Consisting Of Interest Payment - Rs 1.82 Per Unit/ Return On Capital - Re 0.02 Per Unit/ Dividend- Re 0.19 Per Unit / Other Income - Re 0.02,100,IV
 694GS2036,09-Nov-2026,09-Nov-2026,Interest Payment,100,GS
 DABUR,09-Nov-2026,10-Nov-2026,Interim Dividend - Rs 3.50 Per Share,1,EQ
 ESABINDIA,09-Nov-2026,10-Nov-2026,Interim Dividend - Rs 20 Per Share,10,EQ
 SAKSOFT,09-Nov-2026,10-Nov-2026,Interim Dividend - Re 0.5 Per Share,1,EQ
 824GS2033,09-Nov-2026,09-Nov-2026,Interest Payment,100,GS
 LAURUSLABS,06-Nov-2026,06-Nov-2026,Interim Dividend - Re 1 Per Share,2,EQ
-NTPC,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3 Per Share,10,EQ
+NDRINVIT,06-Nov-2026,06-Nov-2026,Distribution - Rs 2 Per Unit Consist Of Re 0.83 Per Unit As Interest / Re 0.80 Per Unit As Return Of Capital/ Re 0.21 Per Unit As Dividend / Re 0.16 Per Unit Profit From Sale Of Mf,100,IV
 NAUKRI,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3 Per Share,2,EQ
 NATIONALUM,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4.50 Per Share,5,EQ
 MOIL,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 2.20 Per Share,10,EQ
@@ -51,120 +77,120 @@ MANBA,06-Nov-2026,06-Nov-2026,Interim Dividend - Re 0.25 Per Share,10,EQ
 KMEW,06-Nov-2026,06-Nov-2026,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share,1,EQ
 KSCL,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs  5 Per Share,2,EQ
 KRT,06-Nov-2026,06-Nov-2026,Distribution - Rs 1.723 Consisting Of Re 0.919 Per Unit As Dividend/ Rs 0.318 Per Unit As Interest/ Re 0.002 Per Unit As Other Income/ Re 0.484 Per Unit As Repayment Of Debt,100,RR
-KKCL,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 2 Per Share,10,EQ
-HAPPSTMNDS,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3.05 Per Share,2,EQ
-INDUSINVIT,06-Nov-2026,06-Nov-2026,Distribution - Rs 3.55 Per Unit Consisting Of Rs 2.50 Per Unit As Interest/ Rs 1.05 Per Unit As Dividend,100,IV
-PETRONET,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 7 Per Share,10,EQ
 NXST,06-Nov-2026,06-Nov-2026,Distribution - Rs 2.367 Per Unit Consisting Of Re 0.985 As Interest/ Rs 1.051 Per Unit As Dividend/ Re 0.007 Per Unit As Other Income/ Re 0.324 Per Unit As Repayment Of Spv Level Debt,100,RR
-NDRINVIT,06-Nov-2026,06-Nov-2026,Distribution - Rs 2 Per Unit Consist Of Re 0.83 Per Unit As Interest / Re 0.80 Per Unit As Return Of Capital/ Re 0.21 Per Unit As Dividend / Re 0.16 Per Unit Profit From Sale Of Mf,100,IV
-POWERGRID,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3 Per Share,10,EQ
-ARE&M,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4.30 Per Share,1,EQ
-QUESS,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+KKCL,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 2 Per Share,10,EQ
+INDUSINVIT,06-Nov-2026,06-Nov-2026,Distribution - Rs 3.55 Per Unit Consisting Of Rs 2.50 Per Unit As Interest/ Rs 1.05 Per Unit As Dividend,100,IV
+SUNDRMFAST,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4.05 Per Share,1,EQ
+NTPC,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3 Per Share,10,EQ
+PETRONET,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 7 Per Share,10,EQ
+FLAIR,06-Nov-2026,06-Nov-2026,Interim Dividend - Re 0.50 Per Share,5,EQ
+CRIZAC,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4 Per Share,2,EQ
 IRBIT,06-Nov-2026,06-Nov-2026,Distribution - Rs 1.97 Per Unit Consisting Of Rs 1.66 Per Unit As Interest/ Re 0.31 Per Unit As Return Of Capital,100,IV
+HAPPSTMNDS,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3.05 Per Share,2,EQ
 GOPAL,06-Nov-2026,06-Nov-2026,Interim Dividend - Re 0.50 Per Share,1,EQ
 GABRIEL,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 2.15 Per Share,1,EQ
-FLAIR,06-Nov-2026,06-Nov-2026,Interim Dividend - Re 0.50 Per Share,5,EQ
+POWERGRID,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 3 Per Share,10,EQ
 CARERATING,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 10 Per Share,10,EQ
-CRIZAC,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4 Per Share,2,EQ
+ARE&M,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4.30 Per Share,1,EQ
 AMRUTANJAN,06-Nov-2026,07-Nov-2026,Interim Dividend - Re 1 Per Share,1,EQ
 761GS2030,06-Nov-2026,06-Nov-2026,Interest Payment,100,GS
-SUNDRMFAST,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 4.05 Per Share,1,EQ
 SHREMINVIT,06-Nov-2026,06-Nov-2026,Distribution - Rs 3 Per Unit Consist Of Re 0.4714 Per Unit As Dividend/ Rs 0.5055 Per Unit As Interest/ Rs 2.0231 Per Unit As Return Of Capital,100,IV
 RKFORGE,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
-VBL,05-Nov-2026,05-Nov-2026,Interim Dividend - Re 0.50 Per Share,2,EQ
-KRISHNADEF,05-Nov-2026,05-Nov-2026,Interim Dividend - Re 0.75 Per Share,10,EQ
-MINDSPACE,05-Nov-2026,05-Nov-2026,Distribution - Rs 6.67 Per Unit Consisting Of Dividend - Rs 4.17 Per Unit/ Repayment Of Spv Debt - Rs 2.50 Per Unit,275,RR
-NAVINFLUOR,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 8 Per Share,2,EQ
-SANOFI,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 75 Per Share,10,EQ
-SHAREINDIA,05-Nov-2026,05-Nov-2026,Interim Dividend - Re 0.40 Per Share,2,EQ
+QUESS,06-Nov-2026,06-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
 SUNTV,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 3.75 Per Share,5,EQ
-GNRL,05-Nov-2026,05-Nov-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
-BAGMANE,05-Nov-2026,05-Nov-2026,Distribution - Rs 1.55 Per Unit Consists Of Rs 1.22 Per Unit As Dividend & Re 0.33 Per Unit As Interest,100,RR
-BIRET,05-Nov-2026,05-Nov-2026,Distribution - Rs 5.70 Per Unit Consists Of Rs 1.72 Per Unit As Dividend/ Rs 1.54 Per Unit As Interest/Rs 2.24 Per Unit Repayemt Of Spv And Ncd/ Re 0.20 Per Unit Interest On Fd,275,RR
-BSOFT,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 3 Per Share,2,EQ
-ENGINERSIN,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 1.50 Per Share,5,EQ
+SANOFI,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 75 Per Share,10,EQ
+NAVINFLUOR,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 8 Per Share,2,EQ
 INDTONER,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 1.20 Per Share,2,EQ
-GODREJCP,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 5 Per Share,1,EQ
-CONCORDBIO,04-Nov-2026,04-Nov-2026,Bonus 1:1,1,EQ
-COALINDIA,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 10.25 Per Share,10,EQ
+MINDSPACE,05-Nov-2026,05-Nov-2026,Distribution - Rs 6.67 Per Unit Consisting Of Dividend - Rs 4.17 Per Unit/ Repayment Of Spv Debt - Rs 2.50 Per Unit,275,RR
+KRISHNADEF,05-Nov-2026,05-Nov-2026,Interim Dividend - Re 0.75 Per Share,10,EQ
+SHAREINDIA,05-Nov-2026,05-Nov-2026,Interim Dividend - Re 0.40 Per Share,2,EQ
+ENGINERSIN,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 1.50 Per Share,5,EQ
+BAGMANE,05-Nov-2026,05-Nov-2026,Distribution - Rs 1.55 Per Unit Consists Of Rs 1.22 Per Unit As Dividend & Re 0.33 Per Unit As Interest,100,RR
+BSOFT,05-Nov-2026,05-Nov-2026,Interim Dividend - Rs 3 Per Share,2,EQ
+GNRL,05-Nov-2026,05-Nov-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
+VBL,05-Nov-2026,05-Nov-2026,Interim Dividend - Re 0.50 Per Share,2,EQ
+BIRET,05-Nov-2026,05-Nov-2026,Distribution - Rs 5.70 Per Unit Consists Of Rs 1.72 Per Unit As Dividend/ Rs 1.54 Per Unit As Interest/Rs 2.24 Per Unit Repayemt Of Spv And Ncd/ Re 0.20 Per Unit Interest On Fd,275,RR
+VAIBHAVGBL,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 1.50 Per Share,2,EQ
+PRIVISCL,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
+SILVERTUC,04-Nov-2026,04-Nov-2026,Interim Dividend - Re 0.10 Per Share,2,EQ
+SUVIDHAA,04-Nov-2026,04-Nov-2026,Rights 3:8 @ Premium Re 0.50/-,1,EQ
+SYMPHONY,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
 ASIANPAINT,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 5.75 Per Share,1,EQ
 ANZEN,04-Nov-2026,04-Nov-2026,Distribution - Rs 3 Per Unit Consist Of Rs 2.5491 Per Unit As Interest/ Re 0.4139 Per Unit As Dividend/ Re 0.0370 Per Unit As Other Income,100,IV
-VAIBHAVGBL,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 1.50 Per Share,2,EQ
-SYMPHONY,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 2 Per Share,2,EQ
-PRIVISCL,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 5 Per Share,10,EQ
-SUVIDHAA,04-Nov-2026,04-Nov-2026,Rights 3:8 @ Premium Re 0.50/-,1,EQ
-SILVERTUC,04-Nov-2026,04-Nov-2026,Interim Dividend - Re 0.10 Per Share,2,EQ
-IRBINVIT,03-Nov-2026,03-Nov-2026,Distribution - Rs 1.625 Per Unit Consists Of Rs 1.475 Per Unit As Interest & Re 0.15 Per Unit As Return Of Capital,102,IV
-SASKEN,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 12 Per Share,10,EQ
-MAZDOCK,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 5 Per Share,5,EQ
-RRKABEL,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 6.50 Per Share,5,EQ
+COALINDIA,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 10.25 Per Share,10,EQ
+CONCORDBIO,04-Nov-2026,04-Nov-2026,Bonus 1:1,1,EQ
+GODREJCP,04-Nov-2026,04-Nov-2026,Interim Dividend - Rs 5 Per Share,1,EQ
 INFY,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 26 Per Share,5,EQ
 GRAVITA,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs   7.70 Per Share,2,EQ
-TANLA,02-Nov-2026,02-Nov-2026,Interim Dividend - Rs 6 Per Share,1,EQ
+SASKEN,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 12 Per Share,10,EQ
+RRKABEL,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 6.50 Per Share,5,EQ
+MAZDOCK,03-Nov-2026,03-Nov-2026,Interim Dividend - Rs 5 Per Share,5,EQ
+IRBINVIT,03-Nov-2026,03-Nov-2026,Distribution - Rs 1.625 Per Unit Consists Of Rs 1.475 Per Unit As Interest & Re 0.15 Per Unit As Return Of Capital,102,IV
 ROUTE,02-Nov-2026,02-Nov-2026,Interim Dividend - Rs 4 Per Share,10,EQ
+TANLA,02-Nov-2026,02-Nov-2026,Interim Dividend - Rs 6 Per Share,1,EQ
 COLPAL,02-Nov-2026,02-Nov-2026,Interim Dividend - Rs 24 Per Share,1,EQ
 PITTIENG,02-Nov-2026,02-Nov-2026,Interim Dividend - Rs 2 Per Share,5,EQ
-CHENNPETRO,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 25 Per Share,10,EQ
-RECLTD,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 3.50 Per Share,10,EQ
-SAGILITY,30-Oct-2026,30-Oct-2026,Interim Dividend - Re 0.15 Per Share,10,EQ
-SIYSIL,30-Oct-2026,31-Oct-2026,Interim Dividend - Rs 4 Per Share,2,EQ
-SPLPETRO,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 2.50 Per Share,2,EQ
-SSWL,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 1.50 Per Share,1,EQ
+GENUSPOWER,30-Oct-2026,30-Oct-2026,Buy Back,1,EQ
 SUPREMEIND,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 12 Per Share,2,EQ
-ADOR,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 7.50 Per Share,10,EQ
-RAILTEL,30-Oct-2026,30-Oct-2026,Interim Dividend - Re 1 Per Share,10,EQ
+SSWL,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 1.50 Per Share,1,EQ
+CHENNPETRO,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 25 Per Share,10,EQ
 CUBEINVIT,30-Oct-2026,31-Oct-2026,Distribution - Rs 3.79 Per Unit Consisting Of Rs 1.76 Per Unit As Interest/Re 0.32 Per Unit As Dividend/Rs 1.71 Per Unit As Return Of Capital,100,IV
 DALBHARAT,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 4 Per Share,2,EQ
 DCMSHRIRAM,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 4 Per Share,2,EQ
 EMBASSY,30-Oct-2026,31-Oct-2026,Distribution - Rs 7.07 Per Unit Consisting Of Re 0.14 Per Unit As Interest/ Re 0.86 Per Unit As Dividend/ Rs 6.07 Per Unit As Repayment Of Spv Level Debt,300,RR
-GENUSPOWER,30-Oct-2026,30-Oct-2026,Buy Back,1,EQ
 SEITINVIT,30-Oct-2026,31-Oct-2026,Distributn - Rs 3.13984 Per Unit Consist Of Rs 3.13797 Per Unit As Interest / Re 0.00187 Per Unit As Other Income,100,IV
+RAILTEL,30-Oct-2026,30-Oct-2026,Interim Dividend - Re 1 Per Share,10,EQ
+SAGILITY,30-Oct-2026,30-Oct-2026,Interim Dividend - Re 0.15 Per Share,10,EQ
+RECLTD,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 3.50 Per Share,10,EQ
+SIYSIL,30-Oct-2026,31-Oct-2026,Interim Dividend - Rs 4 Per Share,2,EQ
+SPLPETRO,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 2.50 Per Share,2,EQ
+ADOR,30-Oct-2026,30-Oct-2026,Interim Dividend - Rs 7.50 Per Share,10,EQ
+KAJARIACER,29-Oct-2026,29-Oct-2026,Interim Dividend - Rs 12 Per Share,1,EQ
 KSOLVES,29-Oct-2026,29-Oct-2026,Interim Dividend - Re  1 Per Share,5,EQ
 SHRIRAMFIN,29-Oct-2026,29-Oct-2026,Interim Dividend - Rs 6.50 Per Share,2,EQ
-CMPDI,29-Oct-2026,29-Oct-2026,Interim Dividend - Rs  1.05 Per Share,2,EQ
-KAJARIACER,29-Oct-2026,29-Oct-2026,Interim Dividend - Rs 12 Per Share,1,EQ
 CRISIL,29-Oct-2026,29-Oct-2026,Interim Dividend - Rs 17 Per Share,1,EQ
-CYIENT,28-Oct-2026,28-Oct-2026,Interim Dividend - Rs 12 Per Share,5,EQ
+CMPDI,29-Oct-2026,29-Oct-2026,Interim Dividend - Rs  1.05 Per Share,2,EQ
 NAM-INDIA,28-Oct-2026,28-Oct-2026,Interim Dividend - Rs 9.50 Per Share,10,EQ
 ACGL,28-Oct-2026,28-Oct-2026,Buy Back,10,EQ
+CYIENT,28-Oct-2026,28-Oct-2026,Interim Dividend - Rs 12 Per Share,5,EQ
 ANANTAM,27-Oct-2026,27-Oct-2026,Distribution - Rs 2.75 Per Unit Consist Of Re 0.60821 Per Unit As Interest/ Re 0.34940 Per Unit As Dividend/ Rs 1.78940 Per Unit As Capital Repayment/Re 0.00299 Per Unit As Other Income,100,IV
 LTTS,27-Oct-2026,27-Oct-2026,Interim Dividend - Rs 20 Per Share,2,EQ
 750GS2056,26-Oct-2026,26-Oct-2026,Interest Payment,100,GS
 HEXT,26-Oct-2026,26-Oct-2026,Interim Dividend - Rs 9.50 Per Share,1,EQ
 ICICIGI,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 7 Per Share,10,EQ
-LTM,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 25 Per Share,1,EQ
 OBEROIRLTY,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 2 Per Share,10,EQ
 GARUDA,23-Oct-2026,23-Oct-2026,Interim Dividend - Re 0.03 Per Share,5,EQ
 IRFC,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 1.15 Per Share,10,EQ
 772GS2055,23-Oct-2026,23-Oct-2026,Interest Payment,100,GS
 BEPL,23-Oct-2026,24-Oct-2026,Interim Dividend - Re 1 Per Share,1,EQ
-AZADIND,23-Oct-2026,23-Oct-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
+LTM,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 25 Per Share,1,EQ
 360ONE,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 7.50 Per Share,1,EQ
 TECHM,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs  15 Per Share,5,EQ
 HDBFS,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 2 Per Share,10,EQ
 MODISONLTD,23-Oct-2026,23-Oct-2026,Interim Dividend - Rs 4 Per Share,1,EQ
 AEPL,23-Oct-2026,23-Oct-2026,Interim Dividend - Re 0.006 Per Share,1,EQ
-TIPSMUSIC,22-Oct-2026,22-Oct-2026,Interim Dividend - Rs 6.50 Per Share,1,EQ
+AZADIND,23-Oct-2026,23-Oct-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
 VRLLOG,22-Oct-2026,22-Oct-2026,Buy Back,10,EQ
-JSWDULUX,22-Oct-2026,22-Oct-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
 ANGELONE,22-Oct-2026,22-Oct-2026,Interim Dividend - Rs 1.40 Per Share,1,EQ
+JSWDULUX,22-Oct-2026,22-Oct-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,1,EQ
+TIPSMUSIC,22-Oct-2026,22-Oct-2026,Interim Dividend - Rs 6.50 Per Share,1,EQ
+MRPL,21-Oct-2026,21-Oct-2026,Interim Dividend - Rs 3 Per Share,10,EQ
 ICICIAMC,21-Oct-2026,21-Oct-2026,Interim Dividend - Rs 30 Per Share,1,EQ
 ELECON,21-Oct-2026,21-Oct-2026,Interim Dividend - Re 0.50 Per Share,1,EQ
-MRPL,21-Oct-2026,21-Oct-2026,Interim Dividend - Rs 3 Per Share,10,EQ
-CRAMC,16-Oct-2026,16-Oct-2026,Interim Dividend - Rs 2 Per Share,10,EQ
-HINDCOMPOS,16-Oct-2026,16-Oct-2026,Special Dividend - Rs 21 Per Share,5,EQ
-HCLTECH,16-Oct-2026,16-Oct-2026,Interim Dividend - Rs 12 Per Share,2,EQ
 BANSALWIRE,16-Oct-2026,16-Oct-2026,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share,1,EQ
-SHIVAMAUTO,15-Oct-2026,15-Oct-2026,Rights 19:25 @ Premium Rs 10/-,2,EQ
-SHRADDHA,15-Oct-2026,15-Oct-2026,Rights 3:20 @ Premium Rs 150/-,10,EQ
+HCLTECH,16-Oct-2026,16-Oct-2026,Interim Dividend - Rs 12 Per Share,2,EQ
+HINDCOMPOS,16-Oct-2026,16-Oct-2026,Special Dividend - Rs 21 Per Share,5,EQ
+CRAMC,16-Oct-2026,16-Oct-2026,Interim Dividend - Rs 2 Per Share,10,EQ
 ANANDRATHI,15-Oct-2026,15-Oct-2026,Interim Dividend - Rs 4 Per Share,5,EQ
+SHRADDHA,15-Oct-2026,15-Oct-2026,Rights 3:20 @ Premium Rs 150/-,10,EQ
+SHIVAMAUTO,15-Oct-2026,15-Oct-2026,Rights 19:25 @ Premium Rs 10/-,2,EQ
 TCS,14-Oct-2026,14-Oct-2026,Interim Dividend - Rs 12 Per Share,1,EQ
 VEDL,14-Oct-2026,14-Oct-2026,Interim Dividend - Rs 5 Per Share,1,EQ
 OLAELEC,13-Oct-2026,13-Oct-2026,Rights 2:25 @ Premium Rs 17/-,10,EQ
 TCI,09-Oct-2026,09-Oct-2026,Buy Back,2,EQ
 ACCELYA,09-Oct-2026,09-Oct-2026,Dividend - Rs 35 Per Share,10,EQ
-706GS2046,09-Oct-2026,09-Oct-2026,Interest Payment,100,GS
 MOLDTKPAC,09-Oct-2026,09-Oct-2026,Bonus 1:1,5,EQ
+706GS2046,09-Oct-2026,09-Oct-2026,Interest Payment,100,GS
 MOLDTECH,09-Oct-2026,09-Oct-2026,Bonus 1:1,2,EQ
 SKYWAYS,09-Oct-2026,09-Oct-2026,Interim Dividend - Re 0.25 Per Share,10,EQ
 BUILDPRO,08-Oct-2026,08-Oct-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
@@ -175,63 +201,64 @@ BLSE,06-Oct-2026,06-Oct-2026,Face Value Split (Sub-Division) - From Rs 10/- Per 
 VERANDA,06-Oct-2026,06-Oct-2026,Demerger,10,EQ
 NMDC,05-Oct-2026,05-Oct-2026,Dividend - Re 1 Per Share,1,EQ
 KMSUGAR,01-Oct-2026,02-Oct-2026,Demerger,2,EQ
-RSYSTEMS,01-Oct-2026,01-Oct-2026,Interim Dividend - Rs 8 Per Share,1,EQ
 IGL,01-Oct-2026,01-Oct-2026,Dividend - Rs 1.50 Per Share,2,EQ
+RSYSTEMS,01-Oct-2026,01-Oct-2026,Interim Dividend - Rs 8 Per Share,1,EQ
 NATCOPHARM,01-Oct-2026,01-Oct-2026,Rights 2:21 @ Premium Rs 748/-,2,EQ
 SAIL,30-Sep-2026,30-Sep-2026,Dividend - Rs 2.35 Per Share,10,EQ
 SSDL,30-Sep-2026,30-Sep-2026,Interim Dividend - Rs 3 Per Share,10,EQ
 AASTHA,28-Sep-2026,28-Sep-2026,Bonus 1:1,10,EQ
 LOTUSDEV,25-Sep-2026,25-Sep-2026,Dividend - Re 0.50 Per Share,1,EQ
-ARFIN,24-Sep-2026,24-Sep-2026,Interim Dividend - Re 0.12 Per Share,1,EQ
 ENGINERSIN,24-Sep-2026,24-Sep-2026,Dividend - Rs 2.50 Per Share,5,EQ
-GUJTHEM,23-Sep-2026,23-Sep-2026,Dividend - Re 0.67 Per Share,1,EQ
+ARFIN,24-Sep-2026,24-Sep-2026,Interim Dividend - Re 0.12 Per Share,1,EQ
 HLEGLAS,23-Sep-2026,23-Sep-2026,Dividend - Rs 1.10 Per Share,2,EQ
+QMSMEDI,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
 HALEOSLABS,23-Sep-2026,23-Sep-2026,Dividend - Rs 1.50 Per Share,10,EQ
-GMDCLTD,23-Sep-2026,23-Sep-2026,Dividend - Rs 9.50 Per Share,2,EQ
+GUJTHEM,23-Sep-2026,23-Sep-2026,Dividend - Re 0.67 Per Share,1,EQ
 PREMEXPLN,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,2,EQ
 SAHLIBHFI,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
-ICEMAKE,23-Sep-2026,23-Sep-2026,Dividend - Rs 2.25 Per Share,10,EQ
 RMDRIP,23-Sep-2026,23-Sep-2026,Dividend - Re 0.03 Per Share,1,EQ
 REMSONSIND,23-Sep-2026,23-Sep-2026,Dividend - Re 0.10 Per Share,2,EQ
+DEVIT,23-Sep-2026,23-Sep-2026,Dividend - Re 0.10 Per Share,2,EQ
 MIDHANI,23-Sep-2026,23-Sep-2026,Dividend - Rs 1.25 Per Share,10,EQ
-SYNCOMF,23-Sep-2026,23-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
 GALLANTT,23-Sep-2026,23-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
 DHABRIYA,23-Sep-2026,23-Sep-2026,Dividend - Re 0.70 Per Share,10,EQ
-DEVIT,23-Sep-2026,23-Sep-2026,Dividend - Re 0.10 Per Share,2,EQ
+SYNCOMF,23-Sep-2026,23-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
 ODYCORP,23-Sep-2026,23-Sep-2026,Dividend - Re 0.05 Per Share,5,EQ
 JGCHEM,23-Sep-2026,23-Sep-2026,Dividend - Rs 1.10 Per Share,10,EQ
 CONFIPET,23-Sep-2026,23-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
 PASHUPATI,23-Sep-2026,23-Sep-2026,Dividend - Re 0.05 Per Share,1,EQ
-QMSMEDI,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
 HARIOMPIPE,23-Sep-2026,23-Sep-2026,Dividend - Re 0.75 Per Share,10,EQ
-AGIIL,23-Sep-2026,23-Sep-2026,Dividend - Re 0.20 Per Share,1,EQ
+ICEMAKE,23-Sep-2026,23-Sep-2026,Dividend - Rs 2.25 Per Share,10,EQ
 SIGIND,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
+AGIIL,23-Sep-2026,23-Sep-2026,Dividend - Re 0.20 Per Share,1,EQ
+PNCINFRA,23-Sep-2026,23-Sep-2026,Dividend - Re 0.60 Per Share,2,EQ
+GMDCLTD,23-Sep-2026,23-Sep-2026,Dividend - Rs 9.50 Per Share,2,EQ
+CNL,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
 CFEL,23-Sep-2026,23-Sep-2026,Dividend - Re 0.25 Per Share,5,EQ
 SRIKPRIND,23-Sep-2026,23-Sep-2026,Dividend - Re 1 Per Share,10,EQ
-SKYWAYS,23-Sep-2026,23-Sep-2026,Dividend - Re 0.65 Per Share,10,EQ
 AAATECH,23-Sep-2026,23-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 ASAHISONG,23-Sep-2026,23-Sep-2026,Dividend - Rs 1.50 Per Share,10,EQ
 APOLLO,23-Sep-2026,23-Sep-2026,Dividend - Re 0.25 Per Share,1,EQ
+SKYWAYS,23-Sep-2026,23-Sep-2026,Dividend - Re 0.65 Per Share,10,EQ
 SSWL,23-Sep-2026,23-Sep-2026,Dividend - Rs 1.50 Per Share,1,EQ
-SATIA,23-Sep-2026,23-Sep-2026,Dividend - Re 0.40 Per Share,1,EQ
-XTGLOBAL,23-Sep-2026,23-Sep-2026,Interim Dividend - Re 0.05 Per Share,1,EQ
 VINCOFE,23-Sep-2026,23-Sep-2026,Dividend - Re 0.15 Per Share,10,EQ
-TITAGARH,23-Sep-2026,23-Sep-2026,Dividend - Re 1 Per Share,2,EQ
+SATIA,23-Sep-2026,23-Sep-2026,Dividend - Re 0.40 Per Share,1,EQ
 THEMISMED,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,1,EQ
+TITAGARH,23-Sep-2026,23-Sep-2026,Dividend - Re 1 Per Share,2,EQ
 GOODLUCK,23-Sep-2026,23-Sep-2026,Dividend - Re 1 Per Share,2,EQ
-PNCINFRA,23-Sep-2026,23-Sep-2026,Dividend - Re 0.60 Per Share,2,EQ
-CNL,23-Sep-2026,23-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
-LAMBODHARA,22-Sep-2026,22-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
-RIR,22-Sep-2026,22-Sep-2026,Dividend - Re 0.10 Per Share,2,EQ
-KPIGREEN,22-Sep-2026,22-Sep-2026,Dividend - Rs 0.25 Per Share/Special Dividend - Re 0.15 Per Share,5,EQ
-REPCOHOME,22-Sep-2026,22-Sep-2026,Dividend - Rs 3 Per Share,10,EQ
+XTGLOBAL,23-Sep-2026,23-Sep-2026,Interim Dividend - Re 0.05 Per Share,1,EQ
 HINDCOMPOS,22-Sep-2026,22-Sep-2026,Dividend - Rs 2 Per Share,5,EQ
-LFIC,22-Sep-2026,22-Sep-2026,Dividend - Rs 2.50 Per Share,10,EQ
-RUBFILA,22-Sep-2026,22-Sep-2026,Dividend - Rs 2 Per Share,5,EQ
 RUCHIRA,22-Sep-2026,22-Sep-2026,Dividend - Rs 2.50 Per Share,10,EQ
 MALLCOM,22-Sep-2026,22-Sep-2026,Dividend - Rs 3 Per Share,10,EQ
+RUBFILA,22-Sep-2026,22-Sep-2026,Dividend - Rs 2 Per Share,5,EQ
+LFIC,22-Sep-2026,22-Sep-2026,Dividend - Rs 2.50 Per Share,10,EQ
+RIR,22-Sep-2026,22-Sep-2026,Dividend - Re 0.10 Per Share,2,EQ
+REPCOHOME,22-Sep-2026,22-Sep-2026,Dividend - Rs 3 Per Share,10,EQ
+LAMBODHARA,22-Sep-2026,22-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
+LAHOTIOV,22-Sep-2026,22-Sep-2026,Dividend - Re 0.20 Per Share,2,EQ
+KPIGREEN,22-Sep-2026,22-Sep-2026,Dividend - Rs 0.25 Per Share/Special Dividend - Re 0.15 Per Share,5,EQ
 KPEL,22-Sep-2026,22-Sep-2026,Dividend - Re 0.25 Per Share,5,EQ
-QPOWER,22-Sep-2026,22-Sep-2026,Dividend - Re 1 Per Share,10,EQ
+BESTAGRO,22-Sep-2026,22-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
 IRCTC,22-Sep-2026,22-Sep-2026,Dividend - Re 0.50 Per Share,2,EQ
 FISCHER,22-Sep-2026,22-Sep-2026,Dividend - Re 0.05 Per Share,1,EQ
 ONELIFECAP,22-Sep-2026,22-Sep-2026,Dividend - Re 0.01 Per Share,10,EQ
@@ -240,10 +267,10 @@ DECCANCE,22-Sep-2026,22-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
 NLCINDIA,22-Sep-2026,22-Sep-2026,Dividend - Re 0.25 Per Share,10,EQ
 CSM,22-Sep-2026,22-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
 NIBE,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.30 Per Share,10,EQ
-BESTAGRO,22-Sep-2026,22-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
 PARAGMILK,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.10 Per Share,10,EQ
+QPOWER,22-Sep-2026,22-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 GVPTECH,22-Sep-2026,22-Sep-2026,Dividend - Re 0.20 Per Share,2,EQ
-LAHOTIOV,22-Sep-2026,22-Sep-2026,Dividend - Re 0.20 Per Share,2,EQ
+TAALTECH,22-Sep-2026,22-Sep-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
 KLBRENG-B,22-Sep-2026,22-Sep-2026,Dividend - Rs 3 Per Share,10,EQ
 ARIES,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.50 Per Share/Special Dividend - Re 1 Per Share,10,EQ
 JAMNAAUTO,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.50 Per Share,1,EQ
@@ -257,23 +284,22 @@ ASHIANA,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.50 Per Share,2,EQ
 ASHAPURMIN,22-Sep-2026,22-Sep-2026,Dividend - Rs 2 Per Share,2,EQ
 BEML,22-Sep-2026,22-Sep-2026,Dividend - Rs 12.28 Per Share,5,EQ
 3BBLACKBIO,22-Sep-2026,22-Sep-2026,Dividend - Rs 5 Per Share,10,EQ
-RAJOOENG,22-Sep-2026,22-Sep-2026,Dividend - Re 0.15 Per Share,1,EQ
-AHLUCONT,22-Sep-2026,22-Sep-2026,Dividend - Re 0.70 Per Share,2,EQ
-VIVIANA,22-Sep-2026,22-Sep-2026,Dividend - Re 1 Per Sh,10,EQ
-TERASOFT,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.20 Per Share,10,EQ
 GOCLCORP,22-Sep-2026,22-Sep-2026,Dividend - Rs 30 Per Share,2,EQ
-SIGACHI,22-Sep-2026,22-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
-TAALTECH,22-Sep-2026,22-Sep-2026,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,2,EQ
-HFCL,22-Sep-2026,22-Sep-2026,Dividend - Re 0.20 Per Share,1,EQ
 AMBIKCO,22-Sep-2026,22-Sep-2026,Dividend - Rs 37 Per Share,10,EQ
-MAITHANALL,21-Sep-2026,21-Sep-2026,Dividend - Rs 6 Per Share,10,EQ
-KAJARIACER,21-Sep-2026,21-Sep-2026,Dividend - Rs 6 Per Share,1,EQ
-MAHSCOOTER,21-Sep-2026,21-Sep-2026,Intdividend - Rs 160 Per Share,10,EQ
+RAJOOENG,22-Sep-2026,22-Sep-2026,Dividend - Re 0.15 Per Share,1,EQ
+SIGACHI,22-Sep-2026,22-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
+HFCL,22-Sep-2026,22-Sep-2026,Dividend - Re 0.20 Per Share,1,EQ
+TERASOFT,22-Sep-2026,22-Sep-2026,Dividend - Rs 1.20 Per Share,10,EQ
+VIVIANA,22-Sep-2026,22-Sep-2026,Dividend - Re 1 Per Sh,10,EQ
+AHLUCONT,22-Sep-2026,22-Sep-2026,Dividend - Re 0.70 Per Share,2,EQ
 KINGFA,21-Sep-2026,21-Sep-2026,Dividend - Rs 20 Per Share,10,EQ
-MANALIPETC,21-Sep-2026,21-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
-GUJAPOLLO,21-Sep-2026,21-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
-KEYFINSERV,21-Sep-2026,21-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 MONTECARLO,21-Sep-2026,21-Sep-2026,Dividend - Rs 20 Per Share,10,EQ
+KEYFINSERV,21-Sep-2026,21-Sep-2026,Dividend - Re 1 Per Share,10,EQ
+GUJAPOLLO,21-Sep-2026,21-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
+GTPL,21-Sep-2026,21-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
+MAITHANALL,21-Sep-2026,21-Sep-2026,Dividend - Rs 6 Per Share,10,EQ
+MAHSCOOTER,21-Sep-2026,21-Sep-2026,Intdividend - Rs 160 Per Share,10,EQ
+KAJARIACER,21-Sep-2026,21-Sep-2026,Dividend - Rs 6 Per Share,1,EQ
 ROTO,21-Sep-2026,21-Sep-2026,Dividend - Re 0.19 Per Share,1,EQ
 CYBERTECH,21-Sep-2026,21-Sep-2026,Dividend - Rs 4 Per Share,10,EQ
 LANCORHOL,21-Sep-2026,21-Sep-2026,Dividend - Re 0.20 Per Share/Special Dividend - Re 0.10 Per Share,2,EQ
@@ -286,7 +312,7 @@ CONCOR,21-Sep-2026,21-Sep-2026,Dividend - Re 1 Per Sh,5,EQ
 ISGEC,21-Sep-2026,21-Sep-2026,Dividend - Rs 6 Per Share,1,EQ
 KJMCFIN,21-Sep-2026,21-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 MANYAVAR,21-Sep-2026,21-Sep-2026,Dividend - Rs 7.75 Per Share,1,EQ
-GTPL,21-Sep-2026,21-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
+MANALIPETC,21-Sep-2026,21-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
 SHIVALIK,21-Sep-2026,21-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
 BAJAJHLDNG,21-Sep-2026,21-Sep-2026,Interim Dividend - Rs 65 Per Share,10,EQ
 SHUKRAPHAR,21-Sep-2026,21-Sep-2026,Dividend - Re 0.01 Per Share,1,EQ
@@ -319,8 +345,8 @@ RITES,18-Sep-2026,20-Sep-2026,Dividend - Rs 2.75 Per Share,10,EQ
 PRAVEG,18-Sep-2026,18-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
 GUJALKALI,18-Sep-2026,18-Sep-2026,Dividend - Rs 17.70 Per Share,10,EQ
 KAMDHENU,18-Sep-2026,18-Sep-2026,Dividend - Re 0.40 Per Share,1,EQ
-KIRANVYPAR,18-Sep-2026,19-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 DONEAR,18-Sep-2026,18-Sep-2026,Dividend - Re 0.20 Per Share,2,EQ
+KIRANVYPAR,18-Sep-2026,19-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 KRBL,18-Sep-2026,18-Sep-2026,Dividend - Rs 4.50 Per Share,1,EQ
 LUXIND,18-Sep-2026,18-Sep-2026,Dividend - Rs 2 Per Share,2,EQ
 DIAMONDYD,18-Sep-2026,18-Sep-2026,Dividend - Re 0.50 Per Share,5,EQ
@@ -465,37 +491,11 @@ TPLPLASTEH,15-Sep-2026,15-Sep-2026,Dividend - Rs 1.30 Per Share,2,EQ
 TIMETECHNO,15-Sep-2026,15-Sep-2026,Dividend - Rs 1.50 Per Share,1,EQ
 TI,15-Sep-2026,15-Sep-2026,Dividend - Re 1 Per Share,10,EQ
 POCL,15-Sep-2026,15-Sep-2026,Dividend - Rs 2 Per Share,2,EQ
-INDOTHAI,11-Sep-2026,12-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
+NITINSPIN,11-Sep-2026,14-Sep-2026,Dividend - Rs 3 Per Share,10,EQ
+ADVAIT,11-Sep-2026,14-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
 PAISALO,11-Sep-2026,14-Sep-2026,Dividend - Re 0.10 Per Share,1,EQ
 IRMENERGY,11-Sep-2026,11-Sep-2026,Dividend - Rs 1.50 Per Share,10,EQ
 DYNPRO,11-Sep-2026,11-Sep-2026,Dividend - Rs 1.50 Per Share,10,EQ
 GIPCL,11-Sep-2026,11-Sep-2026,Dividend - Rs 4.10 Per Share,10,EQ
 EDELWEISS,11-Sep-2026,13-Sep-2026,Dividend - Rs 1.50 Per Share,1,EQ
 NFL,11-Sep-2026,14-Sep-2026,Dividend - Rs 1.04 Per Share,10,EQ
-CSLFINANCE,11-Sep-2026,12-Sep-2026,Dividend - Rs 3 Per Share & Special Dividend Rs 7 Per Share,10,EQ
-NITINSPIN,11-Sep-2026,14-Sep-2026,Dividend - Rs 3 Per Share,10,EQ
-LINCOLN,11-Sep-2026,11-Sep-2026,Dividend - Rs 1.80 Per Share,10,EQ
-DATAMATICS,11-Sep-2026,11-Sep-2026,Dividend - Rs 5 Per Share,5,EQ
-DCI,11-Sep-2026,12-Sep-2026,Dividend - Re 0.10 Per Share,10,EQ
-IREDA,11-Sep-2026,11-Sep-2026,Dividend - Re 0.75 Per Share,10,EQ
-MOLDTECH,11-Sep-2026,14-Sep-2026,Dividend - Rs 2 Per Share,2,EQ
-MOLDTKPAC,11-Sep-2026,14-Sep-2026,Dividend - Rs 3 Per Share,5,EQ
-KRYSTAL,11-Sep-2026,11-Sep-2026,Dividend - Rs 1.50 Per Share,10,EQ
-RHIM,11-Sep-2026,14-Sep-2026,Dividend - Rs 2.50 Per Share,1,EQ
-BRIGHTBR,11-Sep-2026,11-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
-LOTUSDEV,11-Sep-2026,11-Sep-2026,Interim Dividend - Re 0.30 Per Share,1,EQ
-NATHBIOGEN,11-Sep-2026,11-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
-ADVAIT,11-Sep-2026,14-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
-CHALET,11-Sep-2026,11-Sep-2026,Dividend - Re 1 Per Share,10,EQ
-BPLPHARMA,11-Sep-2026,12-Sep-2026,Dividend - Re 1 Per Share,10,EQ
-SRD,11-Sep-2026,12-Sep-2026,Dividend - Re 0.05 Per Share,10,EQ
-NCLIND,11-Sep-2026,11-Sep-2026,Dividend - Rs 2 Per Share,10,EQ
-ASAHIINDIA,11-Sep-2026,11-Sep-2026,Dividend - Rs 2 Per Share,1,EQ
-ASHIKAG,11-Sep-2026,12-Sep-2026,Dividend - Re 0.50 Per Share,10,EQ
-ASTRAMICRO,11-Sep-2026,11-Sep-2026,Dividend - Rs 2.40 Per Share,2,EQ
-ATULAUTO,11-Sep-2026,11-Sep-2026,Dividend - Rs 3 Per Share,5,EQ
-AXITA,11-Sep-2026,11-Sep-2026,Dividend - Re 0.05 Per Share,1,EQ
-BAJAJHCARE,11-Sep-2026,14-Sep-2026,Dividend - Rs 1.50 Per Share,5,EQ
-SKMEGGPROD,11-Sep-2026,11-Sep-2026,Dividend - Rs 1.25 Per Share,5,EQ
-AARTIIND,11-Sep-2026,14-Sep-2026,Dividend - Re 1 Per Share,5,EQ
-BLUEJET,11-Sep-2026,14-Sep-2026,Dividend - Rs 1.20 Per Share,2,EQ
