@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-11-08
+# Parkhu research pack — 2026-11-09
 
-- **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-08T18:08:57.183249+05:30
+- **session_date:** 2026-07-24 (trading day: True)
+- **generated_at_ist:** 2026-11-09T06:11:02.113513+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3251
-- trend = Bullish: 1162
-- price > SMA200: 862
-- price > EMA50: 833
-- ADX14 > 25: 318
-- RSI14 in 40-80: 304
+- universe: 3253
+- trend = Bullish: 1155
+- price > SMA200: 861
+- price > EMA50: 832
+- ADX14 > 25: 321
+- RSI14 in 40-80: 307
 - RS > 0 vs NIFTY and sector: 108
 - delivery% >= 40: 61
 - relative_volume >= 1: 2
@@ -30,7 +30,7 @@
 ## Survivors (top 2 of 2)
 
 - **NINSYS** [idea] score 84.8 — selected as idea
-- **AIROLAM** [rejected] score 67.6 — score below Watch band
+- **AIROLAM** [rejected] score 67.5 — score below Watch band
 
 ## Ideas
 
@@ -62,30 +62,30 @@
 ## Swing candidates (top)
 
 - CHOLAFIN: score=13 rs_nifty=2.01 deliv=55.22
-- PRINCEPIPE: score=13 rs_nifty=14.57 deliv=41.99
-- HESTERBIO: score=13 rs_nifty=0.89 deliv=58.72
-- SMSPHARMA: score=13 rs_nifty=0.32 deliv=45.21
-- AIROLAM: score=13 rs_nifty=18.27 deliv=59.64
-- GRPLTD: score=13 rs_nifty=2.44 deliv=59.36
-- SGMART: score=13 rs_nifty=5.43 deliv=61.5
-- SVPGLOB: score=13 rs_nifty=16.04 deliv=87.41
-- KESORAMIND: score=13 rs_nifty=12.37 deliv=67.88
 - SHRINGARMS: score=13 rs_nifty=28.86 deliv=44.35
 - TIPSMUSIC: score=13 rs_nifty=14.99 deliv=48.92
 - NELCAST: score=13 rs_nifty=3.62 deliv=45.45
-- LAL: score=13 rs_nifty=30.18 deliv=54.36
+- SGMART: score=13 rs_nifty=5.43 deliv=61.5
+- HESTERBIO: score=13 rs_nifty=0.89 deliv=58.72
 - BAHETI: score=13 rs_nifty=3.74 deliv=42.94
+- SMSPHARMA: score=13 rs_nifty=0.32 deliv=45.21
+- KESORAMIND: score=13 rs_nifty=12.37 deliv=67.88
+- AIROLAM: score=13 rs_nifty=18.27 deliv=59.64
+- PRINCEPIPE: score=13 rs_nifty=14.57 deliv=41.99
+- GRPLTD: score=13 rs_nifty=2.44 deliv=59.36
+- LAL: score=13 rs_nifty=30.18 deliv=54.36
+- SVPGLOB: score=13 rs_nifty=16.04 deliv=87.41
 - AVTNPL: score=12 rs_nifty=4.52 deliv=41.93
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -5.96% (bear)
+- Nikkei: +1.72% (bull)
 - Hang Seng: -1.27% (bear)
 - Shanghai: -1.10% (bear)
-- Kospi: -6.02% (bear)
+- Kospi: -0.59% (bear)
 - Taiwan: -4.51% (bear)
-- ASX 200: -0.49% (bear)
+- ASX 200: -0.38% (bear)
 
 ### Europe
 - FTSE 100: -1.01% (bear)
@@ -99,10 +99,10 @@
 - US VIX: -9.01% (bull)
 
 ### Macro
-- USDINR: -0.58% (bull)
-- Crude WTI: +0.34% (bull)
-- Brent: +0.03% (neutral)
-- DXY: +0.74% (bear)
+- USDINR: -0.60% (bull)
+- Crude WTI: -0.41% (bear)
+- Brent: -0.69% (bear)
+- DXY: -0.11% (neutral)
 - US 10Y: +0.45% (bear)
 - India ETF: +1.74% (bull)
 - EM ETF: +2.21% (bull)
@@ -124,6 +124,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-08/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-09/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
