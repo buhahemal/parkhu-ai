@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-11-10
+# Parkhu research pack — 2026-11-11
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-10T18:10:25.760212+05:30
+- **generated_at_ist:** 2026-11-11T01:33:37.386266+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -10,16 +10,16 @@
 - nifty: Neutral (0.06%)
 - india_vix: 17.42 (Medium)
 - fii_net: 7212.22 | dii_net: -7172.53
-- overall_risk: Medium | global_risk: Neutral
+- overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3250
-- trend = Bullish: 1126
-- price > SMA200: 841
-- price > EMA50: 811
-- ADX14 > 25: 321
-- RSI14 in 40-80: 309
+- universe: 3248
+- trend = Bullish: 1118
+- price > SMA200: 839
+- price > EMA50: 809
+- ADX14 > 25: 325
+- RSI14 in 40-80: 313
 - RS > 0 vs NIFTY and sector: 110
 - delivery% >= 40: 66
 - relative_volume >= 1: 21
@@ -38,7 +38,7 @@
 - **HCLTECH** [rejected] score 86.8 — T1 needs more than 22 trading days (~1 month)
 - **HMVL** [idea] score 84.5 — selected as idea
 - **AIROLAM** [idea] score 81.4 — selected as idea
-- **IOC** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
+- **IOC** [rejected] score 79.7 — T1 needs more than 22 trading days (~1 month)
 - **ORIENTELEC** [watchlist] score 78.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.4 — score in Watch band (70–80)
 - **AGARWALEYE** [watchlist] score 71.0 — score in Watch band (70–80)
@@ -103,57 +103,53 @@
 - **TFCILTD**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
 - **UNIONBANK**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
 
-## Closed today
-
-- HMVL: {'trade_id': '2026-11-09-HMVL', 'symbol': 'HMVL', 'company': 'Hindustan Media Ventures Limited', 'risk_sector': 'Consumer Services', 'date_opened': '2026-11-09', 'taken': None, 'entry': 95.09, 'stop': 87.48, 't1': 110.3, 't2': 117.91, 't3': 125.52, 'structure_invalidation': 80.28, 'horizon_days_t1': 10, 'horizon_days_t2': 22, 'score_at_open': 84.6, 'qty': 105, 'risk_rupees': 799.0, 'status': 'closed', 'last_price': 95.09, 'last_checked': '2026-11-10', 'mfe_pct': 0.96, 'mae_pct': -11.35, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-11-10', 'exit_price': 95.09, 'exit_reason': 'stop', 'pct_return': 0.0, 'r_multiple': 0.0, 'days_held': 1}
-
 ## Swing candidates (top)
 
 - AIROLAM: score=14 rs_nifty=8.31 deliv=43.9
-- JSWSTEEL: score=13 rs_nifty=1.02 deliv=50.93
-- SAGARDEEP: score=13 rs_nifty=2.66 deliv=77.09
-- PRINCEPIPE: score=13 rs_nifty=13.93 deliv=44.36
-- BOSCHLTD: score=13 rs_nifty=2.17 deliv=35.4
-- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
-- GRPLTD: score=13 rs_nifty=0.9 deliv=68.13
-- RUBICON: score=13 rs_nifty=2.74 deliv=45.38
-- ANGELONE: score=13 rs_nifty=1.35 deliv=41.27
-- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
-- PALREDTEC: score=13 rs_nifty=5.88 deliv=69.32
-- SATIN: score=13 rs_nifty=6.8 deliv=63.8
-- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
 - CHOLAFIN: score=13 rs_nifty=3.11 deliv=52.39
+- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
+- BOSCHLTD: score=13 rs_nifty=2.17 deliv=35.4
+- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
+- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
 - HMVL: score=13 rs_nifty=14.15 deliv=55.9
+- AGARWALEYE: score=13 rs_nifty=1.67 deliv=44.97
+- KESORAMIND: score=13 rs_nifty=13.16 deliv=46.11
+- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
+- SHRINGARMS: score=13 rs_nifty=32.89 deliv=49.21
+- SIMPLEXINF: score=13 rs_nifty=5.01 deliv=60.99
+- RUBICON: score=13 rs_nifty=2.74 deliv=45.38
+- JSWSTEEL: score=13 rs_nifty=1.02 deliv=50.93
+- UNIONBANK: score=13 rs_nifty=1.22 deliv=43.88
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.87% (bull)
-- Hang Seng: +0.44% (bull)
-- Shanghai: +0.08% (neutral)
-- Kospi: +4.39% (bull)
-- Taiwan: +2.52% (bull)
+- Nikkei: +2.33% (bull)
+- Hang Seng: -0.13% (neutral)
+- Shanghai: +0.32% (bull)
+- Kospi: -0.81% (bear)
+- Taiwan: +4.94% (bull)
 - ASX 200: +1.10% (bull)
 
 ### Europe
-- FTSE 100: +0.52% (bull)
-- DAX: +1.18% (bull)
-- Euro Stoxx 50: +1.15% (bull)
+- FTSE 100: -0.29% (bear)
+- DAX: +0.31% (bull)
+- Euro Stoxx 50: +0.59% (bull)
 
 ### US
-- S&P 500: +2.35% (bull)
-- Nasdaq: +2.74% (bull)
-- Dow: +2.15% (bull)
-- US VIX: +0.30% (neutral)
+- S&P 500: -0.61% (bear)
+- Nasdaq: -1.15% (bear)
+- Dow: -0.37% (bear)
+- US VIX: -0.35% (neutral)
 
 ### Macro
 - USDINR: +0.02% (neutral)
-- Crude WTI: -1.88% (bear)
-- Brent: -2.25% (bear)
-- DXY: +0.10% (neutral)
-- US 10Y: +0.10% (neutral)
-- India ETF: +1.02% (bull)
-- EM ETF: +2.87% (bull)
+- Crude WTI: -0.74% (bear)
+- Brent: -0.92% (bear)
+- DXY: +0.56% (bear)
+- US 10Y: +2.53% (bear)
+- India ETF: +0.57% (bull)
+- EM ETF: -0.91% (bear)
 
 
 ## Groq desk note
@@ -172,6 +168,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-10/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-11/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.

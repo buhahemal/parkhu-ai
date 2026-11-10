@@ -1,10 +1,10 @@
 {
-  "data_date": "2026-11-10",
+  "data_date": "2026-11-11",
   "symbol_cap": 50,
   "funnel": [
     {
       "gate": "universe",
-      "surviving": 3250,
+      "surviving": 3248,
       "dropped_count": 0,
       "survivor_symbols": [
         "INFOBEAN",
@@ -32,9 +32,9 @@
         "ACUTAAS",
         "ERIS",
         "KPRMILL",
-        "ADANIPOWER",
         "HDFCBANK",
         "HINDZINC",
+        "ADANIPOWER",
         "KOTAKBANK",
         "TECHM",
         "ARVEE",
@@ -56,7 +56,7 @@
         "NHPC",
         "INVENTURE",
         "KRISHNADEF",
-        "PETRONET"
+        "FINEORG"
       ],
       "dropped_symbols": [],
       "survivor_symbols_truncated": true,
@@ -64,8 +64,8 @@
     },
     {
       "gate": "trend = Bullish",
-      "surviving": 1126,
-      "dropped_count": 2124,
+      "surviving": 1118,
+      "dropped_count": 2130,
       "survivor_symbols": [
         "INFOBEAN",
         "TANLA",
@@ -91,9 +91,9 @@
         "HEGAM",
         "ACUTAAS",
         "KPRMILL",
-        "ADANIPOWER",
         "HDFCBANK",
         "HINDZINC",
+        "ADANIPOWER",
         "KOTAKBANK",
         "TECHM",
         "ARVEE",
@@ -115,8 +115,8 @@
         "NHPC",
         "INVENTURE",
         "KRISHNADEF",
-        "PETRONET",
-        "FINEORG"
+        "FINEORG",
+        "PETRONET"
       ],
       "dropped_symbols": [
         "ERIS",
@@ -135,8 +135,8 @@
         "HUDCO",
         "TAALTECH",
         "CAMS",
-        "NTPC",
         "BANDHANBNK",
+        "NTPC",
         "CANFINHOME",
         "SBICARD",
         "ASAL",
@@ -148,9 +148,10 @@
         "ONGC",
         "AUBANK",
         "BLACKROSE",
+        "IMPAL",
         "NBCC",
-        "PFIZER",
         "HARIOMPIPE",
+        "PFIZER",
         "SANDUMA",
         "IRFC",
         "BEL",
@@ -167,16 +168,15 @@
         "NILAINFRA",
         "3PLAND",
         "INOXGREEN",
-        "SONATSOFTW",
-        "BUTTERFLY"
+        "SONATSOFTW"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
     },
     {
       "gate": "price > SMA200",
-      "surviving": 841,
-      "dropped_count": 285,
+      "surviving": 839,
+      "dropped_count": 279,
       "survivor_symbols": [
         "INFOBEAN",
         "TANLA",
@@ -200,8 +200,8 @@
         "HEGAM",
         "ACUTAAS",
         "KPRMILL",
-        "ADANIPOWER",
         "HDFCBANK",
+        "ADANIPOWER",
         "KOTAKBANK",
         "TECHM",
         "ARVEE",
@@ -220,14 +220,14 @@
         "MENONBE",
         "NHPC",
         "KRISHNADEF",
-        "PETRONET",
         "FINEORG",
+        "PETRONET",
+        "DCBBANK",
         "HMVL",
         "KTKBANK",
         "VINYLINDIA",
         "ANGELONE",
-        "DCBBANK",
-        "MAHABANK"
+        "WHEELS"
       ],
       "dropped_symbols": [
         "NITTAGELA",
@@ -258,8 +258,8 @@
         "MLKFOOD",
         "CSLFINANCE",
         "TRITONV",
-        "GNRL",
         "FREDUN",
+        "GNRL",
         "ULTRAMAR",
         "CANBK",
         "JYOTIRES",
@@ -286,7 +286,7 @@
     },
     {
       "gate": "price > EMA50",
-      "surviving": 811,
+      "surviving": 809,
       "dropped_count": 30,
       "survivor_symbols": [
         "INFOBEAN",
@@ -311,8 +311,8 @@
         "HEGAM",
         "ACUTAAS",
         "KPRMILL",
-        "ADANIPOWER",
         "HDFCBANK",
+        "ADANIPOWER",
         "KOTAKBANK",
         "TECHM",
         "ARVEE",
@@ -331,14 +331,14 @@
         "MENONBE",
         "NHPC",
         "KRISHNADEF",
-        "PETRONET",
         "FINEORG",
+        "PETRONET",
+        "DCBBANK",
         "HMVL",
         "KTKBANK",
         "VINYLINDIA",
         "ANGELONE",
-        "DCBBANK",
-        "MAHABANK"
+        "WHEELS"
       ],
       "dropped_symbols": [
         "KERNEX",
@@ -367,8 +367,8 @@
         "UTSSAV",
         "TARMAT",
         "PVP",
-        "ASIANHOTNR",
         "WELENT",
+        "ASIANHOTNR",
         "PENTAGON",
         "UNIVPHOTO"
       ],
@@ -377,8 +377,8 @@
     },
     {
       "gate": "ADX14 > 25",
-      "surviving": 321,
-      "dropped_count": 490,
+      "surviving": 325,
+      "dropped_count": 484,
       "survivor_symbols": [
         "INFOBEAN",
         "TANLA",
@@ -444,11 +444,12 @@
         "ARVEE",
         "BAJAJ_AUTO",
         "MENONBE",
-        "PETRONET",
         "FINEORG",
+        "PETRONET",
+        "DCBBANK",
         "KTKBANK",
         "ANGELONE",
-        "DCBBANK",
+        "WHEELS",
         "MAHABANK",
         "MCX",
         "TRIGYN",
@@ -480,15 +481,14 @@
         "KOVAI",
         "LALPATHLAB",
         "SIGMA",
-        "SAHANA",
-        "UNITDSPR"
+        "SAHANA"
       ],
       "survivor_symbols_truncated": true,
       "dropped_symbols_truncated": true
     },
     {
       "gate": "RSI14 in 40-80",
-      "surviving": 309,
+      "surviving": 313,
       "dropped_count": 12,
       "survivor_symbols": [
         "INFOBEAN",
@@ -562,7 +562,7 @@
     {
       "gate": "RS > 0 vs NIFTY and sector",
       "surviving": 110,
-      "dropped_count": 199,
+      "dropped_count": 203,
       "survivor_symbols": [
         "TANLA",
         "ICICIBANK",
@@ -589,6 +589,7 @@
         "WIPRO",
         "TIPSMUSIC",
         "AIROLAM",
+        "SPECTRUM",
         "ORIENTHOT",
         "CHOLAFIN",
         "PANACHE",
@@ -612,8 +613,7 @@
         "SGMART",
         "PHOENIXLTD",
         "POSITRON",
-        "BOSCHLTD",
-        "M&M"
+        "BOSCHLTD"
       ],
       "dropped_symbols": [
         "INFOBEAN",
@@ -694,6 +694,7 @@
         "WIPRO",
         "TIPSMUSIC",
         "AIROLAM",
+        "SPECTRUM",
         "ORIENTHOT",
         "CHOLAFIN",
         "FDC",
@@ -723,8 +724,7 @@
         "SAREGAMA",
         "BBL",
         "PRINCEPIPE",
-        "MUFTI",
-        "JINDALSTEL"
+        "MUFTI"
       ],
       "dropped_symbols": [
         "ZENSARTECH",
@@ -812,6 +812,7 @@
         "ITCHOTELS",
         "WIPRO",
         "TIPSMUSIC",
+        "SPECTRUM",
         "ORIENTHOT",
         "CHOLAFIN",
         "FDC",
@@ -837,7 +838,6 @@
         "SAREGAMA",
         "PRINCEPIPE",
         "MUFTI",
-        "SPECTRUM",
         "RUSHIL",
         "ULTRACEMCO",
         "TIPSFILMS",
@@ -1029,7 +1029,7 @@
     },
     {
       "symbol": "IOC",
-      "score": 79.8,
+      "score": 79.7,
       "band": "Watch",
       "cmp": 146.85,
       "risk_sector": "Energy Minerals",
