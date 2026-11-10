@@ -1,27 +1,27 @@
 # Parkhu research pack — 2026-11-10
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-10T06:10:13.817953+05:30
+- **generated_at_ist:** 2026-11-10T13:18:46.575539+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Neutral**
 - nifty: Neutral (0.06%)
-- india_vix: 17.47 (Medium)
+- india_vix: 17.42 (Medium)
 - fii_net: 7212.22 | dii_net: -7172.53
 - overall_risk: Medium | global_risk: Neutral
 
 ## Funnel
 
-- universe: 3249
-- trend = Bullish: 1120
-- price > SMA200: 841
-- price > EMA50: 811
-- ADX14 > 25: 325
-- RSI14 in 40-80: 313
-- RS > 0 vs NIFTY and sector: 108
-- delivery% >= 40: 63
+- universe: 3250
+- trend = Bullish: 1123
+- price > SMA200: 838
+- price > EMA50: 808
+- ADX14 > 25: 322
+- RSI14 in 40-80: 310
+- RS > 0 vs NIFTY and sector: 110
+- delivery% >= 40: 65
 - relative_volume >= 1: 20
 - no earnings within 21d: 19
 - event_risk_score <= 1: 18
@@ -29,41 +29,41 @@
 
 ## Survivors (top 18 of 18)
 
-- **PNB** [idea] score 91.8 — selected as idea
+- **PNB** [idea] score 91.7 — selected as idea
 - **JSWSTEEL** [rejected] score 91.3 — T1 needs more than 22 trading days (~1 month)
-- **HDFCBANK** [rejected] score 88.3 — T1 needs more than 22 trading days (~1 month)
-- **SOUTHBANK** [idea] score 87.6 — selected as idea
-- **TECHM** [idea] score 87.5 — selected as idea
-- **HCLTECH** [rejected] score 86.7 — T1 needs more than 22 trading days (~1 month)
+- **HDFCBANK** [rejected] score 88.1 — T1 needs more than 22 trading days (~1 month)
+- **TECHM** [idea] score 87.6 — selected as idea
+- **SOUTHBANK** [idea] score 87.5 — selected as idea
+- **HCLTECH** [rejected] score 86.8 — T1 needs more than 22 trading days (~1 month)
 - **HMVL** [idea] score 84.5 — selected as idea
-- **IOC** [rejected] score 79.6 — T1 needs more than 22 trading days (~1 month)
+- **IOC** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
 - **ORIENTELEC** [watchlist] score 78.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.4 — score in Watch band (70–80)
-- **AGARWALEYE** [watchlist] score 71.2 — score in Watch band (70–80)
+- **AGARWALEYE** [watchlist] score 71.0 — score in Watch band (70–80)
 - **AIROLAM** [rejected] score 68.2 — score below Watch band
 - **BBL** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
-- **JINDALSTEL** [rejected] score 63.8 — T1 needs more than 22 trading days (~1 month)
+- **JINDALSTEL** [rejected] score 63.7 — T1 needs more than 22 trading days (~1 month)
 - **GLENMARK** [rejected] score 59.8 — score below Watch band
-- **HINDPETRO** [rejected] score 53.4 — T1 needs more than 22 trading days (~1 month)
+- **HINDPETRO** [rejected] score 53.5 — T1 needs more than 22 trading days (~1 month)
 - **SHREECEM** [rejected] score 49.4 — T1 needs more than 22 trading days (~1 month)
 - **BANKA** [rejected] score 46.3 — score below Watch band
 
 ## Ideas
 
-### PNB — Buy (score 91.8)
+### PNB — Buy (score 91.7)
 - Punjab National Bank | risk_sector: Banks
 - entry 132.17 | stop 125.55 | t1 145.42 | t2 152.04 | t3 158.66 | R:R 2.0
 - qty 75 | deployed 9913.0 (9.91%) | risk ₹496.0
 
-### SOUTHBANK — Buy (score 87.6)
-- South Indian Bank Limited | risk_sector: Banks
-- entry 58.68 | stop 54.9 | t1 66.23 | t2 70.01 | t3 73.78 | R:R 2.0
-- qty 170 | deployed 9976.0 (9.98%) | risk ₹643.0
-
-### TECHM — Buy (score 87.5)
+### TECHM — Buy (score 87.6)
 - Tech Mahindra Limited | risk_sector: Technology Services
 - entry 1805.0 | stop 1709.09 | t1 1996.83 | t2 2092.74 | t3 2188.65 | R:R 2.0
 - qty 5 | deployed 9025.0 (9.03%) | risk ₹480.0
+
+### SOUTHBANK — Buy (score 87.5)
+- South Indian Bank Limited | risk_sector: Banks
+- entry 58.68 | stop 54.9 | t1 66.23 | t2 70.01 | t3 73.78 | R:R 2.0
+- qty 170 | deployed 9976.0 (9.98%) | risk ₹643.0
 
 ### HMVL — Buy (score 84.5)
 - Hindustan Media Ventures Limited | risk_sector: Consumer Services
@@ -103,35 +103,35 @@
 ## Swing candidates (top)
 
 - AIROLAM: score=14 rs_nifty=8.31 deliv=43.9
+- ANGELONE: score=13 rs_nifty=1.35 deliv=41.27
+- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
 - BOSCHLTD: score=13 rs_nifty=2.17 deliv=35.4
 - CHOLAFIN: score=13 rs_nifty=3.11 deliv=52.39
-- NINSYS: score=13 rs_nifty=1.63 deliv=50.52
-- JSWSTEEL: score=13 rs_nifty=1.02 deliv=50.93
-- TIPSMUSIC: score=13 rs_nifty=14.26 deliv=46.12
-- UNIONBANK: score=13 rs_nifty=1.22 deliv=43.88
-- SAGARDEEP: score=13 rs_nifty=2.66 deliv=77.09
-- HMVL: score=13 rs_nifty=14.15 deliv=55.9
-- PRESTIGE: score=13 rs_nifty=0.4 deliv=58.72
-- BOROLTD: score=13 rs_nifty=2.01 deliv=42.54
-- SATIN: score=13 rs_nifty=6.8 deliv=63.8
-- SHRINGARMS: score=13 rs_nifty=32.89 deliv=49.21
+- RUBICON: score=13 rs_nifty=2.74 deliv=45.38
 - CONSOFINVT: score=13 rs_nifty=1.42 deliv=81.49
-- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
+- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
+- AGARWALEYE: score=13 rs_nifty=1.67 deliv=44.97
+- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
+- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
+- SAGARDEEP: score=13 rs_nifty=2.66 deliv=77.09
+- GRPLTD: score=13 rs_nifty=0.9 deliv=68.13
+- TECHM: score=13 rs_nifty=7.68 deliv=61.38
+- TIPSMUSIC: score=13 rs_nifty=14.26 deliv=46.12
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +5.26% (bull)
-- Hang Seng: -1.27% (bear)
-- Shanghai: -1.10% (bear)
-- Kospi: +4.38% (bull)
-- Taiwan: -4.51% (bear)
-- ASX 200: +1.36% (bull)
+- Nikkei: +2.87% (bull)
+- Hang Seng: +0.40% (bull)
+- Shanghai: +0.08% (neutral)
+- Kospi: +4.39% (bull)
+- Taiwan: +2.52% (bull)
+- ASX 200: +1.10% (bull)
 
 ### Europe
-- FTSE 100: -1.01% (bear)
-- DAX: -1.92% (bear)
-- Euro Stoxx 50: -0.98% (bear)
+- FTSE 100: +1.02% (bull)
+- DAX: +1.73% (bull)
+- Euro Stoxx 50: +1.94% (bull)
 
 ### US
 - S&P 500: +2.35% (bull)
@@ -140,10 +140,10 @@
 - US VIX: -22.31% (bull)
 
 ### Macro
-- USDINR: -0.59% (bull)
-- Crude WTI: -4.82% (bear)
-- Brent: -6.13% (bear)
-- DXY: -0.61% (bull)
+- USDINR: +0.02% (neutral)
+- Crude WTI: -1.73% (bear)
+- Brent: -1.57% (bear)
+- DXY: -0.07% (neutral)
 - US 10Y: +0.10% (neutral)
 - India ETF: +1.02% (bull)
 - EM ETF: +2.87% (bull)
