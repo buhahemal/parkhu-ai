@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-10
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-10T13:18:46.575539+05:30
+- **generated_at_ist:** 2026-11-10T18:10:25.760212+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,32 +15,33 @@
 ## Funnel
 
 - universe: 3250
-- trend = Bullish: 1123
-- price > SMA200: 838
-- price > EMA50: 808
-- ADX14 > 25: 322
-- RSI14 in 40-80: 310
+- trend = Bullish: 1126
+- price > SMA200: 841
+- price > EMA50: 811
+- ADX14 > 25: 321
+- RSI14 in 40-80: 309
 - RS > 0 vs NIFTY and sector: 110
-- delivery% >= 40: 65
-- relative_volume >= 1: 20
-- no earnings within 21d: 19
-- event_risk_score <= 1: 18
-- TV rating not Sell: 18
+- delivery% >= 40: 66
+- relative_volume >= 1: 21
+- no earnings within 21d: 20
+- event_risk_score <= 1: 19
+- TV rating not Sell: 19
 
-## Survivors (top 18 of 18)
+## Survivors (top 19 of 19)
 
+- **ICICIBANK** [idea] score 94.1 — selected as idea
 - **PNB** [idea] score 91.7 — selected as idea
 - **JSWSTEEL** [rejected] score 91.3 — T1 needs more than 22 trading days (~1 month)
 - **HDFCBANK** [rejected] score 88.1 — T1 needs more than 22 trading days (~1 month)
 - **TECHM** [idea] score 87.6 — selected as idea
-- **SOUTHBANK** [idea] score 87.5 — selected as idea
+- **SOUTHBANK** [rejected] score 87.5 — 25% sector cap for Banks would be breached
 - **HCLTECH** [rejected] score 86.8 — T1 needs more than 22 trading days (~1 month)
 - **HMVL** [idea] score 84.5 — selected as idea
+- **AIROLAM** [idea] score 81.4 — selected as idea
 - **IOC** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
 - **ORIENTELEC** [watchlist] score 78.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.4 — score in Watch band (70–80)
 - **AGARWALEYE** [watchlist] score 71.0 — score in Watch band (70–80)
-- **AIROLAM** [rejected] score 68.2 — score below Watch band
 - **BBL** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
 - **JINDALSTEL** [rejected] score 63.7 — T1 needs more than 22 trading days (~1 month)
 - **GLENMARK** [rejected] score 59.8 — score below Watch band
@@ -50,25 +51,30 @@
 
 ## Ideas
 
+### ICICIBANK — Buy (score 94.1)
+- ICICI Bank Limited | risk_sector: Banks
+- entry 1589.0 | stop 1526.41 | t1 1714.19 | t2 1776.78 | t3 1839.37 | R:R 2.0
+- qty 6 | deployed 9534.0 (9.53%) | risk ₹376.0
+
 ### PNB — Buy (score 91.7)
 - Punjab National Bank | risk_sector: Banks
-- entry 132.17 | stop 125.55 | t1 145.42 | t2 152.04 | t3 158.66 | R:R 2.0
+- entry 132.17 | stop 125.55 | t1 145.41 | t2 152.02 | t3 158.64 | R:R 2.0
 - qty 75 | deployed 9913.0 (9.91%) | risk ₹496.0
 
 ### TECHM — Buy (score 87.6)
 - Tech Mahindra Limited | risk_sector: Technology Services
-- entry 1805.0 | stop 1709.09 | t1 1996.83 | t2 2092.74 | t3 2188.65 | R:R 2.0
-- qty 5 | deployed 9025.0 (9.03%) | risk ₹480.0
-
-### SOUTHBANK — Buy (score 87.5)
-- South Indian Bank Limited | risk_sector: Banks
-- entry 58.68 | stop 54.9 | t1 66.23 | t2 70.01 | t3 73.78 | R:R 2.0
-- qty 170 | deployed 9976.0 (9.98%) | risk ₹643.0
+- entry 1805.0 | stop 1709.8 | t1 1995.4 | t2 2090.6 | t3 2185.8 | R:R 2.0
+- qty 5 | deployed 9025.0 (9.03%) | risk ₹476.0
 
 ### HMVL — Buy (score 84.5)
 - Hindustan Media Ventures Limited | risk_sector: Consumer Services
 - entry 95.09 | stop 87.48 | t1 110.3 | t2 117.91 | t3 125.52 | R:R 2.0
 - qty 105 | deployed 9984.0 (9.98%) | risk ₹799.0
+
+### AIROLAM — Buy (score 81.4)
+- Airo Lam Ltd. | risk_sector: Non-Energy Minerals
+- entry 106.2 | stop 97.7 | t1 123.77 | t2 132.27 | t3 140.76 | R:R 2.07
+- qty 94 | deployed 9983.0 (9.98%) | risk ₹799.0
 
 ## Open ledger
 
@@ -87,6 +93,7 @@
 - **LAURUSLABS** status=open entry=2417.4 last=2454.0 mfe=2.59 mae=-2.73 opened=2026-11-09
 - **LUMAXTECH** status=open entry=2297.6 last=2226.7 mfe=8.94 mae=-3.58 opened=2026-11-09
 - **SOUTHBANK** status=open entry=58.68 last=58.68 mfe=0.72 mae=-1.84 opened=2026-11-09
+- **AIROLAM** status=open entry=106.2 last=106.2 mfe=0.0 mae=0.0 opened=2026-11-10
 - **HMVL** status=open entry=95.09 last=95.09 mfe=0.0 mae=0.0 opened=2026-11-10
 - **NHPC** status=open entry=80.39 last=80.39 mfe=0.0 mae=0.0 opened=2026-11-10
 
@@ -103,47 +110,47 @@
 ## Swing candidates (top)
 
 - AIROLAM: score=14 rs_nifty=8.31 deliv=43.9
-- ANGELONE: score=13 rs_nifty=1.35 deliv=41.27
-- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
-- BOSCHLTD: score=13 rs_nifty=2.17 deliv=35.4
-- CHOLAFIN: score=13 rs_nifty=3.11 deliv=52.39
-- RUBICON: score=13 rs_nifty=2.74 deliv=45.38
-- CONSOFINVT: score=13 rs_nifty=1.42 deliv=81.49
-- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
-- AGARWALEYE: score=13 rs_nifty=1.67 deliv=44.97
-- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
-- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
+- JSWSTEEL: score=13 rs_nifty=1.02 deliv=50.93
 - SAGARDEEP: score=13 rs_nifty=2.66 deliv=77.09
+- PRINCEPIPE: score=13 rs_nifty=13.93 deliv=44.36
+- BOSCHLTD: score=13 rs_nifty=2.17 deliv=35.4
+- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
 - GRPLTD: score=13 rs_nifty=0.9 deliv=68.13
-- TECHM: score=13 rs_nifty=7.68 deliv=61.38
-- TIPSMUSIC: score=13 rs_nifty=14.26 deliv=46.12
+- RUBICON: score=13 rs_nifty=2.74 deliv=45.38
+- ANGELONE: score=13 rs_nifty=1.35 deliv=41.27
+- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
+- PALREDTEC: score=13 rs_nifty=5.88 deliv=69.32
+- SATIN: score=13 rs_nifty=6.8 deliv=63.8
+- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
+- CHOLAFIN: score=13 rs_nifty=3.11 deliv=52.39
+- HMVL: score=13 rs_nifty=14.15 deliv=55.9
 
 ## World markets (India cues)
 
 ### Asia
 - Nikkei: +2.87% (bull)
-- Hang Seng: +0.40% (bull)
+- Hang Seng: +0.44% (bull)
 - Shanghai: +0.08% (neutral)
 - Kospi: +4.39% (bull)
 - Taiwan: +2.52% (bull)
 - ASX 200: +1.10% (bull)
 
 ### Europe
-- FTSE 100: +1.02% (bull)
-- DAX: +1.73% (bull)
-- Euro Stoxx 50: +1.94% (bull)
+- FTSE 100: +0.52% (bull)
+- DAX: +1.18% (bull)
+- Euro Stoxx 50: +1.15% (bull)
 
 ### US
 - S&P 500: +2.35% (bull)
 - Nasdaq: +2.74% (bull)
 - Dow: +2.15% (bull)
-- US VIX: -22.31% (bull)
+- US VIX: +0.30% (neutral)
 
 ### Macro
 - USDINR: +0.02% (neutral)
-- Crude WTI: -1.73% (bear)
-- Brent: -1.57% (bear)
-- DXY: -0.07% (neutral)
+- Crude WTI: -1.88% (bear)
+- Brent: -2.25% (bear)
+- DXY: +0.10% (neutral)
 - US 10Y: +0.10% (neutral)
 - India ETF: +1.02% (bull)
 - EM ETF: +2.87% (bull)
