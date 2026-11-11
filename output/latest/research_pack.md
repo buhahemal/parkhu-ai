@@ -1,140 +1,119 @@
 # Parkhu research pack — 2026-11-11
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-11T06:10:38.101495+05:30
+- **generated_at_ist:** 2026-11-11T12:36:59.516444+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Neutral**
-- nifty: Neutral (0.06%)
-- india_vix: 17.42 (Medium)
+- market_regime: **Bullish**
+- nifty: Bullish (0.97%)
+- india_vix: 17.5 (Medium)
 - fii_net: 7212.22 | dii_net: -7172.53
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3254
-- trend = Bullish: 1126
-- price > SMA200: 842
-- price > EMA50: 812
-- ADX14 > 25: 325
-- RSI14 in 40-80: 313
-- RS > 0 vs NIFTY and sector: 110
-- delivery% >= 40: 66
-- relative_volume >= 1: 21
-- no earnings within 21d: 20
-- event_risk_score <= 1: 19
-- TV rating not Sell: 19
+- universe: 3249
+- trend = Bullish: 1284
+- price > SMA200: 950
+- price > EMA50: 924
+- ADX14 > 25: 362
+- RSI14 in 40-80: 350
+- RS > 0 vs NIFTY and sector: 122
+- delivery% >= 40: 73
+- relative_volume >= 1: 9
+- no earnings within 21d: 8
+- event_risk_score <= 1: 8
+- TV rating not Sell: 8
 
-## Survivors (top 19 of 19)
+## Survivors (top 8 of 8)
 
-- **ICICIBANK** [idea] score 94.3 — selected as idea
-- **PNB** [idea] score 91.8 — selected as idea
-- **JSWSTEEL** [rejected] score 91.3 — T1 needs more than 22 trading days (~1 month)
-- **HDFCBANK** [rejected] score 88.3 — T1 needs more than 22 trading days (~1 month)
-- **SOUTHBANK** [rejected] score 87.7 — 25% sector cap for Banks would be breached
-- **TECHM** [idea] score 87.6 — selected as idea
-- **HCLTECH** [rejected] score 86.8 — T1 needs more than 22 trading days (~1 month)
-- **HMVL** [idea] score 84.5 — selected as idea
-- **AIROLAM** [idea] score 81.4 — selected as idea
-- **IOC** [rejected] score 79.6 — T1 needs more than 22 trading days (~1 month)
+- **TANLA** [idea] score 94.5 — selected as idea
+- **PNB** [idea] score 92.4 — selected as idea
+- **UNIONBANK** [idea] score 91.9 — selected as idea
+- **SOUTHBANK** [rejected] score 88.0 — 25% sector cap for Banks would be breached
 - **ORIENTELEC** [watchlist] score 78.9 — score in Watch band (70–80)
-- **LT** [watchlist] score 72.4 — score in Watch band (70–80)
-- **AGARWALEYE** [watchlist] score 71.0 — score in Watch band (70–80)
-- **BBL** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
-- **JINDALSTEL** [rejected] score 63.7 — T1 needs more than 22 trading days (~1 month)
-- **GLENMARK** [rejected] score 59.8 — score below Watch band
-- **HINDPETRO** [rejected] score 53.4 — T1 needs more than 22 trading days (~1 month)
-- **SHREECEM** [rejected] score 49.4 — T1 needs more than 22 trading days (~1 month)
+- **INSPIRISYS** [rejected] score 71.5 — T1 needs more than 22 trading days (~1 month)
+- **HINDPETRO** [rejected] score 51.7 — T1 needs more than 22 trading days (~1 month)
 - **BANKA** [rejected] score 46.3 — score below Watch band
 
 ## Ideas
 
-### ICICIBANK — Buy (score 94.3)
-- ICICI Bank Limited | risk_sector: Banks
-- entry 1589.0 | stop 1526.41 | t1 1714.19 | t2 1776.78 | t3 1839.37 | R:R 2.0
-- qty 6 | deployed 9534.0 (9.53%) | risk ₹376.0
+### TANLA — Buy (score 94.5)
+- Tanla Platforms Ltd | risk_sector: Technology Services
+- entry 694.9 | stop 639.31 | t1 806.08 | t2 861.68 | t3 917.27 | R:R 2.0
+- qty 14 | deployed 9729.0 (9.73%) | risk ₹778.0
 
-### PNB — Buy (score 91.8)
+### PNB — Buy (score 92.4)
 - Punjab National Bank | risk_sector: Banks
-- entry 132.17 | stop 125.55 | t1 145.41 | t2 152.02 | t3 158.64 | R:R 2.0
-- qty 75 | deployed 9913.0 (9.91%) | risk ₹496.0
+- entry 137.87 | stop 130.75 | t1 152.11 | t2 159.23 | t3 166.35 | R:R 2.0
+- qty 72 | deployed 9927.0 (9.93%) | risk ₹513.0
 
-### TECHM — Buy (score 87.6)
-- Tech Mahindra Limited | risk_sector: Technology Services
-- entry 1805.0 | stop 1709.8 | t1 1995.4 | t2 2090.6 | t3 2185.8 | R:R 2.0
-- qty 5 | deployed 9025.0 (9.03%) | risk ₹476.0
-
-### HMVL — Buy (score 84.5)
-- Hindustan Media Ventures Limited | risk_sector: Consumer Services
-- entry 95.09 | stop 87.48 | t1 110.3 | t2 117.91 | t3 125.52 | R:R 2.0
-- qty 105 | deployed 9984.0 (9.98%) | risk ₹799.0
-
-### AIROLAM — Buy (score 81.4)
-- Airo Lam Ltd. | risk_sector: Non-Energy Minerals
-- entry 106.2 | stop 97.7 | t1 123.77 | t2 132.27 | t3 140.76 | R:R 2.07
-- qty 94 | deployed 9983.0 (9.98%) | risk ₹799.0
+### UNIONBANK — Buy (score 91.9)
+- Union Bank of India Limited | risk_sector: Banks
+- entry 199.8 | stop 189.93 | t1 219.54 | t2 229.41 | t3 239.27 | R:R 2.0
+- qty 50 | deployed 9990.0 (9.99%) | risk ₹494.0
 
 ## Open ledger
 
-- **UNIONBANK** status=open entry=182.85 last=197.0 mfe=7.77 mae=-3.04 opened=2026-10-22
-- **KOTAKBANK** status=open entry=459.0 last=479.5 mfe=5.27 mae=-4.3 opened=2026-10-29
-- **NINSYS** status=open entry=939.6 last=931.35 mfe=7.07 mae=-6.34 opened=2026-10-30
-- **ALIVUS** status=open entry=1447.6 last=1474.4 mfe=8.73 mae=-3.05 opened=2026-11-02
-- **TFCILTD** status=open entry=157.96 last=168.42 mfe=8.89 mae=-4.27 opened=2026-11-02
-- **GAIL** status=open entry=186.22 last=188.0 mfe=1.44 mae=-3.34 opened=2026-11-04
-- **CHOLAFIN** status=open entry=1766.2 last=1790.8 mfe=1.69 mae=-3.63 opened=2026-11-05
-- **ICICIBANK** status=open entry=1477.3 last=1589.0 mfe=7.76 mae=-2.13 opened=2026-11-05
-- **PNB** status=open entry=126.1 last=132.17 mfe=5.06 mae=-2.38 opened=2026-11-05
-- **TECHM** status=open entry=1822.7 last=1805.0 mfe=2.05 mae=-1.59 opened=2026-11-05
-- **GLENMARK** status=open entry=2481.8 last=2671.1 mfe=9.36 mae=-4.69 opened=2026-11-06
-- **ORIENTELEC** status=open entry=199.62 last=203.74 mfe=2.7 mae=-6.06 opened=2026-11-06
-- **LAURUSLABS** status=open entry=2417.4 last=2454.0 mfe=2.59 mae=-2.73 opened=2026-11-09
-- **LUMAXTECH** status=open entry=2297.6 last=2226.7 mfe=8.94 mae=-3.58 opened=2026-11-09
-- **SOUTHBANK** status=open entry=58.68 last=58.68 mfe=0.72 mae=-1.84 opened=2026-11-09
-- **AIROLAM** status=open entry=106.2 last=106.2 mfe=0.0 mae=0.0 opened=2026-11-10
-- **HMVL** status=open entry=95.09 last=95.09 mfe=0.0 mae=0.0 opened=2026-11-10
-- **NHPC** status=open entry=80.39 last=80.39 mfe=0.0 mae=0.0 opened=2026-11-10
+- **UNIONBANK** status=open entry=182.85 last=199.8 mfe=10.5 mae=-3.04 opened=2026-10-22
+- **KOTAKBANK** status=open entry=459.0 last=486.9 mfe=6.98 mae=-4.3 opened=2026-10-29
+- **NINSYS** status=open entry=939.6 last=890.0 mfe=7.07 mae=-6.34 opened=2026-10-30
+- **ALIVUS** status=open entry=1447.6 last=1462.8 mfe=8.73 mae=-3.05 opened=2026-11-02
+- **TFCILTD** status=open entry=157.96 last=168.85 mfe=8.89 mae=-4.27 opened=2026-11-02
+- **GAIL** status=open entry=186.22 last=188.79 mfe=1.92 mae=-3.34 opened=2026-11-04
+- **CHOLAFIN** status=open entry=1766.2 last=1814.7 mfe=3.6 mae=-3.63 opened=2026-11-05
+- **ICICIBANK** status=open entry=1477.3 last=1578.8 mfe=9.39 mae=-2.13 opened=2026-11-05
+- **PNB** status=open entry=126.1 last=137.87 mfe=10.23 mae=-2.38 opened=2026-11-05
+- **TECHM** status=open entry=1822.7 last=1790.0 mfe=2.05 mae=-2.28 opened=2026-11-05
+- **GLENMARK** status=open entry=2481.8 last=2667.6 mfe=9.36 mae=-4.69 opened=2026-11-06
+- **ORIENTELEC** status=open entry=199.62 last=204.7 mfe=3.65 mae=-6.06 opened=2026-11-06
+- **LAURUSLABS** status=open entry=2417.4 last=2434.8 mfe=2.92 mae=-2.73 opened=2026-11-09
+- **LUMAXTECH** status=open entry=2297.6 last=2243.1 mfe=8.94 mae=-5.34 opened=2026-11-09
+- **SOUTHBANK** status=open entry=58.68 last=61.18 mfe=5.3 mae=-1.84 opened=2026-11-09
+- **AIROLAM** status=open entry=106.2 last=112.0 mfe=9.04 mae=0.0 opened=2026-11-10
+- **HMVL** status=open entry=95.09 last=96.02 mfe=2.79 mae=-2.71 opened=2026-11-10
+- **NHPC** status=open entry=80.39 last=79.33 mfe=0.01 mae=-2.56 opened=2026-11-10
+- **TANLA** status=open entry=694.9 last=694.9 mfe=0.0 mae=0.0 opened=2026-11-11
 
 ## Needs action
 
-- **ALIVUS**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
-- **TFCILTD**: TIGHTEN / REVIEW — ADX 24 — trend no longer tradeable — one condition gone, thesis thinning
-- **UNIONBANK**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
+- **ALIVUS**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
+- **TFCILTD**: TIGHTEN / REVIEW — ADX 25 — trend no longer tradeable — one condition gone, thesis thinning
 
 ## Swing candidates (top)
 
-- AIROLAM: score=14 rs_nifty=8.31 deliv=43.9
-- UNIONBANK: score=13 rs_nifty=1.22 deliv=43.88
-- AGARWALEYE: score=13 rs_nifty=1.67 deliv=44.97
-- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
-- PRINCEPIPE: score=13 rs_nifty=13.93 deliv=44.36
-- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
-- NINSYS: score=13 rs_nifty=1.63 deliv=50.52
-- KESORAMIND: score=13 rs_nifty=13.16 deliv=46.11
-- BOROLTD: score=13 rs_nifty=2.01 deliv=42.54
-- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
-- CONSOFINVT: score=13 rs_nifty=1.42 deliv=81.49
-- SHRINGARMS: score=13 rs_nifty=32.89 deliv=49.21
-- SIMPLEXINF: score=13 rs_nifty=5.01 deliv=60.99
-- GRPLTD: score=13 rs_nifty=0.9 deliv=68.13
-- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
+- CHOLAFIN: score=13 rs_nifty=1.87 deliv=52.39
+- SHRINGARMS: score=13 rs_nifty=31.79 deliv=49.21
+- SATIN: score=13 rs_nifty=5.33 deliv=63.8
+- PRINCEPIPE: score=13 rs_nifty=14.32 deliv=44.36
+- SEJALLTD: score=13 rs_nifty=30.55 deliv=41.43
+- TANLA: score=13 rs_nifty=27.19 deliv=43.04
+- AIROLAM: score=13 rs_nifty=13.47 deliv=43.9
+- IIFL: score=13 rs_nifty=0.52 deliv=40.25
+- BOROLTD: score=13 rs_nifty=2.7 deliv=42.54
+- SSWL: score=13 rs_nifty=18.7 deliv=40.13
+- TIPSMUSIC: score=13 rs_nifty=7.8 deliv=46.12
+- SIMPLEXINF: score=13 rs_nifty=2.65 deliv=60.99
+- LAL: score=13 rs_nifty=13.22 deliv=71.84
+- KESORAMIND: score=13 rs_nifty=8.92 deliv=46.11
+- PARACABLES: score=13 rs_nifty=9.49 deliv=43.35
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.63% (bull)
-- Hang Seng: -0.13% (neutral)
-- Shanghai: +0.32% (bull)
-- Kospi: +4.19% (bull)
-- Taiwan: +4.94% (bull)
-- ASX 200: +1.10% (bull)
+- Nikkei: +1.31% (bull)
+- Hang Seng: -0.81% (bear)
+- Shanghai: +0.42% (bull)
+- Kospi: +2.60% (bull)
+- Taiwan: +3.62% (bull)
+- ASX 200: +0.27% (bull)
 
 ### Europe
-- FTSE 100: +1.02% (bull)
-- DAX: +1.73% (bull)
-- Euro Stoxx 50: +1.94% (bull)
+- FTSE 100: -0.29% (bear)
+- DAX: +0.31% (bull)
+- Euro Stoxx 50: +0.59% (bull)
 
 ### US
 - S&P 500: -0.38% (bear)
@@ -143,10 +122,10 @@
 - US VIX: -2.31% (bull)
 
 ### Macro
-- USDINR: -0.03% (neutral)
-- Crude WTI: -0.71% (bear)
-- Brent: -0.76% (bear)
-- DXY: +0.56% (bear)
+- USDINR: -0.15% (neutral)
+- Crude WTI: +0.43% (bull)
+- Brent: +0.84% (bull)
+- DXY: +0.10% (neutral)
 - US 10Y: +2.45% (bear)
 - India ETF: +0.60% (bull)
 - EM ETF: -0.75% (bear)

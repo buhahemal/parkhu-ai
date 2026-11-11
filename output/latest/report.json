@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-11",
-  "generated_at_ist": "2026-11-11T01:33:37.386266+05:30",
-  "duration_seconds": 291.8,
+  "generated_at_ist": "2026-11-11T06:10:38.101495+05:30",
+  "duration_seconds": 405.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3228,
-      "seconds": 3.8
+      "seconds": 3.1
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14561,
-      "cache_rows": 7991492,
-      "symbols": 2921,
-      "failed": 38,
+      "rows": 14546,
+      "cache_rows": 7986926,
+      "symbols": 2920,
+      "failed": 37,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2519,
+      "warm": 2514,
       "cold": 437,
-      "new_symbols": 40,
+      "new_symbols": 39,
       "retries": 2,
-      "seconds": 186.7
+      "seconds": 295.8
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.4
+      "seconds": 1.1
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.8
+      "seconds": 2.4
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.1
+      "seconds": 4.2
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.3
+      "seconds": 3.5
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 5.7
+      "seconds": 7.1
     },
     {
       "agent": "stock_options",
@@ -78,26 +78,26 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2377,
-      "seconds": 19.0
+      "rows": 2375,
+      "seconds": 18.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.8
+      "seconds": 3.4
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.5
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.3
+      "seconds": 6.2
     },
     {
       "agent": "relative_strength",
@@ -138,8 +138,8 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2913,
-      "with_structure": 2910,
+      "rows": 2910,
+      "with_structure": 2907,
       "lookback": 0,
       "source": "database/ohlc",
       "seconds": 9.6
@@ -147,8 +147,8 @@
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3248,
-      "seconds": 4.6
+      "rows": 3254,
+      "seconds": 4.4
     },
     {
       "agent": "swing_brief",
@@ -292,6 +292,10 @@
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-11/relative_strength.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-11/relative_strength.csv"
     },
+    "report.json": {
+      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-11/report.json",
+      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-11/report.json"
+    },
     "research_pack.json": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-11/research_pack.json",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-11/research_pack.json"
@@ -331,10 +335,6 @@
     "watchlist.csv": {
       "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-11/watchlist.csv",
       "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-11/watchlist.csv"
-    },
-    "report.json": {
-      "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-11/report.json",
-      "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-11/report.json"
     }
   }
 }
