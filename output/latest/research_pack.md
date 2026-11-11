@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-11
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-11T01:33:37.386266+05:30
+- **generated_at_ist:** 2026-11-11T06:10:38.101495+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,10 +14,10 @@
 
 ## Funnel
 
-- universe: 3248
-- trend = Bullish: 1118
-- price > SMA200: 839
-- price > EMA50: 809
+- universe: 3254
+- trend = Bullish: 1126
+- price > SMA200: 842
+- price > EMA50: 812
 - ADX14 > 25: 325
 - RSI14 in 40-80: 313
 - RS > 0 vs NIFTY and sector: 110
@@ -29,34 +29,34 @@
 
 ## Survivors (top 19 of 19)
 
-- **ICICIBANK** [idea] score 94.1 — selected as idea
-- **PNB** [idea] score 91.7 — selected as idea
+- **ICICIBANK** [idea] score 94.3 — selected as idea
+- **PNB** [idea] score 91.8 — selected as idea
 - **JSWSTEEL** [rejected] score 91.3 — T1 needs more than 22 trading days (~1 month)
-- **HDFCBANK** [rejected] score 88.1 — T1 needs more than 22 trading days (~1 month)
+- **HDFCBANK** [rejected] score 88.3 — T1 needs more than 22 trading days (~1 month)
+- **SOUTHBANK** [rejected] score 87.7 — 25% sector cap for Banks would be breached
 - **TECHM** [idea] score 87.6 — selected as idea
-- **SOUTHBANK** [rejected] score 87.5 — 25% sector cap for Banks would be breached
 - **HCLTECH** [rejected] score 86.8 — T1 needs more than 22 trading days (~1 month)
 - **HMVL** [idea] score 84.5 — selected as idea
 - **AIROLAM** [idea] score 81.4 — selected as idea
-- **IOC** [rejected] score 79.7 — T1 needs more than 22 trading days (~1 month)
+- **IOC** [rejected] score 79.6 — T1 needs more than 22 trading days (~1 month)
 - **ORIENTELEC** [watchlist] score 78.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.4 — score in Watch band (70–80)
 - **AGARWALEYE** [watchlist] score 71.0 — score in Watch band (70–80)
 - **BBL** [rejected] score 65.2 — T1 needs more than 22 trading days (~1 month)
 - **JINDALSTEL** [rejected] score 63.7 — T1 needs more than 22 trading days (~1 month)
 - **GLENMARK** [rejected] score 59.8 — score below Watch band
-- **HINDPETRO** [rejected] score 53.5 — T1 needs more than 22 trading days (~1 month)
+- **HINDPETRO** [rejected] score 53.4 — T1 needs more than 22 trading days (~1 month)
 - **SHREECEM** [rejected] score 49.4 — T1 needs more than 22 trading days (~1 month)
 - **BANKA** [rejected] score 46.3 — score below Watch band
 
 ## Ideas
 
-### ICICIBANK — Buy (score 94.1)
+### ICICIBANK — Buy (score 94.3)
 - ICICI Bank Limited | risk_sector: Banks
 - entry 1589.0 | stop 1526.41 | t1 1714.19 | t2 1776.78 | t3 1839.37 | R:R 2.0
 - qty 6 | deployed 9534.0 (9.53%) | risk ₹376.0
 
-### PNB — Buy (score 91.7)
+### PNB — Buy (score 91.8)
 - Punjab National Bank | risk_sector: Banks
 - entry 132.17 | stop 125.55 | t1 145.41 | t2 152.02 | t3 158.64 | R:R 2.0
 - qty 75 | deployed 9913.0 (9.91%) | risk ₹496.0
@@ -106,50 +106,50 @@
 ## Swing candidates (top)
 
 - AIROLAM: score=14 rs_nifty=8.31 deliv=43.9
-- CHOLAFIN: score=13 rs_nifty=3.11 deliv=52.39
-- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
-- BOSCHLTD: score=13 rs_nifty=2.17 deliv=35.4
-- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
-- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
-- HMVL: score=13 rs_nifty=14.15 deliv=55.9
+- UNIONBANK: score=13 rs_nifty=1.22 deliv=43.88
 - AGARWALEYE: score=13 rs_nifty=1.67 deliv=44.97
+- LUMAXTECH: score=13 rs_nifty=11.75 deliv=29.76
+- PRINCEPIPE: score=13 rs_nifty=13.93 deliv=44.36
+- ICICIBANK: score=13 rs_nifty=4.58 deliv=64.52
+- NINSYS: score=13 rs_nifty=1.63 deliv=50.52
 - KESORAMIND: score=13 rs_nifty=13.16 deliv=46.11
-- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
+- BOROLTD: score=13 rs_nifty=2.01 deliv=42.54
+- DIGJAMLMTD: score=13 rs_nifty=24.41 deliv=95.59
+- CONSOFINVT: score=13 rs_nifty=1.42 deliv=81.49
 - SHRINGARMS: score=13 rs_nifty=32.89 deliv=49.21
 - SIMPLEXINF: score=13 rs_nifty=5.01 deliv=60.99
-- RUBICON: score=13 rs_nifty=2.74 deliv=45.38
-- JSWSTEEL: score=13 rs_nifty=1.02 deliv=50.93
-- UNIONBANK: score=13 rs_nifty=1.22 deliv=43.88
+- GRPLTD: score=13 rs_nifty=0.9 deliv=68.13
+- BAHETI: score=13 rs_nifty=2.02 deliv=47.02
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.33% (bull)
+- Nikkei: +2.63% (bull)
 - Hang Seng: -0.13% (neutral)
 - Shanghai: +0.32% (bull)
-- Kospi: -0.81% (bear)
+- Kospi: +4.19% (bull)
 - Taiwan: +4.94% (bull)
 - ASX 200: +1.10% (bull)
 
 ### Europe
-- FTSE 100: -0.29% (bear)
-- DAX: +0.31% (bull)
-- Euro Stoxx 50: +0.59% (bull)
+- FTSE 100: +1.02% (bull)
+- DAX: +1.73% (bull)
+- Euro Stoxx 50: +1.94% (bull)
 
 ### US
-- S&P 500: -0.61% (bear)
-- Nasdaq: -1.15% (bear)
-- Dow: -0.37% (bear)
-- US VIX: -0.35% (neutral)
+- S&P 500: -0.38% (bear)
+- Nasdaq: -0.74% (bear)
+- Dow: -0.30% (bear)
+- US VIX: -2.31% (bull)
 
 ### Macro
-- USDINR: +0.02% (neutral)
-- Crude WTI: -0.74% (bear)
-- Brent: -0.92% (bear)
+- USDINR: -0.03% (neutral)
+- Crude WTI: -0.71% (bear)
+- Brent: -0.76% (bear)
 - DXY: +0.56% (bear)
-- US 10Y: +2.53% (bear)
-- India ETF: +0.57% (bull)
-- EM ETF: -0.91% (bear)
+- US 10Y: +2.45% (bear)
+- India ETF: +0.60% (bull)
+- EM ETF: -0.75% (bear)
 
 
 ## Groq desk note

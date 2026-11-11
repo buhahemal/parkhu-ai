@@ -64,7 +64,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 
 ### ICICIBANK — ICICI Bank Limited
 
-Banks (Regional Banks) · CMP ₹1,589 · score **94.1** (Buy)
+Banks (Regional Banks) · CMP ₹1,589 · score **94.3** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -84,7 +84,7 @@ Banks (Regional Banks) · CMP ₹1,589 · score **94.1** (Buy)
 
 ### PNB — Punjab National Bank
 
-Banks (Major Banks) · CMP ₹132 · score **91.7** (Buy)
+Banks (Major Banks) · CMP ₹132 · score **91.8** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -138,7 +138,7 @@ Consumer Services (Publishing: Newspapers) · CMP ₹95 · score **84.5** (Buy)
 
 **Position:** 105 shares · deploy ₹9,984 (9.98% of capital) · risk ₹799 (0.8%) if stopped · profit ₹1,597 at T1, ₹2,396 at T2 · size set by exposure cap (10%/name)
 
-**Evidence:** ADX 27.4 · RSI 76 · delivery 55.9% · RS vs Nifty 14.2%, vs sector 20.5% · 1m 26.8%, 3m 3.4% · -12.1% from 52w high · ATR 5.2% of price · factor rank 66 · TV Strong buy · next earnings in 69d
+**Evidence:** ADX 27.4 · RSI 76 · delivery 55.9% · RS vs Nifty 14.2%, vs sector 20.5% · 1m 26.8%, 3m 3.4% · -12.1% from 52w high · ATR 5.2% of price · factor rank 67 · TV Strong buy · next earnings in 69d
 
 **Invalidation:** a close below ₹87; the real structural invalidation is lower, at ₹80 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 13.74% above entry.
 
