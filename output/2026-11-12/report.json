@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-12",
-  "generated_at_ist": "2026-11-12T13:12:01.129079+05:30",
-  "duration_seconds": 326.9,
+  "generated_at_ist": "2026-11-12T18:08:41.493397+05:30",
+  "duration_seconds": 287.6,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3227,
-      "seconds": 3.2
+      "rows": 3228,
+      "seconds": 4.8
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14560,
-      "cache_rows": 7989477,
-      "symbols": 2921,
-      "failed": 41,
+      "rows": 14557,
+      "cache_rows": 7991868,
+      "symbols": 2920,
+      "failed": 39,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2515,
-      "cold": 441,
-      "new_symbols": 43,
+      "warm": 2518,
+      "cold": 437,
+      "new_symbols": 41,
       "retries": 2,
-      "seconds": 237.3
+      "seconds": 193.8
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3227,
+      "rows": 3228,
       "seconds": 0.1
     },
     {
@@ -42,74 +42,74 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.6
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.2
+      "seconds": 0.8
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.3
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.4
+      "seconds": 3.5
     },
     {
       "agent": "derivatives",
       "status": "ok",
-      "rows": 467,
-      "seconds": 5.1
+      "rows": 468,
+      "seconds": 4.9
     },
     {
       "agent": "stock_options",
       "status": "skipped",
       "rows": 0,
       "reason": "PARKHU_STOCK_OPTIONS disabled",
-      "seconds": 0.0
+      "seconds": 0.1
     },
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2380,
-      "seconds": 17.9
+      "rows": 2384,
+      "seconds": 5.8
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.0
+      "seconds": 3.1
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.6
+      "seconds": 2.4
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.4
+      "seconds": 2.6
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3227,
+      "rows": 3228,
       "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3227,
-      "seconds": 0.4
+      "rows": 3228,
+      "seconds": 0.6
     },
     {
       "agent": "fno_momentum",
@@ -139,37 +139,39 @@
       "agent": "ohlc_features",
       "status": "ok",
       "rows": 2912,
-      "with_structure": 2912,
+      "with_structure": 2911,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 9.1
+      "seconds": 12.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3247,
-      "seconds": 4.3
+      "rows": 3250,
+      "seconds": 5.0
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 3,
+      "rows": 5,
       "ideas": [
+        "UNIONBANK",
         "EMCURE",
-        "PNB",
-        "HMVL"
+        "HMVL",
+        "ACUTAAS",
+        "BAJFINANCE"
       ],
-      "watchlist": 0,
+      "watchlist": 3,
       "open_positions": 20,
       "needing_action": [
         "ALIVUS",
-        "NINSYS",
+        "NHPC",
         "PNB"
       ],
       "closed_today": [
-        "NINSYS"
+        "NHPC"
       ],
-      "seconds": 0.2
+      "seconds": 0.3
     }
   ],
   "ok": 20,
