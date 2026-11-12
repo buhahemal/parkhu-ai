@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-12
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-12T01:26:43.562837+05:30
+- **generated_at_ist:** 2026-11-12T06:10:39.738614+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,9 +15,9 @@
 ## Funnel
 
 - universe: 3253
-- trend = Bullish: 1238
-- price > SMA200: 921
-- price > EMA50: 896
+- trend = Bullish: 1240
+- price > SMA200: 923
+- price > EMA50: 898
 - ADX14 > 25: 358
 - RSI14 in 40-80: 348
 - RS > 0 vs NIFTY and sector: 112
@@ -34,29 +34,29 @@
 - **UNIONBANK** [rejected] score 92.4 — 25% sector cap for Banks would be breached
 - **HDFCBANK** [rejected] score 88.8 — T1 needs more than 22 trading days (~1 month)
 - **SOUTHBANK** [rejected] score 88.2 — 25% sector cap for Banks would be breached
-- **LAURUSLABS** [idea] score 88.1 — selected as idea
+- **LAURUSLABS** [idea] score 87.5 — selected as idea
 - **TECHM** [rejected] score 87.3 — T1 needs more than 22 trading days (~1 month)
 - **HMVL** [idea] score 87.1 — selected as idea
 - **GAIL** [rejected] score 83.6 — T1 needs more than 22 trading days (~1 month)
-- **DIVISLAB** [rejected] score 82.9 — unaffordable at this capital
-- **ORIENTELEC** [idea] score 82.4 — selected as idea
+- **ORIENTELEC** [idea] score 83.0 — selected as idea
+- **DIVISLAB** [rejected] score 82.3 — unaffordable at this capital
 - **WIPRO** [rejected] score 82.2 — T1 needs more than 22 trading days (~1 month)
 - **CHOLAFIN** [rejected] score 80.7 — not selected
 - **ORIENTHOT** [rejected] score 80.0 — not selected
 - **IOC** [rejected] score 79.6 — T1 needs more than 22 trading days (~1 month)
 - **INDHOTEL** [watchlist] score 78.8 — score in Watch band (70–80)
-- **HDFCAMC** [rejected] score 78.2 — T1 needs more than 22 trading days (~1 month)
-- **UNOMINDA** [watchlist] score 77.5 — score in Watch band (70–80)
+- **HDFCAMC** [rejected] score 78.1 — T1 needs more than 22 trading days (~1 month)
+- **UNOMINDA** [watchlist] score 78.1 — score in Watch band (70–80)
+- **TVSMOTOR** [watchlist] score 77.5 — score in Watch band (70–80)
 - **BANKBARODA** [rejected] score 77.4 — T1 needs more than 22 trading days (~1 month)
-- **TVSMOTOR** [watchlist] score 77.0 — score in Watch band (70–80)
-- **BSE** [rejected] score 76.8 — T1 needs more than 22 trading days (~1 month)
+- **BSE** [rejected] score 76.7 — T1 needs more than 22 trading days (~1 month)
 - **PHOENIXLTD** [watchlist] score 75.3 — score in Watch band (70–80)
 - **INSPIRISYS** [rejected] score 74.3 — T1 needs more than 22 trading days (~1 month)
 - **LT** [watchlist] score 73.1 — score in Watch band (70–80)
 - **MANCREDIT** [watchlist] score 72.1 — score in Watch band (70–80)
-- **AGARWALEYE** [watchlist] score 71.8 — score in Watch band (70–80)
+- **AGARWALEYE** [watchlist] score 71.2 — score in Watch band (70–80)
 - **DLF** [rejected] score 69.6 — score below Watch band
-- **CORONA** [rejected] score 66.9 — score below Watch band
+- **CORONA** [rejected] score 66.3 — score below Watch band
 - **BBL** [rejected] score 65.1 — T1 needs more than 22 trading days (~1 month)
 - **NITCO** [rejected] score 63.8 — T1 needs more than 22 trading days (~1 month)
 - **ULTRACEMCO** [rejected] score 59.0 — score below Watch band
@@ -78,7 +78,7 @@
 - entry 138.48 | stop 131.36 | t1 152.72 | t2 159.84 | t3 166.96 | R:R 2.0
 - qty 72 | deployed 9971.0 (9.97%) | risk ₹513.0
 
-### LAURUSLABS — Buy (score 88.1)
+### LAURUSLABS — Buy (score 87.5)
 - Laurus Labs Ltd. | risk_sector: Health Technology
 - entry 2429.0 | stop 2283.89 | t1 2719.23 | t2 2864.34 | t3 3009.45 | R:R 2.0
 - qty 4 | deployed 9716.0 (9.72%) | risk ₹580.0
@@ -88,7 +88,7 @@
 - entry 96.4 | stop 88.69 | t1 111.82 | t2 119.54 | t3 127.25 | R:R 2.0
 - qty 103 | deployed 9929.0 (9.93%) | risk ₹794.0
 
-### ORIENTELEC — Buy (score 82.4)
+### ORIENTELEC — Buy (score 83.0)
 - Orient Electric Ltd. | risk_sector: Consumer Durables
 - entry 199.99 | stop 184.32 | t1 231.32 | t2 246.99 | t3 262.66 | R:R 2.0
 - qty 50 | deployed 10000.0 (10.0%) | risk ₹784.0
@@ -124,50 +124,50 @@
 ## Swing candidates (top)
 
 - DLF: score=14 rs_nifty=1.85 deliv=62.23
-- CHOLAFIN: score=14 rs_nifty=1.48 deliv=63.73
 - CORONA: score=14 rs_nifty=3.99 deliv=43.59
-- ROLEXRINGS: score=13 rs_nifty=9.38 deliv=56.13
-- KRISHANA: score=13 rs_nifty=6.2 deliv=47.24
-- STEL: score=13 rs_nifty=1.2 deliv=48.04
-- BOROLTD: score=13 rs_nifty=1.88 deliv=61.03
-- PRINCEPIPE: score=13 rs_nifty=13.66 deliv=48.09
-- MANCREDIT: score=13 rs_nifty=2.47 deliv=47.64
-- SATIN: score=13 rs_nifty=4.55 deliv=60.65
-- SHRINGARMS: score=13 rs_nifty=30.55 deliv=35.55
-- LAGNAM: score=13 rs_nifty=2.78 deliv=82.64
-- LAL: score=13 rs_nifty=11.18 deliv=65.57
+- CHOLAFIN: score=14 rs_nifty=1.48 deliv=63.73
 - MMFL: score=13 rs_nifty=0.12 deliv=51.29
+- BOROLTD: score=13 rs_nifty=1.88 deliv=61.03
+- ICICIBANK: score=13 rs_nifty=3.52 deliv=70.14
+- TECHM: score=13 rs_nifty=6.74 deliv=58.87
+- AGARWALEYE: score=13 rs_nifty=4.37 deliv=43.37
+- LAL: score=13 rs_nifty=11.18 deliv=65.57
 - SSWL: score=13 rs_nifty=19.75 deliv=43.69
+- TIPSMUSIC: score=13 rs_nifty=7.53 deliv=49.04
+- PRESTIGE: score=13 rs_nifty=2.82 deliv=58.25
+- ROLEXRINGS: score=13 rs_nifty=9.38 deliv=56.13
+- ANGELONE: score=13 rs_nifty=2.35 deliv=47.62
+- SATIN: score=13 rs_nifty=4.55 deliv=60.65
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +2.87% (bull)
+- Nikkei: +1.55% (bull)
 - Hang Seng: +0.44% (bull)
 - Shanghai: +0.08% (neutral)
-- Kospi: +4.39% (bull)
+- Kospi: +2.65% (bull)
 - Taiwan: +2.52% (bull)
-- ASX 200: +0.27% (bull)
+- ASX 200: -0.06% (neutral)
 
 ### Europe
-- FTSE 100: +0.78% (bull)
-- DAX: +1.20% (bull)
-- Euro Stoxx 50: +1.04% (bull)
+- FTSE 100: -0.29% (bear)
+- DAX: +0.31% (bull)
+- Euro Stoxx 50: +0.59% (bull)
 
 ### US
-- S&P 500: +1.42% (bull)
-- Nasdaq: +1.86% (bull)
-- Dow: +0.47% (bull)
-- US VIX: -10.07% (bull)
+- S&P 500: +1.31% (bull)
+- Nasdaq: +1.60% (bull)
+- Dow: +0.49% (bull)
+- US VIX: -10.12% (bull)
 
 ### Macro
-- USDINR: -0.28% (neutral)
-- Crude WTI: +0.12% (neutral)
-- Brent: +0.85% (bull)
-- DXY: +0.66% (bear)
+- USDINR: -0.02% (neutral)
+- Crude WTI: +0.08% (neutral)
+- Brent: +0.94% (bull)
+- DXY: +0.60% (bear)
 - US 10Y: +0.30% (neutral)
-- India ETF: -0.20% (bear)
-- EM ETF: +2.62% (bull)
+- India ETF: -0.25% (bear)
+- EM ETF: +2.43% (bull)
 
 
 ## Groq desk note
