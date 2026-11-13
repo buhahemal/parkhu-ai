@@ -180,8 +180,8 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: SBIN (~42d), BANKBARODA
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| CHOLAFIN | NBFC & Capital Markets | ₹1,862 | 78.9 | ₹1,862 | ₹1,758 | ₹2,071 | 11.22% |
-| PHOENIXLTD | Real Estate | ₹2,292 | 76.5 | ₹2,292 | ₹2,160 | ₹2,556 | 11.53% |
+| CHOLAFIN | NBFC & Capital Markets | ₹1,862 | 79.2 | ₹1,862 | ₹1,758 | ₹2,071 | 11.22% |
+| PHOENIXLTD | Real Estate | ₹2,292 | 75.9 | ₹2,292 | ₹2,160 | ₹2,556 | 11.53% |
 | LT | Industrial Services | ₹4,159 | 72.9 | ₹4,159 | ₹3,998 | ₹4,481 | 7.73% |
 
 These need a score of 80 or above to become positions (KB-14 Fig 3-1).

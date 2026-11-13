@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-13
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-13T01:55:23.540223+05:30
+- **generated_at_ist:** 2026-11-13T06:10:49.565987+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,11 +15,11 @@
 ## Funnel
 
 - universe: 3252
-- trend = Bullish: 1324
-- price > SMA200: 968
-- price > EMA50: 944
-- ADX14 > 25: 371
-- RSI14 in 40-80: 361
+- trend = Bullish: 1318
+- price > SMA200: 969
+- price > EMA50: 945
+- ADX14 > 25: 374
+- RSI14 in 40-80: 364
 - RS > 0 vs NIFTY and sector: 123
 - delivery% >= 40: 82
 - relative_volume >= 1: 25
@@ -36,21 +36,21 @@
 - **PETRONET** [idea] score 86.3 — selected as idea
 - **SSWL** [rejected] score 86.3 — not selected
 - **GAIL** [rejected] score 86.0 — not selected
-- **BAJFINANCE** [rejected] score 85.4 — not selected
+- **BAJFINANCE** [rejected] score 85.8 — not selected
 - **SBIN** [rejected] score 84.7 — T1 needs more than 22 trading days (~1 month)
-- **LODHA** [rejected] score 83.8 — not selected
+- **LODHA** [rejected] score 83.2 — not selected
 - **ORIENTELEC** [rejected] score 80.9 — not selected
-- **CHOLAFIN** [watchlist] score 78.9 — score in Watch band (70–80)
-- **HDFCAMC** [rejected] score 78.2 — T1 needs more than 22 trading days (~1 month)
+- **CHOLAFIN** [watchlist] score 79.2 — score in Watch band (70–80)
+- **HDFCAMC** [rejected] score 78.5 — T1 needs more than 22 trading days (~1 month)
 - **BANKBARODA** [rejected] score 77.9 — T1 needs more than 22 trading days (~1 month)
-- **PHOENIXLTD** [watchlist] score 76.5 — score in Watch band (70–80)
+- **PHOENIXLTD** [watchlist] score 75.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.9 — score in Watch band (70–80)
 - **MANAKCOAT** [rejected] score 69.7 — score below Watch band
-- **DLF** [rejected] score 67.0 — score below Watch band
 - **SIMPLEXINF** [rejected] score 66.7 — score below Watch band
-- **MARATHON** [rejected] score 65.4 — T1 needs more than 22 trading days (~1 month)
+- **DLF** [rejected] score 66.3 — score below Watch band
+- **MARATHON** [rejected] score 64.7 — T1 needs more than 22 trading days (~1 month)
 - **INDOWIND** [rejected] score 56.3 — T1 needs more than 22 trading days (~1 month)
-- **GODREJPROP** [rejected] score 55.1 — T1 needs more than 22 trading days (~1 month)
+- **GODREJPROP** [rejected] score 54.4 — T1 needs more than 22 trading days (~1 month)
 - **WSI** [rejected] score 34.5 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
@@ -111,51 +111,51 @@
 
 ## Swing candidates (top)
 
+- HMVL: score=14 rs_nifty=4.28 deliv=72.9
 - GAIL: score=14 rs_nifty=0.05 deliv=67.87
 - LODHA: score=14 rs_nifty=2.12 deliv=45.57
-- HMVL: score=14 rs_nifty=4.28 deliv=72.9
-- AARTIPHARM: score=13 rs_nifty=2.91 deliv=31.35
+- MARICO: score=13 rs_nifty=3.38 deliv=64.3
 - PAYTM: score=13 rs_nifty=2.96 deliv=45.67
-- TIPSMUSIC: score=13 rs_nifty=3.04 deliv=46.59
-- SSWL: score=13 rs_nifty=25.72 deliv=43.14
-- SIMPLEXINF: score=13 rs_nifty=9.76 deliv=55.88
-- SUDEEPPHRM: score=13 rs_nifty=4.9 deliv=45.17
-- PHOENIXLTD: score=13 rs_nifty=12.4 deliv=52.31
-- VRAJ: score=13 rs_nifty=0.1 deliv=78.45
-- HESTERBIO: score=13 rs_nifty=0.15 deliv=51.93
+- SANATHAN: score=13 rs_nifty=0.89 deliv=42.74
 - CNL: score=13 rs_nifty=29.54 deliv=42.08
+- HESTERBIO: score=13 rs_nifty=0.15 deliv=51.93
+- SIMPLEXINF: score=13 rs_nifty=9.76 deliv=55.88
+- TIPSMUSIC: score=13 rs_nifty=3.04 deliv=46.59
+- MMFL: score=13 rs_nifty=1.88 deliv=49.36
 - PRINCEPIPE: score=13 rs_nifty=8.2 deliv=48.93
-- BOROLTD: score=13 rs_nifty=3.31 deliv=53.18
+- GKB: score=13 rs_nifty=3.17 deliv=44.49
+- AARTIPHARM: score=13 rs_nifty=2.91 deliv=31.35
+- STEL: score=13 rs_nifty=3.97 deliv=45.81
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.31% (bull)
+- Nikkei: +0.75% (bull)
 - Hang Seng: -0.98% (bear)
 - Shanghai: +0.46% (bull)
-- Kospi: +2.60% (bull)
+- Kospi: +1.90% (bull)
 - Taiwan: +3.62% (bull)
-- ASX 200: -0.07% (neutral)
+- ASX 200: -0.87% (bear)
 
 ### Europe
-- FTSE 100: +0.25% (bull)
-- DAX: +0.41% (bull)
-- Euro Stoxx 50: +0.09% (neutral)
+- FTSE 100: +0.78% (bull)
+- DAX: +1.20% (bull)
+- Euro Stoxx 50: +1.04% (bull)
 
 ### US
-- S&P 500: -0.27% (bear)
-- Nasdaq: -0.43% (bear)
-- Dow: -0.18% (bear)
-- US VIX: +7.15% (bear)
+- S&P 500: -0.35% (bear)
+- Nasdaq: -0.39% (bear)
+- Dow: -0.36% (bear)
+- US VIX: +6.92% (bear)
 
 ### Macro
-- USDINR: +0.11% (neutral)
-- Crude WTI: +2.80% (bull)
-- Brent: +3.55% (bull)
+- USDINR: -0.24% (neutral)
+- Crude WTI: +2.14% (bull)
+- Brent: +2.93% (bull)
 - DXY: +0.25% (neutral)
 - US 10Y: +2.10% (bear)
-- India ETF: -0.03% (neutral)
-- EM ETF: -1.51% (bear)
+- India ETF: -0.08% (neutral)
+- EM ETF: -1.45% (bear)
 
 
 ## Groq desk note
