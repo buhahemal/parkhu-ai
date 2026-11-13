@@ -1,55 +1,50 @@
-# Parkhu research pack — 2026-11-13
+# Parkhu research pack — 2026-11-14
 
-- **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-13T18:10:10.122981+05:30
+- **session_date:** 2026-07-24 (trading day: False)
+- **generated_at_ist:** 2026-11-14T01:35:42.595140+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.61%)
-- india_vix: 15.49 (Medium)
-- fii_net: 7830.6 | dii_net: -6331.17
+- market_regime: **Neutral**
+- nifty: Neutral (0.18%)
+- india_vix: 16.62 (Medium)
+- fii_net: 5736.55 | dii_net: -2253.58
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3240
-- trend = Bullish: 1293
-- price > SMA200: 953
-- price > EMA50: 924
+- universe: 3248
+- trend = Bullish: 1292
+- price > SMA200: 955
+- price > EMA50: 926
 - ADX14 > 25: 379
 - RSI14 in 40-80: 367
-- RS > 0 vs NIFTY and sector: 149
-- delivery% >= 40: 90
-- relative_volume >= 1: 21
-- no earnings within 21d: 21
-- event_risk_score <= 1: 21
-- TV rating not Sell: 21
+- RS > 0 vs NIFTY and sector: 108
+- delivery% >= 40: 62
+- relative_volume >= 1: 16
+- no earnings within 21d: 16
+- event_risk_score <= 1: 16
+- TV rating not Sell: 16
 
-## Survivors (top 21 of 21)
+## Survivors (top 16 of 16)
 
 - **ACUTAAS** [idea] score 88.9 — selected as idea
 - **SOUTHBANK** [idea] score 88.6 — selected as idea
-- **PETRONET** [idea] score 87.9 — selected as idea
-- **BAJFINANCE** [idea] score 86.4 — selected as idea
-- **ITCHOTELS** [rejected] score 84.9 — T1 needs more than 22 trading days (~1 month)
-- **ALANKIT** [rejected] score 84.1 — T1 needs more than 22 trading days (~1 month)
-- **TIPSMUSIC** [idea] score 81.5 — selected as idea
-- **HDFCAMC** [rejected] score 80.4 — not selected
-- **CHOLAFIN** [watchlist] score 78.8 — score in Watch band (70–80)
+- **BAJFINANCE** [idea] score 86.3 — selected as idea
+- **ALANKIT** [rejected] score 83.8 — T1 needs more than 22 trading days (~1 month)
+- **TIPSMUSIC** [idea] score 81.4 — selected as idea
+- **HDFCAMC** [idea] score 80.4 — selected as idea
+- **CHOLAFIN** [watchlist] score 78.7 — score in Watch band (70–80)
 - **STEL** [watchlist] score 78.5 — score in Watch band (70–80)
-- **UNOMINDA** [watchlist] score 77.9 — score in Watch band (70–80)
-- **TVSMOTOR** [watchlist] score 77.8 — score in Watch band (70–80)
+- **UNOMINDA** [watchlist] score 77.8 — score in Watch band (70–80)
 - **INDHOTEL** [watchlist] score 76.4 — score in Watch band (70–80)
-- **PHOENIXLTD** [watchlist] score 76.0 — score in Watch band (70–80)
-- **AARTIPHARM** [watchlist] score 74.9 — score in Watch band (70–80)
+- **PHOENIXLTD** [watchlist] score 75.9 — score in Watch band (70–80)
 - **AGARWALEYE** [watchlist] score 71.9 — score in Watch band (70–80)
-- **ANURAS** [watchlist] score 71.1 — score in Watch band (70–80)
 - **MANAKCOAT** [rejected] score 69.6 — score below Watch band
 - **EIMCOELECO** [rejected] score 67.9 — score below Watch band
-- **INDOWIND** [rejected] score 53.7 — T1 needs more than 22 trading days (~1 month)
-- **TREEHOUSE** [rejected] score 49.8 — T1 needs more than 22 trading days (~1 month)
+- **INDOWIND** [rejected] score 53.8 — T1 needs more than 22 trading days (~1 month)
+- **TREEHOUSE** [rejected] score 49.7 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -63,20 +58,20 @@
 - entry 61.86 | stop 58.03 | t1 69.51 | t2 73.34 | t3 77.17 | R:R 2.0
 - qty 161 | deployed 9959.0 (9.96%) | risk ₹617.0
 
-### PETRONET — Buy (score 87.9)
-- Petronet Lng Limited | risk_sector: Utilities
-- entry 324.05 | stop 307.96 | t1 356.22 | t2 372.31 | t3 388.39 | R:R 2.0
-- qty 30 | deployed 9722.0 (9.72%) | risk ₹483.0
-
-### BAJFINANCE — Buy (score 86.4)
+### BAJFINANCE — Buy (score 86.3)
 - Bajaj Finance Limited | risk_sector: NBFC & Capital Markets
 - entry 1117.0 | stop 1055.82 | t1 1239.35 | t2 1300.53 | t3 1361.7 | R:R 2.0
 - qty 8 | deployed 8936.0 (8.94%) | risk ₹489.0
 
-### TIPSMUSIC — Buy (score 81.5)
+### TIPSMUSIC — Buy (score 81.4)
 - Tips Music Limited | risk_sector: Consumer Services
 - entry 816.45 | stop 754.28 | t1 940.79 | t2 1002.96 | t3 1065.13 | R:R 2.0
 - qty 12 | deployed 9797.0 (9.8%) | risk ₹746.0
+
+### HDFCAMC — Buy (score 80.4)
+- HDFC Asset Management Co. Ltd. | risk_sector: NBFC & Capital Markets
+- entry 2663.0 | stop 2525.77 | t1 2937.46 | t2 3074.7 | t3 3211.93 | R:R 2.0
+- qty 3 | deployed 7989.0 (7.99%) | risk ₹412.0
 
 ## Open ledger
 
@@ -102,6 +97,7 @@
 - **BAJFINANCE** status=open entry=1115.0 last=1117.0 mfe=0.27 mae=-3.44 opened=2026-11-12
 - **EMCURE** status=open entry=2302.0 last=2361.7 mfe=4.04 mae=-2.54 opened=2026-11-12
 - **TIPSMUSIC** status=open entry=812.35 last=816.45 mfe=0.94 mae=-3.98 opened=2026-11-13
+- **HDFCAMC** status=open entry=2663.0 last=2663.0 mfe=0.0 mae=0.0 opened=2026-11-14
 
 ## Needs action
 
@@ -111,51 +107,51 @@
 
 ## Swing candidates (top)
 
-- TVSMOTOR: score=14 rs_nifty=1.41 deliv=52.82
-- AARTIPHARM: score=14 rs_nifty=2.23 deliv=42.12
-- MARICO: score=13 rs_nifty=5.16 deliv=65.59
-- CHOLAFIN: score=13 rs_nifty=4.2 deliv=61.75
-- LENSKART: score=13 rs_nifty=0.93 deliv=53.66
-- PETRONET: score=13 rs_nifty=1.43 deliv=79.1
-- SIMPLEXINF: score=13 rs_nifty=9.1 deliv=49.78
-- THELEELA: score=13 rs_nifty=0.4 deliv=45.62
-- MINDACORP: score=13 rs_nifty=1.36 deliv=41.96
-- AGARWALEYE: score=13 rs_nifty=5.48 deliv=40.29
-- CONSOFINVT: score=13 rs_nifty=2.45 deliv=87.84
-- MEDANTA: score=13 rs_nifty=2.4 deliv=58.3
-- AIROLAM: score=13 rs_nifty=12.77 deliv=56.92
-- BOROLTD: score=13 rs_nifty=4.05 deliv=51.34
-- MMFL: score=13 rs_nifty=12.65 deliv=47.45
+- BAJFINANCE: score=13 rs_nifty=0.85 deliv=60.57
+- KROSS: score=13 rs_nifty=11.93 deliv=26.81
+- MMFL: score=13 rs_nifty=10.18 deliv=47.45
+- SATIN: score=13 rs_nifty=0.25 deliv=56.23
+- AIROLAM: score=13 rs_nifty=10.3 deliv=56.92
+- AGARWALEYE: score=13 rs_nifty=3.01 deliv=40.29
+- TIPSMUSIC: score=13 rs_nifty=2.19 deliv=41.35
+- MARICO: score=13 rs_nifty=2.69 deliv=65.59
+- CHOLAFIN: score=13 rs_nifty=1.73 deliv=61.75
+- SUDEEPPHRM: score=13 rs_nifty=4.21 deliv=43.92
+- ACUTAAS: score=13 rs_nifty=14.01 deliv=43.31
+- STEL: score=13 rs_nifty=4.4 deliv=65.17
+- GLENMARK: score=13 rs_nifty=2.91 deliv=44.15
+- ORIENTELEC: score=13 rs_nifty=2.19 deliv=56.06
+- SIMPLEXINF: score=13 rs_nifty=6.63 deliv=49.78
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.53% (bull)
-- Hang Seng: -1.55% (bear)
-- Shanghai: -0.59% (bear)
-- Kospi: -0.98% (bear)
-- Taiwan: +1.35% (bull)
+- Nikkei: -0.70% (bear)
+- Hang Seng: -1.26% (bear)
+- Shanghai: -0.67% (bear)
+- Kospi: -0.61% (bear)
+- Taiwan: -2.63% (bear)
 - ASX 200: -0.71% (bear)
 
 ### Europe
-- FTSE 100: +0.05% (neutral)
-- DAX: -0.13% (neutral)
-- Euro Stoxx 50: -0.18% (bear)
+- FTSE 100: +0.36% (bull)
+- DAX: -0.08% (neutral)
+- Euro Stoxx 50: -0.19% (bear)
 
 ### US
-- S&P 500: -0.35% (bear)
-- Nasdaq: -0.39% (bear)
-- Dow: -0.36% (bear)
-- US VIX: -2.46% (bull)
+- S&P 500: -0.48% (bear)
+- Nasdaq: -0.92% (bear)
+- Dow: +0.07% (neutral)
+- US VIX: +2.19% (bear)
 
 ### Macro
-- USDINR: +0.56% (bear)
-- Crude WTI: -0.10% (neutral)
-- Brent: +0.41% (bull)
-- DXY: +0.07% (neutral)
-- US 10Y: +2.10% (bear)
-- India ETF: -0.08% (neutral)
-- EM ETF: -1.45% (bear)
+- USDINR: +0.57% (bear)
+- Crude WTI: +0.02% (neutral)
+- Brent: +0.02% (neutral)
+- DXY: +0.23% (neutral)
+- US 10Y: +0.90% (bear)
+- India ETF: -0.22% (bear)
+- EM ETF: -0.67% (bear)
 
 
 ## Groq desk note
@@ -174,6 +170,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-13/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-14/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
