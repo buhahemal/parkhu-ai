@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-14
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-14T01:35:42.595140+05:30
+- **generated_at_ist:** 2026-11-14T06:10:32.979835+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3248
-- trend = Bullish: 1292
-- price > SMA200: 955
-- price > EMA50: 926
-- ADX14 > 25: 379
-- RSI14 in 40-80: 367
+- universe: 3254
+- trend = Bullish: 1298
+- price > SMA200: 956
+- price > EMA50: 927
+- ADX14 > 25: 376
+- RSI14 in 40-80: 364
 - RS > 0 vs NIFTY and sector: 108
 - delivery% >= 40: 62
 - relative_volume >= 1: 16
@@ -32,8 +32,8 @@
 - **ACUTAAS** [idea] score 88.9 — selected as idea
 - **SOUTHBANK** [idea] score 88.6 — selected as idea
 - **BAJFINANCE** [idea] score 86.3 — selected as idea
-- **ALANKIT** [rejected] score 83.8 — T1 needs more than 22 trading days (~1 month)
-- **TIPSMUSIC** [idea] score 81.4 — selected as idea
+- **ALANKIT** [rejected] score 83.9 — T1 needs more than 22 trading days (~1 month)
+- **TIPSMUSIC** [idea] score 81.5 — selected as idea
 - **HDFCAMC** [idea] score 80.4 — selected as idea
 - **CHOLAFIN** [watchlist] score 78.7 — score in Watch band (70–80)
 - **STEL** [watchlist] score 78.5 — score in Watch band (70–80)
@@ -43,8 +43,8 @@
 - **AGARWALEYE** [watchlist] score 71.9 — score in Watch band (70–80)
 - **MANAKCOAT** [rejected] score 69.6 — score below Watch band
 - **EIMCOELECO** [rejected] score 67.9 — score below Watch band
-- **INDOWIND** [rejected] score 53.8 — T1 needs more than 22 trading days (~1 month)
-- **TREEHOUSE** [rejected] score 49.7 — T1 needs more than 22 trading days (~1 month)
+- **INDOWIND** [rejected] score 53.5 — T1 needs more than 22 trading days (~1 month)
+- **TREEHOUSE** [rejected] score 49.8 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -63,7 +63,7 @@
 - entry 1117.0 | stop 1055.82 | t1 1239.35 | t2 1300.53 | t3 1361.7 | R:R 2.0
 - qty 8 | deployed 8936.0 (8.94%) | risk ₹489.0
 
-### TIPSMUSIC — Buy (score 81.4)
+### TIPSMUSIC — Buy (score 81.5)
 - Tips Music Limited | risk_sector: Consumer Services
 - entry 816.45 | stop 754.28 | t1 940.79 | t2 1002.96 | t3 1065.13 | R:R 2.0
 - qty 12 | deployed 9797.0 (9.8%) | risk ₹746.0
@@ -107,21 +107,21 @@
 
 ## Swing candidates (top)
 
-- BAJFINANCE: score=13 rs_nifty=0.85 deliv=60.57
-- KROSS: score=13 rs_nifty=11.93 deliv=26.81
-- MMFL: score=13 rs_nifty=10.18 deliv=47.45
-- SATIN: score=13 rs_nifty=0.25 deliv=56.23
-- AIROLAM: score=13 rs_nifty=10.3 deliv=56.92
-- AGARWALEYE: score=13 rs_nifty=3.01 deliv=40.29
-- TIPSMUSIC: score=13 rs_nifty=2.19 deliv=41.35
-- MARICO: score=13 rs_nifty=2.69 deliv=65.59
 - CHOLAFIN: score=13 rs_nifty=1.73 deliv=61.75
-- SUDEEPPHRM: score=13 rs_nifty=4.21 deliv=43.92
-- ACUTAAS: score=13 rs_nifty=14.01 deliv=43.31
-- STEL: score=13 rs_nifty=4.4 deliv=65.17
-- GLENMARK: score=13 rs_nifty=2.91 deliv=44.15
+- AIROLAM: score=13 rs_nifty=10.3 deliv=56.92
 - ORIENTELEC: score=13 rs_nifty=2.19 deliv=56.06
+- BOROLTD: score=13 rs_nifty=1.58 deliv=51.34
+- GLENMARK: score=13 rs_nifty=2.91 deliv=44.15
+- ACUTAAS: score=13 rs_nifty=14.01 deliv=43.31
+- SUDEEPPHRM: score=13 rs_nifty=4.21 deliv=43.92
 - SIMPLEXINF: score=13 rs_nifty=6.63 deliv=49.78
+- KROSS: score=13 rs_nifty=11.93 deliv=26.81
+- MANAKCOAT: score=13 rs_nifty=21.37 deliv=45.99
+- STEL: score=13 rs_nifty=4.4 deliv=65.17
+- BAJFINANCE: score=13 rs_nifty=0.85 deliv=60.57
+- AGARWALEYE: score=13 rs_nifty=3.01 deliv=40.29
+- MARICO: score=13 rs_nifty=2.69 deliv=65.59
+- MMFL: score=13 rs_nifty=10.18 deliv=47.45
 
 ## World markets (India cues)
 
@@ -134,24 +134,24 @@
 - ASX 200: -0.71% (bear)
 
 ### Europe
-- FTSE 100: +0.36% (bull)
-- DAX: -0.08% (neutral)
-- Euro Stoxx 50: -0.19% (bear)
+- FTSE 100: +0.25% (bull)
+- DAX: +0.41% (bull)
+- Euro Stoxx 50: +0.09% (neutral)
 
 ### US
-- S&P 500: -0.48% (bear)
-- Nasdaq: -0.92% (bear)
-- Dow: +0.07% (neutral)
-- US VIX: +2.19% (bear)
+- S&P 500: -0.40% (bear)
+- Nasdaq: -0.91% (bear)
+- Dow: +0.10% (neutral)
+- US VIX: +3.21% (bear)
 
 ### Macro
-- USDINR: +0.57% (bear)
-- Crude WTI: +0.02% (neutral)
-- Brent: +0.02% (neutral)
+- USDINR: +0.36% (bear)
+- Crude WTI: +0.20% (bull)
+- Brent: +0.27% (bull)
 - DXY: +0.23% (neutral)
-- US 10Y: +0.90% (bear)
-- India ETF: -0.22% (bear)
-- EM ETF: -0.67% (bear)
+- US 10Y: +1.00% (bear)
+- India ETF: -0.19% (bear)
+- EM ETF: -0.36% (bear)
 
 
 ## Groq desk note
