@@ -5,8 +5,8 @@
   "is_trading_day": false,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-14",
-  "generated_at_ist": "2026-11-14T06:10:32.979835+05:30",
-  "duration_seconds": 400.4,
+  "generated_at_ist": "2026-11-14T18:09:31.399002+05:30",
+  "duration_seconds": 331.3,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3228,
-      "seconds": 3.0
+      "seconds": 2.8
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14548,
-      "cache_rows": 7993799,
-      "symbols": 2918,
+      "rows": 14553,
+      "cache_rows": 7994479,
+      "symbols": 2921,
       "failed": 38,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2520,
-      "cold": 433,
-      "new_symbols": 39,
+      "warm": 2521,
+      "cold": 434,
+      "new_symbols": 38,
       "retries": 2,
-      "seconds": 289.9
+      "seconds": 226.8
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.8
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.4
+      "seconds": 1.1
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 6.7
+      "seconds": 4.5
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 5.5
+      "seconds": 3.9
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 11.5
+      "seconds": 6.2
     },
     {
       "agent": "stock_options",
@@ -78,44 +78,44 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2379,
-      "seconds": 6.0
+      "rows": 2380,
+      "seconds": 5.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 4.5
+      "seconds": 4.3
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 3.2
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 4.2
+      "seconds": 3.2
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3228,
-      "seconds": 0.2
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3228,
-      "seconds": 0.6
+      "seconds": 1.0
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 216,
-      "seconds": 0.1
+      "seconds": 0.2
     },
     {
       "agent": "swing_candidates",
@@ -138,17 +138,17 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2910,
-      "with_structure": 2909,
+      "rows": 2911,
+      "with_structure": 2910,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 13.8
+      "seconds": 17.3
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3254,
-      "seconds": 6.2
+      "rows": 3252,
+      "seconds": 8.4
     },
     {
       "agent": "swing_brief",
@@ -157,11 +157,11 @@
       "ideas": [
         "ACUTAAS",
         "SOUTHBANK",
+        "PETRONET",
         "BAJFINANCE",
-        "TIPSMUSIC",
-        "HDFCAMC"
+        "TIPSMUSIC"
       ],
-      "watchlist": 6,
+      "watchlist": 9,
       "open_positions": 23,
       "needing_action": [
         "ALIVUS",
@@ -169,7 +169,7 @@
         "TFCILTD"
       ],
       "closed_today": [],
-      "seconds": 0.3
+      "seconds": 0.4
     }
   ],
   "ok": 20,
