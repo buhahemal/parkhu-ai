@@ -114,7 +114,7 @@ Banks (Major Banks) · CMP ₹62 · score **88.6** (Buy)
 
 ### PETRONET — Petronet Lng Limited
 
-Utilities (Gas Distributors) · CMP ₹324 · score **87.9** (Buy)
+Utilities (Gas Distributors) · CMP ₹324 · score **87.8** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -134,7 +134,7 @@ Utilities (Gas Distributors) · CMP ₹324 · score **87.9** (Buy)
 
 ### BAJFINANCE — Bajaj Finance Limited
 
-NBFC & Capital Markets (Finance/Rental/Leasing) · CMP ₹1,117 · score **86.1** (Buy)
+NBFC & Capital Markets (Finance/Rental/Leasing) · CMP ₹1,117 · score **86.3** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -148,7 +148,7 @@ NBFC & Capital Markets (Finance/Rental/Leasing) · CMP ₹1,117 · score **86.1*
 
 **Position:** 8 shares · deploy ₹8,936 (8.94% of capital) · risk ₹489 (0.49%) if stopped · profit ₹979 at T1, ₹1,468 at T2 · size set by exposure cap (10%/name)
 
-**Evidence:** ADX 30 · RSI 72.1 · delivery 60.6% · RS vs Nifty 3.3%, vs sector 3.6% · 1m 14%, 3m 2.4% · -5% from 52w high · ATR 2.7% of price · factor rank 36 · TV Strong buy · next earnings in 66d
+**Evidence:** ADX 30 · RSI 72.1 · delivery 60.6% · RS vs Nifty 3.3%, vs sector 3.6% · 1m 14%, 3m 2.4% · -5% from 52w high · ATR 2.7% of price · factor rank 37 · TV Strong buy · next earnings in 66d
 
 **Invalidation:** a close below ₹1,056; the real structural invalidation is lower, at ₹1,010 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 5.32% above entry.
 
@@ -184,14 +184,14 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: ITCHOTELS (~62d), ALANK
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| CHOLAFIN | NBFC & Capital Markets | ₹1,850 | 78.4 | ₹1,850 | ₹1,745 | ₹2,059 | 11.3% |
-| STEL | NBFC & Capital Markets | ₹664 | 78.2 | ₹664 | ₹611 | ₹770 | 16% |
-| UNOMINDA | Producer Manufacturing | ₹1,388 | 77.9 | ₹1,388 | ₹1,303 | ₹1,558 | 12.25% |
+| CHOLAFIN | NBFC & Capital Markets | ₹1,850 | 78.7 | ₹1,850 | ₹1,745 | ₹2,059 | 11.3% |
+| STEL | NBFC & Capital Markets | ₹664 | 78.4 | ₹664 | ₹611 | ₹770 | 16% |
 | TVSMOTOR | Consumer Durables | ₹4,495 | 77.8 | ₹4,495 | ₹4,273 | ₹4,938 | 9.86% |
-| PHOENIXLTD | Real Estate | ₹2,255 | 76.6 | ₹2,255 | ₹2,121 | ₹2,523 | 11.9% |
+| UNOMINDA | Producer Manufacturing | ₹1,388 | 77.8 | ₹1,388 | ₹1,303 | ₹1,558 | 12.25% |
 | INDHOTEL | Consumer Services | ₹890 | 76.4 | ₹890 | ₹847 | ₹977 | 9.71% |
+| PHOENIXLTD | Real Estate | ₹2,255 | 76 | ₹2,255 | ₹2,121 | ₹2,523 | 11.9% |
 | AARTIPHARM | Health Technology | ₹998 | 74.9 | ₹998 | ₹918 | ₹1,158 | 16% |
-| AGARWALEYE | Health Services | ₹551 | 71.9 | ₹551 | ₹512 | ₹628 | 14.04% |
+| AGARWALEYE | Health Services | ₹551 | 71.8 | ₹551 | ₹512 | ₹628 | 14.04% |
 | ANURAS | Health Technology | ₹1,301 | 71.1 | ₹1,301 | ₹1,233 | ₹1,435 | 10.35% |
 
 These need a score of 80 or above to become positions (KB-14 Fig 3-1).

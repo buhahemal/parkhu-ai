@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-15
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-15T06:09:10.439772+05:30
+- **generated_at_ist:** 2026-11-15T18:09:42.302591+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3254
-- trend = Bullish: 1289
-- price > SMA200: 955
-- price > EMA50: 926
-- ADX14 > 25: 376
-- RSI14 in 40-80: 364
+- universe: 3248
+- trend = Bullish: 1286
+- price > SMA200: 950
+- price > EMA50: 921
+- ADX14 > 25: 375
+- RSI14 in 40-80: 363
 - RS > 0 vs NIFTY and sector: 149
 - delivery% >= 40: 90
 - relative_volume >= 1: 21
@@ -31,25 +31,25 @@
 
 - **ACUTAAS** [idea] score 88.9 — selected as idea
 - **SOUTHBANK** [idea] score 88.6 — selected as idea
-- **PETRONET** [idea] score 87.9 — selected as idea
-- **BAJFINANCE** [idea] score 86.1 — selected as idea
-- **ITCHOTELS** [rejected] score 84.9 — T1 needs more than 22 trading days (~1 month)
+- **PETRONET** [idea] score 87.8 — selected as idea
+- **BAJFINANCE** [idea] score 86.3 — selected as idea
+- **ITCHOTELS** [rejected] score 84.8 — T1 needs more than 22 trading days (~1 month)
 - **ALANKIT** [rejected] score 84.1 — T1 needs more than 22 trading days (~1 month)
 - **TIPSMUSIC** [idea] score 81.5 — selected as idea
-- **HDFCAMC** [rejected] score 80.1 — not selected
-- **CHOLAFIN** [watchlist] score 78.4 — score in Watch band (70–80)
-- **STEL** [watchlist] score 78.2 — score in Watch band (70–80)
-- **UNOMINDA** [watchlist] score 77.9 — score in Watch band (70–80)
+- **HDFCAMC** [rejected] score 80.4 — not selected
+- **CHOLAFIN** [watchlist] score 78.7 — score in Watch band (70–80)
+- **STEL** [watchlist] score 78.4 — score in Watch band (70–80)
 - **TVSMOTOR** [watchlist] score 77.8 — score in Watch band (70–80)
-- **PHOENIXLTD** [watchlist] score 76.6 — score in Watch band (70–80)
+- **UNOMINDA** [watchlist] score 77.8 — score in Watch band (70–80)
 - **INDHOTEL** [watchlist] score 76.4 — score in Watch band (70–80)
+- **PHOENIXLTD** [watchlist] score 76.0 — score in Watch band (70–80)
 - **AARTIPHARM** [watchlist] score 74.9 — score in Watch band (70–80)
-- **AGARWALEYE** [watchlist] score 71.9 — score in Watch band (70–80)
+- **AGARWALEYE** [watchlist] score 71.8 — score in Watch band (70–80)
 - **ANURAS** [watchlist] score 71.1 — score in Watch band (70–80)
-- **MANAKCOAT** [rejected] score 68.2 — score below Watch band
+- **MANAKCOAT** [rejected] score 69.6 — score below Watch band
 - **EIMCOELECO** [rejected] score 67.9 — score below Watch band
-- **INDOWIND** [rejected] score 53.7 — T1 needs more than 22 trading days (~1 month)
-- **TREEHOUSE** [rejected] score 49.8 — T1 needs more than 22 trading days (~1 month)
+- **INDOWIND** [rejected] score 53.6 — T1 needs more than 22 trading days (~1 month)
+- **TREEHOUSE** [rejected] score 49.7 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
@@ -63,12 +63,12 @@
 - entry 61.86 | stop 58.03 | t1 69.51 | t2 73.34 | t3 77.17 | R:R 2.0
 - qty 161 | deployed 9959.0 (9.96%) | risk ₹617.0
 
-### PETRONET — Buy (score 87.9)
+### PETRONET — Buy (score 87.8)
 - Petronet Lng Limited | risk_sector: Utilities
 - entry 324.05 | stop 307.96 | t1 356.22 | t2 372.31 | t3 388.39 | R:R 2.0
 - qty 30 | deployed 9722.0 (9.72%) | risk ₹483.0
 
-### BAJFINANCE — Buy (score 86.1)
+### BAJFINANCE — Buy (score 86.3)
 - Bajaj Finance Limited | risk_sector: NBFC & Capital Markets
 - entry 1117.0 | stop 1055.82 | t1 1239.35 | t2 1300.53 | t3 1361.7 | R:R 2.0
 - qty 8 | deployed 8936.0 (8.94%) | risk ₹489.0
@@ -112,21 +112,21 @@
 
 ## Swing candidates (top)
 
-- AARTIPHARM: score=14 rs_nifty=2.23 deliv=42.12
 - TVSMOTOR: score=14 rs_nifty=1.41 deliv=52.82
-- GLENMARK: score=13 rs_nifty=5.38 deliv=44.15
-- HMVL: score=13 rs_nifty=0.12 deliv=82.79
-- GAIL: score=13 rs_nifty=1.24 deliv=70.48
-- PAYTM: score=13 rs_nifty=2.22 deliv=25.35
-- MINDACORP: score=13 rs_nifty=1.36 deliv=41.96
-- AGARWALEYE: score=13 rs_nifty=5.48 deliv=40.29
-- SUDEEPPHRM: score=13 rs_nifty=6.68 deliv=43.92
-- THELEELA: score=13 rs_nifty=0.4 deliv=45.62
-- MARICO: score=13 rs_nifty=5.16 deliv=65.59
-- LODHA: score=13 rs_nifty=1.78 deliv=45.69
-- BAJFINANCE: score=13 rs_nifty=3.32 deliv=60.57
-- STEL: score=13 rs_nifty=6.87 deliv=65.17
+- AARTIPHARM: score=14 rs_nifty=2.23 deliv=42.12
 - CHOLAFIN: score=13 rs_nifty=4.2 deliv=61.75
+- SUDEEPPHRM: score=13 rs_nifty=6.68 deliv=43.92
+- BAJFINANCE: score=13 rs_nifty=3.32 deliv=60.57
+- TIPSMUSIC: score=13 rs_nifty=4.66 deliv=41.35
+- WESTLIFE: score=13 rs_nifty=0.04 deliv=63.65
+- PRICOLLTD: score=13 rs_nifty=0.78 deliv=59.96
+- WELSPUNLIV: score=13 rs_nifty=1.01 deliv=40.18
+- ORIENTELEC: score=13 rs_nifty=4.66 deliv=56.06
+- DLF: score=13 rs_nifty=3.89 deliv=53.91
+- CONSOFINVT: score=13 rs_nifty=2.45 deliv=87.84
+- THELEELA: score=13 rs_nifty=0.4 deliv=45.62
+- AGARWALEYE: score=13 rs_nifty=5.48 deliv=40.29
+- MINDACORP: score=13 rs_nifty=1.36 deliv=41.96
 
 ## World markets (India cues)
 
