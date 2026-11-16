@@ -1,50 +1,52 @@
-# Parkhu research pack — 2026-11-16
+# Parkhu research pack — 2026-11-17
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-16T18:09:42.335619+05:30
+- **generated_at_ist:** 2026-11-17T04:05:55.250448+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (0.58%)
-- india_vix: 15.68 (Medium)
-- fii_net: 5736.55 | dii_net: -2253.58
+- market_regime: **Bearish**
+- nifty: Bearish (-0.61%)
+- india_vix: 15.5 (Medium)
+- fii_net: 4864.68 | dii_net: -3519.05
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
 - universe: 3248
-- trend = Bullish: 1103
-- price > SMA200: 827
-- price > EMA50: 801
+- trend = Bullish: 1107
+- price > SMA200: 824
+- price > EMA50: 798
 - ADX14 > 25: 366
 - RSI14 in 40-80: 353
-- RS > 0 vs NIFTY and sector: 118
-- delivery% >= 40: 62
-- relative_volume >= 1: 7
-- no earnings within 21d: 7
-- event_risk_score <= 1: 7
-- TV rating not Sell: 7
+- RS > 0 vs NIFTY and sector: 141
+- delivery% >= 40: 78
+- relative_volume >= 1: 9
+- no earnings within 21d: 9
+- event_risk_score <= 1: 9
+- TV rating not Sell: 9
 
-## Survivors (top 7 of 7)
+## Survivors (top 9 of 9)
 
-- **MODIS** [idea] score 92.0 — selected as idea
-- **TIPSMUSIC** [idea] score 85.9 — selected as idea
+- **MODIS** [idea] score 91.7 — selected as idea
+- **TIPSMUSIC** [idea] score 86.0 — selected as idea
 - **KANPRPLA** [idea] score 83.2 — selected as idea
-- **CHOLAFIN** [watchlist] score 79.3 — score in Watch band (70–80)
-- **PHOENIXLTD** [watchlist] score 79.3 — score in Watch band (70–80)
+- **CHOLAFIN** [watchlist] score 79.5 — score in Watch band (70–80)
+- **PHOENIXLTD** [watchlist] score 79.1 — score in Watch band (70–80)
 - **NAVKARURB** [rejected] score 67.0 — T1 needs more than 22 trading days (~1 month)
+- **ITC** [rejected] score 56.7 — T1 needs more than 22 trading days (~1 month)
+- **MEESHO** [rejected] score 54.2 — score below Watch band
 - **TREEHOUSE** [rejected] score 50.1 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
 
-### MODIS — Buy (score 92.0)
+### MODIS — Buy (score 91.7)
 - Modi's Navnirman Ltd. | risk_sector: Real Estate
 - entry 459.75 | stop 422.97 | t1 533.31 | t2 570.09 | t3 606.87 | R:R 2.0
 - qty 21 | deployed 9655.0 (9.65%) | risk ₹772.0
 
-### TIPSMUSIC — Buy (score 85.9)
+### TIPSMUSIC — Buy (score 86.0)
 - Tips Music Limited | risk_sector: Consumer Services
 - entry 807.15 | stop 744.0 | t1 933.45 | t2 996.6 | t3 1059.75 | R:R 2.0
 - qty 12 | deployed 9686.0 (9.69%) | risk ₹758.0
@@ -77,71 +79,63 @@
 - **EMCURE** status=open entry=2302.0 last=2338.8 mfe=4.04 mae=-2.54 opened=2026-11-12
 - **TIPSMUSIC** status=open entry=812.35 last=807.15 mfe=2.04 mae=-3.98 opened=2026-11-13
 - **HDFCAMC** status=open entry=2663.0 last=2650.0 mfe=0.38 mae=-1.44 opened=2026-11-14
-- **KANPRPLA** status=open entry=266.73 last=266.73 mfe=0.0 mae=0.0 opened=2026-11-16
-- **MODIS** status=open entry=459.75 last=459.75 mfe=0.0 mae=0.0 opened=2026-11-16
+- **KANPRPLA** status=open entry=266.73 last=266.73 mfe=2.14 mae=-6.95 opened=2026-11-16
+- **MODIS** status=open entry=459.75 last=459.75 mfe=0.92 mae=-6.25 opened=2026-11-16
 
 ## Needs action
 
 - **ALIVUS**: TIGHTEN / REVIEW — ADX 19 — trend no longer tradeable — one condition gone, thesis thinning
-- **KANPRPLA**: EXIT — STOP HIT — session low at/below stop ₹249.64 (last ₹266.73)
-- **LAURUSLABS**: EXIT — STOP HIT — session low at/below stop ₹2,272.06 (last ₹2,220.00)
 - **PNB**: BANK PARTIAL — T1 REACHED — ₹144.59 above T1 ₹138.55 — bank part, trail the rest, move stop to breakeven ₹126.10
 - **TFCILTD**: TIGHTEN / REVIEW — ADX 22 — trend no longer tradeable — one condition gone, thesis thinning
 - **UNIONBANK**: BANK PARTIAL — T1 REACHED — ₹205.60 above T1 ₹205.49 — bank part, trail the rest, move stop to breakeven ₹182.85
 
-## Closed today
-
-- HMVL: {'trade_id': '2026-11-10-HMVL', 'symbol': 'HMVL', 'company': 'Hindustan Media Ventures Limited', 'risk_sector': 'Consumer Services', 'date_opened': '2026-11-10', 'taken': None, 'entry': 95.09, 'stop': 87.48, 't1': 110.3, 't2': 117.91, 't3': 125.52, 'structure_invalidation': 80.28, 'horizon_days_t1': 10, 'horizon_days_t2': 22, 'score_at_open': 84.5, 'qty': 105, 'risk_rupees': 799.0, 'status': 'closed', 'last_price': 93.84, 'last_checked': '2026-11-16', 'mfe_pct': 3.05, 'mae_pct': -9.35, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 12, 'notes': None, 'date_closed': '2026-11-16', 'exit_price': 93.84, 'exit_reason': 'stop', 'pct_return': -1.31, 'r_multiple': -0.16, 'days_held': 4}
-- LAURUSLABS: {'trade_id': '2026-11-09-LAURUSLABS', 'symbol': 'LAURUSLABS', 'company': 'Laurus Labs Ltd.', 'risk_sector': 'Health Technology', 'date_opened': '2026-11-09', 'taken': None, 'entry': 2417.4, 'stop': 2272.06, 't1': 2708.07, 't2': 2853.41, 't3': 2998.75, 'structure_invalidation': 2071.21, 'horizon_days_t1': 16, 'horizon_days_t2': 22, 'score_at_open': 86.9, 'qty': 4, 'risk_rupees': 581.0, 'status': 'closed', 'last_price': 2220.0, 'last_checked': '2026-11-16', 'mfe_pct': 2.92, 'mae_pct': -9.41, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 4, 'notes': None, 'date_closed': '2026-11-16', 'exit_price': 2220.0, 'exit_reason': 'stop', 'pct_return': -8.17, 'r_multiple': -1.36, 'days_held': 5}
-- KANPRPLA: {'trade_id': '2026-11-16-KANPRPLA', 'symbol': 'KANPRPLA', 'company': 'Kanpur Plastipack Limited', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-11-16', 'taken': None, 'entry': 271.35, 'stop': 249.64, 't1': 314.77, 't2': 336.47, 't3': 358.18, 'structure_invalidation': 247.85, 'horizon_days_t1': 10, 'horizon_days_t2': 22, 'score_at_open': 84.7, 'qty': 36, 'risk_rupees': 782.0, 'status': 'closed', 'last_price': 266.73, 'last_checked': '2026-11-16', 'mfe_pct': 0.4, 'mae_pct': -8.53, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-11-16', 'exit_price': 266.73, 'exit_reason': 'stop', 'pct_return': -1.7, 'r_multiple': -0.21, 'days_held': 0}
-
 ## Swing candidates (top)
 
-- KANPRPLA: score=14 rs_nifty=0.48 deliv=58.18
-- DIVISLAB: score=13 rs_nifty=10.9 deliv=51.48
-- AIROLAM: score=13 rs_nifty=1.35 deliv=73.74
-- ENGINERSIN: score=13 rs_nifty=1.26 deliv=40.33
-- SUDEEPPHRM: score=13 rs_nifty=3.33 deliv=53.83
-- WESTLIFE: score=13 rs_nifty=3.12 deliv=42.51
-- CHOLAFIN: score=13 rs_nifty=4.74 deliv=56.25
-- THELEELA: score=13 rs_nifty=0.88 deliv=57.55
-- DLF: score=13 rs_nifty=0.85 deliv=49.54
-- BAJFINANCE: score=13 rs_nifty=3.11 deliv=68.13
-- PHOENIXLTD: score=13 rs_nifty=2.65 deliv=59.84
-- AARTIPHARM: score=13 rs_nifty=1.95 deliv=39.28
-- LUMAXTECH: score=13 rs_nifty=7.45 deliv=44.95
-- HMVL: score=13 rs_nifty=4.64 deliv=84.34
-- SATIN: score=13 rs_nifty=1.14 deliv=57.57
+- KANPRPLA: score=14 rs_nifty=1.62 deliv=58.18
+- MANAKCOAT: score=13 rs_nifty=24.05 deliv=30.47
+- MBAPL: score=13 rs_nifty=2.29 deliv=42.73
+- AARTIPHARM: score=13 rs_nifty=3.09 deliv=39.28
+- CHOLAFIN: score=13 rs_nifty=5.88 deliv=56.25
+- LODHA: score=13 rs_nifty=1.92 deliv=48.06
+- SURAKSHA: score=13 rs_nifty=0.81 deliv=41.15
+- SIMPLEXINF: score=13 rs_nifty=1.02 deliv=46.37
+- THELEELA: score=13 rs_nifty=2.02 deliv=57.55
+- SUDEEPPHRM: score=13 rs_nifty=4.47 deliv=53.83
+- MEESHO: score=13 rs_nifty=0.98 deliv=47.19
+- SATIN: score=13 rs_nifty=2.28 deliv=57.57
+- KESORAMIND: score=13 rs_nifty=15.77 deliv=54.63
+- MMFL: score=13 rs_nifty=15.49 deliv=51.79
+- ENGINERSIN: score=13 rs_nifty=2.4 deliv=40.33
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.42% (bear)
-- Hang Seng: +0.49% (bull)
-- Shanghai: -0.87% (bear)
-- Kospi: -3.59% (bear)
-- Taiwan: -6.03% (bear)
+- Nikkei: +0.53% (bull)
+- Hang Seng: -1.55% (bear)
+- Shanghai: -0.59% (bear)
+- Kospi: -0.98% (bear)
+- Taiwan: +1.35% (bull)
 - ASX 200: -0.41% (bear)
 
 ### Europe
-- FTSE 100: +0.39% (bull)
-- DAX: -0.08% (neutral)
-- Euro Stoxx 50: -0.20% (bear)
+- FTSE 100: -0.19% (bear)
+- DAX: -0.57% (bear)
+- Euro Stoxx 50: -0.60% (bear)
 
 ### US
-- S&P 500: -0.40% (bear)
-- Nasdaq: -0.91% (bear)
-- Dow: +0.10% (neutral)
-- US VIX: +7.51% (bear)
+- S&P 500: -1.92% (bear)
+- Nasdaq: -2.49% (bear)
+- Dow: -1.41% (bear)
+- US VIX: +18.70% (bear)
 
 ### Macro
-- USDINR: -0.12% (neutral)
-- Crude WTI: -0.90% (bear)
-- Brent: -1.16% (bear)
-- DXY: +0.03% (neutral)
-- US 10Y: +1.00% (bear)
-- India ETF: -0.19% (bear)
-- EM ETF: -0.36% (bear)
+- USDINR: -0.13% (neutral)
+- Crude WTI: -3.95% (bear)
+- Brent: -4.17% (bear)
+- DXY: +0.17% (neutral)
+- US 10Y: -0.64% (bull)
+- India ETF: +0.21% (bull)
+- EM ETF: -3.33% (bear)
 
 
 ## Groq desk note
@@ -160,6 +154,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-16/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-17/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
