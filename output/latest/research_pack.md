@@ -1,7 +1,7 @@
-# Parkhu research pack — 2026-11-15
+# Parkhu research pack — 2026-11-16
 
-- **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-15T18:09:42.302591+05:30
+- **session_date:** 2026-07-24 (trading day: True)
+- **generated_at_ist:** 2026-11-16T06:10:00.446121+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,10 +14,10 @@
 
 ## Funnel
 
-- universe: 3248
-- trend = Bullish: 1286
-- price > SMA200: 950
-- price > EMA50: 921
+- universe: 3252
+- trend = Bullish: 1284
+- price > SMA200: 954
+- price > EMA50: 925
 - ADX14 > 25: 375
 - RSI14 in 40-80: 363
 - RS > 0 vs NIFTY and sector: 149
@@ -39,16 +39,16 @@
 - **HDFCAMC** [rejected] score 80.4 — not selected
 - **CHOLAFIN** [watchlist] score 78.7 — score in Watch band (70–80)
 - **STEL** [watchlist] score 78.4 — score in Watch band (70–80)
+- **UNOMINDA** [watchlist] score 77.9 — score in Watch band (70–80)
 - **TVSMOTOR** [watchlist] score 77.8 — score in Watch band (70–80)
-- **UNOMINDA** [watchlist] score 77.8 — score in Watch band (70–80)
 - **INDHOTEL** [watchlist] score 76.4 — score in Watch band (70–80)
 - **PHOENIXLTD** [watchlist] score 76.0 — score in Watch band (70–80)
 - **AARTIPHARM** [watchlist] score 74.9 — score in Watch band (70–80)
-- **AGARWALEYE** [watchlist] score 71.8 — score in Watch band (70–80)
+- **AGARWALEYE** [watchlist] score 71.9 — score in Watch band (70–80)
 - **ANURAS** [watchlist] score 71.1 — score in Watch band (70–80)
 - **MANAKCOAT** [rejected] score 69.6 — score below Watch band
 - **EIMCOELECO** [rejected] score 67.9 — score below Watch band
-- **INDOWIND** [rejected] score 53.6 — T1 needs more than 22 trading days (~1 month)
+- **INDOWIND** [rejected] score 53.7 — T1 needs more than 22 trading days (~1 month)
 - **TREEHOUSE** [rejected] score 49.7 — T1 needs more than 22 trading days (~1 month)
 
 ## Ideas
@@ -114,29 +114,29 @@
 
 - TVSMOTOR: score=14 rs_nifty=1.41 deliv=52.82
 - AARTIPHARM: score=14 rs_nifty=2.23 deliv=42.12
-- CHOLAFIN: score=13 rs_nifty=4.2 deliv=61.75
-- SUDEEPPHRM: score=13 rs_nifty=6.68 deliv=43.92
 - BAJFINANCE: score=13 rs_nifty=3.32 deliv=60.57
-- TIPSMUSIC: score=13 rs_nifty=4.66 deliv=41.35
-- WESTLIFE: score=13 rs_nifty=0.04 deliv=63.65
 - PRICOLLTD: score=13 rs_nifty=0.78 deliv=59.96
-- WELSPUNLIV: score=13 rs_nifty=1.01 deliv=40.18
+- SUDEEPPHRM: score=13 rs_nifty=6.68 deliv=43.92
 - ORIENTELEC: score=13 rs_nifty=4.66 deliv=56.06
-- DLF: score=13 rs_nifty=3.89 deliv=53.91
+- CHOLAFIN: score=13 rs_nifty=4.2 deliv=61.75
+- LENSKART: score=13 rs_nifty=0.93 deliv=53.66
+- BOROLTD: score=13 rs_nifty=4.05 deliv=51.34
+- GLENMARK: score=13 rs_nifty=5.38 deliv=44.15
 - CONSOFINVT: score=13 rs_nifty=2.45 deliv=87.84
+- AIROLAM: score=13 rs_nifty=12.77 deliv=56.92
 - THELEELA: score=13 rs_nifty=0.4 deliv=45.62
-- AGARWALEYE: score=13 rs_nifty=5.48 deliv=40.29
-- MINDACORP: score=13 rs_nifty=1.36 deliv=41.96
+- SIMPLEXINF: score=13 rs_nifty=9.1 deliv=49.78
+- MANAKCOAT: score=13 rs_nifty=23.84 deliv=45.99
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.53% (bull)
+- Nikkei: -0.55% (bear)
 - Hang Seng: -1.55% (bear)
 - Shanghai: -0.59% (bear)
-- Kospi: -0.98% (bear)
+- Kospi: -0.21% (bear)
 - Taiwan: +1.35% (bull)
-- ASX 200: -0.71% (bear)
+- ASX 200: -0.11% (neutral)
 
 ### Europe
 - FTSE 100: +0.36% (bull)
@@ -150,10 +150,10 @@
 - US VIX: +3.21% (bear)
 
 ### Macro
-- USDINR: +0.22% (neutral)
-- Crude WTI: -0.20% (bear)
-- Brent: +0.02% (neutral)
-- DXY: +0.23% (neutral)
+- USDINR: +0.21% (neutral)
+- Crude WTI: -0.08% (neutral)
+- Brent: -0.32% (bear)
+- DXY: -0.01% (neutral)
 - US 10Y: +1.00% (bear)
 - India ETF: -0.19% (bear)
 - EM ETF: -0.36% (bear)
@@ -175,6 +175,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-15/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-16/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
