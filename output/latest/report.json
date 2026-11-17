@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-17",
-  "generated_at_ist": "2026-11-17T06:09:28.972645+05:30",
-  "duration_seconds": 298.1,
+  "generated_at_ist": "2026-11-17T13:58:40.535063+05:30",
+  "duration_seconds": 336.5,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3230,
-      "seconds": 4.3
+      "rows": 3231,
+      "seconds": 2.9
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14569,
-      "cache_rows": 8002317,
-      "symbols": 2922,
-      "failed": 40,
+      "rows": 14565,
+      "cache_rows": 7999496,
+      "symbols": 2918,
+      "failed": 38,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2525,
-      "cold": 434,
-      "new_symbols": 42,
+      "warm": 2518,
+      "cold": 435,
+      "new_symbols": 39,
       "retries": 2,
-      "seconds": 200.1
+      "seconds": 223.2
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3230,
+      "rows": 3231,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.4
+      "seconds": 0.5
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.9
+      "seconds": 1.0
     },
     {
       "agent": "smartmoney",
-      "status": "partial",
-      "rows": 2,
-      "seconds": 4.0
+      "status": "ok",
+      "rows": 6,
+      "seconds": 3.9
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 4.4
+      "seconds": 4.0
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 5.4
+      "seconds": 5.9
     },
     {
       "agent": "stock_options",
@@ -78,38 +78,38 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2393,
-      "seconds": 20.8
+      "rows": 2390,
+      "seconds": 18.0
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.7
+      "seconds": 4.0
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.8
+      "seconds": 3.8
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.5
+      "seconds": 3.0
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3230,
+      "rows": 3231,
       "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3230,
-      "seconds": 0.6
+      "rows": 3231,
+      "seconds": 0.7
     },
     {
       "agent": "fno_momentum",
@@ -138,47 +138,53 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2914,
+      "rows": 2913,
       "with_structure": 2913,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 12.8
+      "seconds": 15.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3250,
-      "seconds": 5.0
+      "rows": 3253,
+      "seconds": 6.9
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 3,
+      "rows": 5,
       "ideas": [
-        "MODIS",
-        "TIPSMUSIC",
-        "KANPRPLA"
+        "MAHABANK",
+        "BANCOINDIA",
+        "ENGINERSIN",
+        "LAURUSLABS",
+        "SHARDAMOTR"
       ],
-      "watchlist": 2,
+      "watchlist": 5,
       "open_positions": 23,
       "needing_action": [
+        "AIROLAM",
         "ALIVUS",
+        "ICICIBANK",
         "PNB",
         "TFCILTD",
         "UNIONBANK"
       ],
-      "closed_today": [],
-      "seconds": 0.3
+      "closed_today": [
+        "AIROLAM"
+      ],
+      "seconds": 0.4
     }
   ],
-  "ok": 19,
-  "partial": 2,
+  "ok": 20,
+  "partial": 1,
   "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 19,
-    "agents_partial": 2,
+    "agents_ok": 20,
+    "agents_partial": 1,
     "agents_error": 0
   },
   "latest_promoted": true,
