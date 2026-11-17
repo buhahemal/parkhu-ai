@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-17
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-17T04:05:55.250448+05:30
+- **generated_at_ist:** 2026-11-17T06:09:28.972645+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3248
-- trend = Bullish: 1107
-- price > SMA200: 824
-- price > EMA50: 798
-- ADX14 > 25: 366
-- RSI14 in 40-80: 353
+- universe: 3250
+- trend = Bullish: 1118
+- price > SMA200: 834
+- price > EMA50: 808
+- ADX14 > 25: 372
+- RSI14 in 40-80: 359
 - RS > 0 vs NIFTY and sector: 141
 - delivery% >= 40: 78
 - relative_volume >= 1: 9
@@ -32,7 +32,7 @@
 - **MODIS** [idea] score 91.7 — selected as idea
 - **TIPSMUSIC** [idea] score 86.0 — selected as idea
 - **KANPRPLA** [idea] score 83.2 — selected as idea
-- **CHOLAFIN** [watchlist] score 79.5 — score in Watch band (70–80)
+- **CHOLAFIN** [watchlist] score 79.4 — score in Watch band (70–80)
 - **PHOENIXLTD** [watchlist] score 79.1 — score in Watch band (70–80)
 - **NAVKARURB** [rejected] score 67.0 — T1 needs more than 22 trading days (~1 month)
 - **ITC** [rejected] score 56.7 — T1 needs more than 22 trading days (~1 month)
@@ -93,34 +93,34 @@
 
 - KANPRPLA: score=14 rs_nifty=1.62 deliv=58.18
 - MANAKCOAT: score=13 rs_nifty=24.05 deliv=30.47
-- MBAPL: score=13 rs_nifty=2.29 deliv=42.73
-- AARTIPHARM: score=13 rs_nifty=3.09 deliv=39.28
-- CHOLAFIN: score=13 rs_nifty=5.88 deliv=56.25
-- LODHA: score=13 rs_nifty=1.92 deliv=48.06
-- SURAKSHA: score=13 rs_nifty=0.81 deliv=41.15
-- SIMPLEXINF: score=13 rs_nifty=1.02 deliv=46.37
-- THELEELA: score=13 rs_nifty=2.02 deliv=57.55
 - SUDEEPPHRM: score=13 rs_nifty=4.47 deliv=53.83
+- LENSKART: score=13 rs_nifty=3.42 deliv=63.1
 - MEESHO: score=13 rs_nifty=0.98 deliv=47.19
-- SATIN: score=13 rs_nifty=2.28 deliv=57.57
-- KESORAMIND: score=13 rs_nifty=15.77 deliv=54.63
-- MMFL: score=13 rs_nifty=15.49 deliv=51.79
-- ENGINERSIN: score=13 rs_nifty=2.4 deliv=40.33
+- PHOENIXLTD: score=13 rs_nifty=3.79 deliv=59.84
+- LODHA: score=13 rs_nifty=1.92 deliv=48.06
+- NELCAST: score=13 rs_nifty=4.04 deliv=56.27
+- BAJFINANCE: score=13 rs_nifty=4.25 deliv=68.13
+- WESTLIFE: score=13 rs_nifty=4.26 deliv=42.51
+- UNOMINDA: score=13 rs_nifty=10.04 deliv=43.61
+- TIPSMUSIC: score=13 rs_nifty=4.65 deliv=42.21
+- AIROLAM: score=13 rs_nifty=2.49 deliv=73.74
+- THELEELA: score=13 rs_nifty=2.02 deliv=57.55
+- MSTCLTD: score=13 rs_nifty=6.58 deliv=27.65
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.53% (bull)
+- Nikkei: -3.40% (bear)
 - Hang Seng: -1.55% (bear)
 - Shanghai: -0.59% (bear)
-- Kospi: -0.98% (bear)
+- Kospi: -4.78% (bear)
 - Taiwan: +1.35% (bull)
-- ASX 200: -0.41% (bear)
+- ASX 200: -1.85% (bear)
 
 ### Europe
-- FTSE 100: -0.19% (bear)
-- DAX: -0.57% (bear)
-- Euro Stoxx 50: -0.60% (bear)
+- FTSE 100: +0.36% (bull)
+- DAX: -0.08% (neutral)
+- Euro Stoxx 50: -0.19% (bear)
 
 ### US
 - S&P 500: -1.92% (bear)
@@ -129,9 +129,9 @@
 - US VIX: +18.70% (bear)
 
 ### Macro
-- USDINR: -0.13% (neutral)
-- Crude WTI: -3.95% (bear)
-- Brent: -4.17% (bear)
+- USDINR: +0.22% (neutral)
+- Crude WTI: -3.65% (bear)
+- Brent: -4.00% (bear)
 - DXY: +0.17% (neutral)
 - US 10Y: -0.64% (bull)
 - India ETF: +0.21% (bull)
