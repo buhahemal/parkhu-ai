@@ -119,13 +119,13 @@ NYKAA,False,84.0,2027-02-10,False,,0,0
 AUROPHARMA,False,88.0,2027-02-14,False,,0,0
 VEDL,False,65.0,2027-01-22,False,,0,0
 PERSISTENT,False,70.0,2027-01-27,False,,0,0
-ASHOKLEY,False,85.0,2027-02-11,False,,0,0
+ASHOKLEY,False,85.0,2027-02-11,True,Interim Dividend - Re 1 Per Share,0,2
 MAXHEALTH,False,78.0,2027-02-04,False,,0,0
 LLOYDSME,False,79.0,2027-02-05,False,,0,0
 TMPV,False,78.0,2027-02-04,False,,0,0
 AMBUJACEM,False,77.0,2027-02-03,False,,0,0
 MCX,False,71.0,2027-01-28,False,,0,0
-JSWENERGY,False,88.0,2027-02-14,False,,0,0
+JSWENERGY,False,88.0,2027-02-14,False,,1,1
 GODREJCP,False,83.0,2027-02-09,False,,0,0
 MANIPALHOS,False,105.0,2027-03-03,False,,0,0
 LUPIN,False,85.0,2027-02-11,False,,0,0
@@ -153,7 +153,7 @@ MOTILALOFS,False,71.0,2027-01-28,False,,0,0
 KALYANKJIL,False,88.0,2027-02-14,False,,0,0
 SRF,False,76.0,2027-02-02,False,,0,0
 AUBANK,False,71.0,2027-01-28,False,,0,0
-OIL,False,79.0,2027-02-05,False,,0,0
+OIL,False,79.0,2027-02-05,True,Interim Dividend - Rs 7 Per Share,0,2
 INDUSINDBK,False,65.0,2027-01-22,False,,0,0
 PRESTIGE,False,85.0,2027-02-11,False,,0,0
 MAHABANK,False,88.0,2027-02-14,False,,0,0
@@ -232,7 +232,7 @@ HINDCOPPER,False,82.0,2027-02-08,False,,0,0
 KPRMILL,False,82.0,2027-02-08,False,,0,0
 SUPREMEIND,False,68.0,2027-01-25,False,,0,0
 JKCEMENT,False,75.0,2027-02-01,False,,0,0
-RVNL,False,88.0,2027-02-14,False,,0,0
+RVNL,False,88.0,2027-02-14,False,,1,1
 EMBASSY.RR,False,68.0,2027-01-25,False,,0,0
 M&MFIN,False,76.0,2027-02-02,False,,0,0
 ANANDRATHI,False,51.0,2027-01-08,False,,0,0
@@ -252,7 +252,7 @@ ITCHOTELS,False,77.0,2027-02-03,False,,0,0
 IRCTC,False,90.0,2027-02-16,False,,0,0
 BAGMANE.RR,False,105.0,2027-03-03,False,,0,0
 ENDURANCE,False,83.0,2027-02-09,False,,0,0
-PAGEIND,False,85.0,2027-02-11,False,,0,0
+PAGEIND,False,85.0,2027-02-11,True,Interim Dividend - Rs  150 Per Share,0,2
 STLTECH,False,63.0,2027-01-20,False,,0,0
 NUVAMA,False,90.0,2027-02-16,False,,0,0
 NHIT,False,,,False,,0,0
@@ -295,7 +295,7 @@ CENTRALBK,False,58.0,2027-01-15,False,,0,0
 CRAFTSMAN,False,88.0,2027-02-14,False,,0,0
 GABRIEL,False,82.0,2027-02-08,False,,0,0
 GODFRYPHLP,False,68.0,2027-01-25,False,,0,0
-MANAPPURAM,False,91.0,2027-02-17,False,,0,0
+MANAPPURAM,False,91.0,2027-02-17,True,Interim Dividend - Re 1 Per Share,0,2
 ACMESOLAR,False,71.0,2027-01-28,False,,0,0
 DALBHARAT,False,70.0,2027-01-27,False,,0,0
 JUBLFOOD,False,84.0,2027-02-10,False,,0,0
@@ -339,7 +339,7 @@ CGCL,False,71.0,2027-01-28,False,,0,0
 GILLETTE,False,105.0,2027-03-03,False,,0,0
 CUB,False,72.0,2027-01-29,False,,0,0
 KPIL,False,84.0,2027-02-10,False,,0,0
-ACC,False,76.0,2027-02-02,False,,0,0
+ACC,False,76.0,2027-02-02,False,,1,1
 METROBRAND,False,88.0,2027-02-14,False,,0,0
 HATSUN,False,64.0,2027-01-21,False,,0,0
 BELRISE,False,105.0,2027-03-03,False,,0,0
@@ -366,7 +366,7 @@ PFOCUS,False,89.0,2027-02-15,False,,0,0
 APLLTD,False,85.0,2027-02-11,False,,0,0
 IGL,False,88.0,2027-02-14,False,,0,0
 CUBEINVIT,False,,,False,,0,0
-TDPOWERSYS,False,78.0,2027-02-04,False,,0,0
+TDPOWERSYS,False,78.0,2027-02-04,True,Interim Dividend - Re 0.65 Per Share,0,2
 GRINDWELL,False,72.0,2027-01-29,False,,0,0
 SAGILITY,False,84.0,2027-02-10,False,,0,0
 KIOCL,False,,,False,,0,0
@@ -400,7 +400,7 @@ ALIVUS,False,71.0,2027-01-28,False,,0,0
 SYNGENE,False,71.0,2027-01-28,False,,0,0
 GRWRHITECH,False,85.0,2027-02-11,False,,0,0
 BRIGADE,False,78.0,2027-02-04,False,,0,0
-VERTIS,False,,,False,,0,0
+VERTIS,False,,,True,Distribution - Rs 3.25 Per Unit Consist Of Rs 1.9609 Per Unit As Interest /Re 0.5156 Per Unit As Return Of Capital/ Re 0,0,2
 CREDITACC,False,65.0,2027-01-22,False,,0,0
 ENGINERSIN,False,72.0,2027-01-29,False,,0,0
 COHANCE,False,82.0,2027-02-08,False,,0,0
@@ -416,12 +416,12 @@ TBOTEK,False,91.0,2027-02-17,False,,0,0
 MOLBIO,False,105.0,2027-03-03,False,,0,0
 DEEPAKFERT,False,78.0,2027-02-04,False,,0,0
 JSWCEMENT,False,105.0,2027-03-03,False,,0,0
-RATNAMANI,False,85.0,2027-02-11,False,,0,0
 SHADOWFAX,False,105.0,2027-03-03,False,,0,0
+RATNAMANI,False,85.0,2027-02-11,False,,0,0
 POLYMED,False,65.0,2027-01-22,False,,0,0
 MINDACORP,False,78.0,2027-02-04,False,,0,0
-OLAPP.E1,False,79.0,2027-02-05,False,,0,0
 OLAELEC,False,79.0,2027-02-05,False,,0,0
+OLAPP.E1,False,79.0,2027-02-05,False,,0,0
 CESC,False,88.0,2027-02-14,False,,0,0
 IFCI,False,,,False,,0,0
 JINDALSAW,False,88.0,2027-02-14,False,,0,0
@@ -429,7 +429,7 @@ ANANTRAJ,False,91.0,2027-02-17,False,,0,0
 SIGMAADV,False,92.0,2027-02-18,False,,0,0
 NAZARA,False,83.0,2027-02-09,False,,0,0
 HONASA,False,92.0,2027-02-18,False,,0,0
-NATCOPHARM,False,91.0,2027-02-17,False,,0,0
+NATCOPHARM,False,91.0,2027-02-17,True,Interim Dividend - Rs 1.25 Per Share,0,2
 SOUTHBANK,False,64.0,2027-01-21,False,,0,0
 KFINTECH,False,71.0,2027-01-28,False,,0,0
 FINEORG,False,88.0,2027-02-14,False,,0,0
@@ -437,7 +437,7 @@ CHOICEIN,False,105.0,2027-03-03,False,,0,0
 PVRINOX,False,88.0,2027-02-14,False,,0,0
 ASTRAMICRO,False,79.0,2027-02-05,False,,0,0
 BBOX,False,85.0,2027-02-11,False,,0,0
-KANSAINER,False,72.0,2027-01-29,False,,0,0
+KANSAINER,False,72.0,2027-01-29,False,,1,1
 INDGN,False,72.0,2027-01-29,False,,0,0
 AEQUS,False,105.0,2027-03-03,False,,0,0
 INDIGRID,False,71.0,2027-01-28,False,,0,0
@@ -478,7 +478,7 @@ KPITTECH,False,76.0,2027-02-02,False,,0,0
 SWANDEF,False,,,False,,0,0
 BHARATCOAL,False,,,False,,0,0
 RKFORGE,False,58.0,2027-01-15,False,,0,0
-NIVABUPA,False,83.0,2027-02-09,False,,0,0
+NIVABUPA,False,83.0,2027-02-09,False,,1,1
 USHAMART,False,85.0,2027-02-11,False,,0,0
 SHAILY,False,79.0,2027-02-05,False,,0,0
 PARADEEP,False,82.0,2027-02-08,False,,0,0
@@ -525,7 +525,7 @@ BASF,False,91.0,2027-02-17,False,,0,0
 EDELALTS,False,,,False,,0,0
 THANGAMAYL,False,88.0,2027-02-14,False,,0,0
 AVALON,False,88.0,2027-02-14,False,,0,0
-INGERRAND,False,79.0,2027-02-05,False,,0,0
+INGERRAND,False,79.0,2027-02-05,True,Interim Dividend - Rs 20 Per Share,0,2
 VARROC,False,83.0,2027-02-09,False,,0,0
 EDELWEISS,False,,,False,,0,0
 SGMART,False,105.0,2027-03-03,False,,0,0
@@ -692,7 +692,7 @@ MEDPLUS,False,72.0,2027-01-29,False,,0,0
 NESCO,False,78.0,2027-02-04,False,,0,0
 MPIMANIPAL,False,,,False,,0,0
 DCBBANK,False,65.0,2027-01-22,False,,0,0
-SMLMAH,False,79.0,2027-02-05,False,,0,0
+SMLMAH,False,79.0,2027-02-05,True,Rights 2:7 @ Premium Rs 3496/-,0,2
 KRISHANA,False,,,False,,0,0
 OPTIEMUS,False,,,False,,0,0
 AVL,False,78.0,2027-02-04,False,,0,0
@@ -723,7 +723,7 @@ KAMAHOLD,False,,,False,,0,0
 KOVAI,False,,,False,,0,0
 KSHINTL,False,105.0,2027-03-03,False,,0,0
 GNFC,False,72.0,2027-01-29,False,,0,0
-ZEEL,False,78.0,2027-02-04,False,,0,0
+ZEEL,False,78.0,2027-02-04,True,Buy Back,0,2
 RHIM,False,90.0,2027-02-16,False,,0,0
 CYIENTDLM,False,62.0,2027-01-19,False,,0,0
 CEIGALL,False,83.0,2027-02-09,False,,0,0
@@ -787,7 +787,7 @@ FEDFINA,False,63.0,2027-01-20,False,,0,0
 NIRLON,False,86.0,2027-02-12,False,,0,0
 REDTAPE,False,,,False,,0,0
 ITDC,False,,,False,,0,0
-JAMNAAUTO,False,72.0,2027-01-29,False,,0,0
+JAMNAAUTO,False,72.0,2027-01-29,True,Interim Dividend - Re 1 Per Share,0,2
 FCL,False,91.0,2027-02-17,False,,0,0
 JUSTDIAL,False,51.0,2027-01-08,False,,0,0
 HEROMOTORS,False,,,False,,0,0
@@ -822,7 +822,7 @@ TRIVENI,False,77.0,2027-02-03,False,,0,0
 MSTCLTD,False,,,False,,0,0
 GREAVESCOT,False,88.0,2027-02-14,False,,0,0
 LGBBROSLTD,False,75.0,2027-02-01,False,,0,0
-CAPINVIT,False,,,False,,0,0
+CAPINVIT,False,,,True,Distribution - Rs 2.30 Per Unit Consist Of Rs 1.20 Per Unit As Interest/ Re 0.70 Per Unit As Dividend/ Re 0.40 Per Unit ,0,2
 EMIL,False,85.0,2027-02-11,False,,0,0
 SENORES,False,71.0,2027-01-28,False,,0,0
 GREENLAM,False,78.0,2027-02-04,False,,0,0
@@ -901,7 +901,7 @@ ICRA,False,78.0,2027-02-04,False,,0,0
 GUJALKALI,False,,,False,,0,0
 SFCTECH,False,,,False,,0,0
 PARAGMILK,False,72.0,2027-01-29,False,,0,0
-BAJAJHIND,False,79.0,2027-02-05,False,,0,0
+BAJAJHIND,False,79.0,2027-02-05,False,,1,1
 RPTECH,False,,,False,,0,0
 ARCIL,False,,,False,,0,0
 LXCHEM,False,70.0,2027-01-27,False,,0,0
@@ -925,7 +925,7 @@ EPIGRAL,False,69.0,2027-01-26,False,,0,0
 DEEPINDS,False,105.0,2027-03-03,False,,0,0
 BOROLTD,False,88.0,2027-02-14,False,,0,0
 AIMTRON,False,,,False,,0,0
-SEAMECLTD,False,89.0,2027-02-15,False,,0,0
+SEAMECLTD,False,89.0,2027-02-15,False,,2,2
 DEEDEV,False,86.0,2027-02-12,False,,0,0
 NETWORK18,False,,,False,,0,0
 ELLEN,False,105.0,2027-03-03,False,,0,0
@@ -960,7 +960,7 @@ JSLL,False,82.0,2027-02-08,False,,0,0
 ASHAPURMIN,False,,,False,,0,0
 AYE,False,105.0,2027-03-03,False,,0,0
 MPSLTD,False,71.0,2027-01-28,False,,0,0
-VENUSPIPES,False,76.0,2027-02-02,False,,0,0
+VENUSPIPES,False,76.0,2027-02-02,True,Interim Dividend - Re 0.50 Per Share,0,2
 RAYMONDREL,False,105.0,2027-03-03,False,,0,0
 KSL,False,65.0,2027-01-22,False,,0,0
 VISHNU,False,88.0,2027-02-14,False,,0,0
@@ -1033,7 +1033,7 @@ HEMIPROP,False,,,False,,0,0
 ADVENZYMES,False,82.0,2027-02-08,False,,0,0
 REFEX,False,,,False,,0,0
 ARSSBL,False,,,False,,0,0
-POLYPLEX,False,89.0,2027-02-15,False,,0,0
+POLYPLEX,False,89.0,2027-02-15,True,Interim Dividend - Rs 12 Per Share,0,2
 VINDHYATEL,False,,,False,,0,0
 ORIENTHOT,False,,,False,,0,0
 AURIONPRO,False,88.0,2027-02-14,False,,0,0
@@ -1072,7 +1072,7 @@ JAYKAYPP.E1,False,,,False,,0,0
 BALMLAWRIE,False,,,False,,0,0
 MARATHON,False,,,False,,0,0
 TASTYBITE,False,,,False,,0,0
-LASERPOWER,False,,,False,,0,0
+LASERPOWER,False,,,False,,1,1
 SHRINGARMS,False,105.0,2027-03-03,False,,0,0
 JINDALPOLY,False,,,False,,0,0
 WELSPLSOL,False,75.0,2027-02-01,False,,0,0
@@ -1121,7 +1121,7 @@ KKCL,False,61.0,2027-01-18,False,,0,0
 OSWALPUMPS,False,105.0,2027-03-03,False,,0,0
 GANDHAR,False,,,False,,0,0
 DIVGIITTS,False,86.0,2027-02-12,False,,0,0
-TALBROAUTO,False,88.0,2027-02-14,False,,0,0
+TALBROAUTO,False,88.0,2027-02-14,True,Interim Dividend - Re 0.30 Per Share,0,2
 FLAIR,False,72.0,2027-01-29,False,,0,0
 ORIENTCEM,False,64.0,2027-01-21,False,,0,0
 STOVEKRAFT,False,84.0,2027-02-10,False,,0,0
@@ -1173,7 +1173,7 @@ RELINFRA,False,,,False,,0,0
 NOCIL,False,85.0,2027-02-11,False,,0,0
 SIRCA,False,65.0,2027-01-22,False,,0,0
 GLOBUSSPR,False,79.0,2027-02-05,False,,0,0
-MVELECTRO,False,,,False,,0,0
+MVELECTRO,False,,,False,,1,1
 SIYSIL,False,88.0,2027-02-14,False,,0,0
 GLASSWALL,False,,,False,,0,0
 VINCOFE,False,105.0,2027-03-03,False,,0,0
@@ -1208,7 +1208,7 @@ BGRENERGY,False,,,False,,0,0
 VENKEYS,False,79.0,2027-02-05,False,,0,0
 NITCO,False,,,False,,0,0
 UTKARSHBNK,False,68.0,2027-01-25,False,,0,0
-MEDIASSIST,False,85.0,2027-02-11,False,,0,0
+MEDIASSIST,False,85.0,2027-02-11,True,Buy Back,0,2
 EPACKPEB,False,105.0,2027-03-03,False,,0,0
 SOMANYCERA,False,78.0,2027-02-04,False,,0,0
 INDOCO,False,69.0,2027-01-26,False,,0,0
@@ -1254,7 +1254,7 @@ KICL,False,,,False,,0,0
 EUROPRATIK,False,,,False,,0,0
 HONDAPOWER,False,,,False,,0,0
 ASIANENE,False,91.0,2027-02-17,False,,0,0
-SKYWAYS,False,,,False,,0,0
+SKYWAYS,False,,,True,Interim Dividend - Re 0.40 Per Share,0,2
 DANISH,False,,,False,,0,0
 VINYAS,False,,,False,,0,0
 TIL,False,,,False,,0,0
@@ -1263,7 +1263,7 @@ LANDMARK,False,90.0,2027-02-16,False,,0,0
 PNGSREVA,False,,,False,,0,0
 SIKA,False,79.0,2027-02-05,False,,0,0
 EXICOM,False,,,False,,0,0
-GAJA,False,,,False,,0,0
+GAJA,False,,,False,,1,1
 GRMOVER,False,85.0,2027-02-11,False,,0,0
 RACLGEAR,False,,,False,,0,0
 GREENPANEL,False,85.0,2027-02-11,False,,0,0
@@ -1279,7 +1279,7 @@ NIBE,False,,,False,,0,0
 GNRL,False,,,False,,0,0
 NGLFINE,False,,,False,,0,0
 SURAKSHA,False,87.0,2027-02-13,False,,0,0
-BFINVEST,False,,,False,,0,0
+BFINVEST,False,,,True,Interim Dividend - Rs 20 Per Share,0,2
 OMAXE,False,,,False,,0,0
 BFUTILITIE,False,,,False,,0,0
 SHK,False,88.0,2027-02-14,False,,0,0
@@ -1365,7 +1365,7 @@ SERVOTECH,False,,,False,,0,0
 JINDRILL,False,,,False,,0,0
 AMRUTANJAN,False,,,False,,0,0
 YUKEN,False,,,False,,0,0
-IKIO,False,79.0,2027-02-05,False,,0,0
+IKIO,False,79.0,2027-02-05,False,,1,1
 GPTINFRA,False,,,False,,0,0
 EPACK,False,88.0,2027-02-14,False,,0,0
 SUNSHINE,False,,,False,,0,0
@@ -1423,7 +1423,7 @@ ROTO,False,,,False,,0,0
 INVPRECQ,False,,,False,,0,0
 BENARAS,False,,,False,,0,0
 SHALBY,False,83.0,2027-02-09,False,,0,0
-PASHUPATI,False,,,False,,0,0
+PASHUPATI,False,,,True,Interim Dividend - Re 0.02 Per Share,0,2
 ASIANHOTNR,False,,,False,,0,0
 NELCAST,False,,,False,,0,0
 HMAAGRO,False,,,False,,0,0
@@ -1437,7 +1437,7 @@ KOPRAN,False,,,False,,0,0
 BHARATSE,False,,,False,,0,0
 SALSTEEL,False,,,False,,0,0
 IMPAL,False,,,False,,0,0
-AKCAPIT,False,,,False,,0,0
+AKCAPIT,False,,,True,Interim Dividend - Rs 18 Per Share,0,2
 ALLDIGI,False,69.0,2027-01-26,False,,0,0
 WALCHANNAG,False,,,False,,0,0
 CAPITALSFB,False,78.0,2027-02-04,False,,0,0
@@ -1560,6 +1560,7 @@ SAHASRA,False,,,False,,0,0
 REMUS,False,,,False,,0,0
 ARIHANT,False,,,False,,0,0
 REGAAL,False,,,False,,0,0
+CENTRUM,False,,,False,,0,0
 ONIXSOLAR,False,,,False,,0,0
 VALIANTORG,False,,,False,,0,0
 RUPA,False,85.0,2027-02-11,False,,0,0
@@ -1573,7 +1574,6 @@ FINKURVE,False,,,False,,0,0
 MADRASFERT,False,,,False,,0,0
 ANAWIL,False,,,False,,0,0
 APEX,False,79.0,2027-02-05,False,,0,0
-CENTRUM,False,,,False,,0,0
 ARMEE,False,,,False,,0,0
 TNPL,False,,,False,,0,0
 BIRLANU,False,78.0,2027-02-04,False,,0,0
@@ -1639,7 +1639,7 @@ PRECOT,False,,,False,,0,0
 SHREDIGCEM,False,65.0,2027-01-22,False,,0,0
 TIRUPATIFL,False,,,False,,0,0
 FAIRCHEMOR,False,,,False,,0,0
-ROHLTD,False,79.0,2027-02-05,False,,0,0
+ROHLTD,False,79.0,2027-02-05,False,,2,2
 KRYSTAL,False,70.0,2027-01-27,False,,0,0
 KILITCH,False,,,False,,0,0
 PDMJEPAPER,False,,,False,,0,0
@@ -1678,8 +1678,8 @@ DCMSRIND,False,,,False,,0,0
 BRIGHTOUTD,False,,,False,,0,0
 ELDEHSG,False,,,False,,0,0
 IIRM,False,,,False,,0,0
-ATLPP.E1,False,,,False,,0,0
 ATL,False,,,False,,0,0
+ATLPP.E1,False,,,False,,0,0
 OCCLLTD,False,105.0,2027-03-03,False,,0,0
 QUICKHEAL,False,,,False,,0,0
 SHRADDHA,False,,,False,,0,0
@@ -1708,9 +1708,9 @@ ECOSMOBLTY,False,91.0,2027-02-17,False,,0,0
 PATELRMART,False,,,False,,0,0
 BEEKAY,False,,,False,,0,0
 ZIMLAB,False,,,False,,0,0
-GLOBAL,False,,,False,,0,0
+GLOBAL,False,,,True,Buy Back,0,2
 ISTLTD,False,,,False,,0,0
-VIVIANA,False,,,False,,0,0
+VIVIANA,False,,,False,,1,1
 CIFL,False,,,False,,0,0
 SANDESH,False,,,False,,0,0
 VISAKAIND,False,88.0,2027-02-14,False,,0,0
@@ -1753,7 +1753,7 @@ KOTHARIPET,False,,,False,,0,0
 ZFSTEERING,False,,,False,,0,0
 RAMASTEEL,False,,,False,,0,0
 LOTUSCHO,False,,,False,,0,0
-SPECIALITY,False,,,False,,0,0
+SPECIALITY,False,,,False,,1,1
 PATILAUTOM,False,,,False,,0,0
 EMAMIPAP,False,,,False,,0,0
 EVERESTIND,False,,,False,,0,0
@@ -2043,7 +2043,7 @@ UHTL,False,,,False,,0,0
 FOCUS,False,,,False,,0,0
 GINNIFILA,False,,,False,,0,0
 ACL,False,,,False,,0,0
-MARKOLINES,False,,,False,,0,0
+MARKOLINES,False,,,False,,1,1
 DENORA,False,,,False,,0,0
 RADIANTCMS,False,,,False,,0,0
 COMMITTED,False,,,False,,0,0
@@ -2140,7 +2140,7 @@ KCPSUGIND,False,,,False,,0,0
 CHAVDA,False,,,False,,0,0
 OPTIMYSTIX,False,,,False,,0,0
 VERANDA,False,,,False,,0,0
-VGL,False,,,False,,0,0
+VGL,False,,,True,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share,0,2
 SWISSMLTRY,False,,,False,,0,0
 SHAHINVEST,False,,,False,,0,0
 EBIX,False,,,False,,0,0
@@ -2214,7 +2214,7 @@ SPUNWEB,False,,,False,,0,0
 MARC,False,,,False,,0,0
 NATHBIOGEN,False,,,False,,0,0
 ACTIVEINFR,False,,,False,,0,0
-APCL,False,,,False,,0,0
+APCL,False,,,False,,1,1
 SATKARTAR,False,,,False,,0,0
 GENUSPAPER,False,,,False,,0,0
 ELGIRUBCO,False,,,False,,0,0
@@ -2234,8 +2234,8 @@ MERCANTILE,False,,,False,,0,0
 PRITIKAUTO,False,,,False,,0,0
 UFO,False,,,False,,0,0
 APRAMEYA,False,,,False,,0,0
-STARPAPER,False,,,False,,0,0
-JMA,False,,,False,,0,0
+STARPAPER,False,,,False,,1,1
+JMA,False,,,True,Buy Back,0,2
 VARDMNPOLY,False,,,False,,0,0
 JAYSREETEA,False,,,False,,0,0
 SSFL,False,,,False,,0,0
@@ -2340,7 +2340,6 @@ POSITRON,False,,,False,,0,0
 RADIOCITY,False,69.0,2027-01-26,False,,0,0
 RBMINFRA,False,,,False,,0,0
 DURLAX,False,,,False,,0,0
-ASCOM,False,,,False,,0,0
 PAVNAIND,False,,,False,,0,0
 AGOL,False,,,False,,0,0
 SUBAHOTELS,False,,,False,,0,0
@@ -2367,7 +2366,7 @@ PROPEQUITY,False,,,False,,0,0
 TAKE,False,,,False,,0,0
 AARVI,False,,,False,,0,0
 INM,False,,,False,,0,0
-ARCL,False,,,False,,0,0
+ARCL,False,,,True,Interim Dividend - Re 1 Per Share,0,2
 NIKITA,False,,,False,,0,0
 RMC,False,,,False,,0,0
 RANASUG,False,,,False,,0,0
@@ -2377,8 +2376,8 @@ HBESD,False,,,False,,0,0
 MADHAVIPL,False,,,False,,0,0
 UMIYA_MRO,False,,,False,,0,0
 RRIL,False,,,False,,0,0
-CENTEXT,False,,,False,,0,0
 CENTEXTPP.E1,False,,,False,,0,0
+CENTEXT,False,,,False,,0,0
 MASON,False,,,False,,0,0
 INTENTECH,False,,,False,,0,0
 YAAP,False,,,False,,0,0
@@ -2504,7 +2503,7 @@ VIAZ,False,,,False,,0,0
 AARNAV,False,,,False,,0,0
 MCL,False,,,False,,0,0
 SUPREMEENG,False,,,False,,0,0
-VGCL,False,,,False,,0,0
+VGCL,False,,,True,Interim Dividend - Re 1 Per Share,0,2
 VASWANI,False,,,False,,0,0
 POOJALOGIS,False,,,False,,0,0
 MSL,False,,,False,,0,0
@@ -2686,13 +2685,13 @@ DTL,False,,,False,,0,0
 RAJSREESUG,False,,,False,,0,0
 UTKAL,False,,,False,,0,0
 HAPPY,False,,,False,,0,0
-GATECHDVR,False,,,False,,0,0
 GATECH,False,,,False,,0,0
+GATECHDVR,False,,,False,,0,0
 NORBTEAEXP,False,,,False,,0,0
 VAISHALI,False,,,False,,0,0
 GLOBE,False,,,False,,0,0
 BRACEPORT,False,,,False,,0,0
-PRAXIS,False,,,False,,0,0
+PRAXIS,False,,,True,Rights 5:9,0,2
 RTSPOWR,False,,,False,,0,0
 AISL,False,,,False,,0,0
 MUKESHB,False,,,False,,0,0
@@ -2847,8 +2846,8 @@ DHANSA,False,,,False,,0,0
 KONSTELEC,False,,,False,,0,0
 ATAM,False,,,False,,0,0
 MPEL,False,,,False,,0,0
-ITTL,False,,,False,,0,0
 PANACHE,False,,,False,,0,0
+ITTL,False,,,False,,0,0
 BONLON,False,,,False,,0,0
 ANSALBU,False,,,False,,0,0
 SIGNORIA,False,,,False,,0,0
@@ -3045,7 +3044,7 @@ MEDICAPQ,False,,,False,,0,0
 DNAMEDIA,False,,,False,,0,0
 QFIL,False,,,False,,0,0
 VCL,False,,,False,,0,0
-AGSTRA,False,,2026-11-17,False,,0,0
+AGSTRA,True,0.0,2026-11-18,False,,0,3
 AGNI,False,,,False,,0,0
 MICROPRO,False,,,False,,0,0
 GTECJAINX,False,,,False,,0,0
@@ -3075,7 +3074,6 @@ NFPSAMPOOR,False,,,False,,0,0
 KALANA,False,,,False,,0,0
 ARUNAYA,False,,,False,,0,0
 KRIDHANINF,False,,,False,,0,0
-SPRL,False,,,False,,0,0
 ASIANTNE,False,,,False,,0,0
 CEDAAR,False,,,False,,0,0
 PRISMX,False,,,False,,0,0
@@ -3174,7 +3172,6 @@ SHANTHALA,False,,,False,,0,0
 ORTEL,False,,,False,,0,0
 RITEZONE,False,,,False,,0,0
 SHANTI,False,,,False,,0,0
-DHTL,False,,,False,,0,0
 WINNY,False,,,False,,0,0
 FALCONTECH,False,,,False,,0,0
 ACCORD,False,,,False,,0,0
@@ -3186,49 +3183,49 @@ MITTAL,False,,,False,,0,0
 PERFECT,False,,,False,,0,0
 JALAN,False,,,False,,0,0
 VASA,False,,,False,,0,0
-STRIDERS,False,,,False,,0,0
-HGSINDIALT,False,,,False,,0,0
-APOORVA,False,,,False,,0,0
-RIIT,False,,,False,,0,0
-ISHAN,False,,,False,,0,0
-NEPHROCARE,False,,,False,,0,0
-AGL,False,,,False,,0,0
-SUMEDHA,False,,,False,,0,0
-APSISAERO,False,,,False,,0,0
-SARTELE,False,,,False,,0,0
-NDRINVIT,False,,,False,,0,0
-AHIMSA,False,,,False,,0,0
-AGASTYAEN,False,,,False,,0,0
-SAICAPI,False,,,False,,0,0
-KJMCFIN,False,,,False,,0,0
-AGL,False,,,False,,0,0
-AHIMSA,False,,,False,,0,0
-SRIKPRIND,False,,,False,,0,0
-RIIT,False,,,False,,0,0
-GKWLIMITED,False,,,False,,0,0
-HGSINDIALT,False,,,False,,0,0
-NDRINVIT,False,,,False,,0,0
-ARISTO,False,,,False,,0,0
-JFLLIFE,False,,,False,,0,0
-SAIFL,False,,,False,,0,0
+ACETEC,False,,,False,,0,0
 IGLSPIRITS,False,,,False,,0,0
-ROCKPP.E1,False,,,False,,0,0
-COREIN,False,,,False,,0,0
-SUMEDHA,False,,,False,,0,0
-SARTELE,False,,,False,,0,0
-ISHAN,False,,,False,,0,0
+ARHAM,False,,,False,,0,0
+HGSINDIALT,False,,,False,,0,0
 AGASTYAEN,False,,,False,,0,0
-MOXSH,False,,,False,,0,0
-AILIMITED,False,,,False,,0,0
-ENNATURE,False,,,False,,0,0
-MAXENGS,False,,,False,,0,0
-TRIVENIPT,False,,,False,,0,0
-RFBL,False,,,False,,0,0
-ADVIKCA,False,,,False,,0,0
+TIMESCAN,False,,,False,,0,0
+ISHAN,False,,,False,,0,0
 ETL,False,,,False,,0,0
+DRSCARGO,False,,,False,,0,0
+MAXENGS,False,,,False,,0,0
+INVICTA,False,,,False,,0,0
+RFBL,False,,,False,,0,0
+APSISAERO,False,,,False,,0,0
 NEPHROCARE,False,,,False,,0,0
 UMA,False,,,False,,0,0
+VISDEM,False,,,False,,0,0
+APSISAERO,False,,,False,,0,0
+STRIDERS,False,,,False,,0,0
+GKWLIMITED,False,,,False,,0,0
 INVICTA,False,,,False,,0,0
-WALPAR,False,,,False,,0,0
-GREENLEAF,False,,,False,,0,0
+TIMESCAN,False,,,False,,0,0
+KJMCFIN,False,,,False,,0,0
+ISHAN,False,,,False,,0,0
+RIIT,False,,,False,,0,0
+NEPHROCARE,False,,,False,,0,0
+COREIN,False,,,False,,0,0
 KDL,False,,,False,,0,0
+ENSER,False,,,False,,0,0
+ETL,False,,,False,,0,0
+DRSCARGO,False,,,False,,0,0
+RFBL,False,,,False,,0,0
+SUMEDHA,False,,,False,,0,0
+JFLLIFE,False,,,False,,0,0
+APOORVA,False,,,False,,0,0
+NDRINVIT,False,,,False,,0,0
+AILIMITED,False,,,False,,0,0
+UMA,False,,,False,,0,0
+VISDEM,False,,,False,,0,0
+SAIFL,False,,,False,,0,0
+AHIMSA,False,,,False,,0,0
+ADVIKCA,False,,,False,,0,0
+SAICAPI,False,,,False,,0,0
+IGLSPIRITS,False,,,False,,0,0
+SRIKPRIND,False,,,False,,0,0
+JKSHAH,False,,,False,,0,0
+ARISTO,False,,,False,,0,0
