@@ -1,27 +1,27 @@
-# Parkhu research pack — 2026-11-18
+# Parkhu research pack — 2026-11-19
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-18T18:10:44.370914+05:30
+- **generated_at_ist:** 2026-11-19T02:28:01.775846+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-0.63%)
+- market_regime: **Bullish**
+- nifty: Bullish (0.38%)
 - india_vix: 15.52 (Medium)
 - fii_net: 5866.78 | dii_net: -3159.9
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3251
-- trend = Bullish: 1026
-- price > SMA200: 775
-- price > EMA50: 747
+- universe: 3253
+- trend = Bullish: 1027
+- price > SMA200: 770
+- price > EMA50: 742
 - ADX14 > 25: 382
 - RSI14 in 40-80: 366
-- RS > 0 vs NIFTY and sector: 156
-- delivery% >= 40: 94
+- RS > 0 vs NIFTY and sector: 140
+- delivery% >= 40: 82
 - relative_volume >= 1: 16
 - no earnings within 21d: 16
 - event_risk_score <= 1: 16
@@ -29,26 +29,26 @@
 
 ## Survivors (top 16 of 16)
 
-- **KOTAKBANK** [idea] score 90.4 — selected as idea
+- **KOTAKBANK** [idea] score 90.5 — selected as idea
 - **SBIN** [idea] score 85.3 — selected as idea
-- **MSUMI** [rejected] score 83.3 — T1 needs more than 22 trading days (~1 month)
+- **MSUMI** [rejected] score 83.2 — T1 needs more than 22 trading days (~1 month)
 - **BANKINDIA** [rejected] score 82.8 — 25% sector cap for Banks would be breached
-- **GAIL** [idea] score 81.5 — selected as idea
+- **GAIL** [idea] score 82.1 — selected as idea
 - **PHOENIXLTD** [watchlist] score 78.3 — score in Watch band (70–80)
 - **HONASA** [watchlist] score 76.8 — score in Watch band (70–80)
-- **LICHSGFIN** [watchlist] score 73.6 — score in Watch band (70–80)
-- **TATACONSUM** [rejected] score 71.1 — T1 needs more than 22 trading days (~1 month)
+- **LICHSGFIN** [watchlist] score 73.4 — score in Watch band (70–80)
+- **TATACONSUM** [rejected] score 71.0 — T1 needs more than 22 trading days (~1 month)
 - **NAVKARURB** [rejected] score 70.3 — T1 needs more than 22 trading days (~1 month)
-- **RELIANCE** [rejected] score 69.0 — T1 needs more than 22 trading days (~1 month)
-- **360ONE** [rejected] score 64.6 — score below Watch band
+- **RELIANCE** [rejected] score 69.5 — T1 needs more than 22 trading days (~1 month)
+- **360ONE** [rejected] score 64.3 — score below Watch band
 - **GODREJPROP** [rejected] score 56.4 — T1 needs more than 22 trading days (~1 month)
 - **MEESHO** [rejected] score 55.5 — score below Watch band
-- **WESTLIFE** [rejected] score 51.6 — score below Watch band
-- **WSI** [rejected] score 42.7 — score below Watch band
+- **WESTLIFE** [rejected] score 51.5 — score below Watch band
+- **WSI** [rejected] score 42.6 — score below Watch band
 
 ## Ideas
 
-### KOTAKBANK — Buy (score 90.4)
+### KOTAKBANK — Buy (score 90.5)
 - Kotak Mahindra Bank Limited | risk_sector: Banks
 - entry 494.85 | stop 475.21 | t1 534.14 | t2 553.78 | t3 573.43 | R:R 2.0
 - qty 20 | deployed 9897.0 (9.9%) | risk ₹393.0
@@ -58,7 +58,7 @@
 - entry 1135.0 | stop 1087.91 | t1 1234.7 | t2 1281.79 | t3 1328.89 | R:R 2.12
 - qty 8 | deployed 9080.0 (9.08%) | risk ₹377.0
 
-### GAIL — Buy (score 81.5)
+### GAIL — Buy (score 82.1)
 - GAIL (India) Limited | risk_sector: Utilities
 - entry 190.0 | stop 182.21 | t1 205.58 | t2 213.38 | t3 221.17 | R:R 2.0
 - qty 52 | deployed 9880.0 (9.88%) | risk ₹405.0
@@ -95,68 +95,63 @@
 - **MAHABANK** status=open entry=95.27 last=96.0 mfe=1.82 mae=-3.43 opened=2026-11-17
 - **PHOENIXLTD** status=open entry=2229.0 last=2204.6 mfe=1.72 mae=-1.92 opened=2026-11-17
 - **SHARDAMOTR** status=open entry=987.0 last=935.05 mfe=4.8 mae=-5.76 opened=2026-11-17
-- **SBIN** status=open entry=1135.0 last=1135.0 mfe=0.0 mae=0.0 opened=2026-11-18
+- **SBIN** status=open entry=1135.0 last=1135.0 mfe=0.67 mae=-2.58 opened=2026-11-18
 
 ## Needs action
 
 - **ALIVUS**: TIGHTEN / REVIEW — ADX 17 — trend no longer tradeable — one condition gone, thesis thinning
 - **ICICIBANK**: BANK PARTIAL — T1 REACHED — ₹1,601.30 above T1 ₹1,590.85 — bank part, trail the rest, move stop to breakeven ₹1,477.30
-- **NDRAUTO**: EXIT — STOP HIT — session low at/below stop ₹728.19 (last ₹777.60)
 - **PNB**: BANK MORE — T2 REACHED — ₹149.57 above T2 ₹144.78 — trail the remainder toward T3 ₹151.00
 - **TFCILTD**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
 - **UNIONBANK**: BANK PARTIAL — T1 REACHED — ₹207.88 above T1 ₹205.49 — bank part, trail the rest, move stop to breakeven ₹182.85
 
-## Closed today
-
-- NDRAUTO: {'trade_id': '2026-11-18-NDRAUTO', 'symbol': 'NDRAUTO', 'company': 'NDR Auto Components Ltd.', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-11-18', 'taken': None, 'entry': 766.45, 'stop': 728.19, 't1': 930.95, 't2': 969.21, 't3': 1007.46, 'structure_invalidation': 766.2, 'horizon_days_t1': 19, 'horizon_days_t2': 22, 'score_at_open': 87.1, 'qty': 13, 'risk_rupees': 497.0, 'status': 'closed', 'last_price': 777.6, 'last_checked': '2026-11-18', 'mfe_pct': 5.66, 'mae_pct': -5.39, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-11-18', 'exit_price': 777.6, 'exit_reason': 'stop', 'pct_return': 1.45, 'r_multiple': 0.29, 'days_held': 0}
-
 ## Swing candidates (top)
 
-- DLF: score=14 rs_nifty=2.75 deliv=41.09
-- UNOMINDA: score=14 rs_nifty=14.99 deliv=51.81
-- PRESTIGE: score=14 rs_nifty=2.24 deliv=47.67
-- LODHA: score=14 rs_nifty=3.2 deliv=40.52
-- BAJFINANCE: score=14 rs_nifty=2.06 deliv=63.45
-- APOLLOHOSP: score=14 rs_nifty=2.94 deliv=44.46
-- GAIL: score=14 rs_nifty=3.76 deliv=46.86
-- SATIN: score=13 rs_nifty=2.19 deliv=58.29
-- JMA: score=13 rs_nifty=9.43 deliv=48.91
-- EIMCOELECO: score=13 rs_nifty=0.93 deliv=51.21
-- RKFORGE: score=13 rs_nifty=0.8 deliv=46.83
-- PHOENIXLTD: score=13 rs_nifty=7.96 deliv=70.2
-- SSWL: score=13 rs_nifty=21.28 deliv=46.8
-- TANLA: score=13 rs_nifty=15.0 deliv=40.09
-- AARTIPHARM: score=13 rs_nifty=6.3 deliv=44.73
+- GAIL: score=14 rs_nifty=2.36 deliv=46.86
+- APOLLOHOSP: score=13 rs_nifty=1.54 deliv=44.46
+- DIVISLAB: score=13 rs_nifty=9.82 deliv=54.92
+- LODHA: score=13 rs_nifty=1.8 deliv=40.52
+- LUMAXTECH: score=13 rs_nifty=6.35 deliv=42.66
+- MEDANTA: score=13 rs_nifty=5.39 deliv=61.16
+- ANTHEM: score=13 rs_nifty=0.82 deliv=62.03
+- BALUFORGE: score=13 rs_nifty=2.14 deliv=46.36
+- MINDACORP: score=13 rs_nifty=0.3 deliv=42.81
+- HMVL: score=13 rs_nifty=8.55 deliv=85.12
+- TALBROAUTO: score=13 rs_nifty=0.5 deliv=52.49
+- CEMPRO: score=13 rs_nifty=3.14 deliv=59.83
+- AGARWALEYE: score=13 rs_nifty=7.29 deliv=46.83
+- PDSL: score=13 rs_nifty=7.23 deliv=46.07
+- SATIN: score=13 rs_nifty=0.79 deliv=58.29
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.28% (bull)
-- Hang Seng: -0.91% (bear)
-- Shanghai: +0.09% (neutral)
-- Kospi: +1.99% (bull)
-- Taiwan: +0.26% (bull)
+- Nikkei: -1.34% (bear)
+- Hang Seng: -1.03% (bear)
+- Shanghai: -0.50% (bear)
+- Kospi: -2.59% (bear)
+- Taiwan: -2.31% (bear)
 - ASX 200: -0.69% (bear)
 
 ### Europe
-- FTSE 100: -0.53% (bear)
-- DAX: -0.08% (neutral)
-- Euro Stoxx 50: +0.09% (neutral)
+- FTSE 100: -1.30% (bear)
+- DAX: -1.19% (bear)
+- Euro Stoxx 50: -0.93% (bear)
 
 ### US
-- S&P 500: -1.03% (bear)
-- Nasdaq: -0.74% (bear)
-- Dow: -1.64% (bear)
-- US VIX: -4.83% (bull)
+- S&P 500: -0.13% (neutral)
+- Nasdaq: +0.51% (bull)
+- Dow: -1.02% (bear)
+- US VIX: -3.26% (bull)
 
 ### Macro
-- USDINR: -0.57% (bull)
-- Crude WTI: -2.08% (bear)
-- Brent: -3.10% (bear)
-- DXY: +0.31% (neutral)
-- US 10Y: -0.35% (neutral)
-- India ETF: +0.66% (bull)
-- EM ETF: -1.05% (bear)
+- USDINR: -0.54% (bull)
+- Crude WTI: -4.59% (bear)
+- Brent: -4.53% (bear)
+- DXY: +0.29% (neutral)
+- US 10Y: -0.73% (bull)
+- India ETF: -0.82% (bear)
+- EM ETF: -0.63% (bear)
 
 
 ## Groq desk note
@@ -175,6 +170,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-18/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-19/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
