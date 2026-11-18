@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-18",
-  "generated_at_ist": "2026-11-18T06:12:00.027233+05:30",
-  "duration_seconds": 466.5,
+  "generated_at_ist": "2026-11-18T13:29:58.903468+05:30",
+  "duration_seconds": 342.0,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3233,
-      "seconds": 2.3
+      "rows": 3230,
+      "seconds": 3.0
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14595,
-      "cache_rows": 8007072,
-      "symbols": 2927,
-      "failed": 37,
+      "rows": 14560,
+      "cache_rows": 8004852,
+      "symbols": 2919,
+      "failed": 40,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2525,
+      "warm": 2520,
       "cold": 436,
-      "new_symbols": 38,
+      "new_symbols": 42,
       "retries": 2,
-      "seconds": 221.6
+      "seconds": 253.3
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3233,
+      "rows": 3230,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.8
+      "seconds": 0.7
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.4
+      "seconds": 1.7
     },
     {
       "agent": "smartmoney",
       "status": "partial",
-      "rows": 0,
-      "seconds": 26.3
+      "rows": 2,
+      "seconds": 3.7
     },
     {
       "agent": "options",
-      "status": "partial",
-      "rows": 0,
-      "seconds": 26.2
+      "status": "ok",
+      "rows": 2,
+      "seconds": 4.4
     },
     {
       "agent": "derivatives",
-      "status": "error",
-      "rows": 0,
-      "seconds": 38.5
+      "status": "ok",
+      "rows": 468,
+      "seconds": 4.8
     },
     {
       "agent": "stock_options",
@@ -77,44 +77,44 @@
     },
     {
       "agent": "delivery",
-      "status": "partial",
-      "rows": 0,
-      "seconds": 62.7
+      "status": "ok",
+      "rows": 2392,
+      "seconds": 18.0
     },
     {
       "agent": "corpactions",
-      "status": "partial",
-      "rows": 0,
-      "seconds": 14.2
+      "status": "ok",
+      "rows": 500,
+      "seconds": 2.8
     },
     {
       "agent": "news",
-      "status": "partial",
-      "rows": 0,
-      "seconds": 14.2
+      "status": "ok",
+      "rows": 20,
+      "seconds": 2.5
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.8
+      "seconds": 4.7
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3233,
+      "rows": 3230,
       "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3233,
-      "seconds": 0.4
+      "rows": 3230,
+      "seconds": 0.6
     },
     {
       "agent": "fno_momentum",
-      "status": "partial",
-      "rows": 0,
+      "status": "ok",
+      "rows": 216,
       "seconds": 0.1
     },
     {
@@ -131,35 +131,39 @@
     },
     {
       "agent": "news_classify",
-      "status": "partial",
-      "rows": 0,
+      "status": "ok",
+      "rows": 20,
       "seconds": 0.0
     },
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2919,
-      "with_structure": 2919,
+      "rows": 2912,
+      "with_structure": 2912,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 12.1
+      "seconds": 12.8
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3253,
-      "seconds": 5.3
+      "rows": 3252,
+      "seconds": 5.1
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 0,
-      "ideas": [],
-      "watchlist": 0,
+      "rows": 2,
+      "ideas": [
+        "NDRAUTO",
+        "GAIL"
+      ],
+      "watchlist": 1,
       "open_positions": 30,
       "needing_action": [
         "ALIVUS",
         "ICICIBANK",
+        "KOTAKBANK",
         "PNB",
         "TFCILTD",
         "UNIONBANK"
@@ -168,15 +172,15 @@
       "seconds": 0.3
     }
   ],
-  "ok": 12,
-  "partial": 8,
-  "errors": 1,
+  "ok": 19,
+  "partial": 2,
+  "errors": 0,
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 12,
-    "agents_partial": 8,
-    "agents_error": 1
+    "agents_ok": 19,
+    "agents_partial": 2,
+    "agents_error": 0
   },
   "latest_promoted": true,
   "access_note": "Prefer output/latest/research_pack.md (or pack_url in output/index.json) for LLM review \u2014 no zip required. download_url is raw GitHub text; preview_url is the GitHub UI. Links work after this run is pushed.",

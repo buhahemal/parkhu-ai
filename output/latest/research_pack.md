@@ -1,113 +1,132 @@
 # Parkhu research pack — 2026-11-18
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-18T13:29:58.903468+05:30
+- **generated_at_ist:** 2026-11-18T18:10:44.370914+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bearish**
-- nifty: Bearish (-0.84%)
-- india_vix: 15.96 (Medium)
-- fii_net: 4195.38 | dii_net: 196.93
+- nifty: Bearish (-0.63%)
+- india_vix: 15.52 (Medium)
+- fii_net: 5866.78 | dii_net: -3159.9
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3252
-- trend = Bullish: 1052
-- price > SMA200: 778
-- price > EMA50: 749
-- ADX14 > 25: 385
-- RSI14 in 40-80: 369
-- RS > 0 vs NIFTY and sector: 158
-- delivery% >= 40: 97
-- relative_volume >= 1: 7
-- no earnings within 21d: 7
-- event_risk_score <= 1: 6
-- TV rating not Sell: 6
+- universe: 3251
+- trend = Bullish: 1026
+- price > SMA200: 775
+- price > EMA50: 747
+- ADX14 > 25: 382
+- RSI14 in 40-80: 366
+- RS > 0 vs NIFTY and sector: 156
+- delivery% >= 40: 94
+- relative_volume >= 1: 16
+- no earnings within 21d: 16
+- event_risk_score <= 1: 16
+- TV rating not Sell: 16
 
-## Survivors (top 6 of 6)
+## Survivors (top 16 of 16)
 
-- **NDRAUTO** [idea] score 87.1 — selected as idea
-- **GAIL** [idea] score 85.3 — selected as idea
-- **HONASA** [watchlist] score 75.9 — score in Watch band (70–80)
-- **PVRINOX** [rejected] score 67.8 — score below Watch band
-- **SIMPLEXINF** [rejected] score 67.7 — score below Watch band
-- **360ONE** [rejected] score 63.7 — score below Watch band
+- **KOTAKBANK** [idea] score 90.4 — selected as idea
+- **SBIN** [idea] score 85.3 — selected as idea
+- **MSUMI** [rejected] score 83.3 — T1 needs more than 22 trading days (~1 month)
+- **BANKINDIA** [rejected] score 82.8 — 25% sector cap for Banks would be breached
+- **GAIL** [idea] score 81.5 — selected as idea
+- **PHOENIXLTD** [watchlist] score 78.3 — score in Watch band (70–80)
+- **HONASA** [watchlist] score 76.8 — score in Watch band (70–80)
+- **LICHSGFIN** [watchlist] score 73.6 — score in Watch band (70–80)
+- **TATACONSUM** [rejected] score 71.1 — T1 needs more than 22 trading days (~1 month)
+- **NAVKARURB** [rejected] score 70.3 — T1 needs more than 22 trading days (~1 month)
+- **RELIANCE** [rejected] score 69.0 — T1 needs more than 22 trading days (~1 month)
+- **360ONE** [rejected] score 64.6 — score below Watch band
+- **GODREJPROP** [rejected] score 56.4 — T1 needs more than 22 trading days (~1 month)
+- **MEESHO** [rejected] score 55.5 — score below Watch band
+- **WESTLIFE** [rejected] score 51.6 — score below Watch band
+- **WSI** [rejected] score 42.7 — score below Watch band
 
 ## Ideas
 
-### NDRAUTO — Buy (score 87.1)
-- NDR Auto Components Ltd. | risk_sector: Producer Manufacturing
-- entry 766.45 | stop 728.19 | t1 930.95 | t2 969.21 | t3 1007.46 | R:R 4.3
-- qty 13 | deployed 9964.0 (9.96%) | risk ₹497.0
+### KOTAKBANK — Buy (score 90.4)
+- Kotak Mahindra Bank Limited | risk_sector: Banks
+- entry 494.85 | stop 475.21 | t1 534.14 | t2 553.78 | t3 573.43 | R:R 2.0
+- qty 20 | deployed 9897.0 (9.9%) | risk ₹393.0
 
-### GAIL — Buy (score 85.3)
+### SBIN — Buy (score 85.3)
+- State Bank of India | risk_sector: Banks
+- entry 1135.0 | stop 1087.91 | t1 1234.7 | t2 1281.79 | t3 1328.89 | R:R 2.12
+- qty 8 | deployed 9080.0 (9.08%) | risk ₹377.0
+
+### GAIL — Buy (score 81.5)
 - GAIL (India) Limited | risk_sector: Utilities
-- entry 189.04 | stop 181.25 | t1 204.62 | t2 212.42 | t3 220.21 | R:R 2.0
-- qty 52 | deployed 9830.0 (9.83%) | risk ₹405.0
+- entry 190.0 | stop 182.21 | t1 205.58 | t2 213.38 | t3 221.17 | R:R 2.0
+- qty 52 | deployed 9880.0 (9.88%) | risk ₹405.0
 
 ## Open ledger
 
-- **UNIONBANK** status=partial entry=182.85 last=206.11 mfe=14.68 mae=-3.04 opened=2026-10-22
-- **KOTAKBANK** status=partial entry=459.0 last=500.25 mfe=9.6 mae=-4.3 opened=2026-10-29
-- **ALIVUS** status=open entry=1447.6 last=1446.9 mfe=8.73 mae=-3.05 opened=2026-11-02
-- **TFCILTD** status=open entry=157.96 last=169.72 mfe=8.89 mae=-4.27 opened=2026-11-02
-- **GAIL** status=open entry=186.22 last=189.04 mfe=2.75 mae=-3.34 opened=2026-11-04
-- **CHOLAFIN** status=open entry=1766.2 last=1859.5 mfe=6.71 mae=-3.63 opened=2026-11-05
-- **ICICIBANK** status=partial entry=1477.3 last=1591.8 mfe=9.39 mae=-2.13 opened=2026-11-05
-- **PNB** status=partial entry=126.1 last=150.5 mfe=21.01 mae=-2.38 opened=2026-11-05
-- **TECHM** status=open entry=1822.7 last=1743.8 mfe=2.05 mae=-4.37 opened=2026-11-05
-- **GLENMARK** status=open entry=2481.8 last=2651.5 mfe=9.36 mae=-4.69 opened=2026-11-06
-- **ORIENTELEC** status=open entry=199.62 last=198.57 mfe=4.04 mae=-6.06 opened=2026-11-06
-- **LUMAXTECH** status=open entry=2297.6 last=2314.9 mfe=8.94 mae=-5.34 opened=2026-11-09
-- **SOUTHBANK** status=open entry=58.68 last=60.69 mfe=6.63 mae=-1.84 opened=2026-11-09
-- **PETRONET** status=open entry=329.8 last=326.65 mfe=1.97 mae=-2.35 opened=2026-11-11
-- **TANLA** status=open entry=694.9 last=697.05 mfe=6.34 mae=-6.54 opened=2026-11-11
-- **ACUTAAS** status=open entry=3996.1 last=3990.5 mfe=3.35 mae=-2.85 opened=2026-11-12
-- **BAJFINANCE** status=open entry=1115.0 last=1091.45 mfe=1.07 mae=-3.44 opened=2026-11-12
-- **EMCURE** status=open entry=2302.0 last=2339.0 mfe=4.34 mae=-2.54 opened=2026-11-12
-- **TIPSMUSIC** status=open entry=812.35 last=804.25 mfe=2.73 mae=-3.98 opened=2026-11-13
-- **HDFCAMC** status=open entry=2663.0 last=2642.3 mfe=3.59 mae=-1.44 opened=2026-11-14
-- **KANPRPLA** status=open entry=266.73 last=249.01 mfe=2.14 mae=-6.95 opened=2026-11-16
-- **MODIS** status=open entry=459.75 last=450.9 mfe=0.92 mae=-6.25 opened=2026-11-16
-- **BANCOINDIA** status=open entry=706.35 last=705.9 mfe=2.47 mae=-5.17 opened=2026-11-17
-- **ENGINERSIN** status=open entry=312.0 last=307.65 mfe=2.88 mae=-2.56 opened=2026-11-17
-- **INDIANB** status=open entry=936.0 last=936.3 mfe=2.12 mae=-0.6 opened=2026-11-17
-- **KPRMILL** status=open entry=1217.1 last=1212.5 mfe=2.48 mae=-1.4 opened=2026-11-17
-- **LAURUSLABS** status=open entry=2332.0 last=2323.2 mfe=1.31 mae=-5.03 opened=2026-11-17
-- **MAHABANK** status=open entry=95.27 last=95.86 mfe=1.82 mae=-3.43 opened=2026-11-17
-- **PHOENIXLTD** status=open entry=2229.0 last=2239.7 mfe=1.72 mae=-1.92 opened=2026-11-17
-- **SHARDAMOTR** status=open entry=987.0 last=946.2 mfe=4.8 mae=-4.36 opened=2026-11-17
-- **NDRAUTO** status=open entry=766.45 last=766.45 mfe=0.0 mae=0.0 opened=2026-11-18
+- **UNIONBANK** status=partial entry=182.85 last=207.88 mfe=14.68 mae=-3.04 opened=2026-10-22
+- **KOTAKBANK** status=partial entry=459.0 last=494.85 mfe=9.6 mae=-4.3 opened=2026-10-29
+- **ALIVUS** status=open entry=1447.6 last=1444.7 mfe=8.73 mae=-3.05 opened=2026-11-02
+- **TFCILTD** status=open entry=157.96 last=169.69 mfe=8.89 mae=-4.27 opened=2026-11-02
+- **GAIL** status=open entry=186.22 last=190.0 mfe=2.75 mae=-3.34 opened=2026-11-04
+- **CHOLAFIN** status=open entry=1766.2 last=1875.0 mfe=6.71 mae=-3.63 opened=2026-11-05
+- **ICICIBANK** status=partial entry=1477.3 last=1601.3 mfe=9.39 mae=-2.13 opened=2026-11-05
+- **PNB** status=partial entry=126.1 last=149.57 mfe=21.01 mae=-2.38 opened=2026-11-05
+- **TECHM** status=open entry=1822.7 last=1750.0 mfe=2.05 mae=-4.87 opened=2026-11-05
+- **GLENMARK** status=open entry=2481.8 last=2646.1 mfe=9.36 mae=-4.69 opened=2026-11-06
+- **ORIENTELEC** status=open entry=199.62 last=198.51 mfe=4.04 mae=-6.06 opened=2026-11-06
+- **LUMAXTECH** status=open entry=2297.6 last=2316.1 mfe=8.94 mae=-5.34 opened=2026-11-09
+- **SOUTHBANK** status=open entry=58.68 last=61.02 mfe=6.63 mae=-1.84 opened=2026-11-09
+- **PETRONET** status=open entry=329.8 last=325.5 mfe=1.97 mae=-2.35 opened=2026-11-11
+- **TANLA** status=open entry=694.9 last=698.05 mfe=6.34 mae=-6.54 opened=2026-11-11
+- **ACUTAAS** status=open entry=3996.1 last=3991.3 mfe=3.35 mae=-2.85 opened=2026-11-12
+- **BAJFINANCE** status=open entry=1115.0 last=1093.85 mfe=1.07 mae=-3.44 opened=2026-11-12
+- **EMCURE** status=open entry=2302.0 last=2334.8 mfe=4.34 mae=-2.54 opened=2026-11-12
+- **TIPSMUSIC** status=open entry=812.35 last=811.25 mfe=2.73 mae=-3.98 opened=2026-11-13
+- **HDFCAMC** status=open entry=2663.0 last=2649.1 mfe=3.59 mae=-1.44 opened=2026-11-14
+- **KANPRPLA** status=open entry=266.73 last=250.98 mfe=2.14 mae=-6.95 opened=2026-11-16
+- **MODIS** status=open entry=459.75 last=458.15 mfe=0.92 mae=-6.25 opened=2026-11-16
+- **BANCOINDIA** status=open entry=706.35 last=711.35 mfe=2.47 mae=-5.17 opened=2026-11-17
+- **ENGINERSIN** status=open entry=312.0 last=304.7 mfe=2.88 mae=-2.93 opened=2026-11-17
+- **INDIANB** status=open entry=936.0 last=937.0 mfe=2.12 mae=-0.6 opened=2026-11-17
+- **KPRMILL** status=open entry=1217.1 last=1207.5 mfe=2.48 mae=-1.4 opened=2026-11-17
+- **LAURUSLABS** status=open entry=2332.0 last=2322.5 mfe=1.31 mae=-5.03 opened=2026-11-17
+- **MAHABANK** status=open entry=95.27 last=96.0 mfe=1.82 mae=-3.43 opened=2026-11-17
+- **PHOENIXLTD** status=open entry=2229.0 last=2204.6 mfe=1.72 mae=-1.92 opened=2026-11-17
+- **SHARDAMOTR** status=open entry=987.0 last=935.05 mfe=4.8 mae=-5.76 opened=2026-11-17
+- **SBIN** status=open entry=1135.0 last=1135.0 mfe=0.0 mae=0.0 opened=2026-11-18
 
 ## Needs action
 
 - **ALIVUS**: TIGHTEN / REVIEW — ADX 17 — trend no longer tradeable — one condition gone, thesis thinning
-- **ICICIBANK**: BANK PARTIAL — T1 REACHED — ₹1,591.80 above T1 ₹1,590.85 — bank part, trail the rest, move stop to breakeven ₹1,477.30
-- **KOTAKBANK**: BANK PARTIAL — T1 REACHED — ₹500.25 above T1 ₹499.77 — bank part, trail the rest, move stop to breakeven ₹459.00
-- **PNB**: BANK MORE — T2 REACHED — ₹150.50 above T2 ₹144.78 — trail the remainder toward T3 ₹151.00
+- **ICICIBANK**: BANK PARTIAL — T1 REACHED — ₹1,601.30 above T1 ₹1,590.85 — bank part, trail the rest, move stop to breakeven ₹1,477.30
+- **NDRAUTO**: EXIT — STOP HIT — session low at/below stop ₹728.19 (last ₹777.60)
+- **PNB**: BANK MORE — T2 REACHED — ₹149.57 above T2 ₹144.78 — trail the remainder toward T3 ₹151.00
 - **TFCILTD**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
-- **UNIONBANK**: BANK PARTIAL — T1 REACHED — ₹206.11 above T1 ₹205.49 — bank part, trail the rest, move stop to breakeven ₹182.85
+- **UNIONBANK**: BANK PARTIAL — T1 REACHED — ₹207.88 above T1 ₹205.49 — bank part, trail the rest, move stop to breakeven ₹182.85
+
+## Closed today
+
+- NDRAUTO: {'trade_id': '2026-11-18-NDRAUTO', 'symbol': 'NDRAUTO', 'company': 'NDR Auto Components Ltd.', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-11-18', 'taken': None, 'entry': 766.45, 'stop': 728.19, 't1': 930.95, 't2': 969.21, 't3': 1007.46, 'structure_invalidation': 766.2, 'horizon_days_t1': 19, 'horizon_days_t2': 22, 'score_at_open': 87.1, 'qty': 13, 'risk_rupees': 497.0, 'status': 'closed', 'last_price': 777.6, 'last_checked': '2026-11-18', 'mfe_pct': 5.66, 'mae_pct': -5.39, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 0, 'notes': None, 'date_closed': '2026-11-18', 'exit_price': 777.6, 'exit_reason': 'stop', 'pct_return': 1.45, 'r_multiple': 0.29, 'days_held': 0}
 
 ## Swing candidates (top)
 
-- GAIL: score=15 rs_nifty=3.44 deliv=68.94
-- PRESTIGE: score=14 rs_nifty=3.62 deliv=40.48
-- BAJFINANCE: score=14 rs_nifty=2.07 deliv=56.0
-- UNOMINDA: score=14 rs_nifty=14.9 deliv=51.04
-- APOLLOHOSP: score=14 rs_nifty=1.91 deliv=59.01
-- MCX: score=14 rs_nifty=7.13 deliv=41.74
-- GLENMARK: score=14 rs_nifty=10.16 deliv=53.86
-- TASTYBITE: score=13 rs_nifty=10.65 deliv=42.53
-- SATIN: score=13 rs_nifty=2.34 deliv=58.54
-- HMVL: score=13 rs_nifty=10.78 deliv=85.56
-- LENSKART: score=13 rs_nifty=4.43 deliv=42.59
-- MMFL: score=13 rs_nifty=15.65 deliv=45.26
-- SURAKSHA: score=13 rs_nifty=4.63 deliv=51.79
-- MARICO: score=13 rs_nifty=5.96 deliv=59.43
-- TRENT: score=13 rs_nifty=-0.75 deliv=44.57
+- DLF: score=14 rs_nifty=2.75 deliv=41.09
+- UNOMINDA: score=14 rs_nifty=14.99 deliv=51.81
+- PRESTIGE: score=14 rs_nifty=2.24 deliv=47.67
+- LODHA: score=14 rs_nifty=3.2 deliv=40.52
+- BAJFINANCE: score=14 rs_nifty=2.06 deliv=63.45
+- APOLLOHOSP: score=14 rs_nifty=2.94 deliv=44.46
+- GAIL: score=14 rs_nifty=3.76 deliv=46.86
+- SATIN: score=13 rs_nifty=2.19 deliv=58.29
+- JMA: score=13 rs_nifty=9.43 deliv=48.91
+- EIMCOELECO: score=13 rs_nifty=0.93 deliv=51.21
+- RKFORGE: score=13 rs_nifty=0.8 deliv=46.83
+- PHOENIXLTD: score=13 rs_nifty=7.96 deliv=70.2
+- SSWL: score=13 rs_nifty=21.28 deliv=46.8
+- TANLA: score=13 rs_nifty=15.0 deliv=40.09
+- AARTIPHARM: score=13 rs_nifty=6.3 deliv=44.73
 
 ## World markets (India cues)
 
@@ -120,21 +139,21 @@
 - ASX 200: -0.69% (bear)
 
 ### Europe
-- FTSE 100: -1.76% (bear)
-- DAX: -2.08% (bear)
-- Euro Stoxx 50: -2.15% (bear)
+- FTSE 100: -0.53% (bear)
+- DAX: -0.08% (neutral)
+- Euro Stoxx 50: +0.09% (neutral)
 
 ### US
 - S&P 500: -1.03% (bear)
 - Nasdaq: -0.74% (bear)
 - Dow: -1.64% (bear)
-- US VIX: +11.13% (bear)
+- US VIX: -4.83% (bull)
 
 ### Macro
-- USDINR: -0.48% (bull)
-- Crude WTI: -2.27% (bear)
-- Brent: -1.46% (bear)
-- DXY: +0.25% (neutral)
+- USDINR: -0.57% (bull)
+- Crude WTI: -2.08% (bear)
+- Brent: -3.10% (bear)
+- DXY: +0.31% (neutral)
 - US 10Y: -0.35% (neutral)
 - India ETF: +0.66% (bull)
 - EM ETF: -1.05% (bear)
