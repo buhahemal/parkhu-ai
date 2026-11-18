@@ -1237,8 +1237,8 @@ GEOJITFSL,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,2.96038915
 INDORAMA,Process Industries,Textiles,,unmapped,-5.492610837438433,-19.135932560590106,1.04,11.8,,-6.53,-30.94,
 SYNCOMF,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,0.8204633204633287,-4.1743119266055055,1.04,11.8,9.18,-0.22,-15.97,-13.35
 KCP,Producer Manufacturing,Industrial Conglomerates,NIFTY_INFRA,sector,-7.240531854559209,-4.663212435233172,1.04,11.8,11.19,-8.28,-16.46,-15.85
-JISLDVREQS,Producer Manufacturing,Trucks/Construction/Farm Machinery,NIFTY_INFRA,industry,-1.7708333333333326,0.31914893617020595,1.04,11.8,11.19,-2.81,-11.48,-10.87
 JISLJALEQS,Producer Manufacturing,Trucks/Construction/Farm Machinery,NIFTY_INFRA,industry,-4.665461121157321,-2.478727339992607,1.04,11.8,11.19,-5.71,-14.28,-13.67
+JISLDVREQS,Producer Manufacturing,Trucks/Construction/Farm Machinery,NIFTY_INFRA,industry,-1.7708333333333326,0.31914893617020595,1.04,11.8,11.19,-2.81,-11.48,-10.87
 ANONDITA,Producer Manufacturing,Miscellaneous Manufacturing,NIFTY_INFRA,sector,5.001244090569793,3.4364429628903332,1.04,11.8,11.19,3.96,-8.36,-7.75
 GKENERGY,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,-2.7018943170488474,-10.27031997057742,1.04,11.8,11.19,-3.74,-22.07,-21.46
 HESTERBIO,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,-1.0050251256281368,5.856102003642983,1.04,11.8,9.18,-2.05,-5.94,-3.32
@@ -1678,8 +1678,8 @@ DCMSRIND,Process Industries,Agricultural Commodities/Milling,,unmapped,-3.383333
 BRIGHTOUTD,Commercial Services,Advertising/Marketing Services,,unmapped,-2.6062027625749282,-1.1375661375661406,1.04,11.8,,-3.65,-12.94,
 ELDEHSG,Finance,Real Estate Development,NIFTY_REALTY,industry,-0.13126640830103195,2.7591973244147217,1.04,11.8,10.46,-1.17,-9.04,-7.7
 IIRM,Producer Manufacturing,Miscellaneous Manufacturing,NIFTY_INFRA,sector,-8.166526492851142,-19.058561897702006,1.04,11.8,11.19,-9.21,-30.86,-30.25
-ATL,Transportation,Marine Shipping,,unmapped,0.14958863126403404,3.0396306271643043,1.04,11.8,,-0.89,-8.76,
 ATLPP.E1,Transportation,Marine Shipping,,unmapped,5.85585585585585,3.18331503841933,1.04,11.8,,4.82,-8.62,
+ATL,Transportation,Marine Shipping,,unmapped,0.14958863126403404,3.0396306271643043,1.04,11.8,,-0.89,-8.76,
 OCCLLTD,Process Industries,Chemicals: Specialty,,unmapped,-1.208588957055214,-30.410544511668107,1.04,11.8,,-2.25,-42.21,
 QUICKHEAL,Technology Services,Packaged Software,NIFTY_IT,industry,-5.025756174877814,-2.170068027210883,1.04,11.8,5.87,-6.07,-13.97,-8.04
 SHRADDHA,Electronic Technology,Electronic Equipment/Instruments,NIFTY_IT,sector,2.5609756097560905,1.8159806295399517,1.04,11.8,5.87,1.52,-9.98,-4.05
@@ -2377,8 +2377,8 @@ HBESD,Consumer Services,Hotels/Resorts/Cruise lines,NIFTY_FMCG,sector,10.4473684
 MADHAVIPL,Utilities,Electric Utilities,NIFTY_ENERGY,industry,0.0,-5.4242002781641245,1.04,11.8,2.12,-1.04,-17.22,-7.54
 UMIYA_MRO,Electronic Technology,Electronic Production Equipment,NIFTY_IT,sector,9.06620284813567,8.699891657638139,1.04,11.8,5.87,8.03,-3.1,2.83
 RRIL,Process Industries,Textiles,,unmapped,5.454545454545442,6.982872200263496,1.04,11.8,,4.41,-4.82,
-CENTEXTPP.E1,Producer Manufacturing,Metal Fabrication,NIFTY_INFRA,industry,0.8344923504867817,-12.965186074429772,1.04,11.8,11.19,-0.21,-24.77,-24.16
 CENTEXT,Producer Manufacturing,Metal Fabrication,NIFTY_INFRA,industry,-5.266138165345412,-11.481481481481474,1.04,11.8,11.19,-6.31,-23.28,-22.67
+CENTEXTPP.E1,Producer Manufacturing,Metal Fabrication,NIFTY_INFRA,industry,0.8344923504867817,-12.965186074429772,1.04,11.8,11.19,-0.21,-24.77,-24.16
 MASON,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,22.916666666666668,2.227722772277228,1.04,11.8,11.19,21.88,-9.57,-8.96
 INTENTECH,Technology Services,Information Technology Services,NIFTY_IT,industry,-10.286235602691294,-5.987093690248572,1.04,11.8,5.87,-11.33,-17.79,-11.86
 YAAP,Technology Services,Packaged Software,NIFTY_IT,industry,-18.857142857142854,-19.622641509433958,1.04,11.8,5.87,-19.9,-31.42,-25.49
@@ -2639,8 +2639,8 @@ THACKER,Finance,Finance/Rental/Leasing,NIFTY_FIN_SERVICE,industry,-1.36125654450
 RICHA,Electronic Technology,Computer Peripherals,NIFTY_IT,sector,-7.89473684210526,-16.477272727272727,1.04,11.8,5.87,-8.93,-28.28,-22.35
 WEIZMANIND,Process Industries,Textiles,,unmapped,-5.935943060498223,-5.600000000000002,1.04,11.8,,-6.98,-17.4,
 SHYAMDHANI,Consumer Non-Durables,Food: Major Diversified,NIFTY_FMCG,industry,-2.7906976744186047,-1.4150943396226414,1.04,11.8,5.38,-3.83,-13.22,-6.8
-PARTYPP.E1,Consumer Services,Other Consumer Services,NIFTY_FMCG,sector,,,1.04,11.8,5.38,,,
 PARTYCRUS,Consumer Services,Other Consumer Services,NIFTY_FMCG,sector,2.0408163265306087,-8.16326530612245,1.04,11.8,5.38,1.0,-19.96,-13.54
+PARTYPP.E1,Consumer Services,Other Consumer Services,NIFTY_FMCG,sector,,,1.04,11.8,5.38,,,
 MOBILISE,Technology Services,Packaged Software,NIFTY_IT,industry,-10.991735537190081,12.715855572998436,1.04,11.8,5.87,-12.03,0.92,6.85
 DHARIWAL,Consumer Non-Durables,Household/Personal Care,NIFTY_FMCG,industry,-9.166666666666664,-17.735849056603772,1.04,11.8,5.38,-10.21,-29.54,-23.12
 SHYAMCENT,Non-Energy Minerals,Steel,NIFTY_METAL,industry,5.219206680584551,4.132231404958682,1.04,11.8,3.76,4.18,-7.67,0.37
@@ -2847,8 +2847,8 @@ DHANSA,Process Industries,Chemicals: Agricultural,,unmapped,-15.384615384615385,
 KONSTELEC,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,-2.5,-16.129032258064516,1.04,11.8,11.19,-3.54,-27.93,-27.32
 ATAM,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-6.4949402023919065,-4.113207547169811,1.04,11.8,11.19,-7.53,-15.91,-15.3
 MPEL,Process Industries,Containers/Packaging,,unmapped,-1.2024048096192415,10.290827740492157,1.04,11.8,,-2.24,-1.51,
-PANACHE,Electronic Technology,Computer Peripherals,NIFTY_IT,sector,14.880431612715089,20.016756797928245,1.04,11.8,5.87,13.84,8.22,14.15
 ITTL,Consumer Durables,Automotive Aftermarket,NIFTY_AUTO,industry,-0.08326394671106938,-2.1207177814029317,1.04,11.8,9.59,-1.12,-13.92,-11.71
+PANACHE,Electronic Technology,Computer Peripherals,NIFTY_IT,sector,14.880431612715089,20.016756797928245,1.04,11.8,5.87,13.84,8.22,14.15
 BONLON,Producer Manufacturing,Electrical Products,NIFTY_INFRA,industry,3.7058823529411704,-12.916769572734019,1.04,11.8,11.19,2.67,-24.72,-24.11
 ANSALBU,Consumer Durables,Homebuilding,NIFTY_REALTY,industry,-12.914285714285711,-6.5603923973022615,1.04,11.8,10.46,-13.95,-18.36,-17.02
 SIGNORIA,Consumer Non-Durables,Apparel/Footwear,NIFTY_FMCG,sector,-1.8503620273531756,-9.62962962962963,1.04,11.8,5.38,-2.89,-21.43,-15.01
@@ -3186,49 +3186,49 @@ MITTAL,Process Industries,Textiles,,unmapped,-2.8169014084507067,0.0,1.04,11.8,,
 PERFECT,Consumer Services,Other Consumer Services,NIFTY_FMCG,sector,2.702702702702693,8.571428571428566,1.04,11.8,5.38,1.66,-3.23,3.19
 JALAN,Transportation,Air Freight/Couriers,,unmapped,10.714285714285726,0.0,1.04,11.8,,9.67,-11.8,
 VASA,Process Industries,Textiles,,unmapped,0.0,0.0,1.04,11.8,,-1.04,-11.8,
-APSISAERO,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,10.378366823428818,-14.65994545905296,1.04,11.8,11.19,9.34,-26.46,-25.85
-SRIKPRIND,Non-Energy Minerals,Construction Materials,NIFTY_INFRA,industry,-11.307420494699643,-7.72058823529411,1.04,11.8,11.19,-12.35,-19.52,-18.91
-BMISL,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,-7.447306791569089,11.323943661971828,1.04,11.8,11.19,-8.49,-0.48,0.13
-MAXENGS,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-12.337278106508872,-1.299133910726175,1.04,11.8,11.19,-13.38,-13.1,-12.49
-RIIT,Miscellaneous,Investment Trusts/Mutual Funds,,unmapped,-0.8369601606963508,-2.7976043974074956,1.04,11.8,,-1.88,-14.6,
-APOORVA,Finance,Financial Conglomerates,NIFTY_FIN_SERVICE,industry,-12.237288135593218,-19.09375,1.04,11.8,12.29,-13.28,-30.89,-31.38
-KDL,Communications,Specialty Telecommunications,,unmapped,-14.232902033271722,-18.596491228070178,1.04,11.8,,-15.27,-30.4,
-ENSER,Commercial Services,Miscellaneous Commercial Services,,unmapped,-0.7547169811320728,-4.363636363636361,1.04,11.8,,-1.79,-16.16,
-ETL,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-6.291263790092423,-4.71653168175322,1.04,11.8,11.19,-7.33,-16.52,-15.91
-AILIMITED,Transportation,Other Transportation,,unmapped,20.727272727272737,22.509225092250926,1.04,11.8,,19.69,10.71,
-JFLLIFE,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,0.0,16.666666666666664,1.04,11.8,9.18,-1.04,4.87,7.49
-AGASTYAEN,Process Industries,Chemicals: Specialty,,unmapped,-11.939492166396546,-30.539772727272737,1.04,11.8,,-12.98,-42.34,
-BIRDYS,Consumer Non-Durables,Food: Specialty/Candy,NIFTY_FMCG,industry,,-11.365164761264277,1.04,11.8,5.38,,-23.17,-16.75
-UMA,Process Industries,Containers/Packaging,,unmapped,0.0,3.0303030303030303,1.04,11.8,,-1.04,-8.77,
-ENNATURE,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,-8.069234519746457,-28.822197055492627,1.04,11.8,9.18,-9.11,-40.62,-38.0
-SAICAPI,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,-10.292537313432842,1.6575333198024413,1.04,11.8,12.29,-11.33,-10.14,-10.63
-GREENLEAF,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,1.7034068136272573,-18.408360128617367,1.04,11.8,11.19,0.66,-30.21,-29.6
-ADVIKCA,Finance,Investment Managers,NIFTY_FIN_SERVICE,industry,-13.131313131313131,-11.340206185567009,1.04,11.8,12.29,-14.17,-23.14,-23.63
-NEPHROCARE,Health Services,Medical/Nursing Services,NIFTY_PHARMA,industry,17.98875702685822,11.117647058823533,1.04,11.8,9.18,16.95,-0.68,1.94
-MAXENGS,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-12.337278106508872,-1.299133910726175,1.04,11.8,11.19,-13.38,-13.1,-12.49
-JFLLIFE,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,0.0,16.666666666666664,1.04,11.8,9.18,-1.04,4.87,7.49
-SRIKPRIND,Non-Energy Minerals,Construction Materials,NIFTY_INFRA,industry,-11.307420494699643,-7.72058823529411,1.04,11.8,11.19,-12.35,-19.52,-18.91
-DRSCARGO,Transportation,Trucking,,unmapped,,-0.22935779816514087,1.04,11.8,,,-12.03,
-ARHAM,Consumer Durables,Electronics/Appliances,NIFTY_AUTO,sector,-7.771929824561403,1.0961538461538467,1.04,11.8,9.59,-8.81,-10.7,-8.49
-KDL,Communications,Specialty Telecommunications,,unmapped,-14.232902033271722,-18.596491228070178,1.04,11.8,,-15.27,-30.4,
-COREIN,Commercial Services,Personnel Services,,unmapped,16.87840290381126,-6.463326071169193,1.04,11.8,,15.84,-18.26,
-SARTELE,Finance,Finance/Rental/Leasing,NIFTY_FIN_SERVICE,industry,-2.82894736842106,-8.658008658008658,1.04,11.8,12.29,-3.87,-20.46,-20.95
-ACETEC,Commercial Services,Miscellaneous Commercial Services,,unmapped,7.246376811594203,13.846153846153847,1.04,11.8,,6.21,2.05,
-ISHAN,Distribution Services,Wholesale Distributors,,unmapped,10.000000000000009,10.000000000000009,1.04,11.8,,8.96,-1.8,
-ROCKPP.E1,Distribution Services,Wholesale Distributors,,unmapped,-17.628205128205128,-33.975594091201025,1.04,11.8,,-18.67,-45.78,
-MOXSH,Technology Services,Internet Software/Services,NIFTY_IT,industry,,-7.894736842105263,1.04,11.8,5.87,,-19.69,-13.76
-RFBL,Process Industries,Containers/Packaging,,unmapped,12.903225806451607,9.158415841584159,1.04,11.8,,11.86,-2.64,
-APOORVA,Finance,Financial Conglomerates,NIFTY_FIN_SERVICE,industry,-12.237288135593218,-19.09375,1.04,11.8,12.29,-13.28,-30.89,-31.38
-ARISTO,Process Industries,Chemicals: Agricultural,,unmapped,13.88888888888889,37.737961926091835,1.04,11.8,,12.85,25.94,
 STRIDERS,Consumer Durables,Recreational Products,NIFTY_AUTO,sector,-0.6024096385542111,-1.0,1.04,11.8,9.59,-1.64,-12.8,-10.59
-ETL,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-6.291263790092423,-4.71653168175322,1.04,11.8,11.19,-7.33,-16.52,-15.91
-GURUNANAK,Producer Manufacturing,Trucks/Construction/Farm Machinery,NIFTY_INFRA,industry,-14.613180515759307,-8.307692307692307,1.04,11.8,11.19,-15.65,-20.11,-19.5
-KJMCFIN,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,17.36666666666667,27.54935700054338,1.04,11.8,12.29,16.33,15.75,15.26
-SUMEDHA,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,-5.804878048780494,-11.238795679154219,1.04,11.8,12.29,-6.84,-23.04,-23.53
-VISDEM,Producer Manufacturing,Electrical Products,NIFTY_INFRA,industry,13.496084753569788,25.71428571428572,1.04,11.8,11.19,12.46,13.91,14.52
-TIMESCAN,Transportation,Air Freight/Couriers,,unmapped,10.073710073710059,-0.44444444444445075,1.04,11.8,,9.03,-12.24,
-TRIVENIPT,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,7.874720357941833,-13.460157932519751,1.04,11.8,11.19,6.83,-25.26,-24.65
-BMLL,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,-3.137254901960792,-5.000000000000007,1.04,11.8,9.18,-4.18,-16.8,-14.18
-RIIT,Miscellaneous,Investment Trusts/Mutual Funds,,unmapped,-0.8369601606963508,-2.7976043974074956,1.04,11.8,,-1.88,-14.6,
 HGSINDIALT,Producer Manufacturing,Electrical Products,NIFTY_INFRA,industry,20.410367170626355,26.417233560090697,1.04,11.8,11.19,19.37,14.62,15.23
-BMISL,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,-7.447306791569089,11.323943661971828,1.04,11.8,11.19,-8.49,-0.48,0.13
+APOORVA,Finance,Financial Conglomerates,NIFTY_FIN_SERVICE,industry,-12.237288135593218,-19.09375,1.04,11.8,12.29,-13.28,-30.89,-31.38
+RIIT,Miscellaneous,Investment Trusts/Mutual Funds,,unmapped,-0.8369601606963508,-2.7976043974074956,1.04,11.8,,-1.88,-14.6,
+ISHAN,Distribution Services,Wholesale Distributors,,unmapped,10.000000000000009,10.000000000000009,1.04,11.8,,8.96,-1.8,
+NEPHROCARE,Health Services,Medical/Nursing Services,NIFTY_PHARMA,industry,17.98875702685822,11.117647058823533,1.04,11.8,9.18,16.95,-0.68,1.94
+AGL,Transportation,Air Freight/Couriers,,unmapped,19.96792301523657,21.428571428571434,1.04,11.8,,18.93,9.63,
+SUMEDHA,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,-5.804878048780494,-11.238795679154219,1.04,11.8,12.29,-6.84,-23.04,-23.53
+APSISAERO,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,10.378366823428818,-14.65994545905296,1.04,11.8,11.19,9.34,-26.46,-25.85
+SARTELE,Finance,Finance/Rental/Leasing,NIFTY_FIN_SERVICE,industry,-2.82894736842106,-8.658008658008658,1.04,11.8,12.29,-3.87,-20.46,-20.95
+NDRINVIT,Miscellaneous,Investment Trusts/Mutual Funds,,unmapped,0.3305785123966942,0.3305785123966942,1.04,11.8,,-0.71,-11.47,
+AHIMSA,Process Industries,Containers/Packaging,,unmapped,,4.854368932038835,1.04,11.8,,,-6.95,
+AGASTYAEN,Process Industries,Chemicals: Specialty,,unmapped,-11.939492166396546,-30.539772727272737,1.04,11.8,,-12.98,-42.34,
+SAICAPI,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,-10.292537313432842,1.6575333198024413,1.04,11.8,12.29,-11.33,-10.14,-10.63
+KJMCFIN,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,17.36666666666667,27.54935700054338,1.04,11.8,12.29,16.33,15.75,15.26
+AGL,Transportation,Air Freight/Couriers,,unmapped,19.96792301523657,21.428571428571434,1.04,11.8,,18.93,9.63,
+AHIMSA,Process Industries,Containers/Packaging,,unmapped,,4.854368932038835,1.04,11.8,,,-6.95,
+SRIKPRIND,Non-Energy Minerals,Construction Materials,NIFTY_INFRA,industry,-11.307420494699643,-7.72058823529411,1.04,11.8,11.19,-12.35,-19.52,-18.91
+RIIT,Miscellaneous,Investment Trusts/Mutual Funds,,unmapped,-0.8369601606963508,-2.7976043974074956,1.04,11.8,,-1.88,-14.6,
+GKWLIMITED,Transportation,Other Transportation,,unmapped,4.285802507256228,8.312487973831066,1.04,11.8,,3.25,-3.49,
+HGSINDIALT,Producer Manufacturing,Electrical Products,NIFTY_INFRA,industry,20.410367170626355,26.417233560090697,1.04,11.8,11.19,19.37,14.62,15.23
+NDRINVIT,Miscellaneous,Investment Trusts/Mutual Funds,,unmapped,0.3305785123966942,0.3305785123966942,1.04,11.8,,-0.71,-11.47,
+ARISTO,Process Industries,Chemicals: Agricultural,,unmapped,13.88888888888889,37.737961926091835,1.04,11.8,,12.85,25.94,
+JFLLIFE,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,0.0,16.666666666666664,1.04,11.8,9.18,-1.04,4.87,7.49
+SAIFL,Finance,Financial Conglomerates,NIFTY_FIN_SERVICE,industry,-2.3809523809523934,-1.2048192771084507,1.04,11.8,12.29,-3.42,-13.0,-13.49
+IGLSPIRITS,,,,unmapped,-15.374999999999996,-15.182232346241454,1.04,11.8,,-16.41,-26.98,
+ROCKPP.E1,Distribution Services,Wholesale Distributors,,unmapped,-17.628205128205128,-33.975594091201025,1.04,11.8,,-18.67,-45.78,
+COREIN,Commercial Services,Personnel Services,,unmapped,16.87840290381126,-6.463326071169193,1.04,11.8,,15.84,-18.26,
+SUMEDHA,Finance,Investment Banks/Brokers,NIFTY_FIN_SERVICE,industry,-5.804878048780494,-11.238795679154219,1.04,11.8,12.29,-6.84,-23.04,-23.53
+SARTELE,Finance,Finance/Rental/Leasing,NIFTY_FIN_SERVICE,industry,-2.82894736842106,-8.658008658008658,1.04,11.8,12.29,-3.87,-20.46,-20.95
+ISHAN,Distribution Services,Wholesale Distributors,,unmapped,10.000000000000009,10.000000000000009,1.04,11.8,,8.96,-1.8,
+AGASTYAEN,Process Industries,Chemicals: Specialty,,unmapped,-11.939492166396546,-30.539772727272737,1.04,11.8,,-12.98,-42.34,
+MOXSH,Technology Services,Internet Software/Services,NIFTY_IT,industry,,-7.894736842105263,1.04,11.8,5.87,,-19.69,-13.76
+AILIMITED,Transportation,Other Transportation,,unmapped,20.727272727272737,22.509225092250926,1.04,11.8,,19.69,10.71,
+ENNATURE,Health Technology,Pharmaceuticals: Major,NIFTY_PHARMA,industry,-8.069234519746457,-28.822197055492627,1.04,11.8,9.18,-9.11,-40.62,-38.0
+MAXENGS,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-12.337278106508872,-1.299133910726175,1.04,11.8,11.19,-13.38,-13.1,-12.49
+TRIVENIPT,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,7.874720357941833,-13.460157932519751,1.04,11.8,11.19,6.83,-25.26,-24.65
+RFBL,Process Industries,Containers/Packaging,,unmapped,12.903225806451607,9.158415841584159,1.04,11.8,,11.86,-2.64,
+ADVIKCA,Finance,Investment Managers,NIFTY_FIN_SERVICE,industry,-13.131313131313131,-11.340206185567009,1.04,11.8,12.29,-14.17,-23.14,-23.63
+ETL,Producer Manufacturing,Industrial Machinery,NIFTY_INFRA,industry,-6.291263790092423,-4.71653168175322,1.04,11.8,11.19,-7.33,-16.52,-15.91
+NEPHROCARE,Health Services,Medical/Nursing Services,NIFTY_PHARMA,industry,17.98875702685822,11.117647058823533,1.04,11.8,9.18,16.95,-0.68,1.94
+UMA,Process Industries,Containers/Packaging,,unmapped,0.0,3.0303030303030303,1.04,11.8,,-1.04,-8.77,
+INVICTA,Health Services,Medical/Nursing Services,NIFTY_PHARMA,industry,13.525179856115116,17.937219730941703,1.04,11.8,9.18,12.49,6.14,8.76
+WALPAR,Health Technology,Pharmaceuticals: Other,NIFTY_PHARMA,industry,-14.0,-17.624521072796938,1.04,11.8,9.18,-15.04,-29.42,-26.8
+GREENLEAF,Industrial Services,Engineering & Construction,NIFTY_INFRA,industry,1.7034068136272573,-18.408360128617367,1.04,11.8,11.19,0.66,-30.21,-29.6
+KDL,Communications,Specialty Telecommunications,,unmapped,-14.232902033271722,-18.596491228070178,1.04,11.8,,-15.27,-30.4,

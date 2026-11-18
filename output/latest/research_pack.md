@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-18
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-18T02:52:19.908466+05:30
+- **generated_at_ist:** 2026-11-18T06:12:00.027233+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -9,68 +9,50 @@
 - market_regime: **Bullish**
 - nifty: Bullish (0.58%)
 - india_vix: 15.68 (Medium)
-- fii_net: 4195.38 | dii_net: 196.93
+- fii_net: None | dii_net: None
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3249
-- trend = Bullish: 1107
-- price > SMA200: 832
-- price > EMA50: 803
-- ADX14 > 25: 391
-- RSI14 in 40-80: 375
+- universe: 3253
+- trend = Bullish: 1116
+- price > SMA200: 833
+- price > EMA50: 804
+- ADX14 > 25: 395
+- RSI14 in 40-80: 379
 - RS > 0 vs NIFTY and sector: 129
-- delivery% >= 40: 80
-- relative_volume >= 1: 25
-- no earnings within 21d: 25
-- event_risk_score <= 1: 25
-- TV rating not Sell: 25
-
-## Survivors (top 25 of 25)
-
-- **ERIS** [rejected] score 93.0 — T1 needs more than 22 trading days (~1 month)
-- **AGIIL** [rejected] score 92.0 — T1 needs more than 22 trading days (~1 month)
-- **SOUTHBANK** [idea] score 90.7 — selected as idea
-- **TIPSMUSIC** [idea] score 86.7 — selected as idea
-- **CSLFINANCE** [rejected] score 85.3 — T1 needs more than 22 trading days (~1 month)
-- **MSUMI** [rejected] score 83.5 — T1 needs more than 22 trading days (~1 month)
-- **CANBK** [rejected] score 81.3 — T1 needs more than 22 trading days (~1 month)
-- **PHOENIXLTD** [idea] score 80.4 — selected as idea
-- **ORIENTHOT** [watchlist] score 79.7 — score in Watch band (70–80)
-- **BANKBARODA** [rejected] score 78.7 — T1 needs more than 22 trading days (~1 month)
-- **MAXHEALTH** [rejected] score 77.7 — T1 needs more than 22 trading days (~1 month)
-- **INDHOTEL** [watchlist] score 77.2 — score in Watch band (70–80)
-- **HONASA** [watchlist] score 75.6 — score in Watch band (70–80)
-- **AARTIPHARM** [watchlist] score 75.5 — score in Watch band (70–80)
-- **LICHSGFIN** [watchlist] score 73.8 — score in Watch band (70–80)
-- **SGMART** [watchlist] score 72.1 — score in Watch band (70–80)
-- **JLHL** [rejected] score 71.9 — T1 needs more than 22 trading days (~1 month)
-- **ANURAS** [watchlist] score 71.8 — score in Watch band (70–80)
-- **NAVKARURB** [rejected] score 68.4 — T1 needs more than 22 trading days (~1 month)
-- **NRL** [rejected] score 63.3 — score below Watch band
-- **PRESTIGE** [rejected] score 58.7 — score below Watch band
-- **LENSKART** [rejected] score 56.6 — score below Watch band
-- **MEESHO** [rejected] score 55.3 — score below Watch band
-- **TASTYBITE** [rejected] score 49.6 — score below Watch band
-- **THOMASCOOK** [rejected] score 49.3 — T1 needs more than 22 trading days (~1 month)
+- delivery% >= 40: 0
+- relative_volume >= 1: 0
+- no earnings within 21d: 0
+- event_risk_score <= 1: 0
+- TV rating not Sell: 0
 
 ## Ideas
 
-### SOUTHBANK — Buy (score 90.7)
-- South Indian Bank Limited | risk_sector: Banks
-- entry 60.7 | stop 56.97 | t1 68.16 | t2 71.9 | t3 75.63 | R:R 2.0
-- qty 164 | deployed 9955.0 (9.95%) | risk ₹612.0
+### ENGINERSIN — Watch (score 12.0)
+- ENGINERSIN | risk_sector: Industrial Services
+- entry 312.9 | stop 293.15 | t1 328.54 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### TIPSMUSIC — Buy (score 86.7)
-- Tips Music Limited | risk_sector: Consumer Services
-- entry 833.15 | stop 769.9 | t1 959.66 | t2 1022.91 | t3 1086.17 | R:R 2.0
-- qty 12 | deployed 9998.0 (10.0%) | risk ₹759.0
+### LUMAXTECH — Watch (score 12.0)
+- LUMAXTECH | risk_sector: Producer Manufacturing
+- entry 2404.0 | stop 2237.01 | t1 2524.2 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
-### PHOENIXLTD — Buy (score 80.4)
-- Phoenix Mills Ltd. | risk_sector: Real Estate
-- entry 2229.0 | stop 2092.99 | t1 2501.03 | t2 2637.04 | t3 2773.06 | R:R 2.0
-- qty 4 | deployed 8916.0 (8.92%) | risk ₹544.0
+### IKIO — Watch (score 12.0)
+- IKIO | risk_sector: Producer Manufacturing
+- entry 201.62 | stop 186.82 | t1 211.7 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### BMETRICS — Watch (score 12.0)
+- BMETRICS | risk_sector: Industrial Services
+- entry 57.0 | stop 52.24 | t1 59.85 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
+
+### SSWL — Watch (score 12.0)
+- SSWL | risk_sector: Producer Manufacturing
+- entry 555.5 | stop 514.26 | t1 583.28 | t2 None | t3 None | R:R None
+- qty None | deployed None (None%) | risk ₹None
 
 ## Open ledger
 
@@ -115,48 +97,48 @@
 
 ## Swing candidates (top)
 
-- AARTIPHARM: score=14 rs_nifty=5.31 deliv=40.49
-- PRESTIGE: score=14 rs_nifty=1.87 deliv=40.48
-- MBAPL: score=13 rs_nifty=0.8 deliv=50.54
-- SSWL: score=13 rs_nifty=25.7 deliv=32.05
-- LAURUSLABS: score=13 rs_nifty=3.35 deliv=34.38
-- LENSKART: score=13 rs_nifty=2.96 deliv=42.59
-- MEESHO: score=13 rs_nifty=0.48 deliv=60.46
-- ENGINERSIN: score=13 rs_nifty=1.57 deliv=31.52
-- ROTO: score=13 rs_nifty=2.6 deliv=44.16
-- TIPSMUSIC: score=13 rs_nifty=7.22 deliv=49.21
-- MANAKCOAT: score=13 rs_nifty=17.96 deliv=43.22
-- MAHABANK: score=13 rs_nifty=7.78 deliv=39.03
-- PHOENIXLTD: score=13 rs_nifty=4.05 deliv=69.36
-- GLENMARK: score=13 rs_nifty=4.43 deliv=53.86
-- SATIN: score=13 rs_nifty=1.25 deliv=58.54
+- ENGINERSIN: score=12 rs_nifty=1.57 deliv=None
+- LUMAXTECH: score=12 rs_nifty=12.34 deliv=None
+- IKIO: score=12 rs_nifty=0.34 deliv=None
+- BMETRICS: score=12 rs_nifty=30.7 deliv=None
+- SSWL: score=12 rs_nifty=25.7 deliv=None
+- AARTIPHARM: score=12 rs_nifty=5.31 deliv=None
+- PRESTIGE: score=12 rs_nifty=1.87 deliv=None
+- LAURUSLABS: score=12 rs_nifty=3.35 deliv=None
+- HONASA: score=11 rs_nifty=2.53 deliv=None
+- KRISHCA: score=11 rs_nifty=1.21 deliv=None
+- MASTER: score=11 rs_nifty=14.44 deliv=None
+- WELSPUNLIV: score=11 rs_nifty=9.49 deliv=None
+- MONOLITH: score=11 rs_nifty=10.4 deliv=None
+- PHOENIXLTD: score=11 rs_nifty=4.05 deliv=None
+- AGARWALEYE: score=11 rs_nifty=0.8 deliv=None
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.42% (bear)
+- Nikkei: -0.68% (bear)
 - Hang Seng: +0.49% (bull)
 - Shanghai: -0.87% (bear)
-- Kospi: -3.59% (bear)
+- Kospi: +0.07% (neutral)
 - Taiwan: -6.03% (bear)
-- ASX 200: -1.79% (bear)
+- ASX 200: -2.01% (bear)
 
 ### Europe
-- FTSE 100: -1.76% (bear)
-- DAX: -2.08% (bear)
-- Euro Stoxx 50: -2.15% (bear)
+- FTSE 100: -0.19% (bear)
+- DAX: -0.57% (bear)
+- Euro Stoxx 50: -0.60% (bear)
 
 ### US
 - S&P 500: -1.03% (bear)
 - Nasdaq: -0.74% (bear)
 - Dow: -1.64% (bear)
-- US VIX: +11.31% (bear)
+- US VIX: +11.13% (bear)
 
 ### Macro
-- USDINR: -0.81% (bull)
-- Crude WTI: -0.06% (neutral)
-- Brent: +0.50% (bull)
-- DXY: -0.04% (neutral)
+- USDINR: -0.54% (bull)
+- Crude WTI: -0.17% (bear)
+- Brent: +0.75% (bull)
+- DXY: +0.05% (neutral)
 - US 10Y: -0.35% (neutral)
 - India ETF: +0.66% (bull)
 - EM ETF: -1.05% (bear)
