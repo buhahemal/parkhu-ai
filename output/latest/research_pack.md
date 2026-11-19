@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-19
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-19T02:28:01.775846+05:30
+- **generated_at_ist:** 2026-11-19T06:10:01.044963+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3253
-- trend = Bullish: 1027
-- price > SMA200: 770
-- price > EMA50: 742
-- ADX14 > 25: 382
-- RSI14 in 40-80: 366
+- universe: 3251
+- trend = Bullish: 1038
+- price > SMA200: 779
+- price > EMA50: 751
+- ADX14 > 25: 386
+- RSI14 in 40-80: 370
 - RS > 0 vs NIFTY and sector: 140
 - delivery% >= 40: 82
 - relative_volume >= 1: 16
@@ -33,14 +33,14 @@
 - **SBIN** [idea] score 85.3 — selected as idea
 - **MSUMI** [rejected] score 83.2 — T1 needs more than 22 trading days (~1 month)
 - **BANKINDIA** [rejected] score 82.8 — 25% sector cap for Banks would be breached
-- **GAIL** [idea] score 82.1 — selected as idea
+- **GAIL** [idea] score 81.5 — selected as idea
 - **PHOENIXLTD** [watchlist] score 78.3 — score in Watch band (70–80)
 - **HONASA** [watchlist] score 76.8 — score in Watch band (70–80)
-- **LICHSGFIN** [watchlist] score 73.4 — score in Watch band (70–80)
+- **LICHSGFIN** [watchlist] score 73.6 — score in Watch band (70–80)
 - **TATACONSUM** [rejected] score 71.0 — T1 needs more than 22 trading days (~1 month)
 - **NAVKARURB** [rejected] score 70.3 — T1 needs more than 22 trading days (~1 month)
-- **RELIANCE** [rejected] score 69.5 — T1 needs more than 22 trading days (~1 month)
-- **360ONE** [rejected] score 64.3 — score below Watch band
+- **RELIANCE** [rejected] score 68.9 — T1 needs more than 22 trading days (~1 month)
+- **360ONE** [rejected] score 64.5 — score below Watch band
 - **GODREJPROP** [rejected] score 56.4 — T1 needs more than 22 trading days (~1 month)
 - **MEESHO** [rejected] score 55.5 — score below Watch band
 - **WESTLIFE** [rejected] score 51.5 — score below Watch band
@@ -58,7 +58,7 @@
 - entry 1135.0 | stop 1087.91 | t1 1234.7 | t2 1281.79 | t3 1328.89 | R:R 2.12
 - qty 8 | deployed 9080.0 (9.08%) | risk ₹377.0
 
-### GAIL — Buy (score 82.1)
+### GAIL — Buy (score 81.5)
 - GAIL (India) Limited | risk_sector: Utilities
 - entry 190.0 | stop 182.21 | t1 205.58 | t2 213.38 | t3 221.17 | R:R 2.0
 - qty 52 | deployed 9880.0 (9.88%) | risk ₹405.0
@@ -108,50 +108,50 @@
 ## Swing candidates (top)
 
 - GAIL: score=14 rs_nifty=2.36 deliv=46.86
-- APOLLOHOSP: score=13 rs_nifty=1.54 deliv=44.46
-- DIVISLAB: score=13 rs_nifty=9.82 deliv=54.92
-- LODHA: score=13 rs_nifty=1.8 deliv=40.52
-- LUMAXTECH: score=13 rs_nifty=6.35 deliv=42.66
-- MEDANTA: score=13 rs_nifty=5.39 deliv=61.16
-- ANTHEM: score=13 rs_nifty=0.82 deliv=62.03
-- BALUFORGE: score=13 rs_nifty=2.14 deliv=46.36
-- MINDACORP: score=13 rs_nifty=0.3 deliv=42.81
-- HMVL: score=13 rs_nifty=8.55 deliv=85.12
-- TALBROAUTO: score=13 rs_nifty=0.5 deliv=52.49
-- CEMPRO: score=13 rs_nifty=3.14 deliv=59.83
+- LENSKART: score=13 rs_nifty=2.79 deliv=64.53
+- HONASA: score=13 rs_nifty=6.8 deliv=55.31
 - AGARWALEYE: score=13 rs_nifty=7.29 deliv=46.83
-- PDSL: score=13 rs_nifty=7.23 deliv=46.07
-- SATIN: score=13 rs_nifty=0.79 deliv=58.29
+- JMA: score=13 rs_nifty=8.03 deliv=48.91
+- BALUFORGE: score=13 rs_nifty=2.14 deliv=46.36
+- PHOENIXLTD: score=13 rs_nifty=6.56 deliv=70.2
+- MINDACORP: score=13 rs_nifty=0.3 deliv=42.81
+- UNOMINDA: score=13 rs_nifty=13.59 deliv=51.81
+- WESTLIFE: score=13 rs_nifty=6.96 deliv=55.84
+- HMVL: score=13 rs_nifty=8.55 deliv=85.12
+- SONACOMS: score=13 rs_nifty=1.25 deliv=50.82
+- CEMPRO: score=13 rs_nifty=3.14 deliv=59.83
+- MANAKCOAT: score=13 rs_nifty=17.23 deliv=49.79
+- TANLA: score=13 rs_nifty=13.6 deliv=40.09
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -1.34% (bear)
+- Nikkei: +0.31% (bull)
 - Hang Seng: -1.03% (bear)
 - Shanghai: -0.50% (bear)
 - Kospi: -2.59% (bear)
 - Taiwan: -2.31% (bear)
-- ASX 200: -0.69% (bear)
+- ASX 200: -1.90% (bear)
 
 ### Europe
-- FTSE 100: -1.30% (bear)
-- DAX: -1.19% (bear)
-- Euro Stoxx 50: -0.93% (bear)
+- FTSE 100: -1.76% (bear)
+- DAX: -2.08% (bear)
+- Euro Stoxx 50: -2.15% (bear)
 
 ### US
-- S&P 500: -0.13% (neutral)
-- Nasdaq: +0.51% (bull)
-- Dow: -1.02% (bear)
-- US VIX: -3.26% (bull)
+- S&P 500: -0.23% (bear)
+- Nasdaq: +0.42% (bull)
+- Dow: -1.11% (bear)
+- US VIX: -3.53% (bull)
 
 ### Macro
-- USDINR: -0.54% (bull)
-- Crude WTI: -4.59% (bear)
-- Brent: -4.53% (bear)
-- DXY: +0.29% (neutral)
+- USDINR: -0.52% (bull)
+- Crude WTI: -4.74% (bear)
+- Brent: -4.80% (bear)
+- DXY: +0.31% (neutral)
 - US 10Y: -0.73% (bull)
-- India ETF: -0.82% (bear)
-- EM ETF: -0.63% (bear)
+- India ETF: -0.85% (bear)
+- EM ETF: -0.67% (bear)
 
 
 ## Groq desk note
