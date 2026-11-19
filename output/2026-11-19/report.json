@@ -5,36 +5,36 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-19",
-  "generated_at_ist": "2026-11-19T13:25:31.460329+05:30",
-  "duration_seconds": 279.5,
+  "generated_at_ist": "2026-11-19T18:10:29.330989+05:30",
+  "duration_seconds": 375.1,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
     {
       "agent": "tradingview",
       "status": "ok",
-      "rows": 3227,
-      "seconds": 4.2
+      "rows": 3229,
+      "seconds": 4.5
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14552,
-      "cache_rows": 8003952,
-      "symbols": 2918,
-      "failed": 39,
+      "rows": 14578,
+      "cache_rows": 8008935,
+      "symbols": 2925,
+      "failed": 38,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2517,
-      "cold": 436,
-      "new_symbols": 40,
+      "warm": 2523,
+      "cold": 437,
+      "new_symbols": 39,
       "retries": 2,
-      "seconds": 188.9
+      "seconds": 275.2
     },
     {
       "agent": "earnings",
       "status": "ok",
-      "rows": 3227,
+      "rows": 3229,
       "seconds": 0.1
     },
     {
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.4
+      "seconds": 0.9
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 0.8
+      "seconds": 1.7
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 4.0
+      "seconds": 4.2
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 6.9
+      "seconds": 4.2
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 5.5
+      "seconds": 5.4
     },
     {
       "agent": "stock_options",
@@ -78,38 +78,38 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2387,
-      "seconds": 18.4
+      "rows": 2392,
+      "seconds": 8.2
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.5
+      "seconds": 2.8
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.9
+      "seconds": 2.7
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 2.4
+      "seconds": 5.0
     },
     {
       "agent": "relative_strength",
       "status": "ok",
-      "rows": 3227,
-      "seconds": 0.2
+      "rows": 3229,
+      "seconds": 0.3
     },
     {
       "agent": "event_risk",
       "status": "ok",
-      "rows": 3227,
-      "seconds": 0.5
+      "rows": 3229,
+      "seconds": 0.7
     },
     {
       "agent": "fno_momentum",
@@ -138,44 +138,40 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2911,
-      "with_structure": 2910,
+      "rows": 2917,
+      "with_structure": 2915,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 12.1
+      "seconds": 15.7
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3251,
-      "seconds": 5.3
+      "rows": 3245,
+      "seconds": 6.9
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 2,
+      "rows": 4,
       "ideas": [
+        "SOUTHBANK",
         "MEDANTA",
-        "SSWL"
+        "GAIL",
+        "BANKINDIA"
       ],
-      "watchlist": 0,
-      "open_positions": 31,
+      "watchlist": 3,
+      "open_positions": 30,
       "needing_action": [
         "ALIVUS",
         "ICICIBANK",
-        "KANPRPLA",
+        "KOTAKBANK",
         "LAURUSLABS",
-        "PNB",
-        "TECHM",
         "TFCILTD",
         "UNIONBANK"
       ],
-      "closed_today": [
-        "PNB",
-        "TECHM",
-        "KANPRPLA"
-      ],
-      "seconds": 0.3
+      "closed_today": [],
+      "seconds": 0.4
     }
   ],
   "ok": 20,
