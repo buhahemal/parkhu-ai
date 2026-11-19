@@ -1,54 +1,59 @@
-# Parkhu research pack — 2026-11-19
+# Parkhu research pack — 2026-11-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-19T18:10:29.330989+05:30
+- **generated_at_ist:** 2026-11-20T02:32:15.248804+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bullish**
-- nifty: Bullish (1.14%)
-- india_vix: 16.11 (Medium)
+- market_regime: **Bearish**
+- nifty: Bearish (-0.63%)
+- india_vix: 15.57 (Medium)
 - fii_net: 7411.41 | dii_net: -1356.57
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3245
-- trend = Bullish: 1074
-- price > SMA200: 788
-- price > EMA50: 765
-- ADX14 > 25: 381
-- RSI14 in 40-80: 365
-- RS > 0 vs NIFTY and sector: 129
-- delivery% >= 40: 76
-- relative_volume >= 1: 20
-- no earnings within 21d: 20
-- event_risk_score <= 1: 20
-- TV rating not Sell: 20
+- universe: 3243
+- trend = Bullish: 1069
+- price > SMA200: 787
+- price > EMA50: 764
+- ADX14 > 25: 377
+- RSI14 in 40-80: 361
+- RS > 0 vs NIFTY and sector: 164
+- delivery% >= 40: 103
+- relative_volume >= 1: 26
+- no earnings within 21d: 26
+- event_risk_score <= 1: 25
+- TV rating not Sell: 25
 
-## Survivors (top 20 of 20)
+## Survivors (top 25 of 25)
 
 - **SOUTHBANK** [idea] score 91.5 — selected as idea
+- **EICHERMOT** [idea] score 86.2 — selected as idea
 - **MEDANTA** [idea] score 86.0 — selected as idea
+- **POONAWALLA** [idea] score 85.1 — selected as idea
 - **GAIL** [idea] score 83.5 — selected as idea
-- **BANKINDIA** [idea] score 82.4 — selected as idea
-- **ITCHOTELS** [rejected] score 81.9 — T1 needs more than 22 trading days (~1 month)
-- **BANKBARODA** [rejected] score 78.7 — T1 needs more than 22 trading days (~1 month)
-- **UNOMINDA** [watchlist] score 77.2 — score in Watch band (70–80)
-- **EMAMILTD** [rejected] score 76.2 — T1 needs more than 22 trading days (~1 month)
+- **BANKINDIA** [rejected] score 82.4 — not selected
+- **ITCHOTELS** [rejected] score 82.1 — T1 needs more than 22 trading days (~1 month)
+- **BANKBARODA** [rejected] score 78.8 — T1 needs more than 22 trading days (~1 month)
+- **UNOMINDA** [watchlist] score 77.3 — score in Watch band (70–80)
+- **EMAMILTD** [rejected] score 76.4 — T1 needs more than 22 trading days (~1 month)
 - **CEMPRO** [rejected] score 76.1 — T1 needs more than 22 trading days (~1 month)
-- **M&M** [watchlist] score 73.7 — score in Watch band (70–80)
-- **HYUNDAI** [watchlist] score 72.9 — score in Watch band (70–80)
-- **TATACONSUM** [rejected] score 70.7 — T1 needs more than 22 trading days (~1 month)
-- **PVRINOX** [rejected] score 67.7 — score below Watch band
+- **M&M** [watchlist] score 73.8 — score in Watch band (70–80)
+- **HYUNDAI** [watchlist] score 73.2 — score in Watch band (70–80)
+- **TATACONSUM** [rejected] score 70.9 — T1 needs more than 22 trading days (~1 month)
+- **SIMPLEXINF** [watchlist] score 70.0 — score in Watch band (70–80)
+- **PVRINOX** [rejected] score 67.8 — score below Watch band
+- **NRL** [rejected] score 65.7 — score below Watch band
 - **JLHL** [rejected] score 64.7 — T1 needs more than 22 trading days (~1 month)
-- **THELEELA** [rejected] score 61.9 — score below Watch band
-- **ITC** [rejected] score 59.9 — T1 needs more than 22 trading days (~1 month)
-- **TIPSFILMS** [rejected] score 58.1 — score below Watch band
-- **DRREDDY** [rejected] score 55.0 — score below Watch band
-- **MEESHO** [rejected] score 54.0 — score below Watch band
-- **STYLEBAAZA** [rejected] score 48.6 — score below Watch band
+- **THELEELA** [rejected] score 62.1 — score below Watch band
+- **ITC** [rejected] score 60.1 — T1 needs more than 22 trading days (~1 month)
+- **TIPSFILMS** [rejected] score 58.2 — score below Watch band
+- **DRREDDY** [rejected] score 55.1 — score below Watch band
+- **ADANIGREEN** [rejected] score 54.9 — T1 needs more than 22 trading days (~1 month)
+- **MEESHO** [rejected] score 54.2 — score below Watch band
+- **STYLEBAAZA** [rejected] score 48.7 — score below Watch band
 
 ## Ideas
 
@@ -57,20 +62,25 @@
 - entry 59.64 | stop 56.01 | t1 66.9 | t2 70.52 | t3 74.15 | R:R 2.0
 - qty 167 | deployed 9960.0 (9.96%) | risk ₹606.0
 
+### EICHERMOT — Buy (score 86.2)
+- Eicher Motors Limited | risk_sector: Consumer Durables
+- entry 8058.5 | stop 7634.82 | t1 8905.86 | t2 9329.55 | t3 9753.23 | R:R 2.0
+- qty 1 | deployed 8058.0 (8.06%) | risk ₹424.0
+
 ### MEDANTA — Buy (score 86.0)
 - Global Health Limited | risk_sector: Health Services
 - entry 1478.3 | stop 1390.87 | t1 1653.16 | t2 1740.58 | t3 1828.01 | R:R 2.0
 - qty 6 | deployed 8870.0 (8.87%) | risk ₹525.0
 
+### POONAWALLA — Buy (score 85.1)
+- Poonawalla Fincorp Limited | risk_sector: NBFC & Capital Markets
+- entry 504.75 | stop 470.83 | t1 572.58 | t2 606.5 | t3 640.42 | R:R 2.0
+- qty 19 | deployed 9590.0 (9.59%) | risk ₹644.0
+
 ### GAIL — Buy (score 83.5)
 - GAIL (India) Limited | risk_sector: Utilities
 - entry 192.1 | stop 184.53 | t1 207.24 | t2 214.81 | t3 222.38 | R:R 2.0
 - qty 52 | deployed 9989.0 (9.99%) | risk ₹394.0
-
-### BANKINDIA — Buy (score 82.4)
-- Bank of India | risk_sector: Banks
-- entry 161.9 | stop 153.06 | t1 179.58 | t2 188.42 | t3 197.26 | R:R 2.0
-- qty 61 | deployed 9876.0 (9.88%) | risk ₹539.0
 
 ## Open ledger
 
@@ -102,9 +112,11 @@
 - **PHOENIXLTD** status=open entry=2229.0 last=2237.5 mfe=1.72 mae=-1.97 opened=2026-11-17
 - **SHARDAMOTR** status=open entry=987.0 last=969.45 mfe=4.8 mae=-5.76 opened=2026-11-17
 - **SBIN** status=open entry=1135.0 last=1156.0 mfe=2.22 mae=-2.58 opened=2026-11-18
-- **BANKINDIA** status=open entry=161.9 last=161.9 mfe=0.0 mae=0.0 opened=2026-11-19
+- **BANKINDIA** status=open entry=161.9 last=161.9 mfe=0.62 mae=-2.59 opened=2026-11-19
 - **MEDANTA** status=open entry=1475.5 last=1478.3 mfe=0.68 mae=-2.9 opened=2026-11-19
 - **SSWL** status=open entry=555.25 last=548.4 mfe=1.56 mae=-6.98 opened=2026-11-19
+- **EICHERMOT** status=open entry=8058.5 last=8058.5 mfe=0.0 mae=0.0 opened=2026-11-20
+- **POONAWALLA** status=open entry=504.75 last=504.75 mfe=0.0 mae=0.0 opened=2026-11-20
 
 ## Needs action
 
@@ -115,59 +127,53 @@
 - **TFCILTD**: TIGHTEN / REVIEW — ADX 21 — trend no longer tradeable — one condition gone, thesis thinning
 - **UNIONBANK**: BANK PARTIAL — T1 REACHED — ₹210.00 above T1 ₹205.49 — bank part, trail the rest, move stop to breakeven ₹182.85
 
-## Closed today
-
-- PNB: {'trade_id': '2026-11-05-PNB', 'symbol': 'PNB', 'company': 'Punjab National Bank', 'risk_sector': 'Banks', 'date_opened': '2026-11-05', 'taken': None, 'entry': 126.1, 'stop': 119.87, 't1': 138.55, 't2': 144.78, 't3': 151.0, 'structure_invalidation': 117.79, 'horizon_days_t1': 16, 'horizon_days_t2': 22, 'score_at_open': 93.2, 'qty': 79, 'risk_rupees': 492.0, 'status': 'closed', 'last_price': 154.45, 'last_checked': '2026-11-19', 'mfe_pct': 24.1, 'mae_pct': -2.38, 'gap_flag': False, 'hit_t1': True, 'hit_t2': True, 'reconfirmed_count': 19, 'notes': None, 'date_closed': '2026-11-19', 'exit_price': 154.45, 'exit_reason': 't3', 'pct_return': 22.48, 'r_multiple': 4.55, 'days_held': 10}
-- TECHM: {'trade_id': '2026-11-05-TECHM', 'symbol': 'TECHM', 'company': 'Tech Mahindra Limited', 'risk_sector': 'Technology Services', 'date_opened': '2026-11-05', 'taken': None, 'entry': 1822.7, 'stop': 1719.51, 't1': 2029.08, 't2': 2132.26, 't3': 2235.45, 'structure_invalidation': 1655.93, 'horizon_days_t1': 17, 'horizon_days_t2': 22, 'score_at_open': 89.0, 'qty': 5, 'risk_rupees': 516.0, 'status': 'closed', 'last_price': 1713.7, 'last_checked': '2026-11-19', 'mfe_pct': 2.05, 'mae_pct': -6.81, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 9, 'notes': None, 'date_closed': '2026-11-19', 'exit_price': 1713.7, 'exit_reason': 'stop', 'pct_return': -5.98, 'r_multiple': -1.06, 'days_held': 10}
-- KANPRPLA: {'trade_id': '2026-11-16-KANPRPLA', 'symbol': 'KANPRPLA', 'company': 'Kanpur Plastipack Limited', 'risk_sector': 'Producer Manufacturing', 'date_opened': '2026-11-16', 'taken': None, 'entry': 266.73, 'stop': 245.39, 't1': 309.41, 't2': 330.75, 't3': 352.08, 'structure_invalidation': 247.76, 'horizon_days_t1': 10, 'horizon_days_t2': 22, 'score_at_open': 83.2, 'qty': 37, 'risk_rupees': 790.0, 'status': 'closed', 'last_price': 245.62, 'last_checked': '2026-11-19', 'mfe_pct': 2.14, 'mae_pct': -8.31, 'gap_flag': False, 'hit_t1': False, 'hit_t2': False, 'reconfirmed_count': 2, 'notes': None, 'date_closed': '2026-11-19', 'exit_price': 245.62, 'exit_reason': 'stop', 'pct_return': -7.91, 'r_multiple': -0.99, 'days_held': 3}
-
 ## Swing candidates (top)
 
-- HYUNDAI: score=15 rs_nifty=0.72 deliv=40.26
-- ETERNAL: score=14 rs_nifty=1.46 deliv=57.95
-- DIVISLAB: score=14 rs_nifty=10.14 deliv=66.43
-- GLENMARK: score=14 rs_nifty=5.5 deliv=48.93
-- MANKIND: score=14 rs_nifty=4.65 deliv=52.42
-- CEMPRO: score=14 rs_nifty=4.08 deliv=68.86
-- MEDANTA: score=14 rs_nifty=7.67 deliv=65.14
-- UNOMINDA: score=14 rs_nifty=13.87 deliv=59.72
-- SSWL: score=13 rs_nifty=19.43 deliv=39.18
-- DLF: score=13 rs_nifty=0.81 deliv=52.23
-- PNB: score=13 rs_nifty=16.64 deliv=42.85
-- ICICIBANK: score=13 rs_nifty=3.04 deliv=69.26
-- MMFL: score=13 rs_nifty=10.38 deliv=50.68
-- AARTIPHARM: score=13 rs_nifty=5.09 deliv=40.69
-- MANAKCOAT: score=13 rs_nifty=14.97 deliv=62.04
+- ADANIGREEN: score=14 rs_nifty=0.26 deliv=53.29
+- CEMPRO: score=14 rs_nifty=6.56 deliv=68.86
+- HYUNDAI: score=14 rs_nifty=3.2 deliv=40.26
+- NRL: score=14 rs_nifty=2.3 deliv=69.97
+- MEDANTA: score=14 rs_nifty=10.15 deliv=65.14
+- APOLLOHOSP: score=13 rs_nifty=1.89 deliv=52.35
+- GROWW: score=13 rs_nifty=0.99 deliv=58.54
+- ETERNAL: score=13 rs_nifty=3.94 deliv=57.95
+- HMVL: score=13 rs_nifty=8.65 deliv=61.08
+- PDSL: score=13 rs_nifty=11.1 deliv=40.9
+- MANKIND: score=13 rs_nifty=7.13 deliv=52.42
+- ROLEXRINGS: score=13 rs_nifty=7.15 deliv=46.23
+- SSWL: score=13 rs_nifty=21.91 deliv=39.18
+- THELEELA: score=13 rs_nifty=4.86 deliv=68.28
+- SPECTRUM: score=13 rs_nifty=13.7 deliv=76.75
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.71% (bull)
-- Hang Seng: -1.95% (bear)
-- Shanghai: -0.28% (bear)
-- Kospi: +1.39% (bull)
-- Taiwan: -4.40% (bear)
+- Nikkei: +0.28% (bull)
+- Hang Seng: -0.91% (bear)
+- Shanghai: +0.09% (neutral)
+- Kospi: +1.99% (bull)
+- Taiwan: +0.26% (bull)
 - ASX 200: -1.04% (bear)
 
 ### Europe
-- FTSE 100: -0.47% (bear)
-- DAX: +0.02% (neutral)
-- Euro Stoxx 50: +0.35% (bull)
+- FTSE 100: -0.93% (bear)
+- DAX: -1.06% (bear)
+- Euro Stoxx 50: -0.66% (bear)
 
 ### US
-- S&P 500: -0.23% (bear)
-- Nasdaq: +0.42% (bull)
-- Dow: -1.11% (bear)
-- US VIX: -9.20% (bull)
+- S&P 500: -2.02% (bear)
+- Nasdaq: -2.25% (bear)
+- Dow: -2.19% (bear)
+- US VIX: +15.15% (bear)
 
 ### Macro
 - USDINR: -0.20% (neutral)
-- Crude WTI: -0.47% (bear)
-- Brent: -2.26% (bear)
-- DXY: -0.12% (neutral)
-- US 10Y: -0.73% (bull)
-- India ETF: -0.85% (bear)
-- EM ETF: -0.67% (bear)
+- Crude WTI: -0.14% (neutral)
+- Brent: -2.06% (bear)
+- DXY: +0.03% (neutral)
+- US 10Y: -0.28% (neutral)
+- India ETF: +1.06% (bull)
+- EM ETF: -1.94% (bear)
 
 
 ## Groq desk note
@@ -186,6 +192,6 @@ _Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-
 - `market_summary.csv`: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv
 
 - index: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json
-- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-19/research_pack.json
+- pack json: https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-20/research_pack.json
 
 Start with this pack. Use urls.deep_dive for symbol-level CSVs. Prefer output/latest/ stable paths after the run is pushed. Do not require latest.zip. Capital / deployment sizing is for Claude; the Pages desk is process and market visibility only.
