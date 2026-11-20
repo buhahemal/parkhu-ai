@@ -1,6 +1,4 @@
 date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
-19-Nov-2026 22:27:40,BAJAJCON,Updates,"Bajaj Consumer Care Limited has informed the Exchange regarding 'Demand Notice received from Dy. Commissioner, State Tax,  Udaipur, Rajasthan'.",Updates,0.0,0,False,False,0,none
-19-Nov-2026 22:29:30,USHAMART,Analysts/Institutional Investor Meet/Con. Call Updates,Usha Martin Limited has informed the Exchange about Transcript,Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none
 19-Nov-2026 22:35:54,3IINFOLTD,Bagging/Receiving of orders/contracts,3i Infotech Limited has informed the Exchange about Bagging/Receiving of orders/contracts,Bagging/Receiving of orders/contracts,0.0,0,False,False,0,none
 19-Nov-2026 22:40:43,URBANCO,Analysts/Institutional Investor Meet/Con. Call Updates,"Urban Company Limited has informed the Exchange about Schedule of Analyst/ Investor meet to be held on November 25, 2026",Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none
 19-Nov-2026 22:47:37,ZENTEC,General Updates,Zen Technologies Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
@@ -19,3 +17,5 @@ date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_cata
 20-Nov-2026 00:19:14,AVG,Investor Presentation,AVG Logistics Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
 20-Nov-2026 00:32:56,NAZARA,Analysts/Institutional Investor Meet/Con. Call Updates,Nazara Technologies Limited informs the Exchange about Schedule and Cancellation of Analyst / Investor meet.,Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none
 20-Nov-2026 00:59:53,GICRE,Change in Director(s),General Insurance Corporation of India has informed the Exchange regarding Change in Director(s) of the company.,Change in Director(s),0.0,0,False,False,0,none
+20-Nov-2026 03:13:35,FUSIONCX,Change in Director(s),Fusion CX Limited has informed the Exchange regarding Change in Director(s) of the company.,Change in Director(s),0.0,0,False,False,0,none
+20-Nov-2026 04:06:37,FUSIONCX,Analysts/Institutional Investor Meet/Con. Call Updates,Fusion CX Limited has informed the Exchange about Transcript,Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none

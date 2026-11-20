@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-20
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-20T02:32:15.248804+05:30
+- **generated_at_ist:** 2026-11-20T06:10:00.863240+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,10 +14,10 @@
 
 ## Funnel
 
-- universe: 3243
-- trend = Bullish: 1069
-- price > SMA200: 787
-- price > EMA50: 764
+- universe: 3251
+- trend = Bullish: 1064
+- price > SMA200: 782
+- price > EMA50: 759
 - ADX14 > 25: 377
 - RSI14 in 40-80: 361
 - RS > 0 vs NIFTY and sector: 164
@@ -32,28 +32,28 @@
 - **SOUTHBANK** [idea] score 91.5 — selected as idea
 - **EICHERMOT** [idea] score 86.2 — selected as idea
 - **MEDANTA** [idea] score 86.0 — selected as idea
-- **POONAWALLA** [idea] score 85.1 — selected as idea
+- **POONAWALLA** [idea] score 85.2 — selected as idea
 - **GAIL** [idea] score 83.5 — selected as idea
 - **BANKINDIA** [rejected] score 82.4 — not selected
-- **ITCHOTELS** [rejected] score 82.1 — T1 needs more than 22 trading days (~1 month)
+- **ITCHOTELS** [rejected] score 82.0 — T1 needs more than 22 trading days (~1 month)
 - **BANKBARODA** [rejected] score 78.8 — T1 needs more than 22 trading days (~1 month)
 - **UNOMINDA** [watchlist] score 77.3 — score in Watch band (70–80)
-- **EMAMILTD** [rejected] score 76.4 — T1 needs more than 22 trading days (~1 month)
+- **EMAMILTD** [rejected] score 76.3 — T1 needs more than 22 trading days (~1 month)
 - **CEMPRO** [rejected] score 76.1 — T1 needs more than 22 trading days (~1 month)
 - **M&M** [watchlist] score 73.8 — score in Watch band (70–80)
 - **HYUNDAI** [watchlist] score 73.2 — score in Watch band (70–80)
-- **TATACONSUM** [rejected] score 70.9 — T1 needs more than 22 trading days (~1 month)
+- **TATACONSUM** [rejected] score 70.8 — T1 needs more than 22 trading days (~1 month)
 - **SIMPLEXINF** [watchlist] score 70.0 — score in Watch band (70–80)
 - **PVRINOX** [rejected] score 67.8 — score below Watch band
 - **NRL** [rejected] score 65.7 — score below Watch band
 - **JLHL** [rejected] score 64.7 — T1 needs more than 22 trading days (~1 month)
-- **THELEELA** [rejected] score 62.1 — score below Watch band
-- **ITC** [rejected] score 60.1 — T1 needs more than 22 trading days (~1 month)
-- **TIPSFILMS** [rejected] score 58.2 — score below Watch band
+- **THELEELA** [rejected] score 62.0 — score below Watch band
+- **ITC** [rejected] score 60.0 — T1 needs more than 22 trading days (~1 month)
+- **TIPSFILMS** [rejected] score 58.1 — score below Watch band
 - **DRREDDY** [rejected] score 55.1 — score below Watch band
 - **ADANIGREEN** [rejected] score 54.9 — T1 needs more than 22 trading days (~1 month)
-- **MEESHO** [rejected] score 54.2 — score below Watch band
-- **STYLEBAAZA** [rejected] score 48.7 — score below Watch band
+- **MEESHO** [rejected] score 54.1 — score below Watch band
+- **STYLEBAAZA** [rejected] score 48.6 — score below Watch band
 
 ## Ideas
 
@@ -72,7 +72,7 @@
 - entry 1478.3 | stop 1390.87 | t1 1653.16 | t2 1740.58 | t3 1828.01 | R:R 2.0
 - qty 6 | deployed 8870.0 (8.87%) | risk ₹525.0
 
-### POONAWALLA — Buy (score 85.1)
+### POONAWALLA — Buy (score 85.2)
 - Poonawalla Fincorp Limited | risk_sector: NBFC & Capital Markets
 - entry 504.75 | stop 470.83 | t1 572.58 | t2 606.5 | t3 640.42 | R:R 2.0
 - qty 19 | deployed 9590.0 (9.59%) | risk ₹644.0
@@ -130,50 +130,50 @@
 ## Swing candidates (top)
 
 - ADANIGREEN: score=14 rs_nifty=0.26 deliv=53.29
-- CEMPRO: score=14 rs_nifty=6.56 deliv=68.86
-- HYUNDAI: score=14 rs_nifty=3.2 deliv=40.26
 - NRL: score=14 rs_nifty=2.3 deliv=69.97
+- HYUNDAI: score=14 rs_nifty=3.2 deliv=40.26
 - MEDANTA: score=14 rs_nifty=10.15 deliv=65.14
-- APOLLOHOSP: score=13 rs_nifty=1.89 deliv=52.35
-- GROWW: score=13 rs_nifty=0.99 deliv=58.54
-- ETERNAL: score=13 rs_nifty=3.94 deliv=57.95
-- HMVL: score=13 rs_nifty=8.65 deliv=61.08
-- PDSL: score=13 rs_nifty=11.1 deliv=40.9
-- MANKIND: score=13 rs_nifty=7.13 deliv=52.42
-- ROLEXRINGS: score=13 rs_nifty=7.15 deliv=46.23
+- CEMPRO: score=14 rs_nifty=6.56 deliv=68.86
+- INDIGO: score=13 rs_nifty=7.75 deliv=65.99
+- TRENT: score=13 rs_nifty=0.04 deliv=51.04
+- MOTILALOFS: score=13 rs_nifty=5.32 deliv=43.91
 - SSWL: score=13 rs_nifty=21.91 deliv=39.18
-- THELEELA: score=13 rs_nifty=4.86 deliv=68.28
-- SPECTRUM: score=13 rs_nifty=13.7 deliv=76.75
+- MARICO: score=13 rs_nifty=7.31 deliv=68.83
+- DIVISLAB: score=13 rs_nifty=12.62 deliv=66.43
+- MANKIND: score=13 rs_nifty=7.13 deliv=52.42
+- AARTIPHARM: score=13 rs_nifty=7.57 deliv=40.69
+- HMVL: score=13 rs_nifty=8.65 deliv=61.08
+- GROWW: score=13 rs_nifty=0.99 deliv=58.54
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.28% (bull)
+- Nikkei: -2.44% (bear)
 - Hang Seng: -0.91% (bear)
 - Shanghai: +0.09% (neutral)
-- Kospi: +1.99% (bull)
+- Kospi: -2.10% (bear)
 - Taiwan: +0.26% (bull)
-- ASX 200: -1.04% (bear)
+- ASX 200: -1.87% (bear)
 
 ### Europe
-- FTSE 100: -0.93% (bear)
-- DAX: -1.06% (bear)
-- Euro Stoxx 50: -0.66% (bear)
+- FTSE 100: -1.30% (bear)
+- DAX: -1.19% (bear)
+- Euro Stoxx 50: -0.93% (bear)
 
 ### US
 - S&P 500: -2.02% (bear)
 - Nasdaq: -2.25% (bear)
 - Dow: -2.19% (bear)
-- US VIX: +15.15% (bear)
+- US VIX: +15.80% (bear)
 
 ### Macro
 - USDINR: -0.20% (neutral)
-- Crude WTI: -0.14% (neutral)
-- Brent: -2.06% (bear)
-- DXY: +0.03% (neutral)
+- Crude WTI: -0.52% (bear)
+- Brent: -2.31% (bear)
+- DXY: +0.06% (neutral)
 - US 10Y: -0.28% (neutral)
-- India ETF: +1.06% (bull)
-- EM ETF: -1.94% (bear)
+- India ETF: +1.07% (bull)
+- EM ETF: -1.95% (bear)
 
 
 ## Groq desk note
