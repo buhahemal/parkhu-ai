@@ -33,7 +33,7 @@ It intentionally does **not** show capital deployed — keep that conversation i
 - `enrichment.stock_reviews[]` — one paced AI review per finalized Buy idea.
 - `market_news_top10[]` — top impact headlines (skip-safe if no news / no key).
 - Calls spaced ~2.1s (≤30 RPM). Prefer `enrichment.claude_feed` as a short paste after the pack.
-- Primary model `llama-3.3-70b-versatile` with fallbacks on rate-limit / failure.
+- Primary model `llama-3.3-70b-versatile` with fallbacks `openai/gpt-oss-120b` → `llama-3.1-8b-instant` (see [Groq models](https://console.groq.com/docs/models)).
 - Repo secret: **Settings → Secrets → Actions → `GROQ_API_KEY`**. Rotate any key that was pasted in chat.
 - Local: copy [`.env.example`](../.env.example) → `.env` (gitignored).
 

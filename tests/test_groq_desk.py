@@ -90,8 +90,11 @@ def _news_body() -> str:
 def test_model_chain_defaults(monkeypatch):
     monkeypatch.delenv("PARKHU_GROQ_MODELS", raising=False)
     monkeypatch.delenv("PARKHU_GROQ_MODEL", raising=False)
-    assert model_chain()[0] == "llama-3.3-70b-versatile"
-    assert "llama-3.1-8b-instant" in model_chain()
+    chain = model_chain()
+    assert chain[0] == "llama-3.3-70b-versatile"
+    assert "openai/gpt-oss-120b" in chain
+    assert "llama-3.1-8b-instant" in chain
+    assert "meta-llama/llama-4-scout-17b-16e-instruct" not in chain
 
 
 def test_model_chain_primary_override(monkeypatch):

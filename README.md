@@ -153,7 +153,7 @@ Environment overrides:
 | `PARKHU_RUN_DATE` | force the output date (e.g. `2026-06-20` for backfill) |
 | `PARKHU_UNIVERSE` | `nifty50` (default) or `tradingview` — drive the whole pipeline off the TradingView screener (NSE equities, no mcap floor) instead of the static Nifty 50 |
 | `GROQ_API_KEY` | optional — Groq desk note in `research_pack.json` (Pages + Claude feed). Never commit the key; use `.env` locally and GitHub Actions secret `GROQ_API_KEY` |
-| `PARKHU_GROQ_MODELS` | optional comma-separated primary→fallback models (default: 70B → Llama-4 Scout → 8B instant) |
+| `PARKHU_GROQ_MODELS` | optional comma-separated primary→fallback models (default: `llama-3.3-70b-versatile` → `openai/gpt-oss-120b` → `llama-3.1-8b-instant`) |
 | `PARKHU_GROQ_MODEL` | optional primary model only (remaining defaults appended as fallbacks) |
 
 **Groq note:** one collect run uses 1–3 chat calls (usually 1). Enrichment is additive narrative; entry/stop/T1/hold still come from Parkhu gates. Rotate any key that was exposed in chat.

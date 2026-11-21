@@ -335,9 +335,7 @@ def review(date: str) -> dict:
     d = load_csv("stock_analysis", date)
     have_data = not d.empty and "symbol" in d.columns
     snap = d.set_index("symbol") if have_data else pd.DataFrame()
-    open_symbols = (
-        open_df["symbol"].astype(str).tolist() if "symbol" in open_df.columns else []
-    )
+    open_symbols = open_df["symbol"].astype(str).tolist() if "symbol" in open_df.columns else []
     ohlc_map = _load_ohlc_map(date, symbols=open_symbols)
 
     reviewed, closed_rows, keep_idx = [], [], []
