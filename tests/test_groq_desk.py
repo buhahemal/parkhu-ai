@@ -90,8 +90,12 @@ def _news_body() -> str:
 def test_model_chain_defaults(monkeypatch):
     monkeypatch.delenv("PARKHU_GROQ_MODELS", raising=False)
     monkeypatch.delenv("PARKHU_GROQ_MODEL", raising=False)
-    assert model_chain()[0] == "llama-3.3-70b-versatile"
-    assert "llama-3.1-8b-instant" in model_chain()
+    assert model_chain()[0] == "openai/gpt-oss-120b"
+    assert model_chain() == [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+        "llama-3.1-8b-instant",
+    ]
 
 
 def test_model_chain_primary_override(monkeypatch):
@@ -115,18 +119,18 @@ def test_skipped_without_key(monkeypatch):
 
 
 def test_primary_ok_stamps_levels_not_llm_prices(monkeypatch):
-    monkeypatch.setenv("PARKHU_GROQ_MODELS", "llama-3.3-70b-versatile")
+    monkeypatch.setenv("PARKHU_GROQ_MODELS", "openai/gpt-oss-120b")
     monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
 
     def fake_http(api_key, model, messages):
-        assert model == "llama-3.3-70b-versatile"
+        assert model == "openai/gpt-oss-120b"
         return 200, _ok_body(entry_from_llm=999.0)
 
     monkeypatch.setattr(groq, "_http_chat", fake_http)
     out = call_groq_desk(SAMPLE_PACK, api_key="gsk_test")
     assert out["status"] == "ok"
     assert out["fallback_used"] is False
-    assert out["model"] == "llama-3.3-70b-versatile"
+    assert out["model"] == "openai/gpt-oss-120b"
     assert len(out["suggestions"]) == 1
     assert out["suggestions"][0]["symbol"] == "AAA"
     assert out["suggestions"][0]["entry"] == 100
@@ -137,14 +141,14 @@ def test_primary_ok_stamps_levels_not_llm_prices(monkeypatch):
 def test_primary_429_then_fallback_ok(monkeypatch):
     monkeypatch.setenv(
         "PARKHU_GROQ_MODELS",
-        "llama-3.3-70b-versatile,llama-3.1-8b-instant",
+        "openai/gpt-oss-120b,llama-3.1-8b-instant",
     )
     monkeypatch.setenv("PARKHU_GROQ_MIN_INTERVAL_S", "0")
     calls = []
 
     def fake_http(api_key, model, messages):
         calls.append(model)
-        if model == "llama-3.3-70b-versatile":
+        if model == "openai/gpt-oss-120b":
             return 429, '{"error":{"message":"rate_limit"}}'
         return 200, _ok_body()
 
@@ -155,7 +159,7 @@ def test_primary_429_then_fallback_ok(monkeypatch):
     assert out["fallback_used"] is True
     assert out["model"] == "llama-3.1-8b-instant"
     # primary attempted twice (retry once on 429) then fallback
-    assert calls.count("llama-3.3-70b-versatile") == 2
+    assert calls.count("openai/gpt-oss-120b") == 2
     assert "llama-3.1-8b-instant" in calls
     assert any(a["ok"] is False for a in out["attempts"])
     assert any(a["ok"] is True for a in out["attempts"])
