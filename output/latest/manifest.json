@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
-  "date": "2026-07-26",
-  "generated_at_ist": "2026-07-26T20:42:56.725152+05:30",
+  "date": "2026-11-21",
+  "generated_at_ist": "2026-11-21T06:10:01.084042+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -19,13 +19,13 @@
         "perf_1y"
       ],
       "present": true,
-      "rows": 2969
+      "rows": 3231
     },
     "history/ohlc.csv": {
       "agent": "ohlc_history",
-      "source": "Yahoo Finance (.NS) + database/ohlc cache",
-      "description": "Daily equity OHLCV history (~250 sessions \u00d7 universe) in long format.",
-      "use_case": "Swing highs/lows, volume trend, structure stops, OHLC-based MFE/MAE.",
+      "source": "Yahoo Finance (.NS); full history in database/ohlc/<SYMBOL>.csv",
+      "description": "Tiny dated pack: last few sessions \u00d7 universe (not full history).",
+      "use_case": "Light handoff / manifest. Features and MFE/MAE use database/ohlc/.",
       "key_columns": [
         "symbol",
         "date",
@@ -36,11 +36,11 @@
         "volume"
       ],
       "present": true,
-      "rows": 639686
+      "rows": 14595
     },
     "ohlc_features.csv": {
       "agent": "ohlc_features (derived)",
-      "source": "history/ohlc.csv",
+      "source": "database/ohlc/<SYMBOL>.csv (full history)",
       "description": "Per-symbol swing/volume structure derived from daily OHLC (20d highs/lows, base, breakout, volume ratio).",
       "use_case": "Feed stock_analysis and structure-based trade levels.",
       "key_columns": [
@@ -51,7 +51,7 @@
         "volume_ratio_vs_20d"
       ],
       "present": true,
-      "rows": 2696
+      "rows": 2920
     },
     "stock_options.csv": {
       "agent": "stock_options",
@@ -79,7 +79,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 0
+      "rows": 5
     },
     "sectors.csv": {
       "agent": "sectors",
@@ -92,7 +92,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 0
+      "rows": 10
     },
     "earnings.csv": {
       "agent": "earnings",
@@ -107,7 +107,7 @@
         "next_earnings_date"
       ],
       "present": true,
-      "rows": 2969
+      "rows": 3231
     },
     "fii.csv": {
       "agent": "smartmoney",
@@ -135,7 +135,7 @@
         "price"
       ],
       "present": true,
-      "rows": 1
+      "rows": 2
     },
     "options.csv": {
       "agent": "options",
@@ -164,7 +164,7 @@
         "underlying_value"
       ],
       "present": true,
-      "rows": 215
+      "rows": 224
     },
     "most_active_contracts.csv": {
       "agent": "derivatives",
@@ -192,7 +192,7 @@
         "latest_oi"
       ],
       "present": true,
-      "rows": 215
+      "rows": 224
     },
     "corporate_actions.csv": {
       "agent": "corpactions",
@@ -263,7 +263,7 @@
         "pct_change"
       ],
       "present": true,
-      "rows": 3
+      "rows": 30
     },
     "delivery.csv": {
       "agent": "delivery",
@@ -277,7 +277,7 @@
         "close"
       ],
       "present": true,
-      "rows": 2051
+      "rows": 2391
     },
     "relative_strength.csv": {
       "agent": "relative_strength (derived)",
@@ -291,7 +291,7 @@
         "perf_1m"
       ],
       "present": true,
-      "rows": 2969
+      "rows": 3231
     },
     "event_risk.csv": {
       "agent": "event_risk (derived)",
@@ -305,7 +305,7 @@
         "event_risk_score"
       ],
       "present": true,
-      "rows": 2969
+      "rows": 3231
     },
     "fno_momentum.csv": {
       "agent": "fno_momentum (derived)",
@@ -319,7 +319,7 @@
         "in_oi_spurt"
       ],
       "present": true,
-      "rows": 208
+      "rows": 216
     },
     "swing_candidates.csv": {
       "agent": "swing_candidates (derived)",
@@ -359,7 +359,7 @@
         "risk_score"
       ],
       "present": true,
-      "rows": 2969
+      "rows": 3573
     },
     "market_summary.csv": {
       "agent": "market_summary (derived)",

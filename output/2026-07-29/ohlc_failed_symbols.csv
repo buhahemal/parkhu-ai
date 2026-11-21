@@ -1,0 +1,3 @@
+symbol,yf_ticker,reason
+METALIC,METALIC.NS,no_ohlc_after_retry
+NEELAM,NEELAM.NS,no_ohlc_after_retry

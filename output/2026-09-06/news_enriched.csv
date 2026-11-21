@@ -1,0 +1,21 @@
+date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
+06-Sep-2026 15:47:15,RETAIL,Copy of Newspaper Publication,JHS Svendgaard Retail Ventures Limited has informed the Exchange about Copy of Newspaper Publication,Copy of Newspaper Publication,0.0,0,False,False,0,none
+06-Sep-2026 15:50:56,ZOTA,Copy of Newspaper Publication,ZOTA: Zota Health Care Limited has informed the Exchange about Copy of Newspaper Publication,Copy of Newspaper Publication,0.0,0,False,False,0,none
+06-Sep-2026 16:03:23,STUDDS,Updates,Presentation displayed during the 44th Annual General Meeting of the Company,Updates,0.0,0,False,False,0,none
+06-Sep-2026 16:09:32,SDBL,Updates,Som Distilleries & Breweries Limited has informed the Exchange regarding 'SUBMISSION OF BUSINESS RESPONSIBILITY AND SUSTAINABILITY REPORT FOR THE FINANCIAL YEAR 2025 - 2026'.,Updates,0.0,0,False,False,0,none
+06-Sep-2026 16:10:13,GRMOVER,General Updates,GRM Overseas Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
+06-Sep-2026 16:22:49,GNFC,General Updates,Gujarat Narmada Valley Fertilizers and Chemicals Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
+06-Sep-2026 16:30:34,CLEDUCATE,Shareholders meeting,"CL Educate Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on September 29, 2026",Shareholders meeting,0.0,0,False,False,0,none
+06-Sep-2026 16:32:22,CLEDUCATE,Updates,CL Educate Limited has informed the Exchange regarding 'CL Educate Limited 30th AGM Notice'.,Updates,0.0,1,False,True,3,keyword
+06-Sep-2026 16:34:12,CLEDUCATE,Updates,CL Educate Limited has informed the Exchange regarding 'Book Closure date for 30th AGM'.,Updates,0.0,1,False,True,3,keyword
+06-Sep-2026 16:35:19,EASEMYTRIP,Shareholders meeting,"Easy Trip Planners Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on September 29, 2026",Shareholders meeting,0.0,0,False,False,0,none
+06-Sep-2026 16:35:29,MADHAV,Shareholders meeting,"Madhav Marbles and Granites Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on September 30, 2026",Shareholders meeting,0.0,0,False,False,0,none
+06-Sep-2026 16:53:35,MONEYBOXX,Shareholders meeting,"Moneyboxx Finance Limited has informed the Exchange regarding Notice of Annual General Meeting to be held on September 29, 2026",Shareholders meeting,0.0,0,False,False,0,none
+06-Sep-2026 17:04:18,EASEMYTRIP,Updates,Easy Trip Planners Limited has informed the Exchange regarding 'Business Responsibility and sustainability report for the Financial Year 2025-26.'.,Updates,0.0,0,False,False,0,none
+06-Sep-2026 17:08:55,MERCURYEV,Outcome of Board Meeting,"Mercury Ev-Tech Limited has informed the Exchange regarding Outcome of Board Meeting held on September 06, 2026.",Outcome of Board Meeting,0.0,1,False,True,3,keyword
+06-Sep-2026 17:10:58,MERCURYEV,Record Date,Mercury Ev-Tech Limited has informed the Exchange that Record date for the purpose of   is 25-Sep-2026.,Record Date,0.0,0,False,False,0,none
+06-Sep-2026 17:13:11,EASEMYTRIP,General Updates,Easy Trip Planners Limited has informed the Exchange regarding Letter To Shareholders Regarding Integrated Annual Report For The Financial Year 2025-26.,General Updates,0.0,0,False,False,0,none
+06-Sep-2026 17:25:18,UNIECOM,Copy of Newspaper Publication,"Unicommerce Esolutions Limited has informed the Exchange regarding newspaper publication of information pertaining to the 15th Annual General Meeting (""AGM"") of the Company (Pre-Dispatch)",Copy of Newspaper Publication,0.0,1,False,True,3,keyword
+06-Sep-2026 17:31:04,ATLANTAA,Copy of Newspaper Publication,Newspaper Publication post-dispatch of 43rd AGM notice & Annual Report for the Financial Year 2025-2026,Copy of Newspaper Publication,0.0,1,False,True,3,keyword
+06-Sep-2026 17:39:03,HINDUNILVR,Analysts/Institutional Investor Meet/Con. Call Updates,"Video Recording of Capital Markets Day, 2026",Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none
+06-Sep-2026 17:49:14,NLCINDIA,Copy of Newspaper Publication,NLC India Limited has informed the Exchange about Copy of Newspaper Publication,Copy of Newspaper Publication,0.0,0,False,False,0,none

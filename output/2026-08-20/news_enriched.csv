@@ -1,0 +1,21 @@
+date,symbol,subject,details,category,news_sentiment,catalyst_strength,major_catalyst,risk_event,news_score,classify_source
+20-Aug-2026 18:52:13,TEAMLEASE,General Updates,TeamLease   Divestment of entire stake in Joint  Venture Company; Crystal HR and Securities Solutions Private ( Crystal HR ),General Updates,0.0,0,False,False,0,none
+20-Aug-2026 18:54:08,BIKAJI,Shareholders meeting,Bikaji Foods International Limited has informed the Exchange about Shareholders meeting,Shareholders meeting,0.0,0,False,False,0,none
+20-Aug-2026 18:55:57,HOMEFIRST,Analysts/Institutional Investor Meet/Con. Call Updates,Home First Finance Company India Limited has informed the Exchange about Outcome of the Investor Meet,Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none
+20-Aug-2026 18:56:20,LGEINDIA,Analysts/Institutional Investor Meet/Con. Call Updates,LG Electronics India Limited has informed the Exchange about Transcript,Analysts/Institutional Investor Meet/Con. Call Updates,0.0,0,False,False,0,none
+20-Aug-2026 18:56:49,ADVAIT,General Updates,Advait Energy Transitions Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
+20-Aug-2026 18:57:14,RALLIS,Change in Management,Rallis India Limited has informed the Exchange about change in Management,Change in Management,0.0,0,False,False,0,none
+20-Aug-2026 18:57:23,GOKULAGRO,Investor Presentation,Gokul Agro Resources Limited has informed the Exchange about Investor Presentation,Investor Presentation,0.0,0,False,False,0,none
+20-Aug-2026 18:57:52,J&KBANK,Resignation,"The Jammu & Kashmir Bank Limited has informed the Exchange regarding Resignation of Mr. Ashish Kundra IAS as Non- Executive Non-Independent Director of the Bank w.e.f. August 20, 2026.",Resignation,0.0,0,False,False,0,none
+20-Aug-2026 18:58:08,ELGIEQUIP,Acquisition,Elgi Equipments Limited has informed the Exchange about Acquisition,Acquisition,0.6,3,True,False,15,keyword
+20-Aug-2026 18:58:11,ARDEE,Updates,"Ardee Industries Limited has informed the Exchange regarding 'Regarding Board Meeting Dated 25th August, 2026'.",Updates,0.0,1,False,True,3,keyword
+20-Aug-2026 18:59:04,J&KBANK,Resignation of Director/KMP/SMP,The Jammu & Kashmir Bank Limited has informed the Exchange about Resignation of Director/KMP/SMP,Resignation of Director/KMP/SMP,0.0,0,False,False,0,none
+20-Aug-2026 18:59:15,ADVAIT,Record Date,Advait Energy Transitions Limited has informed the Exchange that Record date for the purpose of Dividend  is 14-Sep-2026.,Record Date,0.5,2,True,False,12,keyword
+20-Aug-2026 18:59:34,RAILTEL,Shareholders meeting,"Railtel Corporation Of India Limited has informed the Exchange regarding Proceedings of Annual General Meeting held on August 20, 2026",Shareholders meeting,0.0,0,False,False,0,none
+20-Aug-2026 19:00:09,DIAMONDYD,Acquisition,Prataap Snacks Limited has informed the Exchange about update on Acquisition.,Acquisition,0.6,3,True,False,15,keyword
+20-Aug-2026 19:02:17,PRESTIGE,Shareholders meeting,"Prestige Estates Projects Limited has informed the Exchange regarding Proceedings of Annual General Meeting held on August 20, 2026",Shareholders meeting,0.0,0,False,False,0,none
+20-Aug-2026 19:02:23,APLLTD,Change in Company Secretary/Compliance Officer,Alembic Pharmaceuticals Limited has informed the Exchange about Change in Company Secretary/Compliance Officer,Change in Company Secretary/Compliance Officer,0.0,0,False,False,0,none
+20-Aug-2026 19:02:55,TORNTPOWER,Resignation of Director/KMP/SMP,Torrent Power Limited has informed the Exchange about Resignation of Director/KMP/SMP,Resignation of Director/KMP/SMP,0.0,0,False,False,0,none
+20-Aug-2026 19:02:57,TFL,General Updates,Transwarranty Finance Limited has informed the Exchange about General Updates,General Updates,0.0,0,False,False,0,none
+20-Aug-2026 19:03:18,TORNTPOWER,Resignation of Director/KMP/SMP,Torrent Power Limited has informed the Exchange about Resignation of Director/KMP/SMP,Resignation of Director/KMP/SMP,0.0,0,False,False,0,none
+20-Aug-2026 19:03:43,BEARDSELL,Credit Rating,Beardsell Limited has informed the Exchange about Credit Rating,Credit Rating,0.0,0,False,False,0,none

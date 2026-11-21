@@ -25,11 +25,10 @@ from collector.utils import get_logger
 log = get_logger("groq_desk")
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-# Production chat models from https://console.groq.com/docs/models
-# (Llama-4 Scout removed — no longer listed / returns model_not_found).
+# Production chat IDs from https://console.groq.com/docs/models (Scout retired).
 DEFAULT_MODELS = (
-    "llama-3.3-70b-versatile",
     "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
     "llama-3.1-8b-instant",
 )
 ALLOWED_ACTIONS = frozenset({"consider_entry", "watch", "stand_aside", "manage_open"})
