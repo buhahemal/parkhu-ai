@@ -1,83 +1,62 @@
 # Parkhu research pack — 2026-11-21
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-21T06:10:01.088372+05:30
+- **generated_at_ist:** 2026-11-21T11:34:58.465537+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
 - market_regime: **Bullish**
-- nifty: Bullish (1.14%)
-- india_vix: 16.11 (Medium)
+- nifty: Bullish (1.12%)
+- india_vix: 17.32 (Medium)
 - fii_net: 10308.42 | dii_net: -4859.8
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
-- universe: 3249
-- trend = Bullish: 1015
-- price > SMA200: 752
-- price > EMA50: 729
-- ADX14 > 25: 375
-- RSI14 in 40-80: 359
-- RS > 0 vs NIFTY and sector: 150
-- delivery% >= 40: 92
-- relative_volume >= 1: 42
-- no earnings within 21d: 42
-- event_risk_score <= 1: 42
-- TV rating not Sell: 42
+- universe: 3251
+- trend = Bullish: 1016
+- price > SMA200: 758
+- price > EMA50: 735
+- ADX14 > 25: 374
+- RSI14 in 40-80: 358
+- RS > 0 vs NIFTY and sector: 119
+- delivery% >= 40: 69
+- relative_volume >= 1: 26
+- no earnings within 21d: 26
+- event_risk_score <= 1: 26
+- TV rating not Sell: 26
 
-## Survivors (top 42 of 42)
+## Survivors (top 26 of 26)
 
-- **BAJFINANCE** [idea] score 89.6 — selected as idea
-- **HDFCBANK** [rejected] score 89.6 — T1 needs more than 22 trading days (~1 month)
+- **HDFCBANK** [rejected] score 89.5 — T1 needs more than 22 trading days (~1 month)
 - **MAHABANK** [idea] score 87.5 — selected as idea
 - **MEDANTA** [idea] score 84.7 — selected as idea
-- **SUNTECK** [rejected] score 84.7 — T1 needs more than 22 trading days (~1 month)
-- **AXISBANK** [idea] score 84.5 — selected as idea
-- **STEL** [idea] score 82.6 — selected as idea
-- **ITCHOTELS** [rejected] score 82.1 — T1 needs more than 22 trading days (~1 month)
+- **SUNTECK** [rejected] score 84.6 — T1 needs more than 22 trading days (~1 month)
+- **ITCHOTELS** [rejected] score 82.2 — T1 needs more than 22 trading days (~1 month)
 - **IOC** [rejected] score 81.3 — T1 needs more than 22 trading days (~1 month)
-- **ACUTAAS** [rejected] score 81.0 — not selected
-- **CHOLAFIN** [rejected] score 80.5 — not selected
-- **LEMONTREE** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
-- **MINDACORP** [watchlist] score 79.5 — score in Watch band (70–80)
+- **ACUTAAS** [idea] score 81.0 — selected as idea
+- **CHOLAFIN** [idea] score 80.5 — selected as idea
+- **LEMONTREE** [rejected] score 79.9 — T1 needs more than 22 trading days (~1 month)
+- **MINDACORP** [watchlist] score 79.4 — score in Watch band (70–80)
 - **BANKBARODA** [rejected] score 79.0 — T1 needs more than 22 trading days (~1 month)
-- **CANBK** [rejected] score 79.0 — T1 needs more than 22 trading days (~1 month)
-- **HDFCAMC** [watchlist] score 78.7 — score in Watch band (70–80)
-- **PHOENIXLTD** [watchlist] score 78.2 — score in Watch band (70–80)
-- **YATHARTH** [watchlist] score 78.2 — score in Watch band (70–80)
-- **ORIENTHOT** [watchlist] score 78.0 — score in Watch band (70–80)
-- **ABCAPITAL** [watchlist] score 77.7 — score in Watch band (70–80)
+- **ORIENTHOT** [watchlist] score 78.1 — score in Watch band (70–80)
+- **PHOENIXLTD** [watchlist] score 78.1 — score in Watch band (70–80)
 - **SPECTRUM** [watchlist] score 77.0 — score in Watch band (70–80)
-- **POONAWALLA** [watchlist] score 76.6 — score in Watch band (70–80)
-- **CEMPRO** [watchlist] score 75.3 — score in Watch band (70–80)
+- **CEMPRO** [watchlist] score 75.4 — score in Watch band (70–80)
 - **M&M** [watchlist] score 74.2 — score in Watch band (70–80)
 - **LICHSGFIN** [watchlist] score 74.0 — score in Watch band (70–80)
-- **HYUNDAI** [watchlist] score 73.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.8 — score in Watch band (70–80)
-- **TATACONSUM** [rejected] score 71.0 — T1 needs more than 22 trading days (~1 month)
-- **EXIDEIND** [rejected] score 70.7 — T1 needs more than 22 trading days (~1 month)
-- **IDFCFIRSTB** [rejected] score 69.2 — score below Watch band
-- **TRENT** [rejected] score 68.5 — score below Watch band
-- **DLF** [rejected] score 67.8 — score below Watch band
-- **NRL** [rejected] score 65.7 — score below Watch band
-- **MARATHON** [rejected] score 65.6 — T1 needs more than 22 trading days (~1 month)
+- **TATACONSUM** [rejected] score 71.1 — T1 needs more than 22 trading days (~1 month)
+- **DLF** [rejected] score 67.7 — score below Watch band
 - **KIMS** [rejected] score 64.6 — score below Watch band
-- **THELEELA** [rejected] score 61.3 — score below Watch band
-- **MARUTI** [rejected] score 59.5 — T1 needs more than 22 trading days (~1 month)
-- **LIBERTSHOE** [rejected] score 59.0 — T1 needs more than 22 trading days (~1 month)
-- **ITC** [rejected] score 58.9 — T1 needs more than 22 trading days (~1 month)
+- **MARUTI** [rejected] score 59.4 — T1 needs more than 22 trading days (~1 month)
+- **LIBERTSHOE** [rejected] score 59.1 — T1 needs more than 22 trading days (~1 month)
+- **ITC** [rejected] score 59.0 — T1 needs more than 22 trading days (~1 month)
 - **ULTRACEMCO** [rejected] score 58.8 — score below Watch band
-- **PRESTIGE** [rejected] score 57.9 — score below Watch band
-- **MEESHO** [rejected] score 53.5 — score below Watch band
+- **MEESHO** [rejected] score 53.6 — score below Watch band
 
 ## Ideas
-
-### BAJFINANCE — Buy (score 89.6)
-- Bajaj Finance Limited | risk_sector: NBFC & Capital Markets
-- entry 1122.0 | stop 1062.49 | t1 1241.03 | t2 1300.54 | t3 1360.05 | R:R 2.0
-- qty 8 | deployed 8976.0 (8.98%) | risk ₹476.0
 
 ### MAHABANK — Buy (score 87.5)
 - Bank of Maharashtra | risk_sector: Banks
@@ -89,15 +68,15 @@
 - entry 1480.2 | stop 1393.72 | t1 1653.17 | t2 1739.65 | t3 1826.13 | R:R 2.0
 - qty 6 | deployed 8881.0 (8.88%) | risk ₹519.0
 
-### AXISBANK — Buy (score 84.5)
-- Axis Bank Limited | risk_sector: Banks
-- entry 1446.0 | stop 1384.75 | t1 1568.5 | t2 1629.74 | t3 1690.99 | R:R 2.0
-- qty 6 | deployed 8676.0 (8.68%) | risk ₹368.0
+### ACUTAAS — Buy (score 81.0)
+- Acutaas Chemicals Ltd | risk_sector: Health Technology
+- entry 3833.5 | stop 3526.82 | t1 4446.86 | t2 4753.54 | t3 5060.22 | R:R 2.0
+- qty 2 | deployed 7667.0 (7.67%) | risk ₹613.0
 
-### STEL — Buy (score 82.6)
-- STEL Holdings Limited | risk_sector: NBFC & Capital Markets
-- entry 616.2 | stop 566.9 | t1 714.79 | t2 764.09 | t3 813.38 | R:R 2.0
-- qty 16 | deployed 9859.0 (9.86%) | risk ₹789.0
+### CHOLAFIN — Buy (score 80.5)
+- Cholamandalam Investment and Finance Co. Ltd. | risk_sector: NBFC & Capital Markets
+- entry 1874.6 | stop 1777.59 | t1 2068.62 | t2 2165.63 | t3 2262.63 | R:R 2.0
+- qty 5 | deployed 9373.0 (9.37%) | risk ₹485.0
 
 ## Open ledger
 
@@ -147,36 +126,36 @@
 
 ## Swing candidates (top)
 
-- MINDACORP: score=14 rs_nifty=6.77 deliv=47.61
-- YATHARTH: score=14 rs_nifty=1.46 deliv=40.77
-- HYUNDAI: score=14 rs_nifty=1.83 deliv=50.96
-- TRENT: score=14 rs_nifty=1.59 deliv=54.11
-- CEMPRO: score=14 rs_nifty=8.46 deliv=56.24
-- ABCAPITAL: score=14 rs_nifty=1.87 deliv=47.19
-- MEDANTA: score=14 rs_nifty=7.52 deliv=47.34
-- STEL: score=14 rs_nifty=4.64 deliv=86.96
-- NRL: score=14 rs_nifty=1.24 deliv=69.72
-- EXIDEIND: score=14 rs_nifty=1.39 deliv=44.36
-- PRESTIGE: score=14 rs_nifty=2.74 deliv=58.69
-- SPECTRUM: score=14 rs_nifty=9.84 deliv=66.4
-- MARICO: score=13 rs_nifty=5.82 deliv=59.73
-- THELEELA: score=13 rs_nifty=0.23 deliv=64.63
-- PGIL: score=13 rs_nifty=1.38 deliv=46.12
+- MINDACORP: score=14 rs_nifty=5.14 deliv=47.61
+- CEMPRO: score=14 rs_nifty=6.83 deliv=56.24
+- MEDANTA: score=14 rs_nifty=5.89 deliv=47.34
+- SPECTRUM: score=14 rs_nifty=8.21 deliv=66.4
+- BOROLTD: score=13 rs_nifty=10.66 deliv=45.24
+- STYLEBAAZA: score=13 rs_nifty=14.88 deliv=56.61
+- NILKAMAL: score=13 rs_nifty=9.72 deliv=57.34
+- ABCAPITAL: score=13 rs_nifty=0.24 deliv=47.19
+- MANAKCOAT: score=13 rs_nifty=6.69 deliv=55.15
+- ROTO: score=13 rs_nifty=5.31 deliv=43.01
+- STEL: score=13 rs_nifty=3.01 deliv=86.96
+- DLF: score=13 rs_nifty=3.89 deliv=46.94
+- PDSL: score=13 rs_nifty=10.42 deliv=47.89
+- PRESTIGE: score=13 rs_nifty=1.11 deliv=58.69
+- MMFL: score=13 rs_nifty=14.31 deliv=56.65
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +0.71% (bull)
-- Hang Seng: -1.95% (bear)
-- Shanghai: -0.28% (bear)
-- Kospi: +1.39% (bull)
-- Taiwan: -4.40% (bear)
+- Nikkei: -5.06% (bear)
+- Hang Seng: -1.89% (bear)
+- Shanghai: -1.22% (bear)
+- Kospi: -5.21% (bear)
+- Taiwan: -6.23% (bear)
 - ASX 200: -1.58% (bear)
 
 ### Europe
-- FTSE 100: -0.93% (bear)
-- DAX: -1.06% (bear)
-- Euro Stoxx 50: -0.66% (bear)
+- FTSE 100: -1.02% (bear)
+- DAX: -2.60% (bear)
+- Euro Stoxx 50: -2.81% (bear)
 
 ### US
 - S&P 500: -3.70% (bear)
@@ -185,10 +164,10 @@
 - US VIX: +26.20% (bear)
 
 ### Macro
-- USDINR: -0.18% (neutral)
-- Crude WTI: +0.49% (bull)
-- Brent: -2.29% (bear)
-- DXY: -0.06% (neutral)
+- USDINR: -0.67% (bull)
+- Crude WTI: +0.93% (bull)
+- Brent: +0.64% (bull)
+- DXY: -0.09% (neutral)
 - US 10Y: -2.77% (bull)
 - India ETF: +1.71% (bull)
 - EM ETF: -5.13% (bear)
@@ -196,8 +175,57 @@
 
 ## Groq desk note
 
-_Skipped:_ all_models_failed:http_404:{"error":{"message":"The model `llama-3.1-8b-instant` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}} 
+- **model:** openai/gpt-oss-120b
+- **stance:** selective_aggressive
 
+The Indian market remains bullish with Nifty up 1.12% and medium VIX at 17.3, while FII inflows support the upside. Banking and health sectors dominate the top ideas, and several open positions are nearing targets. However, Asian and European cues are bearish, tempering risk appetite.
+
+- **MAHABANK** [consider_entry/high] entry=99.45 stop=93.97 t1=110.41 hold=16d — Parkhu score 87.5, 2R target aligns with bullish banking theme
+- **MEDANTA** [consider_entry/high] entry=1480.2 stop=1393.72 t1=1653.17 hold=16d — Score 84.7, health services tailwinds, 2R upside
+- **ACUTAAS** [consider_entry/medium] entry=3833.5 stop=3526.82 t1=4446.86 hold=16d — Score 81, health tech exposure, solid risk‑reward
+- **CHOLAFIN** [consider_entry/medium] entry=1874.6 stop=1777.59 t1=2068.62 hold=16d — Score 80.5, NBFC sector, 2R target
+- **KOTAKBANK** [manage_open/high] entry=459.0 stop=438.62 t1=499.77 hold=16d — T1 reached, partial exit, move stop to breakeven
+- **ICICIBANK** [manage_open/high] entry=1477.3 stop=1420.52 t1=1590.85 hold=17d — T1 reached, partial exit, trail stop to breakeven
+- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX weakening, trend no longer tradeable, tighten stop
+- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — ADX weakening, tighten stop and review
+- **GAIL** [watch/low] entry=186.22 stop=177.22 t1=204.23 hold=17d — Modest upside, still within target range
+- **GLENMARK** [watch/low] entry=2481.8 stop=2327.96 t1=2789.48 hold=19d — Near target but limited upside
+- **ORIENTELEC** [watch/low] entry=199.62 stop=184.08 t1=230.71 hold=16d — Small move, monitor
+- **LUMAXTECH** [watch/low] entry=2297.6 stop=2113.79 t1=2665.22 hold=12d — Close to target, watch for breakout
+- **SOUTHBANK** [watch/low] entry=58.68 stop=54.9 t1=66.23 hold=16d — Near entry, limited upside
+- **PETRONET** [watch/low] entry=329.8 stop=314.34 t1=360.71 hold=16d — Flat performance, no clear catalyst
+- **TANLA** [watch/low] entry=694.9 stop=639.31 t1=806.08 hold=16d — Downtrend pressure, monitor
+
+### AI stock reviews
+
+- **MAHABANK** [high] Bank of Maharashtra is in a strong bullish trend with an ADX of 34.5 and a 22.8% one‑month return, making it a suitable ≤1‑month swing candidate. The stock trades at its entry level of 99.45 with a clear upside target of 110.41 and a stop at 93.97, offering a 2:1 reward‑to‑risk. Momentum is supported by high delivery (40.27%) and outperformance versus Nifty and the banking sector, while the broader market remains bullish.
+  - catalysts: RBI policy easing, Quarterly earnings beat, Accelerating credit growth, Government stimulus for banks
+  - risks: Overbought RSI may trigger pullback, Potential earnings miss, Macro slowdown affecting loan demand, Regulatory tightening on banks
+  - watch: A break below the stop level of 93.97 or a sharp decline in ADX below 25 would invalidate the trade. Conversely, a sustained move above 110.41 confirms the upside thesis.
+- **MEDANTA** [high] MEDANTA is in a strong bullish trend with ADX above 30 and RSI near 68, indicating momentum without extreme overbought conditions. The stock is trading just 4% below its 52‑week high and outperforms both the Nifty and its health services sector, making a short‑term upside to the T1 target of 1653.17 realistic within the 16‑day horizon. The entry at 1480.2 and stop at 1393.72 provide a clear risk‑reward profile for a ≤1‑month swing.
+  - catalysts: Sector tailwinds from increased healthcare spending, Potential policy incentives for health services, Positive earnings momentum as the company approaches its next reporting window
+  - risks: Profit booking as price nears 52‑week high, Broader market correction if VIX spikes, Regulatory scrutiny in health services sector
+  - watch: A move above 1653.17 would trigger profit taking, while a break below 1393.72 invalidates the bullish case and suggests a shift to downside.
+- **ACUTAAS** [high] Acutaas Chemicals shows a strong short‑term bullish bias with a 16‑day target offering a 2:1 reward‑to‑risk, supported by a moderate ADX trend, neutral RSI and solid delivery. The stock is outperforming both the Nifty and its health‑technology sector, and the market regime is bullish with low VIX, making a ≤1‑month swing viable.
+  - catalysts: Continued demand for health‑technology chemicals, Positive sector momentum in health tech, Potential regulatory approvals or product launches
+  - risks: Broad market pull‑back despite bullish regime, Sector slowdown or adverse regulatory news, Higher than expected volatility eroding target
+  - watch: A break below the stop at 3526.82 would invalidate the trade, while failure to breach the 4446.86 target within the 16‑day horizon suggests weakening momentum.
+- **CHOLAFIN** [high] With a bullish market regime, CHOLAFIN shows strong momentum (ADX 41) and is trading near its 52‑week high, offering a 2:1 reward‑to‑risk to the entry of 1874.6 and target 2068.6 within the projected 16‑day horizon, making it a tight ≤1‑month swing candidate.
+  - catalysts: Quarterly earnings release in ~2 months, Favorable NBFC policy reforms, Accelerated loan book growth, Improved credit quality metrics
+  - risks: Macro slowdown affecting loan demand, Regulatory tightening on NBFCs, Higher provisioning for bad loans, Potential valuation correction
+  - watch: A break below the stop at 1777.59 or a sharp drop in ADX/RSSI would invalidate the trade; a breach of the 2068.6 target confirms the upside.
+
+### Claude feed
+
+Regime: Bullish Nifty, medium VIX, FII net inflow. Stance: selective_aggressive. Top ideas: MAHABANK, MEDANTA, ACUTAAS, CHOLAFIN. Caveats: score coverage 65%, missing news/institutional data, R:R based on static 2R, no win‑rate history.
+
+
+## Market news (AI top impact)
+
+1. **[high]** Committee Meeting Updates (SHALPAINTS) — Outcome of QIP committee meeting signals potential equity issuance and valuation changes for Shalimar Paints, affecting the paint sector and broader consumer discretionary indices.
+2. **[high]** Committee Meeting Updates (SHALPAINTS) — Second update confirms allotment of equity shares under QIP, likely to increase share supply and influence the company's stock price and sector performance.
+3. **[high]** Corporate Insolvency Resolution Process (ASTRON) — Initiation of insolvency proceedings for Astron Paper & Board Mill signals potential liquidation or restructuring, impacting the paper & board mills sector and investor sentiment in the industrials index.
+4. **[medium]** Press Release (SHALPAINTS) — Announcement of Shalimar Paints becoming an integrated building materials company indicates strategic expansion, potentially boosting the company's valuation and influencing the building materials sub‑sector.
 
 ## Deep-dive URLs (after push)
 
