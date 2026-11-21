@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-21
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-21T02:18:05.229358+05:30
+- **generated_at_ist:** 2026-11-21T06:10:01.088372+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3247
-- trend = Bullish: 1013
+- universe: 3249
+- trend = Bullish: 1015
 - price > SMA200: 752
 - price > EMA50: 729
-- ADX14 > 25: 372
-- RSI14 in 40-80: 356
+- ADX14 > 25: 375
+- RSI14 in 40-80: 359
 - RS > 0 vs NIFTY and sector: 150
 - delivery% >= 40: 92
 - relative_volume >= 1: 42
@@ -37,7 +37,7 @@
 - **AXISBANK** [idea] score 84.5 — selected as idea
 - **STEL** [idea] score 82.6 — selected as idea
 - **ITCHOTELS** [rejected] score 82.1 — T1 needs more than 22 trading days (~1 month)
-- **IOC** [rejected] score 81.2 — T1 needs more than 22 trading days (~1 month)
+- **IOC** [rejected] score 81.3 — T1 needs more than 22 trading days (~1 month)
 - **ACUTAAS** [rejected] score 81.0 — not selected
 - **CHOLAFIN** [rejected] score 80.5 — not selected
 - **LEMONTREE** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
@@ -147,21 +147,21 @@
 
 ## Swing candidates (top)
 
+- MINDACORP: score=14 rs_nifty=6.77 deliv=47.61
+- YATHARTH: score=14 rs_nifty=1.46 deliv=40.77
 - HYUNDAI: score=14 rs_nifty=1.83 deliv=50.96
 - TRENT: score=14 rs_nifty=1.59 deliv=54.11
-- PRESTIGE: score=14 rs_nifty=2.74 deliv=58.69
-- MEDANTA: score=14 rs_nifty=7.52 deliv=47.34
-- YATHARTH: score=14 rs_nifty=1.46 deliv=40.77
-- MINDACORP: score=14 rs_nifty=6.77 deliv=47.61
-- ABCAPITAL: score=14 rs_nifty=1.87 deliv=47.19
 - CEMPRO: score=14 rs_nifty=8.46 deliv=56.24
+- ABCAPITAL: score=14 rs_nifty=1.87 deliv=47.19
+- MEDANTA: score=14 rs_nifty=7.52 deliv=47.34
+- STEL: score=14 rs_nifty=4.64 deliv=86.96
 - NRL: score=14 rs_nifty=1.24 deliv=69.72
 - EXIDEIND: score=14 rs_nifty=1.39 deliv=44.36
-- STEL: score=14 rs_nifty=4.64 deliv=86.96
+- PRESTIGE: score=14 rs_nifty=2.74 deliv=58.69
 - SPECTRUM: score=14 rs_nifty=9.84 deliv=66.4
-- PHOENIXLTD: score=13 rs_nifty=9.83 deliv=65.75
-- MANAKCOAT: score=13 rs_nifty=8.32 deliv=55.15
-- WESTLIFE: score=13 rs_nifty=7.98 deliv=45.1
+- MARICO: score=13 rs_nifty=5.82 deliv=59.73
+- THELEELA: score=13 rs_nifty=0.23 deliv=64.63
+- PGIL: score=13 rs_nifty=1.38 deliv=46.12
 
 ## World markets (India cues)
 
@@ -174,24 +174,24 @@
 - ASX 200: -1.58% (bear)
 
 ### Europe
-- FTSE 100: -1.02% (bear)
-- DAX: -2.60% (bear)
-- Euro Stoxx 50: -2.81% (bear)
+- FTSE 100: -0.93% (bear)
+- DAX: -1.06% (bear)
+- Euro Stoxx 50: -0.66% (bear)
 
 ### US
-- S&P 500: -3.14% (bear)
-- Nasdaq: -4.70% (bear)
-- Dow: -1.47% (bear)
-- US VIX: +29.50% (bear)
+- S&P 500: -3.70% (bear)
+- Nasdaq: -5.28% (bear)
+- Dow: -1.93% (bear)
+- US VIX: +26.20% (bear)
 
 ### Macro
-- USDINR: -0.86% (bull)
-- Crude WTI: +0.65% (bull)
-- Brent: -2.03% (bear)
-- DXY: -0.05% (neutral)
+- USDINR: -0.18% (neutral)
+- Crude WTI: +0.49% (bull)
+- Brent: -2.29% (bear)
+- DXY: -0.06% (neutral)
 - US 10Y: -2.77% (bull)
-- India ETF: +1.82% (bull)
-- EM ETF: -4.90% (bear)
+- India ETF: +1.71% (bull)
+- EM ETF: -5.13% (bear)
 
 
 ## Groq desk note
