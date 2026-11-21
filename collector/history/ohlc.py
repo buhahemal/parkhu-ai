@@ -267,8 +267,8 @@ def _pack_slice(df: pd.DataFrame, *, sessions: int | None = None) -> pd.DataFram
         parts.append(g.iloc[-n:] if len(g) > n else g)
     if not parts:
         return pd.DataFrame(columns=COLUMNS)
-    return pd.concat(parts, ignore_index=True).sort_values(["symbol", "date"]).reset_index(
-        drop=True
+    return (
+        pd.concat(parts, ignore_index=True).sort_values(["symbol", "date"]).reset_index(drop=True)
     )
 
 
