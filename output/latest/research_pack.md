@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-22
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-22T06:09:31.739926+05:30
+- **generated_at_ist:** 2026-11-22T18:09:27.488621+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,10 +14,10 @@
 
 ## Funnel
 
-- universe: 3249
-- trend = Bullish: 1022
-- price > SMA200: 760
-- price > EMA50: 737
+- universe: 3248
+- trend = Bullish: 1020
+- price > SMA200: 755
+- price > EMA50: 732
 - ADX14 > 25: 378
 - RSI14 in 40-80: 362
 - RS > 0 vs NIFTY and sector: 119
@@ -34,9 +34,9 @@
 - **MEDANTA** [idea] score 84.7 — selected as idea
 - **SUNTECK** [rejected] score 84.6 — T1 needs more than 22 trading days (~1 month)
 - **ITCHOTELS** [rejected] score 82.1 — T1 needs more than 22 trading days (~1 month)
+- **IOC** [rejected] score 81.3 — T1 needs more than 22 trading days (~1 month)
 - **ACUTAAS** [idea] score 81.0 — selected as idea
-- **IOC** [rejected] score 81.0 — T1 needs more than 22 trading days (~1 month)
-- **CHOLAFIN** [idea] score 80.5 — selected as idea
+- **CHOLAFIN** [idea] score 80.4 — selected as idea
 - **LEMONTREE** [rejected] score 79.8 — T1 needs more than 22 trading days (~1 month)
 - **MINDACORP** [watchlist] score 79.4 — score in Watch band (70–80)
 - **BANKBARODA** [rejected] score 79.0 — T1 needs more than 22 trading days (~1 month)
@@ -45,7 +45,7 @@
 - **SPECTRUM** [watchlist] score 77.0 — score in Watch band (70–80)
 - **CEMPRO** [watchlist] score 75.3 — score in Watch band (70–80)
 - **M&M** [watchlist] score 74.2 — score in Watch band (70–80)
-- **LICHSGFIN** [watchlist] score 74.0 — score in Watch band (70–80)
+- **LICHSGFIN** [watchlist] score 73.9 — score in Watch band (70–80)
 - **LT** [watchlist] score 72.8 — score in Watch band (70–80)
 - **TATACONSUM** [rejected] score 71.0 — T1 needs more than 22 trading days (~1 month)
 - **DLF** [rejected] score 67.7 — score below Watch band
@@ -73,7 +73,7 @@
 - entry 3833.5 | stop 3526.82 | t1 4446.86 | t2 4753.54 | t3 5060.22 | R:R 2.0
 - qty 2 | deployed 7667.0 (7.67%) | risk ₹613.0
 
-### CHOLAFIN — Buy (score 80.5)
+### CHOLAFIN — Buy (score 80.4)
 - Cholamandalam Investment and Finance Co. Ltd. | risk_sector: NBFC & Capital Markets
 - entry 1874.6 | stop 1777.59 | t1 2068.62 | t2 2165.63 | t3 2262.63 | R:R 2.0
 - qty 5 | deployed 9373.0 (9.37%) | risk ₹485.0
@@ -126,21 +126,21 @@
 
 ## Swing candidates (top)
 
-- SPECTRUM: score=14 rs_nifty=8.21 deliv=66.4
-- CEMPRO: score=14 rs_nifty=6.83 deliv=56.24
-- MINDACORP: score=14 rs_nifty=5.14 deliv=47.61
 - MEDANTA: score=14 rs_nifty=5.89 deliv=47.34
-- HMVL: score=13 rs_nifty=3.76 deliv=80.31
-- DIVISLAB: score=13 rs_nifty=8.56 deliv=63.04
-- JMA: score=13 rs_nifty=3.94 deliv=68.54
+- CEMPRO: score=14 rs_nifty=6.83 deliv=56.24
+- SPECTRUM: score=14 rs_nifty=8.21 deliv=66.4
+- MINDACORP: score=14 rs_nifty=5.14 deliv=47.61
 - DLF: score=13 rs_nifty=3.89 deliv=46.94
-- HYUNDAI: score=13 rs_nifty=0.2 deliv=50.96
-- STYLEBAAZA: score=13 rs_nifty=14.88 deliv=56.61
+- ABCAPITAL: score=13 rs_nifty=0.24 deliv=47.19
+- PVRINOX: score=13 rs_nifty=4.51 deliv=46.23
+- ROTO: score=13 rs_nifty=5.31 deliv=43.01
+- HMVL: score=13 rs_nifty=3.76 deliv=80.31
+- AARTIPHARM: score=13 rs_nifty=4.56 deliv=50.78
 - NILKAMAL: score=13 rs_nifty=9.72 deliv=57.34
-- MMFL: score=13 rs_nifty=14.31 deliv=56.65
-- MAHABANK: score=13 rs_nifty=9.71 deliv=40.27
-- UNOMINDA: score=13 rs_nifty=13.81 deliv=60.29
-- KRBL: score=13 rs_nifty=1.22 deliv=47.07
+- MBAPL: score=13 rs_nifty=4.53 deliv=52.51
+- RUBICON: score=13 rs_nifty=2.51 deliv=65.83
+- JMA: score=13 rs_nifty=3.94 deliv=68.54
+- STYLEBAAZA: score=13 rs_nifty=14.88 deliv=56.61
 
 ## World markets (India cues)
 
@@ -165,8 +165,8 @@
 
 ### Macro
 - USDINR: -0.67% (bull)
-- Crude WTI: +0.93% (bull)
-- Brent: +0.64% (bull)
+- Crude WTI: +0.24% (bull)
+- Brent: -2.21% (bear)
 - DXY: -0.09% (neutral)
 - US 10Y: -2.77% (bull)
 - India ETF: +1.71% (bull)
@@ -178,46 +178,43 @@
 - **model:** openai/gpt-oss-120b
 - **stance:** selective_aggressive
 
-The Indian market remains bullish with Nifty up 1.12% and a medium VIX at 17.3, indicating modest volatility. FII inflows are strong (+10.3bn) while DII remain net sellers, supporting the upside. Asian and European cues are bearish, tempering the rally, and overall risk is assessed as medium.
+Nifty continues its bullish march with a 1.12% gain and a medium VIX at 17.3, supported by strong FII inflows of ~10,300 cr. DII remains net sellers, while Asian and European cues are bearish, keeping overall risk at a medium level. The environment favours sectors like banks and health services, but traders should watch for trend‑weakening signals in some names.
 
-- **MAHABANK** [consider_entry/high] entry=99.45 stop=93.97 t1=110.41 hold=16d — Parkhu score 87.4, bullish trend, 2R target at 110.41, sector tailwind in banks
-- **MEDANTA** [consider_entry/high] entry=1480.2 stop=1393.72 t1=1653.17 hold=16d — Score 84.7, health services demand, entry 1480.2 with 2R upside to 1653.2
-- **ACUTAAS** [consider_entry/high] entry=3833.5 stop=3526.82 t1=4446.86 hold=16d — Score 81.0, health tech growth, entry 3833.5 and clear 2R target
-- **CHOLAFIN** [manage_open/medium] entry=1874.6 stop=1777.59 t1=2068.62 hold=16d — Open position profitable (MFE 6.7%); tighten stop toward breakeven to protect gains
-- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX weakening, trend no longer tradeable – tighten stop and review
-- **ICICIBANK** [manage_open/high] entry=1477.3 stop=1420.52 t1=1590.85 hold=17d — T1 reached, take partial profit, move stop to breakeven (₹1,477.3)
-- **KOTAKBANK** [manage_open/high] entry=459.0 stop=438.62 t1=499.77 hold=16d — T1 reached, partial exit, trail stop to breakeven (₹459)
-- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — ADX 21, trend fading – tighten stop and monitor
+- **MAHABANK** [consider_entry/high] entry=99.45 stop=93.97 t1=110.41 hold=16d — Parkhu score 87.4, 2R target at 110.41, entry 99.45 aligns with bullish bank sector and overall market regime.
+- **MEDANTA** [consider_entry/high] entry=1480.2 stop=1393.72 t1=1653.17 hold=16d — Score 84.7, health services sector in play, entry 1480.2 with 2R target 1653.2 under bullish market backdrop.
+- **ACUTAAS** [consider_entry/medium] entry=3833.5 stop=3526.82 t1=4446.86 hold=16d — Score 81.0, health‑tech exposure, entry 3833.5 offers 2R upside; medium conviction given slightly lower score.
+- **CHOLAFIN** [manage_open/medium] entry=1874.6 stop=1777.59 t1=2068.62 hold=16d — Existing position up 6.7% MFE, stop still intact; consider trailing stop or modest add‑on as market stays bullish.
 
 ### AI stock reviews
 
-- **MAHABANK** [high] Bank of Maharashtra is trading in a strong bullish trend with ADX 34.5 and a 22.8% one‑month return, offering a clear entry at the current 99.45 and a 110.41 target within the next 16 trading days, delivering a 2:1 risk‑reward. The market regime is bullish, VIX is low and the stock’s relative strength outperforms both Nifty and its sector, supporting a short‑term swing.
-  - catalysts: Continued credit growth in the banking sector, Favorable RBI policy stance, Low India VIX indicating stable market sentiment
-  - risks: RSI above 78 suggests overbought conditions, Potential earnings miss when results release, Rising credit defaults in the banking sector
-  - watch: A break below the stop at 93.97 or a sharp RSI drop below 70 would invalidate the trade; a sustained move above 110.41 confirms the target.
-- **MEDANTA** [high] MEDANTA is in a strong bullish trend with ADX above 30 and RSI near 68, indicating momentum without extreme overbought conditions. The stock trades just 4% below its 52‑week high, offering upside potential to the 1653.17 target within the projected 16‑day horizon, matching a ≤1‑month swing profile.
-  - catalysts: government health spending boost, new product launch in specialty care, favorable regulatory approval, sector tailwinds from rising private healthcare demand
-  - risks: earnings miss or guidance downgrade, policy changes affecting health services, valuation stretch at near‑high levels, broader market correction
-  - watch: A break below the stop level of 1393.72 or a sustained move under the 1480.2 entry would invalidate the thesis; failure to approach the 1653.17 target within ~20 days also signals weakening momentum.
-- **ACUTAAS** [high] Acutaas Chemicals Ltd is in a clear bullish trend with ADX above 25 and RSI in the mid‑range, indicating momentum without being overbought. Its relative strength outperforms both the Nifty and its health‑technology sector, and the 1‑month return of ~17% suggests strong short‑term upside. The target of 4,446.86 is reachable within the projected 16‑day hold period, making it a tight ≤1‑month swing opportunity.
-  - catalysts: Continued demand for health‑technology chemicals, Positive sector sentiment in a bullish market regime, Potential regulatory approvals for new products
-  - risks: Sudden market pull‑back as VIX rises, Sector rotation away from health‑technology, Earnings miss or weaker guidance when results are released
-  - watch: A break below the stop level of 3,526.82 would invalidate the trade, while failure to approach the 4,446.86 target within 20 days may suggest the swing is losing steam.
-- **CHOLAFIN** [high] CHOLAFIN is in a strong bullish trend with ADX above 40 and RSI near 71, indicating robust momentum. The stock trades close to its 52‑week high with high delivery (68%) and a target of 2068.62 reachable within the 16‑day horizon, making it suitable for a ≤1‑month swing.
-  - catalysts: Rising credit demand in NBFC sector, Favorable RBI policy on financing, Positive earnings momentum post‑earnings window
-  - risks: Broad market pullback in a bullish regime, Regulatory tightening on NBFCs, Rising interest rates affecting loan growth
-  - watch: A break below the stop level of 1777.59 or a sharp drop in ADX below 30 would invalidate the setup; a rapid decline in RSI below 50 also signals weakening momentum.
+- **MAHABANK** [high] Bank of Maharashtra is trading in a strong bullish trend with ADX above 30 and a high delivery percentage, indicating robust buying interest. It is outperforming both the Nifty and its banking peers, and the technical setup targets a 10% upside to the 110.41 level within roughly 16 days, fitting a sub‑one‑month swing. The current price is at the entry point with a defined stop, providing a clear risk‑reward profile.
+  - catalysts: RBI policy easing, Improved credit growth in the banking sector, Positive earnings momentum
+  - risks: Overbought RSI may trigger a pullback, Potential earnings miss when results are released, Broader market volatility if VIX spikes
+  - watch: A drop of price below the 93.97 stop or RSI falling below 70 would invalidate the trade, while a break above 110.41 confirms the target. Earnings surprise in the next 84 days could also shift momentum.
+- **MEDANTA** [high] MEDANTA is in a strong bullish trend with ADX above 30 and RSI near 70, indicating momentum. The stock is trading near its 52‑week high with a 5.9% outperformance versus Nifty and 8% versus its health services sector, supporting a short‑term upside to the T1 target of 1653.17 within 16 days.
+  - catalysts: Positive earnings surprise, Government health spending boost, New service line rollout, Analyst upgrades
+  - risks: Earnings miss, Regulatory scrutiny, Sector rotation to value, Higher market volatility
+  - watch: A break below the stop at 1393.72 or a sharp RSI decline below 55 would invalidate the setup; holding above entry with sustained volume confirms the swing.
+- **ACUTAAS** [high] Acutaas Chemicals Ltd shows a clear bullish bias with a 16‑day target horizon, supported by a positive ADX above 25 and a neutral‑to‑bullish RSI around 55. The stock trades near its 52‑week high with limited downside, offering a risk‑reward of 2:1 for a one‑month swing. Strong delivery percentages and outperformance versus the Nifty and sector further justify a short‑term upside play.
+  - catalysts: Health‑tech sector tailwinds, Improving market sentiment in a bullish regime, Potential positive earnings guidance
+  - risks: Broader market pullback if VIX spikes, Sector rotation away from health technology, Technical neutral rating may limit upside
+  - watch: A break below the stop at 3526.82 or a sustained drop in ADX below 20 would invalidate the trade; failure to approach the T1 target of 4446.86 within 16 days may also signal weakening momentum.
+- **CHOLAFIN** [high] The stock is in a strong bullish trend with an ADX of 41 and RSI above 70, indicating momentum that can sustain a short‑term rally. The entry at 1874.6 targets 2068.6 in roughly 16 days, offering a 2:1 reward‑to‑risk, which fits a ≤1‑month swing. The bullish market regime and low VIX further support upside potential.
+  - catalysts: Improving credit demand in the NBFC sector, Favorable monetary policy stance in India, Positive earnings momentum as the company approaches its next reporting window
+  - risks: Potential tightening of liquidity by RBI, Deterioration in asset quality amid macro slowdown, Higher valuation pressure if momentum stalls
+  - watch: A break below the stop level of 1777.59 or a sharp drop in ADX below 30 would invalidate the setup; similarly, a sustained RSI decline below 60 could signal weakening momentum.
 
 ### Claude feed
 
-Regime: Bullish Nifty, Medium VIX, FII net inflow, Asian/European bearish cues. Stance: selective_aggressive. Top ideas: MAHABANK, MEDANTA, ACUTAAS, CHOLAFIN. Caveats: Scores provisional (35% missing), governance data absent, R:R floor only, hold periods estimated, no win‑rate history.
+Regime: Bullish (Nifty up 1.12%, medium VIX, FII net +10.3kcr). Stance: selective_aggressive. Top ideas: MAHABANK, MEDANTA, ACUTAAS, CHOLAFIN. Caveats: score coverage only 65%, several KB modules missing data, R:R floor not independently filtered, hold periods are estimates, no win‑rate history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Viviana Power Tech Limited announces draft Letter of Offer for proposed right issue (VIVIANA) — The right issue will dilute existing shareholders, potentially depress the share price and signal capital needs, impacting the power‑tech sector and investor sentiment across the market
-2. **[medium]** Maruti Suzuki India Limited announces price increase for its vehicles (MARUTI) — Higher prices can affect auto‑sector sales volumes, consumer sentiment and the broader consumer‑discretionary index, potentially tightening margins for related suppliers
-3. **[medium]** GMR Airports Limited updates on tariff matter (GMRAIRPORT) — Tariff changes influence airport revenue projections, affecting the infrastructure sector and potentially altering the performance of related stocks in the index
+1. **[high]** Maruti Suzuki price increase announced (MARUTI) — Auto sector is a major contributor to NIFTY; price hikes may signal cost inflation and affect earnings, influencing index movement.
+2. **[medium]** Adani Energy Solutions acquires 100% equity of Vikramshila Power Transmission (ADANIENSOL) — Expanding power transmission assets strengthens Adani Energy's infrastructure footprint, potentially boosting the power sector and investor sentiment.
+3. **[medium]** Acme Solar wins 50 MW contract in GUVNL e-reverse auction (ACMESOLAR) — Positive contract win supports renewable energy growth, benefiting the solar sector and reinforcing green investment trends.
+4. **[low]** Rail Vikas Nigam emerges as lowest bidder for East Coast Railway contract (RVNL) — Winning a contract may improve RVNL's revenue outlook but limited impact on broader market indices.
 
 ## Deep-dive URLs (after push)
 
