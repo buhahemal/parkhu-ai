@@ -5,8 +5,8 @@
   "is_trading_day": true,
   "run_mode": "post_close",
   "source_brief_date": "2026-11-23",
-  "generated_at_ist": "2026-11-23T13:39:58.499061+05:30",
-  "duration_seconds": 322.5,
+  "generated_at_ist": "2026-11-23T18:09:42.785364+05:30",
+  "duration_seconds": 330.8,
   "watchlist_size": 25,
   "swing_candidates_size": 20,
   "agents": [
@@ -14,22 +14,22 @@
       "agent": "tradingview",
       "status": "ok",
       "rows": 3228,
-      "seconds": 3.2
+      "seconds": 3.4
     },
     {
       "agent": "ohlc_history",
       "status": "partial",
-      "rows": 14552,
-      "cache_rows": 8005108,
-      "symbols": 2917,
-      "failed": 38,
+      "rows": 14562,
+      "cache_rows": 8013079,
+      "symbols": 2921,
+      "failed": 36,
       "lookback": 0,
       "pack_sessions": 5,
-      "warm": 2521,
-      "cold": 432,
-      "new_symbols": 39,
+      "warm": 2523,
+      "cold": 429,
+      "new_symbols": 36,
       "retries": 2,
-      "seconds": 229.5
+      "seconds": 254.1
     },
     {
       "agent": "earnings",
@@ -42,31 +42,31 @@
       "status": "ok",
       "rows": 5,
       "stale": 0,
-      "seconds": 0.5
+      "seconds": 0.9
     },
     {
       "agent": "sectors",
       "status": "ok",
       "rows": 10,
-      "seconds": 1.0
+      "seconds": 1.6
     },
     {
       "agent": "smartmoney",
       "status": "ok",
       "rows": 3,
-      "seconds": 3.8
+      "seconds": 4.0
     },
     {
       "agent": "options",
       "status": "ok",
       "rows": 2,
-      "seconds": 3.9
+      "seconds": 3.8
     },
     {
       "agent": "derivatives",
       "status": "ok",
       "rows": 468,
-      "seconds": 6.6
+      "seconds": 5.4
     },
     {
       "agent": "stock_options",
@@ -78,44 +78,44 @@
     {
       "agent": "delivery",
       "status": "ok",
-      "rows": 2391,
-      "seconds": 17.8
+      "rows": 2406,
+      "seconds": 5.6
     },
     {
       "agent": "corpactions",
       "status": "ok",
       "rows": 500,
-      "seconds": 3.5
+      "seconds": 2.8
     },
     {
       "agent": "news",
       "status": "ok",
       "rows": 20,
-      "seconds": 2.9
+      "seconds": 3.6
     },
     {
       "agent": "macro",
       "status": "ok",
       "rows": 30,
-      "seconds": 3.1
+      "seconds": 4.5
     },
     {
       "agent": "relative_strength",
       "status": "ok",
       "rows": 3228,
-      "seconds": 0.3
+      "seconds": 0.2
     },
     {
       "agent": "event_risk",
       "status": "ok",
       "rows": 3228,
-      "seconds": 1.0
+      "seconds": 0.6
     },
     {
       "agent": "fno_momentum",
       "status": "ok",
       "rows": 216,
-      "seconds": 0.2
+      "seconds": 0.1
     },
     {
       "agent": "swing_candidates",
@@ -138,43 +138,40 @@
     {
       "agent": "ohlc_features",
       "status": "ok",
-      "rows": 2911,
-      "with_structure": 2909,
+      "rows": 2913,
+      "with_structure": 2911,
       "lookback": 0,
       "source": "database/ohlc",
-      "seconds": 17.4
+      "seconds": 13.0
     },
     {
       "agent": "stock_analysis",
       "status": "ok",
-      "rows": 3252,
-      "seconds": 8.4
+      "rows": 3250,
+      "seconds": 5.2
     },
     {
       "agent": "swing_brief",
       "status": "ok",
-      "rows": 4,
+      "rows": 5,
       "ideas": [
-        "MAHABANK",
-        "AXISBANK",
+        "KOTAKBANK",
+        "DCBBANK",
         "HMVL",
-        "MEDANTA"
+        "EICHERMOT",
+        "STEL"
       ],
-      "watchlist": 2,
+      "watchlist": 12,
       "open_positions": 35,
       "needing_action": [
         "ACUTAAS",
         "ALIVUS",
-        "ICICIBANK",
         "KOTAKBANK",
         "LAURUSLABS",
-        "SSWL",
         "TFCILTD"
       ],
-      "closed_today": [
-        "SSWL"
-      ],
-      "seconds": 0.5
+      "closed_today": [],
+      "seconds": 0.4
     }
   ],
   "ok": 20,
