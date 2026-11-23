@@ -1,5 +1,5 @@
 {
-  "data_date": "2026-11-22",
+  "data_date": "2026-11-23",
   "symbol_cap": 50,
   "funnel": [
     {
@@ -64,8 +64,8 @@
     },
     {
       "gate": "trend = Bullish",
-      "surviving": 1020,
-      "dropped_count": 2228,
+      "surviving": 1023,
+      "dropped_count": 2225,
       "survivor_symbols": [
         "ICICIBANK",
         "KOVAI",
@@ -175,8 +175,8 @@
     },
     {
       "gate": "price > SMA200",
-      "surviving": 755,
-      "dropped_count": 265,
+      "surviving": 756,
+      "dropped_count": 267,
       "survivor_symbols": [
         "ICICIBANK",
         "KOVAI",
@@ -286,7 +286,7 @@
     },
     {
       "gate": "price > EMA50",
-      "surviving": 732,
+      "surviving": 733,
       "dropped_count": 23,
       "survivor_symbols": [
         "ICICIBANK",
@@ -370,8 +370,8 @@
     },
     {
       "gate": "ADX14 > 25",
-      "surviving": 378,
-      "dropped_count": 354,
+      "surviving": 375,
+      "dropped_count": 358,
       "survivor_symbols": [
         "ICICIBANK",
         "KOVAI",
@@ -481,7 +481,7 @@
     },
     {
       "gate": "RSI14 in 40-80",
-      "surviving": 362,
+      "surviving": 359,
       "dropped_count": 16,
       "survivor_symbols": [
         "KOVAI",
@@ -559,7 +559,7 @@
     {
       "gate": "RS > 0 vs NIFTY and sector",
       "surviving": 119,
-      "dropped_count": 243,
+      "dropped_count": 240,
       "survivor_symbols": [
         "TANLA",
         "HDFCBANK",
