@@ -1,7 +1,7 @@
 {
   "dataset": "Parkhu Data Collector \u2014 daily output",
   "date": "2026-11-24",
-  "generated_at_ist": "2026-11-24T05:45:37.573304+05:30",
+  "generated_at_ist": "2026-11-24T06:10:56.265545+05:30",
   "description": "Data dictionary for this day's collection. Read this first: each entry says what a file is, what it's for, its source and key columns. Check report.json for per-feed status before trusting a file.",
   "files": {
     "tradingview.csv": {
@@ -18,8 +18,8 @@
         "rsi",
         "perf_1y"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 3228
     },
     "history/ohlc.csv": {
       "agent": "ohlc_history",
@@ -35,8 +35,8 @@
         "close",
         "volume"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 14558
     },
     "ohlc_features.csv": {
       "agent": "ohlc_features (derived)",
@@ -50,8 +50,8 @@
         "breakout_20d_high",
         "volume_ratio_vs_20d"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 2912
     },
     "stock_options.csv": {
       "agent": "stock_options",
@@ -65,7 +65,7 @@
         "max_pain",
         "atm_iv"
       ],
-      "present": false,
+      "present": true,
       "rows": 0
     },
     "indices.csv": {
@@ -106,8 +106,8 @@
         "eps_qoq_pct",
         "next_earnings_date"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 3228
     },
     "fii.csv": {
       "agent": "smartmoney",
@@ -149,8 +149,8 @@
         "max_pain",
         "atm_iv"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 2
     },
     "oi_spurts.csv": {
       "agent": "derivatives",
@@ -163,8 +163,8 @@
         "pct_change_oi",
         "underlying_value"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 224
     },
     "most_active_contracts.csv": {
       "agent": "derivatives",
@@ -177,8 +177,8 @@
         "contracts_traded",
         "open_interest"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 20
     },
     "most_active_underlying.csv": {
       "agent": "derivatives",
@@ -191,8 +191,8 @@
         "tot_turnover",
         "latest_oi"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 224
     },
     "corporate_actions.csv": {
       "agent": "corpactions",
@@ -205,8 +205,8 @@
         "purpose",
         "face_value"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 500
     },
     "news.csv": {
       "agent": "news",
@@ -234,8 +234,8 @@
         "news_score",
         "classify_source"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 20
     },
     "research_pack.json": {
       "agent": "publish_pack",
@@ -250,7 +250,7 @@
         "enrichment",
         "urls"
       ],
-      "present": false
+      "present": true
     },
     "macro.csv": {
       "agent": "macro",
@@ -276,8 +276,8 @@
         "ttl_traded_qty",
         "close"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 2406
     },
     "relative_strength.csv": {
       "agent": "relative_strength (derived)",
@@ -290,8 +290,8 @@
         "rs_vs_sector_1m",
         "perf_1m"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 3228
     },
     "event_risk.csv": {
       "agent": "event_risk (derived)",
@@ -304,8 +304,8 @@
         "corp_action_within_21d",
         "event_risk_score"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 3228
     },
     "fno_momentum.csv": {
       "agent": "fno_momentum (derived)",
@@ -318,8 +318,8 @@
         "fno_score",
         "in_oi_spurt"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 216
     },
     "swing_candidates.csv": {
       "agent": "swing_candidates (derived)",
@@ -333,8 +333,8 @@
         "deliv_pct",
         "target_5pct"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 20
     },
     "stock_analysis.csv": {
       "agent": "stock_analysis (derived)",
@@ -358,8 +358,8 @@
         "target1",
         "risk_score"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 3646
     },
     "market_summary.csv": {
       "agent": "market_summary (derived)",
@@ -392,8 +392,8 @@
         "adx",
         "tech_rating"
       ],
-      "present": false,
-      "rows": 0
+      "present": true,
+      "rows": 25
     },
     "swing_brief.md": {
       "agent": "swing_brief (brief layer)",
@@ -444,7 +444,7 @@
         "partial",
         "errors"
       ],
-      "present": false
+      "present": true
     }
   }
 }

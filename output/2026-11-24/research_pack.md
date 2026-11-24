@@ -1,87 +1,73 @@
 # Parkhu research pack — 2026-11-24
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-24T05:45:37.576042+05:30
+- **generated_at_ist:** 2026-11-24T06:10:56.269218+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
 
-- market_regime: **Bearish**
-- nifty: Bearish (-1.75%)
-- india_vix: 17.7 (Medium)
-- fii_net: 10308.42 | dii_net: -4859.8
+- market_regime: **Bullish**
+- nifty: Bullish (1.12%)
+- india_vix: 17.32 (Medium)
+- fii_net: 5672.99 | dii_net: -2760.12
 - overall_risk: Medium | global_risk: Risk-Off
 
 ## Funnel
 
 - universe: 3250
-- trend = Bullish: 917
-- price > SMA200: 683
-- price > EMA50: 664
-- ADX14 > 25: 360
-- RSI14 in 40-80: 349
-- RS > 0 vs NIFTY and sector: 167
-- delivery% >= 40: 101
-- relative_volume >= 1: 41
-- no earnings within 21d: 41
-- event_risk_score <= 1: 41
-- TV rating not Sell: 41
+- trend = Bullish: 924
+- price > SMA200: 688
+- price > EMA50: 669
+- ADX14 > 25: 363
+- RSI14 in 40-80: 352
+- RS > 0 vs NIFTY and sector: 145
+- delivery% >= 40: 82
+- relative_volume >= 1: 32
+- no earnings within 21d: 32
+- event_risk_score <= 1: 32
+- TV rating not Sell: 32
 
-## Survivors (top 41 of 41)
+## Survivors (top 32 of 32)
 
 - **KPRMILL** [rejected] score 92.0 — T1 needs more than 22 trading days (~1 month)
-- **HDFCBANK** [rejected] score 91.0 — T1 needs more than 22 trading days (~1 month)
-- **KOTAKBANK** [idea] score 91.0 — selected as idea
-- **BAJFINANCE** [rejected] score 89.1 — T1 needs more than 22 trading days (~1 month)
-- **DCBBANK** [idea] score 88.8 — selected as idea
-- **MAHABANK** [rejected] score 88.5 — 25% sector cap for Banks would be breached
+- **HDFCBANK** [rejected] score 90.8 — T1 needs more than 22 trading days (~1 month)
+- **MAHABANK** [idea] score 88.5 — selected as idea
 - **HMVL** [idea] score 87.4 — selected as idea
-- **PGHL** [rejected] score 86.8 — T1 needs more than 22 trading days (~1 month)
+- **PGHL** [rejected] score 87.1 — T1 needs more than 22 trading days (~1 month)
 - **EICHERMOT** [idea] score 85.7 — selected as idea
-- **BANKINDIA** [rejected] score 84.6 — 25% sector cap for Banks would be breached
-- **AXISBANK** [rejected] score 84.5 — 25% sector cap for Banks would be breached
-- **DIVISLAB** [rejected] score 82.7 — unaffordable at this capital
-- **STEL** [idea] score 82.7 — selected as idea
-- **MEDANTA** [rejected] score 82.3 — not selected
-- **APOLLOHOSP** [rejected] score 82.1 — not selected
-- **CHOLAFIN** [rejected] score 81.1 — T1 needs more than 22 trading days (~1 month)
-- **HDFCAMC** [watchlist] score 78.3 — score in Watch band (70–80)
-- **PHOENIXLTD** [watchlist] score 77.5 — score in Watch band (70–80)
+- **DIVISLAB** [rejected] score 82.9 — unaffordable at this capital
+- **STEL** [idea] score 82.9 — selected as idea
+- **MEDANTA** [idea] score 82.6 — selected as idea
+- **APOLLOHOSP** [rejected] score 82.3 — not selected
+- **CHOLAFIN** [rejected] score 81.3 — T1 needs more than 22 trading days (~1 month)
+- **HDFCAMC** [watchlist] score 78.4 — score in Watch band (70–80)
+- **PHOENIXLTD** [watchlist] score 77.7 — score in Watch band (70–80)
 - **HONASA** [watchlist] score 77.0 — score in Watch band (70–80)
-- **AFFLE** [watchlist] score 76.3 — score in Watch band (70–80)
+- **AFFLE** [watchlist] score 76.4 — score in Watch band (70–80)
 - **M&M** [watchlist] score 76.2 — score in Watch band (70–80)
-- **LICHSGFIN** [watchlist] score 75.9 — score in Watch band (70–80)
+- **LICHSGFIN** [watchlist] score 76.1 — score in Watch band (70–80)
 - **ADANIENSOL** [rejected] score 75.6 — T1 needs more than 22 trading days (~1 month)
-- **ASTERDM** [watchlist] score 74.4 — score in Watch band (70–80)
-- **NH** [watchlist] score 73.5 — score in Watch band (70–80)
+- **ASTERDM** [watchlist] score 74.7 — score in Watch band (70–80)
+- **NH** [watchlist] score 73.7 — score in Watch band (70–80)
 - **MARICO** [watchlist] score 73.2 — score in Watch band (70–80)
-- **HYUNDAI** [watchlist] score 73.1 — score in Watch band (70–80)
 - **SCPL** [watchlist] score 73.1 — score in Watch band (70–80)
-- **CEMPRO** [watchlist] score 72.3 — score in Watch band (70–80)
+- **CEMPRO** [watchlist] score 72.2 — score in Watch band (70–80)
 - **RELIANCE** [rejected] score 71.2 — T1 needs more than 22 trading days (~1 month)
-- **IDFCFIRSTB** [rejected] score 70.5 — T1 needs more than 22 trading days (~1 month)
-- **DLF** [rejected] score 68.1 — score below Watch band
-- **360ONE** [rejected] score 65.9 — score below Watch band
+- **DLF** [rejected] score 68.2 — score below Watch band
 - **PVRINOX** [rejected] score 65.2 — score below Watch band
 - **ULTRACEMCO** [rejected] score 60.9 — score below Watch band
-- **ITC** [rejected] score 60.1 — T1 needs more than 22 trading days (~1 month)
+- **ITC** [rejected] score 60.2 — T1 needs more than 22 trading days (~1 month)
 - **MARUTI** [rejected] score 59.6 — T1 needs more than 22 trading days (~1 month)
-- **PRESTIGE** [rejected] score 58.7 — score below Watch band
-- **THELEELA** [rejected] score 58.6 — score below Watch band
-- **LENSKART** [rejected] score 55.1 — score below Watch band
+- **PRESTIGE** [rejected] score 58.9 — score below Watch band
+- **THELEELA** [rejected] score 58.7 — score below Watch band
 - **WESTLIFE** [rejected] score 46.1 — score below Watch band
 
 ## Ideas
 
-### KOTAKBANK — Buy (score 91.0)
-- Kotak Mahindra Bank Limited | risk_sector: Banks
-- entry 502.85 | stop 480.52 | t1 547.51 | t2 569.85 | t3 592.18 | R:R 2.0
-- qty 19 | deployed 9554.0 (9.55%) | risk ₹424.0
-
-### DCBBANK — Buy (score 88.8)
-- DCB Bank Limited | risk_sector: Banks
-- entry 237.93 | stop 221.22 | t1 271.34 | t2 288.05 | t3 304.76 | R:R 2.0
-- qty 42 | deployed 9993.0 (9.99%) | risk ₹702.0
+### MAHABANK — Buy (score 88.5)
+- Bank of Maharashtra | risk_sector: Banks
+- entry 97.56 | stop 91.93 | t1 108.82 | t2 114.44 | t3 120.07 | R:R 2.0
+- qty 102 | deployed 9951.0 (9.95%) | risk ₹574.0
 
 ### HMVL — Buy (score 87.4)
 - Hindustan Media Ventures Limited | risk_sector: Consumer Services
@@ -93,10 +79,15 @@
 - entry 8172.5 | stop 7762.68 | t1 8992.13 | t2 9401.95 | t3 9811.77 | R:R 2.0
 - qty 1 | deployed 8172.0 (8.17%) | risk ₹410.0
 
-### STEL — Buy (score 82.7)
+### STEL — Buy (score 82.9)
 - STEL Holdings Limited | risk_sector: NBFC & Capital Markets
 - entry 640.85 | stop 589.58 | t1 743.39 | t2 794.65 | t3 845.92 | R:R 2.0
 - qty 15 | deployed 9613.0 (9.61%) | risk ₹769.0
+
+### MEDANTA — Buy (score 82.6)
+- Global Health Limited | risk_sector: Health Services
+- entry 1500.2 | stop 1411.92 | t1 1676.75 | t2 1765.03 | t3 1853.31 | R:R 2.0
+- qty 6 | deployed 9001.0 (9.0%) | risk ₹530.0
 
 ## Open ledger
 
@@ -134,7 +125,7 @@
 - **POONAWALLA** status=open entry=504.75 last=517.4 mfe=4.04 mae=-3.12 opened=2026-11-20
 - **AXISBANK** status=open entry=1446.0 last=1388.6 mfe=0.89 mae=-3.97 opened=2026-11-21
 - **STEL** status=open entry=616.2 last=640.85 mfe=8.81 mae=0.0 opened=2026-11-21
-- **DCBBANK** status=open entry=237.93 last=237.93 mfe=0.0 mae=0.0 opened=2026-11-23
+- **DCBBANK** status=open entry=237.93 last=237.93 mfe=1.23 mae=-2.21 opened=2026-11-23
 - **HMVL** status=open entry=92.66 last=95.39 mfe=4.36 mae=-4.17 opened=2026-11-23
 
 ## Needs action
@@ -147,16 +138,31 @@
 
 ## Swing candidates (top)
 
+- DIVISLAB: score=14 rs_nifty=9.14 deliv=66.63
+- HMVL: score=14 rs_nifty=11.67 deliv=78.69
+- AFFLE: score=14 rs_nifty=5.32 deliv=48.29
+- SCPL: score=14 rs_nifty=5.87 deliv=48.78
+- PRESTIGE: score=14 rs_nifty=5.29 deliv=71.41
+- STEL: score=14 rs_nifty=20.13 deliv=75.55
+- ADANIENSOL: score=14 rs_nifty=0.38 deliv=42.58
+- KPRMILL: score=14 rs_nifty=4.88 deliv=78.61
+- CHOLAFIN: score=14 rs_nifty=8.97 deliv=54.01
+- MARICO: score=14 rs_nifty=6.24 deliv=64.84
+- WESTLIFE: score=14 rs_nifty=8.87 deliv=62.76
+- LUMAXTECH: score=13 rs_nifty=15.42 deliv=42.08
+- MAHABANK: score=13 rs_nifty=11.02 deliv=51.48
+- AMANTA: score=13 rs_nifty=10.94 deliv=43.87
+- AGARWALEYE: score=13 rs_nifty=3.55 deliv=47.52
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: +1.29% (bull)
+- Nikkei: +3.42% (bull)
 - Hang Seng: -1.89% (bear)
 - Shanghai: -1.22% (bear)
-- Kospi: -5.21% (bear)
+- Kospi: +2.10% (bull)
 - Taiwan: -6.23% (bear)
-- ASX 200: +0.96% (bull)
+- ASX 200: +1.10% (bull)
 
 ### Europe
 - FTSE 100: -1.02% (bear)
@@ -171,8 +177,8 @@
 
 ### Macro
 - USDINR: -0.67% (bull)
-- Crude WTI: -4.13% (bear)
-- Brent: -6.10% (bear)
+- Crude WTI: -4.17% (bear)
+- Brent: -6.07% (bear)
 - DXY: +0.49% (bear)
 - US 10Y: +0.12% (neutral)
 - India ETF: -1.44% (bear)
@@ -184,57 +190,54 @@
 - **model:** openai/gpt-oss-120b
 - **stance:** selective_aggressive
 
-The Indian equity market remains in a bearish regime with Nifty down 1.75% and VIX at a medium 17.7, indicating heightened volatility. FII inflows are strong (+10.3bn) while DII are net sellers (-4.9bn), adding to the downside pressure. Asia cues stay bearish but Europe shows bullish signs, creating mixed macro dynamics. Despite the overall risk being medium, selective high‑conviction banks and consumer stocks present limited upside.
+The market remains bullish with Nifty up 1.12% and a medium VIX at 17.3. FII inflows are strong (+₹5.67bn) while DII are net sellers, keeping overall risk at medium. Asia cues stay bullish while Europe turns bearish, supporting a continued up‑trend.
 
-- **KOTAKBANK** [consider_entry/high] entry=502.85 stop=480.52 t1=547.51 hold=17d — Parkhu entry 502.85 with 2R target 547.51; score 91 and strong bank fundamentals.
-- **DCBBANK** [consider_entry/high] entry=237.93 stop=221.22 t1=271.34 hold=16d — Entry 237.93, stop 221.22, T1 271.34; parkhu score 88.8 and solid credit outlook.
-- **HMVL** [consider_entry/high] entry=95.39 stop=87.76 t1=110.65 hold=9d — Entry 95.39, stop 87.76, T1 110.65; score 87.4 and consumer services tailwinds.
-- **EICHERMOT** [consider_entry/high] entry=8172.5 stop=7762.68 t1=8992.13 hold=17d — Entry 8172.5, stop 7762.68, T1 8992.13; score 85.7, durable demand remains robust.
-- **STEL** [consider_entry/medium] entry=640.85 stop=589.58 t1=743.39 hold=7d — Entry 640.85, stop 589.58, T1 743.39; score 82.7, NBFC exposure but still attractive risk‑reward.
-- **KOTAKBANK** [manage_open/high] entry=502.85 stop=480.52 t1=547.51 hold=17d — T1 reached; trail stop to breakeven 459 and lock partial profits.
-- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX weakening, tighten stop from 1332.73 toward 1400 to protect gains.
-- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — Trend condition lost; move stop tighter from 146.05 to near 160 to limit downside.
+- **MAHABANK** [consider_entry/high] entry=97.56 stop=91.93 t1=108.82 hold=17d — Parkhu score 88.5, 2R target at 108.82, bullish trend and strong bank sector
+- **HMVL** [consider_entry/high] entry=95.39 stop=87.76 t1=110.65 hold=9d — Score 87.4, entry 95.39 with 2R upside, consumer services benefiting from demand
+- **EICHERMOT** [consider_entry/high] entry=8172.5 stop=7762.68 t1=8992.13 hold=17d — Score 85.7, durable goods rally, 2R target 8992.13
+- **STEL** [consider_entry/high] entry=640.85 stop=589.58 t1=743.39 hold=7d — Score 82.9, NBFC sector support, 2R target 743.39
+- **MEDANTA** [consider_entry/high] entry=1500.2 stop=1411.92 t1=1676.75 hold=17d — Score 82.6, health services growth, 2R target 1676.75
+- **KOTAKBANK** [manage_open/medium] entry=459.0 stop=438.62 t1=499.77 hold=16d — T1 reached, move stop to breakeven 459 and trail remainder
+- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — Trend weakening, tighten stop per review
+- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — Trend weakening, tighten stop and monitor
+- **CHOLAFIN** [watch/low] entry=1766.2 stop=1659.89 t1=1978.82 hold=16d — Modest MFE, keep under observation
+- **GLENMARK** [watch/low] entry=2481.8 stop=2327.96 t1=2789.48 hold=19d — MFE modest, no immediate trigger
 
 ### AI stock reviews
 
-- **KOTAKBANK** [high] Kotak Mahindra Bank shows a bullish technical trend with a strong ADX above 50 and RSI near 70, indicating momentum that can sustain a short‑term upside. The entry at the current market price of 502.85, a stop at 480.52 and a target of 547.51 give a 2:1 risk‑reward and a projected 17‑day hold, fitting a ≤1‑month swing.
-  - catalysts: Positive earnings surprise in upcoming quarter, Improvement in credit growth and asset quality, Favorable regulatory environment for private banks
-  - risks: Deterioration in asset quality amid broader banking stress, Higher interest rate volatility affecting net interest margins, Unexpected macro‑economic slowdown in India
-  - watch: A break below the stop level of 480.52 or a sharp reversal in ADX below 30 would invalidate the trade; a move above the t1 target of 547.51 could extend the upside.
-- **DCBBANK** [high] DCB Bank shows a bullish trend with ADX above 30 and RSI near 70, indicating strong momentum. The stock is near its 52‑week high and the entry price aligns with a short‑term upside target of ~271, achievable within the projected 16‑day hold period.
-  - catalysts: Upcoming earnings in ~60 days, Improving credit growth in the banking sector, Potential policy support from RBI
-  - risks: Higher‑than‑expected credit defaults, Rising interest rates affecting margins, Broader market bearishness persists
-  - watch: A break below the stop at 221.22 would invalidate the trade, while a move past the t1 target of 271.34 confirms the swing thesis.
-- **HMVL** [high] Hindustan Media Ventures displays strong bullish momentum with ADX above 30 and RSI in the mid‑60s, while delivering 78% of volume and out‑performing both Nifty and its sector over the past month, making it apt for a ≤1‑month swing. The trade targets entry at 95.39 with a near‑term target around 110.65, offering a 2:1 reward‑to‑risk profile.
-  - catalysts: Upcoming earnings release in ~2 months, Potential rebound in advertising spend, Positive sector rotation into consumer services
-  - risks: Broader market weakness in a bearish regime, Elevated VIX indicating higher volatility, Missed earnings expectations
-  - watch: A break below the stop at 87.76 would invalidate the setup, while a clear move above 110.65 confirms the target.
-- **EICHERMOT** [high] Eicher Motors is in a strong bullish momentum with ADX above 30 and RSI near 70, indicating robust upward force. The stock is trading just below its 52‑week high and outperformed both the Nifty and its consumer durables peers over the past month, supporting a short‑term upside to the T1 target of 8,992.13 within the next 2‑3 weeks.
-  - catalysts: Quarterly earnings beat, Launch of new electric vehicle models, Favorable government EV incentives, Seasonal demand surge in commercial vehicles
-  - risks: Bearish macro environment, Rising input costs, Execution risk on new models, Potential profit‑taking near resistance
-  - watch: A break below the stop level of 7,762.68 or failure to hold above the 8,500 level would invalidate the trade; a decisive move above 9,000 would confirm the upside.
-- **STEL** [high] STEL Holdings Limited presents a compelling short‑term swing opportunity. The stock is in a clear bullish trend with a strong ADX (32.8) and a healthy delivery percentage (75.6%). It sits near its 52‑week high and shows robust relative strength versus both the Nifty and its sector. With a 2:1 risk‑reward target and a 7‑day hold window, the setup aligns well with a ≤1‑month swing.
-  - catalysts: Breakout above 743.39 (T1), High delivery volume spike, Bullish candlestick pattern formation, Positive earnings guidance
-  - risks: Pullback to stop at 589.58, Sector weakness in NBFC & Capital Markets, Market reversal in bearish regime, Overbought RSI (above 70), High VIX (17.7) increasing volatility
-  - watch: Monitor if price fails to breach 743.39 or falls below 640.85; watch for a decline in ADX or a surge in RSI beyond 70 as potential invalidation cues.
+- **MAHABANK** [high] Bank of Maharashtra shows strong bullish momentum with ADX above 30 and RSI in the upper band, supported by a high delivery percentage and outperformance versus Nifty and its sector, making it suitable for a ≤1‑month swing targeting the first profit target.
+  - catalysts: Upcoming earnings release in ~82 days may boost momentum, Positive banking sector sentiment in a bullish market regime, Potential policy support from RBI on credit growth
+  - risks: Earnings miss could trigger a sharp pullback, Rising credit defaults in the banking sector, Higher volatility if VIX spikes above 20
+  - watch: Break below the stop level at 91.93 would invalidate the trade; a move above the T1 target of 108.82 confirms the upside thesis.
+- **HMVL** [high] Hindustan Media Ventures shows a strong bullish technical setup with ADX above 30, RSI in the mid‑60s, and delivery exceeding 75%, indicating robust buying interest. It outperforms both the Nifty and its consumer services peers by double‑digit percentages and targets a 15% upside to the T1 level of 110.65 within roughly a nine‑day horizon, fitting a sub‑one‑month swing. The current price is near the entry point with a defined stop at 87.76, offering a clear risk‑reward profile.
+  - catalysts: Quarterly earnings release in ~2 months, Positive advertising spend trends in media sector, New content or distribution partnership announcements
+  - risks: Earnings miss or guidance downgrade, Ad‑revenue slowdown due to macro headwinds, Regulatory changes affecting media ownership
+  - watch: A break below the stop level of 87.76 would invalidate the trade, while a decisive move above the T1 target of 110.65 within 10 days would confirm the thesis.
+- **EICHERMOT** [high] Eicher Motors is in a strong bullish trend with ADX above 30 and RSI near 71, indicating momentum without extreme overbought conditions. The stock is trading near its 52‑week high with a delivery percentage of 57%, suggesting genuine buying interest, and its relative strength outperforms both the Nifty and the consumer durables sector, making it a suitable ≤1‑month swing target.
+  - catalysts: Launch of new premium motorcycle models, Improving export orders from key markets, Favorable government incentives for electric two‑wheelers, Seasonal demand surge in Q4
+  - risks: Weakening consumer spending, Rising raw material costs, Regulatory tightening on emissions, Technical pull‑back below entry
+  - watch: A break below the stop at 7,762.68 or a sharp decline in ADX below 25 would invalidate the trade; holding above entry with RSI staying above 60 supports the upside.
+- **STEL** [high] STEL Holdings is in a strong bullish trend with ADX above 30 and RSI in the mid‑60s, indicating momentum and room for upside. The stock trades near its 52‑week high with a modest 8% upside to the first target, and the expected hold period is only about a week, fitting a short‑term swing. High delivery and outperformance versus Nifty and its sector further support a quick trade.
+  - catalysts: Quarterly earnings beat, Regulatory easing for NBFCs, Improved credit growth metrics, Positive macro tailwinds in capital markets
+  - risks: Regulatory crackdown on NBFCs, Deterioration in credit quality, Broad market pullback, Rising funding costs
+  - watch: A break below the stop at 589.58 or a sharp drop in ADX below 20 would invalidate the trade; conversely, a move past the T1 target of 743.39 confirms the upside thesis.
+- **MEDANTA** [high] MEDANTA is in a strong bullish trend with ADX above 30 and RSI near 70, indicating robust momentum. The stock is trading near its 52‑week high with a modest pullback, offering upside to the target of 1676.75 within ~17 days, fitting a ≤1‑month swing.
+  - catalysts: Continued demand for health services, Favorable government health policy reforms, Potential new product launches, Positive sector momentum
+  - risks: Broad market correction, Regulatory tightening in health sector, Overbought conditions, Earnings miss when results release
+  - watch: A break below the stop level of 1411.92 or a sharp decline in ADX below 25 would invalidate the setup, as would RSI falling under 60.
 
 ### Claude feed
 
-Regime: Bearish (Nifty -1.75%, VIX 17.7). Stance: selective_aggressive. Top ideas: KOTAKBANK, DCBBANK, HMVL, EICHERMOT, STEL – all with 2R targets and high Parkhu scores. Open positions needing action: KOTAKBANK partial profit lock, ALIVUS & TFCILTD stop tightening. Caveats: Scores provisional (65% coverage), no win‑rate history, R:R based on static floor, hold periods are estimates.
+Regime: Bullish market, Nifty bullish, VIX medium. Stance: selective_aggressive. Top ideas: MAHABANK, HMVL, EICHERMOT, STEL, MEDANTA. Caveats: score coverage 65%, 35% of KB‑14 points missing, governance data absent, R:R floor only theoretical, hold periods estimated, no win‑rate history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Approval by RBI for SBI Mutual Fund to acquire up to 9.99% stake in South Indian Bank (SOUTHBANK) — A regulatory approval for a major mutual fund to take a significant stake signals confidence in the banking sector, likely boosting investor sentiment and potentially lifting the NIFTY Bank index.
-2. **[medium]** Rail Vikas Nigam Limited bagging orders/contracts (RVNL) — New orders for infrastructure projects indicate growth in the construction and materials sectors, which can positively influence the NIFTY Construction & Materials index and overall market risk perception.
-3. **[medium]** Vaxtex Cotfab Limited proposes preferential issue (VCL) — Capital raising through a preferential issue can support expansion plans but also dilutes existing shareholders, affecting the company's valuation and the broader textile sector sentiment.
-4. **[low]** Adani Enterprises Limited incorporates wholly owned subsidiary Nashik Phata Road Limited (ADANIENT) — The addition of a new subsidiary reflects Adani's expansion strategy, but its immediate impact on the market and sector indices is limited.
-5. **[low]** EPL Limited issues commercial papers worth Rs. 60 crore (EPL) — Issuing commercial papers provides short-term liquidity but has minimal influence on the broader market or sector performance.
-6. **[low]** PTCIL announces analyst/institutional investor meeting (PTCIL) — While the meeting may provide insights, it is unlikely to materially affect market indices or sector sentiment.
-7. **[low]** Sasken Technologies Limited announces analyst/institutional investor meeting (SASKEN) — The meeting is routine and unlikely to alter market-wide dynamics.
-8. **[low]** Vikram Solar Limited announces analyst/institutional investor meeting (VIKRAMSOLR) — Routine investor relations activity with negligible market impact.
-9. **[low]** Triveni Power Transmission Limited provides general updates (TRIVENIPT) — General updates are unlikely to influence sector indices or overall market sentiment.
-10. **[low]** Juniper Green Energy Limited receives credit rating update (JNPR) — A credit rating change has limited effect on market indices and sector performance.
+1. **[medium]** Adani Enterprises acquires Nashik Phata Road Limited (ADANIENT) — Acquisition by a major Adani group company could signal expansion into infrastructure, potentially boosting the construction and utilities sectors and influencing index sentiment.
+2. **[medium]** Triveni Power Transmission announces general updates (TRIVENIPT) — Updates from a key power transmission player may affect the utilities sector outlook and investor risk perception, impacting the NIFTY Utilities index.
+3. **[medium]** SECMARK announces acquisition of new subsidiary (SECMARK) — The acquisition could enhance SECMARK’s service portfolio, potentially raising its valuation and influencing the broader IT services sector sentiment.
+4. **[low]** Vaxtex Cotfab proposes preferential issue (VCL) — A preferential issue may dilute existing shareholders and affect the textile sector’s valuation, with limited impact on overall indices.
+5. **[low]** SFC Environmental Technologies reports financial results (SFCTECH) — Financial results from a niche environmental tech firm may influence investor sentiment in the green tech space, but with minimal effect on major indices.
 
 ## Deep-dive URLs (after push)
 
