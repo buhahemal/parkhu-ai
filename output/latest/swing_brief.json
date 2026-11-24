@@ -2834,7 +2834,8 @@
       "STEL"
     ]
   },
-  "run_mode": "post_close",
+  "run_mode": "premarket_context",
   "session_date": "2026-07-24",
-  "source_brief_date": "2026-11-23"
+  "source_brief_date": "2026-11-23",
+  "collection_date": "2026-11-24"
 }

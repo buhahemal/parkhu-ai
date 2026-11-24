@@ -1,16 +1,16 @@
 {
   "schema": "parkhu.research_pack.v2",
-  "collection_date": "2026-11-23",
+  "collection_date": "2026-11-24",
   "session_date": "2026-07-24",
   "is_trading_day": true,
-  "run_mode": "post_close",
+  "run_mode": "premarket_context",
   "source_brief_date": "2026-11-23",
-  "generated_at_ist": "2026-11-23T18:09:42.785364+05:30",
+  "generated_at_ist": "2026-11-24T05:45:37.576042+05:30",
   "data_quality": {
     "critical_ok": true,
     "reasons": [],
-    "agents_ok": 20,
-    "agents_partial": 1,
+    "agents_ok": 7,
+    "agents_partial": 0,
     "agents_error": 0
   },
   "capital": 100000.0,
@@ -64,50 +64,50 @@
         {
           "label": "Nikkei",
           "metric": "NIKKEI",
-          "value": 56436.65,
-          "pct_change": -5.06,
-          "tone": "bear",
-          "session_date": "2026-11-20"
+          "value": 57165.45,
+          "pct_change": 1.29,
+          "tone": "bull",
+          "session_date": "2026-11-24"
         },
         {
           "label": "Hang Seng",
           "metric": "HANG_SENG",
-          "value": 22383.74,
-          "pct_change": -0.12,
-          "tone": "neutral",
-          "session_date": "2026-11-23"
+          "value": 22410.8,
+          "pct_change": -1.89,
+          "tone": "bear",
+          "session_date": "2026-11-20"
         },
         {
           "label": "Shanghai",
           "metric": "SHANGHAI",
-          "value": 3538.95,
-          "pct_change": 0.15,
-          "tone": "neutral",
-          "session_date": "2026-11-23"
+          "value": 3533.79,
+          "pct_change": -1.22,
+          "tone": "bear",
+          "session_date": "2026-11-20"
         },
         {
           "label": "Kospi",
           "metric": "KOSPI",
-          "value": 4708.54,
-          "pct_change": -3.31,
+          "value": 4869.96,
+          "pct_change": -5.21,
           "tone": "bear",
-          "session_date": "2026-11-23"
+          "session_date": "2026-11-20"
         },
         {
           "label": "Taiwan",
           "metric": "TAIWAN",
-          "value": 36811.89,
-          "pct_change": 2.16,
-          "tone": "bull",
-          "session_date": "2026-11-23"
+          "value": 36033.29,
+          "pct_change": -6.23,
+          "tone": "bear",
+          "session_date": "2026-11-20"
         },
         {
           "label": "ASX 200",
           "metric": "ASX200",
-          "value": 8570.6,
-          "pct_change": -0.26,
-          "tone": "bear",
-          "session_date": "2026-11-23"
+          "value": 8675.2,
+          "pct_change": 0.96,
+          "tone": "bull",
+          "session_date": "2026-11-24"
         }
       ]
     },
@@ -117,26 +117,26 @@
         {
           "label": "FTSE 100",
           "metric": "FTSE",
-          "value": 10403.93,
-          "pct_change": 0.56,
-          "tone": "bull",
-          "session_date": "2026-11-23"
+          "value": 10346.3,
+          "pct_change": -1.02,
+          "tone": "bear",
+          "session_date": "2026-11-20"
         },
         {
           "label": "DAX",
           "metric": "DAX",
-          "value": 24999.57,
-          "pct_change": 0.79,
-          "tone": "bull",
-          "session_date": "2026-11-23"
+          "value": 24802.78,
+          "pct_change": -2.6,
+          "tone": "bear",
+          "session_date": "2026-11-20"
         },
         {
           "label": "Euro Stoxx 50",
           "metric": "EURO_STOXX50",
-          "value": 5990.91,
-          "pct_change": 0.82,
-          "tone": "bull",
-          "session_date": "2026-11-23"
+          "value": 5941.95,
+          "pct_change": -2.81,
+          "tone": "bear",
+          "session_date": "2026-11-20"
         }
       ]
     },
@@ -146,32 +146,32 @@
         {
           "label": "S&P 500",
           "metric": "US_SP500",
-          "value": 6910.39,
-          "pct_change": -3.7,
-          "tone": "bear",
-          "session_date": "2026-11-20"
+          "value": 7237.17,
+          "pct_change": 4.73,
+          "tone": "bull",
+          "session_date": "2026-11-23"
         },
         {
           "label": "Nasdaq",
           "metric": "US_NASDAQ",
-          "value": 22617.73,
-          "pct_change": -5.28,
-          "tone": "bear",
-          "session_date": "2026-11-20"
+          "value": 24089.56,
+          "pct_change": 6.51,
+          "tone": "bull",
+          "session_date": "2026-11-23"
         },
         {
           "label": "Dow",
           "metric": "US_DOW",
-          "value": 48147.33,
-          "pct_change": -1.93,
-          "tone": "bear",
-          "session_date": "2026-11-20"
+          "value": 49595.31,
+          "pct_change": 3.01,
+          "tone": "bull",
+          "session_date": "2026-11-23"
         },
         {
           "label": "US VIX",
           "metric": "US_VIX",
-          "value": 31.05,
-          "pct_change": -13.49,
+          "value": 26.62,
+          "pct_change": -25.83,
           "tone": "bull",
           "session_date": "2026-11-23"
         }
@@ -183,58 +183,58 @@
         {
           "label": "USDINR",
           "metric": "USDINR",
-          "value": 92.73,
-          "pct_change": -0.61,
+          "value": 92.67,
+          "pct_change": -0.67,
           "tone": "bull",
           "session_date": "2026-11-23"
         },
         {
           "label": "Crude WTI",
           "metric": "CRUDE_WTI",
-          "value": 82.31,
-          "pct_change": -1.99,
+          "value": 80.51,
+          "pct_change": -4.13,
           "tone": "bear",
           "session_date": "2026-11-23"
         },
         {
           "label": "Brent",
           "metric": "CRUDE_BRENT",
-          "value": 88.65,
-          "pct_change": -4.23,
+          "value": 86.92,
+          "pct_change": -6.1,
           "tone": "bear",
           "session_date": "2026-11-23"
         },
         {
           "label": "DXY",
           "metric": "DOLLAR_INDEX",
-          "value": 103.89,
-          "pct_change": 0.08,
-          "tone": "neutral",
+          "value": 104.32,
+          "pct_change": 0.49,
+          "tone": "bear",
           "session_date": "2026-11-23"
         },
         {
           "label": "US 10Y",
           "metric": "US_10Y_YIELD",
-          "value": 4.91,
-          "pct_change": -2.77,
-          "tone": "bull",
-          "session_date": "2026-11-20"
+          "value": 4.92,
+          "pct_change": 0.12,
+          "tone": "neutral",
+          "session_date": "2026-11-23"
         },
         {
           "label": "India ETF",
           "metric": "INDIA_ETF",
-          "value": 52.9,
-          "pct_change": 1.71,
-          "tone": "bull",
-          "session_date": "2026-11-20"
+          "value": 52.14,
+          "pct_change": -1.44,
+          "tone": "bear",
+          "session_date": "2026-11-23"
         },
         {
           "label": "EM ETF",
           "metric": "EM_ETF",
-          "value": 53.84,
-          "pct_change": -5.13,
-          "tone": "bear",
-          "session_date": "2026-11-20"
+          "value": 57.83,
+          "pct_change": 7.41,
+          "tone": "bull",
+          "session_date": "2026-11-23"
         }
       ]
     }
@@ -5152,359 +5152,52 @@
         "score_now": null
       }
     ],
-    "closed_today": [
-      {
-        "trade_id": "2026-11-19-SSWL",
-        "symbol": "SSWL",
-        "company": "Steel Strips Wheels Ltd",
-        "risk_sector": "Producer Manufacturing",
-        "date_opened": "2026-11-19",
-        "taken": null,
-        "entry": 555.25,
-        "stop": 510.83,
-        "t1": 644.09,
-        "t2": 688.51,
-        "t3": 732.93,
-        "structure_invalidation": 461.05,
-        "horizon_days_t1": 10,
-        "horizon_days_t2": 22,
-        "score_at_open": 83.6,
-        "qty": 18,
-        "risk_rupees": 800.0,
-        "status": "closed",
-        "last_price": 475.05,
-        "last_checked": "2026-11-23",
-        "mfe_pct": 1.56,
-        "mae_pct": -14.8,
-        "gap_flag": false,
-        "hit_t1": false,
-        "hit_t2": false,
-        "reconfirmed_count": 0,
-        "notes": null,
-        "date_closed": "2026-11-23",
-        "exit_price": 475.05,
-        "exit_reason": "stop",
-        "pct_return": -14.44,
-        "r_multiple": -1.81,
-        "days_held": 2
-      }
-    ],
-    "as_of": "2026-11-23"
+    "closed_today": [],
+    "as_of": "2026-11-24"
   },
-  "swing_candidates_top": [
-    {
-      "symbol": "HYUNDAI",
-      "close": 2155.0,
-      "score": 15,
-      "perf_1m": 14.0151314745,
-      "rs_vs_nifty_1m": 2.29,
-      "rs_vs_sector_1m": 0.11,
-      "deliv_pct": 45.36,
-      "pct_change_oi": 10.32,
-      "upside_to_target_pct": 12.3,
-      "atr": 64.3475367701,
-      "stop_1_5atr": 2058.48,
-      "target_5pct": 2262.75,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Durables"
-    },
-    {
-      "symbol": "SCPL",
-      "close": 707.8,
-      "score": 14,
-      "perf_1m": 18.9679805026,
-      "rs_vs_nifty_1m": 7.24,
-      "rs_vs_sector_1m": 6.89,
-      "deliv_pct": 48.78,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 5.82,
-      "atr": 37.1647354589,
-      "stop_1_5atr": 652.05,
-      "target_5pct": 743.19,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "WESTLIFE",
-      "close": 652.7,
-      "score": 14,
-      "perf_1m": 21.9658039802,
-      "rs_vs_nifty_1m": 10.24,
-      "rs_vs_sector_1m": 9.89,
-      "deliv_pct": 62.76,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 10.86,
-      "atr": 28.5399305074,
-      "stop_1_5atr": 609.89,
-      "target_5pct": 685.34,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Consumer Services"
-    },
-    {
-      "symbol": "MARICO",
-      "close": 919.5,
-      "score": 14,
-      "perf_1m": 19.338092148,
-      "rs_vs_nifty_1m": 7.61,
-      "rs_vs_sector_1m": 7.26,
-      "deliv_pct": 64.84,
-      "pct_change_oi": -2.76,
-      "upside_to_target_pct": 5.13,
-      "atr": 18.7982073136,
-      "stop_1_5atr": 891.3,
-      "target_5pct": 965.48,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "AFFLE",
-      "close": 1616.6,
-      "score": 14,
-      "perf_1m": 18.4235587136,
-      "rs_vs_nifty_1m": 6.69,
-      "rs_vs_sector_1m": 19.14,
-      "deliv_pct": 48.29,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 24.35,
-      "atr": 49.6688739304,
-      "stop_1_5atr": 1542.1,
-      "target_5pct": 1697.43,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Technology Services"
-    },
-    {
-      "symbol": "IDFCFIRSTB",
-      "close": 85.4,
-      "score": 14,
-      "perf_1m": 14.0339164107,
-      "rs_vs_nifty_1m": 2.3,
-      "rs_vs_sector_1m": 0.08,
-      "deliv_pct": 44.68,
-      "pct_change_oi": 1.59,
-      "upside_to_target_pct": 5.03,
-      "atr": 2.2955516572,
-      "stop_1_5atr": 81.96,
-      "target_5pct": 89.67,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "DIVISLAB",
-      "close": 11203.0,
-      "score": 14,
-      "perf_1m": 22.2367703219,
-      "rs_vs_nifty_1m": 10.51,
-      "rs_vs_sector_1m": 11.72,
-      "deliv_pct": 66.63,
-      "pct_change_oi": -2.14,
-      "upside_to_target_pct": 5.54,
-      "atr": 298.821518499,
-      "stop_1_5atr": 10754.77,
-      "target_5pct": 11763.15,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
-    },
-    {
-      "symbol": "DCBBANK",
-      "close": 237.93,
-      "score": 14,
-      "perf_1m": 14.9975833736,
-      "rs_vs_nifty_1m": 3.27,
-      "rs_vs_sector_1m": 1.05,
-      "deliv_pct": 42.68,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 5.18,
-      "atr": 8.3534121826,
-      "stop_1_5atr": 225.4,
-      "target_5pct": 249.83,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "KPRMILL",
-      "close": 1206.9,
-      "score": 14,
-      "perf_1m": 17.9765395894,
-      "rs_vs_nifty_1m": 6.25,
-      "rs_vs_sector_1m": 5.9,
-      "deliv_pct": 78.61,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 10.53,
-      "atr": 39.9919541947,
-      "stop_1_5atr": 1146.91,
-      "target_5pct": 1267.25,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Consumer Non-Durables"
-    },
-    {
-      "symbol": "STEL",
-      "close": 640.85,
-      "score": 14,
-      "perf_1m": 33.2328482328,
-      "rs_vs_nifty_1m": 21.5,
-      "rs_vs_sector_1m": 19.05,
-      "deliv_pct": 75.55,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 9.21,
-      "atr": 40.3098011559,
-      "stop_1_5atr": 580.39,
-      "target_5pct": 672.89,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "LENSKART",
-      "close": 714.5,
-      "score": 14,
-      "perf_1m": 12.5374074657,
-      "rs_vs_nifty_1m": 0.81,
-      "rs_vs_sector_1m": 2.02,
-      "deliv_pct": 58.37,
-      "pct_change_oi": null,
-      "upside_to_target_pct": 8.01,
-      "atr": 23.0352969727,
-      "stop_1_5atr": 679.95,
-      "target_5pct": 750.22,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Health Technology"
-    },
-    {
-      "symbol": "ADANIENSOL",
-      "close": 1470.0,
-      "score": 14,
-      "perf_1m": 13.478462251,
-      "rs_vs_nifty_1m": 1.75,
-      "rs_vs_sector_1m": 9.05,
-      "deliv_pct": 42.58,
-      "pct_change_oi": 3.19,
-      "upside_to_target_pct": 21.7,
-      "atr": 45.3528578625,
-      "stop_1_5atr": 1401.97,
-      "target_5pct": 1543.5,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Utilities"
-    },
-    {
-      "symbol": "CHOLAFIN",
-      "close": 1831.0,
-      "score": 14,
-      "perf_1m": 22.0666666667,
-      "rs_vs_nifty_1m": 10.34,
-      "rs_vs_sector_1m": 7.89,
-      "deliv_pct": 54.01,
-      "pct_change_oi": -3.8,
-      "upside_to_target_pct": 6.64,
-      "atr": 50.6753538204,
-      "stop_1_5atr": 1754.99,
-      "target_5pct": 1922.55,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "BAJFINANCE",
-      "close": 1095.5,
-      "score": 14,
-      "perf_1m": 16.5425531915,
-      "rs_vs_nifty_1m": 4.81,
-      "rs_vs_sector_1m": 2.36,
-      "deliv_pct": 62.16,
-      "pct_change_oi": -1.78,
-      "upside_to_target_pct": 7.38,
-      "atr": 30.3023553671,
-      "stop_1_5atr": 1050.05,
-      "target_5pct": 1150.28,
-      "earnings_within_21d": false,
-      "event_risk_score": 0,
-      "tech_rating": "Buy",
-      "sector": "Finance"
-    },
-    {
-      "symbol": "PRESTIGE",
-      "close": 1687.0,
-      "score": 14,
-      "perf_1m": 18.3859649123,
-      "rs_vs_nifty_1m": 6.66,
-      "rs_vs_sector_1m": 1.16,
-      "deliv_pct": 71.41,
-      "pct_change_oi": 0.5,
-      "upside_to_target_pct": 15.55,
-      "atr": 51.1700486871,
-      "stop_1_5atr": 1610.24,
-      "target_5pct": 1771.35,
-      "earnings_within_21d": false,
-      "event_risk_score": 1,
-      "tech_rating": "Strong buy",
-      "sector": "Finance"
-    }
-  ],
+  "swing_candidates_top": [],
   "urls": {
-    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/research_pack.md",
-    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/research_pack.json",
+    "pack_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/research_pack.md",
+    "pack_json": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/research_pack.json",
     "index": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/index.json",
-    "brief_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/swing_brief.md",
-    "folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-11-23",
+    "brief_md": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/swing_brief.md",
+    "folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/2026-11-24",
     "latest_folder": "https://github.com/buhahemal/parkhu-ai/tree/main/output/latest",
     "deep_dive": {
       "stock_analysis.csv": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/stock_analysis.csv",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/stock_analysis.csv",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/stock_analysis.csv",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/stock_analysis.csv"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/stock_analysis.csv"
       },
       "manifest.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/manifest.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/manifest.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/manifest.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/manifest.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/manifest.json"
       },
       "report.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/report.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/report.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/report.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/report.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/report.json"
       },
       "swing_brief.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/swing_brief.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/swing_brief.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/swing_brief.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/swing_brief.json"
       },
       "swing_brief.md": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/swing_brief.md",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/swing_brief.md",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/swing_brief.md",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/swing_brief.md"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/swing_brief.md"
       },
       "funnel_detail.json": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/funnel_detail.json",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/funnel_detail.json",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/funnel_detail.json",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/funnel_detail.json"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/funnel_detail.json"
       },
       "market_summary.csv": {
-        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-23/market_summary.csv",
+        "download_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/2026-11-24/market_summary.csv",
         "latest_url": "https://raw.githubusercontent.com/buhahemal/parkhu-ai/main/output/latest/market_summary.csv",
-        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-23/market_summary.csv"
+        "preview_url": "https://github.com/buhahemal/parkhu-ai/blob/main/output/2026-11-24/market_summary.csv"
       }
     }
   },
@@ -5526,15 +5219,14 @@
       }
     ],
     "fallback_used": false,
-    "generated_at_ist": "2026-11-23T18:09:46.923100+05:30",
-    "market_brief": "The Indian market remains in a bearish regime with Nifty down 1.75% and VIX at a medium 17.7, while foreign inflows are positive but domestic sellers are net negative. Banking stocks dominate the top ideas, showing strong Parkhu scores despite the broader downside. Consumer\u2011durable and NBFC names also appear, but volatility and macro risk remain elevated. Open positions are being trimmed as several trends lose their technical edge.",
-    "stance": "defensive",
+    "generated_at_ist": "2026-11-24T05:45:40.729173+05:30",
+    "market_brief": "The Indian equity market remains in a bearish regime with Nifty down 1.75% and VIX at a medium 17.7, indicating heightened volatility. FII inflows are strong (+10.3bn) while DII are net sellers (-4.9bn), adding to the downside pressure. Asia cues stay bearish but Europe shows bullish signs, creating mixed macro dynamics. Despite the overall risk being medium, selective high\u2011conviction banks and consumer stocks present limited upside.",
+    "stance": "selective_aggressive",
     "focus": [
-      "Bearish macro backdrop",
       "Banking sector resilience",
-      "Consumer durables upside",
-      "NBFC capital\u2011market stress",
-      "Elevated volatility"
+      "Consumer services demand",
+      "Macro downside bias",
+      "Volatility environment"
     ],
     "suggestions": [
       {
@@ -5545,40 +5237,40 @@
         "stop": 480.52,
         "t1": 547.51,
         "hold_days": 17,
-        "rationale": "Parkhu score 91, entry 502.85 with 2R target, strong bank fundamentals and positive FII flow despite bearish market.",
+        "rationale": "Parkhu entry 502.85 with 2R target 547.51; score 91 and strong bank fundamentals.",
         "levels_source": "parkhu_deterministic"
       },
       {
         "symbol": "DCBBANK",
         "action": "consider_entry",
-        "conviction": "medium",
+        "conviction": "high",
         "entry": 237.93,
         "stop": 221.22,
         "t1": 271.34,
         "hold_days": 16,
-        "rationale": "Score 88.8, entry 237.93, 2R target, solid balance sheet; risk moderated by overall bearish trend.",
+        "rationale": "Entry 237.93, stop 221.22, T1 271.34; parkhu score 88.8 and solid credit outlook.",
         "levels_source": "parkhu_deterministic"
       },
       {
         "symbol": "HMVL",
         "action": "consider_entry",
-        "conviction": "medium",
+        "conviction": "high",
         "entry": 95.39,
         "stop": 87.76,
         "t1": 110.65,
         "hold_days": 9,
-        "rationale": "Score 87.4, entry 95.39, consumer services play with decent upside and manageable stop.",
+        "rationale": "Entry 95.39, stop 87.76, T1 110.65; score 87.4 and consumer services tailwinds.",
         "levels_source": "parkhu_deterministic"
       },
       {
         "symbol": "EICHERMOT",
         "action": "consider_entry",
-        "conviction": "medium",
+        "conviction": "high",
         "entry": 8172.5,
         "stop": 7762.68,
         "t1": 8992.13,
         "hold_days": 17,
-        "rationale": "Score 85.7, entry 8172.5, consumer durables benefit from demand rebound; stop tight relative to volatility.",
+        "rationale": "Entry 8172.5, stop 7762.68, T1 8992.13; score 85.7, durable demand remains robust.",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -5589,7 +5281,7 @@
         "stop": 589.58,
         "t1": 743.39,
         "hold_days": 7,
-        "rationale": "Score 82.7, entry 640.85, NBFC exposure offers upside but sector risk remains high.",
+        "rationale": "Entry 640.85, stop 589.58, T1 743.39; score 82.7, NBFC exposure but still attractive risk\u2011reward.",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -5600,7 +5292,7 @@
         "stop": 480.52,
         "t1": 547.51,
         "hold_days": 17,
-        "rationale": "T1 reached; trail stop to breakeven \u20b9459 as per needs_action, MFE 13.6% indicates strong move.",
+        "rationale": "T1 reached; trail stop to breakeven 459 and lock partial profits.",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -5611,7 +5303,7 @@
         "stop": 1332.73,
         "t1": 1677.35,
         "hold_days": 14,
-        "rationale": "Trend thinning; tighten stop from 1332.73 toward breakeven as per needs_action, MFE 8.7%.",
+        "rationale": "ADX weakening, tighten stop from 1332.73 toward 1400 to protect gains.",
         "levels_source": "parkhu_deterministic"
       },
       {
@@ -5622,324 +5314,246 @@
         "stop": 146.05,
         "t1": 181.78,
         "hold_days": 17,
-        "rationale": "Trend thinning; review stop (146.05) and consider tightening, MFE 10%.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "ICICIBANK",
-        "action": "manage_open",
-        "conviction": "high",
-        "entry": 1477.3,
-        "stop": 1420.52,
-        "t1": 1590.85,
-        "hold_days": 17,
-        "rationale": "MFE 11.35% and price well above entry; maintain position with stop adjustment.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "GLENMARK",
-        "action": "manage_open",
-        "conviction": "medium",
-        "entry": 2481.8,
-        "stop": 2327.96,
-        "t1": 2789.48,
-        "hold_days": 19,
-        "rationale": "MFE 9.36% and price above entry; monitor volatility.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "ORIENTELEC",
-        "action": "manage_open",
-        "conviction": "low",
-        "entry": 199.62,
-        "stop": 184.08,
-        "t1": 230.71,
-        "hold_days": 16,
-        "rationale": "MFE modest 4%; keep stop near 184.08, watch for further move.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "LUMAXTECH",
-        "action": "manage_open",
-        "conviction": "low",
-        "entry": 2297.6,
-        "stop": 2113.79,
-        "t1": 2665.22,
-        "hold_days": 12,
-        "rationale": "MFE 8.9% but mae -5.3%; maintain with tight stop.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "SOUTHBANK",
-        "action": "manage_open",
-        "conviction": "low",
-        "entry": 58.68,
-        "stop": 54.9,
-        "t1": 66.23,
-        "hold_days": 16,
-        "rationale": "MFE 6.6% and near entry; hold with stop at 54.9.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "PETRONET",
-        "action": "manage_open",
-        "conviction": "low",
-        "entry": 329.8,
-        "stop": 314.34,
-        "t1": 360.71,
-        "hold_days": 16,
-        "rationale": "MFE 2% only; keep tight stop.",
-        "levels_source": "parkhu_deterministic"
-      },
-      {
-        "symbol": "TANLA",
-        "action": "manage_open",
-        "conviction": "low",
-        "entry": 694.9,
-        "stop": 639.31,
-        "t1": 806.08,
-        "hold_days": 16,
-        "rationale": "MFE 6.3% but mae -6.5%; monitor closely.",
+        "rationale": "Trend condition lost; move stop tighter from 146.05 to near 160 to limit downside.",
         "levels_source": "parkhu_deterministic"
       }
     ],
     "open_book_notes": [
-      "KOTAKBANK: T1 reached, trail stop to breakeven \u20b9459 as per action note.",
-      "ALIVUS: Trend thinning, tighten stop from 1332.73; price 1410.3.",
-      "TFCILTD: Trend thinning, review stop 146.05; price 173.51.",
-      "ICICIBANK: Strong upside, MFE 11.35%; consider raising stop.",
-      "GLENMARK: Positive move, MFE 9.36%; keep stop near 2327.96.",
-      "ORIENTELEC: Limited move, watch stop 184.08.",
-      "LUMAXTECH: Moderate gain, watch stop 2113.79.",
-      "SOUTHBANK: Near entry, maintain stop 54.9.",
-      "PETRONET: Small gain, tight stop 314.34.",
-      "TANLA: Mixed, monitor stop 639.31."
+      "KOTAKBANK: T1 hit, shift stop to breakeven and consider partial exit.",
+      "ALIVUS: Trend erosion, tighten stop to preserve recent 8.7% MFE.",
+      "TFCILTD: Trend erosion, tighten stop to protect 10% MFE.",
+      "ICICIBANK: Strong MFE 11.35%, hold with current stop.",
+      "GLENMARK: Healthy MFE 9.36%, monitor for further upside."
     ],
-    "claude_feed": "Regime: Bearish (Nifty -1.75%, VIX 17.7). Stance: defensive. Top ideas: KOTAKBANK (high conviction), DCBBANK, HMVL, EICHERMOT, STEL (medium). Open book actions: manage KOTAKBANK, ALIVUS, TFCILTD per needs_action, tighten stops, trail breakeven. Caveats: Scores provisional, limited news/institutional data, R:R based on static 2R, no win\u2011rate history.",
+    "claude_feed": "Regime: Bearish (Nifty -1.75%, VIX 17.7). Stance: selective_aggressive. Top ideas: KOTAKBANK, DCBBANK, HMVL, EICHERMOT, STEL \u2013 all with 2R targets and high Parkhu scores. Open positions needing action: KOTAKBANK partial profit lock, ALIVUS & TFCILTD stop tightening. Caveats: Scores provisional (65% coverage), no win\u2011rate history, R:R based on static floor, hold periods are estimates.",
     "stock_reviews": [
       {
         "symbol": "KOTAKBANK",
         "status": "ok",
         "model": "openai/gpt-oss-120b",
         "conviction": "high",
-        "thesis": "Kotak Mahindra Bank shows strong bullish momentum in a bearish market, with ADX above 50 indicating a robust uptrend and RSI in the upper\u2011mid range supporting continued upside. The stock trades near its 52\u2011week high with favorable relative strength versus Nifty and the banking sector, and the entry at the current price offers a 2:1 risk\u2011reward to the first target within about 17 days.",
+        "thesis": "Kotak Mahindra Bank shows a bullish technical trend with a strong ADX above 50 and RSI near 70, indicating momentum that can sustain a short\u2011term upside. The entry at the current market price of 502.85, a stop at 480.52 and a target of 547.51 give a 2:1 risk\u2011reward and a projected 17\u2011day hold, fitting a \u22641\u2011month swing.",
         "catalysts": [
-          "Upcoming earnings beat potential",
-          "RBI policy easing expectations",
-          "Accelerating loan growth",
-          "Favourable banking sector tailwinds"
+          "Positive earnings surprise in upcoming quarter",
+          "Improvement in credit growth and asset quality",
+          "Favorable regulatory environment for private banks"
         ],
         "risks": [
-          "Potential RBI tightening or higher policy rates",
-          "Deteriorating credit quality or asset quality concerns",
-          "Macro\u2011economic slowdown affecting loan demand",
-          "Increased competition from fintech and peers"
+          "Deterioration in asset quality amid broader banking stress",
+          "Higher interest rate volatility affecting net interest margins",
+          "Unexpected macro\u2011economic slowdown in India"
         ],
-        "what_to_watch": "A miss on earnings or a downgrade from rating agencies would invalidate the setup; breaking below the stop at 480.52 would also signal failure.",
+        "what_to_watch": "A break below the stop level of 480.52 or a sharp reversal in ADX below 30 would invalidate the trade; a move above the t1 target of 547.51 could extend the upside.",
         "entry": 502.85,
         "stop": 480.52,
         "t1": 547.51,
         "hold_days": 17,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-11-23T18:09:48.386226+05:30"
+        "generated_at_ist": "2026-11-24T05:45:42.199812+05:30"
       },
       {
         "symbol": "DCBBANK",
         "status": "ok",
         "model": "openai/gpt-oss-120b",
         "conviction": "high",
-        "thesis": "DCB Bank shows a bullish technical setup with ADX above 30 and RSI near 70, supported by strong delivery and a short\u2011term upside target of 271.34 within about 16 days, making it suitable for a \u22641\u2011month swing.",
+        "thesis": "DCB Bank shows a bullish trend with ADX above 30 and RSI near 70, indicating strong momentum. The stock is near its 52\u2011week high and the entry price aligns with a short\u2011term upside target of ~271, achievable within the projected 16\u2011day hold period.",
         "catalysts": [
           "Upcoming earnings in ~60 days",
-          "Potential RBI policy easing",
-          "Sector tailwinds in banking",
-          "Positive net interest margin trends"
+          "Improving credit growth in the banking sector",
+          "Potential policy support from RBI"
         ],
         "risks": [
-          "Overall bearish market regime",
-          "Rising credit stress in banks",
-          "Regulatory scrutiny or crackdown",
-          "Higher interest rate environment"
+          "Higher\u2011than\u2011expected credit defaults",
+          "Rising interest rates affecting margins",
+          "Broader market bearishness persists"
         ],
-        "what_to_watch": "A break below the stop level of 221.22 invalidates the trade, while failure to approach the T1 target of 271.34 by day 20 signals weakening momentum.",
+        "what_to_watch": "A break below the stop at 221.22 would invalidate the trade, while a move past the t1 target of 271.34 confirms the swing thesis.",
         "entry": 237.93,
         "stop": 221.22,
         "t1": 271.34,
         "hold_days": 16,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-11-23T18:09:50.125558+05:30"
+        "generated_at_ist": "2026-11-24T05:45:44.094662+05:30"
       },
       {
         "symbol": "HMVL",
         "status": "ok",
         "model": "openai/gpt-oss-120b",
         "conviction": "high",
-        "thesis": "The stock shows strong bullish momentum with ADX 32.4 and RSI 64, indicating a healthy uptrend. Relative strength outperforms the Nifty (+13%) and its sector (+12%) and the 1\u2011month return is ~25%, supporting a short\u2011term upside to the target of 110.65 within roughly 9 trading days. High delivery (78.7%) suggests strong buying interest, making it suitable for a \u22641\u2011month swing.",
+        "thesis": "Hindustan Media Ventures displays strong bullish momentum with ADX above 30 and RSI in the mid\u201160s, while delivering 78% of volume and out\u2011performing both Nifty and its sector over the past month, making it apt for a \u22641\u2011month swing. The trade targets entry at 95.39 with a near\u2011term target around 110.65, offering a 2:1 reward\u2011to\u2011risk profile.",
         "catalysts": [
-          "Upcoming earnings in ~2 months",
-          "Advertising spend recovery",
-          "Positive media sector sentiment",
-          "Favorable regulatory news"
+          "Upcoming earnings release in ~2 months",
+          "Potential rebound in advertising spend",
+          "Positive sector rotation into consumer services"
         ],
         "risks": [
-          "Bearish overall market regime",
-          "India VIX elevated at 17.7",
-          "Sector slowdown",
-          "Potential earnings miss",
-          "Stop loss breach"
+          "Broader market weakness in a bearish regime",
+          "Elevated VIX indicating higher volatility",
+          "Missed earnings expectations"
         ],
-        "what_to_watch": "A break below the stop level 87.76 or a drop in ADX below 25 would invalidate the trade, as would a sharp RSI decline under 50.",
+        "what_to_watch": "A break below the stop at 87.76 would invalidate the setup, while a clear move above 110.65 confirms the target.",
         "entry": 95.39,
         "stop": 87.76,
         "t1": 110.65,
         "hold_days": 9,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-11-23T18:09:53.008464+05:30"
+        "generated_at_ist": "2026-11-24T05:45:46.266776+05:30"
       },
       {
         "symbol": "EICHERMOT",
         "status": "ok",
         "model": "openai/gpt-oss-120b",
         "conviction": "high",
-        "thesis": "Eicher Motors is displaying strong short\u2011term bullish momentum with a bullish trend label, ADX above 30 and RSI near overbought levels, suggesting a continued upward thrust toward the 8,992 target within the next 17 days. The stock is outperforming both the Nifty and its consumer durables peers, has a high delivery percentage and sits just 1.2% below its 52\u2011week high, making it a compelling \u22641\u2011month swing candidate.",
+        "thesis": "Eicher Motors is in a strong bullish momentum with ADX above 30 and RSI near 70, indicating robust upward force. The stock is trading just below its 52\u2011week high and outperformed both the Nifty and its consumer durables peers over the past month, supporting a short\u2011term upside to the T1 target of 8,992.13 within the next 2\u20113 weeks.",
         "catalysts": [
-          "Launch of new commercial vehicle models",
-          "Potential earnings beat on higher margins",
-          "Favorable government policy for auto sector",
-          "Improving dealer inventory dynamics"
+          "Quarterly earnings beat",
+          "Launch of new electric vehicle models",
+          "Favorable government EV incentives",
+          "Seasonal demand surge in commercial vehicles"
         ],
         "risks": [
-          "Broader market weakness in a bearish regime",
-          "Softening demand in consumer durables",
-          "Rising raw material costs",
-          "Regulatory or tax changes affecting auto sales"
+          "Bearish macro environment",
+          "Rising input costs",
+          "Execution risk on new models",
+          "Potential profit\u2011taking near resistance"
         ],
-        "what_to_watch": "A break below the stop level of 7,762.68 would invalidate the trade, while a failure to sustain above the entry near 8,172 could signal weakening momentum; upcoming earnings and model launch updates will also act as key triggers.",
+        "what_to_watch": "A break below the stop level of 7,762.68 or failure to hold above the 8,500 level would invalidate the trade; a decisive move above 9,000 would confirm the upside.",
         "entry": 8172.5,
         "stop": 7762.68,
         "t1": 8992.13,
         "hold_days": 17,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-11-23T18:09:54.646301+05:30"
+        "generated_at_ist": "2026-11-24T05:45:50.777495+05:30"
       },
       {
         "symbol": "STEL",
         "status": "ok",
-        "model": "openai/gpt-oss-120b",
+        "model": "openai/gpt-oss-20b",
         "conviction": "high",
-        "thesis": "STEL Holdings is trading in a clear bullish momentum with ADX above 30 and RSI in the upper\u2011mid range, indicating strength. The stock has outperformed both the Nifty and its sector over the past month and is trading near an 8% discount to its 52\u2011week high, offering upside to the target of 743.39 within a week. With a Parkhu score of 82.7 and a strong\u2011buy technical rating, the setup aligns with a short\u2011term swing trade of \u22641 month.",
+        "thesis": "STEL Holdings Limited presents a compelling short\u2011term swing opportunity. The stock is in a clear bullish trend with a strong ADX (32.8) and a healthy delivery percentage (75.6%). It sits near its 52\u2011week high and shows robust relative strength versus both the Nifty and its sector. With a 2:1 risk\u2011reward target and a 7\u2011day hold window, the setup aligns well with a \u22641\u2011month swing.",
         "catalysts": [
-          "Q3 earnings release",
-          "Favorable NBFC regulatory reforms",
-          "Improved loan book growth",
-          "Positive macro data on credit demand"
+          "Breakout above 743.39 (T1)",
+          "High delivery volume spike",
+          "Bullish candlestick pattern formation",
+          "Positive earnings guidance"
         ],
         "risks": [
-          "Deteriorating asset quality",
-          "Regulatory tightening on NBFCs",
-          "Broader market sell\u2011off",
-          "Overbought technical condition"
+          "Pullback to stop at 589.58",
+          "Sector weakness in NBFC & Capital Markets",
+          "Market reversal in bearish regime",
+          "Overbought RSI (above 70)",
+          "High VIX (17.7) increasing volatility"
         ],
-        "what_to_watch": "A miss on earnings or a downgrade would invalidate the trade, as would a break below the stop level of 589.58.",
+        "what_to_watch": "Monitor if price fails to breach 743.39 or falls below 640.85; watch for a decline in ADX or a surge in RSI beyond 70 as potential invalidation cues.",
         "entry": 640.85,
         "stop": 589.58,
         "t1": 743.39,
         "hold_days": 7,
         "levels_source": "parkhu_deterministic",
-        "generated_at_ist": "2026-11-23T18:09:57.147592+05:30"
+        "generated_at_ist": "2026-11-24T05:45:56.213410+05:30"
       }
     ]
   },
   "market_news_top10": [
     {
       "rank": 1,
-      "headline": "Disclosure under SEBI Takeover Regulations",
-      "symbol": "ZENITHEXPO",
+      "headline": "Approval by RBI for SBI Mutual Fund to acquire up to 9.99% stake in South Indian Bank",
+      "symbol": "SOUTHBANK",
       "impact": "high",
-      "why_it_matters": "Potential takeover could trigger sector\u2011wide activity and price volatility, affecting investor sentiment.",
-      "source_date": "23-Nov-2026",
+      "why_it_matters": "A regulatory approval for a major mutual fund to take a significant stake signals confidence in the banking sector, likely boosting investor sentiment and potentially lifting the NIFTY Bank index.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261863+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959487+05:30"
     },
     {
       "rank": 2,
-      "headline": "Disclosure under SEBI Takeover Regulations",
-      "symbol": "TRU",
-      "impact": "high",
-      "why_it_matters": "Open offer by Marwadi Chandarana may influence banking and financial sectors, leading to market movement.",
-      "source_date": "23-Nov-2026",
+      "headline": "Rail Vikas Nigam Limited bagging orders/contracts",
+      "symbol": "RVNL",
+      "impact": "medium",
+      "why_it_matters": "New orders for infrastructure projects indicate growth in the construction and materials sectors, which can positively influence the NIFTY Construction & Materials index and overall market risk perception.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261891+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959517+05:30"
     },
     {
       "rank": 3,
-      "headline": "Acquisition",
-      "symbol": "PRESTIGE",
-      "impact": "high",
-      "why_it_matters": "Expansion via wholly owned subsidiaries signals real\u2011estate growth, impacting sector indices.",
-      "source_date": "23-Nov-2026",
+      "headline": "Vaxtex Cotfab Limited proposes preferential issue",
+      "symbol": "VCL",
+      "impact": "medium",
+      "why_it_matters": "Capital raising through a preferential issue can support expansion plans but also dilutes existing shareholders, affecting the company's valuation and the broader textile sector sentiment.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261895+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959522+05:30"
     },
     {
       "rank": 4,
-      "headline": "General Updates - Land Acquisition",
-      "symbol": "BRIGADE",
-      "impact": "medium",
-      "why_it_matters": "Secunderabad land purchase for \u20b91000\u202fcr could boost real\u2011estate sector and investor sentiment.",
-      "source_date": "23-Nov-2026",
+      "headline": "Adani Enterprises Limited incorporates wholly owned subsidiary Nashik Phata Road Limited",
+      "symbol": "ADANIENT",
+      "impact": "low",
+      "why_it_matters": "The addition of a new subsidiary reflects Adani's expansion strategy, but its immediate impact on the market and sector indices is limited.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261898+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959525+05:30"
     },
     {
       "rank": 5,
-      "headline": "Pendency of Litigation",
-      "symbol": "GREENPLY",
-      "impact": "medium",
-      "why_it_matters": "Arbitral award may affect company\u2019s financials, influencing consumer\u2011goods sector perception.",
-      "source_date": "23-Nov-2026",
+      "headline": "EPL Limited issues commercial papers worth Rs. 60 crore",
+      "symbol": "EPL",
+      "impact": "low",
+      "why_it_matters": "Issuing commercial papers provides short-term liquidity but has minimal influence on the broader market or sector performance.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261900+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959527+05:30"
     },
     {
       "rank": 6,
-      "headline": "Credit Rating",
-      "symbol": "FUSION",
-      "impact": "medium",
-      "why_it_matters": "Credit rating change impacts cost of capital and investor confidence in financial sector.",
-      "source_date": "23-Nov-2026",
+      "headline": "PTCIL announces analyst/institutional investor meeting",
+      "symbol": "PTCIL",
+      "impact": "low",
+      "why_it_matters": "While the meeting may provide insights, it is unlikely to materially affect market indices or sector sentiment.",
+      "source_date": "2026-11-24",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261903+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959530+05:30"
     },
     {
       "rank": 7,
-      "headline": "Bagging/Receiving of orders/contracts",
-      "symbol": "TEXRAIL",
-      "impact": "medium",
-      "why_it_matters": "Order book for infrastructure projects can affect sector performance and market sentiment.",
-      "source_date": "23-Nov-2026",
+      "headline": "Sasken Technologies Limited announces analyst/institutional investor meeting",
+      "symbol": "SASKEN",
+      "impact": "low",
+      "why_it_matters": "The meeting is routine and unlikely to alter market-wide dynamics.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261906+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959533+05:30"
     },
     {
       "rank": 8,
-      "headline": "Amendment to AOA/MOA",
-      "symbol": "MONEYVIEW",
+      "headline": "Vikram Solar Limited announces analyst/institutional investor meeting",
+      "symbol": "VIKRAMSOLR",
       "impact": "low",
-      "why_it_matters": "Corporate governance update with limited market impact.",
-      "source_date": "23-Nov-2026",
+      "why_it_matters": "Routine investor relations activity with negligible market impact.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261908+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959536+05:30"
     },
     {
       "rank": 9,
-      "headline": "Shareholders meeting",
-      "symbol": "IMAGICAA",
+      "headline": "Triveni Power Transmission Limited provides general updates",
+      "symbol": "TRIVENIPT",
       "impact": "low",
-      "why_it_matters": "Voting results with minimal effect on market\u2011wide sentiment.",
-      "source_date": "23-Nov-2026",
+      "why_it_matters": "General updates are unlikely to influence sector indices or overall market sentiment.",
+      "source_date": "2026-11-23",
       "model": "openai/gpt-oss-20b",
-      "generated_at_ist": "2026-11-23T18:10:04.261911+05:30"
+      "generated_at_ist": "2026-11-24T05:46:03.959539+05:30"
+    },
+    {
+      "rank": 10,
+      "headline": "Juniper Green Energy Limited receives credit rating update",
+      "symbol": "JNPR",
+      "impact": "low",
+      "why_it_matters": "A credit rating change has limited effect on market indices and sector performance.",
+      "source_date": "2026-11-23",
+      "model": "openai/gpt-oss-20b",
+      "generated_at_ist": "2026-11-24T05:46:03.959541+05:30"
     }
   ]
 }
