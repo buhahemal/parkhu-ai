@@ -12,19 +12,19 @@ Regime **Bullish**. Sector leader Technology Services (55.75% 1m), laggard Elect
 
 Regime is unfavourable. Fewer and smaller positions are the correct response, and a large cash weight is an active position rather than a failure to find ideas (KB-07, KB-09 Ch.4).
 
-## Open suggestions (38)
+## Open suggestions (39)
 
-**7 need action today.**
+**6 need action today.**
 
 | Symbol | Opened | Entry | Now | P/L | R | Held | Action |
 |---|---|---|---|---|---|---|---|
 | ACUTAAS | 2026-11-12 | ₹3,996 | ₹4,080 | 2.1% | 0.26R | 11/14d | TIGHTEN / REVIEW |
-| AFIL | 2026-11-26 | ₹9 | ₹9 | 0% | 0R | 1/19d | EXIT — STOP HIT |
 | ALIVUS | 2026-11-02 | ₹1,448 | ₹1,418 | -2.04% | -0.26R | 19/14d | TIGHTEN / REVIEW |
 | ICICIBANK | 2026-11-05 | ₹1,477 | ₹1,611 | 9.05% | 2.35R | 16/17d | BANK PARTIAL — T1 REACHED |
 | KOTAKBANK | 2026-10-29 | ₹459 | ₹510 | 11.1% | 2.5R | 21/16d | BANK PARTIAL — T1 REACHED |
 | LAURUSLABS | 2026-11-17 | ₹2,332 | ₹2,505 | 7.42% | 1.01R | 8/17d | TIGHTEN / REVIEW |
 | TFCILTD | 2026-11-02 | ₹158 | ₹175 | 10.75% | 1.43R | 19/17d | TIGHTEN / REVIEW |
+| AFIL | 2026-11-27 | ₹9 | ₹9 | 0% | 0R | 0/19d | HOLD |
 | APLLTD | 2026-11-26 | ₹1,019 | ₹1,019 | 0% | 0R | 1/16d | HOLD |
 | APOLLOHOSP | 2026-11-20 | ₹9,226 | ₹9,222 | -0.04% | -0.01R | 5/17d | HOLD |
 | AUROPHARMA | 2026-11-25 | ₹1,843 | ₹1,811 | -1.74% | -0.39R | 2/17d | HOLD |
@@ -48,6 +48,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | MAHABANK | 2026-11-17 | ₹95 | ₹94 | -1.12% | -0.2R | 8/16d | HOLD |
 | MEDANTA | 2026-11-19 | ₹1,476 | ₹1,512 | 2.44% | 0.41R | 6/16d | HOLD |
 | MODIS | 2026-11-16 | ₹460 | ₹444 | -3.34% | -0.42R | 9/12d | HOLD |
+| OBEROIRLTY | 2026-11-27 | ₹1,905 | ₹1,905 | 0% | 0R | 0/17d | HOLD |
 | ORIENTELEC | 2026-11-06 | ₹200 | ₹188 | -5.67% | -0.73R | 15/16d | HOLD |
 | PETRONET | 2026-11-11 | ₹330 | ₹326 | -1.02% | -0.22R | 12/16d | HOLD |
 | PHOENIXLTD | 2026-11-17 | ₹2,229 | ₹2,291 | 2.78% | 0.46R | 8/16d | HOLD |
@@ -58,12 +59,12 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 | STEL | 2026-11-21 | ₹616 | ₹620 | 0.66% | 0.08R | 5/7d | HOLD |
 
 - **ACUTAAS** — TIGHTEN / REVIEW: ADX 23 — trend no longer tradeable — one condition gone, thesis thinning. Best 3.35% / worst -6.9% while held.
-- **AFIL** — EXIT — STOP HIT: session low at/below stop ₹8.16 (last ₹8.72). Best 4.93% / worst -15.37% while held.
 - **ALIVUS** — TIGHTEN / REVIEW: ADX 13 — trend no longer tradeable — one condition gone, thesis thinning. Best 8.73% / worst -3.05% while held.
 - **ICICIBANK** — BANK PARTIAL — T1 REACHED: ₹1,611.00 above T1 ₹1,590.85 — bank part, trail the rest, move stop to breakeven ₹1,477.30. Best 11.83% / worst -2.13% while held.
 - **KOTAKBANK** — BANK PARTIAL — T1 REACHED: ₹509.95 above T1 ₹499.77 — bank part, trail the rest, move stop to breakeven ₹459.00. Best 13.62% / worst -4.3% while held.
 - **LAURUSLABS** — TIGHTEN / REVIEW: ADX 22 — trend no longer tradeable — one condition gone, thesis thinning. Best 7.93% / worst -5.03% while held.
 - **TFCILTD** — TIGHTEN / REVIEW: ADX 22 — trend no longer tradeable — one condition gone, thesis thinning. Best 10.79% / worst -4.27% while held.
+- **AFIL** — HOLD: +0.00% (+0.00R), 0d held, ~19d left to the T1 horizon.
 - **APLLTD** — HOLD: +0.00% (+0.00R), 1d held, ~15d left to the T1 horizon. Best 2.41% / worst -0.43% while held.
 - **APOLLOHOSP** — HOLD: -0.04% (-0.01R), 5d held, ~12d left to the T1 horizon. Best 1.99% / worst -4.62% while held.
 - **AUROPHARMA** — HOLD: -1.74% (-0.39R), 2d held, ~15d left to the T1 horizon. Best 0.49% / worst -2.02% while held.
@@ -87,6 +88,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **MAHABANK** — HOLD: -1.12% (-0.20R), 8d held, ~8d left to the T1 horizon. Best 5.7% / worst -3.43% while held.
 - **MEDANTA** — HOLD: +2.44% (+0.41R), 6d held, ~10d left to the T1 horizon. Best 4.6% / worst -2.9% while held.
 - **MODIS** — HOLD: -3.34% (-0.42R), 9d held, ~3d left to the T1 horizon. Best 2.27% / worst -6.25% while held.
+- **OBEROIRLTY** — HOLD: +0.00% (+0.00R), 0d held, ~17d left to the T1 horizon.
 - **ORIENTELEC** — HOLD: -5.67% (-0.73R), 15d held, ~1d left to the T1 horizon. Best 4.04% / worst -6.27% while held.
 - **PETRONET** — HOLD: -1.02% (-0.22R), 12d held, ~4d left to the T1 horizon. Best 1.97% / worst -2.35% while held.
 - **PHOENIXLTD** — HOLD: +2.78% (+0.46R), 8d held, ~8d left to the T1 horizon. Best 4.44% / worst -1.97% while held.
@@ -95,8 +97,6 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 - **SHARDAMOTR** — HOLD: -1.27% (-0.16R), 8d held, ~7d left to the T1 horizon. Best 4.8% / worst -5.76% while held.
 - **SOUTHBANK** — HOLD: -1.86% (-0.29R), 14d held, ~2d left to the T1 horizon. Best 6.63% / worst -3% while held.
 - **STEL** — HOLD: +0.66% (+0.08R), 5d held, ~2d left to the T1 horizon. Best 8.81% / worst -0.2% while held.
-
-Closed today: AFIL — moved to `trades/closed.csv`.
 
 ### Measured so far
 
@@ -160,7 +160,7 @@ Real Estate (Real Estate Development) · CMP ₹1,261 · score **84.2** (Buy)
 
 **Position:** 7 shares · deploy ₹8,828 (8.83% of capital) · risk ₹633 (0.63%) if stopped · profit ₹1,267 at T1, ₹1,900 at T2 · size set by exposure cap (10%/name)
 
-**Evidence:** ADX 25 · RSI 67.3 · delivery 42.6% · RS vs Nifty 14.4%, vs sector 8.6% · 1m 28.7%, 3m 0.1% · -6.2% from 52w high · ATR 3.6% of price · factor rank 41 · TV Strong buy · next earnings in 60d
+**Evidence:** ADX 25 · RSI 67.3 · delivery 42.6% · RS vs Nifty 14.4%, vs sector 8.6% · 1m 28.7%, 3m 0.1% · -6.2% from 52w high · ATR 3.6% of price · factor rank 42 · TV Strong buy · next earnings in 60d
 
 **Invalidation:** a close below ₹1,171; the real structural invalidation is lower, at ₹1,143 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 6.64% above entry.
 
@@ -186,7 +186,7 @@ Technology Services (Internet Software/Services) · CMP ₹9 · score **84.1** (
 
 ### APLLTD — Alembic Pharmaceuticals Limited
 
-Health Technology (Pharmaceuticals: Major) · CMP ₹1,019 · score **81.7** (Buy)
+Health Technology (Pharmaceuticals: Major) · CMP ₹1,019 · score **81.5** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -217,8 +217,8 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: RELIANCE (~50d), HDFCBA
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
 | PHOENIXLTD | Real Estate | ₹2,291 | 75.1 | ₹2,291 | ₹2,158 | ₹2,557 | 11.6% |
-| ANTHEM | Health Technology | ₹976 | 74.3 | ₹976 | ₹924 | ₹1,079 | 10.65% |
-| SCPL | Consumer Non-Durables | ₹713 | 71.8 | ₹713 | ₹656 | ₹827 | 16% |
+| ANTHEM | Health Technology | ₹976 | 74.1 | ₹976 | ₹924 | ₹1,079 | 10.65% |
+| SCPL | Consumer Non-Durables | ₹713 | 71.9 | ₹713 | ₹656 | ₹827 | 16% |
 
 These need a score of 80 or above to become positions (KB-14 Fig 3-1).
 

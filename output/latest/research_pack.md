@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-27
 
 - **session_date:** 2026-07-24 (trading day: True)
-- **generated_at_ist:** 2026-11-27T03:28:25.241838+05:30
+- **generated_at_ist:** 2026-11-27T06:10:36.986355+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -14,12 +14,12 @@
 
 ## Funnel
 
-- universe: 3250
-- trend = Bullish: 929
-- price > SMA200: 701
-- price > EMA50: 687
-- ADX14 > 25: 355
-- RSI14 in 40-80: 342
+- universe: 3246
+- trend = Bullish: 916
+- price > SMA200: 696
+- price > EMA50: 682
+- ADX14 > 25: 354
+- RSI14 in 40-80: 341
 - RS > 0 vs NIFTY and sector: 142
 - delivery% >= 40: 75
 - relative_volume >= 1: 20
@@ -29,24 +29,24 @@
 
 ## Survivors (top 20 of 20)
 
-- **HINDUNILVR** [rejected] score 89.4 — T1 needs more than 22 trading days (~1 month)
+- **HINDUNILVR** [rejected] score 89.5 — T1 needs more than 22 trading days (~1 month)
 - **OBEROIRLTY** [idea] score 88.4 — selected as idea
 - **HDFCBANK** [rejected] score 88.1 — T1 needs more than 22 trading days (~1 month)
 - **DCBBANK** [idea] score 86.8 — selected as idea
 - **LODHA** [idea] score 84.2 — selected as idea
 - **AFIL** [idea] score 84.1 — selected as idea
-- **APLLTD** [idea] score 81.7 — selected as idea
+- **APLLTD** [idea] score 81.5 — selected as idea
 - **PHOENIXLTD** [watchlist] score 75.1 — score in Watch band (70–80)
-- **ANTHEM** [watchlist] score 74.3 — score in Watch band (70–80)
-- **SCPL** [watchlist] score 71.8 — score in Watch band (70–80)
-- **MARICO** [rejected] score 69.7 — score below Watch band
+- **ANTHEM** [watchlist] score 74.1 — score in Watch band (70–80)
+- **SCPL** [watchlist] score 71.9 — score in Watch band (70–80)
+- **MARICO** [rejected] score 69.8 — score below Watch band
 - **DLF** [rejected] score 68.1 — score below Watch band
 - **MANAKCOAT** [rejected] score 67.2 — score below Watch band
 - **RELIANCE** [rejected] score 65.6 — T1 needs more than 22 trading days (~1 month)
 - **360ONE** [rejected] score 65.0 — score below Watch band
-- **ORTINGLOBE** [rejected] score 63.8 — score below Watch band
+- **ORTINGLOBE** [rejected] score 63.6 — score below Watch band
 - **UNIENTER** [rejected] score 63.0 — T1 needs more than 22 trading days (~1 month)
-- **PARAGMILK** [rejected] score 61.0 — score below Watch band
+- **PARAGMILK** [rejected] score 61.1 — score below Watch band
 - **PRESTIGE** [rejected] score 57.6 — score below Watch band
 - **GODREJPROP** [rejected] score 54.4 — score below Watch band
 
@@ -72,7 +72,7 @@
 - entry 8.72 | stop 8.16 | t1 11.1 | t2 11.66 | t3 12.22 | R:R 4.25
 - qty 1146 | deployed 9993.0 (9.99%) | risk ₹642.0
 
-### APLLTD — Buy (score 81.7)
+### APLLTD — Buy (score 81.5)
 - Alembic Pharmaceuticals Limited | risk_sector: Health Technology
 - entry 1018.8 | stop 949.9 | t1 1156.59 | t2 1225.49 | t3 1294.39 | R:R 2.0
 - qty 9 | deployed 9169.0 (9.17%) | risk ₹620.0
@@ -122,7 +122,6 @@
 ## Needs action
 
 - **ACUTAAS**: TIGHTEN / REVIEW — ADX 23 — trend no longer tradeable — one condition gone, thesis thinning
-- **AFIL**: EXIT — STOP HIT — session low at/below stop ₹8.16 (last ₹8.72)
 - **ALIVUS**: TIGHTEN / REVIEW — ADX 13 — trend no longer tradeable — one condition gone, thesis thinning
 - **ICICIBANK**: BANK PARTIAL — T1 REACHED — ₹1,611.00 above T1 ₹1,590.85 — bank part, trail the rest, move stop to breakeven ₹1,477.30
 - **KOTAKBANK**: BANK PARTIAL — T1 REACHED — ₹509.95 above T1 ₹499.77 — bank part, trail the rest, move stop to breakeven ₹459.00
@@ -136,35 +135,35 @@
 ## Swing candidates (top)
 
 - LODHA: score=15 rs_nifty=14.45 deliv=42.63
-- APLLTD: score=14 rs_nifty=19.36 deliv=67.47
-- MANAKCOAT: score=14 rs_nifty=17.83 deliv=43.56
-- PRESTIGE: score=14 rs_nifty=17.56 deliv=41.82
-- MAHABANK: score=14 rs_nifty=8.1 deliv=47.73
-- OBEROIRLTY: score=14 rs_nifty=6.34 deliv=52.96
-- DCBBANK: score=14 rs_nifty=3.28 deliv=41.25
-- BSE: score=14 rs_nifty=3.85 deliv=39.09
 - SCPL: score=14 rs_nifty=9.91 deliv=49.96
-- LUMAXTECH: score=13 rs_nifty=13.77 deliv=45.7
-- SHARDAMOTR: score=13 rs_nifty=8.32 deliv=44.82
-- MCX: score=13 rs_nifty=8.87 deliv=31.8
-- PDSL: score=13 rs_nifty=11.46 deliv=48.8
-- MOTILALOFS: score=13 rs_nifty=16.46 deliv=32.05
-- ANTHEM: score=13 rs_nifty=4.4 deliv=51.95
+- MAHABANK: score=14 rs_nifty=8.1 deliv=47.73
+- MANAKCOAT: score=14 rs_nifty=17.83 deliv=43.56
+- DCBBANK: score=14 rs_nifty=3.28 deliv=41.25
+- OBEROIRLTY: score=14 rs_nifty=6.34 deliv=52.96
+- BSE: score=14 rs_nifty=3.85 deliv=39.09
+- APLLTD: score=14 rs_nifty=19.36 deliv=67.47
+- PRESTIGE: score=14 rs_nifty=17.56 deliv=41.82
+- EIMCOELECO: score=13 rs_nifty=7.08 deliv=54.48
+- ROTO: score=13 rs_nifty=3.52 deliv=49.29
+- RAMCOSYS: score=13 rs_nifty=0.33 deliv=49.16
+- PHOENIXLTD: score=13 rs_nifty=6.72 deliv=53.01
+- MMFL: score=13 rs_nifty=9.41 deliv=57.83
+- HINDOILEXP: score=13 rs_nifty=17.83 deliv=46.85
 
 ## World markets (India cues)
 
 ### Asia
-- Nikkei: -2.78% (bear)
+- Nikkei: +0.78% (bull)
 - Hang Seng: -1.14% (bear)
 - Shanghai: -2.03% (bear)
-- Kospi: -6.16% (bear)
+- Kospi: +0.08% (neutral)
 - Taiwan: -4.80% (bear)
-- ASX 200: +0.82% (bull)
+- ASX 200: +1.12% (bull)
 
 ### Europe
-- FTSE 100: +1.75% (bull)
-- DAX: +2.08% (bull)
-- Euro Stoxx 50: +2.04% (bull)
+- FTSE 100: -0.38% (bear)
+- DAX: -1.26% (bear)
+- Euro Stoxx 50: -1.82% (bear)
 
 ### US
 - S&P 500: -0.25% (bear)
@@ -173,9 +172,9 @@
 - US VIX: -5.27% (bull)
 
 ### Macro
-- USDINR: -0.40% (bull)
-- Crude WTI: +1.47% (bull)
-- Brent: -3.04% (bear)
+- USDINR: -0.61% (bull)
+- Crude WTI: +1.74% (bull)
+- Brent: -2.96% (bear)
 - DXY: +0.10% (neutral)
 - US 10Y: -1.14% (bull)
 - India ETF: +0.87% (bull)
@@ -187,52 +186,59 @@
 - **model:** openai/gpt-oss-120b
 - **stance:** selective_aggressive
 
-The Indian market remains in a bullish regime with Nifty up 1.85% and a medium VIX indicating moderate risk appetite. FII and DII inflows are both strong, supporting the upside. While Europe shows bullish cues, Asia is bearish, adding a mixed macro backdrop. Sector exposure is tilted toward banks and real estate, which dominate the current idea set.
+Nifty posted a 1.85% gain on a bullish trend, supported by medium VIX levels and net foreign inflows of ~5.8bn. The overall risk is medium, while Asian and European cues remain bearish, adding a cautious backdrop. Parkhu’s funnel retained ~27% of the universe after trend, relative strength and volume filters. The regime remains bullish, favouring selective long ideas.
 
-- **OBEROIRLTY** [consider_entry/high] entry=1905.2 stop=1805.91 t1=2103.77 hold=17d — Parkhu score 88.4, 2R target in a bullish real‑estate theme.
-- **DCBBANK** [consider_entry/high] entry=227.17 stop=209.0 t1=263.52 hold=16d — Score 86.8, strong banking tailwind and 2R upside.
-- **LODHA** [consider_entry/medium] entry=1261.2 stop=1170.73 t1=1442.15 hold=16d — Score 84.2, solid real‑estate play but slightly lower conviction.
-- **AFIL** [consider_entry/medium] entry=8.72 stop=8.16 t1=11.1 hold=19d — Score 84.1, technology services with 4.25R target, but recent stop hit requires caution.
-- **APLLTD** [consider_entry/medium] entry=1018.8 stop=949.9 t1=1156.59 hold=16d — Score 81.7, health‑tech exposure, 2R upside.
-- **KOTAKBANK** [manage_open/high] entry=459.0 stop=438.62 t1=499.77 hold=16d — T1 reached, partial profit taken, move stop to breakeven.
-- **ICICIBANK** [manage_open/high] entry=1477.3 stop=1420.52 t1=1590.85 hold=17d — T1 reached, bank part profit, trail remaining position.
-- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX falling, trend weakening; tighten stop and review.
-- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — ADX falling, trend weakening; tighten stop and review.
-- **ACUTAAS** [manage_open/medium] entry=3996.1 stop=3676.41 t1=4635.48 hold=14d — ADX 23, trend no longer tradeable; tighten/review position.
+- **OBEROIRLTY** [consider_entry/high] entry=1905.2 stop=1805.91 t1=2103.77 hold=17d — Buy band with 2R target, parkhu score 88.4; aligns with bullish regime
+- **DCBBANK** [consider_entry/high] entry=227.17 stop=209.0 t1=263.52 hold=16d — Buy band, parkhu score 86.8, 2R target in strong banking tailwinds
+- **LODHA** [consider_entry/high] entry=1261.2 stop=1170.73 t1=1442.15 hold=16d — Buy band, parkhu score 84.2, 2R target; real‑estate sector gaining from bullish sentiment
+- **AFIL** [consider_entry/high] entry=8.72 stop=8.16 t1=11.1 hold=19d — Buy band, parkhu score 84.1, attractive 4.25R reward
+- **APLLTD** [consider_entry/high] entry=1018.8 stop=949.9 t1=1156.59 hold=16d — Buy band, parkhu score 81.5, 2R target in health‑tech niche
+- **KOTAKBANK** [manage_open/high] entry=459.0 stop=438.62 t1=499.77 hold=16d — T1 reached; partial exit executed, trail remaining position and move stop to breakeven
+- **ICICIBANK** [manage_open/high] entry=1477.3 stop=1420.52 t1=1590.85 hold=17d — T1 reached; partial exit, trail rest and set stop at entry breakeven
+- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX 13 indicates weakening trend; tighten stop and review thesis
+- **ACUTAAS** [manage_open/medium] entry=3996.1 stop=3676.41 t1=4635.48 hold=14d — ADX 23 shows trend no longer tradeable; tighten stop and reassess
+- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — ADX 22 signals fading trend; tighten stop and monitor
 
 ### AI stock reviews
 
-- **OBEROIRLTY** [high] Oberoi Realty is in a bullish trend with a strong ADX of 34.5 and RSI near 70, indicating momentum that can sustain a short‑term move. The stock is trading close to its 52‑week high with high delivery (52.96%) and outperforms both the Nifty and its sector, making a ≤1‑month swing to the T1 target of 2103.77 realistic.
-  - catalysts: Upcoming earnings announcement in ~2 months, Favourable housing policy announcements, Improving macro sentiment for Indian real estate
-  - risks: Earnings miss or guidance downgrade, Rising interest rates affecting financing costs, Regulatory or land‑acquisition delays
-  - watch: A break below the stop level of 1805.91 would invalidate the upside case, while failure to stay above the 2000 level could stall the move toward the T1 target.
-- **DCBBANK** [high] DCB Bank is in a strong bullish trend with ADX above 30 and RSI in a neutral zone, out‑performing both Nifty and its sector while trading near its 52‑week high, making it a suitable ≤1‑month swing candidate targeting the 263.52 level.
-  - catalysts: Quarterly earnings beat, Accelerating loan growth, Favourable RBI policy changes, Positive banking sector sentiment
-  - risks: Earnings miss, Rising NPA levels, Tightening monetary policy, Broader market volatility
-  - watch: A miss on earnings or a break below the stop level of 209 would invalidate the setup; a clear move above 263.52 confirms the target.
-- **LODHA** [high] Lodha Developers is in a strong bullish trend (ADX ≈ 25, RSI ≈ 67) and trades about 6% below its 52‑week high, offering a 2:1 reward‑to‑risk to the 1442.15 target, which fits a ≤1‑month swing.
-  - catalysts: Upcoming earnings in ~60 days, Sustained demand for premium residential projects, Favourable macro backdrop with low VIX and bullish regime
-  - risks: Potential slowdown in real‑estate demand, Regulatory changes affecting approvals, Earnings miss
-  - watch: A break below the stop at 1170.73 invalidates the setup; failure to reach the 1442.15 target within the next 30 days signals weakening momentum.
-- **AFIL** [high] The stock is in a strong bullish trend with ADX above 30 and RSI near 70, indicating momentum is intact. Relative strength outperforms both the Nifty and its sector, and a 24.6% one‑month return suggests recent buying pressure. With a target of 11.1 reachable in about 19 trading days, the setup aligns with a sub‑month swing trade.
-  - catalysts: Quarterly earnings beat expectations, Announcement of new technology services contracts, Positive sector sentiment in technology services
-  - risks: Earnings miss or guidance downgrade, Broader market pullback despite bullish regime, Regulatory changes affecting fintech sector
-  - watch: A break below the stop at 8.16 or a sharp drop in ADX below 25 would invalidate the trade; conversely, sustained price above 9.5 and continued high delivery support the upside target.
-- **APLLTD** [high] Alembic Pharmaceuticals shows a strong bullish momentum with a 33% 1‑month return, ADX above 50 and RSI in the upper‑mid range, placing the current price just below the 5% distance to its 52‑week high. The target of 1156.59 is reachable within the estimated 16‑day hold, making it a tight ≤1‑month swing opportunity.
-  - catalysts: Upcoming earnings in ~2 months may confirm growth trajectory, Potential approval of new drug pipeline, Favorable health‑tech sector tailwinds in a bullish market
-  - risks: Earnings miss or guidance downgrade, Regulatory setbacks on product approvals, Broader market pullback despite bullish regime
-  - watch: A break below the stop at 949.9 or failure to sustain above 1018.8 would invalidate the trade; a decisive move above the t1 target of 1156.59 confirms the upside.
+- **OBEROIRLTY** [high] Oberoi Realty is trading near its 52‑week high with strong bullish momentum, ADX above 30 and RSI near 70, indicating a robust uptrend that can be captured in a ≤1‑month swing. The stock’s delivery percentage and outperformance versus Nifty and its sector support a short‑term upside to the first target.
+  - catalysts: Upcoming earnings release in ~2 months, Potential policy easing for real estate sector, Positive macro sentiment in bullish market regime
+  - risks: Higher‑than‑expected earnings miss, Rising interest rates affecting real estate financing, Regulatory slowdown in approvals
+  - watch: Break below the stop level of 1805.91 would invalidate the trade, while a move past the T1 target of 2103.77 confirms the upside thesis.
+- **DCBBANK** [high] DCB Bank is in a strong bullish trend with ADX above 35 and RSI near 57, indicating momentum and room for upside. The stock trades 6.5% below its 52‑week high, offering a tight risk‑reward profile (entry 227.17, target 263.52, stop 209) suitable for a sub‑month swing.
+  - catalysts: Quarterly earnings beat, RBI policy easing, Improved loan growth, Sector inflow into banks
+  - risks: Broad market pullback, Deteriorating asset quality, Regulatory tightening, Higher interest rates
+  - watch: A break below the stop at 209 or a failure to stay above the entry would invalidate the trade; a significant earnings miss would also be a red flag.
+- **LODHA** [high] Lodha Developers Ltd. is in a strong bullish trend with ADX above 25, RSI near 67 and a Parkhu score of 84.2, offering a clear entry at the current price of 1261.2 and a target of 1442.15 within the estimated 16‑day horizon, making it well‑suited for a ≤1‑month swing.
+  - catalysts: Upcoming earnings in ~60 days, Favourable real‑estate policy outlook, Low India VIX indicating reduced market volatility
+  - risks: Earnings miss or guidance downgrade, Policy tightening or credit cost rise, Sector slowdown due to macro‑economic headwinds
+  - watch: A break below the stop level of 1170.73 or a sharp RSI drop below 50 would invalidate the trade, while a move past the t1 target of 1442.15 confirms the setup.
+- **AFIL** [high] AFIL is in a strong bullish trend with ADX above 30 and RSI near 70, indicating robust momentum. The entry at 8.72 and target of 11.1 can be reached within the 19‑day horizon, offering a 4.25 R:R. The stock’s outperformance versus Nifty and its sector supports a short‑term upside play.
+  - catalysts: Quarterly earnings beat, New technology services contract, Positive sector rotation
+  - risks: Overbought RSI pullback, Technology services sector slowdown, Broad market correction
+  - watch: A break below the stop at 8.16 or a sharp RSI decline would invalidate the setup; monitor upcoming earnings and sector trends for triggers.
+- **APLLTD** [high] Alembic Pharmaceuticals is in a strong uptrend with ADX above 50 and RSI in the upper‑mid range, indicating momentum. The stock trades near its 52‑week high and outperforms both the Nifty and its health‑technology peers, offering a clear short‑term upside to the next resistance at ~₹1,156. The entry at ₹1,018 with a stop at ₹950 gives a risk‑reward of 2:1 and the model expects a ~16‑day hold, fitting a ≤1‑month swing.
+  - catalysts: Sector tailwinds in health‑technology, Potential regulatory clearance for new drug, Positive earnings momentum in upcoming quarters
+  - risks: Earnings miss or guidance downgrade, Regulatory setbacks on product pipeline, Broader market pull‑back reflected in rising VIX
+  - watch: A break below the ₹950 stop or failure to hold above the 20‑day moving average would invalidate the thesis; a decisive move through the ₹1,150 resistance confirms the target.
 
 ### Claude feed
 
-Regime: Bullish Nifty, Medium VIX, FII/DII net inflows, Asia bearish, Europe bullish. Stance: selective_aggressive. Top ideas: OBEROIRLTY (high conviction), DCBBANK (high), LODHA (medium). Caveats: Scores provisional (65% coverage), missing promoter/ownership data, R:R floor not independently filtered, hold periods are estimates, no win‑rate history.
+Regime: Bullish Nifty, medium VIX, net FII inflow. Stance: selective_aggressive. Top ideas: OBEROIRLTY, DCBBANK, LODHA, AFIL, APLLTD (all high conviction buy bands). Open positions needing action: KOTAKBANK & ICICIBANK (partial exit, trail), ALIVUS, ACUTAAS, TFCILTD (tighten stops). Caveats: score coverage 65%, several score components missing, R:R based on static 2R floor, no historic win‑rate data.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Receipt of In-principle Approvals for Preferential Issue (SWARAJ) — Receipt of in-principle approvals for a preferential issue indicates potential capital infusion and expansion plans, likely to influence equity market sentiment and sector performance.
-2. **[medium]** Muthoot Capital Services Raises Funds via Securitization (MUTHOOTCAP) — Securitization fund raising enhances liquidity for the financial sector, could affect credit markets and investor perception of banking sector.
-3. **[medium]** Infosys Investor Conference (INFY) — Investor conference may provide insights into company strategy, impacting investor sentiment and potentially the IT sector.
+1. **[high]** Receipt of In‑Principle Approvals for Preferential Issue of 35,00,000 Equity Shares and 17,00,000 Shares (SWARAJ) — The approval allows a significant capital raise, potentially diluting existing shareholders and boosting the company’s balance sheet, which can influence the consumer goods sector and overall market sentiment.
+2. **[medium]** Infosys Investor Conference (INFY) — The conference may attract institutional interest and signal future business prospects for the IT sector, affecting investor sentiment and potentially the NIFTY IT index.
+3. **[medium]** Muthoot Capital Services Raises Funds via Securitisation (MUTHOOTCAP) — The securitisation indicates liquidity management and could affect credit conditions in the financial sector, impacting the NIFTY Bank index.
+4. **[medium]** ACME Solar Commences Commercial Production of Hybrid Power Project Component (ACMESOLAR) — Operational progress in renewable energy projects can lift the renewable energy sector and influence the NIFTY Energy index.
+5. **[medium]** Allotment of Non‑Convertible Debentures of INR 110 Crores (EMBDL) — The debenture issuance adds to the company’s debt profile, affecting the debt market and potentially the NIFTY Debt index.
+6. **[medium]** Sandur Manganese & Iron Ores Credit Rating Update (SANDUMA) — A credit rating change can alter borrowing costs and investor perception, impacting the mining sector and related indices.
+7. **[low]** ZF Commercial Vehicle Control Systems India Receives Favourable Orders from CESTAT (ZFCVINDIA) — While a positive operational update, it is limited in scope and unlikely to move broader indices.
+8. **[low]** Omnitech Engineering Receives Development Order from BrahMos Aerospace (OMNI) — A development order is a company‑specific event with minimal market‑wide implications.
+9. **[low]** Onesource Specialty Pharma ESG Ratings Update (ONESOURCE) — ESG rating changes are largely informational and unlikely to influence sector or market indices.
+10. **[low]** Thomas Cook (India) Notice of Extraordinary General Meeting (THOMASCOOK) — A shareholder meeting is a routine corporate event with negligible impact on market sentiment or indices.
 
 ## Deep-dive URLs (after push)
 
