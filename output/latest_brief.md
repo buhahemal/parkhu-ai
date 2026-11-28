@@ -106,7 +106,7 @@ Regime is unfavourable. Fewer and smaller positions are the correct response, an
 
 ### HMVL — Hindustan Media Ventures Limited
 
-Consumer Services (Publishing: Newspapers) · CMP ₹103 · score **87.7** (Buy)
+Consumer Services (Publishing: Newspapers) · CMP ₹103 · score **87.8** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -120,13 +120,13 @@ Consumer Services (Publishing: Newspapers) · CMP ₹103 · score **87.7** (Buy)
 
 **Position:** 97 shares · deploy ₹9,988 (9.99% of capital) · risk ₹799 (0.8%) if stopped · profit ₹1,599 at T1, ₹2,397 at T2 · size set by exposure cap (10%/name)
 
-**Evidence:** ADX 35.8 · RSI 69.5 · delivery 71.6% · RS vs Nifty 23.2%, vs sector 20.9% · 1m 36.9%, 3m 18.4% · -4.8% from 52w high · ATR 5.4% of price · factor rank 82 · TV Strong buy · next earnings in 52d
+**Evidence:** ADX 35.8 · RSI 69.5 · delivery 71.6% · RS vs Nifty 23.2%, vs sector 20.9% · 1m 36.9%, 3m 18.4% · -4.8% from 52w high · ATR 5.4% of price · factor rank 83 · TV Strong buy · next earnings in 52d
 
 **Invalidation:** a close below ₹95; the real structural invalidation is lower, at ₹86 — the stop can trigger while the thesis is still intact; T1 needs a break to new highs; the 52-week high is 5.04% above entry.
 
 ### LODHA — Lodha Developers Ltd.
 
-Real Estate (Real Estate Development) · CMP ₹1,252 · score **84.7** (Buy)
+Real Estate (Real Estate Development) · CMP ₹1,252 · score **85.3** (Buy)
 
 | | Level | Move |
 |---|---|---|
@@ -176,10 +176,10 @@ Skipped — T1 beyond 22 trading-day (~1 month) mandate: HINDUNILVR (~58d), AFFL
 
 | Symbol | Sector | CMP | Score | Entry if triggered | Stop | T1 | Profit % |
 |---|---|---|---|---|---|---|---|
-| MOTILALOFS | NBFC & Capital Markets | ₹1,222 | 79.6 | ₹1,222 | ₹1,131 | ₹1,404 | 14.91% |
-| AGARWALEYE | Health Services | ₹581 | 73.6 | ₹581 | ₹543 | ₹658 | 13.24% |
-| ANTHEM | Health Technology | ₹984 | 73.5 | ₹984 | ₹932 | ₹1,089 | 10.62% |
-| GLAND | Health Technology | ₹3,362 | 72.8 | ₹3,362 | ₹3,171 | ₹3,743 | 11.34% |
+| MOTILALOFS | NBFC & Capital Markets | ₹1,222 | 79.5 | ₹1,222 | ₹1,131 | ₹1,404 | 14.91% |
+| AGARWALEYE | Health Services | ₹581 | 73.4 | ₹581 | ₹543 | ₹658 | 13.24% |
+| ANTHEM | Health Technology | ₹984 | 73.2 | ₹984 | ₹932 | ₹1,089 | 10.62% |
+| GLAND | Health Technology | ₹3,362 | 72.6 | ₹3,362 | ₹3,171 | ₹3,743 | 11.34% |
 
 These need a score of 80 or above to become positions (KB-14 Fig 3-1).
 

@@ -1,7 +1,7 @@
 # Parkhu research pack — 2026-11-28
 
 - **session_date:** 2026-07-24 (trading day: False)
-- **generated_at_ist:** 2026-11-28T03:12:08.416175+05:30
+- **generated_at_ist:** 2026-11-28T06:10:05.292805+05:30
 - **kb:** KB v1.0 (2026-06-21) | capital: 100000.0
 
 ## Regime
@@ -15,11 +15,11 @@
 ## Funnel
 
 - universe: 3252
-- trend = Bullish: 976
-- price > SMA200: 732
-- price > EMA50: 720
-- ADX14 > 25: 361
-- RSI14 in 40-80: 349
+- trend = Bullish: 970
+- price > SMA200: 730
+- price > EMA50: 718
+- ADX14 > 25: 365
+- RSI14 in 40-80: 353
 - RS > 0 vs NIFTY and sector: 134
 - delivery% >= 40: 73
 - relative_volume >= 1: 16
@@ -29,31 +29,31 @@
 
 ## Survivors (top 16 of 16)
 
-- **AGIIL** [rejected] score 93.2 — T1 needs more than 22 trading days (~1 month)
-- **HINDUNILVR** [rejected] score 90.9 — T1 needs more than 22 trading days (~1 month)
+- **AGIIL** [rejected] score 93.8 — T1 needs more than 22 trading days (~1 month)
+- **HINDUNILVR** [rejected] score 91.0 — T1 needs more than 22 trading days (~1 month)
 - **J&KBANK** [rejected] score 88.7 — T1 needs more than 22 trading days (~1 month)
-- **HMVL** [idea] score 87.7 — selected as idea
-- **LODHA** [idea] score 84.7 — selected as idea
+- **HMVL** [idea] score 87.8 — selected as idea
+- **LODHA** [idea] score 85.3 — selected as idea
 - **NINSYS** [idea] score 84.4 — selected as idea
 - **AFFLE** [rejected] score 81.8 — T1 needs more than 22 trading days (~1 month)
-- **MOTILALOFS** [watchlist] score 79.6 — score in Watch band (70–80)
-- **AGARWALEYE** [watchlist] score 73.6 — score in Watch band (70–80)
-- **ANTHEM** [watchlist] score 73.5 — score in Watch band (70–80)
-- **GLAND** [watchlist] score 72.8 — score in Watch band (70–80)
+- **MOTILALOFS** [watchlist] score 79.5 — score in Watch band (70–80)
+- **AGARWALEYE** [watchlist] score 73.4 — score in Watch band (70–80)
+- **ANTHEM** [watchlist] score 73.2 — score in Watch band (70–80)
+- **GLAND** [watchlist] score 72.6 — score in Watch band (70–80)
 - **UNIENTER** [rejected] score 65.3 — T1 needs more than 22 trading days (~1 month)
-- **ORTINGLOBE** [rejected] score 60.8 — score below Watch band
-- **PRESTIGE** [rejected] score 59.7 — score below Watch band
-- **GODREJPROP** [rejected] score 56.4 — score below Watch band
+- **ORTINGLOBE** [rejected] score 60.5 — score below Watch band
+- **PRESTIGE** [rejected] score 60.2 — score below Watch band
+- **GODREJPROP** [rejected] score 56.9 — score below Watch band
 - **THELEELA** [rejected] score 54.3 — score below Watch band
 
 ## Ideas
 
-### HMVL — Buy (score 87.7)
+### HMVL — Buy (score 87.8)
 - Hindustan Media Ventures Limited | risk_sector: Consumer Services
 - entry 102.97 | stop 94.73 | t1 119.45 | t2 127.68 | t3 135.92 | R:R 2.0
 - qty 97 | deployed 9988.0 (9.99%) | risk ₹799.0
 
-### LODHA — Buy (score 84.7)
+### LODHA — Buy (score 85.3)
 - Lodha Developers Ltd. | risk_sector: Real Estate
 - entry 1251.8 | stop 1159.58 | t1 1436.25 | t2 1528.47 | t3 1620.7 | R:R 2.0
 - qty 7 | deployed 8763.0 (8.76%) | risk ₹646.0
@@ -118,20 +118,20 @@
 ## Swing candidates (top)
 
 - AFFLE: score=14 rs_nifty=7.66 deliv=65.25
-- LODHA: score=14 rs_nifty=10.85 deliv=51.7
-- HMVL: score=14 rs_nifty=23.17 deliv=71.63
 - CDSL: score=14 rs_nifty=5.77 deliv=33.98
+- HMVL: score=14 rs_nifty=23.17 deliv=71.63
+- LODHA: score=14 rs_nifty=10.85 deliv=51.7
 - PRESTIGE: score=14 rs_nifty=11.51 deliv=45.15
-- THELEELA: score=13 rs_nifty=2.39 deliv=48.76
-- ZENTEC: score=13 rs_nifty=1.03 deliv=40.53
-- CHOLAFIN: score=13 rs_nifty=8.91 deliv=54.49
-- APOLLOHOSP: score=13 rs_nifty=3.27 deliv=45.6
-- NGIL: score=13 rs_nifty=3.1 deliv=49.36
-- APLLTD: score=13 rs_nifty=17.86 deliv=58.9
-- ROTO: score=13 rs_nifty=5.25 deliv=42.48
-- ABCAPITAL: score=13 rs_nifty=2.54 deliv=57.15
 - MINDACORP: score=13 rs_nifty=3.2 deliv=42.91
-- BAJFINANCE: score=13 rs_nifty=5.58 deliv=68.49
+- THELEELA: score=13 rs_nifty=2.39 deliv=48.76
+- OBEROIRLTY: score=13 rs_nifty=3.95 deliv=51.48
+- SATIN: score=13 rs_nifty=0.34 deliv=49.44
+- MANAKCOAT: score=13 rs_nifty=15.68 deliv=37.77
+- PDSL: score=13 rs_nifty=14.18 deliv=54.56
+- BECTORFOOD: score=13 rs_nifty=9.23 deliv=49.26
+- APLLTD: score=13 rs_nifty=17.86 deliv=58.9
+- GLAND: score=13 rs_nifty=0.21 deliv=51.53
+- EMCURE: score=13 rs_nifty=9.32 deliv=59.61
 
 ## World markets (India cues)
 
@@ -144,9 +144,9 @@
 - ASX 200: +0.80% (bull)
 
 ### Europe
-- FTSE 100: +0.84% (bull)
-- DAX: +0.90% (bull)
-- Euro Stoxx 50: +1.24% (bull)
+- FTSE 100: +1.75% (bull)
+- DAX: +2.08% (bull)
+- Euro Stoxx 50: +2.04% (bull)
 
 ### US
 - S&P 500: +1.60% (bull)
@@ -155,10 +155,10 @@
 - US VIX: -11.16% (bull)
 
 ### Macro
-- USDINR: +0.80% (bear)
+- USDINR: +0.23% (neutral)
 - Crude WTI: -0.72% (bear)
 - Brent: -3.98% (bear)
-- DXY: +0.36% (bear)
+- DXY: +0.33% (neutral)
 - US 10Y: +1.82% (bear)
 - India ETF: -0.81% (bear)
 - EM ETF: +3.01% (bull)
@@ -169,56 +169,51 @@
 - **model:** openai/gpt-oss-120b
 - **stance:** selective_aggressive
 
-The Indian equity market remains in a bullish regime with Nifty up 0.25% and VIX at a moderate 16.8. Foreign inflows are positive while domestic flows are net negative, keeping overall risk medium. Sectoral momentum is strong in consumer services, real estate and technology services.
+The Indian market remains in a bullish regime with Nifty up 0.25% and a medium VIX at 16.8, indicating manageable volatility. FII inflows are strong (+₹1.63bn) while DII remain net sellers, supporting the upside bias. Sectoral strength is emerging in Consumer Services, Real Estate and Technology Services, aligning with the top Parkhu ideas. Open positions show mixed performance, with several hitting T1 targets and others requiring stop‑tightening due to weakening ADX signals.
 
-- **HMVL** [consider_entry/high] entry=102.97 stop=94.73 t1=119.45 hold=9d — Parkhu score 87.7, 2R target at 119.45, aligns with bullish trend
-- **LODHA** [consider_entry/high] entry=1251.8 stop=1159.58 t1=1436.25 hold=17d — Score 84.7, real estate upside, 2R target at 1436.25
-- **NINSYS** [consider_entry/high] entry=1005.15 stop=927.19 t1=1161.08 hold=16d — Score 84.4, tech services exposure, 2R target at 1161.08
-- **KOTAKBANK** [manage_open/medium] entry=459.0 stop=438.62 t1=499.77 hold=16d — T1 reached, partial profit, move stop to breakeven
-- **GLENMARK** [manage_open/medium] entry=2481.8 stop=2327.96 t1=2789.48 hold=19d — T1 reached, partial profit, trail remainder
-- **ICICIBANK** [manage_open/medium] entry=1477.3 stop=1420.52 t1=1590.85 hold=17d — T1 reached, partial profit, trail remainder
-- **ALIVUS** [manage_open/low] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX weakening, trend thinning, tighten stop
-- **ACUTAAS** [manage_open/low] entry=3996.1 stop=3676.41 t1=4635.48 hold=14d — ADX weakening, trend thinning, tighten stop
-- **TFCILTD** [manage_open/low] entry=157.96 stop=146.05 t1=181.78 hold=17d — ADX weakening, trend thinning, tighten stop
-- **GAIL** [watch/low] entry=186.22 stop=177.22 t1=204.23 hold=17d — Near breakeven, modest upside
-- **CHOLAFIN** [watch/low] entry=1766.2 stop=1659.89 t1=1978.82 hold=16d — Small MFE, monitor
-- **LUMAXTECH** [watch/low] entry=2297.6 stop=2113.79 t1=2665.22 hold=12d — Limited upside, watch for reversal
-- **ORIENTELEC** [watch/low] entry=199.62 stop=184.08 t1=230.71 hold=16d — Price below entry, watch for support
-- **SOUTHBANK** [watch/low] entry=58.68 stop=54.9 t1=66.23 hold=16d — Near entry, limited move
-- **PETRONET** [watch/low] entry=329.8 stop=314.34 t1=360.71 hold=16d — Small MFE, monitor
+- **HMVL** [consider_entry/high] entry=102.97 stop=94.73 t1=119.45 hold=9d — Parkhu score 87.8, bullish market, 2R target in Consumer Services sector
+- **LODHA** [consider_entry/high] entry=1251.8 stop=1159.58 t1=1436.25 hold=17d — Parkhu score 85.3, real‑estate upside in a bullish backdrop, 2R target
+- **NINSYS** [consider_entry/high] entry=1005.15 stop=927.19 t1=1161.08 hold=16d — Parkhu score 84.4, tech‑services exposure, aligns with bullish regime and 2R target
+- **KOTAKBANK** [manage_open/high] entry=459.0 stop=438.62 t1=499.77 hold=16d — Price ₹500 > T1 ₹499.77, bank partial advised, trail stop to breakeven
+- **ICICIBANK** [manage_open/high] entry=1477.3 stop=1420.52 t1=1590.85 hold=17d — Price ₹1,593.4 > T1 ₹1,590.85, bank partial, trail stop to breakeven
+- **GLENMARK** [manage_open/high] entry=2481.8 stop=2327.96 t1=2789.48 hold=19d — Price ₹2,834.9 > T1 ₹2,789.48, bank partial, trail stop to breakeven
+- **ACUTAAS** [manage_open/medium] entry=3996.1 stop=3676.41 t1=4635.48 hold=14d — ADX 23 indicates trend thinning, tighten stop and review thesis
+- **ALIVUS** [manage_open/medium] entry=1447.6 stop=1332.73 t1=1677.35 hold=14d — ADX 12 signals weakening trend, tighten stop and reassess
+- **TFCILTD** [manage_open/medium] entry=157.96 stop=146.05 t1=181.78 hold=17d — ADX 22, trend no longer robust, tighten stop and review
+- **GAIL** [watch/low] entry=186.22 stop=177.22 t1=204.23 hold=17d — Modest MFE 3.3%, still above stop, monitor for upside
+- **CHOLAFIN** [watch/low] entry=1766.2 stop=1659.89 t1=1978.82 hold=16d — MFE 7.7% with price near entry, hold and watch
+- **LUMAXTECH** [watch/low] entry=2297.6 stop=2113.79 t1=2665.22 hold=12d — MFE 8.9% but price close to entry, no immediate action
+- **ORIENTELEC** [watch/low] entry=199.62 stop=184.08 t1=230.71 hold=16d — MFE 4% and price below entry, monitor for reversal
+- **SOUTHBANK** [watch/low] entry=58.68 stop=54.9 t1=66.23 hold=16d — MFE 6.6% and price marginally below entry, hold
+- **PETRONET** [watch/low] entry=329.8 stop=314.34 t1=360.71 hold=16d — MFE 2% only, price near stop, watch for downside
 
 ### AI stock reviews
 
-- **HMVL** [high] The stock is in a strong bullish trend with an ADX of 35.8 and a RSI near 70, indicating robust momentum that can be captured within a short‑term window. Relative strength against both the Nifty and its sector (+23% and +21% over 1 month) and a 9‑day hold period to the first target suggest the upside can be realized in under a month. The current market regime is bullish with low VIX, further supporting a quick swing trade.
-  - catalysts: media ad spend recovery, potential earnings beat, positive consumer services sentiment
-  - risks: adverse earnings surprise, regulatory scrutiny on media sector, broader market correction
-  - watch: A break below the stop level of 94.73 or a sharp drop in ADX below 20 would invalidate the setup; likewise, a failure to hold above the entry price on the earnings day could trigger an early exit.
-- **LODHA** [high] Lodha Developers Ltd. is in a strong bullish trend with ADX above 25, RSI at 65, and delivery exceeding 50%, out‑performing both the Nifty and its sector over the past month. The stock sits near a 6.9% discount to its 52‑week high, offering a clear upside path to the T1 target of 1,436.25 within the projected 17‑day horizon, making it suitable for a ≤1‑month swing.
-  - catalysts: Upcoming earnings release in ~2 months, Potential policy support for Indian real estate, Launch of new residential projects, Improving macro‑credit conditions
-  - risks: Broad market correction or rise in India VIX, Regulatory or zoning setbacks, Execution delays on key projects, Valuation compression if sentiment turns
-  - watch: A break below the stop level of 1,159.58 or a drop in ADX below 20 would invalidate the trade; loss of momentum indicated by RSI falling under 50 also serves as a warning sign.
-- **NINSYS** [high] NINtec Systems Ltd is in a strong bullish trend with ADX above 25 and RSI near 73, indicating momentum while still having room to rise. The stock outperforms both the Nifty and its sector, and the projected target of 1161.08 is reachable within the 16‑day hold horizon, making it a suitable ≤1‑month swing. High delivery percentage and a solid Parkhu score further support the upside potential.
-  - catalysts: Q3 earnings release, Announcement of new technology contract, Positive sector tailwinds in technology services, Improved macro sentiment in bullish regime
-  - risks: Earnings miss or guidance downgrade, Broader market pullback despite bullish regime, Sector rotation away from technology services, Potential overextension as RSI nears overbought
-  - watch: Monitor the upcoming earnings announcement and any contract news; a break below the stop level of 927.19 or a sharp drop in ADX below 20 would invalidate the trade.
+- **HMVL** [high] The stock is in a bullish trend with ADX above 35 and RSI near 70, indicating strong momentum. With a 9‑day target horizon and a 2:1 risk‑reward, the upside to the t1 level is achievable within a month. High delivery and outperformance versus Nifty and the consumer services sector support the swing.
+  - catalysts: Continued ad‑revenue growth, Positive consumer sentiment in media sector, Potential strategic partnership announcements
+  - risks: Market pullback in bullish regime, Earnings miss when results arrive, Regulatory scrutiny on media content
+  - watch: A break below the stop at 94.73 or a sharp RSI drop below 50 would invalidate the trade; a move above the t1 target of 119.45 confirms the thesis.
+- **LODHA** [high] Lodha Developers is in a strong bullish trend with ADX above 25 and RSI at 65, indicating momentum; the stock trades near its 52‑week high with a modest pull‑back offering a 2:1 risk‑reward to the target of 1,436.25 within ~17 days, fitting a ≤1‑month swing.
+  - catalysts: Upcoming earnings in ~2 months may beat expectations, Continued demand in premium real estate sector, Potential policy support for housing, Positive macro sentiment in bullish regime
+  - risks: Earnings miss could trigger sell‑off, Rising interest rates impacting real‑estate financing, Regulatory slowdown in approvals, Broader market correction if VIX spikes
+  - watch: Break below the stop at 1,159.58 invalidates the thesis; a failure to breach the 1,436.25 target within 30 days suggests weakening momentum.
+- **NINSYS** [high] NINtec Systems Ltd is in a strong bullish trend with ADX above 25 and RSI near 73, indicating momentum without extreme overbought conditions. The stock outperforms both the Nifty and its technology services sector, and the target price (t1) is reachable within the projected 16‑day hold, offering a 2:1 risk‑reward. Delivery at 66% underscores solid buying interest, making it a suitable ≤1‑month swing trade.
+  - catalysts: Q3 earnings beat expectations, Announcement of a large enterprise contract, Favorable regulatory environment for tech services, Broader Indian market bullishness
+  - risks: Earnings miss or guidance downgrade, Unexpected regulatory tightening on tech sector, Sector rotation to value stocks, Sharp market pullback reflected in VIX rise
+  - watch: Monitor the upcoming earnings release and any major contract announcements; a break below the stop level (927.19) or a sharp drop in ADX below 20 would invalidate the setup.
 
 ### Claude feed
 
-Regime: Bullish; Stance: selective_aggressive; Top ideas: HMVL, LODHA, NINSYS (consider entry); Open positions: manage KOTAKBANK, GLENMARK, ICICIBANK for partial profit; tighten ALIVUS, ACUTAAS, TFCILTD; Caveats: score coverage 65%, provisional scores, no win‑rate history.
+Regime: Bullish market, Nifty bullish, VIX medium. Stance: selective_aggressive. Top ideas: HMVL, LODHA, NINSYS (high scores, 2R targets). Open book actions: bank partial on KOTAKBANK, ICICIBANK, GLENMARK; tighten stops on ACUTAAS, ALIVUS, TFCILLD. Caveats: score coverage 65%, missing news/institutional data, R:R based on constant 0.67, no win‑rate history.
 
 
 ## Market news (AI top impact)
 
-1. **[high]** Bhagiradha Chemicals & Industries Limited corporate guarantee update (BHAGCHEM) — Corporate guarantee may signal liquidity concerns and regulatory scrutiny, affecting the chemicals sector and investor sentiment.
-2. **[medium]** GAIL & Gujarat Narmada Valley Fertilizers MoU signed (GAIL) — Partnership between a major gas distributor and fertilizer producer could boost integrated energy‑fertilizer supply chain, influencing energy and agri‑chemical indices.
-3. **[low]** TVS Motor launches Armado tricycle in Angola (TVSMOTOR) — Expansion into African market may modestly lift automotive exports sentiment but limited immediate market impact.
-4. **[low]** GAIL press release on MoU with GNFC (GAIL) — Reiterates strategic collaboration; minor effect on energy sector perception.
-5. **[low]** CARYSIL management change announced (CARYSIL) — Management shifts can influence company performance but unlikely to sway broader market indices.
-6. **[low]** VISL shareholders meeting notice (VISL) — Routine AGM notice; negligible market-wide effect.
-7. **[low]** AceVector AGM scheduled for Dec 21 (ACEVECTOR) — Standard AGM; minimal impact on sector sentiment.
-8. **[low]** Go Digit General Insurance director resignation (GODIGIT) — Leadership change may affect company outlook but limited to insurance sector.
-9. **[low]** Juniper Green Energy credit rating update (JNPR) — Credit rating change can influence bond pricing but not major equity indices.
-10. **[low]** Indus Towers credit rating update (INDUSTOWER) — Credit rating shift may affect telecom infrastructure sentiment but overall market impact is small.
+1. **[high]** Bhagiradha Chemicals & Industries Limited: Corporate guarantee under SEBI Regulation 30 (BHAGCHEM) — The corporate guarantee exposes the company to potential credit risk and regulatory scrutiny, affecting investor sentiment and the broader chemicals sector.
+2. **[medium]** GAIL (India) Limited & Gujarat Narmada Valley Fertilizers & Chemicals: Signing of MoU (GAIL) — The partnership links oil & gas with fertilizer production, potentially enhancing supply chain efficiency and signaling growth prospects for both sectors.
+3. **[medium]** TVS Motor Company: Launch of ARMADO tricycle in Angola (TVSMOTOR) — Expansion into the African market introduces new revenue streams and showcases the company's global footprint, influencing risk sentiment and sector dynamics.
+4. **[low]** Indus Towers Limited: Credit rating update (INDUSTOWER) — A credit rating change may affect borrowing costs but has limited immediate impact on market indices or sector sentiment.
+5. **[low]** GAIL (India) Limited: Press Release on MoU signing with GNFC (GAIL) — General press release with no new operational or financial data; minimal market-wide effect.
 
 ## Deep-dive URLs (after push)
 
